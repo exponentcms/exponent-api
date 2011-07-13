@@ -4,4 +4,5 @@ Options -Indexes
 # Route requests to the index.
 DirectoryIndex index.html
 
-AddHandler php-html .php.html
+AddType text/html .php.html
+AddHandler application/x-httpd-php .php.html
