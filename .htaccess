@@ -1,0 +1,7 @@
+# Don't show directory directory listings.
+Options -Indexes
+
+# Route requests to the index.
+DirectoryIndex index.html
+
+AddHandler php-html .php.html
