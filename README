@@ -1,1 +1,5 @@
-This is the PhpDocumentor created documentation for Exponent-CMS.  It was created using 'phpdoc -c phpdoc.ini' from within the main exponent-cms repository root folder.
+This is the PhpDocumentor created documentation for Exponent-CMS.  
+
+It was generated in conjunction with the release of 2.0 Release Candidate 1
+
+It was created using 'phpdoc -c phpdoc.ini' from within the main exponent-cms repository root folder.

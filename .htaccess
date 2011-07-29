@@ -1,8 +1,4 @@
 # Don't show directory directory listings.
 Options -Indexes
 
-# Route requests to the index.
-DirectoryIndex index.html
-
-AddType text/html .php.html
-AddHandler application/x-httpd-php .php.html
+#AddHandler text/html .php.html
