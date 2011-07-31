@@ -18,7 +18,7 @@
     <td colspan="2" class="header-menu">
       
                         
-                                                                              		[ <a href="classtrees_Framework.html" class="menu">class tree: Framework</a> ]
+                                                                                            		[ <a href="classtrees_Framework.html" class="menu">class tree: Framework</a> ]
 		[ <a href="elementindex_Framework.html" class="menu">index: Framework</a> ]
             [ <a href="elementindex.html" class="menu">all elements</a> ]
     </td>
@@ -49,6 +49,7 @@
               <a href="li_Installation.html">Installation</a><br />
               <a href="li_Smarty-Plugins.html">Smarty-Plugins</a><br />
               <a href="li_Subsystems.html">Subsystems</a><br />
+              <a href="li_Subsystems-Forms.html">Subsystems-Forms</a><br />
       	</div>
       <br />
                 </td>
@@ -178,7 +179,7 @@
 <a href="#database.php">database.php</a><br>
 <a href="#database.structure.php">database.structure.php</a><br>
 <a href="#database_importer.php">database_importer.php</a><br>
-<a href="#Data_View.php">Data_View.php</a><br>
+<a href="#Data_view.php">Data_view.php</a><br>
 <a href="#datetime.info.php">datetime.info.php</a><br>
 <a href="#datetime.manifest.php">datetime.manifest.php</a><br>
 <a href="#datetime.php">datetime.php</a><br>
@@ -204,7 +205,6 @@
 <a href="#delete_record.php">delete_record.php</a><br>
 <a href="#delete_template.php">delete_template.php</a><br>
 <a href="#deny_comment.php">deny_comment.php</a><br>
-<a href="#deps.php">deps.php</a><br>
 <a href="#Directional.php">Directional.php</a><br>
 <a href="#discounts.php">discounts.php</a><br>
 <a href="#display.defaults.php">display.defaults.php</a><br>
@@ -254,8 +254,6 @@
 <a href="#expJavascript.php">expJavascript.php</a><br>
 <a href="#expLang.php">expLang.php</a><br>
 <a href="#expMail.php">expMail.php</a><br>
-<a href="#expMail3.php">expMail3.php</a><br>
-<a href="#expModules.php">expModules.php</a><br>
 <a href="#expNestedNode.php">expNestedNode.php</a><br>
 <a href="#exponent.js.php">exponent.js.php</a><br>
 <a href="#exponent.php">exponent.php</a><br>
@@ -474,8 +472,6 @@
 <a href="#loginredirect.php">loginredirect.php</a><br>
 <a href="#logout.php">logout.php</a><br>
 <a href="#Logout Only.php">Logout Only.php</a><br>
-<a href="#mail.info.php">mail.info.php</a><br>
-<a href="#mail.php">mail.php</a><br>
 <a href="#maint.defaults.php">maint.defaults.php</a><br>
 <a href="#maint.structure.php">maint.structure.php</a><br>
 <a href="#manage.php">manage.php</a><br>
@@ -487,7 +483,6 @@
 <a href="#manage_question.php">manage_question.php</a><br>
 <a href="#manage_questions.php">manage_questions.php</a><br>
 <a href="#manage_standalone.php">manage_standalone.php</a><br>
-<a href="#manifest.php">manifest.php</a><br>
 <a href="#mapper.php">mapper.php</a><br>
 <a href="#Marked Hierarchy.php">Marked Hierarchy.php</a><br>
 <a href="#massmailcontrol.php">massmailcontrol.php</a><br>
@@ -709,8 +704,6 @@
 <a href="#site_rss.php">site_rss.php</a><br>
 <a href="#smtp.defaults.php">smtp.defaults.php</a><br>
 <a href="#smtp.info.php">smtp.info.php</a><br>
-<a href="#smtp.manifest.php">smtp.manifest.php</a><br>
-<a href="#smtp.php">smtp.php</a><br>
 <a href="#smtp.structure.php">smtp.structure.php</a><br>
 <a href="#snippet.php">snippet.php</a><br>
 <a href="#snippetController.php">snippetController.php</a><br>
@@ -733,8 +726,6 @@
 <a href="#sysinfo.php">sysinfo.php</a><br>
 <a href="#sysinfo_download.php">sysinfo_download.php</a><br>
 <a href="#tablebasedcalculator.php">tablebasedcalculator.php</a><br>
-<a href="#tagpickercontrol.php">tagpickercontrol.php</a><br>
-<a href="#tagtreecontrol.php">tagtreecontrol.php</a><br>
 <a href="#taxclass.php">taxclass.php</a><br>
 <a href="#taxController.php">taxController.php</a><br>
 <a href="#tax_class.php">tax_class.php</a><br>
@@ -776,8 +767,8 @@
 <a href="#umgr_savemembers.php">umgr_savemembers.php</a><br>
 <a href="#umgr_saveuser.php">umgr_saveuser.php</a><br>
 <a href="#Upcoming Events - Headlines.php">Upcoming Events - Headlines.php</a><br>
-<a href="#upcomingevents.php">upcomingevents.php</a><br>
 <a href="#Upcoming Events.php">Upcoming Events.php</a><br>
+<a href="#upcomingevents.php">upcomingevents.php</a><br>
 <a href="#upgrade-1.php">upgrade-1.php</a><br>
 <a href="#upgrade-2.php">upgrade-2.php</a><br>
 <a href="#upgrade-3.php">upgrade-3.php</a><br>
@@ -951,13 +942,16 @@
 <h1>Post-parsing</h1>
 <h2>Warnings:</h2><br>
 <b>Warning</b> - 
-duplicate define element "SCRIPT_FILENAME" in file H:\Source\exponent-cms\modules\containermodule\picked_source.php will be ignored.
+duplicate define element "SCRIPT_EXP_RELATIVE" in file H:\Source\exponent-cms\source_selector.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
-duplicate define element "SCRIPT_EXP_RELATIVE" in file H:\Source\exponent-cms\modules\containermodule\nosourceselected.php will be ignored.
+duplicate define element "SCRIPT_FILENAME" in file H:\Source\exponent-cms\cron\send_reminders.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
-duplicate define element "SCRIPT_FILENAME" in file H:\Source\exponent-cms\modules\containermodule\nosourceselected.php will be ignored.
+duplicate define element "SCRIPT_EXP_RELATIVE" in file H:\Source\exponent-cms\popup.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "SCRIPT_EXP_RELATIVE" in file H:\Source\exponent-cms\orphan_source_selector.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
 duplicate define element "SCRIPT_EXP_RELATIVE" in file H:\Source\exponent-cms\modules\containermodule\picked_source.php will be ignored.
@@ -966,80 +960,50 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 duplicate define element "SCRIPT_EXP_RELATIVE" in file H:\Source\exponent-cms\orphan_content_selector.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
-duplicate define element "SCRIPT_EXP_RELATIVE" in file H:\Source\exponent-cms\modules\containermodule\infopopup.php will be ignored.
-Use an @ignore tag on the original if you want this case to be documented.<br>
-<b>Warning</b> - 
-duplicate define element "SCRIPT_EXP_RELATIVE" in file H:\Source\exponent-cms\install\index.php will be ignored.
-Use an @ignore tag on the original if you want this case to be documented.<br>
-<b>Warning</b> - 
-duplicate define element "SCRIPT_FILENAME" in file H:\Source\exponent-cms\source_selector.php will be ignored.
-Use an @ignore tag on the original if you want this case to be documented.<br>
-<b>Warning</b> - 
-duplicate define element "SCRIPT_FILENAME" in file H:\Source\exponent-cms\orphan_source_selector.php will be ignored.
-Use an @ignore tag on the original if you want this case to be documented.<br>
-<b>Warning</b> - 
-duplicate define element "SCRIPT_FILENAME" in file H:\Source\exponent-cms\orphan_content_selector.php will be ignored.
-Use an @ignore tag on the original if you want this case to be documented.<br>
-<b>Warning</b> - 
-duplicate define element "SCRIPT_EXP_RELATIVE" in file H:\Source\exponent-cms\index.php will be ignored.
-Use an @ignore tag on the original if you want this case to be documented.<br>
-<b>Warning</b> - 
-duplicate define element "SCRIPT_EXP_RELATIVE" in file H:\Source\exponent-cms\orphan_source_selector.php will be ignored.
-Use an @ignore tag on the original if you want this case to be documented.<br>
-<b>Warning</b> - 
-duplicate define element "SCRIPT_EXP_RELATIVE" in file H:\Source\exponent-cms\popup.php will be ignored.
-Use an @ignore tag on the original if you want this case to be documented.<br>
-<b>Warning</b> - 
-duplicate define element "SCRIPT_FILENAME" in file H:\Source\exponent-cms\index.php will be ignored.
-Use an @ignore tag on the original if you want this case to be documented.<br>
-<b>Warning</b> - Class controllerTemplate parent baseTemplate not found<br>
-<b>Warning</b> - 
-duplicate define element "SCRIPT_FILENAME" in file H:\Source\exponent-cms\install\index.php will be ignored.
-Use an @ignore tag on the original if you want this case to be documented.<br>
-<b>Warning</b> - 
-duplicate define element "SCRIPT_FILENAME" in file H:\Source\exponent-cms\modules\containermodule\infopopup.php will be ignored.
-Use an @ignore tag on the original if you want this case to be documented.<br>
-<b>Warning</b> - 
-duplicate function element "smarty_function_last_url_of" in file H:\Source\exponent-cms\plugins\function.last_url_of.php will be ignored.
+duplicate define element "SCRIPT_FILENAME" in file H:\Source\exponent-cms\db_recover.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
 duplicate define element "SCRIPT_FILENAME" in file H:\Source\exponent-cms\exponent_constants.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
-duplicate define element "SCRIPT_FILENAME" in file H:\Source\exponent-cms\edit_page.php will be ignored.
+duplicate define element "SCRIPT_FILENAME" in file H:\Source\exponent-cms\modules\containermodule\picked_source.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
-duplicate define element "SCRIPT_EXP_RELATIVE" in file H:\Source\exponent-cms\source_selector.php will be ignored.
+duplicate define element "SCRIPT_FILENAME" in file H:\Source\exponent-cms\orphan_content_selector.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
-duplicate function element "smarty_function_control" in file H:\Source\exponent-cms\plugins\function.popupdatetimecontrol.php will be ignored.
+duplicate define element "SCRIPT_FILENAME" in file H:\Source\exponent-cms\modules\containermodule\nosourceselected.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
-duplicate define element "SCRIPT_FILENAME" in file H:\Source\exponent-cms\cron\send_reminders.php will be ignored.
+duplicate define element "SCRIPT_FILENAME" in file H:\Source\exponent-cms\modules\containermodule\infopopup.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
-duplicate define element "SCRIPT_FILENAME" in file H:\Source\exponent-cms\db_recover.php will be ignored.
+duplicate define element "SCRIPT_FILENAME" in file H:\Source\exponent-cms\index.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
-duplicate define element "CONTENT_SELECTOR" in file H:\Source\exponent-cms\orphan_content_selector.php will be ignored.
+duplicate define element "SCRIPT_FILENAME" in file H:\Source\exponent-cms\install\index.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
-duplicate define element "SCRIPT_FILENAME" in file H:\Source\exponent-cms\popup.php will be ignored.
+duplicate define element "SCRIPT_EXP_RELATIVE" in file H:\Source\exponent-cms\modules\containermodule\nosourceselected.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
-duplicate define element "SCRIPT_EXP_RELATIVE" in file H:\Source\exponent-cms\cron\send_reminders.php will be ignored.
+duplicate define element "SCRIPT_EXP_RELATIVE" in file H:\Source\exponent-cms\modules\containermodule\infopopup.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate function element "smarty_function_last_url_of" in file H:\Source\exponent-cms\plugins\function.last_url_of.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
 duplicate define element "DB_ENCODING" in file H:\Source\exponent-cms\install\pages\install-3.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
-duplicate define element "TMP_TABLE_EXISTED" in file H:\Source\exponent-cms\modules\administrationmodule\actions\installtables.php will be ignored.
+duplicate function element "smarty_function_control" in file H:\Source\exponent-cms\plugins\function.popupdatetimecontrol.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
-duplicate define element "SCRIPT_EXP_RELATIVE" in file H:\Source\exponent-cms\db_recover.php will be ignored.
+duplicate function element "convert_smart_quotes" in file H:\Source\exponent-cms\plugins\modifier.summarize.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - Class controllerTemplate parent baseTemplate not found<br>
 <b>Warning</b> - 
-duplicate define element "SCRIPT_EXP_RELATIVE" in file H:\Source\exponent-cms\edit_page.php will be ignored.
+duplicate function element "epb" in file H:\Source\exponent-cms\selector.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
 duplicate define element "BTN_SIZE" in file H:\Source\exponent-cms\themes\retrotheme\config.php will be ignored.
@@ -1047,19 +1011,38 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
 duplicate define element "BTN_COLOR" in file H:\Source\exponent-cms\themes\retrotheme\config.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
-<b>Warning</b> - Class exponentMail parent Swift not found<br>
 <b>Warning</b> - 
-duplicate function element "epb" in file H:\Source\exponent-cms\selector.php will be ignored.
+duplicate define element "SCRIPT_EXP_RELATIVE" in file H:\Source\exponent-cms\index.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
-<b>Warning</b> - Class expMail3 parent Swift not found<br>
+<b>Warning</b> - 
+duplicate define element "SCRIPT_EXP_RELATIVE" in file H:\Source\exponent-cms\install\index.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "SCRIPT_EXP_RELATIVE" in file H:\Source\exponent-cms\edit_page.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "SCRIPT_EXP_RELATIVE" in file H:\Source\exponent-cms\db_recover.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
 duplicate define element "SAVE_SEARCH_QUERIES" in file H:\Source\exponent-cms\conf\extensions\site.defaults.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
-duplicate define element "SYS_SESSION_KEY" in file H:\Source\exponent-cms\thumb.php will be ignored.
+duplicate define element "SCRIPT_EXP_RELATIVE" in file H:\Source\exponent-cms\cron\send_reminders.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
-duplicate function element "convert_smart_quotes" in file H:\Source\exponent-cms\plugins\modifier.summarize.php will be ignored.
+duplicate define element "SCRIPT_FILENAME" in file H:\Source\exponent-cms\orphan_source_selector.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "SCRIPT_FILENAME" in file H:\Source\exponent-cms\edit_page.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "SOURCE_SELECTOR" in file H:\Source\exponent-cms\orphan_source_selector.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "TMP_TABLE_INSTALLED" in file H:\Source\exponent-cms\modules\administrationmodule\actions\installtables.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "PREVIEW_READONLY" in file H:\Source\exponent-cms\orphan_source_selector.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
 duplicate define element "TMP_TABLE_ALTERED" in file H:\Source\exponent-cms\modules\administrationmodule\actions\installtables.php will be ignored.
@@ -1068,25 +1051,31 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 duplicate define element "TMP_TABLE_FAILED" in file H:\Source\exponent-cms\modules\administrationmodule\actions\installtables.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
-duplicate define element "TMP_TABLE_INSTALLED" in file H:\Source\exponent-cms\modules\administrationmodule\actions\installtables.php will be ignored.
+duplicate define element "TMP_TABLE_EXISTED" in file H:\Source\exponent-cms\modules\administrationmodule\actions\installtables.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
-duplicate define element "SOURCE_SELECTOR" in file H:\Source\exponent-cms\orphan_source_selector.php will be ignored.
+duplicate define element "CONTENT_SELECTOR" in file H:\Source\exponent-cms\orphan_content_selector.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
-duplicate define element "SELECTOR" in file H:\Source\exponent-cms\selector.php will be ignored.
-Use an @ignore tag on the original if you want this case to be documented.<br>
-<b>Warning</b> - 
-duplicate define element "PREVIEW_READONLY" in file H:\Source\exponent-cms\themes\coolwatertheme\module_preview.php will be ignored.
+duplicate define element "SCRIPT_FILENAME" in file H:\Source\exponent-cms\source_selector.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
 duplicate define element "PREVIEW_READONLY" in file H:\Source\exponent-cms\selector.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
-duplicate define element "PREVIEW_READONLY" in file H:\Source\exponent-cms\orphan_source_selector.php will be ignored.
+duplicate define element "SOURCE_SELECTOR" in file H:\Source\exponent-cms\source_selector.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning</b> - 
-duplicate define element "SOURCE_SELECTOR" in file H:\Source\exponent-cms\source_selector.php will be ignored.
+duplicate define element "SCRIPT_FILENAME" in file H:\Source\exponent-cms\popup.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "PREVIEW_READONLY" in file H:\Source\exponent-cms\themes\coolwatertheme\module_preview.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "SYS_SESSION_KEY" in file H:\Source\exponent-cms\thumb.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "SELECTOR" in file H:\Source\exponent-cms\selector.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
 <a name="0.95.php"></a>
 <h1>0.95.php</h1>
@@ -1197,7 +1186,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>antispamcontrol.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 36</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\antispamcontrol.php<br>
+<b>Warning on line 28</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\antispamcontrol.php<br>
 <a name="approvalpolicy.php"></a>
 <h1>approvalpolicy.php</h1>
 <h2>Warnings:</h2><br>
@@ -1217,13 +1206,13 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h2>Warnings:</h2><br>
 <b>Warning on line 3</b> - Unknown tag "@define" used<br>
 <b>Warning on line 3</b> - Unknown tag "@define" used<br>
-<b>Warning on line 16</b> - File "H:\Source\exponent-cms\modules\importer\auto.manifest.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 16</b> - File "H:\Source\exponent-cms\modules\exporter\auto.manifest.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 16</b> - File "H:\Source\exponent-cms\modules\importer\auto.manifest.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <a name="autocompletecontrol.php"></a>
 <h1>autocompletecontrol.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 36</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\autocompletecontrol.php<br>
+<b>Warning on line 32</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\autocompletecontrol.php<br>
 <a name="autoloader.info.php"></a>
 <h1>autoloader.info.php</h1>
 <h2>Warnings:</h2><br>
@@ -1237,10 +1226,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>autoloader.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 95</b> - 
-duplicate define element "SYS_AUTOLOADER" in file H:\Source\exponent-cms\subsystems\autoloader.php will be ignored.
-Use an @ignore tag on the original if you want this case to be documented.<br>
-<b>Warning on line 106</b> - File "H:\Source\exponent-cms\subsystems\autoloader.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 85</b> - File "H:\Source\exponent-cms\subsystems\autoloader.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <a name="avatar.defaults.php"></a>
 <h1>avatar.defaults.php</h1>
 <h2>Warnings:</h2><br>
@@ -1364,7 +1350,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>bootstrap.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 46</b> - Unknown tag "@define" used<br>
-<b>Warning on line 59</b> - File "H:\Source\exponent-cms\cron\bootstrap.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 61</b> - File "H:\Source\exponent-cms\cron\bootstrap.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <a name="bots.php"></a>
 <h1>bots.php</h1>
 <h2>Warnings:</h2><br>
@@ -1373,7 +1359,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>buttongroupcontrol.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 38</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\buttongroupcontrol.php<br>
+<b>Warning on line 30</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\buttongroupcontrol.php<br>
 <a name="calendar.info.php"></a>
 <h1>calendar.info.php</h1>
 <h2>Warnings:</h2><br>
@@ -1390,7 +1376,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>calendarcontrol.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 36</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\calendarcontrol.php<br>
+<b>Warning on line 28</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\calendarcontrol.php<br>
 <a name="calendarmodule_config.php"></a>
 <h1>calendarmodule_config.php</h1>
 <h2>Warnings:</h2><br>
@@ -1411,8 +1397,8 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <a name="cash.php"></a>
 <h1>cash.php</h1>
 <h2>Warnings:</h2><br>
-<b>Warning on line 3</b> - Unknown tag "@define" used<br>
 <b>Warning on line 3</b> - no @package tag was used in a DocBlock for class cash<br>
+<b>Warning on line 3</b> - Unknown tag "@define" used<br>
 <b>Warning on line 82</b> - File "H:\Source\exponent-cms\framework\modules\ecommerce\billingcalculators\cash.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <a name="changepass.php"></a>
 <h1>changepass.php</h1>
@@ -1423,7 +1409,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h2>Warnings:</h2><br>
 <b>Warning on line 16</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\subsystems\forms\controls\checkboxcontrol.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 38</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\checkboxcontrol.php<br>
+<b>Warning on line 30</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\checkboxcontrol.php<br>
 <a name="childProduct.php"></a>
 <h1>childProduct.php</h1>
 <h2>Warnings:</h2><br>
@@ -1437,7 +1423,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>ckeditorcontrol.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 36</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\ckeditorcontrol.php<br>
+<b>Warning on line 28</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\ckeditorcontrol.php<br>
 <a name="class.php"></a>
 <h1>class.php</h1>
 <h2>Warnings:</h2><br>
@@ -1447,25 +1433,25 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning on line 12</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\modules\filemanagermodule\class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 13</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\modules\navigationmodule\class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 16</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\modules\containermodule\class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 19</b> - no @package tag was used in a DocBlock for class administrationmodule<br>
-<b>Warning on line 19</b> - no @package tag was used in a DocBlock for class previewmodule<br>
-<b>Warning on line 19</b> - no @package tag was used in a DocBlock for class calendarmodule<br>
 <b>Warning on line 19</b> - Unknown tag "@define" used<br>
 <b>Warning on line 19</b> - no @package tag was used in a DocBlock for class loginmodule<br>
-<b>Warning on line 20</b> - no @package tag was used in a DocBlock for class formmodule<br>
-<b>Warning on line 20</b> - no @package tag was used in a DocBlock for class containermodule<br>
+<b>Warning on line 19</b> - no @package tag was used in a DocBlock for class previewmodule<br>
+<b>Warning on line 19</b> - no @package tag was used in a DocBlock for class calendarmodule<br>
+<b>Warning on line 19</b> - no @package tag was used in a DocBlock for class administrationmodule<br>
+<b>Warning on line 20</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\modules\calendarmodule\class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
+<b>Warning on line 20</b> - Unknown tag "@define" used<br>
+<b>Warning on line 20</b> - no @package tag was used in a DocBlock for class formmodule<br>
 <b>Warning on line 20</b> - no @package tag was used in a DocBlock for class navigationmodule<br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 20</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\modules\calendarmodule\class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 20</b> - no @package tag was used in a DocBlock for class containermodule<br>
 <b>Warning on line 21</b> - no @package tag was used in a DocBlock for class retrotheme<br>
-<b>Warning on line 21</b> - no @package tag was used in a DocBlock for class basetheme<br>
 <b>Warning on line 21</b> - no @package tag was used in a DocBlock for class coolwatertheme<br>
+<b>Warning on line 21</b> - no @package tag was used in a DocBlock for class basetheme<br>
 <b>Warning on line 27</b> - File "H:\Source\exponent-cms\themes\coolwatertheme\class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 27</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\modules\formmodule\class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 27</b> - File "H:\Source\exponent-cms\themes\basetheme\class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 27</b> - File "H:\Source\exponent-cms\themes\retrotheme\class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 27</b> - File "H:\Source\exponent-cms\themes\basetheme\class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 34</b> - no @package tag was used in a DocBlock for class simplepollmodule<br>
 <b>Warning on line 34</b> - Unknown tag "@define" used<br>
 <b>Warning on line 61</b> - File "H:\Source\exponent-cms\modules\previewmodule\class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
@@ -1531,7 +1517,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>configcontrol.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 36</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\configcontrol.php<br>
+<b>Warning on line 28</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\configcontrol.php<br>
 <a name="configure.php"></a>
 <h1>configure.php</h1>
 <h2>Warnings:</h2><br>
@@ -1571,7 +1557,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>contactcontrol.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 36</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\contactcontrol.php<br>
+<b>Warning on line 28</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\contactcontrol.php<br>
 <a name="Contact Form.php"></a>
 <h1>Contact Form.php</h1>
 <h2>Warnings:</h2><br>
@@ -1652,7 +1638,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>countryregioncontrol.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 35</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\countryregioncontrol.php<br>
+<b>Warning on line 28</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\countryregioncontrol.php<br>
 <a name="createuser.php"></a>
 <h1>createuser.php</h1>
 <h2>Warnings:</h2><br>
@@ -1661,7 +1647,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>creditcard.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 19</b> - no @package tag was used in a DocBlock for class creditcard<br>
-<b>Warning on line 278</b> - File "H:\Source\exponent-cms\framework\modules\ecommerce\billingcalculators\creditcard.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 279</b> - File "H:\Source\exponent-cms\framework\modules\ecommerce\billingcalculators\creditcard.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <a name="crosssellItem.php"></a>
 <h1>crosssellItem.php</h1>
 <h2>Warnings:</h2><br>
@@ -1675,7 +1661,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>customcontrol.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 36</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\customcontrol.php<br>
+<b>Warning on line 28</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\customcontrol.php<br>
 <a name="database.defaults.php"></a>
 <h1>database.defaults.php</h1>
 <h2>Warnings:</h2><br>
@@ -1706,10 +1692,10 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
 <b>Warning on line 20</b> - no @package tag was used in a DocBlock for class database_importer<br>
 <b>Warning on line 41</b> - File "H:\Source\exponent-cms\datatypes\database_importer.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<a name="Data_View.php"></a>
-<h1>Data_View.php</h1>
+<a name="Data_view.php"></a>
+<h1>Data_view.php</h1>
 <h2>Warnings:</h2><br>
-<b>Warning on line 14</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\modules\formmodule\views\Data_View.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 10</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\modules\formmodule\views\Data_view.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <a name="datetime.info.php"></a>
 <h1>datetime.info.php</h1>
 <h2>Warnings:</h2><br>
@@ -1728,7 +1714,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h2>Warnings:</h2><br>
 <b>Warning on line 15</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\subsystems\forms\controls\datetimecontrol.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 36</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\datetimecontrol.php<br>
+<b>Warning on line 28</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\datetimecontrol.php<br>
 <a name="dbcheck.php"></a>
 <h1>dbcheck.php</h1>
 <h2>Warnings:</h2><br>
@@ -1828,14 +1814,6 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>deny_comment.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 8</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\modules\workflow\actions\deny_comment.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<a name="deps.php"></a>
-<h1>deps.php</h1>
-<h2>Warnings:</h2><br>
-<b>Warning on line 12</b> - File "H:\Source\exponent-cms\modules\formmodule\deps.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 29</b> - File "H:\Source\exponent-cms\modules\containermodule\deps.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 34</b> - File "H:\Source\exponent-cms\modules\loginmodule\deps.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 44</b> - File "H:\Source\exponent-cms\modules\calendarmodule\deps.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 51</b> - File "H:\Source\exponent-cms\modules\administrationmodule\deps.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <a name="Directional.php"></a>
 <h1>Directional.php</h1>
 <h2>Warnings:</h2><br>
@@ -1879,7 +1857,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h2>Warnings:</h2><br>
 <b>Warning on line 16</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\subsystems\forms\controls\dropdowncontrol.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 36</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\dropdowncontrol.php<br>
+<b>Warning on line 28</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\dropdowncontrol.php<br>
 <a name="ealertController.php"></a>
 <h1>ealertController.php</h1>
 <h2>Warnings:</h2><br>
@@ -1916,8 +1894,8 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>EditorControl.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 21</b> - Unknown tag "@define" used<br>
-<b>Warning on line 39</b> - no @package tag was used in a DocBlock for class EditorControl<br>
-<b>Warning on line 76</b> - File "H:\Source\exponent-cms\subsystems\forms\controls\EditorControl.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 34</b> - no @package tag was used in a DocBlock for class EditorControl<br>
+<b>Warning on line 68</b> - File "H:\Source\exponent-cms\subsystems\forms\controls\EditorControl.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <a name="edit_answer.php"></a>
 <h1>edit_answer.php</h1>
 <h2>Warnings:</h2><br>
@@ -2034,30 +2012,30 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>expFile.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 32</b> - Unknown tag "@define" used<br>
-<b>Warning on line 60</b> - Unknown tag "@constant" used<br>
 <b>Warning on line 60</b> - Unknown tag "@PHPUnit" used<br>
+<b>Warning on line 60</b> - Unknown tag "@constant" used<br>
 <b>Warning on line 70</b> - Unknown tag "@PHPUnit" used<br>
 <b>Warning on line 70</b> - Unknown tag "@constant" used<br>
 <b>Warning on line 80</b> - Unknown tag "@constant" used<br>
 <b>Warning on line 80</b> - Unknown tag "@PHPUnit" used<br>
 <b>Warning on line 91</b> - Unknown tag "@PHPUnit" used<br>
 <b>Warning on line 91</b> - Unknown tag "@constant" used<br>
-<b>Warning on line 102</b> - Unknown tag "@PHPUnit" used<br>
 <b>Warning on line 102</b> - Unknown tag "@constant" used<br>
+<b>Warning on line 102</b> - Unknown tag "@PHPUnit" used<br>
 <b>Warning on line 132</b> - Unknown tag "@protected" used<br>
 <b>Warning on line 150</b> - Unknown tag "@protected" used<br>
 <b>Warning on line 201</b> - Unknown tag "@protected" used<br>
-<b>Warning on line 265</b> - Unknown tag "@PHPUnit" used<br>
-<b>Warning on line 349</b> - Unknown tag "@PHPUnit" used<br>
-<b>Warning on line 349</b> - Unknown tag "@requires" used<br>
-<b>Warning on line 456</b> - Unknown tag "@PHPUnit" used<br>
-<b>Warning on line 482</b> - Unknown tag "@PHPUnit" used<br>
-<b>Warning on line 514</b> - Unknown tag "@PHPUnit" used<br>
-<b>Warning on line 569</b> - Unknown tag "@PHPUnit" used<br>
-<b>Warning on line 599</b> - Unknown tag "@PHPUnit" used<br>
+<b>Warning on line 266</b> - Unknown tag "@PHPUnit" used<br>
+<b>Warning on line 348</b> - Unknown tag "@PHPUnit" used<br>
+<b>Warning on line 348</b> - Unknown tag "@requires" used<br>
+<b>Warning on line 455</b> - Unknown tag "@PHPUnit" used<br>
+<b>Warning on line 481</b> - Unknown tag "@PHPUnit" used<br>
+<b>Warning on line 513</b> - Unknown tag "@PHPUnit" used<br>
+<b>Warning on line 568</b> - Unknown tag "@PHPUnit" used<br>
+<b>Warning on line 597</b> - Unknown tag "@PHPUnit" used<br>
 <h2>Errors:</h2><br>
-<b>Error on line 349</b> - DocBlock has multiple @return tags, illegal. ignoring additional tag "@return string Error message if something failed"<br>
-<b>Error on line 599</b> - DocBlock has multiple @return tags, illegal. ignoring additional tag "@return string message  Error message"<br>
+<b>Error on line 348</b> - DocBlock has multiple @return tags, illegal. ignoring additional tag "@return object Error message if something failed@throws void"<br>
+<b>Error on line 597</b> - DocBlock has multiple @return tags, illegal. ignoring additional tag "@return array message  Error message@throws void"<br>
 <a name="expFiles.php"></a>
 <h1>expFiles.php</h1>
 <h2>Warnings:</h2><br>
@@ -2069,9 +2047,9 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <a name="expHtmlToPDF.php"></a>
 <h1>expHtmlToPDF.php</h1>
 <h2>Warnings:</h2><br>
-<b>Warning on line 36</b> - example file "<font color="#008800"><i>//-- Create sample PDF and embed in browser." does not exist<br>
 <b>Warning on line 36</b> - no @package tag was used in a DocBlock for class expHtmlToPDF<br>
-<b>Warning on line 279</b> - File "H:\Source\exponent-cms\framework\core\subsystems\expHtmlToPDF.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 36</b> - example file "<font color="#008800"><i>//-- Create sample PDF and embed in browser." does not exist<br>
+<b>Warning on line 285</b> - File "H:\Source\exponent-cms\framework\core\subsystems\expHtmlToPDF.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <a name="expJavascript.php"></a>
 <h1>expJavascript.php</h1>
 <h2>Warnings:</h2><br>
@@ -2145,21 +2123,11 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
      $emailItem->send();" does not exist<br>
 <b>Warning on line 856</b> - example file "This will generate some PDF data from an unknown PDF library without writing it to disk, then will pass that data off to Swift to attach." does not exist<br>
 <b>Warning on line 888</b> - example file "This will show three different ways to attach files, two from a path on disk, and one from a url." does not exist<br>
-<a name="expMail3.php"></a>
-<h1>expMail3.php</h1>
-<h2>Warnings:</h2><br>
-<b>Warning on line 19</b> - package Framework is already in category Documentation, will now replace with category Exponent-CMS<br>
-<b>Warning on line 25</b> - Unknown tag "@define" used<br>
-<b>Warning on line 32</b> - no @package tag was used in a DocBlock for class expMail3<br>
-<a name="expModules.php"></a>
-<h1>expModules.php</h1>
-<h2>Warnings:</h2><br>
-<b>Warning on line 22</b> - package Framework is already in category Exponent-CMS, will now replace with category Documentation<br>
 <a name="expNestedNode.php"></a>
 <h1>expNestedNode.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 37</b> - Unknown tag "@PHPUnit" used<br>
-<b>Warning on line 219</b> - Unknown tag "@PHPUnit" used<br>
+<b>Warning on line 223</b> - Unknown tag "@PHPUnit" used<br>
 <a name="exponent.js.php"></a>
 <h1>exponent.js.php</h1>
 <h2>Warnings:</h2><br>
@@ -2168,10 +2136,10 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>exponent.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 28</b> - Unknown tag "@define" used<br>
-<b>Warning on line 31</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\exponent.php<br>
+<b>Warning on line 30</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\exponent.php<br>
 <h2>Errors:</h2><br>
-<b>Error on line 31</b> - require_once include's DocBlock has @package tag, illegal. ignoring tag "@package Exponent-CMS"<br>
-<b>Error on line 63</b> - global variable $db the exponent database object specified in @global tag was never found<br>
+<b>Error on line 30</b> - require_once include's DocBlock has @package tag, illegal. ignoring tag "@package Exponent-CMS"<br>
+<b>Error on line 62</b> - global variable $db the exponent database object specified in @global tag was never found<br>
 <a name="exponent_bootstrap.php"></a>
 <h1>exponent_bootstrap.php</h1>
 <h2>Warnings:</h2><br>
@@ -2284,7 +2252,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <a name="expPaginator.php"></a>
 <h1>expPaginator.php</h1>
 <h2>Warnings:</h2><br>
-<b>Warning on line 522</b> - docblock template never terminated with /**#@-*/<br>
+<b>Warning on line 521</b> - docblock template never terminated with /**#@-*/<br>
 <a name="expRatings.php"></a>
 <h1>expRatings.php</h1>
 <h2>Warnings:</h2><br>
@@ -2292,13 +2260,13 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <a name="expRecord.php"></a>
 <h1>expRecord.php</h1>
 <h2>Warnings:</h2><br>
-<b>Warning on line 241</b> - Unknown tag "@PHPUnit" used<br>
 <b>Warning on line 241</b> - Unknown tag "@requires" used<br>
+<b>Warning on line 241</b> - Unknown tag "@PHPUnit" used<br>
 <a name="expRss.php"></a>
 <h1>expRss.php</h1>
 <h2>Warnings:</h2><br>
-<b>Warning on line 25</b> - no @package tag was used in a DocBlock for class expRss<br>
 <b>Warning on line 25</b> - Unknown tag "@define" used<br>
+<b>Warning on line 25</b> - no @package tag was used in a DocBlock for class expRss<br>
 <b>Warning on line 48</b> - File "H:\Source\exponent-cms\framework\core\database\definitions\expRss.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <a name="expString.php"></a>
 <h1>expString.php</h1>
@@ -2328,8 +2296,8 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>expVersion.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 19</b> - package Framework is already in category Documentation, will now replace with category Exponent-CMS<br>
-<b>Warning on line 21</b> - Unknown tag "@define" used<br>
 <b>Warning on line 21</b> - no @package tag was used in a DocBlock for class expVersion<br>
+<b>Warning on line 21</b> - Unknown tag "@define" used<br>
 <b>Warning on line 34</b> - Unknown tag "@node" used<br>
 <a name="external_address.php"></a>
 <h1>external_address.php</h1>
@@ -2349,8 +2317,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>fakeform.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 24</b> - no @package tag was used in a DocBlock for class fakeform<br>
-<b>Warning on line 114</b> - File "H:\Source\exponent-cms\subsystems\forms\fakeform.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 31</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\fakeform.php<br>
 <a name="faq.php"></a>
 <h1>faq.php</h1>
 <h2>Warnings:</h2><br>
@@ -2402,7 +2369,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>filemanagercontrol.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 36</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\filemanagercontrol.php<br>
+<b>Warning on line 28</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\filemanagercontrol.php<br>
 <a name="files.info.php"></a>
 <h1>files.info.php</h1>
 <h2>Warnings:</h2><br>
@@ -2482,7 +2449,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>form.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 39</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\form.php<br>
+<b>Warning on line 31</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\form.php<br>
 <a name="formbuilder_address.php"></a>
 <h1>formbuilder_address.php</h1>
 <h2>Warnings:</h2><br>
@@ -2494,8 +2461,8 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <a name="formbuilder_form.php"></a>
 <h1>formbuilder_form.php</h1>
 <h2>Warnings:</h2><br>
-<b>Warning on line 20</b> - no @package tag was used in a DocBlock for class formbuilder_form<br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
+<b>Warning on line 20</b> - no @package tag was used in a DocBlock for class formbuilder_form<br>
 <b>Warning on line 33</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\datatypes\formbuilder_form.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 57</b> - File "H:\Source\exponent-cms\datatypes\definitions\formbuilder_form.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 196</b> - File "H:\Source\exponent-cms\datatypes\formbuilder_form.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
@@ -2503,8 +2470,8 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>formbuilder_report.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 18</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\datatypes\formbuilder_report.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 20</b> - no @package tag was used in a DocBlock for class formbuilder_report<br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
+<b>Warning on line 20</b> - no @package tag was used in a DocBlock for class formbuilder_report<br>
 <b>Warning on line 46</b> - File "H:\Source\exponent-cms\datatypes\definitions\formbuilder_report.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 88</b> - File "H:\Source\exponent-cms\datatypes\formbuilder_report.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <a name="forms.info.php"></a>
@@ -2839,7 +2806,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>genericcontrol.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 32</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\genericcontrol.php<br>
+<b>Warning on line 28</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\genericcontrol.php<br>
 <a name="geo.info.php"></a>
 <h1>geo.info.php</h1>
 <h2>Warnings:</h2><br>
@@ -2987,7 +2954,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>hiddenfieldcontrol.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 32</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\hiddenfieldcontrol.php<br>
+<b>Warning on line 28</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\hiddenfieldcontrol.php<br>
 <a name="htmlarea_configs.php"></a>
 <h1>htmlarea_configs.php</h1>
 <h2>Warnings:</h2><br>
@@ -3014,16 +2981,16 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h2>Warnings:</h2><br>
 <b>Warning on line 7</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\subsystems\forms\controls\htmlcontrol.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 36</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\htmlcontrol.php<br>
+<b>Warning on line 27</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\htmlcontrol.php<br>
 <a name="htmleditorcontrol.php"></a>
 <h1>htmleditorcontrol.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 21</b> - Unknown tag "@define" used<br>
-<b>Warning on line 37</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\htmleditorcontrol.php<br>
-<b>Warning on line 53</b> - 
+<b>Warning on line 29</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\htmleditorcontrol.php<br>
+<b>Warning on line 36</b> - no @package tag was used in a DocBlock for class htmleditorcontrol<br>
+<b>Warning on line 36</b> - 
 duplicate class element "htmleditorcontrol" in file H:\Source\exponent-cms\subsystems\forms\controls\htmleditorcontrol.php will be ignored.
 Use an @ignore tag on the original if you want this case to be documented.<br>
-<b>Warning on line 53</b> - no @package tag was used in a DocBlock for class htmleditorcontrol<br>
 <a name="htmleditor_ckeditor.php"></a>
 <h1>htmleditor_ckeditor.php</h1>
 <h2>Warnings:</h2><br>
@@ -3088,16 +3055,16 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <a name="info.php"></a>
 <h1>info.php</h1>
 <h2>Warnings:</h2><br>
-<b>Warning on line 7</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\modules\importer\importers\eql\info.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 7</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\modules\importer\importers\files\info.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 7</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\modules\exporter\exporters\files\info.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 7</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\modules\importer\importers\usercsv\info.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 7</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\modules\exporter\exporters\eql\info.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 29</b> - File "H:\Source\exponent-cms\modules\exporter\exporters\eql\info.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 7</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\modules\importer\importers\files\info.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 7</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\modules\importer\importers\usercsv\info.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 7</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\modules\importer\importers\eql\info.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 29</b> - File "H:\Source\exponent-cms\modules\exporter\exporters\files\info.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 29</b> - File "H:\Source\exponent-cms\modules\importer\importers\files\info.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 29</b> - File "H:\Source\exponent-cms\modules\importer\importers\eql\info.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 29</b> - File "H:\Source\exponent-cms\modules\exporter\exporters\eql\info.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 29</b> - File "H:\Source\exponent-cms\modules\importer\importers\usercsv\info.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 29</b> - File "H:\Source\exponent-cms\modules\importer\importers\eql\info.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 167</b> - File "H:\Source\exponent-cms\subsystems\info.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <a name="infopopup.php"></a>
 <h1>infopopup.php</h1>
@@ -3171,8 +3138,8 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <a name="keywords.php"></a>
 <h1>keywords.php</h1>
 <h2>Warnings:</h2><br>
-<b>Warning on line 20</b> - no @package tag was used in a DocBlock for class keywords<br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
+<b>Warning on line 20</b> - no @package tag was used in a DocBlock for class keywords<br>
 <b>Warning on line 83</b> - File "H:\Source\exponent-cms\framework\datatypes\keywords.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <a name="lang.auto.manifest.php"></a>
 <h1>lang.auto.manifest.php</h1>
@@ -3221,13 +3188,12 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>listbuildercontrol.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 36</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\listbuildercontrol.php<br>
+<b>Warning on line 28</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\listbuildercontrol.php<br>
 <a name="listcontrol.php"></a>
 <h1>listcontrol.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 24</b> - no @package tag was used in a DocBlock for class listcontrol<br>
-<b>Warning on line 151</b> - File "H:\Source\exponent-cms\subsystems\forms\controls\listcontrol.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 28</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\listcontrol.php<br>
 <a name="list_exporters.php"></a>
 <h1>list_exporters.php</h1>
 <h2>Warnings:</h2><br>
@@ -3268,83 +3234,6 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>Logout Only.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 6</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\modules\loginmodule\views\Logout Only.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<a name="mail.info.php"></a>
-<h1>mail.info.php</h1>
-<h2>Warnings:</h2><br>
-<b>Warning on line 28</b> - File "H:\Source\exponent-cms\subsystems\mail.info.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<a name="mail.php"></a>
-<h1>mail.php</h1>
-<h2>Warnings:</h2><br>
-<b>Warning on line 18</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\mail.php<br>
-<b>Warning on line 18</b> - Unknown tag "@define" used<br>
-<b>Warning on line 18</b> - package Framework is already in category Documentation, will now replace with category Subsystem<br>
-<b>Warning on line 24</b> - no @package tag was used in a DocBlock for class exponentMail<br>
-<b>Warning on line 74</b> - example file "You can specify how you would like to send mail, overriding the system default." does not exist<br>
-<b>Warning on line 230</b> - example file "This will send a quick message, showing you what basic fields are required." does not exist<br>
-<b>Warning on line 294</b> - example file "This will send a basic message, using the setHTMLBody method to set the text
-
-
-
-
-     $emailItem = new expMail();
-
-
-
-      $emailItem->setHTMLBody('<h2>My Text</h2> ');
-     $emailItem->setTextBody('My Text ');
-
-     $emailItem->addTo('myemail@mysite.com');
-     $emailItem->addFrom('from@sender.com');
-     $emailItem->subject('Hello World!');
-
-     if($emailItem->send() < 1) //the number of recipients
-      {
-          eDebug "There was an error sending your message."
-     }" does not exist<br>
-<b>Warning on line 398</b> - example file "This will include the passed HTML and will set it as an addition to the message body." does not exist<br>
-<b>Warning on line 464</b> - example file "This will include the passed HTML and will set it as an addition to the message body." does not exist<br>
-<b>Warning on line 500</b> - example file "This will set the message body to the HTML that is passed in. This is the standard way to set the email message body." does not exist<br>
-<b>Warning on line 537</b> - example file "This will set the message body to plain text. Usually people do this because the recipient cannot read HTML email." does not exist<br>
-<b>Warning on line 576</b> - example file "This will set the message body in HTML and also include a text counterpart in case the recipient cannot view HTML." does not exist<br>
-<b>Warning on line 689</b> - example file "This will send a basic message, looping through an array of email addresses add adding them to the BCC list." does not exist<br>
-<b>Warning on line 752</b> - example file "This will send a basic message, looping through an array of email addresses add adding them to the BCC list." does not exist<br>
-<b>Warning on line 788</b> - example file "This will send a basic message, but you can see how the subject line works." does not exist<br>
-<b>Warning on line 829</b> - example file "This returns the Message ID on the mail
-
-    $emailItem = new expMail();
-
-  $emailItem->addText('My Text ');
-     $emailItem->addText('Line Two ');
-  $emailItem->addText('Line Three ');
-
-    $emailItem->addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));
-    $emailItem->addFrom('from@sender.com');
-    $emailItem->subject('Hello World!');
-
-  echo "$emailItem->messageID()";
-
-    $emailItem->send();" does not exist<br>
-<b>Warning on line 864</b> - example file "This will send a basic message, but you can see how the subject line works." does not exist<br>
-<b>Warning on line 919</b> - example file "This will set some recipients and then clear them
-     $emailItem = new expMail();
-
-
-   $emailItem->addText('My Text ');
-      $emailItem->addText('Line Two ');
-   $emailItem->addText('Line Three ');
-
-     $emailItem->addTo('bob@smith.com', 'Bob Smith');
-     $emailItem->addTo('bob2@smith.com', 'Bob2 Smith');
-     $emailItem->addTo('bob3@smith.com', 'Bob3 Smith');
-
-   $emailItem->flushRecipients();
-
-     $emailItem->addTo('whataboutbob@smith.com', 'Frank Smith');
-
-
-     $emailItem->send();" does not exist<br>
-<b>Warning on line 962</b> - example file "This will generate some PDF data from an unknown PDF library without writing it to disk, then will pass that data off to Swift to attach." does not exist<br>
-<b>Warning on line 1007</b> - example file "This will show three different ways to attach files, two from a path on disk, and one from a url." does not exist<br>
 <a name="maint.defaults.php"></a>
 <h1>maint.defaults.php</h1>
 <h2>Warnings:</h2><br>
@@ -3394,28 +3283,6 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>manage_standalone.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 33</b> - File "H:\Source\exponent-cms\modules\navigationmodule\actions\manage_standalone.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<a name="manifest.php"></a>
-<h1>manifest.php</h1>
-<h2>Warnings:</h2><br>
-<b>Warning on line 9</b> - File "H:\Source\exponent-cms\modules\importer\importers\eql\manifest.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 9</b> - File "H:\Source\exponent-cms\modules\previewmodule\manifest.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 9</b> - File "H:\Source\exponent-cms\modules\formmodule\manifest.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 10</b> - File "H:\Source\exponent-cms\modules\exporter\exporters\files\manifest.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 10</b> - File "H:\Source\exponent-cms\modules\exporter\manifest.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 10</b> - File "H:\Source\exponent-cms\modules\info\manifest.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 10</b> - File "H:\Source\exponent-cms\modules\importer\manifest.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 12</b> - File "H:\Source\exponent-cms\modules\exporter\exporters\eql\manifest.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 15</b> - File "H:\Source\exponent-cms\modules\importer\importers\usercsv\manifest.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 15</b> - File "H:\Source\exponent-cms\modules\importer\importers\files\manifest.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 17</b> - File "H:\Source\exponent-cms\modules\common\manifest.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 32</b> - File "H:\Source\exponent-cms\modules\simplepollmodule\manifest.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 33</b> - File "H:\Source\exponent-cms\modules\formbuilder\manifest.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 35</b> - File "H:\Source\exponent-cms\modules\loginmodule\manifest.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 35</b> - File "H:\Source\exponent-cms\modules\containermodule\manifest.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 62</b> - File "H:\Source\exponent-cms\modules\calendarmodule\manifest.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 70</b> - File "H:\Source\exponent-cms\modules\navigationmodule\manifest.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 80</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\manifest.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 110</b> - File "H:\Source\exponent-cms\modules\administrationmodule\manifest.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <a name="mapper.php"></a>
 <h1>mapper.php</h1>
 <h2>Warnings:</h2><br>
@@ -3430,7 +3297,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>massmailcontrol.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 36</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\massmailcontrol.php<br>
+<b>Warning on line 28</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\massmailcontrol.php<br>
 <a name="menu.inc"></a>
 <h1>menu.inc</h1>
 <h2>Warnings:</h2><br>
@@ -3576,8 +3443,8 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <a name="monthyearcontrol.php"></a>
 <h1>monthyearcontrol.php</h1>
 <h2>Warnings:</h2><br>
-<b>Warning on line 29</b> - Unknown tag "@define" used<br>
-<b>Warning on line 34</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\monthyearcontrol.php<br>
+<b>Warning on line 25</b> - Unknown tag "@define" used<br>
+<b>Warning on line 26</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\monthyearcontrol.php<br>
 <a name="motd.php"></a>
 <h1>motd.php</h1>
 <h2>Warnings:</h2><br>
@@ -3620,8 +3487,8 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>news.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 19</b> - no @package tag was used in a DocBlock for class news<br>
-<b>Warning on line 66</b> - File "H:\Source\exponent-cms\framework\core\database\definitions\news.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 66</b> - File "H:\Source\exponent-cms\framework\datatypes\news.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 66</b> - File "H:\Source\exponent-cms\framework\core\database\definitions\news.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <a name="newsController.php"></a>
 <h1>newsController.php</h1>
 <h2>Warnings:</h2><br>
@@ -3643,7 +3510,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>nextbackcontrol.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 38</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\nextbackcontrol.php<br>
+<b>Warning on line 28</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\nextbackcontrol.php<br>
 <a name="normal.php"></a>
 <h1>normal.php</h1>
 <h2>Warnings:</h2><br>
@@ -3820,14 +3687,14 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <a name="passthru.php"></a>
 <h1>passthru.php</h1>
 <h2>Warnings:</h2><br>
-<b>Warning on line 3</b> - Unknown tag "@define" used<br>
 <b>Warning on line 3</b> - no @package tag was used in a DocBlock for class passthru<br>
+<b>Warning on line 3</b> - Unknown tag "@define" used<br>
 <b>Warning on line 230</b> - File "H:\Source\exponent-cms\framework\modules\ecommerce\billingcalculators\passthru.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <a name="passwordcontrol.php"></a>
 <h1>passwordcontrol.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 36</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\passwordcontrol.php<br>
+<b>Warning on line 28</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\passwordcontrol.php<br>
 <a name="Past Events.php"></a>
 <h1>Past Events.php</h1>
 <h2>Warnings:</h2><br>
@@ -3841,7 +3708,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>paypalExpressCheckout.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 3</b> - no @package tag was used in a DocBlock for class paypalExpressCheckout<br>
-<b>Warning on line 833</b> - File "H:\Source\exponent-cms\framework\modules\ecommerce\billingcalculators\paypalExpressCheckout.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 838</b> - File "H:\Source\exponent-cms\framework\modules\ecommerce\billingcalculators\paypalExpressCheckout.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <a name="permissions.info.php"></a>
 <h1>permissions.info.php</h1>
 <h2>Warnings:</h2><br>
@@ -3863,8 +3730,8 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Warning on line 57</b> - Unknown tag "@node" used<br>
 <b>Warning on line 149</b> - Unknown tag "@node" used<br>
 <b>Warning on line 159</b> - Unknown tag "@node" used<br>
-<b>Warning on line 170</b> - Unknown tag "@state" used<br>
 <b>Warning on line 170</b> - Unknown tag "@node" used<br>
+<b>Warning on line 170</b> - Unknown tag "@state" used<br>
 <b>Warning on line 192</b> - Unknown tag "@node" used<br>
 <b>Warning on line 265</b> - Unknown tag "@state" used<br>
 <b>Warning on line 265</b> - Unknown tag "@node" used<br>
@@ -3912,8 +3779,8 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>poll_answer.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 18</b> - File "H:\Source\exponent-cms\datatypes\definitions\poll_answer.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 34</b> - Unknown tag "@define" used<br>
 <b>Warning on line 34</b> - no @package tag was used in a DocBlock for class poll_answer<br>
+<b>Warning on line 34</b> - Unknown tag "@define" used<br>
 <b>Warning on line 58</b> - File "H:\Source\exponent-cms\datatypes\poll_answer.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <a name="poll_question.php"></a>
 <h1>poll_question.php</h1>
@@ -3938,7 +3805,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h2>Warnings:</h2><br>
 <b>Warning on line 14</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\subsystems\forms\controls\popupdatetimecontrol.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 36</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\popupdatetimecontrol.php<br>
+<b>Warning on line 28</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\popupdatetimecontrol.php<br>
 <a name="popup_printerfriendly.php"></a>
 <h1>popup_printerfriendly.php</h1>
 <h2>Warnings:</h2><br>
@@ -4043,7 +3910,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>quantitycontrol.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 36</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\quantitycontrol.php<br>
+<b>Warning on line 28</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\quantitycontrol.php<br>
 <a name="Quick Links.php"></a>
 <h1>Quick Links.php</h1>
 <h2>Warnings:</h2><br>
@@ -4053,13 +3920,13 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h2>Warnings:</h2><br>
 <b>Warning on line 14</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\subsystems\forms\controls\radiocontrol.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 34</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\radiocontrol.php<br>
+<b>Warning on line 30</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\radiocontrol.php<br>
 <a name="radiogroupcontrol.php"></a>
 <h1>radiogroupcontrol.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 19</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\subsystems\forms\controls\radiogroupcontrol.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 34</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\radiogroupcontrol.php<br>
+<b>Warning on line 30</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\radiogroupcontrol.php<br>
 <a name="recyclebin.php"></a>
 <h1>recyclebin.php</h1>
 <h2>Warnings:</h2><br>
@@ -4336,8 +4203,8 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>section_template.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 19</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\datatypes\section_template.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 20</b> - no @package tag was used in a DocBlock for class section_template<br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
+<b>Warning on line 20</b> - no @package tag was used in a DocBlock for class section_template<br>
 <b>Warning on line 51</b> - File "H:\Source\exponent-cms\datatypes\definitions\section_template.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 90</b> - File "H:\Source\exponent-cms\datatypes\section_template.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <a name="security.info.php"></a>
@@ -4476,8 +4343,8 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>simplepollmodule_config.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 23</b> - File "H:\Source\exponent-cms\datatypes\definitions\simplepollmodule_config.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 34</b> - Unknown tag "@define" used<br>
 <b>Warning on line 34</b> - no @package tag was used in a DocBlock for class simplepollmodule_config<br>
+<b>Warning on line 34</b> - Unknown tag "@define" used<br>
 <b>Warning on line 71</b> - File "H:\Source\exponent-cms\datatypes\simplepollmodule_config.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <a name="site.defaults.php"></a>
 <h1>site.defaults.php</h1>
@@ -4505,30 +4372,6 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>smtp.info.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 7</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\subsystems\smtp.info.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 29</b> - File "H:\Source\exponent-cms\subsystems\smtp.info.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<a name="smtp.manifest.php"></a>
-<h1>smtp.manifest.php</h1>
-<h2>Warnings:</h2><br>
-<b>Warning on line 10</b> - File "H:\Source\exponent-cms\subsystems\smtp.manifest.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<a name="smtp.php"></a>
-<h1>smtp.php</h1>
-<h2>Warnings:</h2><br>
-<b>Warning on line 23</b> - Unknown tag "@define" used<br>
-<b>Warning on line 24</b> - package Framework is already in category Subsystem, will now replace with category Documentation<br>
-<b>Warning on line 24</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\smtp.php<br>
-<b>Warning on line 48</b> - Unknown tag "@udata" used<br>
-<b>Warning on line 48</b> - Unknown tag "@node" used<br>
-<b>Warning on line 252</b> - Unknown tag "@node" used<br>
-<b>Warning on line 274</b> - Unknown tag "@node" used<br>
-<b>Warning on line 288</b> - Unknown tag "@state" used<br>
-<b>Warning on line 288</b> - Unknown tag "@node" used<br>
-<b>Warning on line 303</b> - Unknown tag "@node" used<br>
-<b>Warning on line 322</b> - Unknown tag "@node" used<br>
-<b>Warning on line 339</b> - Unknown tag "@node" used<br>
-<b>Warning on line 339</b> - Unknown tag "@state" used<br>
-<b>Warning on line 352</b> - Unknown tag "@state" used<br>
-<b>Warning on line 352</b> - Unknown tag "@node" used<br>
-<b>Warning on line 384</b> - Unknown tag "@node" used<br>
 <a name="smtp.structure.php"></a>
 <h1>smtp.structure.php</h1>
 <h2>Warnings:</h2><br>
@@ -4574,16 +4417,16 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <a name="start.php"></a>
 <h1>start.php</h1>
 <h2>Warnings:</h2><br>
-<b>Warning on line 7</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\modules\importer\importers\eql\start.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 7</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\modules\importer\importers\files\start.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 7</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\modules\importer\importers\eql\start.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 16</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\modules\importer\importers\usercsv\start.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
 <b>Warning on line 35</b> - File "H:\Source\exponent-cms\modules\exporter\exporters\files\start.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 36</b> - File "H:\Source\exponent-cms\modules\exporter\exporters\eql\start.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 40</b> - File "H:\Source\exponent-cms\modules\importer\importers\eql\start.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 40</b> - File "H:\Source\exponent-cms\modules\importer\importers\files\start.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 40</b> - File "H:\Source\exponent-cms\modules\importer\importers\eql\start.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 58</b> - File "H:\Source\exponent-cms\modules\importer\importers\usercsv\start.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <a name="storeCategories.php"></a>
 <h1>storeCategories.php</h1>
@@ -4646,16 +4489,6 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h2>Warnings:</h2><br>
 <b>Warning on line 19</b> - no @package tag was used in a DocBlock for class tablebasedcalculator<br>
 <b>Warning on line 132</b> - File "H:\Source\exponent-cms\framework\modules\ecommerce\shippingcalculators\tablebasedcalculator.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<a name="tagpickercontrol.php"></a>
-<h1>tagpickercontrol.php</h1>
-<h2>Warnings:</h2><br>
-<b>Warning on line 21</b> - no @package tag was used in a DocBlock for class tagpickercontrol<br>
-<b>Warning on line 81</b> - File "H:\Source\exponent-cms\subsystems\forms\controls\tagpickercontrol.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<a name="tagtreecontrol.php"></a>
-<h1>tagtreecontrol.php</h1>
-<h2>Warnings:</h2><br>
-<b>Warning on line 21</b> - no @package tag was used in a DocBlock for class tagtreecontrol<br>
-<b>Warning on line 96</b> - File "H:\Source\exponent-cms\subsystems\forms\controls\tagtreecontrol.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <a name="taxclass.php"></a>
 <h1>taxclass.php</h1>
 <h2>Warnings:</h2><br>
@@ -4696,13 +4529,13 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h2>Warnings:</h2><br>
 <b>Warning on line 21</b> - Unknown tag "@define" used<br>
 <b>Warning on line 36</b> - no @package tag was used in a DocBlock for class BaseTemplate<br>
-<b>Warning on line 160</b> - no @package tag was used in a DocBlock for class template<br>
-<b>Warning on line 202</b> - no @package tag was used in a DocBlock for class controllerTemplate<br>
-<b>Warning on line 254</b> - no @package tag was used in a DocBlock for class ControlTemplate<br>
-<b>Warning on line 295</b> - no @package tag was used in a DocBlock for class formtemplate<br>
-<b>Warning on line 310</b> - no @package tag was used in a DocBlock for class filetemplate<br>
-<b>Warning on line 332</b> - no @package tag was used in a DocBlock for class standalonetemplate<br>
-<b>Warning on line 496</b> - File "H:\Source\exponent-cms\subsystems\template.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 153</b> - no @package tag was used in a DocBlock for class template<br>
+<b>Warning on line 187</b> - no @package tag was used in a DocBlock for class controllerTemplate<br>
+<b>Warning on line 238</b> - no @package tag was used in a DocBlock for class ControlTemplate<br>
+<b>Warning on line 272</b> - no @package tag was used in a DocBlock for class formtemplate<br>
+<b>Warning on line 280</b> - no @package tag was used in a DocBlock for class filetemplate<br>
+<b>Warning on line 295</b> - no @package tag was used in a DocBlock for class standalonetemplate<br>
+<b>Warning on line 452</b> - File "H:\Source\exponent-cms\subsystems\template.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <a name="testbot.php"></a>
 <h1>testbot.php</h1>
 <h2>Warnings:</h2><br>
@@ -4719,7 +4552,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h2>Warnings:</h2><br>
 <b>Warning on line 16</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\subsystems\forms\controls\textcontrol.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 36</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\textcontrol.php<br>
+<b>Warning on line 28</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\textcontrol.php<br>
 <a name="textController.php"></a>
 <h1>textController.php</h1>
 <h2>Warnings:</h2><br>
@@ -4730,7 +4563,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h2>Warnings:</h2><br>
 <b>Warning on line 15</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\subsystems\forms\controls\texteditorcontrol.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 36</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\texteditorcontrol.php<br>
+<b>Warning on line 28</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\texteditorcontrol.php<br>
 <a name="textitem.info.php"></a>
 <h1>textitem.info.php</h1>
 <h2>Warnings:</h2><br>
@@ -4903,7 +4736,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>uploadcontrol.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 36</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\uploadcontrol.php<br>
+<b>Warning on line 28</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\uploadcontrol.php<br>
 <a name="upload_extension.php"></a>
 <h1>upload_extension.php</h1>
 <h2>Warnings:</h2><br>
@@ -4955,8 +4788,8 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <a name="usersController.php"></a>
 <h1>usersController.php</h1>
 <h2>Warnings:</h2><br>
-<b>Warning on line 20</b> - no @package tag was used in a DocBlock for class usersController<br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
+<b>Warning on line 20</b> - no @package tag was used in a DocBlock for class usersController<br>
 <b>Warning on line 683</b> - File "H:\Source\exponent-cms\framework\modules\users\controllers\usersController.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <a name="usersessions.php"></a>
 <h1>usersessions.php</h1>
@@ -4971,14 +4804,14 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>user_avatar.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 22</b> - no @package tag was used in a DocBlock for class user_avatar<br>
-<b>Warning on line 31</b> - File "H:\Source\exponent-cms\framework\core\database\definitions\user_avatar.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
-<b>Warning on line 75</b> - File "H:\Source\exponent-cms\framework\modules\users\extensions\user_avatar.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 33</b> - File "H:\Source\exponent-cms\framework\core\database\definitions\user_avatar.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 80</b> - File "H:\Source\exponent-cms\framework\modules\users\extensions\user_avatar.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <a name="user_bio.php"></a>
 <h1>user_bio.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 19</b> - no @package tag was used in a DocBlock for class user_bio<br>
-<b>Warning on line 31</b> - File "H:\Source\exponent-cms\framework\modules\users\extensions\user_bio.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 31</b> - File "H:\Source\exponent-cms\framework\core\database\definitions\user_bio.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 31</b> - File "H:\Source\exponent-cms\framework\modules\users\extensions\user_bio.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <a name="user_instant_messenger.php"></a>
 <h1>user_instant_messenger.php</h1>
 <h2>Warnings:</h2><br>
@@ -5113,18 +4946,17 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <h1>yuicalendarcontrol.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 36</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\yuicalendarcontrol.php<br>
+<b>Warning on line 28</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\yuicalendarcontrol.php<br>
 <a name="yuidatetimecontrol.php"></a>
 <h1>yuidatetimecontrol.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 19</b> - Unknown tag "@define" used<br>
-<b>Warning on line 25</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\yuidatetimecontrol.php<br>
-<b>Warning on line 27</b> - no @package tag was used in a DocBlock for class yuidatetimecontrol<br>
+<b>Warning on line 27</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\yuidatetimecontrol.php<br>
 <a name="yuieditorcontrol.php"></a>
 <h1>yuieditorcontrol.php</h1>
 <h2>Warnings:</h2><br>
 <b>Warning on line 20</b> - Unknown tag "@define" used<br>
-<b>Warning on line 36</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\yuieditorcontrol.php<br>
+<b>Warning on line 28</b> - no @package tag was used in a DocBlock for file H:\Source\exponent-cms\subsystems\forms\controls\yuieditorcontrol.php<br>
 <a name="z-navigation.php"></a>
 <h1>z-navigation.php</h1>
 <h2>Warnings:</h2><br>
@@ -5470,8 +5302,8 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <a name="_sourcePicker.php"></a>
 <h1>_sourcePicker.php</h1>
 <h2>Warnings:</h2><br>
-<b>Warning on line 7</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\modules\workflow\views\_sourcePicker.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <b>Warning on line 7</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\modules\containermodule\views\_sourcePicker.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 7</b> - File "H:\Source\exponent-cms\subsystems\lang\eng_US\modules\workflow\views\_sourcePicker.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
 <a name="_subscriptionmanager.php"></a>
 <h1>_subscriptionmanager.php</h1>
 <h2>Warnings:</h2><br>
@@ -5599,7 +5431,7 @@ Use an @ignore tag on the original if you want this case to be documented.<br>
 <b>Error on line 764</b> - "@return" tag was used without any parameters, illegal<br>
         <div class="credit">
 		    <hr class="separator" />
-		    Documentation generated on Fri, 29 Jul 2011 19:27:26 -0400 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+		    Documentation generated on Sat, 30 Jul 2011 23:46:10 -0400 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
 	      </div>
       </td></tr></table>
     </td>
