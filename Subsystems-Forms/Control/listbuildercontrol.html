@@ -196,6 +196,7 @@ Source Location: /framework/core/subsystems-1/forms/controls/listbuildercontrol.
 		<p align="center" class="short-description"><strong><a href="#sec_vars">Properties</a></strong></p>
 		<ul>
 		  		  <li><a href="../../Subsystems-Forms/Control/listbuildercontrol.html#var$newList">$newList</a></li>
+		  		  <li><a href="../../Subsystems-Forms/Control/listbuildercontrol.html#var$process">$process</a></li>
 		  		  <li><a href="../../Subsystems-Forms/Control/listbuildercontrol.html#var$size">$size</a></li>
 		  		  <li><a href="../../Subsystems-Forms/Control/listbuildercontrol.html#var$source">$source</a></li>
 		  		</ul>
@@ -369,9 +370,14 @@ Source Location: /framework/core/subsystems-1/forms/controls/listbuildercontrol.
 		<div class="info-box-body">
 			<div class="var-summary">
 			<table border="0" cellspacing="0" cellpadding="0" class="var-summary">
-																															<div class="var-title">
+																																					<div class="var-title">
 					<tr><td class="var-title"><span class="var-type-summary">mixed</span>&nbsp;&nbsp;</td>
 					<td class="var-title"><a href="#$newList" title="details" class="var-name-summary">$newList</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">mixed</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$process" title="details" class="var-name-summary">$process</a>&nbsp;&nbsp;</td>
 					<td class="var-summary-description"></td></tr>
 				</div>
 													<div class="var-title">
@@ -461,13 +467,30 @@ Source Location: /framework/core/subsystems-1/forms/controls/listbuildercontrol.
 												</div>
 		<div class="info-box-body">
 			<a name="var$newList" id="$newList"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>&nbsp;&nbsp;
 			<span class="var-name">$newList</span>
 			 = <span class="var-default"> false</span>			<span class="smalllinenumber">[line 33]</span>
+		</span>
+	</div>
+
+		
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$process" id="$process"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>&nbsp;&nbsp;
+			<span class="var-name">$process</span>
+			 = <span class="var-default"> null</span>			<span class="smalllinenumber">[line 34]</span>
 		</span>
 	</div>
 
@@ -529,7 +552,7 @@ Source Location: /framework/core/subsystems-1/forms/controls/listbuildercontrol.
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">static method parseData</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 107]</span>
+	<span class="method-title">static method parseData</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 119]</span>
 </div>
 <br />
 
@@ -585,7 +608,7 @@ $forceindex = false]&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">Constructor __construct</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 37]</span>
+	<span class="method-title">Constructor __construct</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 38]</span>
 </div>
 <br />
 
@@ -635,7 +658,7 @@ $size = 8]&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">controlToHTML</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 51]</span>
+	<span class="method-title">controlToHTML</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 52]</span>
 </div>
 <br />
 
@@ -644,7 +667,8 @@ $size = 8]&nbsp;
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>void controlToHTML(
 
-$name&nbsp;
+$name, [
+$process = null]&nbsp;
 )</code>
     </td></tr></table>
     </td></tr></table><br /></div>
@@ -656,6 +680,12 @@ $name&nbsp;
 				<span class="var-type"></span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$name:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$process:&nbsp;</span></td>
 				<td>
 							</td></tr>
 				</table>
@@ -676,7 +706,7 @@ $name&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">form</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 123]</span>
+	<span class="method-title">form</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 135]</span>
 </div>
 <br />
 
@@ -712,7 +742,7 @@ $object&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">name</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 35]</span>
+	<span class="method-title">name</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 36]</span>
 </div>
 <br />
 
@@ -741,7 +771,7 @@ $object&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">onRegister</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 103]</span>
+	<span class="method-title">onRegister</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 115]</span>
 </div>
 <br />
 
@@ -782,7 +812,7 @@ $object&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">update</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 143]</span>
+	<span class="method-title">update</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 149]</span>
 </div>
 <br />
 
@@ -825,7 +855,7 @@ $object&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">_normalize</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 84]</span>
+	<span class="method-title">_normalize</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 94]</span>
 </div>
 <br />
 
@@ -851,7 +881,7 @@ $object&nbsp;
 
         <div class="credit">
 		    <hr class="separator" />
-		    Documentation generated on Fri, 05 Aug 2011 15:08:24 -0400 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+		    Documentation generated on Fri, 02 Sep 2011 07:18:12 -0400 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
 	      </div>
       </td></tr></table>
     </td>
