@@ -18,7 +18,7 @@
     <td colspan="2" class="header-menu">
       
                         
-                                                                                            		[ <a href="classtrees_Framework.html" class="menu">class tree: Framework</a> ]
+                                                                                                                                      		[ <a href="classtrees_Framework.html" class="menu">class tree: Framework</a> ]
 		[ <a href="elementindex_Framework.html" class="menu">index: Framework</a> ]
             [ <a href="elementindex.html" class="menu">all elements</a> ]
     </td>
@@ -46,8 +46,11 @@
       <b>Packages:</b><br />
   <div class="package">
               <a href="li_Framework.html">Framework</a><br />
-              <a href="li_Exponent-CMS.html">Exponent-CMS</a><br />
+              <a href="li_com-tecnick-tcpdf.html">com-tecnick-tcpdf</a><br />
+              <a href="li_Core.html">Core</a><br />
               <a href="li_Installation.html">Installation</a><br />
+              <a href="li_Modules.html">Modules</a><br />
+              <a href="li_SimplePie.html">SimplePie</a><br />
               <a href="li_Smarty-Plugins.html">Smarty-Plugins</a><br />
               <a href="li_Subsystems.html">Subsystems</a><br />
               <a href="li_Subsystems-Forms.html">Subsystems-Forms</a><br />
@@ -59,8 +62,8 @@
       <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
 
 <div align="center"><h1>Todo List</h1></div>
-<h2>Exponent-CMS</h2>
-<h3><a href="Exponent-CMS/expMail.html#methodaddHeaders">expMail::addHeaders()</a></h3>
+<h2>Subsystems</h2>
+<h3><a href="Subsystems/Subsystems/expMail.html#methodaddHeaders">expMail::addHeaders()</a></h3>
 <ul>
     <li><p>add support for other types of headers mentioned below, and a second pass in value/switch to specify what kind headers you are adding</p><p><ul><li>Text Headers
             Text headers are the simplest type of Header. They contain textual information with no special information included within it for example the Subject header in a message.</li><li>Parameterized Headers
@@ -70,39 +73,55 @@
             ID headers contain identifiers for the entity (or the message). The most notable ID header is the Message-ID header on the message itself.</li><li>Path Headers
             Path headers are like very-restricted mailbox headers. They contain a single email address with no associated name. The Return-Path header of a message is a path header.</li></ul></p></li>
 </ul>
-<h3><a href="Exponent-CMS/expMail.html#methodaddTo">expMail::addTo()</a></h3>
+<h3><a href="Subsystems/Subsystems/expMail.html#methodaddTo">expMail::addTo()</a></h3>
 <ul>
     <li><p>A nice future feature addition would be to allow the passing in of associative arrays like so:</p><p>$emailsToSendTo = array('bob@smith.com'=&gt;'Bob Smith', 'mary@smith.com'=&gt;'Mary Smith');</p><p>$emailItem-&gt;addTo($emailsToSendTo);</p><p>OR</p><p>$emailItem-&gt;addTo('array('myemail@mysite.com'=&gt;'Website Owner', 'secondemail@website.com'=&gt;'Frank Jones');</p><p>Actually, cleanup should be done so that this function only takes associative arrays, and nothing else.</p></li>
 </ul>
-<h3><a href="Exponent-CMS/expMail.html#methodbatchSend">expMail::batchSend()</a></h3>
+<h3><a href="Subsystems/Subsystems/expMail.html#methodbatchSend">expMail::batchSend()</a></h3>
 <ul>
     <li>Update this section to use batch processing properly</li>
 </ul>
-<h3><a href="Exponent-CMS/expMail.html#methodquickBatchSend">expMail::quickBatchSend()</a></h3>
-<ul>
-    <li>Update this section to use batch processing properly</li>
-</ul>
-<h3><a href="Exponent-CMS/expMail.html#methodquickSend">expMail::quickSend()</a></h3>
+<h3><a href="Subsystems/Subsystems/expMail.html#methodquickSend">expMail::quickSend()</a></h3>
 <ul>
     <li>May add allowing a string param to be passed as the message (text_message) using all defaults to mail it.</li>
 </ul>
-<h3><a href="Exponent-CMS/expMail.html#methodsend">expMail::send()</a></h3>
+<h3><a href="Subsystems/Subsystems/expMail.html#methodsend">expMail::send()</a></h3>
 <ul>
     <li>This function needs some work, some error checking. It needs to check that all of the values necessary to send a basic message are present     If they are not, the system should respond in a friendly manner that something went wrong. The underlying swift errors are ugly, and so     no one should ever see them.</li>
 </ul>
-<h3><a href="Exponent-CMS/expMail.html#methodtest">expMail::test()</a></h3>
+<h3><a href="Subsystems/Subsystems/expMail.html#methodtest">expMail::test()</a></h3>
 <ul>
     <li>Update this section to use more error checking</li>
 </ul>
-<h3><a href="Exponent-CMS/expMail.html#method__construct">expMail::__construct()</a></h3>
+<h2>SimplePie</h2>
+<h3><a href="SimplePie/SimplePie.html">SimplePie</a></h3>
 <ul>
-    <li>add further documentation for using settings other than the system default</li>
-    <li>add support for telling the constructor where the system specific Mail Transit Authority is: i.e. where sendmail or exim is if not in the default /usr/sbin</li>
-    <li>drop support for passing in custom &quot;connections&quot;, a Swift 3.x relic that we do not need.</li>
+    <li>phpDoc comments</li>
+</ul>
+<h3><a href="SimplePie/SimplePie_Parser.html">SimplePie_Parser</a></h3>
+<ul>
+    <li>phpDoc comments</li>
+</ul>
+<h3><a href="SimplePie/SimplePie_Rating.html">SimplePie_Rating</a></h3>
+<ul>
+    <li>phpDoc comments</li>
+</ul>
+<h3><a href="SimplePie/SimplePie_Restriction.html">SimplePie_Restriction</a></h3>
+<ul>
+    <li>phpDoc comments</li>
+</ul>
+<h3><a href="SimplePie/SimplePie_Source.html">SimplePie_Source</a></h3>
+<ul>
+    <li>phpDoc comments</li>
+</ul>
+<h2>Modules</h2>
+<h3><a href="Modules/Models/SimplePie_Sanitize.html">SimplePie_Sanitize</a></h3>
+<ul>
+    <li>Move to using an actual HTML parser (this will allow tags to be properly stripped, and to switch between HTML and XHTML), this will also make it easier to shorten a string while preserving HTML tags</li>
 </ul>
         <div class="credit">
 		    <hr class="separator" />
-		    Documentation generated on Fri, 02 Sep 2011 07:19:19 -0400 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+		    Documentation generated on Tue, 14 Feb 2012 14:02:31 -0500 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
 	      </div>
       </td></tr></table>
     </td>
