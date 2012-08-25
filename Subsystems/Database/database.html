@@ -17,7 +17,7 @@
   <tr>
     <td colspan="2" class="header-menu">
       
-                                                                                                                          
+                                                                                                            
                                     		[ <a href="../../classtrees_Subsystems.html" class="menu">class tree: Subsystems</a> ]
 		[ <a href="../../elementindex_Subsystems.html" class="menu">index: Subsystems</a> ]
             [ <a href="../../elementindex.html" class="menu">all elements</a> ]
@@ -46,7 +46,6 @@
       <b>Packages:</b><br />
   <div class="package">
               <a href="../../li_Framework.html">Framework</a><br />
-              <a href="../../li_com-tecnick-tcpdf.html">com-tecnick-tcpdf</a><br />
               <a href="../../li_Core.html">Core</a><br />
               <a href="../../li_Installation.html">Installation</a><br />
               <a href="../../li_Modules.html">Modules</a><br />
@@ -76,6 +75,7 @@
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expGeo.php.html">expGeo.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expHistory.php.html">expHistory.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expHtmlToPDF.php.html">expHtmlToPDF.php</a></span><br />
+			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expHtmlToPDF2.php.html">expHtmlToPDF2.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expJavascript.php.html">expJavascript.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expLang.php.html">expLang.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expLDAP.php.html">expLDAP.php</a></span><br />
@@ -108,6 +108,7 @@
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expGeo.html">expGeo</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expHistory.html">expHistory</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expHtmlToPDF.html">expHtmlToPDF</a>    </span>	 <br />
+	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expHtmlToPDF2.html">expHtmlToPDF2</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expJavascript.html">expJavascript</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expLang.html">expLang</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expLDAP.html">expLDAP</a>    </span>	 <br />
@@ -162,7 +163,7 @@ Source Location: /framework/core/subsystems/expDatabase.php<br /><br />
 </strong></p>
 <span class="description"><p>This is the generic implementation of the database class.</p></span>
 		<p class="notes">
-			Located in <a class="field" href="_framework---core---subsystems---expDatabase.php.html">/framework/core/subsystems/expDatabase.php</a> [<span class="field">line 93</span>]
+			Located in <a class="field" href="_framework---core---subsystems---expDatabase.php.html">/framework/core/subsystems/expDatabase.php</a> [<span class="field">line 213</span>]
 		</p>
 
 		
@@ -581,7 +582,7 @@ Source Location: /framework/core/subsystems/expDatabase.php<br /><br />
 					<td class="method-definition"></td></tr>
 				</div>
 																<div class="method-definition">
-											<tr><td class="method-definition"><span class="method-result">null|void</span>&nbsp;&nbsp;</td>
+											<tr><td class="method-definition"><span class="method-result">object|null|void</span>&nbsp;&nbsp;</td>
 										<td class="method-definition"><a href="#selectObject" title="details" class="method-name">selectObject</a>()&nbsp;&nbsp;</td>
 					<td class="method-definition">Select a single object.</td></tr>
 				</div>
@@ -713,7 +714,7 @@ Source Location: /framework/core/subsystems/expDatabase.php<br /><br />
 		<span class="var-title">
 			<span class="var-type">string</span>&nbsp;&nbsp;
 			<span class="var-name">$connection</span>
-			 = <span class="var-default"> null</span>			<span class="smalllinenumber">[line 98]</span>
+			 = <span class="var-default"> null</span>			<span class="smalllinenumber">[line 218]</span>
 		</span>
 	</div>
 
@@ -730,7 +731,7 @@ Source Location: /framework/core/subsystems/expDatabase.php<br /><br />
 		<span class="var-title">
 			<span class="var-type">boolean</span>&nbsp;&nbsp;
 			<span class="var-name">$havedb</span>
-			 = <span class="var-default"> false</span>			<span class="smalllinenumber">[line 102]</span>
+			 = <span class="var-default"> false</span>			<span class="smalllinenumber">[line 222]</span>
 		</span>
 	</div>
 
@@ -747,7 +748,7 @@ Source Location: /framework/core/subsystems/expDatabase.php<br /><br />
 		<span class="var-title">
 			<span class="var-type">string</span>&nbsp;&nbsp;
 			<span class="var-name">$prefix</span>
-			 = <span class="var-default"> &quot;&quot;</span>			<span class="smalllinenumber">[line 106]</span>
+			 = <span class="var-default"> &quot;&quot;</span>			<span class="smalllinenumber">[line 226]</span>
 		</span>
 	</div>
 
@@ -776,7 +777,7 @@ Source Location: /framework/core/subsystems/expDatabase.php<br /><br />
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">Constructor __construct</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 126]</span>
+	<span class="method-title">Constructor __construct</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 246]</span>
 </div>
 <br />
 
@@ -867,7 +868,7 @@ $new = false]&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">adjustNestedTreeBetween</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 993]</span>
+	<span class="method-title">adjustNestedTreeBetween</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 1119]</span>
 </div>
 <br />
 
@@ -934,7 +935,7 @@ $width&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">adjustNestedTreeFrom</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 978]</span>
+	<span class="method-title">adjustNestedTreeFrom</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 1104]</span>
 </div>
 <br />
 
@@ -994,7 +995,7 @@ $width&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">alterTable</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 351]</span>
+	<span class="method-title">alterTable</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 473]</span>
 </div>
 <br />
 
@@ -1079,7 +1080,7 @@ $aggressive = false]&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">columnUpdate</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 403]</span>
+	<span class="method-title">columnUpdate</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 525]</span>
 </div>
 <br />
 
@@ -1142,6 +1143,10 @@ $where = 1]&nbsp;
 		<div class="notes">Redefined in descendants as:</div>
 		<ul class="redefinitions">
 					<li>
+				<a href="../../Subsystems/Database/mysql_database.html#methodcolumnUpdate">mysql_database::columnUpdate()</a>
+								: Update a column in all records in a table
+							</li>
+					<li>
 				<a href="../../Subsystems/Database/mysqli_database.html#methodcolumnUpdate">mysqli_database::columnUpdate()</a>
 								: Update a column in all records in a table
 							</li>
@@ -1153,7 +1158,7 @@ $where = 1]&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">countObjects</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 557]</span>
+	<span class="method-title">countObjects</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 679]</span>
 </div>
 <br />
 
@@ -1224,7 +1229,7 @@ $where = null]&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">countObjectsBySql</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 565]</span>
+	<span class="method-title">countObjectsBySql</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 687]</span>
 </div>
 <br />
 
@@ -1287,7 +1292,7 @@ $sql&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">createTable</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 142]</span>
+	<span class="method-title">createTable</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 262]</span>
 </div>
 <br />
 
@@ -1365,7 +1370,7 @@ $info&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">databaseInfo</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 758]</span>
+	<span class="method-title">databaseInfo</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 880]</span>
 </div>
 <br />
 
@@ -1417,7 +1422,7 @@ $info&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">decrement</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 694]</span>
+	<span class="method-title">decrement</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 816]</span>
 </div>
 <br />
 
@@ -1491,7 +1496,7 @@ $where = null]&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">delete</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 626]</span>
+	<span class="method-title">delete</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 748]</span>
 </div>
 <br />
 
@@ -1562,7 +1567,7 @@ $where = null]&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">deleteNestedNode</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 1040]</span>
+	<span class="method-title">deleteNestedNode</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 1166]</span>
 </div>
 <br />
 
@@ -1622,7 +1627,7 @@ $rgt&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">describeTable</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 780]</span>
+	<span class="method-title">describeTable</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 902]</span>
 </div>
 <br />
 
@@ -1674,7 +1679,7 @@ $table&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">dropTable</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 362]</span>
+	<span class="method-title">dropTable</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 484]</span>
 </div>
 <br />
 
@@ -1738,7 +1743,7 @@ $table&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">error</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 846]</span>
+	<span class="method-title">error</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 972]</span>
 </div>
 <br />
 
@@ -1790,7 +1795,7 @@ $table&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">escapeString</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 859]</span>
+	<span class="method-title">escapeString</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 985]</span>
 </div>
 <br />
 
@@ -1832,6 +1837,10 @@ $string&nbsp;
 		<div class="notes">Redefined in descendants as:</div>
 		<ul class="redefinitions">
 					<li>
+				<a href="../../Subsystems/Database/mysql_database.html#methodescapeString">mysql_database::escapeString()</a>
+								: Unescape a string based on the database connection
+							</li>
+					<li>
 				<a href="../../Subsystems/Database/mysqli_database.html#methodescapeString">mysqli_database::escapeString()</a>
 								: Unescape a string based on the database connection
 							</li>
@@ -1843,7 +1852,7 @@ $string&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">fieldSQL</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 151]</span>
+	<span class="method-title">fieldSQL</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 271]</span>
 </div>
 <br />
 
@@ -1903,7 +1912,7 @@ $def&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">getDataDefinition</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 791]</span>
+	<span class="method-title">getDataDefinition</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 913]</span>
 </div>
 <br />
 
@@ -1967,7 +1976,7 @@ $table&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">getDDFieldType</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 799]</span>
+	<span class="method-title">getDDFieldType</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 921]</span>
 </div>
 <br />
 
@@ -2006,10 +2015,6 @@ $fieldObj&nbsp;
 								: This is an internal function for use only within the MySQL database class
 							</li>
 					<li>
-				<a href="../../Subsystems/Database/mysqlid_database.html#methodgetDDFieldType">mysqlid_database::getDDFieldType()</a>
-								: This is an internal function for use only within the MySQL database class
-							</li>
-					<li>
 				<a href="../../Subsystems/Database/postgres_database.html#methodgetDDFieldType">postgres_database::getDDFieldType()</a>
 							</li>
 				</ul>
@@ -2020,7 +2025,7 @@ $fieldObj&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">getDDStringLen</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 827]</span>
+	<span class="method-title">getDDStringLen</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 951]</span>
 </div>
 <br />
 
@@ -2059,10 +2064,6 @@ $fieldObj&nbsp;
 								: This is an internal function for use only within the MySQL database class
 							</li>
 					<li>
-				<a href="../../Subsystems/Database/mysqlid_database.html#methodgetDDStringLen">mysqlid_database::getDDStringLen()</a>
-								: This is an internal function for use only within the MySQL database class
-							</li>
-					<li>
 				<a href="../../Subsystems/Database/postgres_database.html#methodgetDDStringLen">postgres_database::getDDStringLen()</a>
 							</li>
 				</ul>
@@ -2073,7 +2074,7 @@ $fieldObj&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">getTables</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 716]</span>
+	<span class="method-title">getTables</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 838]</span>
 </div>
 <br />
 
@@ -2137,7 +2138,7 @@ $prefixed_only = true]&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">getTextColumns</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 1128]</span>
+	<span class="method-title">getTextColumns</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 1254]</span>
 </div>
 <br />
 
@@ -2179,6 +2180,10 @@ $table&nbsp;
 		<div class="notes">Redefined in descendants as:</div>
 		<ul class="redefinitions">
 					<li>
+				<a href="../../Subsystems/Database/mysql_database.html#methodgetTextColumns">mysql_database::getTextColumns()</a>
+								: This function returns all the text columns in the given table
+							</li>
+					<li>
 				<a href="../../Subsystems/Database/mysqli_database.html#methodgetTextColumns">mysqli_database::getTextColumns()</a>
 								: This function returns all the text columns in the given table
 							</li>
@@ -2190,7 +2195,7 @@ $table&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">increment</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 682]</span>
+	<span class="method-title">increment</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 804]</span>
 </div>
 <br />
 
@@ -2275,7 +2280,7 @@ $where = null]&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">inError</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 852]</span>
+	<span class="method-title">inError</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 978]</span>
 </div>
 <br />
 
@@ -2327,7 +2332,7 @@ $where = null]&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">insertObject</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 617]</span>
+	<span class="method-title">insertObject</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 739]</span>
 </div>
 <br />
 
@@ -2335,7 +2340,7 @@ $where = null]&nbsp;
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>int|void insertObject(
-Object
+object
 $object, string
 $table&nbsp;
 )</code>
@@ -2348,7 +2353,7 @@ $table&nbsp;
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">Object</span>&nbsp;&nbsp;</td>
+				<span class="var-type">object</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$object:&nbsp;</span></td>
 				<td>
@@ -2398,7 +2403,7 @@ $table&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">isValid</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 231]</span>
+	<span class="method-title">isValid</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 353]</span>
 </div>
 <br />
 
@@ -2446,7 +2451,7 @@ $table&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">limit</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 868]</span>
+	<span class="method-title">limit</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 994]</span>
 </div>
 <br />
 
@@ -2491,9 +2496,6 @@ $offset&nbsp;
 				<a href="../../Subsystems/Database/mysql_database.html#methodlimit">mysql_database::limit()</a>
 							</li>
 					<li>
-				<a href="../../Subsystems/Database/mysqlid_database.html#methodlimit">mysqlid_database::limit()</a>
-							</li>
-					<li>
 				<a href="../../Subsystems/Database/postgres_database.html#methodlimit">postgres_database::limit()</a>
 							</li>
 				</ul>
@@ -2504,7 +2506,7 @@ $offset&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">lockTable</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 598]</span>
+	<span class="method-title">lockTable</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 720]</span>
 </div>
 <br />
 
@@ -2551,6 +2553,9 @@ $lockType = &quot;WRITE&quot;]&nbsp;
 		<div class="notes">Redefined in descendants as:</div>
 		<ul class="redefinitions">
 					<li>
+				<a href="../../Subsystems/Database/mysql_database.html#methodlockTable">mysql_database::lockTable()</a>
+							</li>
+					<li>
 				<a href="../../Subsystems/Database/mysqli_database.html#methodlockTable">mysqli_database::lockTable()</a>
 							</li>
 				</ul>
@@ -2561,7 +2566,7 @@ $lockType = &quot;WRITE&quot;]&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">max</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 656]</span>
+	<span class="method-title">max</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 778]</span>
 </div>
 <br />
 
@@ -2646,7 +2651,7 @@ $where = null]&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">min</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 670]</span>
+	<span class="method-title">min</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 792]</span>
 </div>
 <br />
 
@@ -2657,7 +2662,7 @@ $where = null]&nbsp;
 string
 $table, string
 $attribute, [string
-$groupfields = null], [$where
+$groupfields = null], [string
 $where = null]&nbsp;
 )</code>
     </td></tr></table>
@@ -2687,7 +2692,7 @@ $where = null]&nbsp;
 				<td>
 				<span class="var-description"> A comma-separated list of fields (or a single field) name, used     for a GROUP BY clause.  This can also be passed as an array of fields.</span>			</td></tr>
 					<tr><td class="indent">
-				<span class="var-type">$where</span>&nbsp;&nbsp;</td>
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$where:&nbsp;</span></td>
 				<td>
@@ -2731,7 +2736,7 @@ $where = null]&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">optimize</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 724]</span>
+	<span class="method-title">optimize</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 846]</span>
 </div>
 <br />
 
@@ -2795,7 +2800,7 @@ $table&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">queryRows</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 573]</span>
+	<span class="method-title">queryRows</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 695]</span>
 </div>
 <br />
 
@@ -2849,7 +2854,7 @@ $sql&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">selectAndJoinObjects</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 458]</span>
+	<span class="method-title">selectAndJoinObjects</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 580]</span>
 </div>
 <br />
 
@@ -2950,7 +2955,7 @@ $orderby = null]&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">selectArray</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 918]</span>
+	<span class="method-title">selectArray</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 1044]</span>
 </div>
 <br />
 
@@ -3032,7 +3037,7 @@ $is_revisioned = false]&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">selectArrays</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 887]</span>
+	<span class="method-title">selectArrays</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 1013]</span>
 </div>
 <br />
 
@@ -3107,7 +3112,7 @@ $orderby = null]&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">selectArraysBySql</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 900]</span>
+	<span class="method-title">selectArraysBySql</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 1026]</span>
 </div>
 <br />
 
@@ -3168,7 +3173,7 @@ $sql&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">selectColumn</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 482]</span>
+	<span class="method-title">selectColumn</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 604]</span>
 </div>
 <br />
 
@@ -3255,7 +3260,7 @@ $distinct = false]&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">selectDropdown</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 501]</span>
+	<span class="method-title">selectDropdown</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 623]</span>
 </div>
 <br />
 
@@ -3335,7 +3340,7 @@ $orderby = null]&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">selectExpObjects</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 934]</span>
+	<span class="method-title">selectExpObjects</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 1060]</span>
 </div>
 <br />
 
@@ -3436,7 +3441,7 @@ $cascade_except = false]&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">selectExpObjectsBySql</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 944]</span>
+	<span class="method-title">selectExpObjectsBySql</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 1070]</span>
 </div>
 <br />
 
@@ -3503,7 +3508,7 @@ $get_attached = true]&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">selectFormattedNestedTree</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 962]</span>
+	<span class="method-title">selectFormattedNestedTree</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 1088]</span>
 </div>
 <br />
 
@@ -3549,7 +3554,7 @@ $table&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">selectNestedBranch</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 1006]</span>
+	<span class="method-title">selectNestedBranch</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 1132]</span>
 </div>
 <br />
 
@@ -3602,7 +3607,7 @@ $node = null]&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">selectNestedNodeChildren</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 1094]</span>
+	<span class="method-title">selectNestedNodeChildren</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 1220]</span>
 </div>
 <br />
 
@@ -3655,7 +3660,7 @@ $node = null]&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">selectNestedNodeParent</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 1073]</span>
+	<span class="method-title">selectNestedNodeParent</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 1199]</span>
 </div>
 <br />
 
@@ -3708,7 +3713,7 @@ $node = null]&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">selectNestedTree</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 952]</span>
+	<span class="method-title">selectNestedTree</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 1078]</span>
 </div>
 <br />
 
@@ -3754,14 +3759,14 @@ $table&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">selectObject</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 591]</span>
+	<span class="method-title">selectObject</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 713]</span>
 </div>
 <br />
 
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
-		<code>null|void selectObject(
+		<code>object|null|void selectObject(
 string
 $table, string
 $where&nbsp;
@@ -3825,7 +3830,7 @@ $where&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">selectObjectBySql</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 466]</span>
+	<span class="method-title">selectObjectBySql</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 588]</span>
 </div>
 <br />
 
@@ -3881,7 +3886,7 @@ $sql&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">selectObjects</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 436]</span>
+	<span class="method-title">selectObjects</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 558]</span>
 </div>
 <br />
 
@@ -3959,7 +3964,7 @@ $orderby = null]&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">selectObjectsBySql</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 472]</span>
+	<span class="method-title">selectObjectsBySql</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 594]</span>
 </div>
 <br />
 
@@ -4018,7 +4023,7 @@ $sql&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">selectObjectsInArray</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 526]</span>
+	<span class="method-title">selectObjectsInArray</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 648]</span>
 </div>
 <br />
 
@@ -4084,7 +4089,7 @@ $orderby = null]&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">selectObjectsIndexedArray</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 548]</span>
+	<span class="method-title">selectObjectsIndexedArray</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 670]</span>
 </div>
 <br />
 
@@ -4162,7 +4167,7 @@ $orderby = null]&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">selectPathToNestedNode</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 1054]</span>
+	<span class="method-title">selectPathToNestedNode</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 1180]</span>
 </div>
 <br />
 
@@ -4215,7 +4220,7 @@ $node = null]&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">selectSearch</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 443]</span>
+	<span class="method-title">selectSearch</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 565]</span>
 </div>
 <br />
 
@@ -4274,7 +4279,7 @@ $where = null]&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">selectSum</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 490]</span>
+	<span class="method-title">selectSum</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 612]</span>
 </div>
 <br />
 
@@ -4340,7 +4345,7 @@ $where = null]&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">selectValue</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 509]</span>
+	<span class="method-title">selectValue</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 631]</span>
 </div>
 <br />
 
@@ -4413,7 +4418,7 @@ $where = null]&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">selectValueBySql</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 515]</span>
+	<span class="method-title">selectValueBySql</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 637]</span>
 </div>
 <br />
 
@@ -4459,7 +4464,7 @@ $sql&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">setUniqueFlag</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 412]</span>
+	<span class="method-title">setUniqueFlag</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 534]</span>
 </div>
 <br />
 
@@ -4516,7 +4521,7 @@ $where = 1]&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">sql</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 378]</span>
+	<span class="method-title">sql</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 500]</span>
 </div>
 <br />
 
@@ -4587,7 +4592,7 @@ $escape = true]&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">switchValues</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 206]</span>
+	<span class="method-title">switchValues</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 326]</span>
 </div>
 <br />
 
@@ -4668,7 +4673,7 @@ $additional_where = null]&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">tableExists</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 705]</span>
+	<span class="method-title">tableExists</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 827]</span>
 </div>
 <br />
 
@@ -4732,7 +4737,7 @@ $table&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">tableInfo</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 738]</span>
+	<span class="method-title">tableInfo</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 860]</span>
 </div>
 <br />
 
@@ -4789,7 +4794,7 @@ $table&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">tableIsEmpty</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 749]</span>
+	<span class="method-title">tableIsEmpty</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 871]</span>
 </div>
 <br />
 
@@ -4842,7 +4847,7 @@ $table&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">testPrivileges</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 253]</span>
+	<span class="method-title">testPrivileges</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 375]</span>
 </div>
 <br />
 
@@ -4883,7 +4888,7 @@ $table&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">toggle</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 388]</span>
+	<span class="method-title">toggle</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 510]</span>
 </div>
 <br />
 
@@ -4948,7 +4953,7 @@ $where = null]&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">translateTableStatus</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 766]</span>
+	<span class="method-title">translateTableStatus</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 888]</span>
 </div>
 <br />
 
@@ -5001,7 +5006,7 @@ $status&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">unlockTables</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 603]</span>
+	<span class="method-title">unlockTables</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 725]</span>
 </div>
 <br />
 
@@ -5029,6 +5034,9 @@ $status&nbsp;
 		<div class="notes">Redefined in descendants as:</div>
 		<ul class="redefinitions">
 					<li>
+				<a href="../../Subsystems/Database/mysql_database.html#methodunlockTables">mysql_database::unlockTables()</a>
+							</li>
+					<li>
 				<a href="../../Subsystems/Database/mysqli_database.html#methodunlockTables">mysqli_database::unlockTables()</a>
 							</li>
 				</ul>
@@ -5039,7 +5047,7 @@ $status&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">updateObject</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 643]</span>
+	<span class="method-title">updateObject</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 765]</span>
 </div>
 <br />
 
@@ -5133,7 +5141,7 @@ $is_revisioned = false]&nbsp;
 
         <div class="credit">
 		    <hr class="separator" />
-		    Documentation generated on Tue, 14 Feb 2012 14:01:37 -0500 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
+		    Documentation generated on Fri, 24 Aug 2012 21:34:07 -0400 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
 	      </div>
       </td></tr></table>
     </td>

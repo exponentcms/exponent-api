@@ -17,7 +17,7 @@
   <tr>
     <td colspan="2" class="header-menu">
       
-                                                                                                                          
+                                                                                                            
                                     		[ <a href="../../classtrees_Subsystems.html" class="menu">class tree: Subsystems</a> ]
 		[ <a href="../../elementindex_Subsystems.html" class="menu">index: Subsystems</a> ]
             [ <a href="../../elementindex.html" class="menu">all elements</a> ]
@@ -46,7 +46,6 @@
       <b>Packages:</b><br />
   <div class="package">
               <a href="../../li_Framework.html">Framework</a><br />
-              <a href="../../li_com-tecnick-tcpdf.html">com-tecnick-tcpdf</a><br />
               <a href="../../li_Core.html">Core</a><br />
               <a href="../../li_Installation.html">Installation</a><br />
               <a href="../../li_Modules.html">Modules</a><br />
@@ -76,6 +75,7 @@
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expGeo.php.html">expGeo.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expHistory.php.html">expHistory.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expHtmlToPDF.php.html">expHtmlToPDF.php</a></span><br />
+			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expHtmlToPDF2.php.html">expHtmlToPDF2.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expJavascript.php.html">expJavascript.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expLang.php.html">expLang.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expLDAP.php.html">expLDAP.php</a></span><br />
@@ -108,6 +108,7 @@
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expGeo.html">expGeo</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expHistory.html">expHistory</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expHtmlToPDF.html">expHtmlToPDF</a>    </span>	 <br />
+	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expHtmlToPDF2.html">expHtmlToPDF2</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expJavascript.html">expJavascript</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expLang.html">expLang</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expLDAP.html">expLDAP</a>    </span>	 <br />
@@ -159,22 +160,7 @@ Source Location: /framework/core/subsystems/expHistory.php<br /><br />
 
         		<p align="center" class="short-description"><strong>This is the class expHistory  Exponent History Subsystem
 </strong></p>
-<span class="description"><p>The expHistory class is responsible for keeping track of which pages a user  has visited while on the site. It also tracks what type of page/view each one is,  viewable, manageable, editable and uses this information to intelligently route  the user to proper places.  A developer can also use the methods of this class  help Exponent know where to route users.</p><p><strong>DEFINITIONS</strong>  <ul><li><strong>viewable</strong> - standard (public) page/view like that for showall, show, etc...</li><li><strong>manageable</strong> - page/view with list of editable items for management like manage_tags, etc...  Typically you wouldn't edit in this view</li><li><strong>editable</strong> - a page/view used to edit an item or settings</li></ul></p><p><strong>USAGE EXAMPLES:</strong></p><p><strong>Example: How to set a history WayPoint</strong></p><p>This example shows how you would use expHistory to set a waypoint inside one of your actions</p><p><ol><li><div class="src-line">&nbsp;<span class="src-key">public&nbsp;</span><span class="src-key">function&nbsp;</span><span class="src-id">showall</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
-<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-id"><a href="../../Subsystems/Subsystems/expHistory.html">expHistory</a></span><span class="src-sym">::</span><a href="../../Subsystems/Subsystems/expHistory.html#methodset">set</a><span class="src-sym">(</span><span class="src-str">'viewable'</span><span class="src-sym">,&nbsp;</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">params</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
-<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$record&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id">foo</span><span class="src-sym">(</span><span class="src-var">$id</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
-<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../Framework/_framework---core---expFramework.php.html#functionassign_to_template">assign_to_template</a><span class="src-sym">(</span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'record'</span>=&gt;<span class="src-var">$record</span><span class="src-sym">))</span><span class="src-sym">;</span></div></li>
-<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
-</ol></p><p><strong>Example: Return to a waypoint (automagically)</strong></p><p>This example show how to let expHistory::back() automagically determine where to route the user after an action completes</p><p><ol><li><div class="src-line">&nbsp;<span class="src-key">public&nbsp;</span><span class="src-key">function&nbsp;</span><span class="src-id">delete</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
-<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$record&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id">foo</span><span class="src-sym">(</span><span class="src-var">$id</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
-<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$record</span><span class="src-sym">-&gt;</span><span class="src-id">delete</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
-<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-id"><a href="../../Subsystems/Subsystems/expHistory.html">expHistory</a></span><span class="src-sym">::</span><a href="../../Subsystems/Subsystems/expHistory.html#methodback">back</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
-<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
-</ol></p><p><strong>Example: Return to a waypoint (manually)</strong>  This example show how use expHistory::returnTo() to manually route the user after an  action completes. In this example the user will be routed to the last form he/she was on.</p><p><ol><li><div class="src-line">&nbsp;<span class="src-key">public&nbsp;</span><span class="src-key">function&nbsp;</span><span class="src-id">delete</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
-<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$record&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id">foo</span><span class="src-sym">(</span><span class="src-var">$id</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
-<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$record</span><span class="src-sym">-&gt;</span><span class="src-id">delete</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
-<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-id"><a href="../../Subsystems/Subsystems/expHistory.html">expHistory</a></span><span class="src-sym">::</span><a href="../../Subsystems/Subsystems/expHistory.html#methodreturnTo">returnTo</a><span class="src-sym">(</span><span class="src-str">'editable'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
-<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
-</ol></p></span>
+<span class="description"><p>The expHistory class is responsible for keeping track of which pages a user  has visited while on the site. It also tracks what type of page/view each one is,  viewable, manageable, editable and uses this information to intelligently route  the user to proper places.  A developer can also use the methods of this class  help Exponent know where to route users.</p><p><strong>DEFINITIONS</strong>  <ul><li><strong>viewable</strong> - standard (public) page/view like that for showall, show, etc...</li><li><strong>manageable</strong> - page/view with list of editable items for management like manage_tags, etc...  Typically you wouldn't edit in this view</li><li><strong>editable</strong> - a page/view used to edit an item or settings</li></ul></p><p><strong>USAGE EXAMPLES:</strong></p><p><strong>Example: How to set a history WayPoint</strong></p><p>This example shows how you would use expHistory to set a waypoint inside one of your actions</p><p><ol></ol></p><p><strong>Example: Return to a waypoint (automagically)</strong></p><p>This example show how to let expHistory::back() automagically determine where to route the user after an action completes</p><p><ol></ol></p><p><strong>Example: Return to a waypoint (manually)</strong>  This example show how use expHistory::returnTo() to manually route the user after an  action completes. In this example the user will be routed to the last form he/she was on.</p><p><ol></ol></p></span>
 		<p class="notes">
 			Located in <a class="field" href="_framework---core---subsystems---expHistory.php.html">/framework/core/subsystems/expHistory.php</a> [<span class="field">line 76</span>]
 		</p>
@@ -256,10 +242,10 @@ Source Location: /framework/core/subsystems/expHistory.php<br /><br />
 				<table border="0" cellspacing="0" cellpadding="0" class="method-summary">
 																				<div class="method-definition">
 					<tr><td class="method-definition">static
-											<span class="method-result">This</span>&nbsp;&nbsp;
+											<span class="method-result">void</span>&nbsp;&nbsp;
 					</td>
 					<td class="method-definition"><a href="#back" title="details" class="method-name">back</a>()&nbsp;&nbsp;</td>
-					<td class="method-definition"></td></tr>
+					<td class="method-definition">This function will redirect the user to the last page or action not marked  as editable.</td></tr>
 				</div>
 																<div class="method-definition">
 					<tr><td class="method-definition">static
@@ -391,25 +377,24 @@ Source Location: /framework/core/subsystems/expHistory.php<br /><br />
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">static method back</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 225]</span>
+	<span class="method-title">static method back</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 224]</span>
 </div>
 <br />
 
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
-		<code>static This back(
+		<code>static void back(
 )</code>
     </td></tr></table>
     </td></tr></table><br /></div>
 
-	
+	<p align="center" class="short-description"><strong>This function will redirect the user to the last page or action not marked  as editable.
+</strong></p>
+
 	<br />
 	<strong>API Tags:</strong><br />
 <table border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td><p>returns nothing..it forces a header redirect.</p><p>This function will redirect the user to the last page or action not marked  as editable.</p></td>
-  </tr>
   <tr>
     <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
   </tr>
@@ -456,7 +441,7 @@ Source Location: /framework/core/subsystems/expHistory.php<br /><br />
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">static method getBack</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 237]</span>
+	<span class="method-title">static method getBack</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 236]</span>
 </div>
 <br />
 
@@ -501,7 +486,7 @@ $depth&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">static method getLast</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 248]</span>
+	<span class="method-title">static method getLast</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 247]</span>
 </div>
 <br />
 
@@ -544,7 +529,7 @@ $url_type = null]&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">static method getLastNotEditable</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 253]</span>
+	<span class="method-title">static method getLastNotEditable</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 252]</span>
 </div>
 <br />
 
@@ -575,7 +560,7 @@ $url_type = null]&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">static method redirecto_login</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 274]</span>
+	<span class="method-title">static method redirecto_login</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 273]</span>
 </div>
 <br />
 
@@ -618,7 +603,7 @@ $redirecturl = null]&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">static method returnTo</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 243]</span>
+	<span class="method-title">static method returnTo</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 242]</span>
 </div>
 <br />
 
@@ -833,7 +818,7 @@ $params = array()]&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">lastUrl</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 258]</span>
+	<span class="method-title">lastUrl</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 257]</span>
 </div>
 <br />
 
@@ -928,7 +913,7 @@ $params&nbsp;
 
         <div class="credit">
 		    <hr class="separator" />
-		    Documentation generated on Tue, 14 Feb 2012 14:01:39 -0500 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
+		    Documentation generated on Fri, 24 Aug 2012 21:34:10 -0400 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
 	      </div>
       </td></tr></table>
     </td>

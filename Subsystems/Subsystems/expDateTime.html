@@ -17,7 +17,7 @@
   <tr>
     <td colspan="2" class="header-menu">
       
-                                                                                                                          
+                                                                                                            
                                     		[ <a href="../../classtrees_Subsystems.html" class="menu">class tree: Subsystems</a> ]
 		[ <a href="../../elementindex_Subsystems.html" class="menu">index: Subsystems</a> ]
             [ <a href="../../elementindex.html" class="menu">all elements</a> ]
@@ -46,7 +46,6 @@
       <b>Packages:</b><br />
   <div class="package">
               <a href="../../li_Framework.html">Framework</a><br />
-              <a href="../../li_com-tecnick-tcpdf.html">com-tecnick-tcpdf</a><br />
               <a href="../../li_Core.html">Core</a><br />
               <a href="../../li_Installation.html">Installation</a><br />
               <a href="../../li_Modules.html">Modules</a><br />
@@ -76,6 +75,7 @@
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expGeo.php.html">expGeo.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expHistory.php.html">expHistory.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expHtmlToPDF.php.html">expHtmlToPDF.php</a></span><br />
+			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expHtmlToPDF2.php.html">expHtmlToPDF2.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expJavascript.php.html">expJavascript.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expLang.php.html">expLang.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expLDAP.php.html">expLDAP.php</a></span><br />
@@ -108,6 +108,7 @@
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expGeo.html">expGeo</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expHistory.html">expHistory</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expHtmlToPDF.html">expHtmlToPDF</a>    </span>	 <br />
+	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expHtmlToPDF2.html">expHtmlToPDF2</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expJavascript.html">expJavascript</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expLang.html">expLang</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expLDAP.html">expLDAP</a>    </span>	 <br />
@@ -158,7 +159,7 @@ Source Location: /framework/core/subsystems/expDateTime.php<br /><br />
 
         		
 		<p class="notes">
-			Located in <a class="field" href="_framework---core---subsystems---expDateTime.php.html">/framework/core/subsystems/expDateTime.php</a> [<span class="field">line 26</span>]
+			Located in <a class="field" href="_framework---core---subsystems---expDateTime.php.html">/framework/core/subsystems/expDateTime.php</a> [<span class="field">line 27</span>]
 		</p>
 
 		
@@ -174,8 +175,10 @@ Source Location: /framework/core/subsystems/expDateTime.php<br /><br />
 		<p align="center" class="short-description"><strong><a href="#sec_methods">Methods</a></strong></p>
 		<ul>
 		  		  <li><a href="../../Subsystems/Subsystems/expDateTime.html#methodduration">duration</a></li>
+		  		  <li><a href="../../Subsystems/Subsystems/expDateTime.html#methodendOfDayTimestamp">endOfDayTimestamp</a></li>
 		  		  <li><a href="../../Subsystems/Subsystems/expDateTime.html#methodendOfMonthDay">endOfMonthDay</a></li>
 		  		  <li><a href="../../Subsystems/Subsystems/expDateTime.html#methodendOfMonthTimestamp">endOfMonthTimestamp</a></li>
+		  		  <li><a href="../../Subsystems/Subsystems/expDateTime.html#methodendOfWeekTimestamp">endOfWeekTimestamp</a></li>
 		  		  <li><a href="../../Subsystems/Subsystems/expDateTime.html#methodformat_date">format_date</a></li>
 		  		  <li><a href="../../Subsystems/Subsystems/expDateTime.html#methodmonthlyDaysTimestamp">monthlyDaysTimestamp</a></li>
 		  		  <li><a href="../../Subsystems/Subsystems/expDateTime.html#methodmonthsDropdown">monthsDropdown</a></li>
@@ -220,6 +223,13 @@ Source Location: /framework/core/subsystems/expDateTime.php<br /><br />
 					<tr><td class="method-definition">static
 											<span class="method-result">int</span>&nbsp;&nbsp;
 					</td>
+					<td class="method-definition"><a href="#endOfDayTimestamp" title="details" class="method-name">endOfDayTimestamp</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">exdoc  Looks at a timestamp and returns another timestamp representing  11:59:59 pm of the same day.</td></tr>
+				</div>
+																<div class="method-definition">
+					<tr><td class="method-definition">static
+											<span class="method-result">int</span>&nbsp;&nbsp;
+					</td>
 					<td class="method-definition"><a href="#endOfMonthDay" title="details" class="method-name">endOfMonthDay</a>()&nbsp;&nbsp;</td>
 					<td class="method-definition">exdoc  Looks at a timestamp and returns the date of the last  day.  For instance, if the passed timestamp was in January,  this function would return 31.  Leap year is taken into account.</td></tr>
 				</div>
@@ -232,10 +242,17 @@ Source Location: /framework/core/subsystems/expDateTime.php<br /><br />
 				</div>
 																<div class="method-definition">
 					<tr><td class="method-definition">static
+											<span class="method-result">int</span>&nbsp;&nbsp;
+					</td>
+					<td class="method-definition"><a href="#endOfWeekTimestamp" title="details" class="method-name">endOfWeekTimestamp</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">exdoc  Looks at a timestamp and returns another timestamp representing  12:00:01 am of the DISPLAY_START_OF_WEEK day of the same week.</td></tr>
+				</div>
+																<div class="method-definition">
+					<tr><td class="method-definition">static
 											<span class="method-result">array</span>&nbsp;&nbsp;
 					</td>
 					<td class="method-definition"><a href="#format_date" title="details" class="method-name">format_date</a>()&nbsp;&nbsp;</td>
-					<td class="method-definition">Return a date in the site preferred format</td></tr>
+					<td class="method-definition">Return a date in the preferred format</td></tr>
 				</div>
 																<div class="method-definition">
 					<tr><td class="method-definition">static
@@ -305,9 +322,9 @@ Source Location: /framework/core/subsystems/expDateTime.php<br /><br />
 											<span class="method-result">int</span>&nbsp;&nbsp;
 					</td>
 					<td class="method-definition"><a href="#startOfWeekTimestamp" title="details" class="method-name">startOfWeekTimestamp</a>()&nbsp;&nbsp;</td>
-					<td class="method-definition">exdoc  Looks at a timestamp and returns another timestamp representing  12:00:01 am of the Sunday of the same week.</td></tr>
+					<td class="method-definition">exdoc  Looks at a timestamp and returns another timestamp representing  12:00:01 am of the DISPLAY_START_OF_WEEK day of the same week.</td></tr>
 				</div>
-																																																																																																																																</table>
+																																																																																																																																																</table>
 			</div>
 			<br /><div class="top">[ <a href="#top">Top</a> ]</div>
 		</div>
@@ -327,7 +344,7 @@ Source Location: /framework/core/subsystems/expDateTime.php<br /><br />
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">static method duration</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 73]</span>
+	<span class="method-title">static method duration</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 74]</span>
 </div>
 <br />
 
@@ -335,8 +352,8 @@ Source Location: /framework/core/subsystems/expDateTime.php<br /><br />
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>static array duration(
-timestamp
-$time_a, timestamp
+int
+$time_a, int
 $time_b&nbsp;
 )</code>
     </td></tr></table>
@@ -348,13 +365,13 @@ $time_b&nbsp;
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">timestamp</span>&nbsp;&nbsp;</td>
+				<span class="var-type">int</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$time_a:&nbsp;</span></td>
 				<td>
 				<span class="var-description"> The first timestamp</span>			</td></tr>
 					<tr><td class="indent">
-				<span class="var-type">timestamp</span>&nbsp;&nbsp;</td>
+				<span class="var-type">int</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$time_b:&nbsp;</span></td>
 				<td>
@@ -375,11 +392,56 @@ $time_b&nbsp;
 		<br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
-<a name="methodendOfMonthDay" id="endOfMonthDay"><!-- --></a>
+<a name="methodendOfDayTimestamp" id="endOfDayTimestamp"><!-- --></a>
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">static method endOfMonthDay</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 145]</span>
+	<span class="method-title">static method endOfDayTimestamp</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 185]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>static int endOfDayTimestamp(
+int
+$timestamp&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>exdoc  Looks at a timestamp and returns another timestamp representing  11:59:59 pm of the same day.
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">int</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$timestamp:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> The timestamp to check.</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodendOfMonthDay" id="endOfMonthDay"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">static method endOfMonthDay</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 147]</span>
 </div>
 <br />
 
@@ -387,7 +449,7 @@ $time_b&nbsp;
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>static int endOfMonthDay(
-timestamp
+int
 $timestamp&nbsp;
 )</code>
     </td></tr></table>
@@ -399,7 +461,7 @@ $timestamp&nbsp;
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">timestamp</span>&nbsp;&nbsp;</td>
+				<span class="var-type">int</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$timestamp:&nbsp;</span></td>
 				<td>
@@ -421,10 +483,10 @@ $timestamp&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodendOfMonthTimestamp" id="endOfMonthTimestamp"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">static method endOfMonthTimestamp</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 122]</span>
+	<span class="method-title">static method endOfMonthTimestamp</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 123]</span>
 </div>
 <br />
 
@@ -432,7 +494,7 @@ $timestamp&nbsp;
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>static int endOfMonthTimestamp(
-timestamp
+int
 $timestamp&nbsp;
 )</code>
     </td></tr></table>
@@ -444,7 +506,7 @@ $timestamp&nbsp;
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">timestamp</span>&nbsp;&nbsp;</td>
+				<span class="var-type">int</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$timestamp:&nbsp;</span></td>
 				<td>
@@ -465,11 +527,56 @@ $timestamp&nbsp;
 		<br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
+<a name="methodendOfWeekTimestamp" id="endOfWeekTimestamp"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">static method endOfWeekTimestamp</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 214]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>static int endOfWeekTimestamp(
+int
+$timestamp&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>exdoc  Looks at a timestamp and returns another timestamp representing  12:00:01 am of the DISPLAY_START_OF_WEEK day of the same week.
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">int</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$timestamp:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> The timestamp to check.</span>			</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
 <a name="methodformat_date" id="format_date"><!-- --></a>
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">static method format_date</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 589]</span>
+	<span class="method-title">static method format_date</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 616]</span>
 </div>
 <br />
 
@@ -484,7 +591,7 @@ $format = DISPLAY_DATE_FORMAT]&nbsp;
     </td></tr></table>
     </td></tr></table><br /></div>
 
-	<p align="center" class="short-description"><strong>Return a date in the site preferred format
+	<p align="center" class="short-description"><strong>Return a date in the preferred format
 </strong></p>
 
 			<strong>Parameters:</strong><br />
@@ -521,7 +628,7 @@ $format = DISPLAY_DATE_FORMAT]&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">static method monthlyDaysTimestamp</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 472]</span>
+	<span class="method-title">static method monthlyDaysTimestamp</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 499]</span>
 </div>
 <br />
 
@@ -554,7 +661,7 @@ $format = DISPLAY_DATE_FORMAT]&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">static method monthsDropdown</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 35]</span>
+	<span class="method-title">static method monthsDropdown</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 36]</span>
 </div>
 <br />
 
@@ -606,7 +713,7 @@ $default_month&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">static method recurringDailyDates</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 206]</span>
+	<span class="method-title">static method recurringDailyDates</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 233]</span>
 </div>
 <br />
 
@@ -614,8 +721,8 @@ $default_month&nbsp;
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>static array recurringDailyDates(
-timestamp
-$start, timestamp
+int
+$start, int
 $end, integer
 $freq&nbsp;
 )</code>
@@ -628,13 +735,13 @@ $freq&nbsp;
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">timestamp</span>&nbsp;&nbsp;</td>
+				<span class="var-type">int</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$start:&nbsp;</span></td>
 				<td>
 				<span class="var-description"> The start of the recurrence range</span>			</td></tr>
 					<tr><td class="indent">
-				<span class="var-type">timestamp</span>&nbsp;&nbsp;</td>
+				<span class="var-type">int</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$end:&nbsp;</span></td>
 				<td>
@@ -665,7 +772,7 @@ $freq&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">static method recurringMonthlyDates</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 335]</span>
+	<span class="method-title">static method recurringMonthlyDates</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 362]</span>
 </div>
 <br />
 
@@ -673,8 +780,8 @@ $freq&nbsp;
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>static array recurringMonthlyDates(
-timestamp
-$start, timestamp
+int
+$start, int
 $end, integer
 $freq, [bool
 $by_day = false]&nbsp;
@@ -688,13 +795,13 @@ $by_day = false]&nbsp;
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">timestamp</span>&nbsp;&nbsp;</td>
+				<span class="var-type">int</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$start:&nbsp;</span></td>
 				<td>
 				<span class="var-description"> The start of the recurrence range</span>			</td></tr>
 					<tr><td class="indent">
-				<span class="var-type">timestamp</span>&nbsp;&nbsp;</td>
+				<span class="var-type">int</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$end:&nbsp;</span></td>
 				<td>
@@ -731,7 +838,7 @@ $by_day = false]&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">static method recurringWeeklyDates</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 233]</span>
+	<span class="method-title">static method recurringWeeklyDates</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 260]</span>
 </div>
 <br />
 
@@ -739,8 +846,8 @@ $by_day = false]&nbsp;
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>static array recurringWeeklyDates(
-timestamp
-$start, timestamp
+int
+$start, int
 $end, integer
 $freq, array
 $days&nbsp;
@@ -754,13 +861,13 @@ $days&nbsp;
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">timestamp</span>&nbsp;&nbsp;</td>
+				<span class="var-type">int</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$start:&nbsp;</span></td>
 				<td>
 				<span class="var-description"> The start of the recurrence range</span>			</td></tr>
 					<tr><td class="indent">
-				<span class="var-type">timestamp</span>&nbsp;&nbsp;</td>
+				<span class="var-type">int</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$end:&nbsp;</span></td>
 				<td>
@@ -797,7 +904,7 @@ $days&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">static method recurringYearlyDates</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 455]</span>
+	<span class="method-title">static method recurringYearlyDates</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 482]</span>
 </div>
 <br />
 
@@ -805,8 +912,8 @@ $days&nbsp;
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>static array recurringYearlyDates(
-timestamp
-$start, timestamp
+int
+$start, int
 $end, integer
 $freq&nbsp;
 )</code>
@@ -819,13 +926,13 @@ $freq&nbsp;
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">timestamp</span>&nbsp;&nbsp;</td>
+				<span class="var-type">int</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$start:&nbsp;</span></td>
 				<td>
 				<span class="var-description"> The start of the recurrence range</span>			</td></tr>
 					<tr><td class="indent">
-				<span class="var-type">timestamp</span>&nbsp;&nbsp;</td>
+				<span class="var-type">int</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$end:&nbsp;</span></td>
 				<td>
@@ -856,7 +963,7 @@ $freq&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">static method relativeDate</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 508]</span>
+	<span class="method-title">static method relativeDate</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 535]</span>
 </div>
 <br />
 
@@ -899,7 +1006,7 @@ $posted_date&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">static method startOfDayTimestamp</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 164]</span>
+	<span class="method-title">static method startOfDayTimestamp</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 169]</span>
 </div>
 <br />
 
@@ -907,7 +1014,7 @@ $posted_date&nbsp;
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>static int startOfDayTimestamp(
-timestamp
+int
 $timestamp&nbsp;
 )</code>
     </td></tr></table>
@@ -919,7 +1026,7 @@ $timestamp&nbsp;
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">timestamp</span>&nbsp;&nbsp;</td>
+				<span class="var-type">int</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$timestamp:&nbsp;</span></td>
 				<td>
@@ -944,7 +1051,7 @@ $timestamp&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">static method startOfMonthTimestamp</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 104]</span>
+	<span class="method-title">static method startOfMonthTimestamp</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 105]</span>
 </div>
 <br />
 
@@ -952,7 +1059,7 @@ $timestamp&nbsp;
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>static int startOfMonthTimestamp(
-timestamp
+int
 $timestamp&nbsp;
 )</code>
     </td></tr></table>
@@ -964,7 +1071,7 @@ $timestamp&nbsp;
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">timestamp</span>&nbsp;&nbsp;</td>
+				<span class="var-type">int</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$timestamp:&nbsp;</span></td>
 				<td>
@@ -989,7 +1096,7 @@ $timestamp&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">static method startOfWeekTimestamp</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 180]</span>
+	<span class="method-title">static method startOfWeekTimestamp</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 201]</span>
 </div>
 <br />
 
@@ -997,19 +1104,19 @@ $timestamp&nbsp;
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>static int startOfWeekTimestamp(
-timestamp
+int
 $timestamp&nbsp;
 )</code>
     </td></tr></table>
     </td></tr></table><br /></div>
 
-	<p align="center" class="short-description"><strong>exdoc  Looks at a timestamp and returns another timestamp representing  12:00:01 am of the Sunday of the same week.
+	<p align="center" class="short-description"><strong>exdoc  Looks at a timestamp and returns another timestamp representing  12:00:01 am of the DISPLAY_START_OF_WEEK day of the same week.
 </strong></p>
 
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">timestamp</span>&nbsp;&nbsp;</td>
+				<span class="var-type">int</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$timestamp:&nbsp;</span></td>
 				<td>
@@ -1037,7 +1144,7 @@ $timestamp&nbsp;
 
         <div class="credit">
 		    <hr class="separator" />
-		    Documentation generated on Tue, 14 Feb 2012 14:01:38 -0500 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
+		    Documentation generated on Fri, 24 Aug 2012 21:34:08 -0400 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
 	      </div>
       </td></tr></table>
     </td>

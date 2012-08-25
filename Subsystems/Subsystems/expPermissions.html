@@ -17,7 +17,7 @@
   <tr>
     <td colspan="2" class="header-menu">
       
-                                                                                                                          
+                                                                                                            
                                     		[ <a href="../../classtrees_Subsystems.html" class="menu">class tree: Subsystems</a> ]
 		[ <a href="../../elementindex_Subsystems.html" class="menu">index: Subsystems</a> ]
             [ <a href="../../elementindex.html" class="menu">all elements</a> ]
@@ -46,7 +46,6 @@
       <b>Packages:</b><br />
   <div class="package">
               <a href="../../li_Framework.html">Framework</a><br />
-              <a href="../../li_com-tecnick-tcpdf.html">com-tecnick-tcpdf</a><br />
               <a href="../../li_Core.html">Core</a><br />
               <a href="../../li_Installation.html">Installation</a><br />
               <a href="../../li_Modules.html">Modules</a><br />
@@ -76,6 +75,7 @@
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expGeo.php.html">expGeo.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expHistory.php.html">expHistory.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expHtmlToPDF.php.html">expHtmlToPDF.php</a></span><br />
+			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expHtmlToPDF2.php.html">expHtmlToPDF2.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expJavascript.php.html">expJavascript.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expLang.php.html">expLang.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expLDAP.php.html">expLDAP.php</a></span><br />
@@ -108,6 +108,7 @@
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expGeo.html">expGeo</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expHistory.html">expHistory</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expHtmlToPDF.html">expHtmlToPDF</a>    </span>	 <br />
+	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expHtmlToPDF2.html">expHtmlToPDF2</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expJavascript.html">expJavascript</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expLang.html">expLang</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expLDAP.html">expLDAP</a>    </span>	 <br />
@@ -300,7 +301,7 @@ Source Location: /framework/core/subsystems/expPermissions.php<br /><br />
 		<div class="info-box-body">
 			<a name='method_detail'></a>
 <a name="methodcheck" id="check"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 
 <div class="method-header">
 	<span class="method-title">static method check</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 85]</span>
@@ -312,7 +313,7 @@ Source Location: /framework/core/subsystems/expPermissions.php<br /><br />
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>static bool check(
 string
-$permission, Object
+$permission, object
 $location&nbsp;
 )</code>
     </td></tr></table>
@@ -330,7 +331,7 @@ $location&nbsp;
 				<td>
 				<span class="var-description"> The name of the permission to check</span>			</td></tr>
 					<tr><td class="indent">
-				<span class="var-type">Object</span>&nbsp;&nbsp;</td>
+				<span class="var-type">object</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$location:&nbsp;</span></td>
 				<td>
@@ -352,10 +353,10 @@ $location&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodcheckGroup" id="checkGroup"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">static method checkGroup</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 370]</span>
+	<span class="method-title">static method checkGroup</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 357]</span>
 </div>
 <br />
 
@@ -363,9 +364,9 @@ $location&nbsp;
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>static bool checkGroup(
-Group
+group/object
 $group, string
-$permission, Object
+$permission, object
 $location, [bool
 $explicitOnly = false]&nbsp;
 )</code>
@@ -378,7 +379,7 @@ $explicitOnly = false]&nbsp;
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">Group</span>&nbsp;&nbsp;</td>
+				<span class="var-type">group/object</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$group:&nbsp;</span></td>
 				<td>
@@ -390,7 +391,7 @@ $explicitOnly = false]&nbsp;
 				<td>
 				<span class="var-description"> The name of the permission to check</span>			</td></tr>
 					<tr><td class="indent">
-				<span class="var-type">Object</span>&nbsp;&nbsp;</td>
+				<span class="var-type">object</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$location:&nbsp;</span></td>
 				<td>
@@ -418,10 +419,10 @@ $explicitOnly = false]&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodcheckUser" id="checkUser"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">static method checkUser</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 218]</span>
+	<span class="method-title">static method checkUser</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 202]</span>
 </div>
 <br />
 
@@ -429,9 +430,9 @@ $explicitOnly = false]&nbsp;
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>static bool checkUser(
-User
+user/object
 $user, string
-$permission, Object
+$permission, object
 $location, [boolean
 $explicitOnly = false]&nbsp;
 )</code>
@@ -444,7 +445,7 @@ $explicitOnly = false]&nbsp;
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">User</span>&nbsp;&nbsp;</td>
+				<span class="var-type">user/object</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$user:&nbsp;</span></td>
 				<td>
@@ -456,7 +457,7 @@ $explicitOnly = false]&nbsp;
 				<td>
 				<span class="var-description"> The name of the permission to check</span>			</td></tr>
 					<tr><td class="indent">
-				<span class="var-type">Object</span>&nbsp;&nbsp;</td>
+				<span class="var-type">object</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$location:&nbsp;</span></td>
 				<td>
@@ -484,10 +485,10 @@ $explicitOnly = false]&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodgrant" id="grant"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">static method grant</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 340]</span>
+	<span class="method-title">static method grant</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 327]</span>
 </div>
 <br />
 
@@ -495,9 +496,9 @@ $explicitOnly = false]&nbsp;
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>static void grant(
-User
+user/object
 $user, string
-$permission, Object
+$permission, object
 $location&nbsp;
 )</code>
     </td></tr></table>
@@ -509,7 +510,7 @@ $location&nbsp;
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">User</span>&nbsp;&nbsp;</td>
+				<span class="var-type">user/object</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$user:&nbsp;</span></td>
 				<td>
@@ -521,7 +522,7 @@ $location&nbsp;
 				<td>
 				<span class="var-description"> The name of the permission to grant</span>			</td></tr>
 					<tr><td class="indent">
-				<span class="var-type">Object</span>&nbsp;&nbsp;</td>
+				<span class="var-type">object</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$location:&nbsp;</span></td>
 				<td>
@@ -543,10 +544,10 @@ $location&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodgrantGroup" id="grantGroup"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">static method grantGroup</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 471]</span>
+	<span class="method-title">static method grantGroup</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 461]</span>
 </div>
 <br />
 
@@ -554,9 +555,9 @@ $location&nbsp;
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>static void grantGroup(
-Group
+group/object
 $group, string
-$permission, Object
+$permission, object
 $location&nbsp;
 )</code>
     </td></tr></table>
@@ -568,7 +569,7 @@ $location&nbsp;
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">Group</span>&nbsp;&nbsp;</td>
+				<span class="var-type">group/object</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$group:&nbsp;</span></td>
 				<td>
@@ -580,7 +581,7 @@ $location&nbsp;
 				<td>
 				<span class="var-description"> The name of the permission to grant</span>			</td></tr>
 					<tr><td class="indent">
-				<span class="var-type">Object</span>&nbsp;&nbsp;</td>
+				<span class="var-type">object</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$location:&nbsp;</span></td>
 				<td>
@@ -602,7 +603,7 @@ $location&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodload" id="load"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 
 <div class="method-header">
 	<span class="method-title">static method load</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 35]</span>
@@ -613,7 +614,7 @@ $location&nbsp;
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>static void load(
-User
+user/object
 $user&nbsp;
 )</code>
     </td></tr></table>
@@ -625,7 +626,7 @@ $user&nbsp;
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">User</span>&nbsp;&nbsp;</td>
+				<span class="var-type">user/object</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$user:&nbsp;</span></td>
 				<td>
@@ -647,10 +648,10 @@ $user&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodrevokeAll" id="revokeAll"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">static method revokeAll</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 499]</span>
+	<span class="method-title">static method revokeAll</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 489]</span>
 </div>
 <br />
 
@@ -658,8 +659,8 @@ $user&nbsp;
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>static mixed revokeAll(
-User
-$user, Object
+user/object
+$user, object
 $location&nbsp;
 )</code>
     </td></tr></table>
@@ -671,13 +672,13 @@ $location&nbsp;
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">User</span>&nbsp;&nbsp;</td>
+				<span class="var-type">user/object</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$user:&nbsp;</span></td>
 				<td>
 				<span class="var-description"> The user to remove all permissions from</span>			</td></tr>
 					<tr><td class="indent">
-				<span class="var-type">Object</span>&nbsp;&nbsp;</td>
+				<span class="var-type">object</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$location:&nbsp;</span></td>
 				<td>
@@ -699,10 +700,10 @@ $location&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodrevokeAllGroup" id="revokeAllGroup"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">static method revokeAllGroup</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 514]</span>
+	<span class="method-title">static method revokeAllGroup</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 504]</span>
 </div>
 <br />
 
@@ -710,8 +711,8 @@ $location&nbsp;
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>static mixed revokeAllGroup(
-Group
-$group, Object
+group/object
+$group, object
 $location&nbsp;
 )</code>
     </td></tr></table>
@@ -723,13 +724,13 @@ $location&nbsp;
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">Group</span>&nbsp;&nbsp;</td>
+				<span class="var-type">group/object</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$group:&nbsp;</span></td>
 				<td>
 				<span class="var-description"> The group to remove all permissions from</span>			</td></tr>
 					<tr><td class="indent">
-				<span class="var-type">Object</span>&nbsp;&nbsp;</td>
+				<span class="var-type">object</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$location:&nbsp;</span></td>
 				<td>
@@ -751,10 +752,10 @@ $location&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodrevokeComplete" id="revokeComplete"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">static method revokeComplete</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 528]</span>
+	<span class="method-title">static method revokeComplete</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 518]</span>
 </div>
 <br />
 
@@ -762,7 +763,7 @@ $location&nbsp;
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>static bool revokeComplete(
-Object
+object
 $location&nbsp;
 )</code>
     </td></tr></table>
@@ -774,7 +775,7 @@ $location&nbsp;
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">Object</span>&nbsp;&nbsp;</td>
+				<span class="var-type">object</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$location:&nbsp;</span></td>
 				<td>
@@ -796,10 +797,10 @@ $location&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodtriggerRefresh" id="triggerRefresh"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">static method triggerRefresh</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 542]</span>
+	<span class="method-title">static method triggerRefresh</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 532]</span>
 </div>
 <br />
 
@@ -829,10 +830,10 @@ $location&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodtriggerSingleRefresh" id="triggerSingleRefresh"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">static method triggerSingleRefresh</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 558]</span>
+	<span class="method-title">static method triggerSingleRefresh</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 548]</span>
 </div>
 <br />
 
@@ -840,7 +841,7 @@ $location&nbsp;
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>static void triggerSingleRefresh(
-User
+user/object
 $user&nbsp;
 )</code>
     </td></tr></table>
@@ -852,7 +853,7 @@ $user&nbsp;
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">User</span>&nbsp;&nbsp;</td>
+				<span class="var-type">user/object</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$user:&nbsp;</span></td>
 				<td>
@@ -880,7 +881,7 @@ $user&nbsp;
 
         <div class="credit">
 		    <hr class="separator" />
-		    Documentation generated on Tue, 14 Feb 2012 14:01:41 -0500 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
+		    Documentation generated on Fri, 24 Aug 2012 21:34:14 -0400 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
 	      </div>
       </td></tr></table>
     </td>

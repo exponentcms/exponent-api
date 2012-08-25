@@ -17,7 +17,7 @@
   <tr>
     <td colspan="2" class="header-menu">
       
-                                                                                                                          
+                                                                                                            
                                     		[ <a href="../../classtrees_Subsystems.html" class="menu">class tree: Subsystems</a> ]
 		[ <a href="../../elementindex_Subsystems.html" class="menu">index: Subsystems</a> ]
             [ <a href="../../elementindex.html" class="menu">all elements</a> ]
@@ -46,7 +46,6 @@
       <b>Packages:</b><br />
   <div class="package">
               <a href="../../li_Framework.html">Framework</a><br />
-              <a href="../../li_com-tecnick-tcpdf.html">com-tecnick-tcpdf</a><br />
               <a href="../../li_Core.html">Core</a><br />
               <a href="../../li_Installation.html">Installation</a><br />
               <a href="../../li_Modules.html">Modules</a><br />
@@ -76,6 +75,7 @@
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expGeo.php.html">expGeo.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expHistory.php.html">expHistory.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expHtmlToPDF.php.html">expHtmlToPDF.php</a></span><br />
+			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expHtmlToPDF2.php.html">expHtmlToPDF2.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expJavascript.php.html">expJavascript.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expLang.php.html">expLang.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expLDAP.php.html">expLDAP.php</a></span><br />
@@ -108,6 +108,7 @@
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expGeo.html">expGeo</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expHistory.html">expHistory</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expHtmlToPDF.html">expHtmlToPDF</a>    </span>	 <br />
+	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expHtmlToPDF2.html">expHtmlToPDF2</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expJavascript.html">expJavascript</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expLang.html">expLang</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expLDAP.html">expLDAP</a>    </span>	 <br />
@@ -401,7 +402,7 @@ Source Location: /framework/core/subsystems/expSession.php<br /><br />
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">static method clearAllSessionData</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 382]</span>
+	<span class="method-title">static method clearAllSessionData</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 384]</span>
 </div>
 <br />
 
@@ -434,7 +435,7 @@ Source Location: /framework/core/subsystems/expSession.php<br /><br />
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">static method clearAllUsersSessionCache</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 321]</span>
+	<span class="method-title">static method clearAllUsersSessionCache</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 322]</span>
 </div>
 <br />
 
@@ -442,7 +443,7 @@ Source Location: /framework/core/subsystems/expSession.php<br /><br />
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>static void clearAllUsersSessionCache(
-[Modules
+[mixed
 $modules = null], [User
 $user = null]&nbsp;
 )</code>
@@ -455,7 +456,7 @@ $user = null]&nbsp;
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">Modules</span>&nbsp;&nbsp;</td>
+				<span class="var-type">mixed</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$modules:&nbsp;</span></td>
 				<td>
@@ -486,7 +487,7 @@ $user = null]&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">static method clearCurrentUserSessionCache</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 363]</span>
+	<span class="method-title">static method clearCurrentUserSessionCache</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 365]</span>
 </div>
 <br />
 
@@ -494,7 +495,7 @@ $user = null]&nbsp;
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>static void clearCurrentUserSessionCache(
-[Modules
+[mixed
 $modules = null]&nbsp;
 )</code>
     </td></tr></table>
@@ -506,7 +507,7 @@ $modules = null]&nbsp;
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">Modules</span>&nbsp;&nbsp;</td>
+				<span class="var-type">mixed</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$modules:&nbsp;</span></td>
 				<td>
@@ -531,7 +532,7 @@ $modules = null]&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">static method createTicket</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 395]</span>
+	<span class="method-title">static method createTicket</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 397]</span>
 </div>
 <br />
 
@@ -539,7 +540,7 @@ $modules = null]&nbsp;
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>static null createTicket(
-[User
+[user/object
 $user = null]&nbsp;
 )</code>
     </td></tr></table>
@@ -551,7 +552,7 @@ $user = null]&nbsp;
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">User</span>&nbsp;&nbsp;</td>
+				<span class="var-type">user/object</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$user:&nbsp;</span></td>
 				<td>
@@ -938,7 +939,7 @@ $var&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">static method loggedIn</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 305]</span>
+	<span class="method-title">static method loggedIn</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 306]</span>
 </div>
 <br />
 
@@ -971,7 +972,7 @@ $var&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">static method login</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 273]</span>
+	<span class="method-title">static method login</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 274]</span>
 </div>
 <br />
 
@@ -1014,7 +1015,7 @@ $user&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">static method logout</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 287]</span>
+	<span class="method-title">static method logout</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 288]</span>
 </div>
 <br />
 
@@ -1142,7 +1143,7 @@ $params = array()]&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">static method setCacheValue</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 414]</span>
+	<span class="method-title">static method setCacheValue</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 416]</span>
 </div>
 <br />
 
@@ -1242,7 +1243,7 @@ $desc&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">static method un_set</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 261]</span>
+	<span class="method-title">static method un_set</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 262]</span>
 </div>
 <br />
 
@@ -1296,7 +1297,7 @@ $var&nbsp;
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>static void updateTicket(
 $ticket
-$ticket, User
+$ticket, user/object
 $user&nbsp;
 )</code>
     </td></tr></table>
@@ -1308,7 +1309,7 @@ $user&nbsp;
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">User</span>&nbsp;&nbsp;</td>
+				<span class="var-type">user/object</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$user:&nbsp;</span></td>
 				<td>
@@ -1375,7 +1376,7 @@ $user&nbsp;
 
         <div class="credit">
 		    <hr class="separator" />
-		    Documentation generated on Tue, 14 Feb 2012 14:01:42 -0500 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
+		    Documentation generated on Fri, 24 Aug 2012 21:34:16 -0400 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
 	      </div>
       </td></tr></table>
     </td>

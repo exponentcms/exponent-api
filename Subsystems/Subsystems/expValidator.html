@@ -17,7 +17,7 @@
   <tr>
     <td colspan="2" class="header-menu">
       
-                                                                                                                          
+                                                                                                            
                                     		[ <a href="../../classtrees_Subsystems.html" class="menu">class tree: Subsystems</a> ]
 		[ <a href="../../elementindex_Subsystems.html" class="menu">index: Subsystems</a> ]
             [ <a href="../../elementindex.html" class="menu">all elements</a> ]
@@ -46,7 +46,6 @@
       <b>Packages:</b><br />
   <div class="package">
               <a href="../../li_Framework.html">Framework</a><br />
-              <a href="../../li_com-tecnick-tcpdf.html">com-tecnick-tcpdf</a><br />
               <a href="../../li_Core.html">Core</a><br />
               <a href="../../li_Installation.html">Installation</a><br />
               <a href="../../li_Modules.html">Modules</a><br />
@@ -76,6 +75,7 @@
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expGeo.php.html">expGeo.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expHistory.php.html">expHistory.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expHtmlToPDF.php.html">expHtmlToPDF.php</a></span><br />
+			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expHtmlToPDF2.php.html">expHtmlToPDF2.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expJavascript.php.html">expJavascript.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expLang.php.html">expLang.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expLDAP.php.html">expLDAP.php</a></span><br />
@@ -108,6 +108,7 @@
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expGeo.html">expGeo</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expHistory.html">expHistory</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expHtmlToPDF.html">expHtmlToPDF</a>    </span>	 <br />
+	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expHtmlToPDF2.html">expHtmlToPDF2</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expJavascript.html">expJavascript</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expLang.html">expLang</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expLDAP.html">expLDAP</a>    </span>	 <br />
@@ -182,6 +183,7 @@ Source Location: /framework/core/subsystems/expValidator.php<br /><br />
 		  		  <li><a href="../../Subsystems/Subsystems/expValidator.html#methodfailAndReturnToForm">failAndReturnToForm</a></li>
 		  		  <li><a href="../../Subsystems/Subsystems/expValidator.html#methodflashAndReturnToForm">flashAndReturnToForm</a></li>
 		  		  <li><a href="../../Subsystems/Subsystems/expValidator.html#methodformat_of">format_of</a></li>
+		  		  <li><a href="../../Subsystems/Subsystems/expValidator.html#methodisValidEmail">isValidEmail</a></li>
 		  		  <li><a href="../../Subsystems/Subsystems/expValidator.html#methodis_valid_email">is_valid_email</a></li>
 		  		  <li><a href="../../Subsystems/Subsystems/expValidator.html#methodis_valid_phonenumber">is_valid_phonenumber</a></li>
 		  		  <li><a href="../../Subsystems/Subsystems/expValidator.html#methodis_valid_sef_name">is_valid_sef_name</a></li>
@@ -283,6 +285,13 @@ Source Location: /framework/core/subsystems/expValidator.php<br /><br />
 				</div>
 																<div class="method-definition">
 					<tr><td class="method-definition">static
+											<span class="method-result">bool</span>&nbsp;&nbsp;
+					</td>
+					<td class="method-definition"><a href="#isValidEmail" title="details" class="method-name">isValidEmail</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+					<tr><td class="method-definition">static
 											<span class="method-result">mixed</span>&nbsp;&nbsp;
 					</td>
 					<td class="method-definition"><a href="#is_valid_email" title="details" class="method-name">is_valid_email</a>()&nbsp;&nbsp;</td>
@@ -379,7 +388,7 @@ Source Location: /framework/core/subsystems/expValidator.php<br /><br />
 					<td class="method-definition"><a href="#value_between" title="details" class="method-name">value_between</a>()&nbsp;&nbsp;</td>
 					<td class="method-definition"></td></tr>
 				</div>
-																																																																																																																																																																																																								</table>
+																																																																																																																																																																																																																</table>
 			</div>
 			<br /><div class="top">[ <a href="#top">Top</a> ]</div>
 		</div>
@@ -873,8 +882,51 @@ $opts&nbsp;
 		<br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
-<a name="methodis_valid_email" id="is_valid_email"><!-- --></a>
+<a name="methodisValidEmail" id="isValidEmail"><!-- --></a>
 <div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">static method isValidEmail</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 251]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>static bool isValidEmail(
+$email
+$email&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">$email</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$email:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodis_valid_email" id="is_valid_email"><!-- --></a>
+<div class="evenrow">
 
 <div class="method-header">
 	<span class="method-title">static method is_valid_email</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 202]</span>
@@ -931,7 +983,7 @@ $opts&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodis_valid_phonenumber" id="is_valid_phonenumber"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 
 <div class="method-header">
 	<span class="method-title">static method is_valid_phonenumber</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 177]</span>
@@ -988,7 +1040,7 @@ $opts&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodis_valid_sef_name" id="is_valid_sef_name"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 
 <div class="method-header">
 	<span class="method-title">static method is_valid_sef_name</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 319]</span>
@@ -1045,7 +1097,7 @@ $opts&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodis_valid_state" id="is_valid_state"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 
 <div class="method-header">
 	<span class="method-title">static method is_valid_state</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 187]</span>
@@ -1102,7 +1154,7 @@ $opts&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodis_valid_zipcode" id="is_valid_zipcode"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 
 <div class="method-header">
 	<span class="method-title">static method is_valid_zipcode</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 159]</span>
@@ -1159,7 +1211,7 @@ $opts&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodlength_of" id="length_of"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 
 <div class="method-header">
 	<span class="method-title">static method length_of</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 127]</span>
@@ -1216,7 +1268,7 @@ $opts&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodnumericality_of" id="numericality_of"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 
 <div class="method-header">
 	<span class="method-title">static method numericality_of</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 48]</span>
@@ -1273,7 +1325,7 @@ $opts&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodpresence_of" id="presence_of"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 
 <div class="method-header">
 	<span class="method-title">static method presence_of</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 33]</span>
@@ -1330,7 +1382,7 @@ $opts&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodsetErrorField" id="setErrorField"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 
 <div class="method-header">
 	<span class="method-title">static method setErrorField</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 425]</span>
@@ -1373,7 +1425,7 @@ $field&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methoduniqueness_of" id="uniqueness_of"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 
 <div class="method-header">
 	<span class="method-title">static method uniqueness_of</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 141]</span>
@@ -1430,7 +1482,7 @@ $opts&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methoduploadSuccessful" id="uploadSuccessful"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 
 <div class="method-header">
 	<span class="method-title">static method uploadSuccessful</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 483]</span>
@@ -1473,10 +1525,10 @@ $file&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodvalidate" id="validate"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">static method validate</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 376]</span>
+	<span class="method-title">static method validate</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 377]</span>
 </div>
 <br />
 
@@ -1523,7 +1575,7 @@ $post&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodvalidate_email_address" id="validate_email_address"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 
 <div class="method-header">
 	<span class="method-title">static method validate_email_address</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 448]</span>
@@ -1566,7 +1618,7 @@ $email&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodvalue_between" id="value_between"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 
 <div class="method-header">
 	<span class="method-title">static method value_between</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 79]</span>
@@ -1629,7 +1681,7 @@ $opts&nbsp;
 
         <div class="credit">
 		    <hr class="separator" />
-		    Documentation generated on Tue, 14 Feb 2012 14:01:43 -0500 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
+		    Documentation generated on Fri, 24 Aug 2012 21:34:17 -0400 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
 	      </div>
       </td></tr></table>
     </td>

@@ -17,7 +17,7 @@
   <tr>
     <td colspan="2" class="header-menu">
       
-                                                                                                                                        
+                                                                                                                          
                       		[ <a href="../../classtrees_Subsystems-Forms.html" class="menu">class tree: Subsystems-Forms</a> ]
 		[ <a href="../../elementindex_Subsystems-Forms.html" class="menu">index: Subsystems-Forms</a> ]
             [ <a href="../../elementindex.html" class="menu">all elements</a> ]
@@ -46,7 +46,6 @@
       <b>Packages:</b><br />
   <div class="package">
               <a href="../../li_Framework.html">Framework</a><br />
-              <a href="../../li_com-tecnick-tcpdf.html">com-tecnick-tcpdf</a><br />
               <a href="../../li_Core.html">Core</a><br />
               <a href="../../li_Installation.html">Installation</a><br />
               <a href="../../li_Modules.html">Modules</a><br />
@@ -61,6 +60,7 @@
 	<strong>Control</strong><br />			<span style="padding-left: 1em;"><a href="../../Subsystems-Forms/Control/_framework---core---subsystems---forms---controls---antispamcontrol.php.html">antispamcontrol.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems-Forms/Control/_framework---core---subsystems---forms---controls---autocompletecontrol.php.html">autocompletecontrol.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems-Forms/Control/_framework---core---subsystems---forms---controls---buttongroupcontrol.php.html">buttongroupcontrol.php</a></span><br />
+			<span style="padding-left: 1em;"><a href="../../Subsystems-Forms/Control/_themes---bootstraptheme---controls---buttongroupcontrol.php.html">buttongroupcontrol.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems-Forms/Control/_framework---core---subsystems---forms---controls---calendarcontrol.php.html">calendarcontrol.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems-Forms/Control/_framework---core---subsystems---forms---controls---checkboxcontrol.php.html">checkboxcontrol.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems-Forms/Control/_framework---core---subsystems---forms---controls---ckeditorcontrol.php.html">ckeditorcontrol.php</a></span><br />
@@ -208,6 +208,8 @@ Source Location: /framework/core/subsystems/forms/form.php<br /><br />
 		  		  <li><a href="../../Subsystems-Forms/Form/form.html#var$controlIdx">$controlIdx</a></li>
 		  		  <li><a href="../../Subsystems-Forms/Form/form.html#var$controlLbl">$controlLbl</a></li>
 		  		  <li><a href="../../Subsystems-Forms/Form/form.html#var$controls">$controls</a></li>
+		  		  <li><a href="../../Subsystems-Forms/Form/form.html#var$is_tabbed">$is_tabbed</a></li>
+		  		  <li><a href="../../Subsystems-Forms/Form/form.html#var$tabs">$tabs</a></li>
 		  		  <li><a href="../../Subsystems-Forms/Form/form.html#var$validationScript">$validationScript</a></li>
 		  		</ul>
 		</td>
@@ -383,7 +385,7 @@ Source Location: /framework/core/subsystems/forms/form.php<br /><br />
 		<div class="info-box-body">
 			<div class="var-summary">
 			<table border="0" cellspacing="0" cellpadding="0" class="var-summary">
-																																					<div class="var-title">
+																																																	<div class="var-title">
 					<tr><td class="var-title"><span class="var-type-summary">mixed</span>&nbsp;&nbsp;</td>
 					<td class="var-title"><a href="#$controlIdx" title="details" class="var-name-summary">$controlIdx</a>&nbsp;&nbsp;</td>
 					<td class="var-summary-description"></td></tr>
@@ -396,6 +398,16 @@ Source Location: /framework/core/subsystems/forms/form.php<br /><br />
 													<div class="var-title">
 					<tr><td class="var-title"><span class="var-type-summary">mixed</span>&nbsp;&nbsp;</td>
 					<td class="var-title"><a href="#$controls" title="details" class="var-name-summary">$controls</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">mixed</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$is_tabbed" title="details" class="var-name-summary">$is_tabbed</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">mixed</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$tabs" title="details" class="var-name-summary">$tabs</a>&nbsp;&nbsp;</td>
 					<td class="var-summary-description"></td></tr>
 				</div>
 													<div class="var-title">
@@ -448,7 +460,7 @@ Source Location: /framework/core/subsystems/forms/form.php<br /><br />
 					<td class="method-definition"></td></tr>
 				</div>
 																<div class="method-definition">
-											<tr><td class="method-definition"><span class="method-result">The</span>&nbsp;&nbsp;</td>
+											<tr><td class="method-definition"><span class="method-result">string</span>&nbsp;&nbsp;</td>
 										<td class="method-definition"><a href="#toHTML" title="details" class="method-name">toHTML</a>()&nbsp;&nbsp;</td>
 					<td class="method-definition">Convert the form to HTML output.</td></tr>
 				</div>
@@ -475,7 +487,7 @@ Source Location: /framework/core/subsystems/forms/form.php<br /><br />
 												</div>
 		<div class="info-box-body">
 			<a name="var$controlIdx" id="$controlIdx"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -492,7 +504,7 @@ Source Location: /framework/core/subsystems/forms/form.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$controlLbl" id="$controlLbl"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -509,7 +521,7 @@ Source Location: /framework/core/subsystems/forms/form.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$controls" id="$controls"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -525,14 +537,48 @@ Source Location: /framework/core/subsystems/forms/form.php<br /><br />
 		<br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
-<a name="var$validationScript" id="$validationScript"><!-- --></A>
+<a name="var$is_tabbed" id="$is_tabbed"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>&nbsp;&nbsp;
+			<span class="var-name">$is_tabbed</span>
+			 = <span class="var-default"> false</span>			<span class="smalllinenumber">[line 35]</span>
+		</span>
+	</div>
+
+		
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$tabs" id="$tabs"><!-- --></A>
 <div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>&nbsp;&nbsp;
+			<span class="var-name">$tabs</span>
+			 = <span class="var-default">array()</span>			<span class="smalllinenumber">[line 34]</span>
+		</span>
+	</div>
+
+		
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$validationScript" id="$validationScript"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>&nbsp;&nbsp;
 			<span class="var-name">$validationScript</span>
-			 = <span class="var-default"> &quot;&quot;</span>			<span class="smalllinenumber">[line 35]</span>
+			 = <span class="var-default"> &quot;&quot;</span>			<span class="smalllinenumber">[line 37]</span>
 		</span>
 	</div>
 
@@ -559,10 +605,10 @@ Source Location: /framework/core/subsystems/forms/form.php<br /><br />
 			<a name='method_detail'></a>
 
 <a name="methodajaxUpdater" id="ajaxUpdater"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">ajaxUpdater</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 37]</span>
+	<span class="method-title">ajaxUpdater</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 39]</span>
 </div>
 <br />
 
@@ -609,10 +655,10 @@ $div_to_update = null]&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodregister" id="register"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">register</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 65]</span>
+	<span class="method-title">register</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 68]</span>
 </div>
 <br />
 
@@ -620,11 +666,12 @@ $div_to_update = null]&nbsp;
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>boolean register(
-$name
-$name, $label
-$label, $control
-$control, [\A|bool
-$replace = true]&nbsp;
+string
+$name, string
+$label, \formcontrol
+$control, [bool
+$replace = true], [string
+$tab = null]&nbsp;
 )</code>
     </td></tr></table>
     </td></tr></table><br /></div>
@@ -635,29 +682,35 @@ $replace = true]&nbsp;
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">\A|bool</span>&nbsp;&nbsp;</td>
-				<td>
-				<span class="var-name">$replace:&nbsp;</span></td>
-				<td>
-				<span class="var-description"> boolean dictating what to do if a Control with the specified internal name already exists on the form.  If passed as true (default), the existing Control will be replaced.  Otherwise, the Control registration will fail and return false.</span>			</td></tr>
-					<tr><td class="indent">
-				<span class="var-type">$name</span>&nbsp;&nbsp;</td>
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$name:&nbsp;</span></td>
 				<td>
 				<span class="var-description"> The internal name of the control.  This is used for referring to the control later.  If this is a null string, the Control will not be registered, and this function will return false.</span>			</td></tr>
 					<tr><td class="indent">
-				<span class="var-type">$label</span>&nbsp;&nbsp;</td>
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$label:&nbsp;</span></td>
 				<td>
 							</td></tr>
 					<tr><td class="indent">
-				<span class="var-type">$control</span>&nbsp;&nbsp;</td>
+				<span class="var-type">\formcontrol</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$control:&nbsp;</span></td>
 				<td>
 				<span class="var-description"> The Control object to register with the form.</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">bool</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$replace:&nbsp;</span></td>
+				<td>
+				<span class="var-description"> boolean dictating what to do if a Control with the specified internal name already exists on the form.  If passed as true (default), the existing Control will be replaced.  Otherwise, the Control registration will fail and return false.</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$tab:&nbsp;</span></td>
+				<td>
+							</td></tr>
 				</table>
 
 	<br />
@@ -675,10 +728,10 @@ $replace = true]&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodregisterAfter" id="registerAfter"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">registerAfter</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 112]</span>
+	<span class="method-title">registerAfter</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 118]</span>
 </div>
 <br />
 
@@ -686,11 +739,12 @@ $replace = true]&nbsp;
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>boolean registerAfter(
-$afterName
-$afterName, $name
-$name, $label
-$label, $control
-$control&nbsp;
+string
+$afterName, string
+$name, string
+$label, object
+$control, [string
+$tab = null]&nbsp;
 )</code>
     </td></tr></table>
     </td></tr></table><br /></div>
@@ -701,29 +755,35 @@ $control&nbsp;
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">$afterName</span>&nbsp;&nbsp;</td>
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$afterName:&nbsp;</span></td>
 				<td>
 				<span class="var-description"> The internal name of the Control to register the new Control after.</span>			</td></tr>
 					<tr><td class="indent">
-				<span class="var-type">$name</span>&nbsp;&nbsp;</td>
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$name:&nbsp;</span></td>
 				<td>
 				<span class="var-description"> The internal name of the new Control.</span>			</td></tr>
 					<tr><td class="indent">
-				<span class="var-type">$label</span>&nbsp;&nbsp;</td>
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$label:&nbsp;</span></td>
 				<td>
 							</td></tr>
 					<tr><td class="indent">
-				<span class="var-type">$control</span>&nbsp;&nbsp;</td>
+				<span class="var-type">object</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$control:&nbsp;</span></td>
 				<td>
 				<span class="var-description"> The Control object to register with the Form.</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$tab:&nbsp;</span></td>
+				<td>
+							</td></tr>
 				</table>
 
 	<br />
@@ -741,10 +801,10 @@ $control&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodregisterBefore" id="registerBefore"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">registerBefore</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 141]</span>
+	<span class="method-title">registerBefore</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 149]</span>
 </div>
 <br />
 
@@ -752,11 +812,12 @@ $control&nbsp;
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>boolean registerBefore(
-$beforeName
-$beforeName, $name
-$name, $label
-$label, $control
-$control&nbsp;
+string
+$beforeName, string
+$name, string
+$label, object
+$control, [string
+$tab = null]&nbsp;
 )</code>
     </td></tr></table>
     </td></tr></table><br /></div>
@@ -767,29 +828,35 @@ $control&nbsp;
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">$beforeName</span>&nbsp;&nbsp;</td>
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$beforeName:&nbsp;</span></td>
 				<td>
 				<span class="var-description"> The internal name of the Control to register the new Control before.</span>			</td></tr>
 					<tr><td class="indent">
-				<span class="var-type">$name</span>&nbsp;&nbsp;</td>
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$name:&nbsp;</span></td>
 				<td>
 				<span class="var-description"> The internal name of the new Control.</span>			</td></tr>
 					<tr><td class="indent">
-				<span class="var-type">$label</span>&nbsp;&nbsp;</td>
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$label:&nbsp;</span></td>
 				<td>
 							</td></tr>
 					<tr><td class="indent">
-				<span class="var-type">$control</span>&nbsp;&nbsp;</td>
+				<span class="var-type">object</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$control:&nbsp;</span></td>
 				<td>
 				<span class="var-description"> the Control object to register with the Form.</span>			</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$tab:&nbsp;</span></td>
+				<td>
+							</td></tr>
 				</table>
 
 	<br />
@@ -807,10 +874,10 @@ $control&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodsecure" id="secure"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">secure</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 50]</span>
+	<span class="method-title">secure</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 52]</span>
 </div>
 <br />
 
@@ -831,17 +898,20 @@ $control&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodtoHTML" id="toHTML"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">toHTML</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 165]</span>
+	<span class="method-title">toHTML</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 178]</span>
 </div>
 <br />
 
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
-		<code>The toHTML(
+		<code>string toHTML(
+[null
+$form_id = null], [null
+$module = null]&nbsp;
 )</code>
     </td></tr></table>
     </td></tr></table><br /></div>
@@ -849,11 +919,27 @@ $control&nbsp;
 	<p align="center" class="short-description"><strong>Convert the form to HTML output.
 </strong></p>
 
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">null</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$form_id:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">null</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$module:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
 	<br />
 	<strong>API Tags:</strong><br />
 <table border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>HTML code use to display the form to the browser.</td>
+    <td class="indent"><strong>Return:</strong>&nbsp;&nbsp;</td><td>The HTML code use to display the form to the browser.</td>
   </tr>
 </table>
 <br />
@@ -876,10 +962,10 @@ $control&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodunregister" id="unregister"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">unregister</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 83]</span>
+	<span class="method-title">unregister</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 87]</span>
 </div>
 <br />
 
@@ -887,7 +973,7 @@ $control&nbsp;
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>boolean unregister(
-$name
+string
 $name&nbsp;
 )</code>
     </td></tr></table>
@@ -899,7 +985,7 @@ $name&nbsp;
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type">$name</span>&nbsp;&nbsp;</td>
+				<span class="var-type">string</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$name:&nbsp;</span></td>
 				<td>
@@ -926,7 +1012,7 @@ $name&nbsp;
 
         <div class="credit">
 		    <hr class="separator" />
-		    Documentation generated on Tue, 14 Feb 2012 14:01:46 -0500 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
+		    Documentation generated on Fri, 24 Aug 2012 21:34:21 -0400 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
 	      </div>
       </td></tr></table>
     </td>

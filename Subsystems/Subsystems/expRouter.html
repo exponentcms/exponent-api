@@ -17,7 +17,7 @@
   <tr>
     <td colspan="2" class="header-menu">
       
-                                                                                                                          
+                                                                                                            
                                     		[ <a href="../../classtrees_Subsystems.html" class="menu">class tree: Subsystems</a> ]
 		[ <a href="../../elementindex_Subsystems.html" class="menu">index: Subsystems</a> ]
             [ <a href="../../elementindex.html" class="menu">all elements</a> ]
@@ -46,7 +46,6 @@
       <b>Packages:</b><br />
   <div class="package">
               <a href="../../li_Framework.html">Framework</a><br />
-              <a href="../../li_com-tecnick-tcpdf.html">com-tecnick-tcpdf</a><br />
               <a href="../../li_Core.html">Core</a><br />
               <a href="../../li_Installation.html">Installation</a><br />
               <a href="../../li_Modules.html">Modules</a><br />
@@ -76,6 +75,7 @@
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expGeo.php.html">expGeo.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expHistory.php.html">expHistory.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expHtmlToPDF.php.html">expHtmlToPDF.php</a></span><br />
+			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expHtmlToPDF2.php.html">expHtmlToPDF2.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expJavascript.php.html">expJavascript.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expLang.php.html">expLang.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expLDAP.php.html">expLDAP.php</a></span><br />
@@ -108,6 +108,7 @@
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expGeo.html">expGeo</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expHistory.html">expHistory</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expHtmlToPDF.html">expHtmlToPDF</a>    </span>	 <br />
+	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expHtmlToPDF2.html">expHtmlToPDF2</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expJavascript.html">expJavascript</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expLang.html">expLang</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expLDAP.html">expLDAP</a>    </span>	 <br />
@@ -195,6 +196,7 @@ Source Location: /framework/core/subsystems/expRouter.php<br /><br />
 		  		  <li><a href="../../Subsystems/Subsystems/expRouter.html#methodconvertToOldSchoolUrl">convertToOldSchoolUrl</a></li>
 		  		  <li><a href="../../Subsystems/Subsystems/expRouter.html#methoddecode">decode</a></li>
 		  		  <li><a href="../../Subsystems/Subsystems/expRouter.html#methodencode">encode</a></li>
+		  		  <li><a href="../../Subsystems/Subsystems/expRouter.html#methodexportAsPDFLink">exportAsPDFLink</a></li>
 		  		  <li><a href="../../Subsystems/Subsystems/expRouter.html#methodgetPageByName">getPageByName</a></li>
 		  		  <li><a href="../../Subsystems/Subsystems/expRouter.html#methodgetRouterMaps">getRouterMaps</a></li>
 		  		  <li><a href="../../Subsystems/Subsystems/expRouter.html#methodgetSection">getSection</a></li>
@@ -299,7 +301,7 @@ Source Location: /framework/core/subsystems/expRouter.php<br /><br />
 					<td class="method-definition"><a href="#encode" title="details" class="method-name">encode</a>()&nbsp;&nbsp;</td>
 					<td class="method-definition"></td></tr>
 				</div>
-																																																																																																																																				<div class="method-definition">
+																																																																																																																																												<div class="method-definition">
 											<tr><td class="method-definition"><span class="method-result">expRouter</span>&nbsp;&nbsp;</td>
 										<td class="method-definition"><a href="#__construct" title="details" class="method-name">__construct</a>()&nbsp;&nbsp;</td>
 					<td class="method-definition"></td></tr>
@@ -325,6 +327,11 @@ Source Location: /framework/core/subsystems/expRouter.php<br /><br />
 					<td class="method-definition"></td></tr>
 				</div>
 																																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#exportAsPDFLink" title="details" class="method-name">exportAsPDFLink</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
 											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
 										<td class="method-definition"><a href="#getPageByName" title="details" class="method-name">getPageByName</a>()&nbsp;&nbsp;</td>
 					<td class="method-definition"></td></tr>
@@ -410,7 +417,7 @@ Source Location: /framework/core/subsystems/expRouter.php<br /><br />
 												</div>
 		<div class="info-box-body">
 			<a name="var$current_url" id="$current_url"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -434,7 +441,7 @@ Source Location: /framework/core/subsystems/expRouter.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$params" id="$params"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -458,7 +465,7 @@ Source Location: /framework/core/subsystems/expRouter.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$sefPath" id="$sefPath"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -482,7 +489,7 @@ Source Location: /framework/core/subsystems/expRouter.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$url_parts" id="$url_parts"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -506,7 +513,7 @@ Source Location: /framework/core/subsystems/expRouter.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$url_style" id="$url_style"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -530,7 +537,7 @@ Source Location: /framework/core/subsystems/expRouter.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$url_type" id="$url_type"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -567,7 +574,7 @@ Source Location: /framework/core/subsystems/expRouter.php<br /><br />
 		<div class="info-box-body">
 			<a name='method_detail'></a>
 <a name="methodcleanLink" id="cleanLink"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 
 <div class="method-header">
 	<span class="method-title">static method cleanLink</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 60]</span>
@@ -615,10 +622,10 @@ $fulllink&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methoddecode" id="decode"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">static method decode</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 493]</span>
+	<span class="method-title">static method decode</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 491]</span>
 </div>
 <br />
 
@@ -658,10 +665,10 @@ $url&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodencode" id="encode"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">static method encode</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 488]</span>
+	<span class="method-title">static method encode</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 486]</span>
 </div>
 <br />
 
@@ -702,7 +709,7 @@ $url&nbsp;
 </div>
 
 <a name="method__construct" id="__construct"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 
 <div class="method-header">
 	<span class="method-title">Constructor __construct</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 34]</span>
@@ -726,10 +733,10 @@ $url&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodbuildCurrentUrl" id="buildCurrentUrl"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">buildCurrentUrl</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 478]</span>
+	<span class="method-title">buildCurrentUrl</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 476]</span>
 </div>
 <br />
 
@@ -757,10 +764,10 @@ $url&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodbuildUrlByPageId" id="buildUrlByPageId"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">buildUrlByPageId</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 507]</span>
+	<span class="method-title">buildUrlByPageId</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 505]</span>
 </div>
 <br />
 
@@ -800,10 +807,10 @@ $id = null]&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodconvertPartsToParams" id="convertPartsToParams"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">convertPartsToParams</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 548]</span>
+	<span class="method-title">convertPartsToParams</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 573]</span>
 </div>
 <br />
 
@@ -831,10 +838,10 @@ $id = null]&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodconvertToOldSchoolUrl" id="convertToOldSchoolUrl"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">convertToOldSchoolUrl</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 543]</span>
+	<span class="method-title">convertToOldSchoolUrl</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 568]</span>
 </div>
 <br />
 
@@ -861,11 +868,96 @@ $id = null]&nbsp;
 		<br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
+<a name="methodexportAsPDFLink" id="exportAsPDFLink"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">exportAsPDFLink</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 543]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void exportAsPDFLink(
+[
+$link_text = &quot;Export as PDF&quot;], [
+$class = null], [
+$width = 800], [
+$height = 600], [
+$view = ''], [
+$orientation = false], [
+$limit = '']&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$link_text:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$class:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$width:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$height:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$view:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$orientation:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$limit:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
 <a name="methodgetPageByName" id="getPageByName"><!-- --></a>
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">getPageByName</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 574]</span>
+	<span class="method-title">getPageByName</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 599]</span>
 </div>
 <br />
 
@@ -908,7 +1000,7 @@ $url_name&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">getRouterMaps</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 692]</span>
+	<span class="method-title">getRouterMaps</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 717]</span>
 </div>
 <br />
 
@@ -939,7 +1031,7 @@ $url_name&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">getSection</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 646]</span>
+	<span class="method-title">getSection</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 671]</span>
 </div>
 <br />
 
@@ -970,7 +1062,7 @@ $url_name&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">getSectionObj</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 664]</span>
+	<span class="method-title">getSectionObj</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 689]</span>
 </div>
 <br />
 
@@ -1013,7 +1105,7 @@ $section&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">getSefUrlByPageId</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 498]</span>
+	<span class="method-title">getSefUrlByPageId</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 496]</span>
 </div>
 <br />
 
@@ -1056,7 +1148,7 @@ $id = null]&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">getTrackingId</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 704]</span>
+	<span class="method-title">getTrackingId</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 727]</span>
 </div>
 <br />
 
@@ -1087,7 +1179,7 @@ $id = null]&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">isMappedURL</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 365]</span>
+	<span class="method-title">isMappedURL</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 363]</span>
 </div>
 <br />
 
@@ -1253,7 +1345,7 @@ $view = '']&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">routeActionRequest</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 421]</span>
+	<span class="method-title">routeActionRequest</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 419]</span>
 </div>
 <br />
 
@@ -1284,7 +1376,7 @@ $view = '']&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">routePageRequest</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 284]</span>
+	<span class="method-title">routePageRequest</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 287]</span>
 </div>
 <br />
 
@@ -1346,7 +1438,7 @@ $view = '']&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">splitURL</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 242]</span>
+	<span class="method-title">splitURL</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 243]</span>
 </div>
 <br />
 
@@ -1422,7 +1514,7 @@ $section = null]&nbsp;
 
         <div class="credit">
 		    <hr class="separator" />
-		    Documentation generated on Tue, 14 Feb 2012 14:01:42 -0500 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
+		    Documentation generated on Fri, 24 Aug 2012 21:34:15 -0400 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
 	      </div>
       </td></tr></table>
     </td>

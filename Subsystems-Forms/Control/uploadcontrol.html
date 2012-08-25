@@ -17,7 +17,7 @@
   <tr>
     <td colspan="2" class="header-menu">
       
-                                                                                                                                        
+                                                                                                                          
                       		[ <a href="../../classtrees_Subsystems-Forms.html" class="menu">class tree: Subsystems-Forms</a> ]
 		[ <a href="../../elementindex_Subsystems-Forms.html" class="menu">index: Subsystems-Forms</a> ]
             [ <a href="../../elementindex.html" class="menu">all elements</a> ]
@@ -46,7 +46,6 @@
       <b>Packages:</b><br />
   <div class="package">
               <a href="../../li_Framework.html">Framework</a><br />
-              <a href="../../li_com-tecnick-tcpdf.html">com-tecnick-tcpdf</a><br />
               <a href="../../li_Core.html">Core</a><br />
               <a href="../../li_Installation.html">Installation</a><br />
               <a href="../../li_Modules.html">Modules</a><br />
@@ -61,6 +60,7 @@
 	<strong>Control</strong><br />			<span style="padding-left: 1em;"><a href="../../Subsystems-Forms/Control/_framework---core---subsystems---forms---controls---antispamcontrol.php.html">antispamcontrol.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems-Forms/Control/_framework---core---subsystems---forms---controls---autocompletecontrol.php.html">autocompletecontrol.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems-Forms/Control/_framework---core---subsystems---forms---controls---buttongroupcontrol.php.html">buttongroupcontrol.php</a></span><br />
+			<span style="padding-left: 1em;"><a href="../../Subsystems-Forms/Control/_themes---bootstraptheme---controls---buttongroupcontrol.php.html">buttongroupcontrol.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems-Forms/Control/_framework---core---subsystems---forms---controls---calendarcontrol.php.html">calendarcontrol.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems-Forms/Control/_framework---core---subsystems---forms---controls---checkboxcontrol.php.html">checkboxcontrol.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems-Forms/Control/_framework---core---subsystems---forms---controls---ckeditorcontrol.php.html">ckeditorcontrol.php</a></span><br />
@@ -197,17 +197,8 @@ Source Location: /framework/core/subsystems/forms/controls/uploadcontrol.php<br 
    --uploadcontrol</pre>
 
 		
-				<strong>Author(s):</strong>
-		<ul>
-		  			 			 <li>Phillip Ball</li>
-			 		  			 		  			 		  		</ul>
 		
 		
-<strong>Information Tags:</strong><br />
-<table border="0" cellspacing="0" cellpadding="0">
-				<tr><td><strong>Version:</strong>&nbsp;&nbsp;</td><td>2</td></tr>
-				<tr><td><strong>Copyright:</strong>&nbsp;&nbsp;</td><td>2007-2009 OIC Group, Inc.</td></tr>
-	</table>
 		</td>
 
 		
@@ -307,19 +298,25 @@ Source Location: /framework/core/subsystems/forms/controls/uploadcontrol.php<br 
 											<span class="method-definition"><a href="../../Subsystems-Forms/Control/formcontrol.html#methodcontrolToHTML">formcontrol::controlToHTML()</a></span>
 										</dt>
 										<dd>
-											<span class="method-definition"></span>
+											<span class="method-definition">Place the editable control on the edit form</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../../Subsystems-Forms/Control/formcontrol.html#methodform">formcontrol::form()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">Create the Form to edit the control settings</span>
 										</dd>
 																			<dt>
 											<span class="method-definition"><a href="../../Subsystems-Forms/Control/formcontrol.html#methodgetFieldDefinition">formcontrol::getFieldDefinition()</a></span>
 										</dt>
 										<dd>
-											<span class="method-definition"></span>
+											<span class="method-definition">returns the table field definition for this control</span>
 										</dd>
 																			<dt>
 											<span class="method-definition"><a href="../../Subsystems-Forms/Control/formcontrol.html#methodisSimpleControl">formcontrol::isSimpleControl()</a></span>
 										</dt>
 										<dd>
-											<span class="method-definition">Is this a Simple Control?</span>
+											<span class="method-definition">Is this a Simple Control?  Used to determine if control is available for the Form (Builder) module</span>
 										</dd>
 																			<dt>
 											<span class="method-definition"><a href="../../Subsystems-Forms/Control/formcontrol.html#methodname">formcontrol::name()</a></span>
@@ -331,31 +328,37 @@ Source Location: /framework/core/subsystems/forms/controls/uploadcontrol.php<br 
 											<span class="method-definition"><a href="../../Subsystems-Forms/Control/formcontrol.html#methodonRegister">formcontrol::onRegister()</a></span>
 										</dt>
 										<dd>
-											<span class="method-definition"></span>
+											<span class="method-definition">Event hook for when control is registered on a form</span>
 										</dd>
 																			<dt>
 											<span class="method-definition"><a href="../../Subsystems-Forms/Control/formcontrol.html#methodonUnRegister">formcontrol::onUnRegister()</a></span>
 										</dt>
 										<dd>
-											<span class="method-definition"></span>
+											<span class="method-definition">Event hook for when control is un-registered (removed) on a form</span>
 										</dd>
 																			<dt>
 											<span class="method-definition"><a href="../../Subsystems-Forms/Control/formcontrol.html#methodparseData">formcontrol::parseData()</a></span>
 										</dt>
 										<dd>
-											<span class="method-definition"></span>
+											<span class="method-definition">Parse the control value</span>
 										</dd>
 																			<dt>
 											<span class="method-definition"><a href="../../Subsystems-Forms/Control/formcontrol.html#methodtemplateFormat">formcontrol::templateFormat()</a></span>
 										</dt>
 										<dd>
-											<span class="method-definition"></span>
+											<span class="method-definition">Format the control's data for user display</span>
 										</dd>
 																			<dt>
 											<span class="method-definition"><a href="../../Subsystems-Forms/Control/formcontrol.html#methodtoHTML">formcontrol::toHTML()</a></span>
 										</dt>
 										<dd>
-											<span class="method-definition"></span>
+											<span class="method-definition">Place the control in the form</span>
+										</dd>
+																			<dt>
+											<span class="method-definition"><a href="../../Subsystems-Forms/Control/formcontrol.html#methodupdate">formcontrol::update()</a></span>
+										</dt>
+										<dd>
+											<span class="method-definition">update the control settings</span>
 										</dd>
 																	</dl>
 							</blockquote>
@@ -382,7 +385,28 @@ Source Location: /framework/core/subsystems/forms/controls/uploadcontrol.php<br 
 		<div class="info-box-body">
 			<div class="method-summary">
 				<table border="0" cellspacing="0" cellpadding="0" class="method-summary">
-																																																																												<div class="method-definition">
+																																				<div class="method-definition">
+					<tr><td class="method-definition">static
+											<span class="method-result">void</span>&nbsp;&nbsp;
+					</td>
+					<td class="method-definition"><a href="#getFieldDefinition" title="details" class="method-name">getFieldDefinition</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																<div class="method-definition">
+					<tr><td class="method-definition">static
+											<span class="method-result">void</span>&nbsp;&nbsp;
+					</td>
+					<td class="method-definition"><a href="#isSimpleControl" title="details" class="method-name">isSimpleControl</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																								<div class="method-definition">
+					<tr><td class="method-definition">static
+											<span class="method-result">void</span>&nbsp;&nbsp;
+					</td>
+					<td class="method-definition"><a href="#name" title="details" class="method-name">name</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"></td></tr>
+				</div>
+																								<div class="method-definition">
 					<tr><td class="method-definition">static
 											<span class="method-result">void</span>&nbsp;&nbsp;
 					</td>
@@ -404,27 +428,12 @@ Source Location: /framework/core/subsystems/forms/controls/uploadcontrol.php<br 
 										<td class="method-definition"><a href="#form" title="details" class="method-name">form</a>()&nbsp;&nbsp;</td>
 					<td class="method-definition"></td></tr>
 				</div>
-																<div class="method-definition">
-											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
-										<td class="method-definition"><a href="#getFieldDefinition" title="details" class="method-name">getFieldDefinition</a>()&nbsp;&nbsp;</td>
-					<td class="method-definition"></td></tr>
-				</div>
-																<div class="method-definition">
-											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
-										<td class="method-definition"><a href="#isSimpleControl" title="details" class="method-name">isSimpleControl</a>()&nbsp;&nbsp;</td>
-					<td class="method-definition"></td></tr>
-				</div>
-																<div class="method-definition">
+																																<div class="method-definition">
 											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
 										<td class="method-definition"><a href="#moveFile" title="details" class="method-name">moveFile</a>()&nbsp;&nbsp;</td>
 					<td class="method-definition"></td></tr>
 				</div>
-																<div class="method-definition">
-											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
-										<td class="method-definition"><a href="#name" title="details" class="method-name">name</a>()&nbsp;&nbsp;</td>
-					<td class="method-definition"></td></tr>
-				</div>
-																<div class="method-definition">
+																								<div class="method-definition">
 											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
 										<td class="method-definition"><a href="#onRegister" title="details" class="method-name">onRegister</a>()&nbsp;&nbsp;</td>
 					<td class="method-definition"></td></tr>
@@ -464,11 +473,100 @@ Source Location: /framework/core/subsystems/forms/controls/uploadcontrol.php<br 
 					</div>
 		<div class="info-box-body">
 			<a name='method_detail'></a>
-<a name="methodparseData" id="parseData"><!-- --></a>
+<a name="methodgetFieldDefinition" id="getFieldDefinition"><!-- --></a>
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">static method parseData</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 96]</span>
+	<span class="method-title">static method getFieldDefinition</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 32]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>static void getFieldDefinition(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+	<br />
+	
+
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../Subsystems-Forms/Control/formcontrol.html#methodgetFieldDefinition">formcontrol::getFieldDefinition()</a></dt>
+						<dd>returns the table field definition for this control</dd>
+					</dl>
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodisSimpleControl" id="isSimpleControl"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">static method isSimpleControl</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 31]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>static void isSimpleControl(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+	<br />
+	
+
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../Subsystems-Forms/Control/formcontrol.html#methodisSimpleControl">formcontrol::isSimpleControl()</a></dt>
+						<dd>Is this a Simple Control?  Used to determine if control is available for the Form (Builder) module</dd>
+					</dl>
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodname" id="name"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">static method name</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 30]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>static void name(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	
+	<br />
+	
+
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../Subsystems-Forms/Control/formcontrol.html#methodname">formcontrol::name()</a></dt>
+					</dl>
+		
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodparseData" id="parseData"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">static method parseData</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 106]</span>
 </div>
 <br />
 
@@ -507,6 +605,7 @@ $formvalues&nbsp;
 		<div class="notes">Redefinition of:</div>
 		<dl>
 			<dt><a href="../../Subsystems-Forms/Control/formcontrol.html#methodparseData">formcontrol::parseData()</a></dt>
+						<dd>Parse the control value</dd>
 					</dl>
 		
 		<br />
@@ -514,7 +613,7 @@ $formvalues&nbsp;
 </div>
 
 <a name="method__construct" id="__construct"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 
 <div class="method-header">
 	<span class="method-title">Constructor __construct</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 38]</span>
@@ -557,7 +656,7 @@ $disabled = false]&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodcontrolToHTML" id="controlToHTML"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 
 <div class="method-header">
 	<span class="method-title">controlToHTML</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 46]</span>
@@ -569,7 +668,8 @@ $disabled = false]&nbsp;
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
 		<code>void controlToHTML(
 
-$name&nbsp;
+$name, 
+$label&nbsp;
 )</code>
     </td></tr></table>
     </td></tr></table><br /></div>
@@ -583,6 +683,12 @@ $name&nbsp;
 				<span class="var-name">$name:&nbsp;</span></td>
 				<td>
 							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$label:&nbsp;</span></td>
+				<td>
+							</td></tr>
 				</table>
 
 	<br />
@@ -592,16 +698,17 @@ $name&nbsp;
 		<div class="notes">Redefinition of:</div>
 		<dl>
 			<dt><a href="../../Subsystems-Forms/Control/formcontrol.html#methodcontrolToHTML">formcontrol::controlToHTML()</a></dt>
+						<dd>Place the editable control on the edit form</dd>
 					</dl>
 		
 		<br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodform" id="form"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">form</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 56]</span>
+	<span class="method-title">form</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 57]</span>
 </div>
 <br />
 
@@ -629,74 +736,21 @@ $object&nbsp;
 	<br />
 	
 
-		
-		<br />
-	<div class="top">[ <a href="#top">Top</a> ]</div>
-</div>
-<a name="methodgetFieldDefinition" id="getFieldDefinition"><!-- --></a>
-<div class="oddrow">
-
-<div class="method-header">
-	<span class="method-title">getFieldDefinition</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 32]</span>
-</div>
-<br />
-
-	<div class="function">
-    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
-    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
-		<code>void getFieldDefinition(
-)</code>
-    </td></tr></table>
-    </td></tr></table><br /></div>
-
-	
-	<br />
-	
-
 			<hr class="separator" />
 		<div class="notes">Redefinition of:</div>
 		<dl>
-			<dt><a href="../../Subsystems-Forms/Control/formcontrol.html#methodgetFieldDefinition">formcontrol::getFieldDefinition()</a></dt>
-					</dl>
-		
-		<br />
-	<div class="top">[ <a href="#top">Top</a> ]</div>
-</div>
-<a name="methodisSimpleControl" id="isSimpleControl"><!-- --></a>
-<div class="evenrow">
-
-<div class="method-header">
-	<span class="method-title">isSimpleControl</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 31]</span>
-</div>
-<br />
-
-	<div class="function">
-    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
-    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
-		<code>void isSimpleControl(
-)</code>
-    </td></tr></table>
-    </td></tr></table><br /></div>
-
-	
-	<br />
-	
-
-			<hr class="separator" />
-		<div class="notes">Redefinition of:</div>
-		<dl>
-			<dt><a href="../../Subsystems-Forms/Control/formcontrol.html#methodisSimpleControl">formcontrol::isSimpleControl()</a></dt>
-						<dd>Is this a Simple Control?</dd>
+			<dt><a href="../../Subsystems-Forms/Control/formcontrol.html#methodform">formcontrol::form()</a></dt>
+						<dd>Create the Form to edit the control settings</dd>
 					</dl>
 		
 		<br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodmoveFile" id="moveFile"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">moveFile</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 85]</span>
+	<span class="method-title">moveFile</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 90]</span>
 </div>
 <br />
 
@@ -731,35 +785,6 @@ $formvalues&nbsp;
 	<br />
 	
 
-		
-		<br />
-	<div class="top">[ <a href="#top">Top</a> ]</div>
-</div>
-<a name="methodname" id="name"><!-- --></a>
-<div class="evenrow">
-
-<div class="method-header">
-	<span class="method-title">name</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 30]</span>
-</div>
-<br />
-
-	<div class="function">
-    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
-    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
-		<code>void name(
-)</code>
-    </td></tr></table>
-    </td></tr></table><br /></div>
-
-	
-	<br />
-	
-
-			<hr class="separator" />
-		<div class="notes">Redefinition of:</div>
-		<dl>
-			<dt><a href="../../Subsystems-Forms/Control/formcontrol.html#methodname">formcontrol::name()</a></dt>
-					</dl>
 		
 		<br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
@@ -800,6 +825,7 @@ $formvalues&nbsp;
 		<div class="notes">Redefinition of:</div>
 		<dl>
 			<dt><a href="../../Subsystems-Forms/Control/formcontrol.html#methodonRegister">formcontrol::onRegister()</a></dt>
+						<dd>Event hook for when control is registered on a form</dd>
 					</dl>
 		
 		<br />
@@ -809,7 +835,7 @@ $formvalues&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">update</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 71]</span>
+	<span class="method-title">update</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 75]</span>
 </div>
 <br />
 
@@ -844,6 +870,12 @@ $object&nbsp;
 	<br />
 	
 
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../Subsystems-Forms/Control/formcontrol.html#methodupdate">formcontrol::update()</a></dt>
+						<dd>update the control settings</dd>
+					</dl>
 		
 		<br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
@@ -854,7 +886,7 @@ $object&nbsp;
 
         <div class="credit">
 		    <hr class="separator" />
-		    Documentation generated on Tue, 14 Feb 2012 14:02:27 -0500 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
+		    Documentation generated on Fri, 24 Aug 2012 21:35:05 -0400 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
 	      </div>
       </td></tr></table>
     </td>

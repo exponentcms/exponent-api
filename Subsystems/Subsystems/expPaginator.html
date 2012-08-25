@@ -17,7 +17,7 @@
   <tr>
     <td colspan="2" class="header-menu">
       
-                                                                                                                          
+                                                                                                            
                                     		[ <a href="../../classtrees_Subsystems.html" class="menu">class tree: Subsystems</a> ]
 		[ <a href="../../elementindex_Subsystems.html" class="menu">index: Subsystems</a> ]
             [ <a href="../../elementindex.html" class="menu">all elements</a> ]
@@ -46,7 +46,6 @@
       <b>Packages:</b><br />
   <div class="package">
               <a href="../../li_Framework.html">Framework</a><br />
-              <a href="../../li_com-tecnick-tcpdf.html">com-tecnick-tcpdf</a><br />
               <a href="../../li_Core.html">Core</a><br />
               <a href="../../li_Installation.html">Installation</a><br />
               <a href="../../li_Modules.html">Modules</a><br />
@@ -76,6 +75,7 @@
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expGeo.php.html">expGeo.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expHistory.php.html">expHistory.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expHtmlToPDF.php.html">expHtmlToPDF.php</a></span><br />
+			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expHtmlToPDF2.php.html">expHtmlToPDF2.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expJavascript.php.html">expJavascript.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expLang.php.html">expLang.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems/Subsystems/_framework---core---subsystems---expLDAP.php.html">expLDAP.php</a></span><br />
@@ -108,6 +108,7 @@
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expGeo.html">expGeo</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expHistory.html">expHistory</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expHtmlToPDF.html">expHtmlToPDF</a>    </span>	 <br />
+	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expHtmlToPDF2.html">expHtmlToPDF2</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expJavascript.html">expJavascript</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expLang.html">expLang</a>    </span>	 <br />
 	    <span style="padding-left: 1em;">		<a href="../../Subsystems/Subsystems/expLDAP.html">expLDAP</a>    </span>	 <br />
@@ -159,16 +160,7 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 
         		<p align="center" class="short-description"><strong>This is the class expPaginator  Exponent Pagination Subsystem
 </strong></p>
-<span class="description"><p>The expPaginator class is used to retrieve objects from the database  and paginate them.  It automagically handles the calls to other pages  and had built-in sorting using the defined column headers.</p><p>Usage Example:</p><p><ol><li><div class="src-line">&nbsp;<span class="src-var">$page&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../../Subsystems/Subsystems/expPaginator.html">expPaginator</a></span><span class="src-sym">(</span><span class="src-key">array</span><span class="src-sym">(</span></div></li>
-<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'model'</span>=&gt;<span class="src-str">'faq'</span><span class="src-sym">,</span></div></li>
-<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'where'</span>=&gt;<span class="src-num">1</span><span class="src-sym">,</span></div></li>
-<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'limit'</span>=&gt;<span class="src-num">25</span><span class="src-sym">,</span></div></li>
-<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'order'</span>=&gt;<span class="src-str">'rank'</span><span class="src-sym">,</span></div></li>
-<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'controller'</span>=&gt;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">baseclassname</span><span class="src-sym">,</span></div></li>
-<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'action'</span>=&gt;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">params</span><span class="src-sym">[</span><span class="src-str">'action'</span><span class="src-sym">]</span><span class="src-sym">,</span></div></li>
-<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'columns'</span>=&gt;<span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'In&nbsp;FAQ'</span>=&gt;<span class="src-str">'include_in_faq'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Submitted'</span>=&gt;<span class="src-str">'created_at'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Submitted&nbsp;By'</span>=&gt;<span class="src-str">'submitter_name'</span><span class="src-sym">)</span><span class="src-sym">,</span></div></li>
-<li><div class="src-line">&nbsp;&nbsp;<span class="src-sym">))</span><span class="src-sym">;</span></div></li>
-</ol></p></span>
+<span class="description"><p>The expPaginator class is used to retrieve objects from the database  and paginate them.  It automagically handles the calls to other pages  and had built-in sorting using the defined column headers.</p><p>Usage Example:</p><p><ol></ol></p></span>
 		<p class="notes">
 			Located in <a class="field" href="_framework---core---subsystems---expPaginator.php.html">/framework/core/subsystems/expPaginator.php</a> [<span class="field">line 45</span>]
 		</p>
@@ -209,10 +201,12 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 		  		  <li><a href="../../Subsystems/Subsystems/expPaginator.html#var$previous_shift">$previous_shift</a></li>
 		  		  <li><a href="../../Subsystems/Subsystems/expPaginator.html#var$records">$records</a></li>
 		  		  <li><a href="../../Subsystems/Subsystems/expPaginator.html#var$search_string">$search_string</a></li>
+		  		  <li><a href="../../Subsystems/Subsystems/expPaginator.html#var$sort_dropdown">$sort_dropdown</a></li>
 		  		  <li><a href="../../Subsystems/Subsystems/expPaginator.html#var$sql">$sql</a></li>
 		  		  <li><a href="../../Subsystems/Subsystems/expPaginator.html#var$start">$start</a></li>
 		  		  <li><a href="../../Subsystems/Subsystems/expPaginator.html#var$total_pages">$total_pages</a></li>
 		  		  <li><a href="../../Subsystems/Subsystems/expPaginator.html#var$total_records">$total_records</a></li>
+		  		  <li><a href="../../Subsystems/Subsystems/expPaginator.html#var$uncat">$uncat</a></li>
 		  		  <li><a href="../../Subsystems/Subsystems/expPaginator.html#var$view">$view</a></li>
 		  		  <li><a href="../../Subsystems/Subsystems/expPaginator.html#var$where">$where</a></li>
 		  		</ul>
@@ -248,7 +242,7 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 		<div class="info-box-body">
 			<div class="var-summary">
 			<table border="0" cellspacing="0" cellpadding="0" class="var-summary">
-																																																																																																																																																																																																							<div class="var-title">
+																																																																																																																																																																																																																			<div class="var-title">
 					<tr><td class="var-title"><span class="var-type-summary">string</span>&nbsp;&nbsp;</td>
 					<td class="var-title"><a href="#$action" title="details" class="var-name-summary">$action</a>&nbsp;&nbsp;</td>
 					<td class="var-summary-description"></td></tr>
@@ -374,6 +368,11 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 					<td class="var-summary-description"></td></tr>
 				</div>
 													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">array</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$sort_dropdown" title="details" class="var-name-summary">$sort_dropdown</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
 					<tr><td class="var-title"><span class="var-type-summary">string</span>&nbsp;&nbsp;</td>
 					<td class="var-title"><a href="#$sql" title="details" class="var-name-summary">$sql</a>&nbsp;&nbsp;</td>
 					<td class="var-summary-description"></td></tr>
@@ -391,6 +390,11 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 													<div class="var-title">
 					<tr><td class="var-title"><span class="var-type-summary">integer</span>&nbsp;&nbsp;</td>
 					<td class="var-title"><a href="#$total_records" title="details" class="var-name-summary">$total_records</a>&nbsp;&nbsp;</td>
+					<td class="var-summary-description"></td></tr>
+				</div>
+													<div class="var-title">
+					<tr><td class="var-title"><span class="var-type-summary">string</span>&nbsp;&nbsp;</td>
+					<td class="var-title"><a href="#$uncat" title="details" class="var-name-summary">$uncat</a>&nbsp;&nbsp;</td>
 					<td class="var-summary-description"></td></tr>
 				</div>
 													<div class="var-title">
@@ -461,7 +465,7 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 												</div>
 		<div class="info-box-body">
 			<a name="var$action" id="$action"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -485,13 +489,13 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$categorize" id="$categorize"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">integer</span>&nbsp;&nbsp;
 			<span class="var-name">$categorize</span>
-			 = <span class="var-default"> false</span>			<span class="smalllinenumber">[line 81]</span>
+			 = <span class="var-default"> false</span>			<span class="smalllinenumber">[line 87]</span>
 		</span>
 	</div>
 
@@ -509,13 +513,13 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$cats" id="$cats"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">array</span>&nbsp;&nbsp;
 			<span class="var-name">$cats</span>
-			 = <span class="var-default">array()</span>			<span class="smalllinenumber">[line 88]</span>
+			 = <span class="var-default">array()</span>			<span class="smalllinenumber">[line 96]</span>
 		</span>
 	</div>
 
@@ -533,7 +537,7 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$controller" id="$controller"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -557,7 +561,7 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$count_sql" id="$count_sql"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -581,7 +585,7 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$default" id="$default"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -605,7 +609,7 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$firstpage" id="$firstpage"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -629,7 +633,7 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$header_columns" id="$header_columns"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -653,13 +657,13 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$last" id="$last"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">integer</span>&nbsp;&nbsp;
 			<span class="var-name">$last</span>
-			 = <span class="var-default"> 0</span>			<span class="smalllinenumber">[line 76]</span>
+			 = <span class="var-default"> 0</span>			<span class="smalllinenumber">[line 82]</span>
 		</span>
 	</div>
 
@@ -677,7 +681,7 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$lastpage" id="$lastpage"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -701,13 +705,13 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$limit" id="$limit"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">integer</span>&nbsp;&nbsp;
 			<span class="var-name">$limit</span>
-			 = <span class="var-default"> 10</span>			<span class="smalllinenumber">[line 74]</span>
+			 = <span class="var-default"> 0</span>			<span class="smalllinenumber">[line 80]</span>
 		</span>
 	</div>
 
@@ -725,7 +729,7 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$model" id="$model"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -749,7 +753,7 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$next_page" id="$next_page"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -773,7 +777,7 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$next_shift" id="$next_shift"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -797,7 +801,7 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$order" id="$order"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -821,7 +825,7 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$order_direction" id="$order_direction"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -845,13 +849,13 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$page" id="$page"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">integer</span>&nbsp;&nbsp;
 			<span class="var-name">$page</span>
-			 = <span class="var-default"> 1</span>			<span class="smalllinenumber">[line 73]</span>
+			 = <span class="var-default"> 1</span>			<span class="smalllinenumber">[line 78]</span>
 		</span>
 	</div>
 
@@ -869,7 +873,7 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$pagelink" id="$pagelink"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -893,13 +897,13 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$pages" id="$pages"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">array</span>&nbsp;&nbsp;
 			<span class="var-name">$pages</span>
-			 = <span class="var-default">array()</span>			<span class="smalllinenumber">[line 86]</span>
+			 = <span class="var-default">array()</span>			<span class="smalllinenumber">[line 94]</span>
 		</span>
 	</div>
 
@@ -917,13 +921,13 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$pages_to_show" id="$pages_to_show"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">integer</span>&nbsp;&nbsp;
 			<span class="var-name">$pages_to_show</span>
-			 = <span class="var-default"> 10</span>			<span class="smalllinenumber">[line 77]</span>
+			 = <span class="var-default"> 10</span>			<span class="smalllinenumber">[line 83]</span>
 		</span>
 	</div>
 
@@ -941,13 +945,13 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$page_offset" id="$page_offset"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">integer</span>&nbsp;&nbsp;
 			<span class="var-name">$page_offset</span>
-			 = <span class="var-default"> 0</span>			<span class="smalllinenumber">[line 80]</span>
+			 = <span class="var-default"> 0</span>			<span class="smalllinenumber">[line 86]</span>
 		</span>
 	</div>
 
@@ -965,7 +969,7 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$previous_page" id="$previous_page"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -989,7 +993,7 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$previous_shift" id="$previous_shift"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -1013,13 +1017,13 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$records" id="$records"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">array</span>&nbsp;&nbsp;
 			<span class="var-name">$records</span>
-			 = <span class="var-default">array()</span>			<span class="smalllinenumber">[line 87]</span>
+			 = <span class="var-default">array()</span>			<span class="smalllinenumber">[line 95]</span>
 		</span>
 	</div>
 
@@ -1037,13 +1041,37 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$search_string" id="$search_string"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">string</span>&nbsp;&nbsp;
 			<span class="var-name">$search_string</span>
 			 = <span class="var-default"> ''</span>			<span class="smalllinenumber">[line 51]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$sort_dropdown" id="$sort_dropdown"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>&nbsp;&nbsp;
+			<span class="var-name">$sort_dropdown</span>
+			 = <span class="var-default">array()</span>			<span class="smalllinenumber">[line 97]</span>
 		</span>
 	</div>
 
@@ -1091,7 +1119,7 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 		<span class="var-title">
 			<span class="var-type">integer</span>&nbsp;&nbsp;
 			<span class="var-name">$start</span>
-			 = <span class="var-default"> 0</span>			<span class="smalllinenumber">[line 75]</span>
+			 = <span class="var-default"> 0</span>			<span class="smalllinenumber">[line 81]</span>
 		</span>
 	</div>
 
@@ -1115,7 +1143,7 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 		<span class="var-title">
 			<span class="var-type">integer</span>&nbsp;&nbsp;
 			<span class="var-name">$total_pages</span>
-			 = <span class="var-default"> 0</span>			<span class="smalllinenumber">[line 79]</span>
+			 = <span class="var-default"> 0</span>			<span class="smalllinenumber">[line 85]</span>
 		</span>
 	</div>
 
@@ -1139,7 +1167,31 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 		<span class="var-title">
 			<span class="var-type">integer</span>&nbsp;&nbsp;
 			<span class="var-name">$total_records</span>
-			 = <span class="var-default"> 0</span>			<span class="smalllinenumber">[line 78]</span>
+			 = <span class="var-default"> 0</span>			<span class="smalllinenumber">[line 84]</span>
+		</span>
+	</div>
+
+		<strong>API Tags:</strong><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="indent"><strong>Access:</strong>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+<br />
+
+
+	
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="var$uncat" id="$uncat"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>&nbsp;&nbsp;
+			<span class="var-name">$uncat</span>
+			 = <span class="var-default">''</span>			<span class="smalllinenumber">[line 69]</span>
 		</span>
 	</div>
 
@@ -1157,7 +1209,7 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$view" id="$view"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -1181,7 +1233,7 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$where" id="$where"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -1219,10 +1271,10 @@ Source Location: /framework/core/subsystems/expPaginator.php<br /><br />
 			<a name='method_detail'></a>
 
 <a name="method__construct" id="__construct"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">Constructor __construct</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 98]</span>
+	<span class="method-title">Constructor __construct</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 107]</span>
 </div>
 <br />
 
@@ -1264,10 +1316,10 @@ $params = array()]&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodasc" id="asc"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">asc</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 552]</span>
+	<span class="method-title">asc</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 571]</span>
 </div>
 <br />
 
@@ -1314,10 +1366,10 @@ $b&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methoddesc" id="desc"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">desc</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 561]</span>
+	<span class="method-title">desc</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 580]</span>
 </div>
 <br />
 
@@ -1364,10 +1416,10 @@ $b&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodmakeHeaderCols" id="makeHeaderCols"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">makeHeaderCols</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 382]</span>
+	<span class="method-title">makeHeaderCols</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 402]</span>
 </div>
 <br />
 
@@ -1407,10 +1459,10 @@ $params&nbsp;
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="methodmakeSortDropdown" id="makeSortDropdown"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">makeSortDropdown</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 484]</span>
+	<span class="method-title">makeSortDropdown</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 504]</span>
 </div>
 <br />
 
@@ -1455,7 +1507,7 @@ $params&nbsp;
 
         <div class="credit">
 		    <hr class="separator" />
-		    Documentation generated on Tue, 14 Feb 2012 14:01:41 -0500 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
+		    Documentation generated on Fri, 24 Aug 2012 21:34:14 -0400 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
 	      </div>
       </td></tr></table>
     </td>

@@ -17,7 +17,7 @@
   <tr>
     <td colspan="2" class="header-menu">
       
-                                                                                                                                        
+                                                                                                                          
                       		[ <a href="../../classtrees_Subsystems-Forms.html" class="menu">class tree: Subsystems-Forms</a> ]
 		[ <a href="../../elementindex_Subsystems-Forms.html" class="menu">index: Subsystems-Forms</a> ]
             [ <a href="../../elementindex.html" class="menu">all elements</a> ]
@@ -46,7 +46,6 @@
       <b>Packages:</b><br />
   <div class="package">
               <a href="../../li_Framework.html">Framework</a><br />
-              <a href="../../li_com-tecnick-tcpdf.html">com-tecnick-tcpdf</a><br />
               <a href="../../li_Core.html">Core</a><br />
               <a href="../../li_Installation.html">Installation</a><br />
               <a href="../../li_Modules.html">Modules</a><br />
@@ -61,6 +60,7 @@
 	<strong>Control</strong><br />			<span style="padding-left: 1em;"><a href="../../Subsystems-Forms/Control/_framework---core---subsystems---forms---controls---antispamcontrol.php.html">antispamcontrol.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems-Forms/Control/_framework---core---subsystems---forms---controls---autocompletecontrol.php.html">autocompletecontrol.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems-Forms/Control/_framework---core---subsystems---forms---controls---buttongroupcontrol.php.html">buttongroupcontrol.php</a></span><br />
+			<span style="padding-left: 1em;"><a href="../../Subsystems-Forms/Control/_themes---bootstraptheme---controls---buttongroupcontrol.php.html">buttongroupcontrol.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems-Forms/Control/_framework---core---subsystems---forms---controls---calendarcontrol.php.html">calendarcontrol.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems-Forms/Control/_framework---core---subsystems---forms---controls---checkboxcontrol.php.html">checkboxcontrol.php</a></span><br />
 			<span style="padding-left: 1em;"><a href="../../Subsystems-Forms/Control/_framework---core---subsystems---forms---controls---ckeditorcontrol.php.html">ckeditorcontrol.php</a></span><br />
@@ -188,24 +188,15 @@ Source Location: /framework/core/subsystems/forms/controls/formcontrol.php<br />
 </strong></p>
 
 		<p class="notes">
-			Located in <a class="field" href="_framework---core---subsystems---forms---controls---formcontrol.php.html">/framework/core/subsystems/forms/controls/formcontrol.php</a> [<span class="field">line 31</span>]
+			Located in <a class="field" href="_framework---core---subsystems---forms---controls---formcontrol.php.html">/framework/core/subsystems/forms/controls/formcontrol.php</a> [<span class="field">line 27</span>]
 		</p>
 
 		
 		<pre></pre>
 
 		
-				<strong>Author(s):</strong>
-		<ul>
-		  			 			 <li>Phillip Ball</li>
-			 		  			 		  			 		  		</ul>
 		
 		
-<strong>Information Tags:</strong><br />
-<table border="0" cellspacing="0" cellpadding="0">
-				<tr><td><strong>Version:</strong>&nbsp;&nbsp;</td><td>2</td></tr>
-				<tr><td><strong>Copyright:</strong>&nbsp;&nbsp;</td><td>2007-2009 OIC Group, Inc.</td></tr>
-	</table>
 		</td>
 
 				<td valign="top" width="20%" class="class-overview">
@@ -225,6 +216,7 @@ Source Location: /framework/core/subsystems/forms/controls/formcontrol.php<br />
 		<p align="center" class="short-description"><strong><a href="#sec_methods">Methods</a></strong></p>
 		<ul>
 		  		  <li><a href="../../Subsystems-Forms/Control/formcontrol.html#methodcontrolToHTML">controlToHTML</a></li>
+		  		  <li><a href="../../Subsystems-Forms/Control/formcontrol.html#methodform">form</a></li>
 		  		  <li><a href="../../Subsystems-Forms/Control/formcontrol.html#methodgetFieldDefinition">getFieldDefinition</a></li>
 		  		  <li><a href="../../Subsystems-Forms/Control/formcontrol.html#methodisSimpleControl">isSimpleControl</a></li>
 		  		  <li><a href="../../Subsystems-Forms/Control/formcontrol.html#methodname">name</a></li>
@@ -233,6 +225,7 @@ Source Location: /framework/core/subsystems/forms/controls/formcontrol.php<br />
 		  		  <li><a href="../../Subsystems-Forms/Control/formcontrol.html#methodparseData">parseData</a></li>
 		  		  <li><a href="../../Subsystems-Forms/Control/formcontrol.html#methodtemplateFormat">templateFormat</a></li>
 		  		  <li><a href="../../Subsystems-Forms/Control/formcontrol.html#methodtoHTML">toHTML</a></li>
+		  		  <li><a href="../../Subsystems-Forms/Control/formcontrol.html#methodupdate">update</a></li>
 		  		</ul>
 		</td>
 		
@@ -269,7 +262,7 @@ Source Location: /framework/core/subsystems/forms/controls/formcontrol.php<br />
 										</td>
 				</tr>
 								<tr>
-					<td style="padding-right: 2em"><a href="../../Subsystems-Forms/Control/buttongroupcontrol.html">buttongroupcontrol</a></td>
+					<td style="padding-right: 2em"></td>
 					<td>
 											Button Group Control
 										</td>
@@ -277,7 +270,7 @@ Source Location: /framework/core/subsystems/forms/controls/formcontrol.php<br />
 								<tr>
 					<td style="padding-right: 2em"><a href="../../Subsystems-Forms/Control/calendarcontrol.html">calendarcontrol</a></td>
 					<td>
-											Popup Date/Time Picker Control
+											Date/Time Control w/ Popup Date Picker and time w/ am/pm combo  text entry date and/or time w/ pop-up date selector
 										</td>
 				</tr>
 								<tr>
@@ -319,7 +312,7 @@ Source Location: /framework/core/subsystems/forms/controls/formcontrol.php<br />
 								<tr>
 					<td style="padding-right: 2em"><a href="../../Subsystems-Forms/Control/datetimecontrol.html">datetimecontrol</a></td>
 					<td>
-											Date Time Control
+											Date Time Control  simple text entry date and/or time
 										</td>
 				</tr>
 								<tr>
@@ -445,13 +438,13 @@ Source Location: /framework/core/subsystems/forms/controls/formcontrol.php<br />
 								<tr>
 					<td style="padding-right: 2em"><a href="../../Subsystems-Forms/Control/yuicalendarcontrol.html">yuicalendarcontrol</a></td>
 					<td>
-											Popup YUI Date/Time Picker Control
+											YUI Date Picker Control  standard calendar control w/o time  places an update calendar field/button
 										</td>
 				</tr>
 								<tr>
 					<td style="padding-right: 2em"><a href="../../Subsystems-Forms/Control/yuidatetimecontrol.html">yuidatetimecontrol</a></td>
 					<td>
-											Popup YUI Date/Time Control  uses the yuicalendarcontrol &amp; datetimecontrol
+											YUI Date/Time Control  uses/combines yuicalendarcontrol &amp; datetimecontrol (w/o date)  places a checkbox to disable calendar
 										</td>
 				</tr>
 								<tr>
@@ -532,52 +525,68 @@ Source Location: /framework/core/subsystems/forms/controls/formcontrol.php<br />
 		<div class="info-box-body">
 			<div class="method-summary">
 				<table border="0" cellspacing="0" cellpadding="0" class="method-summary">
-																																																												<div class="method-definition">
+																												<div class="method-definition">
+					<tr><td class="method-definition">static
+											<span class="method-result">array</span>&nbsp;&nbsp;
+					</td>
+					<td class="method-definition"><a href="#getFieldDefinition" title="details" class="method-name">getFieldDefinition</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">returns the table field definition for this control</td></tr>
+				</div>
+																<div class="method-definition">
+					<tr><td class="method-definition">static
+											<span class="method-result">bool</span>&nbsp;&nbsp;
+					</td>
+					<td class="method-definition"><a href="#isSimpleControl" title="details" class="method-name">isSimpleControl</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Is this a Simple Control?  Used to determine if control is available for the Form (Builder) module</td></tr>
+				</div>
+																<div class="method-definition">
 					<tr><td class="method-definition">static
 											<span class="method-result">void</span>&nbsp;&nbsp;
 					</td>
-					<td class="method-definition"><a href="#parseData" title="details" class="method-name">parseData</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition"><a href="#name" title="details" class="method-name">name</a>()&nbsp;&nbsp;</td>
 					<td class="method-definition"></td></tr>
 				</div>
-																																				<div class="method-definition">
-											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+																																<div class="method-definition">
+					<tr><td class="method-definition">static
+											<span class="method-result">string</span>&nbsp;&nbsp;
+					</td>
+					<td class="method-definition"><a href="#parseData" title="details" class="method-name">parseData</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Parse the control value</td></tr>
+				</div>
+																																												<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">string</span>&nbsp;&nbsp;</td>
 										<td class="method-definition"><a href="#controlToHTML" title="details" class="method-name">controlToHTML</a>()&nbsp;&nbsp;</td>
-					<td class="method-definition"></td></tr>
+					<td class="method-definition">Place the editable control on the edit form</td></tr>
 				</div>
 																<div class="method-definition">
 											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
-										<td class="method-definition"><a href="#getFieldDefinition" title="details" class="method-name">getFieldDefinition</a>()&nbsp;&nbsp;</td>
-					<td class="method-definition"></td></tr>
+										<td class="method-definition"><a href="#form" title="details" class="method-name">form</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Create the Form to edit the control settings</td></tr>
+				</div>
+																																								<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">bool</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#onRegister" title="details" class="method-name">onRegister</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Event hook for when control is registered on a form</td></tr>
 				</div>
 																<div class="method-definition">
 											<tr><td class="method-definition"><span class="method-result">bool</span>&nbsp;&nbsp;</td>
-										<td class="method-definition"><a href="#isSimpleControl" title="details" class="method-name">isSimpleControl</a>()&nbsp;&nbsp;</td>
-					<td class="method-definition">Is this a Simple Control?</td></tr>
-				</div>
-																<div class="method-definition">
-											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
-										<td class="method-definition"><a href="#name" title="details" class="method-name">name</a>()&nbsp;&nbsp;</td>
-					<td class="method-definition"></td></tr>
-				</div>
-																<div class="method-definition">
-											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
-										<td class="method-definition"><a href="#onRegister" title="details" class="method-name">onRegister</a>()&nbsp;&nbsp;</td>
-					<td class="method-definition"></td></tr>
-				</div>
-																<div class="method-definition">
-											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
 										<td class="method-definition"><a href="#onUnRegister" title="details" class="method-name">onUnRegister</a>()&nbsp;&nbsp;</td>
-					<td class="method-definition"></td></tr>
+					<td class="method-definition">Event hook for when control is un-registered (removed) on a form</td></tr>
 				</div>
 																								<div class="method-definition">
-											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
+											<tr><td class="method-definition"><span class="method-result">string</span>&nbsp;&nbsp;</td>
 										<td class="method-definition"><a href="#templateFormat" title="details" class="method-name">templateFormat</a>()&nbsp;&nbsp;</td>
-					<td class="method-definition"></td></tr>
+					<td class="method-definition">Format the control's data for user display</td></tr>
+				</div>
+																<div class="method-definition">
+											<tr><td class="method-definition"><span class="method-result">string</span>&nbsp;&nbsp;</td>
+										<td class="method-definition"><a href="#toHTML" title="details" class="method-name">toHTML</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">Place the control in the form</td></tr>
 				</div>
 																<div class="method-definition">
 											<tr><td class="method-definition"><span class="method-result">void</span>&nbsp;&nbsp;</td>
-										<td class="method-definition"><a href="#toHTML" title="details" class="method-name">toHTML</a>()&nbsp;&nbsp;</td>
-					<td class="method-definition"></td></tr>
+										<td class="method-definition"><a href="#update" title="details" class="method-name">update</a>()&nbsp;&nbsp;</td>
+					<td class="method-definition">update the control settings</td></tr>
 				</div>
 												</table>
 			</div>
@@ -596,13 +605,13 @@ Source Location: /framework/core/subsystems/forms/controls/formcontrol.php<br />
 												</div>
 		<div class="info-box-body">
 			<a name="var$accesskey" id="$accesskey"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>&nbsp;&nbsp;
 			<span class="var-name">$accesskey</span>
-			 = <span class="var-default"> &quot;&quot;</span>			<span class="smalllinenumber">[line 33]</span>
+			 = <span class="var-default"> &quot;&quot;</span>			<span class="smalllinenumber">[line 29]</span>
 		</span>
 	</div>
 
@@ -613,13 +622,13 @@ Source Location: /framework/core/subsystems/forms/controls/formcontrol.php<br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$default" id="$default"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>&nbsp;&nbsp;
 			<span class="var-name">$default</span>
-			 = <span class="var-default"> &quot;&quot;</span>			<span class="smalllinenumber">[line 34]</span>
+			 = <span class="var-default"> &quot;&quot;</span>			<span class="smalllinenumber">[line 30]</span>
 		</span>
 	</div>
 
@@ -637,13 +646,13 @@ Source Location: /framework/core/subsystems/forms/controls/formcontrol.php<br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$disabled" id="$disabled"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>&nbsp;&nbsp;
 			<span class="var-name">$disabled</span>
-			 = <span class="var-default"> false</span>			<span class="smalllinenumber">[line 35]</span>
+			 = <span class="var-default"> false</span>			<span class="smalllinenumber">[line 31]</span>
 		</span>
 	</div>
 
@@ -654,13 +663,13 @@ Source Location: /framework/core/subsystems/forms/controls/formcontrol.php<br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$inError" id="$inError"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>&nbsp;&nbsp;
 			<span class="var-name">$inError</span>
-			 = <span class="var-default"> 0</span>			<span class="smalllinenumber">[line 38]</span>
+			 = <span class="var-default"> 0</span>			<span class="smalllinenumber">[line 34]</span>
 		</span>
 	</div>
 
@@ -671,13 +680,13 @@ Source Location: /framework/core/subsystems/forms/controls/formcontrol.php<br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$required" id="$required"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>&nbsp;&nbsp;
 			<span class="var-name">$required</span>
-			 = <span class="var-default"> false</span>			<span class="smalllinenumber">[line 36]</span>
+			 = <span class="var-default"> false</span>			<span class="smalllinenumber">[line 32]</span>
 		</span>
 	</div>
 
@@ -688,13 +697,13 @@ Source Location: /framework/core/subsystems/forms/controls/formcontrol.php<br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$tabindex" id="$tabindex"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>&nbsp;&nbsp;
 			<span class="var-name">$tabindex</span>
-			 = <span class="var-default"> -1</span>			<span class="smalllinenumber">[line 37]</span>
+			 = <span class="var-default"> -1</span>			<span class="smalllinenumber">[line 33]</span>
 		</span>
 	</div>
 
@@ -705,13 +714,13 @@ Source Location: /framework/core/subsystems/forms/controls/formcontrol.php<br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
 <a name="var$type" id="$type"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>&nbsp;&nbsp;
 			<span class="var-name">$type</span>
-			 = <span class="var-default"> 'text'</span>			<span class="smalllinenumber">[line 39]</span>
+			 = <span class="var-default"> 'text'</span>			<span class="smalllinenumber">[line 35]</span>
 		</span>
 	</div>
 
@@ -748,36 +757,345 @@ Source Location: /framework/core/subsystems/forms/controls/formcontrol.php<br />
 					</div>
 		<div class="info-box-body">
 			<a name='method_detail'></a>
-<a name="methodparseData" id="parseData"><!-- --></a>
-<div class="evenrow">
+<a name="methodgetFieldDefinition" id="getFieldDefinition"><!-- --></a>
+<div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">static method parseData</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 83]</span>
+	<span class="method-title">static method getFieldDefinition</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 53]</span>
 </div>
 <br />
 
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
-		<code>static void parseData(
+		<code>static array getFieldDefinition(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
 
-$original_name, 
-$formvalues&nbsp;
+	<p align="center" class="short-description"><strong>returns the table field definition for this control
+</strong></p>
+
+	<br />
+	
+
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Subsystems-Forms/Control/calendarcontrol.html#methodgetFieldDefinition">calendarcontrol::getFieldDefinition()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/checkboxcontrol.html#methodgetFieldDefinition">checkboxcontrol::getFieldDefinition()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/datetimecontrol.html#methodgetFieldDefinition">datetimecontrol::getFieldDefinition()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/dropdowncontrol.html#methodgetFieldDefinition">dropdowncontrol::getFieldDefinition()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/genericcontrol.html#methodgetFieldDefinition">genericcontrol::getFieldDefinition()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/hiddenfieldcontrol.html#methodgetFieldDefinition">hiddenfieldcontrol::getFieldDefinition()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/popupdatetimecontrol.html#methodgetFieldDefinition">popupdatetimecontrol::getFieldDefinition()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/quantitycontrol.html#methodgetFieldDefinition">quantitycontrol::getFieldDefinition()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/radiogroupcontrol.html#methodgetFieldDefinition">radiogroupcontrol::getFieldDefinition()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/tagpickercontrol.html#methodgetFieldDefinition">tagpickercontrol::getFieldDefinition()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/tagtreecontrol.html#methodgetFieldDefinition">tagtreecontrol::getFieldDefinition()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/textcontrol.html#methodgetFieldDefinition">textcontrol::getFieldDefinition()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/texteditorcontrol.html#methodgetFieldDefinition">texteditorcontrol::getFieldDefinition()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/uploadcontrol.html#methodgetFieldDefinition">uploadcontrol::getFieldDefinition()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/yuicalendarcontrol.html#methodgetFieldDefinition">yuicalendarcontrol::getFieldDefinition()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/yuidatetimecontrol.html#methodgetFieldDefinition">yuidatetimecontrol::getFieldDefinition()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/yuieditorcontrol.html#methodgetFieldDefinition">yuieditorcontrol::getFieldDefinition()</a>
+							</li>
+				</ul>
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodisSimpleControl" id="isSimpleControl"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">static method isSimpleControl</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 45]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>static bool isSimpleControl(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Is this a Simple Control?  Used to determine if control is available for the Form (Builder) module
+</strong></p>
+
+	<br />
+	
+
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Subsystems-Forms/Control/antispamcontrol.html#methodisSimpleControl">antispamcontrol::isSimpleControl()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/autocompletecontrol.html#methodisSimpleControl">autocompletecontrol::isSimpleControl()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/calendarcontrol.html#methodisSimpleControl">calendarcontrol::isSimpleControl()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/checkboxcontrol.html#methodisSimpleControl">checkboxcontrol::isSimpleControl()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/configcontrol.html#methodisSimpleControl">configcontrol::isSimpleControl()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/datetimecontrol.html#methodisSimpleControl">datetimecontrol::isSimpleControl()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/dropdowncontrol.html#methodisSimpleControl">dropdowncontrol::isSimpleControl()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/filemanagercontrol.html#methodisSimpleControl">filemanagercontrol::isSimpleControl()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/genericcontrol.html#methodisSimpleControl">genericcontrol::isSimpleControl()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/hiddenfieldcontrol.html#methodisSimpleControl">hiddenfieldcontrol::isSimpleControl()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/htmlcontrol.html#methodisSimpleControl">htmlcontrol::isSimpleControl()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/listcontrol.html#methodisSimpleControl">listcontrol::isSimpleControl()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/popupdatetimecontrol.html#methodisSimpleControl">popupdatetimecontrol::isSimpleControl()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/quantitycontrol.html#methodisSimpleControl">quantitycontrol::isSimpleControl()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/radiogroupcontrol.html#methodisSimpleControl">radiogroupcontrol::isSimpleControl()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/tagpickercontrol.html#methodisSimpleControl">tagpickercontrol::isSimpleControl()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/tagtreecontrol.html#methodisSimpleControl">tagtreecontrol::isSimpleControl()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/textcontrol.html#methodisSimpleControl">textcontrol::isSimpleControl()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/texteditorcontrol.html#methodisSimpleControl">texteditorcontrol::isSimpleControl()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/uploadcontrol.html#methodisSimpleControl">uploadcontrol::isSimpleControl()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/yuicalendarcontrol.html#methodisSimpleControl">yuicalendarcontrol::isSimpleControl()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/yuidatetimecontrol.html#methodisSimpleControl">yuidatetimecontrol::isSimpleControl()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/yuieditorcontrol.html#methodisSimpleControl">yuieditorcontrol::isSimpleControl()</a>
+							</li>
+				</ul>
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodname" id="name"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">static method name</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 37]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>static void name(
 )</code>
     </td></tr></table>
     </td></tr></table><br /></div>
 
 	
+	<br />
+	
+
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Subsystems-Forms/Control/antispamcontrol.html#methodname">antispamcontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/autocompletecontrol.html#methodname">autocompletecontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/buttongroupcontrol.html#methodname">buttongroupcontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/calendarcontrol.html#methodname">calendarcontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/checkboxcontrol.html#methodname">checkboxcontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/ckeditorcontrol.html#methodname">ckeditorcontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/configcontrol.html#methodname">configcontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/contactcontrol.html#methodname">contactcontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/countryregioncontrol.html#methodname">countryregioncontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/customcontrol.html#methodname">customcontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/datetimecontrol.html#methodname">datetimecontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/dropdowncontrol.html#methodname">dropdowncontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/filemanagercontrol.html#methodname">filemanagercontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/genericcontrol.html#methodname">genericcontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/hiddenfieldcontrol.html#methodname">hiddenfieldcontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/htmlcontrol.html#methodname">htmlcontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/listbuildercontrol.html#methodname">listbuildercontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/listcontrol.html#methodname">listcontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/massmailcontrol.html#methodname">massmailcontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/nextbackcontrol.html#methodname">nextbackcontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/passwordcontrol.html#methodname">passwordcontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/popupdatetimecontrol.html#methodname">popupdatetimecontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/quantitycontrol.html#methodname">quantitycontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/radiocontrol.html#methodname">radiocontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/radiogroupcontrol.html#methodname">radiogroupcontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/tagpickercontrol.html#methodname">tagpickercontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/tagtreecontrol.html#methodname">tagtreecontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/textcontrol.html#methodname">textcontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/texteditorcontrol.html#methodname">texteditorcontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/uploadcontrol.html#methodname">uploadcontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/yuicalendarcontrol.html#methodname">yuicalendarcontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/yuidatetimecontrol.html#methodname">yuidatetimecontrol::name()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/yuieditorcontrol.html#methodname">yuieditorcontrol::name()</a>
+							</li>
+				</ul>
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
+<a name="methodparseData" id="parseData"><!-- --></a>
+<div class="evenrow">
+
+<div class="method-header">
+	<span class="method-title">static method parseData</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 109]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>static string parseData(
+$original_name
+$original_name, $formvalues
+$formvalues&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>Parse the control value
+</strong></p>
+
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<span class="var-type">$original_name</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$original_name:&nbsp;</span></td>
 				<td>
 							</td></tr>
 					<tr><td class="indent">
-				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<span class="var-type">$formvalues</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$formvalues:&nbsp;</span></td>
 				<td>
@@ -857,27 +1175,36 @@ $formvalues&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">controlToHTML</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 79]</span>
+	<span class="method-title">controlToHTML</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 97]</span>
 </div>
 <br />
 
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
-		<code>void controlToHTML(
-
-$name&nbsp;
+		<code>string controlToHTML(
+$name
+$name, $label
+$label&nbsp;
 )</code>
     </td></tr></table>
     </td></tr></table><br /></div>
 
-	
+	<p align="center" class="short-description"><strong>Place the editable control on the edit form
+</strong></p>
+
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<span class="var-type">$name</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$name:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">$label</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$label:&nbsp;</span></td>
 				<td>
 							</td></tr>
 				</table>
@@ -995,104 +1322,37 @@ $name&nbsp;
 		<br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
-<a name="methodgetFieldDefinition" id="getFieldDefinition"><!-- --></a>
+<a name="methodform" id="form"><!-- --></a>
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">getFieldDefinition</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 49]</span>
+	<span class="method-title">form</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 149]</span>
 </div>
 <br />
 
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
-		<code>void getFieldDefinition(
+		<code>void form(
+$object
+$object&nbsp;
 )</code>
     </td></tr></table>
     </td></tr></table><br /></div>
 
-	
-	<br />
-	
-
-		
-			<hr class="separator" />
-		<div class="notes">Redefined in descendants as:</div>
-		<ul class="redefinitions">
-					<li>
-				<a href="../../Subsystems-Forms/Control/calendarcontrol.html#methodgetFieldDefinition">calendarcontrol::getFieldDefinition()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/checkboxcontrol.html#methodgetFieldDefinition">checkboxcontrol::getFieldDefinition()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/datetimecontrol.html#methodgetFieldDefinition">datetimecontrol::getFieldDefinition()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/dropdowncontrol.html#methodgetFieldDefinition">dropdowncontrol::getFieldDefinition()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/genericcontrol.html#methodgetFieldDefinition">genericcontrol::getFieldDefinition()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/hiddenfieldcontrol.html#methodgetFieldDefinition">hiddenfieldcontrol::getFieldDefinition()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/popupdatetimecontrol.html#methodgetFieldDefinition">popupdatetimecontrol::getFieldDefinition()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/quantitycontrol.html#methodgetFieldDefinition">quantitycontrol::getFieldDefinition()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/radiogroupcontrol.html#methodgetFieldDefinition">radiogroupcontrol::getFieldDefinition()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/tagpickercontrol.html#methodgetFieldDefinition">tagpickercontrol::getFieldDefinition()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/tagtreecontrol.html#methodgetFieldDefinition">tagtreecontrol::getFieldDefinition()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/textcontrol.html#methodgetFieldDefinition">textcontrol::getFieldDefinition()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/texteditorcontrol.html#methodgetFieldDefinition">texteditorcontrol::getFieldDefinition()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/uploadcontrol.html#methodgetFieldDefinition">uploadcontrol::getFieldDefinition()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/yuicalendarcontrol.html#methodgetFieldDefinition">yuicalendarcontrol::getFieldDefinition()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/yuidatetimecontrol.html#methodgetFieldDefinition">yuidatetimecontrol::getFieldDefinition()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/yuieditorcontrol.html#methodgetFieldDefinition">yuieditorcontrol::getFieldDefinition()</a>
-							</li>
-				</ul>
-		<br />
-	<div class="top">[ <a href="#top">Top</a> ]</div>
-</div>
-<a name="methodisSimpleControl" id="isSimpleControl"><!-- --></a>
-<div class="oddrow">
-
-<div class="method-header">
-	<span class="method-title">isSimpleControl</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 48]</span>
-</div>
-<br />
-
-	<div class="function">
-    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
-    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
-		<code>bool isSimpleControl(
-)</code>
-    </td></tr></table>
-    </td></tr></table><br /></div>
-
-	<p align="center" class="short-description"><strong>Is this a Simple Control?
+	<p align="center" class="short-description"><strong>Create the Form to edit the control settings
 </strong></p>
-<span class="description"><p>Used to determine if control is available for the Form (Builder) module</p></span>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">$object</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$object:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
 	<br />
 	
 
@@ -1101,200 +1361,67 @@ $name&nbsp;
 		<div class="notes">Redefined in descendants as:</div>
 		<ul class="redefinitions">
 					<li>
-				<a href="../../Subsystems-Forms/Control/antispamcontrol.html#methodisSimpleControl">antispamcontrol::isSimpleControl()</a>
+				<a href="../../Subsystems-Forms/Control/antispamcontrol.html#methodform">antispamcontrol::form()</a>
 							</li>
 					<li>
-				<a href="../../Subsystems-Forms/Control/autocompletecontrol.html#methodisSimpleControl">autocompletecontrol::isSimpleControl()</a>
+				<a href="../../Subsystems-Forms/Control/checkboxcontrol.html#methodform">checkboxcontrol::form()</a>
 							</li>
 					<li>
-				<a href="../../Subsystems-Forms/Control/calendarcontrol.html#methodisSimpleControl">calendarcontrol::isSimpleControl()</a>
+				<a href="../../Subsystems-Forms/Control/configcontrol.html#methodform">configcontrol::form()</a>
 							</li>
 					<li>
-				<a href="../../Subsystems-Forms/Control/checkboxcontrol.html#methodisSimpleControl">checkboxcontrol::isSimpleControl()</a>
+				<a href="../../Subsystems-Forms/Control/datetimecontrol.html#methodform">datetimecontrol::form()</a>
 							</li>
 					<li>
-				<a href="../../Subsystems-Forms/Control/configcontrol.html#methodisSimpleControl">configcontrol::isSimpleControl()</a>
+				<a href="../../Subsystems-Forms/Control/dropdowncontrol.html#methodform">dropdowncontrol::form()</a>
 							</li>
 					<li>
-				<a href="../../Subsystems-Forms/Control/datetimecontrol.html#methodisSimpleControl">datetimecontrol::isSimpleControl()</a>
+				<a href="../../Subsystems-Forms/Control/filemanagercontrol.html#methodform">filemanagercontrol::form()</a>
 							</li>
 					<li>
-				<a href="../../Subsystems-Forms/Control/dropdowncontrol.html#methodisSimpleControl">dropdowncontrol::isSimpleControl()</a>
+				<a href="../../Subsystems-Forms/Control/genericcontrol.html#methodform">genericcontrol::form()</a>
 							</li>
 					<li>
-				<a href="../../Subsystems-Forms/Control/filemanagercontrol.html#methodisSimpleControl">filemanagercontrol::isSimpleControl()</a>
+				<a href="../../Subsystems-Forms/Control/hiddenfieldcontrol.html#methodform">hiddenfieldcontrol::form()</a>
 							</li>
 					<li>
-				<a href="../../Subsystems-Forms/Control/genericcontrol.html#methodisSimpleControl">genericcontrol::isSimpleControl()</a>
+				<a href="../../Subsystems-Forms/Control/htmlcontrol.html#methodform">htmlcontrol::form()</a>
 							</li>
 					<li>
-				<a href="../../Subsystems-Forms/Control/hiddenfieldcontrol.html#methodisSimpleControl">hiddenfieldcontrol::isSimpleControl()</a>
+				<a href="../../Subsystems-Forms/Control/listbuildercontrol.html#methodform">listbuildercontrol::form()</a>
 							</li>
 					<li>
-				<a href="../../Subsystems-Forms/Control/htmlcontrol.html#methodisSimpleControl">htmlcontrol::isSimpleControl()</a>
+				<a href="../../Subsystems-Forms/Control/listcontrol.html#methodform">listcontrol::form()</a>
 							</li>
 					<li>
-				<a href="../../Subsystems-Forms/Control/listcontrol.html#methodisSimpleControl">listcontrol::isSimpleControl()</a>
+				<a href="../../Subsystems-Forms/Control/passwordcontrol.html#methodform">passwordcontrol::form()</a>
 							</li>
 					<li>
-				<a href="../../Subsystems-Forms/Control/popupdatetimecontrol.html#methodisSimpleControl">popupdatetimecontrol::isSimpleControl()</a>
+				<a href="../../Subsystems-Forms/Control/popupdatetimecontrol.html#methodform">popupdatetimecontrol::form()</a>
 							</li>
 					<li>
-				<a href="../../Subsystems-Forms/Control/quantitycontrol.html#methodisSimpleControl">quantitycontrol::isSimpleControl()</a>
+				<a href="../../Subsystems-Forms/Control/quantitycontrol.html#methodform">quantitycontrol::form()</a>
 							</li>
 					<li>
-				<a href="../../Subsystems-Forms/Control/radiogroupcontrol.html#methodisSimpleControl">radiogroupcontrol::isSimpleControl()</a>
+				<a href="../../Subsystems-Forms/Control/radiocontrol.html#methodform">radiocontrol::form()</a>
 							</li>
 					<li>
-				<a href="../../Subsystems-Forms/Control/tagpickercontrol.html#methodisSimpleControl">tagpickercontrol::isSimpleControl()</a>
+				<a href="../../Subsystems-Forms/Control/radiogroupcontrol.html#methodform">radiogroupcontrol::form()</a>
 							</li>
 					<li>
-				<a href="../../Subsystems-Forms/Control/tagtreecontrol.html#methodisSimpleControl">tagtreecontrol::isSimpleControl()</a>
+				<a href="../../Subsystems-Forms/Control/textcontrol.html#methodform">textcontrol::form()</a>
 							</li>
 					<li>
-				<a href="../../Subsystems-Forms/Control/textcontrol.html#methodisSimpleControl">textcontrol::isSimpleControl()</a>
+				<a href="../../Subsystems-Forms/Control/texteditorcontrol.html#methodform">texteditorcontrol::form()</a>
 							</li>
 					<li>
-				<a href="../../Subsystems-Forms/Control/texteditorcontrol.html#methodisSimpleControl">texteditorcontrol::isSimpleControl()</a>
+				<a href="../../Subsystems-Forms/Control/uploadcontrol.html#methodform">uploadcontrol::form()</a>
 							</li>
 					<li>
-				<a href="../../Subsystems-Forms/Control/uploadcontrol.html#methodisSimpleControl">uploadcontrol::isSimpleControl()</a>
+				<a href="../../Subsystems-Forms/Control/yuidatetimecontrol.html#methodform">yuidatetimecontrol::form()</a>
 							</li>
 					<li>
-				<a href="../../Subsystems-Forms/Control/yuicalendarcontrol.html#methodisSimpleControl">yuicalendarcontrol::isSimpleControl()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/yuidatetimecontrol.html#methodisSimpleControl">yuidatetimecontrol::isSimpleControl()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/yuieditorcontrol.html#methodisSimpleControl">yuieditorcontrol::isSimpleControl()</a>
-							</li>
-				</ul>
-		<br />
-	<div class="top">[ <a href="#top">Top</a> ]</div>
-</div>
-<a name="methodname" id="name"><!-- --></a>
-<div class="evenrow">
-
-<div class="method-header">
-	<span class="method-title">name</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 41]</span>
-</div>
-<br />
-
-	<div class="function">
-    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
-    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
-		<code>void name(
-)</code>
-    </td></tr></table>
-    </td></tr></table><br /></div>
-
-	
-	<br />
-	
-
-		
-			<hr class="separator" />
-		<div class="notes">Redefined in descendants as:</div>
-		<ul class="redefinitions">
-					<li>
-				<a href="../../Subsystems-Forms/Control/antispamcontrol.html#methodname">antispamcontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/autocompletecontrol.html#methodname">autocompletecontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/buttongroupcontrol.html#methodname">buttongroupcontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/calendarcontrol.html#methodname">calendarcontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/checkboxcontrol.html#methodname">checkboxcontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/ckeditorcontrol.html#methodname">ckeditorcontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/configcontrol.html#methodname">configcontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/contactcontrol.html#methodname">contactcontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/countryregioncontrol.html#methodname">countryregioncontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/customcontrol.html#methodname">customcontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/datetimecontrol.html#methodname">datetimecontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/dropdowncontrol.html#methodname">dropdowncontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/filemanagercontrol.html#methodname">filemanagercontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/genericcontrol.html#methodname">genericcontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/hiddenfieldcontrol.html#methodname">hiddenfieldcontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/htmlcontrol.html#methodname">htmlcontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/listbuildercontrol.html#methodname">listbuildercontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/listcontrol.html#methodname">listcontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/massmailcontrol.html#methodname">massmailcontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/nextbackcontrol.html#methodname">nextbackcontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/passwordcontrol.html#methodname">passwordcontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/popupdatetimecontrol.html#methodname">popupdatetimecontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/quantitycontrol.html#methodname">quantitycontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/radiocontrol.html#methodname">radiocontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/radiogroupcontrol.html#methodname">radiogroupcontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/tagpickercontrol.html#methodname">tagpickercontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/tagtreecontrol.html#methodname">tagtreecontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/textcontrol.html#methodname">textcontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/texteditorcontrol.html#methodname">texteditorcontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/uploadcontrol.html#methodname">uploadcontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/yuicalendarcontrol.html#methodname">yuicalendarcontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/yuidatetimecontrol.html#methodname">yuidatetimecontrol::name()</a>
-							</li>
-					<li>
-				<a href="../../Subsystems-Forms/Control/yuieditorcontrol.html#methodname">yuieditorcontrol::name()</a>
+				<a href="../../Subsystems-Forms/Control/yuieditorcontrol.html#methodform">yuieditorcontrol::form()</a>
 							</li>
 				</ul>
 		<br />
@@ -1304,25 +1431,27 @@ $name&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">onRegister</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 91]</span>
+	<span class="method-title">onRegister</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 129]</span>
 </div>
 <br />
 
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
-		<code>void onRegister(
-
+		<code>bool onRegister(
+$form
 &$form&nbsp;
 )</code>
     </td></tr></table>
     </td></tr></table><br /></div>
 
-	
+	<p align="center" class="short-description"><strong>Event hook for when control is registered on a form
+</strong></p>
+
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<span class="var-type">$form</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">&$form:&nbsp;</span></td>
 				<td>
@@ -1362,25 +1491,27 @@ $name&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">onUnRegister</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 87]</span>
+	<span class="method-title">onUnRegister</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 119]</span>
 </div>
 <br />
 
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
-		<code>void onUnRegister(
-
+		<code>bool onUnRegister(
+$form
 &$form&nbsp;
 )</code>
     </td></tr></table>
     </td></tr></table><br /></div>
 
-	
+	<p align="center" class="short-description"><strong>Event hook for when control is un-registered (removed) on a form
+</strong></p>
+
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<span class="var-type">$form</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">&$form:&nbsp;</span></td>
 				<td>
@@ -1398,32 +1529,34 @@ $name&nbsp;
 <div class="oddrow">
 
 <div class="method-header">
-	<span class="method-title">templateFormat</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 95]</span>
+	<span class="method-title">templateFormat</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 140]</span>
 </div>
 <br />
 
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
-		<code>void templateFormat(
-
-$db_data, [
-$ctl = null]&nbsp;
+		<code>string templateFormat(
+$db_data
+$db_data, $ctl
+$ctl&nbsp;
 )</code>
     </td></tr></table>
     </td></tr></table><br /></div>
 
-	
+	<p align="center" class="short-description"><strong>Format the control's data for user display
+</strong></p>
+
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<span class="var-type">$db_data</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$db_data:&nbsp;</span></td>
 				<td>
 							</td></tr>
 					<tr><td class="indent">
-				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<span class="var-type">$ctl</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$ctl:&nbsp;</span></td>
 				<td>
@@ -1469,32 +1602,34 @@ $ctl = null]&nbsp;
 <div class="evenrow">
 
 <div class="method-header">
-	<span class="method-title">toHTML</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 51]</span>
+	<span class="method-title">toHTML</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 62]</span>
 </div>
 <br />
 
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
-		<code>void toHTML(
-
-$label, 
+		<code>string toHTML(
+$label
+$label, $name
 $name&nbsp;
 )</code>
     </td></tr></table>
     </td></tr></table><br /></div>
 
-	
+	<p align="center" class="short-description"><strong>Place the control in the form
+</strong></p>
+
 			<strong>Parameters:</strong><br />
 			<table border="0" cellspacing="0" cellpadding="0">
 					<tr><td class="indent">
-				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<span class="var-type">$label</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$label:&nbsp;</span></td>
 				<td>
 							</td></tr>
 					<tr><td class="indent">
-				<span class="var-type"></span>&nbsp;&nbsp;</td>
+				<span class="var-type">$name</span>&nbsp;&nbsp;</td>
 				<td>
 				<span class="var-name">$name:&nbsp;</span></td>
 				<td>
@@ -1566,13 +1701,131 @@ $name&nbsp;
 		<br />
 	<div class="top">[ <a href="#top">Top</a> ]</div>
 </div>
+<a name="methodupdate" id="update"><!-- --></a>
+<div class="oddrow">
+
+<div class="method-header">
+	<span class="method-title">update</span>&nbsp;&nbsp;<span class="smalllinenumber">[line 159]</span>
+</div>
+<br />
+
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code-border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">&nbsp;
+		<code>void update(
+$values
+$values, $object
+$object&nbsp;
+)</code>
+    </td></tr></table>
+    </td></tr></table><br /></div>
+
+	<p align="center" class="short-description"><strong>update the control settings
+</strong></p>
+
+			<strong>Parameters:</strong><br />
+			<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td class="indent">
+				<span class="var-type">$values</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$values:&nbsp;</span></td>
+				<td>
+							</td></tr>
+					<tr><td class="indent">
+				<span class="var-type">$object</span>&nbsp;&nbsp;</td>
+				<td>
+				<span class="var-name">$object:&nbsp;</span></td>
+				<td>
+							</td></tr>
+				</table>
+
+	<br />
+	
+
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Subsystems-Forms/Control/antispamcontrol.html#methodupdate">antispamcontrol::update()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/calendarcontrol.html#methodupdate">calendarcontrol::update()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/checkboxcontrol.html#methodupdate">checkboxcontrol::update()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/configcontrol.html#methodupdate">configcontrol::update()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/datetimecontrol.html#methodupdate">datetimecontrol::update()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/dropdowncontrol.html#methodupdate">dropdowncontrol::update()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/filemanagercontrol.html#methodupdate">filemanagercontrol::update()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/genericcontrol.html#methodupdate">genericcontrol::update()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/hiddenfieldcontrol.html#methodupdate">hiddenfieldcontrol::update()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/htmlcontrol.html#methodupdate">htmlcontrol::update()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/listbuildercontrol.html#methodupdate">listbuildercontrol::update()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/listcontrol.html#methodupdate">listcontrol::update()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/passwordcontrol.html#methodupdate">passwordcontrol::update()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/popupdatetimecontrol.html#methodupdate">popupdatetimecontrol::update()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/quantitycontrol.html#methodupdate">quantitycontrol::update()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/radiocontrol.html#methodupdate">radiocontrol::update()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/radiogroupcontrol.html#methodupdate">radiogroupcontrol::update()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/textcontrol.html#methodupdate">textcontrol::update()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/texteditorcontrol.html#methodupdate">texteditorcontrol::update()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/uploadcontrol.html#methodupdate">uploadcontrol::update()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/yuicalendarcontrol.html#methodupdate">yuicalendarcontrol::update()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/yuidatetimecontrol.html#methodupdate">yuidatetimecontrol::update()</a>
+							</li>
+					<li>
+				<a href="../../Subsystems-Forms/Control/yuieditorcontrol.html#methodupdate">yuieditorcontrol::update()</a>
+							</li>
+				</ul>
+		<br />
+	<div class="top">[ <a href="#top">Top</a> ]</div>
+</div>
 		</div>
 	</div>
 
 
         <div class="credit">
 		    <hr class="separator" />
-		    Documentation generated on Tue, 14 Feb 2012 14:01:47 -0500 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
+		    Documentation generated on Fri, 24 Aug 2012 21:34:21 -0400 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
 	      </div>
       </td></tr></table>
     </td>
