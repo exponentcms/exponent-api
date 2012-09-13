@@ -1,0 +1,2450 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Exponent 2.0.9 API Documentation » \expFile</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.0.9 API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
+<li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
+<li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
+<li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
+<li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">3461</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul>
+<li>todo 
+                <span class="label label-info">42</span>
+</li>
+<li>fixme 
+                <span class="label label-info">174</span>
+</li>
+</ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods</li>
+<li class="method public "><a href="#__construct" title="__construct :: Class constructor to create a File Class either from a database
+record or from the File System."><span class="description">Class constructor to create a File Class either from a database
+record or from the File System.</span><pre>__construct()</pre></a></li>
+<li class="method public inherited"><a href="#afterCreate" title="afterCreate :: after creating item"><span class="description">after creating item</span><pre>afterCreate()</pre></a></li>
+<li class="method public inherited"><a href="#afterDelete" title="afterDelete :: is run after deleting item"><span class="description">is run after deleting item</span><pre>afterDelete()</pre></a></li>
+<li class="method public inherited"><a href="#afterSave" title="afterSave :: after saving item"><span class="description">after saving item</span><pre>afterSave()</pre></a></li>
+<li class="method public inherited"><a href="#afterUpdate" title="afterUpdate :: after updating item"><span class="description">after updating item</span><pre>afterUpdate()</pre></a></li>
+<li class="method public inherited"><a href="#afterValidation" title="afterValidation :: after validating item"><span class="description">after validating item</span><pre>afterValidation()</pre></a></li>
+<li class="method public inherited"><a href="#afterValidationOnCreate" title="afterValidationOnCreate :: after validating item during creation"><span class="description">after validating item during creation</span><pre>afterValidationOnCreate()</pre></a></li>
+<li class="method public inherited"><a href="#afterValidationOnUpdate" title="afterValidationOnUpdate :: after validating item during update"><span class="description">after validating item during update</span><pre>afterValidationOnUpdate()</pre></a></li>
+<li class="method public inherited"><a href="#associateWith" title="associateWith :: get objects this item belongs to ??"><span class="description">get objects this item belongs to ??</span><pre>associateWith()</pre></a></li>
+<li class="method public inherited"><a href="#attachItem" title="attachItem :: attach to item"><span class="description">attach to item</span><pre>attachItem()</pre></a></li>
+<li class="method public inherited"><a href="#beforeCreate" title="beforeCreate :: before creating item"><span class="description">before creating item</span><pre>beforeCreate()</pre></a></li>
+<li class="method public inherited"><a href="#beforeDelete" title="beforeDelete :: is run before deleting item"><span class="description">is run before deleting item</span><pre>beforeDelete()</pre></a></li>
+<li class="method public inherited"><a href="#beforeSave" title="beforeSave :: before saving item"><span class="description">before saving item</span><pre>beforeSave()</pre></a></li>
+<li class="method public inherited"><a href="#beforeUpdate" title="beforeUpdate :: before updating item"><span class="description">before updating item</span><pre>beforeUpdate()</pre></a></li>
+<li class="method public inherited"><a href="#beforeValidation" title="beforeValidation :: before validating item"><span class="description">before validating item</span><pre>beforeValidation()</pre></a></li>
+<li class="method public inherited"><a href="#beforeValidationOnCreate" title="beforeValidationOnCreate :: before validating item during creation"><span class="description">before validating item during creation</span><pre>beforeValidationOnCreate()</pre></a></li>
+<li class="method public inherited"><a href="#beforeValidationOnUpdate" title="beforeValidationOnUpdate :: before validating item during update"><span class="description">before validating item during update</span><pre>beforeValidationOnUpdate()</pre></a></li>
+<li class="method public inherited"><a href="#build" title='build :: Adds table fields as class properties to current "record" class.'><span class="description">Adds table fields as class properties to current "record" class.</span><pre>build()</pre></a></li>
+<li class="method public "><a href="#canCreate" title="canCreate :: exdoc
+Looks at the filesystem structure surrounding the destination
+and determines if the web server can create a new file there."><span class="description">exdoc
+Looks at the filesystem structure surrounding the destination
+and determines if the web server can create a new file there.</span><pre>canCreate()</pre></a></li>
+<li class="method public "><a href="#copyDirectoryStructure" title="copyDirectoryStructure :: exdoc
+Copies just the directory structure (including subdirectories) of a given directory."><span class="description">exdoc
+Copies just the directory structure (including subdirectories) of a given directory.</span><pre>copyDirectoryStructure()</pre></a></li>
+<li class="method public "><a href="#copyToDirectory" title="copyToDirectory :: "><span class="description">copyToDirectory()
+        </span><pre>copyToDirectory()</pre></a></li>
+<li class="method public inherited"><a href="#delete" title="delete :: delete item"><span class="description">delete item</span><pre>delete()</pre></a></li>
+<li class="method public "><a href="#download" title="download :: prompts the user to download a file"><span class="description">prompts the user to download a file</span><pre>download()</pre></a></li>
+<li class="method public "><a href="#dumpDatabase" title="dumpDatabase :: exdoc
+This function takes a database object and dumps
+all of the records in all of the tables into a string."><span class="description">exdoc
+This function takes a database object and dumps
+all of the records in all of the tables into a string.</span><pre>dumpDatabase()</pre></a></li>
+<li class="method public "><a href="#fileSize" title="fileSize :: Performs a system level check on the file and retrieves its size"><span class="description">Performs a system level check on the file and retrieves its size</span><pre>fileSize()</pre></a></li>
+<li class="method public "><a href="#fileUpload" title="fileUpload :: File UPLOAD that also inserts File info into database."><span class="description">File UPLOAD that also inserts File info into database.</span><pre>fileUpload()</pre></a></li>
+<li class="method public inherited"><a href="#find" title="find :: find an item"><span class="description">find an item</span><pre>find()</pre></a></li>
+<li class="method public inherited"><a href="#findBy" title="findBy :: find an item by column"><span class="description">find an item by column</span><pre>findBy()</pre></a></li>
+<li class="method public inherited"><a href="#findWhereAttachedTo" title="findWhereAttachedTo :: this function finds models that have this attachable item attached"><span class="description">this function finds models that have this attachable item attached</span><pre>findWhereAttachedTo()</pre></a></li>
+<li class="method public "><a href="#fixFileName" title="fixFileName :: Replace anything but alphanumeric characters with an UNDERSCORE"><span class="description">Replace anything but alphanumeric characters with an UNDERSCORE</span><pre>fixFileName()</pre></a></li>
+<li class="method public "><a href="#fixName" title="fixName :: "><span class="description">fixName()
+        </span><pre>fixName()</pre></a></li>
+<li class="method public inherited"><a href="#getAssociatedObjects" title="getAssociatedObjects :: get item's associated objects"><span class="description">get item's associated objects</span><pre>getAssociatedObjects()</pre></a></li>
+<li class="method public "><a href="#getImageInfo" title="getImageInfo :: Return size and mimetype information about an image file,
+given its path/filename."><span class="description">Return size and mimetype information about an image file,
+given its path/filename.</span><pre>getImageInfo()</pre></a></li>
+<li class="method public inherited"><a href="#getPoster" title="getPoster :: return the item poster"><span class="description">return the item poster</span><pre>getPoster()</pre></a></li>
+<li class="method public inherited"><a href="#getTimestamp" title="getTimestamp :: return the item timestamp"><span class="description">return the item timestamp</span><pre>getTimestamp()</pre></a></li>
+<li class="method public "><a href="#imageCaptcha" title="imageCaptcha :: exdoc"><span class="description">exdoc</span><pre>imageCaptcha()</pre></a></li>
+<li class="method public "><a href="#imageCopyresized" title="imageCopyresized :: "><span class="description">imageCopyresized()
+        </span><pre>imageCopyresized()</pre></a></li>
+<li class="method public "><a href="#imageCreate" title="imageCreate :: exdoc
+Create a new blank image resource, with the specified width and height."><span class="description">exdoc
+Create a new blank image resource, with the specified width and height.</span><pre>imageCreate()</pre></a></li>
+<li class="method public "><a href="#imageFlip" title="imageFlip :: "><span class="description">imageFlip()
+        </span><pre>imageFlip()</pre></a></li>
+<li class="method public "><a href="#imageOutput" title="imageOutput :: exdoc"><span class="description">exdoc</span><pre>imageOutput()</pre></a></li>
+<li class="method public "><a href="#imageRotate" title="imageRotate :: "><span class="description">imageRotate()
+        </span><pre>imageRotate()</pre></a></li>
+<li class="method public "><a href="#imageScaleByPercent" title="imageScaleByPercent :: exdoc
+Proportionally scale an image by a specific percentage
+This is a wrapper around various GD functions, to provide Exponent
+programmers a single point of entry."><span class="description">exdoc
+Proportionally scale an image by a specific percentage
+This is a wrapper around various GD functions, to provide Exponent
+programmers a single point of entry.</span><pre>imageScaleByPercent()</pre></a></li>
+<li class="method public "><a href="#imageScaleManually" title="imageScaleManually :: exdoc
+Scale an image to a given width and height, without regard to aspect ratio."><span class="description">exdoc
+Scale an image to a given width and height, without regard to aspect ratio.</span><pre>imageScaleManually()</pre></a></li>
+<li class="method public "><a href="#imageScaleToConstraint" title="imageScaleToConstraint :: exdoc
+Proportionally scale an image to fit within the given width / height."><span class="description">exdoc
+Proportionally scale an image to fit within the given width / height.</span><pre>imageScaleToConstraint()</pre></a></li>
+<li class="method public "><a href="#imageScaleToHeight" title="imageScaleToHeight :: exdoc
+Proportionally scale an image to a given height."><span class="description">exdoc
+Proportionally scale an image to a given height.</span><pre>imageScaleToHeight()</pre></a></li>
+<li class="method public "><a href="#imageScaleToWidth" title="imageScaleToWidth :: exdoc
+Proportionally scale an image to a given width."><span class="description">exdoc
+Proportionally scale an image to a given width.</span><pre>imageScaleToWidth()</pre></a></li>
+<li class="method public inherited"><a href="#isSearchable" title="isSearchable :: is model content searchable?"><span class="description">is model content searchable?</span><pre>isSearchable()</pre></a></li>
+<li class="method public "><a href="#listFlat" title="listFlat :: exdoc
+Lists files and directories under a given parent directory."><span class="description">exdoc
+Lists files and directories under a given parent directory.</span><pre>listFlat()</pre></a></li>
+<li class="method public "><a href="#makeDirectory" title="makeDirectory :: exdoc
+This method creates a directory and all of its parent directories, if they do not exist,
+emulating the behavior of the -p option to mkdir on UNIX systems."><span class="description">exdoc
+This method creates a directory and all of its parent directories, if they do not exist,
+emulating the behavior of the -p option to mkdir on UNIX systems.</span><pre>makeDirectory()</pre></a></li>
+<li class="method public inherited"><a href="#makeSefUrl" title="makeSefUrl :: make an sef_url for item"><span class="description">make an sef_url for item</span><pre>makeSefUrl()</pre></a></li>
+<li class="method public "><a href="#moveUploadedFile" title="moveUploadedFile :: exdoc
+Move an uploaded temporary file to a more permanent home inside of the Exponent files/ directory."><span class="description">exdoc
+Move an uploaded temporary file to a more permanent home inside of the Exponent files/ directory.</span><pre>moveUploadedFile()</pre></a></li>
+<li class="method public "><a href="#openImageFile" title="openImageFile :: exdoc
+Create an image resource handle (from GD) for a given filename."><span class="description">exdoc
+Create an image resource handle (from GD) for a given filename.</span><pre>openImageFile()</pre></a></li>
+<li class="method public "><a href="#recurse_copy" title="recurse_copy :: "><span class="description">recurse_copy()
+        </span><pre>recurse_copy()</pre></a></li>
+<li class="method public inherited"><a href="#refresh" title="refresh :: re-construct the item"><span class="description">re-construct the item</span><pre>refresh()</pre></a></li>
+<li class="method public "><a href="#removeDirectory" title="removeDirectory :: Recursively removes the given directory, and all
+of the files and directories underneath it."><span class="description">Recursively removes the given directory, and all
+of the files and directories underneath it.</span><pre>removeDirectory()</pre></a></li>
+<li class="method public "><a href="#removeFilesInDirectory" title="removeFilesInDirectory :: Recursively removes all files in a given directory, and all
+the files and directories underneath it."><span class="description">Recursively removes all files in a given directory, and all
+the files and directories underneath it.</span><pre>removeFilesInDirectory()</pre></a></li>
+<li class="method public inherited"><a href="#rerank" title="rerank :: rerank items"><span class="description">rerank items</span><pre>rerank()</pre></a></li>
+<li class="method public "><a href="#resolveDuplicateFilename" title="resolveDuplicateFilename :: check for duplicate files and returns a file name that's not already in the system"><span class="description">check for duplicate files and returns a file name that's not already in the system</span><pre>resolveDuplicateFilename()</pre></a></li>
+<li class="method public "><a href="#restoreDatabase" title="restoreDatabase :: exdoc
+This function restores a database (overwriting all data in
+any existing tables) from an EQL object dump."><span class="description">exdoc
+This function restores a database (overwriting all data in
+any existing tables) from an EQL object dump.</span><pre>restoreDatabase()</pre></a></li>
+<li class="method public inherited"><a href="#save" title="save :: save item"><span class="description">save item</span><pre>save()</pre></a></li>
+<li class="method public inherited"><a href="#saveAssociatedObjects" title="saveAssociatedObjects :: save associated objects"><span class="description">save associated objects</span><pre>saveAssociatedObjects()</pre></a></li>
+<li class="method public inherited"><a href="#update" title="update :: update item"><span class="description">update item</span><pre>update()</pre></a></li>
+<li class="method public "><a href="#uploadDestinationFileExists" title="uploadDestinationFileExists :: exdoc
+Checks to see if the upload destination file exists."><span class="description">exdoc
+Checks to see if the upload destination file exists.</span><pre>uploadDestinationFileExists()</pre></a></li>
+<li class="method public inherited"><a href="#validate" title="validate :: validate item sef_url"><span class="description">validate item sef_url</span><pre>validate()</pre></a></li>
+<li class="nav-header protected">» Protected</li>
+<li class="method protected inherited"><a href="#checkForAttachableItems" title="checkForAttachableItems :: check for what objects may be attached"><span class="description">check for what objects may be attached</span><pre>checkForAttachableItems()</pre></a></li>
+<li class="method protected inherited"><a href="#getAttachableItems" title="getAttachableItems :: get attached objects for this item"><span class="description">get attached objects for this item</span><pre>getAttachableItems()</pre></a></li>
+<li class="nav-header private">» Private</li>
+<li class="method private inherited"><a href="#getAssociatedObjectsForThisModel" title="getAssociatedObjectsForThisModel :: gets associated objects for this model"><span class="description">gets associated objects for this model</span><pre>getAssociatedObjectsForThisModel()</pre></a></li>
+<li class="method private inherited"><a href="#makeManyToManyTablename" title="makeManyToManyTablename :: create a many to many table relationship"><span class="description">create a many to many table relationship</span><pre>makeManyToManyTablename()</pre></a></li>
+<li class="method private inherited"><a href="#object2Array" title="object2Array :: convert an object to an array"><span class="description">convert an object to an array</span><pre>object2Array()</pre></a></li>
+<li class="method private inherited"><a href="#runCallback" title="runCallback :: jump to subclass calling routine"><span class="description">jump to subclass calling routine</span><pre>runCallback()</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties</li>
+<li class="property public inherited"><a href="#%24attachable_items_to_save" title="$attachable_items_to_save :: "><span class="description">$attachable_items_to_save</span><pre>$attachable_items_to_save</pre></a></li>
+<li class="property public inherited"><a href="#%24classname" title="$classname :: "><span class="description">$classname</span><pre>$classname</pre></a></li>
+<li class="property public inherited"><a href="#%24default_sort_direction" title="$default_sort_direction :: "><span class="description">$default_sort_direction</span><pre>$default_sort_direction</pre></a></li>
+<li class="property public inherited"><a href="#%24default_sort_field" title="$default_sort_field :: "><span class="description">$default_sort_field</span><pre>$default_sort_field</pre></a></li>
+<li class="property public "><a href="#%24directory" title="$directory :: Relative OS System File path to where $filename is [to be] located"><span class="description">Relative OS System File path to where $filename is [to be] located</span><pre>$directory</pre></a></li>
+<li class="property public inherited"><a href="#%24do_not_validate" title="$do_not_validate :: "><span class="description">$do_not_validate</span><pre>$do_not_validate</pre></a></li>
+<li class="property public "><a href="#%24filename" title="$filename :: File Name of File to process"><span class="description">File Name of File to process</span><pre>$filename</pre></a></li>
+<li class="property public "><a href="#%24filesize" title="$filesize :: Size of File, in Bytes"><span class="description">Size of File, in Bytes</span><pre>$filesize</pre></a></li>
+<li class="property public inherited"><a href="#%24get_assoc_for" title="$get_assoc_for :: "><span class="description">$get_assoc_for</span><pre>$get_assoc_for</pre></a></li>
+<li class="property public inherited"><a href="#%24get_attachable_for" title="$get_attachable_for :: "><span class="description">$get_attachable_for</span><pre>$get_attachable_for</pre></a></li>
+<li class="property public inherited"><a href="#%24has_and_belongs_to_many" title="$has_and_belongs_to_many :: "><span class="description">$has_and_belongs_to_many</span><pre>$has_and_belongs_to_many</pre></a></li>
+<li class="property public inherited"><a href="#%24has_and_belongs_to_self" title="$has_and_belongs_to_self :: "><span class="description">$has_and_belongs_to_self</span><pre>$has_and_belongs_to_self</pre></a></li>
+<li class="property public inherited"><a href="#%24has_extended_fields" title="$has_extended_fields :: "><span class="description">$has_extended_fields</span><pre>$has_extended_fields</pre></a></li>
+<li class="property public inherited"><a href="#%24has_many" title="$has_many :: "><span class="description">$has_many</span><pre>$has_many</pre></a></li>
+<li class="property public inherited"><a href="#%24has_many_self" title="$has_many_self :: "><span class="description">$has_many_self</span><pre>$has_many_self</pre></a></li>
+<li class="property public inherited"><a href="#%24has_one" title="$has_one :: "><span class="description">$has_one</span><pre>$has_one</pre></a></li>
+<li class="property public inherited"><a href="#%24identifier" title="$identifier :: "><span class="description">$identifier</span><pre>$identifier</pre></a></li>
+<li class="property public "><a href="#%24image_height" title="$image_height :: Image height in pixels."><span class="description">Image height in pixels.</span><pre>$image_height</pre></a></li>
+<li class="property public "><a href="#%24image_width" title="$image_width :: Image width in pixels."><span class="description">Image width in pixels.</span><pre>$image_width</pre></a></li>
+<li class="property public "><a href="#%24is_image" title="$is_image :: Is this file an image."><span class="description">Is this file an image.</span><pre>$is_image</pre></a></li>
+<li class="property public "><a href="#%24mimetype" title="$mimetype :: Mime Type of File."><span class="description">Mime Type of File.</span><pre>$mimetype</pre></a></li>
+<li class="property public "><a href="#%24path" title="$path :: Full File System Path for current File."><span class="description">Full File System Path for current File.</span><pre>$path</pre></a></li>
+<li class="property public "><a href="#%24path_relative" title="$path_relative :: Relative File System Path for current File"><span class="description">Relative File System Path for current File</span><pre>$path_relative</pre></a></li>
+<li class="property public inherited"><a href="#%24rank_by_field" title="$rank_by_field :: "><span class="description">$rank_by_field</span><pre>$rank_by_field</pre></a></li>
+<li class="property public inherited"><a href="#%24supports_revisions" title="$supports_revisions :: "><span class="description">$supports_revisions</span><pre>$supports_revisions</pre></a></li>
+<li class="property public "><a href="#%24table" title="$table :: Database Table Name to store File info"><span class="description">Database Table Name to store File info</span><pre>$table</pre></a></li>
+<li class="property public inherited"><a href="#%24tablename" title="$tablename :: "><span class="description">$tablename</span><pre>$tablename</pre></a></li>
+<li class="property public "><a href="#%24url" title="$url :: Web based Path for current File"><span class="description">Web based Path for current File</span><pre>$url</pre></a></li>
+<li class="property public inherited"><a href="#%24validate" title="$validate :: "><span class="description">$validate</span><pre>$validate</pre></a></li>
+<li class="nav-header protected">» Protected</li>
+<li class="property protected "><a href="#%24attachable_item_types" title="$attachable_item_types :: "><span class="description">$attachable_item_types</span><pre>$attachable_item_types</pre></a></li>
+<li class="property protected "><a href="#%24attachable_table" title="$attachable_table :: "><span class="description">$attachable_table</span><pre>$attachable_table</pre></a></li>
+<li class="property protected inherited"><a href="#%24classinfo" title="$classinfo :: "><span class="description">$classinfo</span><pre>$classinfo</pre></a></li>
+<li class="property protected "><a href="#%24fileOverWrite" title="$fileOverWrite :: Determines if this file can be overwritten."><span class="description">Determines if this file can be overwritten.</span><pre>$fileOverWrite</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants</li>
+<li class="constant  "><a href="#FILE_LOCK_EXCLUSIVE" title="FILE_LOCK_EXCLUSIVE :: Use this when an exclusive (write) lock is required
+This is a &quot;relabel&quot; of the PHP 'LOCK_EX' constant"><span class="description">Use this when an exclusive (write) lock is required
+This is a "relabel" of the PHP 'LOCK_EX' constant</span><pre>FILE_LOCK_EXCLUSIVE</pre></a></li>
+<li class="constant  "><a href="#FILE_LOCK_SHARED" title="FILE_LOCK_SHARED :: Use this when a shared (read) lock is required."><span class="description">Use this when a shared (read) lock is required.</span><pre>FILE_LOCK_SHARED</pre></a></li>
+<li class="constant  "><a href="#FILE_MODE_APPEND" title="FILE_MODE_APPEND :: Mode to use for appending to files"><span class="description">Mode to use for appending to files</span><pre>FILE_MODE_APPEND</pre></a></li>
+<li class="constant  "><a href="#FILE_MODE_READ" title="FILE_MODE_READ :: Mode to use for reading from files"><span class="description">Mode to use for reading from files</span><pre>FILE_MODE_READ</pre></a></li>
+<li class="constant  "><a href="#FILE_MODE_WRITE" title="FILE_MODE_WRITE :: Mode to use for truncating files, then writing"><span class="description">Mode to use for truncating files, then writing</span><pre>FILE_MODE_WRITE</pre></a></li>
+<li class="constant  "><a href="#IMAGE_ERR_FILENOTFOUND" title="IMAGE_ERR_FILENOTFOUND :: "><span class="description">IMAGE_ERR_FILENOTFOUND</span><pre>IMAGE_ERR_FILENOTFOUND</pre></a></li>
+<li class="constant  "><a href="#IMAGE_ERR_NOGD" title="IMAGE_ERR_NOGD :: "><span class="description">IMAGE_ERR_NOGD</span><pre>IMAGE_ERR_NOGD</pre></a></li>
+<li class="constant  "><a href="#IMAGE_ERR_NOTSUPPORTED" title="IMAGE_ERR_NOTSUPPORTED :: "><span class="description">IMAGE_ERR_NOTSUPPORTED</span><pre>IMAGE_ERR_NOTSUPPORTED</pre></a></li>
+<li class="constant  "><a href="#IMAGE_ERR_PERMISSIONDENIED" title="IMAGE_ERR_PERMISSIONDENIED :: "><span class="description">IMAGE_ERR_PERMISSIONDENIED</span><pre>IMAGE_ERR_PERMISSIONDENIED</pre></a></li>
+<li class="constant  "><a href="#SYS_IMAGE" title="SYS_IMAGE :: "><span class="description">SYS_IMAGE</span><pre>SYS_IMAGE</pre></a></li>
+</ul>
+</div>
+<div class="span8">
+<a name="%5CexpFile" id="\expFile"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/expFile.html">expFile</a>
+</li>
+</ul>
+<div href="../classes/expFile.html" class="element class">
+<p class="short_description">Class to handle files at the File System Level and updating
+the record for each file.</p>
+<div class="details">
+<p class="long_description"><p>expFile is an extension of expRecord because File information is stored
+in the database for future access and retrieval. This class also handles
+and and all File System handling as well: copy, move, delete, upload,
+and importing of data in preparation of data importation. Upload and
+import via child classes.</p></p>
+<table class="table table-bordered">
+<tr>
+<th>subpackage</th>
+<td>Models</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Core.Models.html">Core</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a name="__construct" id="__construct"></a><div class="element clickable method public __construct" data-toggle="collapse" data-target=".__construct .collapse">
+<h2>Class constructor to create a File Class either from a database
+record or from the File System.</h2>
+<pre>__construct(mixed $params, bool $get_assoc, bool $get_attached) : <a href="../classes/expFile.html">\expFile</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Class will either: a) load an existing File Record
+                   b) modify an existing File Record
+                   c) create a new File Record</p>
+
+<p>This will also handle any File System handling that is needed: copy,
+move, create, delete, read and write.</p></p>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>\global\expRecord::__construct</td>
+</tr>
+<tr>
+<th>PHPUnit</th>
+<td>Not Defined</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$params</h4>
+<code>mixed</code><ul>
+<li>If an INT is given, this assumes that it needs to load an existing File Record. - If an ARRAY is given, this assumes that the elements of the array are values to the File table that need to be modified or other processing. - If NULL is given, an empty File Object is created</li>
+</ul>
+</div>
+<div class="subelement argument">
+<h4>$get_assoc</h4>
+<code>bool</code>
+</div>
+<div class="subelement argument">
+<h4>$get_attached</h4>
+<code>bool</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/expFile.html">\expFile</a></code>Object@throws void</div>
+</div></div>
+</div>
+<a name="afterCreate" id="afterCreate"></a><div class="element clickable method public afterCreate" data-toggle="collapse" data-target=".afterCreate .collapse">
+<h2>after creating item</h2>
+<pre>afterCreate() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::afterCreate()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="afterDelete" id="afterDelete"></a><div class="element clickable method public afterDelete" data-toggle="collapse" data-target=".afterDelete .collapse">
+<h2>is run after deleting item</h2>
+<pre>afterDelete() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::afterDelete()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="afterSave" id="afterSave"></a><div class="element clickable method public afterSave" data-toggle="collapse" data-target=".afterSave .collapse">
+<h2>after saving item</h2>
+<pre>afterSave() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::afterSave()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="afterUpdate" id="afterUpdate"></a><div class="element clickable method public afterUpdate" data-toggle="collapse" data-target=".afterUpdate .collapse">
+<h2>after updating item</h2>
+<pre>afterUpdate() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::afterUpdate()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="afterValidation" id="afterValidation"></a><div class="element clickable method public afterValidation" data-toggle="collapse" data-target=".afterValidation .collapse">
+<h2>after validating item</h2>
+<pre>afterValidation() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::afterValidation()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="afterValidationOnCreate" id="afterValidationOnCreate"></a><div class="element clickable method public afterValidationOnCreate" data-toggle="collapse" data-target=".afterValidationOnCreate .collapse">
+<h2>after validating item during creation</h2>
+<pre>afterValidationOnCreate() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::afterValidationOnCreate()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="afterValidationOnUpdate" id="afterValidationOnUpdate"></a><div class="element clickable method public afterValidationOnUpdate" data-toggle="collapse" data-target=".afterValidationOnUpdate .collapse">
+<h2>after validating item during update</h2>
+<pre>afterValidationOnUpdate() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::afterValidationOnUpdate()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="associateWith" id="associateWith"></a><div class="element clickable method public associateWith" data-toggle="collapse" data-target=".associateWith .collapse">
+<h2>get objects this item belongs to ??</h2>
+<pre>associateWith($datatype, $id) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Type of associations
+  has_and_belongs_to_many</p></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::associateWith()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$datatype</h4></div>
+<div class="subelement argument"><h4>$id</h4></div>
+</div></div>
+</div>
+<a name="attachItem" id="attachItem"></a><div class="element clickable method public attachItem" data-toggle="collapse" data-target=".attachItem .collapse">
+<h2>attach to item</h2>
+<pre>attachItem($item, string $subtype) : bool</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::attachItem()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$item</h4></div>
+<div class="subelement argument">
+<h4>$subtype</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="beforeCreate" id="beforeCreate"></a><div class="element clickable method public beforeCreate" data-toggle="collapse" data-target=".beforeCreate .collapse">
+<h2>before creating item</h2>
+<pre>beforeCreate() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::beforeCreate()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="beforeDelete" id="beforeDelete"></a><div class="element clickable method public beforeDelete" data-toggle="collapse" data-target=".beforeDelete .collapse">
+<h2>is run before deleting item</h2>
+<pre>beforeDelete() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::beforeDelete()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="beforeSave" id="beforeSave"></a><div class="element clickable method public beforeSave" data-toggle="collapse" data-target=".beforeSave .collapse">
+<h2>before saving item</h2>
+<pre>beforeSave() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::beforeSave()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="beforeUpdate" id="beforeUpdate"></a><div class="element clickable method public beforeUpdate" data-toggle="collapse" data-target=".beforeUpdate .collapse">
+<h2>before updating item</h2>
+<pre>beforeUpdate() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::beforeUpdate()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="beforeValidation" id="beforeValidation"></a><div class="element clickable method public beforeValidation" data-toggle="collapse" data-target=".beforeValidation .collapse">
+<h2>before validating item</h2>
+<pre>beforeValidation() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::beforeValidation()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="beforeValidationOnCreate" id="beforeValidationOnCreate"></a><div class="element clickable method public beforeValidationOnCreate" data-toggle="collapse" data-target=".beforeValidationOnCreate .collapse">
+<h2>before validating item during creation</h2>
+<pre>beforeValidationOnCreate() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::beforeValidationOnCreate()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="beforeValidationOnUpdate" id="beforeValidationOnUpdate"></a><div class="element clickable method public beforeValidationOnUpdate" data-toggle="collapse" data-target=".beforeValidationOnUpdate .collapse">
+<h2>before validating item during update</h2>
+<pre>beforeValidationOnUpdate() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::beforeValidationOnUpdate()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="build" id="build"></a><div class="element clickable method public build" data-toggle="collapse" data-target=".build .collapse">
+<h2>Adds table fields as class properties to current "record" class.</h2>
+<pre>build(mixed $params) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Loads Table schema data and creates new class properties based
+upon the fields in given table.</p>
+
+<p>Additionally, if a record ID is given, that record is pulled and
+field values are also populated into class properties.</p></p>
+<table class="table table-bordered">
+<tr>
+<th>name</th>
+<td>build</td>
+</tr>
+<tr>
+<th>category</th>
+<td>db_record</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>\global\[db_type]::getDataDefinition()</td>
+</tr>
+<tr>
+<th>requires</th>
+<td>$db</td>
+</tr>
+<tr>
+<th>access</th>
+<td>protected</td>
+</tr>
+<tr>
+<th>final</th>
+<td></td>
+</tr>
+<tr>
+<th>PHPUnit</th>
+<td>Not Defined</td>
+</tr>
+<tr>
+<th>global</th>
+<td>object $db</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\expRecord::build()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$params</h4>
+<code>mixed</code><p>array or Object for table selection</p></div>
+</div></div>
+</div>
+<a name="canCreate" id="canCreate"></a><div class="element clickable method public canCreate" data-toggle="collapse" data-target=".canCreate .collapse">
+<h2>exdoc
+Looks at the filesystem structure surrounding the destination
+and determines if the web server can create a new file there.</h2>
+<pre>canCreate(string $dest) : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Returns one of the following:
+<br>SYS_FILES_NOTWRITABLE - unable to create files in destination
+<br>SYS_FILES_SUCCESS - A file or directory can be created in destination
+<br>SYS_FILES_FOUNDFILE - Found destination to be a file, not a directory</p></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Model:expFile</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$dest</h4>
+<code>string</code><p>Path to the directory to check</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a name="copyDirectoryStructure" id="copyDirectoryStructure"></a><div class="element clickable method public copyDirectoryStructure" data-toggle="collapse" data-target=".copyDirectoryStructure .collapse">
+<h2>exdoc
+Copies just the directory structure (including subdirectories) of a given directory.</h2>
+<pre>copyDirectoryStructure(string $src, string $dest, array $exclude_dirs) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Any files in the source directory are ignore, and duplicate copies are made (no symlinks).</p></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Model:expFile</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$src</h4>
+<code>string</code><p>The directory to copy structure from. This must be a full path.</p></div>
+<div class="subelement argument">
+<h4>$dest</h4>
+<code>string</code><p>The directory to create duplicate structure in. If this directory is not empty, you may run into some problems, because of file/directory conflicts.</p>
+</div>
+<div class="subelement argument">
+<h4>$exclude_dirs</h4>
+<code>array</code><p>An array of directory names to exclude. These names are path-independent. Specifying "dir" will ignore all directories and sub-directories named "dir", regardless of their parent.</p>
+</div>
+</div></div>
+</div>
+<a name="copyToDirectory" id="copyToDirectory"></a><div class="element clickable method public copyToDirectory" data-toggle="collapse" data-target=".copyToDirectory .collapse">
+<h2>copyToDirectory()
+        </h2>
+<pre>copyToDirectory($destination) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$destination</h4></div>
+</div></div>
+</div>
+<a name="delete" id="delete"></a><div class="element clickable method public delete" data-toggle="collapse" data-target=".delete .collapse">
+<h2>delete item</h2>
+<pre>delete(string $where) : bool</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::delete()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$where</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="download" id="download"></a><div class="element clickable method public download" data-toggle="collapse" data-target=".download .collapse">
+<h2>prompts the user to download a file</h2>
+<pre>download(string $file) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>static</th>
+<td></td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>\global\function</td>
+</tr>
+<tr>
+<th>PHPUnit</th>
+<td>Not Defined|Implement|Completed</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$file</h4>
+<code>string</code><p>Full path to file to download</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>void</code></th>
+<td></td>
+</tr></table>
+</div></div>
+</div>
+<a name="dumpDatabase" id="dumpDatabase"></a><div class="element clickable method public dumpDatabase" data-toggle="collapse" data-target=".dumpDatabase .collapse">
+<h2>exdoc
+This function takes a database object and dumps
+all of the records in all of the tables into a string.</h2>
+<pre>dumpDatabase(\Database $db, null $tables, null $force_version) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>The contents of the string are suitable for storage
+in a file or other permanent mechanism, and is in
+the EQL format naively handled by the current
+implementation.</p></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Model:expFile</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$db</h4>
+<code>\Database</code><p>The database object to dump to EQL.</p></div>
+<div class="subelement argument">
+<h4>$tables</h4>
+<code>null</code>
+</div>
+<div class="subelement argument">
+<h4>$force_version</h4>
+<code>null</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="fileSize" id="fileSize"></a><div class="element clickable method public fileSize" data-toggle="collapse" data-target=".fileSize .collapse">
+<h2>Performs a system level check on the file and retrieves its size</h2>
+<pre>fileSize(bool | string $_path) : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>static</th>
+<td></td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>\global\function</td>
+</tr>
+<tr>
+<th>PHPUnit</th>
+<td>Not Defined|Implement|Completed</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$_path</h4>
+<code>bool</code><code>string</code><p>Full path to file to pull info from</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>void</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>int</code>$_fileSize Size of file in bytes</div>
+</div></div>
+</div>
+<a name="fileUpload" id="fileUpload"></a><div class="element clickable method public fileUpload" data-toggle="collapse" data-target=".fileUpload .collapse">
+<h2>File UPLOAD that also inserts File info into database.</h2>
+<pre>fileUpload(string $_postName, bool | string $_force, bool | string $_save, string $_destFile, string $_destDir) : object: object</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>File UPLOAD is a straight forward uploader and processor. It can accept
+filename and destination directory overrides as well. It has an additional
+pair of flags that allow for an upload NOT to be inserted into the database
+(default to INSERT) and if it previous file, with the same name, should be
+overwritten (default to NO overwrite)</p></p>
+<table class="table table-bordered">
+<tr>
+<th>static</th>
+<td></td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>\global\class|\global\method|\global\global|\global\variable</td>
+</tr>
+<tr>
+<th>requires</th>
+<td>class_name</td>
+</tr>
+<tr>
+<th>PHPUnit</th>
+<td>Not Defined|Implement|Completed</td>
+</tr>
+<tr>
+<th>TODO</th>
+<td>Have file upload overwrite make sure not to duplicate its record in the DB</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$_postName</h4>
+<code>string</code><p>The name of the _FILE upload array</p></div>
+<div class="subelement argument">
+<h4>$_force</h4>
+<code>bool</code><code>string</code><p>Force the uploaded to overwrite existing file of same name</p></div>
+<div class="subelement argument">
+<h4>$_save</h4>
+<code>bool</code><code>string</code><p>Save file info to database, defaults to TRUE</p></div>
+<div class="subelement argument">
+<h4>$_destFile</h4>
+<code>string</code><p>Override the uploaded file name</p></div>
+<div class="subelement argument">
+<h4>$_destDir</h4>
+<code>string</code><p>Override the default FILE UPLOAD location</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>object</code>$_objFile expFile Object</div>
+<div class="subelement response">
+<code>object</code>$errMsg Error message if something failed@throws void</div>
+</div></div>
+</div>
+<a name="find" id="find"></a><div class="element clickable method public find" data-toggle="collapse" data-target=".find .collapse">
+<h2>find an item</h2>
+<pre>find(string $range, null $where, null $order, null $limit, int $limitstart, bool $get_assoc, bool $get_attached, array $except, bool $cascade_except) : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::find()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$range</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$where</h4>
+<code>null</code>
+</div>
+<div class="subelement argument">
+<h4>$order</h4>
+<code>null</code>
+</div>
+<div class="subelement argument">
+<h4>$limit</h4>
+<code>null</code>
+</div>
+<div class="subelement argument">
+<h4>$limitstart</h4>
+<code>int</code>
+</div>
+<div class="subelement argument">
+<h4>$get_assoc</h4>
+<code>bool</code>
+</div>
+<div class="subelement argument">
+<h4>$get_attached</h4>
+<code>bool</code>
+</div>
+<div class="subelement argument">
+<h4>$except</h4>
+<code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$cascade_except</h4>
+<code>bool</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a name="findBy" id="findBy"></a><div class="element clickable method public findBy" data-toggle="collapse" data-target=".findBy .collapse">
+<h2>find an item by column</h2>
+<pre>findBy($column, $value, bool $get_assoc, bool $get_attached, array $except, bool $cascade_except) : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::findBy()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$column</h4></div>
+<div class="subelement argument"><h4>$value</h4></div>
+<div class="subelement argument">
+<h4>$get_assoc</h4>
+<code>bool</code>
+</div>
+<div class="subelement argument">
+<h4>$get_attached</h4>
+<code>bool</code>
+</div>
+<div class="subelement argument">
+<h4>$except</h4>
+<code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$cascade_except</h4>
+<code>bool</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a name="findWhereAttachedTo" id="findWhereAttachedTo"></a><div class="element clickable method public findWhereAttachedTo" data-toggle="collapse" data-target=".findWhereAttachedTo .collapse">
+<h2>this function finds models that have this attachable item attached</h2>
+<pre>findWhereAttachedTo($content_type) : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::findWhereAttachedTo()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$content_type</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a name="fixFileName" id="fixFileName"></a><div class="element clickable method public fixFileName" data-toggle="collapse" data-target=".fixFileName .collapse">
+<h2>Replace anything but alphanumeric characters with an UNDERSCORE</h2>
+<pre>fixFileName(string $name) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>static</th>
+<td></td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>\global\function</td>
+</tr>
+<tr>
+<th>PHPUnit</th>
+<td>Not Defined|Implement|Completed</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>File name to 'fix'</p>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>void</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>$name the correct filename</div>
+</div></div>
+</div>
+<a name="fixName" id="fixName"></a><div class="element clickable method public fixName" data-toggle="collapse" data-target=".fixName .collapse">
+<h2>fixName()
+        </h2>
+<pre>fixName($name) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$name</h4></div>
+</div></div>
+</div>
+<a name="getAssociatedObjects" id="getAssociatedObjects"></a><div class="element clickable method public getAssociatedObjects" data-toggle="collapse" data-target=".getAssociatedObjects .collapse">
+<h2>get item's associated objects</h2>
+<pre>getAssociatedObjects(null $obj) : null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Type of associations
+  has_one
+  has_many
+  has_and_belongs_to_many</p></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::getAssociatedObjects()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$obj</h4>
+<code>null</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>null</code></div>
+</div></div>
+</div>
+<a name="getImageInfo" id="getImageInfo"></a><div class="element clickable method public getImageInfo" data-toggle="collapse" data-target=".getImageInfo .collapse">
+<h2>Return size and mimetype information about an image file,
+given its path/filename.</h2>
+<pre>getImageInfo(bool | string $_path) : array: array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>This is a wrapper around the
+built-in PHP 'getimagesize' function, to make all implementations
+work identically.</p></p>
+<table class="table table-bordered">
+<tr>
+<th>static</th>
+<td></td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>\global\function</td>
+</tr>
+<tr>
+<th>PHPUnit</th>
+<td>Not Defined|Implement|Completed</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$_path</h4>
+<code>bool</code><code>string</code><p>Full path to file to pull info from</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>$_sizeinfo An array of Image File info</div>
+<div class="subelement response">
+<code>array</code>$error message Error message@throws void</div>
+</div></div>
+</div>
+<a name="getPoster" id="getPoster"></a><div class="element clickable method public getPoster" data-toggle="collapse" data-target=".getPoster .collapse">
+<h2>return the item poster</h2>
+<pre>getPoster() : null | string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::getPoster()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>null</code><code>string</code>
+</div>
+</div></div>
+</div>
+<a name="getTimestamp" id="getTimestamp"></a><div class="element clickable method public getTimestamp" data-toggle="collapse" data-target=".getTimestamp .collapse">
+<h2>return the item timestamp</h2>
+<pre>getTimestamp(int $type) : mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::getTimestamp()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$type</h4>
+<code>int</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a name="imageCaptcha" id="imageCaptcha"></a><div class="element clickable method public imageCaptcha" data-toggle="collapse" data-target=".imageCaptcha .collapse">
+<h2>exdoc</h2>
+<pre>imageCaptcha($w, $h, $string) : null | resource</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>state</th>
+<td><b>UNDOCUMENTED</b></td>
+</tr>
+<tr>
+<th>node</th>
+<td>Undocumented</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$w</h4></div>
+<div class="subelement argument"><h4>$h</h4></div>
+<div class="subelement argument"><h4>$string</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>null</code><code>resource</code>
+</div>
+</div></div>
+</div>
+<a name="imageCopyresized" id="imageCopyresized"></a><div class="element clickable method public imageCopyresized" data-toggle="collapse" data-target=".imageCopyresized .collapse">
+<h2>imageCopyresized()
+        </h2>
+<pre>imageCopyresized($dest, $src, $dst_x, $dst_y, $src_x, $src_y, $dst_w, $dst_h, $src_w, $src_h) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dest</h4></div>
+<div class="subelement argument"><h4>$src</h4></div>
+<div class="subelement argument"><h4>$dst_x</h4></div>
+<div class="subelement argument"><h4>$dst_y</h4></div>
+<div class="subelement argument"><h4>$src_x</h4></div>
+<div class="subelement argument"><h4>$src_y</h4></div>
+<div class="subelement argument"><h4>$dst_w</h4></div>
+<div class="subelement argument"><h4>$dst_h</h4></div>
+<div class="subelement argument"><h4>$src_w</h4></div>
+<div class="subelement argument"><h4>$src_h</h4></div>
+</div></div>
+</div>
+<a name="imageCreate" id="imageCreate"></a><div class="element clickable method public imageCreate" data-toggle="collapse" data-target=".imageCreate .collapse">
+<h2>exdoc
+Create a new blank image resource, with the specified width and height.</h2>
+<pre>imageCreate(integer $w, integer $h) : null | resource</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>This is a wrapper around various GD functions, to provide Exponent
+programmers a single point of entry.  It also handles situations where
+there is no GD support compiled into the server.  (In this case, null is returned).</p></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Model:expFile</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$w</h4>
+<code>integer</code><p>Width of the image resource to create (in pixels)</p>
+</div>
+<div class="subelement argument">
+<h4>$h</h4>
+<code>integer</code><p>Height of the image resource to create (in pixels)</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>null</code><code>resource</code>
+</div>
+</div></div>
+</div>
+<a name="imageFlip" id="imageFlip"></a><div class="element clickable method public imageFlip" data-toggle="collapse" data-target=".imageFlip .collapse">
+<h2>imageFlip()
+        </h2>
+<pre>imageFlip($filename, $is_horizontal) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$filename</h4></div>
+<div class="subelement argument"><h4>$is_horizontal</h4></div>
+</div></div>
+</div>
+<a name="imageOutput" id="imageOutput"></a><div class="element clickable method public imageOutput" data-toggle="collapse" data-target=".imageOutput .collapse">
+<h2>exdoc</h2>
+<pre>imageOutput($img, $sizeinfo, null $filename, int $quality) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>state</th>
+<td><b>UNDOCUMENTED</b></td>
+</tr>
+<tr>
+<th>node</th>
+<td>Undocumented</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$img</h4></div>
+<div class="subelement argument"><h4>$sizeinfo</h4></div>
+<div class="subelement argument">
+<h4>$filename</h4>
+<code>null</code>
+</div>
+<div class="subelement argument">
+<h4>$quality</h4>
+<code>int</code>
+</div>
+</div></div>
+</div>
+<a name="imageRotate" id="imageRotate"></a><div class="element clickable method public imageRotate" data-toggle="collapse" data-target=".imageRotate .collapse">
+<h2>imageRotate()
+        </h2>
+<pre>imageRotate($filename, $degrees) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$filename</h4></div>
+<div class="subelement argument"><h4>$degrees</h4></div>
+</div></div>
+</div>
+<a name="imageScaleByPercent" id="imageScaleByPercent"></a><div class="element clickable method public imageScaleByPercent" data-toggle="collapse" data-target=".imageScaleByPercent .collapse">
+<h2>exdoc
+Proportionally scale an image by a specific percentage
+This is a wrapper around various GD functions, to provide Exponent
+programmers a single point of entry.</h2>
+<pre>imageScaleByPercent(string $filename, float $scale) : array | null | resource | string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>It also handles situations where
+there is no GD support compiled into the server.  (In this case, null is returned).</p></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Model:expFile</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$filename</h4>
+<code>string</code><p>The path/filename of the image to scale.</p>
+</div>
+<div class="subelement argument">
+<h4>$scale</h4>
+<code>float</code><p>The scaling factor, as a decimal (i.e. 0.5 for 50%)</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code><code>null</code><code>resource</code><code>string</code>
+</div>
+</div></div>
+</div>
+<a name="imageScaleManually" id="imageScaleManually"></a><div class="element clickable method public imageScaleManually" data-toggle="collapse" data-target=".imageScaleManually .collapse">
+<h2>exdoc
+Scale an image to a given width and height, without regard to aspect ratio.</h2>
+<pre>imageScaleManually(string $filename, integer $width, integer $height) : array | null | resource | string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>This is a wrapper around various GD functions, to provide Exponent
+programmers a single point of entry.  It also handles situations where
+there is no GD support compiled into the server.  (In this case, null is returned).</p></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Model:expFile</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$filename</h4>
+<code>string</code><p>The path/filename of the image to scale.</p>
+</div>
+<div class="subelement argument">
+<h4>$width</h4>
+<code>integer</code><p>The desired width of the scaled image, in pixels.</p></div>
+<div class="subelement argument">
+<h4>$height</h4>
+<code>integer</code><p>The desired height of the scaled image, in pixels.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code><code>null</code><code>resource</code><code>string</code>
+</div>
+</div></div>
+</div>
+<a name="imageScaleToConstraint" id="imageScaleToConstraint"></a><div class="element clickable method public imageScaleToConstraint" data-toggle="collapse" data-target=".imageScaleToConstraint .collapse">
+<h2>exdoc
+Proportionally scale an image to fit within the given width / height.</h2>
+<pre>imageScaleToConstraint(string $filename, integer $width, integer $height) : array | null | resource | string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>This is a wrapper around various GD functions, to provide Exponent
+programmers a single point of entry.  It also handles situations where
+there is no GD support compiled into the server.  (In this case, null is returned).</p></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Model:expFile</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$filename</h4>
+<code>string</code><p>The path/filename of the image to scale.</p>
+</div>
+<div class="subelement argument">
+<h4>$width</h4>
+<code>integer</code><p>The maximum width of the scaled image, in pixels.</p></div>
+<div class="subelement argument">
+<h4>$height</h4>
+<code>integer</code><p>The maximum height of the scaled image, in pixels.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code><code>null</code><code>resource</code><code>string</code>
+</div>
+</div></div>
+</div>
+<a name="imageScaleToHeight" id="imageScaleToHeight"></a><div class="element clickable method public imageScaleToHeight" data-toggle="collapse" data-target=".imageScaleToHeight .collapse">
+<h2>exdoc
+Proportionally scale an image to a given height.</h2>
+<pre>imageScaleToHeight(string $filename, integer $height) : array | null | resource | string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Width adjusts accordingly.
+This is a wrapper around various GD functions, to provide Exponent
+programmers a single point of entry.  It also handles situations where
+there is no GD support compiled into the server.  (In this case, null is returned).</p></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Model:expFile</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$filename</h4>
+<code>string</code><p>The path/filename of the image to scale.</p>
+</div>
+<div class="subelement argument">
+<h4>$height</h4>
+<code>integer</code><p>The desired height of the scaled image, in pixels.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code><code>null</code><code>resource</code><code>string</code>
+</div>
+</div></div>
+</div>
+<a name="imageScaleToWidth" id="imageScaleToWidth"></a><div class="element clickable method public imageScaleToWidth" data-toggle="collapse" data-target=".imageScaleToWidth .collapse">
+<h2>exdoc
+Proportionally scale an image to a given width.</h2>
+<pre>imageScaleToWidth(string $filename, integer $width) : array | null | resource | string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Height adjusts accordingly.
+This is a wrapper around various GD functions, to provide Exponent
+programmers a single point of entry.  It also handles situations where
+there is no GD support compiled into the server.  (In this case, null is returned).</p></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Model:expFile</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$filename</h4>
+<code>string</code><p>The path/filename of the image to scale.</p>
+</div>
+<div class="subelement argument">
+<h4>$width</h4>
+<code>integer</code><p>The desired width of the scaled image, in pixels.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code><code>null</code><code>resource</code><code>string</code>
+</div>
+</div></div>
+</div>
+<a name="isSearchable" id="isSearchable"></a><div class="element clickable method public isSearchable" data-toggle="collapse" data-target=".isSearchable .collapse">
+<h2>is model content searchable?</h2>
+<pre>isSearchable() : bool</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::isSearchable()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="listFlat" id="listFlat"></a><div class="element clickable method public listFlat" data-toggle="collapse" data-target=".listFlat .collapse">
+<h2>exdoc
+Lists files and directories under a given parent directory.</h2>
+<pre>listFlat(string $dir, boolean $recurse, string $ext, array $exclude_dirs, string $relative) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Returns an
+associative, flat array of files and directories.  The key is the full file
+or directory name, and the value is the file or directory name.</p></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Model:expFile</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$dir</h4>
+<code>string</code><p>The path of the directory to look at.</p></div>
+<div class="subelement argument">
+<h4>$recurse</h4>
+<code>boolean</code><p>A boolean dictating whether to descend into subdirectories recursively, and list files and subdirectories.</p></div>
+<div class="subelement argument">
+<h4>$ext</h4>
+<code>string</code><p>An optional file extension. If specified, only files ending with that file extension will show up in the list. Directories are not affected.</p></div>
+<div class="subelement argument">
+<h4>$exclude_dirs</h4>
+<code>array</code><p>An array of directory names to exclude. These names are path-independent. Specifying "dir" will ignore all directories and sub-directories named "dir", regardless of their parent.</p>
+</div>
+<div class="subelement argument">
+<h4>$relative</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a name="makeDirectory" id="makeDirectory"></a><div class="element clickable method public makeDirectory" data-toggle="collapse" data-target=".makeDirectory .collapse">
+<h2>exdoc
+This method creates a directory and all of its parent directories, if they do not exist,
+emulating the behavior of the -p option to mkdir on UNIX systems.</h2>
+<pre>makeDirectory(string $dir, null $mode, bool $is_full) : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Returns
+a SYS_FILES_* constant, indicating its status.</p></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Model:expFile</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$dir</h4>
+<code>string</code><p>The directory to create. This path must be relative to BASE</p></div>
+<div class="subelement argument">
+<h4>$mode</h4>
+<code>null</code>
+</div>
+<div class="subelement argument">
+<h4>$is_full</h4>
+<code>bool</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a name="makeSefUrl" id="makeSefUrl"></a><div class="element clickable method public makeSefUrl" data-toggle="collapse" data-target=".makeSefUrl .collapse">
+<h2>make an sef_url for item</h2>
+<pre>makeSefUrl() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::makeSefUrl()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="moveUploadedFile" id="moveUploadedFile"></a><div class="element clickable method public moveUploadedFile" data-toggle="collapse" data-target=".moveUploadedFile .collapse">
+<h2>exdoc
+Move an uploaded temporary file to a more permanent home inside of the Exponent files/ directory.</h2>
+<pre>moveUploadedFile(string $tmp_name, string $dest) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>This function takes into account the default file modes specified in the site configuration.</p></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Model:expFile</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$tmp_name</h4>
+<code>string</code><p>The temporary path of the uploaded file.</p></div>
+<div class="subelement argument">
+<h4>$dest</h4>
+<code>string</code><p>The full path to the destination file (including the destination filename).</p>
+</div>
+</div></div>
+</div>
+<a name="openImageFile" id="openImageFile"></a><div class="element clickable method public openImageFile" data-toggle="collapse" data-target=".openImageFile .collapse">
+<h2>exdoc
+Create an image resource handle (from GD) for a given filename.</h2>
+<pre>openImageFile(string $filename) : null | resource | string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>This is a wrapper around various GD functions, to provide Exponent
+programmers a single point of entry.  It also handles situations where
+there is no GD support compiled into the server.  (In this case, null is returned).</p>
+
+<p>At this point, the user should have called self::getImageInfo on the filename
+and verified that the file does indeed exist, and is readable.  A safeguard check
+is in place, however.</p></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Model:expFile</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$filename</h4>
+<code>string</code><p>The path/filename of the image.</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>null</code><code>resource</code><code>string</code>
+</div>
+</div></div>
+</div>
+<a name="recurse_copy" id="recurse_copy"></a><div class="element clickable method public recurse_copy" data-toggle="collapse" data-target=".recurse_copy .collapse">
+<h2>recurse_copy()
+        </h2>
+<pre>recurse_copy($src, $dst) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$src</h4></div>
+<div class="subelement argument"><h4>$dst</h4></div>
+</div></div>
+</div>
+<a name="refresh" id="refresh"></a><div class="element clickable method public refresh" data-toggle="collapse" data-target=".refresh .collapse">
+<h2>re-construct the item</h2>
+<pre>refresh() : bool</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::refresh()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="removeDirectory" id="removeDirectory"></a><div class="element clickable method public removeDirectory" data-toggle="collapse" data-target=".removeDirectory .collapse">
+<h2>Recursively removes the given directory, and all
+of the files and directories underneath it.</h2>
+<pre>removeDirectory(string | string $dir) : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Model:expFile</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$dir</h4>
+<code>string</code><code>string</code><p>The path of the directory to remove</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a name="removeFilesInDirectory" id="removeFilesInDirectory"></a><div class="element clickable method public removeFilesInDirectory" data-toggle="collapse" data-target=".removeFilesInDirectory .collapse">
+<h2>Recursively removes all files in a given directory, and all
+the files and directories underneath it.</h2>
+<pre>removeFilesInDirectory(string $dir, bool $dot_files) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Optionally can skip dotfiles</p></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$dir</h4>
+<code>string</code><p>directory to work with</p></div>
+<div class="subelement argument">
+<h4>$dot_files</h4>
+<code>bool</code><p>should dotfiles be removed?</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a name="rerank" id="rerank"></a><div class="element clickable method public rerank" data-toggle="collapse" data-target=".rerank .collapse">
+<h2>rerank items</h2>
+<pre>rerank($direction, string $where) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::rerank()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$direction</h4></div>
+<div class="subelement argument">
+<h4>$where</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="resolveDuplicateFilename" id="resolveDuplicateFilename"></a><div class="element clickable method public resolveDuplicateFilename" data-toggle="collapse" data-target=".resolveDuplicateFilename .collapse">
+<h2>check for duplicate files and returns a file name that's not already in the system</h2>
+<pre>resolveDuplicateFilename(string $filepath) : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>static</th>
+<td></td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>\global\function</td>
+</tr>
+<tr>
+<th>PHPUnit</th>
+<td>Not Defined|Implement|Completed</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$filepath</h4>
+<code>string</code><p>direct path of the file to check against</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>void</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>int</code>$newFileName Name of the file that isn't a duplicate</div>
+</div></div>
+</div>
+<a name="restoreDatabase" id="restoreDatabase"></a><div class="element clickable method public restoreDatabase" data-toggle="collapse" data-target=".restoreDatabase .collapse">
+<h2>exdoc
+This function restores a database (overwriting all data in
+any existing tables) from an EQL object dump.</h2>
+<pre>restoreDatabase(\Database $db, string $file, array $errors, null $force_version) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Returns true if
+the restore was a success and false if something went horribly wrong
+(unable to read file, etc.)  Even if true is returned, there is a chance
+that some errors were encountered.  Check $errors to be sure everything
+was fine.</p></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Model:expFile</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$db</h4>
+<code>\Database</code><p>The database to restore to</p></div>
+<div class="subelement argument">
+<h4>$file</h4>
+<code>string</code><p>The filename of the EQL file to restore from</p></div>
+<div class="subelement argument">
+<h4>$errors</h4>
+<code>array</code><p>A referenced array that stores errors. Whatever variable is passed in this argument will contain all errors encountered during the parse/restore.</p>
+</div>
+<div class="subelement argument">
+<h4>$force_version</h4>
+<code>null</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="save" id="save"></a><div class="element clickable method public save" data-toggle="collapse" data-target=".save .collapse">
+<h2>save item</h2>
+<pre>save(bool $validate) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::save()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$validate</h4>
+<code>bool</code>
+</div>
+</div></div>
+</div>
+<a name="saveAssociatedObjects" id="saveAssociatedObjects"></a><div class="element clickable method public saveAssociatedObjects" data-toggle="collapse" data-target=".saveAssociatedObjects .collapse">
+<h2>save associated objects</h2>
+<pre>saveAssociatedObjects() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Type of associations
+  has_one</p></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::saveAssociatedObjects()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="update" id="update"></a><div class="element clickable method public update" data-toggle="collapse" data-target=".update .collapse">
+<h2>update item</h2>
+<pre>update(array $params) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::update()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$params</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a name="uploadDestinationFileExists" id="uploadDestinationFileExists"></a><div class="element clickable method public uploadDestinationFileExists" data-toggle="collapse" data-target=".uploadDestinationFileExists .collapse">
+<h2>exdoc
+Checks to see if the upload destination file exists.</h2>
+<pre>uploadDestinationFileExists(string $dir, string $name) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>This is to prevent
+accidentally uploading over the top of another file.
+Returns true if the file already exists, and false if it does not.</p></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Model:expFile</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$dir</h4>
+<code>string</code><p>The directory to contain the existing directory.</p></div>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>The name of the file control used to upload the file. The files subsystem will look to the $_FILES array to get the filename of the uploaded file.</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="validate" id="validate"></a><div class="element clickable method public validate" data-toggle="collapse" data-target=".validate .collapse">
+<h2>validate item sef_url</h2>
+<pre>validate() : bool</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::validate()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="checkForAttachableItems" id="checkForAttachableItems"></a><div class="element clickable method protected checkForAttachableItems" data-toggle="collapse" data-target=".checkForAttachableItems .collapse">
+<h2>check for what objects may be attached</h2>
+<pre>checkForAttachableItems($params) : bool</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::checkForAttachableItems()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$params</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="getAttachableItems" id="getAttachableItems"></a><div class="element clickable method protected getAttachableItems" data-toggle="collapse" data-target=".getAttachableItems .collapse">
+<h2>get attached objects for this item</h2>
+<pre>getAttachableItems() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::getAttachableItems()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="getAssociatedObjectsForThisModel" id="getAssociatedObjectsForThisModel"></a><div class="element clickable method private getAssociatedObjectsForThisModel" data-toggle="collapse" data-target=".getAssociatedObjectsForThisModel .collapse">
+<h2>gets associated objects for this model</h2>
+<pre>getAssociatedObjectsForThisModel(array $except, bool $cascade_except) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Type of associations
+  has_extended_fields
+  has_one
+  has_many
+  has_many_self
+  has_and_belongs_to_many
+  has_and_belongs_to_self</p></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::getAssociatedObjectsForThisModel()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$except</h4>
+<code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$cascade_except</h4>
+<code>bool</code>
+</div>
+</div></div>
+</div>
+<a name="makeManyToManyTablename" id="makeManyToManyTablename"></a><div class="element clickable method private makeManyToManyTablename" data-toggle="collapse" data-target=".makeManyToManyTablename .collapse">
+<h2>create a many to many table relationship</h2>
+<pre>makeManyToManyTablename($assoc_table) : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::makeManyToManyTablename()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$assoc_table</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="object2Array" id="object2Array"></a><div class="element clickable method private object2Array" data-toggle="collapse" data-target=".object2Array .collapse">
+<h2>convert an object to an array</h2>
+<pre>object2Array(null $object) : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::object2Array()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$object</h4>
+<code>null</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a name="runCallback" id="runCallback"></a><div class="element clickable method private runCallback" data-toggle="collapse" data-target=".runCallback .collapse">
+<h2>jump to subclass calling routine</h2>
+<pre>runCallback($type) : bool</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::runCallback()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$type</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a name="%24attachable_items_to_save" id="$attachable_items_to_save"> </a><div class="element clickable property public $attachable_items_to_save" data-toggle="collapse" data-target=".$attachable_items_to_save .collapse">
+<h2>$attachable_items_to_save</h2>
+<pre>$attachable_items_to_save </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::$$attachable_items_to_save</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24classname" id="$classname"> </a><div class="element clickable property public $classname" data-toggle="collapse" data-target=".$classname .collapse">
+<h2>$classname</h2>
+<pre>$classname </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::$$classname</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24default_sort_direction" id="$default_sort_direction"> </a><div class="element clickable property public $default_sort_direction" data-toggle="collapse" data-target=".$default_sort_direction .collapse">
+<h2>$default_sort_direction</h2>
+<pre>$default_sort_direction </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::$$default_sort_direction</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24default_sort_field" id="$default_sort_field"> </a><div class="element clickable property public $default_sort_field" data-toggle="collapse" data-target=".$default_sort_field .collapse">
+<h2>$default_sort_field</h2>
+<pre>$default_sort_field </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::$$default_sort_field</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24directory" id="$directory"> </a><div class="element clickable property public $directory" data-toggle="collapse" data-target=".$directory .collapse">
+<h2>Relative OS System File path to where $filename is [to be] located</h2>
+<pre>$directory </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>protected</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td>Relative OS System File path</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a name="%24do_not_validate" id="$do_not_validate"> </a><div class="element clickable property public $do_not_validate" data-toggle="collapse" data-target=".$do_not_validate .collapse">
+<h2>$do_not_validate</h2>
+<pre>$do_not_validate </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::$$do_not_validate</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24filename" id="$filename"> </a><div class="element clickable property public $filename" data-toggle="collapse" data-target=".$filename .collapse">
+<h2>File Name of File to process</h2>
+<pre>$filename </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>public</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td>Name of File to process</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a name="%24filesize" id="$filesize"> </a><div class="element clickable property public $filesize" data-toggle="collapse" data-target=".$filesize .collapse">
+<h2>Size of File, in Bytes</h2>
+<pre>$filesize </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>protected</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td>Size of File, in Bytes.</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a name="%24get_assoc_for" id="$get_assoc_for"> </a><div class="element clickable property public $get_assoc_for" data-toggle="collapse" data-target=".$get_assoc_for .collapse">
+<h2>$get_assoc_for</h2>
+<pre>$get_assoc_for </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::$$get_assoc_for</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24get_attachable_for" id="$get_attachable_for"> </a><div class="element clickable property public $get_attachable_for" data-toggle="collapse" data-target=".$get_attachable_for .collapse">
+<h2>$get_attachable_for</h2>
+<pre>$get_attachable_for </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::$$get_attachable_for</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24has_and_belongs_to_many" id="$has_and_belongs_to_many"> </a><div class="element clickable property public $has_and_belongs_to_many" data-toggle="collapse" data-target=".$has_and_belongs_to_many .collapse">
+<h2>$has_and_belongs_to_many</h2>
+<pre>$has_and_belongs_to_many </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::$$has_and_belongs_to_many</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24has_and_belongs_to_self" id="$has_and_belongs_to_self"> </a><div class="element clickable property public $has_and_belongs_to_self" data-toggle="collapse" data-target=".$has_and_belongs_to_self .collapse">
+<h2>$has_and_belongs_to_self</h2>
+<pre>$has_and_belongs_to_self </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::$$has_and_belongs_to_self</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24has_extended_fields" id="$has_extended_fields"> </a><div class="element clickable property public $has_extended_fields" data-toggle="collapse" data-target=".$has_extended_fields .collapse">
+<h2>$has_extended_fields</h2>
+<pre>$has_extended_fields </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::$$has_extended_fields</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24has_many" id="$has_many"> </a><div class="element clickable property public $has_many" data-toggle="collapse" data-target=".$has_many .collapse">
+<h2>$has_many</h2>
+<pre>$has_many </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::$$has_many</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24has_many_self" id="$has_many_self"> </a><div class="element clickable property public $has_many_self" data-toggle="collapse" data-target=".$has_many_self .collapse">
+<h2>$has_many_self</h2>
+<pre>$has_many_self </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::$$has_many_self</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24has_one" id="$has_one"> </a><div class="element clickable property public $has_one" data-toggle="collapse" data-target=".$has_one .collapse">
+<h2>$has_one</h2>
+<pre>$has_one </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::$$has_one</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24identifier" id="$identifier"> </a><div class="element clickable property public $identifier" data-toggle="collapse" data-target=".$identifier .collapse">
+<h2>$identifier</h2>
+<pre>$identifier </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::$$identifier</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24image_height" id="$image_height"> </a><div class="element clickable property public $image_height" data-toggle="collapse" data-target=".$image_height .collapse">
+<h2>Image height in pixels.</h2>
+<pre>$image_height </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>public</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td>Image height in pixels</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a name="%24image_width" id="$image_width"> </a><div class="element clickable property public $image_width" data-toggle="collapse" data-target=".$image_width .collapse">
+<h2>Image width in pixels.</h2>
+<pre>$image_width </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>public</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td>Image width in pixels</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a name="%24is_image" id="$is_image"> </a><div class="element clickable property public $is_image" data-toggle="collapse" data-target=".$is_image .collapse">
+<h2>Is this file an image.</h2>
+<pre>$is_image </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><h1>Defaults to FALSE</h1></p>
+<table class="table table-bordered">
+<tr>
+<th>public</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td>Is this file an image</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a name="%24mimetype" id="$mimetype"> </a><div class="element clickable property public $mimetype" data-toggle="collapse" data-target=".$mimetype .collapse">
+<h2>Mime Type of File.</h2>
+<pre>$mimetype </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>public</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td>File MIME Type</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a name="%24path" id="$path"> </a><div class="element clickable property public $path" data-toggle="collapse" data-target=".$path .collapse">
+<h2>Full File System Path for current File.</h2>
+<pre>$path </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Also used to in FILE Record</p></p>
+<table class="table table-bordered">
+<tr>
+<th>public</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td>Full File System Path</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a name="%24path_relative" id="$path_relative"> </a><div class="element clickable property public $path_relative" data-toggle="collapse" data-target=".$path_relative .collapse">
+<h2>Relative File System Path for current File</h2>
+<pre>$path_relative </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>public</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td>Relative File System Path</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a name="%24rank_by_field" id="$rank_by_field"> </a><div class="element clickable property public $rank_by_field" data-toggle="collapse" data-target=".$rank_by_field .collapse">
+<h2>$rank_by_field</h2>
+<pre>$rank_by_field </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::$$rank_by_field</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24supports_revisions" id="$supports_revisions"> </a><div class="element clickable property public $supports_revisions" data-toggle="collapse" data-target=".$supports_revisions .collapse">
+<h2>$supports_revisions</h2>
+<pre>$supports_revisions </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::$$supports_revisions</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24table" id="$table"> </a><div class="element clickable property public $table" data-toggle="collapse" data-target=".$table .collapse">
+<h2>Database Table Name to store File info</h2>
+<pre>$table </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>public</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td>Database Table Name</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a name="%24tablename" id="$tablename"> </a><div class="element clickable property public $tablename" data-toggle="collapse" data-target=".$tablename .collapse">
+<h2>$tablename</h2>
+<pre>$tablename </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::$$tablename</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24url" id="$url"> </a><div class="element clickable property public $url" data-toggle="collapse" data-target=".$url .collapse">
+<h2>Web based Path for current File</h2>
+<pre>$url </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>public</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td>Web based Path</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a name="%24validate" id="$validate"> </a><div class="element clickable property public $validate" data-toggle="collapse" data-target=".$validate .collapse">
+<h2>$validate</h2>
+<pre>$validate </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::$$validate</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24attachable_item_types" id="$attachable_item_types"> </a><div class="element clickable property protected $attachable_item_types" data-toggle="collapse" data-target=".$attachable_item_types .collapse">
+<h2>$attachable_item_types</h2>
+<pre>$attachable_item_types </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24attachable_table" id="$attachable_table"> </a><div class="element clickable property protected $attachable_table" data-toggle="collapse" data-target=".$attachable_table .collapse">
+<h2>$attachable_table</h2>
+<pre>$attachable_table </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24classinfo" id="$classinfo"> </a><div class="element clickable property protected $classinfo" data-toggle="collapse" data-target=".$classinfo .collapse">
+<h2>$classinfo</h2>
+<pre>$classinfo </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::$$classinfo</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24fileOverWrite" id="$fileOverWrite"> </a><div class="element clickable property protected $fileOverWrite" data-toggle="collapse" data-target=".$fileOverWrite .collapse">
+<h2>Determines if this file can be overwritten.</h2>
+<pre>$fileOverWrite </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Also if it can be "moved" or "renamed" over
+Default set to FALSE, no it can't</p></p>
+<table class="table table-bordered">
+<tr>
+<th>protected</th>
+<td>boolean</td>
+</tr>
+<tr>
+<th>property</th>
+<td>Determines if this file be overwritten</td>
+</tr>
+<tr>
+<th>access</th>
+<td>protected</td>
+</tr>
+<tr>
+<th>since</th>
+<td>1.1</td>
+</tr>
+</table>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a name="FILE_LOCK_EXCLUSIVE" id="FILE_LOCK_EXCLUSIVE"> </a><div class="element clickable constant  FILE_LOCK_EXCLUSIVE" data-toggle="collapse" data-target=".FILE_LOCK_EXCLUSIVE .collapse">
+<h2>Use this when an exclusive (write) lock is required
+This is a "relabel" of the PHP 'LOCK_EX' constant</h2>
+<pre>FILE_LOCK_EXCLUSIVE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>constant</th>
+<td>string FILE_LOCK_EXCLUSIVE</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+<tr>
+<th>PHPUnit</th>
+<td>Not Defined</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a name="FILE_LOCK_SHARED" id="FILE_LOCK_SHARED"> </a><div class="element clickable constant  FILE_LOCK_SHARED" data-toggle="collapse" data-target=".FILE_LOCK_SHARED .collapse">
+<h2>Use this when a shared (read) lock is required.</h2>
+<pre>FILE_LOCK_SHARED </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>This is a "relabel" of the PHP 'LOCK_SH' constant</p></p>
+<table class="table table-bordered">
+<tr>
+<th>constant</th>
+<td>string FILE_LOCK_SHARED</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+<tr>
+<th>PHPUnit</th>
+<td>Not Defined</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a name="FILE_MODE_APPEND" id="FILE_MODE_APPEND"> </a><div class="element clickable constant  FILE_MODE_APPEND" data-toggle="collapse" data-target=".FILE_MODE_APPEND .collapse">
+<h2>Mode to use for appending to files</h2>
+<pre>FILE_MODE_APPEND </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>constant</th>
+<td>string FILE_MODE_APPEND</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+<tr>
+<th>PHPUnit</th>
+<td>Not Defined</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a name="FILE_MODE_READ" id="FILE_MODE_READ"> </a><div class="element clickable constant  FILE_MODE_READ" data-toggle="collapse" data-target=".FILE_MODE_READ .collapse">
+<h2>Mode to use for reading from files</h2>
+<pre>FILE_MODE_READ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>constant</th>
+<td>string FILE_MODE_READ</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+<tr>
+<th>PHPUnit</th>
+<td>Not Defined</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a name="FILE_MODE_WRITE" id="FILE_MODE_WRITE"> </a><div class="element clickable constant  FILE_MODE_WRITE" data-toggle="collapse" data-target=".FILE_MODE_WRITE .collapse">
+<h2>Mode to use for truncating files, then writing</h2>
+<pre>FILE_MODE_WRITE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>constant</th>
+<td>string FILE_MODE_WRITE</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+<tr>
+<th>PHPUnit</th>
+<td>Not Defined</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a name="IMAGE_ERR_FILENOTFOUND" id="IMAGE_ERR_FILENOTFOUND"> </a><div class="element clickable constant  IMAGE_ERR_FILENOTFOUND" data-toggle="collapse" data-target=".IMAGE_ERR_FILENOTFOUND .collapse">
+<h2>IMAGE_ERR_FILENOTFOUND</h2>
+<pre>IMAGE_ERR_FILENOTFOUND </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="IMAGE_ERR_NOGD" id="IMAGE_ERR_NOGD"> </a><div class="element clickable constant  IMAGE_ERR_NOGD" data-toggle="collapse" data-target=".IMAGE_ERR_NOGD .collapse">
+<h2>IMAGE_ERR_NOGD</h2>
+<pre>IMAGE_ERR_NOGD </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="IMAGE_ERR_NOTSUPPORTED" id="IMAGE_ERR_NOTSUPPORTED"> </a><div class="element clickable constant  IMAGE_ERR_NOTSUPPORTED" data-toggle="collapse" data-target=".IMAGE_ERR_NOTSUPPORTED .collapse">
+<h2>IMAGE_ERR_NOTSUPPORTED</h2>
+<pre>IMAGE_ERR_NOTSUPPORTED </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="IMAGE_ERR_PERMISSIONDENIED" id="IMAGE_ERR_PERMISSIONDENIED"> </a><div class="element clickable constant  IMAGE_ERR_PERMISSIONDENIED" data-toggle="collapse" data-target=".IMAGE_ERR_PERMISSIONDENIED .collapse">
+<h2>IMAGE_ERR_PERMISSIONDENIED</h2>
+<pre>IMAGE_ERR_PERMISSIONDENIED </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="SYS_IMAGE" id="SYS_IMAGE"> </a><div class="element clickable constant  SYS_IMAGE" data-toggle="collapse" data-target=".SYS_IMAGE .collapse">
+<h2>SYS_IMAGE</h2>
+<pre>SYS_IMAGE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
+            generated on 2012-09-13T10:24:22-04:00.<br></footer></div>
+</div>
+</body>
+</html>

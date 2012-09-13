@@ -1,0 +1,593 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Exponent 2.0.9 API Documentation » \expTheme</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.0.9 API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
+<li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
+<li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
+<li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
+<li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">3461</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul>
+<li>todo 
+                <span class="label label-info">42</span>
+</li>
+<li>fixme 
+                <span class="label label-info">174</span>
+</li>
+</ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods</li>
+<li class="method public "><a href="#advertiseRSS" title="advertiseRSS :: exdoc
+Output &lt;link /&gt; elements for each RSS feed on the site"><span class="description">exdoc
+Output &lt;link /&gt; elements for each RSS feed on the site</span><pre>advertiseRSS()</pre></a></li>
+<li class="method public "><a href="#clearSmartyCache" title="clearSmartyCache :: "><span class="description">clearSmartyCache()
+        </span><pre>clearSmartyCache()</pre></a></li>
+<li class="method public "><a href="#foot" title="foot :: "><span class="description">foot()
+        </span><pre>foot()</pre></a></li>
+<li class="method public "><a href="#footerInfo" title="footerInfo :: "><span class="description">footerInfo()
+        </span><pre>footerInfo()</pre></a></li>
+<li class="method public "><a href="#getPrinterFriendlyTheme" title="getPrinterFriendlyTheme :: "><span class="description">getPrinterFriendlyTheme()
+        </span><pre>getPrinterFriendlyTheme()</pre></a></li>
+<li class="method public "><a href="#getSubthemes" title="getSubthemes :: exdoc"><span class="description">exdoc</span><pre>getSubthemes()</pre></a></li>
+<li class="method public "><a href="#getTheme" title="getTheme :: "><span class="description">getTheme()
+        </span><pre>getTheme()</pre></a></li>
+<li class="method public "><a href="#goDefaultSection" title="goDefaultSection :: exdoc
+Redirect User to Default Section"><span class="description">exdoc
+Redirect User to Default Section</span><pre>goDefaultSection()</pre></a></li>
+<li class="method public "><a href="#grabView" title="grabView :: "><span class="description">grabView()
+        </span><pre>grabView()</pre></a></li>
+<li class="method public "><a href="#grabViews" title="grabViews :: "><span class="description">grabViews()
+        </span><pre>grabViews()</pre></a></li>
+<li class="method public "><a href="#head" title="head :: "><span class="description">head()
+        </span><pre>head()</pre></a></li>
+<li class="method public "><a href="#headerInfo" title="headerInfo :: "><span class="description">headerInfo()
+        </span><pre>headerInfo()</pre></a></li>
+<li class="method public "><a href="#inAction" title="inAction :: "><span class="description">inAction()
+        </span><pre>inAction()</pre></a></li>
+<li class="method public "><a href="#inPreview" title="inPreview :: exdoc
+Checks to see if the page is currently in an action."><span class="description">exdoc
+Checks to see if the page is currently in an action.</span><pre>inPreview()</pre></a></li>
+<li class="method public "><a href="#initialize" title="initialize :: "><span class="description">initialize()
+        </span><pre>initialize()</pre></a></li>
+<li class="method public "><a href="#is_mobile" title="is_mobile :: "><span class="description">is_mobile()
+        </span><pre>is_mobile()</pre></a></li>
+<li class="method public "><a href="#loadActionMaps" title="loadActionMaps :: "><span class="description">loadActionMaps()
+        </span><pre>loadActionMaps()</pre></a></li>
+<li class="method public "><a href="#main" title="main :: exdoc
+Takes care of all the specifics of either showing a sectional container or running an action."><span class="description">exdoc
+Takes care of all the specifics of either showing a sectional container or running an action.</span><pre>main()</pre></a></li>
+<li class="method public "><a href="#module" title="module :: Entry point for displaying modules
+Packages $params for calling showModule method"><span class="description">Entry point for displaying modules
+Packages $params for calling showModule method</span><pre>module()</pre></a></li>
+<li class="method public "><a href="#pageMetaInfo" title="pageMetaInfo :: "><span class="description">pageMetaInfo()
+        </span><pre>pageMetaInfo()</pre></a></li>
+<li class="method public "><a href="#processCSSandJS" title="processCSSandJS :: "><span class="description">processCSSandJS()
+        </span><pre>processCSSandJS()</pre></a></li>
+<li class="method public "><a href="#reRoutActionTo" title="reRoutActionTo :: "><span class="description">reRoutActionTo()
+        </span><pre>reRoutActionTo()</pre></a></li>
+<li class="method public "><a href="#removeCss" title="removeCss :: "><span class="description">removeCss()
+        </span><pre>removeCss()</pre></a></li>
+<li class="method public "><a href="#removeSmartyCache" title="removeSmartyCache :: "><span class="description">removeSmartyCache()
+        </span><pre>removeSmartyCache()</pre></a></li>
+<li class="method public "><a href="#runAction" title="runAction :: exdoc
+Runs the appropriate action, by looking at the $_REQUEST variable."><span class="description">exdoc
+Runs the appropriate action, by looking at the $_REQUEST variable.</span><pre>runAction()</pre></a></li>
+<li class="method public "><a href="#satisfyThemeRequirements" title="satisfyThemeRequirements :: "><span class="description">satisfyThemeRequirements()
+        </span><pre>satisfyThemeRequirements()</pre></a></li>
+<li class="method public "><a href="#showAction" title="showAction :: "><span class="description">showAction()
+        </span><pre>showAction()</pre></a></li>
+<li class="method public "><a href="#showController" title="showController :: "><span class="description">showController()
+        </span><pre>showController()</pre></a></li>
+<li class="method public "><a href="#showModule" title="showModule :: exdoc
+Calls the necessary methods to show a specific module"><span class="description">exdoc
+Calls the necessary methods to show a specific module</span><pre>showModule()</pre></a></li>
+<li class="method public "><a href="#showSectionalModule" title="showSectionalModule :: exdoc
+Calls the necessary methods to show a specific module, in a section-sensitive way."><span class="description">exdoc
+Calls the necessary methods to show a specific module, in a section-sensitive way.</span><pre>showSectionalModule()</pre></a></li>
+<li class="method public "><a href="#showTopSectionalModule" title="showTopSectionalModule :: exdoc
+Calls the necessary methods to show a specific module in such a way that the current
+section displays the same content as its top-level parent and all of the top-level parent's
+children, grand-children, grand-grand-children, etc."><span class="description">exdoc
+Calls the necessary methods to show a specific module in such a way that the current
+section displays the same content as its top-level parent and all of the top-level parent's
+children, grand-children, grand-grand-children, etc.</span><pre>showTopSectionalModule()</pre></a></li>
+</ul>
+</div>
+<div class="span8">
+<a name="%5CexpTheme" id="\expTheme"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/expTheme.html">expTheme</a>
+</li>
+</ul>
+<div href="../classes/expTheme.html" class="element class">
+<p class="short_description"></p>
+<div class="details">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>define</th>
+<td>"BASE" "../../.."</td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a name="advertiseRSS" id="advertiseRSS"></a><div class="element clickable method public advertiseRSS" data-toggle="collapse" data-target=".advertiseRSS .collapse">
+<h2>exdoc
+Output &lt;link /&gt; elements for each RSS feed on the site</h2>
+<pre>advertiseRSS() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:Theme</td>
+</tr></table>
+</div></div>
+</div>
+<a name="clearSmartyCache" id="clearSmartyCache"></a><div class="element clickable method public clearSmartyCache" data-toggle="collapse" data-target=".clearSmartyCache .collapse">
+<h2>clearSmartyCache()
+        </h2>
+<pre>clearSmartyCache() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="foot" id="foot"></a><div class="element clickable method public foot" data-toggle="collapse" data-target=".foot .collapse">
+<h2>foot()
+        </h2>
+<pre>foot($params) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$params</h4></div>
+</div></div>
+</div>
+<a name="footerInfo" id="footerInfo"></a><div class="element clickable method public footerInfo" data-toggle="collapse" data-target=".footerInfo .collapse">
+<h2>footerInfo()
+        </h2>
+<pre>footerInfo($params) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$params</h4></div>
+</div></div>
+</div>
+<a name="getPrinterFriendlyTheme" id="getPrinterFriendlyTheme"></a><div class="element clickable method public getPrinterFriendlyTheme" data-toggle="collapse" data-target=".getPrinterFriendlyTheme .collapse">
+<h2>getPrinterFriendlyTheme()
+        </h2>
+<pre>getPrinterFriendlyTheme() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="getSubthemes" id="getSubthemes"></a><div class="element clickable method public getSubthemes" data-toggle="collapse" data-target=".getSubthemes .collapse">
+<h2>exdoc</h2>
+<pre>getSubthemes(bool $include_default, string $theme) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>state</th>
+<td><b>UNDOCUMENTED</b></td>
+</tr>
+<tr>
+<th>node</th>
+<td>Undocumented</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$include_default</h4>
+<code>bool</code>
+</div>
+<div class="subelement argument">
+<h4>$theme</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a name="getTheme" id="getTheme"></a><div class="element clickable method public getTheme" data-toggle="collapse" data-target=".getTheme .collapse">
+<h2>getTheme()
+        </h2>
+<pre>getTheme() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="goDefaultSection" id="goDefaultSection"></a><div class="element clickable method public goDefaultSection" data-toggle="collapse" data-target=".goDefaultSection .collapse">
+<h2>exdoc
+Redirect User to Default Section</h2>
+<pre>goDefaultSection() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:Theme</td>
+</tr></table>
+</div></div>
+</div>
+<a name="grabView" id="grabView"></a><div class="element clickable method public grabView" data-toggle="collapse" data-target=".grabView .collapse">
+<h2>grabView()
+        </h2>
+<pre>grabView($path, $filename) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$path</h4></div>
+<div class="subelement argument"><h4>$filename</h4></div>
+</div></div>
+</div>
+<a name="grabViews" id="grabViews"></a><div class="element clickable method public grabViews" data-toggle="collapse" data-target=".grabViews .collapse">
+<h2>grabViews()
+        </h2>
+<pre>grabViews($path, $filter) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$path</h4></div>
+<div class="subelement argument"><h4>$filter</h4></div>
+</div></div>
+</div>
+<a name="head" id="head"></a><div class="element clickable method public head" data-toggle="collapse" data-target=".head .collapse">
+<h2>head()
+        </h2>
+<pre>head($config) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$config</h4></div>
+</div></div>
+</div>
+<a name="headerInfo" id="headerInfo"></a><div class="element clickable method public headerInfo" data-toggle="collapse" data-target=".headerInfo .collapse">
+<h2>headerInfo()
+        </h2>
+<pre>headerInfo($config) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$config</h4></div>
+</div></div>
+</div>
+<a name="inAction" id="inAction"></a><div class="element clickable method public inAction" data-toggle="collapse" data-target=".inAction .collapse">
+<h2>inAction()
+        </h2>
+<pre>inAction() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="inPreview" id="inPreview"></a><div class="element clickable method public inPreview" data-toggle="collapse" data-target=".inPreview .collapse">
+<h2>exdoc
+Checks to see if the page is currently in an action.</h2>
+<pre>inPreview() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Useful only if the theme does not use the self::main() function
+Returns whether or not an action should be run.</p></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:Theme</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a name="initialize" id="initialize"></a><div class="element clickable method public initialize" data-toggle="collapse" data-target=".initialize .collapse">
+<h2>initialize()
+        </h2>
+<pre>initialize() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="is_mobile" id="is_mobile"></a><div class="element clickable method public is_mobile" data-toggle="collapse" data-target=".is_mobile .collapse">
+<h2>is_mobile()
+        </h2>
+<pre>is_mobile() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="loadActionMaps" id="loadActionMaps"></a><div class="element clickable method public loadActionMaps" data-toggle="collapse" data-target=".loadActionMaps .collapse">
+<h2>loadActionMaps()
+        </h2>
+<pre>loadActionMaps() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="main" id="main"></a><div class="element clickable method public main" data-toggle="collapse" data-target=".main .collapse">
+<h2>exdoc
+Takes care of all the specifics of either showing a sectional container or running an action.</h2>
+<pre>main() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:Theme</td>
+</tr></table>
+</div></div>
+</div>
+<a name="module" id="module"></a><div class="element clickable method public module" data-toggle="collapse" data-target=".module .collapse">
+<h2>Entry point for displaying modules
+Packages $params for calling showModule method</h2>
+<pre>module(array $params) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$params</h4>
+<code>array</code><p>list of module parameters</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="pageMetaInfo" id="pageMetaInfo"></a><div class="element clickable method public pageMetaInfo" data-toggle="collapse" data-target=".pageMetaInfo .collapse">
+<h2>pageMetaInfo()
+        </h2>
+<pre>pageMetaInfo() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="processCSSandJS" id="processCSSandJS"></a><div class="element clickable method public processCSSandJS" data-toggle="collapse" data-target=".processCSSandJS .collapse">
+<h2>processCSSandJS()
+        </h2>
+<pre>processCSSandJS() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="reRoutActionTo" id="reRoutActionTo"></a><div class="element clickable method public reRoutActionTo" data-toggle="collapse" data-target=".reRoutActionTo .collapse">
+<h2>reRoutActionTo()
+        </h2>
+<pre>reRoutActionTo($theme) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$theme</h4></div>
+</div></div>
+</div>
+<a name="removeCss" id="removeCss"></a><div class="element clickable method public removeCss" data-toggle="collapse" data-target=".removeCss .collapse">
+<h2>removeCss()
+        </h2>
+<pre>removeCss() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="removeSmartyCache" id="removeSmartyCache"></a><div class="element clickable method public removeSmartyCache" data-toggle="collapse" data-target=".removeSmartyCache .collapse">
+<h2>removeSmartyCache()
+        </h2>
+<pre>removeSmartyCache() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="runAction" id="runAction"></a><div class="element clickable method public runAction" data-toggle="collapse" data-target=".runAction .collapse">
+<h2>exdoc
+Runs the appropriate action, by looking at the $_REQUEST variable.</h2>
+<pre>runAction() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:Theme</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="satisfyThemeRequirements" id="satisfyThemeRequirements"></a><div class="element clickable method public satisfyThemeRequirements" data-toggle="collapse" data-target=".satisfyThemeRequirements .collapse">
+<h2>satisfyThemeRequirements()
+        </h2>
+<pre>satisfyThemeRequirements() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="showAction" id="showAction"></a><div class="element clickable method public showAction" data-toggle="collapse" data-target=".showAction .collapse">
+<h2>showAction()
+        </h2>
+<pre>showAction($module, $action, $src, $params) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$module</h4></div>
+<div class="subelement argument"><h4>$action</h4></div>
+<div class="subelement argument"><h4>$src</h4></div>
+<div class="subelement argument"><h4>$params</h4></div>
+</div></div>
+</div>
+<a name="showController" id="showController"></a><div class="element clickable method public showController" data-toggle="collapse" data-target=".showController .collapse">
+<h2>showController()
+        </h2>
+<pre>showController($params) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$params</h4></div>
+</div></div>
+</div>
+<a name="showModule" id="showModule"></a><div class="element clickable method public showModule" data-toggle="collapse" data-target=".showModule .collapse">
+<h2>exdoc
+Calls the necessary methods to show a specific module</h2>
+<pre>showModule(string $module, string $view, string $title, string $source, bool $pickable, null $section, bool $hide_menu, array $params) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:Theme</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$module</h4>
+<code>string</code><p>The classname of the module to display</p></div>
+<div class="subelement argument">
+<h4>$view</h4>
+<code>string</code><p>The name of the view to display the module with</p></div>
+<div class="subelement argument">
+<h4>$title</h4>
+<code>string</code><p>The title of the module (support is view-dependent)</p>
+</div>
+<div class="subelement argument">
+<h4>$source</h4>
+<code>string</code><p>The source of the module.</p></div>
+<div class="subelement argument">
+<h4>$pickable</h4>
+<code>bool</code><p>Whether or not the module is pickable in the Source Picker.</p></div>
+<div class="subelement argument">
+<h4>$section</h4>
+<code>null</code>
+</div>
+<div class="subelement argument">
+<h4>$hide_menu</h4>
+<code>bool</code>
+</div>
+<div class="subelement argument">
+<h4>$params</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a name="showSectionalModule" id="showSectionalModule"></a><div class="element clickable method public showSectionalModule" data-toggle="collapse" data-target=".showSectionalModule .collapse">
+<h2>exdoc
+Calls the necessary methods to show a specific module, in a section-sensitive way.</h2>
+<pre>showSectionalModule(string $module, string $view, string $title, string $prefix, bool $pickable, bool $hide_menu) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:Theme</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$module</h4>
+<code>string</code><p>The classname of the module to display</p></div>
+<div class="subelement argument">
+<h4>$view</h4>
+<code>string</code><p>The name of the view to display the module with</p></div>
+<div class="subelement argument">
+<h4>$title</h4>
+<code>string</code><p>The title of the module (support is view-dependent)</p>
+</div>
+<div class="subelement argument">
+<h4>$prefix</h4>
+<code>string</code><p>The prefix of the module's source. The current section id will be appended to this</p>
+</div>
+<div class="subelement argument">
+<h4>$pickable</h4>
+<code>bool</code><p>Whether or not the module is pickable in the Source Picker.</p></div>
+<div class="subelement argument">
+<h4>$hide_menu</h4>
+<code>bool</code>
+</div>
+</div></div>
+</div>
+<a name="showTopSectionalModule" id="showTopSectionalModule"></a><div class="element clickable method public showTopSectionalModule" data-toggle="collapse" data-target=".showTopSectionalModule .collapse">
+<h2>exdoc
+Calls the necessary methods to show a specific module in such a way that the current
+section displays the same content as its top-level parent and all of the top-level parent's
+children, grand-children, grand-grand-children, etc.</h2>
+<pre>showTopSectionalModule(string $module, string $view, string $title, string $prefix, bool $pickable, bool $hide_menu) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:Theme</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$module</h4>
+<code>string</code><p>The classname of the module to display</p></div>
+<div class="subelement argument">
+<h4>$view</h4>
+<code>string</code><p>The name of the view to display the module with</p></div>
+<div class="subelement argument">
+<h4>$title</h4>
+<code>string</code><p>The title of the module (support is view-dependent)</p>
+</div>
+<div class="subelement argument">
+<h4>$prefix</h4>
+<code>string</code><p>The prefix of the module's source. The current section id will be appended to this</p>
+</div>
+<div class="subelement argument">
+<h4>$pickable</h4>
+<code>bool</code><p>Whether or not the module is pickable in the Source Picker.</p></div>
+<div class="subelement argument">
+<h4>$hide_menu</h4>
+<code>bool</code>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
+            generated on 2012-09-13T10:24:12-04:00.<br></footer></div>
+</div>
+</body>
+</html>

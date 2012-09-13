@@ -1,0 +1,399 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Exponent 2.0.9 API Documentation » \expSettings</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.0.9 API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
+<li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
+<li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
+<li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
+<li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">3461</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul>
+<li>todo 
+                <span class="label label-info">42</span>
+</li>
+<li>fixme 
+                <span class="label label-info">174</span>
+</li>
+</ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods</li>
+<li class="method public "><a href="#activateProfile" title="activateProfile :: exdoc
+Activates a Configuration Profile."><span class="description">exdoc
+Activates a Configuration Profile.</span><pre>activateProfile()</pre></a></li>
+<li class="method public "><a href="#change" title="change :: "><span class="description">change()
+        </span><pre>change()</pre></a></li>
+<li class="method public "><a href="#configurationForm" title="configurationForm :: exdoc
+This function looks through all of the available configuration
+extensions, and generates a form object consisting of each
+extension's form part."><span class="description">exdoc
+This function looks through all of the available configuration
+extensions, and generates a form object consisting of each
+extension's form part.</span><pre>configurationForm()</pre></a></li>
+<li class="method public "><a href="#deleteProfile" title="deleteProfile :: exdoc
+Deletes a configuration profile from the conf/profiles
+directory."><span class="description">exdoc
+Deletes a configuration profile from the conf/profiles
+directory.</span><pre>deleteProfile()</pre></a></li>
+<li class="method public "><a href="#dropdownData" title="dropdownData :: exdoc
+Parse Drop Down options from a file."><span class="description">exdoc
+Parse Drop Down options from a file.</span><pre>dropdownData()</pre></a></li>
+<li class="method public "><a href="#initialize" title="initialize :: "><span class="description">initialize()
+        </span><pre>initialize()</pre></a></li>
+<li class="method public "><a href="#outputConfigurationTemplate" title="outputConfigurationTemplate :: exdoc
+Takes care of setting the appropriate template variables
+to be used when viewing a profile or set of profiles."><span class="description">exdoc
+Takes care of setting the appropriate template variables
+to be used when viewing a profile or set of profiles.</span><pre>outputConfigurationTemplate()</pre></a></li>
+<li class="method public "><a href="#parse" title="parse :: exdoc
+Uses magical regular expressions voodoo to pull the
+actual define() calls out of a configuration PHP file,
+and return them in an associative array, for use in
+viewing and analyzing configs."><span class="description">exdoc
+Uses magical regular expressions voodoo to pull the
+actual define() calls out of a configuration PHP file,
+and return them in an associative array, for use in
+viewing and analyzing configs.</span><pre>parse()</pre></a></li>
+<li class="method public "><a href="#parseFile" title="parseFile :: exdoc
+Looks through the source of a given configuration PHP file,
+and pulls out (by mysterious regular expressions) the define()
+calls and returns those values."><span class="description">exdoc
+Looks through the source of a given configuration PHP file,
+and pulls out (by mysterious regular expressions) the define()
+calls and returns those values.</span><pre>parseFile()</pre></a></li>
+<li class="method public "><a href="#profiles" title="profiles :: exdoc
+Looks through the conf/profiles directory, and finds all of
+the configuration profiles in existence."><span class="description">exdoc
+Looks through the conf/profiles directory, and finds all of
+the configuration profiles in existence.</span><pre>profiles()</pre></a></li>
+<li class="method public "><a href="#saveConfiguration" title="saveConfiguration :: exdoc
+Processes the POSTed data from the configuration form
+object generated by self::configurationForm, and writes
+a bunch of define() statements to the profiles config file."><span class="description">exdoc
+Processes the POSTed data from the configuration form
+object generated by self::configurationForm, and writes
+a bunch of define() statements to the profiles config file.</span><pre>saveConfiguration()</pre></a></li>
+<li class="method public "><a href="#saveValues" title="saveValues :: "><span class="description">saveValues()
+        </span><pre>saveValues()</pre></a></li>
+<li class="method public "><a href="#writeFile" title="writeFile :: "><span class="description">writeFile()
+        </span><pre>writeFile()</pre></a></li>
+</ul>
+</div>
+<div class="span8">
+<a name="%5CexpSettings" id="\expSettings"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/expSettings.html">expSettings</a>
+</li>
+</ul>
+<div href="../classes/expSettings.html" class="element class">
+<p class="short_description"></p>
+<div class="details">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>define</th>
+<td>"BASE" "../../.."</td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a name="activateProfile" id="activateProfile"></a><div class="element clickable method public activateProfile" data-toggle="collapse" data-target=".activateProfile .collapse">
+<h2>exdoc
+Activates a Configuration Profile.</h2>
+<pre>activateProfile(string $profile) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:Config</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$profile</h4>
+<code>string</code><p>The name of the Profile to activate.</p></div>
+</div></div>
+</div>
+<a name="change" id="change"></a><div class="element clickable method public change" data-toggle="collapse" data-target=".change .collapse">
+<h2>change()
+        </h2>
+<pre>change($var, $val) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$var</h4></div>
+<div class="subelement argument"><h4>$val</h4></div>
+</div></div>
+</div>
+<a name="configurationForm" id="configurationForm"></a><div class="element clickable method public configurationForm" data-toggle="collapse" data-target=".configurationForm .collapse">
+<h2>exdoc
+This function looks through all of the available configuration
+extensions, and generates a form object consisting of each
+extension's form part.</h2>
+<pre>configurationForm(string $configname, bool $database) : <a href="../classes/form.html">\form</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>This can then be used to edit the full
+site configuration.  Returns a form object intended for editing the profile.</p></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:Config</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$configname</h4>
+<code>string</code><p>The name of the configuration profile, for filling in default values.</p></div>
+<div class="subelement argument">
+<h4>$database</h4>
+<code>bool</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/form.html">\form</a></code></div>
+</div></div>
+</div>
+<a name="deleteProfile" id="deleteProfile"></a><div class="element clickable method public deleteProfile" data-toggle="collapse" data-target=".deleteProfile .collapse">
+<h2>exdoc
+Deletes a configuration profile from the conf/profiles
+directory.</h2>
+<pre>deleteProfile(string $profile) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:Config</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$profile</h4>
+<code>string</code><p>The name of the Profile to remove.</p></div>
+</div></div>
+</div>
+<a name="dropdownData" id="dropdownData"></a><div class="element clickable method public dropdownData" data-toggle="collapse" data-target=".dropdownData .collapse">
+<h2>exdoc
+Parse Drop Down options from a file.</h2>
+<pre>dropdownData(string $dropdown_name) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:Config</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$dropdown_name</h4>
+<code>string</code><p>The name of the dropdown type. The name of the file will be retrieved by adding .dropdown as a suffix, and searching the conf/data directory.</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a name="initialize" id="initialize"></a><div class="element clickable method public initialize" data-toggle="collapse" data-target=".initialize .collapse">
+<h2>initialize()
+        </h2>
+<pre>initialize() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="outputConfigurationTemplate" id="outputConfigurationTemplate"></a><div class="element clickable method public outputConfigurationTemplate" data-toggle="collapse" data-target=".outputConfigurationTemplate .collapse">
+<h2>exdoc
+Takes care of setting the appropriate template variables
+to be used when viewing a profile or set of profiles.</h2>
+<pre>outputConfigurationTemplate(<a href="../classes/template.html">\template</a> $template, string $configname) : <a href="../classes/template.html">\template</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Returns the initializes template.</p></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:Config</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$template</h4>
+<code><a href="../classes/template.html">\template</a></code><p>The template object to assign to.</p></div>
+<div class="subelement argument">
+<h4>$configname</h4>
+<code>string</code><p>The name of the configuration profile.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/template.html">\template</a></code></div>
+</div></div>
+</div>
+<a name="parse" id="parse"></a><div class="element clickable method public parse" data-toggle="collapse" data-target=".parse .collapse">
+<h2>exdoc
+Uses magical regular expressions voodoo to pull the
+actual define() calls out of a configuration PHP file,
+and return them in an associative array, for use in
+viewing and analyzing configs.</h2>
+<pre>parse(string $configname, null $site_root) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Returns an associative
+array of constant names => values</p></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:Config</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$configname</h4>
+<code>string</code><p>Configuration Profile name</p></div>
+<div class="subelement argument">
+<h4>$site_root</h4>
+<code>null</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a name="parseFile" id="parseFile"></a><div class="element clickable method public parseFile" data-toggle="collapse" data-target=".parseFile .collapse">
+<h2>exdoc
+Looks through the source of a given configuration PHP file,
+and pulls out (by mysterious regular expressions) the define()
+calls and returns those values.</h2>
+<pre>parseFile(string $file) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Returns an associative array
+of constant names => values</p></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:Config</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$file</h4>
+<code>string</code><p>The full path to the file to parse.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a name="profiles" id="profiles"></a><div class="element clickable method public profiles" data-toggle="collapse" data-target=".profiles .collapse">
+<h2>exdoc
+Looks through the conf/profiles directory, and finds all of
+the configuration profiles in existence.</h2>
+<pre>profiles() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>This function also
+performs some minor name-mangling, to make the Profile Names
+more user friendly. Returns an array of Profile names.</p></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:Config</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a name="saveConfiguration" id="saveConfiguration"></a><div class="element clickable method public saveConfiguration" data-toggle="collapse" data-target=".saveConfiguration .collapse">
+<h2>exdoc
+Processes the POSTed data from the configuration form
+object generated by self::configurationForm, and writes
+a bunch of define() statements to the profiles config file.</h2>
+<pre>saveConfiguration(array $values, null $site_root) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:Config</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$values</h4>
+<code>array</code><p>The _POST array to pull configuration data from.</p></div>
+<div class="subelement argument">
+<h4>$site_root</h4>
+<code>null</code>
+</div>
+</div></div>
+</div>
+<a name="saveValues" id="saveValues"></a><div class="element clickable method public saveValues" data-toggle="collapse" data-target=".saveValues .collapse">
+<h2>saveValues()
+        </h2>
+<pre>saveValues($values, $configname) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$values</h4></div>
+<div class="subelement argument"><h4>$configname</h4></div>
+</div></div>
+</div>
+<a name="writeFile" id="writeFile"></a><div class="element clickable method public writeFile" data-toggle="collapse" data-target=".writeFile .collapse">
+<h2>writeFile()
+        </h2>
+<pre>writeFile($str, $configname) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$str</h4></div>
+<div class="subelement argument"><h4>$configname</h4></div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
+            generated on 2012-09-13T10:24:11-04:00.<br></footer></div>
+</div>
+</body>
+</html>

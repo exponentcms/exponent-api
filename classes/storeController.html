@@ -1,0 +1,1326 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Exponent 2.0.9 API Documentation » \storeController</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.0.9 API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
+<li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
+<li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
+<li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
+<li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">3461</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul>
+<li>todo 
+                <span class="label label-info">42</span>
+</li>
+<li>fixme 
+                <span class="label label-info">174</span>
+</li>
+</ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods</li>
+<li class="method public "><a href="#__construct" title="__construct :: "><span class="description">__construct()
+        </span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#_getEventsForDates" title="_getEventsForDates :: "><span class="description">_getEventsForDates()
+        </span><pre>_getEventsForDates()</pre></a></li>
+<li class="method public "><a href="#addContentToSearch" title="addContentToSearch :: add all module items to search index"><span class="description">add all module items to search index</span><pre>addContentToSearch()</pre></a></li>
+<li class="method public inherited"><a href="#aggregateWhereClause" title="aggregateWhereClause :: The aggregateWhereClause function creates a sql where clause which also includes aggregated module content"><span class="description">The aggregateWhereClause function creates a sql where clause which also includes aggregated module content</span><pre>aggregateWhereClause()</pre></a></li>
+<li class="method public "><a href="#author" title="author :: author of module"><span class="description">author of module</span><pre>author()</pre></a></li>
+<li class="method public "><a href="#batch_process" title="batch_process :: "><span class="description">batch_process()
+        </span><pre>batch_process()</pre></a></li>
+<li class="method public "><a href="#billing_config" title="billing_config :: "><span class="description">billing_config()
+        </span><pre>billing_config()</pre></a></li>
+<li class="method public "><a href="#canExportData" title="canExportData :: can this module export data?"><span class="description">can this module export data?</span><pre>canExportData()</pre></a></li>
+<li class="method public "><a href="#canImportData" title="canImportData :: can this module import data?"><span class="description">can this module import data?</span><pre>canImportData()</pre></a></li>
+<li class="method public "><a href="#categoryBreadcrumb" title="categoryBreadcrumb :: "><span class="description">categoryBreadcrumb()
+        </span><pre>categoryBreadcrumb()</pre></a></li>
+<li class="method public "><a href="#cleanNonUnicodeProducts" title="cleanNonUnicodeProducts :: "><span class="description">cleanNonUnicodeProducts()
+        </span><pre>cleanNonUnicodeProducts()</pre></a></li>
+<li class="method public inherited"><a href="#configure" title="configure :: generic config action"><span class="description">generic config action</span><pre>configure()</pre></a></li>
+<li class="method public "><a href="#copyProduct" title="copyProduct :: "><span class="description">copyProduct()
+        </span><pre>copyProduct()</pre></a></li>
+<li class="method public inherited"><a href="#create" title="create :: create an item in this module"><span class="description">create an item in this module</span><pre>create()</pre></a></li>
+<li class="method public "><a href="#delete" title="delete :: delete item in module"><span class="description">delete item in module</span><pre>delete()</pre></a></li>
+<li class="method public "><a href="#deleteChildren" title="deleteChildren :: "><span class="description">deleteChildren()
+        </span><pre>deleteChildren()</pre></a></li>
+<li class="method public "><a href="#deleteProcessedModelAliases" title="deleteProcessedModelAliases :: "><span class="description">deleteProcessedModelAliases()
+        </span><pre>deleteProcessedModelAliases()</pre></a></li>
+<li class="method public inherited"><a href="#delete_In" title="delete_In :: delete an item by instance for backwards compat with old modules"><span class="description">delete an item by instance for backwards compat with old modules</span><pre>delete_In()</pre></a></li>
+<li class="method public inherited"><a href="#delete_instance" title="delete_instance :: delete an item by instance"><span class="description">delete an item by instance</span><pre>delete_instance()</pre></a></li>
+<li class="method public "><a href="#delete_model_alias" title="delete_model_alias :: "><span class="description">delete_model_alias()
+        </span><pre>delete_model_alias()</pre></a></li>
+<li class="method public inherited"><a href="#delete_search" title="delete_search :: remove module items from search index"><span class="description">remove module items from search index</span><pre>delete_search()</pre></a></li>
+<li class="method public "><a href="#description" title="description :: description of module"><span class="description">description of module</span><pre>description()</pre></a></li>
+<li class="method public "><a href="#displayname" title="displayname :: name of module"><span class="description">name of module</span><pre>displayname()</pre></a></li>
+<li class="method public inherited"><a href="#downloadfile" title="downloadfile :: download a file attached to item"><span class="description">download a file attached to item</span><pre>downloadfile()</pre></a></li>
+<li class="method public "><a href="#ecom_search" title="ecom_search :: "><span class="description">ecom_search()
+        </span><pre>ecom_search()</pre></a></li>
+<li class="method public "><a href="#edit" title="edit :: edit item in module"><span class="description">edit item in module</span><pre>edit()</pre></a></li>
+<li class="method public "><a href="#edit_model_alias" title="edit_model_alias :: "><span class="description">edit_model_alias()
+        </span><pre>edit_model_alias()</pre></a></li>
+<li class="method public "><a href="#events_calendar" title="events_calendar :: "><span class="description">events_calendar()
+        </span><pre>events_calendar()</pre></a></li>
+<li class="method public "><a href="#exportMe" title="exportMe :: "><span class="description">exportMe()
+        </span><pre>exportMe()</pre></a></li>
+<li class="method public inherited"><a href="#getModels" title="getModels :: get the models associated with this module"><span class="description">get the models associated with this module</span><pre>getModels()</pre></a></li>
+<li class="method public "><a href="#getProductTypes" title="getProductTypes :: "><span class="description">getProductTypes()
+        </span><pre>getProductTypes()</pre></a></li>
+<li class="method public inherited"><a href="#getRSSContent" title="getRSSContent :: get the items in an rss feed format"><span class="description">get the items in an rss feed format</span><pre>getRSSContent()</pre></a></li>
+<li class="method public "><a href="#grabConfig" title="grabConfig :: "><span class="description">grabConfig()
+        </span><pre>grabConfig()</pre></a></li>
+<li class="method public inherited"><a href="#hasContent" title="hasContent :: does module have content available?"><span class="description">does module have content available?</span><pre>hasContent()</pre></a></li>
+<li class="method public inherited"><a href="#hasSources" title="hasSources :: does module have sources available?"><span class="description">does module have sources available?</span><pre>hasSources()</pre></a></li>
+<li class="method public inherited"><a href="#hasViews" title="hasViews :: does module have views available?"><span class="description">does module have views available?</span><pre>hasViews()</pre></a></li>
+<li class="method public "><a href="#import_external_addresses" title="import_external_addresses :: "><span class="description">import_external_addresses()
+        </span><pre>import_external_addresses()</pre></a></li>
+<li class="method public "><a href="#isSearchable" title="isSearchable :: is module content searchable?"><span class="description">is module content searchable?</span><pre>isSearchable()</pre></a></li>
+<li class="method public "><a href="#manage" title="manage :: display module management view"><span class="description">display module management view</span><pre>manage()</pre></a></li>
+<li class="method public inherited"><a href="#manage_ranks" title="manage_ranks :: display view to rerank items"><span class="description">display view to rerank items</span><pre>manage_ranks()</pre></a></li>
+<li class="method public "><a href="#manage_sales_reps" title="manage_sales_reps :: "><span class="description">manage_sales_reps()
+        </span><pre>manage_sales_reps()</pre></a></li>
+<li class="method public inherited"><a href="#merge" title="merge :: merge/move aggregated item into this module"><span class="description">merge/move aggregated item into this module</span><pre>merge()</pre></a></li>
+<li class="method public "><a href="#metainfo" title="metainfo :: get the metainfo for this module"><span class="description">get the metainfo for this module</span><pre>metainfo()</pre></a></li>
+<li class="method public inherited"><a href="#moduleSelfAwareness" title="moduleSelfAwareness :: glue to make module aware of itself"><span class="description">glue to make module aware of itself</span><pre>moduleSelfAwareness()</pre></a></li>
+<li class="method public inherited"><a href="#name" title="name :: name of module for backwards compat with old modules"><span class="description">name of module for backwards compat with old modules</span><pre>name()</pre></a></li>
+<li class="method public "><a href="#nonUnicodeProducts" title="nonUnicodeProducts :: "><span class="description">nonUnicodeProducts()
+        </span><pre>nonUnicodeProducts()</pre></a></li>
+<li class="method public inherited"><a href="#permissions" title="permissions :: permission functions"><span class="description">permission functions</span><pre>permissions()</pre></a></li>
+<li class="method public "><a href="#picktype" title="picktype :: "><span class="description">picktype()
+        </span><pre>picktype()</pre></a></li>
+<li class="method public "><a href="#processModelAliases" title="processModelAliases :: "><span class="description">processModelAliases()
+        </span><pre>processModelAliases()</pre></a></li>
+<li class="method public "><a href="#process_external_addresses" title="process_external_addresses :: "><span class="description">process_external_addresses()
+        </span><pre>process_external_addresses()</pre></a></li>
+<li class="method public "><a href="#process_orders" title="process_orders :: "><span class="description">process_orders()
+        </span><pre>process_orders()</pre></a></li>
+<li class="method public "><a href="#quicklinks" title="quicklinks :: "><span class="description">quicklinks()
+        </span><pre>quicklinks()</pre></a></li>
+<li class="method public inherited"><a href="#requiresConfiguration" title="requiresConfiguration :: does this module require configuration?"><span class="description">does this module require configuration?</span><pre>requiresConfiguration()</pre></a></li>
+<li class="method public inherited"><a href="#rerank" title="rerank :: rerank items in module"><span class="description">rerank items in module</span><pre>rerank()</pre></a></li>
+<li class="method public inherited"><a href="#rss" title="rss :: "><span class="description">rss()
+        </span><pre>rss()</pre></a></li>
+<li class="method public "><a href="#saveModelAliases" title="saveModelAliases :: "><span class="description">saveModelAliases()
+        </span><pre>saveModelAliases()</pre></a></li>
+<li class="method public inherited"><a href="#saveconfig" title="saveconfig :: save module configuration"><span class="description">save module configuration</span><pre>saveconfig()</pre></a></li>
+<li class="method public "><a href="#search" title="search :: "><span class="description">search()
+        </span><pre>search()</pre></a></li>
+<li class="method public inherited"><a href="#searchCategory" title="searchCategory :: category of items searched in the module"><span class="description">category of items searched in the module</span><pre>searchCategory()</pre></a></li>
+<li class="method public inherited"><a href="#searchName" title="searchName :: type of items searched in the module"><span class="description">type of items searched in the module</span><pre>searchName()</pre></a></li>
+<li class="method public "><a href="#searchNew" title="searchNew :: "><span class="description">searchNew()
+        </span><pre>searchNew()</pre></a></li>
+<li class="method public "><a href="#search_by_model" title="search_by_model :: "><span class="description">search_by_model()
+        </span><pre>search_by_model()</pre></a></li>
+<li class="method public "><a href="#search_by_model_form" title="search_by_model_form :: "><span class="description">search_by_model_form()
+        </span><pre>search_by_model_form()</pre></a></li>
+<li class="method public "><a href="#search_by_model_old" title="search_by_model_old :: "><span class="description">search_by_model_old()
+        </span><pre>search_by_model_old()</pre></a></li>
+<li class="method public "><a href="#show" title="show :: default view for individual item"><span class="description">default view for individual item</span><pre>show()</pre></a></li>
+<li class="method public "><a href="#showByModel" title="showByModel :: "><span class="description">showByModel()
+        </span><pre>showByModel()</pre></a></li>
+<li class="method public inherited"><a href="#showByTags" title="showByTags :: view items referenced by tags"><span class="description">view items referenced by tags</span><pre>showByTags()</pre></a></li>
+<li class="method public "><a href="#showByTitle" title="showByTitle :: view the item by referring to its title"><span class="description">view the item by referring to its title</span><pre>showByTitle()</pre></a></li>
+<li class="method public "><a href="#showFullTree" title="showFullTree :: "><span class="description">showFullTree()
+        </span><pre>showFullTree()</pre></a></li>
+<li class="method public "><a href="#showGiftCards" title="showGiftCards :: "><span class="description">showGiftCards()
+        </span><pre>showGiftCards()</pre></a></li>
+<li class="method public "><a href="#showHistory" title="showHistory :: "><span class="description">showHistory()
+        </span><pre>showHistory()</pre></a></li>
+<li class="method public inherited"><a href="#showRandom" title="showRandom :: view a random item"><span class="description">view a random item</span><pre>showRandom()</pre></a></li>
+<li class="method public "><a href="#showTopLevel" title="showTopLevel :: "><span class="description">showTopLevel()
+        </span><pre>showTopLevel()</pre></a></li>
+<li class="method public "><a href="#showTopLevel_images" title="showTopLevel_images :: "><span class="description">showTopLevel_images()
+        </span><pre>showTopLevel_images()</pre></a></li>
+<li class="method public "><a href="#showall" title="showall :: default module view method for all items"><span class="description">default module view method for all items</span><pre>showall()</pre></a></li>
+<li class="method public "><a href="#showallByManufacturer" title="showallByManufacturer :: "><span class="description">showallByManufacturer()
+        </span><pre>showallByManufacturer()</pre></a></li>
+<li class="method public "><a href="#showallImpropercategorized" title="showallImpropercategorized :: "><span class="description">showallImpropercategorized()
+        </span><pre>showallImpropercategorized()</pre></a></li>
+<li class="method public "><a href="#showallManufacturers" title="showallManufacturers :: "><span class="description">showallManufacturers()
+        </span><pre>showallManufacturers()</pre></a></li>
+<li class="method public "><a href="#showallSubcategories" title="showallSubcategories :: "><span class="description">showallSubcategories()
+        </span><pre>showallSubcategories()</pre></a></li>
+<li class="method public "><a href="#showallUncategorized" title="showallUncategorized :: "><span class="description">showallUncategorized()
+        </span><pre>showallUncategorized()</pre></a></li>
+<li class="method public inherited"><a href="#showall_by_tags" title="showall_by_tags :: default module view method for all items with a specific tag"><span class="description">default module view method for all items with a specific tag</span><pre>showall_by_tags()</pre></a></li>
+<li class="method public inherited"><a href="#showall_by_tags_meta" title="showall_by_tags_meta :: "><span class="description">showall_by_tags_meta()
+        </span><pre>showall_by_tags_meta()</pre></a></li>
+<li class="method public "><a href="#showall_category_featured_products" title="showall_category_featured_products :: "><span class="description">showall_category_featured_products()
+        </span><pre>showall_category_featured_products()</pre></a></li>
+<li class="method public "><a href="#showall_featured_products" title="showall_featured_products :: "><span class="description">showall_featured_products()
+        </span><pre>showall_featured_products()</pre></a></li>
+<li class="method public inherited"><a href="#supportsWorkflow" title="supportsWorkflow :: does module support workflow?"><span class="description">does module support workflow?</span><pre>supportsWorkflow()</pre></a></li>
+<li class="method public inherited"><a href="#tags" title="tags :: "><span class="description">tags()
+        </span><pre>tags()</pre></a></li>
+<li class="method public "><a href="#upcoming_events" title="upcoming_events :: "><span class="description">upcoming_events()
+        </span><pre>upcoming_events()</pre></a></li>
+<li class="method public "><a href="#update" title="update :: update item in module"><span class="description">update item in module</span><pre>update()</pre></a></li>
+<li class="method public "><a href="#update_model_alias" title="update_model_alias :: "><span class="description">update_model_alias()
+        </span><pre>update_model_alias()</pre></a></li>
+<li class="method public "><a href="#uploadModelAliases" title="uploadModelAliases :: "><span class="description">uploadModelAliases()
+        </span><pre>uploadModelAliases()</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties</li>
+<li class="property public inherited"><a href="#%24asset_path" title="$asset_path :: "><span class="description">$asset_path</span><pre>$asset_path</pre></a></li>
+<li class="property public inherited"><a href="#%24baseclassname" title="$baseclassname :: "><span class="description">$baseclassname</span><pre>$baseclassname</pre></a></li>
+<li class="property public "><a href="#%24basemodel_name" title="$basemodel_name :: "><span class="description">$basemodel_name</span><pre>$basemodel_name</pre></a></li>
+<li class="property public inherited"><a href="#%24classinfo" title="$classinfo :: "><span class="description">$classinfo</span><pre>$classinfo</pre></a></li>
+<li class="property public inherited"><a href="#%24codequality" title="$codequality :: "><span class="description">$codequality</span><pre>$codequality</pre></a></li>
+<li class="property public inherited"><a href="#%24config" title="$config :: "><span class="description">$config</span><pre>$config</pre></a></li>
+<li class="property public inherited"><a href="#%24filepath" title="$filepath :: "><span class="description">$filepath</span><pre>$filepath</pre></a></li>
+<li class="property public inherited"><a href="#%24loc" title="$loc :: "><span class="description">$loc</span><pre>$loc</pre></a></li>
+<li class="property public inherited"><a href="#%24model_table" title="$model_table :: "><span class="description">$model_table</span><pre>$model_table</pre></a></li>
+<li class="property public inherited"><a href="#%24params" title="$params :: "><span class="description">$params</span><pre>$params</pre></a></li>
+<li class="property public inherited"><a href="#%24relative_viewpath" title="$relative_viewpath :: "><span class="description">$relative_viewpath</span><pre>$relative_viewpath</pre></a></li>
+<li class="property public "><a href="#%24remove_configs" title="$remove_configs :: "><span class="description">$remove_configs</span><pre>$remove_configs</pre></a></li>
+<li class="property public inherited"><a href="#%24requires_login" title="$requires_login :: "><span class="description">$requires_login</span><pre>$requires_login</pre></a></li>
+<li class="property public "><a href="#%24useractions" title="$useractions :: "><span class="description">$useractions</span><pre>$useractions</pre></a></li>
+<li class="property public inherited"><a href="#%24viewpath" title="$viewpath :: "><span class="description">$viewpath</span><pre>$viewpath</pre></a></li>
+<li class="nav-header protected">» Protected</li>
+<li class="property protected "><a href="#%24add_permissions" title="$add_permissions :: "><span class="description">$add_permissions</span><pre>$add_permissions</pre></a></li>
+<li class="property protected inherited"><a href="#%24classname" title="$classname :: "><span class="description">$classname</span><pre>$classname</pre></a></li>
+<li class="property protected inherited"><a href="#%24permissions" title="$permissions :: "><span class="description">$permissions</span><pre>$permissions</pre></a></li>
+<li class="property protected inherited"><a href="#%24remove_permissions" title="$remove_permissions :: "><span class="description">$remove_permissions</span><pre>$remove_permissions</pre></a></li>
+</ul>
+</div>
+<div class="span8">
+<a name="%5CstoreController" id="\storeController"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/storeController.html">storeController</a>
+</li>
+</ul>
+<div href="../classes/storeController.html" class="element class">
+<p class="short_description">This is the class expController</p>
+<div class="details">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>define</th>
+<td>"BASE" "../../../.."</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Core</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a name="__construct" id="__construct"></a><div class="element clickable method public __construct" data-toggle="collapse" data-target=".__construct .collapse">
+<h2>__construct()
+        </h2>
+<pre>__construct(null $src, array $params) : <a href="../classes/expController.html">\expController</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$src</h4>
+<code>null</code>
+</div>
+<div class="subelement argument">
+<h4>$params</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/expController.html">\expController</a></code></div>
+</div></div>
+</div>
+<a name="_getEventsForDates" id="_getEventsForDates"></a><div class="element clickable method public _getEventsForDates" data-toggle="collapse" data-target="._getEventsForDates .collapse">
+<h2>_getEventsForDates()
+        </h2>
+<pre>_getEventsForDates($edates, $sort_asc) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$edates</h4></div>
+<div class="subelement argument"><h4>$sort_asc</h4></div>
+</div></div>
+</div>
+<a name="addContentToSearch" id="addContentToSearch"></a><div class="element clickable method public addContentToSearch" data-toggle="collapse" data-target=".addContentToSearch .collapse">
+<h2>add all module items to search index</h2>
+<pre>addContentToSearch() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a name="aggregateWhereClause" id="aggregateWhereClause"></a><div class="element clickable method public aggregateWhereClause" data-toggle="collapse" data-target=".aggregateWhereClause .collapse">
+<h2>The aggregateWhereClause function creates a sql where clause which also includes aggregated module content</h2>
+<pre>aggregateWhereClause() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::aggregateWhereClause()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="author" id="author"></a><div class="element clickable method public author" data-toggle="collapse" data-target=".author .collapse">
+<h2>author of module</h2>
+<pre>author() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="batch_process" id="batch_process"></a><div class="element clickable method public batch_process" data-toggle="collapse" data-target=".batch_process .collapse">
+<h2>batch_process()
+        </h2>
+<pre>batch_process() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="billing_config" id="billing_config"></a><div class="element clickable method public billing_config" data-toggle="collapse" data-target=".billing_config .collapse">
+<h2>billing_config()
+        </h2>
+<pre>billing_config() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="canExportData" id="canExportData"></a><div class="element clickable method public canExportData" data-toggle="collapse" data-target=".canExportData .collapse">
+<h2>can this module export data?</h2>
+<pre>canExportData() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="canImportData" id="canImportData"></a><div class="element clickable method public canImportData" data-toggle="collapse" data-target=".canImportData .collapse">
+<h2>can this module import data?</h2>
+<pre>canImportData() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="categoryBreadcrumb" id="categoryBreadcrumb"></a><div class="element clickable method public categoryBreadcrumb" data-toggle="collapse" data-target=".categoryBreadcrumb .collapse">
+<h2>categoryBreadcrumb()
+        </h2>
+<pre>categoryBreadcrumb() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="cleanNonUnicodeProducts" id="cleanNonUnicodeProducts"></a><div class="element clickable method public cleanNonUnicodeProducts" data-toggle="collapse" data-target=".cleanNonUnicodeProducts .collapse">
+<h2>cleanNonUnicodeProducts()
+        </h2>
+<pre>cleanNonUnicodeProducts() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="configure" id="configure"></a><div class="element clickable method public configure" data-toggle="collapse" data-target=".configure .collapse">
+<h2>generic config action</h2>
+<pre>configure() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::configure()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="copyProduct" id="copyProduct"></a><div class="element clickable method public copyProduct" data-toggle="collapse" data-target=".copyProduct .collapse">
+<h2>copyProduct()
+        </h2>
+<pre>copyProduct() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="create" id="create"></a><div class="element clickable method public create" data-toggle="collapse" data-target=".create .collapse">
+<h2>create an item in this module</h2>
+<pre>create() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::create()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="delete" id="delete"></a><div class="element clickable method public delete" data-toggle="collapse" data-target=".delete .collapse">
+<h2>delete item in module</h2>
+<pre>delete() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="deleteChildren" id="deleteChildren"></a><div class="element clickable method public deleteChildren" data-toggle="collapse" data-target=".deleteChildren .collapse">
+<h2>deleteChildren()
+        </h2>
+<pre>deleteChildren() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="deleteProcessedModelAliases" id="deleteProcessedModelAliases"></a><div class="element clickable method public deleteProcessedModelAliases" data-toggle="collapse" data-target=".deleteProcessedModelAliases .collapse">
+<h2>deleteProcessedModelAliases()
+        </h2>
+<pre>deleteProcessedModelAliases() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="delete_In" id="delete_In"></a><div class="element clickable method public delete_In" data-toggle="collapse" data-target=".delete_In .collapse">
+<h2>delete an item by instance for backwards compat with old modules</h2>
+<pre>delete_In($loc) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::delete_In()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$loc</h4></div>
+</div></div>
+</div>
+<a name="delete_instance" id="delete_instance"></a><div class="element clickable method public delete_instance" data-toggle="collapse" data-target=".delete_instance .collapse">
+<h2>delete an item by instance</h2>
+<pre>delete_instance() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::delete_instance()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="delete_model_alias" id="delete_model_alias"></a><div class="element clickable method public delete_model_alias" data-toggle="collapse" data-target=".delete_model_alias .collapse">
+<h2>delete_model_alias()
+        </h2>
+<pre>delete_model_alias() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="delete_search" id="delete_search"></a><div class="element clickable method public delete_search" data-toggle="collapse" data-target=".delete_search .collapse">
+<h2>remove module items from search index</h2>
+<pre>delete_search() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::delete_search()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="description" id="description"></a><div class="element clickable method public description" data-toggle="collapse" data-target=".description .collapse">
+<h2>description of module</h2>
+<pre>description() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="displayname" id="displayname"></a><div class="element clickable method public displayname" data-toggle="collapse" data-target=".displayname .collapse">
+<h2>name of module</h2>
+<pre>displayname() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="downloadfile" id="downloadfile"></a><div class="element clickable method public downloadfile" data-toggle="collapse" data-target=".downloadfile .collapse">
+<h2>download a file attached to item</h2>
+<pre>downloadfile() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::downloadfile()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="ecom_search" id="ecom_search"></a><div class="element clickable method public ecom_search" data-toggle="collapse" data-target=".ecom_search .collapse">
+<h2>ecom_search()
+        </h2>
+<pre>ecom_search() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="edit" id="edit"></a><div class="element clickable method public edit" data-toggle="collapse" data-target=".edit .collapse">
+<h2>edit item in module</h2>
+<pre>edit() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="edit_model_alias" id="edit_model_alias"></a><div class="element clickable method public edit_model_alias" data-toggle="collapse" data-target=".edit_model_alias .collapse">
+<h2>edit_model_alias()
+        </h2>
+<pre>edit_model_alias() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="events_calendar" id="events_calendar"></a><div class="element clickable method public events_calendar" data-toggle="collapse" data-target=".events_calendar .collapse">
+<h2>events_calendar()
+        </h2>
+<pre>events_calendar() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="exportMe" id="exportMe"></a><div class="element clickable method public exportMe" data-toggle="collapse" data-target=".exportMe .collapse">
+<h2>exportMe()
+        </h2>
+<pre>exportMe() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="getModels" id="getModels"></a><div class="element clickable method public getModels" data-toggle="collapse" data-target=".getModels .collapse">
+<h2>get the models associated with this module</h2>
+<pre>getModels() : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::getModels()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a name="getProductTypes" id="getProductTypes"></a><div class="element clickable method public getProductTypes" data-toggle="collapse" data-target=".getProductTypes .collapse">
+<h2>getProductTypes()
+        </h2>
+<pre>getProductTypes() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="getRSSContent" id="getRSSContent"></a><div class="element clickable method public getRSSContent" data-toggle="collapse" data-target=".getRSSContent .collapse">
+<h2>get the items in an rss feed format</h2>
+<pre>getRSSContent() : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>this function is very general and will most of the time need to be overwritten and customized</p></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::getRSSContent()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a name="grabConfig" id="grabConfig"></a><div class="element clickable method public grabConfig" data-toggle="collapse" data-target=".grabConfig .collapse">
+<h2>grabConfig()
+        </h2>
+<pre>grabConfig($category) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$category</h4></div>
+</div></div>
+</div>
+<a name="hasContent" id="hasContent"></a><div class="element clickable method public hasContent" data-toggle="collapse" data-target=".hasContent .collapse">
+<h2>does module have content available?</h2>
+<pre>hasContent() : bool</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::hasContent()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="hasSources" id="hasSources"></a><div class="element clickable method public hasSources" data-toggle="collapse" data-target=".hasSources .collapse">
+<h2>does module have sources available?</h2>
+<pre>hasSources() : bool</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::hasSources()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="hasViews" id="hasViews"></a><div class="element clickable method public hasViews" data-toggle="collapse" data-target=".hasViews .collapse">
+<h2>does module have views available?</h2>
+<pre>hasViews() : bool</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::hasViews()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="import_external_addresses" id="import_external_addresses"></a><div class="element clickable method public import_external_addresses" data-toggle="collapse" data-target=".import_external_addresses .collapse">
+<h2>import_external_addresses()
+        </h2>
+<pre>import_external_addresses() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="isSearchable" id="isSearchable"></a><div class="element clickable method public isSearchable" data-toggle="collapse" data-target=".isSearchable .collapse">
+<h2>is module content searchable?</h2>
+<pre>isSearchable() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="manage" id="manage"></a><div class="element clickable method public manage" data-toggle="collapse" data-target=".manage .collapse">
+<h2>display module management view</h2>
+<pre>manage() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="manage_ranks" id="manage_ranks"></a><div class="element clickable method public manage_ranks" data-toggle="collapse" data-target=".manage_ranks .collapse">
+<h2>display view to rerank items</h2>
+<pre>manage_ranks() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::manage_ranks()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="manage_sales_reps" id="manage_sales_reps"></a><div class="element clickable method public manage_sales_reps" data-toggle="collapse" data-target=".manage_sales_reps .collapse">
+<h2>manage_sales_reps()
+        </h2>
+<pre>manage_sales_reps() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="merge" id="merge"></a><div class="element clickable method public merge" data-toggle="collapse" data-target=".merge .collapse">
+<h2>merge/move aggregated item into this module</h2>
+<pre>merge() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::merge()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="metainfo" id="metainfo"></a><div class="element clickable method public metainfo" data-toggle="collapse" data-target=".metainfo .collapse">
+<h2>get the metainfo for this module</h2>
+<pre>metainfo() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a name="moduleSelfAwareness" id="moduleSelfAwareness"></a><div class="element clickable method public moduleSelfAwareness" data-toggle="collapse" data-target=".moduleSelfAwareness .collapse">
+<h2>glue to make module aware of itself</h2>
+<pre>moduleSelfAwareness() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::moduleSelfAwareness()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="name" id="name"></a><div class="element clickable method public name" data-toggle="collapse" data-target=".name .collapse">
+<h2>name of module for backwards compat with old modules</h2>
+<pre>name() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::name()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="nonUnicodeProducts" id="nonUnicodeProducts"></a><div class="element clickable method public nonUnicodeProducts" data-toggle="collapse" data-target=".nonUnicodeProducts .collapse">
+<h2>nonUnicodeProducts()
+        </h2>
+<pre>nonUnicodeProducts() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="permissions" id="permissions"></a><div class="element clickable method public permissions" data-toggle="collapse" data-target=".permissions .collapse">
+<h2>permission functions</h2>
+<pre>permissions() : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::permissions()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a name="picktype" id="picktype"></a><div class="element clickable method public picktype" data-toggle="collapse" data-target=".picktype .collapse">
+<h2>picktype()
+        </h2>
+<pre>picktype() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="processModelAliases" id="processModelAliases"></a><div class="element clickable method public processModelAliases" data-toggle="collapse" data-target=".processModelAliases .collapse">
+<h2>processModelAliases()
+        </h2>
+<pre>processModelAliases($index, $error) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$index</h4></div>
+<div class="subelement argument"><h4>$error</h4></div>
+</div></div>
+</div>
+<a name="process_external_addresses" id="process_external_addresses"></a><div class="element clickable method public process_external_addresses" data-toggle="collapse" data-target=".process_external_addresses .collapse">
+<h2>process_external_addresses()
+        </h2>
+<pre>process_external_addresses() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="process_orders" id="process_orders"></a><div class="element clickable method public process_orders" data-toggle="collapse" data-target=".process_orders .collapse">
+<h2>process_orders()
+        </h2>
+<pre>process_orders() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="quicklinks" id="quicklinks"></a><div class="element clickable method public quicklinks" data-toggle="collapse" data-target=".quicklinks .collapse">
+<h2>quicklinks()
+        </h2>
+<pre>quicklinks() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="requiresConfiguration" id="requiresConfiguration"></a><div class="element clickable method public requiresConfiguration" data-toggle="collapse" data-target=".requiresConfiguration .collapse">
+<h2>does this module require configuration?</h2>
+<pre>requiresConfiguration() : bool</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::requiresConfiguration()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="rerank" id="rerank"></a><div class="element clickable method public rerank" data-toggle="collapse" data-target=".rerank .collapse">
+<h2>rerank items in module</h2>
+<pre>rerank() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::rerank()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="rss" id="rss"></a><div class="element clickable method public rss" data-toggle="collapse" data-target=".rss .collapse">
+<h2>rss()
+        </h2>
+<pre>rss() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::rss()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="saveModelAliases" id="saveModelAliases"></a><div class="element clickable method public saveModelAliases" data-toggle="collapse" data-target=".saveModelAliases .collapse">
+<h2>saveModelAliases()
+        </h2>
+<pre>saveModelAliases() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="saveconfig" id="saveconfig"></a><div class="element clickable method public saveconfig" data-toggle="collapse" data-target=".saveconfig .collapse">
+<h2>save module configuration</h2>
+<pre>saveconfig() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::saveconfig()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="search" id="search"></a><div class="element clickable method public search" data-toggle="collapse" data-target=".search .collapse">
+<h2>search()
+        </h2>
+<pre>search() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="searchCategory" id="searchCategory"></a><div class="element clickable method public searchCategory" data-toggle="collapse" data-target=".searchCategory .collapse">
+<h2>category of items searched in the module</h2>
+<pre>searchCategory() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::searchCategory()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="searchName" id="searchName"></a><div class="element clickable method public searchName" data-toggle="collapse" data-target=".searchName .collapse">
+<h2>type of items searched in the module</h2>
+<pre>searchName() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::searchName()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="searchNew" id="searchNew"></a><div class="element clickable method public searchNew" data-toggle="collapse" data-target=".searchNew .collapse">
+<h2>searchNew()
+        </h2>
+<pre>searchNew() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="search_by_model" id="search_by_model"></a><div class="element clickable method public search_by_model" data-toggle="collapse" data-target=".search_by_model .collapse">
+<h2>search_by_model()
+        </h2>
+<pre>search_by_model() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="search_by_model_form" id="search_by_model_form"></a><div class="element clickable method public search_by_model_form" data-toggle="collapse" data-target=".search_by_model_form .collapse">
+<h2>search_by_model_form()
+        </h2>
+<pre>search_by_model_form() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="search_by_model_old" id="search_by_model_old"></a><div class="element clickable method public search_by_model_old" data-toggle="collapse" data-target=".search_by_model_old .collapse">
+<h2>search_by_model_old()
+        </h2>
+<pre>search_by_model_old() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="show" id="show"></a><div class="element clickable method public show" data-toggle="collapse" data-target=".show .collapse">
+<h2>default view for individual item</h2>
+<pre>show() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="showByModel" id="showByModel"></a><div class="element clickable method public showByModel" data-toggle="collapse" data-target=".showByModel .collapse">
+<h2>showByModel()
+        </h2>
+<pre>showByModel() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="showByTags" id="showByTags"></a><div class="element clickable method public showByTags" data-toggle="collapse" data-target=".showByTags .collapse">
+<h2>view items referenced by tags</h2>
+<pre>showByTags() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::showByTags()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="showByTitle" id="showByTitle"></a><div class="element clickable method public showByTitle" data-toggle="collapse" data-target=".showByTitle .collapse">
+<h2>view the item by referring to its title</h2>
+<pre>showByTitle() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="showFullTree" id="showFullTree"></a><div class="element clickable method public showFullTree" data-toggle="collapse" data-target=".showFullTree .collapse">
+<h2>showFullTree()
+        </h2>
+<pre>showFullTree() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="showGiftCards" id="showGiftCards"></a><div class="element clickable method public showGiftCards" data-toggle="collapse" data-target=".showGiftCards .collapse">
+<h2>showGiftCards()
+        </h2>
+<pre>showGiftCards() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="showHistory" id="showHistory"></a><div class="element clickable method public showHistory" data-toggle="collapse" data-target=".showHistory .collapse">
+<h2>showHistory()
+        </h2>
+<pre>showHistory() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="showRandom" id="showRandom"></a><div class="element clickable method public showRandom" data-toggle="collapse" data-target=".showRandom .collapse">
+<h2>view a random item</h2>
+<pre>showRandom() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::showRandom()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="showTopLevel" id="showTopLevel"></a><div class="element clickable method public showTopLevel" data-toggle="collapse" data-target=".showTopLevel .collapse">
+<h2>showTopLevel()
+        </h2>
+<pre>showTopLevel() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="showTopLevel_images" id="showTopLevel_images"></a><div class="element clickable method public showTopLevel_images" data-toggle="collapse" data-target=".showTopLevel_images .collapse">
+<h2>showTopLevel_images()
+        </h2>
+<pre>showTopLevel_images() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="showall" id="showall"></a><div class="element clickable method public showall" data-toggle="collapse" data-target=".showall .collapse">
+<h2>default module view method for all items</h2>
+<pre>showall() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="showallByManufacturer" id="showallByManufacturer"></a><div class="element clickable method public showallByManufacturer" data-toggle="collapse" data-target=".showallByManufacturer .collapse">
+<h2>showallByManufacturer()
+        </h2>
+<pre>showallByManufacturer() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="showallImpropercategorized" id="showallImpropercategorized"></a><div class="element clickable method public showallImpropercategorized" data-toggle="collapse" data-target=".showallImpropercategorized .collapse">
+<h2>showallImpropercategorized()
+        </h2>
+<pre>showallImpropercategorized() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="showallManufacturers" id="showallManufacturers"></a><div class="element clickable method public showallManufacturers" data-toggle="collapse" data-target=".showallManufacturers .collapse">
+<h2>showallManufacturers()
+        </h2>
+<pre>showallManufacturers() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="showallSubcategories" id="showallSubcategories"></a><div class="element clickable method public showallSubcategories" data-toggle="collapse" data-target=".showallSubcategories .collapse">
+<h2>showallSubcategories()
+        </h2>
+<pre>showallSubcategories() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="showallUncategorized" id="showallUncategorized"></a><div class="element clickable method public showallUncategorized" data-toggle="collapse" data-target=".showallUncategorized .collapse">
+<h2>showallUncategorized()
+        </h2>
+<pre>showallUncategorized() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="showall_by_tags" id="showall_by_tags"></a><div class="element clickable method public showall_by_tags" data-toggle="collapse" data-target=".showall_by_tags .collapse">
+<h2>default module view method for all items with a specific tag</h2>
+<pre>showall_by_tags() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::showall_by_tags()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="showall_by_tags_meta" id="showall_by_tags_meta"></a><div class="element clickable method public showall_by_tags_meta" data-toggle="collapse" data-target=".showall_by_tags_meta .collapse">
+<h2>showall_by_tags_meta()
+        </h2>
+<pre>showall_by_tags_meta($request) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::showall_by_tags_meta()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$request</h4></div>
+</div></div>
+</div>
+<a name="showall_category_featured_products" id="showall_category_featured_products"></a><div class="element clickable method public showall_category_featured_products" data-toggle="collapse" data-target=".showall_category_featured_products .collapse">
+<h2>showall_category_featured_products()
+        </h2>
+<pre>showall_category_featured_products() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="showall_featured_products" id="showall_featured_products"></a><div class="element clickable method public showall_featured_products" data-toggle="collapse" data-target=".showall_featured_products .collapse">
+<h2>showall_featured_products()
+        </h2>
+<pre>showall_featured_products() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="supportsWorkflow" id="supportsWorkflow"></a><div class="element clickable method public supportsWorkflow" data-toggle="collapse" data-target=".supportsWorkflow .collapse">
+<h2>does module support workflow?</h2>
+<pre>supportsWorkflow() : bool</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::supportsWorkflow()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="tags" id="tags"></a><div class="element clickable method public tags" data-toggle="collapse" data-target=".tags .collapse">
+<h2>tags()
+        </h2>
+<pre>tags() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::tags()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="upcoming_events" id="upcoming_events"></a><div class="element clickable method public upcoming_events" data-toggle="collapse" data-target=".upcoming_events .collapse">
+<h2>upcoming_events()
+        </h2>
+<pre>upcoming_events() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="update" id="update"></a><div class="element clickable method public update" data-toggle="collapse" data-target=".update .collapse">
+<h2>update item in module</h2>
+<pre>update() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="update_model_alias" id="update_model_alias"></a><div class="element clickable method public update_model_alias" data-toggle="collapse" data-target=".update_model_alias .collapse">
+<h2>update_model_alias()
+        </h2>
+<pre>update_model_alias() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="uploadModelAliases" id="uploadModelAliases"></a><div class="element clickable method public uploadModelAliases" data-toggle="collapse" data-target=".uploadModelAliases .collapse">
+<h2>uploadModelAliases()
+        </h2>
+<pre>uploadModelAliases() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a name="%24asset_path" id="$asset_path"> </a><div class="element clickable property public $asset_path" data-toggle="collapse" data-target=".$asset_path .collapse">
+<h2>$asset_path</h2>
+<pre>$asset_path </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::$$asset_path</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24baseclassname" id="$baseclassname"> </a><div class="element clickable property public $baseclassname" data-toggle="collapse" data-target=".$baseclassname .collapse">
+<h2>$baseclassname</h2>
+<pre>$baseclassname </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::$$baseclassname</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24basemodel_name" id="$basemodel_name"> </a><div class="element clickable property public $basemodel_name" data-toggle="collapse" data-target=".$basemodel_name .collapse">
+<h2>$basemodel_name</h2>
+<pre>$basemodel_name </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24classinfo" id="$classinfo"> </a><div class="element clickable property public $classinfo" data-toggle="collapse" data-target=".$classinfo .collapse">
+<h2>$classinfo</h2>
+<pre>$classinfo </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::$$classinfo</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24codequality" id="$codequality"> </a><div class="element clickable property public $codequality" data-toggle="collapse" data-target=".$codequality .collapse">
+<h2>$codequality</h2>
+<pre>$codequality </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::$$codequality</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24config" id="$config"> </a><div class="element clickable property public $config" data-toggle="collapse" data-target=".$config .collapse">
+<h2>$config</h2>
+<pre>$config </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::$$config</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24filepath" id="$filepath"> </a><div class="element clickable property public $filepath" data-toggle="collapse" data-target=".$filepath .collapse">
+<h2>$filepath</h2>
+<pre>$filepath </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::$$filepath</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24loc" id="$loc"> </a><div class="element clickable property public $loc" data-toggle="collapse" data-target=".$loc .collapse">
+<h2>$loc</h2>
+<pre>$loc </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::$$loc</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24model_table" id="$model_table"> </a><div class="element clickable property public $model_table" data-toggle="collapse" data-target=".$model_table .collapse">
+<h2>$model_table</h2>
+<pre>$model_table </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::$$model_table</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24params" id="$params"> </a><div class="element clickable property public $params" data-toggle="collapse" data-target=".$params .collapse">
+<h2>$params</h2>
+<pre>$params </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::$$params</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24relative_viewpath" id="$relative_viewpath"> </a><div class="element clickable property public $relative_viewpath" data-toggle="collapse" data-target=".$relative_viewpath .collapse">
+<h2>$relative_viewpath</h2>
+<pre>$relative_viewpath </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::$$relative_viewpath</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24remove_configs" id="$remove_configs"> </a><div class="element clickable property public $remove_configs" data-toggle="collapse" data-target=".$remove_configs .collapse">
+<h2>$remove_configs</h2>
+<pre>$remove_configs </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24requires_login" id="$requires_login"> </a><div class="element clickable property public $requires_login" data-toggle="collapse" data-target=".$requires_login .collapse">
+<h2>$requires_login</h2>
+<pre>$requires_login </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::$$requires_login</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24useractions" id="$useractions"> </a><div class="element clickable property public $useractions" data-toggle="collapse" data-target=".$useractions .collapse">
+<h2>$useractions</h2>
+<pre>$useractions </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24viewpath" id="$viewpath"> </a><div class="element clickable property public $viewpath" data-toggle="collapse" data-target=".$viewpath .collapse">
+<h2>$viewpath</h2>
+<pre>$viewpath </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::$$viewpath</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24add_permissions" id="$add_permissions"> </a><div class="element clickable property protected $add_permissions" data-toggle="collapse" data-target=".$add_permissions .collapse">
+<h2>$add_permissions</h2>
+<pre>$add_permissions </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24classname" id="$classname"> </a><div class="element clickable property protected $classname" data-toggle="collapse" data-target=".$classname .collapse">
+<h2>$classname</h2>
+<pre>$classname </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::$$classname</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24permissions" id="$permissions"> </a><div class="element clickable property protected $permissions" data-toggle="collapse" data-target=".$permissions .collapse">
+<h2>$permissions</h2>
+<pre>$permissions </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::$$permissions</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24remove_permissions" id="$remove_permissions"> </a><div class="element clickable property protected $remove_permissions" data-toggle="collapse" data-target=".$remove_permissions .collapse">
+<h2>$remove_permissions</h2>
+<pre>$remove_permissions </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::$$remove_permissions</td>
+</tr></table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
+            generated on 2012-09-13T10:24:17-04:00.<br></footer></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,482 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Exponent 2.0.9 API Documentation » Modules\Controllers</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.0.9 API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
+<li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
+<li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
+<li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
+<li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">3461</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul>
+<li>todo 
+                <span class="label label-info">42</span>
+</li>
+<li>fixme 
+                <span class="label label-info">174</span>
+</li>
+</ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Packages</li>
+<li>
+<a href="../packages/Modules.Controllers.html" title="Controllers"><i class="icon-folder-open"></i>Controllers</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-function"></i> Functions</li>
+<li class="function  "><a href="#compare" title="compare :: "><span class="description">compare()
+        </span><pre>compare</pre></a></li>
+<li class="function  "><a href="#sortSearch" title="sortSearch :: "><span class="description">sortSearch()
+        </span><pre>sortSearch</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-class"></i> Classes</li>
+<li><a href="#addressController" title="This is the class expController">addressController</a></li>
+<li><a href="#bannerController" title="This is the class expController">bannerController</a></li>
+<li><a href="#blogController" title="This is the class expController">blogController</a></li>
+<li><a href="#companyController" title="This is the class expController">companyController</a></li>
+<li><a href="#countdownController" title="This is the class expController">countdownController</a></li>
+<li><a href="#ealertController" title="This is the class expController">ealertController</a></li>
+<li><a href="#billingController" title="This is the class expController">billingController</a></li>
+<li><a href="#cartController" title="This is the class expController">cartController</a></li>
+<li><a href="#donationController" title="This is the class expController">donationController</a></li>
+<li><a href="#orderController" title="This is the class expController">orderController</a></li>
+<li><a href="#order_statusController" title="This is the class expController">order_statusController</a></li>
+<li><a href="#order_typeController" title="This is the class expController">order_typeController</a></li>
+<li><a href="#product_statusController" title="This is the class expController">product_statusController</a></li>
+<li><a href="#purchaseOrderController" title="This is the class expController">purchaseOrderController</a></li>
+<li><a href="#sales_repController" title="This is the class expController">sales_repController</a></li>
+<li><a href="#shippingController" title="This is the class expController">shippingController</a></li>
+<li><a href="#storeCategoryController" title="This is the class expNestedNodeController">storeCategoryController</a></li>
+<li><a href="#taxController" title="This is the class expController">taxController</a></li>
+<li><a href="#eventController" title="This is the class expController">eventController</a></li>
+<li><a href="#faqController" title="This is the class expController">faqController</a></li>
+<li><a href="#fileController" title="This is the class expController">fileController</a></li>
+<li><a href="#filedownloadController" title="This is the class expController">filedownloadController</a></li>
+<li><a href="#flickrfeedController" title="This is the class expController">flickrfeedController</a></li>
+<li><a href="#flowplayerController" title="This is the class expController">flowplayerController</a></li>
+<li><a href="#headlineController" title="This is the class expController">headlineController</a></li>
+<li><a href="#helpController" title="This is the class expController">helpController</a></li>
+<li><a href="#importexportController" title="This is the class expController">importexportController</a></li>
+<li><a href="#linksController" title="This is the class expController">linksController</a></li>
+<li><a href="#migrationController" title="This is the class expController">migrationController</a></li>
+<li><a href="#navigationController" title="This is the class expController">navigationController</a></li>
+<li><a href="#newsController" title="This is the class expController">newsController</a></li>
+<li><a href="#notfoundController" title="This is the class expController">notfoundController</a></li>
+<li><a href="#photoController" title="This is the class expController">photoController</a></li>
+<li><a href="#photosController" title="This is the class expController">photosController</a></li>
+<li><a href="#portfolioController" title="This is the class expController">portfolioController</a></li>
+<li><a href="#recyclebinController" title="This is the class expController">recyclebinController</a></li>
+<li><a href="#reportController" title="This is the class expController">reportController</a></li>
+<li><a href="#rssController" title="This is the class expController">rssController</a></li>
+<li><a href="#searchController" title="This is the class expController">searchController</a></li>
+<li><a href="#simplePollController" title="This is the class expController">simplePollController</a></li>
+<li><a href="#snippetController" title="This is the class expController">snippetController</a></li>
+<li><a href="#textController" title="This is the class expController">textController</a></li>
+<li><a href="#twitterController" title="This is the class expController">twitterController</a></li>
+<li><a href="#youtubeController" title="This is the class expController">youtubeController</a></li>
+</ul>
+</div>
+<div class="span8 package-contents">
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../packages/Modules.html">Modules</a></li>
+<span class="divider">\</span><li class="active"><a href="../packages/Modules.Controllers.html">Controllers</a></li>
+</ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-function"></i> Functions</h3>
+<a name="compare" id="compare"></a><div class="element clickable function  compare" data-toggle="collapse" data-target=".compare .collapse">
+<h2>compare()
+        </h2>
+<pre>compare($x, $y) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$x</h4></div>
+<div class="subelement argument"><h4>$y</h4></div>
+</div></div>
+</div>
+<a name="sortSearch" id="sortSearch"></a><div class="element clickable function  sortSearch" data-toggle="collapse" data-target=".sortSearch .collapse">
+<h2>sortSearch()
+        </h2>
+<pre>sortSearch($a, $b) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$a</h4></div>
+<div class="subelement argument"><h4>$b</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<a name="addressController" id="addressController"></a><div class="element ajax clickable class" href="../classes/addressController.html">
+<h1>addressController<a href="../classes/addressController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/addressController.html" class="more">« More »</a>
+</div>
+<a name="bannerController" id="bannerController"></a><div class="element ajax clickable class" href="../classes/bannerController.html">
+<h1>bannerController<a href="../classes/bannerController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/bannerController.html" class="more">« More »</a>
+</div>
+<a name="billingController" id="billingController"></a><div class="element ajax clickable class" href="../classes/billingController.html">
+<h1>billingController<a href="../classes/billingController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/billingController.html" class="more">« More »</a>
+</div>
+<a name="blogController" id="blogController"></a><div class="element ajax clickable class" href="../classes/blogController.html">
+<h1>blogController<a href="../classes/blogController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/blogController.html" class="more">« More »</a>
+</div>
+<a name="cartController" id="cartController"></a><div class="element ajax clickable class" href="../classes/cartController.html">
+<h1>cartController<a href="../classes/cartController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/cartController.html" class="more">« More »</a>
+</div>
+<a name="companyController" id="companyController"></a><div class="element ajax clickable class" href="../classes/companyController.html">
+<h1>companyController<a href="../classes/companyController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/companyController.html" class="more">« More »</a>
+</div>
+<a name="countdownController" id="countdownController"></a><div class="element ajax clickable class" href="../classes/countdownController.html">
+<h1>countdownController<a href="../classes/countdownController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/countdownController.html" class="more">« More »</a>
+</div>
+<a name="donationController" id="donationController"></a><div class="element ajax clickable class" href="../classes/donationController.html">
+<h1>donationController<a href="../classes/donationController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/donationController.html" class="more">« More »</a>
+</div>
+<a name="ealertController" id="ealertController"></a><div class="element ajax clickable class" href="../classes/ealertController.html">
+<h1>ealertController<a href="../classes/ealertController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/ealertController.html" class="more">« More »</a>
+</div>
+<a name="eventController" id="eventController"></a><div class="element ajax clickable class" href="../classes/eventController.html">
+<h1>eventController<a href="../classes/eventController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/eventController.html" class="more">« More »</a>
+</div>
+<a name="faqController" id="faqController"></a><div class="element ajax clickable class" href="../classes/faqController.html">
+<h1>faqController<a href="../classes/faqController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/faqController.html" class="more">« More »</a>
+</div>
+<a name="fileController" id="fileController"></a><div class="element ajax clickable class" href="../classes/fileController.html">
+<h1>fileController<a href="../classes/fileController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/fileController.html" class="more">« More »</a>
+</div>
+<a name="filedownloadController" id="filedownloadController"></a><div class="element ajax clickable class" href="../classes/filedownloadController.html">
+<h1>filedownloadController<a href="../classes/filedownloadController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/filedownloadController.html" class="more">« More »</a>
+</div>
+<a name="flickrfeedController" id="flickrfeedController"></a><div class="element ajax clickable class" href="../classes/flickrfeedController.html">
+<h1>flickrfeedController<a href="../classes/flickrfeedController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/flickrfeedController.html" class="more">« More »</a>
+</div>
+<a name="flowplayerController" id="flowplayerController"></a><div class="element ajax clickable class" href="../classes/flowplayerController.html">
+<h1>flowplayerController<a href="../classes/flowplayerController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/flowplayerController.html" class="more">« More »</a>
+</div>
+<a name="headlineController" id="headlineController"></a><div class="element ajax clickable class" href="../classes/headlineController.html">
+<h1>headlineController<a href="../classes/headlineController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/headlineController.html" class="more">« More »</a>
+</div>
+<a name="helpController" id="helpController"></a><div class="element ajax clickable class" href="../classes/helpController.html">
+<h1>helpController<a href="../classes/helpController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/helpController.html" class="more">« More »</a>
+</div>
+<a name="importexportController" id="importexportController"></a><div class="element ajax clickable class" href="../classes/importexportController.html">
+<h1>importexportController<a href="../classes/importexportController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/importexportController.html" class="more">« More »</a>
+</div>
+<a name="linksController" id="linksController"></a><div class="element ajax clickable class" href="../classes/linksController.html">
+<h1>linksController<a href="../classes/linksController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/linksController.html" class="more">« More »</a>
+</div>
+<a name="migrationController" id="migrationController"></a><div class="element ajax clickable class" href="../classes/migrationController.html">
+<h1>migrationController<a href="../classes/migrationController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/migrationController.html" class="more">« More »</a>
+</div>
+<a name="navigationController" id="navigationController"></a><div class="element ajax clickable class" href="../classes/navigationController.html">
+<h1>navigationController<a href="../classes/navigationController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/navigationController.html" class="more">« More »</a>
+</div>
+<a name="newsController" id="newsController"></a><div class="element ajax clickable class" href="../classes/newsController.html">
+<h1>newsController<a href="../classes/newsController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/newsController.html" class="more">« More »</a>
+</div>
+<a name="notfoundController" id="notfoundController"></a><div class="element ajax clickable class" href="../classes/notfoundController.html">
+<h1>notfoundController<a href="../classes/notfoundController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/notfoundController.html" class="more">« More »</a>
+</div>
+<a name="orderController" id="orderController"></a><div class="element ajax clickable class" href="../classes/orderController.html">
+<h1>orderController<a href="../classes/orderController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/orderController.html" class="more">« More »</a>
+</div>
+<a name="order_statusController" id="order_statusController"></a><div class="element ajax clickable class" href="../classes/order_statusController.html">
+<h1>order_statusController<a href="../classes/order_statusController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/order_statusController.html" class="more">« More »</a>
+</div>
+<a name="order_typeController" id="order_typeController"></a><div class="element ajax clickable class" href="../classes/order_typeController.html">
+<h1>order_typeController<a href="../classes/order_typeController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/order_typeController.html" class="more">« More »</a>
+</div>
+<a name="photoController" id="photoController"></a><div class="element ajax clickable class" href="../classes/photoController.html">
+<h1>photoController<a href="../classes/photoController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/photoController.html" class="more">« More »</a>
+</div>
+<a name="photosController" id="photosController"></a><div class="element ajax clickable class" href="../classes/photosController.html">
+<h1>photosController<a href="../classes/photosController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/photosController.html" class="more">« More »</a>
+</div>
+<a name="portfolioController" id="portfolioController"></a><div class="element ajax clickable class" href="../classes/portfolioController.html">
+<h1>portfolioController<a href="../classes/portfolioController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/portfolioController.html" class="more">« More »</a>
+</div>
+<a name="product_statusController" id="product_statusController"></a><div class="element ajax clickable class" href="../classes/product_statusController.html">
+<h1>product_statusController<a href="../classes/product_statusController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/product_statusController.html" class="more">« More »</a>
+</div>
+<a name="purchaseOrderController" id="purchaseOrderController"></a><div class="element ajax clickable class" href="../classes/purchaseOrderController.html">
+<h1>purchaseOrderController<a href="../classes/purchaseOrderController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/purchaseOrderController.html" class="more">« More »</a>
+</div>
+<a name="recyclebinController" id="recyclebinController"></a><div class="element ajax clickable class" href="../classes/recyclebinController.html">
+<h1>recyclebinController<a href="../classes/recyclebinController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/recyclebinController.html" class="more">« More »</a>
+</div>
+<a name="reportController" id="reportController"></a><div class="element ajax clickable class" href="../classes/reportController.html">
+<h1>reportController<a href="../classes/reportController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/reportController.html" class="more">« More »</a>
+</div>
+<a name="rssController" id="rssController"></a><div class="element ajax clickable class" href="../classes/rssController.html">
+<h1>rssController<a href="../classes/rssController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/rssController.html" class="more">« More »</a>
+</div>
+<a name="sales_repController" id="sales_repController"></a><div class="element ajax clickable class" href="../classes/sales_repController.html">
+<h1>sales_repController<a href="../classes/sales_repController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/sales_repController.html" class="more">« More »</a>
+</div>
+<a name="searchController" id="searchController"></a><div class="element ajax clickable class" href="../classes/searchController.html">
+<h1>searchController<a href="../classes/searchController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/searchController.html" class="more">« More »</a>
+</div>
+<a name="shippingController" id="shippingController"></a><div class="element ajax clickable class" href="../classes/shippingController.html">
+<h1>shippingController<a href="../classes/shippingController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/shippingController.html" class="more">« More »</a>
+</div>
+<a name="simplePollController" id="simplePollController"></a><div class="element ajax clickable class" href="../classes/simplePollController.html">
+<h1>simplePollController<a href="../classes/simplePollController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/simplePollController.html" class="more">« More »</a>
+</div>
+<a name="snippetController" id="snippetController"></a><div class="element ajax clickable class" href="../classes/snippetController.html">
+<h1>snippetController<a href="../classes/snippetController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/snippetController.html" class="more">« More »</a>
+</div>
+<a name="storeCategoryController" id="storeCategoryController"></a><div class="element ajax clickable class" href="../classes/storeCategoryController.html">
+<h1>storeCategoryController<a href="../classes/storeCategoryController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expNestedNodeController</p>
+<div class="details collapse"></div>
+<a href="../classes/storeCategoryController.html" class="more">« More »</a>
+</div>
+<a name="taxController" id="taxController"></a><div class="element ajax clickable class" href="../classes/taxController.html">
+<h1>taxController<a href="../classes/taxController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/taxController.html" class="more">« More »</a>
+</div>
+<a name="textController" id="textController"></a><div class="element ajax clickable class" href="../classes/textController.html">
+<h1>textController<a href="../classes/textController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/textController.html" class="more">« More »</a>
+</div>
+<a name="twitterController" id="twitterController"></a><div class="element ajax clickable class" href="../classes/twitterController.html">
+<h1>twitterController<a href="../classes/twitterController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/twitterController.html" class="more">« More »</a>
+</div>
+<a name="youtubeController" id="youtubeController"></a><div class="element ajax clickable class" href="../classes/youtubeController.html">
+<h1>youtubeController<a href="../classes/youtubeController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/youtubeController.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
+            generated on 2012-09-13T10:24:07-04:00.<br></footer></div>
+</div>
+</body>
+</html>

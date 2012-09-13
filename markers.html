@@ -1,0 +1,2363 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Exponent 2.0.9 API Documentation</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="css/template.css" rel="stylesheet" media="all">
+<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="js/bootstrap.js" type="text/javascript"></script><script src="js/template.js" type="text/javascript"></script><script src="js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="img/favicon.ico">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="index.html">Exponent 2.0.9 API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
+<li><a href="packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
+<li><a href="packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
+<li><a href="packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
+<li><a href="packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">3461</span></a></li>
+<li><a href="markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul>
+<li>todo 
+                <span class="label label-info">42</span>
+</li>
+<li>fixme 
+                <span class="label label-info">174</span>
+</li>
+</ul></a></li>
+<li><a href="deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4"><ul class="side-nav nav nav-list">
+<li class="nav-header">Navigation</li>
+<li><a href="#cron%5Cbootstrap.php"><i class="icon-file"></i>cron\bootstrap.php</a></li>
+<li><a href="#cron%5Clang_extract.php"><i class="icon-file"></i>cron\lang_extract.php</a></li>
+<li><a href="#exponent.php"><i class="icon-file"></i>exponent.php</a></li>
+<li><a href="#exponent_constants.php"><i class="icon-file"></i>exponent_constants.php</a></li>
+<li><a href="#exponent_php_setup.php"><i class="icon-file"></i>exponent_php_setup.php</a></li>
+<li><a href="#framework%5Ccore%5Ccontrollers%5CexpCatController.php"><i class="icon-file"></i>framework\core\controllers\expCatController.php</a></li>
+<li><a href="#framework%5Ccore%5Ccontrollers%5CexpController.php"><i class="icon-file"></i>framework\core\controllers\expController.php</a></li>
+<li><a href="#framework%5Ccore%5Ccontrollers%5CexpDefinableFieldController.php"><i class="icon-file"></i>framework\core\controllers\expDefinableFieldController.php</a></li>
+<li><a href="#framework%5Ccore%5Ccontrollers%5CexpTagController.php"><i class="icon-file"></i>framework\core\controllers\expTagController.php</a></li>
+<li><a href="#framework%5Ccore%5CexpFramework.php"><i class="icon-file"></i>framework\core\expFramework.php</a></li>
+<li><a href="#framework%5Ccore%5Cmodels%5CexpRecord.php"><i class="icon-file"></i>framework\core\models\expRecord.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5Cdatabase%5Cmysql.info.php"><i class="icon-file"></i>framework\core\subsystems\database\mysql.info.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5Cdatabase%5Cmysql.php"><i class="icon-file"></i>framework\core\subsystems\database\mysql.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5Cdatabase%5Cmysqli.php"><i class="icon-file"></i>framework\core\subsystems\database\mysqli.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5Cdatabase%5Cmysqlid.php"><i class="icon-file"></i>framework\core\subsystems\database\mysqlid.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5CexpBot.php"><i class="icon-file"></i>framework\core\subsystems\expBot.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5CexpCore.php"><i class="icon-file"></i>framework\core\subsystems\expCore.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5CexpDatabase.php"><i class="icon-file"></i>framework\core\subsystems\expDatabase.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5CexpJavascript.php"><i class="icon-file"></i>framework\core\subsystems\expJavascript.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5CexpLDAP.php"><i class="icon-file"></i>framework\core\subsystems\expLDAP.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5CexpMail.php"><i class="icon-file"></i>framework\core\subsystems\expMail.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5CexpModules.php"><i class="icon-file"></i>framework\core\subsystems\expModules.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5CexpPaginator.php"><i class="icon-file"></i>framework\core\subsystems\expPaginator.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5CexpPermissions.php"><i class="icon-file"></i>framework\core\subsystems\expPermissions.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5CexpRouter.php"><i class="icon-file"></i>framework\core\subsystems\expRouter.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5CexpSettings.php"><i class="icon-file"></i>framework\core\subsystems\expSettings.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5CexpTemplate.php"><i class="icon-file"></i>framework\core\subsystems\expTemplate.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5CexpTheme.php"><i class="icon-file"></i>framework\core\subsystems\expTheme.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5CexpVersion.php"><i class="icon-file"></i>framework\core\subsystems\expVersion.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5Cforms%5Cbasetemplate.php"><i class="icon-file"></i>framework\core\subsystems\forms\basetemplate.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5Cforms%5Ccontrollertemplate.php"><i class="icon-file"></i>framework\core\subsystems\forms\controllertemplate.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5Cforms%5Ccontrols%5Cantispamcontrol.php"><i class="icon-file"></i>framework\core\subsystems\forms\controls\antispamcontrol.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5Cforms%5Ccontrols%5Ccheckboxcontrol.php"><i class="icon-file"></i>framework\core\subsystems\forms\controls\checkboxcontrol.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5Cforms%5Ccontrols%5Chtmleditorcontrol.php"><i class="icon-file"></i>framework\core\subsystems\forms\controls\htmleditorcontrol.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5Cforms%5Ccontrols%5Cpopupdatetimecontrol.php"><i class="icon-file"></i>framework\core\subsystems\forms\controls\popupdatetimecontrol.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5Cforms%5Cfiletemplate.php"><i class="icon-file"></i>framework\core\subsystems\forms\filetemplate.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5Cforms%5Cformtemplate.php"><i class="icon-file"></i>framework\core\subsystems\forms\formtemplate.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5Cforms%5Ctemplate.php"><i class="icon-file"></i>framework\core\subsystems\forms\template.php</a></li>
+<li><a href="#framework%5Cmodules%5Caddressbook%5Ccontrollers%5CaddressController.php"><i class="icon-file"></i>framework\modules\addressbook\controllers\addressController.php</a></li>
+<li><a href="#framework%5Cmodules%5Cadministration%5Ccontrollers%5CadministrationController.php"><i class="icon-file"></i>framework\modules\administration\controllers\administrationController.php</a></li>
+<li><a href="#framework%5Cmodules%5Cblog%5Ccontrollers%5CblogController.php"><i class="icon-file"></i>framework\modules\blog\controllers\blogController.php</a></li>
+<li><a href="#framework%5Cmodules%5Cealerts%5Cmodels%5CexpeAlerts.php"><i class="icon-file"></i>framework\modules\ealerts\models\expeAlerts.php</a></li>
+<li><a href="#framework%5Cmodules%5Cecommerce%5Cbillingcalculators%5CpaypalExpressCheckout.php"><i class="icon-file"></i>framework\modules\ecommerce\billingcalculators\paypalExpressCheckout.php</a></li>
+<li><a href="#framework%5Cmodules%5Cecommerce%5Cbillingcalculators%5Csplitcreditcard.php"><i class="icon-file"></i>framework\modules\ecommerce\billingcalculators\splitcreditcard.php</a></li>
+<li><a href="#framework%5Cmodules%5Cecommerce%5Cbillingcalculators%5CworldpayCheckout.php"><i class="icon-file"></i>framework\modules\ecommerce\billingcalculators\worldpayCheckout.php</a></li>
+<li><a href="#framework%5Cmodules%5Cecommerce%5Ccontrollers%5CcartController.php"><i class="icon-file"></i>framework\modules\ecommerce\controllers\cartController.php</a></li>
+<li><a href="#framework%5Cmodules%5Cecommerce%5Ccontrollers%5CeventregistrationController.php"><i class="icon-file"></i>framework\modules\ecommerce\controllers\eventregistrationController.php</a></li>
+<li><a href="#framework%5Cmodules%5Cecommerce%5Ccontrollers%5CorderController.php"><i class="icon-file"></i>framework\modules\ecommerce\controllers\orderController.php</a></li>
+<li><a href="#framework%5Cmodules%5Cecommerce%5Cmodels%5Corder.php"><i class="icon-file"></i>framework\modules\ecommerce\models\order.php</a></li>
+<li><a href="#framework%5Cmodules%5Cecommerce%5Cmodels%5CstoreCategory.php"><i class="icon-file"></i>framework\modules\ecommerce\models\storeCategory.php</a></li>
+<li><a href="#framework%5Cmodules%5Cecommerce%5Cproducts%5Cmodels%5Cgiftcard.php"><i class="icon-file"></i>framework\modules\ecommerce\products\models\giftcard.php</a></li>
+<li><a href="#framework%5Cmodules%5Cecommerce%5Cproducts%5Cmodels%5Cproduct.php"><i class="icon-file"></i>framework\modules\ecommerce\products\models\product.php</a></li>
+<li><a href="#framework%5Cmodules%5Cevents%5Ccontrollers%5CeventController.php"><i class="icon-file"></i>framework\modules\events\controllers\eventController.php</a></li>
+<li><a href="#framework%5Cmodules%5Cevents%5Cmodels%5Cevent.php"><i class="icon-file"></i>framework\modules\events\models\event.php</a></li>
+<li><a href="#framework%5Cmodules%5Cfaq%5Ccontrollers%5CfaqController.php"><i class="icon-file"></i>framework\modules\faq\controllers\faqController.php</a></li>
+<li><a href="#framework%5Cmodules%5Cfile%5Cmodels%5CexpFile.php"><i class="icon-file"></i>framework\modules\file\models\expFile.php</a></li>
+<li><a href="#framework%5Cmodules%5Chelp%5Cmodels%5Chelp.php"><i class="icon-file"></i>framework\modules\help\models\help.php</a></li>
+<li><a href="#framework%5Cmodules%5Cmigration%5Ccontrollers%5CmigrationController.php"><i class="icon-file"></i>framework\modules\migration\controllers\migrationController.php</a></li>
+<li><a href="#framework%5Cmodules%5Cnavigation%5Ccontrollers%5CnavigationController.php"><i class="icon-file"></i>framework\modules\navigation\controllers\navigationController.php</a></li>
+<li><a href="#framework%5Cmodules%5Cphotoalbum%5Ccontrollers%5CphotosController.php"><i class="icon-file"></i>framework\modules\photoalbum\controllers\photosController.php</a></li>
+<li><a href="#framework%5Cmodules%5Cportfolio%5Ccontrollers%5CportfolioController.php"><i class="icon-file"></i>framework\modules\portfolio\controllers\portfolioController.php</a></li>
+<li><a href="#framework%5Cmodules%5Csearch%5Cmodels%5Csearch.php"><i class="icon-file"></i>framework\modules\search\models\search.php</a></li>
+<li><a href="#framework%5Cmodules%5Csimplepoll%5Ccontrollers%5CsimplePollController.php"><i class="icon-file"></i>framework\modules\simplepoll\controllers\simplePollController.php</a></li>
+<li><a href="#framework%5Cmodules%5Ctext%5Ccontrollers%5CtextController.php"><i class="icon-file"></i>framework\modules\text\controllers\textController.php</a></li>
+<li><a href="#framework%5Cmodules%5Ctwitter%5Cmodels%5CTwitter.php"><i class="icon-file"></i>framework\modules\twitter\models\Twitter.php</a></li>
+<li><a href="#framework%5Cmodules%5Cusers%5Ccontrollers%5CusersController.php"><i class="icon-file"></i>framework\modules\users\controllers\usersController.php</a></li>
+<li><a href="#framework%5Cmodules-1%5Ccalendarmodule%5Cactions%5Cedit.php"><i class="icon-file"></i>framework\modules-1\calendarmodule\actions\edit.php</a></li>
+<li><a href="#framework%5Cmodules-1%5Ccalendarmodule%5Cactions%5Csave.php"><i class="icon-file"></i>framework\modules-1\calendarmodule\actions\save.php</a></li>
+<li><a href="#framework%5Cmodules-1%5Ccalendarmodule%5Cactions%5Cviewday.php"><i class="icon-file"></i>framework\modules-1\calendarmodule\actions\viewday.php</a></li>
+<li><a href="#framework%5Cmodules-1%5Ccalendarmodule%5Cactions%5Cviewweek.php"><i class="icon-file"></i>framework\modules-1\calendarmodule\actions\viewweek.php</a></li>
+<li><a href="#framework%5Cmodules-1%5Ccalendarmodule%5Cclass.php"><i class="icon-file"></i>framework\modules-1\calendarmodule\class.php</a></li>
+<li><a href="#framework%5Cmodules-1%5Ccommon%5Cactions%5Cconfigure.php"><i class="icon-file"></i>framework\modules-1\common\actions\configure.php</a></li>
+<li><a href="#framework%5Cmodules-1%5Ccommon%5Cactions%5Cuserperms.php"><i class="icon-file"></i>framework\modules-1\common\actions\userperms.php</a></li>
+<li><a href="#framework%5Cmodules-1%5Ccontainermodule%5Cactions%5Cdelete.php"><i class="icon-file"></i>framework\modules-1\containermodule\actions\delete.php</a></li>
+<li><a href="#framework%5Cmodules-1%5Ccontainermodule%5Cactions%5Cdelete_content.php"><i class="icon-file"></i>framework\modules-1\containermodule\actions\delete_content.php</a></li>
+<li><a href="#framework%5Cmodules-1%5Ccontainermodule%5Cactions%5Corphans_content.php"><i class="icon-file"></i>framework\modules-1\containermodule\actions\orphans_content.php</a></li>
+<li><a href="#framework%5Cmodules-1%5Cformbuilder%5Cactions%5Cexport_csv.php"><i class="icon-file"></i>framework\modules-1\formbuilder\actions\export_csv.php</a></li>
+<li><a href="#framework%5Cmodules-1%5Cimporter%5Cimporters%5Cusercsv%5Cdisplayusers.php"><i class="icon-file"></i>framework\modules-1\importer\importers\usercsv\displayusers.php</a></li>
+<li><a href="#framework%5Cmodules-1%5Cimporter%5Cimporters%5Cusercsv%5Cmapper.php"><i class="icon-file"></i>framework\modules-1\importer\importers\usercsv\mapper.php</a></li>
+<li><a href="#framework%5Cmodules-1%5Cnavigationmodule%5Cclass.php"><i class="icon-file"></i>framework\modules-1\navigationmodule\class.php</a></li>
+<li><a href="#framework%5Cplugins%5Cfunction.control.php"><i class="icon-file"></i>framework\plugins\function.control.php</a></li>
+<li><a href="#framework%5Cplugins%5Cfunction.popupdatetimecontrol.php"><i class="icon-file"></i>framework\plugins\function.popupdatetimecontrol.php</a></li>
+<li><a href="#framework%5Cplugins%5Cfunction.userlistcontrol.php"><i class="icon-file"></i>framework\plugins\function.userlistcontrol.php</a></li>
+<li><a href="#framework%5Cplugins%5Cmodifier.convertlangcode.php"><i class="icon-file"></i>framework\plugins\modifier.convertlangcode.php</a></li>
+<li><a href="#index.php"><i class="icon-file"></i>index.php</a></li>
+<li><a href="#install%5Cpages%5Cinstall-3.php"><i class="icon-file"></i>install\pages\install-3.php</a></li>
+<li><a href="#install%5Cpages%5Cinstall-7.php"><i class="icon-file"></i>install\pages\install-7.php</a></li>
+<li><a href="#install%5Cupgrades%5Cclear_cache.php"><i class="icon-file"></i>install\upgrades\clear_cache.php</a></li>
+<li><a href="#install%5Cupgrades%5Cupdate_rssfeeds.php"><i class="icon-file"></i>install\upgrades\update_rssfeeds.php</a></li>
+<li><a href="#site_rss.php"><i class="icon-file"></i>site_rss.php</a></li>
+<li><a href="#themes%5Cbootstraptheme%5Cplugins%5Cfunction.bootstrap_navbar.php"><i class="icon-file"></i>themes\bootstraptheme\plugins\function.bootstrap_navbar.php</a></li>
+</ul></div>
+<div class="span8">
+<ul class="breadcrumb">
+<li>
+<a href=""><i class="icon-map-marker"></i></a><span class="divider">\</span>
+</li>
+<li>Markers</li>
+</ul>
+<div class="alert alert-info">
+                        The following markers were found:
+                        <ul>
+<li>todo 
+                <span class="label label-info">42</span>
+</li>
+<li>fixme 
+                <span class="label label-info">174</span>
+</li>
+</ul>
+</div>
+<div id="marker-accordion">
+<div class="package-contents">
+<a name="cron%5Cbootstrap.php" id="cron\bootstrap.php"></a><h3>
+<i class="icon-file"></i>cron\bootstrap.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>66</td>
+<td>Swift 3.x is no longer available, but expMail is already waiting</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="cron%5Clang_extract.php" id="cron\lang_extract.php"></a><h3>
+<i class="icon-file"></i>cron\lang_extract.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>125</td>
+<td>these tend to hold computations and likewise break things?</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="exponent.php" id="exponent.php"></a><h3>
+<i class="icon-file"></i>exponent.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>48</td>
+<td>test</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="exponent_constants.php" id="exponent_constants.php"></a><h3>
+<i class="icon-file"></i>exponent_constants.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>39</td>
+<td>PATH_RELATIVE definition will break in certain parts when the server does not offer the Document_root.</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>40</td>
+<td>Notable, it breaks in the installer.</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="exponent_php_setup.php" id="exponent_php_setup.php"></a><h3>
+<i class="icon-file"></i>exponent_php_setup.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>55</td>
+<td>does NOT exist</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Ccontrollers%5CexpCatController.php" id="framework\core\controllers\expCatController.php"></a><h3>
+<i class="icon-file"></i>framework\core\controllers\expCatController.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>104</td>
+<td>here is a hack to get the faq to be listed</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Ccontrollers%5CexpController.php" id="framework\core\controllers\expController.php"></a><h3>
+<i class="icon-file"></i>framework\core\controllers\expController.php<small style="float: right;padding-right: 10px;">3</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>29</td>
+<td>not used and not actually set right index needed of -3 instead of -2 below</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>30</td>
+<td>never used, $basemodel_name replaced?</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>82</td>
+<td>this requires we move the 'core' controllers into the modules folder or use this hack</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Ccontrollers%5CexpDefinableFieldController.php" id="framework\core\controllers\expDefinableFieldController.php"></a><h3>
+<i class="icon-file"></i>framework\core\controllers\expDefinableFieldController.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>49</td>
+<td>$record & $tag are undefined</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Ccontrollers%5CexpTagController.php" id="framework\core\controllers\expTagController.php"></a><h3>
+<i class="icon-file"></i>framework\core\controllers\expTagController.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>114</td>
+<td>here is a hack to get the faq to be listed</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>172</td>
+<td>here is a hack to get the faq to be listed</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5CexpFramework.php" id="framework\core\expFramework.php"></a><h3>
+<i class="icon-file"></i>framework\core\expFramework.php<small style="float: right;padding-right: 10px;">3</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>278</td>
+<td>do we process modules also needing this?</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>374</td>
+<td>there is NO 'page' object and section has no _construct method</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>376</td>
+<td>there is no getModulesBySource method anywhere</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Cmodels%5CexpRecord.php" id="framework\core\models\expRecord.php"></a><h3>
+<i class="icon-file"></i>framework\core\models\expRecord.php<small style="float: right;padding-right: 10px;">14</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>356</td>
+<td>only placed used is in helpController->copydocs</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>362</td>
+<td>plural vs single?</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>363</td>
+<td>plural vs single?</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>392</td>
+<td>we're not going to do this automagically until we get the refreshing figured out.</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>487</td>
+<td>find a better way to pluralize these names!!!</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>488</td>
+<td>find a better way to pluralize these names!!!</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>543</td>
+<td>$where .= empty($this->rank_by_field) ? null : "AND " . $this->rank_by_field . "='" . $this->$this->rank_by_field . "'";</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>704</td>
+<td>shouldn't we also delete associated items?</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>790</td>
+<td>is it plural where others are single?</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>791</td>
+<td>is it plural where others are single?</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>845</td>
+<td>find a better way to unpluralize the name!</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>900</td>
+<td>perhaps add a 'in' option to the find so we can pass an array of ids and make ONE db call instead of looping</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>988</td>
+<td>not used??</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>1083</td>
+<td>should incorporate DISPLAY_DATETIME_FORMAT here</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5Cdatabase%5Cmysql.info.php" id="framework\core\subsystems\database\mysql.info.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\database\mysql.info.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>29</td>
+<td>investigate/fix PHP5 MySql function issues</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5Cdatabase%5Cmysql.php" id="framework\core\subsystems\database\mysql.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\database\mysql.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>82</td>
+<td>determine how to handle encoding on postgres</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>86</td>
+<td>we might need a general api/registry to make backward compatibility checks + automatic upgrade wizard</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5Cdatabase%5Cmysqli.php" id="framework\core\subsystems\database\mysqli.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\database\mysqli.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>62</td>
+<td>determine how to handle encoding on postgres</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5Cdatabase%5Cmysqlid.php" id="framework\core\subsystems\database\mysqlid.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\database\mysqlid.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>127</td>
+<td>determine how to handle encoding on postgres</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5CexpBot.php" id="framework\core\subsystems\expBot.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\expBot.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>47</td>
+<td>is this better than sleep(1)? seems to make it work, but delays?</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5CexpCore.php" id="framework\core\subsystems\expCore.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\expCore.php<small style="float: right;padding-right: 10px;">16</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>84</td>
+<td>Hardcoded controller stuff!!</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>126</td>
+<td>$sef_name isn't set??</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>305</td>
+<td>Investigate the chances of BASE occurring more than once</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>341</td>
+<td>implement caching</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>342</td>
+<td>optimization - walk the tree backwards and stop on the first match</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>352</td>
+<td>convert everything to the new naming model</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>372</td>
+<td>forms/calendar only used by calendarmodule</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>397</td>
+<td>forms/calendar only used by calendarmodule</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>398</td>
+<td>forms/calendar only used by calendarmodule</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>411</td>
+<td>forms/calendar only used by calendarmodule</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>412</td>
+<td>forms/calendar only used by calendarmodule</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>440</td>
+<td>handle subthemes</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>441</td>
+<td>now that glob is used build a syntax for it instead of calling it repeatedly</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>456</td>
+<td>handle the - currently unused - case where there is the same file in different $type categories</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>469</td>
+<td>invent better error handling, maybe an error message channel ?</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>488</td>
+<td>only used by 1) calendarmodule edit action (email forms) & 2) expTemplate::listModuleViews for OS modules</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5CexpDatabase.php" id="framework\core\subsystems\expDatabase.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\expDatabase.php<small style="float: right;padding-right: 10px;">10</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>152</td>
+<td>we shouldn't echo this, already installed?</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>191</td>
+<td>we shouldn't echo this, already installed?</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>574</td>
+<td>never used</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>589</td>
+<td>never used</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>621</td>
+<td>never used</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>646</td>
+<td>never used</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>704</td>
+<td>never used</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>869</td>
+<td>never used</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>911</td>
+<td>never used</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>1079</td>
+<td>never used</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5CexpJavascript.php" id="framework\core\subsystems\expJavascript.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\expJavascript.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>314</td>
+<td>$hide & $footer are not defined below</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5CexpLDAP.php" id="framework\core\subsystems\expLDAP.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\expLDAP.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>81</td>
+<td>function was deprecated</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5CexpMail.php" id="framework\core\subsystems\expMail.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\expMail.php<small style="float: right;padding-right: 10px;">8</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>49</td>
+<td>add support for telling the constructor where the system specific Mail Transit Authority is: i.e. where sendmail or exim is if not in the default /usr/sbin</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>49</td>
+<td>drop support for passing in custom "connections", a Swift 3.x relic that we do not need.</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>49</td>
+<td>add further documentation for using settings other than the system default</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>172</td>
+<td>Update this section to use more error checking</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>187</td>
+<td>May add allowing a string param to be passed as the message (text_message) using all defaults to mail it.</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>312</td>
+<td>Update this section to use batch processing properly</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>553</td>
+<td>A nice future feature addition would be to allow the passing in of associative arrays like so:
+$emailsToSendTo = array('bob@smith.com'=>'Bob Smith', 'mary@smith.com'=>'Mary Smith');
+$emailItem->addTo($emailsToSendTo);
+OR
+$emailItem->addTo('array('myemail@mysite.com'=>'Website Owner', 'secondemail@website.com'=>'Frank Jones');
+Actually, cleanup should be done so that this function only takes associative arrays, and nothing else.</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>426</td>
+<td>the $headers parameter is wiped out with the 2nd line</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5CexpModules.php" id="framework\core\subsystems\expModules.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\expModules.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>61</td>
+<td>, not needed?</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5CexpPaginator.php" id="framework\core\subsystems\expPaginator.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\expPaginator.php<small style="float: right;padding-right: 10px;">3</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>170</td>
+<td>module/controller glue code</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>196</td>
+<td>we don't get attachments in this approach</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>232</td>
+<td>we may want some more intelligent selection here based on cats/groups, e.g., don't break groups across pages, number of picture rows, etc...</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5CexpPermissions.php" id="framework\core\subsystems\expPermissions.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\expPermissions.php<small style="float: right;padding-right: 10px;">5</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>105</td>
+<td>this is only available in calendarmodule, may not be needed if there is no 'int' property?</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>106</td>
+<td>this is only available in calendarmodule</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>217</td>
+<td>this is only available in calendarmodule</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>218</td>
+<td>this is only available in calendarmodule</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>548</td>
+<td>not currently used</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5CexpRouter.php" id="framework\core\subsystems\expRouter.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\expRouter.php<small style="float: right;padding-right: 10px;">3</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>226</td>
+<td>php 5.4</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>497</td>
+<td>this method is never called and doesn't do anything as written</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>595</td>
+<td>fully sanitize all params values here for</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5CexpSettings.php" id="framework\core\subsystems\expSettings.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\expSettings.php<small style="float: right;padding-right: 10px;">6</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>207</td>
+<td>this method is only used in install and doesn't deal with profiles</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>309</td>
+<td>this method is never used</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>368</td>
+<td>this method is never used</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>406</td>
+<td>this method is never used</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>427</td>
+<td>this method is never used</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>440</td>
+<td>this method is never used</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5CexpTemplate.php" id="framework\core\subsystems\expTemplate.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\expTemplate.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>119</td>
+<td>Not Used???</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>158</td>
+<td>only used by 1) containermodule edit action for OS modules</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5CexpTheme.php" id="framework\core\subsystems\expTheme.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\expTheme.php<small style="float: right;padding-right: 10px;">15</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>205</td>
+<td>Not used</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>212</td>
+<td>$form is not set??</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>218</td>
+<td>Not used</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>230</td>
+<td>this should be $file instead of $filename?</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>280</td>
+<td>need to use $feed instead of $params</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>388</td>
+<td>change this to a generic system theme</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>494</td>
+<td>module/controller glue code..remove ASAP</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>544</td>
+<td>doesn't seem to be used except by smarty functions, old school?</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>650</td>
+<td>change to showModule call</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>680</td>
+<td>there is no such config index</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>714</td>
+<td>let's try $sectionObj instead of last_section</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>738</td>
+<td>not used in base system (custom themes?)</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>857</td>
+<td>- $section might be empty!  We're getting it from last_section instead of sectionObj??</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>860</td>
+<td>let's try $sectionObj instead of last_section</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>945</td>
+<td>we are checking here for a new MVC style controller or an old school module. We only need to perform</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5CexpVersion.php" id="framework\core\subsystems\expVersion.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\expVersion.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>98</td>
+<td>we need a good installation/server to place this on</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5Cforms%5Cbasetemplate.php" id="framework\core\subsystems\forms\basetemplate.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\forms\basetemplate.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>52</td>
+<td>this disables bad template code reporting 3.x</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5Cforms%5Ccontrollertemplate.php" id="framework\core\subsystems\forms\controllertemplate.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\forms\controllertemplate.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>33</td>
+<td>this disables bad template code reporting 3.x</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5Cforms%5Ccontrols%5Cantispamcontrol.php" id="framework\core\subsystems\forms\controls\antispamcontrol.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\forms\controls\antispamcontrol.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>28</td>
+<td>this is old tech and not-language-ized</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5Cforms%5Ccontrols%5Ccheckboxcontrol.php" id="framework\core\subsystems\forms\controls\checkboxcontrol.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\forms\controls\checkboxcontrol.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>129</td>
+<td>this is just here until we completely deprecate the old school checkbox</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5Cforms%5Ccontrols%5Chtmleditorcontrol.php" id="framework\core\subsystems\forms\controls\htmleditorcontrol.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\forms\controls\htmleditorcontrol.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>90</td>
+<td>Convert to OO API and use eXp->EditorControl->doneInit instead</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5Cforms%5Ccontrols%5Cpopupdatetimecontrol.php" id="framework\core\subsystems\forms\controls\popupdatetimecontrol.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\forms\controls\popupdatetimecontrol.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>24</td>
+<td>we don't ship jscalendar files for this to work</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5Cforms%5Cfiletemplate.php" id="framework\core\subsystems\forms\filetemplate.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\forms\filetemplate.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>26</td>
+<td>Not used???</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5Cforms%5Cformtemplate.php" id="framework\core\subsystems\forms\formtemplate.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\forms\formtemplate.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>28</td>
+<td>only used by calendarmodule for feedback forms</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5Cforms%5Ctemplate.php" id="framework\core\subsystems\forms\template.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\forms\template.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>27</td>
+<td>prepare this class for multiple template systems</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Caddressbook%5Ccontrollers%5CaddressController.php" id="framework\modules\addressbook\controllers\addressController.php"></a><h3>
+<i class="icon-file"></i>framework\modules\addressbook\controllers\addressController.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>115</td>
+<td>$address not set</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>142</td>
+<td>$object not set</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Cadministration%5Ccontrollers%5CadministrationController.php" id="framework\modules\administration\controllers\administrationController.php"></a><h3>
+<i class="icon-file"></i>framework\modules\administration\controllers\administrationController.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>28</td>
+<td>is this used? old 1.0 permission</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>639</td>
+<td>shouldn't use echo</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Cblog%5Ccontrollers%5CblogController.php" id="framework\modules\blog\controllers\blogController.php"></a><h3>
+<i class="icon-file"></i>framework\modules\blog\controllers\blogController.php<small style="float: right;padding-right: 10px;">4</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>314</td>
+<td>$object not set</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>327</td>
+<td>$object not set</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>395</td>
+<td>$object not set</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>407</td>
+<td>$object not set</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Cealerts%5Cmodels%5CexpeAlerts.php" id="framework\modules\ealerts\models\expeAlerts.php"></a><h3>
+<i class="icon-file"></i>framework\modules\ealerts\models\expeAlerts.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>57</td>
+<td>, not pulling any items?</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Cecommerce%5Cbillingcalculators%5CpaypalExpressCheckout.php" id="framework\modules\ecommerce\billingcalculators\paypalExpressCheckout.php"></a><h3>
+<i class="icon-file"></i>framework\modules\ecommerce\billingcalculators\paypalExpressCheckout.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>23</td>
+<td>make into php5 class with access modifiers proprities and all that jazz.</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>159</td>
+<td>build data from odrer</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Cecommerce%5Cbillingcalculators%5Csplitcreditcard.php" id="framework\modules\ecommerce\billingcalculators\splitcreditcard.php"></a><h3>
+<i class="icon-file"></i>framework\modules\ecommerce\billingcalculators\splitcreditcard.php<small style="float: right;padding-right: 10px;">3</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>39</td>
+<td>I don't think this is used any more but i don't have a clue</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>145</td>
+<td>hard coded text!!</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>155</td>
+<td>hard coded text!!</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Cecommerce%5Cbillingcalculators%5CworldpayCheckout.php" id="framework\modules\ecommerce\billingcalculators\worldpayCheckout.php"></a><h3>
+<i class="icon-file"></i>framework\modules\ecommerce\billingcalculators\worldpayCheckout.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>23</td>
+<td>make into php5 class with access modifiers proprities and all that jazz.</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Cecommerce%5Ccontrollers%5CcartController.php" id="framework\modules\ecommerce\controllers\cartController.php"></a><h3>
+<i class="icon-file"></i>framework\modules\ecommerce\controllers\cartController.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>605</td>
+<td>$comment doesn't exist</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>691</td>
+<td></td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Cecommerce%5Ccontrollers%5CeventregistrationController.php" id="framework\modules\ecommerce\controllers\eventregistrationController.php"></a><h3>
+<i class="icon-file"></i>framework\modules\ecommerce\controllers\eventregistrationController.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>139</td>
+<td>$product doesn't exist</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>222</td>
+<td>$opts doesn't exist</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Cecommerce%5Ccontrollers%5CorderController.php" id="framework\modules\ecommerce\controllers\orderController.php"></a><h3>
+<i class="icon-file"></i>framework\modules\ecommerce\controllers\orderController.php<small style="float: right;padding-right: 10px;">6</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>382</td>
+<td>uncomment to implement, comment out above</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>390</td>
+<td>uncomment to implement, comment out above</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>400</td>
+<td>uncomment to implement, comment out above</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>780</td>
+<td>Unless you need each mail sent separately, you can now set 'to'=>$email_addys and let expMail send a single email to all addresses</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>858</td>
+<td>$object doesn't exist</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>859</td>
+<td>$object doesn't exist</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Cecommerce%5Cmodels%5Corder.php" id="framework\modules\ecommerce\models\order.php"></a><h3>
+<i class="icon-file"></i>framework\modules\ecommerce\models\order.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>669</td>
+<td>We need to use produce_price_adjusted in the loops to accomodate for more than one disocunt</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Cecommerce%5Cmodels%5CstoreCategory.php" id="framework\modules\ecommerce\models\storeCategory.php"></a><h3>
+<i class="icon-file"></i>framework\modules\ecommerce\models\storeCategory.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>58</td>
+<td>Category count update</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Cecommerce%5Cproducts%5Cmodels%5Cgiftcard.php" id="framework\modules\ecommerce\products\models\giftcard.php"></a><h3>
+<i class="icon-file"></i>framework\modules\ecommerce\products\models\giftcard.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>70</td>
+<td>$catConfig doesn't exist</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Cecommerce%5Cproducts%5Cmodels%5Cproduct.php" id="framework\modules\ecommerce\products\models\product.php"></a><h3>
+<i class="icon-file"></i>framework\modules\ecommerce\products\models\product.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>878</td>
+<td>$product_type is not set</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Cevents%5Ccontrollers%5CeventController.php" id="framework\modules\events\controllers\eventController.php"></a><h3>
+<i class="icon-file"></i>framework\modules\events\controllers\eventController.php<small style="float: right;padding-right: 10px;">12</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>206</td>
+<td>add external events to $days[$start] for date $start, one day at a time</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>212</td>
+<td>this can't be right?</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>215</td>
+<td>this can't be right?</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>269</td>
+<td>add external events to $monthly[$week][$i] for date $start, one day at a time</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>403</td>
+<td>add external events to $items for date >= ".expDateTime::startOfMonthTimestamp(time()) . " AND date <= " . expDateTime::endOfMonthTimestamp(time())</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>547</td>
+<td>we need to complete this</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>821</td>
+<td>we need to complete this</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>1278</td>
+<td>must convert $dtstart timezone</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>1288</td>
+<td>must convert $dtend timezone</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>1302</td>
+<td>must convert $dtstart & $dtend timezone</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>1358</td>
+<td>must convert $dtstart timezone</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>1370</td>
+<td>must convert $dtend timezone</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Cevents%5Cmodels%5Cevent.php" id="framework\modules\events\models\event.php"></a><h3>
+<i class="icon-file"></i>framework\modules\events\models\event.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>94</td>
+<td>hack in case the day of week wasn't checked off</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Cfaq%5Ccontrollers%5CfaqController.php" id="framework\modules\faq\controllers\faqController.php"></a><h3>
+<i class="icon-file"></i>framework\modules\faq\controllers\faqController.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>244</td>
+<td>we should probably allow for a single item update/addition</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Cfile%5Cmodels%5CexpFile.php" id="framework\modules\file\models\expFile.php"></a><h3>
+<i class="icon-file"></i>framework\modules\file\models\expFile.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>1453</td>
+<td>We reject v1.0 eql files</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Chelp%5Cmodels%5Chelp.php" id="framework\modules\help\models\help.php"></a><h3>
+<i class="icon-file"></i>framework\modules\help\models\help.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>159</td>
+<td>$where .= empty($this->rank_by_field) ? null : "AND " . $this->rank_by_field . "='" . $this->$this->rank_by_field . "'";</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Cmigration%5Ccontrollers%5CmigrationController.php" id="framework\modules\migration\controllers\migrationController.php"></a><h3>
+<i class="icon-file"></i>framework\modules\migration\controllers\migrationController.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>2309</td>
+<td>we need to push the button.css file to head for coolwater theme?</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Cnavigation%5Ccontrollers%5CnavigationController.php" id="framework\modules\navigation\controllers\navigationController.php"></a><h3>
+<i class="icon-file"></i>framework\modules\navigation\controllers\navigationController.php<small style="float: right;padding-right: 10px;">4</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>493</td>
+<td>is this only for deprecated templates?</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>554</td>
+<td>more module/controller glue code</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>830</td>
+<td>we come here for new/edit content/standalone pages</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>831</td>
+<td>Allow non-administrative users to manage certain parts of the section hierarchy.</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Cphotoalbum%5Ccontrollers%5CphotosController.php" id="framework\modules\photoalbum\controllers\photosController.php"></a><h3>
+<i class="icon-file"></i>framework\modules\photoalbum\controllers\photosController.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>115</td>
+<td>we need to change this to expPaginator to get category grouping</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Cportfolio%5Ccontrollers%5CportfolioController.php" id="framework\modules\portfolio\controllers\portfolioController.php"></a><h3>
+<i class="icon-file"></i>framework\modules\portfolio\controllers\portfolioController.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>72</td>
+<td>we need to change this to expPaginator to get category grouping</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Csearch%5Cmodels%5Csearch.php" id="framework\modules\search\models\search.php"></a><h3>
+<i class="icon-file"></i>framework\modules\search\models\search.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>67</td>
+<td>The page count is off when have to not show</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Csimplepoll%5Ccontrollers%5CsimplePollController.php" id="framework\modules\simplepoll\controllers\simplePollController.php"></a><h3>
+<i class="icon-file"></i>framework\modules\simplepoll\controllers\simplePollController.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>101</td>
+<td>we also need to delete any assoc answers</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>134</td>
+<td>move data work to simplepoll_question model</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Ctext%5Ccontrollers%5CtextController.php" id="framework\modules\text\controllers\textController.php"></a><h3>
+<i class="icon-file"></i>framework\modules\text\controllers\textController.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>66</td>
+<td>need to come up with a better method</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Ctwitter%5Cmodels%5CTwitter.php" id="framework\modules\twitter\models\Twitter.php"></a><h3>
+<i class="icon-file"></i>framework\modules\twitter\models\Twitter.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>302</td>
+<td>refactor me</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Cusers%5Ccontrollers%5CusersController.php" id="framework\modules\users\controllers\usersController.php"></a><h3>
+<i class="icon-file"></i>framework\modules\users\controllers\usersController.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>193</td>
+<td>why are we doing this? this loads the edited user perms over the current user???</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules-1%5Ccalendarmodule%5Cactions%5Cedit.php" id="framework\modules-1\calendarmodule\actions\edit.php"></a><h3>
+<i class="icon-file"></i>framework\modules-1\calendarmodule\actions\edit.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>98</td>
+<td>This is not working</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules-1%5Ccalendarmodule%5Cactions%5Csave.php" id="framework\modules-1\calendarmodule\actions\save.php"></a><h3>
+<i class="icon-file"></i>framework\modules-1\calendarmodule\actions\save.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>98</td>
+<td>hack in case the day of week wasn't checked off</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules-1%5Ccalendarmodule%5Cactions%5Cviewday.php" id="framework\modules-1\calendarmodule\actions\viewday.php"></a><h3>
+<i class="icon-file"></i>framework\modules-1\calendarmodule\actions\viewday.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>49</td>
+<td>add external events to $events for date $start, one day</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>51</td>
+<td>isn't it better to use calendarmodule::_getEventsForDates less permissions</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules-1%5Ccalendarmodule%5Cactions%5Cviewweek.php" id="framework\modules-1\calendarmodule\actions\viewweek.php"></a><h3>
+<i class="icon-file"></i>framework\modules-1\calendarmodule\actions\viewweek.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>50</td>
+<td>add external events to $days[$start][] for date $start, one day at a time</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>56</td>
+<td>isn't it better to use calendarmodule::_getEventsForDates less permissions</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules-1%5Ccalendarmodule%5Cclass.php" id="framework\modules-1\calendarmodule\class.php"></a><h3>
+<i class="icon-file"></i>framework\modules-1\calendarmodule\class.php<small style="float: right;padding-right: 10px;">10</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>218</td>
+<td>add external events to $days[$start] for date $start, one day at a time</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>224</td>
+<td>this can't be right?</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>227</td>
+<td>this can't be right?</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>278</td>
+<td>add external events to $monthly[$week][$i] for date $start, one day at a time</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>394</td>
+<td>add external events to $items for date >= ".expDateTime::startOfMonthTimestamp(time()) . " AND date <= " . expDateTime::endOfMonthTimestamp(time())</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>537</td>
+<td>must convert $dtstart timezone</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>547</td>
+<td>must convert $dtend timezone</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>561</td>
+<td>must convert $dtstart & $dtend timezone</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>617</td>
+<td>must convert $dtstart timezone</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>629</td>
+<td>must convert $dtend timezone</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules-1%5Ccommon%5Cactions%5Cconfigure.php" id="framework\modules-1\common\actions\configure.php"></a><h3>
+<i class="icon-file"></i>framework\modules-1\common\actions\configure.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>62</td>
+<td>PLEASE EVALUATE: since expTemplate::getViewConfigForm is called only here, is it necessary to make it add</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules-1%5Ccommon%5Cactions%5Cuserperms.php" id="framework\modules-1\common\actions\userperms.php"></a><h3>
+<i class="icon-file"></i>framework\modules-1\common\actions\userperms.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>29</td>
+<td></td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules-1%5Ccontainermodule%5Cactions%5Cdelete.php" id="framework\modules-1\containermodule\actions\delete.php"></a><h3>
+<i class="icon-file"></i>framework\modules-1\containermodule\actions\delete.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>42</td>
+<td>module/controller glue code</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules-1%5Ccontainermodule%5Cactions%5Cdelete_content.php" id="framework\modules-1\containermodule\actions\delete_content.php"></a><h3>
+<i class="icon-file"></i>framework\modules-1\containermodule\actions\delete_content.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>31</td>
+<td>more module/controller glue code</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules-1%5Ccontainermodule%5Cactions%5Corphans_content.php" id="framework\modules-1\containermodule\actions\orphans_content.php"></a><h3>
+<i class="icon-file"></i>framework\modules-1\containermodule\actions\orphans_content.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>68</td>
+<td>this is broken as most of the varibles are non-existent</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules-1%5Cformbuilder%5Cactions%5Cexport_csv.php" id="framework\modules-1\formbuilder\actions\export_csv.php"></a><h3>
+<i class="icon-file"></i>framework\modules-1\formbuilder\actions\export_csv.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>23</td>
+<td>we shouldn't need to return here, right?</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules-1%5Cimporter%5Cimporters%5Cusercsv%5Cdisplayusers.php" id="framework\modules-1\importer\importers\usercsv\displayusers.php"></a><h3>
+<i class="icon-file"></i>framework\modules-1\importer\importers\usercsv\displayusers.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>139</td>
+<td>function was deprecated</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules-1%5Cimporter%5Cimporters%5Cusercsv%5Cmapper.php" id="framework\modules-1\importer\importers\usercsv\mapper.php"></a><h3>
+<i class="icon-file"></i>framework\modules-1\importer\importers\usercsv\mapper.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>40</td>
+<td>quick hack to remove file model</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules-1%5Cnavigationmodule%5Cclass.php" id="framework\modules-1\navigationmodule\class.php"></a><h3>
+<i class="icon-file"></i>framework\modules-1\navigationmodule\class.php<small style="float: right;padding-right: 10px;">3</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>27</td>
+<td>we should turn this OFF, but may need it for old sites?</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>56</td>
+<td>why are we changing the global $sessions?</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>64</td>
+<td>global $sections is initialized this way</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cplugins%5Cfunction.control.php" id="framework\plugins\function.control.php"></a><h3>
+<i class="icon-file"></i>framework\plugins\function.control.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>47</td>
+<td>this control does not work due ot missing library files</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cplugins%5Cfunction.popupdatetimecontrol.php" id="framework\plugins\function.popupdatetimecontrol.php"></a><h3>
+<i class="icon-file"></i>framework\plugins\function.popupdatetimecontrol.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>29</td>
+<td>the popupdatetimecontrol is broken w/o the jscalendar files</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>35</td>
+<td>this seems like a empty copy of something else</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cplugins%5Cfunction.userlistcontrol.php" id="framework\plugins\function.userlistcontrol.php"></a><h3>
+<i class="icon-file"></i>framework\plugins\function.userlistcontrol.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>45</td>
+<td>should we display username w/ first/last name is parens or first/last name?</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cplugins%5Cmodifier.convertlangcode.php" id="framework\plugins\modifier.convertlangcode.php"></a><h3>
+<i class="icon-file"></i>framework\plugins\modifier.convertlangcode.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>37</td>
+<td>this plugin isn't used, but this will at least return something</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="index.php" id="index.php"></a><h3>
+<i class="icon-file"></i>index.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>84</td>
+<td>Maxims initial anonymous user implementation</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>131</td>
+<td>timeout before closing an empty pdf or html2pdf error window</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="install%5Cpages%5Cinstall-3.php" id="install\pages\install-3.php"></a><h3>
+<i class="icon-file"></i>install\pages\install-3.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>79</td>
+<td>BETTER ERROR CHECKING</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>237</td>
+<td>not sure if we should do this?</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="install%5Cpages%5Cinstall-7.php" id="install\pages\install-7.php"></a><h3>
+<i class="icon-file"></i>install\pages\install-7.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>46</td>
+<td>Shouldn't get this because of check in install-6.php unless browser jscript disabled</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="install%5Cupgrades%5Cclear_cache.php" id="install\upgrades\clear_cache.php"></a><h3>
+<i class="icon-file"></i>install\upgrades\clear_cache.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>81</td>
+<td>No longer used</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="install%5Cupgrades%5Cupdate_rssfeeds.php" id="install\upgrades\update_rssfeeds.php"></a><h3>
+<i class="icon-file"></i>install\upgrades\update_rssfeeds.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>92</td>
+<td>what about duplicate rss feeds, double when added to above?</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="site_rss.php" id="site_rss.php"></a><h3>
+<i class="icon-file"></i>site_rss.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>23</td>
+<td>old method</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="themes%5Cbootstraptheme%5Cplugins%5Cfunction.bootstrap_navbar.php" id="themes\bootstraptheme\plugins\function.bootstrap_navbar.php"></a><h3>
+<i class="icon-file"></i>themes\bootstraptheme\plugins\function.bootstrap_navbar.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>52</td>
+<td>we need to take into account new_window, and active flags</td>
+</tr>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
+            generated on 2012-09-13T10:24:28-04:00.<br></footer></div>
+</div>
+</body>
+</html>

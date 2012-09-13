@@ -1,0 +1,390 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Exponent 2.0.9 API Documentation » \expPermissions</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.0.9 API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
+<li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
+<li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
+<li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
+<li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">3461</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul>
+<li>todo 
+                <span class="label label-info">42</span>
+</li>
+<li>fixme 
+                <span class="label label-info">174</span>
+</li>
+</ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods</li>
+<li class="method public "><a href="#check" title="check :: exdoc
+Looks to the permission data and checks to see
+if the current user has been granted the given permission(s)
+on the granted the given location."><span class="description">exdoc
+Looks to the permission data and checks to see
+if the current user has been granted the given permission(s)
+on the granted the given location.</span><pre>check()</pre></a></li>
+<li class="method public "><a href="#checkGroup" title="checkGroup :: exdoc
+Checks to see if the given group has been given a specific permission on a location."><span class="description">exdoc
+Checks to see if the given group has been given a specific permission on a location.</span><pre>checkGroup()</pre></a></li>
+<li class="method public "><a href="#checkUser" title="checkUser :: exdoc
+Checks to see if the given user has been given a specific permission."><span class="description">exdoc
+Checks to see if the given user has been given a specific permission.</span><pre>checkUser()</pre></a></li>
+<li class="method public "><a href="#grant" title="grant :: exdoc
+Grants the specified permission to the specified user, on the given location"><span class="description">exdoc
+Grants the specified permission to the specified user, on the given location</span><pre>grant()</pre></a></li>
+<li class="method public "><a href="#grantGroup" title="grantGroup :: exdoc
+Grants the specified permission to the specified user group, on the given location"><span class="description">exdoc
+Grants the specified permission to the specified user group, on the given location</span><pre>grantGroup()</pre></a></li>
+<li class="method public "><a href="#load" title="load :: exdoc
+Loads permission data from the database for the specified user."><span class="description">exdoc
+Loads permission data from the database for the specified user.</span><pre>load()</pre></a></li>
+<li class="method public "><a href="#revokeAll" title="revokeAll :: exdoc
+Removes all permissions from a user, on a specific location."><span class="description">exdoc
+Removes all permissions from a user, on a specific location.</span><pre>revokeAll()</pre></a></li>
+<li class="method public "><a href="#revokeAllGroup" title="revokeAllGroup :: exdoc
+Removes all permissions from a group, on a specific location."><span class="description">exdoc
+Removes all permissions from a group, on a specific location.</span><pre>revokeAllGroup()</pre></a></li>
+<li class="method public "><a href="#revokeComplete" title="revokeComplete :: exdoc
+Removes all user and group permissions, on a specific location."><span class="description">exdoc
+Removes all user and group permissions, on a specific location.</span><pre>revokeComplete()</pre></a></li>
+<li class="method public "><a href="#triggerRefresh" title="triggerRefresh :: exdoc
+This call will force all active session to reload their
+permission data."><span class="description">exdoc
+This call will force all active session to reload their
+permission data.</span><pre>triggerRefresh()</pre></a></li>
+<li class="method public "><a href="#triggerSingleRefresh" title="triggerSingleRefresh :: exdoc
+This call will force all active sessions for the given user to
+reload their permission data."><span class="description">exdoc
+This call will force all active sessions for the given user to
+reload their permission data.</span><pre>triggerSingleRefresh()</pre></a></li>
+</ul>
+</div>
+<div class="span8">
+<a name="%5CexpPermissions" id="\expPermissions"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/expPermissions.html">expPermissions</a>
+</li>
+</ul>
+<div href="../classes/expPermissions.html" class="element class">
+<p class="short_description"></p>
+<div class="details">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>define</th>
+<td>"BASE" "../../.."</td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a name="check" id="check"></a><div class="element clickable method public check" data-toggle="collapse" data-target=".check .collapse">
+<h2>exdoc
+Looks to the permission data and checks to see
+if the current user has been granted the given permission(s)
+on the granted the given location.</h2>
+<pre>check(string $permission, object $location) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Returns true if the permission is granted, false if it is not.</p></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:expPermissions</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$permission</h4>
+<code>string</code><p>The name of the permission to check</p></div>
+<div class="subelement argument">
+<h4>$location</h4>
+<code>object</code><p>The location to check on. This will be passed to getLocationHierarchy (defined by the module) for a full hierarchy of permissions.</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="checkGroup" id="checkGroup"></a><div class="element clickable method public checkGroup" data-toggle="collapse" data-target=".checkGroup .collapse">
+<h2>exdoc
+Checks to see if the given group has been given a specific permission on a location.</h2>
+<pre>checkGroup(\group/object $group, string $permission, object $location, bool $explicitOnly) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Returns true if the permission is granted, false if it is not.</p></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:expPermissions</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$group</h4>
+<code>\group/object</code><p>The group to check</p></div>
+<div class="subelement argument">
+<h4>$permission</h4>
+<code>string</code><p>The name of the permission to check</p></div>
+<div class="subelement argument">
+<h4>$location</h4>
+<code>object</code><p>The location to check on.</p></div>
+<div class="subelement argument">
+<h4>$explicitOnly</h4>
+<code>bool</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="checkUser" id="checkUser"></a><div class="element clickable method public checkUser" data-toggle="collapse" data-target=".checkUser .collapse">
+<h2>exdoc
+Checks to see if the given user has been given a specific permission.</h2>
+<pre>checkUser(\user/object $user, string $permission, object $location, boolean $explicitOnly) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Handles explicit checks (actually assigned to the user)  implicit  and inherited checks
+(assigned to a group the user belongs to).  Returns true if the permission is granted, false if it is not.</p></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:expPermissions</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$user</h4>
+<code>\user/object</code><p>The user to check permission on</p></div>
+<div class="subelement argument">
+<h4>$permission</h4>
+<code>string</code><p>The name of the permission to check</p></div>
+<div class="subelement argument">
+<h4>$location</h4>
+<code>object</code><p>The location to check on.</p></div>
+<div class="subelement argument">
+<h4>$explicitOnly</h4>
+<code>boolean</code><p>Whether to check for explicit/implicit assignment or inherited.</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="grant" id="grant"></a><div class="element clickable method public grant" data-toggle="collapse" data-target=".grant .collapse">
+<h2>exdoc
+Grants the specified permission to the specified user, on the given location</h2>
+<pre>grant(\user/object $user, string $permission, object $location) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:expPermissions</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$user</h4>
+<code>\user/object</code><p>The user to grant the permission to</p></div>
+<div class="subelement argument">
+<h4>$permission</h4>
+<code>string</code><p>The name of the permission to grant</p></div>
+<div class="subelement argument">
+<h4>$location</h4>
+<code>object</code><p>The location to grant the permission on</p></div>
+</div></div>
+</div>
+<a name="grantGroup" id="grantGroup"></a><div class="element clickable method public grantGroup" data-toggle="collapse" data-target=".grantGroup .collapse">
+<h2>exdoc
+Grants the specified permission to the specified user group, on the given location</h2>
+<pre>grantGroup(\group/object $group, string $permission, object $location) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:expPermissions</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$group</h4>
+<code>\group/object</code><p>The group to grant the permission to</p></div>
+<div class="subelement argument">
+<h4>$permission</h4>
+<code>string</code><p>The name of the permission to grant</p></div>
+<div class="subelement argument">
+<h4>$location</h4>
+<code>object</code><p>The location to grant the permission on</p></div>
+</div></div>
+</div>
+<a name="load" id="load"></a><div class="element clickable method public load" data-toggle="collapse" data-target=".load .collapse">
+<h2>exdoc
+Loads permission data from the database for the specified user.</h2>
+<pre>load(\user/object $user) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:expPermissions</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$user</h4>
+<code>\user/object</code><p>the user to load permissions for.</p></div>
+</div></div>
+</div>
+<a name="revokeAll" id="revokeAll"></a><div class="element clickable method public revokeAll" data-toggle="collapse" data-target=".revokeAll .collapse">
+<h2>exdoc
+Removes all permissions from a user, on a specific location.</h2>
+<pre>revokeAll(\user/object $user, object $location) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:expPermissions</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$user</h4>
+<code>\user/object</code><p>The user to remove all permissions from</p></div>
+<div class="subelement argument">
+<h4>$location</h4>
+<code>object</code><p>The location to remove all permission on</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a name="revokeAllGroup" id="revokeAllGroup"></a><div class="element clickable method public revokeAllGroup" data-toggle="collapse" data-target=".revokeAllGroup .collapse">
+<h2>exdoc
+Removes all permissions from a group, on a specific location.</h2>
+<pre>revokeAllGroup(\group/object $group, object $location) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:expPermissions</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$group</h4>
+<code>\group/object</code><p>The group to remove all permissions from</p></div>
+<div class="subelement argument">
+<h4>$location</h4>
+<code>object</code><p>The location to remove all permission on</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a name="revokeComplete" id="revokeComplete"></a><div class="element clickable method public revokeComplete" data-toggle="collapse" data-target=".revokeComplete .collapse">
+<h2>exdoc
+Removes all user and group permissions, on a specific location.</h2>
+<pre>revokeComplete(object $location) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:expPermissions</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$location</h4>
+<code>object</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="triggerRefresh" id="triggerRefresh"></a><div class="element clickable method public triggerRefresh" data-toggle="collapse" data-target=".triggerRefresh .collapse">
+<h2>exdoc
+This call will force all active session to reload their
+permission data.</h2>
+<pre>triggerRefresh() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>This is useful if permissions are assigned
+or revoked, and is required to see these changes.</p></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:expPermissions</td>
+</tr></table>
+</div></div>
+</div>
+<a name="triggerSingleRefresh" id="triggerSingleRefresh"></a><div class="element clickable method public triggerSingleRefresh" data-toggle="collapse" data-target=".triggerSingleRefresh .collapse">
+<h2>exdoc
+This call will force all active sessions for the given user to
+reload their permission data.</h2>
+<pre>triggerSingleRefresh(\user/object $user) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>This is useful if permissions
+are assigned or revoked, and is required to see these changes.</p></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:expPermissions</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$user</h4>
+<code>\user/object</code>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
+            generated on 2012-09-13T10:24:11-04:00.<br></footer></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,454 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Exponent 2.0.9 API Documentation » \expPaginator</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.0.9 API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
+<li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
+<li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
+<li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
+<li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">3461</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul>
+<li>todo 
+                <span class="label label-info">42</span>
+</li>
+<li>fixme 
+                <span class="label label-info">174</span>
+</li>
+</ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods</li>
+<li class="method public "><a href="#__construct" title="__construct :: expPaginator Constructor"><span class="description">expPaginator Constructor</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#asc" title="asc :: "><span class="description">asc()
+        </span><pre>asc()</pre></a></li>
+<li class="method public "><a href="#desc" title="desc :: "><span class="description">desc()
+        </span><pre>desc()</pre></a></li>
+<li class="method public "><a href="#makeHeaderCols" title="makeHeaderCols :: "><span class="description">makeHeaderCols()
+        </span><pre>makeHeaderCols()</pre></a></li>
+<li class="method public "><a href="#makeSortDropdown" title="makeSortDropdown :: "><span class="description">makeSortDropdown()
+        </span><pre>makeSortDropdown()</pre></a></li>
+<li class="nav-header private">» Private</li>
+<li class="method private "><a href="#cleanParams" title="cleanParams :: "><span class="description">cleanParams()
+        </span><pre>cleanParams()</pre></a></li>
+<li class="method private "><a href="#runCallback" title="runCallback :: "><span class="description">runCallback()
+        </span><pre>runCallback()</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties</li>
+<li class="property public "><a href="#%24action" title="$action :: "><span class="description">$action</span><pre>$action</pre></a></li>
+<li class="property public "><a href="#%24categorize" title="$categorize :: "><span class="description">$categorize</span><pre>$categorize</pre></a></li>
+<li class="property public "><a href="#%24cats" title="$cats :: "><span class="description">$cats</span><pre>$cats</pre></a></li>
+<li class="property public "><a href="#%24controller" title="$controller :: "><span class="description">$controller</span><pre>$controller</pre></a></li>
+<li class="property public "><a href="#%24count_sql" title="$count_sql :: "><span class="description">$count_sql</span><pre>$count_sql</pre></a></li>
+<li class="property public "><a href="#%24default" title="$default :: "><span class="description">$default</span><pre>$default</pre></a></li>
+<li class="property public "><a href="#%24firstpage" title="$firstpage :: "><span class="description">$firstpage</span><pre>$firstpage</pre></a></li>
+<li class="property public "><a href="#%24header_columns" title="$header_columns :: "><span class="description">$header_columns</span><pre>$header_columns</pre></a></li>
+<li class="property public "><a href="#%24last" title="$last :: "><span class="description">$last</span><pre>$last</pre></a></li>
+<li class="property public "><a href="#%24lastpage" title="$lastpage :: "><span class="description">$lastpage</span><pre>$lastpage</pre></a></li>
+<li class="property public "><a href="#%24limit" title="$limit :: "><span class="description">$limit</span><pre>$limit</pre></a></li>
+<li class="property public "><a href="#%24model" title="$model :: "><span class="description">$model</span><pre>$model</pre></a></li>
+<li class="property public "><a href="#%24next_page" title="$next_page :: "><span class="description">$next_page</span><pre>$next_page</pre></a></li>
+<li class="property public "><a href="#%24next_shift" title="$next_shift :: "><span class="description">$next_shift</span><pre>$next_shift</pre></a></li>
+<li class="property public "><a href="#%24order" title="$order :: "><span class="description">$order</span><pre>$order</pre></a></li>
+<li class="property public "><a href="#%24order_direction" title="$order_direction :: "><span class="description">$order_direction</span><pre>$order_direction</pre></a></li>
+<li class="property public "><a href="#%24page" title="$page :: "><span class="description">$page</span><pre>$page</pre></a></li>
+<li class="property public "><a href="#%24page_offset" title="$page_offset :: "><span class="description">$page_offset</span><pre>$page_offset</pre></a></li>
+<li class="property public "><a href="#%24pagelink" title="$pagelink :: "><span class="description">$pagelink</span><pre>$pagelink</pre></a></li>
+<li class="property public "><a href="#%24pages" title="$pages :: "><span class="description">$pages</span><pre>$pages</pre></a></li>
+<li class="property public "><a href="#%24pages_to_show" title="$pages_to_show :: "><span class="description">$pages_to_show</span><pre>$pages_to_show</pre></a></li>
+<li class="property public "><a href="#%24previous_page" title="$previous_page :: "><span class="description">$previous_page</span><pre>$previous_page</pre></a></li>
+<li class="property public "><a href="#%24previous_shift" title="$previous_shift :: "><span class="description">$previous_shift</span><pre>$previous_shift</pre></a></li>
+<li class="property public "><a href="#%24records" title="$records :: "><span class="description">$records</span><pre>$records</pre></a></li>
+<li class="property public "><a href="#%24search_string" title="$search_string :: "><span class="description">$search_string</span><pre>$search_string</pre></a></li>
+<li class="property public "><a href="#%24sort_dropdown" title="$sort_dropdown :: "><span class="description">$sort_dropdown</span><pre>$sort_dropdown</pre></a></li>
+<li class="property public "><a href="#%24sql" title="$sql :: "><span class="description">$sql</span><pre>$sql</pre></a></li>
+<li class="property public "><a href="#%24start" title="$start :: "><span class="description">$start</span><pre>$start</pre></a></li>
+<li class="property public "><a href="#%24total_pages" title="$total_pages :: "><span class="description">$total_pages</span><pre>$total_pages</pre></a></li>
+<li class="property public "><a href="#%24total_records" title="$total_records :: "><span class="description">$total_records</span><pre>$total_records</pre></a></li>
+<li class="property public "><a href="#%24uncat" title="$uncat :: "><span class="description">$uncat</span><pre>$uncat</pre></a></li>
+<li class="property public "><a href="#%24view" title="$view :: "><span class="description">$view</span><pre>$view</pre></a></li>
+<li class="property public "><a href="#%24where" title="$where :: "><span class="description">$where</span><pre>$where</pre></a></li>
+</ul>
+</div>
+<div class="span8">
+<a name="%5CexpPaginator" id="\expPaginator"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/expPaginator.html">expPaginator</a>
+</li>
+</ul>
+<div href="../classes/expPaginator.html" class="element class">
+<p class="short_description">This is the class expPaginator
+Exponent Pagination Subsystem</p>
+<div class="details">
+<p class="long_description"><p>The expPaginator class is used to retrieve objects from the database
+and paginate them and optionally group the by category.
+It automagically handles the calls to other pages
+and has built-in sorting using the defined column headers.</p>
+
+<p>Usage Example:</p>
+
+<pre><code>
+$page = new expPaginator(array(
+     'model'=>'faq',
+     'where'=>1,
+     'limit'=>25,
+     'order'=>'rank',
+     'controller'=>$this->baseclassname,
+     'action'=>$this->params['action'],
+     'columns'=>array('In FAQ'=>'include_in_faq', 'Submitted'=>'created_at', 'Submitted By'=>'submitter_name'),
+ ));
+</code></pre></p>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.Subsystems.html">Subsystems</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>Subsystems</td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a name="__construct" id="__construct"></a><div class="element clickable method public __construct" data-toggle="collapse" data-target=".__construct .collapse">
+<h2>expPaginator Constructor</h2>
+<pre>__construct(array $params) : <a href="../classes/expPaginator.html">\expPaginator</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>This is the main entry point for using the expPaginator.  See example above.</p></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$params</h4>
+<code>array</code><p>Use this to set any of the class variables. Ones not passed will be set to a default.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/expPaginator.html">\expPaginator</a></code></div>
+</div></div>
+</div>
+<a name="asc" id="asc"></a><div class="element clickable method public asc" data-toggle="collapse" data-target=".asc .collapse">
+<h2>asc()
+        </h2>
+<pre>asc($a, $b) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$a</h4></div>
+<div class="subelement argument"><h4>$b</h4></div>
+</div></div>
+</div>
+<a name="desc" id="desc"></a><div class="element clickable method public desc" data-toggle="collapse" data-target=".desc .collapse">
+<h2>desc()
+        </h2>
+<pre>desc($a, $b) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$a</h4></div>
+<div class="subelement argument"><h4>$b</h4></div>
+</div></div>
+</div>
+<a name="makeHeaderCols" id="makeHeaderCols"></a><div class="element clickable method public makeHeaderCols" data-toggle="collapse" data-target=".makeHeaderCols .collapse">
+<h2>makeHeaderCols()
+        </h2>
+<pre>makeHeaderCols($params) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$params</h4></div>
+</div></div>
+</div>
+<a name="makeSortDropdown" id="makeSortDropdown"></a><div class="element clickable method public makeSortDropdown" data-toggle="collapse" data-target=".makeSortDropdown .collapse">
+<h2>makeSortDropdown()
+        </h2>
+<pre>makeSortDropdown($params) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$params</h4></div>
+</div></div>
+</div>
+<a name="cleanParams" id="cleanParams"></a><div class="element clickable method private cleanParams" data-toggle="collapse" data-target=".cleanParams .collapse">
+<h2>cleanParams()
+        </h2>
+<pre>cleanParams($params) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$params</h4></div>
+</div></div>
+</div>
+<a name="runCallback" id="runCallback"></a><div class="element clickable method private runCallback" data-toggle="collapse" data-target=".runCallback .collapse">
+<h2>runCallback()
+        </h2>
+<pre>runCallback() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a name="%24action" id="$action"> </a><div class="element clickable property public $action" data-toggle="collapse" data-target=".$action .collapse">
+<h2>$action</h2>
+<pre>$action </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24categorize" id="$categorize"> </a><div class="element clickable property public $categorize" data-toggle="collapse" data-target=".$categorize .collapse">
+<h2>$categorize</h2>
+<pre>$categorize </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24cats" id="$cats"> </a><div class="element clickable property public $cats" data-toggle="collapse" data-target=".$cats .collapse">
+<h2>$cats</h2>
+<pre>$cats </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24controller" id="$controller"> </a><div class="element clickable property public $controller" data-toggle="collapse" data-target=".$controller .collapse">
+<h2>$controller</h2>
+<pre>$controller </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24count_sql" id="$count_sql"> </a><div class="element clickable property public $count_sql" data-toggle="collapse" data-target=".$count_sql .collapse">
+<h2>$count_sql</h2>
+<pre>$count_sql </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24default" id="$default"> </a><div class="element clickable property public $default" data-toggle="collapse" data-target=".$default .collapse">
+<h2>$default</h2>
+<pre>$default </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24firstpage" id="$firstpage"> </a><div class="element clickable property public $firstpage" data-toggle="collapse" data-target=".$firstpage .collapse">
+<h2>$firstpage</h2>
+<pre>$firstpage </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24header_columns" id="$header_columns"> </a><div class="element clickable property public $header_columns" data-toggle="collapse" data-target=".$header_columns .collapse">
+<h2>$header_columns</h2>
+<pre>$header_columns </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24last" id="$last"> </a><div class="element clickable property public $last" data-toggle="collapse" data-target=".$last .collapse">
+<h2>$last</h2>
+<pre>$last </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24lastpage" id="$lastpage"> </a><div class="element clickable property public $lastpage" data-toggle="collapse" data-target=".$lastpage .collapse">
+<h2>$lastpage</h2>
+<pre>$lastpage </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24limit" id="$limit"> </a><div class="element clickable property public $limit" data-toggle="collapse" data-target=".$limit .collapse">
+<h2>$limit</h2>
+<pre>$limit </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24model" id="$model"> </a><div class="element clickable property public $model" data-toggle="collapse" data-target=".$model .collapse">
+<h2>$model</h2>
+<pre>$model </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24next_page" id="$next_page"> </a><div class="element clickable property public $next_page" data-toggle="collapse" data-target=".$next_page .collapse">
+<h2>$next_page</h2>
+<pre>$next_page </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24next_shift" id="$next_shift"> </a><div class="element clickable property public $next_shift" data-toggle="collapse" data-target=".$next_shift .collapse">
+<h2>$next_shift</h2>
+<pre>$next_shift </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24order" id="$order"> </a><div class="element clickable property public $order" data-toggle="collapse" data-target=".$order .collapse">
+<h2>$order</h2>
+<pre>$order </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24order_direction" id="$order_direction"> </a><div class="element clickable property public $order_direction" data-toggle="collapse" data-target=".$order_direction .collapse">
+<h2>$order_direction</h2>
+<pre>$order_direction </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24page" id="$page"> </a><div class="element clickable property public $page" data-toggle="collapse" data-target=".$page .collapse">
+<h2>$page</h2>
+<pre>$page </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24page_offset" id="$page_offset"> </a><div class="element clickable property public $page_offset" data-toggle="collapse" data-target=".$page_offset .collapse">
+<h2>$page_offset</h2>
+<pre>$page_offset </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24pagelink" id="$pagelink"> </a><div class="element clickable property public $pagelink" data-toggle="collapse" data-target=".$pagelink .collapse">
+<h2>$pagelink</h2>
+<pre>$pagelink </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24pages" id="$pages"> </a><div class="element clickable property public $pages" data-toggle="collapse" data-target=".$pages .collapse">
+<h2>$pages</h2>
+<pre>$pages </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24pages_to_show" id="$pages_to_show"> </a><div class="element clickable property public $pages_to_show" data-toggle="collapse" data-target=".$pages_to_show .collapse">
+<h2>$pages_to_show</h2>
+<pre>$pages_to_show </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24previous_page" id="$previous_page"> </a><div class="element clickable property public $previous_page" data-toggle="collapse" data-target=".$previous_page .collapse">
+<h2>$previous_page</h2>
+<pre>$previous_page </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24previous_shift" id="$previous_shift"> </a><div class="element clickable property public $previous_shift" data-toggle="collapse" data-target=".$previous_shift .collapse">
+<h2>$previous_shift</h2>
+<pre>$previous_shift </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24records" id="$records"> </a><div class="element clickable property public $records" data-toggle="collapse" data-target=".$records .collapse">
+<h2>$records</h2>
+<pre>$records </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24search_string" id="$search_string"> </a><div class="element clickable property public $search_string" data-toggle="collapse" data-target=".$search_string .collapse">
+<h2>$search_string</h2>
+<pre>$search_string </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24sort_dropdown" id="$sort_dropdown"> </a><div class="element clickable property public $sort_dropdown" data-toggle="collapse" data-target=".$sort_dropdown .collapse">
+<h2>$sort_dropdown</h2>
+<pre>$sort_dropdown </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24sql" id="$sql"> </a><div class="element clickable property public $sql" data-toggle="collapse" data-target=".$sql .collapse">
+<h2>$sql</h2>
+<pre>$sql </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24start" id="$start"> </a><div class="element clickable property public $start" data-toggle="collapse" data-target=".$start .collapse">
+<h2>$start</h2>
+<pre>$start </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24total_pages" id="$total_pages"> </a><div class="element clickable property public $total_pages" data-toggle="collapse" data-target=".$total_pages .collapse">
+<h2>$total_pages</h2>
+<pre>$total_pages </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24total_records" id="$total_records"> </a><div class="element clickable property public $total_records" data-toggle="collapse" data-target=".$total_records .collapse">
+<h2>$total_records</h2>
+<pre>$total_records </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24uncat" id="$uncat"> </a><div class="element clickable property public $uncat" data-toggle="collapse" data-target=".$uncat .collapse">
+<h2>$uncat</h2>
+<pre>$uncat </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24view" id="$view"> </a><div class="element clickable property public $view" data-toggle="collapse" data-target=".$view .collapse">
+<h2>$view</h2>
+<pre>$view </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24where" id="$where"> </a><div class="element clickable property public $where" data-toggle="collapse" data-target=".$where .collapse">
+<h2>$where</h2>
+<pre>$where </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
+            generated on 2012-09-13T10:24:11-04:00.<br></footer></div>
+</div>
+</body>
+</html>

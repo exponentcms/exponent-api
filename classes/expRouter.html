@@ -1,0 +1,437 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Exponent 2.0.9 API Documentation » \expRouter</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.0.9 API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
+<li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
+<li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
+<li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
+<li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">3461</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul>
+<li>todo 
+                <span class="label label-info">42</span>
+</li>
+<li>fixme 
+                <span class="label label-info">174</span>
+</li>
+</ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods</li>
+<li class="method public "><a href="#__construct" title="__construct :: "><span class="description">__construct()
+        </span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#buildCurrentUrl" title="buildCurrentUrl :: "><span class="description">buildCurrentUrl()
+        </span><pre>buildCurrentUrl()</pre></a></li>
+<li class="method public "><a href="#buildUrlByPageId" title="buildUrlByPageId :: "><span class="description">buildUrlByPageId()
+        </span><pre>buildUrlByPageId()</pre></a></li>
+<li class="method public "><a href="#cleanLink" title="cleanLink :: "><span class="description">cleanLink()
+        </span><pre>cleanLink()</pre></a></li>
+<li class="method public "><a href="#convertPartsToParams" title="convertPartsToParams :: "><span class="description">convertPartsToParams()
+        </span><pre>convertPartsToParams()</pre></a></li>
+<li class="method public "><a href="#convertToOldSchoolUrl" title="convertToOldSchoolUrl :: "><span class="description">convertToOldSchoolUrl()
+        </span><pre>convertToOldSchoolUrl()</pre></a></li>
+<li class="method public "><a href="#decode" title="decode :: "><span class="description">decode()
+        </span><pre>decode()</pre></a></li>
+<li class="method public "><a href="#encode" title="encode :: "><span class="description">encode()
+        </span><pre>encode()</pre></a></li>
+<li class="method public "><a href="#exportAsPDFLink" title="exportAsPDFLink :: "><span class="description">exportAsPDFLink()
+        </span><pre>exportAsPDFLink()</pre></a></li>
+<li class="method public "><a href="#getPageByName" title="getPageByName :: "><span class="description">getPageByName()
+        </span><pre>getPageByName()</pre></a></li>
+<li class="method public "><a href="#getRouterMaps" title="getRouterMaps :: "><span class="description">getRouterMaps()
+        </span><pre>getRouterMaps()</pre></a></li>
+<li class="method public "><a href="#getSection" title="getSection :: "><span class="description">getSection()
+        </span><pre>getSection()</pre></a></li>
+<li class="method public "><a href="#getSectionObj" title="getSectionObj :: "><span class="description">getSectionObj()
+        </span><pre>getSectionObj()</pre></a></li>
+<li class="method public "><a href="#getSefUrlByPageId" title="getSefUrlByPageId :: "><span class="description">getSefUrlByPageId()
+        </span><pre>getSefUrlByPageId()</pre></a></li>
+<li class="method public "><a href="#getTrackingId" title="getTrackingId :: "><span class="description">getTrackingId()
+        </span><pre>getTrackingId()</pre></a></li>
+<li class="method public "><a href="#isMappedURL" title="isMappedURL :: "><span class="description">isMappedURL()
+        </span><pre>isMappedURL()</pre></a></li>
+<li class="method public "><a href="#makeLink" title="makeLink :: "><span class="description">makeLink()
+        </span><pre>makeLink()</pre></a></li>
+<li class="method public "><a href="#printerFriendlyLink" title="printerFriendlyLink :: "><span class="description">printerFriendlyLink()
+        </span><pre>printerFriendlyLink()</pre></a></li>
+<li class="method public "><a href="#routeActionRequest" title="routeActionRequest :: "><span class="description">routeActionRequest()
+        </span><pre>routeActionRequest()</pre></a></li>
+<li class="method public "><a href="#routePageRequest" title="routePageRequest :: "><span class="description">routePageRequest()
+        </span><pre>routePageRequest()</pre></a></li>
+<li class="method public "><a href="#routeRequest" title="routeRequest :: "><span class="description">routeRequest()
+        </span><pre>routeRequest()</pre></a></li>
+<li class="method public "><a href="#splitURL" title="splitURL :: "><span class="description">splitURL()
+        </span><pre>splitURL()</pre></a></li>
+<li class="method public "><a href="#updateHistory" title="updateHistory :: "><span class="description">updateHistory()
+        </span><pre>updateHistory()</pre></a></li>
+<li class="nav-header private">» Private</li>
+<li class="method private "><a href="#buildSEFPath" title="buildSEFPath :: "><span class="description">buildSEFPath()
+        </span><pre>buildSEFPath()</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties</li>
+<li class="property public "><a href="#%24current_url" title="$current_url :: "><span class="description">$current_url</span><pre>$current_url</pre></a></li>
+<li class="property public "><a href="#%24params" title="$params :: "><span class="description">$params</span><pre>$params</pre></a></li>
+<li class="property public "><a href="#%24sefPath" title="$sefPath :: "><span class="description">$sefPath</span><pre>$sefPath</pre></a></li>
+<li class="property public "><a href="#%24url_parts" title="$url_parts :: "><span class="description">$url_parts</span><pre>$url_parts</pre></a></li>
+<li class="property public "><a href="#%24url_style" title="$url_style :: "><span class="description">$url_style</span><pre>$url_style</pre></a></li>
+<li class="property public "><a href="#%24url_type" title="$url_type :: "><span class="description">$url_type</span><pre>$url_type</pre></a></li>
+<li class="nav-header private">» Private</li>
+<li class="property private "><a href="#%24maps" title="$maps :: "><span class="description">$maps</span><pre>$maps</pre></a></li>
+</ul>
+</div>
+<div class="span8">
+<a name="%5CexpRouter" id="\expRouter"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/expRouter.html">expRouter</a>
+</li>
+</ul>
+<div href="../classes/expRouter.html" class="element class">
+<p class="short_description">This is the class expRouter</p>
+<div class="details">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.Subsystems.html">Subsystems</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>Subsystems</td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a name="__construct" id="__construct"></a><div class="element clickable method public __construct" data-toggle="collapse" data-target=".__construct .collapse">
+<h2>__construct()
+        </h2>
+<pre>__construct() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="buildCurrentUrl" id="buildCurrentUrl"></a><div class="element clickable method public buildCurrentUrl" data-toggle="collapse" data-target=".buildCurrentUrl .collapse">
+<h2>buildCurrentUrl()
+        </h2>
+<pre>buildCurrentUrl() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="buildUrlByPageId" id="buildUrlByPageId"></a><div class="element clickable method public buildUrlByPageId" data-toggle="collapse" data-target=".buildUrlByPageId .collapse">
+<h2>buildUrlByPageId()
+        </h2>
+<pre>buildUrlByPageId($id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$id</h4></div>
+</div></div>
+</div>
+<a name="cleanLink" id="cleanLink"></a><div class="element clickable method public cleanLink" data-toggle="collapse" data-target=".cleanLink .collapse">
+<h2>cleanLink()
+        </h2>
+<pre>cleanLink($fulllink) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$fulllink</h4></div>
+</div></div>
+</div>
+<a name="convertPartsToParams" id="convertPartsToParams"></a><div class="element clickable method public convertPartsToParams" data-toggle="collapse" data-target=".convertPartsToParams .collapse">
+<h2>convertPartsToParams()
+        </h2>
+<pre>convertPartsToParams() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="convertToOldSchoolUrl" id="convertToOldSchoolUrl"></a><div class="element clickable method public convertToOldSchoolUrl" data-toggle="collapse" data-target=".convertToOldSchoolUrl .collapse">
+<h2>convertToOldSchoolUrl()
+        </h2>
+<pre>convertToOldSchoolUrl() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="decode" id="decode"></a><div class="element clickable method public decode" data-toggle="collapse" data-target=".decode .collapse">
+<h2>decode()
+        </h2>
+<pre>decode($url) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$url</h4></div>
+</div></div>
+</div>
+<a name="encode" id="encode"></a><div class="element clickable method public encode" data-toggle="collapse" data-target=".encode .collapse">
+<h2>encode()
+        </h2>
+<pre>encode($url) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$url</h4></div>
+</div></div>
+</div>
+<a name="exportAsPDFLink" id="exportAsPDFLink"></a><div class="element clickable method public exportAsPDFLink" data-toggle="collapse" data-target=".exportAsPDFLink .collapse">
+<h2>exportAsPDFLink()
+        </h2>
+<pre>exportAsPDFLink($link_text, $class, $width, $height, $view, $orientation, $limit) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$link_text</h4></div>
+<div class="subelement argument"><h4>$class</h4></div>
+<div class="subelement argument"><h4>$width</h4></div>
+<div class="subelement argument"><h4>$height</h4></div>
+<div class="subelement argument"><h4>$view</h4></div>
+<div class="subelement argument"><h4>$orientation</h4></div>
+<div class="subelement argument"><h4>$limit</h4></div>
+</div></div>
+</div>
+<a name="getPageByName" id="getPageByName"></a><div class="element clickable method public getPageByName" data-toggle="collapse" data-target=".getPageByName .collapse">
+<h2>getPageByName()
+        </h2>
+<pre>getPageByName($url_name) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$url_name</h4></div>
+</div></div>
+</div>
+<a name="getRouterMaps" id="getRouterMaps"></a><div class="element clickable method public getRouterMaps" data-toggle="collapse" data-target=".getRouterMaps .collapse">
+<h2>getRouterMaps()
+        </h2>
+<pre>getRouterMaps() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="getSection" id="getSection"></a><div class="element clickable method public getSection" data-toggle="collapse" data-target=".getSection .collapse">
+<h2>getSection()
+        </h2>
+<pre>getSection() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="getSectionObj" id="getSectionObj"></a><div class="element clickable method public getSectionObj" data-toggle="collapse" data-target=".getSectionObj .collapse">
+<h2>getSectionObj()
+        </h2>
+<pre>getSectionObj($section) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$section</h4></div>
+</div></div>
+</div>
+<a name="getSefUrlByPageId" id="getSefUrlByPageId"></a><div class="element clickable method public getSefUrlByPageId" data-toggle="collapse" data-target=".getSefUrlByPageId .collapse">
+<h2>getSefUrlByPageId()
+        </h2>
+<pre>getSefUrlByPageId($id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$id</h4></div>
+</div></div>
+</div>
+<a name="getTrackingId" id="getTrackingId"></a><div class="element clickable method public getTrackingId" data-toggle="collapse" data-target=".getTrackingId .collapse">
+<h2>getTrackingId()
+        </h2>
+<pre>getTrackingId() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="isMappedURL" id="isMappedURL"></a><div class="element clickable method public isMappedURL" data-toggle="collapse" data-target=".isMappedURL .collapse">
+<h2>isMappedURL()
+        </h2>
+<pre>isMappedURL() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="makeLink" id="makeLink"></a><div class="element clickable method public makeLink" data-toggle="collapse" data-target=".makeLink .collapse">
+<h2>makeLink()
+        </h2>
+<pre>makeLink($params, $force_old_school, $secure, $no_map) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$params</h4></div>
+<div class="subelement argument"><h4>$force_old_school</h4></div>
+<div class="subelement argument"><h4>$secure</h4></div>
+<div class="subelement argument"><h4>$no_map</h4></div>
+</div></div>
+</div>
+<a name="printerFriendlyLink" id="printerFriendlyLink"></a><div class="element clickable method public printerFriendlyLink" data-toggle="collapse" data-target=".printerFriendlyLink .collapse">
+<h2>printerFriendlyLink()
+        </h2>
+<pre>printerFriendlyLink($link_text, $class, $width, $height, $view) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$link_text</h4></div>
+<div class="subelement argument"><h4>$class</h4></div>
+<div class="subelement argument"><h4>$width</h4></div>
+<div class="subelement argument"><h4>$height</h4></div>
+<div class="subelement argument"><h4>$view</h4></div>
+</div></div>
+</div>
+<a name="routeActionRequest" id="routeActionRequest"></a><div class="element clickable method public routeActionRequest" data-toggle="collapse" data-target=".routeActionRequest .collapse">
+<h2>routeActionRequest()
+        </h2>
+<pre>routeActionRequest() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="routePageRequest" id="routePageRequest"></a><div class="element clickable method public routePageRequest" data-toggle="collapse" data-target=".routePageRequest .collapse">
+<h2>routePageRequest()
+        </h2>
+<pre>routePageRequest() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="routeRequest" id="routeRequest"></a><div class="element clickable method public routeRequest" data-toggle="collapse" data-target=".routeRequest .collapse">
+<h2>routeRequest()
+        </h2>
+<pre>routeRequest() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="splitURL" id="splitURL"></a><div class="element clickable method public splitURL" data-toggle="collapse" data-target=".splitURL .collapse">
+<h2>splitURL()
+        </h2>
+<pre>splitURL() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="updateHistory" id="updateHistory"></a><div class="element clickable method public updateHistory" data-toggle="collapse" data-target=".updateHistory .collapse">
+<h2>updateHistory()
+        </h2>
+<pre>updateHistory($section) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$section</h4></div>
+</div></div>
+</div>
+<a name="buildSEFPath" id="buildSEFPath"></a><div class="element clickable method private buildSEFPath" data-toggle="collapse" data-target=".buildSEFPath .collapse">
+<h2>buildSEFPath()
+        </h2>
+<pre>buildSEFPath() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a name="%24current_url" id="$current_url"> </a><div class="element clickable property public $current_url" data-toggle="collapse" data-target=".$current_url .collapse">
+<h2>$current_url</h2>
+<pre>$current_url </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24params" id="$params"> </a><div class="element clickable property public $params" data-toggle="collapse" data-target=".$params .collapse">
+<h2>$params</h2>
+<pre>$params </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24sefPath" id="$sefPath"> </a><div class="element clickable property public $sefPath" data-toggle="collapse" data-target=".$sefPath .collapse">
+<h2>$sefPath</h2>
+<pre>$sefPath </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24url_parts" id="$url_parts"> </a><div class="element clickable property public $url_parts" data-toggle="collapse" data-target=".$url_parts .collapse">
+<h2>$url_parts</h2>
+<pre>$url_parts </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24url_style" id="$url_style"> </a><div class="element clickable property public $url_style" data-toggle="collapse" data-target=".$url_style .collapse">
+<h2>$url_style</h2>
+<pre>$url_style </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24url_type" id="$url_type"> </a><div class="element clickable property public $url_type" data-toggle="collapse" data-target=".$url_type .collapse">
+<h2>$url_type</h2>
+<pre>$url_type </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24maps" id="$maps"> </a><div class="element clickable property private $maps" data-toggle="collapse" data-target=".$maps .collapse">
+<h2>$maps</h2>
+<pre>$maps </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
+            generated on 2012-09-13T10:24:11-04:00.<br></footer></div>
+</div>
+</body>
+</html>

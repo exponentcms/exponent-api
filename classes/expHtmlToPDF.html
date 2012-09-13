@@ -1,0 +1,457 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Exponent 2.0.9 API Documentation » \expHtmlToPDF</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.0.9 API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
+<li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
+<li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
+<li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
+<li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">3461</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul>
+<li>todo 
+                <span class="label label-info">42</span>
+</li>
+<li>fixme 
+                <span class="label label-info">174</span>
+</li>
+</ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods</li>
+<li class="method public "><a href="#__construct" title="__construct :: Constructor: initialize command line and reserve temporary file."><span class="description">Constructor: initialize command line and reserve temporary file.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#get_help" title="get_help :: Attempts to return the library's full help."><span class="description">Attempts to return the library's full help.</span><pre>get_help()</pre></a></li>
+<li class="method public "><a href="#get_status" title="get_status :: Returns WKPDF print status."><span class="description">Returns WKPDF print status.</span><pre>get_status()</pre></a></li>
+<li class="method public "><a href="#output" title="output :: Return PDF with various options."><span class="description">Return PDF with various options.</span><pre>output()</pre></a></li>
+<li class="method public "><a href="#render" title="render :: Convert HTML to PDF."><span class="description">Convert HTML to PDF.</span><pre>render()</pre></a></li>
+<li class="method public "><a href="#set_copies" title="set_copies :: Set the number of copies to be printed."><span class="description">Set the number of copies to be printed.</span><pre>set_copies()</pre></a></li>
+<li class="method public "><a href="#set_html" title="set_html :: Set html content."><span class="description">Set html content.</span><pre>set_html()</pre></a></li>
+<li class="method public "><a href="#set_orientation" title="set_orientation :: Set orientation, use constants from this class."><span class="description">Set orientation, use constants from this class.</span><pre>set_orientation()</pre></a></li>
+<li class="method public "><a href="#set_page_size" title="set_page_size :: Set page/paper size."><span class="description">Set page/paper size.</span><pre>set_page_size()</pre></a></li>
+<li class="method public "><a href="#set_toc" title="set_toc :: Whether to automatically generate a TOC (table of contents) or not."><span class="description">Whether to automatically generate a TOC (table of contents) or not.</span><pre>set_toc()</pre></a></li>
+<li class="nav-header private">» Private</li>
+<li class="method private "><a href="#_getCPU" title="_getCPU :: Function that attempts to return the kind of CPU."><span class="description">Function that attempts to return the kind of CPU.</span><pre>_getCPU()</pre></a></li>
+<li class="method private "><a href="#_pipeExec" title="_pipeExec :: Advanced execution routine."><span class="description">Advanced execution routine.</span><pre>_pipeExec()</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties</li>
+<li class="property public "><a href="#%24PDF_ASSTRING" title="$PDF_ASSTRING :: Returns the PDF file as a string when finish() is called."><span class="description">Returns the PDF file as a string when finish() is called.</span><pre>$PDF_ASSTRING</pre></a></li>
+<li class="property public "><a href="#%24PDF_DOWNLOAD" title="$PDF_DOWNLOAD :: Force the client to download PDF file when finish() is called."><span class="description">Force the client to download PDF file when finish() is called.</span><pre>$PDF_DOWNLOAD</pre></a></li>
+<li class="property public "><a href="#%24PDF_EMBEDDED" title="$PDF_EMBEDDED :: When possible, force the client to embed PDF file when finish() is called."><span class="description">When possible, force the client to embed PDF file when finish() is called.</span><pre>$PDF_EMBEDDED</pre></a></li>
+<li class="property public "><a href="#%24PDF_LANDSCAPE" title="$PDF_LANDSCAPE :: PDF generated as landscape (horizontal)."><span class="description">PDF generated as landscape (horizontal).</span><pre>$PDF_LANDSCAPE</pre></a></li>
+<li class="property public "><a href="#%24PDF_PORTRAIT" title="$PDF_PORTRAIT :: PDF generated as landscape (vertical)."><span class="description">PDF generated as landscape (vertical).</span><pre>$PDF_PORTRAIT</pre></a></li>
+<li class="property public "><a href="#%24PDF_SAVEFILE" title="$PDF_SAVEFILE :: PDF file is saved into the server space when finish() is called."><span class="description">PDF file is saved into the server space when finish() is called.</span><pre>$PDF_SAVEFILE</pre></a></li>
+<li class="nav-header private">» Private</li>
+<li class="property private "><a href="#%24cmd" title="$cmd :: "><span class="description">$cmd</span><pre>$cmd</pre></a></li>
+<li class="property private "><a href="#%24copies" title="$copies :: "><span class="description">$copies</span><pre>$copies</pre></a></li>
+<li class="property private "><a href="#%24cpu" title="$cpu :: "><span class="description">$cpu</span><pre>$cpu</pre></a></li>
+<li class="property private "><a href="#%24grayscale" title="$grayscale :: "><span class="description">$grayscale</span><pre>$grayscale</pre></a></li>
+<li class="property private "><a href="#%24html" title="$html :: Private use variables."><span class="description">Private use variables.</span><pre>$html</pre></a></li>
+<li class="property private "><a href="#%24orient" title="$orient :: "><span class="description">$orient</span><pre>$orient</pre></a></li>
+<li class="property private "><a href="#%24pdf" title="$pdf :: "><span class="description">$pdf</span><pre>$pdf</pre></a></li>
+<li class="property private "><a href="#%24size" title="$size :: "><span class="description">$size</span><pre>$size</pre></a></li>
+<li class="property private "><a href="#%24status" title="$status :: "><span class="description">$status</span><pre>$status</pre></a></li>
+<li class="property private "><a href="#%24title" title="$title :: "><span class="description">$title</span><pre>$title</pre></a></li>
+<li class="property private "><a href="#%24tmp" title="$tmp :: "><span class="description">$tmp</span><pre>$tmp</pre></a></li>
+<li class="property private "><a href="#%24toc" title="$toc :: "><span class="description">$toc</span><pre>$toc</pre></a></li>
+</ul>
+</div>
+<div class="span8">
+<a name="%5CexpHtmlToPDF" id="\expHtmlToPDF"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/expHtmlToPDF.html">expHtmlToPDF</a>
+</li>
+</ul>
+<div href="../classes/expHtmlToPDF.html" class="element class">
+<p class="short_description"></p>
+<div class="details">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>author</th>
+<td><a href="">Christian Sciberras</a></td>
+</tr>
+<tr>
+<th>see</th>
+<td>\global\<a</td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>2010 Christian Sciberras / Covac Software.</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="">None. There are no restrictions on use, however keep copyright intact.
+Modification is allowed, keep track of modifications below in this comment block.</a></td>
+</tr>
+<tr>
+<th>example</th>
+<td><font color="#008800"><i>//-- Create sample PDF and embed in browser. --//</i></font><br>
+<br>
+<font color="#008800"><i>// Include WKPDF class.</i></font><br>
+<font color="#0000FF">require_once</font>(<font color="#FF0000">'wkhtmltopdf/wkhtmltopdf.php'</font>);<br>
+<font color="#008800"><i>// Create PDF object.</i></font><br>
+<font color="#EE00EE">$pdf</font>=new <b>WKPDF</b>();<br>
+<font color="#008800"><i>// Set PDF's HTML</i></font><br>
+<font color="#EE00EE">$pdf</font>-><font color="#0000FF">set_html</font>(<font color="#FF0000">'Hello &lt;b&gt;Mars&lt;/b&gt;!'</font>);<br>
+<font color="#008800"><i>// Convert HTML to PDF</i></font><br>
+<font color="#EE00EE">$pdf</font>-><font color="#0000FF">render</font>();<br>
+<font color="#008800"><i>// Output PDF. The file name is suggested to the browser.</i></font><br>
+<font color="#EE00EE">$pdf</font>-><font color="#0000FF">output</font>(<b>WKPDF</b>::<font color="#EE00EE">$PDF_EMBEDDED</font>,<font color="#FF0000">'sample.pdf'</font>);<br></td>
+</tr>
+<tr>
+<th>version</th>
+<td>0.0 Chris - Created class.<br>
+0.1 Chris - Variable paths fixes.<br>
+0.2 Chris - Better error handlng (via exceptions).<br>
+<font color="#FF0000"><b>IMPORTANT: Make sure that there is a folder in %LIBRARY_PATH%/tmp that is writable!</b></font>
+<br><br>
+<b>Features/Bugs/Contact</b><br>
+Found a bug? Want a modification? Contact me at <a href="mailto:uuf6429@gmail.com">uuf6429@gmail.com</a> or <a href="mailto:contact@covac-software.com">contact@covac-software.com</a>...
+guaranteed to get a reply within 2 hours at most (daytime GMT+1).</td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a name="__construct" id="__construct"></a><div class="element clickable method public __construct" data-toggle="collapse" data-target=".__construct .collapse">
+<h2>Constructor: initialize command line and reserve temporary file.</h2>
+<pre>__construct() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="http://php.net/manual/en/class.exception.php">\Exception</a></code></th>
+<td></td>
+</tr></table>
+</div></div>
+</div>
+<a name="get_help" id="get_help"></a><div class="element clickable method public get_help" data-toggle="collapse" data-target=".get_help .collapse">
+<h2>Attempts to return the library's full help.</h2>
+<pre>get_help() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>WKHTMLTOPDF HTML help.</div>
+</div></div>
+</div>
+<a name="get_status" id="get_status"></a><div class="element clickable method public get_status" data-toggle="collapse" data-target=".get_status .collapse">
+<h2>Returns WKPDF print status.</h2>
+<pre>get_status() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>WPDF print status.</div>
+</div></div>
+</div>
+<a name="output" id="output"></a><div class="element clickable method public output" data-toggle="collapse" data-target=".output .collapse">
+<h2>Return PDF with various options.</h2>
+<pre>output(string $mode, string $file) : string | boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mode</h4>
+<code>string</code><p>How two output (constants from this same class).</p>
+</div>
+<div class="subelement argument">
+<h4>$file</h4>
+<code>string</code><p>The PDF's filename (the usage depends on $mode.</p>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="http://php.net/manual/en/class.exception.php">\Exception</a></code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code><code>boolean</code>Depending on $mode, this may be success (boolean) or PDF (string).</div>
+</div></div>
+</div>
+<a name="render" id="render"></a><div class="element clickable method public render" data-toggle="collapse" data-target=".render .collapse">
+<h2>Convert HTML to PDF.</h2>
+<pre>render() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="http://php.net/manual/en/class.exception.php">\Exception</a></code></th>
+<td></td>
+</tr></table>
+</div></div>
+</div>
+<a name="set_copies" id="set_copies"></a><div class="element clickable method public set_copies" data-toggle="collapse" data-target=".set_copies .collapse">
+<h2>Set the number of copies to be printed.</h2>
+<pre>set_copies(integer $count) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>By default it is one.</p></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$count</h4>
+<code>integer</code><p>Number of page copies.</p></div>
+</div></div>
+</div>
+<a name="set_html" id="set_html"></a><div class="element clickable method public set_html" data-toggle="collapse" data-target=".set_html .collapse">
+<h2>Set html content.</h2>
+<pre>set_html(string $html) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$html</h4>
+<code>string</code><p>New html content. It <em>replaces</em> any previous content.</p>
+</div>
+</div></div>
+</div>
+<a name="set_orientation" id="set_orientation"></a><div class="element clickable method public set_orientation" data-toggle="collapse" data-target=".set_orientation .collapse">
+<h2>Set orientation, use constants from this class.</h2>
+<pre>set_orientation(string $mode) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>By default orientation is portrait.</p></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mode</h4>
+<code>string</code><p>Use constants from this class.</p></div>
+</div></div>
+</div>
+<a name="set_page_size" id="set_page_size"></a><div class="element clickable method public set_page_size" data-toggle="collapse" data-target=".set_page_size .collapse">
+<h2>Set page/paper size.</h2>
+<pre>set_page_size(string $size) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>By default page size is A4.</p></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$size</h4>
+<code>string</code><p>Formal paper size (eg; A4, letter...)</p>
+</div>
+</div></div>
+</div>
+<a name="set_toc" id="set_toc"></a><div class="element clickable method public set_toc" data-toggle="collapse" data-target=".set_toc .collapse">
+<h2>Whether to automatically generate a TOC (table of contents) or not.</h2>
+<pre>set_toc(boolean $enabled) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>By default TOC is disabled.</p></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$enabled</h4>
+<code>boolean</code><p>True use TOC, false disable TOC.</p></div>
+</div></div>
+</div>
+<a name="_getCPU" id="_getCPU"></a><div class="element clickable method private _getCPU" data-toggle="collapse" data-target="._getCPU .collapse">
+<h2>Function that attempts to return the kind of CPU.</h2>
+<pre>_getCPU() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="http://php.net/manual/en/class.exception.php">\Exception</a></code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>CPU kind ('amd64' or 'i386').</div>
+</div></div>
+</div>
+<a name="_pipeExec" id="_pipeExec"></a><div class="element clickable method private _pipeExec" data-toggle="collapse" data-target="._pipeExec .collapse">
+<h2>Advanced execution routine.</h2>
+<pre>_pipeExec(string $cmd, string $input) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$cmd</h4>
+<code>string</code><p>The command to execute.</p></div>
+<div class="subelement argument">
+<h4>$input</h4>
+<code>string</code><p>Any input not in arguments.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>An array of execution data; stdout, stderr and return "error" code.</div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a name="%24PDF_ASSTRING" id="$PDF_ASSTRING"> </a><div class="element clickable property public $PDF_ASSTRING" data-toggle="collapse" data-target=".$PDF_ASSTRING .collapse">
+<h2>Returns the PDF file as a string when finish() is called.</h2>
+<pre>$PDF_ASSTRING </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24PDF_DOWNLOAD" id="$PDF_DOWNLOAD"> </a><div class="element clickable property public $PDF_DOWNLOAD" data-toggle="collapse" data-target=".$PDF_DOWNLOAD .collapse">
+<h2>Force the client to download PDF file when finish() is called.</h2>
+<pre>$PDF_DOWNLOAD </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24PDF_EMBEDDED" id="$PDF_EMBEDDED"> </a><div class="element clickable property public $PDF_EMBEDDED" data-toggle="collapse" data-target=".$PDF_EMBEDDED .collapse">
+<h2>When possible, force the client to embed PDF file when finish() is called.</h2>
+<pre>$PDF_EMBEDDED </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24PDF_LANDSCAPE" id="$PDF_LANDSCAPE"> </a><div class="element clickable property public $PDF_LANDSCAPE" data-toggle="collapse" data-target=".$PDF_LANDSCAPE .collapse">
+<h2>PDF generated as landscape (horizontal).</h2>
+<pre>$PDF_LANDSCAPE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24PDF_PORTRAIT" id="$PDF_PORTRAIT"> </a><div class="element clickable property public $PDF_PORTRAIT" data-toggle="collapse" data-target=".$PDF_PORTRAIT .collapse">
+<h2>PDF generated as landscape (vertical).</h2>
+<pre>$PDF_PORTRAIT </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24PDF_SAVEFILE" id="$PDF_SAVEFILE"> </a><div class="element clickable property public $PDF_SAVEFILE" data-toggle="collapse" data-target=".$PDF_SAVEFILE .collapse">
+<h2>PDF file is saved into the server space when finish() is called.</h2>
+<pre>$PDF_SAVEFILE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"><p>The path is returned.</p></p></div></div>
+</div>
+<a name="%24cmd" id="$cmd"> </a><div class="element clickable property private $cmd" data-toggle="collapse" data-target=".$cmd .collapse">
+<h2>$cmd</h2>
+<pre>$cmd </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24copies" id="$copies"> </a><div class="element clickable property private $copies" data-toggle="collapse" data-target=".$copies .collapse">
+<h2>$copies</h2>
+<pre>$copies </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24cpu" id="$cpu"> </a><div class="element clickable property private $cpu" data-toggle="collapse" data-target=".$cpu .collapse">
+<h2>$cpu</h2>
+<pre>$cpu </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24grayscale" id="$grayscale"> </a><div class="element clickable property private $grayscale" data-toggle="collapse" data-target=".$grayscale .collapse">
+<h2>$grayscale</h2>
+<pre>$grayscale </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24html" id="$html"> </a><div class="element clickable property private $html" data-toggle="collapse" data-target=".$html .collapse">
+<h2>Private use variables.</h2>
+<pre>$html </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24orient" id="$orient"> </a><div class="element clickable property private $orient" data-toggle="collapse" data-target=".$orient .collapse">
+<h2>$orient</h2>
+<pre>$orient </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24pdf" id="$pdf"> </a><div class="element clickable property private $pdf" data-toggle="collapse" data-target=".$pdf .collapse">
+<h2>$pdf</h2>
+<pre>$pdf </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24size" id="$size"> </a><div class="element clickable property private $size" data-toggle="collapse" data-target=".$size .collapse">
+<h2>$size</h2>
+<pre>$size </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24status" id="$status"> </a><div class="element clickable property private $status" data-toggle="collapse" data-target=".$status .collapse">
+<h2>$status</h2>
+<pre>$status </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24title" id="$title"> </a><div class="element clickable property private $title" data-toggle="collapse" data-target=".$title .collapse">
+<h2>$title</h2>
+<pre>$title </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24tmp" id="$tmp"> </a><div class="element clickable property private $tmp" data-toggle="collapse" data-target=".$tmp .collapse">
+<h2>$tmp</h2>
+<pre>$tmp </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24toc" id="$toc"> </a><div class="element clickable property private $toc" data-toggle="collapse" data-target=".$toc .collapse">
+<h2>$toc</h2>
+<pre>$toc </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
+            generated on 2012-09-13T10:24:11-04:00.<br></footer></div>
+</div>
+</body>
+</html>
