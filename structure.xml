@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project version="2.0.0a10" title="Exponent 2.0.9 API Documentation">
+<project version="2.0.0a10" title="Exponent 2.0.9">
   <file path="conf\data\extra_phrases.php" hash="81373baae46ffe8c97321aa13291b559" package="Default">
     <docblock line="18">
       <description><![CDATA[This is a dummy file of phrases to be added by the automated phrase extractor
@@ -1018,7 +1018,7 @@ by running the other two language scripts lang_extract.php & lang_translate.php]
       <error line="42" code="50011">No short description for function \__realpath()</error>
     </parse_markers>
   </file>
-  <file path="exponent_constants.php" hash="0fa6d8b41d240eee69dda412c13229ef" package="Default">
+  <file path="exponent_constants.php" hash="09cf76dc60195c07b1ff1836e599a991" package="Default">
     <constant namespace="global" line="26" package="Default">
       <name>BASE</name>
       <full_name>\BASE</full_name>
@@ -1572,7 +1572,7 @@ The absolute path to Exponent's core javascript.]]></description>
     <constant namespace="global" line="498" package="Default">
       <name>FLOWPLAYER_VERSION</name>
       <full_name>\FLOWPLAYER_VERSION</full_name>
-      <value><![CDATA['3.2.14']]></value>
+      <value><![CDATA['3.2.15']]></value>
     </constant>
     <constant namespace="global" line="499" package="Default">
       <name>FLOWPLAYER_PATH</name>
@@ -1587,7 +1587,7 @@ The absolute path to Exponent's core javascript.]]></description>
     <constant namespace="global" line="501" package="Default">
       <name>FLOWPLAYER_CONTROLS_VERSION</name>
       <full_name>\FLOWPLAYER_CONTROLS_VERSION</full_name>
-      <value><![CDATA['3.2.13']]></value>
+      <value><![CDATA['3.2.14']]></value>
     </constant>
     <constant namespace="global" line="504" package="Default">
       <name>BING_API</name>
@@ -30949,7 +30949,7 @@ Note that this is Paypal speciific as we need to do some funky things to match r
       <error line="208" code="50010">No DocBlock was found for method fix_categories()</error>
     </parse_markers>
   </file>
-  <file path="framework\modules\ecommerce\controllers\storeController.php" hash="5f4563e258649d43bf93ef28b19b0cf6" package="Modules\Controllers">
+  <file path="framework\modules\ecommerce\controllers\storeController.php" hash="8182de43b2228bde419b518bb3c9cf29" package="Modules\Controllers">
     <docblock line="19">
       <description><![CDATA[]]></description>
       <long-description><![CDATA[]]></long-description>
@@ -36180,19 +36180,19 @@ Note that this is Paypal speciific as we need to do some funky things to match r
       <error line="237" code="50010">No DocBlock was found for method sortByVolume()</error>
     </parse_markers>
   </file>
-  <file path="framework\modules\events\controllers\eventController.php" hash="25ed944a44fa87c3bd66db4eddd7daac" package="Default">
-    <include line="1326" type="Require Once" package="Default">
+  <file path="framework\modules\events\controllers\eventController.php" hash="75570076d1b9f5162b776a70c60af5ae" package="Default">
+    <include line="1345" type="Require Once" package="Default">
       <name/>
     </include>
-    <function namespace="global" line="615" package="Default">
+    <function namespace="global" line="634" package="Default">
       <name>quoted_printable_encode</name>
       <full_name>\quoted_printable_encode</full_name>
-      <argument line="615">
+      <argument line="634">
         <name>$input</name>
         <default><![CDATA[]]></default>
         <type/>
       </argument>
-      <argument line="615">
+      <argument line="634">
         <name>$line_max</name>
         <default><![CDATA[75]]></default>
         <type/>
@@ -36288,43 +36288,43 @@ Note that this is Paypal speciific as we need to do some funky things to match r
         <name>ical</name>
         <full_name>ical</full_name>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="821" package="Modules\Controllers">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="840" package="Modules\Controllers">
         <name>send_reminders</name>
         <full_name>send_reminders</full_name>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="1231" package="Modules\Controllers">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="1250" package="Modules\Controllers">
         <name>getEventsForDates</name>
         <full_name>getEventsForDates</full_name>
-        <argument line="1231">
+        <argument line="1250">
           <name>$edates</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="1231">
+        <argument line="1250">
           <name>$sort_asc</name>
           <default><![CDATA[true]]></default>
           <type/>
         </argument>
-        <argument line="1231">
+        <argument line="1250">
           <name>$featuredonly</name>
           <default><![CDATA[false]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="1249" package="Modules\Controllers">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="1268" package="Modules\Controllers">
         <name>getExternalEvents</name>
         <full_name>getExternalEvents</full_name>
-        <argument line="1249">
+        <argument line="1268">
           <name>$loc</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="1249">
+        <argument line="1268">
           <name>$startdate</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="1249">
+        <argument line="1268">
           <name>$enddate</name>
           <default><![CDATA[]]></default>
           <type/>
@@ -36338,16 +36338,16 @@ Note that this is Paypal speciific as we need to do some funky things to match r
       <fixme line="269">add external events to $monthly[$week][$i] for date $start, one day at a time</fixme>
       <fixme line="403">add external events to $items for date &gt;= ".expDateTime::startOfMonthTimestamp(time()) . " AND date &lt;= " . expDateTime::endOfMonthTimestamp(time())</fixme>
       <fixme line="547">we need to complete this</fixme>
-      <fixme line="821">we need to complete this</fixme>
-      <fixme line="1278">must convert $dtstart timezone</fixme>
-      <fixme line="1288">must convert $dtend timezone</fixme>
-      <fixme line="1302">must convert $dtstart &amp; $dtend timezone</fixme>
-      <fixme line="1358">must convert $dtstart timezone</fixme>
-      <fixme line="1370">must convert $dtend timezone</fixme>
+      <fixme line="840">we need to complete this</fixme>
+      <fixme line="1297">must convert $dtstart timezone</fixme>
+      <fixme line="1307">must convert $dtend timezone</fixme>
+      <fixme line="1321">must convert $dtstart &amp; $dtend timezone</fixme>
+      <fixme line="1377">must convert $dtstart timezone</fixme>
+      <fixme line="1389">must convert $dtend timezone</fixme>
     </markers>
     <parse_markers>
       <error line="0" code="50007">No page-level DocBlock was found in file framework\modules\events\controllers\eventController.php</error>
-      <error line="615" code="50009">No DocBlock was found for function \quoted_printable_encode()</error>
+      <error line="634" code="50009">No DocBlock was found for function \quoted_printable_encode()</error>
       <critical line="19" code="50005">No short description for class \eventController</critical>
       <error line="26" code="50018">No DocBlock was found for property $useractions</error>
       <error line="29" code="50018">No DocBlock was found for property $codequality</error>
@@ -36363,9 +36363,9 @@ Note that this is Paypal speciific as we need to do some funky things to match r
       <error line="506" code="50010">No DocBlock was found for method delete_all_past()</error>
       <error line="516" code="50010">No DocBlock was found for method send_feedback()</error>
       <error line="547" code="50010">No DocBlock was found for method ical()</error>
-      <error line="821" code="50010">No DocBlock was found for method send_reminders()</error>
-      <error line="1231" code="50010">No DocBlock was found for method getEventsForDates()</error>
-      <error line="1249" code="50010">No DocBlock was found for method getExternalEvents()</error>
+      <error line="840" code="50010">No DocBlock was found for method send_reminders()</error>
+      <error line="1250" code="50010">No DocBlock was found for method getEventsForDates()</error>
+      <error line="1268" code="50010">No DocBlock was found for method getExternalEvents()</error>
     </parse_markers>
   </file>
   <file path="framework\modules\events\definitions\calendar_external.php" hash="48715e0df73a598c8c4922a05a0b8ecc" package="Core\Definitions">
@@ -53823,7 +53823,7 @@ Purpose:   This function creates html loaders for - currently - JS and CSS Files
       <error line="29" code="50018">No DocBlock was found for property $to_version</error>
     </parse_markers>
   </file>
-  <file path="install\upgrades\remove_headlinecontroller.php" hash="25f57b4d31eccbe7c0e723a5da5325d0" package="Installation\Upgrade">
+  <file path="install\upgrades\remove_headlinecontroller.php" hash="fe3823ec06173d14c048b322cbe31ea3" package="Installation\Upgrade">
     <docblock line="19">
       <description><![CDATA[]]></description>
       <long-description><![CDATA[]]></long-description>
@@ -53913,7 +53913,7 @@ Purpose:   This function creates html loaders for - currently - JS and CSS Files
       <error line="21" code="50010">No DocBlock was found for method name()</error>
     </parse_markers>
   </file>
-  <file path="install\upgrades\remove_oldfiles.php" hash="a66eb99a121ce20744534ec55297b14a" package="Installation\Upgrade">
+  <file path="install\upgrades\remove_oldfiles.php" hash="98022b48ffc87a4a33f882b317b3a285" package="Installation\Upgrade">
     <docblock line="19">
       <description><![CDATA[]]></description>
       <long-description><![CDATA[]]></long-description>
@@ -54209,7 +54209,7 @@ Purpose:   This function creates html loaders for - currently - JS and CSS Files
       <error line="29" code="50018">No DocBlock was found for property $to_version</error>
     </parse_markers>
   </file>
-  <file path="install\upgrades\update_rssfeeds.php" hash="0868e0cafce113edbf4a119e63172b9b" package="Installation\Upgrade">
+  <file path="install\upgrades\update_rssfeeds.php" hash="dbdbddb2d828670330887afd25aa0525" package="Installation\Upgrade">
     <docblock line="19">
       <description><![CDATA[]]></description>
       <long-description><![CDATA[]]></long-description>
@@ -54277,9 +54277,6 @@ Purpose:   This function creates html loaders for - currently - JS and CSS Files
         </docblock>
       </method>
     </class>
-    <markers>
-      <fixme line="92">what about duplicate rss feeds, double when added to above?</fixme>
-    </markers>
     <parse_markers>
       <critical line="19" code="50008">No short description for file install\upgrades\update_rssfeeds.php</critical>
       <error line="28" code="50018">No DocBlock was found for property $from_version</error>
@@ -54317,7 +54314,7 @@ Purpose:   This function creates html loaders for - currently - JS and CSS Files
       <error line="24" code="50010">No DocBlock was found for method upgrade()</error>
     </parse_markers>
   </file>
-  <file path="install\upgrades\upgrade_navigation.php" hash="5ad8af006f956afc23175d44fe594e8b" package="Installation\Upgrade">
+  <file path="install\upgrades\upgrade_navigation.php" hash="6b7408224872ce7b715d98300a6fe739" package="Installation\Upgrade">
     <docblock line="19">
       <description><![CDATA[]]></description>
       <long-description><![CDATA[]]></long-description>
@@ -54396,7 +54393,7 @@ Purpose:   This function creates html loaders for - currently - JS and CSS Files
       <error line="30" code="50018">No DocBlock was found for property $optional</error>
     </parse_markers>
   </file>
-  <file path="install\upgrades\upgrade_simplepoll.php" hash="23229d546eaf919f79a5e28637c9ea87" package="Installation\Upgrade">
+  <file path="install\upgrades\upgrade_simplepoll.php" hash="1ac5a3e6cfbaf528c7eecc7a95606890" package="Installation\Upgrade">
     <docblock line="19">
       <description><![CDATA[]]></description>
       <long-description><![CDATA[]]></long-description>
@@ -55475,6 +55472,6 @@ Purpose:  display a yui menu bar</p>]]></long-description>
   </package>
   <namespace name="global" full_name="global"/>
   <marker count="42">todo</marker>
-  <marker count="174">fixme</marker>
+  <marker count="173">fixme</marker>
   <deprecated count="0"/>
 </project>
