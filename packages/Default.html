@@ -37,14 +37,14 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3461</span></a></li>
+                <span class="label label-info">3456</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
-                <span class="label label-info">42</span>
+                <span class="label label-info">41</span>
 </li>
 <li>fixme 
-                <span class="label label-info">173</span>
+                <span class="label label-info">184</span>
 </li>
 </ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -275,6 +275,7 @@ This is the expTheme 1.0 compatibility layer</span><pre>exponent_theme_remove_cs
 <li><a href="#fedexcalculator" title="This is the class expRecord">fedexcalculator</a></li>
 <li><a href="#upscalculator" title="This is the class expRecord">upscalculator</a></li>
 <li><a href="#motdController" title="This is the class expController">motdController</a></li>
+<li><a href="#rssfeed" title="">rssfeed</a></li>
 <li><a href="#expRss" title="This is the class expRecord">expRss</a></li>
 <li><a href="#Twitter" title="Twitter class">Twitter</a></li>
 <li><a href="#TwitterException" title="Twitter Exception class">TwitterException</a></li>
@@ -301,6 +302,7 @@ This is the expTheme 1.0 compatibility layer</span><pre>exponent_theme_remove_cs
 <li><a href="#remove_locationref" title="This is the abstract class upgradescript">remove_locationref</a></li>
 <li><a href="#remove_oldfiles" title="This is the class remove_oldfiles">remove_oldfiles</a></li>
 <li><a href="#update_ealerts" title="This is the class update_ealerts">update_ealerts</a></li>
+<li><a href="#update_ecom" title="This is the class update_ecom">update_ecom</a></li>
 <li><a href="#update_profile_paths" title="This is the class update_profile_paths">update_profile_paths</a></li>
 <li><a href="#update_root_user" title="This is the class update_root_user">update_root_user</a></li>
 <li><a href="#update_rssfeeds" title="This is the class update_rssfeeds">update_rssfeeds</a></li>
@@ -418,6 +420,7 @@ The EQL header string for object dump file formats.</span><pre>EQL_HEADER</pre><
 <li class="constant  "><a href="#FM_THUMBNAILS" title="FM_THUMBNAILS :: "><span class="description">FM_THUMBNAILS</span><pre>FM_THUMBNAILS</pre></a></li>
 <li class="constant  "><a href="#FM_THUMB_SIZE" title="FM_THUMB_SIZE :: "><span class="description">FM_THUMB_SIZE</span><pre>FM_THUMB_SIZE</pre></a></li>
 <li class="constant  "><a href="#FM_WIDTH" title="FM_WIDTH :: "><span class="description">FM_WIDTH</span><pre>FM_WIDTH</pre></a></li>
+<li class="constant  "><a href="#FORCE_ECOM" title="FORCE_ECOM :: "><span class="description">FORCE_ECOM</span><pre>FORCE_ECOM</pre></a></li>
 <li class="constant  "><a href="#FORCE_MOBILE" title="FORCE_MOBILE :: "><span class="description">FORCE_MOBILE</span><pre>FORCE_MOBILE</pre></a></li>
 <li class="constant  "><a href="#FORM_FIELD_FILTER" title="FORM_FIELD_FILTER :: "><span class="description">FORM_FIELD_FILTER</span><pre>FORM_FIELD_FILTER</pre></a></li>
 <li class="constant  "><a href="#FORM_FIELD_LABEL" title="FORM_FIELD_LABEL :: "><span class="description">FORM_FIELD_LABEL</span><pre>FORM_FIELD_LABEL</pre></a></li>
@@ -439,6 +442,7 @@ The EQL header string for object dump file formats.</span><pre>EQL_HEADER</pre><
 <li class="constant  "><a href="#JS_FULL" title="JS_FULL :: exdoc
 The absolute path to Exponent's core javascript."><span class="description">exdoc
 The absolute path to Exponent's core javascript.</span><pre>JS_FULL</pre></a></li>
+<li class="constant  "><a href="#JS_PATH" title="JS_PATH :: "><span class="description">JS_PATH</span><pre>JS_PATH</pre></a></li>
 <li class="constant  "><a href="#LANGUAGE" title="LANGUAGE :: "><span class="description">LANGUAGE</span><pre>LANGUAGE</pre></a></li>
 <li class="constant  "><a href="#LANGUAGE" title="LANGUAGE :: "><span class="description">LANGUAGE</span><pre>LANGUAGE</pre></a></li>
 <li class="constant  "><a href="#LANGUAGE" title="LANGUAGE :: "><span class="description">LANGUAGE</span><pre>LANGUAGE</pre></a></li>
@@ -458,6 +462,7 @@ The absolute path to Exponent's core javascript.</span><pre>JS_FULL</pre></a></l
 <li class="constant  "><a href="#LINK3_SECTION" title="LINK3_SECTION :: "><span class="description">LINK3_SECTION</span><pre>LINK3_SECTION</pre></a></li>
 <li class="constant  "><a href="#LINK3_TEXT" title="LINK3_TEXT :: "><span class="description">LINK3_TEXT</span><pre>LINK3_TEXT</pre></a></li>
 <li class="constant  "><a href="#LINK3_TEXT" title="LINK3_TEXT :: "><span class="description">LINK3_TEXT</span><pre>LINK3_TEXT</pre></a></li>
+<li class="constant  "><a href="#LOGGER" title="LOGGER :: "><span class="description">LOGGER</span><pre>LOGGER</pre></a></li>
 <li class="constant  "><a href="#LOGO_TEXT_MAIN" title="LOGO_TEXT_MAIN :: "><span class="description">LOGO_TEXT_MAIN</span><pre>LOGO_TEXT_MAIN</pre></a></li>
 <li class="constant  "><a href="#LOGO_TEXT_MAIN" title="LOGO_TEXT_MAIN :: "><span class="description">LOGO_TEXT_MAIN</span><pre>LOGO_TEXT_MAIN</pre></a></li>
 <li class="constant  "><a href="#LOGO_TEXT_SUPERSCRIPT" title="LOGO_TEXT_SUPERSCRIPT :: "><span class="description">LOGO_TEXT_SUPERSCRIPT</span><pre>LOGO_TEXT_SUPERSCRIPT</pre></a></li>
@@ -482,7 +487,6 @@ The absolute path to Exponent's core javascript.</span><pre>JS_FULL</pre></a></l
 <li class="constant  "><a href="#MULTI_COLOR" title="MULTI_COLOR :: "><span class="description">MULTI_COLOR</span><pre>MULTI_COLOR</pre></a></li>
 <li class="constant  "><a href="#MULTI_FONT" title="MULTI_FONT :: "><span class="description">MULTI_FONT</span><pre>MULTI_FONT</pre></a></li>
 <li class="constant  "><a href="#MULTI_SIZE" title="MULTI_SIZE :: "><span class="description">MULTI_SIZE</span><pre>MULTI_SIZE</pre></a></li>
-<li class="constant  "><a href="#NONSSL_URL" title="NONSSL_URL :: "><span class="description">NONSSL_URL</span><pre>NONSSL_URL</pre></a></li>
 <li class="constant  "><a href="#ORGANIZATION_NAME" title="ORGANIZATION_NAME :: "><span class="description">ORGANIZATION_NAME</span><pre>ORGANIZATION_NAME</pre></a></li>
 <li class="constant  "><a href="#PATH_RELATIVE" title="PATH_RELATIVE :: "><span class="description">PATH_RELATIVE</span><pre>PATH_RELATIVE</pre></a></li>
 <li class="constant  "><a href="#PREVIEW_READONLY" title="PREVIEW_READONLY :: "><span class="description">PREVIEW_READONLY</span><pre>PREVIEW_READONLY</pre></a></li>
@@ -559,7 +563,6 @@ The absolute path to Exponent's core javascript.</span><pre>JS_FULL</pre></a></l
 <li class="constant  "><a href="#SOURCE_SELECTOR" title="SOURCE_SELECTOR :: "><span class="description">SOURCE_SELECTOR</span><pre>SOURCE_SELECTOR</pre></a></li>
 <li class="constant  "><a href="#SOURCE_SELECTOR" title="SOURCE_SELECTOR :: "><span class="description">SOURCE_SELECTOR</span><pre>SOURCE_SELECTOR</pre></a></li>
 <li class="constant  "><a href="#SOURCE_SELECTOR" title="SOURCE_SELECTOR :: "><span class="description">SOURCE_SELECTOR</span><pre>SOURCE_SELECTOR</pre></a></li>
-<li class="constant  "><a href="#SSL_URL" title="SSL_URL :: "><span class="description">SSL_URL</span><pre>SSL_URL</pre></a></li>
 <li class="constant  "><a href="#SWATCH" title="SWATCH :: "><span class="description">SWATCH</span><pre>SWATCH</pre></a></li>
 <li class="constant  "><a href="#SWATCH" title="SWATCH :: "><span class="description">SWATCH</span><pre>SWATCH</pre></a></li>
 <li class="constant  "><a href="#SWIFT_PATH" title="SWIFT_PATH :: "><span class="description">SWIFT_PATH</span><pre>SWIFT_PATH</pre></a></li>
@@ -2063,6 +2066,13 @@ use the array_keys function to strip out a functional header</p></p>
 <div class="details collapse"></div>
 <a href="../classes/retrotheme.html" class="more">« More »</a>
 </div>
+<a name="rssfeed" id="rssfeed"></a><div class="element ajax clickable class" href="../classes/rssfeed.html">
+<h1>rssfeed<a href="../classes/rssfeed.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/rssfeed.html" class="more">« More »</a>
+</div>
 <a name="simpletheme" id="simpletheme"></a><div class="element ajax clickable class" href="../classes/simpletheme.html">
 <h1>simpletheme<a href="../classes/simpletheme.html">¶</a>
 </h1>
@@ -2083,6 +2093,13 @@ use the array_keys function to strip out a functional header</p></p>
 <p class="short_description">This is the class update_ealerts</p>
 <div class="details collapse"></div>
 <a href="../classes/update_ealerts.html" class="more">« More »</a>
+</div>
+<a name="update_ecom" id="update_ecom"></a><div class="element ajax clickable class" href="../classes/update_ecom.html">
+<h1>update_ecom<a href="../classes/update_ecom.html">¶</a>
+</h1>
+<p class="short_description">This is the class update_ecom</p>
+<div class="details collapse"></div>
+<a href="../classes/update_ecom.html" class="more">« More »</a>
 </div>
 <a name="update_profile_paths" id="update_profile_paths"></a><div class="element ajax clickable class" href="../classes/update_profile_paths.html">
 <h1>update_profile_paths<a href="../classes/update_profile_paths.html">¶</a>
@@ -2804,6 +2821,12 @@ the current implementation of the Backup Subsystem.</p></p>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
+<a name="FORCE_ECOM" id="FORCE_ECOM"> </a><div class="element clickable constant  FORCE_ECOM" data-toggle="collapse" data-target=".FORCE_ECOM .collapse">
+<h2>FORCE_ECOM</h2>
+<pre>FORCE_ECOM </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
 <a name="FORCE_MOBILE" id="FORCE_MOBILE"> </a><div class="element clickable constant  FORCE_MOBILE" data-toggle="collapse" data-target=".FORCE_MOBILE .collapse">
 <h2>FORCE_MOBILE</h2>
 <pre>FORCE_MOBILE </pre>
@@ -2920,6 +2943,12 @@ The absolute path to Exponent's core javascript.</h2>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
+<a name="JS_PATH" id="JS_PATH"> </a><div class="element clickable constant  JS_PATH" data-toggle="collapse" data-target=".JS_PATH .collapse">
+<h2>JS_PATH</h2>
+<pre>JS_PATH </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
 <a name="LANGUAGE" id="LANGUAGE"> </a><div class="element clickable constant  LANGUAGE" data-toggle="collapse" data-target=".LANGUAGE .collapse">
 <h2>LANGUAGE</h2>
 <pre>LANGUAGE </pre>
@@ -3031,6 +3060,12 @@ The absolute path to Exponent's core javascript.</h2>
 <a name="LINK3_TEXT" id="LINK3_TEXT"> </a><div class="element clickable constant  LINK3_TEXT" data-toggle="collapse" data-target=".LINK3_TEXT .collapse">
 <h2>LINK3_TEXT</h2>
 <pre>LINK3_TEXT </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="LOGGER" id="LOGGER"> </a><div class="element clickable constant  LOGGER" data-toggle="collapse" data-target=".LOGGER .collapse">
+<h2>LOGGER</h2>
+<pre>LOGGER </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
@@ -3175,12 +3210,6 @@ The absolute path to Exponent's core javascript.</h2>
 <a name="MULTI_SIZE" id="MULTI_SIZE"> </a><div class="element clickable constant  MULTI_SIZE" data-toggle="collapse" data-target=".MULTI_SIZE .collapse">
 <h2>MULTI_SIZE</h2>
 <pre>MULTI_SIZE </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="NONSSL_URL" id="NONSSL_URL"> </a><div class="element clickable constant  NONSSL_URL" data-toggle="collapse" data-target=".NONSSL_URL .collapse">
-<h2>NONSSL_URL</h2>
-<pre>NONSSL_URL </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
@@ -3658,12 +3687,6 @@ The absolute path to Exponent's core javascript.</h2>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
-<a name="SSL_URL" id="SSL_URL"> </a><div class="element clickable constant  SSL_URL" data-toggle="collapse" data-target=".SSL_URL .collapse">
-<h2>SSL_URL</h2>
-<pre>SSL_URL </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
 <a name="SWATCH" id="SWATCH"> </a><div class="element clickable constant  SWATCH" data-toggle="collapse" data-target=".SWATCH .collapse">
 <h2>SWATCH</h2>
 <pre>SWATCH </pre>
@@ -4106,7 +4129,7 @@ UI Level of Structure - All management links are shown.</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
-            generated on 2012-09-17T10:57:32-04:00.<br></footer></div>
+            generated on 2012-09-27T13:41:39-04:00.<br></footer></div>
 </div>
 </body>
 </html>

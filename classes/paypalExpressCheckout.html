@@ -37,14 +37,14 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3461</span></a></li>
+                <span class="label label-info">3456</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
-                <span class="label label-info">42</span>
+                <span class="label label-info">41</span>
 </li>
 <li>fixme 
-                <span class="label label-info">173</span>
+                <span class="label label-info">184</span>
 </li>
 </ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -673,14 +673,14 @@ Note that this is Paypal speciific as we need to do some funky things to match r
 </div>
 <a name="delete" id="delete"></a><div class="element clickable method public delete" data-toggle="collapse" data-target=".delete .collapse">
 <h2>This is called when a billing method is deleted.</h2>
-<pre>delete(mixed $config_object) : bool</pre>
+<pre>delete(string $where) : bool</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <p class="long_description"><p>It can be used to clean up if you have any custom user_data storage.</p></p>
 <h3>Parameters</h3>
 <div class="subelement argument">
-<h4>$config_object</h4>
-<code>mixed</code>
+<h4>$where</h4>
+<code>string</code>
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code>bool</code></div>
@@ -1122,7 +1122,7 @@ Note that this is Paypal speciific as we need to do some funky things to match r
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <p class="long_description"><p>PP then redirects back the site with token in the url. We can pick up that token
-from the url such that if we already have it we'll ccall another PP api to get the
+from the url such that if we already have it we'll call another PP api to get the
 details and make it match up to the order.</p></p>
 <h3>Parameters</h3>
 <div class="subelement argument">
@@ -1862,7 +1862,7 @@ details and make it match up to the order.</p></p>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
-            generated on 2012-09-17T10:57:42-04:00.<br></footer></div>
+            generated on 2012-09-27T13:41:49-04:00.<br></footer></div>
 </div>
 </body>
 </html>

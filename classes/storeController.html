@@ -37,14 +37,14 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3461</span></a></li>
+                <span class="label label-info">3456</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
-                <span class="label label-info">42</span>
+                <span class="label label-info">41</span>
 </li>
 <li>fixme 
-                <span class="label label-info">173</span>
+                <span class="label label-info">184</span>
 </li>
 </ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -102,8 +102,8 @@
 <li class="method public "><a href="#description" title="description :: description of module"><span class="description">description of module</span><pre>description()</pre></a></li>
 <li class="method public "><a href="#displayname" title="displayname :: name of module"><span class="description">name of module</span><pre>displayname()</pre></a></li>
 <li class="method public inherited"><a href="#downloadfile" title="downloadfile :: download a file attached to item"><span class="description">download a file attached to item</span><pre>downloadfile()</pre></a></li>
-<li class="method public "><a href="#ecom_search" title="ecom_search :: "><span class="description">ecom_search()
-        </span><pre>ecom_search()</pre></a></li>
+<li class="method public "><a href="#ecomSearch" title="ecomSearch :: "><span class="description">ecomSearch()
+        </span><pre>ecomSearch()</pre></a></li>
 <li class="method public "><a href="#edit" title="edit :: edit item in module"><span class="description">edit item in module</span><pre>edit()</pre></a></li>
 <li class="method public "><a href="#edit_model_alias" title="edit_model_alias :: "><span class="description">edit_model_alias()
         </span><pre>edit_model_alias()</pre></a></li>
@@ -153,14 +153,14 @@
 <li class="method public inherited"><a href="#saveconfig" title="saveconfig :: save module configuration"><span class="description">save module configuration</span><pre>saveconfig()</pre></a></li>
 <li class="method public "><a href="#search" title="search :: "><span class="description">search()
         </span><pre>search()</pre></a></li>
+<li class="method public "><a href="#searchByModel" title="searchByModel :: "><span class="description">searchByModel()
+        </span><pre>searchByModel()</pre></a></li>
 <li class="method public inherited"><a href="#searchCategory" title="searchCategory :: category of items searched in the module"><span class="description">category of items searched in the module</span><pre>searchCategory()</pre></a></li>
 <li class="method public inherited"><a href="#searchName" title="searchName :: type of items searched in the module"><span class="description">type of items searched in the module</span><pre>searchName()</pre></a></li>
 <li class="method public "><a href="#searchNew" title="searchNew :: "><span class="description">searchNew()
         </span><pre>searchNew()</pre></a></li>
 <li class="method public "><a href="#search_by_model" title="search_by_model :: "><span class="description">search_by_model()
         </span><pre>search_by_model()</pre></a></li>
-<li class="method public "><a href="#search_by_model_form" title="search_by_model_form :: "><span class="description">search_by_model_form()
-        </span><pre>search_by_model_form()</pre></a></li>
 <li class="method public "><a href="#search_by_model_old" title="search_by_model_old :: "><span class="description">search_by_model_old()
         </span><pre>search_by_model_old()</pre></a></li>
 <li class="method public "><a href="#show" title="show :: default view for individual item"><span class="description">default view for individual item</span><pre>show()</pre></a></li>
@@ -499,10 +499,10 @@
 </tr></table>
 </div></div>
 </div>
-<a name="ecom_search" id="ecom_search"></a><div class="element clickable method public ecom_search" data-toggle="collapse" data-target=".ecom_search .collapse">
-<h2>ecom_search()
+<a name="ecomSearch" id="ecomSearch"></a><div class="element clickable method public ecomSearch" data-toggle="collapse" data-target=".ecomSearch .collapse">
+<h2>ecomSearch()
         </h2>
-<pre>ecom_search() </pre>
+<pre>ecomSearch() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
@@ -837,6 +837,13 @@
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
+<a name="searchByModel" id="searchByModel"></a><div class="element clickable method public searchByModel" data-toggle="collapse" data-target=".searchByModel .collapse">
+<h2>searchByModel()
+        </h2>
+<pre>searchByModel() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
 <a name="searchCategory" id="searchCategory"></a><div class="element clickable method public searchCategory" data-toggle="collapse" data-target=".searchCategory .collapse">
 <h2>category of items searched in the module</h2>
 <pre>searchCategory() : string</pre>
@@ -876,13 +883,6 @@
 <h2>search_by_model()
         </h2>
 <pre>search_by_model() </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="search_by_model_form" id="search_by_model_form"></a><div class="element clickable method public search_by_model_form" data-toggle="collapse" data-target=".search_by_model_form .collapse">
-<h2>search_by_model_form()
-        </h2>
-<pre>search_by_model_form() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
@@ -1320,7 +1320,7 @@
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
-            generated on 2012-09-17T10:57:43-04:00.<br></footer></div>
+            generated on 2012-09-27T13:41:50-04:00.<br></footer></div>
 </div>
 </body>
 </html>
