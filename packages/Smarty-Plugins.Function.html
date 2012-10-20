@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Exponent 2.0.9 » Smarty-Plugins\Function</title>
+<title>Exponent 2.1.0 » Smarty-Plugins\Function</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -15,7 +15,7 @@
 <body>
 <div class="navbar navbar-fixed-top">
 <div class="navbar-inner"><div class="container">
-<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.0.9</a><div class="nav-collapse"><ul class="nav">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.1.0</a><div class="nav-collapse"><ul class="nav">
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
@@ -24,6 +24,7 @@
 <li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 <li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
 <li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
+<li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
 <li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
@@ -37,11 +38,11 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3456</span></a></li>
+                <span class="label label-info">3453</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
-                <span class="label label-info">41</span>
+                <span class="label label-info">49</span>
 </li>
 <li>fixme 
                 <span class="label label-info">184</span>
@@ -75,23 +76,19 @@
 <i class="icon-custom icon-function"></i> Functions</li>
 <li class="function  "><a href="#addPlus" title="addPlus :: "><span class="description">addPlus()
         </span><pre>addPlus</pre></a></li>
-<li class="function  "><a href="#build_menu" title="build_menu :: "><span class="description">build_menu()
-        </span><pre>build_menu</pre></a></li>
 <li class="function  "><a href="#smarty_function_assign_adv" title="smarty_function_assign_adv :: Smarty {assign_adv} function plugin"><span class="description">Smarty {assign_adv} function plugin</span><pre>smarty_function_assign_adv</pre></a></li>
 <li class="function  "><a href="#smarty_function_attribution" title="smarty_function_attribution :: Smarty {attribution} function plugin"><span class="description">Smarty {attribution} function plugin</span><pre>smarty_function_attribution</pre></a></li>
 <li class="function  "><a href="#smarty_function_backlink" title="smarty_function_backlink :: Smarty {backlink} function plugin"><span class="description">Smarty {backlink} function plugin</span><pre>smarty_function_backlink</pre></a></li>
-<li class="function  "><a href="#smarty_function_bootstrap_navbar" title="smarty_function_bootstrap_navbar :: Smarty {yuimenubar} function plugin"><span class="description">Smarty {yuimenubar} function plugin</span><pre>smarty_function_bootstrap_navbar</pre></a></li>
 <li class="function  "><a href="#smarty_function_br" title="smarty_function_br :: Smarty {br} function plugin"><span class="description">Smarty {br} function plugin</span><pre>smarty_function_br</pre></a></li>
 <li class="function  "><a href="#smarty_function_chain" title="smarty_function_chain :: Smarty {chain} function plugin"><span class="description">Smarty {chain} function plugin</span><pre>smarty_function_chain</pre></a></li>
 <li class="function  "><a href="#smarty_function_chainbytags" title="smarty_function_chainbytags :: Smarty {chainbytags} function plugin"><span class="description">Smarty {chainbytags} function plugin</span><pre>smarty_function_chainbytags</pre></a></li>
 <li class="function  "><a href="#smarty_function_clear" title="smarty_function_clear :: Smarty {clear} function plugin"><span class="description">Smarty {clear} function plugin</span><pre>smarty_function_clear</pre></a></li>
 <li class="function  "><a href="#smarty_function_comments" title="smarty_function_comments :: Smarty {comments} function plugin"><span class="description">Smarty {comments} function plugin</span><pre>smarty_function_comments</pre></a></li>
+<li class="function  "><a href="#smarty_function_comments_count" title="smarty_function_comments_count :: Smarty {comments_count} function plugin"><span class="description">Smarty {comments_count} function plugin</span><pre>smarty_function_comments_count</pre></a></li>
 <li class="function  "><a href="#smarty_function_configpanel" title="smarty_function_configpanel :: Smarty {configpanel} function plugin"><span class="description">Smarty {configpanel} function plugin</span><pre>smarty_function_configpanel</pre></a></li>
 <li class="function  "><a href="#smarty_function_control" title="smarty_function_control :: Smarty {control} function plugin"><span class="description">Smarty {control} function plugin</span><pre>smarty_function_control</pre></a></li>
 <li class="function  "><a href="#smarty_function_currency_symbol" title="smarty_function_currency_symbol :: Smarty {currencty_symbol} function plugin"><span class="description">Smarty {currencty_symbol} function plugin</span><pre>smarty_function_currency_symbol</pre></a></li>
 <li class="function  "><a href="#smarty_function_ddrerank" title="smarty_function_ddrerank :: Smarty {ddrerank} function plugin"><span class="description">Smarty {ddrerank} function plugin</span><pre>smarty_function_ddrerank</pre></a></li>
-<li class="function  "><a href="#smarty_function_ddrerank" title="smarty_function_ddrerank :: "><span class="description">smarty_function_ddrerank()
-        </span><pre>smarty_function_ddrerank</pre></a></li>
 <li class="function  "><a href="#smarty_function_ecomconfig" title="smarty_function_ecomconfig :: Smarty {ecomconfig} function plugin"><span class="description">Smarty {ecomconfig} function plugin</span><pre>smarty_function_ecomconfig</pre></a></li>
 <li class="function  "><a href="#smarty_function_edebug" title="smarty_function_edebug :: Smarty {edebug} function plugin"><span class="description">Smarty {edebug} function plugin</span><pre>smarty_function_edebug</pre></a></li>
 <li class="function  "><a href="#smarty_function_editorinclude" title="smarty_function_editorinclude :: Smarty {editorinclude} function plugin"><span class="description">Smarty {editorinclude} function plugin</span><pre>smarty_function_editorinclude</pre></a></li>
@@ -114,8 +111,6 @@
 <li class="function  "><a href="#smarty_function_help" title="smarty_function_help :: Smarty {help} function plugin"><span class="description">Smarty {help} function plugin</span><pre>smarty_function_help</pre></a></li>
 <li class="function  "><a href="#smarty_function_ical_link" title="smarty_function_ical_link :: Smarty {ical_link} function plugin"><span class="description">Smarty {ical_link} function plugin</span><pre>smarty_function_ical_link</pre></a></li>
 <li class="function  "><a href="#smarty_function_icon" title="smarty_function_icon :: Smarty {icon} function plugin"><span class="description">Smarty {icon} function plugin</span><pre>smarty_function_icon</pre></a></li>
-<li class="function  "><a href="#smarty_function_icon" title="smarty_function_icon :: "><span class="description">smarty_function_icon()
-        </span><pre>smarty_function_icon</pre></a></li>
 <li class="function  "><a href="#smarty_function_img" title="smarty_function_img :: Smarty {img} function plugin"><span class="description">Smarty {img} function plugin</span><pre>smarty_function_img</pre></a></li>
 <li class="function  "><a href="#smarty_function_keybyid" title="smarty_function_keybyid :: Smarty {keybyid} function plugin"><span class="description">Smarty {keybyid} function plugin</span><pre>smarty_function_keybyid</pre></a></li>
 <li class="function  "><a href="#smarty_function_last_url_of" title="smarty_function_last_url_of :: Smarty {last_url_of} function plugin"><span class="description">Smarty {last_url_of} function plugin</span><pre>smarty_function_last_url_of</pre></a></li>
@@ -150,6 +145,7 @@
 <li class="function  "><a href="#smarty_function_simplenote" title="smarty_function_simplenote :: Smarty {simplenote} function plugin"><span class="description">Smarty {simplenote} function plugin</span><pre>smarty_function_simplenote</pre></a></li>
 <li class="function  "><a href="#smarty_function_stars" title="smarty_function_stars :: Smarty {stars} function plugin"><span class="description">Smarty {stars} function plugin</span><pre>smarty_function_stars</pre></a></li>
 <li class="function  "><a href="#smarty_function_subscribe_link" title="smarty_function_subscribe_link :: Smarty {subscribe_link} function plugin"><span class="description">Smarty {subscribe_link} function plugin</span><pre>smarty_function_subscribe_link</pre></a></li>
+<li class="function  "><a href="#smarty_function_tags_assigned" title="smarty_function_tags_assigned :: Smarty {tags_assigned} function plugin"><span class="description">Smarty {tags_assigned} function plugin</span><pre>smarty_function_tags_assigned</pre></a></li>
 <li class="function  "><a href="#smarty_function_time_duration" title="smarty_function_time_duration :: Smarty {time_duration} function plugin"><span class="description">Smarty {time_duration} function plugin</span><pre>smarty_function_time_duration</pre></a></li>
 <li class="function  "><a href="#smarty_function_uniqueid" title="smarty_function_uniqueid :: Smarty {uniqueid} function plugin"><span class="description">Smarty {uniqueid} function plugin</span><pre>smarty_function_uniqueid</pre></a></li>
 <li class="function  "><a href="#smarty_function_userlistcontrol" title="smarty_function_userlistcontrol :: Smarty {userlistcontrol} function plugin"><span class="description">Smarty {userlistcontrol} function plugin</span><pre>smarty_function_userlistcontrol</pre></a></li>
@@ -179,17 +175,6 @@
 <p class="long_description"></p>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$link</h4></div>
-</div></div>
-</div>
-<a name="build_menu" id="build_menu"></a><div class="element clickable function  build_menu" data-toggle="collapse" data-target=".build_menu .collapse">
-<h2>build_menu()
-        </h2>
-<pre>build_menu($page) </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$page</h4></div>
 </div></div>
 </div>
 <a name="smarty_function_assign_adv" id="smarty_function_assign_adv"></a><div class="element clickable function  smarty_function_assign_adv" data-toggle="collapse" data-target=".smarty_function_assign_adv .collapse">
@@ -238,24 +223,6 @@ Purpose:  create a back link</p></p>
 <h4>$smarty</h4>
 <code>\Smarty</code>
 </div>
-</div></div>
-</div>
-<a name="smarty_function_bootstrap_navbar" id="smarty_function_bootstrap_navbar"></a><div class="element clickable function  smarty_function_bootstrap_navbar" data-toggle="collapse" data-target=".smarty_function_bootstrap_navbar .collapse">
-<h2>Smarty {yuimenubar} function plugin</h2>
-<pre>smarty_function_bootstrap_navbar($params, \Smarty $smarty) : string</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<p class="long_description"><p>Type:     function<br>
-Name:     yuimenubar<br>
-Purpose:  display a yui menu bar</p></p>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$params</h4></div>
-<div class="subelement argument">
-<h4>$smarty</h4>
-<code>\Smarty</code>
-</div>
-<h3>Returns</h3>
-<div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
 <a name="smarty_function_br" id="smarty_function_br"></a><div class="element clickable function  smarty_function_br" data-toggle="collapse" data-target=".smarty_function_br .collapse">
@@ -342,6 +309,22 @@ Purpose:  Get comments</p></p>
 </div>
 </div></div>
 </div>
+<a name="smarty_function_comments_count" id="smarty_function_comments_count"></a><div class="element clickable function  smarty_function_comments_count" data-toggle="collapse" data-target=".smarty_function_comments_count .collapse">
+<h2>Smarty {comments_count} function plugin</h2>
+<pre>smarty_function_comments_count($params, \Smarty $smarty) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Type:     function<br>
+Name:     comments_count<br>
+Purpose:  format a link for displaying number of item comments</p></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$params</h4></div>
+<div class="subelement argument">
+<h4>$smarty</h4>
+<code>\Smarty</code>
+</div>
+</div></div>
+</div>
 <a name="smarty_function_configpanel" id="smarty_function_configpanel"></a><div class="element clickable function  smarty_function_configpanel" data-toggle="collapse" data-target=".smarty_function_configpanel .collapse">
 <h2>Smarty {configpanel} function plugin</h2>
 <pre>smarty_function_configpanel($params, \Smarty $smarty) </pre>
@@ -404,18 +387,6 @@ Purpose:  display item re-ranking popup</p></p>
 <h4>$smarty</h4>
 <code>\Smarty</code>
 </div>
-</div></div>
-</div>
-<a name="smarty_function_ddrerank" id="smarty_function_ddrerank"></a><div class="element clickable function  smarty_function_ddrerank" data-toggle="collapse" data-target=".smarty_function_ddrerank .collapse">
-<h2>smarty_function_ddrerank()
-        </h2>
-<pre>smarty_function_ddrerank($params, $smarty) </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$params</h4></div>
-<div class="subelement argument"><h4>$smarty</h4></div>
 </div></div>
 </div>
 <a name="smarty_function_ecomconfig" id="smarty_function_ecomconfig"></a><div class="element clickable function  smarty_function_ecomconfig" data-toggle="collapse" data-target=".smarty_function_ecomconfig .collapse">
@@ -770,18 +741,6 @@ Purpose:  create an icon type link</p></p>
 <h4>$smarty</h4>
 <code>\Smarty</code>
 </div>
-</div></div>
-</div>
-<a name="smarty_function_icon" id="smarty_function_icon"></a><div class="element clickable function  smarty_function_icon" data-toggle="collapse" data-target=".smarty_function_icon .collapse">
-<h2>smarty_function_icon()
-        </h2>
-<pre>smarty_function_icon($params, $smarty) </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$params</h4></div>
-<div class="subelement argument"><h4>$smarty</h4></div>
 </div></div>
 </div>
 <a name="smarty_function_img" id="smarty_function_img"></a><div class="element clickable function  smarty_function_img" data-toggle="collapse" data-target=".smarty_function_img .collapse">
@@ -1358,6 +1317,22 @@ Purpose:  format a link for subscribing/unsubscribing to email alerts for the mo
 </div>
 </div></div>
 </div>
+<a name="smarty_function_tags_assigned" id="smarty_function_tags_assigned"></a><div class="element clickable function  smarty_function_tags_assigned" data-toggle="collapse" data-target=".smarty_function_tags_assigned .collapse">
+<h2>Smarty {tags_assigned} function plugin</h2>
+<pre>smarty_function_tags_assigned($params, \Smarty $smarty) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Type:     function<br>
+Name:     tags_assigned<br>
+Purpose:  format links for displaying tags assigned to an item</p></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$params</h4></div>
+<div class="subelement argument">
+<h4>$smarty</h4>
+<code>\Smarty</code>
+</div>
+</div></div>
+</div>
 <a name="smarty_function_time_duration" id="smarty_function_time_duration"></a><div class="element clickable function  smarty_function_time_duration" data-toggle="collapse" data-target=".smarty_function_time_duration .collapse">
 <h2>Smarty {time_duration} function plugin</h2>
 <pre>smarty_function_time_duration($params, \Smarty $smarty) </pre>
@@ -1476,7 +1451,7 @@ Purpose:  display a yui menu bar</p></p>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
-            generated on 2012-09-27T13:41:40-04:00.<br></footer></div>
+            generated on 2012-10-20T17:18:20-04:00.<br></footer></div>
 </div>
 </body>
 </html>

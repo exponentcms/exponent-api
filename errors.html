@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Exponent 2.0.9</title>
+<title>Exponent 2.1.0</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="css/template.css" rel="stylesheet" media="all">
@@ -15,7 +15,7 @@
 <body>
 <div class="navbar navbar-fixed-top">
 <div class="navbar-inner"><div class="container">
-<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="index.html">Exponent 2.0.9</a><div class="nav-collapse"><ul class="nav">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="index.html">Exponent 2.1.0</a><div class="nav-collapse"><ul class="nav">
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
@@ -24,6 +24,7 @@
 <li><a href="packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 <li><a href="packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
 <li><a href="packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
+<li><a href="packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
 <li><a href="packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
 <li><a href="packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
@@ -37,11 +38,11 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3456</span></a></li>
+                <span class="label label-info">3453</span></a></li>
 <li><a href="markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
-                <span class="label label-info">41</span>
+                <span class="label label-info">49</span>
 </li>
 <li>fixme 
                 <span class="label label-info">184</span>
@@ -586,8 +587,10 @@
 <li><a href="#framework%5Cmodules-1%5Cimporter%5Cimporters%5Cusercsv%5Cprocess.php"><i class="icon-file"></i>framework\modules-1\importer\importers\usercsv\process.php</a></li>
 <li><a href="#framework%5Cmodules-1%5Cimporter%5Cimporters%5Cusercsv%5Cstart.php"><i class="icon-file"></i>framework\modules-1\importer\importers\usercsv\start.php</a></li>
 <li><a href="#framework%5Cmodules-1%5Cnavigationmodule%5Cclass.php"><i class="icon-file"></i>framework\modules-1\navigationmodule\class.php</a></li>
+<li><a href="#framework%5Cplugins%5Ccompiler.switch.php"><i class="icon-file"></i>framework\plugins\compiler.switch.php</a></li>
 <li><a href="#framework%5Cplugins%5Cfunction.google_maps_link.php"><i class="icon-file"></i>framework\plugins\function.google_maps_link.php</a></li>
 <li><a href="#framework%5Cplugins%5Cmodifier.html_substr.php"><i class="icon-file"></i>framework\plugins\modifier.html_substr.php</a></li>
+<li><a href="#framework%5Cplugins%5Cmodifier.relative_date.php"><i class="icon-file"></i>framework\plugins\modifier.relative_date.php</a></li>
 <li><a href="#getswversion.php"><i class="icon-file"></i>getswversion.php</a></li>
 <li><a href="#index.php"><i class="icon-file"></i>index.php</a></li>
 <li><a href="#install%5Cinclude%5Csanity.php"><i class="icon-file"></i>install\include\sanity.php</a></li>
@@ -606,6 +609,7 @@
 <li><a href="#install%5Cpages%5Cupgrade-3.php"><i class="icon-file"></i>install\pages\upgrade-3.php</a></li>
 <li><a href="#install%5Cpages%5Cwelcome.php"><i class="icon-file"></i>install\pages\welcome.php</a></li>
 <li><a href="#install%5Cpopup.php"><i class="icon-file"></i>install\popup.php</a></li>
+<li><a href="#install%5Cpopups%5Cchanges.php"><i class="icon-file"></i>install\popups\changes.php</a></li>
 <li><a href="#install%5Cpopups%5Cdb_create.php"><i class="icon-file"></i>install\popups\db_create.php</a></li>
 <li><a href="#install%5Cpopups%5Cdb_existing.php"><i class="icon-file"></i>install\popups\db_existing.php</a></li>
 <li><a href="#install%5Cpopups%5Cdb_priv.php"><i class="icon-file"></i>install\popups\db_priv.php</a></li>
@@ -631,6 +635,7 @@
 <li><a href="#install%5Cupgrades%5Cupdate_root_user.php"><i class="icon-file"></i>install\upgrades\update_root_user.php</a></li>
 <li><a href="#install%5Cupgrades%5Cupdate_rssfeeds.php"><i class="icon-file"></i>install\upgrades\update_rssfeeds.php</a></li>
 <li><a href="#install%5Cupgrades%5Cupgrade_attachableitem_tables.php"><i class="icon-file"></i>install\upgrades\upgrade_attachableitem_tables.php</a></li>
+<li><a href="#install%5Cupgrades%5Cupgrade_calendar.php"><i class="icon-file"></i>install\upgrades\upgrade_calendar.php</a></li>
 <li><a href="#install%5Cupgrades%5Cupgrade_navigation.php"><i class="icon-file"></i>install\upgrades\upgrade_navigation.php</a></li>
 <li><a href="#install%5Cupgrades%5Cupgrade_simplepoll.php"><i class="icon-file"></i>install\upgrades\upgrade_simplepoll.php</a></li>
 <li><a href="#install%5Cupgrades%5Cversion_tracking.php"><i class="icon-file"></i>install\upgrades\version_tracking.php</a></li>
@@ -640,38 +645,6 @@
 <li><a href="#selector.php"><i class="icon-file"></i>selector.php</a></li>
 <li><a href="#site_rss.php"><i class="icon-file"></i>site_rss.php</a></li>
 <li><a href="#source_selector.php"><i class="icon-file"></i>source_selector.php</a></li>
-<li><a href="#themes%5Cbasetheme%5Cclass.php"><i class="icon-file"></i>themes\basetheme\class.php</a></li>
-<li><a href="#themes%5Cbasetheme%5Cindex.php"><i class="icon-file"></i>themes\basetheme\index.php</a></li>
-<li><a href="#themes%5Cbasetheme%5Csubthemes%5CFollow%20Parent.php"><i class="icon-file"></i>themes\basetheme\subthemes\Follow Parent.php</a></li>
-<li><a href="#themes%5Cbasetheme%5Csubthemes%5CLeft%20Sectional.php"><i class="icon-file"></i>themes\basetheme\subthemes\Left Sectional.php</a></li>
-<li><a href="#themes%5Cbootstraptheme%5Cclass.php"><i class="icon-file"></i>themes\bootstraptheme\class.php</a></li>
-<li><a href="#themes%5Cbootstraptheme%5Cconfig.php"><i class="icon-file"></i>themes\bootstraptheme\config.php</a></li>
-<li><a href="#themes%5Cbootstraptheme%5Ccontrols%5Cbuttongroupcontrol.php"><i class="icon-file"></i>themes\bootstraptheme\controls\buttongroupcontrol.php</a></li>
-<li><a href="#themes%5Cbootstraptheme%5Cindex.php"><i class="icon-file"></i>themes\bootstraptheme\index.php</a></li>
-<li><a href="#themes%5Cbootstraptheme%5Cplugins%5Cfunction.bootstrap_navbar.php"><i class="icon-file"></i>themes\bootstraptheme\plugins\function.bootstrap_navbar.php</a></li>
-<li><a href="#themes%5Cbootstraptheme%5Cplugins%5Cfunction.ddrerank.php"><i class="icon-file"></i>themes\bootstraptheme\plugins\function.ddrerank.php</a></li>
-<li><a href="#themes%5Cbootstraptheme%5Cplugins%5Cfunction.icon.php"><i class="icon-file"></i>themes\bootstraptheme\plugins\function.icon.php</a></li>
-<li><a href="#themes%5Cbootstraptheme%5Csubthemes%5CFollow%20Parent.php"><i class="icon-file"></i>themes\bootstraptheme\subthemes\Follow Parent.php</a></li>
-<li><a href="#themes%5Cbootstraptheme%5Csubthemes%5CLeft%20Sectional.php"><i class="icon-file"></i>themes\bootstraptheme\subthemes\Left Sectional.php</a></li>
-<li><a href="#themes%5Ccoolwatertheme%5Caction_maps.php"><i class="icon-file"></i>themes\coolwatertheme\action_maps.php</a></li>
-<li><a href="#themes%5Ccoolwatertheme%5Cclass.php"><i class="icon-file"></i>themes\coolwatertheme\class.php</a></li>
-<li><a href="#themes%5Ccoolwatertheme%5Cconfig.php"><i class="icon-file"></i>themes\coolwatertheme\config.php</a></li>
-<li><a href="#themes%5Ccoolwatertheme%5Cconfig_Wide.php"><i class="icon-file"></i>themes\coolwatertheme\config_Wide.php</a></li>
-<li><a href="#themes%5Ccoolwatertheme%5Cindex.php"><i class="icon-file"></i>themes\coolwatertheme\index.php</a></li>
-<li><a href="#themes%5Ccoolwatertheme%5Csubthemes%5CFollow%20Parent.php"><i class="icon-file"></i>themes\coolwatertheme\subthemes\Follow Parent.php</a></li>
-<li><a href="#themes%5Ccoolwatertheme%5Csubthemes%5CFull%20Body.php"><i class="icon-file"></i>themes\coolwatertheme\subthemes\Full Body.php</a></li>
-<li><a href="#themes%5Ccoolwatertheme%5Csubthemes%5CLeft%20Sectional.php"><i class="icon-file"></i>themes\coolwatertheme\subthemes\Left Sectional.php</a></li>
-<li><a href="#themes%5Cmultioptionstheme%5Cclass.php"><i class="icon-file"></i>themes\multioptionstheme\class.php</a></li>
-<li><a href="#themes%5Cmultioptionstheme%5Cconfig.php"><i class="icon-file"></i>themes\multioptionstheme\config.php</a></li>
-<li><a href="#themes%5Cmultioptionstheme%5Cindex.php"><i class="icon-file"></i>themes\multioptionstheme\index.php</a></li>
-<li><a href="#themes%5Cmultioptionstheme%5Csubthemes%5CFollow%20Parent.php"><i class="icon-file"></i>themes\multioptionstheme\subthemes\Follow Parent.php</a></li>
-<li><a href="#themes%5Cmultioptionstheme%5Csubthemes%5CLeft%20Sectional.php"><i class="icon-file"></i>themes\multioptionstheme\subthemes\Left Sectional.php</a></li>
-<li><a href="#themes%5Cretrotheme%5Cclass.php"><i class="icon-file"></i>themes\retrotheme\class.php</a></li>
-<li><a href="#themes%5Cretrotheme%5Cconfig.php"><i class="icon-file"></i>themes\retrotheme\config.php</a></li>
-<li><a href="#themes%5Cretrotheme%5Cindex.php"><i class="icon-file"></i>themes\retrotheme\index.php</a></li>
-<li><a href="#themes%5Cretrotheme%5Csubthemes%5CFollow%20Parent.php"><i class="icon-file"></i>themes\retrotheme\subthemes\Follow Parent.php</a></li>
-<li><a href="#themes%5Cretrotheme%5Csubthemes%5CLeft%20Sectional.php"><i class="icon-file"></i>themes\retrotheme\subthemes\Left Sectional.php</a></li>
-<li><a href="#themes%5Cretrotheme%5Csubthemes%5CThree%20Column.php"><i class="icon-file"></i>themes\retrotheme\subthemes\Three Column.php</a></li>
 <li><a href="#themes%5Csimpletheme%5Cclass.php"><i class="icon-file"></i>themes\simpletheme\class.php</a></li>
 <li><a href="#themes%5Csimpletheme%5Cconfig.php"><i class="icon-file"></i>themes\simpletheme\config.php</a></li>
 <li><a href="#themes%5Csimpletheme%5Cconfig_Fall.php"><i class="icon-file"></i>themes\simpletheme\config_Fall.php</a></li>
@@ -680,6 +653,7 @@
 <li><a href="#themes%5Csimpletheme%5Csubthemes%5CFollow%20Parent.php"><i class="icon-file"></i>themes\simpletheme\subthemes\Follow Parent.php</a></li>
 <li><a href="#themes%5Csimpletheme%5Csubthemes%5CLeft%20Sectional.php"><i class="icon-file"></i>themes\simpletheme\subthemes\Left Sectional.php</a></li>
 <li><a href="#thumb.php"><i class="icon-file"></i>thumb.php</a></li>
+<li><a href="#xmlrpc.php"><i class="icon-file"></i>xmlrpc.php</a></li>
 </ul></div>
 <div class="span8">
 <ul class="breadcrumb">
@@ -1381,7 +1355,7 @@
 </div>
 <div class="package-contents">
 <a name="framework%5Ccore%5Ccontrollers%5CexpCatController.php" id="framework\core\controllers\expCatController.php"></a><h3>
-<i class="icon-file"></i>framework\core\controllers\expCatController.php<small style="float: right;padding-right: 10px;">4</small>
+<i class="icon-file"></i>framework\core\controllers\expCatController.php<small style="float: right;padding-right: 10px;">3</small>
 </h3>
 <div><table class="table markers table-bordered">
 <thead><tr>
@@ -1405,17 +1379,12 @@
 <td>127</td>
 <td>No DocBlock was found for method edit()</td>
 </tr>
-<tr class="error">
-<td>error</td>
-<td>157</td>
-<td>Argument $dontsort is missing from the Docblock of addCats()</td>
-</tr>
 </tbody>
 </table></div>
 </div>
 <div class="package-contents">
 <a name="framework%5Ccore%5Ccontrollers%5CexpCommentController.php" id="framework\core\controllers\expCommentController.php"></a><h3>
-<i class="icon-file"></i>framework\core\controllers\expCommentController.php<small style="float: right;padding-right: 10px;">16</small>
+<i class="icon-file"></i>framework\core\controllers\expCommentController.php<small style="float: right;padding-right: 10px;">17</small>
 </h3>
 <div><table class="table markers table-bordered">
 <thead><tr>
@@ -1461,47 +1430,52 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>58</td>
+<td>59</td>
 <td>No DocBlock was found for method manage()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>107</td>
+<td>108</td>
 <td>No DocBlock was found for method getComments()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>204</td>
+<td>203</td>
+<td>No DocBlock was found for function \findchildren()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>247</td>
 <td>No DocBlock was found for method update()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>259</td>
+<td>302</td>
 <td>No DocBlock was found for method approve()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>280</td>
+<td>323</td>
 <td>No DocBlock was found for method approve_submit()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>300</td>
+<td>343</td>
 <td>No DocBlock was found for method approve_toggle()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>356</td>
+<td>399</td>
 <td>No DocBlock was found for method delete()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>382</td>
+<td>425</td>
 <td>No DocBlock was found for method sendNotification()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>432</td>
+<td>475</td>
 <td>No DocBlock was found for method sendApprovalNotification()</td>
 </tr>
 </tbody>
@@ -2601,77 +2575,77 @@
 <tbody>
 <tr class="error">
 <td>error</td>
-<td>371</td>
+<td>377</td>
 <td>No DocBlock was found for function \hotspot()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>385</td>
+<td>391</td>
 <td>No DocBlock was found for function \makeLink()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>392</td>
+<td>398</td>
 <td>No DocBlock was found for function \redirect_to()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>400</td>
+<td>406</td>
 <td>No DocBlock was found for function \flash()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>404</td>
+<td>410</td>
 <td>No DocBlock was found for function \flashAndFlow()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>433</td>
+<td>439</td>
 <td>No DocBlock was found for function \get_model_for_controller()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>442</td>
+<td>448</td>
 <td>No DocBlock was found for function \get_common_template()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>551</td>
+<td>557</td>
 <td>No DocBlock was found for function \get_template_for_action()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>657</td>
+<td>663</td>
 <td>No DocBlock was found for function \object2Array()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>668</td>
+<td>674</td>
 <td>No DocBlock was found for function \expUnserialize()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>689</td>
+<td>696</td>
 <td>No DocBlock was found for function \createValidId()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>694</td>
+<td>701</td>
 <td>No DocBlock was found for function \curPageURL()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>707</td>
+<td>714</td>
 <td>No DocBlock was found for function \handleErrors()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>731</td>
+<td>738</td>
 <td>No DocBlock was found for function \gt()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>735</td>
+<td>742</td>
 <td>No DocBlock was found for function \glist()</td>
 </tr>
 </tbody>
@@ -2790,7 +2764,7 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>60</td>
+<td>63</td>
 <td>No DocBlock was found for method beforeSave()</td>
 </tr>
 </tbody>
@@ -3334,7 +3308,7 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>85</td>
+<td>87</td>
 <td>No DocBlock was found for method update()</td>
 </tr>
 </tbody>
@@ -4798,22 +4772,22 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>88</td>
+<td>89</td>
 <td>No DocBlock was found for method footJavascriptOutput()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>107</td>
+<td>108</td>
 <td>No DocBlock was found for method pushToFoot()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>168</td>
+<td>169</td>
 <td>No DocBlock was found for method ajaxReply()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>269</td>
+<td>270</td>
 <td>No DocBlock was found for method panel()</td>
 </tr>
 </tbody>
@@ -5273,32 +5247,32 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>381</td>
+<td>385</td>
 <td>No DocBlock was found for method cleanParams()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>401</td>
+<td>405</td>
 <td>No DocBlock was found for method makeHeaderCols()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>488</td>
+<td>492</td>
 <td>No DocBlock was found for method runCallback()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>503</td>
+<td>507</td>
 <td>No DocBlock was found for method makeSortDropdown()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>570</td>
+<td>574</td>
 <td>No DocBlock was found for method asc()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>579</td>
+<td>583</td>
 <td>No DocBlock was found for method desc()</td>
 </tr>
 </tbody>
@@ -5622,22 +5596,22 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>234</td>
+<td>235</td>
 <td>No DocBlock was found for method getCacheValue()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>240</td>
+<td>241</td>
 <td>No DocBlock was found for method getTicketString()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>274</td>
+<td>275</td>
 <td>No DocBlock was found for method login()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>416</td>
+<td>417</td>
 <td>No DocBlock was found for method setCacheValue()</td>
 </tr>
 </tbody>
@@ -5895,47 +5869,47 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>314</td>
+<td>287</td>
 <td>No DocBlock was found for method loadActionMaps()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>322</td>
+<td>295</td>
 <td>No DocBlock was found for method satisfyThemeRequirements()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>339</td>
+<td>312</td>
 <td>No DocBlock was found for method getTheme()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>437</td>
+<td>410</td>
 <td>No DocBlock was found for method getPrinterFriendlyTheme()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>464</td>
+<td>437</td>
 <td>No DocBlock was found for method inAction()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>468</td>
+<td>441</td>
 <td>No DocBlock was found for method reRoutActionTo()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>544</td>
+<td>517</td>
 <td>No DocBlock was found for method showAction()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>747</td>
+<td>720</td>
 <td>No DocBlock was found for method showController()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>1013</td>
+<td>986</td>
 <td>No DocBlock was found for method is_mobile()</td>
 </tr>
 </tbody>
@@ -6315,7 +6289,7 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>113</td>
+<td>114</td>
 <td>No DocBlock was found for method register_permissions()</td>
 </tr>
 </tbody>
@@ -6555,37 +6529,37 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>39</td>
+<td>42</td>
 <td>No DocBlock was found for method isSimpleControl()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>40</td>
+<td>46</td>
 <td>No DocBlock was found for method getFieldDefinition()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>59</td>
+<td>65</td>
 <td>No DocBlock was found for method toHTML()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>84</td>
+<td>90</td>
 <td>No DocBlock was found for method controlToHTML()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>216</td>
+<td>221</td>
 <td>No DocBlock was found for method parseData()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>222</td>
+<td>227</td>
 <td>No DocBlock was found for method templateFormat()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>248</td>
+<td>252</td>
 <td>No DocBlock was found for method update()</td>
 </tr>
 </tbody>
@@ -6723,12 +6697,12 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>37</td>
+<td>39</td>
 <td>No DocBlock was found for method __construct()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>45</td>
+<td>47</td>
 <td>No DocBlock was found for method controlToHTML()</td>
 </tr>
 </tbody>
@@ -6968,52 +6942,52 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>35</td>
+<td>38</td>
 <td>No DocBlock was found for method isSimpleControl()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>36</td>
+<td>42</td>
 <td>No DocBlock was found for method getFieldDefinition()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>41</td>
+<td>47</td>
 <td>No DocBlock was found for method __construct()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>48</td>
+<td>54</td>
 <td>No DocBlock was found for method toHTML()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>66</td>
+<td>72</td>
 <td>No DocBlock was found for method controlToHTML()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>107</td>
+<td>113</td>
 <td>No DocBlock was found for method onRegister()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>111</td>
+<td>117</td>
 <td>No DocBlock was found for method parseData()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>129</td>
+<td>135</td>
 <td>No DocBlock was found for method templateFormat()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>144</td>
+<td>147</td>
 <td>No DocBlock was found for method form()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>165</td>
+<td>168</td>
 <td>No DocBlock was found for method update()</td>
 </tr>
 </tbody>
@@ -7289,22 +7263,22 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>120</td>
+<td>121</td>
 <td>No DocBlock was found for method parseData()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>124</td>
+<td>125</td>
 <td>No DocBlock was found for method templateFormat()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>128</td>
+<td>129</td>
 <td>No DocBlock was found for method form()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>150</td>
+<td>151</td>
 <td>No DocBlock was found for method update()</td>
 </tr>
 </tbody>
@@ -7560,37 +7534,37 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>51</td>
+<td>52</td>
 <td>No DocBlock was found for method controlToHTML()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>92</td>
+<td>93</td>
 <td>No DocBlock was found for method toHTML()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>100</td>
+<td>101</td>
 <td>No DocBlock was found for method _normalize()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>121</td>
+<td>122</td>
 <td>No DocBlock was found for method onRegister()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>125</td>
+<td>126</td>
 <td>No DocBlock was found for method parseData()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>141</td>
+<td>142</td>
 <td>No DocBlock was found for method form()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>154</td>
+<td>155</td>
 <td>No DocBlock was found for method update()</td>
 </tr>
 </tbody>
@@ -8159,7 +8133,7 @@
 </div>
 <div class="package-contents">
 <a name="framework%5Ccore%5Csubsystems%5Cforms%5Ccontrols%5Ctagpickercontrol.php" id="framework\core\subsystems\forms\controls\tagpickercontrol.php"></a><h3>
-<i class="icon-file"></i>framework\core\subsystems\forms\controls\tagpickercontrol.php<small style="float: right;padding-right: 10px;">9</small>
+<i class="icon-file"></i>framework\core\subsystems\forms\controls\tagpickercontrol.php<small style="float: right;padding-right: 10px;">11</small>
 </h3>
 <div><table class="table markers table-bordered">
 <thead><tr>
@@ -8185,32 +8159,42 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>32</td>
-<td>No DocBlock was found for method name()</td>
+<td>31</td>
+<td>No DocBlock was found for property $record</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>33</td>
-<td>No DocBlock was found for method isSimpleControl()</td>
+<td>32</td>
+<td>No DocBlock was found for property $taglist</td>
 </tr>
 <tr class="error">
 <td>error</td>
 <td>34</td>
-<td>No DocBlock was found for method getFieldDefinition()</td>
+<td>No DocBlock was found for method name()</td>
 </tr>
 <tr class="error">
 <td>error</td>
 <td>38</td>
+<td>No DocBlock was found for method isSimpleControl()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>42</td>
+<td>No DocBlock was found for method getFieldDefinition()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>46</td>
 <td>No DocBlock was found for method __construct()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>45</td>
+<td>59</td>
 <td>No DocBlock was found for method toHTML()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>63</td>
+<td>80</td>
 <td>No DocBlock was found for method controlToHTML()</td>
 </tr>
 </tbody>
@@ -8244,27 +8228,27 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>32</td>
+<td>35</td>
 <td>No DocBlock was found for method isSimpleControl()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>33</td>
+<td>39</td>
 <td>No DocBlock was found for method getFieldDefinition()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>37</td>
+<td>43</td>
 <td>No DocBlock was found for method __construct()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>66</td>
+<td>72</td>
 <td>No DocBlock was found for method toHTML()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>116</td>
+<td>122</td>
 <td>No DocBlock was found for method controlToHTML()</td>
 </tr>
 </tbody>
@@ -8515,42 +8499,42 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>36</td>
+<td>39</td>
 <td>No DocBlock was found for method isSimpleControl()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>37</td>
+<td>43</td>
 <td>No DocBlock was found for method getFieldDefinition()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>42</td>
+<td>48</td>
 <td>No DocBlock was found for method __construct()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>56</td>
+<td>61</td>
 <td>No DocBlock was found for method onRegister()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>63</td>
+<td>68</td>
 <td>No DocBlock was found for method controlToHTML()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>147</td>
+<td>145</td>
 <td>No DocBlock was found for method parseData()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>153</td>
+<td>151</td>
 <td>No DocBlock was found for method templateFormat()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>178</td>
+<td>175</td>
 <td>No DocBlock was found for method update()</td>
 </tr>
 </tbody>
@@ -8589,52 +8573,52 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>36</td>
+<td>39</td>
 <td>No DocBlock was found for method isSimpleControl()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>37</td>
+<td>43</td>
 <td>No DocBlock was found for method getFieldDefinition()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>42</td>
+<td>48</td>
 <td>No DocBlock was found for method __construct()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>51</td>
+<td>57</td>
 <td>No DocBlock was found for method toHTML()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>74</td>
+<td>80</td>
 <td>No DocBlock was found for method controlToHTML()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>115</td>
+<td>127</td>
 <td>No DocBlock was found for method onRegister()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>119</td>
+<td>131</td>
 <td>No DocBlock was found for method parseData()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>128</td>
+<td>140</td>
 <td>No DocBlock was found for method templateFormat()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>145</td>
+<td>157</td>
 <td>No DocBlock was found for method form()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>164</td>
+<td>176</td>
 <td>No DocBlock was found for method update()</td>
 </tr>
 </tbody>
@@ -10453,37 +10437,37 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>101</td>
+<td>102</td>
 <td>No DocBlock was found for method getAvailableCards()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>117</td>
+<td>118</td>
 <td>No DocBlock was found for method userFormUpdate()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>142</td>
+<td>143</td>
 <td>No DocBlock was found for method userView()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>175</td>
+<td>176</td>
 <td>No DocBlock was found for method validate_card_expire()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>203</td>
+<td>204</td>
 <td>No DocBlock was found for method validate_cvv()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>214</td>
+<td>215</td>
 <td>No DocBlock was found for method validate_card_type()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>256</td>
+<td>257</td>
 <td>No DocBlock was found for method validate_card_number()</td>
 </tr>
 </tbody>
@@ -10880,62 +10864,62 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>478</td>
+<td>479</td>
 <td>No DocBlock was found for method userForm()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>485</td>
+<td>486</td>
 <td>No DocBlock was found for method userFormUpdate()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>489</td>
+<td>490</td>
 <td>No DocBlock was found for method userView()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>617</td>
+<td>618</td>
 <td>No DocBlock was found for method getPaymentAuthorizationNumber()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>622</td>
+<td>623</td>
 <td>No DocBlock was found for method getPaymentReferenceNumber()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>633</td>
+<td>634</td>
 <td>No DocBlock was found for method getPaymentStatus()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>638</td>
+<td>639</td>
 <td>No DocBlock was found for method getAVSAddressVerified()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>642</td>
+<td>643</td>
 <td>No DocBlock was found for method getAVSZipVerified()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>646</td>
+<td>647</td>
 <td>No DocBlock was found for method getCVVMatched()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>650</td>
+<td>651</td>
 <td>No DocBlock was found for method getPaymentMethod()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>654</td>
+<td>655</td>
 <td>No DocBlock was found for method showOptions()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>659</td>
+<td>660</td>
 <td>No DocBlock was found for method credit_transaction()</td>
 </tr>
 </tbody>
@@ -11401,97 +11385,97 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>516</td>
+<td>518</td>
 <td>No DocBlock was found for method confirm()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>541</td>
+<td>543</td>
 <td>No DocBlock was found for method process()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>616</td>
+<td>618</td>
 <td>No DocBlock was found for method quickPay()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>654</td>
+<td>658</td>
 <td>No DocBlock was found for method processQuickPay()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>686</td>
+<td>690</td>
 <td>No DocBlock was found for method splitShipping()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>723</td>
+<td>727</td>
 <td>No DocBlock was found for method saveSplitShipping()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>760</td>
+<td>764</td>
 <td>No DocBlock was found for method selectShippingMethods()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>794</td>
+<td>798</td>
 <td>No DocBlock was found for method customerSignup()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>800</td>
+<td>804</td>
 <td>No DocBlock was found for method saveShippingMethods()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>834</td>
+<td>838</td>
 <td>No DocBlock was found for method createaddress()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>861</td>
+<td>865</td>
 <td>No DocBlock was found for method getSpecials()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>868</td>
+<td>872</td>
 <td>No DocBlock was found for method isValidDiscountCode()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>894</td>
+<td>898</td>
 <td>No DocBlock was found for method addDiscountToCart()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>935</td>
+<td>939</td>
 <td>No DocBlock was found for method removeDiscountFromCart()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>947</td>
+<td>951</td>
 <td>No DocBlock was found for method isDiscountInCart()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>958</td>
+<td>962</td>
 <td>No DocBlock was found for method configure()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>971</td>
+<td>975</td>
 <td>No DocBlock was found for method rebuildCart()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>1051</td>
+<td>1055</td>
 <td>No DocBlock was found for method empty_cart()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>1060</td>
+<td>1064</td>
 <td>No DocBlock was found for method saveconfig()</td>
 </tr>
 </tbody>
@@ -11694,32 +11678,32 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>279</td>
+<td>284</td>
 <td>No DocBlock was found for method update_groupdiscounts()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>293</td>
+<td>298</td>
 <td>No DocBlock was found for method rerank_groupdiscount()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>302</td>
+<td>307</td>
 <td>No DocBlock was found for method configure()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>332</td>
+<td>337</td>
 <td>No DocBlock was found for method manage_upcharge()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>349</td>
+<td>354</td>
 <td>No DocBlock was found for method update_upcharge()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>369</td>
+<td>374</td>
 <td>No DocBlock was found for method saveconfig()</td>
 </tr>
 </tbody>
@@ -12673,7 +12657,7 @@
 </div>
 <div class="package-contents">
 <a name="framework%5Cmodules%5Cecommerce%5Ccontrollers%5CstoreController.php" id="framework\modules\ecommerce\controllers\storeController.php"></a><h3>
-<i class="icon-file"></i>framework\modules\ecommerce\controllers\storeController.php<small style="float: right;padding-right: 10px;">68</small>
+<i class="icon-file"></i>framework\modules\ecommerce\controllers\storeController.php<small style="float: right;padding-right: 10px;">69</small>
 </h3>
 <div><table class="table markers table-bordered">
 <thead><tr>
@@ -13021,6 +13005,11 @@
 <td>error</td>
 <td>2253</td>
 <td>No DocBlock was found for method delete_model_alias()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>2262</td>
+<td>No DocBlock was found for method setup_wizard()</td>
 </tr>
 </tbody>
 </table></div>
@@ -14619,7 +14608,7 @@
 </div>
 <div class="package-contents">
 <a name="framework%5Cmodules%5Cecommerce%5Cmodels%5Cgroupdiscounts.php" id="framework\modules\ecommerce\models\groupdiscounts.php"></a><h3>
-<i class="icon-file"></i>framework\modules\ecommerce\models\groupdiscounts.php<small style="float: right;padding-right: 10px;">5</small>
+<i class="icon-file"></i>framework\modules\ecommerce\models\groupdiscounts.php<small style="float: right;padding-right: 10px;">6</small>
 </h3>
 <div><table class="table markers table-bordered">
 <thead><tr>
@@ -14646,11 +14635,16 @@
 <tr class="error">
 <td>error</td>
 <td>25</td>
+<td>No DocBlock was found for property $has_one</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>30</td>
 <td>No DocBlock was found for property $validates</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>31</td>
+<td>36</td>
 <td>No DocBlock was found for method getGroupDiscountsForUser()</td>
 </tr>
 </tbody>
@@ -16388,92 +16382,92 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>52</td>
+<td>51</td>
 <td>No DocBlock was found for method __construct()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>66</td>
+<td>65</td>
 <td>No DocBlock was found for method update()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>136</td>
+<td>135</td>
 <td>No DocBlock was found for method displayForm()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>157</td>
+<td>156</td>
 <td>No DocBlock was found for method hasOptions()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>169</td>
+<td>168</td>
 <td>No DocBlock was found for method hasRequiredOptions()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>176</td>
+<td>175</td>
 <td>No DocBlock was found for method optionDropdown()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>215</td>
+<td>214</td>
 <td>No DocBlock was found for method spacesLeft()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>219</td>
+<td>218</td>
 <td>No DocBlock was found for method cartSummary()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>241</td>
+<td>240</td>
 <td>No DocBlock was found for method getBasePrice()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>249</td>
+<td>248</td>
 <td>No DocBlock was found for method getDefaultQuantity()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>254</td>
+<td>253</td>
 <td>No DocBlock was found for method getSurcharge()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>267</td>
+<td>266</td>
 <td>No DocBlock was found for method process()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>329</td>
+<td>328</td>
 <td>No DocBlock was found for method addToCart()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>420</td>
+<td>419</td>
 <td>No DocBlock was found for method isAvailable()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>424</td>
+<td>423</td>
 <td>No DocBlock was found for method getControl()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>457</td>
+<td>456</td>
 <td>No DocBlock was found for method checkout()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>461</td>
+<td>460</td>
 <td>No DocBlock was found for method removeItem()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>465</td>
+<td>464</td>
 <td>No DocBlock was found for method getForm()</td>
 </tr>
 </tbody>
@@ -16985,32 +16979,32 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>270</td>
+<td>282</td>
 <td>No DocBlock was found for method oldgetRates()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>412</td>
+<td>424</td>
 <td>No DocBlock was found for method configForm()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>417</td>
+<td>429</td>
 <td>No DocBlock was found for method parseConfig()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>430</td>
+<td>442</td>
 <td>No DocBlock was found for method availableMethods()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>440</td>
+<td>452</td>
 <td>No DocBlock was found for method formatAddress()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>450</td>
+<td>462</td>
 <td>No DocBlock was found for method sortByVolume()</td>
 </tr>
 </tbody>
@@ -17415,27 +17409,27 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>200</td>
+<td>202</td>
 <td>No DocBlock was found for method configForm()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>205</td>
+<td>207</td>
 <td>No DocBlock was found for method parseConfig()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>218</td>
+<td>220</td>
 <td>No DocBlock was found for method availableMethods()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>228</td>
+<td>230</td>
 <td>No DocBlock was found for method formatAddress()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>243</td>
+<td>245</td>
 <td>No DocBlock was found for method sortByVolume()</td>
 </tr>
 </tbody>
@@ -17479,77 +17473,77 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>36</td>
+<td>39</td>
 <td>No DocBlock was found for method displayname()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>40</td>
+<td>43</td>
 <td>No DocBlock was found for method description()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>44</td>
+<td>47</td>
 <td>No DocBlock was found for method author()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>48</td>
+<td>51</td>
 <td>No DocBlock was found for method isSearchable()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>52</td>
+<td>55</td>
 <td>No DocBlock was found for method searchName()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>56</td>
+<td>59</td>
 <td>No DocBlock was found for method searchCategory()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>60</td>
+<td>63</td>
 <td>No DocBlock was found for method showall()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>455</td>
+<td>472</td>
 <td>No DocBlock was found for method edit()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>506</td>
+<td>523</td>
 <td>No DocBlock was found for method delete_all_past()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>516</td>
+<td>533</td>
 <td>No DocBlock was found for method send_feedback()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>547</td>
+<td>564</td>
 <td>No DocBlock was found for method ical()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>634</td>
+<td>615</td>
 <td>No DocBlock was found for function \quoted_printable_encode()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>840</td>
+<td>832</td>
 <td>No DocBlock was found for method send_reminders()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>1250</td>
+<td>979</td>
 <td>No DocBlock was found for method getEventsForDates()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>1268</td>
+<td>1001</td>
 <td>No DocBlock was found for method getExternalEvents()</td>
 </tr>
 </tbody>
@@ -18870,12 +18864,12 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>60</td>
+<td>61</td>
 <td>No DocBlock was found for property $deprecated_modules</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>92</td>
+<td>93</td>
 <td>No DocBlock was found for property $needs_written</td>
 </tr>
 </tbody>
@@ -18998,7 +18992,7 @@
 </div>
 <div class="package-contents">
 <a name="framework%5Cmodules%5Cnavigation%5Ccontrollers%5CnavigationController.php" id="framework\modules\navigation\controllers\navigationController.php"></a><h3>
-<i class="icon-file"></i>framework\modules\navigation\controllers\navigationController.php<small style="float: right;padding-right: 10px;">36</small>
+<i class="icon-file"></i>framework\modules\navigation\controllers\navigationController.php<small style="float: right;padding-right: 10px;">37</small>
 </h3>
 <div><table class="table markers table-bordered">
 <thead><tr>
@@ -19170,21 +19164,26 @@
 <tr class="error">
 <td>error</td>
 <td>916</td>
+<td>No DocBlock was found for method update()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>921</td>
 <td>No DocBlock was found for method move_standalone()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>923</td>
+<td>928</td>
 <td>No DocBlock was found for method reparent_standalone()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>935</td>
+<td>940</td>
 <td>No DocBlock was found for method remove()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>951</td>
+<td>956</td>
 <td>No DocBlock was found for method delete_standalones()</td>
 </tr>
 </tbody>
@@ -20016,112 +20015,112 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>887</td>
+<td>889</td>
 <td>No DocBlock was found for method export_user_input_report()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>958</td>
+<td>960</td>
 <td>No DocBlock was found for method export_inventory()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>1033</td>
+<td>1035</td>
 <td>No DocBlock was found for method generateProductReport()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>1225</td>
+<td>1227</td>
 <td>No DocBlock was found for method parseAndTrimExport()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>1259</td>
+<td>1261</td>
 <td>No DocBlock was found for method parseAndTrimImport()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>1296</td>
+<td>1298</td>
 <td>No DocBlock was found for method parseAndTrim()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>1330</td>
+<td>1332</td>
 <td>No DocBlock was found for method outputField()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>1337</td>
+<td>1339</td>
 <td>No DocBlock was found for method print_orders()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>1370</td>
+<td>1372</td>
 <td>No DocBlock was found for method sortPrintOrders()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>1377</td>
+<td>1379</td>
 <td>No DocBlock was found for method export_odbc()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>1434</td>
+<td>1436</td>
 <td>No DocBlock was found for method export_order_items()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>1489</td>
+<td>1491</td>
 <td>No DocBlock was found for method export_status_report()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>1531</td>
+<td>1533</td>
 <td>No DocBlock was found for method download()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>1561</td>
+<td>1563</td>
 <td>No DocBlock was found for method stripLineEndings()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>1566</td>
+<td>1568</td>
 <td>No DocBlock was found for method productFeed()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>1588</td>
+<td>1590</td>
 <td>No DocBlock was found for method abandoned_carts()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>1667</td>
+<td>1669</td>
 <td>No DocBlock was found for method current_carts()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>1793</td>
+<td>1795</td>
 <td>No DocBlock was found for method batch_export()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>1907</td>
+<td>1909</td>
 <td>No DocBlock was found for method payment_report()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>1943</td>
+<td>1945</td>
 <td>No DocBlock was found for method status_export()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>2051</td>
+<td>2053</td>
 <td>No DocBlock was found for method buildCategoryString()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>2063</td>
+<td>2065</td>
 <td>No DocBlock was found for method product_report()</td>
 </tr>
 </tbody>
@@ -21005,7 +21004,7 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>112</td>
+<td>111</td>
 <td>No DocBlock was found for method twitterify()</td>
 </tr>
 </tbody>
@@ -21206,107 +21205,107 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>113</td>
+<td>114</td>
 <td>No DocBlock was found for method update()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>237</td>
+<td>238</td>
 <td>No DocBlock was found for method delete()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>272</td>
+<td>273</td>
 <td>No DocBlock was found for method manage_sessions()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>307</td>
+<td>308</td>
 <td>No DocBlock was found for method kill_session()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>321</td>
+<td>322</td>
 <td>No DocBlock was found for method boot_user()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>396</td>
+<td>397</td>
 <td>No DocBlock was found for method manage_groups()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>418</td>
+<td>419</td>
 <td>No DocBlock was found for method reset_password()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>422</td>
+<td>423</td>
 <td>No DocBlock was found for method send_new_password()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>470</td>
+<td>471</td>
 <td>No DocBlock was found for method confirm_password_reset()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>518</td>
+<td>519</td>
 <td>No DocBlock was found for method change_password()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>537</td>
+<td>538</td>
 <td>No DocBlock was found for method save_change_password()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>570</td>
+<td>571</td>
 <td>No DocBlock was found for method edit_userpassword()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>582</td>
+<td>583</td>
 <td>No DocBlock was found for method update_userpassword()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>613</td>
+<td>614</td>
 <td>No DocBlock was found for method edit_group()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>625</td>
+<td>626</td>
 <td>No DocBlock was found for method manage_group_memberships()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>691</td>
+<td>692</td>
 <td>No DocBlock was found for method update_group()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>702</td>
+<td>703</td>
 <td>No DocBlock was found for method delete_group()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>725</td>
+<td>726</td>
 <td>No DocBlock was found for method toggle_extension()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>731</td>
+<td>732</td>
 <td>No DocBlock was found for method update_memberships()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>751</td>
+<td>752</td>
 <td>No DocBlock was found for method getUsersByJSON()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>852</td>
+<td>866</td>
 <td>No DocBlock was found for method viewuser()</td>
 </tr>
 </tbody>
@@ -22677,62 +22676,62 @@
 </tr>
 <tr class="error">
 <td>error</td>
-<td>22</td>
+<td>25</td>
 <td>No DocBlock was found for method displayname()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>23</td>
+<td>29</td>
 <td>No DocBlock was found for method author()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>24</td>
+<td>33</td>
 <td>No DocBlock was found for method description()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>25</td>
+<td>37</td>
 <td>No DocBlock was found for method hasContent()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>26</td>
+<td>41</td>
 <td>No DocBlock was found for method hasSources()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>27</td>
+<td>45</td>
 <td>No DocBlock was found for method hasViews()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>28</td>
+<td>49</td>
 <td>No DocBlock was found for method supportsWorkflow()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>30</td>
+<td>53</td>
 <td>No DocBlock was found for method permissions()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>40</td>
+<td>63</td>
 <td>No DocBlock was found for method deleteIn()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>55</td>
+<td>78</td>
 <td>No DocBlock was found for method show()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>200</td>
+<td>223</td>
 <td>No DocBlock was found for method copyContent()</td>
 </tr>
 <tr class="error">
 <td>error</td>
-<td>230</td>
+<td>253</td>
 <td>No DocBlock was found for method wrapOutput()</td>
 </tr>
 </tbody>
@@ -23664,6 +23663,261 @@
 <div class="package-contents"></div>
 <div class="package-contents"></div>
 <div class="package-contents"></div>
+<div class="package-contents">
+<a name="framework%5Cplugins%5Ccompiler.switch.php" id="framework\plugins\compiler.switch.php"></a><h3>
+<i class="icon-file"></i>framework\plugins\compiler.switch.php<small style="float: right;padding-right: 10px;">48</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>101</td>
+<td>No DocBlock was found for \Smarty_Compiler_Switch</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>102</td>
+<td>No DocBlock was found for property $required_attributes</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>103</td>
+<td>No DocBlock was found for property $optional_attributes</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>104</td>
+<td>No DocBlock was found for property $shorttag_order</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>106</td>
+<td>Name of argument $args does not match with the DocBlock's name $tag_arg in compile()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>106</td>
+<td>Name of argument $compiler does not match with the DocBlock's name $smarty in compile()</td>
+</tr>
+<tr class="notice">
+<td>notice</td>
+<td>106</td>
+<td>Parameter $tag_arg could not be found in compile()</td>
+</tr>
+<tr class="notice">
+<td>notice</td>
+<td>106</td>
+<td>Parameter $smarty could not be found in compile()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>132</td>
+<td>No DocBlock was found for \Smarty_Compiler_Case</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>133</td>
+<td>No DocBlock was found for property $required_attributes</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>134</td>
+<td>No DocBlock was found for property $optional_attributes</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>135</td>
+<td>No DocBlock was found for property $shorttag_order</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>137</td>
+<td>Name of argument $args does not match with the DocBlock's name $tag_arg in compile()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>137</td>
+<td>Name of argument $compiler does not match with the DocBlock's name $smarty in compile()</td>
+</tr>
+<tr class="notice">
+<td>notice</td>
+<td>137</td>
+<td>Parameter $tag_arg could not be found in compile()</td>
+</tr>
+<tr class="notice">
+<td>notice</td>
+<td>137</td>
+<td>Parameter $smarty could not be found in compile()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>172</td>
+<td>No DocBlock was found for \Smarty_Compiler_Default</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>173</td>
+<td>No DocBlock was found for property $required_attributes</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>174</td>
+<td>No DocBlock was found for property $optional_attributes</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>175</td>
+<td>No DocBlock was found for property $shorttag_order</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>177</td>
+<td>Name of argument $args does not match with the DocBlock's name $tag_arg in compile()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>177</td>
+<td>Name of argument $compiler does not match with the DocBlock's name $smarty in compile()</td>
+</tr>
+<tr class="notice">
+<td>notice</td>
+<td>177</td>
+<td>Parameter $tag_arg could not be found in compile()</td>
+</tr>
+<tr class="notice">
+<td>notice</td>
+<td>177</td>
+<td>Parameter $smarty could not be found in compile()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>207</td>
+<td>No DocBlock was found for \Smarty_Compiler_Break</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>208</td>
+<td>No DocBlock was found for property $required_attributes</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>209</td>
+<td>No DocBlock was found for property $optional_attributes</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>210</td>
+<td>No DocBlock was found for property $shorttag_order</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>212</td>
+<td>Name of argument $args does not match with the DocBlock's name $tag_arg in compile()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>212</td>
+<td>Name of argument $compiler does not match with the DocBlock's name $smarty in compile()</td>
+</tr>
+<tr class="notice">
+<td>notice</td>
+<td>212</td>
+<td>Parameter $tag_arg could not be found in compile()</td>
+</tr>
+<tr class="notice">
+<td>notice</td>
+<td>212</td>
+<td>Parameter $smarty could not be found in compile()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>231</td>
+<td>No DocBlock was found for \Smarty_Compiler_Caseclose</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>232</td>
+<td>No DocBlock was found for property $required_attributes</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>233</td>
+<td>No DocBlock was found for property $optional_attributes</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>234</td>
+<td>No DocBlock was found for property $shorttag_order</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>236</td>
+<td>Name of argument $args does not match with the DocBlock's name $tag_arg in compile()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>236</td>
+<td>Name of argument $compiler does not match with the DocBlock's name $smarty in compile()</td>
+</tr>
+<tr class="notice">
+<td>notice</td>
+<td>236</td>
+<td>Parameter $tag_arg could not be found in compile()</td>
+</tr>
+<tr class="notice">
+<td>notice</td>
+<td>236</td>
+<td>Parameter $smarty could not be found in compile()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>255</td>
+<td>No DocBlock was found for \Smarty_Compiler_Switchclose</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>256</td>
+<td>No DocBlock was found for property $required_attributes</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>257</td>
+<td>No DocBlock was found for property $optional_attributes</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>258</td>
+<td>No DocBlock was found for property $shorttag_order</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>260</td>
+<td>Name of argument $args does not match with the DocBlock's name $tag_arg in compile()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>260</td>
+<td>Name of argument $compiler does not match with the DocBlock's name $smarty in compile()</td>
+</tr>
+<tr class="notice">
+<td>notice</td>
+<td>260</td>
+<td>Parameter $tag_arg could not be found in compile()</td>
+</tr>
+<tr class="notice">
+<td>notice</td>
+<td>260</td>
+<td>Parameter $smarty could not be found in compile()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents"></div>
 <div class="package-contents"></div>
 <div class="package-contents"></div>
 <div class="package-contents"></div>
@@ -23770,6 +24024,7 @@
 <div class="package-contents"></div>
 <div class="package-contents"></div>
 <div class="package-contents"></div>
+<div class="package-contents"></div>
 <div class="package-contents">
 <a name="framework%5Cplugins%5Cmodifier.html_substr.php" id="framework\plugins\modifier.html_substr.php"></a><h3>
 <i class="icon-file"></i>framework\plugins\modifier.html_substr.php<small style="float: right;padding-right: 10px;">1</small>
@@ -23792,6 +24047,23 @@
 <div class="package-contents"></div>
 <div class="package-contents"></div>
 <div class="package-contents"></div>
+<div class="package-contents">
+<a name="framework%5Cplugins%5Cmodifier.relative_date.php" id="framework\plugins\modifier.relative_date.php"></a><h3>
+<i class="icon-file"></i>framework\plugins\modifier.relative_date.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody><tr class="notice">
+<td>notice</td>
+<td>25</td>
+<td>Parameter $format could not be found in \smarty_modifier_relative_date()</td>
+</tr></tbody>
+</table></div>
+</div>
 <div class="package-contents"></div>
 <div class="package-contents"></div>
 <div class="package-contents"></div>
@@ -24215,6 +24487,23 @@
 <td>error</td>
 <td>0</td>
 <td>No page-level DocBlock was found in file install\popup.php</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="install%5Cpopups%5Cchanges.php" id="install\popups\changes.php"></a><h3>
+<i class="icon-file"></i>install\popups\changes.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody><tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file install\popups\changes.php</td>
 </tr></tbody>
 </table></div>
 </div>
@@ -24924,6 +25213,35 @@
 </table></div>
 </div>
 <div class="package-contents">
+<a name="install%5Cupgrades%5Cupgrade_calendar.php" id="install\upgrades\upgrade_calendar.php"></a><h3>
+<i class="icon-file"></i>install\upgrades\upgrade_calendar.php<small style="float: right;padding-right: 10px;">3</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="critical">
+<td>critical</td>
+<td>19</td>
+<td>No short description for file install\upgrades\upgrade_calendar.php</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>28</td>
+<td>No DocBlock was found for property $from_version</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>29</td>
+<td>No DocBlock was found for property $to_version</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
 <a name="install%5Cupgrades%5Cupgrade_navigation.php" id="install\upgrades\upgrade_navigation.php"></a><h3>
 <i class="icon-file"></i>install\upgrades\upgrade_navigation.php<small style="float: right;padding-right: 10px;">3</small>
 </h3>
@@ -24954,7 +25272,7 @@
 </div>
 <div class="package-contents">
 <a name="install%5Cupgrades%5Cupgrade_simplepoll.php" id="install\upgrades\upgrade_simplepoll.php"></a><h3>
-<i class="icon-file"></i>install\upgrades\upgrade_simplepoll.php<small style="float: right;padding-right: 10px;">4</small>
+<i class="icon-file"></i>install\upgrades\upgrade_simplepoll.php<small style="float: right;padding-right: 10px;">3</small>
 </h3>
 <div><table class="table markers table-bordered">
 <thead><tr>
@@ -24977,11 +25295,6 @@
 <td>error</td>
 <td>29</td>
 <td>No DocBlock was found for property $to_version</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>30</td>
-<td>No DocBlock was found for property $optional</td>
 </tr>
 </tbody>
 </table></div>
@@ -25116,752 +25429,6 @@
 <td>error</td>
 <td>0</td>
 <td>No page-level DocBlock was found in file source_selector.php</td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Cbasetheme%5Cclass.php" id="themes\basetheme\class.php"></a><h3>
-<i class="icon-file"></i>themes\basetheme\class.php<small style="float: right;padding-right: 10px;">5</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody>
-<tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\basetheme\class.php</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>21</td>
-<td>No DocBlock was found for \basetheme</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>22</td>
-<td>No DocBlock was found for method name()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>23</td>
-<td>No DocBlock was found for method author()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>24</td>
-<td>No DocBlock was found for method description()</td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Cbasetheme%5Cindex.php" id="themes\basetheme\index.php"></a><h3>
-<i class="icon-file"></i>themes\basetheme\index.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody><tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\basetheme\index.php</td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Cbasetheme%5Csubthemes%5CFollow%20Parent.php" id="themes\basetheme\subthemes\Follow Parent.php"></a><h3>
-<i class="icon-file"></i>themes\basetheme\subthemes\Follow Parent.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody><tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\basetheme\subthemes\Follow Parent.php</td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Cbasetheme%5Csubthemes%5CLeft%20Sectional.php" id="themes\basetheme\subthemes\Left Sectional.php"></a><h3>
-<i class="icon-file"></i>themes\basetheme\subthemes\Left Sectional.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody><tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\basetheme\subthemes\Left Sectional.php</td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Cbootstraptheme%5Cclass.php" id="themes\bootstraptheme\class.php"></a><h3>
-<i class="icon-file"></i>themes\bootstraptheme\class.php<small style="float: right;padding-right: 10px;">8</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody>
-<tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\bootstraptheme\class.php</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>21</td>
-<td>No DocBlock was found for \bootstraptheme</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>22</td>
-<td>No DocBlock was found for property $user_configured</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>24</td>
-<td>No DocBlock was found for method name()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>25</td>
-<td>No DocBlock was found for method author()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>26</td>
-<td>No DocBlock was found for method description()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>28</td>
-<td>No DocBlock was found for method configureTheme()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>63</td>
-<td>No DocBlock was found for method saveThemeConfig()</td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Cbootstraptheme%5Cconfig.php" id="themes\bootstraptheme\config.php"></a><h3>
-<i class="icon-file"></i>themes\bootstraptheme\config.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody><tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\bootstraptheme\config.php</td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Cbootstraptheme%5Ccontrols%5Cbuttongroupcontrol.php" id="themes\bootstraptheme\controls\buttongroupcontrol.php"></a><h3>
-<i class="icon-file"></i>themes\bootstraptheme\controls\buttongroupcontrol.php<small style="float: right;padding-right: 10px;">12</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody>
-<tr class="critical">
-<td>critical</td>
-<td>18</td>
-<td>No short description for file themes\bootstraptheme\controls\buttongroupcontrol.php</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>32</td>
-<td>No DocBlock was found for property $submit</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>33</td>
-<td>No DocBlock was found for property $reset</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>34</td>
-<td>No DocBlock was found for property $cancel</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>35</td>
-<td>No DocBlock was found for property $returntype</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>36</td>
-<td>No DocBlock was found for property $class</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>37</td>
-<td>No DocBlock was found for property $validateJS</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>39</td>
-<td>No DocBlock was found for method name()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>41</td>
-<td>No DocBlock was found for method __construct()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>49</td>
-<td>No DocBlock was found for method toHTML()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>58</td>
-<td>No DocBlock was found for method controlToHTML()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>101</td>
-<td>No DocBlock was found for method parseData()</td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Cbootstraptheme%5Cindex.php" id="themes\bootstraptheme\index.php"></a><h3>
-<i class="icon-file"></i>themes\bootstraptheme\index.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody><tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\bootstraptheme\index.php</td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Cbootstraptheme%5Cplugins%5Cfunction.bootstrap_navbar.php" id="themes\bootstraptheme\plugins\function.bootstrap_navbar.php"></a><h3>
-<i class="icon-file"></i>themes\bootstraptheme\plugins\function.bootstrap_navbar.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody><tr class="error">
-<td>error</td>
-<td>49</td>
-<td>No DocBlock was found for function \build_menu()</td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Cbootstraptheme%5Cplugins%5Cfunction.ddrerank.php" id="themes\bootstraptheme\plugins\function.ddrerank.php"></a><h3>
-<i class="icon-file"></i>themes\bootstraptheme\plugins\function.ddrerank.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody><tr class="error">
-<td>error</td>
-<td>36</td>
-<td>No DocBlock was found for function \smarty_function_ddrerank()</td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Cbootstraptheme%5Cplugins%5Cfunction.icon.php" id="themes\bootstraptheme\plugins\function.icon.php"></a><h3>
-<i class="icon-file"></i>themes\bootstraptheme\plugins\function.icon.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody><tr class="error">
-<td>error</td>
-<td>36</td>
-<td>No DocBlock was found for function \smarty_function_icon()</td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Cbootstraptheme%5Csubthemes%5CFollow%20Parent.php" id="themes\bootstraptheme\subthemes\Follow Parent.php"></a><h3>
-<i class="icon-file"></i>themes\bootstraptheme\subthemes\Follow Parent.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody><tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\bootstraptheme\subthemes\Follow Parent.php</td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Cbootstraptheme%5Csubthemes%5CLeft%20Sectional.php" id="themes\bootstraptheme\subthemes\Left Sectional.php"></a><h3>
-<i class="icon-file"></i>themes\bootstraptheme\subthemes\Left Sectional.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody><tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\bootstraptheme\subthemes\Left Sectional.php</td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Ccoolwatertheme%5Caction_maps.php" id="themes\coolwatertheme\action_maps.php"></a><h3>
-<i class="icon-file"></i>themes\coolwatertheme\action_maps.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody><tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\coolwatertheme\action_maps.php</td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Ccoolwatertheme%5Cclass.php" id="themes\coolwatertheme\class.php"></a><h3>
-<i class="icon-file"></i>themes\coolwatertheme\class.php<small style="float: right;padding-right: 10px;">7</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody>
-<tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\coolwatertheme\class.php</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>21</td>
-<td>No DocBlock was found for \coolwatertheme</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>22</td>
-<td>No DocBlock was found for property $user_configured</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>24</td>
-<td>No DocBlock was found for method name()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>25</td>
-<td>No DocBlock was found for method author()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>26</td>
-<td>No DocBlock was found for method description()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>28</td>
-<td>No DocBlock was found for method configureTheme()</td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Ccoolwatertheme%5Cconfig.php" id="themes\coolwatertheme\config.php"></a><h3>
-<i class="icon-file"></i>themes\coolwatertheme\config.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody><tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\coolwatertheme\config.php</td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Ccoolwatertheme%5Cconfig_Wide.php" id="themes\coolwatertheme\config_Wide.php"></a><h3>
-<i class="icon-file"></i>themes\coolwatertheme\config_Wide.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody><tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\coolwatertheme\config_Wide.php</td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Ccoolwatertheme%5Cindex.php" id="themes\coolwatertheme\index.php"></a><h3>
-<i class="icon-file"></i>themes\coolwatertheme\index.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody><tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\coolwatertheme\index.php</td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Ccoolwatertheme%5Csubthemes%5CFollow%20Parent.php" id="themes\coolwatertheme\subthemes\Follow Parent.php"></a><h3>
-<i class="icon-file"></i>themes\coolwatertheme\subthemes\Follow Parent.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody><tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\coolwatertheme\subthemes\Follow Parent.php</td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Ccoolwatertheme%5Csubthemes%5CFull%20Body.php" id="themes\coolwatertheme\subthemes\Full Body.php"></a><h3>
-<i class="icon-file"></i>themes\coolwatertheme\subthemes\Full Body.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody><tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\coolwatertheme\subthemes\Full Body.php</td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Ccoolwatertheme%5Csubthemes%5CLeft%20Sectional.php" id="themes\coolwatertheme\subthemes\Left Sectional.php"></a><h3>
-<i class="icon-file"></i>themes\coolwatertheme\subthemes\Left Sectional.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody><tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\coolwatertheme\subthemes\Left Sectional.php</td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Cmultioptionstheme%5Cclass.php" id="themes\multioptionstheme\class.php"></a><h3>
-<i class="icon-file"></i>themes\multioptionstheme\class.php<small style="float: right;padding-right: 10px;">7</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody>
-<tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\multioptionstheme\class.php</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>21</td>
-<td>No DocBlock was found for \multioptionstheme</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>22</td>
-<td>No DocBlock was found for property $user_configured</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>24</td>
-<td>No DocBlock was found for method name()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>25</td>
-<td>No DocBlock was found for method author()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>26</td>
-<td>No DocBlock was found for method description()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>28</td>
-<td>No DocBlock was found for method configureTheme()</td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Cmultioptionstheme%5Cconfig.php" id="themes\multioptionstheme\config.php"></a><h3>
-<i class="icon-file"></i>themes\multioptionstheme\config.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody><tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\multioptionstheme\config.php</td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Cmultioptionstheme%5Cindex.php" id="themes\multioptionstheme\index.php"></a><h3>
-<i class="icon-file"></i>themes\multioptionstheme\index.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody><tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\multioptionstheme\index.php</td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Cmultioptionstheme%5Csubthemes%5CFollow%20Parent.php" id="themes\multioptionstheme\subthemes\Follow Parent.php"></a><h3>
-<i class="icon-file"></i>themes\multioptionstheme\subthemes\Follow Parent.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody><tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\multioptionstheme\subthemes\Follow Parent.php</td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Cmultioptionstheme%5Csubthemes%5CLeft%20Sectional.php" id="themes\multioptionstheme\subthemes\Left Sectional.php"></a><h3>
-<i class="icon-file"></i>themes\multioptionstheme\subthemes\Left Sectional.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody><tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\multioptionstheme\subthemes\Left Sectional.php</td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Cretrotheme%5Cclass.php" id="themes\retrotheme\class.php"></a><h3>
-<i class="icon-file"></i>themes\retrotheme\class.php<small style="float: right;padding-right: 10px;">5</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody>
-<tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\retrotheme\class.php</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>21</td>
-<td>No DocBlock was found for \retrotheme</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>22</td>
-<td>No DocBlock was found for method name()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>23</td>
-<td>No DocBlock was found for method author()</td>
-</tr>
-<tr class="error">
-<td>error</td>
-<td>24</td>
-<td>No DocBlock was found for method description()</td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Cretrotheme%5Cconfig.php" id="themes\retrotheme\config.php"></a><h3>
-<i class="icon-file"></i>themes\retrotheme\config.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody><tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\retrotheme\config.php</td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Cretrotheme%5Cindex.php" id="themes\retrotheme\index.php"></a><h3>
-<i class="icon-file"></i>themes\retrotheme\index.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody><tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\retrotheme\index.php</td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Cretrotheme%5Csubthemes%5CFollow%20Parent.php" id="themes\retrotheme\subthemes\Follow Parent.php"></a><h3>
-<i class="icon-file"></i>themes\retrotheme\subthemes\Follow Parent.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody><tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\retrotheme\subthemes\Follow Parent.php</td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Cretrotheme%5Csubthemes%5CLeft%20Sectional.php" id="themes\retrotheme\subthemes\Left Sectional.php"></a><h3>
-<i class="icon-file"></i>themes\retrotheme\subthemes\Left Sectional.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody><tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\retrotheme\subthemes\Left Sectional.php</td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="package-contents">
-<a name="themes%5Cretrotheme%5Csubthemes%5CThree%20Column.php" id="themes\retrotheme\subthemes\Three Column.php"></a><h3>
-<i class="icon-file"></i>themes\retrotheme\subthemes\Three Column.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<thead><tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr></thead>
-<tbody><tr class="error">
-<td>error</td>
-<td>0</td>
-<td>No page-level DocBlock was found in file themes\retrotheme\subthemes\Three Column.php</td>
 </tr></tbody>
 </table></div>
 </div>
@@ -26028,12 +25595,76 @@
 </tr></tbody>
 </table></div>
 </div>
+<div class="package-contents">
+<a name="xmlrpc.php" id="xmlrpc.php"></a><h3>
+<i class="icon-file"></i>xmlrpc.php<small style="float: right;padding-right: 10px;">10</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file xmlrpc.php</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>37</td>
+<td>No DocBlock was found for function \userLogin()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>73</td>
+<td>No DocBlock was found for function \getUsersBlogs()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>108</td>
+<td>No DocBlock was found for function \newPost()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>178</td>
+<td>No DocBlock was found for function \editPost()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>240</td>
+<td>No DocBlock was found for function \getPost()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>278</td>
+<td>No DocBlock was found for function \deletePost()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>302</td>
+<td>No DocBlock was found for function \getRecentPosts()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>385</td>
+<td>No DocBlock was found for function \getCategories()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>426</td>
+<td>No DocBlock was found for function \newMediaObject()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
 </div>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
-            generated on 2012-09-27T13:42:01-04:00.<br></footer></div>
+            generated on 2012-10-20T17:18:43-04:00.<br></footer></div>
 </div>
 </body>
 </html>

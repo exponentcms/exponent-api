@@ -1,0 +1,579 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Exponent 2.1.0 » Smarty</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.1.0</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
+<li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
+<li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
+<li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
+<li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
+<li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">3453</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul>
+<li>todo 
+                <span class="label label-info">49</span>
+</li>
+<li>fixme 
+                <span class="label label-info">184</span>
+</li>
+</ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Packages</li>
+<li>
+<span class="empty-package"><i class="icon-folder-close"></i>Smarty</span><ul class="nav nav-list nav-packages"><li>
+<span class="empty-package"><i class="icon-folder-close"></i>plugins
+Sample usage:
+&lt;code&gt;
+{foreach item=$debugItem from=$debugData}
+// Switch on $debugItem</span><ul class="nav nav-list nav-packages"><li>
+<span class="empty-package"><i class="icon-folder-close"></i>type
+{switch $debugItem</span><ul class="nav nav-list nav-packages"><li>
+<span class="empty-package"><i class="icon-folder-close"></i>type}
+{case 1}
+{case "invalid</span><ul class="nav nav-list nav-packages"><li>
+<span class="empty-package"><i class="icon-folder-close"></i>field"}
+// Case checks for string and numbers</span><ul class="nav nav-list nav-packages"><li>
+<span class="empty-package"><i class="icon-folder-close"></i>
+{/case}
+{case $postError}
+{case $getError|cat:"</span><ul class="nav nav-list nav-packages"><li>
+<span class="empty-package"><i class="icon-folder-close"></i>ajax"|lower}
+// Case checks can also use variables and modifiers</span><ul class="nav nav-list nav-packages"><li>
+<span class="empty-package"><i class="icon-folder-close"></i>
+{break}
+{default}
+// Default case is supported</span><ul class="nav nav-list nav-packages"><li>
+<span class="empty-package"><i class="icon-folder-close"></i>
+{/switch}
+{/foreach}
+&lt;/code&gt;
+Note in the above example that the break statements work exactly as expected</span><ul class="nav nav-list nav-packages"><li>
+<span class="empty-package"><i class="icon-folder-close"></i>  Also the switch and default
+tags can take the break attribute</span><ul class="nav nav-list nav-packages"><li>
+<span class="empty-package"><i class="icon-folder-close"></i> If set they will break automatically before the next case is printed</span><ul class="nav nav-list nav-packages"><li>
+<span class="empty-package"><i class="icon-folder-close"></i>
+Both blocks produce the same switch logic:
+&lt;code&gt;
+{case 1 break}
+Code 1
+{case 2}
+Code 2
+{default break}
+Code 3
+&lt;/code&gt;
+&lt;code&gt;
+{case 1}
+Code 1
+{break}
+{case 2}
+Code 2
+{default}
+Code 3
+{break}
+&lt;/code&gt;
+Finally, there is an alternate long hand style for the switch statments that you may need to use in some cases</span><ul class="nav nav-list nav-packages"><li>
+<a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.%0D%0A%7Bbreak%7D%0D%0A%7Bdefault%7D%0D%0A..%20Default%20case%20is%20supported.%0D%0A%7B.switch%7D%0D%0A%7B.foreach%7D%0D%0A&lt;.code&gt;%0D%0ANote%20in%20the%20above%20example%20that%20the%20break%20statements%20work%20exactly%20as%20expected.%20%20Also%20the%20switch%20and%20default%0D%0Atags%20can%20take%20the%20break%20attribute.%20If%20set%20they%20will%20break%20automatically%20before%20the%20next%20case%20is%20printed.%0D%0ABoth%20blocks%20produce%20the%20same%20switch%20logic:%0D%0A&lt;code&gt;%0D%0A%7Bcase%201%20break%7D%0D%0ACode%201%0D%0A%7Bcase%202%7D%0D%0ACode%202%0D%0A%7Bdefault%20break%7D%0D%0ACode%203%0D%0A&lt;.code&gt;%0D%0A&lt;code&gt;%0D%0A%7Bcase%201%7D%0D%0ACode%201%0D%0A%7Bbreak%7D%0D%0A%7Bcase%202%7D%0D%0ACode%202%0D%0A%7Bdefault%7D%0D%0ACode%203%0D%0A%7Bbreak%7D%0D%0A&lt;.code&gt;%0D%0AFinally,%20there%20is%20an%20alternate%20long%20hand%20style%20for%20the%20switch%20statments%20that%20you%20may%20need%20to%20use%20in%20some%20cases.%0D%0A&lt;code&gt;%0D%0A%7Bswitch%20var=%24type%7D%0D%0A%7Bcase%20value=%22box%22%20break%7D%0D%0A%7Bcase%20value=%22line%22%7D%0D%0A%7Bbreak%7D%0D%0A%7Bdefault%7D%0D%0A%7B.switch%7D%0D%0A&lt;.code&gt;.html" title='
+&lt;code&gt;
+{switch var=$type}
+{case value="box" break}
+{case value="line"}
+{break}
+{default}
+{/switch}
+&lt;/code&gt;'><i class="icon-folder-open"></i>
+&lt;code&gt;
+{switch var=$type}
+{case value="box" break}
+{case value="line"}
+{break}
+{default}
+{/switch}
+&lt;/code&gt;</a><ul class="nav nav-list nav-packages"></ul>
+</li></ul>
+</li></ul>
+</li></ul>
+</li></ul>
+</li></ul>
+</li></ul>
+</li></ul>
+</li></ul>
+</li></ul>
+</li></ul>
+</li></ul>
+</li></ul>
+</li>
+</ul>
+</div>
+<div class="span8 package-contents">
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span>
+</li>
+<li class="active"><a href="../packages/Smarty.html">Smarty</a></li>
+</ul>
+<div class="package-indent">
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../packages/Smarty.html">Smarty</a></li>
+<span class="divider">\</span><li class="active"><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.html">plugins
+Sample usage:
+&lt;code&gt;
+{foreach item=$debugItem from=$debugData}
+// Switch on $debugItem</a></li>
+</ul>
+<div class="package-indent">
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../packages/Smarty.html">Smarty</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.html">plugins
+Sample usage:
+&lt;code&gt;
+{foreach item=$debugItem from=$debugData}
+// Switch on $debugItem</a></li>
+<span class="divider">\</span><li class="active"><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.html">type
+{switch $debugItem</a></li>
+</ul>
+<div class="package-indent">
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../packages/Smarty.html">Smarty</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.html">plugins
+Sample usage:
+&lt;code&gt;
+{foreach item=$debugItem from=$debugData}
+// Switch on $debugItem</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.html">type
+{switch $debugItem</a></li>
+<span class="divider">\</span><li class="active"><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.html">type}
+{case 1}
+{case "invalid</a></li>
+</ul>
+<div class="package-indent">
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../packages/Smarty.html">Smarty</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.html">plugins
+Sample usage:
+&lt;code&gt;
+{foreach item=$debugItem from=$debugData}
+// Switch on $debugItem</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.html">type
+{switch $debugItem</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.html">type}
+{case 1}
+{case "invalid</a></li>
+<span class="divider">\</span><li class="active"><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.html">field"}
+// Case checks for string and numbers</a></li>
+</ul>
+<div class="package-indent">
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../packages/Smarty.html">Smarty</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.html">plugins
+Sample usage:
+&lt;code&gt;
+{foreach item=$debugItem from=$debugData}
+// Switch on $debugItem</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.html">type
+{switch $debugItem</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.html">type}
+{case 1}
+{case "invalid</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.html">field"}
+// Case checks for string and numbers</a></li>
+<span class="divider">\</span><li class="active"><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.html">
+{/case}
+{case $postError}
+{case $getError|cat:"</a></li>
+</ul>
+<div class="package-indent">
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../packages/Smarty.html">Smarty</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.html">plugins
+Sample usage:
+&lt;code&gt;
+{foreach item=$debugItem from=$debugData}
+// Switch on $debugItem</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.html">type
+{switch $debugItem</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.html">type}
+{case 1}
+{case "invalid</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.html">field"}
+// Case checks for string and numbers</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.html">
+{/case}
+{case $postError}
+{case $getError|cat:"</a></li>
+<span class="divider">\</span><li class="active"><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.html">ajax"|lower}
+// Case checks can also use variables and modifiers</a></li>
+</ul>
+<div class="package-indent">
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../packages/Smarty.html">Smarty</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.html">plugins
+Sample usage:
+&lt;code&gt;
+{foreach item=$debugItem from=$debugData}
+// Switch on $debugItem</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.html">type
+{switch $debugItem</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.html">type}
+{case 1}
+{case "invalid</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.html">field"}
+// Case checks for string and numbers</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.html">
+{/case}
+{case $postError}
+{case $getError|cat:"</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.html">ajax"|lower}
+// Case checks can also use variables and modifiers</a></li>
+<span class="divider">\</span><li class="active"><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.%0D%0A%7Bbreak%7D%0D%0A%7Bdefault%7D%0D%0A..%20Default%20case%20is%20supported.html">
+{break}
+{default}
+// Default case is supported</a></li>
+</ul>
+<div class="package-indent">
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../packages/Smarty.html">Smarty</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.html">plugins
+Sample usage:
+&lt;code&gt;
+{foreach item=$debugItem from=$debugData}
+// Switch on $debugItem</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.html">type
+{switch $debugItem</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.html">type}
+{case 1}
+{case "invalid</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.html">field"}
+// Case checks for string and numbers</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.html">
+{/case}
+{case $postError}
+{case $getError|cat:"</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.html">ajax"|lower}
+// Case checks can also use variables and modifiers</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.%0D%0A%7Bbreak%7D%0D%0A%7Bdefault%7D%0D%0A..%20Default%20case%20is%20supported.html">
+{break}
+{default}
+// Default case is supported</a></li>
+<span class="divider">\</span><li class="active"><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.%0D%0A%7Bbreak%7D%0D%0A%7Bdefault%7D%0D%0A..%20Default%20case%20is%20supported.%0D%0A%7B.switch%7D%0D%0A%7B.foreach%7D%0D%0A&lt;.code&gt;%0D%0ANote%20in%20the%20above%20example%20that%20the%20break%20statements%20work%20exactly%20as%20expected.html">
+{/switch}
+{/foreach}
+&lt;/code&gt;
+Note in the above example that the break statements work exactly as expected</a></li>
+</ul>
+<div class="package-indent">
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../packages/Smarty.html">Smarty</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.html">plugins
+Sample usage:
+&lt;code&gt;
+{foreach item=$debugItem from=$debugData}
+// Switch on $debugItem</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.html">type
+{switch $debugItem</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.html">type}
+{case 1}
+{case "invalid</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.html">field"}
+// Case checks for string and numbers</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.html">
+{/case}
+{case $postError}
+{case $getError|cat:"</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.html">ajax"|lower}
+// Case checks can also use variables and modifiers</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.%0D%0A%7Bbreak%7D%0D%0A%7Bdefault%7D%0D%0A..%20Default%20case%20is%20supported.html">
+{break}
+{default}
+// Default case is supported</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.%0D%0A%7Bbreak%7D%0D%0A%7Bdefault%7D%0D%0A..%20Default%20case%20is%20supported.%0D%0A%7B.switch%7D%0D%0A%7B.foreach%7D%0D%0A&lt;.code&gt;%0D%0ANote%20in%20the%20above%20example%20that%20the%20break%20statements%20work%20exactly%20as%20expected.html">
+{/switch}
+{/foreach}
+&lt;/code&gt;
+Note in the above example that the break statements work exactly as expected</a></li>
+<span class="divider">\</span><li class="active"><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.%0D%0A%7Bbreak%7D%0D%0A%7Bdefault%7D%0D%0A..%20Default%20case%20is%20supported.%0D%0A%7B.switch%7D%0D%0A%7B.foreach%7D%0D%0A&lt;.code&gt;%0D%0ANote%20in%20the%20above%20example%20that%20the%20break%20statements%20work%20exactly%20as%20expected.%20%20Also%20the%20switch%20and%20default%0D%0Atags%20can%20take%20the%20break%20attribute.html">  Also the switch and default
+tags can take the break attribute</a></li>
+</ul>
+<div class="package-indent">
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../packages/Smarty.html">Smarty</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.html">plugins
+Sample usage:
+&lt;code&gt;
+{foreach item=$debugItem from=$debugData}
+// Switch on $debugItem</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.html">type
+{switch $debugItem</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.html">type}
+{case 1}
+{case "invalid</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.html">field"}
+// Case checks for string and numbers</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.html">
+{/case}
+{case $postError}
+{case $getError|cat:"</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.html">ajax"|lower}
+// Case checks can also use variables and modifiers</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.%0D%0A%7Bbreak%7D%0D%0A%7Bdefault%7D%0D%0A..%20Default%20case%20is%20supported.html">
+{break}
+{default}
+// Default case is supported</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.%0D%0A%7Bbreak%7D%0D%0A%7Bdefault%7D%0D%0A..%20Default%20case%20is%20supported.%0D%0A%7B.switch%7D%0D%0A%7B.foreach%7D%0D%0A&lt;.code&gt;%0D%0ANote%20in%20the%20above%20example%20that%20the%20break%20statements%20work%20exactly%20as%20expected.html">
+{/switch}
+{/foreach}
+&lt;/code&gt;
+Note in the above example that the break statements work exactly as expected</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.%0D%0A%7Bbreak%7D%0D%0A%7Bdefault%7D%0D%0A..%20Default%20case%20is%20supported.%0D%0A%7B.switch%7D%0D%0A%7B.foreach%7D%0D%0A&lt;.code&gt;%0D%0ANote%20in%20the%20above%20example%20that%20the%20break%20statements%20work%20exactly%20as%20expected.%20%20Also%20the%20switch%20and%20default%0D%0Atags%20can%20take%20the%20break%20attribute.html">  Also the switch and default
+tags can take the break attribute</a></li>
+<span class="divider">\</span><li class="active"><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.%0D%0A%7Bbreak%7D%0D%0A%7Bdefault%7D%0D%0A..%20Default%20case%20is%20supported.%0D%0A%7B.switch%7D%0D%0A%7B.foreach%7D%0D%0A&lt;.code&gt;%0D%0ANote%20in%20the%20above%20example%20that%20the%20break%20statements%20work%20exactly%20as%20expected.%20%20Also%20the%20switch%20and%20default%0D%0Atags%20can%20take%20the%20break%20attribute.%20If%20set%20they%20will%20break%20automatically%20before%20the%20next%20case%20is%20printed.html"> If set they will break automatically before the next case is printed</a></li>
+</ul>
+<div class="package-indent">
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../packages/Smarty.html">Smarty</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.html">plugins
+Sample usage:
+&lt;code&gt;
+{foreach item=$debugItem from=$debugData}
+// Switch on $debugItem</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.html">type
+{switch $debugItem</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.html">type}
+{case 1}
+{case "invalid</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.html">field"}
+// Case checks for string and numbers</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.html">
+{/case}
+{case $postError}
+{case $getError|cat:"</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.html">ajax"|lower}
+// Case checks can also use variables and modifiers</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.%0D%0A%7Bbreak%7D%0D%0A%7Bdefault%7D%0D%0A..%20Default%20case%20is%20supported.html">
+{break}
+{default}
+// Default case is supported</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.%0D%0A%7Bbreak%7D%0D%0A%7Bdefault%7D%0D%0A..%20Default%20case%20is%20supported.%0D%0A%7B.switch%7D%0D%0A%7B.foreach%7D%0D%0A&lt;.code&gt;%0D%0ANote%20in%20the%20above%20example%20that%20the%20break%20statements%20work%20exactly%20as%20expected.html">
+{/switch}
+{/foreach}
+&lt;/code&gt;
+Note in the above example that the break statements work exactly as expected</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.%0D%0A%7Bbreak%7D%0D%0A%7Bdefault%7D%0D%0A..%20Default%20case%20is%20supported.%0D%0A%7B.switch%7D%0D%0A%7B.foreach%7D%0D%0A&lt;.code&gt;%0D%0ANote%20in%20the%20above%20example%20that%20the%20break%20statements%20work%20exactly%20as%20expected.%20%20Also%20the%20switch%20and%20default%0D%0Atags%20can%20take%20the%20break%20attribute.html">  Also the switch and default
+tags can take the break attribute</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.%0D%0A%7Bbreak%7D%0D%0A%7Bdefault%7D%0D%0A..%20Default%20case%20is%20supported.%0D%0A%7B.switch%7D%0D%0A%7B.foreach%7D%0D%0A&lt;.code&gt;%0D%0ANote%20in%20the%20above%20example%20that%20the%20break%20statements%20work%20exactly%20as%20expected.%20%20Also%20the%20switch%20and%20default%0D%0Atags%20can%20take%20the%20break%20attribute.%20If%20set%20they%20will%20break%20automatically%20before%20the%20next%20case%20is%20printed.html"> If set they will break automatically before the next case is printed</a></li>
+<span class="divider">\</span><li class="active"><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.%0D%0A%7Bbreak%7D%0D%0A%7Bdefault%7D%0D%0A..%20Default%20case%20is%20supported.%0D%0A%7B.switch%7D%0D%0A%7B.foreach%7D%0D%0A&lt;.code&gt;%0D%0ANote%20in%20the%20above%20example%20that%20the%20break%20statements%20work%20exactly%20as%20expected.%20%20Also%20the%20switch%20and%20default%0D%0Atags%20can%20take%20the%20break%20attribute.%20If%20set%20they%20will%20break%20automatically%20before%20the%20next%20case%20is%20printed.%0D%0ABoth%20blocks%20produce%20the%20same%20switch%20logic:%0D%0A&lt;code&gt;%0D%0A%7Bcase%201%20break%7D%0D%0ACode%201%0D%0A%7Bcase%202%7D%0D%0ACode%202%0D%0A%7Bdefault%20break%7D%0D%0ACode%203%0D%0A&lt;.code&gt;%0D%0A&lt;code&gt;%0D%0A%7Bcase%201%7D%0D%0ACode%201%0D%0A%7Bbreak%7D%0D%0A%7Bcase%202%7D%0D%0ACode%202%0D%0A%7Bdefault%7D%0D%0ACode%203%0D%0A%7Bbreak%7D%0D%0A&lt;.code&gt;%0D%0AFinally,%20there%20is%20an%20alternate%20long%20hand%20style%20for%20the%20switch%20statments%20that%20you%20may%20need%20to%20use%20in%20some%20cases.html">
+Both blocks produce the same switch logic:
+&lt;code&gt;
+{case 1 break}
+Code 1
+{case 2}
+Code 2
+{default break}
+Code 3
+&lt;/code&gt;
+&lt;code&gt;
+{case 1}
+Code 1
+{break}
+{case 2}
+Code 2
+{default}
+Code 3
+{break}
+&lt;/code&gt;
+Finally, there is an alternate long hand style for the switch statments that you may need to use in some cases</a></li>
+</ul>
+<div class="package-indent">
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../packages/Smarty.html">Smarty</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.html">plugins
+Sample usage:
+&lt;code&gt;
+{foreach item=$debugItem from=$debugData}
+// Switch on $debugItem</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.html">type
+{switch $debugItem</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.html">type}
+{case 1}
+{case "invalid</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.html">field"}
+// Case checks for string and numbers</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.html">
+{/case}
+{case $postError}
+{case $getError|cat:"</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.html">ajax"|lower}
+// Case checks can also use variables and modifiers</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.%0D%0A%7Bbreak%7D%0D%0A%7Bdefault%7D%0D%0A..%20Default%20case%20is%20supported.html">
+{break}
+{default}
+// Default case is supported</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.%0D%0A%7Bbreak%7D%0D%0A%7Bdefault%7D%0D%0A..%20Default%20case%20is%20supported.%0D%0A%7B.switch%7D%0D%0A%7B.foreach%7D%0D%0A&lt;.code&gt;%0D%0ANote%20in%20the%20above%20example%20that%20the%20break%20statements%20work%20exactly%20as%20expected.html">
+{/switch}
+{/foreach}
+&lt;/code&gt;
+Note in the above example that the break statements work exactly as expected</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.%0D%0A%7Bbreak%7D%0D%0A%7Bdefault%7D%0D%0A..%20Default%20case%20is%20supported.%0D%0A%7B.switch%7D%0D%0A%7B.foreach%7D%0D%0A&lt;.code&gt;%0D%0ANote%20in%20the%20above%20example%20that%20the%20break%20statements%20work%20exactly%20as%20expected.%20%20Also%20the%20switch%20and%20default%0D%0Atags%20can%20take%20the%20break%20attribute.html">  Also the switch and default
+tags can take the break attribute</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.%0D%0A%7Bbreak%7D%0D%0A%7Bdefault%7D%0D%0A..%20Default%20case%20is%20supported.%0D%0A%7B.switch%7D%0D%0A%7B.foreach%7D%0D%0A&lt;.code&gt;%0D%0ANote%20in%20the%20above%20example%20that%20the%20break%20statements%20work%20exactly%20as%20expected.%20%20Also%20the%20switch%20and%20default%0D%0Atags%20can%20take%20the%20break%20attribute.%20If%20set%20they%20will%20break%20automatically%20before%20the%20next%20case%20is%20printed.html"> If set they will break automatically before the next case is printed</a></li>
+<span class="divider">\</span><li><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.%0D%0A%7Bbreak%7D%0D%0A%7Bdefault%7D%0D%0A..%20Default%20case%20is%20supported.%0D%0A%7B.switch%7D%0D%0A%7B.foreach%7D%0D%0A&lt;.code&gt;%0D%0ANote%20in%20the%20above%20example%20that%20the%20break%20statements%20work%20exactly%20as%20expected.%20%20Also%20the%20switch%20and%20default%0D%0Atags%20can%20take%20the%20break%20attribute.%20If%20set%20they%20will%20break%20automatically%20before%20the%20next%20case%20is%20printed.%0D%0ABoth%20blocks%20produce%20the%20same%20switch%20logic:%0D%0A&lt;code&gt;%0D%0A%7Bcase%201%20break%7D%0D%0ACode%201%0D%0A%7Bcase%202%7D%0D%0ACode%202%0D%0A%7Bdefault%20break%7D%0D%0ACode%203%0D%0A&lt;.code&gt;%0D%0A&lt;code&gt;%0D%0A%7Bcase%201%7D%0D%0ACode%201%0D%0A%7Bbreak%7D%0D%0A%7Bcase%202%7D%0D%0ACode%202%0D%0A%7Bdefault%7D%0D%0ACode%203%0D%0A%7Bbreak%7D%0D%0A&lt;.code&gt;%0D%0AFinally,%20there%20is%20an%20alternate%20long%20hand%20style%20for%20the%20switch%20statments%20that%20you%20may%20need%20to%20use%20in%20some%20cases.html">
+Both blocks produce the same switch logic:
+&lt;code&gt;
+{case 1 break}
+Code 1
+{case 2}
+Code 2
+{default break}
+Code 3
+&lt;/code&gt;
+&lt;code&gt;
+{case 1}
+Code 1
+{break}
+{case 2}
+Code 2
+{default}
+Code 3
+{break}
+&lt;/code&gt;
+Finally, there is an alternate long hand style for the switch statments that you may need to use in some cases</a></li>
+<span class="divider">\</span><li class="active"><a href="../packages/Smarty.plugins%0D%0ASample%20usage:%0D%0A&lt;code&gt;%0D%0A%7Bforeach%20item=%24debugItem%20from=%24debugData%7D%0D%0A..%20Switch%20on%20%24debugItem.type%0D%0A%7Bswitch%20%24debugItem.type%7D%0D%0A%7Bcase%201%7D%0D%0A%7Bcase%20%22invalid.field%22%7D%0D%0A..%20Case%20checks%20for%20string%20and%20numbers.%0D%0A%7B.case%7D%0D%0A%7Bcase%20%24postError%7D%0D%0A%7Bcase%20%24getError%7Ccat:%22.ajax%22%7Clower%7D%0D%0A..%20Case%20checks%20can%20also%20use%20variables%20and%20modifiers.%0D%0A%7Bbreak%7D%0D%0A%7Bdefault%7D%0D%0A..%20Default%20case%20is%20supported.%0D%0A%7B.switch%7D%0D%0A%7B.foreach%7D%0D%0A&lt;.code&gt;%0D%0ANote%20in%20the%20above%20example%20that%20the%20break%20statements%20work%20exactly%20as%20expected.%20%20Also%20the%20switch%20and%20default%0D%0Atags%20can%20take%20the%20break%20attribute.%20If%20set%20they%20will%20break%20automatically%20before%20the%20next%20case%20is%20printed.%0D%0ABoth%20blocks%20produce%20the%20same%20switch%20logic:%0D%0A&lt;code&gt;%0D%0A%7Bcase%201%20break%7D%0D%0ACode%201%0D%0A%7Bcase%202%7D%0D%0ACode%202%0D%0A%7Bdefault%20break%7D%0D%0ACode%203%0D%0A&lt;.code&gt;%0D%0A&lt;code&gt;%0D%0A%7Bcase%201%7D%0D%0ACode%201%0D%0A%7Bbreak%7D%0D%0A%7Bcase%202%7D%0D%0ACode%202%0D%0A%7Bdefault%7D%0D%0ACode%203%0D%0A%7Bbreak%7D%0D%0A&lt;.code&gt;%0D%0AFinally,%20there%20is%20an%20alternate%20long%20hand%20style%20for%20the%20switch%20statments%20that%20you%20may%20need%20to%20use%20in%20some%20cases.%0D%0A&lt;code&gt;%0D%0A%7Bswitch%20var=%24type%7D%0D%0A%7Bcase%20value=%22box%22%20break%7D%0D%0A%7Bcase%20value=%22line%22%7D%0D%0A%7Bbreak%7D%0D%0A%7Bdefault%7D%0D%0A%7B.switch%7D%0D%0A&lt;.code&gt;.html">
+&lt;code&gt;
+{switch var=$type}
+{case value="box" break}
+{case value="line"}
+{break}
+{default}
+{/switch}
+&lt;/code&gt;</a></li>
+</ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-function"></i> Functions</h3>
+<a name="smarty_postfilter_switch" id="smarty_postfilter_switch"></a><div class="element clickable function  smarty_postfilter_switch" data-toggle="collapse" data-target=".smarty_postfilter_switch .collapse">
+<h2>Filter the template after it is generated to fix switch bugs.</h2>
+<pre>smarty_postfilter_switch(string $compiled, \Smarty_Compiler $smarty) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Remove any spaces after the 'switch () {' code and before the first case.  Any tabs or spaces
+      for layout would cause php errors witch this reged will fix.</p></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$compiled</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$smarty</h4>
+<code>\Smarty_Compiler</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
+            generated on 2012-10-20T17:18:21-04:00.<br></footer></div>
+</div>
+</body>
+</html>

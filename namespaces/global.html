@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Exponent 2.0.9 » global</title>
+<title>Exponent 2.1.0 » global</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -15,7 +15,7 @@
 <body>
 <div class="navbar navbar-fixed-top">
 <div class="navbar-inner"><div class="container">
-<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.0.9</a><div class="nav-collapse"><ul class="nav">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.1.0</a><div class="nav-collapse"><ul class="nav">
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
@@ -24,6 +24,7 @@
 <li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 <li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
 <li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
+<li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
 <li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
@@ -37,11 +38,11 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3456</span></a></li>
+                <span class="label label-info">3453</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
-                <span class="label label-info">41</span>
+                <span class="label label-info">49</span>
 </li>
 <li>fixme 
                 <span class="label label-info">184</span>
@@ -202,17 +203,6 @@
 <div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
-<a name="build_menu" id="build_menu"></a><div class="element clickable function  build_menu" data-toggle="collapse" data-target=".build_menu .collapse">
-<h2>build_menu()
-        </h2>
-<pre>build_menu($page) </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$page</h4></div>
-</div></div>
-</div>
 <a name="collapse" id="collapse"></a><div class="element clickable function  collapse" data-toggle="collapse" data-target=".collapse .collapse">
 <h2>collapse()
         </h2>
@@ -254,6 +244,17 @@
 <pre>curPageURL() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="deletePost" id="deletePost"></a><div class="element clickable function  deletePost" data-toggle="collapse" data-target=".deletePost .collapse">
+<h2>deletePost()
+        </h2>
+<pre>deletePost($xmlrpcmsg) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$xmlrpcmsg</h4></div>
+</div></div>
 </div>
 <a name="do_dir" id="do_dir"></a><div class="element clickable function  do_dir" data-toggle="collapse" data-target=".do_dir .collapse">
 <h2>do_dir()
@@ -359,6 +360,17 @@
 <p class="long_description"></p>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$msg</h4></div>
+</div></div>
+</div>
+<a name="editPost" id="editPost"></a><div class="element clickable function  editPost" data-toggle="collapse" data-target=".editPost .collapse">
+<h2>editPost()
+        </h2>
+<pre>editPost($xmlrpcmsg) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$xmlrpcmsg</h4></div>
 </div></div>
 </div>
 <a name="epb" id="epb"></a><div class="element clickable function  epb" data-toggle="collapse" data-target=".epb .collapse">
@@ -666,6 +678,19 @@ This is the expTheme 1.0 compatibility layer</h2>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
+<a name="findchildren" id="findchildren"></a><div class="element clickable function  findchildren" data-toggle="collapse" data-target=".findchildren .collapse">
+<h2>findchildren()
+        </h2>
+<pre>findchildren($parent, $comments, $k) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$parent</h4></div>
+<div class="subelement argument"><h4>$comments</h4></div>
+<div class="subelement argument"><h4>$k</h4></div>
+</div></div>
+</div>
 <a name="flash" id="flash"></a><div class="element clickable function  flash" data-toggle="collapse" data-target=".flash .collapse">
 <h2>flash()
         </h2>
@@ -710,6 +735,50 @@ This is the expTheme 1.0 compatibility layer</h2>
 <p class="long_description"></p>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$str</h4></div>
+</div></div>
+</div>
+<a name="getCategories" id="getCategories"></a><div class="element clickable function  getCategories" data-toggle="collapse" data-target=".getCategories .collapse">
+<h2>getCategories()
+        </h2>
+<pre>getCategories($xmlrpcmsg) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$xmlrpcmsg</h4></div>
+</div></div>
+</div>
+<a name="getPost" id="getPost"></a><div class="element clickable function  getPost" data-toggle="collapse" data-target=".getPost .collapse">
+<h2>getPost()
+        </h2>
+<pre>getPost($xmlrpcmsg) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$xmlrpcmsg</h4></div>
+</div></div>
+</div>
+<a name="getRecentPosts" id="getRecentPosts"></a><div class="element clickable function  getRecentPosts" data-toggle="collapse" data-target=".getRecentPosts .collapse">
+<h2>getRecentPosts()
+        </h2>
+<pre>getRecentPosts($xmlrpcmsg) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$xmlrpcmsg</h4></div>
+</div></div>
+</div>
+<a name="getUsersBlogs" id="getUsersBlogs"></a><div class="element clickable function  getUsersBlogs" data-toggle="collapse" data-target=".getUsersBlogs .collapse">
+<h2>getUsersBlogs()
+        </h2>
+<pre>getUsersBlogs($xmlrpcmsg) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$xmlrpcmsg</h4></div>
 </div></div>
 </div>
 <a name="get_action_views" id="get_action_views"></a><div class="element clickable function  get_action_views" data-toggle="collapse" data-target=".get_action_views .collapse">
@@ -865,6 +934,28 @@ This is the expTheme 1.0 compatibility layer</h2>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$params</h4></div>
 <div class="subelement argument"><h4>$secure</h4></div>
+</div></div>
+</div>
+<a name="newMediaObject" id="newMediaObject"></a><div class="element clickable function  newMediaObject" data-toggle="collapse" data-target=".newMediaObject .collapse">
+<h2>newMediaObject()
+        </h2>
+<pre>newMediaObject($xmlrpcmsg) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$xmlrpcmsg</h4></div>
+</div></div>
+</div>
+<a name="newPost" id="newPost"></a><div class="element clickable function  newPost" data-toggle="collapse" data-target=".newPost .collapse">
+<h2>newPost()
+        </h2>
+<pre>newPost($xmlrpcmsg) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$xmlrpcmsg</h4></div>
 </div></div>
 </div>
 <a name="oasort" id="oasort"></a><div class="element clickable function  oasort" data-toggle="collapse" data-target=".oasort .collapse">
@@ -1218,24 +1309,6 @@ Purpose:  create a back link</p></p>
 </div>
 </div></div>
 </div>
-<a name="smarty_function_bootstrap_navbar" id="smarty_function_bootstrap_navbar"></a><div class="element clickable function  smarty_function_bootstrap_navbar" data-toggle="collapse" data-target=".smarty_function_bootstrap_navbar .collapse">
-<h2>Smarty {yuimenubar} function plugin</h2>
-<pre>smarty_function_bootstrap_navbar($params, \Smarty $smarty) : string</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<p class="long_description"><p>Type:     function<br>
-Name:     yuimenubar<br>
-Purpose:  display a yui menu bar</p></p>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$params</h4></div>
-<div class="subelement argument">
-<h4>$smarty</h4>
-<code>\Smarty</code>
-</div>
-<h3>Returns</h3>
-<div class="subelement response"><code>string</code></div>
-</div></div>
-</div>
 <a name="smarty_function_br" id="smarty_function_br"></a><div class="element clickable function  smarty_function_br" data-toggle="collapse" data-target=".smarty_function_br .collapse">
 <h2>Smarty {br} function plugin</h2>
 <pre>smarty_function_br($params, \Smarty $smarty) </pre>
@@ -1320,6 +1393,22 @@ Purpose:  Get comments</p></p>
 </div>
 </div></div>
 </div>
+<a name="smarty_function_comments_count" id="smarty_function_comments_count"></a><div class="element clickable function  smarty_function_comments_count" data-toggle="collapse" data-target=".smarty_function_comments_count .collapse">
+<h2>Smarty {comments_count} function plugin</h2>
+<pre>smarty_function_comments_count($params, \Smarty $smarty) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Type:     function<br>
+Name:     comments_count<br>
+Purpose:  format a link for displaying number of item comments</p></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$params</h4></div>
+<div class="subelement argument">
+<h4>$smarty</h4>
+<code>\Smarty</code>
+</div>
+</div></div>
+</div>
 <a name="smarty_function_configpanel" id="smarty_function_configpanel"></a><div class="element clickable function  smarty_function_configpanel" data-toggle="collapse" data-target=".smarty_function_configpanel .collapse">
 <h2>Smarty {configpanel} function plugin</h2>
 <pre>smarty_function_configpanel($params, \Smarty $smarty) </pre>
@@ -1382,18 +1471,6 @@ Purpose:  display item re-ranking popup</p></p>
 <h4>$smarty</h4>
 <code>\Smarty</code>
 </div>
-</div></div>
-</div>
-<a name="smarty_function_ddrerank" id="smarty_function_ddrerank"></a><div class="element clickable function  smarty_function_ddrerank" data-toggle="collapse" data-target=".smarty_function_ddrerank .collapse">
-<h2>smarty_function_ddrerank()
-        </h2>
-<pre>smarty_function_ddrerank($params, $smarty) </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$params</h4></div>
-<div class="subelement argument"><h4>$smarty</h4></div>
 </div></div>
 </div>
 <a name="smarty_function_ecomconfig" id="smarty_function_ecomconfig"></a><div class="element clickable function  smarty_function_ecomconfig" data-toggle="collapse" data-target=".smarty_function_ecomconfig .collapse">
@@ -1748,18 +1825,6 @@ Purpose:  create an icon type link</p></p>
 <h4>$smarty</h4>
 <code>\Smarty</code>
 </div>
-</div></div>
-</div>
-<a name="smarty_function_icon" id="smarty_function_icon"></a><div class="element clickable function  smarty_function_icon" data-toggle="collapse" data-target=".smarty_function_icon .collapse">
-<h2>smarty_function_icon()
-        </h2>
-<pre>smarty_function_icon($params, $smarty) </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$params</h4></div>
-<div class="subelement argument"><h4>$smarty</h4></div>
 </div></div>
 </div>
 <a name="smarty_function_img" id="smarty_function_img"></a><div class="element clickable function  smarty_function_img" data-toggle="collapse" data-target=".smarty_function_img .collapse">
@@ -2336,6 +2401,22 @@ Purpose:  format a link for subscribing/unsubscribing to email alerts for the mo
 </div>
 </div></div>
 </div>
+<a name="smarty_function_tags_assigned" id="smarty_function_tags_assigned"></a><div class="element clickable function  smarty_function_tags_assigned" data-toggle="collapse" data-target=".smarty_function_tags_assigned .collapse">
+<h2>Smarty {tags_assigned} function plugin</h2>
+<pre>smarty_function_tags_assigned($params, \Smarty $smarty) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Type:     function<br>
+Name:     tags_assigned<br>
+Purpose:  format links for displaying tags assigned to an item</p></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$params</h4></div>
+<div class="subelement argument">
+<h4>$smarty</h4>
+<code>\Smarty</code>
+</div>
+</div></div>
+</div>
 <a name="smarty_function_time_duration" id="smarty_function_time_duration"></a><div class="element clickable function  smarty_function_time_duration" data-toggle="collapse" data-target=".smarty_function_time_duration .collapse">
 <h2>Smarty {time_duration} function plugin</h2>
 <pre>smarty_function_time_duration($params, \Smarty $smarty) </pre>
@@ -2808,6 +2889,21 @@ Purpose:  format a number</p></p>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
+<a name="smarty_modifier_relative_date" id="smarty_modifier_relative_date"></a><div class="element clickable function  smarty_modifier_relative_date" data-toggle="collapse" data-target=".smarty_modifier_relative_date .collapse">
+<h2>Smarty {relative_date} modifier plugin</h2>
+<pre>smarty_modifier_relative_date($timestamp) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Type:     modifier<br>
+Name:     relative_date<br>
+Purpose:  convert a date in a relative format</p></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$timestamp</h4><p>array</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
 <a name="smarty_modifier_remove_space" id="smarty_modifier_remove_space"></a><div class="element clickable function  smarty_modifier_remove_space" data-toggle="collapse" data-target=".smarty_modifier_remove_space .collapse">
 <h2>Smarty {remove_space} modifier plugin</h2>
 <pre>smarty_modifier_remove_space($string) : array</pre>
@@ -2922,6 +3018,26 @@ Purpose:   This function creates html loaders for - currently - JS and CSS Files
 <div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
+<a name="smarty_postfilter_switch" id="smarty_postfilter_switch"></a><div class="element clickable function  smarty_postfilter_switch" data-toggle="collapse" data-target=".smarty_postfilter_switch .collapse">
+<h2>Filter the template after it is generated to fix switch bugs.</h2>
+<pre>smarty_postfilter_switch(string $compiled, \Smarty_Compiler $smarty) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Remove any spaces after the 'switch () {' code and before the first case.  Any tabs or spaces
+      for layout would cause php errors witch this reged will fix.</p></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$compiled</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$smarty</h4>
+<code>\Smarty_Compiler</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
 <a name="sortSearch" id="sortSearch"></a><div class="element clickable function  sortSearch" data-toggle="collapse" data-target=".sortSearch .collapse">
 <h2>sortSearch()
         </h2>
@@ -2994,8 +3110,64 @@ use the array_keys function to strip out a functional header</p></p>
 <div class="subelement argument"><h4>$tbl</h4></div>
 </div></div>
 </div>
+<a name="userLogin" id="userLogin"></a><div class="element clickable function  userLogin" data-toggle="collapse" data-target=".userLogin .collapse">
+<h2>userLogin()
+        </h2>
+<pre>userLogin($username, $password, $src, $area) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$username</h4></div>
+<div class="subelement argument"><h4>$password</h4></div>
+<div class="subelement argument"><h4>$src</h4></div>
+<div class="subelement argument"><h4>$area</h4></div>
+</div></div>
+</div>
 <h3>
 <i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<a name="Smarty_Compiler_Break" id="Smarty_Compiler_Break"></a><div class="element ajax clickable class" href="../classes/Smarty_Compiler_Break.html">
+<h1>Smarty_Compiler_Break<a href="../classes/Smarty_Compiler_Break.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Smarty_Compiler_Break.html" class="more">« More »</a>
+</div>
+<a name="Smarty_Compiler_Case" id="Smarty_Compiler_Case"></a><div class="element ajax clickable class" href="../classes/Smarty_Compiler_Case.html">
+<h1>Smarty_Compiler_Case<a href="../classes/Smarty_Compiler_Case.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Smarty_Compiler_Case.html" class="more">« More »</a>
+</div>
+<a name="Smarty_Compiler_Caseclose" id="Smarty_Compiler_Caseclose"></a><div class="element ajax clickable class" href="../classes/Smarty_Compiler_Caseclose.html">
+<h1>Smarty_Compiler_Caseclose<a href="../classes/Smarty_Compiler_Caseclose.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Smarty_Compiler_Caseclose.html" class="more">« More »</a>
+</div>
+<a name="Smarty_Compiler_Default" id="Smarty_Compiler_Default"></a><div class="element ajax clickable class" href="../classes/Smarty_Compiler_Default.html">
+<h1>Smarty_Compiler_Default<a href="../classes/Smarty_Compiler_Default.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Smarty_Compiler_Default.html" class="more">« More »</a>
+</div>
+<a name="Smarty_Compiler_Switch" id="Smarty_Compiler_Switch"></a><div class="element ajax clickable class" href="../classes/Smarty_Compiler_Switch.html">
+<h1>Smarty_Compiler_Switch<a href="../classes/Smarty_Compiler_Switch.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Smarty_Compiler_Switch.html" class="more">« More »</a>
+</div>
+<a name="Smarty_Compiler_Switchclose" id="Smarty_Compiler_Switchclose"></a><div class="element ajax clickable class" href="../classes/Smarty_Compiler_Switchclose.html">
+<h1>Smarty_Compiler_Switchclose<a href="../classes/Smarty_Compiler_Switchclose.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Smarty_Compiler_Switchclose.html" class="more">« More »</a>
+</div>
 <a name="Twitter" id="Twitter"></a><div class="element ajax clickable class" href="../classes/Twitter.html">
 <h1>Twitter<a href="../classes/Twitter.html">¶</a>
 </h1>
@@ -3094,13 +3266,6 @@ use the array_keys function to strip out a functional header</p></p>
 <div class="details collapse"></div>
 <a href="../classes/basetemplate.html" class="more">« More »</a>
 </div>
-<a name="basetheme" id="basetheme"></a><div class="element ajax clickable class" href="../classes/basetheme.html">
-<h1>basetheme<a href="../classes/basetheme.html">¶</a>
-</h1>
-<p class="short_description">This is the base theme class</p>
-<div class="details collapse"></div>
-<a href="../classes/basetheme.html" class="more">« More »</a>
-</div>
 <a name="billing" id="billing"></a><div class="element ajax clickable class" href="../classes/billing.html">
 <h1>billing<a href="../classes/billing.html">¶</a>
 </h1>
@@ -3156,20 +3321,6 @@ use the array_keys function to strip out a functional header</p></p>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/blogController.html" class="more">« More »</a>
-</div>
-<a name="bootstraptheme" id="bootstraptheme"></a><div class="element ajax clickable class" href="../classes/bootstraptheme.html">
-<h1>bootstraptheme<a href="../classes/bootstraptheme.html">¶</a>
-</h1>
-<p class="short_description">This is the base theme class</p>
-<div class="details collapse"></div>
-<a href="../classes/bootstraptheme.html" class="more">« More »</a>
-</div>
-<a name="buttongroupcontrol" id="buttongroupcontrol"></a><div class="element ajax clickable class" href="../classes/buttongroupcontrol.html">
-<h1>buttongroupcontrol<a href="../classes/buttongroupcontrol.html">¶</a>
-</h1>
-<p class="short_description">Button Group Control</p>
-<div class="details collapse"></div>
-<a href="../classes/buttongroupcontrol.html" class="more">« More »</a>
 </div>
 <a name="buttongroupcontrol" id="buttongroupcontrol"></a><div class="element ajax clickable class" href="../classes/buttongroupcontrol.html">
 <h1>buttongroupcontrol<a href="../classes/buttongroupcontrol.html">¶</a>
@@ -3311,13 +3462,6 @@ text entry date and/or time w/ pop-up date selector</p>
 <p class="short_description">This is the class convert_permissions</p>
 <div class="details collapse"></div>
 <a href="../classes/convert_permissions.html" class="more">« More »</a>
-</div>
-<a name="coolwatertheme" id="coolwatertheme"></a><div class="element ajax clickable class" href="../classes/coolwatertheme.html">
-<h1>coolwatertheme<a href="../classes/coolwatertheme.html">¶</a>
-</h1>
-<p class="short_description">This is the base theme class</p>
-<div class="details collapse"></div>
-<a href="../classes/coolwatertheme.html" class="more">« More »</a>
 </div>
 <a name="countdownController" id="countdownController"></a><div class="element ajax clickable class" href="../classes/countdownController.html">
 <h1>countdownController<a href="../classes/countdownController.html">¶</a>
@@ -4213,13 +4357,6 @@ Exponent Pagination Subsystem</p>
 <div class="details collapse"></div>
 <a href="../classes/motdController.html" class="more">« More »</a>
 </div>
-<a name="multioptionstheme" id="multioptionstheme"></a><div class="element ajax clickable class" href="../classes/multioptionstheme.html">
-<h1>multioptionstheme<a href="../classes/multioptionstheme.html">¶</a>
-</h1>
-<p class="short_description">This is the base theme class</p>
-<div class="details collapse"></div>
-<a href="../classes/multioptionstheme.html" class="more">« More »</a>
-</div>
 <a name="mysql_database" id="mysql_database"></a><div class="element ajax clickable class" href="../classes/mysql_database.html">
 <h1>mysql_database<a href="../classes/mysql_database.html">¶</a>
 </h1>
@@ -4613,13 +4750,6 @@ uses jscalendar //FIXME we don't ship jscalendar files for this to work</p>
 <div class="details collapse"></div>
 <a href="../classes/reportController.html" class="more">« More »</a>
 </div>
-<a name="retrotheme" id="retrotheme"></a><div class="element ajax clickable class" href="../classes/retrotheme.html">
-<h1>retrotheme<a href="../classes/retrotheme.html">¶</a>
-</h1>
-<p class="short_description">This is the base theme class</p>
-<div class="details collapse"></div>
-<a href="../classes/retrotheme.html" class="more">« More »</a>
-</div>
 <a name="rssController" id="rssController"></a><div class="element ajax clickable class" href="../classes/rssController.html">
 <h1>rssController<a href="../classes/rssController.html">¶</a>
 </h1>
@@ -4943,6 +5073,13 @@ interface to templates.</p>
 <div class="details collapse"></div>
 <a href="../classes/upgrade_attachableitem_tables.html" class="more">« More »</a>
 </div>
+<a name="upgrade_calendar" id="upgrade_calendar"></a><div class="element ajax clickable class" href="../classes/upgrade_calendar.html">
+<h1>upgrade_calendar<a href="../classes/upgrade_calendar.html">¶</a>
+</h1>
+<p class="short_description">This is the class upgrade_calendar</p>
+<div class="details collapse"></div>
+<a href="../classes/upgrade_calendar.html" class="more">« More »</a>
+</div>
 <a name="upgrade_navigation" id="upgrade_navigation"></a><div class="element ajax clickable class" href="../classes/upgrade_navigation.html">
 <h1>upgrade_navigation<a href="../classes/upgrade_navigation.html">¶</a>
 </h1>
@@ -5055,6 +5192,13 @@ interface to templates.</p>
 <div class="details collapse"></div>
 <a href="../classes/worldpayCheckout.html" class="more">« More »</a>
 </div>
+<a name="xmlrpc_server_methods_container" id="xmlrpc_server_methods_container"></a><div class="element ajax clickable class" href="../classes/xmlrpc_server_methods_container.html">
+<h1>xmlrpc_server_methods_container<a href="../classes/xmlrpc_server_methods_container.html">¶</a>
+</h1>
+<p class="short_description">Used to test usage of object methods in dispatch maps</p>
+<div class="details collapse"></div>
+<a href="../classes/xmlrpc_server_methods_container.html" class="more">« More »</a>
+</div>
 <a name="youtube" id="youtube"></a><div class="element ajax clickable class" href="../classes/youtube.html">
 <h1>youtube<a href="../classes/youtube.html">¶</a>
 </h1>
@@ -5147,42 +5291,6 @@ places a checkbox to disable calendar</p>
 <a name="BTN_COLOR" id="BTN_COLOR"> </a><div class="element clickable constant  BTN_COLOR" data-toggle="collapse" data-target=".BTN_COLOR .collapse">
 <h2>BTN_COLOR</h2>
 <pre>BTN_COLOR </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="BTN_COLOR" id="BTN_COLOR"> </a><div class="element clickable constant  BTN_COLOR" data-toggle="collapse" data-target=".BTN_COLOR .collapse">
-<h2>BTN_COLOR</h2>
-<pre>BTN_COLOR </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="BTN_COLOR" id="BTN_COLOR"> </a><div class="element clickable constant  BTN_COLOR" data-toggle="collapse" data-target=".BTN_COLOR .collapse">
-<h2>BTN_COLOR</h2>
-<pre>BTN_COLOR </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="BTN_COLOR" id="BTN_COLOR"> </a><div class="element clickable constant  BTN_COLOR" data-toggle="collapse" data-target=".BTN_COLOR .collapse">
-<h2>BTN_COLOR</h2>
-<pre>BTN_COLOR </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="BTN_SIZE" id="BTN_SIZE"> </a><div class="element clickable constant  BTN_SIZE" data-toggle="collapse" data-target=".BTN_SIZE .collapse">
-<h2>BTN_SIZE</h2>
-<pre>BTN_SIZE </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="BTN_SIZE" id="BTN_SIZE"> </a><div class="element clickable constant  BTN_SIZE" data-toggle="collapse" data-target=".BTN_SIZE .collapse">
-<h2>BTN_SIZE</h2>
-<pre>BTN_SIZE </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="BTN_SIZE" id="BTN_SIZE"> </a><div class="element clickable constant  BTN_SIZE" data-toggle="collapse" data-target=".BTN_SIZE .collapse">
-<h2>BTN_SIZE</h2>
-<pre>BTN_SIZE </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
@@ -5738,9 +5846,9 @@ the current implementation of the Backup Subsystem.</p></p>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
-<a name="FLOWPLAYER_PATH" id="FLOWPLAYER_PATH"> </a><div class="element clickable constant  FLOWPLAYER_PATH" data-toggle="collapse" data-target=".FLOWPLAYER_PATH .collapse">
-<h2>FLOWPLAYER_PATH</h2>
-<pre>FLOWPLAYER_PATH </pre>
+<a name="FLOWPLAYER_RELATIVE" id="FLOWPLAYER_RELATIVE"> </a><div class="element clickable constant  FLOWPLAYER_RELATIVE" data-toggle="collapse" data-target=".FLOWPLAYER_RELATIVE .collapse">
+<h2>FLOWPLAYER_RELATIVE</h2>
+<pre>FLOWPLAYER_RELATIVE </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
@@ -5895,9 +6003,26 @@ when you have special needs for the form's input elements.</p></p></div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
+<a name="JQUERY_RELATIVE" id="JQUERY_RELATIVE"> </a><div class="element clickable constant  JQUERY_RELATIVE" data-toggle="collapse" data-target=".JQUERY_RELATIVE .collapse">
+<h2>JQUERY_RELATIVE</h2>
+<pre>JQUERY_RELATIVE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="JQUERY_URL" id="JQUERY_URL"> </a><div class="element clickable constant  JQUERY_URL" data-toggle="collapse" data-target=".JQUERY_URL .collapse">
+<h2>JQUERY_URL</h2>
+<pre>JQUERY_URL </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="JQUERY_VERSION" id="JQUERY_VERSION"> </a><div class="element clickable constant  JQUERY_VERSION" data-toggle="collapse" data-target=".JQUERY_VERSION .collapse">
+<h2>JQUERY_VERSION</h2>
+<pre>JQUERY_VERSION </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
 <a name="JS_FULL" id="JS_FULL"> </a><div class="element clickable constant  JS_FULL" data-toggle="collapse" data-target=".JS_FULL .collapse">
-<h2>exdoc
-The absolute path to Exponent's core javascript.</h2>
+<h2>JS_FULL</h2>
 <pre>JS_FULL </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
@@ -5905,6 +6030,20 @@ The absolute path to Exponent's core javascript.</h2>
 <a name="JS_PATH" id="JS_PATH"> </a><div class="element clickable constant  JS_PATH" data-toggle="collapse" data-target=".JS_PATH .collapse">
 <h2>JS_PATH</h2>
 <pre>JS_PATH </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="JS_RELATIVE" id="JS_RELATIVE"> </a><div class="element clickable constant  JS_RELATIVE" data-toggle="collapse" data-target=".JS_RELATIVE .collapse">
+<h2>exdoc
+The relative path to Exponent's core javascript.</h2>
+<pre>JS_RELATIVE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="JS_URL" id="JS_URL"> </a><div class="element clickable constant  JS_URL" data-toggle="collapse" data-target=".JS_URL .collapse">
+<h2>exdoc
+The absolute url to Exponent's core javascript.</h2>
+<pre>JS_URL </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
@@ -5968,78 +6107,6 @@ The absolute path to Exponent's core javascript.</h2>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
-<a name="LINK1_SECTION" id="LINK1_SECTION"> </a><div class="element clickable constant  LINK1_SECTION" data-toggle="collapse" data-target=".LINK1_SECTION .collapse">
-<h2>LINK1_SECTION</h2>
-<pre>LINK1_SECTION </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LINK1_SECTION" id="LINK1_SECTION"> </a><div class="element clickable constant  LINK1_SECTION" data-toggle="collapse" data-target=".LINK1_SECTION .collapse">
-<h2>LINK1_SECTION</h2>
-<pre>LINK1_SECTION </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LINK1_TEXT" id="LINK1_TEXT"> </a><div class="element clickable constant  LINK1_TEXT" data-toggle="collapse" data-target=".LINK1_TEXT .collapse">
-<h2>LINK1_TEXT</h2>
-<pre>LINK1_TEXT </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LINK1_TEXT" id="LINK1_TEXT"> </a><div class="element clickable constant  LINK1_TEXT" data-toggle="collapse" data-target=".LINK1_TEXT .collapse">
-<h2>LINK1_TEXT</h2>
-<pre>LINK1_TEXT </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LINK2_SECTION" id="LINK2_SECTION"> </a><div class="element clickable constant  LINK2_SECTION" data-toggle="collapse" data-target=".LINK2_SECTION .collapse">
-<h2>LINK2_SECTION</h2>
-<pre>LINK2_SECTION </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LINK2_SECTION" id="LINK2_SECTION"> </a><div class="element clickable constant  LINK2_SECTION" data-toggle="collapse" data-target=".LINK2_SECTION .collapse">
-<h2>LINK2_SECTION</h2>
-<pre>LINK2_SECTION </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LINK2_TEXT" id="LINK2_TEXT"> </a><div class="element clickable constant  LINK2_TEXT" data-toggle="collapse" data-target=".LINK2_TEXT .collapse">
-<h2>LINK2_TEXT</h2>
-<pre>LINK2_TEXT </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LINK2_TEXT" id="LINK2_TEXT"> </a><div class="element clickable constant  LINK2_TEXT" data-toggle="collapse" data-target=".LINK2_TEXT .collapse">
-<h2>LINK2_TEXT</h2>
-<pre>LINK2_TEXT </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LINK3_SECTION" id="LINK3_SECTION"> </a><div class="element clickable constant  LINK3_SECTION" data-toggle="collapse" data-target=".LINK3_SECTION .collapse">
-<h2>LINK3_SECTION</h2>
-<pre>LINK3_SECTION </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LINK3_SECTION" id="LINK3_SECTION"> </a><div class="element clickable constant  LINK3_SECTION" data-toggle="collapse" data-target=".LINK3_SECTION .collapse">
-<h2>LINK3_SECTION</h2>
-<pre>LINK3_SECTION </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LINK3_TEXT" id="LINK3_TEXT"> </a><div class="element clickable constant  LINK3_TEXT" data-toggle="collapse" data-target=".LINK3_TEXT .collapse">
-<h2>LINK3_TEXT</h2>
-<pre>LINK3_TEXT </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LINK3_TEXT" id="LINK3_TEXT"> </a><div class="element clickable constant  LINK3_TEXT" data-toggle="collapse" data-target=".LINK3_TEXT .collapse">
-<h2>LINK3_TEXT</h2>
-<pre>LINK3_TEXT </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
 <a name="LOCALE" id="LOCALE"> </a><div class="element clickable constant  LOCALE" data-toggle="collapse" data-target=".LOCALE .collapse">
 <h2>LOCALE</h2>
 <pre>LOCALE </pre>
@@ -6049,30 +6116,6 @@ The absolute path to Exponent's core javascript.</h2>
 <a name="LOGGER" id="LOGGER"> </a><div class="element clickable constant  LOGGER" data-toggle="collapse" data-target=".LOGGER .collapse">
 <h2>LOGGER</h2>
 <pre>LOGGER </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LOGO_TEXT_MAIN" id="LOGO_TEXT_MAIN"> </a><div class="element clickable constant  LOGO_TEXT_MAIN" data-toggle="collapse" data-target=".LOGO_TEXT_MAIN .collapse">
-<h2>LOGO_TEXT_MAIN</h2>
-<pre>LOGO_TEXT_MAIN </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LOGO_TEXT_MAIN" id="LOGO_TEXT_MAIN"> </a><div class="element clickable constant  LOGO_TEXT_MAIN" data-toggle="collapse" data-target=".LOGO_TEXT_MAIN .collapse">
-<h2>LOGO_TEXT_MAIN</h2>
-<pre>LOGO_TEXT_MAIN </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LOGO_TEXT_SUPERSCRIPT" id="LOGO_TEXT_SUPERSCRIPT"> </a><div class="element clickable constant  LOGO_TEXT_SUPERSCRIPT" data-toggle="collapse" data-target=".LOGO_TEXT_SUPERSCRIPT .collapse">
-<h2>LOGO_TEXT_SUPERSCRIPT</h2>
-<pre>LOGO_TEXT_SUPERSCRIPT </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LOGO_TEXT_SUPERSCRIPT" id="LOGO_TEXT_SUPERSCRIPT"> </a><div class="element clickable constant  LOGO_TEXT_SUPERSCRIPT" data-toggle="collapse" data-target=".LOGO_TEXT_SUPERSCRIPT .collapse">
-<h2>LOGO_TEXT_SUPERSCRIPT</h2>
-<pre>LOGO_TEXT_SUPERSCRIPT </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
@@ -6175,24 +6218,6 @@ The absolute path to Exponent's core javascript.</h2>
 <a name="MONEY" id="MONEY"> </a><div class="element clickable constant  MONEY" data-toggle="collapse" data-target=".MONEY .collapse">
 <h2>MONEY</h2>
 <pre>MONEY </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="MULTI_COLOR" id="MULTI_COLOR"> </a><div class="element clickable constant  MULTI_COLOR" data-toggle="collapse" data-target=".MULTI_COLOR .collapse">
-<h2>MULTI_COLOR</h2>
-<pre>MULTI_COLOR </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="MULTI_FONT" id="MULTI_FONT"> </a><div class="element clickable constant  MULTI_FONT" data-toggle="collapse" data-target=".MULTI_FONT .collapse">
-<h2>MULTI_FONT</h2>
-<pre>MULTI_FONT </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="MULTI_SIZE" id="MULTI_SIZE"> </a><div class="element clickable constant  MULTI_SIZE" data-toggle="collapse" data-target=".MULTI_SIZE .collapse">
-<h2>MULTI_SIZE</h2>
-<pre>MULTI_SIZE </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
@@ -6391,6 +6416,18 @@ The absolute path to Exponent's core javascript.</h2>
 <a name="SCRIPT_EXP_RELATIVE" id="SCRIPT_EXP_RELATIVE"> </a><div class="element clickable constant  SCRIPT_EXP_RELATIVE" data-toggle="collapse" data-target=".SCRIPT_EXP_RELATIVE .collapse">
 <h2>SCRIPT_EXP_RELATIVE</h2>
 <pre>SCRIPT_EXP_RELATIVE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="SCRIPT_EXP_RELATIVE" id="SCRIPT_EXP_RELATIVE"> </a><div class="element clickable constant  SCRIPT_EXP_RELATIVE" data-toggle="collapse" data-target=".SCRIPT_EXP_RELATIVE .collapse">
+<h2>SCRIPT_EXP_RELATIVE</h2>
+<pre>SCRIPT_EXP_RELATIVE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="SCRIPT_FILENAME" id="SCRIPT_FILENAME"> </a><div class="element clickable constant  SCRIPT_FILENAME" data-toggle="collapse" data-target=".SCRIPT_FILENAME .collapse">
+<h2>SCRIPT_FILENAME</h2>
+<pre>SCRIPT_FILENAME </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
@@ -6667,18 +6704,6 @@ The absolute path to Exponent's core javascript.</h2>
 <a name="SOURCE_SELECTOR" id="SOURCE_SELECTOR"> </a><div class="element clickable constant  SOURCE_SELECTOR" data-toggle="collapse" data-target=".SOURCE_SELECTOR .collapse">
 <h2>SOURCE_SELECTOR</h2>
 <pre>SOURCE_SELECTOR </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="SWATCH" id="SWATCH"> </a><div class="element clickable constant  SWATCH" data-toggle="collapse" data-target=".SWATCH .collapse">
-<h2>SWATCH</h2>
-<pre>SWATCH </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="SWATCH" id="SWATCH"> </a><div class="element clickable constant  SWATCH" data-toggle="collapse" data-target=".SWATCH .collapse">
-<h2>SWATCH</h2>
-<pre>SWATCH </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
@@ -7106,6 +7131,12 @@ UI Level of Structure - All management links are shown.</h2>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
+<a name="YUI2_RELATIVE" id="YUI2_RELATIVE"> </a><div class="element clickable constant  YUI2_RELATIVE" data-toggle="collapse" data-target=".YUI2_RELATIVE .collapse">
+<h2>YUI2_RELATIVE</h2>
+<pre>YUI2_RELATIVE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
 <a name="YUI2_URL" id="YUI2_URL"> </a><div class="element clickable constant  YUI2_URL" data-toggle="collapse" data-target=".YUI2_URL .collapse">
 <h2>YUI2_URL</h2>
 <pre>YUI2_URL </pre>
@@ -7121,6 +7152,12 @@ UI Level of Structure - All management links are shown.</h2>
 <a name="YUI3_PATH" id="YUI3_PATH"> </a><div class="element clickable constant  YUI3_PATH" data-toggle="collapse" data-target=".YUI3_PATH .collapse">
 <h2>YUI3_PATH</h2>
 <pre>YUI3_PATH </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="YUI3_RELATIVE" id="YUI3_RELATIVE"> </a><div class="element clickable constant  YUI3_RELATIVE" data-toggle="collapse" data-target=".YUI3_RELATIVE .collapse">
+<h2>YUI3_RELATIVE</h2>
+<pre>YUI3_RELATIVE </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
@@ -7142,7 +7179,7 @@ UI Level of Structure - All management links are shown.</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
-            generated on 2012-09-27T13:41:39-04:00.<br></footer></div>
+            generated on 2012-10-20T17:18:19-04:00.<br></footer></div>
 </div>
 </body>
 </html>

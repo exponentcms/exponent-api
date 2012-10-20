@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Exponent 2.0.9 » Default</title>
+<title>Exponent 2.1.0 » Default</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -15,7 +15,7 @@
 <body>
 <div class="navbar navbar-fixed-top">
 <div class="navbar-inner"><div class="container">
-<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.0.9</a><div class="nav-collapse"><ul class="nav">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.1.0</a><div class="nav-collapse"><ul class="nav">
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
@@ -24,6 +24,7 @@
 <li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 <li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
 <li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
+<li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
 <li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
@@ -37,11 +38,11 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3456</span></a></li>
+                <span class="label label-info">3453</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
-                <span class="label label-info">41</span>
+                <span class="label label-info">49</span>
 </li>
 <li>fixme 
                 <span class="label label-info">184</span>
@@ -102,6 +103,8 @@
         </span><pre>createValidId</pre></a></li>
 <li class="function  "><a href="#curPageURL" title="curPageURL :: "><span class="description">curPageURL()
         </span><pre>curPageURL</pre></a></li>
+<li class="function  "><a href="#deletePost" title="deletePost :: "><span class="description">deletePost()
+        </span><pre>deletePost</pre></a></li>
 <li class="function  "><a href="#do_dir" title="do_dir :: "><span class="description">do_dir()
         </span><pre>do_dir</pre></a></li>
 <li class="function  "><a href="#do_extract" title="do_extract :: "><span class="description">do_extract()
@@ -116,6 +119,8 @@
         </span><pre>echoStart</pre></a></li>
 <li class="function  "><a href="#echoSuccess" title="echoSuccess :: "><span class="description">echoSuccess()
         </span><pre>echoSuccess</pre></a></li>
+<li class="function  "><a href="#editPost" title="editPost :: "><span class="description">editPost()
+        </span><pre>editPost</pre></a></li>
 <li class="function  "><a href="#epb" title="epb :: "><span class="description">epb()
         </span><pre>epb</pre></a></li>
 <li class="function  "><a href="#epb" title="epb :: "><span class="description">epb()
@@ -174,6 +179,8 @@ This is the expTheme 1.0 compatibility layer</span><pre>exponent_theme_remove_cs
 <li class="function  "><a href="#exponent_theme_sourceSelectorInfo" title="exponent_theme_sourceSelectorInfo :: "><span class="description">exponent_theme_sourceSelectorInfo()
         </span><pre>exponent_theme_sourceSelectorInfo</pre></a></li>
 <li class="function  "><a href="#find_config_views" title="find_config_views :: Return list of controller configuration views"><span class="description">Return list of controller configuration views</span><pre>find_config_views</pre></a></li>
+<li class="function  "><a href="#findchildren" title="findchildren :: "><span class="description">findchildren()
+        </span><pre>findchildren</pre></a></li>
 <li class="function  "><a href="#flash" title="flash :: "><span class="description">flash()
         </span><pre>flash</pre></a></li>
 <li class="function  "><a href="#flashAndFlow" title="flashAndFlow :: "><span class="description">flashAndFlow()
@@ -182,6 +189,14 @@ This is the expTheme 1.0 compatibility layer</span><pre>exponent_theme_remove_cs
         </span><pre>footerInfo</pre></a></li>
 <li class="function  "><a href="#fs" title="fs :: "><span class="description">fs()
         </span><pre>fs</pre></a></li>
+<li class="function  "><a href="#getCategories" title="getCategories :: "><span class="description">getCategories()
+        </span><pre>getCategories</pre></a></li>
+<li class="function  "><a href="#getPost" title="getPost :: "><span class="description">getPost()
+        </span><pre>getPost</pre></a></li>
+<li class="function  "><a href="#getRecentPosts" title="getRecentPosts :: "><span class="description">getRecentPosts()
+        </span><pre>getRecentPosts</pre></a></li>
+<li class="function  "><a href="#getUsersBlogs" title="getUsersBlogs :: "><span class="description">getUsersBlogs()
+        </span><pre>getUsersBlogs</pre></a></li>
 <li class="function  "><a href="#get_action_views" title="get_action_views :: Return list of controller display views available"><span class="description">Return list of controller display views available</span><pre>get_action_views</pre></a></li>
 <li class="function  "><a href="#get_common_template" title="get_common_template :: "><span class="description">get_common_template()
         </span><pre>get_common_template</pre></a></li>
@@ -205,6 +220,10 @@ This is the expTheme 1.0 compatibility layer</span><pre>exponent_theme_remove_cs
         </span><pre>isAllGood</pre></a></li>
 <li class="function  "><a href="#makeLink" title="makeLink :: "><span class="description">makeLink()
         </span><pre>makeLink</pre></a></li>
+<li class="function  "><a href="#newMediaObject" title="newMediaObject :: "><span class="description">newMediaObject()
+        </span><pre>newMediaObject</pre></a></li>
+<li class="function  "><a href="#newPost" title="newPost :: "><span class="description">newPost()
+        </span><pre>newPost</pre></a></li>
 <li class="function  "><a href="#oasort" title="oasort :: "><span class="description">oasort()
         </span><pre>oasort</pre></a></li>
 <li class="function  "><a href="#object2Array" title="object2Array :: "><span class="description">object2Array()
@@ -234,6 +253,8 @@ This is the expTheme 1.0 compatibility layer</span><pre>exponent_theme_remove_cs
         </span><pre>stripslashes_deep</pre></a></li>
 <li class="function  "><a href="#tmp_removePrefix" title="tmp_removePrefix :: "><span class="description">tmp_removePrefix()
         </span><pre>tmp_removePrefix</pre></a></li>
+<li class="function  "><a href="#userLogin" title="userLogin :: "><span class="description">userLogin()
+        </span><pre>userLogin</pre></a></li>
 <li class="nav-header">
 <i class="icon-custom icon-class"></i> Classes</li>
 <li><a href="#calendar" title="">calendar</a></li>
@@ -285,6 +306,12 @@ This is the expTheme 1.0 compatibility layer</span><pre>exponent_theme_remove_cs
 <li><a href="#containermodule" title="">containermodule</a></li>
 <li><a href="#formmodule" title="">formmodule</a></li>
 <li><a href="#navigationmodule" title="">navigationmodule</a></li>
+<li><a href="#Smarty_Compiler_Switch" title="">Smarty_Compiler_Switch</a></li>
+<li><a href="#Smarty_Compiler_Case" title="">Smarty_Compiler_Case</a></li>
+<li><a href="#Smarty_Compiler_Default" title="">Smarty_Compiler_Default</a></li>
+<li><a href="#Smarty_Compiler_Break" title="">Smarty_Compiler_Break</a></li>
+<li><a href="#Smarty_Compiler_Caseclose" title="">Smarty_Compiler_Caseclose</a></li>
+<li><a href="#Smarty_Compiler_Switchclose" title="">Smarty_Compiler_Switchclose</a></li>
 <li><a href="#upgradescript" title="This is the abstract class upgradescript">upgradescript</a></li>
 <li><a href="#add_blog_published" title="This is the class add_blog_published">add_blog_published</a></li>
 <li><a href="#add_filedownload_published" title="This is the class add_filedownload_published">add_filedownload_published</a></li>
@@ -307,15 +334,12 @@ This is the expTheme 1.0 compatibility layer</span><pre>exponent_theme_remove_cs
 <li><a href="#update_root_user" title="This is the class update_root_user">update_root_user</a></li>
 <li><a href="#update_rssfeeds" title="This is the class update_rssfeeds">update_rssfeeds</a></li>
 <li><a href="#upgrade_attachableitem_tables" title="This is the abstract class upgradescript">upgrade_attachableitem_tables</a></li>
+<li><a href="#upgrade_calendar" title="This is the class upgrade_calendar">upgrade_calendar</a></li>
 <li><a href="#upgrade_navigation" title="This is the class upgrade_navigation">upgrade_navigation</a></li>
 <li><a href="#upgrade_simplepoll" title="This is the class upgrade_simplepoll">upgrade_simplepoll</a></li>
 <li><a href="#version_tracking" title="This is the class version_tracking">version_tracking</a></li>
-<li><a href="#basetheme" title="This is the base theme class">basetheme</a></li>
-<li><a href="#bootstraptheme" title="This is the base theme class">bootstraptheme</a></li>
-<li><a href="#coolwatertheme" title="This is the base theme class">coolwatertheme</a></li>
-<li><a href="#multioptionstheme" title="This is the base theme class">multioptionstheme</a></li>
-<li><a href="#retrotheme" title="This is the base theme class">retrotheme</a></li>
 <li><a href="#simpletheme" title="This is the base theme class">simpletheme</a></li>
+<li><a href="#xmlrpc_server_methods_container" title="Used to test usage of object methods in dispatch maps">xmlrpc_server_methods_container</a></li>
 <li class="nav-header">
 <i class="icon-custom icon-constant"></i> Constants</li>
 <li class="constant  "><a href="#ADVERTISE_RSS" title="ADVERTISE_RSS :: "><span class="description">ADVERTISE_RSS</span><pre>ADVERTISE_RSS</pre></a></li>
@@ -326,12 +350,6 @@ This is the expTheme 1.0 compatibility layer</span><pre>exponent_theme_remove_cs
 <li class="constant  "><a href="#BING_API" title="BING_API :: "><span class="description">BING_API</span><pre>BING_API</pre></a></li>
 <li class="constant  "><a href="#BTN_COLOR" title="BTN_COLOR :: "><span class="description">BTN_COLOR</span><pre>BTN_COLOR</pre></a></li>
 <li class="constant  "><a href="#BTN_COLOR" title="BTN_COLOR :: "><span class="description">BTN_COLOR</span><pre>BTN_COLOR</pre></a></li>
-<li class="constant  "><a href="#BTN_COLOR" title="BTN_COLOR :: "><span class="description">BTN_COLOR</span><pre>BTN_COLOR</pre></a></li>
-<li class="constant  "><a href="#BTN_COLOR" title="BTN_COLOR :: "><span class="description">BTN_COLOR</span><pre>BTN_COLOR</pre></a></li>
-<li class="constant  "><a href="#BTN_COLOR" title="BTN_COLOR :: "><span class="description">BTN_COLOR</span><pre>BTN_COLOR</pre></a></li>
-<li class="constant  "><a href="#BTN_SIZE" title="BTN_SIZE :: "><span class="description">BTN_SIZE</span><pre>BTN_SIZE</pre></a></li>
-<li class="constant  "><a href="#BTN_SIZE" title="BTN_SIZE :: "><span class="description">BTN_SIZE</span><pre>BTN_SIZE</pre></a></li>
-<li class="constant  "><a href="#BTN_SIZE" title="BTN_SIZE :: "><span class="description">BTN_SIZE</span><pre>BTN_SIZE</pre></a></li>
 <li class="constant  "><a href="#BTN_SIZE" title="BTN_SIZE :: "><span class="description">BTN_SIZE</span><pre>BTN_SIZE</pre></a></li>
 <li class="constant  "><a href="#BTN_SIZE" title="BTN_SIZE :: "><span class="description">BTN_SIZE</span><pre>BTN_SIZE</pre></a></li>
 <li class="constant  "><a href="#COMMENTS_NOTIFICATION_EMAIL" title="COMMENTS_NOTIFICATION_EMAIL :: "><span class="description">COMMENTS_NOTIFICATION_EMAIL</span><pre>COMMENTS_NOTIFICATION_EMAIL</pre></a></li>
@@ -413,7 +431,7 @@ The EQL header string for object dump file formats.</span><pre>EQL_HEADER</pre><
 <li class="constant  "><a href="#FILE_DEFAULT_MODE_STR" title="FILE_DEFAULT_MODE_STR :: "><span class="description">FILE_DEFAULT_MODE_STR</span><pre>FILE_DEFAULT_MODE_STR</pre></a></li>
 <li class="constant  "><a href="#FLOWPLAYER_CONTROLS_VERSION" title="FLOWPLAYER_CONTROLS_VERSION :: "><span class="description">FLOWPLAYER_CONTROLS_VERSION</span><pre>FLOWPLAYER_CONTROLS_VERSION</pre></a></li>
 <li class="constant  "><a href="#FLOWPLAYER_MIN_VERSION" title="FLOWPLAYER_MIN_VERSION :: "><span class="description">FLOWPLAYER_MIN_VERSION</span><pre>FLOWPLAYER_MIN_VERSION</pre></a></li>
-<li class="constant  "><a href="#FLOWPLAYER_PATH" title="FLOWPLAYER_PATH :: "><span class="description">FLOWPLAYER_PATH</span><pre>FLOWPLAYER_PATH</pre></a></li>
+<li class="constant  "><a href="#FLOWPLAYER_RELATIVE" title="FLOWPLAYER_RELATIVE :: "><span class="description">FLOWPLAYER_RELATIVE</span><pre>FLOWPLAYER_RELATIVE</pre></a></li>
 <li class="constant  "><a href="#FLOWPLAYER_VERSION" title="FLOWPLAYER_VERSION :: "><span class="description">FLOWPLAYER_VERSION</span><pre>FLOWPLAYER_VERSION</pre></a></li>
 <li class="constant  "><a href="#FM_HEIGHT" title="FM_HEIGHT :: "><span class="description">FM_HEIGHT</span><pre>FM_HEIGHT</pre></a></li>
 <li class="constant  "><a href="#FM_LIMIT" title="FM_LIMIT :: "><span class="description">FM_LIMIT</span><pre>FM_LIMIT</pre></a></li>
@@ -439,10 +457,17 @@ The EQL header string for object dump file formats.</span><pre>EQL_HEADER</pre><
 <li class="constant  "><a href="#ICON_RELATIVE" title="ICON_RELATIVE :: "><span class="description">ICON_RELATIVE</span><pre>ICON_RELATIVE</pre></a></li>
 <li class="constant  "><a href="#INCLUDE_AJAX_SEARCH" title="INCLUDE_AJAX_SEARCH :: "><span class="description">INCLUDE_AJAX_SEARCH</span><pre>INCLUDE_AJAX_SEARCH</pre></a></li>
 <li class="constant  "><a href="#INCLUDE_ANONYMOUS_SEARCH" title="INCLUDE_ANONYMOUS_SEARCH :: "><span class="description">INCLUDE_ANONYMOUS_SEARCH</span><pre>INCLUDE_ANONYMOUS_SEARCH</pre></a></li>
-<li class="constant  "><a href="#JS_FULL" title="JS_FULL :: exdoc
-The absolute path to Exponent's core javascript."><span class="description">exdoc
-The absolute path to Exponent's core javascript.</span><pre>JS_FULL</pre></a></li>
+<li class="constant  "><a href="#JQUERY_RELATIVE" title="JQUERY_RELATIVE :: "><span class="description">JQUERY_RELATIVE</span><pre>JQUERY_RELATIVE</pre></a></li>
+<li class="constant  "><a href="#JQUERY_URL" title="JQUERY_URL :: "><span class="description">JQUERY_URL</span><pre>JQUERY_URL</pre></a></li>
+<li class="constant  "><a href="#JQUERY_VERSION" title="JQUERY_VERSION :: "><span class="description">JQUERY_VERSION</span><pre>JQUERY_VERSION</pre></a></li>
+<li class="constant  "><a href="#JS_FULL" title="JS_FULL :: "><span class="description">JS_FULL</span><pre>JS_FULL</pre></a></li>
 <li class="constant  "><a href="#JS_PATH" title="JS_PATH :: "><span class="description">JS_PATH</span><pre>JS_PATH</pre></a></li>
+<li class="constant  "><a href="#JS_RELATIVE" title="JS_RELATIVE :: exdoc
+The relative path to Exponent's core javascript."><span class="description">exdoc
+The relative path to Exponent's core javascript.</span><pre>JS_RELATIVE</pre></a></li>
+<li class="constant  "><a href="#JS_URL" title="JS_URL :: exdoc
+The absolute url to Exponent's core javascript."><span class="description">exdoc
+The absolute url to Exponent's core javascript.</span><pre>JS_URL</pre></a></li>
 <li class="constant  "><a href="#LANGUAGE" title="LANGUAGE :: "><span class="description">LANGUAGE</span><pre>LANGUAGE</pre></a></li>
 <li class="constant  "><a href="#LANGUAGE" title="LANGUAGE :: "><span class="description">LANGUAGE</span><pre>LANGUAGE</pre></a></li>
 <li class="constant  "><a href="#LANGUAGE" title="LANGUAGE :: "><span class="description">LANGUAGE</span><pre>LANGUAGE</pre></a></li>
@@ -450,23 +475,7 @@ The absolute path to Exponent's core javascript.</span><pre>JS_FULL</pre></a></l
 <li class="constant  "><a href="#LDAP_BIND_PASS" title="LDAP_BIND_PASS :: "><span class="description">LDAP_BIND_PASS</span><pre>LDAP_BIND_PASS</pre></a></li>
 <li class="constant  "><a href="#LDAP_BIND_USER" title="LDAP_BIND_USER :: "><span class="description">LDAP_BIND_USER</span><pre>LDAP_BIND_USER</pre></a></li>
 <li class="constant  "><a href="#LDAP_SERVER" title="LDAP_SERVER :: "><span class="description">LDAP_SERVER</span><pre>LDAP_SERVER</pre></a></li>
-<li class="constant  "><a href="#LINK1_SECTION" title="LINK1_SECTION :: "><span class="description">LINK1_SECTION</span><pre>LINK1_SECTION</pre></a></li>
-<li class="constant  "><a href="#LINK1_SECTION" title="LINK1_SECTION :: "><span class="description">LINK1_SECTION</span><pre>LINK1_SECTION</pre></a></li>
-<li class="constant  "><a href="#LINK1_TEXT" title="LINK1_TEXT :: "><span class="description">LINK1_TEXT</span><pre>LINK1_TEXT</pre></a></li>
-<li class="constant  "><a href="#LINK1_TEXT" title="LINK1_TEXT :: "><span class="description">LINK1_TEXT</span><pre>LINK1_TEXT</pre></a></li>
-<li class="constant  "><a href="#LINK2_SECTION" title="LINK2_SECTION :: "><span class="description">LINK2_SECTION</span><pre>LINK2_SECTION</pre></a></li>
-<li class="constant  "><a href="#LINK2_SECTION" title="LINK2_SECTION :: "><span class="description">LINK2_SECTION</span><pre>LINK2_SECTION</pre></a></li>
-<li class="constant  "><a href="#LINK2_TEXT" title="LINK2_TEXT :: "><span class="description">LINK2_TEXT</span><pre>LINK2_TEXT</pre></a></li>
-<li class="constant  "><a href="#LINK2_TEXT" title="LINK2_TEXT :: "><span class="description">LINK2_TEXT</span><pre>LINK2_TEXT</pre></a></li>
-<li class="constant  "><a href="#LINK3_SECTION" title="LINK3_SECTION :: "><span class="description">LINK3_SECTION</span><pre>LINK3_SECTION</pre></a></li>
-<li class="constant  "><a href="#LINK3_SECTION" title="LINK3_SECTION :: "><span class="description">LINK3_SECTION</span><pre>LINK3_SECTION</pre></a></li>
-<li class="constant  "><a href="#LINK3_TEXT" title="LINK3_TEXT :: "><span class="description">LINK3_TEXT</span><pre>LINK3_TEXT</pre></a></li>
-<li class="constant  "><a href="#LINK3_TEXT" title="LINK3_TEXT :: "><span class="description">LINK3_TEXT</span><pre>LINK3_TEXT</pre></a></li>
 <li class="constant  "><a href="#LOGGER" title="LOGGER :: "><span class="description">LOGGER</span><pre>LOGGER</pre></a></li>
-<li class="constant  "><a href="#LOGO_TEXT_MAIN" title="LOGO_TEXT_MAIN :: "><span class="description">LOGO_TEXT_MAIN</span><pre>LOGO_TEXT_MAIN</pre></a></li>
-<li class="constant  "><a href="#LOGO_TEXT_MAIN" title="LOGO_TEXT_MAIN :: "><span class="description">LOGO_TEXT_MAIN</span><pre>LOGO_TEXT_MAIN</pre></a></li>
-<li class="constant  "><a href="#LOGO_TEXT_SUPERSCRIPT" title="LOGO_TEXT_SUPERSCRIPT :: "><span class="description">LOGO_TEXT_SUPERSCRIPT</span><pre>LOGO_TEXT_SUPERSCRIPT</pre></a></li>
-<li class="constant  "><a href="#LOGO_TEXT_SUPERSCRIPT" title="LOGO_TEXT_SUPERSCRIPT :: "><span class="description">LOGO_TEXT_SUPERSCRIPT</span><pre>LOGO_TEXT_SUPERSCRIPT</pre></a></li>
 <li class="constant  "><a href="#MAINTENANCE_MODE" title="MAINTENANCE_MODE :: "><span class="description">MAINTENANCE_MODE</span><pre>MAINTENANCE_MODE</pre></a></li>
 <li class="constant  "><a href="#MAINTENANCE_MSG_HTML" title="MAINTENANCE_MSG_HTML :: "><span class="description">MAINTENANCE_MSG_HTML</span><pre>MAINTENANCE_MSG_HTML</pre></a></li>
 <li class="constant  "><a href="#MIMEICON_RELATIVE" title="MIMEICON_RELATIVE :: "><span class="description">MIMEICON_RELATIVE</span><pre>MIMEICON_RELATIVE</pre></a></li>
@@ -484,9 +493,6 @@ The absolute path to Exponent's core javascript.</span><pre>JS_FULL</pre></a></l
 <li class="constant  "><a href="#MOBILE" title="MOBILE :: "><span class="description">MOBILE</span><pre>MOBILE</pre></a></li>
 <li class="constant  "><a href="#MOBILE" title="MOBILE :: "><span class="description">MOBILE</span><pre>MOBILE</pre></a></li>
 <li class="constant  "><a href="#MONEY" title="MONEY :: "><span class="description">MONEY</span><pre>MONEY</pre></a></li>
-<li class="constant  "><a href="#MULTI_COLOR" title="MULTI_COLOR :: "><span class="description">MULTI_COLOR</span><pre>MULTI_COLOR</pre></a></li>
-<li class="constant  "><a href="#MULTI_FONT" title="MULTI_FONT :: "><span class="description">MULTI_FONT</span><pre>MULTI_FONT</pre></a></li>
-<li class="constant  "><a href="#MULTI_SIZE" title="MULTI_SIZE :: "><span class="description">MULTI_SIZE</span><pre>MULTI_SIZE</pre></a></li>
 <li class="constant  "><a href="#ORGANIZATION_NAME" title="ORGANIZATION_NAME :: "><span class="description">ORGANIZATION_NAME</span><pre>ORGANIZATION_NAME</pre></a></li>
 <li class="constant  "><a href="#PATH_RELATIVE" title="PATH_RELATIVE :: "><span class="description">PATH_RELATIVE</span><pre>PATH_RELATIVE</pre></a></li>
 <li class="constant  "><a href="#PREVIEW_READONLY" title="PREVIEW_READONLY :: "><span class="description">PREVIEW_READONLY</span><pre>PREVIEW_READONLY</pre></a></li>
@@ -517,6 +523,8 @@ The absolute path to Exponent's core javascript.</span><pre>JS_FULL</pre></a></l
 <li class="constant  "><a href="#SCRIPT_EXP_RELATIVE" title="SCRIPT_EXP_RELATIVE :: "><span class="description">SCRIPT_EXP_RELATIVE</span><pre>SCRIPT_EXP_RELATIVE</pre></a></li>
 <li class="constant  "><a href="#SCRIPT_EXP_RELATIVE" title="SCRIPT_EXP_RELATIVE :: "><span class="description">SCRIPT_EXP_RELATIVE</span><pre>SCRIPT_EXP_RELATIVE</pre></a></li>
 <li class="constant  "><a href="#SCRIPT_EXP_RELATIVE" title="SCRIPT_EXP_RELATIVE :: "><span class="description">SCRIPT_EXP_RELATIVE</span><pre>SCRIPT_EXP_RELATIVE</pre></a></li>
+<li class="constant  "><a href="#SCRIPT_EXP_RELATIVE" title="SCRIPT_EXP_RELATIVE :: "><span class="description">SCRIPT_EXP_RELATIVE</span><pre>SCRIPT_EXP_RELATIVE</pre></a></li>
+<li class="constant  "><a href="#SCRIPT_FILENAME" title="SCRIPT_FILENAME :: "><span class="description">SCRIPT_FILENAME</span><pre>SCRIPT_FILENAME</pre></a></li>
 <li class="constant  "><a href="#SCRIPT_FILENAME" title="SCRIPT_FILENAME :: "><span class="description">SCRIPT_FILENAME</span><pre>SCRIPT_FILENAME</pre></a></li>
 <li class="constant  "><a href="#SCRIPT_FILENAME" title="SCRIPT_FILENAME :: "><span class="description">SCRIPT_FILENAME</span><pre>SCRIPT_FILENAME</pre></a></li>
 <li class="constant  "><a href="#SCRIPT_FILENAME" title="SCRIPT_FILENAME :: "><span class="description">SCRIPT_FILENAME</span><pre>SCRIPT_FILENAME</pre></a></li>
@@ -563,8 +571,6 @@ The absolute path to Exponent's core javascript.</span><pre>JS_FULL</pre></a></l
 <li class="constant  "><a href="#SOURCE_SELECTOR" title="SOURCE_SELECTOR :: "><span class="description">SOURCE_SELECTOR</span><pre>SOURCE_SELECTOR</pre></a></li>
 <li class="constant  "><a href="#SOURCE_SELECTOR" title="SOURCE_SELECTOR :: "><span class="description">SOURCE_SELECTOR</span><pre>SOURCE_SELECTOR</pre></a></li>
 <li class="constant  "><a href="#SOURCE_SELECTOR" title="SOURCE_SELECTOR :: "><span class="description">SOURCE_SELECTOR</span><pre>SOURCE_SELECTOR</pre></a></li>
-<li class="constant  "><a href="#SWATCH" title="SWATCH :: "><span class="description">SWATCH</span><pre>SWATCH</pre></a></li>
-<li class="constant  "><a href="#SWATCH" title="SWATCH :: "><span class="description">SWATCH</span><pre>SWATCH</pre></a></li>
 <li class="constant  "><a href="#SWIFT_PATH" title="SWIFT_PATH :: "><span class="description">SWIFT_PATH</span><pre>SWIFT_PATH</pre></a></li>
 <li class="constant  "><a href="#SWIFT_VERSION" title="SWIFT_VERSION :: "><span class="description">SWIFT_VERSION</span><pre>SWIFT_VERSION</pre></a></li>
 <li class="constant  "><a href="#SYS_FILES_FOUNDDIR" title="SYS_FILES_FOUNDDIR :: exdoc
@@ -649,9 +655,11 @@ UI Level of Structure - All management links are shown.</span><pre>UILEVEL_STRUC
 <li class="constant  "><a href="#USE_LDAP" title="USE_LDAP :: "><span class="description">USE_LDAP</span><pre>USE_LDAP</pre></a></li>
 <li class="constant  "><a href="#WRITE_LANG_TEMPLATE" title="WRITE_LANG_TEMPLATE :: "><span class="description">WRITE_LANG_TEMPLATE</span><pre>WRITE_LANG_TEMPLATE</pre></a></li>
 <li class="constant  "><a href="#YUI2_PATH" title="YUI2_PATH :: "><span class="description">YUI2_PATH</span><pre>YUI2_PATH</pre></a></li>
+<li class="constant  "><a href="#YUI2_RELATIVE" title="YUI2_RELATIVE :: "><span class="description">YUI2_RELATIVE</span><pre>YUI2_RELATIVE</pre></a></li>
 <li class="constant  "><a href="#YUI2_URL" title="YUI2_URL :: "><span class="description">YUI2_URL</span><pre>YUI2_URL</pre></a></li>
 <li class="constant  "><a href="#YUI2_VERSION" title="YUI2_VERSION :: "><span class="description">YUI2_VERSION</span><pre>YUI2_VERSION</pre></a></li>
 <li class="constant  "><a href="#YUI3_PATH" title="YUI3_PATH :: "><span class="description">YUI3_PATH</span><pre>YUI3_PATH</pre></a></li>
+<li class="constant  "><a href="#YUI3_RELATIVE" title="YUI3_RELATIVE :: "><span class="description">YUI3_RELATIVE</span><pre>YUI3_RELATIVE</pre></a></li>
 <li class="constant  "><a href="#YUI3_URL" title="YUI3_URL :: "><span class="description">YUI3_URL</span><pre>YUI3_URL</pre></a></li>
 <li class="constant  "><a href="#YUI3_VERSION" title="YUI3_VERSION :: "><span class="description">YUI3_VERSION</span><pre>YUI3_VERSION</pre></a></li>
 </ul>
@@ -804,6 +812,17 @@ UI Level of Structure - All management links are shown.</span><pre>UILEVEL_STRUC
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
+<a name="deletePost" id="deletePost"></a><div class="element clickable function  deletePost" data-toggle="collapse" data-target=".deletePost .collapse">
+<h2>deletePost()
+        </h2>
+<pre>deletePost($xmlrpcmsg) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$xmlrpcmsg</h4></div>
+</div></div>
+</div>
 <a name="do_dir" id="do_dir"></a><div class="element clickable function  do_dir" data-toggle="collapse" data-target=".do_dir .collapse">
 <h2>do_dir()
         </h2>
@@ -908,6 +927,17 @@ UI Level of Structure - All management links are shown.</span><pre>UILEVEL_STRUC
 <p class="long_description"></p>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$msg</h4></div>
+</div></div>
+</div>
+<a name="editPost" id="editPost"></a><div class="element clickable function  editPost" data-toggle="collapse" data-target=".editPost .collapse">
+<h2>editPost()
+        </h2>
+<pre>editPost($xmlrpcmsg) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$xmlrpcmsg</h4></div>
 </div></div>
 </div>
 <a name="epb" id="epb"></a><div class="element clickable function  epb" data-toggle="collapse" data-target=".epb .collapse">
@@ -1203,6 +1233,19 @@ This is the expTheme 1.0 compatibility layer</h2>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
+<a name="findchildren" id="findchildren"></a><div class="element clickable function  findchildren" data-toggle="collapse" data-target=".findchildren .collapse">
+<h2>findchildren()
+        </h2>
+<pre>findchildren($parent, $comments, $k) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$parent</h4></div>
+<div class="subelement argument"><h4>$comments</h4></div>
+<div class="subelement argument"><h4>$k</h4></div>
+</div></div>
+</div>
 <a name="flash" id="flash"></a><div class="element clickable function  flash" data-toggle="collapse" data-target=".flash .collapse">
 <h2>flash()
         </h2>
@@ -1247,6 +1290,50 @@ This is the expTheme 1.0 compatibility layer</h2>
 <p class="long_description"></p>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$str</h4></div>
+</div></div>
+</div>
+<a name="getCategories" id="getCategories"></a><div class="element clickable function  getCategories" data-toggle="collapse" data-target=".getCategories .collapse">
+<h2>getCategories()
+        </h2>
+<pre>getCategories($xmlrpcmsg) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$xmlrpcmsg</h4></div>
+</div></div>
+</div>
+<a name="getPost" id="getPost"></a><div class="element clickable function  getPost" data-toggle="collapse" data-target=".getPost .collapse">
+<h2>getPost()
+        </h2>
+<pre>getPost($xmlrpcmsg) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$xmlrpcmsg</h4></div>
+</div></div>
+</div>
+<a name="getRecentPosts" id="getRecentPosts"></a><div class="element clickable function  getRecentPosts" data-toggle="collapse" data-target=".getRecentPosts .collapse">
+<h2>getRecentPosts()
+        </h2>
+<pre>getRecentPosts($xmlrpcmsg) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$xmlrpcmsg</h4></div>
+</div></div>
+</div>
+<a name="getUsersBlogs" id="getUsersBlogs"></a><div class="element clickable function  getUsersBlogs" data-toggle="collapse" data-target=".getUsersBlogs .collapse">
+<h2>getUsersBlogs()
+        </h2>
+<pre>getUsersBlogs($xmlrpcmsg) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$xmlrpcmsg</h4></div>
 </div></div>
 </div>
 <a name="get_action_views" id="get_action_views"></a><div class="element clickable function  get_action_views" data-toggle="collapse" data-target=".get_action_views .collapse">
@@ -1402,6 +1489,28 @@ This is the expTheme 1.0 compatibility layer</h2>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$params</h4></div>
 <div class="subelement argument"><h4>$secure</h4></div>
+</div></div>
+</div>
+<a name="newMediaObject" id="newMediaObject"></a><div class="element clickable function  newMediaObject" data-toggle="collapse" data-target=".newMediaObject .collapse">
+<h2>newMediaObject()
+        </h2>
+<pre>newMediaObject($xmlrpcmsg) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$xmlrpcmsg</h4></div>
+</div></div>
+</div>
+<a name="newPost" id="newPost"></a><div class="element clickable function  newPost" data-toggle="collapse" data-target=".newPost .collapse">
+<h2>newPost()
+        </h2>
+<pre>newPost($xmlrpcmsg) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$xmlrpcmsg</h4></div>
 </div></div>
 </div>
 <a name="oasort" id="oasort"></a><div class="element clickable function  oasort" data-toggle="collapse" data-target=".oasort .collapse">
@@ -1609,8 +1718,64 @@ use the array_keys function to strip out a functional header</p></p>
 <div class="subelement argument"><h4>$tbl</h4></div>
 </div></div>
 </div>
+<a name="userLogin" id="userLogin"></a><div class="element clickable function  userLogin" data-toggle="collapse" data-target=".userLogin .collapse">
+<h2>userLogin()
+        </h2>
+<pre>userLogin($username, $password, $src, $area) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$username</h4></div>
+<div class="subelement argument"><h4>$password</h4></div>
+<div class="subelement argument"><h4>$src</h4></div>
+<div class="subelement argument"><h4>$area</h4></div>
+</div></div>
+</div>
 <h3>
 <i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<a name="Smarty_Compiler_Break" id="Smarty_Compiler_Break"></a><div class="element ajax clickable class" href="../classes/Smarty_Compiler_Break.html">
+<h1>Smarty_Compiler_Break<a href="../classes/Smarty_Compiler_Break.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Smarty_Compiler_Break.html" class="more">« More »</a>
+</div>
+<a name="Smarty_Compiler_Case" id="Smarty_Compiler_Case"></a><div class="element ajax clickable class" href="../classes/Smarty_Compiler_Case.html">
+<h1>Smarty_Compiler_Case<a href="../classes/Smarty_Compiler_Case.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Smarty_Compiler_Case.html" class="more">« More »</a>
+</div>
+<a name="Smarty_Compiler_Caseclose" id="Smarty_Compiler_Caseclose"></a><div class="element ajax clickable class" href="../classes/Smarty_Compiler_Caseclose.html">
+<h1>Smarty_Compiler_Caseclose<a href="../classes/Smarty_Compiler_Caseclose.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Smarty_Compiler_Caseclose.html" class="more">« More »</a>
+</div>
+<a name="Smarty_Compiler_Default" id="Smarty_Compiler_Default"></a><div class="element ajax clickable class" href="../classes/Smarty_Compiler_Default.html">
+<h1>Smarty_Compiler_Default<a href="../classes/Smarty_Compiler_Default.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Smarty_Compiler_Default.html" class="more">« More »</a>
+</div>
+<a name="Smarty_Compiler_Switch" id="Smarty_Compiler_Switch"></a><div class="element ajax clickable class" href="../classes/Smarty_Compiler_Switch.html">
+<h1>Smarty_Compiler_Switch<a href="../classes/Smarty_Compiler_Switch.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Smarty_Compiler_Switch.html" class="more">« More »</a>
+</div>
+<a name="Smarty_Compiler_Switchclose" id="Smarty_Compiler_Switchclose"></a><div class="element ajax clickable class" href="../classes/Smarty_Compiler_Switchclose.html">
+<h1>Smarty_Compiler_Switchclose<a href="../classes/Smarty_Compiler_Switchclose.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Smarty_Compiler_Switchclose.html" class="more">« More »</a>
+</div>
 <a name="Twitter" id="Twitter"></a><div class="element ajax clickable class" href="../classes/Twitter.html">
 <h1>Twitter<a href="../classes/Twitter.html">¶</a>
 </h1>
@@ -1652,20 +1817,6 @@ use the array_keys function to strip out a functional header</p></p>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/authorizedotnet.html" class="more">« More »</a>
-</div>
-<a name="basetheme" id="basetheme"></a><div class="element ajax clickable class" href="../classes/basetheme.html">
-<h1>basetheme<a href="../classes/basetheme.html">¶</a>
-</h1>
-<p class="short_description">This is the base theme class</p>
-<div class="details collapse"></div>
-<a href="../classes/basetheme.html" class="more">« More »</a>
-</div>
-<a name="bootstraptheme" id="bootstraptheme"></a><div class="element ajax clickable class" href="../classes/bootstraptheme.html">
-<h1>bootstraptheme<a href="../classes/bootstraptheme.html">¶</a>
-</h1>
-<p class="short_description">This is the base theme class</p>
-<div class="details collapse"></div>
-<a href="../classes/bootstraptheme.html" class="more">« More »</a>
 </div>
 <a name="calendar" id="calendar"></a><div class="element ajax clickable class" href="../classes/calendar.html">
 <h1>calendar<a href="../classes/calendar.html">¶</a>
@@ -1729,13 +1880,6 @@ use the array_keys function to strip out a functional header</p></p>
 <p class="short_description">This is the class convert_permissions</p>
 <div class="details collapse"></div>
 <a href="../classes/convert_permissions.html" class="more">« More »</a>
-</div>
-<a name="coolwatertheme" id="coolwatertheme"></a><div class="element ajax clickable class" href="../classes/coolwatertheme.html">
-<h1>coolwatertheme<a href="../classes/coolwatertheme.html">¶</a>
-</h1>
-<p class="short_description">This is the base theme class</p>
-<div class="details collapse"></div>
-<a href="../classes/coolwatertheme.html" class="more">« More »</a>
 </div>
 <a name="ecomconfigController" id="ecomconfigController"></a><div class="element ajax clickable class" href="../classes/ecomconfigController.html">
 <h1>ecomconfigController<a href="../classes/ecomconfigController.html">¶</a>
@@ -1968,13 +2112,6 @@ use the array_keys function to strip out a functional header</p></p>
 <div class="details collapse"></div>
 <a href="../classes/motdController.html" class="more">« More »</a>
 </div>
-<a name="multioptionstheme" id="multioptionstheme"></a><div class="element ajax clickable class" href="../classes/multioptionstheme.html">
-<h1>multioptionstheme<a href="../classes/multioptionstheme.html">¶</a>
-</h1>
-<p class="short_description">This is the base theme class</p>
-<div class="details collapse"></div>
-<a href="../classes/multioptionstheme.html" class="more">« More »</a>
-</div>
 <a name="mysql_database" id="mysql_database"></a><div class="element ajax clickable class" href="../classes/mysql_database.html">
 <h1>mysql_database<a href="../classes/mysql_database.html">¶</a>
 </h1>
@@ -2059,13 +2196,6 @@ use the array_keys function to strip out a functional header</p></p>
 <div class="details collapse"></div>
 <a href="../classes/remove_oldfiles.html" class="more">« More »</a>
 </div>
-<a name="retrotheme" id="retrotheme"></a><div class="element ajax clickable class" href="../classes/retrotheme.html">
-<h1>retrotheme<a href="../classes/retrotheme.html">¶</a>
-</h1>
-<p class="short_description">This is the base theme class</p>
-<div class="details collapse"></div>
-<a href="../classes/retrotheme.html" class="more">« More »</a>
-</div>
 <a name="rssfeed" id="rssfeed"></a><div class="element ajax clickable class" href="../classes/rssfeed.html">
 <h1>rssfeed<a href="../classes/rssfeed.html">¶</a>
 </h1>
@@ -2129,6 +2259,13 @@ use the array_keys function to strip out a functional header</p></p>
 <div class="details collapse"></div>
 <a href="../classes/upgrade_attachableitem_tables.html" class="more">« More »</a>
 </div>
+<a name="upgrade_calendar" id="upgrade_calendar"></a><div class="element ajax clickable class" href="../classes/upgrade_calendar.html">
+<h1>upgrade_calendar<a href="../classes/upgrade_calendar.html">¶</a>
+</h1>
+<p class="short_description">This is the class upgrade_calendar</p>
+<div class="details collapse"></div>
+<a href="../classes/upgrade_calendar.html" class="more">« More »</a>
+</div>
 <a name="upgrade_navigation" id="upgrade_navigation"></a><div class="element ajax clickable class" href="../classes/upgrade_navigation.html">
 <h1>upgrade_navigation<a href="../classes/upgrade_navigation.html">¶</a>
 </h1>
@@ -2170,6 +2307,13 @@ use the array_keys function to strip out a functional header</p></p>
 <p class="short_description">This is the class version_tracking</p>
 <div class="details collapse"></div>
 <a href="../classes/version_tracking.html" class="more">« More »</a>
+</div>
+<a name="xmlrpc_server_methods_container" id="xmlrpc_server_methods_container"></a><div class="element ajax clickable class" href="../classes/xmlrpc_server_methods_container.html">
+<h1>xmlrpc_server_methods_container<a href="../classes/xmlrpc_server_methods_container.html">¶</a>
+</h1>
+<p class="short_description">Used to test usage of object methods in dispatch maps</p>
+<div class="details collapse"></div>
+<a href="../classes/xmlrpc_server_methods_container.html" class="more">« More »</a>
 </div>
 <h3>
 <i class="icon-custom icon-constant"></i> Constants</h3>
@@ -2218,42 +2362,6 @@ use the array_keys function to strip out a functional header</p></p>
 <a name="BTN_COLOR" id="BTN_COLOR"> </a><div class="element clickable constant  BTN_COLOR" data-toggle="collapse" data-target=".BTN_COLOR .collapse">
 <h2>BTN_COLOR</h2>
 <pre>BTN_COLOR </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="BTN_COLOR" id="BTN_COLOR"> </a><div class="element clickable constant  BTN_COLOR" data-toggle="collapse" data-target=".BTN_COLOR .collapse">
-<h2>BTN_COLOR</h2>
-<pre>BTN_COLOR </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="BTN_COLOR" id="BTN_COLOR"> </a><div class="element clickable constant  BTN_COLOR" data-toggle="collapse" data-target=".BTN_COLOR .collapse">
-<h2>BTN_COLOR</h2>
-<pre>BTN_COLOR </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="BTN_COLOR" id="BTN_COLOR"> </a><div class="element clickable constant  BTN_COLOR" data-toggle="collapse" data-target=".BTN_COLOR .collapse">
-<h2>BTN_COLOR</h2>
-<pre>BTN_COLOR </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="BTN_SIZE" id="BTN_SIZE"> </a><div class="element clickable constant  BTN_SIZE" data-toggle="collapse" data-target=".BTN_SIZE .collapse">
-<h2>BTN_SIZE</h2>
-<pre>BTN_SIZE </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="BTN_SIZE" id="BTN_SIZE"> </a><div class="element clickable constant  BTN_SIZE" data-toggle="collapse" data-target=".BTN_SIZE .collapse">
-<h2>BTN_SIZE</h2>
-<pre>BTN_SIZE </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="BTN_SIZE" id="BTN_SIZE"> </a><div class="element clickable constant  BTN_SIZE" data-toggle="collapse" data-target=".BTN_SIZE .collapse">
-<h2>BTN_SIZE</h2>
-<pre>BTN_SIZE </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
@@ -2779,9 +2887,9 @@ the current implementation of the Backup Subsystem.</p></p>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
-<a name="FLOWPLAYER_PATH" id="FLOWPLAYER_PATH"> </a><div class="element clickable constant  FLOWPLAYER_PATH" data-toggle="collapse" data-target=".FLOWPLAYER_PATH .collapse">
-<h2>FLOWPLAYER_PATH</h2>
-<pre>FLOWPLAYER_PATH </pre>
+<a name="FLOWPLAYER_RELATIVE" id="FLOWPLAYER_RELATIVE"> </a><div class="element clickable constant  FLOWPLAYER_RELATIVE" data-toggle="collapse" data-target=".FLOWPLAYER_RELATIVE .collapse">
+<h2>FLOWPLAYER_RELATIVE</h2>
+<pre>FLOWPLAYER_RELATIVE </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
@@ -2936,9 +3044,26 @@ when you have special needs for the form's input elements.</p></p></div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
+<a name="JQUERY_RELATIVE" id="JQUERY_RELATIVE"> </a><div class="element clickable constant  JQUERY_RELATIVE" data-toggle="collapse" data-target=".JQUERY_RELATIVE .collapse">
+<h2>JQUERY_RELATIVE</h2>
+<pre>JQUERY_RELATIVE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="JQUERY_URL" id="JQUERY_URL"> </a><div class="element clickable constant  JQUERY_URL" data-toggle="collapse" data-target=".JQUERY_URL .collapse">
+<h2>JQUERY_URL</h2>
+<pre>JQUERY_URL </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="JQUERY_VERSION" id="JQUERY_VERSION"> </a><div class="element clickable constant  JQUERY_VERSION" data-toggle="collapse" data-target=".JQUERY_VERSION .collapse">
+<h2>JQUERY_VERSION</h2>
+<pre>JQUERY_VERSION </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
 <a name="JS_FULL" id="JS_FULL"> </a><div class="element clickable constant  JS_FULL" data-toggle="collapse" data-target=".JS_FULL .collapse">
-<h2>exdoc
-The absolute path to Exponent's core javascript.</h2>
+<h2>JS_FULL</h2>
 <pre>JS_FULL </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
@@ -2946,6 +3071,20 @@ The absolute path to Exponent's core javascript.</h2>
 <a name="JS_PATH" id="JS_PATH"> </a><div class="element clickable constant  JS_PATH" data-toggle="collapse" data-target=".JS_PATH .collapse">
 <h2>JS_PATH</h2>
 <pre>JS_PATH </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="JS_RELATIVE" id="JS_RELATIVE"> </a><div class="element clickable constant  JS_RELATIVE" data-toggle="collapse" data-target=".JS_RELATIVE .collapse">
+<h2>exdoc
+The relative path to Exponent's core javascript.</h2>
+<pre>JS_RELATIVE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="JS_URL" id="JS_URL"> </a><div class="element clickable constant  JS_URL" data-toggle="collapse" data-target=".JS_URL .collapse">
+<h2>exdoc
+The absolute url to Exponent's core javascript.</h2>
+<pre>JS_URL </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
@@ -2991,105 +3130,9 @@ The absolute path to Exponent's core javascript.</h2>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
-<a name="LINK1_SECTION" id="LINK1_SECTION"> </a><div class="element clickable constant  LINK1_SECTION" data-toggle="collapse" data-target=".LINK1_SECTION .collapse">
-<h2>LINK1_SECTION</h2>
-<pre>LINK1_SECTION </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LINK1_SECTION" id="LINK1_SECTION"> </a><div class="element clickable constant  LINK1_SECTION" data-toggle="collapse" data-target=".LINK1_SECTION .collapse">
-<h2>LINK1_SECTION</h2>
-<pre>LINK1_SECTION </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LINK1_TEXT" id="LINK1_TEXT"> </a><div class="element clickable constant  LINK1_TEXT" data-toggle="collapse" data-target=".LINK1_TEXT .collapse">
-<h2>LINK1_TEXT</h2>
-<pre>LINK1_TEXT </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LINK1_TEXT" id="LINK1_TEXT"> </a><div class="element clickable constant  LINK1_TEXT" data-toggle="collapse" data-target=".LINK1_TEXT .collapse">
-<h2>LINK1_TEXT</h2>
-<pre>LINK1_TEXT </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LINK2_SECTION" id="LINK2_SECTION"> </a><div class="element clickable constant  LINK2_SECTION" data-toggle="collapse" data-target=".LINK2_SECTION .collapse">
-<h2>LINK2_SECTION</h2>
-<pre>LINK2_SECTION </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LINK2_SECTION" id="LINK2_SECTION"> </a><div class="element clickable constant  LINK2_SECTION" data-toggle="collapse" data-target=".LINK2_SECTION .collapse">
-<h2>LINK2_SECTION</h2>
-<pre>LINK2_SECTION </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LINK2_TEXT" id="LINK2_TEXT"> </a><div class="element clickable constant  LINK2_TEXT" data-toggle="collapse" data-target=".LINK2_TEXT .collapse">
-<h2>LINK2_TEXT</h2>
-<pre>LINK2_TEXT </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LINK2_TEXT" id="LINK2_TEXT"> </a><div class="element clickable constant  LINK2_TEXT" data-toggle="collapse" data-target=".LINK2_TEXT .collapse">
-<h2>LINK2_TEXT</h2>
-<pre>LINK2_TEXT </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LINK3_SECTION" id="LINK3_SECTION"> </a><div class="element clickable constant  LINK3_SECTION" data-toggle="collapse" data-target=".LINK3_SECTION .collapse">
-<h2>LINK3_SECTION</h2>
-<pre>LINK3_SECTION </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LINK3_SECTION" id="LINK3_SECTION"> </a><div class="element clickable constant  LINK3_SECTION" data-toggle="collapse" data-target=".LINK3_SECTION .collapse">
-<h2>LINK3_SECTION</h2>
-<pre>LINK3_SECTION </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LINK3_TEXT" id="LINK3_TEXT"> </a><div class="element clickable constant  LINK3_TEXT" data-toggle="collapse" data-target=".LINK3_TEXT .collapse">
-<h2>LINK3_TEXT</h2>
-<pre>LINK3_TEXT </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LINK3_TEXT" id="LINK3_TEXT"> </a><div class="element clickable constant  LINK3_TEXT" data-toggle="collapse" data-target=".LINK3_TEXT .collapse">
-<h2>LINK3_TEXT</h2>
-<pre>LINK3_TEXT </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
 <a name="LOGGER" id="LOGGER"> </a><div class="element clickable constant  LOGGER" data-toggle="collapse" data-target=".LOGGER .collapse">
 <h2>LOGGER</h2>
 <pre>LOGGER </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LOGO_TEXT_MAIN" id="LOGO_TEXT_MAIN"> </a><div class="element clickable constant  LOGO_TEXT_MAIN" data-toggle="collapse" data-target=".LOGO_TEXT_MAIN .collapse">
-<h2>LOGO_TEXT_MAIN</h2>
-<pre>LOGO_TEXT_MAIN </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LOGO_TEXT_MAIN" id="LOGO_TEXT_MAIN"> </a><div class="element clickable constant  LOGO_TEXT_MAIN" data-toggle="collapse" data-target=".LOGO_TEXT_MAIN .collapse">
-<h2>LOGO_TEXT_MAIN</h2>
-<pre>LOGO_TEXT_MAIN </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LOGO_TEXT_SUPERSCRIPT" id="LOGO_TEXT_SUPERSCRIPT"> </a><div class="element clickable constant  LOGO_TEXT_SUPERSCRIPT" data-toggle="collapse" data-target=".LOGO_TEXT_SUPERSCRIPT .collapse">
-<h2>LOGO_TEXT_SUPERSCRIPT</h2>
-<pre>LOGO_TEXT_SUPERSCRIPT </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="LOGO_TEXT_SUPERSCRIPT" id="LOGO_TEXT_SUPERSCRIPT"> </a><div class="element clickable constant  LOGO_TEXT_SUPERSCRIPT" data-toggle="collapse" data-target=".LOGO_TEXT_SUPERSCRIPT .collapse">
-<h2>LOGO_TEXT_SUPERSCRIPT</h2>
-<pre>LOGO_TEXT_SUPERSCRIPT </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
@@ -3192,24 +3235,6 @@ The absolute path to Exponent's core javascript.</h2>
 <a name="MONEY" id="MONEY"> </a><div class="element clickable constant  MONEY" data-toggle="collapse" data-target=".MONEY .collapse">
 <h2>MONEY</h2>
 <pre>MONEY </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="MULTI_COLOR" id="MULTI_COLOR"> </a><div class="element clickable constant  MULTI_COLOR" data-toggle="collapse" data-target=".MULTI_COLOR .collapse">
-<h2>MULTI_COLOR</h2>
-<pre>MULTI_COLOR </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="MULTI_FONT" id="MULTI_FONT"> </a><div class="element clickable constant  MULTI_FONT" data-toggle="collapse" data-target=".MULTI_FONT .collapse">
-<h2>MULTI_FONT</h2>
-<pre>MULTI_FONT </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="MULTI_SIZE" id="MULTI_SIZE"> </a><div class="element clickable constant  MULTI_SIZE" data-toggle="collapse" data-target=".MULTI_SIZE .collapse">
-<h2>MULTI_SIZE</h2>
-<pre>MULTI_SIZE </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
@@ -3408,6 +3433,18 @@ The absolute path to Exponent's core javascript.</h2>
 <a name="SCRIPT_EXP_RELATIVE" id="SCRIPT_EXP_RELATIVE"> </a><div class="element clickable constant  SCRIPT_EXP_RELATIVE" data-toggle="collapse" data-target=".SCRIPT_EXP_RELATIVE .collapse">
 <h2>SCRIPT_EXP_RELATIVE</h2>
 <pre>SCRIPT_EXP_RELATIVE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="SCRIPT_EXP_RELATIVE" id="SCRIPT_EXP_RELATIVE"> </a><div class="element clickable constant  SCRIPT_EXP_RELATIVE" data-toggle="collapse" data-target=".SCRIPT_EXP_RELATIVE .collapse">
+<h2>SCRIPT_EXP_RELATIVE</h2>
+<pre>SCRIPT_EXP_RELATIVE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="SCRIPT_FILENAME" id="SCRIPT_FILENAME"> </a><div class="element clickable constant  SCRIPT_FILENAME" data-toggle="collapse" data-target=".SCRIPT_FILENAME .collapse">
+<h2>SCRIPT_FILENAME</h2>
+<pre>SCRIPT_FILENAME </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
@@ -3684,18 +3721,6 @@ The absolute path to Exponent's core javascript.</h2>
 <a name="SOURCE_SELECTOR" id="SOURCE_SELECTOR"> </a><div class="element clickable constant  SOURCE_SELECTOR" data-toggle="collapse" data-target=".SOURCE_SELECTOR .collapse">
 <h2>SOURCE_SELECTOR</h2>
 <pre>SOURCE_SELECTOR </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="SWATCH" id="SWATCH"> </a><div class="element clickable constant  SWATCH" data-toggle="collapse" data-target=".SWATCH .collapse">
-<h2>SWATCH</h2>
-<pre>SWATCH </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="SWATCH" id="SWATCH"> </a><div class="element clickable constant  SWATCH" data-toggle="collapse" data-target=".SWATCH .collapse">
-<h2>SWATCH</h2>
-<pre>SWATCH </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
@@ -4093,6 +4118,12 @@ UI Level of Structure - All management links are shown.</h2>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
+<a name="YUI2_RELATIVE" id="YUI2_RELATIVE"> </a><div class="element clickable constant  YUI2_RELATIVE" data-toggle="collapse" data-target=".YUI2_RELATIVE .collapse">
+<h2>YUI2_RELATIVE</h2>
+<pre>YUI2_RELATIVE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
 <a name="YUI2_URL" id="YUI2_URL"> </a><div class="element clickable constant  YUI2_URL" data-toggle="collapse" data-target=".YUI2_URL .collapse">
 <h2>YUI2_URL</h2>
 <pre>YUI2_URL </pre>
@@ -4108,6 +4139,12 @@ UI Level of Structure - All management links are shown.</h2>
 <a name="YUI3_PATH" id="YUI3_PATH"> </a><div class="element clickable constant  YUI3_PATH" data-toggle="collapse" data-target=".YUI3_PATH .collapse">
 <h2>YUI3_PATH</h2>
 <pre>YUI3_PATH </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="YUI3_RELATIVE" id="YUI3_RELATIVE"> </a><div class="element clickable constant  YUI3_RELATIVE" data-toggle="collapse" data-target=".YUI3_RELATIVE .collapse">
+<h2>YUI3_RELATIVE</h2>
+<pre>YUI3_RELATIVE </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
@@ -4129,7 +4166,7 @@ UI Level of Structure - All management links are shown.</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
-            generated on 2012-09-27T13:41:39-04:00.<br></footer></div>
+            generated on 2012-10-20T17:18:19-04:00.<br></footer></div>
 </div>
 </body>
 </html>

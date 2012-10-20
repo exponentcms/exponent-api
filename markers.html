@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Exponent 2.0.9</title>
+<title>Exponent 2.1.0</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="css/template.css" rel="stylesheet" media="all">
@@ -15,7 +15,7 @@
 <body>
 <div class="navbar navbar-fixed-top">
 <div class="navbar-inner"><div class="container">
-<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="index.html">Exponent 2.0.9</a><div class="nav-collapse"><ul class="nav">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="index.html">Exponent 2.1.0</a><div class="nav-collapse"><ul class="nav">
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
@@ -24,6 +24,7 @@
 <li><a href="packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 <li><a href="packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
 <li><a href="packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
+<li><a href="packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
 <li><a href="packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
 <li><a href="packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
@@ -37,11 +38,11 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3456</span></a></li>
+                <span class="label label-info">3453</span></a></li>
 <li><a href="markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
-                <span class="label label-info">41</span>
+                <span class="label label-info">49</span>
 </li>
 <li>fixme 
                 <span class="label label-info">184</span>
@@ -65,6 +66,7 @@
 <li class="nav-header">Navigation</li>
 <li><a href="#cron%5Cbootstrap.php"><i class="icon-file"></i>cron\bootstrap.php</a></li>
 <li><a href="#cron%5Clang_extract.php"><i class="icon-file"></i>cron\lang_extract.php</a></li>
+<li><a href="#exponent.js.php"><i class="icon-file"></i>exponent.js.php</a></li>
 <li><a href="#exponent.php"><i class="icon-file"></i>exponent.php</a></li>
 <li><a href="#exponent_constants.php"><i class="icon-file"></i>exponent_constants.php</a></li>
 <li><a href="#exponent_php_setup.php"><i class="icon-file"></i>exponent_php_setup.php</a></li>
@@ -98,6 +100,7 @@
 <li><a href="#framework%5Ccore%5Csubsystems%5Cforms%5Ccontrols%5Ccheckboxcontrol.php"><i class="icon-file"></i>framework\core\subsystems\forms\controls\checkboxcontrol.php</a></li>
 <li><a href="#framework%5Ccore%5Csubsystems%5Cforms%5Ccontrols%5Chtmleditorcontrol.php"><i class="icon-file"></i>framework\core\subsystems\forms\controls\htmleditorcontrol.php</a></li>
 <li><a href="#framework%5Ccore%5Csubsystems%5Cforms%5Ccontrols%5Cpopupdatetimecontrol.php"><i class="icon-file"></i>framework\core\subsystems\forms\controls\popupdatetimecontrol.php</a></li>
+<li><a href="#framework%5Ccore%5Csubsystems%5Cforms%5Ccontrols%5Ctagpickercontrol.php"><i class="icon-file"></i>framework\core\subsystems\forms\controls\tagpickercontrol.php</a></li>
 <li><a href="#framework%5Ccore%5Csubsystems%5Cforms%5Cfiletemplate.php"><i class="icon-file"></i>framework\core\subsystems\forms\filetemplate.php</a></li>
 <li><a href="#framework%5Ccore%5Csubsystems%5Cforms%5Cformtemplate.php"><i class="icon-file"></i>framework\core\subsystems\forms\formtemplate.php</a></li>
 <li><a href="#framework%5Ccore%5Csubsystems%5Cforms%5Ctemplate.php"><i class="icon-file"></i>framework\core\subsystems\forms\template.php</a></li>
@@ -105,6 +108,7 @@
 <li><a href="#framework%5Cmodules%5Cadministration%5Ccontrollers%5CadministrationController.php"><i class="icon-file"></i>framework\modules\administration\controllers\administrationController.php</a></li>
 <li><a href="#framework%5Cmodules%5Cblog%5Ccontrollers%5CblogController.php"><i class="icon-file"></i>framework\modules\blog\controllers\blogController.php</a></li>
 <li><a href="#framework%5Cmodules%5Cealerts%5Cmodels%5CexpeAlerts.php"><i class="icon-file"></i>framework\modules\ealerts\models\expeAlerts.php</a></li>
+<li><a href="#framework%5Cmodules%5Cecommerce%5Cbillingcalculators%5Ccreditcard.php"><i class="icon-file"></i>framework\modules\ecommerce\billingcalculators\creditcard.php</a></li>
 <li><a href="#framework%5Cmodules%5Cecommerce%5Cbillingcalculators%5Cpassthru.php"><i class="icon-file"></i>framework\modules\ecommerce\billingcalculators\passthru.php</a></li>
 <li><a href="#framework%5Cmodules%5Cecommerce%5Cbillingcalculators%5CpaypalExpressCheckout.php"><i class="icon-file"></i>framework\modules\ecommerce\billingcalculators\paypalExpressCheckout.php</a></li>
 <li><a href="#framework%5Cmodules%5Cecommerce%5Cbillingcalculators%5Csplitcreditcard.php"><i class="icon-file"></i>framework\modules\ecommerce\billingcalculators\splitcreditcard.php</a></li>
@@ -148,14 +152,15 @@
 <li><a href="#framework%5Cmodules-1%5Cimporter%5Cimporters%5Cusercsv%5Cmapper.php"><i class="icon-file"></i>framework\modules-1\importer\importers\usercsv\mapper.php</a></li>
 <li><a href="#framework%5Cmodules-1%5Cnavigationmodule%5Cclass.php"><i class="icon-file"></i>framework\modules-1\navigationmodule\class.php</a></li>
 <li><a href="#framework%5Cplugins%5Cfunction.control.php"><i class="icon-file"></i>framework\plugins\function.control.php</a></li>
+<li><a href="#framework%5Cplugins%5Cfunction.ddrerank.php"><i class="icon-file"></i>framework\plugins\function.ddrerank.php</a></li>
 <li><a href="#framework%5Cplugins%5Cfunction.popupdatetimecontrol.php"><i class="icon-file"></i>framework\plugins\function.popupdatetimecontrol.php</a></li>
 <li><a href="#framework%5Cplugins%5Cfunction.userlistcontrol.php"><i class="icon-file"></i>framework\plugins\function.userlistcontrol.php</a></li>
 <li><a href="#framework%5Cplugins%5Cmodifier.convertlangcode.php"><i class="icon-file"></i>framework\plugins\modifier.convertlangcode.php</a></li>
 <li><a href="#index.php"><i class="icon-file"></i>index.php</a></li>
 <li><a href="#install%5Cpages%5Cinstall-3.php"><i class="icon-file"></i>install\pages\install-3.php</a></li>
 <li><a href="#install%5Cpages%5Cinstall-7.php"><i class="icon-file"></i>install\pages\install-7.php</a></li>
+<li><a href="#install%5Cupgrades%5Cupgrade_calendar.php"><i class="icon-file"></i>install\upgrades\upgrade_calendar.php</a></li>
 <li><a href="#site_rss.php"><i class="icon-file"></i>site_rss.php</a></li>
-<li><a href="#themes%5Cbootstraptheme%5Cplugins%5Cfunction.bootstrap_navbar.php"><i class="icon-file"></i>themes\bootstraptheme\plugins\function.bootstrap_navbar.php</a></li>
 </ul></div>
 <div class="span8">
 <ul class="breadcrumb">
@@ -168,7 +173,7 @@
                         The following markers were found:
                         <ul>
 <li>todo 
-                <span class="label label-info">41</span>
+                <span class="label label-info">49</span>
 </li>
 <li>fixme 
                 <span class="label label-info">184</span>
@@ -211,6 +216,38 @@
 </table></div>
 </div>
 <div class="package-contents">
+<a name="exponent.js.php" id="exponent.js.php"></a><h3>
+<i class="icon-file"></i>exponent.js.php<small style="float: right;padding-right: 10px;">4</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>31</td>
+<td>deprecated</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>33</td>
+<td>deprecated</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>36</td>
+<td>deprecated</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>40</td>
+<td>deprecated</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
 <a name="exponent.php" id="exponent.php"></a><h3>
 <i class="icon-file"></i>exponent.php<small style="float: right;padding-right: 10px;">1</small>
 </h3>
@@ -229,7 +266,7 @@
 </div>
 <div class="package-contents">
 <a name="exponent_constants.php" id="exponent_constants.php"></a><h3>
-<i class="icon-file"></i>exponent_constants.php<small style="float: right;padding-right: 10px;">2</small>
+<i class="icon-file"></i>exponent_constants.php<small style="float: right;padding-right: 10px;">6</small>
 </h3>
 <div><table class="table markers table-bordered">
 <tr>
@@ -246,6 +283,26 @@
 <td>fixme</td>
 <td>40</td>
 <td>Notable, it breaks in the installer.</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>443</td>
+<td>deprecated</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>448</td>
+<td>deprecated</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>466</td>
+<td>deprecated</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>477</td>
+<td>deprecated</td>
 </tr>
 </table></div>
 </div>
@@ -268,7 +325,7 @@
 </div>
 <div class="package-contents">
 <a name="framework%5Ccore%5Ccontrollers%5CexpCatController.php" id="framework\core\controllers\expCatController.php"></a><h3>
-<i class="icon-file"></i>framework\core\controllers\expCatController.php<small style="float: right;padding-right: 10px;">2</small>
+<i class="icon-file"></i>framework\core\controllers\expCatController.php<small style="float: right;padding-right: 10px;">1</small>
 </h3>
 <div><table class="table markers table-bordered">
 <tr>
@@ -280,11 +337,6 @@
 <td>fixme</td>
 <td>104</td>
 <td>here is a hack to get the faq to be listed</td>
-</tr>
-<tr>
-<td>fixme</td>
-<td>190</td>
-<td>we don't always want to sort  by cat first</td>
 </tr>
 </table></div>
 </div>
@@ -366,24 +418,24 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>278</td>
+<td>284</td>
 <td>do we process modules also needing this?</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>374</td>
+<td>380</td>
 <td>there is NO 'page' object and section has no _construct method</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>376</td>
+<td>382</td>
 <td>there is no getModulesBySource method anywhere</td>
 </tr>
 </table></div>
 </div>
 <div class="package-contents">
 <a name="framework%5Ccore%5Cmodels%5CexpRecord.php" id="framework\core\models\expRecord.php"></a><h3>
-<i class="icon-file"></i>framework\core\models\expRecord.php<small style="float: right;padding-right: 10px;">14</small>
+<i class="icon-file"></i>framework\core\models\expRecord.php<small style="float: right;padding-right: 10px;">15</small>
 </h3>
 <div><table class="table markers table-bordered">
 <tr>
@@ -413,23 +465,28 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>489</td>
-<td>find a better way to pluralize these names!!!</td>
-</tr>
-<tr>
-<td>fixme</td>
-<td>490</td>
-<td>find a better way to pluralize these names!!!</td>
-</tr>
-<tr>
-<td>fixme</td>
-<td>545</td>
+<td>531</td>
 <td>$where .= empty($this->rank_by_field) ? null : "AND " . $this->rank_by_field . "='" . $this->$this->rank_by_field . "'";</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>706</td>
+<td>616</td>
+<td>find a better way to pluralize these names!!!</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>617</td>
+<td>find a better way to pluralize these names!!!</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>680</td>
 <td>shouldn't we also delete associated items?</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>731</td>
+<td>? this is for 'sef_name', NOT 'sef_url'</td>
 </tr>
 <tr>
 <td>fixme</td>
@@ -714,7 +771,7 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>314</td>
+<td>315</td>
 <td>$hide & $footer are not defined below</td>
 </tr>
 </table></div>
@@ -1002,52 +1059,52 @@ Actually, cleanup should be done so that this function only takes associative ar
 </tr>
 <tr>
 <td>fixme</td>
-<td>388</td>
+<td>361</td>
 <td>change this to a generic system theme</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>494</td>
+<td>467</td>
 <td>module/controller glue code..remove ASAP</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>544</td>
+<td>517</td>
 <td>doesn't seem to be used except by smarty functions, old school?</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>650</td>
+<td>623</td>
 <td>change to showModule call</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>680</td>
+<td>653</td>
 <td>there is no such config index</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>714</td>
+<td>687</td>
 <td>let's try $sectionObj instead of last_section</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>738</td>
+<td>711</td>
 <td>not used in base system (custom themes?)</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>857</td>
+<td>830</td>
 <td>- $section might be empty!  We're getting it from last_section instead of sectionObj??</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>860</td>
+<td>833</td>
 <td>let's try $sectionObj instead of last_section</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>945</td>
+<td>918</td>
 <td>we are checking here for a new MVC style controller or an old school module. We only need to perform</td>
 </tr>
 </table></div>
@@ -1064,7 +1121,7 @@ Actually, cleanup should be done so that this function only takes associative ar
 </tr>
 <tr>
 <td>fixme</td>
-<td>98</td>
+<td>146</td>
 <td>we need a good installation/server to place this on</td>
 </tr>
 </table></div>
@@ -1168,6 +1225,23 @@ Actually, cleanup should be done so that this function only takes associative ar
 <td>fixme</td>
 <td>24</td>
 <td>we don't ship jscalendar files for this to work</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Csubsystems%5Cforms%5Ccontrols%5Ctagpickercontrol.php" id="framework\core\subsystems\forms\controls\tagpickercontrol.php"></a><h3>
+<i class="icon-file"></i>framework\core\subsystems\forms\controls\tagpickercontrol.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>27</td>
+<td>we do NOT want a list of checkboxes for all the tags in the system</td>
 </tr>
 </table></div>
 </div>
@@ -1316,6 +1390,23 @@ Actually, cleanup should be done so that this function only takes associative ar
 </table></div>
 </div>
 <div class="package-contents">
+<a name="framework%5Cmodules%5Cecommerce%5Cbillingcalculators%5Ccreditcard.php" id="framework\modules\ecommerce\billingcalculators\creditcard.php"></a><h3>
+<i class="icon-file"></i>framework\modules\ecommerce\billingcalculators\creditcard.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>88</td>
+<td>we need to display/obtain user information if we are doing a quickPay checkout???</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
 <a name="framework%5Cmodules%5Cecommerce%5Cbillingcalculators%5Cpassthru.php" id="framework\modules\ecommerce\billingcalculators\passthru.php"></a><h3>
 <i class="icon-file"></i>framework\modules\ecommerce\billingcalculators\passthru.php<small style="float: right;padding-right: 10px;">1</small>
 </h3>
@@ -1359,7 +1450,7 @@ Actually, cleanup should be done so that this function only takes associative ar
 </tr>
 <tr>
 <td>fixme</td>
-<td>399</td>
+<td>400</td>
 <td>, what can we do with the note returned?</td>
 </tr>
 </table></div>
@@ -1410,7 +1501,7 @@ Actually, cleanup should be done so that this function only takes associative ar
 </div>
 <div class="package-contents">
 <a name="framework%5Cmodules%5Cecommerce%5Ccontrollers%5CcartController.php" id="framework\modules\ecommerce\controllers\cartController.php"></a><h3>
-<i class="icon-file"></i>framework\modules\ecommerce\controllers\cartController.php<small style="float: right;padding-right: 10px;">3</small>
+<i class="icon-file"></i>framework\modules\ecommerce\controllers\cartController.php<small style="float: right;padding-right: 10px;">4</small>
 </h3>
 <div><table class="table markers table-bordered">
 <tr>
@@ -1425,12 +1516,17 @@ Actually, cleanup should be done so that this function only takes associative ar
 </tr>
 <tr>
 <td>fixme</td>
-<td>582</td>
+<td>584</td>
 <td>$comment doesn't exist</td>
 </tr>
 <tr>
+<td>fixme</td>
+<td>643</td>
+<td>we exit earlier if shipping_required???</td>
+</tr>
+<tr>
 <td>todo</td>
-<td>666</td>
+<td>670</td>
 <td></td>
 </tr>
 </table></div>
@@ -1640,7 +1736,7 @@ Actually, cleanup should be done so that this function only takes associative ar
 </div>
 <div class="package-contents">
 <a name="framework%5Cmodules%5Cevents%5Ccontrollers%5CeventController.php" id="framework\modules\events\controllers\eventController.php"></a><h3>
-<i class="icon-file"></i>framework\modules\events\controllers\eventController.php<small style="float: right;padding-right: 10px;">12</small>
+<i class="icon-file"></i>framework\modules\events\controllers\eventController.php<small style="float: right;padding-right: 10px;">5</small>
 </h3>
 <div><table class="table markers table-bordered">
 <tr>
@@ -1650,63 +1746,28 @@ Actually, cleanup should be done so that this function only takes associative ar
 </tr>
 <tr>
 <td>fixme</td>
-<td>206</td>
-<td>add external events to $days[$start] for date $start, one day at a time</td>
-</tr>
-<tr>
-<td>fixme</td>
-<td>212</td>
+<td>213</td>
 <td>this can't be right?</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>215</td>
+<td>216</td>
 <td>this can't be right?</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>269</td>
-<td>add external events to $monthly[$week][$i] for date $start, one day at a time</td>
-</tr>
-<tr>
-<td>fixme</td>
-<td>403</td>
-<td>add external events to $items for date >= ".expDateTime::startOfMonthTimestamp(time()) . " AND date <= " . expDateTime::endOfMonthTimestamp(time())</td>
-</tr>
-<tr>
-<td>fixme</td>
-<td>547</td>
-<td>we need to complete this</td>
-</tr>
-<tr>
-<td>fixme</td>
-<td>840</td>
-<td>we need to complete this</td>
-</tr>
-<tr>
-<td>fixme</td>
-<td>1297</td>
+<td>1028</td>
 <td>must convert $dtstart timezone</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1307</td>
+<td>1038</td>
 <td>must convert $dtend timezone</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1321</td>
+<td>1052</td>
 <td>must convert $dtstart & $dtend timezone</td>
-</tr>
-<tr>
-<td>fixme</td>
-<td>1377</td>
-<td>must convert $dtstart timezone</td>
-</tr>
-<tr>
-<td>fixme</td>
-<td>1389</td>
-<td>must convert $dtend timezone</td>
 </tr>
 </table></div>
 </div>
@@ -1790,7 +1851,7 @@ Actually, cleanup should be done so that this function only takes associative ar
 </tr>
 <tr>
 <td>fixme</td>
-<td>2313</td>
+<td>2453</td>
 <td>we need to push the button.css file to head for coolwater theme?</td>
 </tr>
 </table></div>
@@ -1936,7 +1997,7 @@ Actually, cleanup should be done so that this function only takes associative ar
 </div>
 <div class="package-contents">
 <a name="framework%5Cmodules%5Cusers%5Ccontrollers%5CusersController.php" id="framework\modules\users\controllers\usersController.php"></a><h3>
-<i class="icon-file"></i>framework\modules\users\controllers\usersController.php<small style="float: right;padding-right: 10px;">1</small>
+<i class="icon-file"></i>framework\modules\users\controllers\usersController.php<small style="float: right;padding-right: 10px;">2</small>
 </h3>
 <div><table class="table markers table-bordered">
 <tr>
@@ -1946,7 +2007,12 @@ Actually, cleanup should be done so that this function only takes associative ar
 </tr>
 <tr>
 <td>fixme</td>
-<td>193</td>
+<td>104</td>
+<td>constant does NOT resolve</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>194</td>
 <td>why are we doing this? this loads the edited user perms over the current user???</td>
 </tr>
 </table></div>
@@ -2081,13 +2147,13 @@ Actually, cleanup should be done so that this function only takes associative ar
 </tr>
 <tr>
 <td>fixme</td>
-<td>617</td>
-<td>must convert $dtstart timezone</td>
+<td>620</td>
+<td>must convert $dtstart['TZID'] timezone</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>629</td>
-<td>must convert $dtend timezone</td>
+<td>622</td>
+<td>must convert $dtend['TZID'] timezone</td>
 </tr>
 </table></div>
 </div>
@@ -2256,7 +2322,7 @@ Actually, cleanup should be done so that this function only takes associative ar
 </div>
 <div class="package-contents">
 <a name="framework%5Cplugins%5Cfunction.control.php" id="framework\plugins\function.control.php"></a><h3>
-<i class="icon-file"></i>framework\plugins\function.control.php<small style="float: right;padding-right: 10px;">1</small>
+<i class="icon-file"></i>framework\plugins\function.control.php<small style="float: right;padding-right: 10px;">3</small>
 </h3>
 <div><table class="table markers table-bordered">
 <tr>
@@ -2267,7 +2333,34 @@ Actually, cleanup should be done so that this function only takes associative ar
 <tr>
 <td>fixme</td>
 <td>47</td>
-<td>this control does not work due ot missing library files</td>
+<td>this control is broken</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>316</td>
+<td>we don't really use this</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>317</td>
+<td>we don't really use this</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cplugins%5Cfunction.ddrerank.php" id="framework\plugins\function.ddrerank.php"></a><h3>
+<i class="icon-file"></i>framework\plugins\function.ddrerank.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>63</td>
+<td>why are re-pulling if we sent $iems in if we only need them in rank order???</td>
 </tr>
 </table></div>
 </div>
@@ -2389,6 +2482,23 @@ Actually, cleanup should be done so that this function only takes associative ar
 </table></div>
 </div>
 <div class="package-contents">
+<a name="install%5Cupgrades%5Cupgrade_calendar.php" id="install\upgrades\upgrade_calendar.php"></a><h3>
+<i class="icon-file"></i>install\upgrades\upgrade_calendar.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>259</td>
+<td>we also need to copy any .form & .config files</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
 <a name="site_rss.php" id="site_rss.php"></a><h3>
 <i class="icon-file"></i>site_rss.php<small style="float: right;padding-right: 10px;">1</small>
 </h3>
@@ -2405,30 +2515,13 @@ Actually, cleanup should be done so that this function only takes associative ar
 </tr>
 </table></div>
 </div>
-<div class="package-contents">
-<a name="themes%5Cbootstraptheme%5Cplugins%5Cfunction.bootstrap_navbar.php" id="themes\bootstraptheme\plugins\function.bootstrap_navbar.php"></a><h3>
-<i class="icon-file"></i>themes\bootstraptheme\plugins\function.bootstrap_navbar.php<small style="float: right;padding-right: 10px;">1</small>
-</h3>
-<div><table class="table markers table-bordered">
-<tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>fixme</td>
-<td>52</td>
-<td>we need to take into account new_window, and active flags</td>
-</tr>
-</table></div>
-</div>
 </div>
 </div>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
-            generated on 2012-09-27T13:42:01-04:00.<br></footer></div>
+            generated on 2012-10-20T17:18:43-04:00.<br></footer></div>
 </div>
 </body>
 </html>

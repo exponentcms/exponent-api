@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Exponent 2.0.9 » \expVersion</title>
+<title>Exponent 2.1.0 » \expVersion</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -15,7 +15,7 @@
 <body>
 <div class="navbar navbar-fixed-top">
 <div class="navbar-inner"><div class="container">
-<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.0.9</a><div class="nav-collapse"><ul class="nav">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.1.0</a><div class="nav-collapse"><ul class="nav">
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
@@ -24,6 +24,7 @@
 <li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 <li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
 <li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
+<li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
 <li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
@@ -37,11 +38,11 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3456</span></a></li>
+                <span class="label label-info">3453</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
-                <span class="label label-info">41</span>
+                <span class="label label-info">49</span>
 </li>
 <li>fixme 
                 <span class="label label-info">184</span>
@@ -70,7 +71,10 @@
 <i class="icon-custom icon-method"></i> Methods</li>
 <li class="method public "><a href="#checkVersion" title="checkVersion :: Routine to check for installation or upgrade"><span class="description">Routine to check for installation or upgrade</span><pre>checkVersion()</pre></a></li>
 <li class="method public "><a href="#compareVersion" title="compareVersion :: Routine to compare passed versions"><span class="description">Routine to compare passed versions</span><pre>compareVersion()</pre></a></li>
+<li class="method public "><a href="#dbVersion" title="dbVersion :: Return an object of the current version number stored in the database."><span class="description">Return an object of the current version number stored in the database.</span><pre>dbVersion()</pre></a></li>
+<li class="method public "><a href="#getDBVersion" title="getDBVersion :: Return a string of the current version number in the database."><span class="description">Return a string of the current version number in the database.</span><pre>getDBVersion()</pre></a></li>
 <li class="method public "><a href="#getVersion" title="getVersion :: Return a string of the current version number."><span class="description">Return a string of the current version number.</span><pre>getVersion()</pre></a></li>
+<li class="method public "><a href="#swVersion" title="swVersion :: Return an object of the current version number of the software."><span class="description">Return an object of the current version number of the software.</span><pre>swVersion()</pre></a></li>
 <li class="nav-header private">» Private</li>
 <li class="method private "><a href="#iterateType" title="iterateType :: Routine to convert version iteration type to a rank"><span class="description">Routine to convert version iteration type to a rank</span><pre>iterateType()</pre></a></li>
 </ul>
@@ -121,9 +125,23 @@
 <code>bool</code>set to true if $version1 is less than $version2</div>
 </div></div>
 </div>
-<a name="getVersion" id="getVersion"></a><div class="element clickable method public getVersion" data-toggle="collapse" data-target=".getVersion .collapse">
-<h2>Return a string of the current version number.</h2>
-<pre>getVersion(bool | bool $full, bool | bool $build) : string</pre>
+<a name="dbVersion" id="dbVersion"></a><div class="element clickable method public dbVersion" data-toggle="collapse" data-target=".dbVersion .collapse">
+<h2>Return an object of the current version number stored in the database.</h2>
+<pre>dbVersion() : object</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:expVersion</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>object</code></div>
+</div></div>
+</div>
+<a name="getDBVersion" id="getDBVersion"></a><div class="element clickable method public getDBVersion" data-toggle="collapse" data-target=".getDBVersion .collapse">
+<h2>Return a string of the current version number in the database.</h2>
+<pre>getDBVersion(bool $full, bool $build, bool $type) : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <p class="long_description"></p>
@@ -134,13 +152,55 @@
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$full</h4>
-<code>bool</code><code>bool</code><p>Whether or not to return a full version number. If passed as true, a string in the form of '2.0.3-beta5' will be returned. Otherwise, '2.0' would be returned.</p>
+<code>bool</code><p>Whether or not to return a full version number. If passed as true, a string in the form of '2.0.3-beta5' will be returned. Otherwise, '2.0' would be returned.</p>
 </div>
 <div class="subelement argument">
 <h4>$build</h4>
-<code>bool</code><code>bool</code><p>Whether or not to return the build date in the string.</p></div>
+<code>bool</code><p>Whether or not to return the build date in the string.</p></div>
+<div class="subelement argument">
+<h4>$type</h4>
+<code>bool</code><p>Whether to include the type and interation of a full version number</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getVersion" id="getVersion"></a><div class="element clickable method public getVersion" data-toggle="collapse" data-target=".getVersion .collapse">
+<h2>Return a string of the current version number.</h2>
+<pre>getVersion(bool $full, bool $build, bool $type) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:expVersion</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$full</h4>
+<code>bool</code><p>Whether or not to return a full version number. If passed as true, a string in the form of '2.0.3-beta5' will be returned. Otherwise, '2.0' would be returned.</p>
+</div>
+<div class="subelement argument">
+<h4>$build</h4>
+<code>bool</code><p>Whether or not to return the build date in the string.</p></div>
+<div class="subelement argument">
+<h4>$type</h4>
+<code>bool</code><p>Whether to include the type and interation of a full version number</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="swVersion" id="swVersion"></a><div class="element clickable method public swVersion" data-toggle="collapse" data-target=".swVersion .collapse">
+<h2>Return an object of the current version number of the software.</h2>
+<pre>swVersion() : object</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:expVersion</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>object</code></div>
 </div></div>
 </div>
 <a name="iterateType" id="iterateType"></a><div class="element clickable method private iterateType" data-toggle="collapse" data-target=".iterateType .collapse">
@@ -165,7 +225,7 @@
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
-            generated on 2012-09-27T13:41:45-04:00.<br></footer></div>
+            generated on 2012-10-20T17:18:27-04:00.<br></footer></div>
 </div>
 </body>
 </html>
