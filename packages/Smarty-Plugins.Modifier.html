@@ -38,14 +38,14 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3453</span></a></li>
+                <span class="label label-info">3606</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
-                <span class="label label-info">49</span>
+                <span class="label label-info">50</span>
 </li>
 <li>fixme 
-                <span class="label label-info">184</span>
+                <span class="label label-info">190</span>
 </li>
 </ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -76,7 +76,9 @@
 <i class="icon-custom icon-function"></i> Functions</li>
 <li class="function  "><a href="#smarty_modifier_address" title="smarty_modifier_address :: Smarty {address} modifier plugin"><span class="description">Smarty {address} modifier plugin</span><pre>smarty_modifier_address</pre></a></li>
 <li class="function  "><a href="#smarty_modifier_array_lookup" title="smarty_modifier_array_lookup :: Smarty {array_lookup} modifier plugin"><span class="description">Smarty {array_lookup} modifier plugin</span><pre>smarty_modifier_array_lookup</pre></a></li>
+<li class="function  "><a href="#smarty_modifier_brightness" title="smarty_modifier_brightness :: Smarty {brightness} modifier plugin"><span class="description">Smarty {brightness} modifier plugin</span><pre>smarty_modifier_brightness</pre></a></li>
 <li class="function  "><a href="#smarty_modifier_bytes" title="smarty_modifier_bytes :: Smarty {bytes} modifier plugin"><span class="description">Smarty {bytes} modifier plugin</span><pre>smarty_modifier_bytes</pre></a></li>
+<li class="function  "><a href="#smarty_modifier_contrast" title="smarty_modifier_contrast :: Smarty {contrast} modifier plugin"><span class="description">Smarty {contrast} modifier plugin</span><pre>smarty_modifier_contrast</pre></a></li>
 <li class="function  "><a href="#smarty_modifier_convertlangcode" title="smarty_modifier_convertlangcode :: Smarty {convertlangcode} modifier plugin"><span class="description">Smarty {convertlangcode} modifier plugin</span><pre>smarty_modifier_convertlangcode</pre></a></li>
 <li class="function  "><a href="#smarty_modifier_countryname" title="smarty_modifier_countryname :: Smarty {countryname} modifier plugin"><span class="description">Smarty {countryname} modifier plugin</span><pre>smarty_modifier_countryname</pre></a></li>
 <li class="function  "><a href="#smarty_modifier_expdate" title="smarty_modifier_expdate :: Smarty {expdate} modifier plugin"><span class="description">Smarty {expdate} modifier plugin</span><pre>smarty_modifier_expdate</pre></a></li>
@@ -96,6 +98,7 @@
 <li class="function  "><a href="#smarty_modifier_megabytes" title="smarty_modifier_megabytes :: Smarty {kilobytes} modifier plugin"><span class="description">Smarty {kilobytes} modifier plugin</span><pre>smarty_modifier_megabytes</pre></a></li>
 <li class="function  "><a href="#smarty_modifier_nobreak" title="smarty_modifier_nobreak :: Smarty {nobreak} modifier plugin"><span class="description">Smarty {nobreak} modifier plugin</span><pre>smarty_modifier_nobreak</pre></a></li>
 <li class="function  "><a href="#smarty_modifier_number_format" title="smarty_modifier_number_format :: Smarty {number_format} modifier plugin"><span class="description">Smarty {number_format} modifier plugin</span><pre>smarty_modifier_number_format</pre></a></li>
+<li class="function  "><a href="#smarty_modifier_plural" title="smarty_modifier_plural :: Smarty {plural} modifier plugin"><span class="description">Smarty {plural} modifier plugin</span><pre>smarty_modifier_plural</pre></a></li>
 <li class="function  "><a href="#smarty_modifier_relative_date" title="smarty_modifier_relative_date :: Smarty {relative_date} modifier plugin"><span class="description">Smarty {relative_date} modifier plugin</span><pre>smarty_modifier_relative_date</pre></a></li>
 <li class="function  "><a href="#smarty_modifier_remove_space" title="smarty_modifier_remove_space :: Smarty {remove_space} modifier plugin"><span class="description">Smarty {remove_space} modifier plugin</span><pre>smarty_modifier_remove_space</pre></a></li>
 <li class="function  "><a href="#smarty_modifier_reverse_array" title="smarty_modifier_reverse_array :: Smarty {reverse_array} modifier plugin"><span class="description">Smarty {reverse_array} modifier plugin</span><pre>smarty_modifier_reverse_array</pre></a></li>
@@ -156,6 +159,28 @@ Purpose:  lookup a key within an array</p></p>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
+<a name="smarty_modifier_brightness" id="smarty_modifier_brightness"></a><div class="element clickable function  smarty_modifier_brightness" data-toggle="collapse" data-target=".smarty_modifier_brightness .collapse">
+<h2>Smarty {brightness} modifier plugin</h2>
+<pre>smarty_modifier_brightness(string $colourstr, int $steps) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Type:     modifier<br>
+Name:     brightness<br>
+Purpose:  Calculate a lighter/darker color from the one passed
+          +- 255 steps, default is 20 steps brighter</p></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$colourstr</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$steps</h4>
+<code>int</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
 <a name="smarty_modifier_bytes" id="smarty_modifier_bytes"></a><div class="element clickable function  smarty_modifier_bytes" data-toggle="collapse" data-target=".smarty_modifier_bytes .collapse">
 <h2>Smarty {bytes} modifier plugin</h2>
 <pre>smarty_modifier_bytes($bytes) : array</pre>
@@ -167,6 +192,36 @@ Purpose:  convert to mega/kilo/bytes</p></p>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$bytes</h4><p>array</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a name="smarty_modifier_contrast" id="smarty_modifier_contrast"></a><div class="element clickable function  smarty_modifier_contrast" data-toggle="collapse" data-target=".smarty_modifier_contrast .collapse">
+<h2>Smarty {contrast} modifier plugin</h2>
+<pre>smarty_modifier_contrast(string $hexcolor, string $dark, string $light, bool $yiq) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Type:     modifier<br>
+Name:     contrast<br>
+Purpose:  Calculate a contrasting/complementary color from the one passed
+          using either the default 50% rule or YIQ</p></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$hexcolor</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$dark</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$light</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$yiq</h4>
+<code>bool</code>
+</div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -476,6 +531,27 @@ Purpose:  format a number</p></p>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
+<a name="smarty_modifier_plural" id="smarty_modifier_plural"></a><div class="element clickable function  smarty_modifier_plural" data-toggle="collapse" data-target=".smarty_modifier_plural .collapse">
+<h2>Smarty {plural} modifier plugin</h2>
+<pre>smarty_modifier_plural(string $word, int $counter) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Type:     modifier<br>
+Name:     plural<br>
+Purpose:  pluralize a string</p></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$word</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$counter</h4>
+<code>int</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
 <a name="smarty_modifier_relative_date" id="smarty_modifier_relative_date"></a><div class="element clickable function  smarty_modifier_relative_date" data-toggle="collapse" data-target=".smarty_modifier_relative_date .collapse">
 <h2>Smarty {relative_date} modifier plugin</h2>
 <pre>smarty_modifier_relative_date($timestamp) : array</pre>
@@ -592,7 +668,7 @@ Purpose:  return the username for a user id</p></p>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
-            generated on 2012-10-20T17:18:20-04:00.<br></footer></div>
+            generated on 2012-11-15T15:55:59-05:00.<br></footer></div>
 </div>
 </body>
 </html>

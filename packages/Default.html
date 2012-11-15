@@ -38,14 +38,14 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3453</span></a></li>
+                <span class="label label-info">3606</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
-                <span class="label label-info">49</span>
+                <span class="label label-info">50</span>
 </li>
 <li>fixme 
-                <span class="label label-info">184</span>
+                <span class="label label-info">190</span>
 </li>
 </ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -119,6 +119,8 @@
         </span><pre>echoStart</pre></a></li>
 <li class="function  "><a href="#echoSuccess" title="echoSuccess :: "><span class="description">echoSuccess()
         </span><pre>echoSuccess</pre></a></li>
+<li class="function  "><a href="#echoWarning" title="echoWarning :: "><span class="description">echoWarning()
+        </span><pre>echoWarning</pre></a></li>
 <li class="function  "><a href="#editPost" title="editPost :: "><span class="description">editPost()
         </span><pre>editPost</pre></a></li>
 <li class="function  "><a href="#epb" title="epb :: "><span class="description">epb()
@@ -249,6 +251,7 @@ This is the expTheme 1.0 compatibility layer</span><pre>exponent_theme_remove_cs
         </span><pre>sanity_checkServer</pre></a></li>
 <li class="function  "><a href="#show_msg_queue" title="show_msg_queue :: Display the message queue"><span class="description">Display the message queue</span><pre>show_msg_queue</pre></a></li>
 <li class="function  "><a href="#sql2csv" title="sql2csv :: This converts the sql statement into a nice CSV."><span class="description">This converts the sql statement into a nice CSV.</span><pre>sql2csv</pre></a></li>
+<li class="function  "><a href="#sql2csv" title="sql2csv :: This converts the sql statement into a nice CSV."><span class="description">This converts the sql statement into a nice CSV.</span><pre>sql2csv</pre></a></li>
 <li class="function  "><a href="#stripslashes_deep" title="stripslashes_deep :: "><span class="description">stripslashes_deep()
         </span><pre>stripslashes_deep</pre></a></li>
 <li class="function  "><a href="#tmp_removePrefix" title="tmp_removePrefix :: "><span class="description">tmp_removePrefix()
@@ -295,6 +298,7 @@ This is the expTheme 1.0 compatibility layer</span><pre>exponent_theme_remove_cs
 <li><a href="#product" title="This is the class expRecord">product</a></li>
 <li><a href="#fedexcalculator" title="This is the class expRecord">fedexcalculator</a></li>
 <li><a href="#upscalculator" title="This is the class expRecord">upscalculator</a></li>
+<li><a href="#formmodule" title="">formmodule</a></li>
 <li><a href="#motdController" title="This is the class expController">motdController</a></li>
 <li><a href="#rssfeed" title="">rssfeed</a></li>
 <li><a href="#expRss" title="This is the class expRecord">expRss</a></li>
@@ -338,6 +342,13 @@ This is the expTheme 1.0 compatibility layer</span><pre>exponent_theme_remove_cs
 <li><a href="#upgrade_navigation" title="This is the class upgrade_navigation">upgrade_navigation</a></li>
 <li><a href="#upgrade_simplepoll" title="This is the class upgrade_simplepoll">upgrade_simplepoll</a></li>
 <li><a href="#version_tracking" title="This is the class version_tracking">version_tracking</a></li>
+<li><a href="#blog3coltheme" title="This is the base theme class">blog3coltheme</a></li>
+<li><a href="#bootstraptheme" title="This is the base theme class">bootstraptheme</a></li>
+<li><a href="#emeraldtheme" title="This is the base theme class">emeraldtheme</a></li>
+<li><a href="#sermonsController" title="This is the class expController">sermonsController</a></li>
+<li><a href="#sermonseriesController" title="This is the class expController">sermonseriesController</a></li>
+<li><a href="#sermons" title="This is the class expRecord">sermons</a></li>
+<li><a href="#sermonseries" title="This is the class expRecord">sermonseries</a></li>
 <li><a href="#simpletheme" title="This is the base theme class">simpletheme</a></li>
 <li><a href="#xmlrpc_server_methods_container" title="Used to test usage of object methods in dispatch maps">xmlrpc_server_methods_container</a></li>
 <li class="nav-header">
@@ -350,6 +361,8 @@ This is the expTheme 1.0 compatibility layer</span><pre>exponent_theme_remove_cs
 <li class="constant  "><a href="#BING_API" title="BING_API :: "><span class="description">BING_API</span><pre>BING_API</pre></a></li>
 <li class="constant  "><a href="#BTN_COLOR" title="BTN_COLOR :: "><span class="description">BTN_COLOR</span><pre>BTN_COLOR</pre></a></li>
 <li class="constant  "><a href="#BTN_COLOR" title="BTN_COLOR :: "><span class="description">BTN_COLOR</span><pre>BTN_COLOR</pre></a></li>
+<li class="constant  "><a href="#BTN_COLOR" title="BTN_COLOR :: "><span class="description">BTN_COLOR</span><pre>BTN_COLOR</pre></a></li>
+<li class="constant  "><a href="#BTN_SIZE" title="BTN_SIZE :: "><span class="description">BTN_SIZE</span><pre>BTN_SIZE</pre></a></li>
 <li class="constant  "><a href="#BTN_SIZE" title="BTN_SIZE :: "><span class="description">BTN_SIZE</span><pre>BTN_SIZE</pre></a></li>
 <li class="constant  "><a href="#BTN_SIZE" title="BTN_SIZE :: "><span class="description">BTN_SIZE</span><pre>BTN_SIZE</pre></a></li>
 <li class="constant  "><a href="#COMMENTS_NOTIFICATION_EMAIL" title="COMMENTS_NOTIFICATION_EMAIL :: "><span class="description">COMMENTS_NOTIFICATION_EMAIL</span><pre>COMMENTS_NOTIFICATION_EMAIL</pre></a></li>
@@ -457,7 +470,13 @@ The EQL header string for object dump file formats.</span><pre>EQL_HEADER</pre><
 <li class="constant  "><a href="#ICON_RELATIVE" title="ICON_RELATIVE :: "><span class="description">ICON_RELATIVE</span><pre>ICON_RELATIVE</pre></a></li>
 <li class="constant  "><a href="#INCLUDE_AJAX_SEARCH" title="INCLUDE_AJAX_SEARCH :: "><span class="description">INCLUDE_AJAX_SEARCH</span><pre>INCLUDE_AJAX_SEARCH</pre></a></li>
 <li class="constant  "><a href="#INCLUDE_ANONYMOUS_SEARCH" title="INCLUDE_ANONYMOUS_SEARCH :: "><span class="description">INCLUDE_ANONYMOUS_SEARCH</span><pre>INCLUDE_ANONYMOUS_SEARCH</pre></a></li>
+<li class="constant  "><a href="#JQUERYUI_CSS" title="JQUERYUI_CSS :: "><span class="description">JQUERYUI_CSS</span><pre>JQUERYUI_CSS</pre></a></li>
+<li class="constant  "><a href="#JQUERYUI_SCRIPT" title="JQUERYUI_SCRIPT :: "><span class="description">JQUERYUI_SCRIPT</span><pre>JQUERYUI_SCRIPT</pre></a></li>
+<li class="constant  "><a href="#JQUERYUI_STYLE" title="JQUERYUI_STYLE :: "><span class="description">JQUERYUI_STYLE</span><pre>JQUERYUI_STYLE</pre></a></li>
+<li class="constant  "><a href="#JQUERYUI_VERSION" title="JQUERYUI_VERSION :: "><span class="description">JQUERYUI_VERSION</span><pre>JQUERYUI_VERSION</pre></a></li>
+<li class="constant  "><a href="#JQUERY_PATH" title="JQUERY_PATH :: "><span class="description">JQUERY_PATH</span><pre>JQUERY_PATH</pre></a></li>
 <li class="constant  "><a href="#JQUERY_RELATIVE" title="JQUERY_RELATIVE :: "><span class="description">JQUERY_RELATIVE</span><pre>JQUERY_RELATIVE</pre></a></li>
+<li class="constant  "><a href="#JQUERY_SCRIPT" title="JQUERY_SCRIPT :: "><span class="description">JQUERY_SCRIPT</span><pre>JQUERY_SCRIPT</pre></a></li>
 <li class="constant  "><a href="#JQUERY_URL" title="JQUERY_URL :: "><span class="description">JQUERY_URL</span><pre>JQUERY_URL</pre></a></li>
 <li class="constant  "><a href="#JQUERY_VERSION" title="JQUERY_VERSION :: "><span class="description">JQUERY_VERSION</span><pre>JQUERY_VERSION</pre></a></li>
 <li class="constant  "><a href="#JS_FULL" title="JS_FULL :: "><span class="description">JS_FULL</span><pre>JS_FULL</pre></a></li>
@@ -571,6 +590,8 @@ The absolute url to Exponent's core javascript.</span><pre>JS_URL</pre></a></li>
 <li class="constant  "><a href="#SOURCE_SELECTOR" title="SOURCE_SELECTOR :: "><span class="description">SOURCE_SELECTOR</span><pre>SOURCE_SELECTOR</pre></a></li>
 <li class="constant  "><a href="#SOURCE_SELECTOR" title="SOURCE_SELECTOR :: "><span class="description">SOURCE_SELECTOR</span><pre>SOURCE_SELECTOR</pre></a></li>
 <li class="constant  "><a href="#SOURCE_SELECTOR" title="SOURCE_SELECTOR :: "><span class="description">SOURCE_SELECTOR</span><pre>SOURCE_SELECTOR</pre></a></li>
+<li class="constant  "><a href="#SWATCH" title="SWATCH :: "><span class="description">SWATCH</span><pre>SWATCH</pre></a></li>
+<li class="constant  "><a href="#SWATCH" title="SWATCH :: "><span class="description">SWATCH</span><pre>SWATCH</pre></a></li>
 <li class="constant  "><a href="#SWIFT_PATH" title="SWIFT_PATH :: "><span class="description">SWIFT_PATH</span><pre>SWIFT_PATH</pre></a></li>
 <li class="constant  "><a href="#SWIFT_VERSION" title="SWIFT_VERSION :: "><span class="description">SWIFT_VERSION</span><pre>SWIFT_VERSION</pre></a></li>
 <li class="constant  "><a href="#SYS_FILES_FOUNDDIR" title="SYS_FILES_FOUNDDIR :: exdoc
@@ -922,6 +943,17 @@ UI Level of Structure - All management links are shown.</span><pre>UILEVEL_STRUC
 <h2>echoSuccess()
         </h2>
 <pre>echoSuccess($msg) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$msg</h4></div>
+</div></div>
+</div>
+<a name="echoWarning" id="echoWarning"></a><div class="element clickable function  echoWarning" data-toggle="collapse" data-target=".echoWarning .collapse">
+<h2>echoWarning()
+        </h2>
+<pre>echoWarning($msg) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <p class="long_description"></p>
@@ -1694,6 +1726,31 @@ use the array_keys function to strip out a functional header</p></p>
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
+<a name="sql2csv" id="sql2csv"></a><div class="element clickable function  sql2csv" data-toggle="collapse" data-target=".sql2csv .collapse">
+<h2>This converts the sql statement into a nice CSV.</h2>
+<pre>sql2csv($items) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>We grab the items array which is stored funkily in the DB in an associative array when we pull it.
+So basically our aray looks like this:</p>
+
+<p>ITEMS
+{[id]=>myID, [Name]=>name, [Address]=>myaddr}
+{[id]=>myID1, [Name]=>name1, [Address]=>myaddr1}
+{[id]=>myID2, [Name]=>name2, [Address]=>myaddr2}
+{[id]=>myID3, [Name]=>name3, [Address]=>myaddr3}
+{[id]=>myID4, [Name]=>name4, [Address]=>myaddr4}
+{[id]=>myID5, [Name]=>name5, [Address]=>myaddr5}</p>
+
+<p>So by nature of the array, the keys are repetated in each line (id, name, etc)
+So if we want to make a header row, we just run through once at the beginning and
+use the array_keys function to strip out a functional header</p></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$items</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
 <a name="stripslashes_deep" id="stripslashes_deep"></a><div class="element clickable function  stripslashes_deep" data-toggle="collapse" data-target=".stripslashes_deep .collapse">
 <h2>stripslashes_deep()
         </h2>
@@ -1818,6 +1875,20 @@ use the array_keys function to strip out a functional header</p></p>
 <div class="details collapse"></div>
 <a href="../classes/authorizedotnet.html" class="more">« More »</a>
 </div>
+<a name="blog3coltheme" id="blog3coltheme"></a><div class="element ajax clickable class" href="../classes/blog3coltheme.html">
+<h1>blog3coltheme<a href="../classes/blog3coltheme.html">¶</a>
+</h1>
+<p class="short_description">This is the base theme class</p>
+<div class="details collapse"></div>
+<a href="../classes/blog3coltheme.html" class="more">« More »</a>
+</div>
+<a name="bootstraptheme" id="bootstraptheme"></a><div class="element ajax clickable class" href="../classes/bootstraptheme.html">
+<h1>bootstraptheme<a href="../classes/bootstraptheme.html">¶</a>
+</h1>
+<p class="short_description">This is the base theme class</p>
+<div class="details collapse"></div>
+<a href="../classes/bootstraptheme.html" class="more">« More »</a>
+</div>
 <a name="calendar" id="calendar"></a><div class="element ajax clickable class" href="../classes/calendar.html">
 <h1>calendar<a href="../classes/calendar.html">¶</a>
 </h1>
@@ -1887,6 +1958,13 @@ use the array_keys function to strip out a functional header</p></p>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/ecomconfigController.html" class="more">« More »</a>
+</div>
+<a name="emeraldtheme" id="emeraldtheme"></a><div class="element ajax clickable class" href="../classes/emeraldtheme.html">
+<h1>emeraldtheme<a href="../classes/emeraldtheme.html">¶</a>
+</h1>
+<p class="short_description">This is the base theme class</p>
+<div class="details collapse"></div>
+<a href="../classes/emeraldtheme.html" class="more">« More »</a>
 </div>
 <a name="eventregistrationController" id="eventregistrationController"></a><div class="element ajax clickable class" href="../classes/eventregistrationController.html">
 <h1>eventregistrationController<a href="../classes/eventregistrationController.html">¶</a>
@@ -2077,6 +2155,13 @@ use the array_keys function to strip out a functional header</p></p>
 <div class="details collapse"></div>
 <a href="../classes/formmodule.html" class="more">« More »</a>
 </div>
+<a name="formmodule" id="formmodule"></a><div class="element ajax clickable class" href="../classes/formmodule.html">
+<h1>formmodule<a href="../classes/formmodule.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/formmodule.html" class="more">« More »</a>
+</div>
 <a name="htmleditorcontrol" id="htmleditorcontrol"></a><div class="element ajax clickable class" href="../classes/htmleditorcontrol.html">
 <h1>htmleditorcontrol<a href="../classes/htmleditorcontrol.html">¶</a>
 </h1>
@@ -2202,6 +2287,34 @@ use the array_keys function to strip out a functional header</p></p>
 <p class="short_description"></p>
 <div class="details collapse"></div>
 <a href="../classes/rssfeed.html" class="more">« More »</a>
+</div>
+<a name="sermons" id="sermons"></a><div class="element ajax clickable class" href="../classes/sermons.html">
+<h1>sermons<a href="../classes/sermons.html">¶</a>
+</h1>
+<p class="short_description">This is the class expRecord</p>
+<div class="details collapse"></div>
+<a href="../classes/sermons.html" class="more">« More »</a>
+</div>
+<a name="sermonsController" id="sermonsController"></a><div class="element ajax clickable class" href="../classes/sermonsController.html">
+<h1>sermonsController<a href="../classes/sermonsController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/sermonsController.html" class="more">« More »</a>
+</div>
+<a name="sermonseries" id="sermonseries"></a><div class="element ajax clickable class" href="../classes/sermonseries.html">
+<h1>sermonseries<a href="../classes/sermonseries.html">¶</a>
+</h1>
+<p class="short_description">This is the class expRecord</p>
+<div class="details collapse"></div>
+<a href="../classes/sermonseries.html" class="more">« More »</a>
+</div>
+<a name="sermonseriesController" id="sermonseriesController"></a><div class="element ajax clickable class" href="../classes/sermonseriesController.html">
+<h1>sermonseriesController<a href="../classes/sermonseriesController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/sermonseriesController.html" class="more">« More »</a>
 </div>
 <a name="simpletheme" id="simpletheme"></a><div class="element ajax clickable class" href="../classes/simpletheme.html">
 <h1>simpletheme<a href="../classes/simpletheme.html">¶</a>
@@ -2362,6 +2475,18 @@ use the array_keys function to strip out a functional header</p></p>
 <a name="BTN_COLOR" id="BTN_COLOR"> </a><div class="element clickable constant  BTN_COLOR" data-toggle="collapse" data-target=".BTN_COLOR .collapse">
 <h2>BTN_COLOR</h2>
 <pre>BTN_COLOR </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="BTN_COLOR" id="BTN_COLOR"> </a><div class="element clickable constant  BTN_COLOR" data-toggle="collapse" data-target=".BTN_COLOR .collapse">
+<h2>BTN_COLOR</h2>
+<pre>BTN_COLOR </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="BTN_SIZE" id="BTN_SIZE"> </a><div class="element clickable constant  BTN_SIZE" data-toggle="collapse" data-target=".BTN_SIZE .collapse">
+<h2>BTN_SIZE</h2>
+<pre>BTN_SIZE </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
@@ -3044,9 +3169,45 @@ when you have special needs for the form's input elements.</p></p></div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
+<a name="JQUERYUI_CSS" id="JQUERYUI_CSS"> </a><div class="element clickable constant  JQUERYUI_CSS" data-toggle="collapse" data-target=".JQUERYUI_CSS .collapse">
+<h2>JQUERYUI_CSS</h2>
+<pre>JQUERYUI_CSS </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="JQUERYUI_SCRIPT" id="JQUERYUI_SCRIPT"> </a><div class="element clickable constant  JQUERYUI_SCRIPT" data-toggle="collapse" data-target=".JQUERYUI_SCRIPT .collapse">
+<h2>JQUERYUI_SCRIPT</h2>
+<pre>JQUERYUI_SCRIPT </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="JQUERYUI_STYLE" id="JQUERYUI_STYLE"> </a><div class="element clickable constant  JQUERYUI_STYLE" data-toggle="collapse" data-target=".JQUERYUI_STYLE .collapse">
+<h2>JQUERYUI_STYLE</h2>
+<pre>JQUERYUI_STYLE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="JQUERYUI_VERSION" id="JQUERYUI_VERSION"> </a><div class="element clickable constant  JQUERYUI_VERSION" data-toggle="collapse" data-target=".JQUERYUI_VERSION .collapse">
+<h2>JQUERYUI_VERSION</h2>
+<pre>JQUERYUI_VERSION </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="JQUERY_PATH" id="JQUERY_PATH"> </a><div class="element clickable constant  JQUERY_PATH" data-toggle="collapse" data-target=".JQUERY_PATH .collapse">
+<h2>JQUERY_PATH</h2>
+<pre>JQUERY_PATH </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
 <a name="JQUERY_RELATIVE" id="JQUERY_RELATIVE"> </a><div class="element clickable constant  JQUERY_RELATIVE" data-toggle="collapse" data-target=".JQUERY_RELATIVE .collapse">
 <h2>JQUERY_RELATIVE</h2>
 <pre>JQUERY_RELATIVE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="JQUERY_SCRIPT" id="JQUERY_SCRIPT"> </a><div class="element clickable constant  JQUERY_SCRIPT" data-toggle="collapse" data-target=".JQUERY_SCRIPT .collapse">
+<h2>JQUERY_SCRIPT</h2>
+<pre>JQUERY_SCRIPT </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
@@ -3724,6 +3885,18 @@ The absolute url to Exponent's core javascript.</h2>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
+<a name="SWATCH" id="SWATCH"> </a><div class="element clickable constant  SWATCH" data-toggle="collapse" data-target=".SWATCH .collapse">
+<h2>SWATCH</h2>
+<pre>SWATCH </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="SWATCH" id="SWATCH"> </a><div class="element clickable constant  SWATCH" data-toggle="collapse" data-target=".SWATCH .collapse">
+<h2>SWATCH</h2>
+<pre>SWATCH </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
 <a name="SWIFT_PATH" id="SWIFT_PATH"> </a><div class="element clickable constant  SWIFT_PATH" data-toggle="collapse" data-target=".SWIFT_PATH .collapse">
 <h2>SWIFT_PATH</h2>
 <pre>SWIFT_PATH </pre>
@@ -4166,7 +4339,7 @@ UI Level of Structure - All management links are shown.</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
-            generated on 2012-10-20T17:18:19-04:00.<br></footer></div>
+            generated on 2012-11-15T15:55:58-05:00.<br></footer></div>
 </div>
 </body>
 </html>
