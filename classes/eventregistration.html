@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Exponent 2.1.0 » \eventregistration</title>
+<title>Exponent 2.1.1 » \eventregistration</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -15,7 +15,7 @@
 <body>
 <div class="navbar navbar-fixed-top">
 <div class="navbar-inner"><div class="container">
-<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.1.0</a><div class="nav-collapse"><ul class="nav">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.1.1</a><div class="nav-collapse"><ul class="nav">
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
@@ -38,14 +38,14 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3606</span></a></li>
+                <span class="label label-info">3610</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
-                <span class="label label-info">50</span>
+                <span class="label label-info">53</span>
 </li>
 <li>fixme 
-                <span class="label label-info">190</span>
+                <span class="label label-info">198</span>
 </li>
 </ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -71,8 +71,9 @@
 <i class="icon-custom icon-method"></i> Methods</li>
 <li class="method public "><a href="#__construct" title="__construct :: "><span class="description">__construct()
         </span><pre>__construct()</pre></a></li>
-<li class="method public "><a href="#addToCart" title="addToCart :: "><span class="description">addToCart()
-        </span><pre>addToCart()</pre></a></li>
+<li class="method public "><a href="#addToCart" title="addToCart :: addToCart - we are simply adding an event registration to our shopping cart
+this is where we create/update the eventregistration_registrants records"><span class="description">addToCart - we are simply adding an event registration to our shopping cart
+this is where we create/update the eventregistration_registrants records</span><pre>addToCart()</pre></a></li>
 <li class="method public inherited"><a href="#afterCreate" title="afterCreate :: after creating item"><span class="description">after creating item</span><pre>afterCreate()</pre></a></li>
 <li class="method public inherited"><a href="#afterDelete" title="afterDelete :: is run after deleting item"><span class="description">is run after deleting item</span><pre>afterDelete()</pre></a></li>
 <li class="method public inherited"><a href="#afterSave" title="afterSave :: after saving item"><span class="description">after saving item</span><pre>afterSave()</pre></a></li>
@@ -123,8 +124,7 @@
 <li class="method public inherited"><a href="#makeSefUrl" title="makeSefUrl :: make an sef_url for item"><span class="description">make an sef_url for item</span><pre>makeSefUrl()</pre></a></li>
 <li class="method public "><a href="#optionDropdown" title="optionDropdown :: "><span class="description">optionDropdown()
         </span><pre>optionDropdown()</pre></a></li>
-<li class="method public "><a href="#process" title="process :: "><span class="description">process()
-        </span><pre>process()</pre></a></li>
+<li class="method public "><a href="#process" title="process :: process - here we are actually making a 'reservation' by completing the purchase"><span class="description">process - here we are actually making a 'reservation' by completing the purchase</span><pre>process()</pre></a></li>
 <li class="method public inherited"><a href="#refresh" title="refresh :: re-construct the item"><span class="description">re-construct the item</span><pre>refresh()</pre></a></li>
 <li class="method public "><a href="#removeItem" title="removeItem :: "><span class="description">removeItem()
         </span><pre>removeItem()</pre></a></li>
@@ -224,15 +224,23 @@
 </div></div>
 </div>
 <a name="addToCart" id="addToCart"></a><div class="element clickable method public addToCart" data-toggle="collapse" data-target=".addToCart .collapse">
-<h2>addToCart()
-        </h2>
-<pre>addToCart($params, $orderid) </pre>
+<h2>addToCart - we are simply adding an event registration to our shopping cart
+this is where we create/update the eventregistration_registrants records</h2>
+<pre>addToCart(array $params, null $orderid) : bool</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <p class="long_description"></p>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$params</h4></div>
-<div class="subelement argument"><h4>$orderid</h4></div>
+<div class="subelement argument">
+<h4>$params</h4>
+<code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$orderid</h4>
+<code>null</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
 <a name="afterCreate" id="afterCreate"></a><div class="element clickable method public afterCreate" data-toggle="collapse" data-target=".afterCreate .collapse">
@@ -810,14 +818,17 @@ field values are also populated into class properties.</p></p>
 </div></div>
 </div>
 <a name="process" id="process"></a><div class="element clickable method public process" data-toggle="collapse" data-target=".process .collapse">
-<h2>process()
-        </h2>
-<pre>process($item) </pre>
+<h2>process - here we are actually making a 'reservation' by completing the purchase</h2>
+<pre>process(<a href="../classes/product.html">\product</a> $item) : bool</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <p class="long_description"></p>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$item</h4></div>
+<div class="subelement argument">
+<h4>$item</h4>
+<code><a href="../classes/product.html">\product</a></code><p>the event registration product</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
 <a name="refresh" id="refresh"></a><div class="element clickable method public refresh" data-toggle="collapse" data-target=".refresh .collapse">
@@ -1251,7 +1262,7 @@ field values are also populated into class properties.</p></p>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
-            generated on 2012-11-15T15:56:15-05:00.<br></footer></div>
+            generated on 2012-12-08T10:29:43-05:00.<br></footer></div>
 </div>
 </body>
 </html>

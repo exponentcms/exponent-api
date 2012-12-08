@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Exponent 2.1.0 » global</title>
+<title>Exponent 2.1.1 » global</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -15,7 +15,7 @@
 <body>
 <div class="navbar navbar-fixed-top">
 <div class="navbar-inner"><div class="container">
-<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.1.0</a><div class="nav-collapse"><ul class="nav">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.1.1</a><div class="nav-collapse"><ul class="nav">
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
@@ -38,14 +38,14 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3606</span></a></li>
+                <span class="label label-info">3610</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
-                <span class="label label-info">50</span>
+                <span class="label label-info">53</span>
 </li>
 <li>fixme 
-                <span class="label label-info">190</span>
+                <span class="label label-info">198</span>
 </li>
 </ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -1162,6 +1162,24 @@ Purpose:  Set up a css block</p></p>
 <p class="long_description"><p>Type:     block<br>
 Name:     form<br>
 Purpose:  Set up a form block</p></p>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$params</h4></div>
+<div class="subelement argument"><h4>$content</h4></div>
+<div class="subelement argument">
+<h4>$smarty</h4>
+<code>\Smarty</code>
+</div>
+<div class="subelement argument"><h4>$repeat</h4></div>
+</div></div>
+</div>
+<a name="smarty_block_group" id="smarty_block_group"></a><div class="element clickable function  smarty_block_group" data-toggle="collapse" data-target=".smarty_block_group .collapse">
+<h2>Smarty {group} block plugin</h2>
+<pre>smarty_block_group($params, $content, \Smarty $smarty, $repeat) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"><p>Type:     block<br>
+Name:     group<br>
+Purpose:  Set up a group block</p></p>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$params</h4></div>
 <div class="subelement argument"><h4>$content</h4></div>
@@ -3217,7 +3235,7 @@ use the array_keys function to strip out a functional header</p></p>
 </div>
 <a name="sql2csv" id="sql2csv"></a><div class="element clickable function  sql2csv" data-toggle="collapse" data-target=".sql2csv .collapse">
 <h2>This converts the sql statement into a nice CSV.</h2>
-<pre>sql2csv($items) : string</pre>
+<pre>sql2csv($items, $rptcols) : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <p class="long_description"><p>We grab the items array which is stored funkily in the DB in an associative array when we pull it.
@@ -3236,6 +3254,7 @@ So if we want to make a header row, we just run through once at the beginning an
 use the array_keys function to strip out a functional header</p></p>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$items</h4></div>
+<div class="subelement argument"><h4>$rptcols</h4></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
 </div></div>
@@ -6929,6 +6948,12 @@ The absolute url to Exponent's core javascript.</h2>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
+<a name="SKIP_VERSION_CHECK" id="SKIP_VERSION_CHECK"> </a><div class="element clickable constant  SKIP_VERSION_CHECK" data-toggle="collapse" data-target=".SKIP_VERSION_CHECK .collapse">
+<h2>SKIP_VERSION_CHECK</h2>
+<pre>SKIP_VERSION_CHECK </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
 <a name="SLINGBAR_TOP" id="SLINGBAR_TOP"> </a><div class="element clickable constant  SLINGBAR_TOP" data-toggle="collapse" data-target=".SLINGBAR_TOP .collapse">
 <h2>SLINGBAR_TOP</h2>
 <pre>SLINGBAR_TOP </pre>
@@ -7503,7 +7528,7 @@ UI Level of Structure - All management links are shown.</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
-            generated on 2012-11-15T15:55:57-05:00.<br></footer></div>
+            generated on 2012-12-08T10:29:26-05:00.<br></footer></div>
 </div>
 </body>
 </html>

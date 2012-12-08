@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Exponent 2.1.0</title>
+<title>Exponent 2.1.1</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="css/template.css" rel="stylesheet" media="all">
@@ -15,7 +15,7 @@
 <body>
 <div class="navbar navbar-fixed-top">
 <div class="navbar-inner"><div class="container">
-<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="index.html">Exponent 2.1.0</a><div class="nav-collapse"><ul class="nav">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="index.html">Exponent 2.1.1</a><div class="nav-collapse"><ul class="nav">
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
@@ -38,14 +38,14 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3606</span></a></li>
+                <span class="label label-info">3610</span></a></li>
 <li><a href="markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
-                <span class="label label-info">50</span>
+                <span class="label label-info">53</span>
 </li>
 <li>fixme 
-                <span class="label label-info">190</span>
+                <span class="label label-info">198</span>
 </li>
 </ul></a></li>
 <li><a href="deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -105,7 +105,10 @@
 <li><a href="#framework%5Ccore%5Csubsystems%5Cforms%5Ctemplate.php"><i class="icon-file"></i>framework\core\subsystems\forms\template.php</a></li>
 <li><a href="#framework%5Cmodules%5Caddressbook%5Ccontrollers%5CaddressController.php"><i class="icon-file"></i>framework\modules\addressbook\controllers\addressController.php</a></li>
 <li><a href="#framework%5Cmodules%5Cadministration%5Ccontrollers%5CadministrationController.php"><i class="icon-file"></i>framework\modules\administration\controllers\administrationController.php</a></li>
+<li><a href="#framework%5Cmodules%5Cadministration%5Cmenus%5Cupcomingevents.php"><i class="icon-file"></i>framework\modules\administration\menus\upcomingevents.php</a></li>
+<li><a href="#framework%5Cmodules%5Cadministration%5Cmenus%5Cz-navigation.php"><i class="icon-file"></i>framework\modules\administration\menus\z-navigation.php</a></li>
 <li><a href="#framework%5Cmodules%5Cblog%5Ccontrollers%5CblogController.php"><i class="icon-file"></i>framework\modules\blog\controllers\blogController.php</a></li>
+<li><a href="#framework%5Cmodules%5Ccompany%5Ccontrollers%5CcompanyController.php"><i class="icon-file"></i>framework\modules\company\controllers\companyController.php</a></li>
 <li><a href="#framework%5Cmodules%5Cealerts%5Cmodels%5CexpeAlerts.php"><i class="icon-file"></i>framework\modules\ealerts\models\expeAlerts.php</a></li>
 <li><a href="#framework%5Cmodules%5Cecommerce%5Cbillingcalculators%5Ccreditcard.php"><i class="icon-file"></i>framework\modules\ecommerce\billingcalculators\creditcard.php</a></li>
 <li><a href="#framework%5Cmodules%5Cecommerce%5Cbillingcalculators%5Cpassthru.php"><i class="icon-file"></i>framework\modules\ecommerce\billingcalculators\passthru.php</a></li>
@@ -120,6 +123,7 @@
 <li><a href="#framework%5Cmodules%5Cecommerce%5Cmodels%5Cshipping.php"><i class="icon-file"></i>framework\modules\ecommerce\models\shipping.php</a></li>
 <li><a href="#framework%5Cmodules%5Cecommerce%5Cmodels%5CstoreCategory.php"><i class="icon-file"></i>framework\modules\ecommerce\models\storeCategory.php</a></li>
 <li><a href="#framework%5Cmodules%5Cecommerce%5Cproducts%5Cmodels%5Cdonation.php"><i class="icon-file"></i>framework\modules\ecommerce\products\models\donation.php</a></li>
+<li><a href="#framework%5Cmodules%5Cecommerce%5Cproducts%5Cmodels%5Ceventregistration.php"><i class="icon-file"></i>framework\modules\ecommerce\products\models\eventregistration.php</a></li>
 <li><a href="#framework%5Cmodules%5Cecommerce%5Cproducts%5Cmodels%5Cgiftcard.php"><i class="icon-file"></i>framework\modules\ecommerce\products\models\giftcard.php</a></li>
 <li><a href="#framework%5Cmodules%5Cecommerce%5Cproducts%5Cmodels%5Cproduct.php"><i class="icon-file"></i>framework\modules\ecommerce\products\models\product.php</a></li>
 <li><a href="#framework%5Cmodules%5Cevents%5Ccontrollers%5CeventController.php"><i class="icon-file"></i>framework\modules\events\controllers\eventController.php</a></li>
@@ -151,6 +155,7 @@
 <li><a href="#framework%5Cmodules-1%5Cimporter%5Cimporters%5Cusercsv%5Cmapper.php"><i class="icon-file"></i>framework\modules-1\importer\importers\usercsv\mapper.php</a></li>
 <li><a href="#framework%5Cmodules-1%5Cnavigationmodule%5Cclass.php"><i class="icon-file"></i>framework\modules-1\navigationmodule\class.php</a></li>
 <li><a href="#framework%5Cplugins%5Cblock.form.php"><i class="icon-file"></i>framework\plugins\block.form.php</a></li>
+<li><a href="#framework%5Cplugins%5Cblock.toggle.php"><i class="icon-file"></i>framework\plugins\block.toggle.php</a></li>
 <li><a href="#framework%5Cplugins%5Cfunction.control.php"><i class="icon-file"></i>framework\plugins\function.control.php</a></li>
 <li><a href="#framework%5Cplugins%5Cfunction.popupdatetimecontrol.php"><i class="icon-file"></i>framework\plugins\function.popupdatetimecontrol.php</a></li>
 <li><a href="#framework%5Cplugins%5Cfunction.userlistcontrol.php"><i class="icon-file"></i>framework\plugins\function.userlistcontrol.php</a></li>
@@ -174,10 +179,10 @@
                         The following markers were found:
                         <ul>
 <li>todo 
-                <span class="label label-info">50</span>
+                <span class="label label-info">53</span>
 </li>
 <li>fixme 
-                <span class="label label-info">190</span>
+                <span class="label label-info">198</span>
 </li>
 </ul>
 </div>
@@ -907,27 +912,27 @@ Actually, cleanup should be done so that this function only takes associative ar
 </tr>
 <tr>
 <td>fixme</td>
-<td>105</td>
+<td>111</td>
 <td>this is only available in calendarmodule, may not be needed if there is no 'int' property?</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>106</td>
+<td>112</td>
 <td>this is only available in calendarmodule</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>217</td>
+<td>223</td>
 <td>this is only available in calendarmodule</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>218</td>
+<td>224</td>
 <td>this is only available in calendarmodule</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>556</td>
+<td>562</td>
 <td>not currently used</td>
 </tr>
 </table></div>
@@ -1040,77 +1045,77 @@ Actually, cleanup should be done so that this function only takes associative ar
 </tr>
 <tr>
 <td>fixme</td>
-<td>199</td>
+<td>200</td>
 <td>Not used</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>206</td>
+<td>207</td>
 <td>$form is not set??</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>212</td>
+<td>213</td>
 <td>Not used</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>224</td>
+<td>225</td>
 <td>this should be $file instead of $filename?</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>274</td>
+<td>275</td>
 <td>need to use $feed instead of $params</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>355</td>
+<td>356</td>
 <td>change this to a generic system theme</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>461</td>
+<td>462</td>
 <td>module/controller glue code..remove ASAP</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>511</td>
+<td>512</td>
 <td>doesn't seem to be used except by smarty functions, old school?</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>617</td>
+<td>618</td>
 <td>change to showModule call</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>647</td>
+<td>648</td>
 <td>there is no such config index</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>681</td>
+<td>682</td>
 <td>let's try $sectionObj instead of last_section</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>705</td>
+<td>706</td>
 <td>not used in base system (custom themes?)</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>824</td>
+<td>825</td>
 <td>- $section might be empty!  We're getting it from last_section instead of sectionObj??</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>827</td>
+<td>828</td>
 <td>let's try $sectionObj instead of last_section</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>912</td>
+<td>913</td>
 <td>we are checking here for a new MVC style controller or an old school module. We only need to perform</td>
 </tr>
 </table></div>
@@ -1205,7 +1210,7 @@ Actually, cleanup should be done so that this function only takes associative ar
 </tr>
 <tr>
 <td>fixme</td>
-<td>129</td>
+<td>135</td>
 <td>this is just here until we completely deprecate the old school checkbox</td>
 </tr>
 </table></div>
@@ -1334,8 +1339,42 @@ Actually, cleanup should be done so that this function only takes associative ar
 </tr>
 <tr>
 <td>fixme</td>
-<td>673</td>
+<td>674</td>
 <td>shouldn't use echo</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Cadministration%5Cmenus%5Cupcomingevents.php" id="framework\modules\administration\menus\upcomingevents.php"></a><h3>
+<i class="icon-file"></i>framework\modules\administration\menus\upcomingevents.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>49</td>
+<td>we need to check to see if we have permission to view registrants</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Cadministration%5Cmenus%5Cz-navigation.php" id="framework\modules\administration\menus\z-navigation.php"></a><h3>
+<i class="icon-file"></i>framework\modules\administration\menus\z-navigation.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>69</td>
+<td>do we just need to let any user w/ manage page perms to get to the manage menu hierarchy and let it decide perms from there?</td>
 </tr>
 </table></div>
 </div>
@@ -1368,6 +1407,23 @@ Actually, cleanup should be done so that this function only takes associative ar
 <td>fixme</td>
 <td>407</td>
 <td>$object not set</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Ccompany%5Ccontrollers%5CcompanyController.php" id="framework\modules\company\controllers\companyController.php"></a><h3>
+<i class="icon-file"></i>framework\modules\company\controllers\companyController.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>120</td>
+<td>this is a misnomer as we only accept an id NOT a title and duplicates the show() method</td>
 </tr>
 </table></div>
 </div>
@@ -1525,14 +1581,14 @@ Actually, cleanup should be done so that this function only takes associative ar
 </tr>
 <tr>
 <td>todo</td>
-<td>670</td>
+<td>672</td>
 <td></td>
 </tr>
 </table></div>
 </div>
 <div class="package-contents">
 <a name="framework%5Cmodules%5Cecommerce%5Ccontrollers%5CeventregistrationController.php" id="framework\modules\ecommerce\controllers\eventregistrationController.php"></a><h3>
-<i class="icon-file"></i>framework\modules\ecommerce\controllers\eventregistrationController.php<small style="float: right;padding-right: 10px;">2</small>
+<i class="icon-file"></i>framework\modules\ecommerce\controllers\eventregistrationController.php<small style="float: right;padding-right: 10px;">4</small>
 </h3>
 <div><table class="table markers table-bordered">
 <tr>
@@ -1541,13 +1597,23 @@ Actually, cleanup should be done so that this function only takes associative ar
 <th>Description</th>
 </tr>
 <tr>
+<td>todo</td>
+<td>190</td>
+<td>should we pull in an existing reservation already in the cart to edit? e.g., the registrants</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>225</td>
+<td>should we pull in an existing reservation already in the cart to edit? e.g., the registrants</td>
+</tr>
+<tr>
 <td>fixme</td>
-<td>218</td>
+<td>256</td>
 <td>$product doesn't exist</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>306</td>
+<td>344</td>
 <td>$opts doesn't exist</td>
 </tr>
 </table></div>
@@ -1616,12 +1682,12 @@ Actually, cleanup should be done so that this function only takes associative ar
 </tr>
 <tr>
 <td>fixme</td>
-<td>520</td>
+<td>559</td>
 <td>not sure this is the correct sql, not sure what we are trying to pull out</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>768</td>
+<td>814</td>
 <td>bad sql statement needs to be a JOIN</td>
 </tr>
 </table></div>
@@ -1700,6 +1766,33 @@ Actually, cleanup should be done so that this function only takes associative ar
 </table></div>
 </div>
 <div class="package-contents">
+<a name="framework%5Cmodules%5Cecommerce%5Cproducts%5Cmodels%5Ceventregistration.php" id="framework\modules\ecommerce\products\models\eventregistration.php"></a><h3>
+<i class="icon-file"></i>framework\modules\ecommerce\products\models\eventregistration.php<small style="float: right;padding-right: 10px;">3</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>285</td>
+<td>we need to be dealing w/ eventregistration_registrants here also/primarily</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>369</td>
+<td>for now we'll just add a new registration 'purchase' to the cart since that's the way the code flows.</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>372</td>
+<td>we are adding updating an existing item in the cart??</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
 <a name="framework%5Cmodules%5Cecommerce%5Cproducts%5Cmodels%5Cgiftcard.php" id="framework\modules\ecommerce\products\models\giftcard.php"></a><h3>
 <i class="icon-file"></i>framework\modules\ecommerce\products\models\giftcard.php<small style="float: right;padding-right: 10px;">1</small>
 </h3>
@@ -1728,7 +1821,7 @@ Actually, cleanup should be done so that this function only takes associative ar
 </tr>
 <tr>
 <td>fixme</td>
-<td>883</td>
+<td>888</td>
 <td>$product_type is not set</td>
 </tr>
 </table></div>
@@ -1745,27 +1838,27 @@ Actually, cleanup should be done so that this function only takes associative ar
 </tr>
 <tr>
 <td>fixme</td>
-<td>223</td>
-<td>this can't be right?</td>
-</tr>
-<tr>
-<td>fixme</td>
 <td>226</td>
 <td>this can't be right?</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1042</td>
+<td>229</td>
+<td>this can't be right?</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>1043</td>
 <td>must convert $dtstart timezone</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1052</td>
+<td>1053</td>
 <td>must convert $dtend timezone</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1141</td>
+<td>1142</td>
 <td>this is for the google ical feed which is bad!</td>
 </tr>
 </table></div>
@@ -1879,7 +1972,7 @@ Actually, cleanup should be done so that this function only takes associative ar
 </div>
 <div class="package-contents">
 <a name="framework%5Cmodules%5Cnavigation%5Ccontrollers%5CnavigationController.php" id="framework\modules\navigation\controllers\navigationController.php"></a><h3>
-<i class="icon-file"></i>framework\modules\navigation\controllers\navigationController.php<small style="float: right;padding-right: 10px;">4</small>
+<i class="icon-file"></i>framework\modules\navigation\controllers\navigationController.php<small style="float: right;padding-right: 10px;">6</small>
 </h3>
 <div><table class="table markers table-bordered">
 <tr>
@@ -1889,22 +1982,32 @@ Actually, cleanup should be done so that this function only takes associative ar
 </tr>
 <tr>
 <td>fixme</td>
-<td>533</td>
+<td>497</td>
 <td>is this only for deprecated templates?</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>594</td>
+<td>558</td>
 <td>more module/controller glue code</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>870</td>
+<td>685</td>
+<td>$manage_all is moot w/ cascading perms now?</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>690</td>
+<td>recode to use foreach $key=>$value</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>841</td>
 <td>we come here for new/edit content/standalone pages</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>871</td>
+<td>842</td>
 <td>Allow non-administrative users to manage certain parts of the section hierarchy.</td>
 </tr>
 </table></div>
@@ -2342,6 +2445,23 @@ Actually, cleanup should be done so that this function only takes associative ar
 </table></div>
 </div>
 <div class="package-contents">
+<a name="framework%5Cplugins%5Cblock.toggle.php" id="framework\plugins\block.toggle.php"></a><h3>
+<i class="icon-file"></i>framework\plugins\block.toggle.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>54</td>
+<td>replace w/ system default?</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
 <a name="framework%5Cplugins%5Cfunction.control.php" id="framework\plugins\function.control.php"></a><h3>
 <i class="icon-file"></i>framework\plugins\function.control.php<small style="float: right;padding-right: 10px;">2</small>
 </h3>
@@ -2353,12 +2473,12 @@ Actually, cleanup should be done so that this function only takes associative ar
 </tr>
 <tr>
 <td>fixme</td>
-<td>317</td>
+<td>319</td>
 <td>we don't really use this</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>318</td>
+<td>320</td>
 <td>we don't really use this</td>
 </tr>
 </table></div>
@@ -2548,17 +2668,17 @@ Actually, cleanup should be done so that this function only takes associative ar
 </tr>
 <tr>
 <td>fixme</td>
-<td>185</td>
+<td>186</td>
 <td>needs 'date'</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>186</td>
+<td>187</td>
 <td>needs series title</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>198</td>
+<td>199</td>
 <td>probably also needs bible and summary?</td>
 </tr>
 </table></div>
@@ -2569,7 +2689,7 @@ Actually, cleanup should be done so that this function only takes associative ar
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
-            generated on 2012-11-15T15:56:24-05:00.<br></footer></div>
+            generated on 2012-12-08T10:29:53-05:00.<br></footer></div>
 </div>
 </body>
 </html>
