@@ -1,4 +1,4 @@
-<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
@@ -68,22 +68,29 @@
 </div>
 <ul class="side-nav nav nav-list">
 <li class="nav-header">
-<i class="icon-custom icon-method"></i> Methods</li>
-<li class="method public inherited"><a href="#checkVersion" title="checkVersion :: This routine should simply test version number (upgrade script requirements vs database version) to see if upgrade script should be run"><span class="description">This routine should simply test version number (upgrade script requirements vs database version) to see if upgrade script should be run</span><pre>checkVersion()</pre></a></li>
-<li class="method public "><a href="#description" title="description :: generic description of upgrade script"><span class="description">generic description of upgrade script</span><pre>description()</pre></a></li>
-<li class="method public "><a href="#name" title="name :: name/title of upgrade script"><span class="description">name/title of upgrade script</span><pre>name()</pre></a></li>
-<li class="method public "><a href="#needed" title="needed :: additional test(s) to see if upgrade script should be run"><span class="description">additional test(s) to see if upgrade script should be run</span><pre>needed()</pre></a></li>
-<li class="method public "><a href="#upgrade" title="upgrade :: converts the old ealert subscriber table to the new format"><span class="description">converts the old ealert subscriber table to the new format</span><pre>upgrade()</pre></a></li>
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public inherited"><a href="#method_checkVersion" title="checkVersion :: This routine should simply test version number (upgrade script requirements vs database version) to see if upgrade script should be run"><span class="description">This routine should simply test version number (upgrade script requirements vs database version) to see if upgrade script should be run</span><pre>checkVersion()</pre></a></li>
+<li class="method public "><a href="#method_description" title="description :: generic description of upgrade script"><span class="description">generic description of upgrade script</span><pre>description()</pre></a></li>
+<li class="method public "><a href="#method_name" title="name :: name/title of upgrade script"><span class="description">name/title of upgrade script</span><pre>name()</pre></a></li>
+<li class="method public "><a href="#method_needed" title="needed :: additional test(s) to see if upgrade script should be run"><span class="description">additional test(s) to see if upgrade script should be run</span><pre>needed()</pre></a></li>
+<li class="method public "><a href="#method_upgrade" title="upgrade :: converts the old ealert subscriber table to the new format"><span class="description">converts the old ealert subscriber table to the new format</span><pre>upgrade()</pre></a></li>
+</ul>
+</li>
 <li class="nav-header">
-<i class="icon-custom icon-property"></i> Properties</li>
-<li class="property public inherited"><a href="#%24optional" title="$optional :: "><span class="description">$optional</span><pre>$optional</pre></a></li>
-<li class="nav-header protected">» Protected</li>
-<li class="property protected "><a href="#%24from_version" title="$from_version :: "><span class="description">$from_version</span><pre>$from_version</pre></a></li>
-<li class="property protected "><a href="#%24to_version" title="$to_version :: "><span class="description">$to_version</span><pre>$to_version</pre></a></li>
+<i class="icon-custom icon-property"></i> Properties
+                    <ul><li class="property public inherited"><a href="#property_optional" title="$optional :: "><span class="description"></span><pre>$optional</pre></a></li></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_from_version" title="$from_version :: "><span class="description"></span><pre>$from_version</pre></a></li>
+<li class="property protected "><a href="#property_to_version" title="$to_version :: "><span class="description"></span><pre>$to_version</pre></a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="span8">
-<a name="%5Cupdate_ealerts" id="\update_ealerts"></a><ul class="breadcrumb">
+<a id="\update_ealerts"></a><ul class="breadcrumb">
 <li>
 <a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
@@ -92,18 +99,18 @@
 <span class="divider">\</span><a href="../classes/update_ealerts.html">update_ealerts</a>
 </li>
 </ul>
-<div href="../classes/update_ealerts.html" class="element class">
+<div class="element class">
 <p class="short_description">This is the class update_ealerts</p>
 <div class="details">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <h3>
 <i class="icon-custom icon-method"></i> Methods</h3>
-<a name="checkVersion" id="checkVersion"></a><div class="element clickable method public checkVersion" data-toggle="collapse" data-target=".checkVersion .collapse">
+<a id="method_checkVersion"></a><div class="element clickable method public method_checkVersion" data-toggle="collapse" data-target=".method_checkVersion .collapse">
 <h2>This routine should simply test version number (upgrade script requirements vs database version) to see if upgrade script should be run</h2>
 <pre>checkVersion(object $version) : bool</pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>inherited_from</th>
 <td>\upgradescript::checkVersion()</td>
@@ -117,71 +124,71 @@
 <div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
-<a name="description" id="description"></a><div class="element clickable method public description" data-toggle="collapse" data-target=".description .collapse">
+<a id="method_description"></a><div class="element clickable method public method_description" data-toggle="collapse" data-target=".method_description .collapse">
 <h2>generic description of upgrade script</h2>
 <pre>description() : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a name="name" id="name"></a><div class="element clickable method public name" data-toggle="collapse" data-target=".name .collapse">
+<a id="method_name"></a><div class="element clickable method public method_name" data-toggle="collapse" data-target=".method_name .collapse">
 <h2>name/title of upgrade script</h2>
 <pre>name() : string</pre>
-<div class="labels"></div>
+<div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a name="needed" id="needed"></a><div class="element clickable method public needed" data-toggle="collapse" data-target=".needed .collapse">
+<a id="method_needed"></a><div class="element clickable method public method_needed" data-toggle="collapse" data-target=".method_needed .collapse">
 <h2>additional test(s) to see if upgrade script should be run</h2>
 <pre>needed() : bool</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"><p>..)</p></p>
+<div class="long_description"><p>..)</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
-<a name="upgrade" id="upgrade"></a><div class="element clickable method public upgrade" data-toggle="collapse" data-target=".upgrade .collapse">
+<a id="method_upgrade"></a><div class="element clickable method public method_upgrade" data-toggle="collapse" data-target=".method_upgrade .collapse">
 <h2>converts the old ealert subscriber table to the new format</h2>
 <pre>upgrade() : bool</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
 <h3>
 <i class="icon-custom icon-property"></i> Properties</h3>
-<a name="%24optional" id="$optional"> </a><div class="element clickable property public $optional" data-toggle="collapse" data-target=".$optional .collapse">
-<h2>$optional</h2>
+<a id="property_optional"> </a><div class="element clickable property public property_optional" data-toggle="collapse" data-target=".property_optional .collapse">
+<h2></h2>
 <pre>$optional </pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>inherited_from</th>
 <td>\upgradescript::$$optional</td>
 </tr></table>
 </div></div>
 </div>
-<a name="%24from_version" id="$from_version"> </a><div class="element clickable property protected $from_version" data-toggle="collapse" data-target=".$from_version .collapse">
-<h2>$from_version</h2>
+<a id="property_from_version"> </a><div class="element clickable property protected property_from_version" data-toggle="collapse" data-target=".property_from_version .collapse">
+<h2></h2>
 <pre>$from_version </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a name="%24to_version" id="$to_version"> </a><div class="element clickable property protected $to_version" data-toggle="collapse" data-target=".$to_version .collapse">
-<h2>$to_version</h2>
+<a id="property_to_version"> </a><div class="element clickable property protected property_to_version" data-toggle="collapse" data-target=".property_to_version .collapse">
+<h2></h2>
 <pre>$to_version </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 </div>
 </div>
@@ -189,8 +196,8 @@
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
-            generated on 2012-12-08T10:29:51-05:00.<br></footer></div>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2012-12-08T17:47:52-05:00.<br></footer></div>
 </div>
 </body>
 </html>

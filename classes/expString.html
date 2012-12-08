@@ -1,4 +1,4 @@
-<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
@@ -66,20 +66,21 @@
 <span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
 <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
 </div>
-<ul class="side-nav nav nav-list">
-<li class="nav-header">
-<i class="icon-custom icon-method"></i> Methods</li>
-<li class="method public "><a href="#convertSmartQuotes" title="convertSmartQuotes :: Routine to convert any smart quotes into normal quotes"><span class="description">Routine to convert any smart quotes into normal quotes</span><pre>convertSmartQuotes()</pre></a></li>
-<li class="method public "><a href="#convertUTF" title="convertUTF :: Routine to convert string to UTF"><span class="description">Routine to convert string to UTF</span><pre>convertUTF()</pre></a></li>
-<li class="method public "><a href="#convertXMLFeedSafeChar" title="convertXMLFeedSafeChar :: Routine to convert string to an XML safe string"><span class="description">Routine to convert string to an XML safe string</span><pre>convertXMLFeedSafeChar()</pre></a></li>
-<li class="method public "><a href="#onlyReadables" title="onlyReadables :: Routine to strip unreadable characters from string - ascii 32 to 126"><span class="description">Routine to strip unreadable characters from string - ascii 32 to 126</span><pre>onlyReadables()</pre></a></li>
-<li class="method public "><a href="#parseAndTrim" title="parseAndTrim :: Routine to"><span class="description">Routine to</span><pre>parseAndTrim()</pre></a></li>
-<li class="method public "><a href="#sanitize" title="sanitize :: Scrub input string for possible security issues."><span class="description">Scrub input string for possible security issues.</span><pre>sanitize()</pre></a></li>
-<li class="method public "><a href="#validUTF" title="validUTF :: Routine to check if string is valid UTF string"><span class="description">Routine to check if string is valid UTF string</span><pre>validUTF()</pre></a></li>
+<ul class="side-nav nav nav-list"><li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_convertSmartQuotes" title="convertSmartQuotes :: Routine to convert any smart quotes into normal quotes"><span class="description">Routine to convert any smart quotes into normal quotes</span><pre>convertSmartQuotes()</pre></a></li>
+<li class="method public "><a href="#method_convertUTF" title="convertUTF :: Routine to convert string to UTF"><span class="description">Routine to convert string to UTF</span><pre>convertUTF()</pre></a></li>
+<li class="method public "><a href="#method_convertXMLFeedSafeChar" title="convertXMLFeedSafeChar :: Routine to convert string to an XML safe string"><span class="description">Routine to convert string to an XML safe string</span><pre>convertXMLFeedSafeChar()</pre></a></li>
+<li class="method public "><a href="#method_onlyReadables" title="onlyReadables :: Routine to strip unreadable characters from string - ascii 32 to 126"><span class="description">Routine to strip unreadable characters from string - ascii 32 to 126</span><pre>onlyReadables()</pre></a></li>
+<li class="method public "><a href="#method_parseAndTrim" title="parseAndTrim :: Routine to"><span class="description">Routine to</span><pre>parseAndTrim()</pre></a></li>
+<li class="method public "><a href="#method_sanitize" title="sanitize :: Scrub input string for possible security issues."><span class="description">Scrub input string for possible security issues.</span><pre>sanitize()</pre></a></li>
+<li class="method public "><a href="#method_validUTF" title="validUTF :: Routine to check if string is valid UTF string"><span class="description">Routine to check if string is valid UTF string</span><pre>validUTF()</pre></a></li>
 </ul>
+</li></ul>
 </div>
 <div class="span8">
-<a name="%5CexpString" id="\expString"></a><ul class="breadcrumb">
+<a id="\expString"></a><ul class="breadcrumb">
 <li>
 <a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
@@ -88,22 +89,22 @@
 <span class="divider">\</span><a href="../classes/expString.html">expString</a>
 </li>
 </ul>
-<div href="../classes/expString.html" class="element class">
+<div class="element class">
 <p class="short_description"></p>
 <div class="details">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>define</th>
 <td>"BASE" "../../.."</td>
 </tr></table>
 <h3>
 <i class="icon-custom icon-method"></i> Methods</h3>
-<a name="convertSmartQuotes" id="convertSmartQuotes"></a><div class="element clickable method public convertSmartQuotes" data-toggle="collapse" data-target=".convertSmartQuotes .collapse">
+<a id="method_convertSmartQuotes"></a><div class="element clickable method public method_convertSmartQuotes" data-toggle="collapse" data-target=".method_convertSmartQuotes .collapse">
 <h2>Routine to convert any smart quotes into normal quotes</h2>
 <pre>convertSmartQuotes(string $str) : string</pre>
-<div class="labels"></div>
+<div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$str</h4>
@@ -113,12 +114,12 @@
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a name="convertUTF" id="convertUTF"></a><div class="element clickable method public convertUTF" data-toggle="collapse" data-target=".convertUTF .collapse">
+<a id="method_convertUTF"></a><div class="element clickable method public method_convertUTF" data-toggle="collapse" data-target=".method_convertUTF .collapse">
 <h2>Routine to convert string to UTF</h2>
 <pre>convertUTF(string $string) : string</pre>
-<div class="labels"></div>
+<div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>static</th>
 <td></td>
@@ -132,12 +133,12 @@
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a name="convertXMLFeedSafeChar" id="convertXMLFeedSafeChar"></a><div class="element clickable method public convertXMLFeedSafeChar" data-toggle="collapse" data-target=".convertXMLFeedSafeChar .collapse">
+<a id="method_convertXMLFeedSafeChar"></a><div class="element clickable method public method_convertXMLFeedSafeChar" data-toggle="collapse" data-target=".method_convertXMLFeedSafeChar .collapse">
 <h2>Routine to convert string to an XML safe string</h2>
 <pre>convertXMLFeedSafeChar(string $str) : string</pre>
-<div class="labels"></div>
+<div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>static</th>
 <td></td>
@@ -151,12 +152,12 @@
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a name="onlyReadables" id="onlyReadables"></a><div class="element clickable method public onlyReadables" data-toggle="collapse" data-target=".onlyReadables .collapse">
+<a id="method_onlyReadables"></a><div class="element clickable method public method_onlyReadables" data-toggle="collapse" data-target=".method_onlyReadables .collapse">
 <h2>Routine to strip unreadable characters from string - ascii 32 to 126</h2>
 <pre>onlyReadables(string $string) : string</pre>
-<div class="labels"></div>
+<div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>static</th>
 <td></td>
@@ -170,12 +171,12 @@
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a name="parseAndTrim" id="parseAndTrim"></a><div class="element clickable method public parseAndTrim" data-toggle="collapse" data-target=".parseAndTrim .collapse">
+<a id="method_parseAndTrim"></a><div class="element clickable method public method_parseAndTrim" data-toggle="collapse" data-target=".method_parseAndTrim .collapse">
 <h2>Routine to</h2>
 <pre>parseAndTrim(string $str, bool $unescape) : mixed | string</pre>
-<div class="labels"></div>
+<div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>static</th>
 <td></td>
@@ -195,30 +196,29 @@
 </div>
 </div></div>
 </div>
-<a name="sanitize" id="sanitize"></a><div class="element clickable method public sanitize" data-toggle="collapse" data-target=".sanitize .collapse">
+<a id="method_sanitize"></a><div class="element clickable method public method_sanitize" data-toggle="collapse" data-target=".method_sanitize .collapse">
 <h2>Scrub input string for possible security issues.</h2>
-<pre>sanitize(\$data $data) : string</pre>
-<div class="labels"></div>
+<pre>sanitize($data) : string</pre>
+<div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>static</th>
 <td></td>
 </tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument">
-<h4>$data</h4>
-<code>\$data</code><p>string</p></div>
+<h4>$data</h4><p>string</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a name="validUTF" id="validUTF"></a><div class="element clickable method public validUTF" data-toggle="collapse" data-target=".validUTF .collapse">
+<a id="method_validUTF"></a><div class="element clickable method public method_validUTF" data-toggle="collapse" data-target=".method_validUTF .collapse">
 <h2>Routine to check if string is valid UTF string</h2>
 <pre>validUTF(string $string) : bool</pre>
-<div class="labels"></div>
+<div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>static</th>
 <td></td>
@@ -238,8 +238,8 @@
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
-            generated on 2012-12-08T10:29:34-05:00.<br></footer></div>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2012-12-08T17:47:34-05:00.<br></footer></div>
 </div>
 </body>
 </html>

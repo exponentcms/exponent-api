@@ -1,4 +1,4 @@
-<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
@@ -68,39 +68,43 @@
 </div>
 <ul class="side-nav nav nav-list">
 <li class="nav-header">
-<i class="icon-custom icon-method"></i> Methods</li>
-<li class="method public "><a href="#__construct" title="__construct :: expHistory Constructor"><span class="description">expHistory Constructor</span><pre>__construct()</pre></a></li>
-<li class="method public "><a href="#back" title="back :: This function will redirect the user to the last page or action not marked
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: expHistory Constructor"><span class="description">expHistory Constructor</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_back" title="back :: This function will redirect the user to the last page or action not marked
 as editable."><span class="description">This function will redirect the user to the last page or action not marked
 as editable.</span><pre>back()</pre></a></li>
-<li class="method public "><a href="#flush" title="flush :: "><span class="description">flush()
+<li class="method public "><a href="#method_flush" title="flush :: "><span class="description">flush()
         </span><pre>flush()</pre></a></li>
-<li class="method public "><a href="#getBack" title="getBack :: Returns a history item further back in time than the most recent (last) one"><span class="description">Returns a history item further back in time than the most recent (last) one</span><pre>getBack()</pre></a></li>
-<li class="method public "><a href="#getLast" title="getLast :: "><span class="description">getLast()
+<li class="method public "><a href="#method_getBack" title="getBack :: Returns a history item further back in time than the most recent (last) one"><span class="description">Returns a history item further back in time than the most recent (last) one</span><pre>getBack()</pre></a></li>
+<li class="method public "><a href="#method_getLast" title="getLast :: "><span class="description">getLast()
         </span><pre>getLast()</pre></a></li>
-<li class="method public "><a href="#getLastNotEditable" title="getLastNotEditable :: "><span class="description">getLastNotEditable()
+<li class="method public "><a href="#method_getLastNotEditable" title="getLastNotEditable :: "><span class="description">getLastNotEditable()
         </span><pre>getLastNotEditable()</pre></a></li>
-<li class="method public "><a href="#goHere" title="goHere :: "><span class="description">goHere()
+<li class="method public "><a href="#method_goHere" title="goHere :: "><span class="description">goHere()
         </span><pre>goHere()</pre></a></li>
-<li class="method public "><a href="#lastNotEditable" title="lastNotEditable :: "><span class="description">lastNotEditable()
+<li class="method public "><a href="#method_lastNotEditable" title="lastNotEditable :: "><span class="description">lastNotEditable()
         </span><pre>lastNotEditable()</pre></a></li>
-<li class="method public "><a href="#lastUrl" title="lastUrl :: "><span class="description">lastUrl()
+<li class="method public "><a href="#method_lastUrl" title="lastUrl :: "><span class="description">lastUrl()
         </span><pre>lastUrl()</pre></a></li>
-<li class="method public "><a href="#redirecto_login" title="redirecto_login :: "><span class="description">redirecto_login()
+<li class="method public "><a href="#method_redirecto_login" title="redirecto_login :: "><span class="description">redirecto_login()
         </span><pre>redirecto_login()</pre></a></li>
-<li class="method public "><a href="#returnTo" title="returnTo :: "><span class="description">returnTo()
+<li class="method public "><a href="#method_returnTo" title="returnTo :: "><span class="description">returnTo()
         </span><pre>returnTo()</pre></a></li>
-<li class="method public "><a href="#set" title="set :: "><span class="description">set()
+<li class="method public "><a href="#method_set" title="set :: "><span class="description">set()
         </span><pre>set()</pre></a></li>
-<li class="method public "><a href="#setHistory" title="setHistory :: "><span class="description">setHistory()
+<li class="method public "><a href="#method_setHistory" title="setHistory :: "><span class="description">setHistory()
         </span><pre>setHistory()</pre></a></li>
+</ul>
+</li>
 <li class="nav-header">
-<i class="icon-custom icon-property"></i> Properties</li>
-<li class="property public "><a href="#%24history" title="$history :: "><span class="description">$history</span><pre>$history</pre></a></li>
+<i class="icon-custom icon-property"></i> Properties
+                    <ul><li class="property public "><a href="#property_history" title="$history :: "><span class="description"></span><pre>$history</pre></a></li></ul>
+</li>
 </ul>
 </div>
 <div class="span8">
-<a name="%5CexpHistory" id="\expHistory"></a><ul class="breadcrumb">
+<a id="\expHistory"></a><ul class="breadcrumb">
 <li>
 <a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
@@ -109,11 +113,11 @@ as editable.</span><pre>back()</pre></a></li>
 <span class="divider">\</span><a href="../classes/expHistory.html">expHistory</a>
 </li>
 </ul>
-<div href="../classes/expHistory.html" class="element class">
+<div class="element class">
 <p class="short_description">This is the class expHistory
 Exponent History Subsystem</p>
 <div class="details">
-<p class="long_description"><p>The expHistory class is responsible for keeping track of which pages a user
+<div class="long_description"><p>The expHistory class is responsible for keeping track of which pages a user
 has visited while on the site. It also tracks what type of page/view each one is,
 viewable, manageable, editable and uses this information to intelligently route
 the user to proper places.  A developer can also use the methods of this class
@@ -160,7 +164,7 @@ action completes. In this example the user will be routed to the last form he/sh
      $record->delete();
      expHistory::returnTo('editable');
 }
-</code></pre></p>
+</code></pre></div>
 <table class="table table-bordered">
 <tr>
 <th>package</th>
@@ -173,140 +177,139 @@ action completes. In this example the user will be routed to the last form he/sh
 </table>
 <h3>
 <i class="icon-custom icon-method"></i> Methods</h3>
-<a name="__construct" id="__construct"></a><div class="element clickable method public __construct" data-toggle="collapse" data-target=".__construct .collapse">
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
 <h2>expHistory Constructor</h2>
 <pre>__construct() : <a href="../classes/expHistory.html">\expHistory</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"><p>The constructor will grab the users history from the session.  If it is not present in the session
-it will be initialized and saved later.</p></p>
+<div class="long_description"><p>The constructor will grab the users history from the session.  If it is not present in the session
+it will be initialized and saved later.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code><a href="../classes/expHistory.html">\expHistory</a></code></div>
 </div></div>
 </div>
-<a name="back" id="back"></a><div class="element clickable method public back" data-toggle="collapse" data-target=".back .collapse">
+<a id="method_back"></a><div class="element clickable method public method_back" data-toggle="collapse" data-target=".method_back .collapse">
 <h2>This function will redirect the user to the last page or action not marked
 as editable.</h2>
 <pre>back() </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a name="flush" id="flush"></a><div class="element clickable method public flush" data-toggle="collapse" data-target=".flush .collapse">
+<a id="method_flush"></a><div class="element clickable method public method_flush" data-toggle="collapse" data-target=".method_flush .collapse">
 <h2>flush()
         </h2>
 <pre>flush() </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a name="getBack" id="getBack"></a><div class="element clickable method public getBack" data-toggle="collapse" data-target=".getBack .collapse">
+<a id="method_getBack"></a><div class="element clickable method public method_getBack" data-toggle="collapse" data-target=".method_getBack .collapse">
 <h2>Returns a history item further back in time than the most recent (last) one</h2>
-<pre>getBack(\$depth $depth) : mixed</pre>
-<div class="labels"></div>
+<pre>getBack($depth) : mixed</pre>
+<div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>static</th>
 <td></td>
 </tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument">
-<h4>$depth</h4>
-<code>\$depth</code><p>int How deep/far back in history to pull a link</p>
+<h4>$depth</h4><p>int How deep/far back in history to pull a link</p>
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code>mixed</code></div>
 </div></div>
 </div>
-<a name="getLast" id="getLast"></a><div class="element clickable method public getLast" data-toggle="collapse" data-target=".getLast .collapse">
+<a id="method_getLast"></a><div class="element clickable method public method_getLast" data-toggle="collapse" data-target=".method_getLast .collapse">
 <h2>getLast()
         </h2>
 <pre>getLast($url_type) </pre>
-<div class="labels"></div>
+<div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$url_type</h4></div>
 </div></div>
 </div>
-<a name="getLastNotEditable" id="getLastNotEditable"></a><div class="element clickable method public getLastNotEditable" data-toggle="collapse" data-target=".getLastNotEditable .collapse">
+<a id="method_getLastNotEditable"></a><div class="element clickable method public method_getLastNotEditable" data-toggle="collapse" data-target=".method_getLastNotEditable .collapse">
 <h2>getLastNotEditable()
         </h2>
 <pre>getLastNotEditable() </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a name="goHere" id="goHere"></a><div class="element clickable method public goHere" data-toggle="collapse" data-target=".goHere .collapse">
+<a id="method_goHere"></a><div class="element clickable method public method_goHere" data-toggle="collapse" data-target=".method_goHere .collapse">
 <h2>goHere()
         </h2>
 <pre>goHere($url_type, $params) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$url_type</h4></div>
 <div class="subelement argument"><h4>$params</h4></div>
 </div></div>
 </div>
-<a name="lastNotEditable" id="lastNotEditable"></a><div class="element clickable method public lastNotEditable" data-toggle="collapse" data-target=".lastNotEditable .collapse">
+<a id="method_lastNotEditable"></a><div class="element clickable method public method_lastNotEditable" data-toggle="collapse" data-target=".method_lastNotEditable .collapse">
 <h2>lastNotEditable()
         </h2>
 <pre>lastNotEditable() </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a name="lastUrl" id="lastUrl"></a><div class="element clickable method public lastUrl" data-toggle="collapse" data-target=".lastUrl .collapse">
+<a id="method_lastUrl"></a><div class="element clickable method public method_lastUrl" data-toggle="collapse" data-target=".method_lastUrl .collapse">
 <h2>lastUrl()
         </h2>
 <pre>lastUrl($url_type) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$url_type</h4></div>
 </div></div>
 </div>
-<a name="redirecto_login" id="redirecto_login"></a><div class="element clickable method public redirecto_login" data-toggle="collapse" data-target=".redirecto_login .collapse">
+<a id="method_redirecto_login"></a><div class="element clickable method public method_redirecto_login" data-toggle="collapse" data-target=".method_redirecto_login .collapse">
 <h2>redirecto_login()
         </h2>
 <pre>redirecto_login($redirecturl) </pre>
-<div class="labels"></div>
+<div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$redirecturl</h4></div>
 </div></div>
 </div>
-<a name="returnTo" id="returnTo"></a><div class="element clickable method public returnTo" data-toggle="collapse" data-target=".returnTo .collapse">
+<a id="method_returnTo"></a><div class="element clickable method public method_returnTo" data-toggle="collapse" data-target=".method_returnTo .collapse">
 <h2>returnTo()
         </h2>
 <pre>returnTo($url_type, $params) </pre>
-<div class="labels"></div>
+<div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$url_type</h4></div>
 <div class="subelement argument"><h4>$params</h4></div>
 </div></div>
 </div>
-<a name="set" id="set"></a><div class="element clickable method public set" data-toggle="collapse" data-target=".set .collapse">
+<a id="method_set"></a><div class="element clickable method public method_set" data-toggle="collapse" data-target=".method_set .collapse">
 <h2>set()
         </h2>
 <pre>set($url_type, $params) </pre>
-<div class="labels"></div>
+<div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$url_type</h4></div>
 <div class="subelement argument"><h4>$params</h4></div>
 </div></div>
 </div>
-<a name="setHistory" id="setHistory"></a><div class="element clickable method public setHistory" data-toggle="collapse" data-target=".setHistory .collapse">
+<a id="method_setHistory"></a><div class="element clickable method public method_setHistory" data-toggle="collapse" data-target=".method_setHistory .collapse">
 <h2>setHistory()
         </h2>
 <pre>setHistory($url_type, $params) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$url_type</h4></div>
 <div class="subelement argument"><h4>$params</h4></div>
@@ -314,12 +317,12 @@ as editable.</h2>
 </div>
 <h3>
 <i class="icon-custom icon-property"></i> Properties</h3>
-<a name="%24history" id="$history"> </a><div class="element clickable property public $history" data-toggle="collapse" data-target=".$history .collapse">
-<h2>$history</h2>
+<a id="property_history"> </a><div class="element clickable property public property_history" data-toggle="collapse" data-target=".property_history .collapse">
+<h2></h2>
 <pre>$history : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>access</th>
 <td>public</td>
@@ -332,8 +335,8 @@ as editable.</h2>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
-            generated on 2012-12-08T10:29:33-05:00.<br></footer></div>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2012-12-08T17:47:33-05:00.<br></footer></div>
 </div>
 </body>
 </html>

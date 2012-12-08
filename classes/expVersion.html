@@ -1,4 +1,4 @@
-<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
@@ -68,19 +68,23 @@
 </div>
 <ul class="side-nav nav nav-list">
 <li class="nav-header">
-<i class="icon-custom icon-method"></i> Methods</li>
-<li class="method public "><a href="#checkVersion" title="checkVersion :: Routine to check for installation or upgrade"><span class="description">Routine to check for installation or upgrade</span><pre>checkVersion()</pre></a></li>
-<li class="method public "><a href="#compareVersion" title="compareVersion :: Routine to compare passed versions"><span class="description">Routine to compare passed versions</span><pre>compareVersion()</pre></a></li>
-<li class="method public "><a href="#dbVersion" title="dbVersion :: Return an object of the current version number stored in the database."><span class="description">Return an object of the current version number stored in the database.</span><pre>dbVersion()</pre></a></li>
-<li class="method public "><a href="#getDBVersion" title="getDBVersion :: Return a string of the current version number in the database."><span class="description">Return a string of the current version number in the database.</span><pre>getDBVersion()</pre></a></li>
-<li class="method public "><a href="#getVersion" title="getVersion :: Return a string of the current version number."><span class="description">Return a string of the current version number.</span><pre>getVersion()</pre></a></li>
-<li class="method public "><a href="#swVersion" title="swVersion :: Return an object of the current version number of the software."><span class="description">Return an object of the current version number of the software.</span><pre>swVersion()</pre></a></li>
-<li class="nav-header private">» Private</li>
-<li class="method private "><a href="#iterateType" title="iterateType :: Routine to convert version iteration type to a rank"><span class="description">Routine to convert version iteration type to a rank</span><pre>iterateType()</pre></a></li>
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_checkVersion" title="checkVersion :: Routine to check for installation or upgrade"><span class="description">Routine to check for installation or upgrade</span><pre>checkVersion()</pre></a></li>
+<li class="method public "><a href="#method_compareVersion" title="compareVersion :: Routine to compare passed versions"><span class="description">Routine to compare passed versions</span><pre>compareVersion()</pre></a></li>
+<li class="method public "><a href="#method_dbVersion" title="dbVersion :: Return an object of the current version number stored in the database."><span class="description">Return an object of the current version number stored in the database.</span><pre>dbVersion()</pre></a></li>
+<li class="method public "><a href="#method_getDBVersion" title="getDBVersion :: Return a string of the current version number in the database."><span class="description">Return a string of the current version number in the database.</span><pre>getDBVersion()</pre></a></li>
+<li class="method public "><a href="#method_getVersion" title="getVersion :: Return a string of the current version number."><span class="description">Return a string of the current version number.</span><pre>getVersion()</pre></a></li>
+<li class="method public "><a href="#method_swVersion" title="swVersion :: Return an object of the current version number of the software."><span class="description">Return an object of the current version number of the software.</span><pre>swVersion()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="method private "><a href="#method_iterateType" title="iterateType :: Routine to convert version iteration type to a rank"><span class="description">Routine to convert version iteration type to a rank</span><pre>iterateType()</pre></a></li></ul>
+</li>
 </ul>
 </div>
 <div class="span8">
-<a name="%5CexpVersion" id="\expVersion"></a><ul class="breadcrumb">
+<a id="\expVersion"></a><ul class="breadcrumb">
 <li>
 <a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
@@ -89,28 +93,28 @@
 <span class="divider">\</span><a href="../classes/expVersion.html">expVersion</a>
 </li>
 </ul>
-<div href="../classes/expVersion.html" class="element class">
+<div class="element class">
 <p class="short_description"></p>
 <div class="details">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>define</th>
 <td>"BASE" "../../.."</td>
 </tr></table>
 <h3>
 <i class="icon-custom icon-method"></i> Methods</h3>
-<a name="checkVersion" id="checkVersion"></a><div class="element clickable method public checkVersion" data-toggle="collapse" data-target=".checkVersion .collapse">
+<a id="method_checkVersion"></a><div class="element clickable method public method_checkVersion" data-toggle="collapse" data-target=".method_checkVersion .collapse">
 <h2>Routine to check for installation or upgrade</h2>
 <pre>checkVersion() </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a name="compareVersion" id="compareVersion"></a><div class="element clickable method public compareVersion" data-toggle="collapse" data-target=".compareVersion .collapse">
+<a id="method_compareVersion"></a><div class="element clickable method public method_compareVersion" data-toggle="collapse" data-target=".method_compareVersion .collapse">
 <h2>Routine to compare passed versions</h2>
 <pre>compareVersion(object $version1, object $version2) : bool</pre>
-<div class="labels"></div>
+<div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$version1</h4>
@@ -125,12 +129,12 @@
 <code>bool</code>set to true if $version1 is less than $version2</div>
 </div></div>
 </div>
-<a name="dbVersion" id="dbVersion"></a><div class="element clickable method public dbVersion" data-toggle="collapse" data-target=".dbVersion .collapse">
+<a id="method_dbVersion"></a><div class="element clickable method public method_dbVersion" data-toggle="collapse" data-target=".method_dbVersion .collapse">
 <h2>Return an object of the current version number stored in the database.</h2>
 <pre>dbVersion() : object</pre>
-<div class="labels"></div>
+<div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:expVersion</td>
@@ -139,12 +143,12 @@
 <div class="subelement response"><code>object</code></div>
 </div></div>
 </div>
-<a name="getDBVersion" id="getDBVersion"></a><div class="element clickable method public getDBVersion" data-toggle="collapse" data-target=".getDBVersion .collapse">
+<a id="method_getDBVersion"></a><div class="element clickable method public method_getDBVersion" data-toggle="collapse" data-target=".method_getDBVersion .collapse">
 <h2>Return a string of the current version number in the database.</h2>
 <pre>getDBVersion(bool $full, bool $build, bool $type) : string</pre>
-<div class="labels"></div>
+<div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:expVersion</td>
@@ -152,7 +156,8 @@
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$full</h4>
-<code>bool</code><p>Whether or not to return a full version number. If passed as true, a string in the form of '2.0.3-beta5' will be returned. Otherwise, '2.0' would be returned.</p>
+<code>bool</code><p>Whether or not to return a full version number.  If passed as true,
+                   a string in the form of '2.0.3-beta5' will be returned.  Otherwise, '2.0' would be returned.</p>
 </div>
 <div class="subelement argument">
 <h4>$build</h4>
@@ -164,12 +169,12 @@
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a name="getVersion" id="getVersion"></a><div class="element clickable method public getVersion" data-toggle="collapse" data-target=".getVersion .collapse">
+<a id="method_getVersion"></a><div class="element clickable method public method_getVersion" data-toggle="collapse" data-target=".method_getVersion .collapse">
 <h2>Return a string of the current version number.</h2>
 <pre>getVersion(bool $full, bool $build, bool $type) : string</pre>
-<div class="labels"></div>
+<div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:expVersion</td>
@@ -177,7 +182,8 @@
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$full</h4>
-<code>bool</code><p>Whether or not to return a full version number. If passed as true, a string in the form of '2.0.3-beta5' will be returned. Otherwise, '2.0' would be returned.</p>
+<code>bool</code><p>Whether or not to return a full version number.  If passed as true,
+                   a string in the form of '2.0.3-beta5' will be returned.  Otherwise, '2.0' would be returned.</p>
 </div>
 <div class="subelement argument">
 <h4>$build</h4>
@@ -189,12 +195,12 @@
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a name="swVersion" id="swVersion"></a><div class="element clickable method public swVersion" data-toggle="collapse" data-target=".swVersion .collapse">
+<a id="method_swVersion"></a><div class="element clickable method public method_swVersion" data-toggle="collapse" data-target=".method_swVersion .collapse">
 <h2>Return an object of the current version number of the software.</h2>
 <pre>swVersion() : object</pre>
-<div class="labels"></div>
+<div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:expVersion</td>
@@ -203,12 +209,12 @@
 <div class="subelement response"><code>object</code></div>
 </div></div>
 </div>
-<a name="iterateType" id="iterateType"></a><div class="element clickable method private iterateType" data-toggle="collapse" data-target=".iterateType .collapse">
+<a id="method_iterateType"></a><div class="element clickable method private method_iterateType" data-toggle="collapse" data-target=".method_iterateType .collapse">
 <h2>Routine to convert version iteration type to a rank</h2>
 <pre>iterateType(string $type) : int</pre>
-<div class="labels"></div>
+<div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$type</h4>
@@ -224,8 +230,8 @@
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
-            generated on 2012-12-08T10:29:34-05:00.<br></footer></div>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2012-12-08T17:47:35-05:00.<br></footer></div>
 </div>
 </body>
 </html>
