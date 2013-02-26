@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Exponent 2.1.1 » \fileController</title>
+<title>Exponent 2.2.0 » \fileController</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -15,7 +15,7 @@
 <body>
 <div class="navbar navbar-fixed-top">
 <div class="navbar-inner"><div class="container">
-<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.1.1</a><div class="nav-collapse"><ul class="nav">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.2.0</a><div class="nav-collapse"><ul class="nav">
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
@@ -38,14 +38,14 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3610</span></a></li>
+                <span class="label label-info">3493</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
                 <span class="label label-info">53</span>
 </li>
 <li>fixme 
-                <span class="label label-info">198</span>
+                <span class="label label-info">228</span>
 </li>
 </ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -79,10 +79,19 @@
         </span><pre>addit()</pre></a></li>
 <li class="method public inherited"><a href="#method_aggregateWhereClause" title="aggregateWhereClause :: The aggregateWhereClause function creates a sql where clause which also includes aggregated module content"><span class="description">The aggregateWhereClause function creates a sql where clause which also includes aggregated module content</span><pre>aggregateWhereClause()</pre></a></li>
 <li class="method public "><a href="#method_author" title="author :: author of module"><span class="description">author of module</span><pre>author()</pre></a></li>
+<li class="method public "><a href="#method_batchDelete" title="batchDelete :: "><span class="description">batchDelete()
+        </span><pre>batchDelete()</pre></a></li>
 <li class="method public inherited"><a href="#method_canExportData" title="canExportData :: can this module export data?"><span class="description">can this module export data?</span><pre>canExportData()</pre></a></li>
 <li class="method public inherited"><a href="#method_canImportData" title="canImportData :: can this module import data?"><span class="description">can this module import data?</span><pre>canImportData()</pre></a></li>
+<li class="method public inherited"><a href="#method_categories" title="categories :: "><span class="description">categories()
+        </span><pre>categories()</pre></a></li>
+<li class="method public inherited"><a href="#method_comments" title="comments :: "><span class="description">comments()
+        </span><pre>comments()</pre></a></li>
 <li class="method public inherited"><a href="#method_configure" title="configure :: generic config action"><span class="description">generic config action</span><pre>configure()</pre></a></li>
-<li class="method public inherited"><a href="#method_create" title="create :: create an item in this module"><span class="description">create an item in this module</span><pre>create()</pre></a></li>
+<li class="method public inherited"><a href="#method_create" title="create :: create an item in this module (deprecated in favor of edit w/o id param"><span class="description">create an item in this module (deprecated in favor of edit w/o id param</span><pre>create()</pre></a></li>
+<li class="method public "><a href="#method_createFolder" title="createFolder :: create a new virtual folder in response to an ajax request
+return updated list of virtual folders in response to an ajax request"><span class="description">create a new virtual folder in response to an ajax request
+return updated list of virtual folders in response to an ajax request</span><pre>createFolder()</pre></a></li>
 <li class="method public "><a href="#method_delete" title="delete :: delete item in module"><span class="description">delete item in module</span><pre>delete()</pre></a></li>
 <li class="method public inherited"><a href="#method_delete_In" title="delete_In :: delete an item by instance for backwards compat with old modules"><span class="description">delete an item by instance for backwards compat with old modules</span><pre>delete_In()</pre></a></li>
 <li class="method public inherited"><a href="#method_delete_instance" title="delete_instance :: delete an item by instance"><span class="description">delete an item by instance</span><pre>delete_instance()</pre></a></li>
@@ -94,28 +103,51 @@
 <li class="method public "><a href="#method_description" title="description :: description of module"><span class="description">description of module</span><pre>description()</pre></a></li>
 <li class="method public "><a href="#method_displayname" title="displayname :: name of module"><span class="description">name of module</span><pre>displayname()</pre></a></li>
 <li class="method public inherited"><a href="#method_downloadfile" title="downloadfile :: download a file attached to item"><span class="description">download a file attached to item</span><pre>downloadfile()</pre></a></li>
-<li class="method public inherited"><a href="#method_edit" title="edit :: edit item in module"><span class="description">edit item in module</span><pre>edit()</pre></a></li>
+<li class="method public inherited"><a href="#method_edit" title="edit :: edit item in module, also used to copy items"><span class="description">edit item in module, also used to copy items</span><pre>edit()</pre></a></li>
 <li class="method public "><a href="#method_editAlt" title="editAlt :: "><span class="description">editAlt()
         </span><pre>editAlt()</pre></a></li>
+<li class="method public "><a href="#method_editCat" title="editCat :: "><span class="description">editCat()
+        </span><pre>editCat()</pre></a></li>
 <li class="method public "><a href="#method_editShare" title="editShare :: "><span class="description">editShare()
         </span><pre>editShare()</pre></a></li>
 <li class="method public "><a href="#method_editTitle" title="editTitle :: "><span class="description">editTitle()
         </span><pre>editTitle()</pre></a></li>
+<li class="method public "><a href="#method_export_eql" title="export_eql :: "><span class="description">export_eql()
+        </span><pre>export_eql()</pre></a></li>
+<li class="method public "><a href="#method_export_eql_process" title="export_eql_process :: "><span class="description">export_eql_process()
+        </span><pre>export_eql_process()</pre></a></li>
+<li class="method public "><a href="#method_export_files" title="export_files :: "><span class="description">export_files()
+        </span><pre>export_files()</pre></a></li>
+<li class="method public "><a href="#method_export_files_process" title="export_files_process :: "><span class="description">export_files_process()
+        </span><pre>export_files_process()</pre></a></li>
 <li class="method public "><a href="#method_getFile" title="getFile :: "><span class="description">getFile()
         </span><pre>getFile()</pre></a></li>
 <li class="method public "><a href="#method_getFilesByJSON" title="getFilesByJSON :: "><span class="description">getFilesByJSON()
         </span><pre>getFilesByJSON()</pre></a></li>
 <li class="method public inherited"><a href="#method_getModels" title="getModels :: get the models associated with this module"><span class="description">get the models associated with this module</span><pre>getModels()</pre></a></li>
 <li class="method public inherited"><a href="#method_getRSSContent" title="getRSSContent :: get the items in an rss feed format"><span class="description">get the items in an rss feed format</span><pre>getRSSContent()</pre></a></li>
+<li class="method public "><a href="#method_get_module_view_config" title="get_module_view_config :: Locates appropriate attached file view template"><span class="description">Locates appropriate attached file view template</span><pre>get_module_view_config()</pre></a></li>
 <li class="method public "><a href="#method_get_view_config" title="get_view_config :: Locates appropriate attached file view template"><span class="description">Locates appropriate attached file view template</span><pre>get_view_config()</pre></a></li>
 <li class="method public inherited"><a href="#method_hasContent" title="hasContent :: does module have content available?"><span class="description">does module have content available?</span><pre>hasContent()</pre></a></li>
 <li class="method public inherited"><a href="#method_hasSources" title="hasSources :: does module have sources available?"><span class="description">does module have sources available?</span><pre>hasSources()</pre></a></li>
 <li class="method public inherited"><a href="#method_hasViews" title="hasViews :: does module have views available?"><span class="description">does module have views available?</span><pre>hasViews()</pre></a></li>
+<li class="method public "><a href="#method_import_eql" title="import_eql :: "><span class="description">import_eql()
+        </span><pre>import_eql()</pre></a></li>
+<li class="method public "><a href="#method_import_eql_process" title="import_eql_process :: "><span class="description">import_eql_process()
+        </span><pre>import_eql_process()</pre></a></li>
+<li class="method public "><a href="#method_import_files" title="import_files :: "><span class="description">import_files()
+        </span><pre>import_files()</pre></a></li>
+<li class="method public "><a href="#method_import_files_extract" title="import_files_extract :: "><span class="description">import_files_extract()
+        </span><pre>import_files_extract()</pre></a></li>
+<li class="method public "><a href="#method_import_files_finish" title="import_files_finish :: "><span class="description">import_files_finish()
+        </span><pre>import_files_finish()</pre></a></li>
+<li class="method public "><a href="#method_import_files_process" title="import_files_process :: "><span class="description">import_files_process()
+        </span><pre>import_files_process()</pre></a></li>
 <li class="method public inherited"><a href="#method_isSearchable" title="isSearchable :: is module content searchable?"><span class="description">is module content searchable?</span><pre>isSearchable()</pre></a></li>
 <li class="method public inherited"><a href="#method_manage" title="manage :: display module management view"><span class="description">display module management view</span><pre>manage()</pre></a></li>
 <li class="method public "><a href="#method_manage_fixPaths" title="manage_fixPaths :: "><span class="description">manage_fixPaths()
         </span><pre>manage_fixPaths()</pre></a></li>
-<li class="method public inherited"><a href="#method_manage_ranks" title="manage_ranks :: display view to rerank items"><span class="description">display view to rerank items</span><pre>manage_ranks()</pre></a></li>
+<li class="method public inherited"><a href="#method_manage_ranks" title="manage_ranks :: rerank module items from ddrerank"><span class="description">rerank module items from ddrerank</span><pre>manage_ranks()</pre></a></li>
 <li class="method public inherited"><a href="#method_merge" title="merge :: merge/move aggregated item into this module"><span class="description">merge/move aggregated item into this module</span><pre>merge()</pre></a></li>
 <li class="method public inherited"><a href="#method_metainfo" title="metainfo :: get the metainfo for this module"><span class="description">get the metainfo for this module</span><pre>metainfo()</pre></a></li>
 <li class="method public inherited"><a href="#method_moduleSelfAwareness" title="moduleSelfAwareness :: glue to make module aware of itself"><span class="description">glue to make module aware of itself</span><pre>moduleSelfAwareness()</pre></a></li>
@@ -123,10 +155,11 @@
 <li class="method public inherited"><a href="#method_permissions" title="permissions :: permission functions"><span class="description">permission functions</span><pre>permissions()</pre></a></li>
 <li class="method public "><a href="#method_picker" title="picker :: "><span class="description">picker()
         </span><pre>picker()</pre></a></li>
+<li class="method public "><a href="#method_quickUpload" title="quickUpload :: "><span class="description">quickUpload()
+        </span><pre>quickUpload()</pre></a></li>
 <li class="method public inherited"><a href="#method_requiresConfiguration" title="requiresConfiguration :: does this module require configuration?"><span class="description">does this module require configuration?</span><pre>requiresConfiguration()</pre></a></li>
-<li class="method public inherited"><a href="#method_rerank" title="rerank :: rerank items in module"><span class="description">rerank items in module</span><pre>rerank()</pre></a></li>
-<li class="method public inherited"><a href="#method_rss" title="rss :: "><span class="description">rss()
-        </span><pre>rss()</pre></a></li>
+<li class="method public inherited"><a href="#method_rerank" title="rerank :: rerank items in model"><span class="description">rerank items in model</span><pre>rerank()</pre></a></li>
+<li class="method public inherited"><a href="#method_rss" title="rss :: method to display an rss feed from this module"><span class="description">method to display an rss feed from this module</span><pre>rss()</pre></a></li>
 <li class="method public inherited"><a href="#method_saveconfig" title="saveconfig :: save module configuration"><span class="description">save module configuration</span><pre>saveconfig()</pre></a></li>
 <li class="method public inherited"><a href="#method_searchCategory" title="searchCategory :: category of items searched in the module"><span class="description">category of items searched in the module</span><pre>searchCategory()</pre></a></li>
 <li class="method public inherited"><a href="#method_searchName" title="searchName :: type of items searched in the module"><span class="description">type of items searched in the module</span><pre>searchName()</pre></a></li>
@@ -141,7 +174,7 @@
 <li class="method public inherited"><a href="#method_supportsWorkflow" title="supportsWorkflow :: does module support workflow?"><span class="description">does module support workflow?</span><pre>supportsWorkflow()</pre></a></li>
 <li class="method public inherited"><a href="#method_tags" title="tags :: "><span class="description">tags()
         </span><pre>tags()</pre></a></li>
-<li class="method public inherited"><a href="#method_update" title="update :: update item in module"><span class="description">update item in module</span><pre>update()</pre></a></li>
+<li class="method public inherited"><a href="#method_update" title="update :: update (save) item in module"><span class="description">update (save) item in module</span><pre>update()</pre></a></li>
 <li class="method public "><a href="#method_upload" title="upload :: "><span class="description">upload()
         </span><pre>upload()</pre></a></li>
 <li class="method public "><a href="#method_uploader" title="uploader :: "><span class="description">uploader()
@@ -151,6 +184,7 @@
 <li class="nav-header">
 <i class="icon-custom icon-property"></i> Properties
                     <ul>
+<li class="property public "><a href="#property_add_permissions" title="$add_permissions :: "><span class="description"></span><pre>$add_permissions</pre></a></li>
 <li class="property public inherited"><a href="#property_asset_path" title="$asset_path :: "><span class="description"></span><pre>$asset_path</pre></a></li>
 <li class="property public inherited"><a href="#property_baseclassname" title="$baseclassname :: "><span class="description"></span><pre>$baseclassname</pre></a></li>
 <li class="property public "><a href="#property_basemodel_name" title="$basemodel_name :: "><span class="description"></span><pre>$basemodel_name</pre></a></li>
@@ -171,7 +205,6 @@
 </li>
 <li class="nav-header protected">» Protected
                     <ul>
-<li class="property protected inherited"><a href="#property_add_permissions" title="$add_permissions :: "><span class="description"></span><pre>$add_permissions</pre></a></li>
 <li class="property protected inherited"><a href="#property_classname" title="$classname :: "><span class="description"></span><pre>$classname</pre></a></li>
 <li class="property protected inherited"><a href="#property_permissions" title="$permissions :: "><span class="description"></span><pre>$permissions</pre></a></li>
 </ul>
@@ -280,6 +313,13 @@
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
+<a id="method_batchDelete"></a><div class="element clickable method public method_batchDelete" data-toggle="collapse" data-target=".method_batchDelete .collapse">
+<h2>batchDelete()
+        </h2>
+<pre>batchDelete() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="method_canExportData"></a><div class="element clickable method public method_canExportData" data-toggle="collapse" data-target=".method_canExportData .collapse">
 <h2>can this module export data?</h2>
 <pre>canExportData() : bool</pre>
@@ -312,6 +352,32 @@
 <div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
+<a id="method_categories"></a><div class="element clickable method public method_categories" data-toggle="collapse" data-target=".method_categories .collapse">
+<h2>categories()
+        </h2>
+<pre>categories() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::categories()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_comments"></a><div class="element clickable method public method_comments" data-toggle="collapse" data-target=".method_comments .collapse">
+<h2>comments()
+        </h2>
+<pre>comments() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::comments()</td>
+</tr></table>
+</div></div>
+</div>
 <a id="method_configure"></a><div class="element clickable method public method_configure" data-toggle="collapse" data-target=".method_configure .collapse">
 <h2>generic config action</h2>
 <pre>configure() </pre>
@@ -325,7 +391,7 @@
 </div></div>
 </div>
 <a id="method_create"></a><div class="element clickable method public method_create" data-toggle="collapse" data-target=".method_create .collapse">
-<h2>create an item in this module</h2>
+<h2>create an item in this module (deprecated in favor of edit w/o id param</h2>
 <pre>create() </pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
@@ -335,6 +401,13 @@
 <td>\expController::create()</td>
 </tr></table>
 </div></div>
+</div>
+<a id="method_createFolder"></a><div class="element clickable method public method_createFolder" data-toggle="collapse" data-target=".method_createFolder .collapse">
+<h2>create a new virtual folder in response to an ajax request
+return updated list of virtual folders in response to an ajax request</h2>
+<pre>createFolder() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="method_delete"></a><div class="element clickable method public method_delete" data-toggle="collapse" data-target=".method_delete .collapse">
 <h2>delete item in module</h2>
@@ -427,7 +500,7 @@
 </div></div>
 </div>
 <a id="method_edit"></a><div class="element clickable method public method_edit" data-toggle="collapse" data-target=".method_edit .collapse">
-<h2>edit item in module</h2>
+<h2>edit item in module, also used to copy items</h2>
 <pre>edit() </pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
@@ -445,6 +518,13 @@
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="method_editCat"></a><div class="element clickable method public method_editCat" data-toggle="collapse" data-target=".method_editCat .collapse">
+<h2>editCat()
+        </h2>
+<pre>editCat() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="method_editShare"></a><div class="element clickable method public method_editShare" data-toggle="collapse" data-target=".method_editShare .collapse">
 <h2>editShare()
         </h2>
@@ -456,6 +536,34 @@
 <h2>editTitle()
         </h2>
 <pre>editTitle() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_export_eql"></a><div class="element clickable method public method_export_eql" data-toggle="collapse" data-target=".method_export_eql .collapse">
+<h2>export_eql()
+        </h2>
+<pre>export_eql() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_export_eql_process"></a><div class="element clickable method public method_export_eql_process" data-toggle="collapse" data-target=".method_export_eql_process .collapse">
+<h2>export_eql_process()
+        </h2>
+<pre>export_eql_process() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_export_files"></a><div class="element clickable method public method_export_files" data-toggle="collapse" data-target=".method_export_files .collapse">
+<h2>export_files()
+        </h2>
+<pre>export_files() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_export_files_process"></a><div class="element clickable method public method_export_files_process" data-toggle="collapse" data-target=".method_export_files_process .collapse">
+<h2>export_files_process()
+        </h2>
+<pre>export_files_process() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -500,6 +608,12 @@
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
+</div>
+<a id="method_get_module_view_config"></a><div class="element clickable method public method_get_module_view_config" data-toggle="collapse" data-target=".method_get_module_view_config .collapse">
+<h2>Locates appropriate attached file view template</h2>
+<pre>get_module_view_config() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="method_get_view_config"></a><div class="element clickable method public method_get_view_config" data-toggle="collapse" data-target=".method_get_view_config .collapse">
 <h2>Locates appropriate attached file view template</h2>
@@ -555,6 +669,48 @@
 <div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
+<a id="method_import_eql"></a><div class="element clickable method public method_import_eql" data-toggle="collapse" data-target=".method_import_eql .collapse">
+<h2>import_eql()
+        </h2>
+<pre>import_eql() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_import_eql_process"></a><div class="element clickable method public method_import_eql_process" data-toggle="collapse" data-target=".method_import_eql_process .collapse">
+<h2>import_eql_process()
+        </h2>
+<pre>import_eql_process() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_import_files"></a><div class="element clickable method public method_import_files" data-toggle="collapse" data-target=".method_import_files .collapse">
+<h2>import_files()
+        </h2>
+<pre>import_files() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_import_files_extract"></a><div class="element clickable method public method_import_files_extract" data-toggle="collapse" data-target=".method_import_files_extract .collapse">
+<h2>import_files_extract()
+        </h2>
+<pre>import_files_extract() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_import_files_finish"></a><div class="element clickable method public method_import_files_finish" data-toggle="collapse" data-target=".method_import_files_finish .collapse">
+<h2>import_files_finish()
+        </h2>
+<pre>import_files_finish() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_import_files_process"></a><div class="element clickable method public method_import_files_process" data-toggle="collapse" data-target=".method_import_files_process .collapse">
+<h2>import_files_process()
+        </h2>
+<pre>import_files_process() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="method_isSearchable"></a><div class="element clickable method public method_isSearchable" data-toggle="collapse" data-target=".method_isSearchable .collapse">
 <h2>is module content searchable?</h2>
 <pre>isSearchable() : bool</pre>
@@ -591,7 +747,7 @@
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="method_manage_ranks"></a><div class="element clickable method public method_manage_ranks" data-toggle="collapse" data-target=".method_manage_ranks .collapse">
-<h2>display view to rerank items</h2>
+<h2>rerank module items from ddrerank</h2>
 <pre>manage_ranks() </pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
@@ -675,6 +831,13 @@
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="method_quickUpload"></a><div class="element clickable method public method_quickUpload" data-toggle="collapse" data-target=".method_quickUpload .collapse">
+<h2>quickUpload()
+        </h2>
+<pre>quickUpload() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="method_requiresConfiguration"></a><div class="element clickable method public method_requiresConfiguration" data-toggle="collapse" data-target=".method_requiresConfiguration .collapse">
 <h2>does this module require configuration?</h2>
 <pre>requiresConfiguration() : bool</pre>
@@ -692,7 +855,7 @@
 </div></div>
 </div>
 <a id="method_rerank"></a><div class="element clickable method public method_rerank" data-toggle="collapse" data-target=".method_rerank .collapse">
-<h2>rerank items in module</h2>
+<h2>rerank items in model</h2>
 <pre>rerank() </pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
@@ -704,8 +867,7 @@
 </div></div>
 </div>
 <a id="method_rss"></a><div class="element clickable method public method_rss" data-toggle="collapse" data-target=".method_rss .collapse">
-<h2>rss()
-        </h2>
+<h2>method to display an rss feed from this module</h2>
 <pre>rss() </pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
@@ -873,7 +1035,7 @@
 </div></div>
 </div>
 <a id="method_update"></a><div class="element clickable method public method_update" data-toggle="collapse" data-target=".method_update .collapse">
-<h2>update item in module</h2>
+<h2>update (save) item in module</h2>
 <pre>update() </pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
@@ -900,6 +1062,12 @@
 </div>
 <h3>
 <i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_add_permissions"> </a><div class="element clickable property public property_add_permissions" data-toggle="collapse" data-target=".property_add_permissions .collapse">
+<h2></h2>
+<pre>$add_permissions </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="property_asset_path"> </a><div class="element clickable property public property_asset_path" data-toggle="collapse" data-target=".property_asset_path .collapse">
 <h2></h2>
 <pre>$asset_path </pre>
@@ -1074,18 +1242,6 @@
 </tr></table>
 </div></div>
 </div>
-<a id="property_add_permissions"> </a><div class="element clickable property protected property_add_permissions" data-toggle="collapse" data-target=".property_add_permissions .collapse">
-<h2></h2>
-<pre>$add_permissions </pre>
-<div class="labels"><span class="label">Inherited</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>inherited_from</th>
-<td>\expController::$$add_permissions</td>
-</tr></table>
-</div></div>
-</div>
 <a id="property_classname"> </a><div class="element clickable property protected property_classname" data-toggle="collapse" data-target=".property_classname .collapse">
 <h2></h2>
 <pre>$classname </pre>
@@ -1117,7 +1273,7 @@
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2012-12-08T17:47:45-05:00.<br></footer></div>
+            generated on 2013-02-26T16:44:04-05:00.<br></footer></div>
 </div>
 </body>
 </html>

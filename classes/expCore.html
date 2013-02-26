@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Exponent 2.1.1 » \expCore</title>
+<title>Exponent 2.2.0 » \expCore</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -15,7 +15,7 @@
 <body>
 <div class="navbar navbar-fixed-top">
 <div class="navbar-inner"><div class="container">
-<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.1.1</a><div class="nav-collapse"><ul class="nav">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.2.0</a><div class="nav-collapse"><ul class="nav">
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
@@ -38,14 +38,14 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3610</span></a></li>
+                <span class="label label-info">3493</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
                 <span class="label label-info">53</span>
 </li>
 <li>fixme 
-                <span class="label label-info">198</span>
+                <span class="label label-info">228</span>
 </li>
 </ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -86,19 +86,13 @@ This function is a wrapper around self::resolveFilePaths()
 and returns a list of the basenames, minus the file extensions - if any"><span class="description">exdoc
 This function is a wrapper around self::resolveFilePaths()
 and returns a list of the basenames, minus the file extensions - if any</span><pre>buildNameList()</pre></a></li>
-<li class="method public "><a href="#method_decrementLocationReference" title="decrementLocationReference :: exdoc
-Decrement the reference counts for a given location."><span class="description">exdoc
-Decrement the reference counts for a given location.</span><pre>decrementLocationReference()</pre></a></li>
 <li class="method public "><a href="#method_getCurrencySymbol" title="getCurrencySymbol :: Return the appropriate currency symbol"><span class="description">Return the appropriate currency symbol</span><pre>getCurrencySymbol()</pre></a></li>
 <li class="method public "><a href="#method_glob2keyedArray" title="glob2keyedArray :: helper function"><span class="description">helper function</span><pre>glob2keyedArray()</pre></a></li>
-<li class="method public "><a href="#method_incrementLocationReference" title="incrementLocationReference :: exdoc
-Increment the reference counts for a given location."><span class="description">exdoc
-Increment the reference counts for a given location.</span><pre>incrementLocationReference()</pre></a></li>
 <li class="method public "><a href="#method_loadData" title="loadData :: Use cUrl to get data from url"><span class="description">Use cUrl to get data from url</span><pre>loadData()</pre></a></li>
 <li class="method public "><a href="#method_makeLink" title="makeLink :: exdoc
 Return a full URL, given the desired querystring arguments as an associative array."><span class="description">exdoc
 Return a full URL, given the desired querystring arguments as an associative array.</span><pre>makeLink()</pre></a></li>
-<li class="method public "><a href="#method_makeLocation" title="makeLocation :: Return an exponent location object"><span class="description">Return an exponent location object</span><pre>makeLocation()</pre></a></li>
+<li class="method public "><a href="#method_makeLocation" title="makeLocation :: Return an exponent location object with corrected module name"><span class="description">Return an exponent location object with corrected module name</span><pre>makeLocation()</pre></a></li>
 <li class="method public "><a href="#method_makePodcastLink" title="makePodcastLink :: Return a podcast link
 COMPATIBILITY - we now use the {rss_link} smarty function to build rss &amp; podcast links"><span class="description">Return a podcast link
 COMPATIBILITY - we now use the {rss_link} smarty function to build rss &amp; podcast links</span><pre>makePodcastLink()</pre></a></li>
@@ -223,27 +217,6 @@ and returns a list of the basenames, minus the file extensions - if any</h2>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_decrementLocationReference"></a><div class="element clickable method public method_decrementLocationReference" data-toggle="collapse" data-target=".method_decrementLocationReference .collapse">
-<h2>exdoc
-Decrement the reference counts for a given location.</h2>
-<pre>decrementLocationReference(object $loc, integer $section) </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>This is used by the Container Module,
-and probably won't be needed by 95% of the code in Exponent.</p></div>
-<table class="table table-bordered"><tr>
-<th>node</th>
-<td>Subsystems:expCore</td>
-</tr></table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$loc</h4>
-<code>object</code><p>The location object to decrement references for.</p></div>
-<div class="subelement argument">
-<h4>$section</h4>
-<code>integer</code><p>The id of the section that the location exists in.</p></div>
-</div></div>
-</div>
 <a id="method_getCurrencySymbol"></a><div class="element clickable method public method_getCurrencySymbol" data-toggle="collapse" data-target=".method_getCurrencySymbol .collapse">
 <h2>Return the appropriate currency symbol</h2>
 <pre>getCurrencySymbol($currency_type) : string</pre>
@@ -270,27 +243,6 @@ and probably won't be needed by 95% of the code in Exponent.</p></div>
 <div class="subelement argument"><h4>$workArray</h4></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
-</div></div>
-</div>
-<a id="method_incrementLocationReference"></a><div class="element clickable method public method_incrementLocationReference" data-toggle="collapse" data-target=".method_incrementLocationReference .collapse">
-<h2>exdoc
-Increment the reference counts for a given location.</h2>
-<pre>incrementLocationReference(object $loc, integer $section) </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>This is used by the Container Module,
-and probably won't be needed by 95% of the code in Exponent.</p></div>
-<table class="table table-bordered"><tr>
-<th>node</th>
-<td>Subsystems:expCore</td>
-</tr></table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$loc</h4>
-<code>object</code><p>The location object to increment references for.</p></div>
-<div class="subelement argument">
-<h4>$section</h4>
-<code>integer</code><p>The id of the section that the location exists in.</p></div>
 </div></div>
 </div>
 <a id="method_loadData"></a><div class="element clickable method public method_loadData" data-toggle="collapse" data-target=".method_loadData .collapse">
@@ -345,7 +297,7 @@ Return a full URL, given the desired querystring arguments as an associative arr
 </div></div>
 </div>
 <a id="method_makeLocation"></a><div class="element clickable method public method_makeLocation" data-toggle="collapse" data-target=".method_makeLocation .collapse">
-<h2>Return an exponent location object</h2>
+<h2>Return an exponent location object with corrected module name</h2>
 <pre>makeLocation(null $mod, null $src, null $int) : object</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
@@ -529,7 +481,7 @@ if no file was found, false</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2012-12-08T17:47:33-05:00.<br></footer></div>
+            generated on 2013-02-26T16:43:54-05:00.<br></footer></div>
 </div>
 </body>
 </html>

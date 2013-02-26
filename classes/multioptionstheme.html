@@ -1,9 +1,9 @@
-<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Exponent 2.0.9 » \multioptionstheme</title>
+<title>Exponent 2.2.0 » \multioptionstheme</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -15,7 +15,7 @@
 <body>
 <div class="navbar navbar-fixed-top">
 <div class="navbar-inner"><div class="container">
-<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.0.9</a><div class="nav-collapse"><ul class="nav">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.2.0</a><div class="nav-collapse"><ul class="nav">
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
@@ -24,6 +24,7 @@
 <li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 <li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
 <li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
+<li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
 <li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
@@ -37,14 +38,14 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3456</span></a></li>
+                <span class="label label-info">3493</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
-                <span class="label label-info">41</span>
+                <span class="label label-info">53</span>
 </li>
 <li>fixme 
-                <span class="label label-info">184</span>
+                <span class="label label-info">228</span>
 </li>
 </ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -67,32 +68,39 @@
 </div>
 <ul class="side-nav nav nav-list">
 <li class="nav-header">
-<i class="icon-custom icon-method"></i> Methods</li>
-<li class="method public "><a href="#author" title="author :: "><span class="description">author()
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_author" title="author :: "><span class="description">author()
         </span><pre>author()</pre></a></li>
-<li class="method public "><a href="#configureTheme" title="configureTheme :: Method to Configure theme settings
+<li class="method public "><a href="#method_configureTheme" title="configureTheme :: Method to Configure theme settings
 This generic routine parses the theme's config.php file
 and presents the values as text boxes."><span class="description">Method to Configure theme settings
 This generic routine parses the theme's config.php file
 and presents the values as text boxes.</span><pre>configureTheme()</pre></a></li>
-<li class="method public "><a href="#description" title="description :: "><span class="description">description()
+<li class="method public "><a href="#method_description" title="description :: "><span class="description">description()
         </span><pre>description()</pre></a></li>
-<li class="method public "><a href="#name" title="name :: "><span class="description">name()
+<li class="method public "><a href="#method_name" title="name :: "><span class="description">name()
         </span><pre>name()</pre></a></li>
-<li class="method public inherited"><a href="#saveThemeConfig" title="saveThemeConfig :: Method to save/update theme settings
+<li class="method public inherited"><a href="#method_saveThemeConfig" title="saveThemeConfig :: Method to save/update theme settings
 This generic routine parses the passed params
 and saves them to the theme's config.php file
 It attempts to remove non-theme params such as analytics, etc."><span class="description">Method to save/update theme settings
 This generic routine parses the passed params
 and saves them to the theme's config.php file
 It attempts to remove non-theme params such as analytics, etc.</span><pre>saveThemeConfig()</pre></a></li>
+</ul>
+</li>
 <li class="nav-header">
-<i class="icon-custom icon-property"></i> Properties</li>
-<li class="property public "><a href="#%24user_configured" title="$user_configured :: "><span class="description">$user_configured</span><pre>$user_configured</pre></a></li>
+<i class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public "><a href="#property_stock_theme" title="$stock_theme :: "><span class="description"></span><pre>$stock_theme</pre></a></li>
+<li class="property public "><a href="#property_user_configured" title="$user_configured :: "><span class="description"></span><pre>$user_configured</pre></a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="span8">
-<a name="%5Cmultioptionstheme" id="\multioptionstheme"></a><ul class="breadcrumb">
+<a id="\multioptionstheme"></a><ul class="breadcrumb">
 <li>
 <a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
@@ -101,71 +109,76 @@ It attempts to remove non-theme params such as analytics, etc.</span><pre>saveTh
 <span class="divider">\</span><a href="../classes/multioptionstheme.html">multioptionstheme</a>
 </li>
 </ul>
-<div href="../classes/multioptionstheme.html" class="element class">
+<div class="element class">
 <p class="short_description">This is the base theme class</p>
 <div class="details">
-<p class="long_description"></p>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>package</th>
 <td><a href="../packages/Default.html">Modules</a></td>
 </tr></table>
 <h3>
 <i class="icon-custom icon-method"></i> Methods</h3>
-<a name="author" id="author"></a><div class="element clickable method public author" data-toggle="collapse" data-target=".author .collapse">
+<a id="method_author"></a><div class="element clickable method public method_author" data-toggle="collapse" data-target=".method_author .collapse">
 <h2>author()
         </h2>
 <pre>author() </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a name="configureTheme" id="configureTheme"></a><div class="element clickable method public configureTheme" data-toggle="collapse" data-target=".configureTheme .collapse">
+<a id="method_configureTheme"></a><div class="element clickable method public method_configureTheme" data-toggle="collapse" data-target=".method_configureTheme .collapse">
 <h2>Method to Configure theme settings
 This generic routine parses the theme's config.php file
 and presents the values as text boxes.</h2>
 <pre>configureTheme() </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a name="description" id="description"></a><div class="element clickable method public description" data-toggle="collapse" data-target=".description .collapse">
+<a id="method_description"></a><div class="element clickable method public method_description" data-toggle="collapse" data-target=".method_description .collapse">
 <h2>description()
         </h2>
 <pre>description() </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a name="name" id="name"></a><div class="element clickable method public name" data-toggle="collapse" data-target=".name .collapse">
+<a id="method_name"></a><div class="element clickable method public method_name" data-toggle="collapse" data-target=".method_name .collapse">
 <h2>name()
         </h2>
 <pre>name() </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a name="saveThemeConfig" id="saveThemeConfig"></a><div class="element clickable method public saveThemeConfig" data-toggle="collapse" data-target=".saveThemeConfig .collapse">
+<a id="method_saveThemeConfig"></a><div class="element clickable method public method_saveThemeConfig" data-toggle="collapse" data-target=".method_saveThemeConfig .collapse">
 <h2>Method to save/update theme settings
 This generic routine parses the passed params
 and saves them to the theme's config.php file
 It attempts to remove non-theme params such as analytics, etc.</h2>
-<pre>saveThemeConfig(\$params $params) </pre>
+<pre>saveThemeConfig($params) </pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
-<p class="long_description"><p>.</p></p>
+<div class="long_description"><p>.</p></div>
 <table class="table table-bordered"><tr>
 <th>inherited_from</th>
 <td>\theme::saveThemeConfig()</td>
 </tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument">
-<h4>$params</h4>
-<code>\$params</code><p>theme configuration parameters</p></div>
+<h4>$params</h4><p>theme configuration parameters</p></div>
 </div></div>
 </div>
 <h3>
 <i class="icon-custom icon-property"></i> Properties</h3>
-<a name="%24user_configured" id="$user_configured"> </a><div class="element clickable property public $user_configured" data-toggle="collapse" data-target=".$user_configured .collapse">
-<h2>$user_configured</h2>
+<a id="property_stock_theme"> </a><div class="element clickable property public property_stock_theme" data-toggle="collapse" data-target=".property_stock_theme .collapse">
+<h2></h2>
+<pre>$stock_theme </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_user_configured"> </a><div class="element clickable property public property_user_configured" data-toggle="collapse" data-target=".property_user_configured .collapse">
+<h2></h2>
 <pre>$user_configured </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 </div>
 </div>
@@ -173,8 +186,8 @@ It attempts to remove non-theme params such as analytics, etc.</h2>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
-            generated on 2012-09-27T13:42:01-04:00.<br></footer></div>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-02-26T16:44:11-05:00.<br></footer></div>
 </div>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Exponent 2.1.1 » \forms_control</title>
+<title>Exponent 2.2.0 » \forms_control</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -15,7 +15,7 @@
 <body>
 <div class="navbar navbar-fixed-top">
 <div class="navbar-inner"><div class="container">
-<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.1.1</a><div class="nav-collapse"><ul class="nav">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.2.0</a><div class="nav-collapse"><ul class="nav">
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
@@ -38,14 +38,14 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3610</span></a></li>
+                <span class="label label-info">3493</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
                 <span class="label label-info">53</span>
 </li>
 <li>fixme 
-                <span class="label label-info">198</span>
+                <span class="label label-info">228</span>
 </li>
 </ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -70,8 +70,7 @@
 <li class="nav-header">
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
-<li class="method public inherited"><a href="#method___construct" title="__construct :: "><span class="description">__construct()
-        </span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method___construct" title="__construct :: __construct forms_control item."><span class="description">__construct forms_control item.</span><pre>__construct()</pre></a></li>
 <li class="method public inherited"><a href="#method_afterCreate" title="afterCreate :: after creating item"><span class="description">after creating item</span><pre>afterCreate()</pre></a></li>
 <li class="method public inherited"><a href="#method_afterDelete" title="afterDelete :: is run after deleting item"><span class="description">is run after deleting item</span><pre>afterDelete()</pre></a></li>
 <li class="method public inherited"><a href="#method_afterSave" title="afterSave :: after saving item"><span class="description">after saving item</span><pre>afterSave()</pre></a></li>
@@ -83,9 +82,9 @@
 <li class="method public inherited"><a href="#method_attachItem" title="attachItem :: attach to item"><span class="description">attach to item</span><pre>attachItem()</pre></a></li>
 <li class="method public inherited"><a href="#method_beforeCreate" title="beforeCreate :: before creating item"><span class="description">before creating item</span><pre>beforeCreate()</pre></a></li>
 <li class="method public inherited"><a href="#method_beforeDelete" title="beforeDelete :: is run before deleting item"><span class="description">is run before deleting item</span><pre>beforeDelete()</pre></a></li>
-<li class="method public inherited"><a href="#method_beforeSave" title="beforeSave :: before saving item"><span class="description">before saving item</span><pre>beforeSave()</pre></a></li>
+<li class="method public "><a href="#method_beforeSave" title="beforeSave :: before saving item"><span class="description">before saving item</span><pre>beforeSave()</pre></a></li>
 <li class="method public inherited"><a href="#method_beforeUpdate" title="beforeUpdate :: before updating item"><span class="description">before updating item</span><pre>beforeUpdate()</pre></a></li>
-<li class="method public inherited"><a href="#method_beforeValidation" title="beforeValidation :: before validating item"><span class="description">before validating item</span><pre>beforeValidation()</pre></a></li>
+<li class="method public "><a href="#method_beforeValidation" title="beforeValidation :: beforeValidation we can have duplicate forms_control across modules"><span class="description">beforeValidation we can have duplicate forms_control across modules</span><pre>beforeValidation()</pre></a></li>
 <li class="method public inherited"><a href="#method_beforeValidationOnCreate" title="beforeValidationOnCreate :: before validating item during creation"><span class="description">before validating item during creation</span><pre>beforeValidationOnCreate()</pre></a></li>
 <li class="method public inherited"><a href="#method_beforeValidationOnUpdate" title="beforeValidationOnUpdate :: before validating item during update"><span class="description">before validating item during update</span><pre>beforeValidationOnUpdate()</pre></a></li>
 <li class="method public inherited"><a href="#method_build" title='build :: Adds table fields as class properties to current "record" class.'><span class="description">Adds table fields as class properties to current "record" class.</span><pre>build()</pre></a></li>
@@ -125,16 +124,17 @@
 <li class="property public inherited"><a href="#property_attachable_items_to_save" title="$attachable_items_to_save :: "><span class="description"></span><pre>$attachable_items_to_save</pre></a></li>
 <li class="property public inherited"><a href="#property_classname" title="$classname :: "><span class="description"></span><pre>$classname</pre></a></li>
 <li class="property public inherited"><a href="#property_default_sort_direction" title="$default_sort_direction :: "><span class="description"></span><pre>$default_sort_direction</pre></a></li>
-<li class="property public inherited"><a href="#property_default_sort_field" title="$default_sort_field :: "><span class="description"></span><pre>$default_sort_field</pre></a></li>
+<li class="property public "><a href="#property_default_sort_field" title="$default_sort_field :: "><span class="description"></span><pre>$default_sort_field</pre></a></li>
 <li class="property public inherited"><a href="#property_do_not_validate" title="$do_not_validate :: "><span class="description"></span><pre>$do_not_validate</pre></a></li>
 <li class="property public inherited"><a href="#property_get_assoc_for" title="$get_assoc_for :: "><span class="description"></span><pre>$get_assoc_for</pre></a></li>
 <li class="property public inherited"><a href="#property_get_attachable_for" title="$get_attachable_for :: "><span class="description"></span><pre>$get_attachable_for</pre></a></li>
+<li class="property public inherited"><a href="#property_grouping_sql" title="$grouping_sql :: "><span class="description"></span><pre>$grouping_sql</pre></a></li>
 <li class="property public inherited"><a href="#property_has_and_belongs_to_many" title="$has_and_belongs_to_many :: "><span class="description"></span><pre>$has_and_belongs_to_many</pre></a></li>
 <li class="property public inherited"><a href="#property_has_and_belongs_to_self" title="$has_and_belongs_to_self :: "><span class="description"></span><pre>$has_and_belongs_to_self</pre></a></li>
 <li class="property public inherited"><a href="#property_has_extended_fields" title="$has_extended_fields :: "><span class="description"></span><pre>$has_extended_fields</pre></a></li>
 <li class="property public inherited"><a href="#property_has_many" title="$has_many :: "><span class="description"></span><pre>$has_many</pre></a></li>
 <li class="property public inherited"><a href="#property_has_many_self" title="$has_many_self :: "><span class="description"></span><pre>$has_many_self</pre></a></li>
-<li class="property public "><a href="#property_has_one" title="$has_one :: "><span class="description"></span><pre>$has_one</pre></a></li>
+<li class="property public inherited"><a href="#property_has_one" title="$has_one :: "><span class="description"></span><pre>$has_one</pre></a></li>
 <li class="property public inherited"><a href="#property_identifier" title="$identifier :: "><span class="description"></span><pre>$identifier</pre></a></li>
 <li class="property public inherited"><a href="#property_rank_by_field" title="$rank_by_field :: "><span class="description"></span><pre>$rank_by_field</pre></a></li>
 <li class="property public inherited"><a href="#property_supports_revisions" title="$supports_revisions :: "><span class="description"></span><pre>$supports_revisions</pre></a></li>
@@ -144,7 +144,7 @@
 </li>
 <li class="nav-header protected">» Protected
                     <ul>
-<li class="property protected "><a href="#property_attachable_item_types" title="$attachable_item_types :: "><span class="description"></span><pre>$attachable_item_types</pre></a></li>
+<li class="property protected inherited"><a href="#property_attachable_item_types" title="$attachable_item_types :: "><span class="description"></span><pre>$attachable_item_types</pre></a></li>
 <li class="property protected inherited"><a href="#property_classinfo" title="$classinfo :: "><span class="description"></span><pre>$classinfo</pre></a></li>
 </ul>
 </li>
@@ -177,28 +177,15 @@
 <h3>
 <i class="icon-custom icon-method"></i> Methods</h3>
 <a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
-<h2>__construct()
-        </h2>
-<pre>__construct(null $params, bool $get_assoc, bool $get_attached) : <a href="../classes/expRecord.html">\expRecord</a></pre>
-<div class="labels"><span class="label">Inherited</span></div>
+<h2>__construct forms_control item.</h2>
+<pre>__construct(array $params) : <a href="../classes/expRecord.html">\expRecord</a></pre>
+<div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>inherited_from</th>
-<td>\expRecord::__construct()</td>
-</tr></table>
+<div class="long_description"><p>..needs special grouping we can have duplicates across modules</p></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$params</h4>
-<code>null</code>
-</div>
-<div class="subelement argument">
-<h4>$get_assoc</h4>
-<code>bool</code>
-</div>
-<div class="subelement argument">
-<h4>$get_attached</h4>
-<code>bool</code>
+<code>array</code>
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code><a href="../classes/expRecord.html">\expRecord</a></code></div>
@@ -351,14 +338,8 @@
 <a id="method_beforeSave"></a><div class="element clickable method public method_beforeSave" data-toggle="collapse" data-target=".method_beforeSave .collapse">
 <h2>before saving item</h2>
 <pre>beforeSave() </pre>
-<div class="labels"><span class="label">Inherited</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>inherited_from</th>
-<td>\expRecord::beforeSave()</td>
-</tr></table>
-</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="method_beforeUpdate"></a><div class="element clickable method public method_beforeUpdate" data-toggle="collapse" data-target=".method_beforeUpdate .collapse">
 <h2>before updating item</h2>
@@ -373,16 +354,10 @@
 </div></div>
 </div>
 <a id="method_beforeValidation"></a><div class="element clickable method public method_beforeValidation" data-toggle="collapse" data-target=".method_beforeValidation .collapse">
-<h2>before validating item</h2>
+<h2>beforeValidation we can have duplicate forms_control across modules</h2>
 <pre>beforeValidation() </pre>
-<div class="labels"><span class="label">Inherited</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>inherited_from</th>
-<td>\expRecord::beforeValidation()</td>
-</tr></table>
-</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="method_beforeValidationOnCreate"></a><div class="element clickable method public method_beforeValidationOnCreate" data-toggle="collapse" data-target=".method_beforeValidationOnCreate .collapse">
 <h2>before validating item during creation</h2>
@@ -887,14 +862,8 @@ field values are also populated into class properties.</p></div>
 <a id="property_default_sort_field"> </a><div class="element clickable property public property_default_sort_field" data-toggle="collapse" data-target=".property_default_sort_field .collapse">
 <h2></h2>
 <pre>$default_sort_field </pre>
-<div class="labels"><span class="label">Inherited</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>inherited_from</th>
-<td>\expRecord::$$default_sort_field</td>
-</tr></table>
-</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="property_do_not_validate"> </a><div class="element clickable property public property_do_not_validate" data-toggle="collapse" data-target=".property_do_not_validate .collapse">
 <h2></h2>
@@ -929,6 +898,18 @@ field values are also populated into class properties.</p></div>
 <table class="table table-bordered"><tr>
 <th>inherited_from</th>
 <td>\expRecord::$$get_attachable_for</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_grouping_sql"> </a><div class="element clickable property public property_grouping_sql" data-toggle="collapse" data-target=".property_grouping_sql .collapse">
+<h2></h2>
+<pre>$grouping_sql </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::$$grouping_sql</td>
 </tr></table>
 </div></div>
 </div>
@@ -995,8 +976,14 @@ field values are also populated into class properties.</p></div>
 <a id="property_has_one"> </a><div class="element clickable property public property_has_one" data-toggle="collapse" data-target=".property_has_one .collapse">
 <h2></h2>
 <pre>$has_one </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::$$has_one</td>
+</tr></table>
+</div></div>
 </div>
 <a id="property_identifier"> </a><div class="element clickable property public property_identifier" data-toggle="collapse" data-target=".property_identifier .collapse">
 <h2></h2>
@@ -1061,8 +1048,14 @@ field values are also populated into class properties.</p></div>
 <a id="property_attachable_item_types"> </a><div class="element clickable property protected property_attachable_item_types" data-toggle="collapse" data-target=".property_attachable_item_types .collapse">
 <h2></h2>
 <pre>$attachable_item_types </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::$$attachable_item_types</td>
+</tr></table>
+</div></div>
 </div>
 <a id="property_classinfo"> </a><div class="element clickable property protected property_classinfo" data-toggle="collapse" data-target=".property_classinfo .collapse">
 <h2></h2>
@@ -1083,7 +1076,7 @@ field values are also populated into class properties.</p></div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2012-12-08T17:47:46-05:00.<br></footer></div>
+            generated on 2013-02-26T16:44:05-05:00.<br></footer></div>
 </div>
 </body>
 </html>

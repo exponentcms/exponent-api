@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Exponent 2.1.1 » \expMail</title>
+<title>Exponent 2.2.0 » \expMail</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -15,7 +15,7 @@
 <body>
 <div class="navbar navbar-fixed-top">
 <div class="navbar-inner"><div class="container">
-<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.1.1</a><div class="nav-collapse"><ul class="nav">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.2.0</a><div class="nav-collapse"><ul class="nav">
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
@@ -38,14 +38,14 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3610</span></a></li>
+                <span class="label label-info">3493</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
                 <span class="label label-info">53</span>
 </li>
 <li>fixme 
-                <span class="label label-info">198</span>
+                <span class="label label-info">228</span>
 </li>
 </ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -76,8 +76,7 @@
 <li class="method public "><a href="#method_addCc" title="addCc :: addCc() - This adds Carbon Copy addresses to the message one at a time, so if you want to add multiple CC's it is best to run through a loop in order to put them in."><span class="description">addCc() - This adds Carbon Copy addresses to the message one at a time, so if you want to add multiple CC's it is best to run through a loop in order to put them in.</span><pre>addCc()</pre></a></li>
 <li class="method public "><a href="#method_addFrom" title="addFrom :: addFrom() - This adds the singular From address, if you call it twice, it will replace the old from address."><span class="description">addFrom() - This adds the singular From address, if you call it twice, it will replace the old from address.</span><pre>addFrom()</pre></a></li>
 <li class="method public "><a href="#method_addHTML" title="addHTML :: addHTML() - This function is similar to setHTMLBody except that it includes the HTML in the message body rather than sets it as default."><span class="description">addHTML() - This function is similar to setHTMLBody except that it includes the HTML in the message body rather than sets it as default.</span><pre>addHTML()</pre></a></li>
-<li class="method public "><a href="#method_addHeaders" title="addHeaders :: "><span class="description">addHeaders()
-        </span><pre>addHeaders()</pre></a></li>
+<li class="method public "><a href="#method_addHeaders" title="addHeaders :: addHeaders() - Add text headers to the message."><span class="description">addHeaders() - Add text headers to the message.</span><pre>addHeaders()</pre></a></li>
 <li class="method public "><a href="#method_addRaw" title="addRaw :: addRaw() - This is a wrapper around setHTMLBody for backwards compatibility"><span class="description">addRaw() - This is a wrapper around setHTMLBody for backwards compatibility</span><pre>addRaw()</pre></a></li>
 <li class="method public "><a href="#method_addSubject" title="addSubject :: subject() - This will set the subject of the message, ensuring first that message has been instantiated."><span class="description">subject() - This will set the subject of the message, ensuring first that message has been instantiated.</span><pre>addSubject()</pre></a></li>
 <li class="method public "><a href="#method_addText" title="addText :: addText() - This function is similar to the addHTML function above, it adds a plain text part to the message in case
@@ -288,7 +287,7 @@ $emailItem->send();</td>
 </div>
 <a id="method_addFrom"></a><div class="element clickable method public method_addFrom" data-toggle="collapse" data-target=".method_addFrom .collapse">
 <h2>addFrom() - This adds the singular From address, if you call it twice, it will replace the old from address.</h2>
-<pre>addFrom(string $email, string $name) </pre>
+<pre>addFrom(string $email) </pre>
 <div class="labels"></div>
 <div class="row collapse">
 <div class="span4">
@@ -317,9 +316,6 @@ $emailItem->send();</td>
 <div class="subelement argument">
 <h4>$email</h4>
 <code>string</code><p>This is the email address you want to use as the sender.</p></div>
-<div class="subelement argument">
-<h4>$name</h4>
-<code>string</code><p>This is the name associated with the above email address.</p></div>
 </div>
 <div class="span4">
 <h3>Examples</h3>
@@ -373,15 +369,56 @@ You can also call the addHTML multiple times to append to the message:
 </div>
 </div>
 <a id="method_addHeaders"></a><div class="element clickable method public method_addHeaders" data-toggle="collapse" data-target=".method_addHeaders .collapse">
-<h2>addHeaders()
-        </h2>
-<pre>addHeaders($headers) </pre>
+<h2>addHeaders() - Add text headers to the message.</h2>
+<pre>addHeaders(array $headers) </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
+<div class="row collapse">
+<div class="span4">
+<div class="long_description"><p>Limited to text headers for now.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>author</th>
+<td><a href="mailto:tyleresmart@gmail.com">Tyler Smart</a></td>
+</tr>
+<tr>
+<th>example</th>
+<td>This will include the passed HTML and will set it as an addition to the message body.
+ $emailItem = new expMail();
+ $emailItem->addHTML('<h2>My Text</h2> '); //This adds an alternate version if your email in HTML format
+ $emailItem->addTo('myemail@mysite.com');
+ $emailItem->addFrom('from@sender.com');
+ $emailItem->subject('Hello World!');
+ $headersToAdd = array('Your-Header-Name' => 'the header value', 'SecondHeader-Name' => '2nd header value');
+ $emailItem->addHeaders($headersToAdd);
+ $emailItem->send();</td>
+</tr>
+<tr>
+<th>todo</th>
+<td>add support for other types of headers mentioned below, and a second pass in value/switch to specify what kind headers you are adding
+  # Text Headers
+		Text headers are the simplest type of Header. They contain textual information with no special information included within it for example the Subject header in a message.
+  # Parameterized Headers
+		Parameterized headers are text headers that contain key-value parameters following the textual content. The Content-Type header of a message is a parameterized header since it contains charset information after the content type.
+  # Date Headers
+		Date headers contains an RFC 2822 formatted date (i.e. what PHP's date('r') returns). They are used anywhere a date or time is needed to be presented as a message header.
+  # Mailbox (e-mail address) Headers
+		Mailbox headers contain one or more email addresses, possibly with personalized names attached to them. The data on which they are modeled is represented by an associative array of email addresses and names.
+  # ID Headers
+		ID headers contain identifiers for the entity (or the message). The most notable ID header is the Message-ID header on the message itself.
+  # Path Headers
+		Path headers are like very-restricted mailbox headers. They contain a single email address with no associated name. The Return-Path header of a message is a path header.</td>
+</tr>
+</table>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$headers</h4></div>
-</div></div>
+<div class="subelement argument">
+<h4>$headers</h4>
+<code>array</code><p>Array of text headers to add to the message</p></div>
+</div>
+<div class="span4">
+<h3>Examples</h3>
+<pre class="prettyprint linenums"></pre>
+</div>
+</div>
 </div>
 <a id="method_addRaw"></a><div class="element clickable method public method_addRaw" data-toggle="collapse" data-target=".method_addRaw .collapse">
 <h2>addRaw() - This is a wrapper around setHTMLBody for backwards compatibility</h2>
@@ -934,7 +971,7 @@ an associative array, (or else the message fails immediately).</p></div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2012-12-08T17:47:34-05:00.<br></footer></div>
+            generated on 2013-02-26T16:43:55-05:00.<br></footer></div>
 </div>
 </body>
 </html>

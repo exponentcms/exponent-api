@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Exponent 2.1.1 » \expFile</title>
+<title>Exponent 2.2.0 » \expFile</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -15,7 +15,7 @@
 <body>
 <div class="navbar navbar-fixed-top">
 <div class="navbar-inner"><div class="container">
-<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.1.1</a><div class="nav-collapse"><ul class="nav">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent 2.2.0</a><div class="nav-collapse"><ul class="nav">
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
@@ -38,14 +38,14 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3610</span></a></li>
+                <span class="label label-info">3493</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
                 <span class="label label-info">53</span>
 </li>
 <li>fixme 
-                <span class="label label-info">198</span>
+                <span class="label label-info">228</span>
 </li>
 </ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -108,7 +108,8 @@ all of the records in all of the tables into a string."><span class="description
 This function takes a database object and dumps
 all of the records in all of the tables into a string.</span><pre>dumpDatabase()</pre></a></li>
 <li class="method public "><a href="#method_fileSize" title="fileSize :: Performs a system level check on the file and retrieves its size"><span class="description">Performs a system level check on the file and retrieves its size</span><pre>fileSize()</pre></a></li>
-<li class="method public "><a href="#method_fileUpload" title="fileUpload :: File UPLOAD that also inserts File info into database."><span class="description">File UPLOAD that also inserts File info into database.</span><pre>fileUpload()</pre></a></li>
+<li class="method public "><a href="#method_fileUpload" title="fileUpload :: File ($_POST) UPLOAD that also inserts File info into database."><span class="description">File ($_POST) UPLOAD that also inserts File info into database.</span><pre>fileUpload()</pre></a></li>
+<li class="method public "><a href="#method_fileXHRUpload" title="fileXHRUpload :: XHR (HTML5) File UPLOAD that also inserts File info into database."><span class="description">XHR (HTML5) File UPLOAD that also inserts File info into database.</span><pre>fileXHRUpload()</pre></a></li>
 <li class="method public inherited"><a href="#method_find" title="find :: find an item"><span class="description">find an item</span><pre>find()</pre></a></li>
 <li class="method public inherited"><a href="#method_findBy" title="findBy :: find an item by column"><span class="description">find an item by column</span><pre>findBy()</pre></a></li>
 <li class="method public inherited"><a href="#method_findWhereAttachedTo" title="findWhereAttachedTo :: this function finds models that have this attachable item attached"><span class="description">this function finds models that have this attachable item attached</span><pre>findWhereAttachedTo()</pre></a></li>
@@ -218,6 +219,7 @@ Checks to see if the upload destination file exists.</span><pre>uploadDestinatio
 <li class="property public "><a href="#property_filesize" title="$filesize :: Size of File, in Bytes"><span class="description"></span><pre>$filesize</pre></a></li>
 <li class="property public inherited"><a href="#property_get_assoc_for" title="$get_assoc_for :: "><span class="description"></span><pre>$get_assoc_for</pre></a></li>
 <li class="property public inherited"><a href="#property_get_attachable_for" title="$get_attachable_for :: "><span class="description"></span><pre>$get_attachable_for</pre></a></li>
+<li class="property public inherited"><a href="#property_grouping_sql" title="$grouping_sql :: "><span class="description"></span><pre>$grouping_sql</pre></a></li>
 <li class="property public inherited"><a href="#property_has_and_belongs_to_many" title="$has_and_belongs_to_many :: "><span class="description"></span><pre>$has_and_belongs_to_many</pre></a></li>
 <li class="property public inherited"><a href="#property_has_and_belongs_to_self" title="$has_and_belongs_to_self :: "><span class="description"></span><pre>$has_and_belongs_to_self</pre></a></li>
 <li class="property public inherited"><a href="#property_has_extended_fields" title="$has_extended_fields :: "><span class="description"></span><pre>$has_extended_fields</pre></a></li>
@@ -614,9 +616,9 @@ and determines if the web server can create a new file there.</h2>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"><p>Returns one of the following:
-<br>SYS_FILES_NOTWRITABLE - unable to create files in destination
-<br>SYS_FILES_SUCCESS - A file or directory can be created in destination
-<br>SYS_FILES_FOUNDFILE - Found destination to be a file, not a directory</p></div>
+   <br>SYS_FILES_NOTWRITABLE - unable to create files in destination
+   <br>SYS_FILES_SUCCESS - A file or directory can be created in destination
+   <br>SYS_FILES_FOUNDFILE - Found destination to be a file, not a directory</p></div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Model:expFile</td>
@@ -647,13 +649,13 @@ Copies just the directory structure (including subdirectories) of a given direct
 <div class="subelement argument">
 <h4>$dest</h4>
 <code>string</code><p>The directory to create duplicate structure in.  If this directory is not empty,
-    you may run into some problems, because of file/directory conflicts.</p>
+                            you may run into some problems, because of file/directory conflicts.</p>
 </div>
 <div class="subelement argument">
 <h4>$exclude_dirs</h4>
 <code>array</code><p>An array of directory names to exclude.  These names are
-    path-independent.  Specifying "dir" will ignore all directories and
-    sub-directories named "dir", regardless of their parent.</p>
+                            path-independent.  Specifying "dir" will ignore all directories and
+                            sub-directories named "dir", regardless of their parent.</p>
 </div>
 </div></div>
 </div>
@@ -792,8 +794,8 @@ implementation.</p></div>
 </div></div>
 </div>
 <a id="method_fileUpload"></a><div class="element clickable method public method_fileUpload" data-toggle="collapse" data-target=".method_fileUpload .collapse">
-<h2>File UPLOAD that also inserts File info into database.</h2>
-<pre>fileUpload(string $_postName, bool | string $_force, bool | string $_save, string $_destFile, string $_destDir) : object: object</pre>
+<h2>File ($_POST) UPLOAD that also inserts File info into database.</h2>
+<pre>fileUpload(string $_postName, bool | string $_force, bool | string $_save, string $_destFile, string $_destDir, null $_max_width) : object: object</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"><p>File UPLOAD is a straight forward uploader and processor. It can accept
@@ -843,6 +845,74 @@ overwritten (default to NO overwrite)</p></div>
 <div class="subelement argument">
 <h4>$_destDir</h4>
 <code>string</code><p>Override the default FILE UPLOAD location</p></div>
+<div class="subelement argument">
+<h4>$_max_width</h4>
+<code>null</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>object</code>$_objFile expFile Object</div>
+<div class="subelement response">
+<code>object</code>$errMsg   Error message if something failed@throws void</div>
+</div></div>
+</div>
+<a id="method_fileXHRUpload"></a><div class="element clickable method public method_fileXHRUpload" data-toggle="collapse" data-target=".method_fileXHRUpload .collapse">
+<h2>XHR (HTML5) File UPLOAD that also inserts File info into database.</h2>
+<pre>fileXHRUpload(null $fileName, bool | string $_force, bool | string $_save, string $_destFile, string $_destDir, null $_max_width) : object: object</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>File UPLOAD is a straight forward uploader and processor. It can accept
+filename and destination directory overrides as well. It has an additional
+pair of flags that allow for an upload NOT to be inserted into the database
+(default to INSERT) and if it previous file, with the same name, should be
+overwritten (default to NO overwrite)</p></div>
+<table class="table table-bordered">
+<tr>
+<th>static</th>
+<td></td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>description</td>
+</tr>
+<tr>
+<th>requires</th>
+<td>class_name</td>
+</tr>
+<tr>
+<th>PHPUnit</th>
+<td>Not Defined|Implement|Completed</td>
+</tr>
+<tr>
+<th>TODO</th>
+<td>Have file upload overwrite make sure not to duplicate its record in the DB</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$fileName</h4>
+<code>null</code>
+</div>
+<div class="subelement argument">
+<h4>$_force</h4>
+<code>bool</code><code>string</code><p>Force the uploaded to overwrite existing file of same name</p></div>
+<div class="subelement argument">
+<h4>$_save</h4>
+<code>bool</code><code>string</code><p>Save file info to database, defaults to TRUE</p></div>
+<div class="subelement argument">
+<h4>$_destFile</h4>
+<code>string</code><p>Override the uploaded file name</p></div>
+<div class="subelement argument">
+<h4>$_destDir</h4>
+<code>string</code><p>Override the default FILE UPLOAD location</p></div>
+<div class="subelement argument">
+<h4>$_max_width</h4>
+<code>null</code>
+</div>
 <h3>Returns</h3>
 <div class="subelement response">
 <code>object</code>$_objFile expFile Object</div>
@@ -1658,8 +1728,8 @@ was fine.</p></div>
 <div class="subelement argument">
 <h4>$errors</h4>
 <code>array</code><p>A referenced array that stores errors.  Whatever
- variable is passed in this argument will contain all errors encountered
-during the parse/restore.</p>
+                        variable is passed in this argument will contain all errors encountered
+                        during the parse/restore.</p>
 </div>
 <div class="subelement argument">
 <h4>$force_version</h4>
@@ -1736,8 +1806,8 @@ Returns true if the file already exists, and false if it does not.</p></div>
 <div class="subelement argument">
 <h4>$name</h4>
 <code>string</code><p>The name of the file control used to upload the
- file.  The files subsystem will look to the $_FILES array
- to get the filename of the uploaded file.</p>
+                    file.  The files subsystem will look to the $_FILES array
+                    to get the filename of the uploaded file.</p>
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code>bool</code></div>
@@ -1981,6 +2051,18 @@ Returns true if the file already exists, and false if it does not.</p></div>
 <table class="table table-bordered"><tr>
 <th>inherited_from</th>
 <td>\expRecord::$$get_attachable_for</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_grouping_sql"> </a><div class="element clickable property public property_grouping_sql" data-toggle="collapse" data-target=".property_grouping_sql .collapse">
+<h2></h2>
+<pre>$grouping_sql </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::$$grouping_sql</td>
 </tr></table>
 </div></div>
 </div>
@@ -2461,7 +2543,7 @@ This is a "relabel" of the PHP 'LOCK_EX' constant</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2012-12-08T17:47:45-05:00.<br></footer></div>
+            generated on 2013-02-26T16:44:04-05:00.<br></footer></div>
 </div>
 </body>
 </html>
