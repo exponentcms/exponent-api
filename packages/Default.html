@@ -38,7 +38,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3493</span></a></li>
+                <span class="label label-info">3499</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
@@ -254,6 +254,7 @@ for class files.</span><pre>expLoadClasses</pre></a></li>
 <li><a href="#product" title="This is the class expRecord">product</a></li>
 <li><a href="#fedexcalculator" title="This is the class expRecord">fedexcalculator</a></li>
 <li><a href="#upscalculator" title="This is the class expRecord">upscalculator</a></li>
+<li><a href="#headlineController" title="This is the class expController">headlineController</a></li>
 <li><a href="#motdController" title="This is the class expController">motdController</a></li>
 <li><a href="#rssfeed" title="">rssfeed</a></li>
 <li><a href="#photoController" title="We must subclass the photosController due to a plural/singular naming issue">photoController</a></li>
@@ -272,7 +273,6 @@ for class files.</span><pre>expLoadClasses</pre></a></li>
 <li><a href="#add_filedownload_published" title="This is the class add_filedownload_published">add_filedownload_published</a></li>
 <li><a href="#add_file_posted" title="This is the class add_file_posted">add_file_posted</a></li>
 <li><a href="#clear_cache" title="This is the class clear_cache">clear_cache</a></li>
-<li><a href="#convert_db_trim" title="This is the abstract class upgradescript">convert_db_trim</a></li>
 <li><a href="#convert_permissions" title="This is the class convert_permissions">convert_permissions</a></li>
 <li><a href="#fix_database" title="This is the class fix_database">fix_database</a></li>
 <li><a href="#fix_faq_filedownload_modules" title="This is the class fix_faq_filedownload_modules">fix_faq_filedownload_modules</a></li>
@@ -280,10 +280,8 @@ for class files.</span><pre>expLoadClasses</pre></a></li>
 <li><a href="#fix_photo_module" title="This is the class fix_photo_module">fix_photo_module</a></li>
 <li><a href="#fix_table_names" title="This is the class fix_table_names">fix_table_names</a></li>
 <li><a href="#invert_news_items_rank" title="This is the class invert_news_items_rank">invert_news_items_rank</a></li>
-<li><a href="#remove_exp1_faqmodule" title="This is the abstract class upgradescript">remove_exp1_faqmodule</a></li>
 <li><a href="#remove_global_categories" title="This is the class remove_global_categories">remove_global_categories</a></li>
 <li><a href="#remove_headlinecontroller" title="This is the class remove_headlinecontroller">remove_headlinecontroller</a></li>
-<li><a href="#remove_locationref" title="This is the abstract class upgradescript">remove_locationref</a></li>
 <li><a href="#remove_oldfiles" title="This is the class remove_oldfiles">remove_oldfiles</a></li>
 <li><a href="#update_ckeditorv4" title="This is the class update_ckeditorv4">update_ckeditorv4</a></li>
 <li><a href="#update_ealerts" title="This is the class update_ealerts">update_ealerts</a></li>
@@ -291,10 +289,10 @@ for class files.</span><pre>expLoadClasses</pre></a></li>
 <li><a href="#update_profile_paths" title="This is the class update_profile_paths">update_profile_paths</a></li>
 <li><a href="#update_root_user" title="This is the class update_root_user">update_root_user</a></li>
 <li><a href="#update_rssfeeds" title="This is the class update_rssfeeds">update_rssfeeds</a></li>
-<li><a href="#upgrade_attachableitem_tables" title="This is the abstract class upgradescript">upgrade_attachableitem_tables</a></li>
 <li><a href="#upgrade_calendar" title="This is the class upgrade_calendar">upgrade_calendar</a></li>
 <li><a href="#upgrade_container2" title="This is the class upgrade_container2">upgrade_container2</a></li>
 <li><a href="#upgrade_forms" title="This is the class upgrade_forms">upgrade_forms</a></li>
+<li><a href="#upgrade_mediaplayer" title="This is the class upgrade_mediaplayer">upgrade_mediaplayer</a></li>
 <li><a href="#upgrade_navigation" title="This is the class upgrade_navigation">upgrade_navigation</a></li>
 <li><a href="#upgrade_simplepoll" title="This is the class upgrade_simplepoll">upgrade_simplepoll</a></li>
 <li><a href="#version_tracking" title="This is the class version_tracking">version_tracking</a></li>
@@ -455,17 +453,11 @@ for class files.</span><pre>expLoadClasses</pre></a></li>
 <li class="constant  "><a href="#constant_INCLUDE_AJAX_SEARCH" title="INCLUDE_AJAX_SEARCH :: "><span class="description">INCLUDE_AJAX_SEARCH</span><pre>INCLUDE_AJAX_SEARCH</pre></a></li>
 <li class="constant  "><a href="#constant_INCLUDE_ANONYMOUS_SEARCH" title="INCLUDE_ANONYMOUS_SEARCH :: "><span class="description">INCLUDE_ANONYMOUS_SEARCH</span><pre>INCLUDE_ANONYMOUS_SEARCH</pre></a></li>
 <li class="constant  "><a href="#constant_INVERT_HIDE_TITLE" title="INVERT_HIDE_TITLE :: "><span class="description">INVERT_HIDE_TITLE</span><pre>INVERT_HIDE_TITLE</pre></a></li>
-<li class="constant  "><a href="#constant_JQUERYUI_CSS" title="JQUERYUI_CSS :: "><span class="description">JQUERYUI_CSS</span><pre>JQUERYUI_CSS</pre></a></li>
 <li class="constant  "><a href="#constant_JQUERYUI_SCRIPT" title="JQUERYUI_SCRIPT :: "><span class="description">JQUERYUI_SCRIPT</span><pre>JQUERYUI_SCRIPT</pre></a></li>
-<li class="constant  "><a href="#constant_JQUERYUI_THEME" title="JQUERYUI_THEME :: "><span class="description">JQUERYUI_THEME</span><pre>JQUERYUI_THEME</pre></a></li>
 <li class="constant  "><a href="#constant_JQUERYUI_VERSION" title="JQUERYUI_VERSION :: "><span class="description">JQUERYUI_VERSION</span><pre>JQUERYUI_VERSION</pre></a></li>
 <li class="constant  "><a href="#constant_JQUERY_PATH" title="JQUERY_PATH :: "><span class="description">JQUERY_PATH</span><pre>JQUERY_PATH</pre></a></li>
 <li class="constant  "><a href="#constant_JQUERY_RELATIVE" title="JQUERY_RELATIVE :: "><span class="description">JQUERY_RELATIVE</span><pre>JQUERY_RELATIVE</pre></a></li>
 <li class="constant  "><a href="#constant_JQUERY_SCRIPT" title="JQUERY_SCRIPT :: "><span class="description">JQUERY_SCRIPT</span><pre>JQUERY_SCRIPT</pre></a></li>
-<li class="constant  "><a href="#constant_JQUERY_THEME" title="JQUERY_THEME :: "><span class="description">JQUERY_THEME</span><pre>JQUERY_THEME</pre></a></li>
-<li class="constant  "><a href="#constant_JQUERY_THEME" title="JQUERY_THEME :: "><span class="description">JQUERY_THEME</span><pre>JQUERY_THEME</pre></a></li>
-<li class="constant  "><a href="#constant_JQUERY_THEME" title="JQUERY_THEME :: "><span class="description">JQUERY_THEME</span><pre>JQUERY_THEME</pre></a></li>
-<li class="constant  "><a href="#constant_JQUERY_THEME" title="JQUERY_THEME :: "><span class="description">JQUERY_THEME</span><pre>JQUERY_THEME</pre></a></li>
 <li class="constant  "><a href="#constant_JQUERY_URL" title="JQUERY_URL :: "><span class="description">JQUERY_URL</span><pre>JQUERY_URL</pre></a></li>
 <li class="constant  "><a href="#constant_JQUERY_VERSION" title="JQUERY_VERSION :: "><span class="description">JQUERY_VERSION</span><pre>JQUERY_VERSION</pre></a></li>
 <li class="constant  "><a href="#constant_JS_RELATIVE" title="JS_RELATIVE :: "><span class="description">JS_RELATIVE</span><pre>JS_RELATIVE</pre></a></li>
@@ -496,6 +488,8 @@ for class files.</span><pre>expLoadClasses</pre></a></li>
 <li class="constant  "><a href="#constant_LOGO_TEXT_SUPERSCRIPT" title="LOGO_TEXT_SUPERSCRIPT :: "><span class="description">LOGO_TEXT_SUPERSCRIPT</span><pre>LOGO_TEXT_SUPERSCRIPT</pre></a></li>
 <li class="constant  "><a href="#constant_MAINTENANCE_MODE" title="MAINTENANCE_MODE :: "><span class="description">MAINTENANCE_MODE</span><pre>MAINTENANCE_MODE</pre></a></li>
 <li class="constant  "><a href="#constant_MAINTENANCE_MSG_HTML" title="MAINTENANCE_MSG_HTML :: "><span class="description">MAINTENANCE_MSG_HTML</span><pre>MAINTENANCE_MSG_HTML</pre></a></li>
+<li class="constant  "><a href="#constant_MENU_ALIGN" title="MENU_ALIGN :: "><span class="description">MENU_ALIGN</span><pre>MENU_ALIGN</pre></a></li>
+<li class="constant  "><a href="#constant_MENU_LOCATION" title="MENU_LOCATION :: "><span class="description">MENU_LOCATION</span><pre>MENU_LOCATION</pre></a></li>
 <li class="constant  "><a href="#constant_MIMEICON_RELATIVE" title="MIMEICON_RELATIVE :: "><span class="description">MIMEICON_RELATIVE</span><pre>MIMEICON_RELATIVE</pre></a></li>
 <li class="constant  "><a href="#constant_MINIFY" title="MINIFY :: "><span class="description">MINIFY</span><pre>MINIFY</pre></a></li>
 <li class="constant  "><a href="#constant_MINIFY_ERROR_LOGGER" title="MINIFY_ERROR_LOGGER :: "><span class="description">MINIFY_ERROR_LOGGER</span><pre>MINIFY_ERROR_LOGGER</pre></a></li>
@@ -589,7 +583,6 @@ for class files.</span><pre>expLoadClasses</pre></a></li>
 <li class="constant  "><a href="#constant_SMTP_USE_PHP_MAIL" title="SMTP_USE_PHP_MAIL :: "><span class="description">SMTP_USE_PHP_MAIL</span><pre>SMTP_USE_PHP_MAIL</pre></a></li>
 <li class="constant  "><a href="#constant_SOURCE_SELECTOR" title="SOURCE_SELECTOR :: "><span class="description">SOURCE_SELECTOR</span><pre>SOURCE_SELECTOR</pre></a></li>
 <li class="constant  "><a href="#constant_SOURCE_SELECTOR" title="SOURCE_SELECTOR :: "><span class="description">SOURCE_SELECTOR</span><pre>SOURCE_SELECTOR</pre></a></li>
-<li class="constant  "><a href="#constant_SWATCH" title="SWATCH :: "><span class="description">SWATCH</span><pre>SWATCH</pre></a></li>
 <li class="constant  "><a href="#constant_SWATCH" title="SWATCH :: "><span class="description">SWATCH</span><pre>SWATCH</pre></a></li>
 <li class="constant  "><a href="#constant_SWIFT_PATH" title="SWIFT_PATH :: "><span class="description">SWIFT_PATH</span><pre>SWIFT_PATH</pre></a></li>
 <li class="constant  "><a href="#constant_SWIFT_VERSION" title="SWIFT_VERSION :: "><span class="description">SWIFT_VERSION</span><pre>SWIFT_VERSION</pre></a></li>
@@ -1653,13 +1646,6 @@ just before it gets rendered to the screen should happen here.</p></div>
 <div class="details collapse"></div>
 <a href="../classes/clear_cache.html" class="more">« More »</a>
 </div>
-<div id="convert_db_trim" class="element ajax clickable class">
-<h1>convert_db_trim<a href="../classes/convert_db_trim.html">¶</a>
-</h1>
-<p class="short_description">This is the abstract class upgradescript</p>
-<div class="details collapse"></div>
-<a href="../classes/convert_db_trim.html" class="more">« More »</a>
-</div>
 <div id="convert_permissions" class="element ajax clickable class">
 <h1>convert_permissions<a href="../classes/convert_permissions.html">¶</a>
 </h1>
@@ -1863,6 +1849,13 @@ just before it gets rendered to the screen should happen here.</p></div>
 <div class="details collapse"></div>
 <a href="../classes/fix_table_names.html" class="more">« More »</a>
 </div>
+<div id="headlineController" class="element ajax clickable class">
+<h1>headlineController<a href="../classes/headlineController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/headlineController.html" class="more">« More »</a>
+</div>
 <div id="htmleditorcontrol" class="element ajax clickable class">
 <h1>htmleditorcontrol<a href="../classes/htmleditorcontrol.html">¶</a>
 </h1>
@@ -1954,13 +1947,6 @@ just before it gets rendered to the screen should happen here.</p></div>
 <div class="details collapse"></div>
 <a href="../classes/product.html" class="more">« More »</a>
 </div>
-<div id="remove_exp1_faqmodule" class="element ajax clickable class">
-<h1>remove_exp1_faqmodule<a href="../classes/remove_exp1_faqmodule.html">¶</a>
-</h1>
-<p class="short_description">This is the abstract class upgradescript</p>
-<div class="details collapse"></div>
-<a href="../classes/remove_exp1_faqmodule.html" class="more">« More »</a>
-</div>
 <div id="remove_global_categories" class="element ajax clickable class">
 <h1>remove_global_categories<a href="../classes/remove_global_categories.html">¶</a>
 </h1>
@@ -1974,13 +1960,6 @@ just before it gets rendered to the screen should happen here.</p></div>
 <p class="short_description">This is the class remove_headlinecontroller</p>
 <div class="details collapse"></div>
 <a href="../classes/remove_headlinecontroller.html" class="more">« More »</a>
-</div>
-<div id="remove_locationref" class="element ajax clickable class">
-<h1>remove_locationref<a href="../classes/remove_locationref.html">¶</a>
-</h1>
-<p class="short_description">This is the abstract class upgradescript</p>
-<div class="details collapse"></div>
-<a href="../classes/remove_locationref.html" class="more">« More »</a>
 </div>
 <div id="remove_oldfiles" class="element ajax clickable class">
 <h1>remove_oldfiles<a href="../classes/remove_oldfiles.html">¶</a>
@@ -2087,13 +2066,6 @@ just before it gets rendered to the screen should happen here.</p></div>
 <div class="details collapse"></div>
 <a href="../classes/update_rssfeeds.html" class="more">« More »</a>
 </div>
-<div id="upgrade_attachableitem_tables" class="element ajax clickable class">
-<h1>upgrade_attachableitem_tables<a href="../classes/upgrade_attachableitem_tables.html">¶</a>
-</h1>
-<p class="short_description">This is the abstract class upgradescript</p>
-<div class="details collapse"></div>
-<a href="../classes/upgrade_attachableitem_tables.html" class="more">« More »</a>
-</div>
 <div id="upgrade_calendar" class="element ajax clickable class">
 <h1>upgrade_calendar<a href="../classes/upgrade_calendar.html">¶</a>
 </h1>
@@ -2114,6 +2086,13 @@ just before it gets rendered to the screen should happen here.</p></div>
 <p class="short_description">This is the class upgrade_forms</p>
 <div class="details collapse"></div>
 <a href="../classes/upgrade_forms.html" class="more">« More »</a>
+</div>
+<div id="upgrade_mediaplayer" class="element ajax clickable class">
+<h1>upgrade_mediaplayer<a href="../classes/upgrade_mediaplayer.html">¶</a>
+</h1>
+<p class="short_description">This is the class upgrade_mediaplayer</p>
+<div class="details collapse"></div>
+<a href="../classes/upgrade_mediaplayer.html" class="more">« More »</a>
 </div>
 <div id="upgrade_navigation" class="element ajax clickable class">
 <h1>upgrade_navigation<a href="../classes/upgrade_navigation.html">¶</a>
@@ -3018,21 +2997,9 @@ just before it gets rendered to the screen should happen here.</p></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="constant_JQUERYUI_CSS"> </a><div class="element clickable constant  constant_JQUERYUI_CSS" data-toggle="collapse" data-target=".constant_JQUERYUI_CSS .collapse">
-<h2>JQUERYUI_CSS</h2>
-<pre>JQUERYUI_CSS </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
 <a id="constant_JQUERYUI_SCRIPT"> </a><div class="element clickable constant  constant_JQUERYUI_SCRIPT" data-toggle="collapse" data-target=".constant_JQUERYUI_SCRIPT .collapse">
 <h2>JQUERYUI_SCRIPT</h2>
 <pre>JQUERYUI_SCRIPT </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="constant_JQUERYUI_THEME"> </a><div class="element clickable constant  constant_JQUERYUI_THEME" data-toggle="collapse" data-target=".constant_JQUERYUI_THEME .collapse">
-<h2>JQUERYUI_THEME</h2>
-<pre>JQUERYUI_THEME </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -3057,30 +3024,6 @@ just before it gets rendered to the screen should happen here.</p></div>
 <a id="constant_JQUERY_SCRIPT"> </a><div class="element clickable constant  constant_JQUERY_SCRIPT" data-toggle="collapse" data-target=".constant_JQUERY_SCRIPT .collapse">
 <h2>JQUERY_SCRIPT</h2>
 <pre>JQUERY_SCRIPT </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="constant_JQUERY_THEME"> </a><div class="element clickable constant  constant_JQUERY_THEME" data-toggle="collapse" data-target=".constant_JQUERY_THEME .collapse">
-<h2>JQUERY_THEME</h2>
-<pre>JQUERY_THEME </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="constant_JQUERY_THEME"> </a><div class="element clickable constant  constant_JQUERY_THEME" data-toggle="collapse" data-target=".constant_JQUERY_THEME .collapse">
-<h2>JQUERY_THEME</h2>
-<pre>JQUERY_THEME </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="constant_JQUERY_THEME"> </a><div class="element clickable constant  constant_JQUERY_THEME" data-toggle="collapse" data-target=".constant_JQUERY_THEME .collapse">
-<h2>JQUERY_THEME</h2>
-<pre>JQUERY_THEME </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="constant_JQUERY_THEME"> </a><div class="element clickable constant  constant_JQUERY_THEME" data-toggle="collapse" data-target=".constant_JQUERY_THEME .collapse">
-<h2>JQUERY_THEME</h2>
-<pre>JQUERY_THEME </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -3261,6 +3204,18 @@ just before it gets rendered to the screen should happen here.</p></div>
 <a id="constant_MAINTENANCE_MSG_HTML"> </a><div class="element clickable constant  constant_MAINTENANCE_MSG_HTML" data-toggle="collapse" data-target=".constant_MAINTENANCE_MSG_HTML .collapse">
 <h2>MAINTENANCE_MSG_HTML</h2>
 <pre>MAINTENANCE_MSG_HTML </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MENU_ALIGN"> </a><div class="element clickable constant  constant_MENU_ALIGN" data-toggle="collapse" data-target=".constant_MENU_ALIGN .collapse">
+<h2>MENU_ALIGN</h2>
+<pre>MENU_ALIGN </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MENU_LOCATION"> </a><div class="element clickable constant  constant_MENU_LOCATION" data-toggle="collapse" data-target=".constant_MENU_LOCATION .collapse">
+<h2>MENU_LOCATION</h2>
+<pre>MENU_LOCATION </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -3828,12 +3783,6 @@ just before it gets rendered to the screen should happen here.</p></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="constant_SWATCH"> </a><div class="element clickable constant  constant_SWATCH" data-toggle="collapse" data-target=".constant_SWATCH .collapse">
-<h2>SWATCH</h2>
-<pre>SWATCH </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
 <a id="constant_SWIFT_PATH"> </a><div class="element clickable constant  constant_SWIFT_PATH" data-toggle="collapse" data-target=".constant_SWIFT_PATH .collapse">
 <h2>SWIFT_PATH</h2>
 <pre>SWIFT_PATH </pre>
@@ -4164,7 +4113,7 @@ just before it gets rendered to the screen should happen here.</p></div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-02-26T16:43:47-05:00.<br></footer></div>
+            generated on 2013-03-09T08:44:27-05:00.<br></footer></div>
 </div>
 </body>
 </html>

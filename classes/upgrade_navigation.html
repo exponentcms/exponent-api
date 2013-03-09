@@ -38,7 +38,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3493</span></a></li>
+                <span class="label label-info">3499</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
@@ -74,12 +74,16 @@
 <li class="method public "><a href="#method_description" title="description :: generic description of upgrade script"><span class="description">generic description of upgrade script</span><pre>description()</pre></a></li>
 <li class="method public "><a href="#method_name" title="name :: name/title of upgrade script"><span class="description">name/title of upgrade script</span><pre>name()</pre></a></li>
 <li class="method public "><a href="#method_needed" title="needed :: This routine should perform additional test(s) to see if upgrade script should be run (files/tables exist, etc."><span class="description">This routine should perform additional test(s) to see if upgrade script should be run (files/tables exist, etc.</span><pre>needed()</pre></a></li>
+<li class="method public inherited"><a href="#method_prioritize" title="prioritize :: Comparison function to prioritize upgrade scripts"><span class="description">Comparison function to prioritize upgrade scripts</span><pre>prioritize()</pre></a></li>
 <li class="method public "><a href="#method_upgrade" title="upgrade :: converts all navigationmodule modules/items into navigation (controller) modules/items and deletes navigationmodule files"><span class="description">converts all navigationmodule modules/items into navigation (controller) modules/items and deletes navigationmodule files</span><pre>upgrade()</pre></a></li>
 </ul>
 </li>
 <li class="nav-header">
 <i class="icon-custom icon-property"></i> Properties
-                    <ul><li class="property public inherited"><a href="#property_optional" title="$optional :: "><span class="description"></span><pre>$optional</pre></a></li></ul>
+                    <ul>
+<li class="property public inherited"><a href="#property_optional" title="$optional :: "><span class="description"></span><pre>$optional</pre></a></li>
+<li class="property public inherited"><a href="#property_priority" title="$priority :: "><span class="description"></span><pre>$priority</pre></a></li>
+</ul>
 </li>
 <li class="nav-header protected">» Protected
                     <ul>
@@ -154,6 +158,25 @@
 <div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
+<a id="method_prioritize"></a><div class="element clickable method public method_prioritize" data-toggle="collapse" data-target=".method_prioritize .collapse">
+<h2>Comparison function to prioritize upgrade scripts</h2>
+<pre>prioritize($a, $b) : bool</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\upgradescript::prioritize()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$a</h4></div>
+<div class="subelement argument"><h4>$b</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
 <a id="method_upgrade"></a><div class="element clickable method public method_upgrade" data-toggle="collapse" data-target=".method_upgrade .collapse">
 <h2>converts all navigationmodule modules/items into navigation (controller) modules/items and deletes navigationmodule files</h2>
 <pre>upgrade() : bool</pre>
@@ -178,6 +201,18 @@
 </tr></table>
 </div></div>
 </div>
+<a id="property_priority"> </a><div class="element clickable property public property_priority" data-toggle="collapse" data-target=".property_priority .collapse">
+<h2></h2>
+<pre>$priority </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\upgradescript::$$priority</td>
+</tr></table>
+</div></div>
+</div>
 <a id="property_from_version"> </a><div class="element clickable property protected property_from_version" data-toggle="collapse" data-target=".property_from_version .collapse">
 <h2></h2>
 <pre>$from_version </pre>
@@ -197,7 +232,7 @@
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-02-26T16:44:11-05:00.<br></footer></div>
+            generated on 2013-03-09T08:44:50-05:00.<br></footer></div>
 </div>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Exponent 2.2.0 » \recyclebinController</title>
+<title>Exponent 2.2.0 » \mediaController</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -19,36 +19,15 @@
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a>Namespaces</a></li>
-<li><a href="../namespaces/Cilex.html"><i class="icon-th"></i> Cilex</a></li>
-<li><a href="../namespaces/Composer.html"><i class="icon-th"></i> Composer</a></li>
-<li><a href="../namespaces/Pimple.html"><i class="icon-th"></i> Pimple</a></li>
-<li><a href="../namespaces/Symfony.html"><i class="icon-th"></i> Symfony</a></li>
-<li><a href="../namespaces/Test.html"><i class="icon-th"></i> Test</a></li>
-<li><a href="../namespaces/Zend.html"><i class="icon-th"></i> Zend</a></li>
-<li><a href="../namespaces/dflydev.html"><i class="icon-th"></i> dflydev</a></li>
-<li><a href="../namespaces/foo.html"><i class="icon-th"></i> foo</a></li>
-<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
-<li><a href="../namespaces/phpDocumentor.html"><i class="icon-th"></i> phpDocumentor</a></li>
 <li><a>Packages</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
 <li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 <li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
 <li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
-<li><a href="../packages/Package.html"><i class="icon-folder-open"></i> Package</a></li>
-<li><a href="../packages/Parser.html"><i class="icon-folder-open"></i> Parser</a></li>
 <li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
 <li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
-<li><a href="../packages/SomePackage.html"><i class="icon-folder-open"></i> SomePackage</a></li>
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
-<li><a href="../packages/Tokens.html"><i class="icon-folder-open"></i> Tokens</a></li>
-<li><a href="../packages/Transformation.html"><i class="icon-folder-open"></i> Transformation</a></li>
-<li><a href="../packages/Transformer.html"><i class="icon-folder-open"></i> Transformer</a></li>
-<li><a href="../packages/Zend.html"><i class="icon-folder-open"></i> Zend</a></li>
-<li><a href="../packages/phpDocumentor.html"><i class="icon-folder-open"></i> phpDocumentor</a></li>
-<li><a href="../packages/pimple.html"><i class="icon-folder-open"></i> pimple</a></li>
-<li><a href="../packages/twig.html"><i class="icon-folder-open"></i> twig</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -59,18 +38,18 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">7875</span></a></li>
+                <span class="label label-info">3499</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
-                <span class="label label-info">77</span>
+                <span class="label label-info">53</span>
 </li>
 <li>fixme 
-                <span class="label label-info">231</span>
+                <span class="label label-info">228</span>
 </li>
 </ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">5</span></a></li>
+                <span class="label label-info">0</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -95,7 +74,7 @@
         </span><pre>__construct()</pre></a></li>
 <li class="method public inherited"><a href="#method_addContentToSearch" title="addContentToSearch :: add all module items to search index"><span class="description">add all module items to search index</span><pre>addContentToSearch()</pre></a></li>
 <li class="method public inherited"><a href="#method_aggregateWhereClause" title="aggregateWhereClause :: The aggregateWhereClause function creates a sql where clause which also includes aggregated module content"><span class="description">The aggregateWhereClause function creates a sql where clause which also includes aggregated module content</span><pre>aggregateWhereClause()</pre></a></li>
-<li class="method public "><a href="#method_author" title="author :: author of module"><span class="description">author of module</span><pre>author()</pre></a></li>
+<li class="method public inherited"><a href="#method_author" title="author :: author of module"><span class="description">author of module</span><pre>author()</pre></a></li>
 <li class="method public inherited"><a href="#method_canExportData" title="canExportData :: can this module export data?"><span class="description">can this module export data?</span><pre>canExportData()</pre></a></li>
 <li class="method public inherited"><a href="#method_canImportData" title="canImportData :: can this module import data?"><span class="description">can this module import data?</span><pre>canImportData()</pre></a></li>
 <li class="method public inherited"><a href="#method_categories" title="categories :: "><span class="description">categories()
@@ -114,10 +93,10 @@
 <li class="method public inherited"><a href="#method_edit" title="edit :: edit item in module, also used to copy items"><span class="description">edit item in module, also used to copy items</span><pre>edit()</pre></a></li>
 <li class="method public inherited"><a href="#method_getModels" title="getModels :: get the models associated with this module"><span class="description">get the models associated with this module</span><pre>getModels()</pre></a></li>
 <li class="method public inherited"><a href="#method_getRSSContent" title="getRSSContent :: get the items in an rss feed format"><span class="description">get the items in an rss feed format</span><pre>getRSSContent()</pre></a></li>
-<li class="method public "><a href="#method_hasContent" title="hasContent :: does module have content available?"><span class="description">does module have content available?</span><pre>hasContent()</pre></a></li>
-<li class="method public "><a href="#method_hasSources" title="hasSources :: does module have sources available?"><span class="description">does module have sources available?</span><pre>hasSources()</pre></a></li>
+<li class="method public inherited"><a href="#method_hasContent" title="hasContent :: does module have content available?"><span class="description">does module have content available?</span><pre>hasContent()</pre></a></li>
+<li class="method public inherited"><a href="#method_hasSources" title="hasSources :: does module have sources available?"><span class="description">does module have sources available?</span><pre>hasSources()</pre></a></li>
 <li class="method public inherited"><a href="#method_hasViews" title="hasViews :: does module have views available?"><span class="description">does module have views available?</span><pre>hasViews()</pre></a></li>
-<li class="method public inherited"><a href="#method_isSearchable" title="isSearchable :: is module content searchable?"><span class="description">is module content searchable?</span><pre>isSearchable()</pre></a></li>
+<li class="method public "><a href="#method_isSearchable" title="isSearchable :: is module content searchable?"><span class="description">is module content searchable?</span><pre>isSearchable()</pre></a></li>
 <li class="method public inherited"><a href="#method_manage" title="manage :: display module management view"><span class="description">display module management view</span><pre>manage()</pre></a></li>
 <li class="method public inherited"><a href="#method_manage_ranks" title="manage_ranks :: rerank module items from ddrerank"><span class="description">rerank module items from ddrerank</span><pre>manage_ranks()</pre></a></li>
 <li class="method public inherited"><a href="#method_merge" title="merge :: merge/move aggregated item into this module"><span class="description">merge/move aggregated item into this module</span><pre>merge()</pre></a></li>
@@ -131,7 +110,7 @@
 <li class="method public inherited"><a href="#method_saveconfig" title="saveconfig :: save module configuration"><span class="description">save module configuration</span><pre>saveconfig()</pre></a></li>
 <li class="method public inherited"><a href="#method_searchCategory" title="searchCategory :: category of items searched in the module"><span class="description">category of items searched in the module</span><pre>searchCategory()</pre></a></li>
 <li class="method public inherited"><a href="#method_searchName" title="searchName :: type of items searched in the module"><span class="description">type of items searched in the module</span><pre>searchName()</pre></a></li>
-<li class="method public "><a href="#method_show" title="show :: default view for individual item"><span class="description">default view for individual item</span><pre>show()</pre></a></li>
+<li class="method public inherited"><a href="#method_show" title="show :: default view for individual item"><span class="description">default view for individual item</span><pre>show()</pre></a></li>
 <li class="method public inherited"><a href="#method_showByTags" title="showByTags :: view items referenced by tags"><span class="description">view items referenced by tags</span><pre>showByTags()</pre></a></li>
 <li class="method public inherited"><a href="#method_showByTitle" title="showByTitle :: view the item by referring to its title"><span class="description">view the item by referring to its title</span><pre>showByTitle()</pre></a></li>
 <li class="method public inherited"><a href="#method_showRandom" title="showRandom :: view a random item"><span class="description">view a random item</span><pre>showRandom()</pre></a></li>
@@ -148,26 +127,26 @@
 <li class="nav-header">
 <i class="icon-custom icon-property"></i> Properties
                     <ul>
-<li class="property public "><a href="#property_add_permissions" title="$add_permissions :: "><span class="description"></span><pre>$add_permissions</pre></a></li>
 <li class="property public inherited"><a href="#property_asset_path" title="$asset_path :: "><span class="description"></span><pre>$asset_path</pre></a></li>
 <li class="property public inherited"><a href="#property_baseclassname" title="$baseclassname :: "><span class="description"></span><pre>$baseclassname</pre></a></li>
 <li class="property public inherited"><a href="#property_basemodel_name" title="$basemodel_name :: "><span class="description"></span><pre>$basemodel_name</pre></a></li>
 <li class="property public inherited"><a href="#property_classinfo" title="$classinfo :: "><span class="description"></span><pre>$classinfo</pre></a></li>
-<li class="property public inherited"><a href="#property_codequality" title="$codequality :: "><span class="description"></span><pre>$codequality</pre></a></li>
+<li class="property public "><a href="#property_codequality" title="$codequality :: "><span class="description"></span><pre>$codequality</pre></a></li>
 <li class="property public inherited"><a href="#property_config" title="$config :: "><span class="description"></span><pre>$config</pre></a></li>
 <li class="property public inherited"><a href="#property_filepath" title="$filepath :: "><span class="description"></span><pre>$filepath</pre></a></li>
 <li class="property public inherited"><a href="#property_loc" title="$loc :: "><span class="description"></span><pre>$loc</pre></a></li>
 <li class="property public inherited"><a href="#property_model_table" title="$model_table :: "><span class="description"></span><pre>$model_table</pre></a></li>
 <li class="property public inherited"><a href="#property_params" title="$params :: "><span class="description"></span><pre>$params</pre></a></li>
 <li class="property public inherited"><a href="#property_relative_viewpath" title="$relative_viewpath :: "><span class="description"></span><pre>$relative_viewpath</pre></a></li>
-<li class="property public inherited"><a href="#property_remove_configs" title="$remove_configs :: "><span class="description"></span><pre>$remove_configs</pre></a></li>
+<li class="property public "><a href="#property_remove_configs" title="$remove_configs :: "><span class="description"></span><pre>$remove_configs</pre></a></li>
 <li class="property public inherited"><a href="#property_requires_login" title="$requires_login :: "><span class="description"></span><pre>$requires_login</pre></a></li>
-<li class="property public inherited"><a href="#property_useractions" title="$useractions :: "><span class="description"></span><pre>$useractions</pre></a></li>
+<li class="property public "><a href="#property_useractions" title="$useractions :: "><span class="description"></span><pre>$useractions</pre></a></li>
 <li class="property public inherited"><a href="#property_viewpath" title="$viewpath :: "><span class="description"></span><pre>$viewpath</pre></a></li>
 </ul>
 </li>
 <li class="nav-header protected">» Protected
                     <ul>
+<li class="property protected inherited"><a href="#property_add_permissions" title="$add_permissions :: "><span class="description"></span><pre>$add_permissions</pre></a></li>
 <li class="property protected inherited"><a href="#property_classname" title="$classname :: "><span class="description"></span><pre>$classname</pre></a></li>
 <li class="property protected inherited"><a href="#property_permissions" title="$permissions :: "><span class="description"></span><pre>$permissions</pre></a></li>
 <li class="property protected inherited"><a href="#property_remove_permissions" title="$remove_permissions :: "><span class="description"></span><pre>$remove_permissions</pre></a></li>
@@ -176,13 +155,13 @@
 </ul>
 </div>
 <div class="span8">
-<a id="\recyclebinController"></a><ul class="breadcrumb">
+<a id="\mediaController"></a><ul class="breadcrumb">
 <li>
 <a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
 <li><a href="../namespaces/global.html">global</a></li>
 <li class="active">
-<span class="divider">\</span><a href="../classes/recyclebinController.html">recyclebinController</a>
+<span class="divider">\</span><a href="../classes/mediaController.html">mediaController</a>
 </li>
 </ul>
 <div class="element class">
@@ -256,9 +235,15 @@
 <a id="method_author"></a><div class="element clickable method public method_author" data-toggle="collapse" data-target=".method_author .collapse">
 <h2>author of module</h2>
 <pre>author() : string</pre>
-<div class="labels"><span class="label">Static</span></div>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::author()</td>
+</tr></table>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
 </div></div>
@@ -470,9 +455,15 @@
 <a id="method_hasContent"></a><div class="element clickable method public method_hasContent" data-toggle="collapse" data-target=".method_hasContent .collapse">
 <h2>does module have content available?</h2>
 <pre>hasContent() : bool</pre>
-<div class="labels"><span class="label">Static</span></div>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::hasContent()</td>
+</tr></table>
 <h3>Returns</h3>
 <div class="subelement response"><code>bool</code></div>
 </div></div>
@@ -480,9 +471,15 @@
 <a id="method_hasSources"></a><div class="element clickable method public method_hasSources" data-toggle="collapse" data-target=".method_hasSources .collapse">
 <h2>does module have sources available?</h2>
 <pre>hasSources() : bool</pre>
-<div class="labels"><span class="label">Static</span></div>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::hasSources()</td>
+</tr></table>
 <h3>Returns</h3>
 <div class="subelement response"><code>bool</code></div>
 </div></div>
@@ -506,15 +503,9 @@
 <a id="method_isSearchable"></a><div class="element clickable method public method_isSearchable" data-toggle="collapse" data-target=".method_isSearchable .collapse">
 <h2>is module content searchable?</h2>
 <pre>isSearchable() : bool</pre>
-<div class="labels">
-<span class="label">Inherited</span><span class="label">Static</span>
-</div>
+<div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>inherited_from</th>
-<td>\expController::isSearchable()</td>
-</tr></table>
 <h3>Returns</h3>
 <div class="subelement response"><code>bool</code></div>
 </div></div>
@@ -692,8 +683,14 @@
 <a id="method_show"></a><div class="element clickable method public method_show" data-toggle="collapse" data-target=".method_show .collapse">
 <h2>default view for individual item</h2>
 <pre>show() </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::show()</td>
+</tr></table>
+</div></div>
 </div>
 <a id="method_showByTags"></a><div class="element clickable method public method_showByTags" data-toggle="collapse" data-target=".method_showByTags .collapse">
 <h2>view items referenced by tags</h2>
@@ -807,12 +804,6 @@
 </div>
 <h3>
 <i class="icon-custom icon-property"></i> Properties</h3>
-<a id="property_add_permissions"> </a><div class="element clickable property public property_add_permissions" data-toggle="collapse" data-target=".property_add_permissions .collapse">
-<h2></h2>
-<pre>$add_permissions </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
 <a id="property_asset_path"> </a><div class="element clickable property public property_asset_path" data-toggle="collapse" data-target=".property_asset_path .collapse">
 <h2></h2>
 <pre>$asset_path </pre>
@@ -864,14 +855,8 @@
 <a id="property_codequality"> </a><div class="element clickable property public property_codequality" data-toggle="collapse" data-target=".property_codequality .collapse">
 <h2></h2>
 <pre>$codequality </pre>
-<div class="labels"><span class="label">Inherited</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>inherited_from</th>
-<td>\expController::$$codequality</td>
-</tr></table>
-</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="property_config"> </a><div class="element clickable property public property_config" data-toggle="collapse" data-target=".property_config .collapse">
 <h2></h2>
@@ -948,14 +933,8 @@
 <a id="property_remove_configs"> </a><div class="element clickable property public property_remove_configs" data-toggle="collapse" data-target=".property_remove_configs .collapse">
 <h2></h2>
 <pre>$remove_configs </pre>
-<div class="labels"><span class="label">Inherited</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>inherited_from</th>
-<td>\expController::$$remove_configs</td>
-</tr></table>
-</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="property_requires_login"> </a><div class="element clickable property public property_requires_login" data-toggle="collapse" data-target=".property_requires_login .collapse">
 <h2></h2>
@@ -972,14 +951,8 @@
 <a id="property_useractions"> </a><div class="element clickable property public property_useractions" data-toggle="collapse" data-target=".property_useractions .collapse">
 <h2></h2>
 <pre>$useractions </pre>
-<div class="labels"><span class="label">Inherited</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>inherited_from</th>
-<td>\expController::$$useractions</td>
-</tr></table>
-</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="property_viewpath"> </a><div class="element clickable property public property_viewpath" data-toggle="collapse" data-target=".property_viewpath .collapse">
 <h2></h2>
@@ -990,6 +963,18 @@
 <table class="table table-bordered"><tr>
 <th>inherited_from</th>
 <td>\expController::$$viewpath</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_add_permissions"> </a><div class="element clickable property protected property_add_permissions" data-toggle="collapse" data-target=".property_add_permissions .collapse">
+<h2></h2>
+<pre>$add_permissions </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expController::$$add_permissions</td>
 </tr></table>
 </div></div>
 </div>
@@ -1036,7 +1021,7 @@
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-02-26T16:32:09-05:00.<br></footer></div>
+            generated on 2013-03-09T08:44:45-05:00.<br></footer></div>
 </div>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Exponent 2.2.0 » \update_ckeditorv4</title>
+<title>Exponent 2.2.0 » \upgrade_mediaplayer</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -73,15 +73,17 @@
 <li class="method public inherited"><a href="#method_checkVersion" title="checkVersion :: This routine should simply test version number (upgrade script requirements vs database version) to see if upgrade script should be run"><span class="description">This routine should simply test version number (upgrade script requirements vs database version) to see if upgrade script should be run</span><pre>checkVersion()</pre></a></li>
 <li class="method public "><a href="#method_description" title="description :: generic description of upgrade script"><span class="description">generic description of upgrade script</span><pre>description()</pre></a></li>
 <li class="method public "><a href="#method_name" title="name :: name/title of upgrade script"><span class="description">name/title of upgrade script</span><pre>name()</pre></a></li>
-<li class="method public "><a href="#method_needed" title="needed :: additional test(s) to see if upgrade script should be run"><span class="description">additional test(s) to see if upgrade script should be run</span><pre>needed()</pre></a></li>
+<li class="method public "><a href="#method_needed" title="needed :: This routine should perform additional test(s) to see if upgrade script should be run (files/tables exist, etc."><span class="description">This routine should perform additional test(s) to see if upgrade script should be run (files/tables exist, etc.</span><pre>needed()</pre></a></li>
 <li class="method public inherited"><a href="#method_prioritize" title="prioritize :: Comparison function to prioritize upgrade scripts"><span class="description">Comparison function to prioritize upgrade scripts</span><pre>prioritize()</pre></a></li>
-<li class="method public "><a href="#method_upgrade" title="upgrade :: updates invalid ckeditor configuration settings"><span class="description">updates invalid ckeditor configuration settings</span><pre>upgrade()</pre></a></li>
+<li class="method public "><a href="#method_upgrade" title="upgrade :: Converts all Flowplayer and YouTube modules/items into Media Player modules/items and deletes Flowplayer and YouTube files
+based on script priority, the permissions, container references, etc."><span class="description">Converts all Flowplayer and YouTube modules/items into Media Player modules/items and deletes Flowplayer and YouTube files
+based on script priority, the permissions, container references, etc.</span><pre>upgrade()</pre></a></li>
 </ul>
 </li>
 <li class="nav-header">
 <i class="icon-custom icon-property"></i> Properties
                     <ul>
-<li class="property public inherited"><a href="#property_optional" title="$optional :: "><span class="description"></span><pre>$optional</pre></a></li>
+<li class="property public "><a href="#property_optional" title="$optional :: "><span class="description"></span><pre>$optional</pre></a></li>
 <li class="property public inherited"><a href="#property_priority" title="$priority :: "><span class="description"></span><pre>$priority</pre></a></li>
 </ul>
 </li>
@@ -94,17 +96,17 @@
 </ul>
 </div>
 <div class="span8">
-<a id="\update_ckeditorv4"></a><ul class="breadcrumb">
+<a id="\upgrade_mediaplayer"></a><ul class="breadcrumb">
 <li>
 <a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
 <li><a href="../namespaces/global.html">global</a></li>
 <li class="active">
-<span class="divider">\</span><a href="../classes/update_ckeditorv4.html">update_ckeditorv4</a>
+<span class="divider">\</span><a href="../classes/upgrade_mediaplayer.html">upgrade_mediaplayer</a>
 </li>
 </ul>
 <div class="element class">
-<p class="short_description">This is the class update_ckeditorv4</p>
+<p class="short_description">This is the class upgrade_mediaplayer</p>
 <div class="details">
 <div class="long_description"></div>
 <h3>
@@ -149,7 +151,7 @@
 </div></div>
 </div>
 <a id="method_needed"></a><div class="element clickable method public method_needed" data-toggle="collapse" data-target=".method_needed .collapse">
-<h2>additional test(s) to see if upgrade script should be run</h2>
+<h2>This routine should perform additional test(s) to see if upgrade script should be run (files/tables exist, etc.</h2>
 <pre>needed() : bool</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
@@ -178,11 +180,12 @@
 </div></div>
 </div>
 <a id="method_upgrade"></a><div class="element clickable method public method_upgrade" data-toggle="collapse" data-target=".method_upgrade .collapse">
-<h2>updates invalid ckeditor configuration settings</h2>
+<h2>Converts all Flowplayer and YouTube modules/items into Media Player modules/items and deletes Flowplayer and YouTube files
+based on script priority, the permissions, container references, etc.</h2>
 <pre>upgrade() : bool</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
+<div class="long_description"><p>.. should've already been upgraded to v2.2</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>bool</code></div>
 </div></div>
@@ -192,14 +195,8 @@
 <a id="property_optional"> </a><div class="element clickable property public property_optional" data-toggle="collapse" data-target=".property_optional .collapse">
 <h2></h2>
 <pre>$optional </pre>
-<div class="labels"><span class="label">Inherited</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>inherited_from</th>
-<td>\upgradescript::$$optional</td>
-</tr></table>
-</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="property_priority"> </a><div class="element clickable property public property_priority" data-toggle="collapse" data-target=".property_priority .collapse">
 <h2></h2>
@@ -232,7 +229,7 @@
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-03-09T08:44:49-05:00.<br></footer></div>
+            generated on 2013-03-09T08:44:50-05:00.<br></footer></div>
 </div>
 </body>
 </html>
