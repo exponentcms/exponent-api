@@ -41467,6 +41467,157 @@ sections to specific parts of the site hierarchy.&lt;/p&gt;</long-description>
       <error line="33" code="50018">No DocBlock was found for property $validates</error>
     </parse_markers>
   </file>
+  <file path="framework\modules\recyclebin\controllers\recyclebinController.php" hash="89f302c25b130cea227c0d5751d11874" package="Default">
+    <constant namespace="global" line="58" package="Default">
+      <name>SOURCE_SELECTOR</name>
+      <full_name>\SOURCE_SELECTOR</full_name>
+      <value>1</value>
+    </constant>
+    <constant namespace="global" line="59" package="Default">
+      <name>PREVIEW_READONLY</name>
+      <full_name>\PREVIEW_READONLY</full_name>
+      <value>1</value>
+    </constant>
+    <class final="false" abstract="false" namespace="global" line="24" package="Modules\Controllers">
+      <extends>\expController</extends>
+      <name>recyclebinController</name>
+      <full_name>\recyclebinController</full_name>
+      <docblock line="19">
+        <description></description>
+        <long-description></long-description>
+        <tag line="19" name="subpackage" description="Controllers"/>
+        <tag line="19" name="package" description="Modules"/>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="26" namespace="global" package="Default">
+        <name>$add_permissions</name>
+        <default>array('show' =&gt; 'View Recycle Bin')</default>
+      </property>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="29" package="Modules\Controllers">
+        <name>displayname</name>
+        <full_name>displayname</full_name>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="30" package="Modules\Controllers">
+        <name>description</name>
+        <full_name>description</full_name>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="31" package="Modules\Controllers">
+        <name>author</name>
+        <full_name>author</full_name>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="32" package="Modules\Controllers">
+        <name>hasSources</name>
+        <full_name>hasSources</full_name>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="33" package="Modules\Controllers">
+        <name>hasContent</name>
+        <full_name>hasContent</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="35" package="Modules\Controllers">
+        <name>showall</name>
+        <full_name>showall</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="51" package="Modules\Controllers">
+        <name>show</name>
+        <full_name>show</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file framework\modules\recyclebin\controllers\recyclebinController.php</error>
+      <critical line="19" code="50005">No short description for class \recyclebinController</critical>
+      <error line="26" code="50018">No DocBlock was found for property $add_permissions</error>
+      <error line="29" code="50010">No DocBlock was found for method displayname()</error>
+      <error line="30" code="50010">No DocBlock was found for method description()</error>
+      <error line="31" code="50010">No DocBlock was found for method author()</error>
+      <error line="32" code="50010">No DocBlock was found for method hasSources()</error>
+      <error line="33" code="50010">No DocBlock was found for method hasContent()</error>
+      <error line="35" code="50010">No DocBlock was found for method showall()</error>
+      <error line="51" code="50010">No DocBlock was found for method show()</error>
+    </parse_markers>
+  </file>
+  <file path="framework\modules\recyclebin\models\recyclebin.php" hash="5ac620cef5c7ab0c40039a086abe9537" package="Default">
+    <class final="false" abstract="false" namespace="global" line="24" package="Modules\Models">
+      <extends>\expRecord</extends>
+      <name>recyclebin</name>
+      <full_name>\recyclebin</full_name>
+      <docblock line="19">
+        <description></description>
+        <long-description></long-description>
+        <tag line="19" name="subpackage" description="Models"/>
+        <tag line="19" name="package" description="Modules"/>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="25" namespace="global" package="Default">
+        <name>$table</name>
+        <default>'sectionref'</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="27" package="Modules\Models">
+        <name>moduleOrphans</name>
+        <full_name>moduleOrphans</full_name>
+        <argument line="27">
+          <name>$module</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="75" package="Modules\Models">
+        <name>sendToRecycleBin</name>
+        <full_name>sendToRecycleBin</full_name>
+        <docblock line="68">
+          <description>exdoc
+Decrement the reference count for a given location.</description>
+          <long-description>&lt;p&gt;This is used by the Container Module,
+and probably won't be needed by 95% of the code in Exponent.&lt;/p&gt;</long-description>
+          <tag line="68" name="param" description="The location object to decrement references for." type="object" variable="$loc">
+            <type by_reference="false">object</type>
+          </tag>
+          <tag line="68" name="param" description="The id of the section that the location exists in." type="integer" variable="$section">
+            <type by_reference="false">integer</type>
+          </tag>
+        </docblock>
+        <argument line="75">
+          <name>$loc</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="75">
+          <name>$section</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="89" package="Modules\Models">
+        <name>restoreFromRecycleBin</name>
+        <full_name>restoreFromRecycleBin</full_name>
+        <docblock line="82">
+          <description>exdoc
+Increment the reference count for a given location.</description>
+          <long-description>&lt;p&gt;This is used by the Container Module,
+and probably won't be needed by 95% of the code in Exponent.&lt;/p&gt;</long-description>
+          <tag line="82" name="param" description="The location object to increment references for." type="object" variable="$loc">
+            <type by_reference="false">object</type>
+          </tag>
+          <tag line="82" name="param" description="The id of the section that the location exists in." type="integer" variable="$section">
+            <type by_reference="false">integer</type>
+          </tag>
+        </docblock>
+        <argument line="89">
+          <name>$loc</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="89">
+          <name>$section</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file framework\modules\recyclebin\models\recyclebin.php</error>
+      <critical line="19" code="50005">No short description for class \recyclebin</critical>
+      <error line="25" code="50018">No DocBlock was found for property $table</error>
+      <error line="27" code="50010">No DocBlock was found for method moduleOrphans()</error>
+    </parse_markers>
+  </file>
   <file path="framework\modules\report\controllers\reportController.php" hash="b76c1183d336f40b4dcc203e80f4233a" package="Default">
     <class final="false" abstract="false" namespace="global" line="24" package="Modules\Controllers">
       <extends>\expController</extends>

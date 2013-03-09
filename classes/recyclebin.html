@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Exponent 2.2.0 » \simplepoll_timeblock</title>
+<title>Exponent 2.2.0 » \recyclebin</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -98,10 +98,18 @@
 <li class="method public inherited"><a href="#method_getTimestamp" title="getTimestamp :: return the item timestamp"><span class="description">return the item timestamp</span><pre>getTimestamp()</pre></a></li>
 <li class="method public inherited"><a href="#method_isSearchable" title="isSearchable :: is model content searchable?"><span class="description">is model content searchable?</span><pre>isSearchable()</pre></a></li>
 <li class="method public inherited"><a href="#method_makeSefUrl" title="makeSefUrl :: make an sef_url for item"><span class="description">make an sef_url for item</span><pre>makeSefUrl()</pre></a></li>
+<li class="method public "><a href="#method_moduleOrphans" title="moduleOrphans :: "><span class="description">moduleOrphans()
+        </span><pre>moduleOrphans()</pre></a></li>
 <li class="method public inherited"><a href="#method_refresh" title="refresh :: re-construct the item"><span class="description">re-construct the item</span><pre>refresh()</pre></a></li>
 <li class="method public inherited"><a href="#method_rerank" title="rerank :: rerank items"><span class="description">rerank items</span><pre>rerank()</pre></a></li>
+<li class="method public "><a href="#method_restoreFromRecycleBin" title="restoreFromRecycleBin :: exdoc
+Increment the reference count for a given location."><span class="description">exdoc
+Increment the reference count for a given location.</span><pre>restoreFromRecycleBin()</pre></a></li>
 <li class="method public inherited"><a href="#method_save" title="save :: save item"><span class="description">save item</span><pre>save()</pre></a></li>
 <li class="method public inherited"><a href="#method_saveAssociatedObjects" title="saveAssociatedObjects :: save associated objects"><span class="description">save associated objects</span><pre>saveAssociatedObjects()</pre></a></li>
+<li class="method public "><a href="#method_sendToRecycleBin" title="sendToRecycleBin :: exdoc
+Decrement the reference count for a given location."><span class="description">exdoc
+Decrement the reference count for a given location.</span><pre>sendToRecycleBin()</pre></a></li>
 <li class="method public inherited"><a href="#method_update" title="update :: update item"><span class="description">update item</span><pre>update()</pre></a></li>
 <li class="method public inherited"><a href="#method_validate" title="validate :: validate item sef_url"><span class="description">validate item sef_url</span><pre>validate()</pre></a></li>
 </ul>
@@ -135,10 +143,11 @@
 <li class="property public inherited"><a href="#property_has_extended_fields" title="$has_extended_fields :: "><span class="description"></span><pre>$has_extended_fields</pre></a></li>
 <li class="property public inherited"><a href="#property_has_many" title="$has_many :: "><span class="description"></span><pre>$has_many</pre></a></li>
 <li class="property public inherited"><a href="#property_has_many_self" title="$has_many_self :: "><span class="description"></span><pre>$has_many_self</pre></a></li>
-<li class="property public "><a href="#property_has_one" title="$has_one :: "><span class="description"></span><pre>$has_one</pre></a></li>
+<li class="property public inherited"><a href="#property_has_one" title="$has_one :: "><span class="description"></span><pre>$has_one</pre></a></li>
 <li class="property public inherited"><a href="#property_identifier" title="$identifier :: "><span class="description"></span><pre>$identifier</pre></a></li>
 <li class="property public inherited"><a href="#property_rank_by_field" title="$rank_by_field :: "><span class="description"></span><pre>$rank_by_field</pre></a></li>
 <li class="property public inherited"><a href="#property_supports_revisions" title="$supports_revisions :: "><span class="description"></span><pre>$supports_revisions</pre></a></li>
+<li class="property public "><a href="#property_table" title="$table :: "><span class="description"></span><pre>$table</pre></a></li>
 <li class="property public inherited"><a href="#property_tablename" title="$tablename :: "><span class="description"></span><pre>$tablename</pre></a></li>
 <li class="property public inherited"><a href="#property_validate" title="$validate :: "><span class="description"></span><pre>$validate</pre></a></li>
 </ul>
@@ -152,13 +161,13 @@
 </ul>
 </div>
 <div class="span8">
-<a id="\simplepoll_timeblock"></a><ul class="breadcrumb">
+<a id="\recyclebin"></a><ul class="breadcrumb">
 <li>
 <a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
 <li><a href="../namespaces/global.html">global</a></li>
 <li class="active">
-<span class="divider">\</span><a href="../classes/simplepoll_timeblock.html">simplepoll_timeblock</a>
+<span class="divider">\</span><a href="../classes/recyclebin.html">recyclebin</a>
 </li>
 </ul>
 <div class="element class">
@@ -667,6 +676,17 @@ field values are also populated into class properties.</p></div>
 </tr></table>
 </div></div>
 </div>
+<a id="method_moduleOrphans"></a><div class="element clickable method public method_moduleOrphans" data-toggle="collapse" data-target=".method_moduleOrphans .collapse">
+<h2>moduleOrphans()
+        </h2>
+<pre>moduleOrphans($module) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$module</h4></div>
+</div></div>
+</div>
 <a id="method_refresh"></a><div class="element clickable method public method_refresh" data-toggle="collapse" data-target=".method_refresh .collapse">
 <h2>re-construct the item</h2>
 <pre>refresh() : bool</pre>
@@ -699,6 +719,23 @@ field values are also populated into class properties.</p></div>
 </div>
 </div></div>
 </div>
+<a id="method_restoreFromRecycleBin"></a><div class="element clickable method public method_restoreFromRecycleBin" data-toggle="collapse" data-target=".method_restoreFromRecycleBin .collapse">
+<h2>exdoc
+Increment the reference count for a given location.</h2>
+<pre>restoreFromRecycleBin(object $loc, integer $section) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This is used by the Container Module,
+and probably won't be needed by 95% of the code in Exponent.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$loc</h4>
+<code>object</code><p>The location object to increment references for.</p></div>
+<div class="subelement argument">
+<h4>$section</h4>
+<code>integer</code><p>The id of the section that the location exists in.</p></div>
+</div></div>
+</div>
 <a id="method_save"></a><div class="element clickable method public method_save" data-toggle="collapse" data-target=".method_save .collapse">
 <h2>save item</h2>
 <pre>save(bool $validate) </pre>
@@ -727,6 +764,23 @@ field values are also populated into class properties.</p></div>
 <th>inherited_from</th>
 <td>\expRecord::saveAssociatedObjects()</td>
 </tr></table>
+</div></div>
+</div>
+<a id="method_sendToRecycleBin"></a><div class="element clickable method public method_sendToRecycleBin" data-toggle="collapse" data-target=".method_sendToRecycleBin .collapse">
+<h2>exdoc
+Decrement the reference count for a given location.</h2>
+<pre>sendToRecycleBin(object $loc, integer $section) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This is used by the Container Module,
+and probably won't be needed by 95% of the code in Exponent.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$loc</h4>
+<code>object</code><p>The location object to decrement references for.</p></div>
+<div class="subelement argument">
+<h4>$section</h4>
+<code>integer</code><p>The id of the section that the location exists in.</p></div>
 </div></div>
 </div>
 <a id="method_update"></a><div class="element clickable method public method_update" data-toggle="collapse" data-target=".method_update .collapse">
@@ -1008,8 +1062,14 @@ field values are also populated into class properties.</p></div>
 <a id="property_has_one"> </a><div class="element clickable property public property_has_one" data-toggle="collapse" data-target=".property_has_one .collapse">
 <h2></h2>
 <pre>$has_one </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::$$has_one</td>
+</tr></table>
+</div></div>
 </div>
 <a id="property_identifier"> </a><div class="element clickable property public property_identifier" data-toggle="collapse" data-target=".property_identifier .collapse">
 <h2></h2>
@@ -1046,6 +1106,12 @@ field values are also populated into class properties.</p></div>
 <td>\expRecord::$$supports_revisions</td>
 </tr></table>
 </div></div>
+</div>
+<a id="property_table"> </a><div class="element clickable property public property_table" data-toggle="collapse" data-target=".property_table .collapse">
+<h2></h2>
+<pre>$table </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="property_tablename"> </a><div class="element clickable property public property_tablename" data-toggle="collapse" data-target=".property_tablename .collapse">
 <h2></h2>
