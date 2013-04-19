@@ -38,14 +38,14 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3513</span></a></li>
+                <span class="label label-info">3652</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
                 <span class="label label-info">53</span>
 </li>
 <li>fixme 
-                <span class="label label-info">228</span>
+                <span class="label label-info">235</span>
 </li>
 </ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -81,6 +81,7 @@
 <li class="function  "><a href="#function_smarty_modifier_contrast" title="smarty_modifier_contrast :: Smarty {contrast} modifier plugin"><span class="description">Smarty {contrast} modifier plugin</span><pre>smarty_modifier_contrast</pre></a></li>
 <li class="function  "><a href="#function_smarty_modifier_convertlangcode" title="smarty_modifier_convertlangcode :: Smarty {convertlangcode} modifier plugin"><span class="description">Smarty {convertlangcode} modifier plugin</span><pre>smarty_modifier_convertlangcode</pre></a></li>
 <li class="function  "><a href="#function_smarty_modifier_countryname" title="smarty_modifier_countryname :: Smarty {countryname} modifier plugin"><span class="description">Smarty {countryname} modifier plugin</span><pre>smarty_modifier_countryname</pre></a></li>
+<li class="function  "><a href="#function_smarty_modifier_currency" title="smarty_modifier_currency :: Smarty {currency} modifier plugin"><span class="description">Smarty {currency} modifier plugin</span><pre>smarty_modifier_currency</pre></a></li>
 <li class="function  "><a href="#function_smarty_modifier_expdate" title="smarty_modifier_expdate :: Smarty {expdate} modifier plugin"><span class="description">Smarty {expdate} modifier plugin</span><pre>smarty_modifier_expdate</pre></a></li>
 <li class="function  "><a href="#function_smarty_modifier_format_date" title="smarty_modifier_format_date :: Smarty {format_date} modifier plugin"><span class="description">Smarty {format_date} modifier plugin</span><pre>smarty_modifier_format_date</pre></a></li>
 <li class="function  "><a href="#function_smarty_modifier_format_tooltip" title="smarty_modifier_format_tooltip :: Smarty {format_tooltip} modifier plugin"><span class="description">Smarty {format_tooltip} modifier plugin</span><pre>smarty_modifier_format_tooltip</pre></a></li>
@@ -91,8 +92,6 @@
 <li class="function  "><a href="#function_smarty_modifier_groupname" title="smarty_modifier_groupname :: Smarty {groupname} modifier plugin"><span class="description">Smarty {groupname} modifier plugin</span><pre>smarty_modifier_groupname</pre></a></li>
 <li class="function  "><a href="#function_smarty_modifier_hide_email" title="smarty_modifier_hide_email :: Smarty {hide_email} modifier plugin"><span class="description">Smarty {hide_email} modifier plugin</span><pre>smarty_modifier_hide_email</pre></a></li>
 <li class="function  "><a href="#function_smarty_modifier_highlight" title="smarty_modifier_highlight :: Smarty {highlight} modifier plugin"><span class="description">Smarty {highlight} modifier plugin</span><pre>smarty_modifier_highlight</pre></a></li>
-<li class="function  "><a href="#function_smarty_modifier_html_substr" title="smarty_modifier_html_substr :: "><span class="description">smarty_modifier_html_substr()
-        </span><pre>smarty_modifier_html_substr</pre></a></li>
 <li class="function  "><a href="#function_smarty_modifier_is_logged_in" title="smarty_modifier_is_logged_in :: Smarty {is_logged_in} modifier plugin"><span class="description">Smarty {is_logged_in} modifier plugin</span><pre>smarty_modifier_is_logged_in</pre></a></li>
 <li class="function  "><a href="#function_smarty_modifier_kilobytes" title="smarty_modifier_kilobytes :: Smarty {kilobytes} modifier plugin"><span class="description">Smarty {kilobytes} modifier plugin</span><pre>smarty_modifier_kilobytes</pre></a></li>
 <li class="function  "><a href="#function_smarty_modifier_megabytes" title="smarty_modifier_megabytes :: Smarty {kilobytes} modifier plugin"><span class="description">Smarty {kilobytes} modifier plugin</span><pre>smarty_modifier_megabytes</pre></a></li>
@@ -264,6 +263,21 @@ Purpose:  lookup a country's name based a country id</p></div>
 <h4>$col</h4>
 <code>string</code>
 </div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="function_smarty_modifier_currency"></a><div class="element clickable function  function_smarty_modifier_currency" data-toggle="collapse" data-target=".function_smarty_modifier_currency .collapse">
+<h2>Smarty {currency} modifier plugin</h2>
+<pre>smarty_modifier_currency($number, $decimals) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Type:     modifier<br>
+Name:     currency<br>
+Purpose:  format a number as currency</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$number</h4></div>
+<div class="subelement argument"><h4>$decimals</h4></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -450,21 +464,6 @@ Purpose:  highlight selected phrases in text</p></div>
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
-</div></div>
-</div>
-<a id="function_smarty_modifier_html_substr"></a><div class="element clickable function  function_smarty_modifier_html_substr" data-toggle="collapse" data-target=".function_smarty_modifier_html_substr .collapse">
-<h2>smarty_modifier_html_substr()
-        </h2>
-<pre>smarty_modifier_html_substr($string, $length, $addstring, $link, $link_text) </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$string</h4></div>
-<div class="subelement argument"><h4>$length</h4></div>
-<div class="subelement argument"><h4>$addstring</h4></div>
-<div class="subelement argument"><h4>$link</h4></div>
-<div class="subelement argument"><h4>$link_text</h4></div>
 </div></div>
 </div>
 <a id="function_smarty_modifier_is_logged_in"></a><div class="element clickable function  function_smarty_modifier_is_logged_in" data-toggle="collapse" data-target=".function_smarty_modifier_is_logged_in .collapse">
@@ -697,7 +696,7 @@ Purpose:  return the username for a user id</p></div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-03-09T08:49:15-05:00.<br></footer></div>
+            generated on 2013-04-19T17:37:54-04:00.<br></footer></div>
 </div>
 </body>
 </html>

@@ -38,14 +38,14 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3513</span></a></li>
+                <span class="label label-info">3652</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
                 <span class="label label-info">53</span>
 </li>
 <li>fixme 
-                <span class="label label-info">228</span>
+                <span class="label label-info">235</span>
 </li>
 </ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -115,17 +115,15 @@
         </span><pre>fix_database()</pre></a></li>
 <li class="method public "><a href="#method_fix_optimize_database" title="fix_optimize_database :: "><span class="description">fix_optimize_database()
         </span><pre>fix_optimize_database()</pre></a></li>
-<li class="method public "><a href="#method_fix_sessions" title="fix_sessions :: "><span class="description">fix_sessions()
-        </span><pre>fix_sessions()</pre></a></li>
 <li class="method public "><a href="#method_fix_tables" title="fix_tables :: "><span class="description">fix_tables()
         </span><pre>fix_tables()</pre></a></li>
+<li class="method public "><a href="#method_fixsessions" title="fixsessions :: "><span class="description">fixsessions()
+        </span><pre>fixsessions()</pre></a></li>
 <li class="method public inherited"><a href="#method_getModels" title="getModels :: get the models associated with this module"><span class="description">get the models associated with this module</span><pre>getModels()</pre></a></li>
 <li class="method public inherited"><a href="#method_getRSSContent" title="getRSSContent :: get the items in an rss feed format"><span class="description">get the items in an rss feed format</span><pre>getRSSContent()</pre></a></li>
 <li class="method public inherited"><a href="#method_hasContent" title="hasContent :: does module have content available?"><span class="description">does module have content available?</span><pre>hasContent()</pre></a></li>
 <li class="method public inherited"><a href="#method_hasSources" title="hasSources :: does module have sources available?"><span class="description">does module have sources available?</span><pre>hasSources()</pre></a></li>
 <li class="method public inherited"><a href="#method_hasViews" title="hasViews :: does module have views available?"><span class="description">does module have views available?</span><pre>hasViews()</pre></a></li>
-<li class="method public "><a href="#method_index" title="index :: "><span class="description">index()
-        </span><pre>index()</pre></a></li>
 <li class="method public "><a href="#method_install_ecommerce_tables" title="install_ecommerce_tables :: "><span class="description">install_ecommerce_tables()
         </span><pre>install_ecommerce_tables()</pre></a></li>
 <li class="method public "><a href="#method_install_exponent" title="install_exponent :: Routine to force launching exponent installer"><span class="description">Routine to force launching exponent installer</span><pre>install_exponent()</pre></a></li>
@@ -137,6 +135,8 @@
         </span><pre>install_extension_finish()</pre></a></li>
 <li class="method public "><a href="#method_install_tables" title="install_tables :: "><span class="description">install_tables()
         </span><pre>install_tables()</pre></a></li>
+<li class="method public "><a href="#method_install_upgrades" title="install_upgrades :: feature to run upgrade scripts outside of installation"><span class="description">feature to run upgrade scripts outside of installation</span><pre>install_upgrades()</pre></a></li>
+<li class="method public "><a href="#method_install_upgrades_run" title="install_upgrades_run :: run selected upgrade scripts outside of installation"><span class="description">run selected upgrade scripts outside of installation</span><pre>install_upgrades_run()</pre></a></li>
 <li class="method public inherited"><a href="#method_isSearchable" title="isSearchable :: is module content searchable?"><span class="description">is module content searchable?</span><pre>isSearchable()</pre></a></li>
 <li class="method public inherited"><a href="#method_manage" title="manage :: display module management view"><span class="description">display module management view</span><pre>manage()</pre></a></li>
 <li class="method public "><a href="#method_manage_lang" title="manage_lang :: "><span class="description">manage_lang()
@@ -309,7 +309,7 @@
 </div>
 <a id="method_aggregateWhereClause"></a><div class="element clickable method public method_aggregateWhereClause" data-toggle="collapse" data-target=".method_aggregateWhereClause .collapse">
 <h2>The aggregateWhereClause function creates a sql where clause which also includes aggregated module content</h2>
-<pre>aggregateWhereClause() : string</pre>
+<pre>aggregateWhereClause($type) : string</pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -317,6 +317,8 @@
 <th>inherited_from</th>
 <td>\expController::aggregateWhereClause()</td>
 </tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$type</h4></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
 </div></div>
@@ -597,17 +599,17 @@
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_fix_sessions"></a><div class="element clickable method public method_fix_sessions" data-toggle="collapse" data-target=".method_fix_sessions .collapse">
-<h2>fix_sessions()
-        </h2>
-<pre>fix_sessions() </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
 <a id="method_fix_tables"></a><div class="element clickable method public method_fix_tables" data-toggle="collapse" data-target=".method_fix_tables .collapse">
 <h2>fix_tables()
         </h2>
 <pre>fix_tables() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_fixsessions"></a><div class="element clickable method public method_fixsessions" data-toggle="collapse" data-target=".method_fixsessions .collapse">
+<h2>fixsessions()
+        </h2>
+<pre>fixsessions() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -687,13 +689,6 @@
 <div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
-<a id="method_index"></a><div class="element clickable method public method_index" data-toggle="collapse" data-target=".method_index .collapse">
-<h2>index()
-        </h2>
-<pre>index() </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
 <a id="method_install_ecommerce_tables"></a><div class="element clickable method public method_install_ecommerce_tables" data-toggle="collapse" data-target=".method_install_ecommerce_tables .collapse">
 <h2>install_ecommerce_tables()
         </h2>
@@ -732,6 +727,18 @@
 <h2>install_tables()
         </h2>
 <pre>install_tables() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_install_upgrades"></a><div class="element clickable method public method_install_upgrades" data-toggle="collapse" data-target=".method_install_upgrades .collapse">
+<h2>feature to run upgrade scripts outside of installation</h2>
+<pre>install_upgrades() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_install_upgrades_run"></a><div class="element clickable method public method_install_upgrades_run" data-toggle="collapse" data-target=".method_install_upgrades_run .collapse">
+<h2>run selected upgrade scripts outside of installation</h2>
+<pre>install_upgrades_run() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -1439,7 +1446,7 @@
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-03-09T08:49:23-05:00.<br></footer></div>
+            generated on 2013-04-19T17:38:03-04:00.<br></footer></div>
 </div>
 </body>
 </html>

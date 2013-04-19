@@ -38,14 +38,14 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3513</span></a></li>
+                <span class="label label-info">3652</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
                 <span class="label label-info">53</span>
 </li>
 <li>fixme 
-                <span class="label label-info">228</span>
+                <span class="label label-info">235</span>
 </li>
 </ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -82,9 +82,9 @@ This function looks through all of the available configuration
 extensions, and generates a form object consisting of each
 extension's form part.</span><pre>configurationForm()</pre></a></li>
 <li class="method public "><a href="#method_deleteProfile" title="deleteProfile :: exdoc
-Deletes a configuration profile from the conf/profiles
+Deletes a configuration profile from the framework/conf/profiles
 directory."><span class="description">exdoc
-Deletes a configuration profile from the conf/profiles
+Deletes a configuration profile from the framework/conf/profiles
 directory.</span><pre>deleteProfile()</pre></a></li>
 <li class="method public "><a href="#method_dropdownData" title="dropdownData :: exdoc
 Parse Drop Down options from a file."><span class="description">exdoc
@@ -113,9 +113,9 @@ Looks through the source of a given configuration PHP file,
 and pulls out (by mysterious regular expressions) the define()
 calls and returns those values.</span><pre>parseFile()</pre></a></li>
 <li class="method public "><a href="#method_profiles" title="profiles :: exdoc
-Looks through the conf/profiles directory, and finds all of
+Looks through the framework/conf/profiles directory, and finds all of
 the configuration profiles in existence."><span class="description">exdoc
-Looks through the conf/profiles directory, and finds all of
+Looks through the framework/conf/profiles directory, and finds all of
 the configuration profiles in existence.</span><pre>profiles()</pre></a></li>
 <li class="method public "><a href="#method_saveConfiguration" title="saveConfiguration :: exdoc
 Processes the POSTed data from the configuration form
@@ -209,7 +209,7 @@ site configuration.  Returns a form object intended for editing the profile.</p>
 </div>
 <a id="method_deleteProfile"></a><div class="element clickable method public method_deleteProfile" data-toggle="collapse" data-target=".method_deleteProfile .collapse">
 <h2>exdoc
-Deletes a configuration profile from the conf/profiles
+Deletes a configuration profile from the framework/conf/profiles
 directory.</h2>
 <pre>deleteProfile(string $profile) </pre>
 <div class="labels"><span class="label">Static</span></div>
@@ -240,7 +240,7 @@ Parse Drop Down options from a file.</h2>
 <div class="subelement argument">
 <h4>$dropdown_name</h4>
 <code>string</code><p>The name of the dropdown type.  The name of the
-  file will be retrieved by adding .dropdown as a suffix, and searching the conf/data directory.</p>
+  file will be retrieved by adding .dropdown as a suffix, and searching the framework/conf/data directory.</p>
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
@@ -327,7 +327,7 @@ of constant names => values</p></div>
 </div>
 <a id="method_profiles"></a><div class="element clickable method public method_profiles" data-toggle="collapse" data-target=".method_profiles .collapse">
 <h2>exdoc
-Looks through the conf/profiles directory, and finds all of
+Looks through the framework/conf/profiles directory, and finds all of
 the configuration profiles in existence.</h2>
 <pre>profiles() : array</pre>
 <div class="labels"><span class="label">Static</span></div>
@@ -397,7 +397,7 @@ a bunch of define() statements to the profiles config file.</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-03-09T08:49:22-05:00.<br></footer></div>
+            generated on 2013-04-19T17:38:02-04:00.<br></footer></div>
 </div>
 </body>
 </html>

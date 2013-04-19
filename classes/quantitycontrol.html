@@ -38,14 +38,14 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3513</span></a></li>
+                <span class="label label-info">3652</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
                 <span class="label label-info">53</span>
 </li>
 <li>fixme 
-                <span class="label label-info">228</span>
+                <span class="label label-info">235</span>
 </li>
 </ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -73,6 +73,7 @@
 <li class="method public "><a href="#method___construct" title="__construct :: "><span class="description">__construct()
         </span><pre>__construct()</pre></a></li>
 <li class="method public "><a href="#method_controlToHTML" title="controlToHTML :: Place the editable control on the edit form"><span class="description">Place the editable control on the edit form</span><pre>controlToHTML()</pre></a></li>
+<li class="method public inherited"><a href="#method_convertData" title="convertData :: Convert a value to fit the control"><span class="description">Convert a value to fit the control</span><pre>convertData()</pre></a></li>
 <li class="method public "><a href="#method_form" title="form :: Create the Form to edit the control settings"><span class="description">Create the Form to edit the control settings</span><pre>form()</pre></a></li>
 <li class="method public "><a href="#method_getFieldDefinition" title="getFieldDefinition :: returns the table field definition for this control"><span class="description">returns the table field definition for this control</span><pre>getFieldDefinition()</pre></a></li>
 <li class="method public "><a href="#method_isSimpleControl" title="isSimpleControl :: Is this a Simple Control?
@@ -156,6 +157,31 @@ Used to determine if control is actually a generic control</span><pre>useGeneric
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$name</h4></div>
 <div class="subelement argument"><h4>$label</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_convertData"></a><div class="element clickable method public method_convertData" data-toggle="collapse" data-target=".method_convertData .collapse">
+<h2>Convert a value to fit the control</h2>
+<pre>convertData($original_name, $formvalues) : string</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>static</th>
+<td></td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\formcontrol::convertData()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$original_name</h4></div>
+<div class="subelement argument"><h4>$formvalues</h4></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
 </div></div>
@@ -409,7 +435,7 @@ Used to determine if control is actually a generic control</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-03-09T08:49:19-05:00.<br></footer></div>
+            generated on 2013-04-19T17:37:59-04:00.<br></footer></div>
 </div>
 </body>
 </html>

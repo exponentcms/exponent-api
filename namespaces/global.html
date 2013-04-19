@@ -38,14 +38,14 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3513</span></a></li>
+                <span class="label label-info">3652</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
                 <span class="label label-info">53</span>
 </li>
 <li>fixme 
-                <span class="label label-info">228</span>
+                <span class="label label-info">235</span>
 </li>
 </ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -206,12 +206,13 @@
 <a id="function_build_menu"></a><div class="element clickable function  function_build_menu" data-toggle="collapse" data-target=".function_build_menu .collapse">
 <h2>build_menu()
         </h2>
-<pre>build_menu($page) </pre>
+<pre>build_menu($page, $params) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$page</h4></div>
+<div class="subelement argument"><h4>$params</h4></div>
 </div></div>
 </div>
 <a id="function_collapse"></a><div class="element clickable function  function_collapse" data-toggle="collapse" data-target=".function_collapse .collapse">
@@ -1445,6 +1446,22 @@ Purpose:  format a link for exporting a PDF version of the page</p></div>
 </div>
 </div></div>
 </div>
+<a id="function_smarty_function_export_pdf_link"></a><div class="element clickable function  function_smarty_function_export_pdf_link" data-toggle="collapse" data-target=".function_smarty_function_export_pdf_link .collapse">
+<h2>Smarty {export_pdf_link} function plugin</h2>
+<pre>smarty_function_export_pdf_link($params, \Smarty $smarty) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Type:     function<br>
+Name:     export_pdf_link<br>
+Purpose:  format a link for exporting a PDF version of the page</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$params</h4></div>
+<div class="subelement argument">
+<h4>$smarty</h4>
+<code>\Smarty</code>
+</div>
+</div></div>
+</div>
 <a id="function_smarty_function_filedisplayer"></a><div class="element clickable function  function_smarty_function_filedisplayer" data-toggle="collapse" data-target=".function_smarty_function_filedisplayer .collapse">
 <h2>Smarty {filedisplayer} function plugin</h2>
 <pre>smarty_function_filedisplayer($params, \Smarty $smarty) : string</pre>
@@ -1471,38 +1488,6 @@ Purpose:  display files</p></div>
 <div class="long_description"><p>Type:     function<br>
 Name:     get_cart_summary<br>
 Purpose:  get summary of cart contents</p></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$params</h4></div>
-<div class="subelement argument">
-<h4>$smarty</h4>
-<code>\Smarty</code>
-</div>
-</div></div>
-</div>
-<a id="function_smarty_function_get_distance"></a><div class="element clickable function  function_smarty_function_get_distance" data-toggle="collapse" data-target=".function_smarty_function_get_distance .collapse">
-<h2>Smarty {get_distance} function plugin</h2>
-<pre>smarty_function_get_distance($params, \Smarty $smarty) </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>Type:     function<br>
-Name:     get_distance<br>
-Purpose:  determine distance</p></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$params</h4></div>
-<div class="subelement argument">
-<h4>$smarty</h4>
-<code>\Smarty</code>
-</div>
-</div></div>
-</div>
-<a id="function_smarty_function_get_favorites"></a><div class="element clickable function  function_smarty_function_get_favorites" data-toggle="collapse" data-target=".function_smarty_function_get_favorites .collapse">
-<h2>Smarty {get_favorites} function plugin</h2>
-<pre>smarty_function_get_favorites($params, \Smarty $smarty) </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>Type:     function<br>
-Name:     get_favorites<br>
-Purpose:  get and assign favorites</p></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$params</h4></div>
 <div class="subelement argument">
@@ -1567,22 +1552,6 @@ Purpose:  display the chrome menu</p></div>
 <div class="long_description"><p>Type:     function<br>
 Name:     getfilicon<br>
 Purpose:  displays on icon for a file</p></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$params</h4></div>
-<div class="subelement argument">
-<h4>$smarty</h4>
-<code>\Smarty</code>
-</div>
-</div></div>
-</div>
-<a id="function_smarty_function_getfilename"></a><div class="element clickable function  function_smarty_function_getfilename" data-toggle="collapse" data-target=".function_smarty_function_getfilename .collapse">
-<h2>Smarty {getfilename} function plugin</h2>
-<pre>smarty_function_getfilename($params, \Smarty $smarty) </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>Type:     function<br>
-Name:     getfilename<br>
-Purpose:  get and assign relative path filename for a file</p></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$params</h4></div>
 <div class="subelement argument">
@@ -2033,22 +2002,6 @@ Purpose:  test and return a singular or plural form of phrase</p></div>
 <div class="long_description"><p>Type:     function<br>
 Name:     podcastlink<br>
 Purpose:  make a podcast link</p></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$params</h4></div>
-<div class="subelement argument">
-<h4>$smarty</h4>
-<code>\Smarty</code>
-</div>
-</div></div>
-</div>
-<a id="function_smarty_function_popupdatetimecontrol"></a><div class="element clickable function  function_smarty_function_popupdatetimecontrol" data-toggle="collapse" data-target=".function_smarty_function_popupdatetimecontrol .collapse">
-<h2>Smarty {popupdatetimecontrol} function plugin</h2>
-<pre>smarty_function_popupdatetimecontrol($params, \Smarty $smarty) </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>Type:     function<br>
-Name:     popupdatetimecontrol<br>  //FIXME the popupdatetimecontrol is broken w/o the jscalendar files
-Purpose:  ???</p></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$params</h4></div>
 <div class="subelement argument">
@@ -2614,6 +2567,21 @@ Purpose:  lookup a country's name based a country id</p></div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
+<a id="function_smarty_modifier_currency"></a><div class="element clickable function  function_smarty_modifier_currency" data-toggle="collapse" data-target=".function_smarty_modifier_currency .collapse">
+<h2>Smarty {currency} modifier plugin</h2>
+<pre>smarty_modifier_currency($number, $decimals) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Type:     modifier<br>
+Name:     currency<br>
+Purpose:  format a number as currency</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$number</h4></div>
+<div class="subelement argument"><h4>$decimals</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
 <a id="function_smarty_modifier_expdate"></a><div class="element clickable function  function_smarty_modifier_expdate" data-toggle="collapse" data-target=".function_smarty_modifier_expdate .collapse">
 <h2>Smarty {expdate} modifier plugin</h2>
 <pre>smarty_modifier_expdate($timestamp, $format) : array</pre>
@@ -2796,21 +2764,6 @@ Purpose:  highlight selected phrases in text</p></div>
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
-</div></div>
-</div>
-<a id="function_smarty_modifier_html_substr"></a><div class="element clickable function  function_smarty_modifier_html_substr" data-toggle="collapse" data-target=".function_smarty_modifier_html_substr .collapse">
-<h2>smarty_modifier_html_substr()
-        </h2>
-<pre>smarty_modifier_html_substr($string, $length, $addstring, $link, $link_text) </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$string</h4></div>
-<div class="subelement argument"><h4>$length</h4></div>
-<div class="subelement argument"><h4>$addstring</h4></div>
-<div class="subelement argument"><h4>$link</h4></div>
-<div class="subelement argument"><h4>$link_text</h4></div>
 </div></div>
 </div>
 <a id="function_smarty_modifier_is_logged_in"></a><div class="element clickable function  function_smarty_modifier_is_logged_in" data-toggle="collapse" data-target=".function_smarty_modifier_is_logged_in .collapse">
@@ -3035,25 +2988,6 @@ Purpose:  return the username for a user id</p></div>
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
-</div></div>
-</div>
-<a id="function_smarty_postfilter_includemiscfiles"></a><div class="element clickable function  function_smarty_postfilter_includemiscfiles" data-toggle="collapse" data-target=".function_smarty_postfilter_includemiscfiles .collapse">
-<h2>Smarty {includemiscfiles} postfilter plugin</h2>
-<pre>smarty_postfilter_includemiscfiles($compiledsource, \Smarty $smarty) : bool</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>Type:     postfilter<br>
-Name:     includemiscfiles<br>
-Purpose:   This function creates html loaders for - currently - JS and CSS Files
-           Please note it will only work for newtype __names (SomeModule, SomeForm, SomeTheme, SomeControl...)</p></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$compiledsource</h4></div>
-<div class="subelement argument">
-<h4>$smarty</h4>
-<code>\Smarty</code>
-</div>
-<h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
 <a id="function_smarty_postfilter_switch"></a><div class="element clickable function  function_smarty_postfilter_switch" data-toggle="collapse" data-target=".function_smarty_postfilter_switch .collapse">
@@ -3413,6 +3347,13 @@ text entry date and/or time w/ pop-up date selector</p>
 <div class="details collapse"></div>
 <a href="../classes/ckeditorcontrol.html" class="more">« More »</a>
 </div>
+<div id="clean_modstate" class="element ajax clickable class">
+<h1>clean_modstate<a href="../classes/clean_modstate.html">¶</a>
+</h1>
+<p class="short_description">This is the class clean_modstate</p>
+<div class="details collapse"></div>
+<a href="../classes/clean_modstate.html" class="more">« More »</a>
+</div>
 <div id="clear_cache" class="element ajax clickable class">
 <h1>clear_cache<a href="../classes/clear_cache.html">¶</a>
 </h1>
@@ -3505,6 +3446,13 @@ text entry hex color w/ pop-up color selector</p>
 <div class="details collapse"></div>
 <a href="../classes/countdownController.html" class="more">« More »</a>
 </div>
+<div id="countrycontrol" class="element ajax clickable class">
+<h1>countrycontrol<a href="../classes/countrycontrol.html">¶</a>
+</h1>
+<p class="short_description">Country Control</p>
+<div class="details collapse"></div>
+<a href="../classes/countrycontrol.html" class="more">« More »</a>
+</div>
 <div id="countryregioncontrol" class="element ajax clickable class">
 <h1>countryregioncontrol<a href="../classes/countryregioncontrol.html">¶</a>
 </h1>
@@ -3576,6 +3524,13 @@ simple text entry date and/or time</p>
 <div class="details collapse"></div>
 <a href="../classes/dropdowncontrol.html" class="more">« More »</a>
 </div>
+<div id="eaasController" class="element ajax clickable class">
+<h1>eaasController<a href="../classes/eaasController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/eaasController.html" class="more">« More »</a>
+</div>
 <div id="ealertController" class="element ajax clickable class">
 <h1>ealertController<a href="../classes/ealertController.html">¶</a>
 </h1>
@@ -3596,6 +3551,13 @@ simple text entry date and/or time</p>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/ecomconfigController.html" class="more">« More »</a>
+</div>
+<div id="emailcontrol" class="element ajax clickable class">
+<h1>emailcontrol<a href="../classes/emailcontrol.html">¶</a>
+</h1>
+<p class="short_description">Email Control</p>
+<div class="details collapse"></div>
+<a href="../classes/emailcontrol.html" class="more">« More »</a>
 </div>
 <div id="emeraldtheme" class="element ajax clickable class">
 <h1>emeraldtheme<a href="../classes/emeraldtheme.html">¶</a>
@@ -4105,6 +4067,13 @@ Exponent Pagination Subsystem</p>
 <div class="details collapse"></div>
 <a href="../classes/fix_table_names.html" class="more">« More »</a>
 </div>
+<div id="fix_text_tabbedview" class="element ajax clickable class">
+<h1>fix_text_tabbedview<a href="../classes/fix_text_tabbedview.html">¶</a>
+</h1>
+<p class="short_description">This is the class fix_text_tabbedview</p>
+<div class="details collapse"></div>
+<a href="../classes/fix_text_tabbedview.html" class="more">« More »</a>
+</div>
 <div id="flatratecalculator" class="element ajax clickable class">
 <h1>flatratecalculator<a href="../classes/flatratecalculator.html">¶</a>
 </h1>
@@ -4476,6 +4445,13 @@ Exponent Pagination Subsystem</p>
 <div class="details collapse"></div>
 <a href="../classes/notfoundController.html" class="more">« More »</a>
 </div>
+<div id="numbercontrol" class="element ajax clickable class">
+<h1>numbercontrol<a href="../classes/numbercontrol.html">¶</a>
+</h1>
+<p class="short_description">Number Control</p>
+<div class="details collapse"></div>
+<a href="../classes/numbercontrol.html" class="more">« More »</a>
+</div>
 <div id="option" class="element ajax clickable class">
 <h1>option<a href="../classes/option.html">¶</a>
 </h1>
@@ -4595,6 +4571,13 @@ Exponent Pagination Subsystem</p>
 <div class="details collapse"></div>
 <a href="../classes/payflowpro.html" class="more">« More »</a>
 </div>
+<div id="paylater" class="element ajax clickable class">
+<h1>paylater<a href="../classes/paylater.html">¶</a>
+</h1>
+<p class="short_description">This is the class expRecord</p>
+<div class="details collapse"></div>
+<a href="../classes/paylater.html" class="more">« More »</a>
+</div>
 <div id="paypalExpressCheckout" class="element ajax clickable class">
 <h1>paypalExpressCheckout<a href="../classes/paypalExpressCheckout.html">¶</a>
 </h1>
@@ -4626,8 +4609,7 @@ Exponent Pagination Subsystem</p>
 <div id="popupdatetimecontrol" class="element ajax clickable class">
 <h1>popupdatetimecontrol<a href="../classes/popupdatetimecontrol.html">¶</a>
 </h1>
-<p class="short_description">Popup Date/Time Picker Control
-uses jscalendar //FIXME we don't ship jscalendar files for this to work</p>
+<p class="short_description">YUI Popup Date/Time Picker Control</p>
 <div class="details collapse"></div>
 <a href="../classes/popupdatetimecontrol.html" class="more">« More »</a>
 </div>
@@ -4742,6 +4724,13 @@ uses jscalendar //FIXME we don't ship jscalendar files for this to work</p>
 <p class="short_description">Radio Button Control class</p>
 <div class="details collapse"></div>
 <a href="../classes/radiogroupcontrol.html" class="more">« More »</a>
+</div>
+<div id="rangecontrol" class="element ajax clickable class">
+<h1>rangecontrol<a href="../classes/rangecontrol.html">¶</a>
+</h1>
+<p class="short_description">Range Control</p>
+<div class="details collapse"></div>
+<a href="../classes/rangecontrol.html" class="more">« More »</a>
 </div>
 <div id="recyclebin" class="element ajax clickable class">
 <h1>recyclebin<a href="../classes/recyclebin.html">¶</a>
@@ -4988,6 +4977,13 @@ uses jscalendar //FIXME we don't ship jscalendar files for this to work</p>
 <div class="details collapse"></div>
 <a href="../classes/standalonetemplate.html" class="more">« More »</a>
 </div>
+<div id="statescontrol" class="element ajax clickable class">
+<h1>statescontrol<a href="../classes/statescontrol.html">¶</a>
+</h1>
+<p class="short_description">States Control</p>
+<div class="details collapse"></div>
+<a href="../classes/statescontrol.html" class="more">« More »</a>
+</div>
 <div id="storeCategory" class="element ajax clickable class">
 <h1>storeCategory<a href="../classes/storeCategory.html">¶</a>
 </h1>
@@ -5050,6 +5046,13 @@ uses jscalendar //FIXME we don't ship jscalendar files for this to work</p>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/taxclass.html" class="more">« More »</a>
+</div>
+<div id="telcontrol" class="element ajax clickable class">
+<h1>telcontrol<a href="../classes/telcontrol.html">¶</a>
+</h1>
+<p class="short_description">Tel Control</p>
+<div class="details collapse"></div>
+<a href="../classes/telcontrol.html" class="more">« More »</a>
 </div>
 <div id="template" class="element ajax clickable class">
 <h1>template<a href="../classes/template.html">¶</a>
@@ -5121,6 +5124,13 @@ interface to templates.</p>
 <p class="short_description">This is the class update_ecom</p>
 <div class="details collapse"></div>
 <a href="../classes/update_ecom.html" class="more">« More »</a>
+</div>
+<div id="update_ecom2" class="element ajax clickable class">
+<h1>update_ecom2<a href="../classes/update_ecom2.html">¶</a>
+</h1>
+<p class="short_description">This is the class update_ecom</p>
+<div class="details collapse"></div>
+<a href="../classes/update_ecom2.html" class="more">« More »</a>
 </div>
 <div id="update_profile_paths" class="element ajax clickable class">
 <h1>update_profile_paths<a href="../classes/update_profile_paths.html">¶</a>
@@ -5205,6 +5215,13 @@ interface to templates.</p>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/upscalculator.html" class="more">« More »</a>
+</div>
+<div id="urlcontrol" class="element ajax clickable class">
+<h1>urlcontrol<a href="../classes/urlcontrol.html">¶</a>
+</h1>
+<p class="short_description">URL Control</p>
+<div class="details collapse"></div>
+<a href="../classes/urlcontrol.html" class="more">« More »</a>
 </div>
 <div id="user" class="element ajax clickable class">
 <h1>user<a href="../classes/user.html">¶</a>
@@ -5318,7 +5335,7 @@ places an update calendar field/button</p>
 </h1>
 <p class="short_description">YUI Date/Time Control
 uses/combines yuicalendarcontrol & datetimecontrol (w/o date)
-places a checkbox to disable calendar</p>
+places a checkbox to disable calendar input</p>
 <div class="details collapse"></div>
 <a href="../classes/yuidatetimecontrol.html" class="more">« More »</a>
 </div>
@@ -5745,6 +5762,12 @@ places a checkbox to disable calendar</p>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="constant_DISPLAY_THEME"> </a><div class="element clickable constant  constant_DISPLAY_THEME" data-toggle="collapse" data-target=".constant_DISPLAY_THEME .collapse">
+<h2>DISPLAY_THEME</h2>
+<pre>DISPLAY_THEME </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="constant_DISPLAY_THEME_REAL"> </a><div class="element clickable constant  constant_DISPLAY_THEME_REAL" data-toggle="collapse" data-target=".constant_DISPLAY_THEME_REAL .collapse">
 <h2>DISPLAY_THEME_REAL</h2>
 <pre>DISPLAY_THEME_REAL </pre>
@@ -5778,6 +5801,12 @@ places a checkbox to disable calendar</p>
 <a id="constant_ECOM_AUTHORIZENET_AUTH_ONLY"> </a><div class="element clickable constant  constant_ECOM_AUTHORIZENET_AUTH_ONLY" data-toggle="collapse" data-target=".constant_ECOM_AUTHORIZENET_AUTH_ONLY .collapse">
 <h2>ECOM_AUTHORIZENET_AUTH_ONLY</h2>
 <pre>ECOM_AUTHORIZENET_AUTH_ONLY </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_ECOM_CURRENCY"> </a><div class="element clickable constant  constant_ECOM_CURRENCY" data-toggle="collapse" data-target=".constant_ECOM_CURRENCY .collapse">
+<h2>ECOM_CURRENCY</h2>
+<pre>ECOM_CURRENCY </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -7215,6 +7244,12 @@ places a checkbox to disable calendar</p>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="constant_THEME_ABSOLUTE"> </a><div class="element clickable constant  constant_THEME_ABSOLUTE" data-toggle="collapse" data-target=".constant_THEME_ABSOLUTE .collapse">
+<h2>THEME_ABSOLUTE</h2>
+<pre>THEME_ABSOLUTE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="constant_THEME_RELATIVE"> </a><div class="element clickable constant  constant_THEME_RELATIVE" data-toggle="collapse" data-target=".constant_THEME_RELATIVE .collapse">
 <h2>THEME_RELATIVE</h2>
 <pre>THEME_RELATIVE </pre>
@@ -7449,7 +7484,7 @@ places a checkbox to disable calendar</p>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-03-09T08:49:13-05:00.<br></footer></div>
+            generated on 2013-04-19T17:37:52-04:00.<br></footer></div>
 </div>
 </body>
 </html>
