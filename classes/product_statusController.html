@@ -38,14 +38,14 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3652</span></a></li>
+                <span class="label label-info">3620</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
-                <span class="label label-info">53</span>
+                <span class="label label-info">52</span>
 </li>
 <li>fixme 
-                <span class="label label-info">235</span>
+                <span class="label label-info">257</span>
 </li>
 </ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -116,8 +116,6 @@
 <li class="method public inherited"><a href="#method_showRandom" title="showRandom :: view a random item"><span class="description">view a random item</span><pre>showRandom()</pre></a></li>
 <li class="method public "><a href="#method_showall" title="showall :: default module view method for all items"><span class="description">default module view method for all items</span><pre>showall()</pre></a></li>
 <li class="method public inherited"><a href="#method_showall_by_tags" title="showall_by_tags :: default module view method for all items with a specific tag"><span class="description">default module view method for all items with a specific tag</span><pre>showall_by_tags()</pre></a></li>
-<li class="method public inherited"><a href="#method_showall_by_tags_meta" title="showall_by_tags_meta :: "><span class="description">showall_by_tags_meta()
-        </span><pre>showall_by_tags_meta()</pre></a></li>
 <li class="method public inherited"><a href="#method_supportsWorkflow" title="supportsWorkflow :: does module support workflow?"><span class="description">does module support workflow?</span><pre>supportsWorkflow()</pre></a></li>
 <li class="method public inherited"><a href="#method_tags" title="tags :: "><span class="description">tags()
         </span><pre>tags()</pre></a></li>
@@ -220,7 +218,7 @@
 </div>
 <a id="method_aggregateWhereClause"></a><div class="element clickable method public method_aggregateWhereClause" data-toggle="collapse" data-target=".method_aggregateWhereClause .collapse">
 <h2>The aggregateWhereClause function creates a sql where clause which also includes aggregated module content</h2>
-<pre>aggregateWhereClause($type) : string</pre>
+<pre>aggregateWhereClause(string $type) : string</pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -229,7 +227,10 @@
 <td>\expController::aggregateWhereClause()</td>
 </tr></table>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$type</h4></div>
+<div class="subelement argument">
+<h4>$type</h4>
+<code>string</code>
+</div>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
 </div></div>
@@ -730,21 +731,6 @@
 </tr></table>
 </div></div>
 </div>
-<a id="method_showall_by_tags_meta"></a><div class="element clickable method public method_showall_by_tags_meta" data-toggle="collapse" data-target=".method_showall_by_tags_meta .collapse">
-<h2>showall_by_tags_meta()
-        </h2>
-<pre>showall_by_tags_meta($request) </pre>
-<div class="labels"><span class="label">Inherited</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>inherited_from</th>
-<td>\expController::showall_by_tags_meta()</td>
-</tr></table>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$request</h4></div>
-</div></div>
-</div>
 <a id="method_supportsWorkflow"></a><div class="element clickable method public method_supportsWorkflow" data-toggle="collapse" data-target=".method_supportsWorkflow .collapse">
 <h2>does module support workflow?</h2>
 <pre>supportsWorkflow() : bool</pre>
@@ -1023,7 +1009,7 @@
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-04-19T17:38:07-04:00.<br></footer></div>
+            generated on 2013-05-12T08:36:23-04:00.<br></footer></div>
 </div>
 </body>
 </html>

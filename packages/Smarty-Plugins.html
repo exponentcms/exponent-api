@@ -38,14 +38,14 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3652</span></a></li>
+                <span class="label label-info">3620</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
-                <span class="label label-info">53</span>
+                <span class="label label-info">52</span>
 </li>
 <li>fixme 
-                <span class="label label-info">235</span>
+                <span class="label label-info">257</span>
 </li>
 </ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -1390,7 +1390,7 @@ Purpose:  Display a module.<br></p></div>
 </div>
 <a id="function_smarty_function_simplenote"></a><div class="element clickable function  function_smarty_function_simplenote" data-toggle="collapse" data-target=".function_smarty_function_simplenote .collapse">
 <h2>Smarty {simplenote} function plugin</h2>
-<pre>smarty_function_simplenote(array $params, mixed $smarty) </pre>
+<pre>smarty_function_simplenote(array $params, mixed $smarty) : string</pre>
 <div class="labels"></div>
 <div class="row collapse">
 <div class="span4">
@@ -1410,6 +1410,8 @@ Purpose:  Include the SimpleNote Attachable Item on the page.<br></p></div>
 <h4>$smarty</h4>
 <code>mixed</code>
 </div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
 </div>
 <div class="span4">
 <h3>Examples</h3>
@@ -2041,13 +2043,14 @@ Purpose:  pluralize a string</p></div>
 </div></div>
 </div>
 <a id="function_smarty_modifier_relative_date"></a><div class="element clickable function  function_smarty_modifier_relative_date" data-toggle="collapse" data-target=".function_smarty_modifier_relative_date .collapse">
-<h2>Smarty {relative_date} modifier plugin</h2>
+<h2>Smarty {relative_date} modifier plugin
+Type:     modifier&lt;br&gt;
+Name:     relative_date&lt;br&gt;
+Purpose:  convert a date in a relative format</h2>
 <pre>smarty_modifier_relative_date(array $timestamp) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>Type:     modifier<br>
-Name:     relative_date<br>
-Purpose:  convert a date in a relative format</p></div>
+<div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$timestamp</h4>
@@ -2144,17 +2147,19 @@ Purpose:  urlencode a string</p></div>
 </div></div>
 </div>
 <a id="function_smarty_modifier_username"></a><div class="element clickable function  function_smarty_modifier_username" data-toggle="collapse" data-target=".function_smarty_modifier_username .collapse">
-<h2>Smarty {username} modifier plugin</h2>
-<pre>smarty_modifier_username(array $userid) : array</pre>
+<h2>Smarty {username} modifier plugin
+Type:     modifier&lt;br&gt;
+Name:     username&lt;br&gt;
+Purpose:  return the username for a user id</h2>
+<pre>smarty_modifier_username($userid, null $type) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>Type:     modifier<br>
-Name:     username<br>
-Purpose:  return the username for a user id</p></div>
+<div class="long_description"></div>
 <h3>Parameters</h3>
+<div class="subelement argument"><h4>$userid</h4></div>
 <div class="subelement argument">
-<h4>$userid</h4>
-<code>array</code>
+<h4>$type</h4>
+<code>null</code>
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
@@ -2167,7 +2172,7 @@ Purpose:  return the username for a user id</p></div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-04-19T17:37:54-04:00.<br></footer></div>
+            generated on 2013-05-12T08:36:09-04:00.<br></footer></div>
 </div>
 </body>
 </html>
