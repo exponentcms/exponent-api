@@ -38,14 +38,14 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3620</span></a></li>
+                <span class="label label-info">3696</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
                 <span class="label label-info">52</span>
 </li>
 <li>fixme 
-                <span class="label label-info">257</span>
+                <span class="label label-info">267</span>
 </li>
 </ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -87,10 +87,18 @@
 <li class="method public inherited"><a href="#method_delete_In" title="delete_In :: delete an item by instance for backwards compat with old modules"><span class="description">delete an item by instance for backwards compat with old modules</span><pre>delete_In()</pre></a></li>
 <li class="method public inherited"><a href="#method_delete_instance" title="delete_instance :: delete an item by instance"><span class="description">delete an item by instance</span><pre>delete_instance()</pre></a></li>
 <li class="method public inherited"><a href="#method_delete_search" title="delete_search :: remove module items from search index"><span class="description">remove module items from search index</span><pre>delete_search()</pre></a></li>
+<li class="method public "><a href="#method_delete_service" title="delete_service :: "><span class="description">delete_service()
+        </span><pre>delete_service()</pre></a></li>
+<li class="method public "><a href="#method_delete_speaker" title="delete_speaker :: "><span class="description">delete_speaker()
+        </span><pre>delete_speaker()</pre></a></li>
 <li class="method public "><a href="#method_description" title="description :: description of module"><span class="description">description of module</span><pre>description()</pre></a></li>
 <li class="method public "><a href="#method_displayname" title="displayname :: name of module"><span class="description">name of module</span><pre>displayname()</pre></a></li>
 <li class="method public inherited"><a href="#method_downloadfile" title="downloadfile :: download a file attached to item"><span class="description">download a file attached to item</span><pre>downloadfile()</pre></a></li>
 <li class="method public inherited"><a href="#method_edit" title="edit :: edit item in module, also used to copy items"><span class="description">edit item in module, also used to copy items</span><pre>edit()</pre></a></li>
+<li class="method public "><a href="#method_edit_service" title="edit_service :: "><span class="description">edit_service()
+        </span><pre>edit_service()</pre></a></li>
+<li class="method public "><a href="#method_edit_speaker" title="edit_speaker :: "><span class="description">edit_speaker()
+        </span><pre>edit_speaker()</pre></a></li>
 <li class="method public inherited"><a href="#method_getModels" title="getModels :: get the models associated with this module"><span class="description">get the models associated with this module</span><pre>getModels()</pre></a></li>
 <li class="method public "><a href="#method_getRSSContent" title="getRSSContent :: get the items in an rss feed format"><span class="description">get the items in an rss feed format</span><pre>getRSSContent()</pre></a></li>
 <li class="method public inherited"><a href="#method_hasContent" title="hasContent :: does module have content available?"><span class="description">does module have content available?</span><pre>hasContent()</pre></a></li>
@@ -107,6 +115,10 @@ we also create sermonseries from the cats</span><pre>import_filedownloads_proces
 <li class="method public "><a href="#method_isSearchable" title="isSearchable :: is module content searchable?"><span class="description">is module content searchable?</span><pre>isSearchable()</pre></a></li>
 <li class="method public inherited"><a href="#method_manage" title="manage :: display module management view"><span class="description">display module management view</span><pre>manage()</pre></a></li>
 <li class="method public inherited"><a href="#method_manage_ranks" title="manage_ranks :: rerank module items from ddrerank"><span class="description">rerank module items from ddrerank</span><pre>manage_ranks()</pre></a></li>
+<li class="method public "><a href="#method_manage_services" title="manage_services :: "><span class="description">manage_services()
+        </span><pre>manage_services()</pre></a></li>
+<li class="method public "><a href="#method_manage_speakers" title="manage_speakers :: "><span class="description">manage_speakers()
+        </span><pre>manage_speakers()</pre></a></li>
 <li class="method public inherited"><a href="#method_merge" title="merge :: merge/move aggregated item into this module"><span class="description">merge/move aggregated item into this module</span><pre>merge()</pre></a></li>
 <li class="method public inherited"><a href="#method_metainfo" title="metainfo :: get the metainfo for this module"><span class="description">get the metainfo for this module</span><pre>metainfo()</pre></a></li>
 <li class="method public inherited"><a href="#method_moduleSelfAwareness" title="moduleSelfAwareness :: glue to make module aware of itself"><span class="description">glue to make module aware of itself</span><pre>moduleSelfAwareness()</pre></a></li>
@@ -131,6 +143,10 @@ we also create sermonseries from the cats</span><pre>import_filedownloads_proces
 <li class="method public inherited"><a href="#method_tags" title="tags :: "><span class="description">tags()
         </span><pre>tags()</pre></a></li>
 <li class="method public inherited"><a href="#method_update" title="update :: update (save) item in module"><span class="description">update (save) item in module</span><pre>update()</pre></a></li>
+<li class="method public "><a href="#method_update_service" title="update_service :: "><span class="description">update_service()
+        </span><pre>update_service()</pre></a></li>
+<li class="method public "><a href="#method_update_speaker" title="update_speaker :: "><span class="description">update_speaker()
+        </span><pre>update_speaker()</pre></a></li>
 </ul>
 </li>
 <li class="nav-header">
@@ -378,6 +394,20 @@ we also create sermonseries from the cats</span><pre>import_filedownloads_proces
 </tr></table>
 </div></div>
 </div>
+<a id="method_delete_service"></a><div class="element clickable method public method_delete_service" data-toggle="collapse" data-target=".method_delete_service .collapse">
+<h2>delete_service()
+        </h2>
+<pre>delete_service() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_delete_speaker"></a><div class="element clickable method public method_delete_speaker" data-toggle="collapse" data-target=".method_delete_speaker .collapse">
+<h2>delete_speaker()
+        </h2>
+<pre>delete_speaker() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="method_description"></a><div class="element clickable method public method_description" data-toggle="collapse" data-target=".method_description .collapse">
 <h2>description of module</h2>
 <pre>description() : string</pre>
@@ -421,6 +451,20 @@ we also create sermonseries from the cats</span><pre>import_filedownloads_proces
 <td>\expController::edit()</td>
 </tr></table>
 </div></div>
+</div>
+<a id="method_edit_service"></a><div class="element clickable method public method_edit_service" data-toggle="collapse" data-target=".method_edit_service .collapse">
+<h2>edit_service()
+        </h2>
+<pre>edit_service() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_edit_speaker"></a><div class="element clickable method public method_edit_speaker" data-toggle="collapse" data-target=".method_edit_speaker .collapse">
+<h2>edit_speaker()
+        </h2>
+<pre>edit_speaker() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="method_getModels"></a><div class="element clickable method public method_getModels" data-toggle="collapse" data-target=".method_getModels .collapse">
 <h2>get the models associated with this module</h2>
@@ -553,6 +597,20 @@ we also create sermonseries from the cats</h2>
 <td>\expController::manage_ranks()</td>
 </tr></table>
 </div></div>
+</div>
+<a id="method_manage_services"></a><div class="element clickable method public method_manage_services" data-toggle="collapse" data-target=".method_manage_services .collapse">
+<h2>manage_services()
+        </h2>
+<pre>manage_services() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_manage_speakers"></a><div class="element clickable method public method_manage_speakers" data-toggle="collapse" data-target=".method_manage_speakers .collapse">
+<h2>manage_speakers()
+        </h2>
+<pre>manage_speakers() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="method_merge"></a><div class="element clickable method public method_merge" data-toggle="collapse" data-target=".method_merge .collapse">
 <h2>merge/move aggregated item into this module</h2>
@@ -808,6 +866,20 @@ we also create sermonseries from the cats</h2>
 </tr></table>
 </div></div>
 </div>
+<a id="method_update_service"></a><div class="element clickable method public method_update_service" data-toggle="collapse" data-target=".method_update_service .collapse">
+<h2>update_service()
+        </h2>
+<pre>update_service() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_update_speaker"></a><div class="element clickable method public method_update_speaker" data-toggle="collapse" data-target=".method_update_speaker .collapse">
+<h2>update_speaker()
+        </h2>
+<pre>update_speaker() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <h3>
 <i class="icon-custom icon-property"></i> Properties</h3>
 <a id="property_add_permissions"> </a><div class="element clickable property public property_add_permissions" data-toggle="collapse" data-target=".property_add_permissions .collapse">
@@ -1021,7 +1093,7 @@ we also create sermonseries from the cats</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-05-12T08:36:37-04:00.<br></footer></div>
+            generated on 2013-05-21T07:52:41-04:00.<br></footer></div>
 </div>
 </body>
 </html>
