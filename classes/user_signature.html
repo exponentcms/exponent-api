@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Exponent 2.2.0 » \expeAlerts</title>
+<title>Exponent 2.2.0 » \user_signature</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -70,7 +70,7 @@
 <li class="nav-header">
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
-<li class="method public "><a href="#method___construct" title="__construct :: "><span class="description">__construct()
+<li class="method public inherited"><a href="#method___construct" title="__construct :: "><span class="description">__construct()
         </span><pre>__construct()</pre></a></li>
 <li class="method public inherited"><a href="#method_afterCreate" title="afterCreate :: after creating item"><span class="description">after creating item</span><pre>afterCreate()</pre></a></li>
 <li class="method public inherited"><a href="#method_afterDelete" title="afterDelete :: is run after deleting item"><span class="description">is run after deleting item</span><pre>afterDelete()</pre></a></li>
@@ -83,25 +83,25 @@
 <li class="method public inherited"><a href="#method_attachItem" title="attachItem :: attach to item"><span class="description">attach to item</span><pre>attachItem()</pre></a></li>
 <li class="method public inherited"><a href="#method_beforeCreate" title="beforeCreate :: before creating item"><span class="description">before creating item</span><pre>beforeCreate()</pre></a></li>
 <li class="method public inherited"><a href="#method_beforeDelete" title="beforeDelete :: is run before deleting item"><span class="description">is run before deleting item</span><pre>beforeDelete()</pre></a></li>
-<li class="method public "><a href="#method_beforeSave" title="beforeSave :: before saving item"><span class="description">before saving item</span><pre>beforeSave()</pre></a></li>
+<li class="method public inherited"><a href="#method_beforeSave" title="beforeSave :: before saving item"><span class="description">before saving item</span><pre>beforeSave()</pre></a></li>
 <li class="method public inherited"><a href="#method_beforeUpdate" title="beforeUpdate :: before updating item"><span class="description">before updating item</span><pre>beforeUpdate()</pre></a></li>
 <li class="method public inherited"><a href="#method_beforeValidation" title="beforeValidation :: before validating item"><span class="description">before validating item</span><pre>beforeValidation()</pre></a></li>
 <li class="method public inherited"><a href="#method_beforeValidationOnCreate" title="beforeValidationOnCreate :: before validating item during creation"><span class="description">before validating item during creation</span><pre>beforeValidationOnCreate()</pre></a></li>
 <li class="method public inherited"><a href="#method_beforeValidationOnUpdate" title="beforeValidationOnUpdate :: before validating item during update"><span class="description">before validating item during update</span><pre>beforeValidationOnUpdate()</pre></a></li>
-<li class="method public "><a href="#method_build" title='build :: Adds table fields as class properties to current "record" class.'><span class="description">Adds table fields as class properties to current "record" class.</span><pre>build()</pre></a></li>
+<li class="method public inherited"><a href="#method_build" title='build :: Adds table fields as class properties to current "record" class.'><span class="description">Adds table fields as class properties to current "record" class.</span><pre>build()</pre></a></li>
 <li class="method public inherited"><a href="#method_delete" title="delete :: delete item"><span class="description">delete item</span><pre>delete()</pre></a></li>
+<li class="method public "><a href="#method_description" title="description :: "><span class="description">description()
+        </span><pre>description()</pre></a></li>
 <li class="method public inherited"><a href="#method_find" title="find :: find an item"><span class="description">find an item</span><pre>find()</pre></a></li>
 <li class="method public inherited"><a href="#method_findBy" title="findBy :: find an item by column"><span class="description">find an item by column</span><pre>findBy()</pre></a></li>
 <li class="method public inherited"><a href="#method_findWhereAttachedTo" title="findWhereAttachedTo :: this function finds models that have this attachable item attached"><span class="description">this function finds models that have this attachable item attached</span><pre>findWhereAttachedTo()</pre></a></li>
 <li class="method public inherited"><a href="#method_getAssociatedObjects" title="getAssociatedObjects :: get item's associated objects"><span class="description">get item's associated objects</span><pre>getAssociatedObjects()</pre></a></li>
-<li class="method public "><a href="#method_getBySubscriber" title="getBySubscriber :: "><span class="description">getBySubscriber()
-        </span><pre>getBySubscriber()</pre></a></li>
-<li class="method public "><a href="#method_getPendingBySubscriber" title="getPendingBySubscriber :: "><span class="description">getPendingBySubscriber()
-        </span><pre>getPendingBySubscriber()</pre></a></li>
 <li class="method public inherited"><a href="#method_getPoster" title="getPoster :: return the item poster"><span class="description">return the item poster</span><pre>getPoster()</pre></a></li>
 <li class="method public inherited"><a href="#method_getTimestamp" title="getTimestamp :: return the item timestamp"><span class="description">return the item timestamp</span><pre>getTimestamp()</pre></a></li>
 <li class="method public inherited"><a href="#method_isSearchable" title="isSearchable :: is model content searchable?"><span class="description">is model content searchable?</span><pre>isSearchable()</pre></a></li>
 <li class="method public inherited"><a href="#method_makeSefUrl" title="makeSefUrl :: make an sef_url for item"><span class="description">make an sef_url for item</span><pre>makeSefUrl()</pre></a></li>
+<li class="method public "><a href="#method_name" title="name :: "><span class="description">name()
+        </span><pre>name()</pre></a></li>
 <li class="method public inherited"><a href="#method_refresh" title="refresh :: re-construct the item"><span class="description">re-construct the item</span><pre>refresh()</pre></a></li>
 <li class="method public inherited"><a href="#method_rerank" title="rerank :: rerank items"><span class="description">rerank items</span><pre>rerank()</pre></a></li>
 <li class="method public inherited"><a href="#method_save" title="save :: save item"><span class="description">save item</span><pre>save()</pre></a></li>
@@ -143,7 +143,6 @@
 <li class="property public inherited"><a href="#property_identifier" title="$identifier :: "><span class="description"></span><pre>$identifier</pre></a></li>
 <li class="property public inherited"><a href="#property_rank_by_field" title="$rank_by_field :: "><span class="description"></span><pre>$rank_by_field</pre></a></li>
 <li class="property public inherited"><a href="#property_supports_revisions" title="$supports_revisions :: "><span class="description"></span><pre>$supports_revisions</pre></a></li>
-<li class="property public "><a href="#property_table" title="$table :: "><span class="description"></span><pre>$table</pre></a></li>
 <li class="property public inherited"><a href="#property_tablename" title="$tablename :: "><span class="description"></span><pre>$tablename</pre></a></li>
 <li class="property public inherited"><a href="#property_validate" title="$validate :: "><span class="description"></span><pre>$validate</pre></a></li>
 </ul>
@@ -157,13 +156,13 @@
 </ul>
 </div>
 <div class="span8">
-<a id="\expeAlerts"></a><ul class="breadcrumb">
+<a id="\user_signature"></a><ul class="breadcrumb">
 <li>
 <a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
 <li><a href="../namespaces/global.html">global</a></li>
 <li class="active">
-<span class="divider">\</span><a href="../classes/expeAlerts.html">expeAlerts</a>
+<span class="divider">\</span><a href="../classes/user_signature.html">user_signature</a>
 </li>
 </ul>
 <div class="element class">
@@ -173,11 +172,11 @@
 <table class="table table-bordered">
 <tr>
 <th>subpackage</th>
-<td>Models</td>
+<td>Profile-Extensions</td>
 </tr>
 <tr>
 <th>package</th>
-<td><a href="../packages/Modules.Models.html">Modules</a></td>
+<td><a href="../packages/Modules.Profile-Extensions.html">Modules</a></td>
 </tr>
 </table>
 <h3>
@@ -185,14 +184,26 @@
 <a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
 <h2>__construct()
         </h2>
-<pre>__construct(null $params) : <a href="../classes/expRecord.html">\expRecord</a></pre>
-<div class="labels"></div>
+<pre>__construct(null $params, bool $get_assoc, bool $get_attached) : <a href="../classes/expRecord.html">\expRecord</a></pre>
+<div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::__construct()</td>
+</tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$params</h4>
 <code>null</code>
+</div>
+<div class="subelement argument">
+<h4>$get_assoc</h4>
+<code>bool</code>
+</div>
+<div class="subelement argument">
+<h4>$get_attached</h4>
+<code>bool</code>
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code><a href="../classes/expRecord.html">\expRecord</a></code></div>
@@ -345,8 +356,14 @@
 <a id="method_beforeSave"></a><div class="element clickable method public method_beforeSave" data-toggle="collapse" data-target=".method_beforeSave .collapse">
 <h2>before saving item</h2>
 <pre>beforeSave() </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\expRecord::beforeSave()</td>
+</tr></table>
+</div></div>
 </div>
 <a id="method_beforeUpdate"></a><div class="element clickable method public method_beforeUpdate" data-toggle="collapse" data-target=".method_beforeUpdate .collapse">
 <h2>before updating item</h2>
@@ -399,13 +416,51 @@
 <a id="method_build"></a><div class="element clickable method public method_build" data-toggle="collapse" data-target=".method_build .collapse">
 <h2>Adds table fields as class properties to current "record" class.</h2>
 <pre>build(mixed $params) </pre>
-<div class="labels"></div>
+<div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"><p>Loads Table schema data and creates new class properties based
 upon the fields in given table.</p>
 
 <p>Additionally, if a record ID is given, that record is pulled and
 field values are also populated into class properties.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>name</th>
+<td>build</td>
+</tr>
+<tr>
+<th>category</th>
+<td>db_record</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>Builds  a data definition from existing table.</td>
+</tr>
+<tr>
+<th>requires</th>
+<td>$db</td>
+</tr>
+<tr>
+<th>access</th>
+<td>protected</td>
+</tr>
+<tr>
+<th>final</th>
+<td></td>
+</tr>
+<tr>
+<th>PHPUnit</th>
+<td>Not Defined</td>
+</tr>
+<tr>
+<th>global</th>
+<td>object $db</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\expRecord::build()</td>
+</tr>
+</table>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$params</h4>
@@ -430,6 +485,13 @@ field values are also populated into class properties.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>bool</code></div>
 </div></div>
+</div>
+<a id="method_description"></a><div class="element clickable method public method_description" data-toggle="collapse" data-target=".method_description .collapse">
+<h2>description()
+        </h2>
+<pre>description() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="method_find"></a><div class="element clickable method public method_find" data-toggle="collapse" data-target=".method_find .collapse">
 <h2>find an item</h2>
@@ -553,29 +615,6 @@ field values are also populated into class properties.</p></div>
 <div class="subelement response"><code>null</code></div>
 </div></div>
 </div>
-<a id="method_getBySubscriber"></a><div class="element clickable method public method_getBySubscriber" data-toggle="collapse" data-target=".method_getBySubscriber .collapse">
-<h2>getBySubscriber()
-        </h2>
-<pre>getBySubscriber($id, $pending) </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$id</h4></div>
-<div class="subelement argument"><h4>$pending</h4></div>
-</div></div>
-</div>
-<a id="method_getPendingBySubscriber"></a><div class="element clickable method public method_getPendingBySubscriber" data-toggle="collapse" data-target=".method_getPendingBySubscriber .collapse">
-<h2>getPendingBySubscriber()
-        </h2>
-<pre>getPendingBySubscriber($id) </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$id</h4></div>
-</div></div>
-</div>
 <a id="method_getPoster"></a><div class="element clickable method public method_getPoster" data-toggle="collapse" data-target=".method_getPoster .collapse">
 <h2>return the item poster</h2>
 <pre>getPoster() : null | string</pre>
@@ -638,6 +677,13 @@ field values are also populated into class properties.</p></div>
 <td>\expRecord::makeSefUrl()</td>
 </tr></table>
 </div></div>
+</div>
+<a id="method_name"></a><div class="element clickable method public method_name" data-toggle="collapse" data-target=".method_name .collapse">
+<h2>name()
+        </h2>
+<pre>name() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="method_refresh"></a><div class="element clickable method public method_refresh" data-toggle="collapse" data-target=".method_refresh .collapse">
 <h2>re-construct the item</h2>
@@ -1025,12 +1071,6 @@ field values are also populated into class properties.</p></div>
 </tr></table>
 </div></div>
 </div>
-<a id="property_table"> </a><div class="element clickable property public property_table" data-toggle="collapse" data-target=".property_table .collapse">
-<h2></h2>
-<pre>$table </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
 <a id="property_tablename"> </a><div class="element clickable property public property_tablename" data-toggle="collapse" data-target=".property_tablename .collapse">
 <h2></h2>
 <pre>$tablename </pre>
@@ -1086,7 +1126,7 @@ field values are also populated into class properties.</p></div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-06-05T16:07:50-04:00.<br></footer></div>
+            generated on 2013-06-05T16:08:02-04:00.<br></footer></div>
 </div>
 </body>
 </html>

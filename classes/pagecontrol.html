@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Exponent 2.2.0 » \yuidatetimecontrol</title>
+<title>Exponent 2.2.0 » \pagecontrol</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -82,12 +82,12 @@ Used to determine if control is available for the Forms (design) module</span><p
 <li class="method public "><a href="#method_name" title="name :: "><span class="description">name()
         </span><pre>name()</pre></a></li>
 <li class="method public "><a href="#method_onRegister" title="onRegister :: Event hook for when control is registered on a form"><span class="description">Event hook for when control is registered on a form</span><pre>onRegister()</pre></a></li>
-<li class="method public inherited"><a href="#method_onUnRegister" title="onUnRegister :: Event hook for when control is un-registered (removed) on a form"><span class="description">Event hook for when control is un-registered (removed) on a form</span><pre>onUnRegister()</pre></a></li>
-<li class="method public "><a href="#method_parseData" title="parseData :: Parse the control value"><span class="description">Parse the control value</span><pre>parseData()</pre></a></li>
-<li class="method public "><a href="#method_templateFormat" title="templateFormat :: Format the control's data for user display"><span class="description">Format the control's data for user display</span><pre>templateFormat()</pre></a></li>
+<li class="method public "><a href="#method_onUnRegister" title="onUnRegister :: Event hook for when control is un-registered (removed) on a form"><span class="description">Event hook for when control is un-registered (removed) on a form</span><pre>onUnRegister()</pre></a></li>
+<li class="method public inherited"><a href="#method_parseData" title="parseData :: Parse the control value"><span class="description">Parse the control value</span><pre>parseData()</pre></a></li>
+<li class="method public inherited"><a href="#method_templateFormat" title="templateFormat :: Format the control's data for user display"><span class="description">Format the control's data for user display</span><pre>templateFormat()</pre></a></li>
 <li class="method public "><a href="#method_toHTML" title="toHTML :: Place the control in the form"><span class="description">Place the control in the form</span><pre>toHTML()</pre></a></li>
 <li class="method public "><a href="#method_update" title="update :: Update the control settings"><span class="description">Update the control settings</span><pre>update()</pre></a></li>
-<li class="method public inherited"><a href="#method_useGeneric" title="useGeneric :: Use the Generic Control instead?
+<li class="method public "><a href="#method_useGeneric" title="useGeneric :: Use the Generic Control instead?
 Used to determine if control is actually a generic control"><span class="description">Use the Generic Control instead?
 Used to determine if control is actually a generic control</span><pre>useGeneric()</pre></a></li>
 </ul>
@@ -96,12 +96,11 @@ Used to determine if control is actually a generic control</span><pre>useGeneric
 <i class="icon-custom icon-property"></i> Properties
                     <ul>
 <li class="property public inherited"><a href="#property_accesskey" title="$accesskey :: "><span class="description"></span><pre>$accesskey</pre></a></li>
+<li class="property public "><a href="#property_caption" title="$caption :: "><span class="description"></span><pre>$caption</pre></a></li>
 <li class="property public inherited"><a href="#property_default" title="$default :: "><span class="description"></span><pre>$default</pre></a></li>
 <li class="property public inherited"><a href="#property_disabled" title="$disabled :: "><span class="description"></span><pre>$disabled</pre></a></li>
 <li class="property public inherited"><a href="#property_inError" title="$inError :: "><span class="description"></span><pre>$inError</pre></a></li>
 <li class="property public inherited"><a href="#property_required" title="$required :: "><span class="description"></span><pre>$required</pre></a></li>
-<li class="property public "><a href="#property_showdate" title="$showdate :: "><span class="description"></span><pre>$showdate</pre></a></li>
-<li class="property public "><a href="#property_showtime" title="$showtime :: "><span class="description"></span><pre>$showtime</pre></a></li>
 <li class="property public inherited"><a href="#property_tabindex" title="$tabindex :: "><span class="description"></span><pre>$tabindex</pre></a></li>
 <li class="property public inherited"><a href="#property_type" title="$type :: "><span class="description"></span><pre>$type</pre></a></li>
 </ul>
@@ -109,19 +108,17 @@ Used to determine if control is actually a generic control</span><pre>useGeneric
 </ul>
 </div>
 <div class="span8">
-<a id="\yuidatetimecontrol"></a><ul class="breadcrumb">
+<a id="\pagecontrol"></a><ul class="breadcrumb">
 <li>
 <a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
 <li><a href="../namespaces/global.html">global</a></li>
 <li class="active">
-<span class="divider">\</span><a href="../classes/yuidatetimecontrol.html">yuidatetimecontrol</a>
+<span class="divider">\</span><a href="../classes/pagecontrol.html">pagecontrol</a>
 </li>
 </ul>
 <div class="element class">
-<p class="short_description">YUI Date/Time Control
-uses/combines yuicalendarcontrol & datetimecontrol (w/o date)
-places a checkbox to disable calendar input</p>
+<p class="short_description">Page Control - Form Wizard Page marker</p>
 <div class="details">
 <div class="long_description"></div>
 <table class="table table-bordered">
@@ -139,17 +136,19 @@ places a checkbox to disable calendar input</p>
 <a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
 <h2>__construct()
         </h2>
-<pre>__construct($default, $edit_text, $showdate, $showtime, $display_only, $checked) </pre>
+<pre>__construct($default, $size, $disabled, $maxlength, $filter, $required, $placeholder, $pattern) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$default</h4></div>
-<div class="subelement argument"><h4>$edit_text</h4></div>
-<div class="subelement argument"><h4>$showdate</h4></div>
-<div class="subelement argument"><h4>$showtime</h4></div>
-<div class="subelement argument"><h4>$display_only</h4></div>
-<div class="subelement argument"><h4>$checked</h4></div>
+<div class="subelement argument"><h4>$size</h4></div>
+<div class="subelement argument"><h4>$disabled</h4></div>
+<div class="subelement argument"><h4>$maxlength</h4></div>
+<div class="subelement argument"><h4>$filter</h4></div>
+<div class="subelement argument"><h4>$required</h4></div>
+<div class="subelement argument"><h4>$placeholder</h4></div>
+<div class="subelement argument"><h4>$pattern</h4></div>
 </div></div>
 </div>
 <a id="method_controlToHTML"></a><div class="element clickable method public method_controlToHTML" data-toggle="collapse" data-target=".method_controlToHTML .collapse">
@@ -243,13 +242,9 @@ Used to determine if control is available for the Forms (design) module</h2>
 <a id="method_onUnRegister"></a><div class="element clickable method public method_onUnRegister" data-toggle="collapse" data-target=".method_onUnRegister .collapse">
 <h2>Event hook for when control is un-registered (removed) on a form</h2>
 <pre>onUnRegister($form) : bool</pre>
-<div class="labels"><span class="label">Inherited</span></div>
+<div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>inherited_from</th>
-<td>\formcontrol::onUnRegister()</td>
-</tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$form</h4></div>
 <h3>Returns</h3>
@@ -259,9 +254,21 @@ Used to determine if control is available for the Forms (design) module</h2>
 <a id="method_parseData"></a><div class="element clickable method public method_parseData" data-toggle="collapse" data-target=".method_parseData .collapse">
 <h2>Parse the control value</h2>
 <pre>parseData($original_name, $formvalues) : string</pre>
-<div class="labels"><span class="label">Static</span></div>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>static</th>
+<td></td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\formcontrol::parseData()</td>
+</tr>
+</table>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$original_name</h4></div>
 <div class="subelement argument"><h4>$formvalues</h4></div>
@@ -272,9 +279,15 @@ Used to determine if control is available for the Forms (design) module</h2>
 <a id="method_templateFormat"></a><div class="element clickable method public method_templateFormat" data-toggle="collapse" data-target=".method_templateFormat .collapse">
 <h2>Format the control's data for user display</h2>
 <pre>templateFormat($db_data, $ctl) : string</pre>
-<div class="labels"><span class="label">Static</span></div>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\formcontrol::templateFormat()</td>
+</tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$db_data</h4></div>
 <div class="subelement argument"><h4>$ctl</h4></div>
@@ -310,15 +323,9 @@ Used to determine if control is available for the Forms (design) module</h2>
 <h2>Use the Generic Control instead?
 Used to determine if control is actually a generic control</h2>
 <pre>useGeneric() : bool</pre>
-<div class="labels">
-<span class="label">Inherited</span><span class="label">Static</span>
-</div>
+<div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>inherited_from</th>
-<td>\formcontrol::useGeneric()</td>
-</tr></table>
 <h3>Returns</h3>
 <div class="subelement response"><code>bool</code></div>
 </div></div>
@@ -336,6 +343,12 @@ Used to determine if control is actually a generic control</h2>
 <td>\formcontrol::$$accesskey</td>
 </tr></table>
 </div></div>
+</div>
+<a id="property_caption"> </a><div class="element clickable property public property_caption" data-toggle="collapse" data-target=".property_caption .collapse">
+<h2></h2>
+<pre>$caption </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="property_default"> </a><div class="element clickable property public property_default" data-toggle="collapse" data-target=".property_default .collapse">
 <h2></h2>
@@ -385,18 +398,6 @@ Used to determine if control is actually a generic control</h2>
 </tr></table>
 </div></div>
 </div>
-<a id="property_showdate"> </a><div class="element clickable property public property_showdate" data-toggle="collapse" data-target=".property_showdate .collapse">
-<h2></h2>
-<pre>$showdate </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="property_showtime"> </a><div class="element clickable property public property_showtime" data-toggle="collapse" data-target=".property_showtime .collapse">
-<h2></h2>
-<pre>$showtime </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
 <a id="property_tabindex"> </a><div class="element clickable property public property_tabindex" data-toggle="collapse" data-target=".property_tabindex .collapse">
 <h2></h2>
 <pre>$tabindex </pre>
@@ -428,7 +429,7 @@ Used to determine if control is actually a generic control</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-06-05T16:07:44-04:00.<br></footer></div>
+            generated on 2013-06-05T16:07:43-04:00.<br></footer></div>
 </div>
 </body>
 </html>

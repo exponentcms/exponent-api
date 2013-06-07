@@ -38,14 +38,14 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3696</span></a></li>
+                <span class="label label-info">3712</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
                 <span class="label label-info">52</span>
 </li>
 <li>fixme 
-                <span class="label label-info">267</span>
+                <span class="label label-info">268</span>
 </li>
 </ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -107,6 +107,13 @@ Name:     relative_date&lt;br&gt;
 Purpose:  convert a date in a relative format</span><pre>smarty_modifier_relative_date</pre></a></li>
 <li class="function  "><a href="#function_smarty_modifier_remove_space" title="smarty_modifier_remove_space :: Smarty {remove_space} modifier plugin"><span class="description">Smarty {remove_space} modifier plugin</span><pre>smarty_modifier_remove_space</pre></a></li>
 <li class="function  "><a href="#function_smarty_modifier_reverse_array" title="smarty_modifier_reverse_array :: Smarty {reverse_array} modifier plugin"><span class="description">Smarty {reverse_array} modifier plugin</span><pre>smarty_modifier_reverse_array</pre></a></li>
+<li class="function  "><a href="#function_smarty_modifier_signature" title="smarty_modifier_signature :: Smarty {signature} modifier plugin
+Type:     modifier&lt;br&gt;
+Name:     signature&lt;br&gt;
+Purpose:  return the stored signature for a user id if available"><span class="description">Smarty {signature} modifier plugin
+Type:     modifier&lt;br&gt;
+Name:     signature&lt;br&gt;
+Purpose:  return the stored signature for a user id if available</span><pre>smarty_modifier_signature</pre></a></li>
 <li class="function  "><a href="#function_smarty_modifier_statename" title="smarty_modifier_statename :: Smarty {statename} modifier plugin"><span class="description">Smarty {statename} modifier plugin</span><pre>smarty_modifier_statename</pre></a></li>
 <li class="function  "><a href="#function_smarty_modifier_summarize" title="smarty_modifier_summarize :: Smarty {summarize} modifier plugin"><span class="description">Smarty {summarize} modifier plugin</span><pre>smarty_modifier_summarize</pre></a></li>
 <li class="function  "><a href="#function_smarty_modifier_urlencode" title="smarty_modifier_urlencode :: Smarty {urlencode} modifier plugin"><span class="description">Smarty {urlencode} modifier plugin</span><pre>smarty_modifier_urlencode</pre></a></li>
@@ -634,6 +641,24 @@ Purpose:  reverse arrays</p></div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
+<a id="function_smarty_modifier_signature"></a><div class="element clickable function  function_smarty_modifier_signature" data-toggle="collapse" data-target=".function_smarty_modifier_signature .collapse">
+<h2>Smarty {signature} modifier plugin
+Type:     modifier&lt;br&gt;
+Name:     signature&lt;br&gt;
+Purpose:  return the stored signature for a user id if available</h2>
+<pre>smarty_modifier_signature(integer $userid) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$userid</h4>
+<code>integer</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
 <a id="function_smarty_modifier_statename"></a><div class="element clickable function  function_smarty_modifier_statename" data-toggle="collapse" data-target=".function_smarty_modifier_statename .collapse">
 <h2>Smarty {statename} modifier plugin</h2>
 <pre>smarty_modifier_statename(array $state, string $col) : array</pre>
@@ -691,7 +716,7 @@ Purpose:  urlencode a string</p></div>
 Type:     modifier&lt;br&gt;
 Name:     username&lt;br&gt;
 Purpose:  return the username for a user id</h2>
-<pre>smarty_modifier_username($userid, null $type) : array</pre>
+<pre>smarty_modifier_username($userid, boolean $type) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -699,8 +724,7 @@ Purpose:  return the username for a user id</h2>
 <div class="subelement argument"><h4>$userid</h4></div>
 <div class="subelement argument">
 <h4>$type</h4>
-<code>null</code>
-</div>
+<code>boolean</code><p>if true return user name instead of record</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -711,7 +735,7 @@ Purpose:  return the username for a user id</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-05-21T07:52:14-04:00.<br></footer></div>
+            generated on 2013-06-05T16:07:37-04:00.<br></footer></div>
 </div>
 </body>
 </html>
