@@ -38,14 +38,14 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3712</span></a></li>
+                <span class="label label-info">3775</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
                 <span class="label label-info">52</span>
 </li>
 <li>fixme 
-                <span class="label label-info">268</span>
+                <span class="label label-info">273</span>
 </li>
 </ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -82,17 +82,17 @@
         </span><pre>categories()</pre></a></li>
 <li class="method public inherited"><a href="#method_comments" title="comments :: "><span class="description">comments()
         </span><pre>comments()</pre></a></li>
-<li class="method public "><a href="#method_configure" title="configure :: generic config action"><span class="description">generic config action</span><pre>configure()</pre></a></li>
+<li class="method public "><a href="#method_configure" title="configure :: Configure the module"><span class="description">Configure the module</span><pre>configure()</pre></a></li>
 <li class="method public "><a href="#method_confirm_data" title="confirm_data :: "><span class="description">confirm_data()
         </span><pre>confirm_data()</pre></a></li>
 <li class="method public inherited"><a href="#method_create" title="create :: create an item in this module (deprecated in favor of edit w/o id param"><span class="description">create an item in this module (deprecated in favor of edit w/o id param</span><pre>create()</pre></a></li>
 <li class="method public "><a href="#method_delete" title="delete :: delete item in saved data"><span class="description">delete item in saved data</span><pre>delete()</pre></a></li>
-<li class="method public inherited"><a href="#method_delete_In" title="delete_In :: delete an item by instance for backwards compat with old modules"><span class="description">delete an item by instance for backwards compat with old modules</span><pre>delete_In()</pre></a></li>
+<li class="method public inherited"><a href="#method_delete_In" title="delete_In :: delete module and all its items for backwards compat with old modules"><span class="description">delete module and all its items for backwards compat with old modules</span><pre>delete_In()</pre></a></li>
 <li class="method public "><a href="#method_delete_control" title="delete_control :: "><span class="description">delete_control()
         </span><pre>delete_control()</pre></a></li>
 <li class="method public "><a href="#method_delete_form" title="delete_form :: "><span class="description">delete_form()
         </span><pre>delete_form()</pre></a></li>
-<li class="method public inherited"><a href="#method_delete_instance" title="delete_instance :: delete an item by instance"><span class="description">delete an item by instance</span><pre>delete_instance()</pre></a></li>
+<li class="method public inherited"><a href="#method_delete_instance" title="delete_instance :: delete module, config, and all its items"><span class="description">delete module, config, and all its items</span><pre>delete_instance()</pre></a></li>
 <li class="method public inherited"><a href="#method_delete_search" title="delete_search :: remove module items from search index"><span class="description">remove module items from search index</span><pre>delete_search()</pre></a></li>
 <li class="method public "><a href="#method_description" title="description :: description of module"><span class="description">description of module</span><pre>description()</pre></a></li>
 <li class="method public "><a href="#method_design_form" title="design_form :: "><span class="description">design_form()
@@ -110,8 +110,8 @@
         </span><pre>enterdata()</pre></a></li>
 <li class="method public "><a href="#method_export_csv" title="export_csv :: "><span class="description">export_csv()
         </span><pre>export_csv()</pre></a></li>
-<li class="method public "><a href="#method_export_eql" title="export_eql :: "><span class="description">export_eql()
-        </span><pre>export_eql()</pre></a></li>
+<li class="method public "><a href="#method_export_eql" title="export_eql :: Export form, controls and optionally the data table"><span class="description">Export form, controls and optionally the data table</span><pre>export_eql()</pre></a></li>
+<li class="method public "><a href="#method_export_eql_process" title="export_eql_process :: Export form, controls and optionally the data table"><span class="description">Export form, controls and optionally the data table</span><pre>export_eql_process()</pre></a></li>
 <li class="method public inherited"><a href="#method_getModels" title="getModels :: get the models associated with this module"><span class="description">get the models associated with this module</span><pre>getModels()</pre></a></li>
 <li class="method public inherited"><a href="#method_getRSSContent" title="getRSSContent :: get the items in an rss feed format"><span class="description">get the items in an rss feed format</span><pre>getRSSContent()</pre></a></li>
 <li class="method public inherited"><a href="#method_hasContent" title="hasContent :: does module have content available?"><span class="description">does module have content available?</span><pre>hasContent()</pre></a></li>
@@ -131,6 +131,8 @@
         </span><pre>import_csv_form_prep()</pre></a></li>
 <li class="method public "><a href="#method_import_csv_mapper" title="import_csv_mapper :: "><span class="description">import_csv_mapper()
         </span><pre>import_csv_mapper()</pre></a></li>
+<li class="method public "><a href="#method_import_eql" title="import_eql :: Import form, controls and optionally the data table"><span class="description">Import form, controls and optionally the data table</span><pre>import_eql()</pre></a></li>
+<li class="method public "><a href="#method_import_eql_process" title="import_eql_process :: Import form, controls and optionally the data table"><span class="description">Import form, controls and optionally the data table</span><pre>import_eql_process()</pre></a></li>
 <li class="method public "><a href="#method_isSearchable" title="isSearchable :: is module content searchable?"><span class="description">is module content searchable?</span><pre>isSearchable()</pre></a></li>
 <li class="method public "><a href="#method_manage" title="manage :: Manage site forms"><span class="description">Manage site forms</span><pre>manage()</pre></a></li>
 <li class="method public inherited"><a href="#method_manage_ranks" title="manage_ranks :: rerank module items from ddrerank"><span class="description">rerank module items from ddrerank</span><pre>manage_ranks()</pre></a></li>
@@ -354,7 +356,7 @@
 </div></div>
 </div>
 <a id="method_configure"></a><div class="element clickable method public method_configure" data-toggle="collapse" data-target=".method_configure .collapse">
-<h2>generic config action</h2>
+<h2>Configure the module</h2>
 <pre>configure() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
@@ -385,7 +387,7 @@
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="method_delete_In"></a><div class="element clickable method public method_delete_In" data-toggle="collapse" data-target=".method_delete_In .collapse">
-<h2>delete an item by instance for backwards compat with old modules</h2>
+<h2>delete module and all its items for backwards compat with old modules</h2>
 <pre>delete_In($loc) </pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
@@ -413,8 +415,8 @@
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="method_delete_instance"></a><div class="element clickable method public method_delete_instance" data-toggle="collapse" data-target=".method_delete_instance .collapse">
-<h2>delete an item by instance</h2>
-<pre>delete_instance() </pre>
+<h2>delete module, config, and all its items</h2>
+<pre>delete_instance($loc) </pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -422,6 +424,8 @@
 <th>inherited_from</th>
 <td>\expController::delete_instance()</td>
 </tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$loc</h4></div>
 </div></div>
 </div>
 <a id="method_delete_search"></a><div class="element clickable method public method_delete_search" data-toggle="collapse" data-target=".method_delete_search .collapse">
@@ -523,9 +527,14 @@
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="method_export_eql"></a><div class="element clickable method public method_export_eql" data-toggle="collapse" data-target=".method_export_eql .collapse">
-<h2>export_eql()
-        </h2>
+<h2>Export form, controls and optionally the data table</h2>
 <pre>export_eql() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_export_eql_process"></a><div class="element clickable method public method_export_eql_process" data-toggle="collapse" data-target=".method_export_eql_process .collapse">
+<h2>Export form, controls and optionally the data table</h2>
+<pre>export_eql_process() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -651,6 +660,18 @@
 <h2>import_csv_mapper()
         </h2>
 <pre>import_csv_mapper() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_import_eql"></a><div class="element clickable method public method_import_eql" data-toggle="collapse" data-target=".method_import_eql .collapse">
+<h2>Import form, controls and optionally the data table</h2>
+<pre>import_eql() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_import_eql_process"></a><div class="element clickable method public method_import_eql_process" data-toggle="collapse" data-target=".method_import_eql_process .collapse">
+<h2>Import form, controls and optionally the data table</h2>
+<pre>import_eql_process() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -1189,7 +1210,7 @@ use the array_keys function to strip out a functional header</p></div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-06-05T16:07:58-04:00.<br></footer></div>
+            generated on 2013-07-20T10:07:12-04:00.<br></footer></div>
 </div>
 </body>
 </html>

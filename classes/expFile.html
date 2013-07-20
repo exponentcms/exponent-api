@@ -38,14 +38,14 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3712</span></a></li>
+                <span class="label label-info">3775</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
                 <span class="label label-info">52</span>
 </li>
 <li>fixme 
-                <span class="label label-info">268</span>
+                <span class="label label-info">273</span>
 </li>
 </ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -118,6 +118,7 @@ all of the records in all of the tables into a string.</span><pre>dumpDatabase()
 <li class="method public "><a href="#method_getImageInfo" title="getImageInfo :: Return size and mimetype information about an image file,
 given its path/filename."><span class="description">Return size and mimetype information about an image file,
 given its path/filename.</span><pre>getImageInfo()</pre></a></li>
+<li class="method public "><a href="#method_getMimeType" title="getMimeType :: Return the mimetype for the passed filename"><span class="description">Return the mimetype for the passed filename</span><pre>getMimeType()</pre></a></li>
 <li class="method public inherited"><a href="#method_getPoster" title="getPoster :: return the item poster"><span class="description">return the item poster</span><pre>getPoster()</pre></a></li>
 <li class="method public inherited"><a href="#method_getTimestamp" title="getTimestamp :: return the item timestamp"><span class="description">return the item timestamp</span><pre>getTimestamp()</pre></a></li>
 <li class="method public "><a href="#method_imageCaptcha" title="imageCaptcha :: exdoc"><span class="description">exdoc</span><pre>imageCaptcha()</pre></a></li>
@@ -168,7 +169,7 @@ Create an image resource handle (from GD) for a given filename."><span class="de
 Create an image resource handle (from GD) for a given filename.</span><pre>openImageFile()</pre></a></li>
 <li class="method public "><a href="#method_recurse_copy" title="recurse_copy :: "><span class="description">recurse_copy()
         </span><pre>recurse_copy()</pre></a></li>
-<li class="method public inherited"><a href="#method_refresh" title="refresh :: re-construct the item"><span class="description">re-construct the item</span><pre>refresh()</pre></a></li>
+<li class="method public inherited"><a href="#method_refresh" title="refresh :: re-construct the item from the database"><span class="description">re-construct the item from the database</span><pre>refresh()</pre></a></li>
 <li class="method public "><a href="#method_removeDirectory" title="removeDirectory :: Recursively removes the given directory, and all
 of the files and directories underneath it."><span class="description">Recursively removes the given directory, and all
 of the files and directories underneath it.</span><pre>removeDirectory()</pre></a></li>
@@ -185,10 +186,10 @@ any existing tables) from an EQL object dump.</span><pre>restoreDatabase()</pre>
 <li class="method public inherited"><a href="#method_save" title="save :: save item"><span class="description">save item</span><pre>save()</pre></a></li>
 <li class="method public inherited"><a href="#method_saveAssociatedObjects" title="saveAssociatedObjects :: save associated objects"><span class="description">save associated objects</span><pre>saveAssociatedObjects()</pre></a></li>
 <li class="method public inherited"><a href="#method_update" title="update :: update item"><span class="description">update item</span><pre>update()</pre></a></li>
-<li class="method public "><a href="#method_updateFormbuilderTable" title="updateFormbuilderTable :: recreates an deprecated formbuilder data table
-needed to import form data from eql file exported prior to v2.2.0
-this is just the old formbuilder_form::updateTable method"><span class="description">recreates an deprecated formbuilder data table
-needed to import form data from eql file exported prior to v2.2.0
+<li class="method public "><a href="#method_updateFormbuilderTable" title="updateFormbuilderTable :: recreates a deprecated formbuilder data table
+needed to import form data from eql file exported prior to v2.1.4
+this is just the old formbuilder_form::updateTable method"><span class="description">recreates a deprecated formbuilder data table
+needed to import form data from eql file exported prior to v2.1.4
 this is just the old formbuilder_form::updateTable method</span><pre>updateFormbuilderTable()</pre></a></li>
 <li class="method public "><a href="#method_uploadDestinationFileExists" title="uploadDestinationFileExists :: exdoc
 Checks to see if the upload destination file exists."><span class="description">exdoc
@@ -725,7 +726,7 @@ Copies just the directory structure (including subdirectories) of a given direct
 <h2>exdoc
 This function takes a database object and dumps
 all of the records in all of the tables into a string.</h2>
-<pre>dumpDatabase(\Database $db, null $tables, null $force_version) : string</pre>
+<pre>dumpDatabase(\Database $db, null $tables, $type, $record) : string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"><p>The contents of the string are suitable for storage
@@ -744,10 +745,8 @@ implementation.</p></div>
 <h4>$tables</h4>
 <code>null</code>
 </div>
-<div class="subelement argument">
-<h4>$force_version</h4>
-<code>null</code>
-</div>
+<div class="subelement argument"><h4>$type</h4></div>
+<div class="subelement argument"><h4>$record</h4></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
 </div></div>
@@ -1114,6 +1113,21 @@ work identically.</p></div>
 <code>array</code>$_sizeinfo      An array of Image File info</div>
 <div class="subelement response">
 <code>array</code>$error message  Error message@throws void</div>
+</div></div>
+</div>
+<a id="method_getMimeType"></a><div class="element clickable method public method_getMimeType" data-toggle="collapse" data-target=".method_getMimeType .collapse">
+<h2>Return the mimetype for the passed filename</h2>
+<pre>getMimeType(string $filename) : string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$filename</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
 <a id="method_getPoster"></a><div class="element clickable method public method_getPoster" data-toggle="collapse" data-target=".method_getPoster .collapse">
@@ -1581,7 +1595,7 @@ is in place, however.</p></div>
 </div></div>
 </div>
 <a id="method_refresh"></a><div class="element clickable method public method_refresh" data-toggle="collapse" data-target=".method_refresh .collapse">
-<h2>re-construct the item</h2>
+<h2>re-construct the item from the database</h2>
 <pre>refresh() : bool</pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
@@ -1692,7 +1706,7 @@ the files and directories underneath it.</h2>
 <h2>exdoc
 This function restores a database (overwriting all data in
 any existing tables) from an EQL object dump.</h2>
-<pre>restoreDatabase(\Database $db, string $file, array $errors, null $force_version) : bool</pre>
+<pre>restoreDatabase(\Database $db, string $file, array $errors, $type) : bool</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"><p>Returns true if
@@ -1717,10 +1731,7 @@ was fine.</p></div>
                         variable is passed in this argument will contain all errors encountered
                         during the parse/restore.</p>
 </div>
-<div class="subelement argument">
-<h4>$force_version</h4>
-<code>null</code>
-</div>
+<div class="subelement argument"><h4>$type</h4></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>bool</code></div>
 </div></div>
@@ -1773,8 +1784,8 @@ was fine.</p></div>
 </div></div>
 </div>
 <a id="method_updateFormbuilderTable"></a><div class="element clickable method public method_updateFormbuilderTable" data-toggle="collapse" data-target=".method_updateFormbuilderTable .collapse">
-<h2>recreates an deprecated formbuilder data table
-needed to import form data from eql file exported prior to v2.2.0
+<h2>recreates a deprecated formbuilder data table
+needed to import form data from eql file exported prior to v2.1.4
 this is just the old formbuilder_form::updateTable method</h2>
 <pre>updateFormbuilderTable($object) : mixed</pre>
 <div class="labels"><span class="label">Static</span></div>
@@ -2547,7 +2558,7 @@ This is a "relabel" of the PHP 'LOCK_EX' constant</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-06-05T16:07:58-04:00.<br></footer></div>
+            generated on 2013-07-20T10:07:11-04:00.<br></footer></div>
 </div>
 </body>
 </html>

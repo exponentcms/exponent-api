@@ -38,14 +38,14 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3712</span></a></li>
+                <span class="label label-info">3775</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul>
 <li>todo 
                 <span class="label label-info">52</span>
 </li>
 <li>fixme 
-                <span class="label label-info">268</span>
+                <span class="label label-info">273</span>
 </li>
 </ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -94,13 +94,12 @@
         </span><pre>checkPermissions()</pre></a></li>
 <li class="method public inherited"><a href="#method_comments" title="comments :: "><span class="description">comments()
         </span><pre>comments()</pre></a></li>
-<li class="method public inherited"><a href="#method_configure" title="configure :: generic config action"><span class="description">generic config action</span><pre>configure()</pre></a></li>
+<li class="method public inherited"><a href="#method_configure" title="configure :: Configure the module"><span class="description">Configure the module</span><pre>configure()</pre></a></li>
 <li class="method public inherited"><a href="#method_create" title="create :: create an item in this module (deprecated in favor of edit w/o id param"><span class="description">create an item in this module (deprecated in favor of edit w/o id param</span><pre>create()</pre></a></li>
 <li class="method public inherited"><a href="#method_delete" title="delete :: delete item in module"><span class="description">delete item in module</span><pre>delete()</pre></a></li>
-<li class="method public "><a href="#method_deleteLevel" title="deleteLevel :: "><span class="description">deleteLevel()
-        </span><pre>deleteLevel()</pre></a></li>
-<li class="method public inherited"><a href="#method_delete_In" title="delete_In :: delete an item by instance for backwards compat with old modules"><span class="description">delete an item by instance for backwards compat with old modules</span><pre>delete_In()</pre></a></li>
-<li class="method public inherited"><a href="#method_delete_instance" title="delete_instance :: delete an item by instance"><span class="description">delete an item by instance</span><pre>delete_instance()</pre></a></li>
+<li class="method public "><a href="#method_deleteLevel" title="deleteLevel :: Delete page and send its contents to the recycle bin"><span class="description">Delete page and send its contents to the recycle bin</span><pre>deleteLevel()</pre></a></li>
+<li class="method public inherited"><a href="#method_delete_In" title="delete_In :: delete module and all its items for backwards compat with old modules"><span class="description">delete module and all its items for backwards compat with old modules</span><pre>delete_In()</pre></a></li>
+<li class="method public inherited"><a href="#method_delete_instance" title="delete_instance :: delete module, config, and all its items"><span class="description">delete module, config, and all its items</span><pre>delete_instance()</pre></a></li>
 <li class="method public inherited"><a href="#method_delete_search" title="delete_search :: remove module items from search index"><span class="description">remove module items from search index</span><pre>delete_search()</pre></a></li>
 <li class="method public "><a href="#method_delete_standalones" title="delete_standalones :: "><span class="description">delete_standalones()
         </span><pre>delete_standalones()</pre></a></li>
@@ -129,7 +128,7 @@
 <li class="method public "><a href="#method_isPublic" title="isPublic :: "><span class="description">isPublic()
         </span><pre>isPublic()</pre></a></li>
 <li class="method public "><a href="#method_isSearchable" title="isSearchable :: is module content searchable?"><span class="description">is module content searchable?</span><pre>isSearchable()</pre></a></li>
-<li class="method public "><a href="#method_levelDropDownControlArray" title="levelDropDownControlArray :: Returns a flat representation of the full site hierarchy."><span class="description">Returns a flat representation of the full site hierarchy.</span><pre>levelDropDownControlArray()</pre></a></li>
+<li class="method public "><a href="#method_levelDropdownControlArray" title="levelDropdownControlArray :: Returns a flat representation of the full site hierarchy."><span class="description">Returns a flat representation of the full site hierarchy.</span><pre>levelDropdownControlArray()</pre></a></li>
 <li class="method public "><a href="#method_levelShowDropdown" title="levelShowDropdown :: Retrieve either the entire hierarchy, or a subset of the hierarchy, as an array suitable for use
 in a dropdowncontrol."><span class="description">Retrieve either the entire hierarchy, or a subset of the hierarchy, as an array suitable for use
 in a dropdowncontrol.</span><pre>levelShowDropdown()</pre></a></li>
@@ -151,12 +150,9 @@ in a dropdowncontrol.</span><pre>levelShowDropdown()</pre></a></li>
         </span><pre>process_section()</pre></a></li>
 <li class="method public "><a href="#method_process_subsections" title="process_subsections :: "><span class="description">process_subsections()
         </span><pre>process_subsections()</pre></a></li>
-<li class="method public "><a href="#method_remove" title="remove :: "><span class="description">remove()
-        </span><pre>remove()</pre></a></li>
-<li class="method public "><a href="#method_removeLevel" title="removeLevel :: "><span class="description">removeLevel()
-        </span><pre>removeLevel()</pre></a></li>
-<li class="method public "><a href="#method_reparent_standalone" title="reparent_standalone :: "><span class="description">reparent_standalone()
-        </span><pre>reparent_standalone()</pre></a></li>
+<li class="method public "><a href="#method_remove" title="remove :: Move content page to standalones"><span class="description">Move content page to standalones</span><pre>remove()</pre></a></li>
+<li class="method public "><a href="#method_removeLevel" title="removeLevel :: Move content page and its children to stand-alones"><span class="description">Move content page and its children to stand-alones</span><pre>removeLevel()</pre></a></li>
+<li class="method public "><a href="#method_reparent_standalone" title="reparent_standalone :: Move standalone back to hierarchy"><span class="description">Move standalone back to hierarchy</span><pre>reparent_standalone()</pre></a></li>
 <li class="method public inherited"><a href="#method_requiresConfiguration" title="requiresConfiguration :: does this module require configuration?"><span class="description">does this module require configuration?</span><pre>requiresConfiguration()</pre></a></li>
 <li class="method public inherited"><a href="#method_rerank" title="rerank :: rerank items in model"><span class="description">rerank items in model</span><pre>rerank()</pre></a></li>
 <li class="method public "><a href="#method_returnChildrenAsJSON" title="returnChildrenAsJSON :: "><span class="description">returnChildrenAsJSON()
@@ -426,7 +422,7 @@ in a dropdowncontrol.</span><pre>levelShowDropdown()</pre></a></li>
 </div></div>
 </div>
 <a id="method_configure"></a><div class="element clickable method public method_configure" data-toggle="collapse" data-target=".method_configure .collapse">
-<h2>generic config action</h2>
+<h2>Configure the module</h2>
 <pre>configure() </pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
@@ -462,8 +458,7 @@ in a dropdowncontrol.</span><pre>levelShowDropdown()</pre></a></li>
 </div></div>
 </div>
 <a id="method_deleteLevel"></a><div class="element clickable method public method_deleteLevel" data-toggle="collapse" data-target=".method_deleteLevel .collapse">
-<h2>deleteLevel()
-        </h2>
+<h2>Delete page and send its contents to the recycle bin</h2>
 <pre>deleteLevel($parent) </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
@@ -473,7 +468,7 @@ in a dropdowncontrol.</span><pre>levelShowDropdown()</pre></a></li>
 </div></div>
 </div>
 <a id="method_delete_In"></a><div class="element clickable method public method_delete_In" data-toggle="collapse" data-target=".method_delete_In .collapse">
-<h2>delete an item by instance for backwards compat with old modules</h2>
+<h2>delete module and all its items for backwards compat with old modules</h2>
 <pre>delete_In($loc) </pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
@@ -487,8 +482,8 @@ in a dropdowncontrol.</span><pre>levelShowDropdown()</pre></a></li>
 </div></div>
 </div>
 <a id="method_delete_instance"></a><div class="element clickable method public method_delete_instance" data-toggle="collapse" data-target=".method_delete_instance .collapse">
-<h2>delete an item by instance</h2>
-<pre>delete_instance() </pre>
+<h2>delete module, config, and all its items</h2>
+<pre>delete_instance($loc) </pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -496,6 +491,8 @@ in a dropdowncontrol.</span><pre>levelShowDropdown()</pre></a></li>
 <th>inherited_from</th>
 <td>\expController::delete_instance()</td>
 </tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$loc</h4></div>
 </div></div>
 </div>
 <a id="method_delete_search"></a><div class="element clickable method public method_delete_search" data-toggle="collapse" data-target=".method_delete_search .collapse">
@@ -730,9 +727,9 @@ in a dropdowncontrol.</span><pre>levelShowDropdown()</pre></a></li>
 <div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
-<a id="method_levelDropDownControlArray"></a><div class="element clickable method public method_levelDropDownControlArray" data-toggle="collapse" data-target=".method_levelDropDownControlArray .collapse">
+<a id="method_levelDropdownControlArray"></a><div class="element clickable method public method_levelDropdownControlArray" data-toggle="collapse" data-target=".method_levelDropdownControlArray .collapse">
 <h2>Returns a flat representation of the full site hierarchy.</h2>
-<pre>levelDropDownControlArray(int $parent, int $depth, array $ignore_ids, bool $full, string $perm, bool $addstandalones) : array</pre>
+<pre>levelDropdownControlArray(int $parent, int $depth, array $ignore_ids, bool $full, string $perm, bool $addstandalones, $addinternalalias) : array</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -757,6 +754,7 @@ in a dropdowncontrol.</span><pre>levelShowDropdown()</pre></a></li>
 <h4>$addstandalones</h4>
 <code>bool</code><p>should we add the stand-alone pages also</p>
 </div>
+<div class="subelement argument"><h4>$addinternalalias</h4></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -950,15 +948,13 @@ sections to specific parts of the site hierarchy.</p></div>
 </div></div>
 </div>
 <a id="method_remove"></a><div class="element clickable method public method_remove" data-toggle="collapse" data-target=".method_remove .collapse">
-<h2>remove()
-        </h2>
+<h2>Move content page to standalones</h2>
 <pre>remove() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="method_removeLevel"></a><div class="element clickable method public method_removeLevel" data-toggle="collapse" data-target=".method_removeLevel .collapse">
-<h2>removeLevel()
-        </h2>
+<h2>Move content page and its children to stand-alones</h2>
 <pre>removeLevel($parent) </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
@@ -968,8 +964,7 @@ sections to specific parts of the site hierarchy.</p></div>
 </div></div>
 </div>
 <a id="method_reparent_standalone"></a><div class="element clickable method public method_reparent_standalone" data-toggle="collapse" data-target=".method_reparent_standalone .collapse">
-<h2>reparent_standalone()
-        </h2>
+<h2>Move standalone back to hierarchy</h2>
 <pre>reparent_standalone() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
@@ -1365,7 +1360,7 @@ sections to specific parts of the site hierarchy.</p></div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-06-05T16:07:59-04:00.<br></footer></div>
+            generated on 2013-07-20T10:07:13-04:00.<br></footer></div>
 </div>
 </body>
 </html>
