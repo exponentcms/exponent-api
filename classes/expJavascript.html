@@ -38,16 +38,9 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3775</span></a></li>
+                <span class="label label-info">0</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
-                <ul>
-<li>todo 
-                <span class="label label-info">52</span>
-</li>
-<li>fixme 
-                <span class="label label-info">273</span>
-</li>
-</ul></a></li>
+                <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
                 <span class="label label-info">0</span></a></li>
 </ul>
@@ -69,31 +62,43 @@
 <ul class="side-nav nav nav-list"><li class="nav-header">
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
-<li class="method public "><a href="#method_ajaxReply" title="ajaxReply :: "><span class="description">ajaxReply()
+<li class="method public "><a href="#method_ajaxReply" title="ajaxReply() :: "><span class="description">ajaxReply()
         </span><pre>ajaxReply()</pre></a></li>
-<li class="method public "><a href="#method_footJavascriptOutput" title="footJavascriptOutput :: "><span class="description">footJavascriptOutput()
+<li class="method public "><a href="#method_footJavascriptOutput" title="footJavascriptOutput() :: "><span class="description">footJavascriptOutput()
         </span><pre>footJavascriptOutput()</pre></a></li>
-<li class="method public "><a href="#method_inAjaxAction" title="inAjaxAction :: "><span class="description">inAjaxAction()
+<li class="method public "><a href="#method_inAjaxAction" title="inAjaxAction() :: "><span class="description">inAjaxAction()
         </span><pre>inAjaxAction()</pre></a></li>
-<li class="method public "><a href="#method_jClass" title="jClass :: exdoc
+<li class="method public "><a href="#method_jClass" title="jClass() :: exdoc
 Takes a stdClass object from PHP, and generates the
-corresponding Javascript class function."><span class="description">exdoc
+corresponding Javascript class function.  The data in the
+members of the PHP object is not important, only the
+presence and names of said members.  Returns the
+javascript class function code."><span class="description">exdoc
 Takes a stdClass object from PHP, and generates the
-corresponding Javascript class function.</span><pre>jClass()</pre></a></li>
-<li class="method public "><a href="#method_jObject" title="jObject :: exdoc
+corresponding Javascript class function.  The data in the
+members of the PHP object is not important, only the
+presence and names of said members.  Returns the
+javascript class function code.</span><pre>jClass()</pre></a></li>
+<li class="method public "><a href="#method_jObject" title="jObject() :: exdoc
 Takes a stdClass object from PHP, and generates the
 corresponding Javascript calls to make a new Javascript
-object."><span class="description">exdoc
+object.  In order for the resulting Javascript to function
+properly, a call to expJavascript_class must have been
+made previously, and the same $name attribute used. Returns
+the javascript code to create a new object."><span class="description">exdoc
 Takes a stdClass object from PHP, and generates the
 corresponding Javascript calls to make a new Javascript
-object.</span><pre>jObject()</pre></a></li>
-<li class="method public "><a href="#method_panel" title="panel :: "><span class="description">panel()
+object.  In order for the resulting Javascript to function
+properly, a call to expJavascript_class must have been
+made previously, and the same $name attribute used. Returns
+the javascript code to create a new object.</span><pre>jObject()</pre></a></li>
+<li class="method public "><a href="#method_panel" title="panel() :: "><span class="description">panel()
         </span><pre>panel()</pre></a></li>
-<li class="method public "><a href="#method_parseJSFiles" title="parseJSFiles :: "><span class="description">parseJSFiles()
+<li class="method public "><a href="#method_parseJSFiles" title="parseJSFiles() :: "><span class="description">parseJSFiles()
         </span><pre>parseJSFiles()</pre></a></li>
-<li class="method public "><a href="#method_pushToFoot" title="pushToFoot :: "><span class="description">pushToFoot()
+<li class="method public "><a href="#method_pushToFoot" title="pushToFoot() :: "><span class="description">pushToFoot()
         </span><pre>pushToFoot()</pre></a></li>
-<li class="method public "><a href="#method_requiresJSON" title="requiresJSON :: "><span class="description">requiresJSON()
+<li class="method public "><a href="#method_requiresJSON" title="requiresJSON() :: "><span class="description">requiresJSON()
         </span><pre>requiresJSON()</pre></a></li>
 </ul>
 </li></ul>
@@ -103,7 +108,6 @@ object.</span><pre>jObject()</pre></a></li>
 <li>
 <a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
-<li><a href="../namespaces/global.html">global</a></li>
 <li class="active">
 <span class="divider">\</span><a href="../classes/expJavascript.html">expJavascript</a>
 </li>
@@ -114,7 +118,7 @@ object.</span><pre>jObject()</pre></a></li>
 <div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>define</th>
-<td>"BASE" "../../.."</td>
+<td>&quot;BASE&quot; &quot;../../..&quot;</td>
 </tr></table>
 <h3>
 <i class="icon-custom icon-method"></i> Methods</h3>
@@ -148,14 +152,14 @@ object.</span><pre>jObject()</pre></a></li>
 <a id="method_jClass"></a><div class="element clickable method public method_jClass" data-toggle="collapse" data-target=".method_jClass .collapse">
 <h2>exdoc
 Takes a stdClass object from PHP, and generates the
-corresponding Javascript class function.</h2>
+corresponding Javascript class function.  The data in the
+members of the PHP object is not important, only the
+presence and names of said members.  Returns the
+javascript class function code.</h2>
 <pre>jClass(Object $object, string $name) : string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>The data in the
-members of the PHP object is not important, only the
-presence and names of said members.  Returns the
-javascript class function code.</p></div>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:Javascript</td>
@@ -175,17 +179,15 @@ javascript class function code.</p></div>
 <h2>exdoc
 Takes a stdClass object from PHP, and generates the
 corresponding Javascript calls to make a new Javascript
-object.</h2>
+object.  In order for the resulting Javascript to function
+properly, a call to expJavascript_class must have been
+made previously, and the same $name attribute used. Returns
+the javascript code to create a new object.</h2>
 <pre>jObject(Object $object, string $name) : string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>In order for the resulting Javascript to function
-properly, a call to expJavascript_class must have been
-made previously, and the same $name attribute used. Returns
-the javascript code to create a new object.</p>
-
-<p>The data in the members of the PHP object will be used to
-populate the members of the new Javascript object.</p></div>
+<div class="long_description">The data in the members of the PHP object will be used to
+populate the members of the new Javascript object.</div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:Javascript</td>
@@ -243,8 +245,9 @@ populate the members of the new Javascript object.</p></div>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-07-20T10:07:00-04:00.<br></footer></div>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0
+</a> and<br>
+            generated on 2013-08-06T07:59:52-04:00.<br></footer></div>
 </div>
 </body>
 </html>

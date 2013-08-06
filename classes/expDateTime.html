@@ -38,16 +38,9 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3775</span></a></li>
+                <span class="label label-info">0</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
-                <ul>
-<li>todo 
-                <span class="label label-info">52</span>
-</li>
-<li>fixme 
-                <span class="label label-info">273</span>
-</li>
-</ul></a></li>
+                <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
                 <span class="label label-info">0</span></a></li>
 </ul>
@@ -69,79 +62,111 @@
 <ul class="side-nav nav nav-list"><li class="nav-header">
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
-<li class="method public "><a href="#method_duration" title="duration :: exdoc
+<li class="method public "><a href="#method_duration" title="duration() :: exdoc
 Looks at a start and end time and figures out
 how many seconds elapsed since between the earlier
-timestamp and the later timestamp."><span class="description">exdoc
+timestamp and the later timestamp.  It doesn't matter
+if the bigger argument is specified first or not. Returns
+the number of seconds between $time_a and $time_b"><span class="description">exdoc
 Looks at a start and end time and figures out
 how many seconds elapsed since between the earlier
-timestamp and the later timestamp.</span><pre>duration()</pre></a></li>
-<li class="method public "><a href="#method_endOfDayTimestamp" title="endOfDayTimestamp :: exdoc
+timestamp and the later timestamp.  It doesn't matter
+if the bigger argument is specified first or not. Returns
+the number of seconds between $time_a and $time_b</span><pre>duration()</pre></a></li>
+<li class="method public "><a href="#method_endOfDayTimestamp" title="endOfDayTimestamp() :: exdoc
 Looks at a timestamp and returns another timestamp representing
 11:59:59 pm of the same day."><span class="description">exdoc
 Looks at a timestamp and returns another timestamp representing
 11:59:59 pm of the same day.</span><pre>endOfDayTimestamp()</pre></a></li>
-<li class="method public "><a href="#method_endOfMonthDay" title="endOfMonthDay :: exdoc
+<li class="method public "><a href="#method_endOfMonthDay" title="endOfMonthDay() :: exdoc
 Looks at a timestamp and returns the date of the last
-day."><span class="description">exdoc
+day.  For instance, if the passed timestamp was in January,
+this function would return 31.  Leap year is taken into account."><span class="description">exdoc
 Looks at a timestamp and returns the date of the last
-day.</span><pre>endOfMonthDay()</pre></a></li>
-<li class="method public "><a href="#method_endOfMonthTimestamp" title="endOfMonthTimestamp :: exdoc
+day.  For instance, if the passed timestamp was in January,
+this function would return 31.  Leap year is taken into account.</span><pre>endOfMonthDay()</pre></a></li>
+<li class="method public "><a href="#method_endOfMonthTimestamp" title="endOfMonthTimestamp() :: exdoc
 Given a timestamp, this function will calculate another timestamp
 that represents the end of the month that the passed timestamp
-falls into."><span class="description">exdoc
+falls into.  For instance, passing a timestamp representing January 25th 1984
+would return a timestamp representing January 31st 1984, at 11:59pm."><span class="description">exdoc
 Given a timestamp, this function will calculate another timestamp
 that represents the end of the month that the passed timestamp
-falls into.</span><pre>endOfMonthTimestamp()</pre></a></li>
-<li class="method public "><a href="#method_endOfWeekTimestamp" title="endOfWeekTimestamp :: exdoc
+falls into.  For instance, passing a timestamp representing January 25th 1984
+would return a timestamp representing January 31st 1984, at 11:59pm.</span><pre>endOfMonthTimestamp()</pre></a></li>
+<li class="method public "><a href="#method_endOfWeekTimestamp" title="endOfWeekTimestamp() :: exdoc
 Looks at a timestamp and returns another timestamp representing
 12:00:01 am of the DISPLAY_START_OF_WEEK day of the same week."><span class="description">exdoc
 Looks at a timestamp and returns another timestamp representing
 12:00:01 am of the DISPLAY_START_OF_WEEK day of the same week.</span><pre>endOfWeekTimestamp()</pre></a></li>
-<li class="method public "><a href="#method_format_date" title="format_date :: Return a date in the preferred format"><span class="description">Return a date in the preferred format</span><pre>format_date()</pre></a></li>
-<li class="method public "><a href="#method_monthlyDaysTimestamp" title="monthlyDaysTimestamp :: exdoc
+<li class="method public "><a href="#method_endOfYearTimestamp" title="endOfYearTimestamp() :: exdoc
+Given a timestamp, this function will calculate another timestamp
+that represents the end of the year that the passed timestamp
+falls into.  For instance, passing a timestamp representing January 25th 1984
+would return a timestamp representing December 31st 1984, at 11:59pm."><span class="description">exdoc
+Given a timestamp, this function will calculate another timestamp
+that represents the end of the year that the passed timestamp
+falls into.  For instance, passing a timestamp representing January 25th 1984
+would return a timestamp representing December 31st 1984, at 11:59pm.</span><pre>endOfYearTimestamp()</pre></a></li>
+<li class="method public "><a href="#method_format_date" title="format_date() :: Return a date in the preferred format"><span class="description">Return a date in the preferred format</span><pre>format_date()</pre></a></li>
+<li class="method public "><a href="#method_monthlyDaysTimestamp" title="monthlyDaysTimestamp() :: exdoc
 Adapted from calendar module's minical view to be more modular."><span class="description">exdoc
 Adapted from calendar module's minical view to be more modular.</span><pre>monthlyDaysTimestamp()</pre></a></li>
-<li class="method public "><a href="#method_monthsDropdown" title="monthsDropdown :: exdoc"><span class="description">exdoc</span><pre>monthsDropdown()</pre></a></li>
-<li class="method public "><a href="#method_recurringDailyDates" title="recurringDailyDates :: exdoc
+<li class="method public "><a href="#method_monthsDropdown" title="monthsDropdown() :: exdoc"><span class="description">exdoc</span><pre>monthsDropdown()</pre></a></li>
+<li class="method public "><a href="#method_recurringDailyDates" title="recurringDailyDates() :: exdoc
 Find all of the dates that fall within the daily recurrence criteria."><span class="description">exdoc
 Find all of the dates that fall within the daily recurrence criteria.</span><pre>recurringDailyDates()</pre></a></li>
-<li class="method public "><a href="#method_recurringMonthlyDates" title="recurringMonthlyDates :: exdoc
+<li class="method public "><a href="#method_recurringMonthlyDates" title="recurringMonthlyDates() :: exdoc
 Finds all of the dates that fall within the monthly recurrence criteria
-and within the $start to $end timestamp range."><span class="description">exdoc
+and within the $start to $end timestamp range.  Monthly recurrence can be
+done on a specific date (the 14th of the month) or on a specific weekday / offset
+pair (the third sunday of the month)."><span class="description">exdoc
 Finds all of the dates that fall within the monthly recurrence criteria
-and within the $start to $end timestamp range.</span><pre>recurringMonthlyDates()</pre></a></li>
-<li class="method public "><a href="#method_recurringWeeklyDates" title="recurringWeeklyDates :: exdoc
+and within the $start to $end timestamp range.  Monthly recurrence can be
+done on a specific date (the 14th of the month) or on a specific weekday / offset
+pair (the third sunday of the month).</span><pre>recurringMonthlyDates()</pre></a></li>
+<li class="method public "><a href="#method_recurringWeeklyDates" title="recurringWeeklyDates() :: exdoc
 Finds all of the dates that fall within the weekly recurrence criteria
 (namely, which weekdays) and within the $start to $end timestamp range."><span class="description">exdoc
 Finds all of the dates that fall within the weekly recurrence criteria
 (namely, which weekdays) and within the $start to $end timestamp range.</span><pre>recurringWeeklyDates()</pre></a></li>
-<li class="method public "><a href="#method_recurringYearlyDates" title="recurringYearlyDates :: exdoc
+<li class="method public "><a href="#method_recurringYearlyDates" title="recurringYearlyDates() :: exdoc
 Finds all of the dates that fall within the yearly recurrence criteria
 (similar to monthly) and within the $start to $end timestamp range."><span class="description">exdoc
 Finds all of the dates that fall within the yearly recurrence criteria
 (similar to monthly) and within the $start to $end timestamp range.</span><pre>recurringYearlyDates()</pre></a></li>
-<li class="method public "><a href="#method_relativeDate" title="relativeDate :: "><span class="description">relativeDate()
+<li class="method public "><a href="#method_relativeDate" title="relativeDate() :: "><span class="description">relativeDate()
         </span><pre>relativeDate()</pre></a></li>
-<li class="method public "><a href="#method_sameDay" title="sameDay :: "><span class="description">sameDay()
+<li class="method public "><a href="#method_sameDay" title="sameDay() :: "><span class="description">sameDay()
         </span><pre>sameDay()</pre></a></li>
-<li class="method public "><a href="#method_startOfDayTimestamp" title="startOfDayTimestamp :: exdoc
+<li class="method public "><a href="#method_startOfDayTimestamp" title="startOfDayTimestamp() :: exdoc
 Looks at a timestamp and returns another timestamp representing
 12:00:01 am of the same day."><span class="description">exdoc
 Looks at a timestamp and returns another timestamp representing
 12:00:01 am of the same day.</span><pre>startOfDayTimestamp()</pre></a></li>
-<li class="method public "><a href="#method_startOfMonthTimestamp" title="startOfMonthTimestamp :: exdoc
+<li class="method public "><a href="#method_startOfMonthTimestamp" title="startOfMonthTimestamp() :: exdoc
 Given a timestamp, this function will calculate another timestamp
 that represents the beginning of the month that the passed timestamp
-falls into."><span class="description">exdoc
+falls into.  For instance, passing a timestamp representing January 25th 1984
+would return a timestamp representing January 1st 1984, at 12:00am."><span class="description">exdoc
 Given a timestamp, this function will calculate another timestamp
 that represents the beginning of the month that the passed timestamp
-falls into.</span><pre>startOfMonthTimestamp()</pre></a></li>
-<li class="method public "><a href="#method_startOfWeekTimestamp" title="startOfWeekTimestamp :: exdoc
+falls into.  For instance, passing a timestamp representing January 25th 1984
+would return a timestamp representing January 1st 1984, at 12:00am.</span><pre>startOfMonthTimestamp()</pre></a></li>
+<li class="method public "><a href="#method_startOfWeekTimestamp" title="startOfWeekTimestamp() :: exdoc
 Looks at a timestamp and returns another timestamp representing
 12:00:01 am of the DISPLAY_START_OF_WEEK day of the same week."><span class="description">exdoc
 Looks at a timestamp and returns another timestamp representing
 12:00:01 am of the DISPLAY_START_OF_WEEK day of the same week.</span><pre>startOfWeekTimestamp()</pre></a></li>
+<li class="method public "><a href="#method_startOfYearTimestamp" title="startOfYearTimestamp() :: exdoc
+Given a timestamp, this function will calculate another timestamp
+that represents the beginning of the year that the passed timestamp
+falls into.  For instance, passing a timestamp representing January 25th 1984
+would return a timestamp representing January 1st 1984, at 12:00am."><span class="description">exdoc
+Given a timestamp, this function will calculate another timestamp
+that represents the beginning of the year that the passed timestamp
+falls into.  For instance, passing a timestamp representing January 25th 1984
+would return a timestamp representing January 1st 1984, at 12:00am.</span><pre>startOfYearTimestamp()</pre></a></li>
 </ul>
 </li></ul>
 </div>
@@ -150,7 +175,6 @@ Looks at a timestamp and returns another timestamp representing
 <li>
 <a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
-<li><a href="../namespaces/global.html">global</a></li>
 <li class="active">
 <span class="divider">\</span><a href="../classes/expDateTime.html">expDateTime</a>
 </li>
@@ -161,7 +185,7 @@ Looks at a timestamp and returns another timestamp representing
 <div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>define</th>
-<td>"BASE" "../../.."</td>
+<td>&quot;BASE&quot; &quot;../../..&quot;</td>
 </tr></table>
 <h3>
 <i class="icon-custom icon-method"></i> Methods</h3>
@@ -169,13 +193,13 @@ Looks at a timestamp and returns another timestamp representing
 <h2>exdoc
 Looks at a start and end time and figures out
 how many seconds elapsed since between the earlier
-timestamp and the later timestamp.</h2>
+timestamp and the later timestamp.  It doesn't matter
+if the bigger argument is specified first or not. Returns
+the number of seconds between $time_a and $time_b</h2>
 <pre>duration(int $time_a, int $time_b) : array</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>It doesn't matter
-if the bigger argument is specified first or not. Returns
-the number of seconds between $time_a and $time_b</p></div>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:expDateTime</td>
@@ -214,12 +238,12 @@ Looks at a timestamp and returns another timestamp representing
 <a id="method_endOfMonthDay"></a><div class="element clickable method public method_endOfMonthDay" data-toggle="collapse" data-target=".method_endOfMonthDay .collapse">
 <h2>exdoc
 Looks at a timestamp and returns the date of the last
-day.</h2>
+day.  For instance, if the passed timestamp was in January,
+this function would return 31.  Leap year is taken into account.</h2>
 <pre>endOfMonthDay(int $timestamp) : int</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>For instance, if the passed timestamp was in January,
-this function would return 31.  Leap year is taken into account.</p></div>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:expDateTime</td>
@@ -236,12 +260,12 @@ this function would return 31.  Leap year is taken into account.</p></div>
 <h2>exdoc
 Given a timestamp, this function will calculate another timestamp
 that represents the end of the month that the passed timestamp
-falls into.</h2>
+falls into.  For instance, passing a timestamp representing January 25th 1984
+would return a timestamp representing January 31st 1984, at 11:59pm.</h2>
 <pre>endOfMonthTimestamp(int $timestamp) : int</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>For instance, passing a timestamp representing January 25th 1984
-would return a timestamp representing January 31st 1984, at 11:59pm.</p></div>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:expDateTime</td>
@@ -274,17 +298,36 @@ Looks at a timestamp and returns another timestamp representing
 <div class="subelement response"><code>int</code></div>
 </div></div>
 </div>
+<a id="method_endOfYearTimestamp"></a><div class="element clickable method public method_endOfYearTimestamp" data-toggle="collapse" data-target=".method_endOfYearTimestamp .collapse">
+<h2>exdoc
+Given a timestamp, this function will calculate another timestamp
+that represents the end of the year that the passed timestamp
+falls into.  For instance, passing a timestamp representing January 25th 1984
+would return a timestamp representing December 31st 1984, at 11:59pm.</h2>
+<pre>endOfYearTimestamp(int $timestamp) : int</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:expDateTime</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$timestamp</h4>
+<code>int</code><p>The original timestamp to use when calculating.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
 <a id="method_format_date"></a><div class="element clickable method public method_format_date" data-toggle="collapse" data-target=".method_format_date .collapse">
 <h2>Return a date in the preferred format</h2>
-<pre>format_date(array $timestamp, string $format) : array</pre>
+<pre>format_date($timestamp, string $format) : array</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$timestamp</h4>
-<code>array</code>
-</div>
+<div class="subelement argument"><h4>$timestamp</h4></div>
 <div class="subelement argument">
 <h4>$format</h4>
 <code>string</code>
@@ -311,14 +354,14 @@ Adapted from calendar module's minical view to be more modular.</h2>
 </div>
 <a id="method_monthsDropdown"></a><div class="element clickable method public method_monthsDropdown" data-toggle="collapse" data-target=".method_monthsDropdown .collapse">
 <h2>exdoc</h2>
-<pre>monthsDropdown($controlName, $default_month) : string</pre>
+<pre>monthsDropdown(mixed $controlName, mixed $default_month) : string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <table class="table table-bordered">
 <tr>
 <th>state</th>
-<td><b>UNDOCUMENTED</b></td>
+<td>&lt;b&gt;UNDOCUMENTED&lt;/b&gt;</td>
 </tr>
 <tr>
 <th>node</th>
@@ -338,8 +381,8 @@ Find all of the dates that fall within the daily recurrence criteria.</h2>
 <pre>recurringDailyDates(int $start, int $end, integer $freq) : array</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>This is the simplest form of recurrence, events are spaced a given
-number of days apart.</p></div>
+<div class="long_description">This is the simplest form of recurrence, events are spaced a given
+number of days apart.</div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:expDateTime</td>
@@ -363,13 +406,13 @@ number of days apart.</p></div>
 <a id="method_recurringMonthlyDates"></a><div class="element clickable method public method_recurringMonthlyDates" data-toggle="collapse" data-target=".method_recurringMonthlyDates .collapse">
 <h2>exdoc
 Finds all of the dates that fall within the monthly recurrence criteria
-and within the $start to $end timestamp range.</h2>
+and within the $start to $end timestamp range.  Monthly recurrence can be
+done on a specific date (the 14th of the month) or on a specific weekday / offset
+pair (the third sunday of the month).</h2>
 <pre>recurringMonthlyDates(int $start, int $end, integer $freq, bool $by_day) : array</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>Monthly recurrence can be
-done on a specific date (the 14th of the month) or on a specific weekday / offset
-pair (the third sunday of the month).</p></div>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:expDateTime</td>
@@ -402,8 +445,8 @@ Finds all of the dates that fall within the weekly recurrence criteria
 <pre>recurringWeeklyDates(int $start, int $end, integer $freq, array $days) : array</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>For a technical discussion of this function and the mathematics involved,
-please see the sdk/analysis/subsystems/datetime.txt file.</p></div>
+<div class="long_description">For a technical discussion of this function and the mathematics involved,
+please see the sdk/analysis/subsystems/datetime.txt file.</div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:expDateTime</td>
@@ -437,8 +480,8 @@ Finds all of the dates that fall within the yearly recurrence criteria
 <pre>recurringYearlyDates(int $start, int $end, integer $freq) : array</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>Unlike monthly recurrence, yearly cannot do recurrence like 'the
-17th sunday of the year'.</p></div>
+<div class="long_description">Unlike monthly recurrence, yearly cannot do recurrence like 'the
+17th sunday of the year'.</div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:expDateTime</td>
@@ -506,12 +549,12 @@ Looks at a timestamp and returns another timestamp representing
 <h2>exdoc
 Given a timestamp, this function will calculate another timestamp
 that represents the beginning of the month that the passed timestamp
-falls into.</h2>
+falls into.  For instance, passing a timestamp representing January 25th 1984
+would return a timestamp representing January 1st 1984, at 12:00am.</h2>
 <pre>startOfMonthTimestamp(int $timestamp) : int</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>For instance, passing a timestamp representing January 25th 1984
-would return a timestamp representing January 1st 1984, at 12:00am.</p></div>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:expDateTime</td>
@@ -544,14 +587,37 @@ Looks at a timestamp and returns another timestamp representing
 <div class="subelement response"><code>int</code></div>
 </div></div>
 </div>
+<a id="method_startOfYearTimestamp"></a><div class="element clickable method public method_startOfYearTimestamp" data-toggle="collapse" data-target=".method_startOfYearTimestamp .collapse">
+<h2>exdoc
+Given a timestamp, this function will calculate another timestamp
+that represents the beginning of the year that the passed timestamp
+falls into.  For instance, passing a timestamp representing January 25th 1984
+would return a timestamp representing January 1st 1984, at 12:00am.</h2>
+<pre>startOfYearTimestamp(int $timestamp) : int</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:expDateTime</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$timestamp</h4>
+<code>int</code><p>The original timestamp to use when calculating.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-07-20T10:06:59-04:00.<br></footer></div>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0
+</a> and<br>
+            generated on 2013-08-06T07:59:51-04:00.<br></footer></div>
 </div>
 </body>
 </html>

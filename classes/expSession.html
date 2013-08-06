@@ -38,16 +38,9 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3775</span></a></li>
+                <span class="label label-info">0</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
-                <ul>
-<li>todo 
-                <span class="label label-info">52</span>
-</li>
-<li>fixme 
-                <span class="label label-info">273</span>
-</li>
-</ul></a></li>
+                <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
                 <span class="label label-info">0</span></a></li>
 </ul>
@@ -69,60 +62,66 @@
 <ul class="side-nav nav nav-list"><li class="nav-header">
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
-<li class="method public "><a href="#method_clearAllSessionData" title="clearAllSessionData :: Clears entire user session data and truncates the sessionticket table"><span class="description">Clears entire user session data and truncates the sessionticket table</span><pre>clearAllSessionData()</pre></a></li>
-<li class="method public "><a href="#method_clearAllUsersSessionCache" title="clearAllUsersSessionCache :: exdoc
+<li class="method public "><a href="#method_clearAllSessionData" title="clearAllSessionData() :: Clears entire user session data and truncates the sessionticket table"><span class="description">Clears entire user session data and truncates the sessionticket table</span><pre>clearAllSessionData()</pre></a></li>
+<li class="method public "><a href="#method_clearAllUsersSessionCache" title="clearAllUsersSessionCache() :: exdoc
 Clears global users session cache"><span class="description">exdoc
 Clears global users session cache</span><pre>clearAllUsersSessionCache()</pre></a></li>
-<li class="method public "><a href="#method_createTicket" title="createTicket :: exdoc
+<li class="method public "><a href="#method_createTicket" title="createTicket() :: exdoc
 Creates user ticket in sessionticket table and session"><span class="description">exdoc
 Creates user ticket in sessionticket table and session</span><pre>createTicket()</pre></a></li>
-<li class="method public "><a href="#method_deleteVar" title="deleteVar :: "><span class="description">deleteVar()
+<li class="method public "><a href="#method_deleteVar" title="deleteVar() :: "><span class="description">deleteVar()
         </span><pre>deleteVar()</pre></a></li>
-<li class="method public "><a href="#method_exists" title="exists :: "><span class="description">exists()
+<li class="method public "><a href="#method_exists" title="exists() :: "><span class="description">exists()
         </span><pre>exists()</pre></a></li>
-<li class="method public "><a href="#method_get" title="get :: exdoc
-This retrieves the value of a persistent session variable."><span class="description">exdoc
-This retrieves the value of a persistent session variable.</span><pre>get()</pre></a></li>
-<li class="method public "><a href="#method_getCacheValue" title="getCacheValue :: "><span class="description">getCacheValue()
+<li class="method public "><a href="#method_get" title="get() :: exdoc
+This retrieves the value of a persistent session variable. Returns
+null if the variable is not set in the session, or the value of the stored variable."><span class="description">exdoc
+This retrieves the value of a persistent session variable. Returns
+null if the variable is not set in the session, or the value of the stored variable.</span><pre>get()</pre></a></li>
+<li class="method public "><a href="#method_getCacheValue" title="getCacheValue() :: "><span class="description">getCacheValue()
         </span><pre>getCacheValue()</pre></a></li>
-<li class="method public "><a href="#method_getTableCache" title="getTableCache :: "><span class="description">getTableCache()
+<li class="method public "><a href="#method_getTableCache" title="getTableCache() :: "><span class="description">getTableCache()
         </span><pre>getTableCache()</pre></a></li>
-<li class="method public "><a href="#method_getTicketString" title="getTicketString :: "><span class="description">getTicketString()
+<li class="method public "><a href="#method_getTicketString" title="getTicketString() :: "><span class="description">getTicketString()
         </span><pre>getTicketString()</pre></a></li>
-<li class="method public "><a href="#method_initialize" title="initialize :: exdoc
+<li class="method public "><a href="#method_initialize" title="initialize() :: exdoc
 Runs necessary code to initialize sessions for use."><span class="description">exdoc
 Runs necessary code to initialize sessions for use.</span><pre>initialize()</pre></a></li>
-<li class="method public "><a href="#method_is_set" title="is_set :: exdoc
+<li class="method public "><a href="#method_is_set" title="is_set() :: exdoc
 Checks to see if the session holds a set variable of the given name."><span class="description">exdoc
 Checks to see if the session holds a set variable of the given name.</span><pre>is_set()</pre></a></li>
-<li class="method public "><a href="#method_issetTableCache" title="issetTableCache :: "><span class="description">issetTableCache()
+<li class="method public "><a href="#method_issetTableCache" title="issetTableCache() :: "><span class="description">issetTableCache()
         </span><pre>issetTableCache()</pre></a></li>
-<li class="method public "><a href="#method_loggedIn" title="loggedIn :: exdoc
+<li class="method public "><a href="#method_loggedIn" title="loggedIn() :: exdoc
 Looks at the session data to see if the current session is
-that of a logged in user."><span class="description">exdoc
+that of a logged in user. Returns true if the viewer is logged
+in, and false if it is not"><span class="description">exdoc
 Looks at the session data to see if the current session is
-that of a logged in user.</span><pre>loggedIn()</pre></a></li>
-<li class="method public "><a href="#method_login" title="login :: "><span class="description">login()
+that of a logged in user. Returns true if the viewer is logged
+in, and false if it is not</span><pre>loggedIn()</pre></a></li>
+<li class="method public "><a href="#method_login" title="login() :: "><span class="description">login()
         </span><pre>login()</pre></a></li>
-<li class="method public "><a href="#method_logout" title="logout :: exdoc
+<li class="method public "><a href="#method_logout" title="logout() :: exdoc
 Clears the session of all user data, used when a user logs out."><span class="description">exdoc
 Clears the session of all user data, used when a user logs out.</span><pre>logout()</pre></a></li>
-<li class="method public "><a href="#method_set" title="set :: Sets a variable in the session data, for use on subsequent page calls."><span class="description">Sets a variable in the session data, for use on subsequent page calls.</span><pre>set()</pre></a></li>
-<li class="method public "><a href="#method_setCache" title="setCache :: "><span class="description">setCache()
+<li class="method public "><a href="#method_set" title="set() :: Sets a variable in the session data, for use on subsequent page calls."><span class="description">Sets a variable in the session data, for use on subsequent page calls.</span><pre>set()</pre></a></li>
+<li class="method public "><a href="#method_setCache" title="setCache() :: "><span class="description">setCache()
         </span><pre>setCache()</pre></a></li>
-<li class="method public "><a href="#method_setCacheValue" title="setCacheValue :: "><span class="description">setCacheValue()
+<li class="method public "><a href="#method_setCacheValue" title="setCacheValue() :: "><span class="description">setCacheValue()
         </span><pre>setCacheValue()</pre></a></li>
-<li class="method public "><a href="#method_setTableCache" title="setTableCache :: "><span class="description">setTableCache()
+<li class="method public "><a href="#method_setTableCache" title="setTableCache() :: "><span class="description">setTableCache()
         </span><pre>setTableCache()</pre></a></li>
-<li class="method public "><a href="#method_un_set" title="un_set :: exdoc
+<li class="method public "><a href="#method_un_set" title="un_set() :: exdoc
 Removes a variable from the session."><span class="description">exdoc
 Removes a variable from the session.</span><pre>un_set()</pre></a></li>
-<li class="method public "><a href="#method_updateTicket" title="updateTicket :: exdoc
+<li class="method public "><a href="#method_updateTicket" title="updateTicket() :: exdoc
 Creates user ticket in sessionticket table and session"><span class="description">exdoc
 Creates user ticket in sessionticket table and session</span><pre>updateTicket()</pre></a></li>
-<li class="method public "><a href="#method_validate" title="validate :: exdoc
-Validates the stored session ticket against the database."><span class="description">exdoc
-Validates the stored session ticket against the database.</span><pre>validate()</pre></a></li>
+<li class="method public "><a href="#method_validate" title="validate() :: exdoc
+Validates the stored session ticket against the database.  This is used
+to force refreshes and force logouts.  It also updates activity time."><span class="description">exdoc
+Validates the stored session ticket against the database.  This is used
+to force refreshes and force logouts.  It also updates activity time.</span><pre>validate()</pre></a></li>
 </ul>
 </li></ul>
 </div>
@@ -131,7 +130,6 @@ Validates the stored session ticket against the database.</span><pre>validate()<
 <li>
 <a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
-<li><a href="../namespaces/global.html">global</a></li>
 <li class="active">
 <span class="divider">\</span><a href="../classes/expSession.html">expSession</a>
 </li>
@@ -222,15 +220,13 @@ Creates user ticket in sessionticket table and session</h2>
 </div>
 <a id="method_get"></a><div class="element clickable method public method_get" data-toggle="collapse" data-target=".method_get .collapse">
 <h2>exdoc
-This retrieves the value of a persistent session variable.</h2>
+This retrieves the value of a persistent session variable. Returns
+null if the variable is not set in the session, or the value of the stored variable.</h2>
 <pre>get(string $var) : mixed</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>Returns
-null if the variable is not set in the session, or the value of the stored variable.</p>
-
-<p>Note that some session variables (like the user object and the ticket)
-cannot be changed using this call (for security / sanity reason)</p></div>
+<div class="long_description">Note that some session variables (like the user object and the ticket)
+cannot be changed using this call (for security / sanity reason)</div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:Sessions</td>
@@ -278,9 +274,9 @@ Runs necessary code to initialize sessions for use.</h2>
 <pre>initialize() </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>This sends the session cookie header (via the session_start
+<div class="long_description">This sends the session cookie header (via the session_start
 PHP function) and sets up session variables needed by the
-rest of the system and this subsystem.</p></div>
+rest of the system and this subsystem.</div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:Sessions</td>
@@ -290,11 +286,11 @@ rest of the system and this subsystem.</p></div>
 <a id="method_is_set"></a><div class="element clickable method public method_is_set" data-toggle="collapse" data-target=".method_is_set .collapse">
 <h2>exdoc
 Checks to see if the session holds a set variable of the given name.</h2>
-<pre>is_set($var) : bool</pre>
+<pre>is_set(mixed $var) : bool</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>Note that some session variables (like the user object and the ticket)
-cannot be changed using this call (for security / sanity reason)</p></div>
+<div class="long_description">Note that some session variables (like the user object and the ticket)
+cannot be changed using this call (for security / sanity reason)</div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:Sessions</td>
@@ -319,12 +315,12 @@ cannot be changed using this call (for security / sanity reason)</p></div>
 <a id="method_loggedIn"></a><div class="element clickable method public method_loggedIn" data-toggle="collapse" data-target=".method_loggedIn .collapse">
 <h2>exdoc
 Looks at the session data to see if the current session is
-that of a logged in user.</h2>
+that of a logged in user. Returns true if the viewer is logged
+in, and false if it is not</h2>
 <pre>loggedIn() : bool</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>Returns true if the viewer is logged
-in, and false if it is not</p></div>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:Sessions</td>
@@ -350,8 +346,8 @@ Clears the session of all user data, used when a user logs out.</h2>
 <pre>logout() </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>This gets rid of stale session tickets, and resets the session
-to a blank state.</p></div>
+<div class="long_description">This gets rid of stale session tickets, and resets the session
+to a blank state.</div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:Sessions</td>
@@ -363,8 +359,8 @@ to a blank state.</p></div>
 <pre>set(string $var, mixed $val) </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>Note that some session variables (like the user object and the ticket)
-cannot be changed using this call (for security / sanity reason)</p></div>
+<div class="long_description">Note that some session variables (like the user object and the ticket)
+cannot be changed using this call (for security / sanity reason)</div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:Sessions</td>
@@ -419,8 +415,8 @@ Removes a variable from the session.</h2>
 <pre>un_set(string $var) </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>Note that some session variables (like the user object and the ticket)
-cannot be changed using this call (for security / sanity reason)</p></div>
+<div class="long_description">Note that some session variables (like the user object and the ticket)
+cannot be changed using this call (for security / sanity reason)</div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:Sessions</td>
@@ -434,7 +430,7 @@ cannot be changed using this call (for security / sanity reason)</p></div>
 <a id="method_updateTicket"></a><div class="element clickable method public method_updateTicket" data-toggle="collapse" data-target=".method_updateTicket .collapse">
 <h2>exdoc
 Creates user ticket in sessionticket table and session</h2>
-<pre>updateTicket($ticket, \user/object $user) : </pre>
+<pre>updateTicket(mixed $ticket, \user/object $user) : </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -454,12 +450,12 @@ Creates user ticket in sessionticket table and session</h2>
 </div>
 <a id="method_validate"></a><div class="element clickable method public method_validate" data-toggle="collapse" data-target=".method_validate .collapse">
 <h2>exdoc
-Validates the stored session ticket against the database.</h2>
+Validates the stored session ticket against the database.  This is used
+to force refreshes and force logouts.  It also updates activity time.</h2>
 <pre>validate() </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>This is used
-to force refreshes and force logouts.  It also updates activity time.</p></div>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:Sessions</td>
@@ -472,8 +468,9 @@ to force refreshes and force logouts.  It also updates activity time.</p></div>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-07-20T10:07:00-04:00.<br></footer></div>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0
+</a> and<br>
+            generated on 2013-08-06T07:59:52-04:00.<br></footer></div>
 </div>
 </body>
 </html>

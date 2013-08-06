@@ -38,16 +38,9 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3775</span></a></li>
+                <span class="label label-info">0</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
-                <ul>
-<li>todo 
-                <span class="label label-info">52</span>
-</li>
-<li>fixme 
-                <span class="label label-info">273</span>
-</li>
-</ul></a></li>
+                <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
                 <span class="label label-info">0</span></a></li>
 </ul>
@@ -69,23 +62,23 @@
 <ul class="side-nav nav nav-list"><li class="nav-header">
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
-<li class="method public "><a href="#method_getFormTemplates" title="getFormTemplates :: "><span class="description">getFormTemplates()
+<li class="method public "><a href="#method_getFormTemplates" title="getFormTemplates() :: "><span class="description">getFormTemplates()
         </span><pre>getFormTemplates()</pre></a></li>
-<li class="method public "><a href="#method_getModuleViewFile" title="getModuleViewFile :: "><span class="description">getModuleViewFile()
+<li class="method public "><a href="#method_getModuleViewFile" title="getModuleViewFile() :: "><span class="description">getModuleViewFile()
         </span><pre>getModuleViewFile()</pre></a></li>
-<li class="method public "><a href="#method_getViewConfigForm" title="getViewConfigForm :: "><span class="description">getViewConfigForm()
+<li class="method public "><a href="#method_getViewConfigForm" title="getViewConfigForm() :: "><span class="description">getViewConfigForm()
         </span><pre>getViewConfigForm()</pre></a></li>
-<li class="method public "><a href="#method_getViewConfigOptions" title="getViewConfigOptions :: "><span class="description">getViewConfigOptions()
+<li class="method public "><a href="#method_getViewConfigOptions" title="getViewConfigOptions() :: "><span class="description">getViewConfigOptions()
         </span><pre>getViewConfigOptions()</pre></a></li>
-<li class="method public "><a href="#method_getViewFile" title="getViewFile :: Retrieve Module-Independent View File"><span class="description">Retrieve Module-Independent View File</span><pre>getViewFile()</pre></a></li>
-<li class="method public "><a href="#method_getViewParams" title="getViewParams :: "><span class="description">getViewParams()
+<li class="method public "><a href="#method_getViewFile" title="getViewFile() :: Retrieve Module-Independent View File"><span class="description">Retrieve Module-Independent View File</span><pre>getViewFile()</pre></a></li>
+<li class="method public "><a href="#method_getViewParams" title="getViewParams() :: "><span class="description">getViewParams()
         </span><pre>getViewParams()</pre></a></li>
-<li class="method public "><a href="#method_guessControlType" title="guessControlType :: "><span class="description">guessControlType()
+<li class="method public "><a href="#method_guessControlType" title="guessControlType() :: "><span class="description">guessControlType()
         </span><pre>guessControlType()</pre></a></li>
-<li class="method public "><a href="#method_listControlTypes" title="listControlTypes :: "><span class="description">listControlTypes()
+<li class="method public "><a href="#method_listControlTypes" title="listControlTypes() :: "><span class="description">listControlTypes()
         </span><pre>listControlTypes()</pre></a></li>
-<li class="method public "><a href="#method_listModuleViews" title="listModuleViews :: exdoc"><span class="description">exdoc</span><pre>listModuleViews()</pre></a></li>
-<li class="method public "><a href="#method_listSimilarControlTypes" title="listSimilarControlTypes :: "><span class="description">listSimilarControlTypes()
+<li class="method public "><a href="#method_listModuleViews" title="listModuleViews() :: exdoc"><span class="description">exdoc</span><pre>listModuleViews()</pre></a></li>
+<li class="method public "><a href="#method_listSimilarControlTypes" title="listSimilarControlTypes() :: "><span class="description">listSimilarControlTypes()
         </span><pre>listSimilarControlTypes()</pre></a></li>
 </ul>
 </li></ul>
@@ -95,7 +88,6 @@
 <li>
 <a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
-<li><a href="../namespaces/global.html">global</a></li>
 <li class="active">
 <span class="divider">\</span><a href="../classes/expTemplate.html">expTemplate</a>
 </li>
@@ -106,7 +98,7 @@
 <div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>define</th>
-<td>"BASE" "../../.."</td>
+<td>&quot;BASE&quot; &quot;../../..&quot;</td>
 </tr></table>
 <h3>
 <i class="icon-custom icon-method"></i> Methods</h3>
@@ -165,13 +157,12 @@
 <pre>getViewFile(string $type, string $name, string $view) : string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>Looks in the theme and the /views directory for a .tpl file
-corresponding to the passed view.</p></div>
+<div class="long_description">Looks in the theme and the /views directory for a .tpl file
+corresponding to the passed view.</div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$type</h4>
-<code>string</code><p>One of "modules"", "controls"", "forms" or ""</p>
-</div>
+<code>string</code><p>One of "modules"", "controls"", "forms" or ""</p></div>
 <div class="subelement argument">
 <h4>$name</h4>
 <code>string</code><p>The name the object we are requesting a view from</p></div>
@@ -223,10 +214,10 @@ corresponding to the passed view.</p></div>
 <pre>listModuleViews(string $module) : array</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>Looks through the module's views directory and returns
+<div class="long_description">Looks through the module's views directory and returns
 all non-internal views that are found there.
 Returns an array of all standard view names.
-This array is unsorted.</p></div>
+This array is unsorted.</div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:Template</td>
@@ -256,8 +247,9 @@ This array is unsorted.</p></div>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-07-20T10:07:00-04:00.<br></footer></div>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0
+</a> and<br>
+            generated on 2013-08-06T07:59:52-04:00.<br></footer></div>
 </div>
 </body>
 </html>

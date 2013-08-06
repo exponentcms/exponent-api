@@ -38,16 +38,9 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3775</span></a></li>
+                <span class="label label-info">0</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
-                <ul>
-<li>todo 
-                <span class="label label-info">52</span>
-</li>
-<li>fixme 
-                <span class="label label-info">273</span>
-</li>
-</ul></a></li>
+                <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
                 <span class="label label-info">0</span></a></li>
 </ul>
@@ -69,36 +62,36 @@
 <ul class="side-nav nav nav-list"><li class="nav-header">
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
-<li class="method public "><a href="#method_controllerExists" title="controllerExists :: Does a controller of controllername exist in system?"><span class="description">Does a controller of controllername exist in system?</span><pre>controllerExists()</pre></a></li>
-<li class="method public "><a href="#method_getActiveModulesAndControllersList" title="getActiveModulesAndControllersList :: Looks through the database returns a list of all module class
+<li class="method public "><a href="#method_controllerExists" title="controllerExists() :: Does a controller of controllername exist in system?"><span class="description">Does a controller of controllername exist in system?</span><pre>controllerExists()</pre></a></li>
+<li class="method public "><a href="#method_getActiveModulesAndControllersList" title="getActiveModulesAndControllersList() :: Looks through the database returns a list of all module class
 names that exist in the system and have been turned on by
-the administrator."><span class="description">Looks through the database returns a list of all module class
+the administrator.  Inactive modules will not be included."><span class="description">Looks through the database returns a list of all module class
 names that exist in the system and have been turned on by
-the administrator.</span><pre>getActiveModulesAndControllersList()</pre></a></li>
-<li class="method public "><a href="#method_getController" title="getController :: Returns new controller object"><span class="description">Returns new controller object</span><pre>getController()</pre></a></li>
-<li class="method public "><a href="#method_getControllerClassName" title="getControllerClassName :: Returns the full controller classname with the 'Controller' suffix"><span class="description">Returns the full controller classname with the 'Controller' suffix</span><pre>getControllerClassName()</pre></a></li>
-<li class="method public "><a href="#method_getControllerDisplayName" title="getControllerDisplayName :: Returns the controller display (formal) name"><span class="description">Returns the controller display (formal) name</span><pre>getControllerDisplayName()</pre></a></li>
-<li class="method public "><a href="#method_getControllerName" title="getControllerName :: Returns the base controller name sans the 'Controller' suffix
+the administrator.  Inactive modules will not be included.</span><pre>getActiveModulesAndControllersList()</pre></a></li>
+<li class="method public "><a href="#method_getController" title="getController() :: Returns new controller object"><span class="description">Returns new controller object</span><pre>getController()</pre></a></li>
+<li class="method public "><a href="#method_getControllerClassName" title="getControllerClassName() :: Returns the full controller classname with the 'Controller' suffix"><span class="description">Returns the full controller classname with the 'Controller' suffix</span><pre>getControllerClassName()</pre></a></li>
+<li class="method public "><a href="#method_getControllerDisplayName" title="getControllerDisplayName() :: Returns the controller display (formal) name"><span class="description">Returns the controller display (formal) name</span><pre>getControllerDisplayName()</pre></a></li>
+<li class="method public "><a href="#method_getControllerName" title="getControllerName() :: Returns the base controller name sans the 'Controller' suffix
 in most cases this is also the module name"><span class="description">Returns the base controller name sans the 'Controller' suffix
 in most cases this is also the module name</span><pre>getControllerName()</pre></a></li>
-<li class="method public "><a href="#method_getModuleBaseName" title="getModuleBaseName :: Returns the base controller or module name sans the 'Controller' or 'module' suffix"><span class="description">Returns the base controller or module name sans the 'Controller' or 'module' suffix</span><pre>getModuleBaseName()</pre></a></li>
-<li class="method public "><a href="#method_getModuleClassName" title="getModuleClassName :: Returns the full controller or module class name with the 'Controller' or 'module' suffix
+<li class="method public "><a href="#method_getModuleBaseName" title="getModuleBaseName() :: Returns the base controller or module name sans the 'Controller' or 'module' suffix"><span class="description">Returns the base controller or module name sans the 'Controller' or 'module' suffix</span><pre>getModuleBaseName()</pre></a></li>
+<li class="method public "><a href="#method_getModuleClassName" title="getModuleClassName() :: Returns the full controller or module class name with the 'Controller' or 'module' suffix
 as needed to instantiate the class"><span class="description">Returns the full controller or module class name with the 'Controller' or 'module' suffix
 as needed to instantiate the class</span><pre>getModuleClassName()</pre></a></li>
-<li class="method public "><a href="#method_getModuleName" title="getModuleName :: Returns the controller sans the 'Controller' or module name with 'module' suffix
+<li class="method public "><a href="#method_getModuleName" title="getModuleName() :: Returns the controller sans the 'Controller' or module name with 'module' suffix
 this is how we store them in the db as 2.0/old school
 and in most cases it is the name of the model/data"><span class="description">Returns the controller sans the 'Controller' or module name with 'module' suffix
 this is how we store them in the db as 2.0/old school
 and in most cases it is the name of the model/data</span><pre>getModuleName()</pre></a></li>
-<li class="method public "><a href="#method_initializeControllers" title="initializeControllers :: Initializes list of system and custom (theme) controllers and models"><span class="description">Initializes list of system and custom (theme) controllers and models</span><pre>initializeControllers()</pre></a></li>
-<li class="method public "><a href="#method_listActiveControllers" title="listActiveControllers :: Returns list of active controllers"><span class="description">Returns list of active controllers</span><pre>listActiveControllers()</pre></a></li>
-<li class="method public "><a href="#method_listActiveOSMods" title="listActiveOSMods :: Returns list of active old school modules"><span class="description">Returns list of active old school modules</span><pre>listActiveOSMods()</pre></a></li>
-<li class="method public "><a href="#method_listControllers" title="listControllers :: "><span class="description">listControllers()
+<li class="method public "><a href="#method_initializeControllers" title="initializeControllers() :: Initializes list of system and custom (theme) controllers and models"><span class="description">Initializes list of system and custom (theme) controllers and models</span><pre>initializeControllers()</pre></a></li>
+<li class="method public "><a href="#method_listActiveControllers" title="listActiveControllers() :: Returns list of active controllers"><span class="description">Returns list of active controllers</span><pre>listActiveControllers()</pre></a></li>
+<li class="method public "><a href="#method_listActiveOSMods" title="listActiveOSMods() :: Returns list of active old school modules"><span class="description">Returns list of active old school modules</span><pre>listActiveOSMods()</pre></a></li>
+<li class="method public "><a href="#method_listControllers" title="listControllers() :: "><span class="description">listControllers()
         </span><pre>listControllers()</pre></a></li>
-<li class="method public "><a href="#method_listInstalledControllers" title="listInstalledControllers :: Returns list of installed/used controllers"><span class="description">Returns list of installed/used controllers</span><pre>listInstalledControllers()</pre></a></li>
-<li class="method public "><a href="#method_listUserRunnableControllers" title="listUserRunnableControllers :: Returns list of controllers with user actions"><span class="description">Returns list of controllers with user actions</span><pre>listUserRunnableControllers()</pre></a></li>
-<li class="method public "><a href="#method_loadModulesDir" title="loadModulesDir :: Recursive function used to (auto?)load 2.0 modules controllers &amp; models"><span class="description">Recursive function used to (auto?)load 2.0 modules controllers &amp; models</span><pre>loadModulesDir()</pre></a></li>
-<li class="method public "><a href="#method_modules_list" title="modules_list :: Returns list of old school modules"><span class="description">Returns list of old school modules</span><pre>modules_list()</pre></a></li>
+<li class="method public "><a href="#method_listInstalledControllers" title="listInstalledControllers() :: Returns list of installed/used controllers"><span class="description">Returns list of installed/used controllers</span><pre>listInstalledControllers()</pre></a></li>
+<li class="method public "><a href="#method_listUserRunnableControllers" title="listUserRunnableControllers() :: Returns list of controllers with user actions"><span class="description">Returns list of controllers with user actions</span><pre>listUserRunnableControllers()</pre></a></li>
+<li class="method public "><a href="#method_loadModulesDir" title="loadModulesDir() :: Recursive function used to (auto?)load 2.0 modules controllers &amp; models"><span class="description">Recursive function used to (auto?)load 2.0 modules controllers &amp; models</span><pre>loadModulesDir()</pre></a></li>
+<li class="method public "><a href="#method_modules_list" title="modules_list() :: Returns list of old school modules"><span class="description">Returns list of old school modules</span><pre>modules_list()</pre></a></li>
 </ul>
 </li></ul>
 </div>
@@ -107,7 +100,6 @@ and in most cases it is the name of the model/data</span><pre>getModuleName()</p
 <li>
 <a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
-<li><a href="../namespaces/global.html">global</a></li>
 <li class="active">
 <span class="divider">\</span><a href="../classes/expModules.html">expModules</a>
 </li>
@@ -146,12 +138,11 @@ and in most cases it is the name of the model/data</span><pre>getModuleName()</p
 <a id="method_getActiveModulesAndControllersList"></a><div class="element clickable method public method_getActiveModulesAndControllersList" data-toggle="collapse" data-target=".method_getActiveModulesAndControllersList .collapse">
 <h2>Looks through the database returns a list of all module class
 names that exist in the system and have been turned on by
-the administrator.</h2>
+the administrator.  Inactive modules will not be included.</h2>
 <pre>getActiveModulesAndControllersList() : array</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>Inactive modules will not be included.
-Returns the list of active module class names.</p></div>
+<div class="long_description">Returns the list of active module class names.</div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:Modules</td>
@@ -178,7 +169,7 @@ Returns the list of active module class names.</p></div>
 </div>
 <a id="method_getControllerClassName"></a><div class="element clickable method public method_getControllerClassName" data-toggle="collapse" data-target=".method_getControllerClassName .collapse">
 <h2>Returns the full controller classname with the 'Controller' suffix</h2>
-<pre>getControllerClassName($controllername) : null | string</pre>
+<pre>getControllerClassName(mixed $controllername) : null | string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -192,7 +183,7 @@ Returns the list of active module class names.</p></div>
 </div>
 <a id="method_getControllerDisplayName"></a><div class="element clickable method public method_getControllerDisplayName" data-toggle="collapse" data-target=".method_getControllerDisplayName .collapse">
 <h2>Returns the controller display (formal) name</h2>
-<pre>getControllerDisplayName($controllername) : null | string</pre>
+<pre>getControllerDisplayName(mixed $controllername) : null | string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -207,7 +198,7 @@ Returns the list of active module class names.</p></div>
 <a id="method_getControllerName"></a><div class="element clickable method public method_getControllerName" data-toggle="collapse" data-target=".method_getControllerName .collapse">
 <h2>Returns the base controller name sans the 'Controller' suffix
 in most cases this is also the module name</h2>
-<pre>getControllerName($controllername) : null | string</pre>
+<pre>getControllerName(mixed $controllername) : null | string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -221,7 +212,7 @@ in most cases this is also the module name</h2>
 </div>
 <a id="method_getModuleBaseName"></a><div class="element clickable method public method_getModuleBaseName" data-toggle="collapse" data-target=".method_getModuleBaseName .collapse">
 <h2>Returns the base controller or module name sans the 'Controller' or 'module' suffix</h2>
-<pre>getModuleBaseName($modulename) : null | string</pre>
+<pre>getModuleBaseName(mixed $modulename) : null | string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -236,7 +227,7 @@ in most cases this is also the module name</h2>
 <a id="method_getModuleClassName"></a><div class="element clickable method public method_getModuleClassName" data-toggle="collapse" data-target=".method_getModuleClassName .collapse">
 <h2>Returns the full controller or module class name with the 'Controller' or 'module' suffix
 as needed to instantiate the class</h2>
-<pre>getModuleClassName($modulename) : null | string</pre>
+<pre>getModuleClassName(mixed $modulename) : null | string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -252,7 +243,7 @@ as needed to instantiate the class</h2>
 <h2>Returns the controller sans the 'Controller' or module name with 'module' suffix
 this is how we store them in the db as 2.0/old school
 and in most cases it is the name of the model/data</h2>
-<pre>getModuleName($modulename) : null | string</pre>
+<pre>getModuleName(mixed $modulename) : null | string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -349,8 +340,9 @@ and in most cases it is the name of the model/data</h2>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-07-20T10:07:00-04:00.<br></footer></div>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0
+</a> and<br>
+            generated on 2013-08-06T07:59:52-04:00.<br></footer></div>
 </div>
 </body>
 </html>

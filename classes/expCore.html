@@ -38,16 +38,9 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">3775</span></a></li>
+                <span class="label label-info">0</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
-                <ul>
-<li>todo 
-                <span class="label label-info">52</span>
-</li>
-<li>fixme 
-                <span class="label label-info">273</span>
-</li>
-</ul></a></li>
+                <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
                 <span class="label label-info">0</span></a></li>
 </ul>
@@ -69,47 +62,56 @@
 <ul class="side-nav nav nav-list"><li class="nav-header">
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
-<li class="method public "><a href="#method_URLisValid" title="URLisValid :: exdoc
+<li class="method public "><a href="#method_URLisValid" title="URLisValid() :: exdoc
 This function checks a full URL against a set of
 known protocols (like http and https) and determines
-if the URL is valid."><span class="description">exdoc
+if the URL is valid.  Returns true if the URL is valid,
+and false if otherwise."><span class="description">exdoc
 This function checks a full URL against a set of
 known protocols (like http and https) and determines
-if the URL is valid.</span><pre>URLisValid()</pre></a></li>
-<li class="method public "><a href="#method_abs2rel" title="abs2rel :: exdoc
+if the URL is valid.  Returns true if the URL is valid,
+and false if otherwise.</span><pre>URLisValid()</pre></a></li>
+<li class="method public "><a href="#method_abs2rel" title="abs2rel() :: exdoc
 This function converts an absolute path, such as the one provided
 by the self::resolveFilePaths() function into a relative one."><span class="description">exdoc
 This function converts an absolute path, such as the one provided
 by the self::resolveFilePaths() function into a relative one.</span><pre>abs2rel()</pre></a></li>
-<li class="method public "><a href="#method_buildNameList" title="buildNameList :: exdoc
+<li class="method public "><a href="#method_buildNameList" title="buildNameList() :: exdoc
 This function is a wrapper around self::resolveFilePaths()
 and returns a list of the basenames, minus the file extensions - if any"><span class="description">exdoc
 This function is a wrapper around self::resolveFilePaths()
 and returns a list of the basenames, minus the file extensions - if any</span><pre>buildNameList()</pre></a></li>
-<li class="method public "><a href="#method_cast" title="cast :: Casts one object type to another object type"><span class="description">Casts one object type to another object type</span><pre>cast()</pre></a></li>
-<li class="method public "><a href="#method_getCurrencySymbol" title="getCurrencySymbol :: Return the appropriate currency symbol"><span class="description">Return the appropriate currency symbol</span><pre>getCurrencySymbol()</pre></a></li>
-<li class="method public "><a href="#method_glob2keyedArray" title="glob2keyedArray :: helper function"><span class="description">helper function</span><pre>glob2keyedArray()</pre></a></li>
-<li class="method public "><a href="#method_loadData" title="loadData :: Use cUrl to get data from url"><span class="description">Use cUrl to get data from url</span><pre>loadData()</pre></a></li>
-<li class="method public "><a href="#method_makeLink" title="makeLink :: exdoc
+<li class="method public "><a href="#method_cast" title="cast() :: Casts one object type to another object type"><span class="description">Casts one object type to another object type</span><pre>cast()</pre></a></li>
+<li class="method public "><a href="#method_getCurrencySymbol" title="getCurrencySymbol() :: Return the appropriate currency symbol"><span class="description">Return the appropriate currency symbol</span><pre>getCurrencySymbol()</pre></a></li>
+<li class="method public "><a href="#method_glob2keyedArray" title="glob2keyedArray() :: helper function"><span class="description">helper function</span><pre>glob2keyedArray()</pre></a></li>
+<li class="method public "><a href="#method_loadData" title="loadData() :: Use cUrl to get data from url"><span class="description">Use cUrl to get data from url</span><pre>loadData()</pre></a></li>
+<li class="method public "><a href="#method_makeLink" title="makeLink() :: exdoc
 Return a full URL, given the desired querystring arguments as an associative array."><span class="description">exdoc
 Return a full URL, given the desired querystring arguments as an associative array.</span><pre>makeLink()</pre></a></li>
-<li class="method public "><a href="#method_makeLocation" title="makeLocation :: Return an exponent location object with corrected module name"><span class="description">Return an exponent location object with corrected module name</span><pre>makeLocation()</pre></a></li>
-<li class="method public "><a href="#method_makePodcastLink" title="makePodcastLink :: Return a podcast link
+<li class="method public "><a href="#method_makeLocation" title="makeLocation() :: Return an exponent location object with corrected module name"><span class="description">Return an exponent location object with corrected module name</span><pre>makeLocation()</pre></a></li>
+<li class="method public "><a href="#method_makePodcastLink" title="makePodcastLink() :: Return a podcast link
 COMPATIBILITY - we now use the {rss_link} smarty function to build rss &amp; podcast links"><span class="description">Return a podcast link
 COMPATIBILITY - we now use the {rss_link} smarty function to build rss &amp; podcast links</span><pre>makePodcastLink()</pre></a></li>
-<li class="method public "><a href="#method_makeRSSLink" title="makeRSSLink :: Return an old style rss link
+<li class="method public "><a href="#method_makeRSSLink" title="makeRSSLink() :: Return an old style rss link
 COMPATIBILITY - we now use the {rss_link} smarty function to build rss links"><span class="description">Return an old style rss link
 COMPATIBILITY - we now use the {rss_link} smarty function to build rss links</span><pre>makeRSSLink()</pre></a></li>
-<li class="method public "><a href="#method_makeSecureLink" title="makeSecureLink :: exdoc
+<li class="method public "><a href="#method_makeSecureLink" title="makeSecureLink() :: exdoc
 Return a full URL, given the desired querystring arguments as an associative array."><span class="description">exdoc
 Return a full URL, given the desired querystring arguments as an associative array.</span><pre>makeSecureLink()</pre></a></li>
-<li class="method public "><a href="#method_makeSefUrl" title="makeSefUrl :: make an sef_name for specific model"><span class="description">make an sef_name for specific model</span><pre>makeSefUrl()</pre></a></li>
-<li class="method public "><a href="#method_maxUploadSizeMessage" title="maxUploadSizeMessage :: exdoc
+<li class="method public "><a href="#method_makeSefUrl" title="makeSefUrl() :: make an sef_name for specific model"><span class="description">make an sef_name for specific model</span><pre>makeSefUrl()</pre></a></li>
+<li class="method public "><a href="#method_maxUploadSize" title="maxUploadSize() :: exdoc
+Generates and returns a string stating the current maximum accepted size of
+uploaded files.  It intelligently parses the php.ini configuration, so that settings of
+2K and 2048 are treated identically."><span class="description">exdoc
+Generates and returns a string stating the current maximum accepted size of
+uploaded files.  It intelligently parses the php.ini configuration, so that settings of
+2K and 2048 are treated identically.</span><pre>maxUploadSize()</pre></a></li>
+<li class="method public "><a href="#method_maxUploadSizeMessage" title="maxUploadSizeMessage() :: exdoc
 Generates and returns a message stating the current maximum accepted size of
 uploaded files."><span class="description">exdoc
 Generates and returns a message stating the current maximum accepted size of
 uploaded files.</span><pre>maxUploadSizeMessage()</pre></a></li>
-<li class="method public "><a href="#method_resolveFilePaths" title="resolveFilePaths :: exdoc
+<li class="method public "><a href="#method_resolveFilePaths" title="resolveFilePaths() :: exdoc
 This function finds the most appropriate version of a file
  - if given wildcards, files -
 and returns an array with the file's physical location's full path or,
@@ -118,7 +120,7 @@ This function finds the most appropriate version of a file
  - if given wildcards, files -
 and returns an array with the file's physical location's full path or,
 if no file was found, false</span><pre>resolveFilePaths()</pre></a></li>
-<li class="method public "><a href="#method_saveData" title="saveData :: Use cUrl to save data from url to file (download)"><span class="description">Use cUrl to save data from url to file (download)</span><pre>saveData()</pre></a></li>
+<li class="method public "><a href="#method_saveData" title="saveData() :: Use cUrl to save data from url to file (download)"><span class="description">Use cUrl to save data from url to file (download)</span><pre>saveData()</pre></a></li>
 </ul>
 </li></ul>
 </div>
@@ -127,7 +129,6 @@ if no file was found, false</span><pre>resolveFilePaths()</pre></a></li>
 <li>
 <a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
-<li><a href="../namespaces/global.html">global</a></li>
 <li class="active">
 <span class="divider">\</span><a href="../classes/expCore.html">expCore</a>
 </li>
@@ -138,7 +139,7 @@ if no file was found, false</span><pre>resolveFilePaths()</pre></a></li>
 <div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>define</th>
-<td>"BASE" "../../.."</td>
+<td>&quot;BASE&quot; &quot;../../..&quot;</td>
 </tr></table>
 <h3>
 <i class="icon-custom icon-method"></i> Methods</h3>
@@ -146,12 +147,12 @@ if no file was found, false</span><pre>resolveFilePaths()</pre></a></li>
 <h2>exdoc
 This function checks a full URL against a set of
 known protocols (like http and https) and determines
-if the URL is valid.</h2>
+if the URL is valid.  Returns true if the URL is valid,
+and false if otherwise.</h2>
 <pre>URLisValid(string $url) : bool</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>Returns true if the URL is valid,
-and false if otherwise.</p></div>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:expCore</td>
@@ -171,8 +172,8 @@ by the self::resolveFilePaths() function into a relative one.</h2>
 <pre>abs2rel(string $inPath) : string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>This is useful if the file is not to be included server-
-but loaded client-side</p></div>
+<div class="long_description">This is useful if the file is not to be included server-
+but loaded client-side</div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:expCore</td>
@@ -231,7 +232,7 @@ and returns a list of the basenames, minus the file extensions - if any</h2>
 </div>
 <a id="method_getCurrencySymbol"></a><div class="element clickable method public method_getCurrencySymbol" data-toggle="collapse" data-target=".method_getCurrencySymbol .collapse">
 <h2>Return the appropriate currency symbol</h2>
-<pre>getCurrencySymbol($currency_type) : string</pre>
+<pre>getCurrencySymbol(mixed $currency_type) : string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -247,7 +248,7 @@ and returns a list of the basenames, minus the file extensions - if any</h2>
 </div>
 <a id="method_glob2keyedArray"></a><div class="element clickable method public method_glob2keyedArray" data-toggle="collapse" data-target=".method_glob2keyedArray .collapse">
 <h2>helper function</h2>
-<pre>glob2keyedArray($workArray) : array</pre>
+<pre>glob2keyedArray(mixed $workArray) : array</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -259,7 +260,7 @@ and returns a list of the basenames, minus the file extensions - if any</h2>
 </div>
 <a id="method_loadData"></a><div class="element clickable method public method_loadData" data-toggle="collapse" data-target=".method_loadData .collapse">
 <h2>Use cUrl to get data from url</h2>
-<pre>loadData($url, bool $ref, bool $post) : mixed</pre>
+<pre>loadData(mixed $url, bool $ref, bool $post) : mixed</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -287,7 +288,7 @@ Return a full URL, given the desired querystring arguments as an associative arr
 <pre>makeLink(Array $params, string $type, string $sef_name) : string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>This function does take into account the SEF URLs settings and the SSL urls in the site config.</p></div>
+<div class="long_description">This function does take into account the SEF URLs settings and the SSL urls in the site config.</div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:expCore</td>
@@ -338,7 +339,7 @@ Return a full URL, given the desired querystring arguments as an associative arr
 <a id="method_makePodcastLink"></a><div class="element clickable method public method_makePodcastLink" data-toggle="collapse" data-target=".method_makePodcastLink .collapse">
 <h2>Return a podcast link
 COMPATIBILITY - we now use the {rss_link} smarty function to build rss &amp; podcast links</h2>
-<pre>makePodcastLink($params) : string</pre>
+<pre>makePodcastLink(mixed $params) : string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -355,7 +356,7 @@ COMPATIBILITY - we now use the {rss_link} smarty function to build rss &amp; pod
 <a id="method_makeRSSLink"></a><div class="element clickable method public method_makeRSSLink" data-toggle="collapse" data-target=".method_makeRSSLink .collapse">
 <h2>Return an old style rss link
 COMPATIBILITY - we now use the {rss_link} smarty function to build rss links</h2>
-<pre>makeRSSLink($params) : string</pre>
+<pre>makeRSSLink(mixed $params) : string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -375,9 +376,9 @@ Return a full URL, given the desired querystring arguments as an associative arr
 <pre>makeSecureLink(Array $params) : string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>This function does take into account the SEF URLs settings and the SSL urls in the site config,
+<div class="long_description">This function does take into account the SEF URLs settings and the SSL urls in the site config,
 and uses the SSL url is the site is configured to use SSL.  Otherwise, it works exactly like
-self::makeLink.</p></div>
+self::makeLink.</div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:expCore</td>
@@ -411,6 +412,23 @@ self::makeLink.</p></div>
 </div>
 </div></div>
 </div>
+<a id="method_maxUploadSize"></a><div class="element clickable method public method_maxUploadSize" data-toggle="collapse" data-target=".method_maxUploadSize .collapse">
+<h2>exdoc
+Generates and returns a string stating the current maximum accepted size of
+uploaded files.  It intelligently parses the php.ini configuration, so that settings of
+2K and 2048 are treated identically.</h2>
+<pre>maxUploadSize() : string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:expCore</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
 <a id="method_maxUploadSizeMessage"></a><div class="element clickable method public method_maxUploadSizeMessage" data-toggle="collapse" data-target=".method_maxUploadSizeMessage .collapse">
 <h2>exdoc
 Generates and returns a message stating the current maximum accepted size of
@@ -418,8 +436,7 @@ uploaded files.</h2>
 <pre>maxUploadSizeMessage() : string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>It intelligently parses the php.ini configuration, so that settings of
-2K and 2048 are treated identically.</p></div>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:expCore</td>
@@ -465,7 +482,7 @@ if no file was found, false</h2>
 </div>
 <a id="method_saveData"></a><div class="element clickable method public method_saveData" data-toggle="collapse" data-target=".method_saveData .collapse">
 <h2>Use cUrl to save data from url to file (download)</h2>
-<pre>saveData($url, $filename, bool $ref, bool $post) </pre>
+<pre>saveData(mixed $url, mixed $filename, bool $ref, bool $post) </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -492,8 +509,9 @@ if no file was found, false</h2>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-07-20T10:06:59-04:00.<br></footer></div>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0
+</a> and<br>
+            generated on 2013-08-06T07:59:51-04:00.<br></footer></div>
 </div>
 </body>
 </html>
