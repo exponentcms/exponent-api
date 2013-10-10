@@ -38,7 +38,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">0</span></a></li>
+                <span class="label label-info">1679</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -79,6 +79,7 @@ of users can be returned.  Returns a list of users, according to the two paramet
 <li class="method public "><a href="#method_getEmailById" title="getEmailById() :: simple function to return the user's email"><span class="description">simple function to return the user's email</span><pre>getEmailById()</pre></a></li>
 <li class="method public "><a href="#method_getGroupMemberships" title="getGroupMemberships() :: "><span class="description">getGroupMemberships()
         </span><pre>getGroupMemberships()</pre></a></li>
+<li class="method public "><a href="#method_getUserAttribution" title="getUserAttribution() :: simple function to return the user's attribution based on system setting"><span class="description">simple function to return the user's attribution based on system setting</span><pre>getUserAttribution()</pre></a></li>
 <li class="method public "><a href="#method_getUserByEmail" title="getUserByEmail() :: exdoc
 This function pulls a user object from the subsystems storage mechanism,
 according to the email.  For the default implementation, this is equivalent
@@ -102,6 +103,7 @@ according to the username.  For the default implementation, this is equivalent
 to a $db-&gt;selectObject() call, but it may not be the same for other implementations.</span><pre>getUserByName()</pre></a></li>
 <li class="method public "><a href="#method_getUserProfile" title="getUserProfile() :: "><span class="description">getUserProfile()
         </span><pre>getUserProfile()</pre></a></li>
+<li class="method public "><a href="#method_globalPerm" title="globalPerm() :: This function determines a group global permission/restriction for this user"><span class="description">This function determines a group global permission/restriction for this user</span><pre>globalPerm()</pre></a></li>
 <li class="method public "><a href="#method_isActingAdmin" title="isActingAdmin() :: Is the user an acting admin and NOT a super admin?"><span class="description">Is the user an acting admin and NOT a super admin?</span><pre>isActingAdmin()</pre></a></li>
 <li class="method public "><a href="#method_isAdmin" title="isAdmin() :: Is the user either a super admin or an acting admin?"><span class="description">Is the user either a super admin or an acting admin?</span><pre>isAdmin()</pre></a></li>
 <li class="method public "><a href="#method_isLoggedIn" title="isLoggedIn() :: Is the user logged on"><span class="description">Is the user logged on</span><pre>isLoggedIn()</pre></a></li>
@@ -115,6 +117,8 @@ to a $db-&gt;selectObject() call, but it may not be the same for other implement
         </span><pre>save()</pre></a></li>
 <li class="method public "><a href="#method_setPassword" title="setPassword() :: "><span class="description">setPassword()
         </span><pre>setPassword()</pre></a></li>
+<li class="method public "><a href="#method_update" title="update() :: "><span class="description">update()
+        </span><pre>update()</pre></a></li>
 <li class="method public "><a href="#method_updateLastLogin" title="updateLastLogin() :: "><span class="description">updateLastLogin()
         </span><pre>updateLastLogin()</pre></a></li>
 </ul>
@@ -235,6 +239,29 @@ of users can be returned.  Returns a list of users, according to the two paramet
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="method_getUserAttribution"></a><div class="element clickable method public method_getUserAttribution" data-toggle="collapse" data-target=".method_getUserAttribution .collapse">
+<h2>simple function to return the user's attribution based on system setting</h2>
+<pre>getUserAttribution(integer $id, string $display) : string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>static</th>
+<td></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>integer</code>
+</div>
+<div class="subelement argument">
+<h4>$display</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
 <a id="method_getUserByEmail"></a><div class="element clickable method public method_getUserByEmail" data-toggle="collapse" data-target=".method_getUserByEmail .collapse">
 <h2>exdoc
 This function pulls a user object from the subsystems storage mechanism,
@@ -316,6 +343,18 @@ to the database.</div>
 <pre>getUserProfile() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_globalPerm"></a><div class="element clickable method public method_globalPerm" data-toggle="collapse" data-target=".method_globalPerm .collapse">
+<h2>This function determines a group global permission/restriction for this user</h2>
+<pre>globalPerm(mixed $perm) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$perm</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
 </div>
 <a id="method_isActingAdmin"></a><div class="element clickable method public method_isActingAdmin" data-toggle="collapse" data-target=".method_isActingAdmin .collapse">
 <h2>Is the user an acting admin and NOT a super admin?</h2>
@@ -409,6 +448,17 @@ to the database.</div>
 <div class="subelement argument"><h4>$pass2</h4></div>
 </div></div>
 </div>
+<a id="method_update"></a><div class="element clickable method public method_update" data-toggle="collapse" data-target=".method_update .collapse">
+<h2>update()
+        </h2>
+<pre>update($params) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$params</h4></div>
+</div></div>
+</div>
 <a id="method_updateLastLogin"></a><div class="element clickable method public method_updateLastLogin" data-toggle="collapse" data-target=".method_updateLastLogin .collapse">
 <h2>updateLastLogin()
         </h2>
@@ -437,9 +487,9 @@ to the database.</div>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.1
 </a> and<br>
-            generated on 2013-08-07T15:31:38-04:00.<br></footer></div>
+            generated on 2013-10-10T11:11:50-04:00.<br></footer></div>
 </div>
 </body>
 </html>

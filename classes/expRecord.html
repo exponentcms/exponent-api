@@ -38,7 +38,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">0</span></a></li>
+                <span class="label label-info">1679</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -85,6 +85,7 @@
 <li class="method public "><a href="#method_delete" title="delete() :: delete item"><span class="description">delete item</span><pre>delete()</pre></a></li>
 <li class="method public "><a href="#method_find" title="find() :: find an item"><span class="description">find an item</span><pre>find()</pre></a></li>
 <li class="method public "><a href="#method_findBy" title="findBy() :: find an item by column"><span class="description">find an item by column</span><pre>findBy()</pre></a></li>
+<li class="method public "><a href="#method_findValue" title="findValue() :: find a value(s) by column"><span class="description">find a value(s) by column</span><pre>findValue()</pre></a></li>
 <li class="method public "><a href="#method_findWhereAttachedTo" title="findWhereAttachedTo() :: this function finds models that have this attachable item attached"><span class="description">this function finds models that have this attachable item attached</span><pre>findWhereAttachedTo()</pre></a></li>
 <li class="method public "><a href="#method_getAssociatedObjects" title="getAssociatedObjects() :: get item's associated objects"><span class="description">get item's associated objects</span><pre>getAssociatedObjects()</pre></a></li>
 <li class="method public "><a href="#method_getPoster" title="getPoster() :: return the item poster"><span class="description">return the item poster</span><pre>getPoster()</pre></a></li>
@@ -446,6 +447,39 @@ field values are also populated into class properties.</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
+<a id="method_findValue"></a><div class="element clickable method public method_findValue" data-toggle="collapse" data-target=".method_findValue .collapse">
+<h2>find a value(s) by column</h2>
+<pre>findValue(string $range, string $column, string $where, string $order, bool $distinct) : array | bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$range</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$column</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$where</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$order</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$distinct</h4>
+<code>bool</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code><code>bool</code>
+</div>
+</div></div>
+</div>
 <a id="method_findWhereAttachedTo"></a><div class="element clickable method public method_findWhereAttachedTo" data-toggle="collapse" data-target=".method_findWhereAttachedTo .collapse">
 <h2>this function finds models that have this attachable item attached</h2>
 <pre>findWhereAttachedTo(mixed $content_type) : array</pre>
@@ -785,9 +819,9 @@ field values are also populated into class properties.</div>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.1
 </a> and<br>
-            generated on 2013-08-07T15:31:40-04:00.<br></footer></div>
+            generated on 2013-10-10T11:11:52-04:00.<br></footer></div>
 </div>
 </body>
 </html>

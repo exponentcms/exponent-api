@@ -38,7 +38,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">0</span></a></li>
+                <span class="label label-info">1679</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -415,7 +415,7 @@ Copies just the directory structure (including subdirectories) of a given direct
 <h2>exdoc
 This function takes a database object and dumps
 all of the records in all of the tables into a string.</h2>
-<pre>dumpDatabase(\Database $db, null $tables, $type, $record) : string</pre>
+<pre>dumpDatabase(\Database $db, null $tables, null $type, null $record) : string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description">The contents of the string are suitable for storage
@@ -434,8 +434,14 @@ implementation.</div>
 <h4>$tables</h4>
 <code>null</code>
 </div>
-<div class="subelement argument"><h4>$type</h4></div>
-<div class="subelement argument"><h4>$record</h4></div>
+<div class="subelement argument">
+<h4>$type</h4>
+<code>null</code>
+</div>
+<div class="subelement argument">
+<h4>$record</h4>
+<code>null</code>
+</div>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
 </div></div>
@@ -1179,7 +1185,7 @@ the restore was a success and false if something went horribly wrong
 (unable to read file, etc.)  Even if true is returned, there is a chance
 that some errors were encountered.  Check $errors to be sure everything
 was fine.</h2>
-<pre>restoreDatabase(\Database $db, string $file, array $errors, $type) : bool</pre>
+<pre>restoreDatabase(\Database $db, string $file, array $errors, null $type) : bool</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -1200,7 +1206,10 @@ was fine.</h2>
                         variable is passed in this argument will contain all errors encountered
                         during the parse/restore.</p>
 </div>
-<div class="subelement argument"><h4>$type</h4></div>
+<div class="subelement argument">
+<h4>$type</h4>
+<code>null</code>
+</div>
 <h3>Returns</h3>
 <div class="subelement response"><code>bool</code></div>
 </div></div>
@@ -1644,9 +1653,9 @@ This is a "relabel" of the PHP 'LOCK_EX' constant</h2>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.1
 </a> and<br>
-            generated on 2013-08-07T15:31:38-04:00.<br></footer></div>
+            generated on 2013-10-10T11:11:50-04:00.<br></footer></div>
 </div>
 </body>
 </html>

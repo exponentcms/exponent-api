@@ -38,7 +38,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">0</span></a></li>
+                <span class="label label-info">1679</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -297,15 +297,15 @@ $emailItem-&gt;send();</td>
 <tr>
 <th>example</th>
 <td>will send a basic message, but you can see how the subject line works.
-$emailItem = new expMail();
- $emailItem-&gt;addText(&#039;My Text &#039;);
-$emailItem-&gt;addText(&#039;Line Two &#039;);
- $emailItem-&gt;addText(&#039;Line Three &#039;);
-$emailItem-&gt;addTo(array(&#039;myemail@mysite.com&#039;, &#039;secondemail@website.com&#039;, &#039;third@emailsite.com&#039;));
-$emailItem-&gt;addFrom(&#039;from@sender.com&#039;); //setting the From field using just the email.
- $emailItem-&gt;addFrom(&#039;from@sender.com&#039;, &#039;Mr. Sender&#039;); //resetting the From field using the email and the name.
-$emailItem-&gt;subject(&#039;Hello World!&#039;);
-$emailItem-&gt;send();</td>
+          $emailItem = new expMail();
+          $emailItem-&gt;addText(&#039;My Text &#039;);
+          $emailItem-&gt;addText(&#039;Line Two &#039;);
+          $emailItem-&gt;addText(&#039;Line Three &#039;);
+          $emailItem-&gt;addTo(array(&#039;myemail@mysite.com&#039;, &#039;secondemail@website.com&#039;, &#039;third@emailsite.com&#039;));
+          $emailItem-&gt;addFrom(&#039;from@sender.com&#039;); //setting the From field using just the email.
+          $emailItem-&gt;addFrom(&#039;from@sender.com&#039;, &#039;Mr. Sender&#039;); //resetting the From field using the email and the name.
+          $emailItem-&gt;subject(&#039;Hello World!&#039;);
+          $emailItem-&gt;send();</td>
 </tr>
 </table>
 <h3>Parameters</h3>
@@ -503,13 +503,12 @@ You can also call the addHTML multiple times to append to the message:
 </div>
 <a id="method_addTo"></a><div class="element clickable method public method_addTo" data-toggle="collapse" data-target=".method_addTo .collapse">
 <h2>addTo() - This adds people to the Recipient List in the To Field.</h2>
-<pre>addTo(array|string $email_address_array, string $singular_name, string $where) </pre>
+<pre>addTo(array|string $email) </pre>
 <div class="labels"></div>
 <div class="row collapse">
 <div class="span4">
 <div class="long_description">If the first variable passed is an array,
    it assumes you are sending messages to multiple people.
-
    If you want to add people with their names associated with the email, you must use an outside for loop.
  This function does not yet support the parsing of associative arrays for a quick add to the To recipient list.</div>
 <table class="table table-bordered">
@@ -520,37 +519,37 @@ You can also call the addHTML multiple times to append to the message:
 <tr>
 <th>example</th>
 <td>will send a basic message, looping through an array of email addresses add adding them to the BCC list.
-   $emailItem = new expMail();
-  $emailItem-&gt;addText(&#039;My Text &#039;);
-    $emailItem-&gt;addText(&#039;Line Two &#039;);
-  $emailItem-&gt;addText(&#039;Line Three &#039;);
-    $to_array = array(&#039;a@website.com&#039;=&gt;&#039;Mr A.&#039;, &#039;b@website.com&#039;=&gt;&#039;Mr B.&#039;, &#039;c@website.com&#039;=&gt;&#039;Mr C.&#039;, &#039;d@website.com&#039;=&gt;&#039;Mr D.&#039;, &#039;e@website.com&#039;=&gt;&#039;Mr E.&#039;, &#039;f@website.com&#039;=&gt;&#039;Mr F.&#039;);
-   //add multiple bcc recipients to the email
-   foreach ($to_array as $email =&gt; $name)
-   {
-       $emailItem-&gt;addBcc($email, $name);
-   }
-   $emailItem-&gt;addFrom(&#039;from@sender.com&#039;);
-   $emailItem-&gt;subject(&#039;Hello World!&#039;);
-   $emailItem-&gt;send();
-   //You can also just specify the email without the name, like so:
-   $emailItem = new expMail();
- $emailItem-&gt;addText(&#039;My Text &#039;);
-   $emailItem-&gt;addText(&#039;Line Two &#039;);
- $emailItem-&gt;addText(&#039;Line Three &#039;);
-   $emailItem-&gt;addTo(&#039;bob@smith.com&#039;);
-   $emailItem-&gt;addFrom(&#039;from@sender.com&#039;);
-   $emailItem-&gt;subject(&#039;Hello World!&#039;);
-   $emailItem-&gt;send();
-   //You can also send an array of email addresses as the first argument, like so:
-   $emailItem = new expMail();
- $emailItem-&gt;addText(&#039;My Text &#039;);
-   $emailItem-&gt;addText(&#039;Line Two &#039;);
- $emailItem-&gt;addText(&#039;Line Three &#039;);
-   $emailItem-&gt;addTo(array(&#039;myemail@mysite.com&#039;, &#039;secondemail@website.com&#039;, &#039;third@emailsite.com&#039;));
-   $emailItem-&gt;addFrom(&#039;from@sender.com&#039;);
-   $emailItem-&gt;subject(&#039;Hello World!&#039;);
-   $emailItem-&gt;send();</td>
+               $emailItem = new expMail();
+               $emailItem-&gt;addText(&#039;My Text &#039;);
+               $emailItem-&gt;addText(&#039;Line Two &#039;);
+               $emailItem-&gt;addText(&#039;Line Three &#039;);
+               $to_array = array(&#039;a@website.com&#039;=&gt;&#039;Mr A.&#039;, &#039;b@website.com&#039;=&gt;&#039;Mr B.&#039;, &#039;c@website.com&#039;=&gt;&#039;Mr C.&#039;, &#039;d@website.com&#039;=&gt;&#039;Mr D.&#039;, &#039;e@website.com&#039;=&gt;&#039;Mr E.&#039;, &#039;f@website.com&#039;=&gt;&#039;Mr F.&#039;);
+               //add multiple bcc recipients to the email
+               foreach ($to_array as $email =&gt; $name)
+               {
+               $emailItem-&gt;addBcc($email, $name);
+               }
+               $emailItem-&gt;addFrom(&#039;from@sender.com&#039;);
+               $emailItem-&gt;subject(&#039;Hello World!&#039;);
+               $emailItem-&gt;send();
+               //You can also just specify the email without the name, like so:
+               $emailItem = new expMail();
+               $emailItem-&gt;addText(&#039;My Text &#039;);
+               $emailItem-&gt;addText(&#039;Line Two &#039;);
+               $emailItem-&gt;addText(&#039;Line Three &#039;);
+               $emailItem-&gt;addTo(&#039;bob@smith.com&#039;);
+               $emailItem-&gt;addFrom(&#039;from@sender.com&#039;);
+               $emailItem-&gt;subject(&#039;Hello World!&#039;);
+               $emailItem-&gt;send();
+               //You can also send an array of email addresses as the first argument, like so:
+               $emailItem = new expMail();
+               $emailItem-&gt;addText(&#039;My Text &#039;);
+               $emailItem-&gt;addText(&#039;Line Two &#039;);
+               $emailItem-&gt;addText(&#039;Line Three &#039;);
+               $emailItem-&gt;addTo(array(&#039;myemail@mysite.com&#039;, &#039;secondemail@website.com&#039;, &#039;third@emailsite.com&#039;));
+               $emailItem-&gt;addFrom(&#039;from@sender.com&#039;);
+               $emailItem-&gt;subject(&#039;Hello World!&#039;);
+               $emailItem-&gt;send();</td>
 </tr>
 <tr>
 <th>todo</th>
@@ -564,15 +563,8 @@ You can also call the addHTML multiple times to append to the message:
 </table>
 <h3>Parameters</h3>
 <div class="subelement argument">
-<h4>$email_address_array</h4>
-<code>array</code><code>string</code><p>This is the array</p></div>
-<div class="subelement argument">
-<h4>$singular_name</h4>
-<code>string</code><p>This is the name associated with the above email address.</p></div>
-<div class="subelement argument">
-<h4>$where</h4>
-<code>string</code>
-</div>
+<h4>$email</h4>
+<code>array</code><code>string</code><p>This is the string or array to send email to</p></div>
 </div>
 <div class="span4">
 <h3>Examples</h3>
@@ -963,9 +955,9 @@ an associative array, (or else the message fails immediately).</h2>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.1
 </a> and<br>
-            generated on 2013-08-07T15:31:37-04:00.<br></footer></div>
+            generated on 2013-10-10T11:11:49-04:00.<br></footer></div>
 </div>
 </body>
 </html>

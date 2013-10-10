@@ -38,7 +38,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">0</span></a></li>
+                <span class="label label-info">1679</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -72,8 +72,7 @@
         </span><pre>breadcrumb()</pre></a></li>
 <li class="method public "><a href="#method_canManageStandalones" title="canManageStandalones() :: "><span class="description">canManageStandalones()
         </span><pre>canManageStandalones()</pre></a></li>
-<li class="method public "><a href="#method_canView" title="canView() :: "><span class="description">canView()
-        </span><pre>canView()</pre></a></li>
+<li class="method public "><a href="#method_canView" title="canView() :: Check for cascading page view permission, esp. if not public"><span class="description">Check for cascading page view permission, esp. if not public</span><pre>canView()</pre></a></li>
 <li class="method public "><a href="#method_checkForSectionalAdmins" title="checkForSectionalAdmins() :: Reassign permissions based on a check/change in menu/page hierarchy"><span class="description">Reassign permissions based on a check/change in menu/page hierarchy</span><pre>checkForSectionalAdmins()</pre></a></li>
 <li class="method public "><a href="#method_checkPermissions" title="checkPermissions() :: "><span class="description">checkPermissions()
         </span><pre>checkPermissions()</pre></a></li>
@@ -97,8 +96,7 @@
 <li class="method public "><a href="#method_getTemplateHierarchyFlat" title="getTemplateHierarchyFlat() :: recursively lists the template hierarchy"><span class="description">recursively lists the template hierarchy</span><pre>getTemplateHierarchyFlat()</pre></a></li>
 <li class="method public "><a href="#method_hasChildren" title="hasChildren() :: "><span class="description">hasChildren()
         </span><pre>hasChildren()</pre></a></li>
-<li class="method public "><a href="#method_isPublic" title="isPublic() :: "><span class="description">isPublic()
-        </span><pre>isPublic()</pre></a></li>
+<li class="method public "><a href="#method_isPublic" title="isPublic() :: Check to see if page is public with cascading"><span class="description">Check to see if page is public with cascading</span><pre>isPublic()</pre></a></li>
 <li class="method public "><a href="#method_isSearchable" title="isSearchable() :: "><span class="description">isSearchable()
         </span><pre>isSearchable()</pre></a></li>
 <li class="method public "><a href="#method_levelDropdownControlArray" title="levelDropdownControlArray() :: Returns a flat representation of the full site hierarchy."><span class="description">Returns a flat representation of the full site hierarchy.</span><pre>levelDropdownControlArray()</pre></a></li>
@@ -209,8 +207,7 @@ sections to specific parts of the site hierarchy.</span><pre>levelShowDropdown()
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="method_canView"></a><div class="element clickable method public method_canView" data-toggle="collapse" data-target=".method_canView .collapse">
-<h2>canView()
-        </h2>
+<h2>Check for cascading page view permission, esp. if not public</h2>
 <pre>canView($section) </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
@@ -349,8 +346,7 @@ sections to specific parts of the site hierarchy.</span><pre>levelShowDropdown()
 </div></div>
 </div>
 <a id="method_isPublic"></a><div class="element clickable method public method_isPublic" data-toggle="collapse" data-target=".method_isPublic .collapse">
-<h2>isPublic()
-        </h2>
+<h2>Check to see if page is public with cascading</h2>
 <pre>isPublic($s) </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
@@ -368,7 +364,7 @@ sections to specific parts of the site hierarchy.</span><pre>levelShowDropdown()
 </div>
 <a id="method_levelDropdownControlArray"></a><div class="element clickable method public method_levelDropdownControlArray" data-toggle="collapse" data-target=".method_levelDropdownControlArray .collapse">
 <h2>Returns a flat representation of the full site hierarchy.</h2>
-<pre>levelDropdownControlArray(int $parent, int $depth, array $ignore_ids, bool $full, string $perm, bool $addstandalones, $addinternalalias) : array</pre>
+<pre>levelDropdownControlArray(int $parent, int $depth, array $ignore_ids, bool $full, string $perm, bool $addstandalones, bool $addinternalalias) : array</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -392,7 +388,10 @@ sections to specific parts of the site hierarchy.</span><pre>levelShowDropdown()
 <h4>$addstandalones</h4>
 <code>bool</code><p>should we add the stand-alone pages also</p>
 </div>
-<div class="subelement argument"><h4>$addinternalalias</h4></div>
+<div class="subelement argument">
+<h4>$addinternalalias</h4>
+<code>bool</code>
+</div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -596,9 +595,9 @@ sections to specific parts of the site hierarchy.</h2>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.1
 </a> and<br>
-            generated on 2013-08-07T15:31:46-04:00.<br></footer></div>
+            generated on 2013-10-10T11:11:58-04:00.<br></footer></div>
 </div>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Exponent v2.2.2 » \flowplayerController</title>
+<title>Exponent v2.2.2 » \upgrade_mediaplayer2</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -38,7 +38,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">0</span></a></li>
+                <span class="label label-info">1679</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -63,96 +63,90 @@
 <li class="nav-header">
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
-<li class="method public "><a href="#method_description" title="description() :: "><span class="description">description()
-        </span><pre>description()</pre></a></li>
-<li class="method public "><a href="#method_displayname" title="displayname() :: "><span class="description">displayname()
-        </span><pre>displayname()</pre></a></li>
-<li class="method public "><a href="#method_isSearchable" title="isSearchable() :: "><span class="description">isSearchable()
-        </span><pre>isSearchable()</pre></a></li>
-<li class="method public "><a href="#method_showall" title="showall() :: "><span class="description">showall()
-        </span><pre>showall()</pre></a></li>
+<li class="method public "><a href="#method_description" title="description() :: generic description of upgrade script"><span class="description">generic description of upgrade script</span><pre>description()</pre></a></li>
+<li class="method public "><a href="#method_name" title="name() :: name/title of upgrade script"><span class="description">name/title of upgrade script</span><pre>name()</pre></a></li>
+<li class="method public "><a href="#method_needed" title="needed() :: This routine should perform additional test(s) to see if upgrade script should be run (files/tables exist, etc."><span class="description">This routine should perform additional test(s) to see if upgrade script should be run (files/tables exist, etc.</span><pre>needed()</pre></a></li>
+<li class="method public "><a href="#method_upgrade" title="upgrade() :: Converts all EAAS items to use Media Player module instead of deprecated YouTube module"><span class="description">Converts all EAAS items to use Media Player module instead of deprecated YouTube module</span><pre>upgrade()</pre></a></li>
 </ul>
 </li>
 <li class="nav-header">
 <i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
                     <ul>
-<li class="property public "><a href="#property_codequality" title="$codequality() :: "><span class="description"></span><pre>$codequality</pre></a></li>
-<li class="property public "><a href="#property_remove_configs" title="$remove_configs() :: "><span class="description"></span><pre>$remove_configs</pre></a></li>
-<li class="property public "><a href="#property_useractions" title="$useractions() :: "><span class="description"></span><pre>$useractions</pre></a></li>
+<li class="property protected "><a href="#property_from_version" title="$from_version() :: "><span class="description"></span><pre>$from_version</pre></a></li>
+<li class="property protected "><a href="#property_to_version" title="$to_version() :: "><span class="description"></span><pre>$to_version</pre></a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="span8">
-<a id="\flowplayerController"></a><ul class="breadcrumb">
+<a id="\upgrade_mediaplayer2"></a><ul class="breadcrumb">
 <li>
 <a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
 <li class="active">
-<span class="divider">\</span><a href="../classes/flowplayerController.html">flowplayerController</a>
+<span class="divider">\</span><a href="../classes/upgrade_mediaplayer2.html">upgrade_mediaplayer2</a>
 </li>
 </ul>
 <div class="element class">
-<p class="short_description">This is the class expController</p>
+<p class="short_description">This is the class upgrade_mediaplayer2</p>
 <div class="details">
 <div class="long_description"></div>
-<table class="table table-bordered">
-<tr>
-<th>subpackage</th>
-<td>Controllers</td>
-</tr>
-<tr>
-<th>package</th>
-<td><a href="../packages/Modules.Controllers.html">Modules</a></td>
-</tr>
-</table>
 <h3>
 <i class="icon-custom icon-method"></i> Methods</h3>
 <a id="method_description"></a><div class="element clickable method public method_description" data-toggle="collapse" data-target=".method_description .collapse">
-<h2>description()
-        </h2>
-<pre>description() </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="method_displayname"></a><div class="element clickable method public method_displayname" data-toggle="collapse" data-target=".method_displayname .collapse">
-<h2>displayname()
-        </h2>
-<pre>displayname() </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="method_isSearchable"></a><div class="element clickable method public method_isSearchable" data-toggle="collapse" data-target=".method_isSearchable .collapse">
-<h2>isSearchable()
-        </h2>
-<pre>isSearchable() </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="method_showall"></a><div class="element clickable method public method_showall" data-toggle="collapse" data-target=".method_showall .collapse">
-<h2>showall()
-        </h2>
-<pre>showall() </pre>
+<h2>generic description of upgrade script</h2>
+<pre>description() : string</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_name"></a><div class="element clickable method public method_name" data-toggle="collapse" data-target=".method_name .collapse">
+<h2>name/title of upgrade script</h2>
+<pre>name() : string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_needed"></a><div class="element clickable method public method_needed" data-toggle="collapse" data-target=".method_needed .collapse">
+<h2>This routine should perform additional test(s) to see if upgrade script should be run (files/tables exist, etc.</h2>
+<pre>needed() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">..)</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_upgrade"></a><div class="element clickable method public method_upgrade" data-toggle="collapse" data-target=".method_upgrade .collapse">
+<h2>Converts all EAAS items to use Media Player module instead of deprecated YouTube module</h2>
+<pre>upgrade() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
 </div>
 <h3>
 <i class="icon-custom icon-property"></i> Properties</h3>
-<a id="property_codequality"> </a><div class="element clickable property public property_codequality" data-toggle="collapse" data-target=".property_codequality .collapse">
-<h2>$codequality</h2>
-<pre>$codequality </pre>
+<a id="property_from_version"> </a><div class="element clickable property protected property_from_version" data-toggle="collapse" data-target=".property_from_version .collapse">
+<h2>$from_version</h2>
+<pre>$from_version </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_remove_configs"> </a><div class="element clickable property public property_remove_configs" data-toggle="collapse" data-target=".property_remove_configs .collapse">
-<h2>$remove_configs</h2>
-<pre>$remove_configs </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="property_useractions"> </a><div class="element clickable property public property_useractions" data-toggle="collapse" data-target=".property_useractions .collapse">
-<h2>$useractions</h2>
-<pre>$useractions </pre>
+<a id="property_to_version"> </a><div class="element clickable property protected property_to_version" data-toggle="collapse" data-target=".property_to_version .collapse">
+<h2>$to_version</h2>
+<pre>$to_version </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -162,9 +156,9 @@
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.1
 </a> and<br>
-            generated on 2013-08-07T15:31:41-04:00.<br></footer></div>
+            generated on 2013-10-10T11:12:00-04:00.<br></footer></div>
 </div>
 </body>
 </html>

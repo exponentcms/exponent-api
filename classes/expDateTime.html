@@ -38,7 +38,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">0</span></a></li>
+                <span class="label label-info">1679</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -135,10 +135,8 @@ Finds all of the dates that fall within the yearly recurrence criteria
 (similar to monthly) and within the $start to $end timestamp range."><span class="description">exdoc
 Finds all of the dates that fall within the yearly recurrence criteria
 (similar to monthly) and within the $start to $end timestamp range.</span><pre>recurringYearlyDates()</pre></a></li>
-<li class="method public "><a href="#method_relativeDate" title="relativeDate() :: "><span class="description">relativeDate()
-        </span><pre>relativeDate()</pre></a></li>
-<li class="method public "><a href="#method_sameDay" title="sameDay() :: "><span class="description">sameDay()
-        </span><pre>sameDay()</pre></a></li>
+<li class="method public "><a href="#method_relativeDate" title="relativeDate() :: Returns date as a relative phrase (2 days ago, etc."><span class="description">Returns date as a relative phrase (2 days ago, etc.</span><pre>relativeDate()</pre></a></li>
+<li class="method public "><a href="#method_sameDay" title="sameDay() :: Function to check if dates are same day"><span class="description">Function to check if dates are same day</span><pre>sameDay()</pre></a></li>
 <li class="method public "><a href="#method_startOfDayTimestamp" title="startOfDayTimestamp() :: exdoc
 Looks at a timestamp and returns another timestamp representing
 12:00:01 am of the same day."><span class="description">exdoc
@@ -503,26 +501,28 @@ Finds all of the dates that fall within the yearly recurrence criteria
 </div></div>
 </div>
 <a id="method_relativeDate"></a><div class="element clickable method public method_relativeDate" data-toggle="collapse" data-target=".method_relativeDate .collapse">
-<h2>relativeDate()
-        </h2>
-<pre>relativeDate($posted_date) </pre>
+<h2>Returns date as a relative phrase (2 days ago, etc.</h2>
+<pre>relativeDate(mixed $posted_date) : string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
+<div class="long_description">.)</div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$posted_date</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
 <a id="method_sameDay"></a><div class="element clickable method public method_sameDay" data-toggle="collapse" data-target=".method_sameDay .collapse">
-<h2>sameDay()
-        </h2>
-<pre>sameDay($date1, $date2) </pre>
+<h2>Function to check if dates are same day</h2>
+<pre>sameDay(mixed $date1, mixed $date2) : bool</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$date1</h4></div>
 <div class="subelement argument"><h4>$date2</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
 <a id="method_startOfDayTimestamp"></a><div class="element clickable method public method_startOfDayTimestamp" data-toggle="collapse" data-target=".method_startOfDayTimestamp .collapse">
@@ -615,9 +615,9 @@ would return a timestamp representing January 1st 1984, at 12:00am.</h2>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.1
 </a> and<br>
-            generated on 2013-08-07T15:31:38-04:00.<br></footer></div>
+            generated on 2013-10-10T11:11:50-04:00.<br></footer></div>
 </div>
 </body>
 </html>

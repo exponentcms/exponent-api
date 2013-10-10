@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Exponent v2.2.2 » \update_profile_paths</title>
+<title>Exponent v2.2.2 » \update_mediaplayer</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -65,13 +65,13 @@
                     <ul>
 <li class="method public "><a href="#method_description" title="description() :: generic description of upgrade script"><span class="description">generic description of upgrade script</span><pre>description()</pre></a></li>
 <li class="method public "><a href="#method_name" title="name() :: name/title of upgrade script"><span class="description">name/title of upgrade script</span><pre>name()</pre></a></li>
-<li class="method public "><a href="#method_needed" title="needed() :: additional test(s) to see if upgrade script should be run"><span class="description">additional test(s) to see if upgrade script should be run</span><pre>needed()</pre></a></li>
-<li class="method public "><a href="#method_upgrade" title="upgrade() :: converts avatar paths that were stored incorrectly"><span class="description">converts avatar paths that were stored incorrectly</span><pre>upgrade()</pre></a></li>
+<li class="method public "><a href="#method_needed" title="needed() :: This routine should perform additional test(s) to see if upgrade script should be run (files/tables exist, etc."><span class="description">This routine should perform additional test(s) to see if upgrade script should be run (files/tables exist, etc.</span><pre>needed()</pre></a></li>
+<li class="method public "><a href="#method_upgrade" title="upgrade() :: Update all Media Player items to set media type"><span class="description">Update all Media Player items to set media type</span><pre>upgrade()</pre></a></li>
 </ul>
 </li>
 <li class="nav-header">
 <i class="icon-custom icon-property"></i> Properties
-                    <ul></ul>
+                    <ul><li class="property public "><a href="#property_optional" title="$optional() :: "><span class="description"></span><pre>$optional</pre></a></li></ul>
 </li>
 <li class="nav-header protected">» Protected
                     <ul>
@@ -82,16 +82,16 @@
 </ul>
 </div>
 <div class="span8">
-<a id="\update_profile_paths"></a><ul class="breadcrumb">
+<a id="\update_mediaplayer"></a><ul class="breadcrumb">
 <li>
 <a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
 <li class="active">
-<span class="divider">\</span><a href="../classes/update_profile_paths.html">update_profile_paths</a>
+<span class="divider">\</span><a href="../classes/update_mediaplayer.html">update_mediaplayer</a>
 </li>
 </ul>
 <div class="element class">
-<p class="short_description">This is the class update_profile_paths</p>
+<p class="short_description">This is the class update_mediaplayer</p>
 <div class="details">
 <div class="long_description"></div>
 <h3>
@@ -117,17 +117,17 @@
 </div></div>
 </div>
 <a id="method_needed"></a><div class="element clickable method public method_needed" data-toggle="collapse" data-target=".method_needed .collapse">
-<h2>additional test(s) to see if upgrade script should be run</h2>
+<h2>This routine should perform additional test(s) to see if upgrade script should be run (files/tables exist, etc.</h2>
 <pre>needed() : bool</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
+<div class="long_description">..)</div>
 <h3>Returns</h3>
 <div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
 <a id="method_upgrade"></a><div class="element clickable method public method_upgrade" data-toggle="collapse" data-target=".method_upgrade .collapse">
-<h2>converts avatar paths that were stored incorrectly</h2>
+<h2>Update all Media Player items to set media type</h2>
 <pre>upgrade() : bool</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
@@ -138,6 +138,12 @@
 </div>
 <h3>
 <i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_optional"> </a><div class="element clickable property public property_optional" data-toggle="collapse" data-target=".property_optional .collapse">
+<h2>$optional</h2>
+<pre>$optional </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="property_from_version"> </a><div class="element clickable property protected property_from_version" data-toggle="collapse" data-target=".property_from_version .collapse">
 <h2>$from_version</h2>
 <pre>$from_version </pre>
@@ -158,7 +164,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.1
 </a> and<br>
-            generated on 2013-10-10T11:11:51-04:00.<br></footer></div>
+            generated on 2013-10-10T11:11:59-04:00.<br></footer></div>
 </div>
 </body>
 </html>
