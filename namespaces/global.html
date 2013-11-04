@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Exponent v2.2.2 » global</title>
+<title>Exponent v2.2.4 » global</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -15,7 +15,7 @@
 <body>
 <div class="navbar navbar-fixed-top">
 <div class="navbar-inner"><div class="container">
-<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent v2.2.2</a><div class="nav-collapse"><ul class="nav">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent v2.2.4</a><div class="nav-collapse"><ul class="nav">
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
@@ -38,7 +38,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">1679</span></a></li>
+                <span class="label label-info">1819</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -234,6 +234,7 @@ just before it gets rendered to the screen should happen here.</span><pre>expPro
 <li class="function  "><a href="#function_smarty_function_backlink" title="smarty_function_backlink() :: Smarty {backlink} function plugin"><span class="description">Smarty {backlink} function plugin</span><pre>smarty_function_backlink</pre></a></li>
 <li class="function  "><a href="#function_smarty_function_bootstrap_navbar" title="smarty_function_bootstrap_navbar() :: Smarty {bootstrap_navbar} function plugin"><span class="description">Smarty {bootstrap_navbar} function plugin</span><pre>smarty_function_bootstrap_navbar</pre></a></li>
 <li class="function  "><a href="#function_smarty_function_br" title="smarty_function_br() :: Smarty {br} function plugin"><span class="description">Smarty {br} function plugin</span><pre>smarty_function_br</pre></a></li>
+<li class="function  "><a href="#function_smarty_function_button_style" title="smarty_function_button_style() :: Smarty {button_style} function plugin"><span class="description">Smarty {button_style} function plugin</span><pre>smarty_function_button_style</pre></a></li>
 <li class="function  "><a href="#function_smarty_function_chain" title="smarty_function_chain() :: Smarty {chain} function plugin"><span class="description">Smarty {chain} function plugin</span><pre>smarty_function_chain</pre></a></li>
 <li class="function  "><a href="#function_smarty_function_chainbytags" title="smarty_function_chainbytags() :: Smarty {chainbytags} function plugin"><span class="description">Smarty {chainbytags} function plugin</span><pre>smarty_function_chainbytags</pre></a></li>
 <li class="function  "><a href="#function_smarty_function_clear" title="smarty_function_clear() :: Smarty {clear} function plugin"><span class="description">Smarty {clear} function plugin</span><pre>smarty_function_clear</pre></a></li>
@@ -453,7 +454,6 @@ the record for each file.">expFile</a></li>
 <li><a href="#expSorter" title="This is the class expSorter">expSorter</a></li>
 <li><a href="#orderController" title="This is the class expController">orderController</a></li>
 <li><a href="#forms_control" title="This is the class expRecord">forms_control</a></li>
-<li><a href="#sermons" title="This is the class expRecord">sermons</a></li>
 <li><a href="#creditcard" title="This is the class expRecord">creditcard</a></li>
 <li><a href="#expCore" title="">expCore</a></li>
 <li><a href="#calendarcontrol" title="Date/Time Control w/ Popup Date Picker and time w/ am/pm combo
@@ -484,7 +484,6 @@ text entry date and/or time w/ pop-up date selector">calendarcontrol</a></li>
 <li><a href="#expRatingController" title="This is the class expRatingController">expRatingController</a></li>
 <li><a href="#portfolio" title="This is the class expRecord">portfolio</a></li>
 <li><a href="#add_filedownload_published" title="This is the class add_filedownload_published">add_filedownload_published</a></li>
-<li><a href="#expHtmlToPDF2" title="">expHtmlToPDF2</a></li>
 <li><a href="#update_profile_paths" title="This is the class update_profile_paths">update_profile_paths</a></li>
 <li><a href="#product_statusController" title="This is the class expController">product_statusController</a></li>
 <li><a href="#radiogroupcontrol" title="Radio Button Control class">radiogroupcontrol</a></li>
@@ -504,7 +503,6 @@ text entry date and/or time w/ pop-up date selector">calendarcontrol</a></li>
 <li><a href="#formtemplate" title="Form Template Wrapper">formtemplate</a></li>
 <li><a href="#rssController" title="This is the class expController">rssController</a></li>
 <li><a href="#countdownController" title="This is the class expController">countdownController</a></li>
-<li><a href="#sermonseriesController" title="This is the class expController">sermonseriesController</a></li>
 <li><a href="#mysqli_database" title="This is the class database">mysqli_database</a></li>
 <li><a href="#cartController" title="This is the class expController">cartController</a></li>
 <li><a href="#expModuleController" title="This is the class expModuleController">expModuleController</a></li>
@@ -554,12 +552,10 @@ Exponent History Subsystem">expHistory</a></li>
 <li><a href="#simplepoll_answer" title="This is the class expRecord">simplepoll_answer</a></li>
 <li><a href="#importexportController" title="This is the class expController">importexportController</a></li>
 <li><a href="#eventregistration" title="This is the class expRecord">eventregistration</a></li>
-<li><a href="#speakers" title="This is the class expRecord">speakers</a></li>
 <li><a href="#expPaginator" title="This is the class expPaginator
 Exponent Pagination Subsystem">expPaginator</a></li>
 <li><a href="#sermonseries" title="This is the class expRecord">sermonseries</a></li>
 <li><a href="#order_status_messages" title="This is the class expRecord">order_status_messages</a></li>
-<li><a href="#sermonseriesController" title="This is the class expController">sermonseriesController</a></li>
 <li><a href="#paylater" title="This is the class expRecord">paylater</a></li>
 <li><a href="#speakers" title="This is the class expRecord">speakers</a></li>
 <li><a href="#nextag_product_types" title="This is the class expNestedNode">nextag_product_types</a></li>
@@ -611,7 +607,10 @@ places a checkbox to disable calendar input">yuidatetimecontrol</a></li>
 <li><a href="#update_event_registration" title="This is the class update_event_registration">update_event_registration</a></li>
 <li><a href="#expNestedNode" title="This is the class expNestedNode">expNestedNode</a></li>
 <li><a href="#mediaController" title="This is the class expController">mediaController</a></li>
-<li><a href="#expHtmlToPDF" title="">expHtmlToPDF</a></li>
+<li><a href="#expHtmlToPDF" title="This is the class expHtmlToPDF">expHtmlToPDF</a></li>
+<li><a href="#expWKPDF" title="This is the class expHtmlToPDF">expWKPDF</a></li>
+<li><a href="#expDOMPDF" title="This is the class expHtmlToPDF">expDOMPDF</a></li>
+<li><a href="#expMPDF" title="This is the class expHtmlToPDF">expMPDF</a></li>
 <li><a href="#upscalculator" title="This is the class expRecord">upscalculator</a></li>
 <li><a href="#expLang" title="">expLang</a></li>
 <li><a href="#banner" title="This is the class expRecord">banner</a></li>
@@ -636,8 +635,6 @@ places an update calendar field/button">yuicalendarcontrol</a></li>
 <li><a href="#expSimpleNote" title="This is the class expSimpleNote">expSimpleNote</a></li>
 <li><a href="#bannerController" title="This is the class expController">bannerController</a></li>
 <li><a href="#passwordcontrol" title="Password Control">passwordcontrol</a></li>
-<li><a href="#sermonsController" title="This is the class expController">sermonsController</a></li>
-<li><a href="#speakers" title="This is the class expRecord">speakers</a></li>
 <li><a href="#faq" title="This is the class expRecord">faq</a></li>
 <li><a href="#expDefinableFieldController" title="This is the class expDefinableFieldController">expDefinableFieldController</a></li>
 <li><a href="#upgrade_simplepoll" title="This is the class upgrade_simplepoll">upgrade_simplepoll</a></li>
@@ -645,7 +642,6 @@ places an update calendar field/button">yuicalendarcontrol</a></li>
 <li><a href="#bootstraptheme" title="This is the base theme class">bootstraptheme</a></li>
 <li><a href="#expRating" title="This is the class expRating">expRating</a></li>
 <li><a href="#expRouter" title="This is the class expRouter">expRouter</a></li>
-<li><a href="#sermonseries" title="This is the class expRecord">sermonseries</a></li>
 <li><a href="#order" title="This is the class expRecord">order</a></li>
 <li><a href="#popupdatetimecontrol" title="YUI Popup Date/Time Picker Control">popupdatetimecontrol</a></li>
 <li><a href="#loginController" title="This is the class expController">loginController</a></li>
@@ -674,7 +670,6 @@ places an update calendar field/button">yuicalendarcontrol</a></li>
 <li><a href="#taxclass" title="This is the class expRecord">taxclass</a></li>
 <li><a href="#google_product_types" title="This is the class expNestedNode">google_product_types</a></li>
 <li><a href="#numbercontrol" title="Number Control">numbercontrol</a></li>
-<li><a href="#sermonseries" title="This is the class expRecord">sermonseries</a></li>
 <li><a href="#donation" title="This is the class expRecord">donation</a></li>
 <li><a href="#genericcontrol" title="Generic HTML Input Control">genericcontrol</a></li>
 <li><a href="#remove_oldtables" title="This is the class remove_oldtables">remove_oldtables</a></li>
@@ -692,8 +687,6 @@ places an update calendar field/button">yuicalendarcontrol</a></li>
 <li><a href="#group" title="This is the class expRecord">group</a></li>
 <li><a href="#portfolioController" title="This is the class expController">portfolioController</a></li>
 <li><a href="#order_status_changes" title="This is the class expRecord">order_status_changes</a></li>
-<li><a href="#sermonsController" title="This is the class expController">sermonsController</a></li>
-<li><a href="#services" title="This is the class expRecord">services</a></li>
 <li><a href="#fix_faq_filedownload_modules" title="This is the class fix_faq_filedownload_modules">fix_faq_filedownload_modules</a></li>
 <li><a href="#add_file_posted" title="This is the class add_file_posted">add_file_posted</a></li>
 <li><a href="#billing" title="This is the class expRecord">billing</a></li>
@@ -722,19 +715,20 @@ text entry hex color w/ pop-up color selector">colorcontrol</a></li>
 <li><a href="#expLDAP" title="This is the class expLDAP">expLDAP</a></li>
 <li><a href="#helpController" title="This is the class expController">helpController</a></li>
 <li><a href="#filedownload" title="This is the class expRecord">filedownload</a></li>
-<li><a href="#sermons" title="This is the class expRecord">sermons</a></li>
 <li><a href="#update_mediaplayer" title="This is the class update_mediaplayer">update_mediaplayer</a></li>
 <li><a href="#motdController" title="This is the class expController">motdController</a></li>
 <li><a href="#autocompletecontrol" title="Auto-complete Control">autocompletecontrol</a></li>
 <li><a href="#antispamcontrol" title="Anti-Spam Control">antispamcontrol</a></li>
 <li><a href="#usersController" title="This is the class expController">usersController</a></li>
-<li><a href="#services" title="This is the class expRecord">services</a></li>
 <li><a href="#rangecontrol" title="Range Control">rangecontrol</a></li>
 <li><a href="#migrationController" title="This is the class expController">migrationController</a></li>
 <li><a href="#basetemplate" title="Base Template class">basetemplate</a></li>
 <li><a href="#twitterController" title="This is the class expController">twitterController</a></li>
 <li><a href="#upgrade_mediaplayer2" title="This is the class upgrade_mediaplayer2">upgrade_mediaplayer2</a></li>
 <li><a href="#orderitem" title="This is the class expRecord">orderitem</a></li>
+<li><a href="#flowplayerController" title="This is the class expController">flowplayerController</a></li>
+<li><a href="#sectionref" title="This is the class expRecord">sectionref</a></li>
+<li><a href="#youtubeController" title="This is the class expController">youtubeController</a></li>
 <li class="nav-header">
 <i class="icon-custom icon-constant"></i> Constants</li>
 <li class="constant  "><a href="#constant_%22BLANKPADDING%22" title='"BLANKPADDING"() :: '><span class="description">"BLANKPADDING"</span><pre>"BLANKPADDING"</pre></a></li>
@@ -877,7 +871,8 @@ The EQL header string for object dump file formats.</span><pre>EQL_HEADER</pre><
 <li class="constant  "><a href="#constant_HELP_ACTIVE" title="HELP_ACTIVE() :: "><span class="description">HELP_ACTIVE</span><pre>HELP_ACTIVE</pre></a></li>
 <li class="constant  "><a href="#constant_HELP_URL" title="HELP_URL() :: "><span class="description">HELP_URL</span><pre>HELP_URL</pre></a></li>
 <li class="constant  "><a href="#constant_HOSTNAME" title="HOSTNAME() :: "><span class="description">HOSTNAME</span><pre>HOSTNAME</pre></a></li>
-<li class="constant  "><a href="#constant_HTML2PDF_OUTPUT" title="HTML2PDF_OUTPUT() :: "><span class="description">HTML2PDF_OUTPUT</span><pre>HTML2PDF_OUTPUT</pre></a></li>
+<li class="constant  "><a href="#constant_HTMLTOPDF_ENGINE" title="HTMLTOPDF_ENGINE() :: "><span class="description">HTMLTOPDF_ENGINE</span><pre>HTMLTOPDF_ENGINE</pre></a></li>
+<li class="constant  "><a href="#constant_HTMLTOPDF_OUTPUT" title="HTMLTOPDF_OUTPUT() :: "><span class="description">HTMLTOPDF_OUTPUT</span><pre>HTMLTOPDF_OUTPUT</pre></a></li>
 <li class="constant  "><a href="#constant_HTMLTOPDF_PATH" title="HTMLTOPDF_PATH() :: "><span class="description">HTMLTOPDF_PATH</span><pre>HTMLTOPDF_PATH</pre></a></li>
 <li class="constant  "><a href="#constant_HTMLTOPDF_PATH_TMP" title="HTMLTOPDF_PATH_TMP() :: "><span class="description">HTMLTOPDF_PATH_TMP</span><pre>HTMLTOPDF_PATH_TMP</pre></a></li>
 <li class="constant  "><a href="#constant_ICAL_TYPE" title="ICAL_TYPE() :: External Calendar Type"><span class="description">External Calendar Type</span><pre>ICAL_TYPE</pre></a></li>
@@ -1138,15 +1133,17 @@ UI Level of Structure - All management links are shown.</span><pre>UILEVEL_STRUC
 <li class="constant  "><a href="#constant_YUI3_RELATIVE" title="YUI3_RELATIVE() :: "><span class="description">YUI3_RELATIVE</span><pre>YUI3_RELATIVE</pre></a></li>
 <li class="constant  "><a href="#constant_YUI3_URL" title="YUI3_URL() :: "><span class="description">YUI3_URL</span><pre>YUI3_URL</pre></a></li>
 <li class="constant  "><a href="#constant_YUI3_VERSION" title="YUI3_VERSION() :: "><span class="description">YUI3_VERSION</span><pre>YUI3_VERSION</pre></a></li>
+<li class="constant  "><a href="#constant__MPDF_TEMP_PATH" title="_MPDF_TEMP_PATH() :: "><span class="description">_MPDF_TEMP_PATH</span><pre>_MPDF_TEMP_PATH</pre></a></li>
+<li class="constant  "><a href="#constant__MPDF_TTFONTDATAPATH" title="_MPDF_TTFONTDATAPATH() :: "><span class="description">_MPDF_TTFONTDATAPATH</span><pre>_MPDF_TTFONTDATAPATH</pre></a></li>
 </ul>
 </div>
 <div class="span8 namespace-contents"></div>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.1
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2013-10-10T11:11:45-04:00.<br></footer></div>
+            generated on 2013-11-04T11:25:38-05:00.<br></footer></div>
 </div>
 </body>
 </html>

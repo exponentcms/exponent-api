@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Exponent v2.2.2 » \Twitter</title>
+<title>Exponent v2.2.4 » \Twitter</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -15,7 +15,7 @@
 <body>
 <div class="navbar navbar-fixed-top">
 <div class="navbar-inner"><div class="container">
-<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent v2.2.2</a><div class="nav-collapse"><ul class="nav">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent v2.2.4</a><div class="nav-collapse"><ul class="nav">
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
@@ -38,7 +38,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">1679</span></a></li>
+                <span class="label label-info">1819</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -263,11 +263,11 @@ then joined by the URL-escaped ampersand sign, "%26".</span><pre>calculateBaseSt
 <table class="table table-bordered">
 <tr>
 <th>author</th>
-<td><a href="">Tijs Verkoyen &lt;php-twitter@verkoyen.eu&gt;</a></td>
+<td><a href="mailto:php-twitter@verkoyen.eu">Tijs Verkoyen</a></td>
 </tr>
 <tr>
 <th>version</th>
-<td></td>
+<td>2.3.1</td>
 </tr>
 <tr>
 <th>copyright</th>
@@ -330,25 +330,25 @@ then joined by the URL-escaped ampersand sign, "%26".</span><pre>calculateBaseSt
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$trendLocationWoeId</h4>
-<code>\string[optional]</code><p>The Yahoo! Where On Earth ID to use as the user's default trend location. Global information is available by using 1 as the WOEID. The woeid must be one of the locations returned by trendsAvailable.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The Yahoo! Where On Earth ID to use as the user's default trend location. Global information is available by using 1 as the WOEID. The woeid must be one of the locations returned by trendsAvailable.</p>
 </div>
 <div class="subelement argument">
 <h4>$sleepTimeEnabled</h4>
-<code>\bool[optional]</code><p>When set to true, will enable sleep time for the user. Sleep time is the time when push or SMS notifications should not be sent to the user.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>When set to true, will enable sleep time for the user. Sleep time is the time when push or SMS notifications should not be sent to the user.</p></div>
 <div class="subelement argument">
 <h4>$startSleepTime</h4>
-<code>\string[optional]</code><p>The hour that sleep time should begin if it is enabled. The value for this parameter should be provided in ISO8601 format (i.e. 00-23). The time is considered to be in the same timezone as the user's time_zone setting.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The hour that sleep time should begin if it is enabled. The value for this parameter should be provided in ISO8601 format (i.e. 00-23). The time is considered to be in the same timezone as the user's time_zone setting.</p>
 </div>
 <div class="subelement argument">
 <h4>$endSleepTime</h4>
-<code>\string[optional]</code><p>The hour that sleep time should end if it is enabled. The value for this parameter should be provided in ISO8601 format (i.e. 00-23). The time is considered to be in the same timezone as the user's time_zone setting.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The hour that sleep time should end if it is enabled. The value for this parameter should be provided in ISO8601 format (i.e. 00-23). The time is considered to be in the same timezone as the user's time_zone setting.</p>
 </div>
 <div class="subelement argument">
 <h4>$timeZone</h4>
-<code>\string[optional]</code><p>The timezone dates and times should be displayed in for the user. The timezone must be one of the Rails TimeZone names.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The timezone dates and times should be displayed in for the user. The timezone must be one of the Rails TimeZone names.</p></div>
 <div class="subelement argument">
 <h4>$lang</h4>
-<code>\string[optional]</code><p>The language which Twitter should render in for this user. The language must be specified by the appropriate two letter ISO 639-1 representation. Currently supported languages are provided by helpLanguages.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The language which Twitter should render in for this user. The language must be specified by the appropriate two letter ISO 639-1 representation. Currently supported languages are provided by helpLanguages.</p>
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
@@ -366,7 +366,7 @@ then joined by the URL-escaped ampersand sign, "%26".</span><pre>calculateBaseSt
 <code>string</code><p>Must be one of: sms, none.</p></div>
 <div class="subelement argument">
 <h4>$includeEntities</h4>
-<code>\bool[optional]</code><p>When set to true, each tweet will include a node called "entities,". This node offers a variety of metadata about the tweet in a discreet structure, including: user_mentions, urls, and hashtags. While entities are opt-in on timelines at present, they will be made a default component of output in the future. See Tweet Entities for more detail on entities.</p>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>When set to true, each tweet will include a node called "entities,". This node offers a variety of metadata about the tweet in a discreet structure, including: user_mentions, urls, and hashtags. While entities are opt-in on timelines at present, they will be made a default component of output in the future. See Tweet Entities for more detail on entities.</p>
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
@@ -381,23 +381,23 @@ then joined by the URL-escaped ampersand sign, "%26".</span><pre>calculateBaseSt
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$name</h4>
-<code>\string[optional]</code><p>Full name associated with the profile. Maximum of 20 characters.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Full name associated with the profile. Maximum of 20 characters.</p></div>
 <div class="subelement argument">
 <h4>$url</h4>
-<code>\string[optional]</code><p>URL associated with the profile. Will be prepended with "http://" if not present. Maximum of 100 characters.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>URL associated with the profile. Will be prepended with "http://" if not present. Maximum of 100 characters.</p>
 </div>
 <div class="subelement argument">
 <h4>$location</h4>
-<code>\string[optional]</code><p>The city or country describing where the user of the account is located. The contents are not normalized or geocoded in any way. Maximum of 30 characters.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The city or country describing where the user of the account is located. The contents are not normalized or geocoded in any way. Maximum of 30 characters.</p></div>
 <div class="subelement argument">
 <h4>$description</h4>
-<code>\string[optional]</code><p>A description of the user owning the account. Maximum of 160 characters.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>A description of the user owning the account. Maximum of 160 characters.</p></div>
 <div class="subelement argument">
 <h4>$includeEntities</h4>
-<code>\bool[optional]</code><p>The entities node will not be included when set to false.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>The entities node will not be included when set to false.</p></div>
 <div class="subelement argument">
 <h4>$skipStatus</h4>
-<code>\bool[optional]</code><p>When set to true, statuses will not be included in the returned user objects.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>When set to true, statuses will not be included in the returned user objects.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -414,10 +414,11 @@ then joined by the URL-escaped ampersand sign, "%26".</span><pre>calculateBaseSt
 <code>string</code><p>The path to the background image for the profile. Must be a valid GIF, JPG, or PNG image of less than 800 kilobytes in size. Images with width larger than 2048 pixels will be forceably scaled down.</p></div>
 <div class="subelement argument">
 <h4>$tile</h4>
-<code>\bool[optional]</code><p>Whether or not to tile the background image. If set to true the background image will be displayed tiled. The image will not be tiled otherwise.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>Whether or not to tile the background image. If set to true the background image will be displayed tiled. The image will not be tiled otherwise.</p></div>
 <div class="subelement argument">
 <h4>$includeEntities</h4>
-<code>\bool[optional]</code><p>When set to true each tweet will include a node called "entities,". This node offers a variety of metadata about the tweet in a discreet structure, including: user_mentions, urls, and hashtags.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>When set to true each tweet will include a node called "entities,". This node offers a variety of metadata about the tweet in a discreet structure, including: user_mentions, urls, and hashtags.</p>
+</div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -437,22 +438,25 @@ then joined by the URL-escaped ampersand sign, "%26".</span><pre>calculateBaseSt
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$profileBackgroundColor</h4>
-<code>\string[optional]</code><p>Profile background color.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Profile background color.</p></div>
 <div class="subelement argument">
 <h4>$profileTextColor</h4>
-<code>\string[optional]</code><p>Profile text color.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Profile text color.</p></div>
 <div class="subelement argument">
 <h4>$profileLinkColor</h4>
-<code>\string[optional]</code><p>Profile link color.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Profile link color.</p></div>
 <div class="subelement argument">
 <h4>$profileSidebarFillColor</h4>
-<code>\string[optional]</code><p>Profile sidebar's background color.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Profile sidebar's background color.</p>
+</div>
 <div class="subelement argument">
 <h4>$profileSidebarBorderColor</h4>
-<code>\string[optional]</code><p>Profile sidebar's border color.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Profile sidebar's border color.</p>
+</div>
 <div class="subelement argument">
 <h4>$includeEntities</h4>
-<code>\bool[optional]</code><p>When set to true each tweet will include a node called "entities,". This node offers a variety of metadata about the tweet in a discreet structure, including: user_mentions, urls, and hashtags.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>When set to true each tweet will include a node called "entities,". This node offers a variety of metadata about the tweet in a discreet structure, including: user_mentions, urls, and hashtags.</p>
+</div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -469,7 +473,8 @@ then joined by the URL-escaped ampersand sign, "%26".</span><pre>calculateBaseSt
 <code>string</code><p>The path to the avatar image for the profile. Must be a valid GIF, JPG, or PNG image of less than 700 kilobytes in size. Images with width larger than 500 pixels will be scaled down.</p></div>
 <div class="subelement argument">
 <h4>$includeEntities</h4>
-<code>\bool[optional]</code><p>When set to true each tweet will include a node called "entities,". This node offers a variety of metadata about the tweet in a discreet structure, including: user_mentions, urls, and hashtags.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>When set to true each tweet will include a node called "entities,". This node offers a variety of metadata about the tweet in a discreet structure, including: user_mentions, urls, and hashtags.</p>
+</div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -483,10 +488,10 @@ then joined by the URL-escaped ampersand sign, "%26".</span><pre>calculateBaseSt
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$includeEntities</h4>
-<code>\bool[optional]</code><p>The entities node will not be included when set to false.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>The entities node will not be included when set to false.</p></div>
 <div class="subelement argument">
 <h4>$skipStatus</h4>
-<code>\bool[optional]</code><p>When set to true, statuses will not be included in the returned user objects.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>When set to true, statuses will not be included in the returned user objects.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -517,16 +522,16 @@ You may also issue requests to this method without any parameters to receive a m
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$userId</h4>
-<code>\string[optional]</code><p>The ID of the potentially blocked user. Helpful for disambiguating when a valid user ID is also a valid screen name.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The ID of the potentially blocked user. Helpful for disambiguating when a valid user ID is also a valid screen name.</p></div>
 <div class="subelement argument">
 <h4>$screenName</h4>
-<code>\string[optional]</code><p>The screen name of the potentially blocked user. Helpful for disambiguating when a valid screen name is also a user ID.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The screen name of the potentially blocked user. Helpful for disambiguating when a valid screen name is also a user ID.</p></div>
 <div class="subelement argument">
 <h4>$includeEntities</h4>
-<code>\bool[optional]</code><p>The entities node will not be included when set to false.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>The entities node will not be included when set to false.</p></div>
 <div class="subelement argument">
 <h4>$skipStatus</h4>
-<code>\bool[optional]</code><p>When set to either true, t or 1 statuses will not be included in the returned user objects.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>When set to either true, t or 1 statuses will not be included in the returned user objects.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -540,16 +545,16 @@ You may also issue requests to this method without any parameters to receive a m
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$userId</h4>
-<code>\string[optional]</code><p>The ID of the potentially blocked user. Helpful for disambiguating when a valid user ID is also a valid screen name.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The ID of the potentially blocked user. Helpful for disambiguating when a valid user ID is also a valid screen name.</p></div>
 <div class="subelement argument">
 <h4>$screenName</h4>
-<code>\string[optional]</code><p>The screen name of the potentially blocked user. Helpful for disambiguating when a valid screen name is also a user ID.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The screen name of the potentially blocked user. Helpful for disambiguating when a valid screen name is also a user ID.</p></div>
 <div class="subelement argument">
 <h4>$includeEntities</h4>
-<code>\bool[optional]</code><p>The entities node will not be included when set to false.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>The entities node will not be included when set to false.</p></div>
 <div class="subelement argument">
 <h4>$skipStatus</h4>
-<code>\bool[optional]</code><p>When set to either true, t or 1 statuses will not be included in the returned user objects.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>When set to either true, t or 1 statuses will not be included in the returned user objects.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -563,11 +568,11 @@ You may also issue requests to this method without any parameters to receive a m
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$cursor</h4>
-<code>\string[optional]</code><p>Causes the list of IDs to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out after connections are queried. If no cursor is provided, a value of -1 will be assumed, which is the first "page."</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Causes the list of IDs to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out after connections are queried. If no cursor is provided, a value of -1 will be assumed, which is the first "page."</p>
 </div>
 <div class="subelement argument">
 <h4>$stringifyIds</h4>
-<code>\bool[optional]</code><p>Many programming environments will not consume our ids due to their size. Provide this option to have ids returned as strings instead.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>Many programming environments will not consume our ids due to their size. Provide this option to have ids returned as strings instead.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -581,14 +586,14 @@ You may also issue requests to this method without any parameters to receive a m
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$cursor</h4>
-<code>\int[optional]</code><p>Causes the results to be broken into pages of no more than 20 records at a time. If no cursor is provided, a value of -1 will be assumed, which is the first "page."</p>
+<code><a href="int%5Boptional%5D.html">\int[optional]</a></code><p>Causes the results to be broken into pages of no more than 20 records at a time. If no cursor is provided, a value of -1 will be assumed, which is the first "page."</p>
 </div>
 <div class="subelement argument">
 <h4>$includeEntities</h4>
-<code>\bool[optional]</code><p>The user object entities node will be disincluded when set to false.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>The user object entities node will be disincluded when set to false.</p></div>
 <div class="subelement argument">
 <h4>$skipStatus</h4>
-<code>\bool[optional]</code><p>When set to either true, t or 1 statuses will not be included in the returned user objects.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>When set to either true, t or 1 statuses will not be included in the returned user objects.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -602,24 +607,24 @@ You may also issue requests to this method without any parameters to receive a m
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$sinceId</h4>
-<code>\string[optional]</code><p>Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
 </div>
 <div class="subelement argument">
 <h4>$maxId</h4>
-<code>\string[optional]</code><p>Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
 </div>
 <div class="subelement argument">
 <h4>$count</h4>
-<code>\int[optional]</code><p>Specifies the number of direct messages to try and retrieve, up to a maximum of 200. The value of count is best thought of as a limit to the number of Tweets to return because suspended or deleted content is removed after the count has been applied.</p></div>
+<code><a href="int%5Boptional%5D.html">\int[optional]</a></code><p>Specifies the number of direct messages to try and retrieve, up to a maximum of 200. The value of count is best thought of as a limit to the number of Tweets to return because suspended or deleted content is removed after the count has been applied.</p></div>
 <div class="subelement argument">
 <h4>$page</h4>
-<code>\int[optional]</code><p>Specifies the page of results to retrieve.</p></div>
+<code><a href="int%5Boptional%5D.html">\int[optional]</a></code><p>Specifies the page of results to retrieve.</p></div>
 <div class="subelement argument">
 <h4>$includeEntities</h4>
-<code>\bool[optional]</code><p>The entities node will not be included when set to false.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>The entities node will not be included when set to false.</p></div>
 <div class="subelement argument">
 <h4>$skipStatus</h4>
-<code>\bool[optional]</code><p>When set to either true, t or 1 statuses will not be included in the returned user objects.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>When set to either true, t or 1 statuses will not be included in the returned user objects.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -636,7 +641,7 @@ You may also issue requests to this method without any parameters to receive a m
 <code>string</code><p>The ID of the direct message to delete.</p></div>
 <div class="subelement argument">
 <h4>$includeEntities</h4>
-<code>\bool[optional]</code><p>The entities node will not be included when set to false.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>The entities node will not be included when set to false.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -650,10 +655,10 @@ You may also issue requests to this method without any parameters to receive a m
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$userId</h4>
-<code>\string[optional]</code><p>The ID of the user who should receive the direct message. Helpful for disambiguating when a valid user ID is also a valid screen name.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The ID of the user who should receive the direct message. Helpful for disambiguating when a valid user ID is also a valid screen name.</p></div>
 <div class="subelement argument">
 <h4>$screenName</h4>
-<code>\string[optional]</code><p>The screen name of the user who should receive the direct message. Helpful for disambiguating when a valid screen name is also a user ID.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The screen name of the user who should receive the direct message. Helpful for disambiguating when a valid screen name is also a user ID.</p></div>
 <div class="subelement argument">
 <h4>$text</h4>
 <code>string</code><p>The text of your direct message. Be sure to URL encode as necessary, and keep the message under 140 characters.</p></div>
@@ -670,21 +675,21 @@ You may also issue requests to this method without any parameters to receive a m
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$sinceId</h4>
-<code>\string[optional]</code><p>Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
 </div>
 <div class="subelement argument">
 <h4>$maxId</h4>
-<code>\string[optional]</code><p>Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
 </div>
 <div class="subelement argument">
 <h4>$count</h4>
-<code>\int[optional]</code><p>Specifies the number of records to retrieve. Must be less than or equal to 200.</p></div>
+<code><a href="int%5Boptional%5D.html">\int[optional]</a></code><p>Specifies the number of records to retrieve. Must be less than or equal to 200.</p></div>
 <div class="subelement argument">
 <h4>$page</h4>
-<code>\int[optional]</code><p>Specifies the page of results to retrieve.</p></div>
+<code><a href="int%5Boptional%5D.html">\int[optional]</a></code><p>Specifies the page of results to retrieve.</p></div>
 <div class="subelement argument">
 <h4>$includeEntities</h4>
-<code>\bool[optional]</code><p>The entities node will not be included when set to false.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>The entities node will not be included when set to false.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -716,7 +721,7 @@ You may also issue requests to this method without any parameters to receive a m
 <code>string</code><p>The numerical ID of the desired status.</p></div>
 <div class="subelement argument">
 <h4>$includeEntities</h4>
-<code>\bool[optional]</code><p>The entities node will be omitted when set to false.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>The entities node will be omitted when set to false.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -733,7 +738,7 @@ You may also issue requests to this method without any parameters to receive a m
 <code>string</code><p>The numerical ID of the desired status.</p></div>
 <div class="subelement argument">
 <h4>$includeEntities</h4>
-<code>\bool[optional]</code><p>The entities node will be omitted when set to false.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>The entities node will be omitted when set to false.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -747,24 +752,24 @@ You may also issue requests to this method without any parameters to receive a m
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$userId</h4>
-<code>\string[otpional]</code><p>The ID of the user for whom to return results for.</p></div>
+<code><a href="string%5Botpional%5D.html">\string[otpional]</a></code><p>The ID of the user for whom to return results for.</p></div>
 <div class="subelement argument">
 <h4>$screenName</h4>
-<code>\string[otpional]</code><p>The screen name of the user for whom to return results for.</p></div>
+<code><a href="string%5Botpional%5D.html">\string[otpional]</a></code><p>The screen name of the user for whom to return results for.</p></div>
 <div class="subelement argument">
 <h4>$count</h4>
-<code>\int[optional]</code><p>Specifies the number of records to retrieve. Must be less than or equal to 200. Defaults to 20.</p></div>
+<code><a href="int%5Boptional%5D.html">\int[optional]</a></code><p>Specifies the number of records to retrieve. Must be less than or equal to 200. Defaults to 20.</p></div>
 <div class="subelement argument">
 <h4>$sinceId</h4>
-<code>\string[otpional]</code><p>Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
+<code><a href="string%5Botpional%5D.html">\string[otpional]</a></code><p>Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
 </div>
 <div class="subelement argument">
 <h4>$maxId</h4>
-<code>\string[otpional]</code><p>Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
+<code><a href="string%5Botpional%5D.html">\string[otpional]</a></code><p>Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
 </div>
 <div class="subelement argument">
 <h4>$includeEntities</h4>
-<code>\bool[optional]</code><p>The entities node will be omitted when set to false.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>The entities node will be omitted when set to false.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -779,17 +784,17 @@ This method is especially powerful when used in conjunction with GET users/looku
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$userId</h4>
-<code>\string[optional]</code><p>The ID of the user for whom to return results for.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The ID of the user for whom to return results for.</p></div>
 <div class="subelement argument">
 <h4>$screenName</h4>
-<code>\string[optional]</code><p>The screen name of the user for whom to return results for.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The screen name of the user for whom to return results for.</p></div>
 <div class="subelement argument">
 <h4>$cursor</h4>
-<code>\string[optional]</code><p>Causes the list of connections to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out after connections are queried. If no cursor is provided, a value of -1 will be assumed, which is the first "page." The response from the API will include a previous_cursor and next_cursor to allow paging back and forth</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Causes the list of connections to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out after connections are queried. If no cursor is provided, a value of -1 will be assumed, which is the first "page." The response from the API will include a previous_cursor and next_cursor to allow paging back and forth</p>
 </div>
 <div class="subelement argument">
 <h4>$stringifyIds</h4>
-<code>\bool[optional]</code><p>Many programming environments will not consume our Tweet ids due to their size. Provide this option to have ids returned as strings instead.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>Many programming environments will not consume our Tweet ids due to their size. Provide this option to have ids returned as strings instead.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -803,20 +808,20 @@ This method is especially powerful when used in conjunction with GET users/looku
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$userId</h4>
-<code>\string[optional]</code><p>The ID of the user for whom to return results for.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The ID of the user for whom to return results for.</p></div>
 <div class="subelement argument">
 <h4>$screenName</h4>
-<code>\string[optional]</code><p>The screen name of the user for whom to return results for.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The screen name of the user for whom to return results for.</p></div>
 <div class="subelement argument">
 <h4>$cursor</h4>
-<code>\int[optional]</code><p>Causes the results to be broken into pages of no more than 20 records at a time. If no cursor is provided, a value of -1 will be assumed, which is the first "page."</p>
+<code><a href="int%5Boptional%5D.html">\int[optional]</a></code><p>Causes the results to be broken into pages of no more than 20 records at a time. If no cursor is provided, a value of -1 will be assumed, which is the first "page."</p>
 </div>
 <div class="subelement argument">
 <h4>$includeEntities</h4>
-<code>\bool[optional]</code><p>The user object entities node will be disincluded when set to false.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>The user object entities node will be disincluded when set to false.</p></div>
 <div class="subelement argument">
 <h4>$skipStatus</h4>
-<code>\bool[optional]</code><p>When set to either true, t or 1 statuses will not be included in the returned user objects.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>When set to either true, t or 1 statuses will not be included in the returned user objects.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -831,17 +836,17 @@ This method is especially powerful when used in conjunction with GET users/looku
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$userId</h4>
-<code>\string[optional]</code><p>The ID of the user for whom to return results for.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The ID of the user for whom to return results for.</p></div>
 <div class="subelement argument">
 <h4>$screenName</h4>
-<code>\string[optional]</code><p>The screen name of the user for whom to return results for.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The screen name of the user for whom to return results for.</p></div>
 <div class="subelement argument">
 <h4>$cursor</h4>
-<code>\string[optional]</code><p>Causes the list of connections to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out after connections are queried. If no cursor is provided, a value of -1 will be assumed, which is the first "page." The response from the API will include a previous_cursor and next_cursor to allow paging back and forth</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Causes the list of connections to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out after connections are queried. If no cursor is provided, a value of -1 will be assumed, which is the first "page." The response from the API will include a previous_cursor and next_cursor to allow paging back and forth</p>
 </div>
 <div class="subelement argument">
 <h4>$stringifyIds</h4>
-<code>\bool[optional]</code><p>Many programming environments will not consume our Tweet ids due to their size. Provide this option to have ids returned as strings instead.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>Many programming environments will not consume our Tweet ids due to their size. Provide this option to have ids returned as strings instead.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -855,20 +860,20 @@ This method is especially powerful when used in conjunction with GET users/looku
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$userId</h4>
-<code>\string[optional]</code><p>The ID of the user for whom to return results for.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The ID of the user for whom to return results for.</p></div>
 <div class="subelement argument">
 <h4>$screenName</h4>
-<code>\string[optional]</code><p>The screen name of the user for whom to return results for.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The screen name of the user for whom to return results for.</p></div>
 <div class="subelement argument">
 <h4>$cursor</h4>
-<code>\int[optional]</code><p>Causes the results to be broken into pages of no more than 20 records at a time. If no cursor is provided, a value of -1 will be assumed, which is the first "page."</p>
+<code><a href="int%5Boptional%5D.html">\int[optional]</a></code><p>Causes the results to be broken into pages of no more than 20 records at a time. If no cursor is provided, a value of -1 will be assumed, which is the first "page."</p>
 </div>
 <div class="subelement argument">
 <h4>$includeEntities</h4>
-<code>\bool[optional]</code><p>The user object entities node will be disincluded when set to false.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>The user object entities node will be disincluded when set to false.</p></div>
 <div class="subelement argument">
 <h4>$skipStatus</h4>
-<code>\bool[optional]</code><p>When set to either true, t or 1 statuses will not be included in the returned user objects.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>When set to either true, t or 1 statuses will not be included in the returned user objects.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -883,13 +888,13 @@ Actions taken in this method are asynchronous and changes will be eventually con
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$userId</h4>
-<code>\string[optional]</code><p>The ID of the user for whom to befriend.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The ID of the user for whom to befriend.</p></div>
 <div class="subelement argument">
 <h4>$screenName</h4>
-<code>\string[optional]</code><p>The screen name of the user for whom to befriend.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The screen name of the user for whom to befriend.</p></div>
 <div class="subelement argument">
 <h4>$follow</h4>
-<code>\bool[optional]</code><p>Enable notifications for the target user.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>Enable notifications for the target user.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -904,10 +909,10 @@ Actions taken in this method are asynchronous and changes will be eventually con
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$userId</h4>
-<code>\string[optional]</code><p>The ID of the user for whom to unfollow.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The ID of the user for whom to unfollow.</p></div>
 <div class="subelement argument">
 <h4>$screenName</h4>
-<code>\string[optional]</code><p>The screen name of the user for whom to unfollow.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The screen name of the user for whom to unfollow.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -921,11 +926,11 @@ Actions taken in this method are asynchronous and changes will be eventually con
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$cursor</h4>
-<code>\string[optional]</code><p>Causes the list of connections to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out after connections are queried. If no cursor is provided, a value of -1 will be assumed, which is the first "page."</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Causes the list of connections to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out after connections are queried. If no cursor is provided, a value of -1 will be assumed, which is the first "page."</p>
 </div>
 <div class="subelement argument">
 <h4>$stringifyIds</h4>
-<code>\bool[optional]</code><p>Many programming environments will not consume our Tweet ids due to their size. Provide this option to have ids returned as strings instead.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>Many programming environments will not consume our Tweet ids due to their size. Provide this option to have ids returned as strings instead.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -939,10 +944,10 @@ Actions taken in this method are asynchronous and changes will be eventually con
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$userIds</h4>
-<code>\mixed[optional]</code><p>An array of user IDs, up to 100 are allowed in a single request.</p></div>
+<code><a href="mixed%5Boptional%5D.html">\mixed[optional]</a></code><p>An array of user IDs, up to 100 are allowed in a single request.</p></div>
 <div class="subelement argument">
 <h4>$screenNames</h4>
-<code>\mixed[optional]</code><p>An array of screen names, up to 100 are allowed in a single request.</p></div>
+<code><a href="mixed%5Boptional%5D.html">\mixed[optional]</a></code><p>An array of screen names, up to 100 are allowed in a single request.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -956,11 +961,11 @@ Actions taken in this method are asynchronous and changes will be eventually con
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$cursor</h4>
-<code>\string[optional]</code><p>Causes the list of connections to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out after connections are queried. If no cursor is provided, a value of -1 will be assumed, which is the first "page."</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Causes the list of connections to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out after connections are queried. If no cursor is provided, a value of -1 will be assumed, which is the first "page."</p>
 </div>
 <div class="subelement argument">
 <h4>$stringifyIds</h4>
-<code>\bool[optional]</code><p>Many programming environments will not consume our Tweet ids due to their size. Provide this option to have ids returned as strings instead.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>Many programming environments will not consume our Tweet ids due to their size. Provide this option to have ids returned as strings instead.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -974,16 +979,16 @@ Actions taken in this method are asynchronous and changes will be eventually con
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$sourceId</h4>
-<code>\string[optional]</code><p>The user_id of the subject user.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The user_id of the subject user.</p></div>
 <div class="subelement argument">
 <h4>$sourceScreenName</h4>
-<code>\string[optional]</code><p>The screen_name of the subject user.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The screen_name of the subject user.</p></div>
 <div class="subelement argument">
 <h4>$targetId</h4>
-<code>\string[optional]</code><p>The screen_name of the subject user.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The screen_name of the subject user.</p></div>
 <div class="subelement argument">
 <h4>$targetScreenName</h4>
-<code>\string[optional]</code><p>The screen_name of the target user.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The screen_name of the target user.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -997,17 +1002,17 @@ Actions taken in this method are asynchronous and changes will be eventually con
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$userId</h4>
-<code>\string[optional]</code><p>The ID of the user for whom to befriend.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The ID of the user for whom to befriend.</p></div>
 <div class="subelement argument">
 <h4>$screenName</h4>
-<code>\string[optional]</code><p>The screen name of the user for whom to befriend.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The screen name of the user for whom to befriend.</p></div>
 <div class="subelement argument">
 <h4>$device</h4>
-<code>\bool[optional]</code><p>Enable/disable device notifications from the target user.</p>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>Enable/disable device notifications from the target user.</p>
 </div>
 <div class="subelement argument">
 <h4>$retweets</h4>
-<code>\bool[optional]</code><p>Enable/disable retweets from the target user.</p>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>Enable/disable retweets from the target user.</p>
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
@@ -1055,7 +1060,7 @@ Actions taken in this method are asynchronous and changes will be eventually con
 </div>
 <div class="subelement argument">
 <h4>$attributes</h4>
-<code>\array[optional]</code><p>This parameter searches for places which have this given street address. There are other well-known, and application specific attributes available. Custom attributes are also permitted. This should be an key-value-pair-array.</p>
+<code><a href="array%5Boptional%5D.html">\array[optional]</a></code><p>This parameter searches for places which have this given street address. There are other well-known, and application specific attributes available. Custom attributes are also permitted. This should be an key-value-pair-array.</p>
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
@@ -1078,14 +1083,15 @@ Actions taken in this method are asynchronous and changes will be eventually con
 </div>
 <div class="subelement argument">
 <h4>$accuracy</h4>
-<code>\string[optional]</code><p>A hint on the "region" in which to search. If a number, then this is a radius in meters, but it can also take a string that is suffixed with ft to specify feet. If this is not passed in, then it is assumed to be 0m. If coming from a device, in practice, this value is whatever accuracy the device has measuring its location (whether it be coming from a GPS, WiFi triangulation, etc.).</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>A hint on the "region" in which to search. If a number, then this is a radius in meters, but it can also take a string that is suffixed with ft to specify feet. If this is not passed in, then it is assumed to be 0m. If coming from a device, in practice, this value is whatever accuracy the device has measuring its location (whether it be coming from a GPS, WiFi triangulation, etc.).</p>
 </div>
 <div class="subelement argument">
 <h4>$granularity</h4>
-<code>\string[optional]</code><p>This is the minimal granularity of place types to return and must be one of: poi, neighborhood, city, admin or country. If no granularity is provided for the request neighborhood is assumed. Setting this to city, for example, will find places which have a type of city, admin or country.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>This is the minimal granularity of place types to return and must be one of: poi, neighborhood, city, admin or country. If no granularity is provided for the request neighborhood is assumed. Setting this to city, for example, will find places which have a type of city, admin or country.</p></div>
 <div class="subelement argument">
 <h4>$maxResults</h4>
-<code>\int[optional]</code><p>A hint as to the number of results to return. This does not guarantee that the number of results returned will equal max_results, but instead informs how many "nearby" results to return. Ideally, only pass in the number of places you intend to display to the user here.</p></div>
+<code><a href="int%5Boptional%5D.html">\int[optional]</a></code><p>A hint as to the number of results to return. This does not guarantee that the number of results returned will equal max_results, but instead informs how many "nearby" results to return. Ideally, only pass in the number of places you intend to display to the user here.</p>
+</div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -1100,35 +1106,38 @@ This is the recommended method to use find places that can be attached to status
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$lat</h4>
-<code>\float[optional]</code><p>The latitude to search around. This parameter will be ignored unless it is inside the range -90.0 to +90.0 (North is positive) inclusive. It will also be ignored if there isn't a corresponding long parameter.</p>
+<code><a href="float%5Boptional%5D.html">\float[optional]</a></code><p>The latitude to search around. This parameter will be ignored unless it is inside the range -90.0 to +90.0 (North is positive) inclusive. It will also be ignored if there isn't a corresponding long parameter.</p>
 </div>
 <div class="subelement argument">
 <h4>$long</h4>
-<code>\float[optional]</code><p>The longitude to search around. The valid ranges for longitude is -180.0 to +180.0 (East is positive) inclusive. This parameter will be ignored if outside that range, if it is not a number, if geo_enabled is disabled, or if there not a corresponding lat parameter.</p>
+<code><a href="float%5Boptional%5D.html">\float[optional]</a></code><p>The longitude to search around. The valid ranges for longitude is -180.0 to +180.0 (East is positive) inclusive. This parameter will be ignored if outside that range, if it is not a number, if geo_enabled is disabled, or if there not a corresponding lat parameter.</p>
 </div>
 <div class="subelement argument">
 <h4>$query</h4>
-<code>\string[optional]</code><p>Free-form text to match against while executing a geo-based query, best suited for finding nearby locations by name. Remember to URL encode the query.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Free-form text to match against while executing a geo-based query, best suited for finding nearby locations by name. Remember to URL encode the query.</p>
 </div>
 <div class="subelement argument">
 <h4>$ip</h4>
-<code>\string[optional]</code><p>An IP address. Used when attempting to fix geolocation based off of the user's IP address.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>An IP address. Used when attempting to fix geolocation based off of the user's IP address.</p>
+</div>
 <div class="subelement argument">
 <h4>$granularity</h4>
-<code>\string[optional]</code><p>This is the minimal granularity of place types to return and must be one of: poi, neighborhood, city, admin or country. If no granularity is provided for the request neighborhood is assumed. Setting this to city, for example, will find places which have a type of city, admin or country.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>This is the minimal granularity of place types to return and must be one of: poi, neighborhood, city, admin or country. If no granularity is provided for the request neighborhood is assumed. Setting this to city, for example, will find places which have a type of city, admin or country.</p></div>
 <div class="subelement argument">
 <h4>$accuracy</h4>
-<code>\string[optional]</code><p>A hint on the "region" in which to search. If a number, then this is a radius in meters, but it can also take a string that is suffixed with ft to specify feet. If this is not passed in, then it is assumed to be 0m. If coming from a device, in practice, this value is whatever accuracy the device has measuring its location (whether it be coming from a GPS, WiFi triangulation, etc.).</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>A hint on the "region" in which to search. If a number, then this is a radius in meters, but it can also take a string that is suffixed with ft to specify feet. If this is not passed in, then it is assumed to be 0m. If coming from a device, in practice, this value is whatever accuracy the device has measuring its location (whether it be coming from a GPS, WiFi triangulation, etc.).</p>
 </div>
 <div class="subelement argument">
 <h4>$maxResults</h4>
-<code>\int[optional]</code><p>A hint as to the number of results to return. This does not guarantee that the number of results returned will equal max_results, but instead informs how many "nearby" results to return. Ideally, only pass in the number of places you intend to display to the user here.</p></div>
+<code><a href="int%5Boptional%5D.html">\int[optional]</a></code><p>A hint as to the number of results to return. This does not guarantee that the number of results returned will equal max_results, but instead informs how many "nearby" results to return. Ideally, only pass in the number of places you intend to display to the user here.</p>
+</div>
 <div class="subelement argument">
 <h4>$containedWithin</h4>
-<code>\string[optional]</code><p>This is the place_id which you would like to restrict the search results to. Setting this value means only places within the given place_id will be found. Specify a place_id. For example, to scope all results to places within "San Francisco, CA USA", you would specify a place_id of "5a110d312052166f"</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>This is the place_id which you would like to restrict the search results to. Setting this value means only places within the given place_id will be found. Specify a place_id. For example, to scope all results to places within "San Francisco, CA USA", you would specify a place_id of "5a110d312052166f"</p>
+</div>
 <div class="subelement argument">
 <h4>$attributes</h4>
-<code>\array[optional]</code><p>This parameter searches for places which have this given street address. There are other well-known, and application specific attributes available. Custom attributes are also permitted. This should be an key-value-pair-array.</p>
+<code><a href="array%5Boptional%5D.html">\array[optional]</a></code><p>This parameter searches for places which have this given street address. There are other well-known, and application specific attributes available. Custom attributes are also permitted. This should be an key-value-pair-array.</p>
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
@@ -1155,10 +1164,11 @@ The token contained in the response is the token needed to be able to create a n
 <code>string</code><p>The name a place is known as.</p></div>
 <div class="subelement argument">
 <h4>$containedWithin</h4>
-<code>\string[optional]</code><p>This is the place_id which you would like to restrict the search results to. Setting this value means only places within the given place_id will be found. Specify a place_id. For example, to scope all results to places within "San Francisco, CA USA", you would specify a place_id of "5a110d312052166f"</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>This is the place_id which you would like to restrict the search results to. Setting this value means only places within the given place_id will be found. Specify a place_id. For example, to scope all results to places within "San Francisco, CA USA", you would specify a place_id of "5a110d312052166f"</p>
+</div>
 <div class="subelement argument">
 <h4>$attributes</h4>
-<code>\array[optional]</code><p>This parameter searches for places which have this given street address. There are other well-known, and application specific attributes available. Custom attributes are also permitted.</p>
+<code><a href="array%5Boptional%5D.html">\array[optional]</a></code><p>This parameter searches for places which have this given street address. There are other well-known, and application specific attributes available. Custom attributes are also permitted.</p>
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
@@ -1359,7 +1369,7 @@ REMARK: This method seems not to work	@later</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$force</h4>
-<code>\bool[optional]</code><p>Force the authentication.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>Force the authentication.</p></div>
 </div></div>
 </div>
 <a id="method_oAuthAuthorize"></a><div class="element clickable method public method_oAuthAuthorize" data-toggle="collapse" data-target=".method_oAuthAuthorize .collapse">
@@ -1383,7 +1393,7 @@ REMARK: This method seems not to work	@later</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$callbackURL</h4>
-<code>\string[optional]</code><p>The callback URL.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The callback URL.</p></div>
 <h3>Returns</h3>
 <div class="subelement response">
 <code>array</code>An array containg the token and the secret</div>
@@ -1398,10 +1408,10 @@ REMARK: This method seems not to work	@later</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$screenName</h4>
-<code>\string[optional]</code><p>The ID or screen_name of the user you want to report as a spammer. Helpful for disambiguating when a valid screen name is also a user ID.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The ID or screen_name of the user you want to report as a spammer. Helpful for disambiguating when a valid screen name is also a user ID.</p></div>
 <div class="subelement argument">
 <h4>$userId</h4>
-<code>\string[optional]</code><p>The ID of the user you want to report as a spammer. Helpful for disambiguating when a valid user ID is also a valid screen name.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The ID of the user you want to report as a spammer. Helpful for disambiguating when a valid user ID is also a valid screen name.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -1471,37 +1481,39 @@ REMARK: This method seems not to work	@later</h2>
 </div>
 <div class="subelement argument">
 <h4>$geocode</h4>
-<code>\string[optional]</code><p>Returns tweets by users located within a given radius of the given latitude/longitude. The location is preferentially taking from the Geotagging API, but will fall back to their Twitter profile. The parameter value is specified by "latitude,longitude,radius", where radius units must be specified as either "mi" (miles) or "km" (kilometers). Note that you cannot use the near operator via the API to geocode arbitrary locations; however you can use this geocode parameter to search near geocodes directly. A maximum of 1,000 distinct "sub-regions" will be considered when using the radius modifier.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Returns tweets by users located within a given radius of the given latitude/longitude. The location is preferentially taking from the Geotagging API, but will fall back to their Twitter profile. The parameter value is specified by "latitude,longitude,radius", where radius units must be specified as either "mi" (miles) or "km" (kilometers). Note that you cannot use the near operator via the API to geocode arbitrary locations; however you can use this geocode parameter to search near geocodes directly. A maximum of 1,000 distinct "sub-regions" will be considered when using the radius modifier.</p>
 </div>
 <div class="subelement argument">
 <h4>$lang</h4>
-<code>\string[optional]</code><p>Restricts tweets to the given language, given by an ISO 639-1 code. Language detection is best-effort.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Restricts tweets to the given language, given by an ISO 639-1 code. Language detection is best-effort.</p>
 </div>
 <div class="subelement argument">
 <h4>$locale</h4>
-<code>\string[optional]</code><p>Specify the language of the query you are sending (only ja is currently effective). This is intended for language-specific consumers and the default should work in the majority of cases.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Specify the language of the query you are sending (only ja is currently effective). This is intended for language-specific consumers and the default should work in the majority of cases.</p>
 </div>
 <div class="subelement argument">
 <h4>$resultType</h4>
-<code>\string[optional]</code><p>Specifies what type of search results you would prefer to receive. The current default is "mixed." Valid values include: mixed: Include both popular and real time results in the response, recent: return only the most recent results in the response, popular: return only the most popular results in the response.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Specifies what type of search results you would prefer to receive. The current default is "mixed." Valid values include: mixed: Include both popular and real time results in the response, recent: return only the most recent results in the response, popular: return only the most popular results in the response.</p>
+</div>
 <div class="subelement argument">
 <h4>$count</h4>
-<code>\int[optional]</code><p>The number of tweets to return per page, up to a maximum of 100. Defaults to 15. This was formerly the "rpp" parameter in the old Search API.</p></div>
+<code><a href="int%5Boptional%5D.html">\int[optional]</a></code><p>The number of tweets to return per page, up to a maximum of 100. Defaults to 15. This was formerly the "rpp" parameter in the old Search API.</p>
+</div>
 <div class="subelement argument">
 <h4>$until</h4>
-<code>\string[optional]</code><p>Returns tweets generated before the given date. Date should be formatted as YYYY-MM-DD. Keep in mind that the search index may not go back as far as the date you specify here.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Returns tweets generated before the given date. Date should be formatted as YYYY-MM-DD. Keep in mind that the search index may not go back as far as the date you specify here.</p>
 </div>
 <div class="subelement argument">
 <h4>$sinceId</h4>
-<code>\string[optional]</code><p>Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
 </div>
 <div class="subelement argument">
 <h4>$maxId</h4>
-<code>\string[optional]</code><p>Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
 </div>
 <div class="subelement argument">
 <h4>$includeEntities</h4>
-<code>\bool[optional]</code><p>The entities node will be disincluded when set to false.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>The entities node will be disincluded when set to false.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -1573,7 +1585,7 @@ REMARK: This method seems not to work	@later</h2>
 <code>string</code><p>The numerical ID of the desired status.</p></div>
 <div class="subelement argument">
 <h4>$trimUser</h4>
-<code>\bool[optional]</code><p>When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -1599,28 +1611,28 @@ REMARK: This method seems not to work	@later</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$count</h4>
-<code>\int[optional]</code><p>Specifies the number of records to retrieve. Must be less than or equal to 200. Defaults to 20.</p></div>
+<code><a href="int%5Boptional%5D.html">\int[optional]</a></code><p>Specifies the number of records to retrieve. Must be less than or equal to 200. Defaults to 20.</p></div>
 <div class="subelement argument">
 <h4>$sinceId</h4>
-<code>\string[optional]</code><p>Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
 </div>
 <div class="subelement argument">
 <h4>$maxId</h4>
-<code>\string[optional]</code><p>Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
 </div>
 <div class="subelement argument">
 <h4>$trimUser</h4>
-<code>\bool[optional]</code><p>When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p></div>
 <div class="subelement argument">
 <h4>$excludeReplies</h4>
-<code>\bool[optional]</code><p>This parameter will prevent replies from appearing in the returned timeline. Using exclude_replies with the count parameter will mean you will receive up-to count tweets — this is because the count parameter retrieves that many tweets before filtering out retweets and replies.</p>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>This parameter will prevent replies from appearing in the returned timeline. Using exclude_replies with the count parameter will mean you will receive up-to count tweets — this is because the count parameter retrieves that many tweets before filtering out retweets and replies.</p>
 </div>
 <div class="subelement argument">
 <h4>$contributorDetails</h4>
-<code>\bool[optional]</code><p>This parameter enhances the contributors element of the status response to include the screen_name of the contributor. By default only the user_id of the contributor is included.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>This parameter enhances the contributors element of the status response to include the screen_name of the contributor. By default only the user_id of the contributor is included.</p></div>
 <div class="subelement argument">
 <h4>$includeEntities</h4>
-<code>\bool[optional]</code><p>The entities node will be disincluded when set to false.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>The entities node will be disincluded when set to false.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -1635,24 +1647,24 @@ This method can only return up to 800 tweets.</div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$count</h4>
-<code>\int[optional]</code><p>Specifies the number of tweets to try and retrieve, up to a maximum of 200. The value of count is best thought of as a limit to the number of tweets to return because suspended or deleted content is removed after the count has been applied. We include retweets in the count, even if include_rts is not supplied.</p></div>
+<code><a href="int%5Boptional%5D.html">\int[optional]</a></code><p>Specifies the number of tweets to try and retrieve, up to a maximum of 200. The value of count is best thought of as a limit to the number of tweets to return because suspended or deleted content is removed after the count has been applied. We include retweets in the count, even if include_rts is not supplied.</p></div>
 <div class="subelement argument">
 <h4>$sinceId</h4>
-<code>\string[optional]</code><p>Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
 </div>
 <div class="subelement argument">
 <h4>$maxId</h4>
-<code>\string[optional]</code><p>Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
 </div>
 <div class="subelement argument">
 <h4>$trimUser</h4>
-<code>\bool[optional]</code><p>When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p></div>
 <div class="subelement argument">
 <h4>$contributorDetails</h4>
-<code>\bool[optional]</code><p>This parameter enhances the contributors element of the status response to include the screen_name of the contributor. By default only the user_id of the contributor is included.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>This parameter enhances the contributors element of the status response to include the screen_name of the contributor. By default only the user_id of the contributor is included.</p></div>
 <div class="subelement argument">
 <h4>$includeEntities</h4>
-<code>\bool[optional]</code><p>The entities node will be disincluded when set to false.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>The entities node will be disincluded when set to false.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -1667,34 +1679,35 @@ This method can only return up to 800 tweets.</div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$id</h4>
-<code>\string[optional]</code><p>The Tweet/status ID to return embed code for.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The Tweet/status ID to return embed code for.</p>
 </div>
 <div class="subelement argument">
 <h4>$url</h4>
-<code>\string[optional]</code><p>The URL of the Tweet/status to be embedded.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The URL of the Tweet/status to be embedded.</p>
 </div>
 <div class="subelement argument">
 <h4>$maxwidth</h4>
-<code>\int[optional]</code><p>The maximum width in pixels that the embed should be rendered at. This value is constrained to be between 250 and 550 pixels. Note that Twitter does not support the oEmbed maxheight parameter. Tweets are fundamentally text, and are therefore of unpredictable height that cannot be scaled like an image or video. Relatedly, the oEmbed response will not provide a value for height. Implementations that need consistent heights for Tweets should refer to the hide_thread and hide_media parameters below.</p></div>
+<code><a href="int%5Boptional%5D.html">\int[optional]</a></code><p>The maximum width in pixels that the embed should be rendered at. This value is constrained to be between 250 and 550 pixels. Note that Twitter does not support the oEmbed maxheight parameter. Tweets are fundamentally text, and are therefore of unpredictable height that cannot be scaled like an image or video. Relatedly, the oEmbed response will not provide a value for height. Implementations that need consistent heights for Tweets should refer to the hide_thread and hide_media parameters below.</p></div>
 <div class="subelement argument">
 <h4>$hideMedia</h4>
-<code>\bool[optional]</code><p>Specifies whether the embedded Tweet should automatically expand images which were uploaded via POST statuses/update_with_media. When set to true images will not be expanded. Defaults to false.</p>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>Specifies whether the embedded Tweet should automatically expand images which were uploaded via POST statuses/update_with_media. When set to true images will not be expanded. Defaults to false.</p>
 </div>
 <div class="subelement argument">
 <h4>$hideThread</h4>
-<code>\bool[optional]</code><p>Specifies whether the embedded Tweet should automatically show the original message in the case that the embedded Tweet is a reply. When set to true the original Tweet will not be shown. Defaults to false.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>Specifies whether the embedded Tweet should automatically show the original message in the case that the embedded Tweet is a reply. When set to true the original Tweet will not be shown. Defaults to false.</p></div>
 <div class="subelement argument">
 <h4>$omitScript</h4>
-<code>\bool[optional]</code><p>Specifies whether the embedded Tweet HTML should include a <script> element pointing to widgets.js. In cases where a page already includes widgets.js, setting this value to true will prevent a redundant script element from being included. When set to true the <script> element will not be included in the embed HTML, meaning that pages must include a reference to widgets.js manually. Defaults to false.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>Specifies whether the embedded Tweet HTML should include a <script> element pointing to widgets.js. In cases where a page already includes widgets.js, setting this value to true will prevent a redundant script element from being included. When set to true the <script> element will not be included in the embed HTML, meaning that pages must include a reference to widgets.js manually. Defaults to false.</p>
+</div>
 <div class="subelement argument">
 <h4>$align</h4>
-<code>\string[optional]</code><p>Specifies whether the embedded Tweet should be left aligned, right aligned, or centered in the page. Valid values are left, right, center, and none. Defaults to none, meaning no alignment styles are specified for the Tweet.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Specifies whether the embedded Tweet should be left aligned, right aligned, or centered in the page. Valid values are left, right, center, and none. Defaults to none, meaning no alignment styles are specified for the Tweet.</p></div>
 <div class="subelement argument">
 <h4>$related</h4>
-<code>\string[optional]</code><p>A value for the TWT related parameter, as described in Web Intents. This value will be forwarded to all Web Intents calls.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>A value for the TWT related parameter, as described in Web Intents. This value will be forwarded to all Web Intents calls.</p></div>
 <div class="subelement argument">
 <h4>$lang</h4>
-<code>\string[optional]</code><p>Language code for the rendered embed. This will affect the text and localization of the rendered HTML.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Language code for the rendered embed. This will affect the text and localization of the rendered HTML.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -1711,7 +1724,7 @@ This method can only return up to 800 tweets.</div>
 <code>string</code><p>The numerical ID of the desired status.</p></div>
 <div class="subelement argument">
 <h4>$trimUser</h4>
-<code>\bool[optional]</code><p>When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -1728,10 +1741,10 @@ This method can only return up to 800 tweets.</div>
 <code>string</code><p>The numerical ID of the desired status.</p></div>
 <div class="subelement argument">
 <h4>$count</h4>
-<code>\int[optional]</code><p>Specifies the number of records to retrieve. Must be less than or equal to 100.</p></div>
+<code><a href="int%5Boptional%5D.html">\int[optional]</a></code><p>Specifies the number of records to retrieve. Must be less than or equal to 100.</p></div>
 <div class="subelement argument">
 <h4>$trimUser</h4>
-<code>\bool[optional]</code><p>When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -1745,24 +1758,24 @@ This method can only return up to 800 tweets.</div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$count</h4>
-<code>\int[optional]</code><p>Specifies the number of records to retrieve. Must be less than or equal to 100. If omitted, 20 will be assumed.</p></div>
+<code><a href="int%5Boptional%5D.html">\int[optional]</a></code><p>Specifies the number of records to retrieve. Must be less than or equal to 100. If omitted, 20 will be assumed.</p></div>
 <div class="subelement argument">
 <h4>$sinceId</h4>
-<code>\string[optional]</code><p>Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
 </div>
 <div class="subelement argument">
 <h4>$maxId</h4>
-<code>\string[optional]</code><p>Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
 </div>
 <div class="subelement argument">
 <h4>$trimUser</h4>
-<code>\bool[optional]</code><p>When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p></div>
 <div class="subelement argument">
 <h4>$includeEntities</h4>
-<code>\bool[optional]</code><p>The tweet entities node will be disincluded when set to false.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>The tweet entities node will be disincluded when set to false.</p></div>
 <div class="subelement argument">
 <h4>$includeUserEntities</h4>
-<code>\bool[optional]</code><p>The user entities node will be disincluded when set to false.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>The user entities node will be disincluded when set to false.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -1785,13 +1798,13 @@ This method can only return up to 800 tweets.</div>
 <code>string</code><p>The numerical ID of the desired Tweet.</p></div>
 <div class="subelement argument">
 <h4>$trimUser</h4>
-<code>\bool[optional]</code><p>When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p></div>
 <div class="subelement argument">
 <h4>$includeMyRetweet</h4>
-<code>\bool[optional]</code><p>When set to true, any Tweets returned that have been retweeted by the authenticating user will include an additional current_user_retweet node, containing the ID of the source status for the retweet.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>When set to true, any Tweets returned that have been retweeted by the authenticating user will include an additional current_user_retweet node, containing the ID of the source status for the retweet.</p></div>
 <div class="subelement argument">
 <h4>$includeEntities</h4>
-<code>\bool[optional]</code><p>The entities node will be disincluded when set to false.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>The entities node will be disincluded when set to false.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -1805,29 +1818,30 @@ This method can only return up to 800 tweets.</div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$status</h4>
-<code>string</code><p>The text of your status update, typically up to 140 characters. URL encode as necessary. t.co link wrapping may effect character counts. There are some special commands in this field to be aware of. For instance, preceding a message with "D " or "M " and following it with a screen name can create a direct message to that user if the relationship allows for it.</p></div>
+<code>string</code><p>The text of your status update, typically up to 140 characters. URL encode as necessary. t.co link wrapping may effect character counts. There are some special commands in this field to be aware of. For instance, preceding a message with "D " or "M " and following it with a screen name can create a direct message to that user if the relationship allows for it.</p>
+</div>
 <div class="subelement argument">
 <h4>$inReplyToStatusId</h4>
-<code>\string[optional]</code><p>The ID of an existing status that the update is in reply to. Note: This parameter will be ignored unless the author of the tweet this parameter references is mentioned within the status text. Therefore, you must include @username, where username is the author of the referenced tweet, within the update.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The ID of an existing status that the update is in reply to. Note: This parameter will be ignored unless the author of the tweet this parameter references is mentioned within the status text. Therefore, you must include @username, where username is the author of the referenced tweet, within the update.</p>
 </div>
 <div class="subelement argument">
 <h4>$lat</h4>
-<code>\float[optional]</code><p>The latitude of the location this tweet refers to. This parameter will be ignored unless it is inside the range -90.0 to +90.0 (North is positive) inclusive. It will also be ignored if there isn't a corresponding long parameter.</p>
+<code><a href="float%5Boptional%5D.html">\float[optional]</a></code><p>The latitude of the location this tweet refers to. This parameter will be ignored unless it is inside the range -90.0 to +90.0 (North is positive) inclusive. It will also be ignored if there isn't a corresponding long parameter.</p>
 </div>
 <div class="subelement argument">
 <h4>$long</h4>
-<code>\float[optional]</code><p>The longitude of the location this tweet refers to. The valid ranges for longitude is -180.0 to +180.0 (East is positive) inclusive. This parameter will be ignored if outside that range, if it is not a number, if geo_enabled is disabled, or if there not a corresponding lat parameter.</p>
+<code><a href="float%5Boptional%5D.html">\float[optional]</a></code><p>The longitude of the location this tweet refers to. The valid ranges for longitude is -180.0 to +180.0 (East is positive) inclusive. This parameter will be ignored if outside that range, if it is not a number, if geo_enabled is disabled, or if there not a corresponding lat parameter.</p>
 </div>
 <div class="subelement argument">
 <h4>$placeId</h4>
-<code>\string[optional]</code><p>A place in the world. These IDs can be retrieved from GET geo/reverse_geocode.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>A place in the world. These IDs can be retrieved from GET geo/reverse_geocode.</p>
 </div>
 <div class="subelement argument">
 <h4>$displayCoordinates</h4>
-<code>\bool[optional]</code><p>Whether or not to put a pin on the exact coordinates a tweet has been sent from.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>Whether or not to put a pin on the exact coordinates a tweet has been sent from.</p></div>
 <div class="subelement argument">
 <h4>$trimUser</h4>
-<code>\bool[optional]</code><p>When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -1849,34 +1863,34 @@ This method can only return up to 3,200 of a user's most recent Tweets. Native r
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$userId</h4>
-<code>\string[optional]</code><p>The ID of the user for whom to return results for. Helpful for disambiguating when a valid user ID is also a valid screen name.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The ID of the user for whom to return results for. Helpful for disambiguating when a valid user ID is also a valid screen name.</p></div>
 <div class="subelement argument">
 <h4>$screenName</h4>
-<code>\string[optional]</code><p>The screen name of the user for whom to return results for. Helpful for disambiguating when a valid screen name is also a user ID.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The screen name of the user for whom to return results for. Helpful for disambiguating when a valid screen name is also a user ID.</p></div>
 <div class="subelement argument">
 <h4>$sinceId</h4>
-<code>\string[optional]</code><p>Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
 </div>
 <div class="subelement argument">
 <h4>$count</h4>
-<code>\int[optional]</code><p>Specifies the number of tweets to try and retrieve, up to a maximum of 200 per distinct request. The value of count is best thought of as a limit to the number of tweets to return because suspended or deleted content is removed after the count has been applied. We include retweets in the count, even if include_rts is not supplied.</p></div>
+<code><a href="int%5Boptional%5D.html">\int[optional]</a></code><p>Specifies the number of tweets to try and retrieve, up to a maximum of 200 per distinct request. The value of count is best thought of as a limit to the number of tweets to return because suspended or deleted content is removed after the count has been applied. We include retweets in the count, even if include_rts is not supplied.</p></div>
 <div class="subelement argument">
 <h4>$maxId</h4>
-<code>\string[optional]</code><p>Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
 </div>
 <div class="subelement argument">
 <h4>$trimUser</h4>
-<code>\bool[optional]</code><p>When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p></div>
 <div class="subelement argument">
 <h4>$excludeReplies</h4>
-<code>\bool[optional]</code><p>This parameter will prevent replies from appearing in the returned timeline. Using exclude_replies with the count parameter will mean you will receive up-to count tweets — this is because the count parameter retrieves that many tweets before filtering out retweets and replies.</p>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>This parameter will prevent replies from appearing in the returned timeline. Using exclude_replies with the count parameter will mean you will receive up-to count tweets — this is because the count parameter retrieves that many tweets before filtering out retweets and replies.</p>
 </div>
 <div class="subelement argument">
 <h4>$contributorDetails</h4>
-<code>\bool[optional]</code><p>This parameter enhances the contributors element of the status response to include the screen_name of the contributor. By default only the user_id of the contributor is included.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>This parameter enhances the contributors element of the status response to include the screen_name of the contributor. By default only the user_id of the contributor is included.</p></div>
 <div class="subelement argument">
 <h4>$includeRts</h4>
-<code>\bool[optional]</code><p>When set to false, the timeline will strip any native retweets (though they will still count toward both the maximal length of the timeline and the slice selected by the count parameter). Note: If you're using the trim_user parameter in conjunction with include_rts, the retweets will still contain a full user object.</p>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>When set to false, the timeline will strip any native retweets (though they will still count toward both the maximal length of the timeline and the slice selected by the count parameter). Note: If you're using the trim_user parameter in conjunction with include_rts, the retweets will still contain a full user object.</p>
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
@@ -1892,10 +1906,10 @@ The WOEID that is returned in the location object is to be used when querying fo
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$lat</h4>
-<code>\float[optional]</code><p>If passed in conjunction with long, then the available trend locations will be sorted by distance to the lat  and long passed in. The sort is nearest to furthest.</p></div>
+<code><a href="float%5Boptional%5D.html">\float[optional]</a></code><p>If passed in conjunction with long, then the available trend locations will be sorted by distance to the lat  and long passed in. The sort is nearest to furthest.</p></div>
 <div class="subelement argument">
 <h4>$long</h4>
-<code>\float[optional]</code><p>If passed in conjunction with lat, then the available trend locations will be sorted by distance to the lat  and long passed in. The sort is nearest to furthest.</p></div>
+<code><a href="float%5Boptional%5D.html">\float[optional]</a></code><p>If passed in conjunction with lat, then the available trend locations will be sorted by distance to the lat  and long passed in. The sort is nearest to furthest.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -1909,11 +1923,11 @@ The WOEID that is returned in the location object is to be used when querying fo
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$lat</h4>
-<code>\float[optional]</code><p>If provided with a long parameter the available trend locations will be sorted by distance, nearest to furthest, to the co-ordinate pair. The valid ranges for longitude is -180.0 to +180.0 (West is negative, East is positive) inclusive.</p>
+<code><a href="float%5Boptional%5D.html">\float[optional]</a></code><p>If provided with a long parameter the available trend locations will be sorted by distance, nearest to furthest, to the co-ordinate pair. The valid ranges for longitude is -180.0 to +180.0 (West is negative, East is positive) inclusive.</p>
 </div>
 <div class="subelement argument">
 <h4>$long</h4>
-<code>\float[optional]</code><p>If provided with a lat parameter the available trend locations will be sorted by distance, nearest to furthest, to the co-ordinate pair. The valid ranges for longitude is -180.0 to +180.0 (West is negative, East is positive) inclusive.</p>
+<code><a href="float%5Boptional%5D.html">\float[optional]</a></code><p>If provided with a lat parameter the available trend locations will be sorted by distance, nearest to furthest, to the co-ordinate pair. The valid ranges for longitude is -180.0 to +180.0 (West is negative, East is positive) inclusive.</p>
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
@@ -1933,7 +1947,7 @@ This information is cached for 5 minutes. Requesting more frequently than that w
 </div>
 <div class="subelement argument">
 <h4>$exclude</h4>
-<code>\string[optional]</code><p>Setting this equal to hashtags will remove all hashtags from the trends list.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Setting this equal to hashtags will remove all hashtags from the trends list.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -1953,16 +1967,16 @@ This information is cached for 5 minutes. Requesting more frequently than that w
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$userId</h4>
-<code>\string[optional]</code><p>The ID of the user for whom to return results for.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The ID of the user for whom to return results for.</p></div>
 <div class="subelement argument">
 <h4>$screenName</h4>
-<code>\string[optional]</code><p>The screen name of the user for whom to return results for.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The screen name of the user for whom to return results for.</p></div>
 <div class="subelement argument">
 <h4>$includeEntities</h4>
-<code>\bool[optional]</code><p>The entities node will not be included when set to false.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>The entities node will not be included when set to false.</p></div>
 <div class="subelement argument">
 <h4>$skipStatus</h4>
-<code>\bool[optional]</code><p>When set to either true, t or 1 statuses will not be included in the returned user objects.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>When set to either true, t or 1 statuses will not be included in the returned user objects.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -1976,16 +1990,16 @@ This information is cached for 5 minutes. Requesting more frequently than that w
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$userId</h4>
-<code>\string[optional]</code><p>The ID of the user for whom to return results for.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The ID of the user for whom to return results for.</p></div>
 <div class="subelement argument">
 <h4>$screenName</h4>
-<code>\string[optional]</code><p>The screen name of the user for whom to return results for.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The screen name of the user for whom to return results for.</p></div>
 <div class="subelement argument">
 <h4>$includeEntities</h4>
-<code>\bool[optional]</code><p>The entities node will not be included when set to false.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>The entities node will not be included when set to false.</p></div>
 <div class="subelement argument">
 <h4>$skipStatus</h4>
-<code>\bool[optional]</code><p>When set to either true, t or 1 statuses will not be included in the returned user objects.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>When set to either true, t or 1 statuses will not be included in the returned user objects.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -1999,13 +2013,13 @@ This information is cached for 5 minutes. Requesting more frequently than that w
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$userIds</h4>
-<code>\mixed[optional]</code><p>An array of user IDs, up to 100 are allowed in a single request.</p></div>
+<code><a href="mixed%5Boptional%5D.html">\mixed[optional]</a></code><p>An array of user IDs, up to 100 are allowed in a single request.</p></div>
 <div class="subelement argument">
 <h4>$screenNames</h4>
-<code>\mixed[optional]</code><p>An array of screen names, up to 100 are allowed in a single request.</p></div>
+<code><a href="mixed%5Boptional%5D.html">\mixed[optional]</a></code><p>An array of screen names, up to 100 are allowed in a single request.</p></div>
 <div class="subelement argument">
 <h4>$includeEntities</h4>
-<code>\bool[optional]</code><p>The entities node that may appear within embedded statuses will be disincluded when set to false.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>The entities node that may appear within embedded statuses will be disincluded when set to false.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -2019,10 +2033,10 @@ This information is cached for 5 minutes. Requesting more frequently than that w
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$userId</h4>
-<code>\string[optional]</code><p>The ID of the user for whom to return results for. Helpful for disambiguating when a valid user ID is also a valid screen name.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The ID of the user for whom to return results for. Helpful for disambiguating when a valid user ID is also a valid screen name.</p></div>
 <div class="subelement argument">
 <h4>$screenName</h4>
-<code>\string[optional]</code><p>The screen name of the user for whom to return results for. Helpful for disambiguating when a valid screen name is also a user ID.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The screen name of the user for whom to return results for. Helpful for disambiguating when a valid screen name is also a user ID.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -2039,13 +2053,13 @@ This information is cached for 5 minutes. Requesting more frequently than that w
 <code>string</code><p>The search query to run against people search.</p></div>
 <div class="subelement argument">
 <h4>$page</h4>
-<code>\int[optional]</code><p>Specifies the page of results to retrieve.</p></div>
+<code><a href="int%5Boptional%5D.html">\int[optional]</a></code><p>Specifies the page of results to retrieve.</p></div>
 <div class="subelement argument">
 <h4>$count</h4>
-<code>\int[optional]</code><p>The number of potential user results to retrieve per page. This value has a maximum of 20.</p></div>
+<code><a href="int%5Boptional%5D.html">\int[optional]</a></code><p>The number of potential user results to retrieve per page. This value has a maximum of 20.</p></div>
 <div class="subelement argument">
 <h4>$includeEntities</h4>
-<code>\bool[optional]</code><p>The entities node will be disincluded from embedded tweet objects when set to false.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>The entities node will be disincluded from embedded tweet objects when set to false.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -2059,13 +2073,13 @@ This information is cached for 5 minutes. Requesting more frequently than that w
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$userId</h4>
-<code>\string[optional]</code><p>The screen name of the user for whom to return results for. Either a id or screen_name is required for this method.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The screen name of the user for whom to return results for. Either a id or screen_name is required for this method.</p></div>
 <div class="subelement argument">
 <h4>$screenName</h4>
-<code>\string[optional]</code><p>The ID of the user for whom to return results for. Either an id or screen_name is required for this method.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The ID of the user for whom to return results for. Either an id or screen_name is required for this method.</p></div>
 <div class="subelement argument">
 <h4>$includeEntities</h4>
-<code>\bool[optional]</code><p>The entities node will not be included when set to false.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>The entities node will not be included when set to false.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -2079,7 +2093,7 @@ This information is cached for 5 minutes. Requesting more frequently than that w
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$lang</h4>
-<code>\string[optional]</code><p>Restricts the suggested categories to the requested language. The language must be specified by the appropriate two letter ISO 639-1 representation. Currently supported languages are provided by the helpLanguages API request. Unsupported language codes will receive English (en) results.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Restricts the suggested categories to the requested language. The language must be specified by the appropriate two letter ISO 639-1 representation. Currently supported languages are provided by the helpLanguages API request. Unsupported language codes will receive English (en) results.</p>
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
@@ -2097,7 +2111,7 @@ This information is cached for 5 minutes. Requesting more frequently than that w
 <code>string</code><p>The short name of list or a category.</p></div>
 <div class="subelement argument">
 <h4>$lang</h4>
-<code>\string[optional]</code><p>Restricts the suggested categories to the requested language. The language must be specified by the appropriate two letter ISO 639-1 representation. Currently supported languages are provided by the helpLanguages API request. Unsupported language codes will receive English (en) results.</p>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>Restricts the suggested categories to the requested language. The language must be specified by the appropriate two letter ISO 639-1 representation. Currently supported languages are provided by the helpLanguages API request. Unsupported language codes will receive English (en) results.</p>
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
@@ -2197,22 +2211,22 @@ then joined by the URL-escaped ampersand sign, "%26".</h2>
 <code>string</code><p>The url to call.</p></div>
 <div class="subelement argument">
 <h4>$parameters</h4>
-<code>\array[optional]</code><p>Optional parameters.</p></div>
+<code><a href="array%5Boptional%5D.html">\array[optional]</a></code><p>Optional parameters.</p></div>
 <div class="subelement argument">
 <h4>$authenticate</h4>
-<code>\bool[optional]</code><p>Should we authenticate.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>Should we authenticate.</p></div>
 <div class="subelement argument">
 <h4>$method</h4>
-<code>\bool[optional]</code><p>The method to use. Possible values are GET, POST.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>The method to use. Possible values are GET, POST.</p></div>
 <div class="subelement argument">
 <h4>$filePath</h4>
-<code>\string[optional]</code><p>The path to the file to upload.</p></div>
+<code><a href="string%5Boptional%5D.html">\string[optional]</a></code><p>The path to the file to upload.</p></div>
 <div class="subelement argument">
 <h4>$expectJSON</h4>
-<code>\bool[optional]</code><p>Do we expect JSON.</p></div>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>Do we expect JSON.</p></div>
 <div class="subelement argument">
 <h4>$returnHeaders</h4>
-<code>\bool[optional]</code><p>Should the headers be returned?</p>
+<code><a href="bool%5Boptional%5D.html">\bool[optional]</a></code><p>Should the headers be returned?</p>
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
@@ -2234,7 +2248,7 @@ then joined by the URL-escaped ampersand sign, "%26".</h2>
 <code>string</code><p>The method.</p></div>
 <div class="subelement argument">
 <h4>$parameters</h4>
-<code>\array[optional]</code><p>The parameters.</p></div>
+<code><a href="array%5Boptional%5D.html">\array[optional]</a></code><p>The parameters.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -2422,9 +2436,9 @@ then joined by the URL-escaped ampersand sign, "%26".</h2>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.1
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2013-10-10T11:11:49-04:00.<br></footer></div>
+            generated on 2013-11-04T11:25:45-05:00.<br></footer></div>
 </div>
 </body>
 </html>

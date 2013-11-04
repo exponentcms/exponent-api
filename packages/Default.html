@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Exponent v2.2.2 » Default</title>
+<title>Exponent v2.2.4 » Default</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -15,7 +15,7 @@
 <body>
 <div class="navbar navbar-fixed-top">
 <div class="navbar-inner"><div class="container">
-<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent v2.2.2</a><div class="nav-collapse"><ul class="nav">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent v2.2.4</a><div class="nav-collapse"><ul class="nav">
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
@@ -38,7 +38,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">1679</span></a></li>
+                <span class="label label-info">1819</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -226,32 +226,25 @@ just before it gets rendered to the screen should happen here.</span><pre>expPro
 <li><a href="#multioptionstheme" title="This is the base theme class">multioptionstheme</a></li>
 <li><a href="#Twitter" title="Twitter class">Twitter</a></li>
 <li><a href="#sermons" title="This is the class expRecord">sermons</a></li>
-<li><a href="#sermons" title="This is the class expRecord">sermons</a></li>
 <li><a href="#seibatheme" title="This is the base theme class">seibatheme</a></li>
 <li><a href="#retrotheme" title="This is the base theme class">retrotheme</a></li>
 <li><a href="#basetheme" title="This is the base theme class">basetheme</a></li>
 <li><a href="#services" title="This is the class expRecord">services</a></li>
-<li><a href="#sermonseriesController" title="This is the class expController">sermonseriesController</a></li>
 <li><a href="#htmleditorcontrol" title="Base Form Control Class">htmleditorcontrol</a></li>
-<li><a href="#speakers" title="This is the class expRecord">speakers</a></li>
 <li><a href="#sermonseries" title="This is the class expRecord">sermonseries</a></li>
-<li><a href="#sermonseriesController" title="This is the class expController">sermonseriesController</a></li>
 <li><a href="#speakers" title="This is the class expRecord">speakers</a></li>
 <li><a href="#emeraldtheme" title="This is the base theme class">emeraldtheme</a></li>
 <li><a href="#xmlrpc_server_methods_container" title="Used to test usage of object methods in dispatch maps">xmlrpc_server_methods_container</a></li>
-<li><a href="#sermonsController" title="This is the class expController">sermonsController</a></li>
-<li><a href="#speakers" title="This is the class expRecord">speakers</a></li>
+<li><a href="#expWKPDF" title="This is the class expHtmlToPDF">expWKPDF</a></li>
+<li><a href="#expDOMPDF" title="This is the class expHtmlToPDF">expDOMPDF</a></li>
+<li><a href="#expMPDF" title="This is the class expHtmlToPDF">expMPDF</a></li>
 <li><a href="#blog3coltheme" title="This is the base theme class">blog3coltheme</a></li>
 <li><a href="#bootstraptheme" title="This is the base theme class">bootstraptheme</a></li>
-<li><a href="#sermonseries" title="This is the class expRecord">sermonseries</a></li>
 <li><a href="#simpletheme" title="This is the base theme class">simpletheme</a></li>
 <li><a href="#hhbctheme" title="This is the base theme class">hhbctheme</a></li>
-<li><a href="#sermonseries" title="This is the class expRecord">sermonseries</a></li>
 <li><a href="#coolwatertheme" title="This is the base theme class">coolwatertheme</a></li>
-<li><a href="#sermonsController" title="This is the class expController">sermonsController</a></li>
-<li><a href="#services" title="This is the class expRecord">services</a></li>
-<li><a href="#sermons" title="This is the class expRecord">sermons</a></li>
-<li><a href="#services" title="This is the class expRecord">services</a></li>
+<li><a href="#flowplayerController" title="This is the class expController">flowplayerController</a></li>
+<li><a href="#youtubeController" title="This is the class expController">youtubeController</a></li>
 <li class="nav-header">
 <i class="icon-custom icon-constant"></i> Constants</li>
 <li class="constant  "><a href="#constant_%22BLANKPADDING%22" title='"BLANKPADDING"() :: '><span class="description">"BLANKPADDING"</span><pre>"BLANKPADDING"</pre></a></li>
@@ -388,7 +381,8 @@ The EQL header string for object dump file formats.</span><pre>EQL_HEADER</pre><
 <li class="constant  "><a href="#constant_HELP_ACTIVE" title="HELP_ACTIVE() :: "><span class="description">HELP_ACTIVE</span><pre>HELP_ACTIVE</pre></a></li>
 <li class="constant  "><a href="#constant_HELP_URL" title="HELP_URL() :: "><span class="description">HELP_URL</span><pre>HELP_URL</pre></a></li>
 <li class="constant  "><a href="#constant_HOSTNAME" title="HOSTNAME() :: "><span class="description">HOSTNAME</span><pre>HOSTNAME</pre></a></li>
-<li class="constant  "><a href="#constant_HTML2PDF_OUTPUT" title="HTML2PDF_OUTPUT() :: "><span class="description">HTML2PDF_OUTPUT</span><pre>HTML2PDF_OUTPUT</pre></a></li>
+<li class="constant  "><a href="#constant_HTMLTOPDF_ENGINE" title="HTMLTOPDF_ENGINE() :: "><span class="description">HTMLTOPDF_ENGINE</span><pre>HTMLTOPDF_ENGINE</pre></a></li>
+<li class="constant  "><a href="#constant_HTMLTOPDF_OUTPUT" title="HTMLTOPDF_OUTPUT() :: "><span class="description">HTMLTOPDF_OUTPUT</span><pre>HTMLTOPDF_OUTPUT</pre></a></li>
 <li class="constant  "><a href="#constant_HTMLTOPDF_PATH" title="HTMLTOPDF_PATH() :: "><span class="description">HTMLTOPDF_PATH</span><pre>HTMLTOPDF_PATH</pre></a></li>
 <li class="constant  "><a href="#constant_HTMLTOPDF_PATH_TMP" title="HTMLTOPDF_PATH_TMP() :: "><span class="description">HTMLTOPDF_PATH_TMP</span><pre>HTMLTOPDF_PATH_TMP</pre></a></li>
 <li class="constant  "><a href="#constant_ICAL_TYPE" title="ICAL_TYPE() :: External Calendar Type"><span class="description">External Calendar Type</span><pre>ICAL_TYPE</pre></a></li>
@@ -637,6 +631,8 @@ UI Level of Structure - All management links are shown.</span><pre>UILEVEL_STRUC
 <li class="constant  "><a href="#constant_YUI3_RELATIVE" title="YUI3_RELATIVE() :: "><span class="description">YUI3_RELATIVE</span><pre>YUI3_RELATIVE</pre></a></li>
 <li class="constant  "><a href="#constant_YUI3_URL" title="YUI3_URL() :: "><span class="description">YUI3_URL</span><pre>YUI3_URL</pre></a></li>
 <li class="constant  "><a href="#constant_YUI3_VERSION" title="YUI3_VERSION() :: "><span class="description">YUI3_VERSION</span><pre>YUI3_VERSION</pre></a></li>
+<li class="constant  "><a href="#constant__MPDF_TEMP_PATH" title="_MPDF_TEMP_PATH() :: "><span class="description">_MPDF_TEMP_PATH</span><pre>_MPDF_TEMP_PATH</pre></a></li>
+<li class="constant  "><a href="#constant__MPDF_TTFONTDATAPATH" title="_MPDF_TTFONTDATAPATH() :: "><span class="description">_MPDF_TTFONTDATAPATH</span><pre>_MPDF_TTFONTDATAPATH</pre></a></li>
 </ul>
 </div>
 <div class="span8 package-contents">
@@ -1571,6 +1567,34 @@ just before it gets rendered to the screen should happen here.</h2>
 <div class="details collapse"></div>
 <a href="../classes/emeraldtheme.html" class="more">« More »</a>
 </div>
+<div id="expDOMPDF" class="element ajax clickable class">
+<h1>expDOMPDF<a href="../classes/expDOMPDF.html">¶</a>
+</h1>
+<p class="short_description">This is the class expHtmlToPDF</p>
+<div class="details collapse"></div>
+<a href="../classes/expDOMPDF.html" class="more">« More »</a>
+</div>
+<div id="expMPDF" class="element ajax clickable class">
+<h1>expMPDF<a href="../classes/expMPDF.html">¶</a>
+</h1>
+<p class="short_description">This is the class expHtmlToPDF</p>
+<div class="details collapse"></div>
+<a href="../classes/expMPDF.html" class="more">« More »</a>
+</div>
+<div id="expWKPDF" class="element ajax clickable class">
+<h1>expWKPDF<a href="../classes/expWKPDF.html">¶</a>
+</h1>
+<p class="short_description">This is the class expHtmlToPDF</p>
+<div class="details collapse"></div>
+<a href="../classes/expWKPDF.html" class="more">« More »</a>
+</div>
+<div id="flowplayerController" class="element ajax clickable class">
+<h1>flowplayerController<a href="../classes/flowplayerController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/flowplayerController.html" class="more">« More »</a>
+</div>
 <div id="headlineController" class="element ajax clickable class">
 <h1>headlineController<a href="../classes/headlineController.html">¶</a>
 </h1>
@@ -1627,48 +1651,6 @@ just before it gets rendered to the screen should happen here.</h2>
 <div class="details collapse"></div>
 <a href="../classes/sermons.html" class="more">« More »</a>
 </div>
-<div id="sermons" class="element ajax clickable class">
-<h1>sermons<a href="../classes/sermons.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/sermons.html" class="more">« More »</a>
-</div>
-<div id="sermons" class="element ajax clickable class">
-<h1>sermons<a href="../classes/sermons.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/sermons.html" class="more">« More »</a>
-</div>
-<div id="sermonsController" class="element ajax clickable class">
-<h1>sermonsController<a href="../classes/sermonsController.html">¶</a>
-</h1>
-<p class="short_description">This is the class expController</p>
-<div class="details collapse"></div>
-<a href="../classes/sermonsController.html" class="more">« More »</a>
-</div>
-<div id="sermonsController" class="element ajax clickable class">
-<h1>sermonsController<a href="../classes/sermonsController.html">¶</a>
-</h1>
-<p class="short_description">This is the class expController</p>
-<div class="details collapse"></div>
-<a href="../classes/sermonsController.html" class="more">« More »</a>
-</div>
-<div id="sermonseries" class="element ajax clickable class">
-<h1>sermonseries<a href="../classes/sermonseries.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/sermonseries.html" class="more">« More »</a>
-</div>
-<div id="sermonseries" class="element ajax clickable class">
-<h1>sermonseries<a href="../classes/sermonseries.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/sermonseries.html" class="more">« More »</a>
-</div>
 <div id="sermonseries" class="element ajax clickable class">
 <h1>sermonseries<a href="../classes/sermonseries.html">¶</a>
 </h1>
@@ -1682,34 +1664,6 @@ just before it gets rendered to the screen should happen here.</h2>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/sermonseriesController.html" class="more">« More »</a>
-</div>
-<div id="sermonseriesController" class="element ajax clickable class">
-<h1>sermonseriesController<a href="../classes/sermonseriesController.html">¶</a>
-</h1>
-<p class="short_description">This is the class expController</p>
-<div class="details collapse"></div>
-<a href="../classes/sermonseriesController.html" class="more">« More »</a>
-</div>
-<div id="sermonseriesController" class="element ajax clickable class">
-<h1>sermonseriesController<a href="../classes/sermonseriesController.html">¶</a>
-</h1>
-<p class="short_description">This is the class expController</p>
-<div class="details collapse"></div>
-<a href="../classes/sermonseriesController.html" class="more">« More »</a>
-</div>
-<div id="services" class="element ajax clickable class">
-<h1>services<a href="../classes/services.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/services.html" class="more">« More »</a>
-</div>
-<div id="services" class="element ajax clickable class">
-<h1>services<a href="../classes/services.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/services.html" class="more">« More »</a>
 </div>
 <div id="services" class="element ajax clickable class">
 <h1>services<a href="../classes/services.html">¶</a>
@@ -1732,26 +1686,19 @@ just before it gets rendered to the screen should happen here.</h2>
 <div class="details collapse"></div>
 <a href="../classes/speakers.html" class="more">« More »</a>
 </div>
-<div id="speakers" class="element ajax clickable class">
-<h1>speakers<a href="../classes/speakers.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/speakers.html" class="more">« More »</a>
-</div>
-<div id="speakers" class="element ajax clickable class">
-<h1>speakers<a href="../classes/speakers.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/speakers.html" class="more">« More »</a>
-</div>
 <div id="xmlrpc_server_methods_container" class="element ajax clickable class">
 <h1>xmlrpc_server_methods_container<a href="../classes/xmlrpc_server_methods_container.html">¶</a>
 </h1>
 <p class="short_description">Used to test usage of object methods in dispatch maps</p>
 <div class="details collapse"></div>
 <a href="../classes/xmlrpc_server_methods_container.html" class="more">« More »</a>
+</div>
+<div id="youtubeController" class="element ajax clickable class">
+<h1>youtubeController<a href="../classes/youtubeController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/youtubeController.html" class="more">« More »</a>
 </div>
 <h3>
 <i class="icon-custom icon-constant"></i> Constants</h3>
@@ -2122,11 +2069,11 @@ If used, the DB_FIELD_LEN index must also be specified.</div>
 <table class="table table-bordered">
 <tr>
 <th>see</th>
-<td><a href=""></a></td>
+<td><a href="%5CDB_FIELD_TYPE"></a></td>
 </tr>
 <tr>
 <th>see</th>
-<td><a href=""></a></td>
+<td><a href="%5CDB_FIELD_LEN"></a></td>
 </tr>
 </table>
 </div></div>
@@ -2186,11 +2133,11 @@ There is only one (composite) Full Text index per table.</div>
 <table class="table table-bordered">
 <tr>
 <th>see</th>
-<td><a href=""></a></td>
+<td><a href="%5CDB_DEF_ID"></a></td>
 </tr>
 <tr>
 <th>see</th>
-<td><a href=""></a></td>
+<td><a href="%5CDB_INCREMENT"></a></td>
 </tr>
 </table>
 </div></div>
@@ -2213,11 +2160,11 @@ that are marked as PRIMARY.</div>
 <table class="table table-bordered">
 <tr>
 <th>see</th>
-<td><a href=""></a></td>
+<td><a href="%5CDB_PRIMARY"></a></td>
 </tr>
 <tr>
 <th>see</th>
-<td><a href=""></a></td>
+<td><a href="%5CDB_DEF_ID"></a></td>
 </tr>
 </table>
 </div></div>
@@ -2234,11 +2181,11 @@ multiple key fields per table but they will NOT be composite keys.</div>
 <table class="table table-bordered">
 <tr>
 <th>see</th>
-<td><a href=""></a></td>
+<td><a href="%5CDB_DEF_ID"></a></td>
 </tr>
 <tr>
 <th>see</th>
-<td><a href=""></a></td>
+<td><a href="%5CDB_INCREMENT"></a></td>
 </tr>
 </table>
 </div></div>
@@ -2273,11 +2220,11 @@ marked as 'primary' to establish a composite primary key in the table.</div>
 <table class="table table-bordered">
 <tr>
 <th>see</th>
-<td><a href=""></a></td>
+<td><a href="%5CDB_DEF_ID"></a></td>
 </tr>
 <tr>
 <th>see</th>
-<td><a href=""></a></td>
+<td><a href="%5CDB_INCREMENT"></a></td>
 </tr>
 </table>
 </div></div>
@@ -2307,11 +2254,11 @@ using single or multiple (composite) fields per table.</div>
 <table class="table table-bordered">
 <tr>
 <th>see</th>
-<td><a href=""></a></td>
+<td><a href="%5CDB_DEF_ID"></a></td>
 </tr>
 <tr>
 <th>see</th>
-<td><a href=""></a></td>
+<td><a href="%5CDB_INCREMENT"></a></td>
 </tr>
 </table>
 </div></div>
@@ -2667,9 +2614,15 @@ when you have special needs for the form's input elements.</div></div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="constant_HTML2PDF_OUTPUT"> </a><div class="element clickable constant  constant_HTML2PDF_OUTPUT" data-toggle="collapse" data-target=".constant_HTML2PDF_OUTPUT .collapse">
-<h2>HTML2PDF_OUTPUT</h2>
-<pre>HTML2PDF_OUTPUT </pre>
+<a id="constant_HTMLTOPDF_ENGINE"> </a><div class="element clickable constant  constant_HTMLTOPDF_ENGINE" data-toggle="collapse" data-target=".constant_HTMLTOPDF_ENGINE .collapse">
+<h2>HTMLTOPDF_ENGINE</h2>
+<pre>HTMLTOPDF_ENGINE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_HTMLTOPDF_OUTPUT"> </a><div class="element clickable constant  constant_HTMLTOPDF_OUTPUT" data-toggle="collapse" data-target=".constant_HTMLTOPDF_OUTPUT .collapse">
+<h2>HTMLTOPDF_OUTPUT</h2>
+<pre>HTMLTOPDF_OUTPUT </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -3295,7 +3248,7 @@ The absolute url to Exponent's core javascript.</h2>
 <div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>define</th>
-<td>&quot;BASE&quot; &quot;.&quot;</td>
+<td>"BASE" "."</td>
 </tr></table>
 </div></div>
 </div>
@@ -3319,7 +3272,7 @@ The absolute url to Exponent's core javascript.</h2>
 <div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>define</th>
-<td>&quot;BASE&quot; &quot;.&quot;</td>
+<td>"BASE" "."</td>
 </tr></table>
 </div></div>
 </div>
@@ -3761,7 +3714,7 @@ Old flow subsystem code</h2>
 <table class="table table-bordered">
 <tr>
 <th>state</th>
-<td>&lt;b&gt;UNDOCUMENTED&lt;/b&gt;</td>
+<td><b>UNDOCUMENTED</b></td>
 </tr>
 <tr>
 <th>node</th>
@@ -4041,14 +3994,26 @@ UI Level of Structure - All management links are shown.</h2>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="constant__MPDF_TEMP_PATH"> </a><div class="element clickable constant  constant__MPDF_TEMP_PATH" data-toggle="collapse" data-target=".constant__MPDF_TEMP_PATH .collapse">
+<h2>_MPDF_TEMP_PATH</h2>
+<pre>_MPDF_TEMP_PATH </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant__MPDF_TTFONTDATAPATH"> </a><div class="element clickable constant  constant__MPDF_TTFONTDATAPATH" data-toggle="collapse" data-target=".constant__MPDF_TTFONTDATAPATH .collapse">
+<h2>_MPDF_TTFONTDATAPATH</h2>
+<pre>_MPDF_TTFONTDATAPATH </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 </div>
 </div>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.1
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2013-10-10T11:11:46-04:00.<br></footer></div>
+            generated on 2013-11-04T11:25:39-05:00.<br></footer></div>
 </div>
 </body>
 </html>

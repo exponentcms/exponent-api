@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Exponent v2.2.2 » \expFile</title>
+<title>Exponent v2.2.4 » \expFile</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -15,7 +15,7 @@
 <body>
 <div class="navbar navbar-fixed-top">
 <div class="navbar-inner"><div class="container">
-<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent v2.2.2</a><div class="nav-collapse"><ul class="nav">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent v2.2.4</a><div class="nav-collapse"><ul class="nav">
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
@@ -38,7 +38,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">1679</span></a></li>
+                <span class="label label-info">1819</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -259,7 +259,7 @@ import via child classes.</div>
 <a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
 <h2>Class constructor to create a File Class either from a database
 record or from the File System.</h2>
-<pre>__construct(mixed $params, bool $get_assoc, bool $get_attached) : \expFile</pre>
+<pre>__construct(mixed $params, bool $get_assoc, bool $get_attached) : <a href="../classes/expFile.html">\expFile</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description">Class will either: a) load an existing File Record
@@ -304,7 +304,7 @@ move, create, delete, read and write.</div>
 </div>
 <h3>Returns</h3>
 <div class="subelement response">
-<code>\expFile</code>Object@throws void</div>
+<code><a href="../classes/expFile.html">\expFile</a></code>Object@throws void</div>
 </div></div>
 </div>
 <a id="method_afterDelete"></a><div class="element clickable method public method_afterDelete" data-toggle="collapse" data-target=".method_afterDelete .collapse">
@@ -429,7 +429,7 @@ implementation.</div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$db</h4>
-<code>\Database</code><p>The database object to dump to EQL.</p></div>
+<code><a href="Database.html">\Database</a></code><p>The database object to dump to EQL.</p></div>
 <div class="subelement argument">
 <h4>$tables</h4>
 <code>null</code>
@@ -638,7 +638,8 @@ overwritten (default to NO overwrite)</div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$name</h4>
-<code>string</code><p>File name to 'fix'</p></div>
+<code>string</code><p>File name to 'fix'</p>
+</div>
 <h3>Exceptions</h3>
 <table class="table table-bordered"><tr>
 <th><code>void</code></th>
@@ -711,7 +712,7 @@ work identically.</h2>
 <table class="table table-bordered">
 <tr>
 <th>state</th>
-<td>&lt;b&gt;UNDOCUMENTED&lt;/b&gt;</td>
+<td><b>UNDOCUMENTED</b></td>
 </tr>
 <tr>
 <th>node</th>
@@ -797,7 +798,7 @@ there is no GD support compiled into the server.  (In this case, null is returne
 <table class="table table-bordered">
 <tr>
 <th>state</th>
-<td>&lt;b&gt;UNDOCUMENTED&lt;/b&gt;</td>
+<td><b>UNDOCUMENTED</b></td>
 </tr>
 <tr>
 <th>node</th>
@@ -1174,7 +1175,7 @@ the files and directories underneath it.</h2>
 </tr></table>
 <h3>Returns</h3>
 <div class="subelement response">
-<code>int</code>$newFileName   Name of the file that isn&#039;t a duplicate</div>
+<code>int</code>$newFileName   Name of the file that isn't a duplicate</div>
 </div></div>
 </div>
 <a id="method_restoreDatabase"></a><div class="element clickable method public method_restoreDatabase" data-toggle="collapse" data-target=".method_restoreDatabase .collapse">
@@ -1196,7 +1197,7 @@ was fine.</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$db</h4>
-<code>\Database</code><p>The database to restore to</p></div>
+<code><a href="Database.html">\Database</a></code><p>The database to restore to</p></div>
 <div class="subelement argument">
 <h4>$file</h4>
 <code>string</code><p>The filename of the EQL file to restore from</p></div>
@@ -1499,7 +1500,7 @@ Default set to FALSE, no it can't</div>
 </tr>
 <tr>
 <th>since</th>
-<td></td>
+<td>1.1</td>
 </tr>
 </table>
 </div></div>
@@ -1653,9 +1654,9 @@ This is a "relabel" of the PHP 'LOCK_EX' constant</h2>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.1
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
 </a> and<br>
-            generated on 2013-10-10T11:11:50-04:00.<br></footer></div>
+            generated on 2013-11-04T11:25:45-05:00.<br></footer></div>
 </div>
 </body>
 </html>

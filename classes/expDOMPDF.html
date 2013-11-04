@@ -1,0 +1,270 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Exponent v2.2.4 » \expDOMPDF</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent v2.2.4</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
+<li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
+<li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
+<li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
+<li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
+<li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">1819</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list"><li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct() :: Constructor: initialize a pdf file file."><span class="description">Constructor: initialize a pdf file file.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_createpdf" title="createpdf() :: Render and Return PDF using various options."><span class="description">Render and Return PDF using various options.</span><pre>createpdf()</pre></a></li>
+<li class="method public "><a href="#method_output" title="output() :: Return PDF as a string."><span class="description">Return PDF as a string.</span><pre>output()</pre></a></li>
+<li class="method public "><a href="#method_render" title="render() :: Convert HTML to PDF."><span class="description">Convert HTML to PDF.</span><pre>render()</pre></a></li>
+<li class="method public "><a href="#method_set_grayscale" title="set_grayscale() :: "><span class="description">set_grayscale()
+        </span><pre>set_grayscale()</pre></a></li>
+<li class="method public "><a href="#method_set_html" title="set_html() :: Set html content by string."><span class="description">Set html content by string.</span><pre>set_html()</pre></a></li>
+<li class="method public "><a href="#method_set_html_file" title="set_html_file() :: Set html content by file."><span class="description">Set html content by file.</span><pre>set_html_file()</pre></a></li>
+<li class="method public "><a href="#method_set_orientation" title="set_orientation() :: Set orientation, use constants from this class."><span class="description">Set orientation, use constants from this class.</span><pre>set_orientation()</pre></a></li>
+<li class="method public "><a href="#method_set_page_size" title="set_page_size() :: Set page/paper size."><span class="description">Set page/paper size.</span><pre>set_page_size()</pre></a></li>
+<li class="method public "><a href="#method_set_paper" title="set_paper() :: Set page/paper size."><span class="description">Set page/paper size.</span><pre>set_paper()</pre></a></li>
+<li class="method public "><a href="#method_stream" title="stream() :: Streams the PDF to the client."><span class="description">Streams the PDF to the client.</span><pre>stream()</pre></a></li>
+</ul>
+</li></ul>
+</div>
+<div class="span8">
+<a id="\expDOMPDF"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/expDOMPDF.html">expDOMPDF</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">This is the class expHtmlToPDF</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>define</th>
+<td>"BASE" "../../.."</td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Constructor: initialize a pdf file file.</h2>
+<pre>__construct(string $paper_size, string $orientation, string $html, bool $use_file) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$paper_size</h4>
+<code>string</code><p>page size</p></div>
+<div class="subelement argument">
+<h4>$orientation</h4>
+<code>string</code><p>page orientation</p></div>
+<div class="subelement argument">
+<h4>$html</h4>
+<code>string</code><p>html code for page</p></div>
+<div class="subelement argument">
+<h4>$use_file</h4>
+<code>bool</code><p>a flag to show $html is an html file location to be loaded</p>
+</div>
+</div></div>
+</div>
+<a id="method_createpdf"></a><div class="element clickable method public method_createpdf" data-toggle="collapse" data-target=".method_createpdf .collapse">
+<h2>Render and Return PDF using various options.</h2>
+<pre>createpdf(string $mode, string $file) : string | boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mode</h4>
+<code>string</code><p>How to output (constants from this same class).</p>
+</div>
+<div class="subelement argument">
+<h4>$file</h4>
+<code>string</code><p>The PDF's filename (the usage depends on $mode.</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code><code>boolean</code>Depending on $mode, this may be success (boolean) or PDF (string).</div>
+</div></div>
+</div>
+<a id="method_output"></a><div class="element clickable method public method_output" data-toggle="collapse" data-target=".method_output .collapse">
+<h2>Return PDF as a string.</h2>
+<pre>output(int $compress) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$compress</h4>
+<code>int</code><p>compress the output</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_render"></a><div class="element clickable method public method_render" data-toggle="collapse" data-target=".method_render .collapse">
+<h2>Convert HTML to PDF.</h2>
+<pre>render() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_set_grayscale"></a><div class="element clickable method public method_set_grayscale" data-toggle="collapse" data-target=".method_set_grayscale .collapse">
+<h2>set_grayscale()
+        </h2>
+<pre>set_grayscale($mode) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$mode</h4></div>
+</div></div>
+</div>
+<a id="method_set_html"></a><div class="element clickable method public method_set_html" data-toggle="collapse" data-target=".method_set_html .collapse">
+<h2>Set html content by string.</h2>
+<pre>set_html(string $html, null $encoding) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$html</h4>
+<code>string</code><p>html content.</p></div>
+<div class="subelement argument">
+<h4>$encoding</h4>
+<code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_set_html_file"></a><div class="element clickable method public method_set_html_file" data-toggle="collapse" data-target=".method_set_html_file .collapse">
+<h2>Set html content by file.</h2>
+<pre>set_html_file(string $htmlfile) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$htmlfile</h4>
+<code>string</code><p>the html file to use</p></div>
+</div></div>
+</div>
+<a id="method_set_orientation"></a><div class="element clickable method public method_set_orientation" data-toggle="collapse" data-target=".method_set_orientation .collapse">
+<h2>Set orientation, use constants from this class.</h2>
+<pre>set_orientation(string $orientation) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">By default orientation is portrait.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$orientation</h4>
+<code>string</code><p>orientation of paper</p></div>
+</div></div>
+</div>
+<a id="method_set_page_size"></a><div class="element clickable method public method_set_page_size" data-toggle="collapse" data-target=".method_set_page_size .collapse">
+<h2>Set page/paper size.</h2>
+<pre>set_page_size(string $size) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">By default page size is A4.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$size</h4>
+<code>string</code><p>Formal paper size (eg; A4, letter...)</p>
+</div>
+</div></div>
+</div>
+<a id="method_set_paper"></a><div class="element clickable method public method_set_paper" data-toggle="collapse" data-target=".method_set_paper .collapse">
+<h2>Set page/paper size.</h2>
+<pre>set_paper(string $size, string $orientation) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">By default page size is A4.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$size</h4>
+<code>string</code><p>Formal paper size (eg; A4, letter...)</p>
+</div>
+<div class="subelement argument">
+<h4>$orientation</h4>
+<code>string</code><p>orientation of paper</p></div>
+</div></div>
+</div>
+<a id="method_stream"></a><div class="element clickable method public method_stream" data-toggle="collapse" data-target=".method_stream .collapse">
+<h2>Streams the PDF to the client.</h2>
+<pre>stream(string $filename, array $options) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$filename</h4>
+<code>string</code><p>the pdf file to output</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>options
+                        'compress' = > 1 or 0 - apply content stream compression, this is on (1) by default
+                        ◦   'Attachment' => 1 or 0 - if 1, force the browser to open a download dialog, on (1) by default</p>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2013-11-04T11:25:51-05:00.<br></footer></div>
+</div>
+</body>
+</html>
