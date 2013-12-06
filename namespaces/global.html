@@ -19,6 +19,9 @@
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Composer.html"><i class="icon-th"></i> Composer</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
 <li><a>Packages</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
 <li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
@@ -28,6 +31,7 @@
 <li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
+<li><a href="../packages/elFinder.html"><i class="icon-folder-open"></i> elFinder</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -38,7 +42,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">1819</span></a></li>
+                <span class="label label-info">2301</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -66,7 +70,7 @@
 <span class="empty-namespace"><i class="icon-stop"></i>global</span><ul class="nav nav-list nav-namespaces"></ul>
 </li>
 <li class="nav-header">
-<i class="icon-custom icon-function"></i> Functions</li>
+<i title="Functions" class="icon-custom icon-function"></i> Functions</li>
 <li class="function  "><a href="#function_BuildTree" title="BuildTree() :: "><span class="description">BuildTree()
         </span><pre>BuildTree</pre></a></li>
 <li class="function  "><a href="#function___realpath" title="__realpath() :: "><span class="description">__realpath()
@@ -93,9 +97,14 @@
         </span><pre>_sanity_checkZlib</pre></a></li>
 <li class="function  "><a href="#function__sanity_checkcURL" title="_sanity_checkcURL() :: "><span class="description">_sanity_checkcURL()
         </span><pre>_sanity_checkcURL</pre></a></li>
+<li class="function  "><a href="#function_access" title='access() :: Simple function to demonstrate how to control file access using "accessControl" callback.'><span class="description">Simple function to demonstrate how to control file access using "accessControl" callback.</span><pre>access</pre></a></li>
 <li class="function  "><a href="#function_addPlus" title="addPlus() :: "><span class="description">addPlus()
         </span><pre>addPlus</pre></a></li>
 <li class="function  "><a href="#function_assign_to_template" title="assign_to_template() :: Assign a variable to the current template"><span class="description">Assign a variable to the current template</span><pre>assign_to_template</pre></a></li>
+<li class="function  "><a href="#function_bar" title="bar() :: "><span class="description">bar()
+        </span><pre>bar</pre></a></li>
+<li class="function  "><a href="#function_bar" title="bar() :: "><span class="description">bar()
+        </span><pre>bar</pre></a></li>
 <li class="function  "><a href="#function_build_menu" title="build_menu() :: "><span class="description">build_menu()
         </span><pre>build_menu</pre></a></li>
 <li class="function  "><a href="#function_collapse" title="collapse() :: "><span class="description">collapse()
@@ -106,8 +115,15 @@
         </span><pre>createValidId</pre></a></li>
 <li class="function  "><a href="#function_curPageURL" title="curPageURL() :: "><span class="description">curPageURL()
         </span><pre>curPageURL</pre></a></li>
+<li class="function  "><a href="#function_debug" title="debug() :: "><span class="description">debug()
+        </span><pre>debug</pre></a></li>
 <li class="function  "><a href="#function_deletePost" title="deletePost() :: "><span class="description">deletePost()
         </span><pre>deletePost</pre></a></li>
+<li class="function  "><a href="#function_displayXHProfReport" title="displayXHProfReport() :: Generate a XHProf Display View given the various URL parameters
+as arguments. The first argument is an object that implements
+the iXHProfRuns interface."><span class="description">Generate a XHProf Display View given the various URL parameters
+as arguments. The first argument is an object that implements
+the iXHProfRuns interface.</span><pre>displayXHProfReport</pre></a></li>
 <li class="function  "><a href="#function_do_dir" title="do_dir() :: "><span class="description">do_dir()
         </span><pre>do_dir</pre></a></li>
 <li class="function  "><a href="#function_do_dir" title="do_dir() :: "><span class="description">do_dir()
@@ -136,6 +152,8 @@
         </span><pre>epb</pre></a></li>
 <li class="function  "><a href="#function_epb" title="epb() :: "><span class="description">epb()
         </span><pre>epb</pre></a></li>
+<li class="function  "><a href="#function_existing_links" title="existing_links() :: "><span class="description">existing_links()
+        </span><pre>existing_links</pre></a></li>
 <li class="function  "><a href="#function_expLoadClasses" title="expLoadClasses() :: exdoc
 This function overrides the default PHP5 autoloader,
 and instead looks at the $auto_dirs global to look
@@ -158,8 +176,13 @@ just before it gets rendered to the screen should happen here.</span><pre>expPro
         </span><pre>flash</pre></a></li>
 <li class="function  "><a href="#function_flashAndFlow" title="flashAndFlow() :: "><span class="description">flashAndFlow()
         </span><pre>flashAndFlow</pre></a></li>
+<li class="function  "><a href="#function_foo" title="foo() :: "><span class="description">foo()
+        </span><pre>foo</pre></a></li>
+<li class="function  "><a href="#function_foo" title="foo() :: "><span class="description">foo()
+        </span><pre>foo</pre></a></li>
 <li class="function  "><a href="#function_fs" title="fs() :: "><span class="description">fs()
         </span><pre>fs</pre></a></li>
+<li class="function  "><a href="#function_full_report" title="full_report() :: Generates a tabular report for all functions. This is the top-level report."><span class="description">Generates a tabular report for all functions. This is the top-level report.</span><pre>full_report</pre></a></li>
 <li class="function  "><a href="#function_getCategories" title="getCategories() :: "><span class="description">getCategories()
         </span><pre>getCategories</pre></a></li>
 <li class="function  "><a href="#function_getPost" title="getPost() :: "><span class="description">getPost()
@@ -175,8 +198,10 @@ just before it gets rendered to the screen should happen here.</span><pre>expPro
 <li class="function  "><a href="#function_get_filedisplay_views" title="get_filedisplay_views() :: Return list of attached file display views available"><span class="description">Return list of attached file display views available</span><pre>get_filedisplay_views</pre></a></li>
 <li class="function  "><a href="#function_get_model_for_controller" title="get_model_for_controller() :: "><span class="description">get_model_for_controller()
         </span><pre>get_model_for_controller</pre></a></li>
+<li class="function  "><a href="#function_get_print_class" title="get_print_class() :: Given a number, returns the td class to use for display."><span class="description">Given a number, returns the td class to use for display.</span><pre>get_print_class</pre></a></li>
 <li class="function  "><a href="#function_get_template_for_action" title="get_template_for_action() :: "><span class="description">get_template_for_action()
         </span><pre>get_template_for_action</pre></a></li>
+<li class="function  "><a href="#function_get_tooltip_attributes" title="get_tooltip_attributes() :: Return attribute names and values to be used by javascript tooltip."><span class="description">Return attribute names and values to be used by javascript tooltip.</span><pre>get_tooltip_attributes</pre></a></li>
 <li class="function  "><a href="#function_glist" title="glist() :: "><span class="description">glist()
         </span><pre>glist</pre></a></li>
 <li class="function  "><a href="#function_gt" title="gt() :: "><span class="description">gt()
@@ -185,8 +210,20 @@ just before it gets rendered to the screen should happen here.</span><pre>expPro
         </span><pre>handleErrors</pre></a></li>
 <li class="function  "><a href="#function_hotspot" title="hotspot() :: "><span class="description">hotspot()
         </span><pre>hotspot</pre></a></li>
+<li class="function  "><a href="#function_http_link" title="http_link() :: "><span class="description">http_link()
+        </span><pre>http_link</pre></a></li>
+<li class="function  "><a href="#function_init_metrics" title="init_metrics() :: Initialize the metrics we'll display based on the information
+in the raw data."><span class="description">Initialize the metrics we'll display based on the information
+in the raw data.</span><pre>init_metrics</pre></a></li>
+<li class="function  "><a href="#function_insert_link" title="insert_link() :: "><span class="description">insert_link()
+        </span><pre>insert_link</pre></a></li>
 <li class="function  "><a href="#function_isAllGood" title="isAllGood() :: "><span class="description">isAllGood()
         </span><pre>isAllGood</pre></a></li>
+<li class="function  "><a href="#function_logger" title="logger() :: Smart logger function
+Demonstrate how to work with elFinder event api"><span class="description">Smart logger function
+Demonstrate how to work with elFinder event api</span><pre>logger</pre></a></li>
+<li class="function  "><a href="#function_mail_link" title="mail_link() :: "><span class="description">mail_link()
+        </span><pre>mail_link</pre></a></li>
 <li class="function  "><a href="#function_makeLink" title="makeLink() :: "><span class="description">makeLink()
         </span><pre>makeLink</pre></a></li>
 <li class="function  "><a href="#function_newMediaObject" title="newMediaObject() :: "><span class="description">newMediaObject()
@@ -197,12 +234,42 @@ just before it gets rendered to the screen should happen here.</span><pre>expPro
         </span><pre>oasort</pre></a></li>
 <li class="function  "><a href="#function_object2Array" title="object2Array() :: "><span class="description">object2Array()
         </span><pre>object2Array</pre></a></li>
+<li class="function  "><a href="#function_other_link" title="other_link() :: "><span class="description">other_link()
+        </span><pre>other_link</pre></a></li>
 <li class="function  "><a href="#function_output" title="output() :: "><span class="description">output()
         </span><pre>output</pre></a></li>
 <li class="function  "><a href="#function_output" title="output() :: "><span class="description">output()
         </span><pre>output</pre></a></li>
 <li class="function  "><a href="#function_parse_files" title="parse_files() :: "><span class="description">parse_files()
         </span><pre>parse_files</pre></a></li>
+<li class="function  "><a href="#function_pc_info" title="pc_info() :: Print info for a parent or child function in the
+parent &amp; children report."><span class="description">Print info for a parent or child function in the
+parent &amp; children report.</span><pre>pc_info</pre></a></li>
+<li class="function  "><a href="#function_pct" title="pct() :: Computes percentage for a pair of values, and returns it
+in string format."><span class="description">Computes percentage for a pair of values, and returns it
+in string format.</span><pre>pct</pre></a></li>
+<li class="function  "><a href="#function_print_canonical" title="print_canonical() :: Print xhprof raw data (essentially a callgraph) in a canonical style,
+so that even if the ordering of things within the raw_data (which is
+an associative array) changes in future implementations the output
+remains stable."><span class="description">Print xhprof raw data (essentially a callgraph) in a canonical style,
+so that even if the ordering of things within the raw_data (which is
+an associative array) changes in future implementations the output
+remains stable.</span><pre>print_canonical</pre></a></li>
+<li class="function  "><a href="#function_print_flat_data" title="print_flat_data() :: Print non-hierarchical (flat-view) of profiler data."><span class="description">Print non-hierarchical (flat-view) of profiler data.</span><pre>print_flat_data</pre></a></li>
+<li class="function  "><a href="#function_print_function_info" title='print_function_info() :: Print "flat" data corresponding to one function.'><span class="description">Print "flat" data corresponding to one function.</span><pre>print_function_info</pre></a></li>
+<li class="function  "><a href="#function_print_pc_array" title="print_pc_array() :: "><span class="description">print_pc_array()
+        </span><pre>print_pc_array</pre></a></li>
+<li class="function  "><a href="#function_print_source_link" title="print_source_link() :: "><span class="description">print_source_link()
+        </span><pre>print_source_link</pre></a></li>
+<li class="function  "><a href="#function_print_symbol_summary" title="print_symbol_summary() :: "><span class="description">print_symbol_summary()
+        </span><pre>print_symbol_summary</pre></a></li>
+<li class="function  "><a href="#function_print_td_num" title="print_td_num() :: Prints a &lt;td&gt; element with a numeric value."><span class="description">Prints a &lt;td&gt; element with a numeric value.</span><pre>print_td_num</pre></a></li>
+<li class="function  "><a href="#function_print_td_pct" title="print_td_pct() :: Prints a &lt;td&gt; element with a pecentage."><span class="description">Prints a &lt;td&gt; element with a pecentage.</span><pre>print_td_pct</pre></a></li>
+<li class="function  "><a href="#function_profiler_diff_report" title="profiler_diff_report() :: Generate the profiler report for diff mode (delta between two runs)."><span class="description">Generate the profiler report for diff mode (delta between two runs).</span><pre>profiler_diff_report</pre></a></li>
+<li class="function  "><a href="#function_profiler_report" title="profiler_report() :: Analyze raw data &amp; generate the profiler report
+(common for both single run mode and diff mode)."><span class="description">Analyze raw data &amp; generate the profiler report
+(common for both single run mode and diff mode).</span><pre>profiler_report</pre></a></li>
+<li class="function  "><a href="#function_profiler_single_run_report" title="profiler_single_run_report() :: Generate the profiler report for a single run."><span class="description">Generate the profiler report for a single run.</span><pre>profiler_single_run_report</pre></a></li>
 <li class="function  "><a href="#function_quoted_printable_encode" title="quoted_printable_encode() :: "><span class="description">quoted_printable_encode()
         </span><pre>quoted_printable_encode</pre></a></li>
 <li class="function  "><a href="#function_recurseBuild" title="recurseBuild() :: "><span class="description">recurseBuild()
@@ -218,7 +285,18 @@ just before it gets rendered to the screen should happen here.</span><pre>expPro
         </span><pre>sanity_checkFiles</pre></a></li>
 <li class="function  "><a href="#function_sanity_checkServer" title="sanity_checkServer() :: "><span class="description">sanity_checkServer()
         </span><pre>sanity_checkServer</pre></a></li>
+<li class="function  "><a href="#function_scan_container" title="scan_container() :: "><span class="description">scan_container()
+        </span><pre>scan_container</pre></a></li>
+<li class="function  "><a href="#function_scan_page" title="scan_page() :: "><span class="description">scan_page()
+        </span><pre>scan_page</pre></a></li>
 <li class="function  "><a href="#function_show_msg_queue" title="show_msg_queue() :: Display the message queue"><span class="description">Display the message queue</span><pre>show_msg_queue</pre></a></li>
+<li class="function  "><a href="#function_smarty_block_assocarray" title="smarty_block_assocarray() :: Smarty {assocarray} block plugin
+Type:     block&lt;br&gt;
+Name:     assocarray&lt;br&gt;
+Purpose:  Set up a associatvie array"><span class="description">Smarty {assocarray} block plugin
+Type:     block&lt;br&gt;
+Name:     assocarray&lt;br&gt;
+Purpose:  Set up a associatvie array</span><pre>smarty_block_assocarray</pre></a></li>
 <li class="function  "><a href="#function_smarty_block_css" title="smarty_block_css() :: Smarty {css} block plugin"><span class="description">Smarty {css} block plugin</span><pre>smarty_block_css</pre></a></li>
 <li class="function  "><a href="#function_smarty_block_form" title="smarty_block_form() :: Smarty {form} block plugin"><span class="description">Smarty {form} block plugin</span><pre>smarty_block_form</pre></a></li>
 <li class="function  "><a href="#function_smarty_block_group" title="smarty_block_group() :: Smarty {group} block plugin"><span class="description">Smarty {group} block plugin</span><pre>smarty_block_group</pre></a></li>
@@ -363,16 +441,146 @@ Purpose:  return the username for a user id</span><pre>smarty_modifier_username<
 <li class="function  "><a href="#function_smarty_postfilter_switch" title="smarty_postfilter_switch() :: Filter the template after it is generated to fix switch bugs."><span class="description">Filter the template after it is generated to fix switch bugs.</span><pre>smarty_postfilter_switch</pre></a></li>
 <li class="function  "><a href="#function_sortSearch" title="sortSearch() :: "><span class="description">sortSearch()
         </span><pre>sortSearch</pre></a></li>
+<li class="function  "><a href="#function_sort_cbk" title="sort_cbk() :: Callback comparison operator (passed to usort() for sorting array of
+tuples) that compares array elements based on the sort column
+specified in $sort_col (global parameter)."><span class="description">Callback comparison operator (passed to usort() for sorting array of
+tuples) that compares array elements based on the sort column
+specified in $sort_col (global parameter).</span><pre>sort_cbk</pre></a></li>
+<li class="function  "><a href="#function_stat_description" title="stat_description() :: Get the appropriate description for a statistic
+(depending upon whether we are in diff report mode
+or single run report mode)."><span class="description">Get the appropriate description for a statistic
+(depending upon whether we are in diff report mode
+or single run report mode).</span><pre>stat_description</pre></a></li>
 <li class="function  "><a href="#function_stripslashes_deep" title="stripslashes_deep() :: "><span class="description">stripslashes_deep()
         </span><pre>stripslashes_deep</pre></a></li>
+<li class="function  "><a href="#function_symbol_report" title="symbol_report() :: Generates a report for a single function/symbol."><span class="description">Generates a report for a single function/symbol.</span><pre>symbol_report</pre></a></li>
 <li class="function  "><a href="#function_tmp_removePrefix" title="tmp_removePrefix() :: "><span class="description">tmp_removePrefix()
         </span><pre>tmp_removePrefix</pre></a></li>
 <li class="function  "><a href="#function_tmp_removePrefix" title="tmp_removePrefix() :: "><span class="description">tmp_removePrefix()
         </span><pre>tmp_removePrefix</pre></a></li>
+<li class="function  "><a href="#function_twitter_link" title="twitter_link() :: "><span class="description">twitter_link()
+        </span><pre>twitter_link</pre></a></li>
 <li class="function  "><a href="#function_userLogin" title="userLogin() :: "><span class="description">userLogin()
         </span><pre>userLogin</pre></a></li>
+<li class="function  "><a href="#function_validName" title="validName() :: "><span class="description">validName()
+        </span><pre>validName</pre></a></li>
+<li class="function  "><a href="#function_xhprof_aggregate_runs" title="xhprof_aggregate_runs() :: Get raw data corresponding to specified array of runs
+aggregated by certain weightage."><span class="description">Get raw data corresponding to specified array of runs
+aggregated by certain weightage.</span><pre>xhprof_aggregate_runs</pre></a></li>
+<li class="function  "><a href="#function_xhprof_array_set" title="xhprof_array_set() :: Set one key in an array and return the array"><span class="description">Set one key in an array and return the array</span><pre>xhprof_array_set</pre></a></li>
+<li class="function  "><a href="#function_xhprof_array_unset" title="xhprof_array_unset() :: Removes/unsets one key in an array and return the array"><span class="description">Removes/unsets one key in an array and return the array</span><pre>xhprof_array_unset</pre></a></li>
+<li class="function  "><a href="#function_xhprof_build_parent_child_key" title="xhprof_build_parent_child_key() :: Given parent &amp; child function name, composes the key
+in the format present in the raw data."><span class="description">Given parent &amp; child function name, composes the key
+in the format present in the raw data.</span><pre>xhprof_build_parent_child_key</pre></a></li>
+<li class="function  "><a href="#function_xhprof_compute_diff" title="xhprof_compute_diff() :: Hierarchical diff:
+Compute and return difference of two call graphs: Run2 - Run1."><span class="description">Hierarchical diff:
+Compute and return difference of two call graphs: Run2 - Run1.</span><pre>xhprof_compute_diff</pre></a></li>
+<li class="function  "><a href="#function_xhprof_compute_flat_info" title="xhprof_compute_flat_info() :: Analyze hierarchical raw data, and compute per-function (flat)
+inclusive and exclusive metrics."><span class="description">Analyze hierarchical raw data, and compute per-function (flat)
+inclusive and exclusive metrics.</span><pre>xhprof_compute_flat_info</pre></a></li>
+<li class="function  "><a href="#function_xhprof_compute_inclusive_times" title="xhprof_compute_inclusive_times() :: Compute inclusive metrics for function. This code was factored out
+of xhprof_compute_flat_info()."><span class="description">Compute inclusive metrics for function. This code was factored out
+of xhprof_compute_flat_info().</span><pre>xhprof_compute_inclusive_times</pre></a></li>
+<li class="function  "><a href="#function_xhprof_count_format" title="xhprof_count_format() :: "><span class="description">xhprof_count_format()
+        </span><pre>xhprof_count_format</pre></a></li>
+<li class="function  "><a href="#function_xhprof_error" title="xhprof_error() :: "><span class="description">xhprof_error()
+        </span><pre>xhprof_error</pre></a></li>
+<li class="function  "><a href="#function_xhprof_generate_dot_script" title="xhprof_generate_dot_script() :: Generate DOT script from the given raw phprof data."><span class="description">Generate DOT script from the given raw phprof data.</span><pre>xhprof_generate_dot_script</pre></a></li>
+<li class="function  "><a href="#function_xhprof_generate_image_by_dot" title='xhprof_generate_image_by_dot() :: Generate image according to DOT script. This function will spawn a process
+with "dot" command and pipe the "dot_script" to it and pipe out the
+generated image content.'><span class="description">Generate image according to DOT script. This function will spawn a process
+with "dot" command and pipe the "dot_script" to it and pipe out the
+generated image content.</span><pre>xhprof_generate_image_by_dot</pre></a></li>
+<li class="function  "><a href="#function_xhprof_generate_mime_header" title="xhprof_generate_mime_header() :: Genearte and send MIME header for the output image to client browser."><span class="description">Genearte and send MIME header for the output image to client browser.</span><pre>xhprof_generate_mime_header</pre></a></li>
+<li class="function  "><a href="#function_xhprof_get_bool_param" title="xhprof_get_bool_param() :: Extracts value for a boolean param $param from
+query string. If param is not specified, return
+the $default value."><span class="description">Extracts value for a boolean param $param from
+query string. If param is not specified, return
+the $default value.</span><pre>xhprof_get_bool_param</pre></a></li>
+<li class="function  "><a href="#function_xhprof_get_children_table" title="xhprof_get_children_table() :: "><span class="description">xhprof_get_children_table()
+        </span><pre>xhprof_get_children_table</pre></a></li>
+<li class="function  "><a href="#function_xhprof_get_content_by_run" title="xhprof_get_content_by_run() :: Generate image content from phprof run id."><span class="description">Generate image content from phprof run id.</span><pre>xhprof_get_content_by_run</pre></a></li>
+<li class="function  "><a href="#function_xhprof_get_float_param" title="xhprof_get_float_param() :: Extracts value for a float param $param from
+query string. If param is not specified, return
+the $default value."><span class="description">Extracts value for a float param $param from
+query string. If param is not specified, return
+the $default value.</span><pre>xhprof_get_float_param</pre></a></li>
+<li class="function  "><a href="#function_xhprof_get_matching_functions" title="xhprof_get_matching_functions() :: Given a partial query string $q return matching function names in
+specified XHProf run. This is used for the type ahead function
+selector."><span class="description">Given a partial query string $q return matching function names in
+specified XHProf run. This is used for the type ahead function
+selector.</span><pre>xhprof_get_matching_functions</pre></a></li>
+<li class="function  "><a href="#function_xhprof_get_metrics" title="xhprof_get_metrics() :: "><span class="description">xhprof_get_metrics()
+        </span><pre>xhprof_get_metrics</pre></a></li>
+<li class="function  "><a href="#function_xhprof_get_param_helper" title="xhprof_get_param_helper() :: Internal helper function used by various
+xhprof_get_param* flavors for various
+types of parameters."><span class="description">Internal helper function used by various
+xhprof_get_param* flavors for various
+types of parameters.</span><pre>xhprof_get_param_helper</pre></a></li>
+<li class="function  "><a href="#function_xhprof_get_possible_metrics" title="xhprof_get_possible_metrics() :: "><span class="description">xhprof_get_possible_metrics()
+        </span><pre>xhprof_get_possible_metrics</pre></a></li>
+<li class="function  "><a href="#function_xhprof_get_string_param" title="xhprof_get_string_param() :: Extracts value for string param $param from query
+string. If param is not specified, return the
+$default value."><span class="description">Extracts value for string param $param from query
+string. If param is not specified, return the
+$default value.</span><pre>xhprof_get_string_param</pre></a></li>
+<li class="function  "><a href="#function_xhprof_get_uint_param" title="xhprof_get_uint_param() :: Extracts value for unsigned integer param $param from
+query string. If param is not specified, return the
+$default value."><span class="description">Extracts value for unsigned integer param $param from
+query string. If param is not specified, return the
+$default value.</span><pre>xhprof_get_uint_param</pre></a></li>
+<li class="function  "><a href="#function_xhprof_http_header" title="xhprof_http_header() :: Send an HTTP header with the response. You MUST use this function instead
+of header() so that we can debug header issues because they're virtually
+impossible to debug otherwise. If you try to commit header(), SVN will
+reject your commit."><span class="description">Send an HTTP header with the response. You MUST use this function instead
+of header() so that we can debug header issues because they're virtually
+impossible to debug otherwise. If you try to commit header(), SVN will
+reject your commit.</span><pre>xhprof_http_header</pre></a></li>
+<li class="function  "><a href="#function_xhprof_include_js_css" title="xhprof_include_js_css() :: Generate references to required stylesheets &amp; javascript."><span class="description">Generate references to required stylesheets &amp; javascript.</span><pre>xhprof_include_js_css</pre></a></li>
+<li class="function  "><a href="#function_xhprof_normalize_metrics" title='xhprof_normalize_metrics() :: Takes raw XHProf data that was aggregated over "$num_runs" number
+of runs averages/nomalizes the data. Essentially the various metrics
+collected are divided by $num_runs.'><span class="description">Takes raw XHProf data that was aggregated over "$num_runs" number
+of runs averages/nomalizes the data. Essentially the various metrics
+collected are divided by $num_runs.</span><pre>xhprof_normalize_metrics</pre></a></li>
+<li class="function  "><a href="#function_xhprof_param_init" title="xhprof_param_init() :: Initialize params from URL query string. The function
+creates globals variables for each of the params
+and if the URL query string doesn't specify a particular
+param initializes them with the corresponding default
+value specified in the input."><span class="description">Initialize params from URL query string. The function
+creates globals variables for each of the params
+and if the URL query string doesn't specify a particular
+param initializes them with the corresponding default
+value specified in the input.</span><pre>xhprof_param_init</pre></a></li>
+<li class="function  "><a href="#function_xhprof_parse_parent_child" title='xhprof_parse_parent_child() :: Takes a parent/child function name encoded as
+"a==&gt;b" and returns array("a", "b").'><span class="description">Takes a parent/child function name encoded as
+"a==&gt;b" and returns array("a", "b").</span><pre>xhprof_parse_parent_child</pre></a></li>
+<li class="function  "><a href="#function_xhprof_percent_format" title="xhprof_percent_format() :: "><span class="description">xhprof_percent_format()
+        </span><pre>xhprof_percent_format</pre></a></li>
+<li class="function  "><a href="#function_xhprof_prune_run" title="xhprof_prune_run() :: "><span class="description">xhprof_prune_run()
+        </span><pre>xhprof_prune_run</pre></a></li>
+<li class="function  "><a href="#function_xhprof_render_actions" title="xhprof_render_actions() :: Implodes the text for a bunch of actions (such as links, forms,
+into a HTML list and returns the text."><span class="description">Implodes the text for a bunch of actions (such as links, forms,
+into a HTML list and returns the text.</span><pre>xhprof_render_actions</pre></a></li>
+<li class="function  "><a href="#function_xhprof_render_diff_image" title="xhprof_render_diff_image() :: "><span class="description">xhprof_render_diff_image()
+        </span><pre>xhprof_render_diff_image</pre></a></li>
+<li class="function  "><a href="#function_xhprof_render_image" title="xhprof_render_image() :: Generate image from phprof run id and send it to client."><span class="description">Generate image from phprof run id and send it to client.</span><pre>xhprof_render_image</pre></a></li>
+<li class="function  "><a href="#function_xhprof_render_link" title="xhprof_render_link() :: "><span class="description">xhprof_render_link()
+        </span><pre>xhprof_render_link</pre></a></li>
+<li class="function  "><a href="#function_xhprof_trim_run" title="xhprof_trim_run() :: Return a trimmed version of the XHProf raw data. Note that the raw
+data contains one entry for each unique parent/child function
+combination.The trimmed version of raw data will only contain
+entries where either the parent or child function is in the list
+of $functions_to_keep."><span class="description">Return a trimmed version of the XHProf raw data. Note that the raw
+data contains one entry for each unique parent/child function
+combination.The trimmed version of raw data will only contain
+entries where either the parent or child function is in the list
+of $functions_to_keep.</span><pre>xhprof_trim_run</pre></a></li>
+<li class="function  "><a href="#function_xhprof_valid_run" title="xhprof_valid_run() :: Checks if XHProf raw data appears to be valid and not corrupted."><span class="description">Checks if XHProf raw data appears to be valid and not corrupted.</span><pre>xhprof_valid_run</pre></a></li>
 <li class="nav-header">
-<i class="icon-custom icon-class"></i> Classes</li>
+<i title="Interfaces" class="icon-custom icon-interface"></i> Interfaces</li>
+<li><a href="#iXHProfRuns" title="iXHProfRuns interface for getting/saving a XHProf run.">iXHProfRuns</a></li>
+<li class="nav-header">
+<i title="Classes" class="icon-custom icon-class"></i> Classes</li>
 <li><a href="#expHTMLEditorController" title="This is the class expHTMLEditorController">expHTMLEditorController</a></li>
 <li><a href="#expTagController" title="This is the class expTagController">expTagController</a></li>
 <li><a href="#user_signature" title="This is the class expRecord">user_signature</a></li>
@@ -402,7 +610,9 @@ simple text entry date and/or time">datetimecontrol</a></li>
 <li><a href="#payflowpro" title="This is the class expRecord">payflowpro</a></li>
 <li><a href="#fix_table_names" title="This is the class fix_table_names">fix_table_names</a></li>
 <li><a href="#texteditorcontrol" title="Text Editor Control - displays text area widget">texteditorcontrol</a></li>
+<li><a href="#sectionref" title="This is the class expRecord">sectionref</a></li>
 <li><a href="#reportController" title="This is the class expController">reportController</a></li>
+<li><a href="#youtubeController" title="This is the class expController">youtubeController</a></li>
 <li><a href="#shipping" title="This is the class expRecord">shipping</a></li>
 <li><a href="#template" title="Wraps the OS modules template system in use, to provide a uniform and consistent
 interface to templates.">template</a></li>
@@ -526,6 +736,7 @@ Exponent History Subsystem">expHistory</a></li>
 <li><a href="#shopping_product_types" title="This is the class expNestedNode">shopping_product_types</a></li>
 <li><a href="#radiocontrol" title="Radio Button Control class">radiocontrol</a></li>
 <li><a href="#discounts" title="This is the class expRecord">discounts</a></li>
+<li><a href="#flowplayerController" title="This is the class expController">flowplayerController</a></li>
 <li><a href="#linksController" title="This is the class expController">linksController</a></li>
 <li><a href="#product_type" title="This is the class expNestedNode">product_type</a></li>
 <li><a href="#search" title="This is the class expRecord">search</a></li>
@@ -726,14 +937,15 @@ text entry hex color w/ pop-up color selector">colorcontrol</a></li>
 <li><a href="#twitterController" title="This is the class expController">twitterController</a></li>
 <li><a href="#upgrade_mediaplayer2" title="This is the class upgrade_mediaplayer2">upgrade_mediaplayer2</a></li>
 <li><a href="#orderitem" title="This is the class expRecord">orderitem</a></li>
-<li><a href="#flowplayerController" title="This is the class expController">flowplayerController</a></li>
-<li><a href="#sectionref" title="This is the class expRecord">sectionref</a></li>
-<li><a href="#youtubeController" title="This is the class expController">youtubeController</a></li>
+<li><a href="#elFinderSimpleLogger" title="Simple logger function.">elFinderSimpleLogger</a></li>
+<li><a href="#elFinderTestACL" title="Access control example class">elFinderTestACL</a></li>
+<li><a href="#fix_sectionref" title="This is the class fix_sectionref">fix_sectionref</a></li>
+<li><a href="#ComposerAutoloaderInitf6fc03a98bbccbaa8d7ab343434b6f89" title="">ComposerAutoloaderInitf6fc03a98bbccbaa8d7ab343434b6f89</a></li>
+<li><a href="#XHProfRuns_Default" title="XHProfRuns_Default is the default implementation of the
+iXHProfRuns interface for saving/fetching XHProf runs.">XHProfRuns_Default</a></li>
 <li class="nav-header">
-<i class="icon-custom icon-constant"></i> Constants</li>
+<i title="Constants" class="icon-custom icon-constant"></i> Constants</li>
 <li class="constant  "><a href="#constant_%22BLANKPADDING%22" title='"BLANKPADDING"() :: '><span class="description">"BLANKPADDING"</span><pre>"BLANKPADDING"</pre></a></li>
-<li class="constant  "><a href="#constant_%22BTN_COLOR%22" title='"BTN_COLOR"() :: '><span class="description">"BTN_COLOR"</span><pre>"BTN_COLOR"</pre></a></li>
-<li class="constant  "><a href="#constant_%22BTN_SIZE%22" title='"BTN_SIZE"() :: '><span class="description">"BTN_SIZE"</span><pre>"BTN_SIZE"</pre></a></li>
 <li class="constant  "><a href="#constant_%22DADALOGIN%22" title='"DADALOGIN"() :: '><span class="description">"DADALOGIN"</span><pre>"DADALOGIN"</pre></a></li>
 <li class="constant  "><a href="#constant_%22LINK1_SECTION%22" title='"LINK1_SECTION"() :: '><span class="description">"LINK1_SECTION"</span><pre>"LINK1_SECTION"</pre></a></li>
 <li class="constant  "><a href="#constant_%22LINK1_SECTION%22" title='"LINK1_SECTION"() :: '><span class="description">"LINK1_SECTION"</span><pre>"LINK1_SECTION"</pre></a></li>
@@ -751,16 +963,10 @@ text entry hex color w/ pop-up color selector">colorcontrol</a></li>
 <li class="constant  "><a href="#constant_%22LOGO_TEXT_MAIN%22" title='"LOGO_TEXT_MAIN"() :: '><span class="description">"LOGO_TEXT_MAIN"</span><pre>"LOGO_TEXT_MAIN"</pre></a></li>
 <li class="constant  "><a href="#constant_%22LOGO_TEXT_SUPERSCRIPT%22" title='"LOGO_TEXT_SUPERSCRIPT"() :: '><span class="description">"LOGO_TEXT_SUPERSCRIPT"</span><pre>"LOGO_TEXT_SUPERSCRIPT"</pre></a></li>
 <li class="constant  "><a href="#constant_%22LOGO_TEXT_SUPERSCRIPT%22" title='"LOGO_TEXT_SUPERSCRIPT"() :: '><span class="description">"LOGO_TEXT_SUPERSCRIPT"</span><pre>"LOGO_TEXT_SUPERSCRIPT"</pre></a></li>
-<li class="constant  "><a href="#constant_%22MENU_ALIGN%22" title='"MENU_ALIGN"() :: '><span class="description">"MENU_ALIGN"</span><pre>"MENU_ALIGN"</pre></a></li>
-<li class="constant  "><a href="#constant_%22MENU_HEIGHT%22" title='"MENU_HEIGHT"() :: '><span class="description">"MENU_HEIGHT"</span><pre>"MENU_HEIGHT"</pre></a></li>
-<li class="constant  "><a href="#constant_%22MENU_LOCATION%22" title='"MENU_LOCATION"() :: '><span class="description">"MENU_LOCATION"</span><pre>"MENU_LOCATION"</pre></a></li>
 <li class="constant  "><a href="#constant_%22SCRIPT_EXP_RELATIVE%22" title='"SCRIPT_EXP_RELATIVE"() :: Glue to open the module selection window for linking content from within the site url/link browser'><span class="description">Glue to open the module selection window for linking content from within the site url/link browser</span><pre>"SCRIPT_EXP_RELATIVE"</pre></a></li>
 <li class="constant  "><a href="#constant_%22SCRIPT_EXP_RELATIVE%22" title='"SCRIPT_EXP_RELATIVE"() :: Implements the quick upload feature within the CKEditor insert dialogs'><span class="description">Implements the quick upload feature within the CKEditor insert dialogs</span><pre>"SCRIPT_EXP_RELATIVE"</pre></a></li>
-<li class="constant  "><a href="#constant_%22SCRIPT_EXP_RELATIVE%22" title='"SCRIPT_EXP_RELATIVE"() :: Implements the browse server feature within the CKEditor insert url/link dialogs'><span class="description">Implements the browse server feature within the CKEditor insert url/link dialogs</span><pre>"SCRIPT_EXP_RELATIVE"</pre></a></li>
 <li class="constant  "><a href="#constant_%22SCRIPT_FILENAME%22" title='"SCRIPT_FILENAME"() :: '><span class="description">"SCRIPT_FILENAME"</span><pre>"SCRIPT_FILENAME"</pre></a></li>
 <li class="constant  "><a href="#constant_%22SCRIPT_FILENAME%22" title='"SCRIPT_FILENAME"() :: '><span class="description">"SCRIPT_FILENAME"</span><pre>"SCRIPT_FILENAME"</pre></a></li>
-<li class="constant  "><a href="#constant_%22SCRIPT_FILENAME%22" title='"SCRIPT_FILENAME"() :: '><span class="description">"SCRIPT_FILENAME"</span><pre>"SCRIPT_FILENAME"</pre></a></li>
-<li class="constant  "><a href="#constant_%22SWATCH%22" title='"SWATCH"() :: '><span class="description">"SWATCH"</span><pre>"SWATCH"</pre></a></li>
 <li class="constant  "><a href="#constant_ADVERTISE_RSS" title="ADVERTISE_RSS() :: "><span class="description">ADVERTISE_RSS</span><pre>ADVERTISE_RSS</pre></a></li>
 <li class="constant  "><a href="#constant_ANTI_SPAM_CONTROL" title="ANTI_SPAM_CONTROL() :: "><span class="description">ANTI_SPAM_CONTROL</span><pre>ANTI_SPAM_CONTROL</pre></a></li>
 <li class="constant  "><a href="#constant_ANTI_SPAM_USERS_SKIP" title="ANTI_SPAM_USERS_SKIP() :: "><span class="description">ANTI_SPAM_USERS_SKIP</span><pre>ANTI_SPAM_USERS_SKIP</pre></a></li>
@@ -771,6 +977,8 @@ text entry hex color w/ pop-up color selector">colorcontrol</a></li>
 <li class="constant  "><a href="#constant_BTN_COLOR" title="BTN_COLOR() :: "><span class="description">BTN_COLOR</span><pre>BTN_COLOR</pre></a></li>
 <li class="constant  "><a href="#constant_BTN_COLOR" title="BTN_COLOR() :: "><span class="description">BTN_COLOR</span><pre>BTN_COLOR</pre></a></li>
 <li class="constant  "><a href="#constant_BTN_COLOR" title="BTN_COLOR() :: "><span class="description">BTN_COLOR</span><pre>BTN_COLOR</pre></a></li>
+<li class="constant  "><a href="#constant_BTN_COLOR" title="BTN_COLOR() :: "><span class="description">BTN_COLOR</span><pre>BTN_COLOR</pre></a></li>
+<li class="constant  "><a href="#constant_BTN_SIZE" title="BTN_SIZE() :: "><span class="description">BTN_SIZE</span><pre>BTN_SIZE</pre></a></li>
 <li class="constant  "><a href="#constant_BTN_SIZE" title="BTN_SIZE() :: "><span class="description">BTN_SIZE</span><pre>BTN_SIZE</pre></a></li>
 <li class="constant  "><a href="#constant_BTN_SIZE" title="BTN_SIZE() :: "><span class="description">BTN_SIZE</span><pre>BTN_SIZE</pre></a></li>
 <li class="constant  "><a href="#constant_BTN_SIZE" title="BTN_SIZE() :: "><span class="description">BTN_SIZE</span><pre>BTN_SIZE</pre></a></li>
@@ -815,6 +1023,7 @@ text entry hex color w/ pop-up color selector">colorcontrol</a></li>
 <li class="constant  "><a href="#constant_DEVELOPMENT" title="DEVELOPMENT() :: "><span class="description">DEVELOPMENT</span><pre>DEVELOPMENT</pre></a></li>
 <li class="constant  "><a href="#constant_DEVELOPMENT" title="DEVELOPMENT() :: "><span class="description">DEVELOPMENT</span><pre>DEVELOPMENT</pre></a></li>
 <li class="constant  "><a href="#constant_DIR_DEFAULT_MODE_STR" title="DIR_DEFAULT_MODE_STR() :: "><span class="description">DIR_DEFAULT_MODE_STR</span><pre>DIR_DEFAULT_MODE_STR</pre></a></li>
+<li class="constant  "><a href="#constant_DISABLE_PRIVACY" title="DISABLE_PRIVACY() :: "><span class="description">DISABLE_PRIVACY</span><pre>DISABLE_PRIVACY</pre></a></li>
 <li class="constant  "><a href="#constant_DISABLE_SSL_WARNING" title="DISABLE_SSL_WARNING() :: "><span class="description">DISABLE_SSL_WARNING</span><pre>DISABLE_SSL_WARNING</pre></a></li>
 <li class="constant  "><a href="#constant_DISPLAY_ATTRIBUTION" title="DISPLAY_ATTRIBUTION() :: "><span class="description">DISPLAY_ATTRIBUTION</span><pre>DISPLAY_ATTRIBUTION</pre></a></li>
 <li class="constant  "><a href="#constant_DISPLAY_DATETIME_FORMAT" title="DISPLAY_DATETIME_FORMAT() :: "><span class="description">DISPLAY_DATETIME_FORMAT</span><pre>DISPLAY_DATETIME_FORMAT</pre></a></li>
@@ -832,6 +1041,7 @@ text entry hex color w/ pop-up color selector">colorcontrol</a></li>
 <li class="constant  "><a href="#constant_ECOM_AUTHORIZENET_AUTH_CAPTURE" title="ECOM_AUTHORIZENET_AUTH_CAPTURE() :: "><span class="description">ECOM_AUTHORIZENET_AUTH_CAPTURE</span><pre>ECOM_AUTHORIZENET_AUTH_CAPTURE</pre></a></li>
 <li class="constant  "><a href="#constant_ECOM_AUTHORIZENET_AUTH_ONLY" title="ECOM_AUTHORIZENET_AUTH_ONLY() :: "><span class="description">ECOM_AUTHORIZENET_AUTH_ONLY</span><pre>ECOM_AUTHORIZENET_AUTH_ONLY</pre></a></li>
 <li class="constant  "><a href="#constant_ECOM_CURRENCY" title="ECOM_CURRENCY() :: "><span class="description">ECOM_CURRENCY</span><pre>ECOM_CURRENCY</pre></a></li>
+<li class="constant  "><a href="#constant_ELFINDER_IMG_PARENT_URL" title="ELFINDER_IMG_PARENT_URL() :: "><span class="description">ELFINDER_IMG_PARENT_URL</span><pre>ELFINDER_IMG_PARENT_URL</pre></a></li>
 <li class="constant  "><a href="#constant_ENABLE_SSL" title="ENABLE_SSL() :: "><span class="description">ENABLE_SSL</span><pre>ENABLE_SSL</pre></a></li>
 <li class="constant  "><a href="#constant_ENABLE_TRACKING" title="ENABLE_TRACKING() :: "><span class="description">ENABLE_TRACKING</span><pre>ENABLE_TRACKING</pre></a></li>
 <li class="constant  "><a href="#constant_EQL_HEADER" title="EQL_HEADER() :: exdoc
@@ -942,6 +1152,10 @@ The absolute url to Exponent's core javascript.</span><pre>JS_URL</pre></a></li>
 <li class="constant  "><a href="#constant_LOGO_TEXT_SUPERSCRIPT" title="LOGO_TEXT_SUPERSCRIPT() :: "><span class="description">LOGO_TEXT_SUPERSCRIPT</span><pre>LOGO_TEXT_SUPERSCRIPT</pre></a></li>
 <li class="constant  "><a href="#constant_MAINTENANCE_MODE" title="MAINTENANCE_MODE() :: "><span class="description">MAINTENANCE_MODE</span><pre>MAINTENANCE_MODE</pre></a></li>
 <li class="constant  "><a href="#constant_MAINTENANCE_MSG_HTML" title="MAINTENANCE_MSG_HTML() :: "><span class="description">MAINTENANCE_MSG_HTML</span><pre>MAINTENANCE_MSG_HTML</pre></a></li>
+<li class="constant  "><a href="#constant_MENU_ALIGN" title="MENU_ALIGN() :: "><span class="description">MENU_ALIGN</span><pre>MENU_ALIGN</pre></a></li>
+<li class="constant  "><a href="#constant_MENU_HEIGHT" title="MENU_HEIGHT() :: "><span class="description">MENU_HEIGHT</span><pre>MENU_HEIGHT</pre></a></li>
+<li class="constant  "><a href="#constant_MENU_LOCATION" title="MENU_LOCATION() :: "><span class="description">MENU_LOCATION</span><pre>MENU_LOCATION</pre></a></li>
+<li class="constant  "><a href="#constant_MENU_WIDTH" title="MENU_WIDTH() :: "><span class="description">MENU_WIDTH</span><pre>MENU_WIDTH</pre></a></li>
 <li class="constant  "><a href="#constant_MIMEICON_RELATIVE" title="MIMEICON_RELATIVE() :: "><span class="description">MIMEICON_RELATIVE</span><pre>MIMEICON_RELATIVE</pre></a></li>
 <li class="constant  "><a href="#constant_MINIFY" title="MINIFY() :: "><span class="description">MINIFY</span><pre>MINIFY</pre></a></li>
 <li class="constant  "><a href="#constant_MINIFY_ERROR_LOGGER" title="MINIFY_ERROR_LOGGER() :: "><span class="description">MINIFY_ERROR_LOGGER</span><pre>MINIFY_ERROR_LOGGER</pre></a></li>
@@ -989,6 +1203,8 @@ The absolute url to Exponent's core javascript.</span><pre>JS_URL</pre></a></li>
 <li class="constant  "><a href="#constant_SCRIPT_EXP_RELATIVE" title="SCRIPT_EXP_RELATIVE() :: "><span class="description">SCRIPT_EXP_RELATIVE</span><pre>SCRIPT_EXP_RELATIVE</pre></a></li>
 <li class="constant  "><a href="#constant_SCRIPT_EXP_RELATIVE" title="SCRIPT_EXP_RELATIVE() :: "><span class="description">SCRIPT_EXP_RELATIVE</span><pre>SCRIPT_EXP_RELATIVE</pre></a></li>
 <li class="constant  "><a href="#constant_SCRIPT_EXP_RELATIVE" title="SCRIPT_EXP_RELATIVE() :: "><span class="description">SCRIPT_EXP_RELATIVE</span><pre>SCRIPT_EXP_RELATIVE</pre></a></li>
+<li class="constant  "><a href="#constant_SCRIPT_EXP_RELATIVE" title="SCRIPT_EXP_RELATIVE() :: Implements the browse server feature within the CKEditor insert url/link dialogs"><span class="description">Implements the browse server feature within the CKEditor insert url/link dialogs</span><pre>SCRIPT_EXP_RELATIVE</pre></a></li>
+<li class="constant  "><a href="#constant_SCRIPT_FILENAME" title="SCRIPT_FILENAME() :: "><span class="description">SCRIPT_FILENAME</span><pre>SCRIPT_FILENAME</pre></a></li>
 <li class="constant  "><a href="#constant_SCRIPT_FILENAME" title="SCRIPT_FILENAME() :: "><span class="description">SCRIPT_FILENAME</span><pre>SCRIPT_FILENAME</pre></a></li>
 <li class="constant  "><a href="#constant_SCRIPT_FILENAME" title="SCRIPT_FILENAME() :: "><span class="description">SCRIPT_FILENAME</span><pre>SCRIPT_FILENAME</pre></a></li>
 <li class="constant  "><a href="#constant_SCRIPT_FILENAME" title="SCRIPT_FILENAME() :: "><span class="description">SCRIPT_FILENAME</span><pre>SCRIPT_FILENAME</pre></a></li>
@@ -1011,6 +1227,7 @@ The absolute url to Exponent's core javascript.</span><pre>JS_URL</pre></a></li>
 <li class="constant  "><a href="#constant_SITE_ALLOW_REGISTRATION" title="SITE_ALLOW_REGISTRATION() :: "><span class="description">SITE_ALLOW_REGISTRATION</span><pre>SITE_ALLOW_REGISTRATION</pre></a></li>
 <li class="constant  "><a href="#constant_SITE_DEFAULT_SECTION" title="SITE_DEFAULT_SECTION() :: "><span class="description">SITE_DEFAULT_SECTION</span><pre>SITE_DEFAULT_SECTION</pre></a></li>
 <li class="constant  "><a href="#constant_SITE_DESCRIPTION" title="SITE_DESCRIPTION() :: "><span class="description">SITE_DESCRIPTION</span><pre>SITE_DESCRIPTION</pre></a></li>
+<li class="constant  "><a href="#constant_SITE_FILE_MANAGER" title="SITE_FILE_MANAGER() :: "><span class="description">SITE_FILE_MANAGER</span><pre>SITE_FILE_MANAGER</pre></a></li>
 <li class="constant  "><a href="#constant_SITE_HEADER" title="SITE_HEADER() :: "><span class="description">SITE_HEADER</span><pre>SITE_HEADER</pre></a></li>
 <li class="constant  "><a href="#constant_SITE_KEYWORDS" title="SITE_KEYWORDS() :: "><span class="description">SITE_KEYWORDS</span><pre>SITE_KEYWORDS</pre></a></li>
 <li class="constant  "><a href="#constant_SITE_TITLE" title="SITE_TITLE() :: "><span class="description">SITE_TITLE</span><pre>SITE_TITLE</pre></a></li>
@@ -1033,6 +1250,7 @@ The absolute url to Exponent's core javascript.</span><pre>JS_URL</pre></a></li>
 <li class="constant  "><a href="#constant_SOURCE_SELECTOR" title="SOURCE_SELECTOR() :: "><span class="description">SOURCE_SELECTOR</span><pre>SOURCE_SELECTOR</pre></a></li>
 <li class="constant  "><a href="#constant_SOURCE_SELECTOR" title="SOURCE_SELECTOR() :: "><span class="description">SOURCE_SELECTOR</span><pre>SOURCE_SELECTOR</pre></a></li>
 <li class="constant  "><a href="#constant_SOURCE_SELECTOR" title="SOURCE_SELECTOR() :: "><span class="description">SOURCE_SELECTOR</span><pre>SOURCE_SELECTOR</pre></a></li>
+<li class="constant  "><a href="#constant_SWATCH" title="SWATCH() :: "><span class="description">SWATCH</span><pre>SWATCH</pre></a></li>
 <li class="constant  "><a href="#constant_SWATCH" title="SWATCH() :: "><span class="description">SWATCH</span><pre>SWATCH</pre></a></li>
 <li class="constant  "><a href="#constant_SWIFT_PATH" title="SWIFT_PATH() :: "><span class="description">SWIFT_PATH</span><pre>SWIFT_PATH</pre></a></li>
 <li class="constant  "><a href="#constant_SWIFT_VERSION" title="SWIFT_VERSION() :: "><span class="description">SWIFT_VERSION</span><pre>SWIFT_VERSION</pre></a></li>
@@ -1125,6 +1343,10 @@ UI Level of Structure - All management links are shown.</span><pre>UILEVEL_STRUC
 <li class="constant  "><a href="#constant_USER_REGISTRATION_WELCOME_SUBJECT" title="USER_REGISTRATION_WELCOME_SUBJECT() :: "><span class="description">USER_REGISTRATION_WELCOME_SUBJECT</span><pre>USER_REGISTRATION_WELCOME_SUBJECT</pre></a></li>
 <li class="constant  "><a href="#constant_USE_LDAP" title="USE_LDAP() :: "><span class="description">USE_LDAP</span><pre>USE_LDAP</pre></a></li>
 <li class="constant  "><a href="#constant_WRITE_LANG_TEMPLATE" title="WRITE_LANG_TEMPLATE() :: "><span class="description">WRITE_LANG_TEMPLATE</span><pre>WRITE_LANG_TEMPLATE</pre></a></li>
+<li class="constant  "><a href="#constant_XHPROF_BOOL_PARAM" title="XHPROF_BOOL_PARAM() :: "><span class="description">XHPROF_BOOL_PARAM</span><pre>XHPROF_BOOL_PARAM</pre></a></li>
+<li class="constant  "><a href="#constant_XHPROF_FLOAT_PARAM" title="XHPROF_FLOAT_PARAM() :: "><span class="description">XHPROF_FLOAT_PARAM</span><pre>XHPROF_FLOAT_PARAM</pre></a></li>
+<li class="constant  "><a href="#constant_XHPROF_STRING_PARAM" title="XHPROF_STRING_PARAM() :: Type definitions for URL params"><span class="description">Type definitions for URL params</span><pre>XHPROF_STRING_PARAM</pre></a></li>
+<li class="constant  "><a href="#constant_XHPROF_UINT_PARAM" title="XHPROF_UINT_PARAM() :: "><span class="description">XHPROF_UINT_PARAM</span><pre>XHPROF_UINT_PARAM</pre></a></li>
 <li class="constant  "><a href="#constant_XHTML" title="XHTML() :: "><span class="description">XHTML</span><pre>XHTML</pre></a></li>
 <li class="constant  "><a href="#constant_XHTML_CLOSING" title="XHTML_CLOSING() :: "><span class="description">XHTML_CLOSING</span><pre>XHTML_CLOSING</pre></a></li>
 <li class="constant  "><a href="#constant_YUI2_RELATIVE" title="YUI2_RELATIVE() :: "><span class="description">YUI2_RELATIVE</span><pre>YUI2_RELATIVE</pre></a></li>
@@ -1141,9 +1363,9 @@ UI Level of Structure - All management links are shown.</span><pre>UILEVEL_STRUC
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.2.0
 </a> and<br>
-            generated on 2013-11-04T11:25:38-05:00.<br></footer></div>
+            generated on 2013-12-06T06:42:49-05:00.<br></footer></div>
 </div>
 </body>
 </html>

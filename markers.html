@@ -19,6 +19,9 @@
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="namespaces/Composer.html"><i class="icon-th"></i> Composer</a></li>
+<li><a href="namespaces/global.html"><i class="icon-th"></i> global</a></li>
 <li><a>Packages</a></li>
 <li><a href="packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
 <li><a href="packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
@@ -28,6 +31,7 @@
 <li><a href="packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
 <li><a href="packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
+<li><a href="packages/elFinder.html"><i class="icon-folder-open"></i> elFinder</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -38,7 +42,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">1819</span></a></li>
+                <span class="label label-info">2301</span></a></li>
 <li><a href="markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -143,7 +147,6 @@
 <li><a href="#exponent_php_setup.php"><i class="icon-file"></i>exponent_php_setup.php</a></li>
 <li><a href="#framework%5Cmodules%5Ccontainer%5Ccontrollers%5CcontainerController.php"><i class="icon-file"></i>framework\modules\container\controllers\containerController.php</a></li>
 <li><a href="#framework%5Cmodules%5Ccore%5Ccontrollers%5CexpCatController.php"><i class="icon-file"></i>framework\modules\core\controllers\expCatController.php</a></li>
-<li><a href="#exponent.js.php"><i class="icon-file"></i>exponent.js.php</a></li>
 <li><a href="#framework%5Cplugins%5Cblock.toggle.php"><i class="icon-file"></i>framework\plugins\block.toggle.php</a></li>
 <li><a href="#framework%5Cmodules%5Cecommerce%5Cproducts%5Cmodels%5Cdonation.php"><i class="icon-file"></i>framework\modules\ecommerce\products\models\donation.php</a></li>
 <li><a href="#exponent.php"><i class="icon-file"></i>exponent.php</a></li>
@@ -187,7 +190,7 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>171</td>
+<td>173</td>
 <td>here is a hack to get the faq to be listed</td>
 </tr>
 </table></div>
@@ -258,12 +261,12 @@
 </tr>
 <tr>
 <td>todo</td>
-<td>491</td>
+<td>490</td>
 <td>deprecated</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>502</td>
+<td>501</td>
 <td>deprecated</td>
 </tr>
 </table></div>
@@ -280,7 +283,7 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>70</td>
+<td>69</td>
 <td>if series are ordered by date, we need to re-order them based on sermon dates, NOT series item date</td>
 </tr>
 </table></div>
@@ -492,7 +495,7 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>91</td>
+<td>105</td>
 <td>we should only send module with sources or configs to the recycle bin NOT things like navigation or rss</td>
 </tr>
 </table></div>
@@ -519,22 +522,22 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>1083</td>
+<td>1096</td>
 <td>must convert $dtstart timezone</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1096</td>
+<td>1109</td>
 <td>must convert $dtend timezone</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1205</td>
+<td>1218</td>
 <td>we must have the real timezone offset for the date by this point</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1207</td>
+<td>1220</td>
 <td>this is for the google ical feed which is bad!</td>
 </tr>
 </table></div>
@@ -565,6 +568,16 @@
 <th>Type</th>
 <th>Line</th>
 <th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>249</td>
+<td>we need to use this->addFrom() instead</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>376</td>
+<td>we need to use this->addFrom() instead</td>
 </tr>
 <tr>
 <td>todo</td>
@@ -623,21 +636,11 @@
                $emailItem->addTo('array('myemail@mysite.com'=>'Website Owner', 'secondemail@website.com'=>'Frank Jones');
                Actually, cleanup should be done so that this function only takes associative arrays, and nothing else.</td>
 </tr>
-<tr>
-<td>fixme</td>
-<td>249</td>
-<td>we need to use this->addFrom() instead</td>
-</tr>
-<tr>
-<td>fixme</td>
-<td>376</td>
-<td>we need to use this->addFrom() instead</td>
-</tr>
 </table></div>
 </div>
 <div class="package-contents">
 <a name="framework%5Cmodules%5Cblog%5Ccontrollers%5CblogController.php" id="framework\modules\blog\controllers\blogController.php"></a><h3>
-<i class="icon-file"></i>framework\modules\blog\controllers\blogController.php<small style="float: right;padding-right: 10px;">6</small>
+<i class="icon-file"></i>framework\modules\blog\controllers\blogController.php<small style="float: right;padding-right: 10px;">5</small>
 </h3>
 <div><table class="table markers table-bordered">
 <tr>
@@ -658,11 +661,6 @@
 <tr>
 <td>fixme</td>
 <td>344</td>
-<td>$object not set</td>
-</tr>
-<tr>
-<td>fixme</td>
-<td>345</td>
 <td>$object not set</td>
 </tr>
 <tr>
@@ -696,7 +694,7 @@
 </div>
 <div class="package-contents">
 <a name="framework%5Cmodules%5Cforms%5Ccontrollers%5CformsController.php" id="framework\modules\forms\controllers\formsController.php"></a><h3>
-<i class="icon-file"></i>framework\modules\forms\controllers\formsController.php<small style="float: right;padding-right: 10px;">9</small>
+<i class="icon-file"></i>framework\modules\forms\controllers\formsController.php<small style="float: right;padding-right: 10px;">10</small>
 </h3>
 <div><table class="table markers table-bordered">
 <tr>
@@ -716,37 +714,42 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>988</td>
+<td>989</td>
 <td>change this to an expValidator call</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1024</td>
+<td>1025</td>
 <td>we also need to update any config column_names_list settings?</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1310</td>
+<td>1160</td>
+<td>should we defaul to only 5 columns or all columns?</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>1312</td>
 <td>$individual_Header is ALWAYS in $rptcols?</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1397</td>
+<td>1399</td>
 <td>check for duplicate form data table name before import?</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1476</td>
+<td>1478</td>
 <td>quick hack to remove file model</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1531</td>
+<td>1533</td>
 <td></td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1645</td>
+<td>1647</td>
 <td>quick hack to remove file model</td>
 </tr>
 </table></div>
@@ -1036,7 +1039,7 @@
 <tr>
 <td>fixme</td>
 <td>426</td>
-<td>only used by 1) calendarmodule edit action (email forms) & 2) expTemplate::listModuleViews for OS modules</td>
+<td>only used by 1) event module edit action (email forms) & 2) expTemplate::listModuleViews for OS modules</td>
 </tr>
 </table></div>
 </div>
@@ -1211,7 +1214,7 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>485</td>
+<td>484</td>
 <td>$hide & $footer are not defined below</td>
 </tr>
 </table></div>
@@ -1262,117 +1265,117 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>279</td>
+<td>359</td>
 <td>Not used</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>286</td>
+<td>368</td>
 <td>$form is not set??</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>292</td>
+<td>375</td>
 <td>Not used</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>304</td>
+<td>387</td>
 <td>this should be $file instead of $filename?</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>354</td>
+<td>445</td>
 <td>need to use $feed instead of $params</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>541</td>
+<td>661</td>
 <td>module/controller glue code..remove ASAP</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>593</td>
+<td>728</td>
 <td>only used by smarty functions, old school?</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>664</td>
+<td>808</td>
 <td>not sure how to convert this yet</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>700</td>
+<td>845</td>
 <td>change to showModule call</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>708</td>
+<td>861</td>
 <td>Deprecated</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>727</td>
+<td>887</td>
 <td>patch to cleanup module name</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>735</td>
+<td>897</td>
 <td>there is no such config index</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>749</td>
+<td>911</td>
 <td>Deprecated</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>768</td>
+<td>937</td>
 <td>patch to cleanup module name</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>772</td>
+<td>943</td>
 <td>let's try $sectionObj instead of last_section</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>781</td>
+<td>954</td>
 <td>Deprecated</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>797</td>
+<td>970</td>
 <td>not used in base system (custom themes?)</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>810</td>
+<td>983</td>
 <td>Deprecated</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>882</td>
+<td>1059</td>
 <td>long controller name</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>930</td>
+<td>1118</td>
 <td>- $section might be empty!  We're getting it from last_section instead of sectionObj??</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>933</td>
+<td>1121</td>
 <td>let's try $sectionObj instead of last_section</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>974</td>
+<td>1172</td>
 <td>patch to cleanup module name</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1034</td>
+<td>1244</td>
 <td>we are checking here for a new MVC style controller or an old school module. We only need to perform</td>
 </tr>
 </table></div>
@@ -1586,42 +1589,42 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>444</td>
+<td>475</td>
 <td>only used by the eventregistration_form view (no method)</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>457</td>
+<td>488</td>
 <td>$product doesn't exist</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>499</td>
+<td>530</td>
 <td>change this to forms table</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>546</td>
+<td>577</td>
 <td>$opts doesn't exist</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>850</td>
+<td>881</td>
 <td>we don't have a 'guest' definable field type</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>952</td>
+<td>983</td>
 <td>reset & pulled from above</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>953</td>
+<td>984</td>
 <td></td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1044</td>
+<td>1075</td>
 <td>this is never used</td>
 </tr>
 </table></div>
@@ -2092,17 +2095,17 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>434</td>
+<td>436</td>
 <td>there is NO 'page' object and section has no _construct method</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>436</td>
+<td>438</td>
 <td>there is no getModulesBySource method anywhere</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>507</td>
+<td>509</td>
 <td>this don't make sense?</td>
 </tr>
 </table></div>
@@ -2208,37 +2211,37 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>1198</td>
+<td>1199</td>
 <td>we are only delete base table items, not other items or assoc/attached items</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1305</td>
+<td>1317</td>
 <td>$object not set</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1307</td>
+<td>1319</td>
 <td>$object not set</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1309</td>
+<td>1321</td>
 <td>$object not set</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1325</td>
+<td>1337</td>
 <td>$object not set</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1327</td>
+<td>1339</td>
 <td>$object not set</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1329</td>
+<td>1341</td>
 <td>$object not set</td>
 </tr>
 </table></div>
@@ -2548,12 +2551,12 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>322</td>
+<td>331</td>
 <td>we don't really use this</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>323</td>
+<td>332</td>
 <td>we don't really use this</td>
 </tr>
 </table></div>
@@ -2594,7 +2597,7 @@
 </div>
 <div class="package-contents">
 <a name="framework%5Ccore%5Csubsystems%5CexpRouter.php" id="framework\core\subsystems\expRouter.php"></a><h3>
-<i class="icon-file"></i>framework\core\subsystems\expRouter.php<small style="float: right;padding-right: 10px;">2</small>
+<i class="icon-file"></i>framework\core\subsystems\expRouter.php<small style="float: right;padding-right: 10px;">3</small>
 </h3>
 <div><table class="table markers table-bordered">
 <tr>
@@ -2611,6 +2614,11 @@
 <td>todo</td>
 <td>623</td>
 <td>fully sanitize all params values here for</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>677</td>
+<td>, we still need a good lighttpd.conf rewrite config for sef_urls to work</td>
 </tr>
 </table></div>
 </div>
@@ -2715,38 +2723,6 @@
 </table></div>
 </div>
 <div class="package-contents">
-<a name="exponent.js.php" id="exponent.js.php"></a><h3>
-<i class="icon-file"></i>exponent.js.php<small style="float: right;padding-right: 10px;">4</small>
-</h3>
-<div><table class="table markers table-bordered">
-<tr>
-<th>Type</th>
-<th>Line</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>todo</td>
-<td>29</td>
-<td>deprecated--></td>
-</tr>
-<tr>
-<td>todo</td>
-<td>31</td>
-<td>deprecated--></td>
-</tr>
-<tr>
-<td>todo</td>
-<td>37</td>
-<td>deprecated--></td>
-</tr>
-<tr>
-<td>todo</td>
-<td>41</td>
-<td>deprecated--></td>
-</tr>
-</table></div>
-</div>
-<div class="package-contents">
 <a name="framework%5Cplugins%5Cblock.toggle.php" id="framework\plugins\block.toggle.php"></a><h3>
 <i class="icon-file"></i>framework\plugins\block.toggle.php<small style="float: right;padding-right: 10px;">1</small>
 </h3>
@@ -2816,7 +2792,7 @@
 </div>
 <div class="package-contents">
 <a name="framework%5Cmodules%5Cnavigation%5Ccontrollers%5CnavigationController.php" id="framework\modules\navigation\controllers\navigationController.php"></a><h3>
-<i class="icon-file"></i>framework\modules\navigation\controllers\navigationController.php<small style="float: right;padding-right: 10px;">7</small>
+<i class="icon-file"></i>framework\modules\navigation\controllers\navigationController.php<small style="float: right;padding-right: 10px;">9</small>
 </h3>
 <div><table class="table markers table-bordered">
 <tr>
@@ -2826,7 +2802,17 @@
 </tr>
 <tr>
 <td>fixme</td>
+<td>496</td>
+<td>is this only for deprecated templates?</td>
+</tr>
+<tr>
+<td>fixme</td>
 <td>513</td>
+<td>is this only for deprecated templates?</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>543</td>
 <td>is this only for deprecated templates?</td>
 </tr>
 <tr>
@@ -3125,9 +3111,9 @@
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.2.0
 </a> and<br>
-            generated on 2013-11-04T11:25:56-05:00.<br></footer></div>
+            generated on 2013-12-06T06:43:10-05:00.<br></footer></div>
 </div>
 </body>
 </html>

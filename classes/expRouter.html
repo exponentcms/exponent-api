@@ -19,6 +19,9 @@
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Composer.html"><i class="icon-th"></i> Composer</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
 <li><a>Packages</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
 <li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
@@ -28,6 +31,7 @@
 <li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
+<li><a href="../packages/elFinder.html"><i class="icon-folder-open"></i> elFinder</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -38,7 +42,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">1819</span></a></li>
+                <span class="label label-info">2301</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -56,12 +60,17 @@
                         </div></noscript>
 <div class="row">
 <div class="span4">
-<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<div class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
 <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
 </div>
 <ul class="side-nav nav nav-list">
 <li class="nav-header">
-<i class="icon-custom icon-method"></i> Methods
+<i title="Methods" class="icon-custom icon-method"></i> Methods
                     <ul>
 <li class="method public "><a href="#method___construct" title="__construct() :: "><span class="description">__construct()
         </span><pre>__construct()</pre></a></li>
@@ -116,7 +125,7 @@
         </span><pre>buildSEFPath()</pre></a></li></ul>
 </li>
 <li class="nav-header">
-<i class="icon-custom icon-property"></i> Properties
+<i title="Properties" class="icon-custom icon-property"></i> Properties
                     <ul>
 <li class="property public "><a href="#property_current_url" title="$current_url() :: "><span class="description"></span><pre>$current_url</pre></a></li>
 <li class="property public "><a href="#property_params" title="$params() :: "><span class="description"></span><pre>$params</pre></a></li>
@@ -136,7 +145,7 @@ either 'base' (default page), 'page', 'action', or 'malformed'"><span class="des
 <div class="span8">
 <a id="\expRouter"></a><ul class="breadcrumb">
 <li>
-<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
 <li class="active">
 <span class="divider">\</span><a href="../classes/expRouter.html">expRouter</a>
@@ -157,25 +166,25 @@ either 'base' (default page), 'page', 'action', or 'malformed'"><span class="des
 </tr>
 </table>
 <h3>
-<i class="icon-custom icon-method"></i> Methods</h3>
-<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse" title="public">
 <h2>__construct()
         </h2>
 <pre>__construct() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_buildCurrentUrl"></a><div class="element clickable method public method_buildCurrentUrl" data-toggle="collapse" data-target=".method_buildCurrentUrl .collapse">
+<a id="method_buildCurrentUrl"></a><div class="element clickable method public method_buildCurrentUrl" data-toggle="collapse" data-target=".method_buildCurrentUrl .collapse" title="public">
 <h2>buildCurrentUrl()
         </h2>
 <pre>buildCurrentUrl() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_buildUrlByPageId"></a><div class="element clickable method public method_buildUrlByPageId" data-toggle="collapse" data-target=".method_buildUrlByPageId .collapse">
+<a id="method_buildUrlByPageId"></a><div class="element clickable method public method_buildUrlByPageId" data-toggle="collapse" data-target=".method_buildUrlByPageId .collapse" title="public">
 <h2>buildUrlByPageId()
         </h2>
-<pre>buildUrlByPageId($id) </pre>
+<pre>buildUrlByPageId($id<code> = null</code>) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -183,7 +192,7 @@ either 'base' (default page), 'page', 'action', or 'malformed'"><span class="des
 <div class="subelement argument"><h4>$id</h4></div>
 </div></div>
 </div>
-<a id="method_cleanLink"></a><div class="element clickable method public method_cleanLink" data-toggle="collapse" data-target=".method_cleanLink .collapse">
+<a id="method_cleanLink"></a><div class="element clickable method public method_cleanLink" data-toggle="collapse" data-target=".method_cleanLink .collapse" title="public">
 <h2>cleanLink()
         </h2>
 <pre>cleanLink($fulllink) </pre>
@@ -194,21 +203,21 @@ either 'base' (default page), 'page', 'action', or 'malformed'"><span class="des
 <div class="subelement argument"><h4>$fulllink</h4></div>
 </div></div>
 </div>
-<a id="method_convertPartsToParams"></a><div class="element clickable method public method_convertPartsToParams" data-toggle="collapse" data-target=".method_convertPartsToParams .collapse">
+<a id="method_convertPartsToParams"></a><div class="element clickable method public method_convertPartsToParams" data-toggle="collapse" data-target=".method_convertPartsToParams .collapse" title="public">
 <h2>convertPartsToParams()
         </h2>
 <pre>convertPartsToParams() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_convertToOldSchoolUrl"></a><div class="element clickable method public method_convertToOldSchoolUrl" data-toggle="collapse" data-target=".method_convertToOldSchoolUrl .collapse">
+<a id="method_convertToOldSchoolUrl"></a><div class="element clickable method public method_convertToOldSchoolUrl" data-toggle="collapse" data-target=".method_convertToOldSchoolUrl .collapse" title="public">
 <h2>convertToOldSchoolUrl()
         </h2>
 <pre>convertToOldSchoolUrl() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_decode"></a><div class="element clickable method public method_decode" data-toggle="collapse" data-target=".method_decode .collapse">
+<a id="method_decode"></a><div class="element clickable method public method_decode" data-toggle="collapse" data-target=".method_decode .collapse" title="public">
 <h2>decode()
         </h2>
 <pre>decode($url) </pre>
@@ -219,7 +228,7 @@ either 'base' (default page), 'page', 'action', or 'malformed'"><span class="des
 <div class="subelement argument"><h4>$url</h4></div>
 </div></div>
 </div>
-<a id="method_encode"></a><div class="element clickable method public method_encode" data-toggle="collapse" data-target=".method_encode .collapse">
+<a id="method_encode"></a><div class="element clickable method public method_encode" data-toggle="collapse" data-target=".method_encode .collapse" title="public">
 <h2>encode()
         </h2>
 <pre>encode($url) </pre>
@@ -230,10 +239,10 @@ either 'base' (default page), 'page', 'action', or 'malformed'"><span class="des
 <div class="subelement argument"><h4>$url</h4></div>
 </div></div>
 </div>
-<a id="method_exportAsPDFLink"></a><div class="element clickable method public method_exportAsPDFLink" data-toggle="collapse" data-target=".method_exportAsPDFLink .collapse">
+<a id="method_exportAsPDFLink"></a><div class="element clickable method public method_exportAsPDFLink" data-toggle="collapse" data-target=".method_exportAsPDFLink .collapse" title="public">
 <h2>exportAsPDFLink()
         </h2>
-<pre>exportAsPDFLink($link_text, $class, $width, $height, $view, $orientation, $limit, $title_text) </pre>
+<pre>exportAsPDFLink($link_text<code> = "Export as PDF"</code>, $class<code> = null</code>, $width<code> = 800</code>, $height<code> = 600</code>, $view<code> = ''</code>, $orientation<code> = false</code>, $limit<code> = ''</code>, $title_text<code> = "Export as PDF"</code>) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -248,7 +257,7 @@ either 'base' (default page), 'page', 'action', or 'malformed'"><span class="des
 <div class="subelement argument"><h4>$title_text</h4></div>
 </div></div>
 </div>
-<a id="method_getPageByName"></a><div class="element clickable method public method_getPageByName" data-toggle="collapse" data-target=".method_getPageByName .collapse">
+<a id="method_getPageByName"></a><div class="element clickable method public method_getPageByName" data-toggle="collapse" data-target=".method_getPageByName .collapse" title="public">
 <h2>getPageByName()
         </h2>
 <pre>getPageByName($url_name) </pre>
@@ -259,21 +268,21 @@ either 'base' (default page), 'page', 'action', or 'malformed'"><span class="des
 <div class="subelement argument"><h4>$url_name</h4></div>
 </div></div>
 </div>
-<a id="method_getRouterMaps"></a><div class="element clickable method public method_getRouterMaps" data-toggle="collapse" data-target=".method_getRouterMaps .collapse">
+<a id="method_getRouterMaps"></a><div class="element clickable method public method_getRouterMaps" data-toggle="collapse" data-target=".method_getRouterMaps .collapse" title="public">
 <h2>getRouterMaps()
         </h2>
 <pre>getRouterMaps() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_getSection"></a><div class="element clickable method public method_getSection" data-toggle="collapse" data-target=".method_getSection .collapse">
+<a id="method_getSection"></a><div class="element clickable method public method_getSection" data-toggle="collapse" data-target=".method_getSection .collapse" title="public">
 <h2>getSection()
         </h2>
 <pre>getSection() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_getSectionObj"></a><div class="element clickable method public method_getSectionObj" data-toggle="collapse" data-target=".method_getSectionObj .collapse">
+<a id="method_getSectionObj"></a><div class="element clickable method public method_getSectionObj" data-toggle="collapse" data-target=".method_getSectionObj .collapse" title="public">
 <h2>getSectionObj()
         </h2>
 <pre>getSectionObj($section) </pre>
@@ -284,10 +293,10 @@ either 'base' (default page), 'page', 'action', or 'malformed'"><span class="des
 <div class="subelement argument"><h4>$section</h4></div>
 </div></div>
 </div>
-<a id="method_getSefUrlByPageId"></a><div class="element clickable method public method_getSefUrlByPageId" data-toggle="collapse" data-target=".method_getSefUrlByPageId .collapse">
+<a id="method_getSefUrlByPageId"></a><div class="element clickable method public method_getSefUrlByPageId" data-toggle="collapse" data-target=".method_getSefUrlByPageId .collapse" title="public">
 <h2>getSefUrlByPageId()
         </h2>
-<pre>getSefUrlByPageId($id) </pre>
+<pre>getSefUrlByPageId($id<code> = null</code>) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -295,24 +304,24 @@ either 'base' (default page), 'page', 'action', or 'malformed'"><span class="des
 <div class="subelement argument"><h4>$id</h4></div>
 </div></div>
 </div>
-<a id="method_getTrackingId"></a><div class="element clickable method public method_getTrackingId" data-toggle="collapse" data-target=".method_getTrackingId .collapse">
+<a id="method_getTrackingId"></a><div class="element clickable method public method_getTrackingId" data-toggle="collapse" data-target=".method_getTrackingId .collapse" title="public">
 <h2>getTrackingId()
         </h2>
 <pre>getTrackingId() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_isMappedURL"></a><div class="element clickable method public method_isMappedURL" data-toggle="collapse" data-target=".method_isMappedURL .collapse">
+<a id="method_isMappedURL"></a><div class="element clickable method public method_isMappedURL" data-toggle="collapse" data-target=".method_isMappedURL .collapse" title="public">
 <h2>isMappedURL()
         </h2>
 <pre>isMappedURL() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_makeLink"></a><div class="element clickable method public method_makeLink" data-toggle="collapse" data-target=".method_makeLink .collapse">
+<a id="method_makeLink"></a><div class="element clickable method public method_makeLink" data-toggle="collapse" data-target=".method_makeLink .collapse" title="public">
 <h2>makeLink()
         </h2>
-<pre>makeLink($params, $force_old_school, $secure, $no_map) </pre>
+<pre>makeLink($params, $force_old_school<code> = false</code>, $secure<code> = false</code>, $no_map<code> = false</code>) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -323,10 +332,10 @@ either 'base' (default page), 'page', 'action', or 'malformed'"><span class="des
 <div class="subelement argument"><h4>$no_map</h4></div>
 </div></div>
 </div>
-<a id="method_printerFriendlyLink"></a><div class="element clickable method public method_printerFriendlyLink" data-toggle="collapse" data-target=".method_printerFriendlyLink .collapse">
+<a id="method_printerFriendlyLink"></a><div class="element clickable method public method_printerFriendlyLink" data-toggle="collapse" data-target=".method_printerFriendlyLink .collapse" title="public">
 <h2>printerFriendlyLink()
         </h2>
-<pre>printerFriendlyLink($link_text, $class, $width, $height, $view, $title_text) </pre>
+<pre>printerFriendlyLink($link_text<code> = "Printer Friendly"</code>, $class<code> = null</code>, $width<code> = 800</code>, $height<code> = 600</code>, $view<code> = ''</code>, $title_text<code> = "Printer Friendly"</code>) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -339,38 +348,38 @@ either 'base' (default page), 'page', 'action', or 'malformed'"><span class="des
 <div class="subelement argument"><h4>$title_text</h4></div>
 </div></div>
 </div>
-<a id="method_routeActionRequest"></a><div class="element clickable method public method_routeActionRequest" data-toggle="collapse" data-target=".method_routeActionRequest .collapse">
+<a id="method_routeActionRequest"></a><div class="element clickable method public method_routeActionRequest" data-toggle="collapse" data-target=".method_routeActionRequest .collapse" title="public">
 <h2>routeActionRequest()
         </h2>
 <pre>routeActionRequest() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_routePageRequest"></a><div class="element clickable method public method_routePageRequest" data-toggle="collapse" data-target=".method_routePageRequest .collapse">
+<a id="method_routePageRequest"></a><div class="element clickable method public method_routePageRequest" data-toggle="collapse" data-target=".method_routePageRequest .collapse" title="public">
 <h2>routePageRequest()
         </h2>
 <pre>routePageRequest() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_routeRequest"></a><div class="element clickable method public method_routeRequest" data-toggle="collapse" data-target=".method_routeRequest .collapse">
+<a id="method_routeRequest"></a><div class="element clickable method public method_routeRequest" data-toggle="collapse" data-target=".method_routeRequest .collapse" title="public">
 <h2>routeRequest()
         </h2>
 <pre>routeRequest() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_splitURL"></a><div class="element clickable method public method_splitURL" data-toggle="collapse" data-target=".method_splitURL .collapse">
+<a id="method_splitURL"></a><div class="element clickable method public method_splitURL" data-toggle="collapse" data-target=".method_splitURL .collapse" title="public">
 <h2>splitURL()
         </h2>
 <pre>splitURL() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_updateHistory"></a><div class="element clickable method public method_updateHistory" data-toggle="collapse" data-target=".method_updateHistory .collapse">
+<a id="method_updateHistory"></a><div class="element clickable method public method_updateHistory" data-toggle="collapse" data-target=".method_updateHistory .collapse" title="public">
 <h2>updateHistory()
         </h2>
-<pre>updateHistory($section) </pre>
+<pre>updateHistory($section<code> = null</code>) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -378,7 +387,7 @@ either 'base' (default page), 'page', 'action', or 'malformed'"><span class="des
 <div class="subelement argument"><h4>$section</h4></div>
 </div></div>
 </div>
-<a id="method_buildSEFPath"></a><div class="element clickable method private method_buildSEFPath" data-toggle="collapse" data-target=".method_buildSEFPath .collapse">
+<a id="method_buildSEFPath"></a><div class="element clickable method private method_buildSEFPath" data-toggle="collapse" data-target=".method_buildSEFPath .collapse" title="private">
 <h2>buildSEFPath()
         </h2>
 <pre>buildSEFPath() </pre>
@@ -386,48 +395,76 @@ either 'base' (default page), 'page', 'action', or 'malformed'"><span class="des
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <h3>
-<i class="icon-custom icon-property"></i> Properties</h3>
-<a id="property_current_url"> </a><div class="element clickable property public property_current_url" data-toggle="collapse" data-target=".property_current_url .collapse">
+<i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_current_url"> </a><div class="element clickable property public property_current_url" data-toggle="collapse" data-target=".property_current_url .collapse" title="public">
 <h2>$current_url</h2>
 <pre>$current_url </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>''</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_params"> </a><div class="element clickable property public property_params" data-toggle="collapse" data-target=".property_params .collapse">
+<a id="property_params"> </a><div class="element clickable property public property_params" data-toggle="collapse" data-target=".property_params .collapse" title="public">
 <h2>$params</h2>
 <pre>$params </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_sefPath"> </a><div class="element clickable property public property_sefPath" data-toggle="collapse" data-target=".property_sefPath .collapse">
+<a id="property_sefPath"> </a><div class="element clickable property public property_sefPath" data-toggle="collapse" data-target=".property_sefPath .collapse" title="public">
 <h2>$sefPath</h2>
 <pre>$sefPath </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_url_parts"> </a><div class="element clickable property public property_url_parts" data-toggle="collapse" data-target=".property_url_parts .collapse">
+<a id="property_url_parts"> </a><div class="element clickable property public property_url_parts" data-toggle="collapse" data-target=".property_url_parts .collapse" title="public">
 <h2>$url_parts</h2>
 <pre>$url_parts </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>''</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_url_style"> </a><div class="element clickable property public property_url_style" data-toggle="collapse" data-target=".property_url_style .collapse">
+<a id="property_url_style"> </a><div class="element clickable property public property_url_style" data-toggle="collapse" data-target=".property_url_style .collapse" title="public">
 <h2>Style of url
 either 'sef' or 'query'</h2>
 <pre>$url_style : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>''</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_url_type"> </a><div class="element clickable property public property_url_type" data-toggle="collapse" data-target=".property_url_type .collapse">
+<a id="property_url_type"> </a><div class="element clickable property public property_url_type" data-toggle="collapse" data-target=".property_url_type .collapse" title="public">
 <h2>Type of url
 either 'base' (default page), 'page', 'action', or 'malformed'</h2>
 <pre>$url_type : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>''</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_maps"> </a><div class="element clickable property private property_maps" data-toggle="collapse" data-target=".property_maps .collapse">
+<a id="property_maps"> </a><div class="element clickable property private property_maps" data-toggle="collapse" data-target=".property_maps .collapse" title="private">
 <h2>$maps</h2>
 <pre>$maps </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -437,9 +474,9 @@ either 'base' (default page), 'page', 'action', or 'malformed'</h2>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.2.0
 </a> and<br>
-            generated on 2013-11-04T11:25:52-05:00.<br></footer></div>
+            generated on 2013-12-06T06:43:06-05:00.<br></footer></div>
 </div>
 </body>
 </html>

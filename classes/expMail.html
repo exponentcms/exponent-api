@@ -19,6 +19,9 @@
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Composer.html"><i class="icon-th"></i> Composer</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
 <li><a>Packages</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
 <li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
@@ -28,6 +31,7 @@
 <li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
+<li><a href="../packages/elFinder.html"><i class="icon-folder-open"></i> elFinder</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -38,7 +42,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">1819</span></a></li>
+                <span class="label label-info">2301</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -56,12 +60,17 @@
                         </div></noscript>
 <div class="row">
 <div class="span4">
-<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<div class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
 <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
 </div>
 <ul class="side-nav nav nav-list">
 <li class="nav-header">
-<i class="icon-custom icon-method"></i> Methods
+<i title="Methods" class="icon-custom icon-method"></i> Methods
                     <ul>
 <li class="method public "><a href="#method___construct" title="__construct() :: __construct() - This function constructs the message to be send in this object, filling it out with connection information based on the site config."><span class="description">__construct() - This function constructs the message to be send in this object, filling it out with connection information based on the site config.</span><pre>__construct()</pre></a></li>
 <li class="method public "><a href="#method___destruct" title="__destruct() :: expMail class destructor"><span class="description">expMail class destructor</span><pre>__destruct()</pre></a></li>
@@ -101,7 +110,7 @@ an associative array, (or else the message fails immediately).</span><pre>quickS
 </ul>
 </li>
 <li class="nav-header">
-<i class="icon-custom icon-property"></i> Properties
+<i title="Properties" class="icon-custom icon-property"></i> Properties
                     <ul>
 <li class="property public "><a href="#property_from" title="$from() :: "><span class="description"></span><pre>$from</pre></a></li>
 <li class="property public "><a href="#property_to" title="$to() :: "><span class="description"></span><pre>$to</pre></a></li>
@@ -125,7 +134,7 @@ an associative array, (or else the message fails immediately).</span><pre>quickS
 <div class="span8">
 <a id="\expMail"></a><ul class="breadcrumb">
 <li>
-<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
 <li class="active">
 <span class="divider">\</span><a href="../classes/expMail.html">expMail</a>
@@ -136,10 +145,10 @@ an associative array, (or else the message fails immediately).</span><pre>quickS
 <div class="details">
 <div class="long_description"></div>
 <h3>
-<i class="icon-custom icon-method"></i> Methods</h3>
-<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse" title="public">
 <h2>__construct() - This function constructs the message to be send in this object, filling it out with connection information based on the site config.</h2>
-<pre>__construct(array $params) </pre>
+<pre>__construct(array $params<code> = array()</code>) </pre>
 <div class="labels"></div>
 <div class="row collapse">
 <div class="span4">
@@ -185,15 +194,15 @@ an associative array, (or else the message fails immediately).</span><pre>quickS
 </div>
 </div>
 </div>
-<a id="method___destruct"></a><div class="element clickable method public method___destruct" data-toggle="collapse" data-target=".method___destruct .collapse">
+<a id="method___destruct"></a><div class="element clickable method public method___destruct" data-toggle="collapse" data-target=".method___destruct .collapse" title="public">
 <h2>expMail class destructor</h2>
 <pre>__destruct() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_addBcc"></a><div class="element clickable method public method_addBcc" data-toggle="collapse" data-target=".method_addBcc .collapse">
+<a id="method_addBcc"></a><div class="element clickable method public method_addBcc" data-toggle="collapse" data-target=".method_addBcc .collapse" title="public">
 <h2>addBcc() - This adds Blind Carbon Copy addresses to the message one at a time, so if you want to add multiple BCC's it is best to run through a loop in order to put them in.</h2>
-<pre>addBcc(string $email, string $name) </pre>
+<pre>addBcc(string $email, string $name<code> = null</code>) </pre>
 <div class="labels"></div>
 <div class="row collapse">
 <div class="span4">
@@ -236,9 +245,9 @@ $emailItem->send();</td>
 </div>
 </div>
 </div>
-<a id="method_addCc"></a><div class="element clickable method public method_addCc" data-toggle="collapse" data-target=".method_addCc .collapse">
+<a id="method_addCc"></a><div class="element clickable method public method_addCc" data-toggle="collapse" data-target=".method_addCc .collapse" title="public">
 <h2>addCc() - This adds Carbon Copy addresses to the message one at a time, so if you want to add multiple CC's it is best to run through a loop in order to put them in.</h2>
-<pre>addCc(string $email, string $name) </pre>
+<pre>addCc(string $email, string $name<code> = null</code>) </pre>
 <div class="labels"></div>
 <div class="row collapse">
 <div class="span4">
@@ -281,9 +290,9 @@ $emailItem->send();</td>
 </div>
 </div>
 </div>
-<a id="method_addFrom"></a><div class="element clickable method public method_addFrom" data-toggle="collapse" data-target=".method_addFrom .collapse">
+<a id="method_addFrom"></a><div class="element clickable method public method_addFrom" data-toggle="collapse" data-target=".method_addFrom .collapse" title="public">
 <h2>addFrom() - This adds the singular From address, if you call it twice, it will replace the old from address.</h2>
-<pre>addFrom(string $email) </pre>
+<pre>addFrom(string $email<code> = null</code>) </pre>
 <div class="labels"></div>
 <div class="row collapse">
 <div class="span4">
@@ -319,7 +328,7 @@ $emailItem->send();</td>
 </div>
 </div>
 </div>
-<a id="method_addHTML"></a><div class="element clickable method public method_addHTML" data-toggle="collapse" data-target=".method_addHTML .collapse">
+<a id="method_addHTML"></a><div class="element clickable method public method_addHTML" data-toggle="collapse" data-target=".method_addHTML .collapse" title="public">
 <h2>addHTML() - This function is similar to setHTMLBody except that it includes the HTML in the message body rather than sets it as default. Many
  mail clients will read the HTML over plain text as default behavior, so even if you use setTextBody and addHTML, they will default to reading the HTML.</h2>
 <pre>addHTML(string $html) </pre>
@@ -363,7 +372,7 @@ You can also call the addHTML multiple times to append to the message:
 </div>
 </div>
 </div>
-<a id="method_addHeaders"></a><div class="element clickable method public method_addHeaders" data-toggle="collapse" data-target=".method_addHeaders .collapse">
+<a id="method_addHeaders"></a><div class="element clickable method public method_addHeaders" data-toggle="collapse" data-target=".method_addHeaders .collapse" title="public">
 <h2>addHeaders() - Add text headers to the message. Limited to text headers for now.</h2>
 <pre>addHeaders(array $headers) </pre>
 <div class="labels"></div>
@@ -415,7 +424,7 @@ You can also call the addHTML multiple times to append to the message:
 </div>
 </div>
 </div>
-<a id="method_addRaw"></a><div class="element clickable method public method_addRaw" data-toggle="collapse" data-target=".method_addRaw .collapse">
+<a id="method_addRaw"></a><div class="element clickable method public method_addRaw" data-toggle="collapse" data-target=".method_addRaw .collapse" title="public">
 <h2>addRaw() - This is a wrapper around setHTMLBody for backwards compatibility</h2>
 <pre>addRaw(mixed $body) </pre>
 <div class="labels"></div>
@@ -429,7 +438,7 @@ You can also call the addHTML multiple times to append to the message:
 <div class="subelement argument"><h4>$body</h4></div>
 </div></div>
 </div>
-<a id="method_addSubject"></a><div class="element clickable method public method_addSubject" data-toggle="collapse" data-target=".method_addSubject .collapse">
+<a id="method_addSubject"></a><div class="element clickable method public method_addSubject" data-toggle="collapse" data-target=".method_addSubject .collapse" title="public">
 <h2>subject() - This will set the subject of the message, ensuring first that message has been instantiated.</h2>
 <pre>addSubject(string $subj) </pre>
 <div class="labels"></div>
@@ -465,7 +474,7 @@ You can also call the addHTML multiple times to append to the message:
 </div>
 </div>
 </div>
-<a id="method_addText"></a><div class="element clickable method public method_addText" data-toggle="collapse" data-target=".method_addText .collapse">
+<a id="method_addText"></a><div class="element clickable method public method_addText" data-toggle="collapse" data-target=".method_addText .collapse" title="public">
 <h2>addText() - This function is similar to the addHTML function above, it adds a plain text part to the message in case
  your recipient cannot receive HTML email, if you have added a text version of the email, they will have this to fall back on.</h2>
 <pre>addText(string $text) </pre>
@@ -501,9 +510,9 @@ You can also call the addHTML multiple times to append to the message:
 </div>
 </div>
 </div>
-<a id="method_addTo"></a><div class="element clickable method public method_addTo" data-toggle="collapse" data-target=".method_addTo .collapse">
+<a id="method_addTo"></a><div class="element clickable method public method_addTo" data-toggle="collapse" data-target=".method_addTo .collapse" title="public">
 <h2>addTo() - This adds people to the Recipient List in the To Field.</h2>
-<pre>addTo(array|string $email) </pre>
+<pre>addTo(array|string $email<code> = null</code>) </pre>
 <div class="labels"></div>
 <div class="row collapse">
 <div class="span4">
@@ -572,7 +581,7 @@ You can also call the addHTML multiple times to append to the message:
 </div>
 </div>
 </div>
-<a id="method_attach_file_on_disk"></a><div class="element clickable method public method_attach_file_on_disk" data-toggle="collapse" data-target=".method_attach_file_on_disk .collapse">
+<a id="method_attach_file_on_disk"></a><div class="element clickable method public method_attach_file_on_disk" data-toggle="collapse" data-target=".method_attach_file_on_disk .collapse" title="public">
 <h2>attach_file_on_disk() - This function will utilize the swift mailer's ability to attach files
 that are on disk, unlike the one above, which just attached one that is available in memory.</h2>
 <pre>attach_file_on_disk(string $file_to_attach, string $file_type) </pre>
@@ -613,7 +622,7 @@ that are on disk, unlike the one above, which just attached one that is availabl
 </div>
 </div>
 </div>
-<a id="method_batchSend"></a><div class="element clickable method public method_batchSend" data-toggle="collapse" data-target=".method_batchSend .collapse">
+<a id="method_batchSend"></a><div class="element clickable method public method_batchSend" data-toggle="collapse" data-target=".method_batchSend .collapse" title="public">
 <h2>batchSend() - Does not seem to be working correctly.  Use at your own risk!</h2>
 <pre>batchSend() : array</pre>
 <div class="labels"></div>
@@ -634,7 +643,7 @@ that are on disk, unlike the one above, which just attached one that is availabl
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_clearBody"></a><div class="element clickable method public method_clearBody" data-toggle="collapse" data-target=".method_clearBody .collapse">
+<a id="method_clearBody"></a><div class="element clickable method public method_clearBody" data-toggle="collapse" data-target=".method_clearBody .collapse" title="public">
 <h2>clearBody() - This function will set the body of the message to empty, a blank text string</h2>
 <pre>clearBody() </pre>
 <div class="labels"></div>
@@ -646,7 +655,7 @@ that are on disk, unlike the one above, which just attached one that is availabl
 </tr></table>
 </div></div>
 </div>
-<a id="method_flushRecipients"></a><div class="element clickable method public method_flushRecipients" data-toggle="collapse" data-target=".method_flushRecipients .collapse">
+<a id="method_flushRecipients"></a><div class="element clickable method public method_flushRecipients" data-toggle="collapse" data-target=".method_flushRecipients .collapse" title="public">
 <h2>flushRecipients() - this will clear all of the recipients in the To array, ignoring CC and BCC</h2>
 <pre>flushRecipients() </pre>
 <div class="labels"></div>
@@ -680,7 +689,7 @@ that are on disk, unlike the one above, which just attached one that is availabl
 </div>
 </div>
 </div>
-<a id="method_messageId"></a><div class="element clickable method public method_messageId" data-toggle="collapse" data-target=".method_messageId .collapse">
+<a id="method_messageId"></a><div class="element clickable method public method_messageId" data-toggle="collapse" data-target=".method_messageId .collapse" title="public">
 <h2>messageId() - This will return the unique ID of the mail message.</h2>
 <pre>messageId() : array</pre>
 <div class="labels"></div>
@@ -719,7 +728,7 @@ $emailItem->send();</td>
 </div>
 </div>
 </div>
-<a id="method_quickBatchSend"></a><div class="element clickable method public method_quickBatchSend" data-toggle="collapse" data-target=".method_quickBatchSend .collapse">
+<a id="method_quickBatchSend"></a><div class="element clickable method public method_quickBatchSend" data-toggle="collapse" data-target=".method_quickBatchSend .collapse" title="public">
 <h2>quickBatchSend() - a quick way to send a batch of emails one at a time
 This function is similar to quickSend, but sends each email separately to protect others identity in the mailing</h2>
 <pre>quickBatchSend() : array</pre>
@@ -734,10 +743,10 @@ This function is similar to quickSend, but sends each email separately to protec
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_quickSend"></a><div class="element clickable method public method_quickSend" data-toggle="collapse" data-target=".method_quickSend .collapse">
+<a id="method_quickSend"></a><div class="element clickable method public method_quickSend" data-toggle="collapse" data-target=".method_quickSend .collapse" title="public">
 <h2>quickSend() - This is a quick method for sending email messages.  It only requires a message value be passed in
 an associative array, (or else the message fails immediately).</h2>
-<pre>quickSend(array $params) : int</pre>
+<pre>quickSend(array $params<code> = array()</code>) : int</pre>
 <div class="labels"></div>
 <div class="row collapse">
 <div class="span4">
@@ -781,8 +790,7 @@ an associative array, (or else the message fails immediately).</h2>
   -subject
   -html_message
   -text_message
-  -headers</p>
-</div>
+  -headers</p></div>
 <h3>Returns</h3>
 <div class="subelement response">
 <code>int</code>number of recipients to which the email was successfully sent.</div>
@@ -793,14 +801,14 @@ an associative array, (or else the message fails immediately).</h2>
 </div>
 </div>
 </div>
-<a id="method_send"></a><div class="element clickable method public method_send" data-toggle="collapse" data-target=".method_send .collapse">
+<a id="method_send"></a><div class="element clickable method public method_send" data-toggle="collapse" data-target=".method_send .collapse" title="public">
 <h2>send()
         </h2>
 <pre>send() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_setHTMLBody"></a><div class="element clickable method public method_setHTMLBody" data-toggle="collapse" data-target=".method_setHTMLBody .collapse">
+<a id="method_setHTMLBody"></a><div class="element clickable method public method_setHTMLBody" data-toggle="collapse" data-target=".method_setHTMLBody .collapse" title="public">
 <h2>setHTMLBody() - This function sets the main version of the message to HTML.</h2>
 <pre>setHTMLBody(string $html) </pre>
 <div class="labels"></div>
@@ -834,7 +842,7 @@ an associative array, (or else the message fails immediately).</h2>
 </div>
 </div>
 </div>
-<a id="method_setTextBody"></a><div class="element clickable method public method_setTextBody" data-toggle="collapse" data-target=".method_setTextBody .collapse">
+<a id="method_setTextBody"></a><div class="element clickable method public method_setTextBody" data-toggle="collapse" data-target=".method_setTextBody .collapse" title="public">
 <h2>setTextBody() - This function sets the main version of the message to plain text. No HTML</h2>
 <pre>setTextBody(string $text) </pre>
 <div class="labels"></div>
@@ -868,7 +876,7 @@ an associative array, (or else the message fails immediately).</h2>
 </div>
 </div>
 </div>
-<a id="method_test"></a><div class="element clickable method public method_test" data-toggle="collapse" data-target=".method_test .collapse">
+<a id="method_test"></a><div class="element clickable method public method_test" data-toggle="collapse" data-target=".method_test .collapse" title="public">
 <h2>test() - Does the mail system seem to be working correctly?
   This is useless for the Native mail system</h2>
 <pre>test() </pre>
@@ -882,70 +890,114 @@ an associative array, (or else the message fails immediately).</h2>
 </div></div>
 </div>
 <h3>
-<i class="icon-custom icon-property"></i> Properties</h3>
-<a id="property_from"> </a><div class="element clickable property public property_from" data-toggle="collapse" data-target=".property_from .collapse">
+<i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_from"> </a><div class="element clickable property public property_from" data-toggle="collapse" data-target=".property_from .collapse" title="public">
 <h2>$from</h2>
 <pre>$from </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>NULL</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_to"> </a><div class="element clickable property public property_to" data-toggle="collapse" data-target=".property_to .collapse">
+<a id="property_to"> </a><div class="element clickable property public property_to" data-toggle="collapse" data-target=".property_to .collapse" title="public">
 <h2>$to</h2>
 <pre>$to </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_errStack"> </a><div class="element clickable property private property_errStack" data-toggle="collapse" data-target=".property_errStack .collapse">
+<a id="property_errStack"> </a><div class="element clickable property private property_errStack" data-toggle="collapse" data-target=".property_errStack .collapse" title="private">
 <h2>$errStack</h2>
 <pre>$errStack </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_log"> </a><div class="element clickable property private property_log" data-toggle="collapse" data-target=".property_log .collapse">
+<a id="property_log"> </a><div class="element clickable property private property_log" data-toggle="collapse" data-target=".property_log .collapse" title="private">
 <h2>$log</h2>
 <pre>$log </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_mailer"> </a><div class="element clickable property private property_mailer" data-toggle="collapse" data-target=".property_mailer .collapse">
+<a id="property_mailer"> </a><div class="element clickable property private property_mailer" data-toggle="collapse" data-target=".property_mailer .collapse" title="private">
 <h2>$mailer</h2>
 <pre>$mailer </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_message"> </a><div class="element clickable property private property_message" data-toggle="collapse" data-target=".property_message .collapse">
+<a id="property_message"> </a><div class="element clickable property private property_message" data-toggle="collapse" data-target=".property_message .collapse" title="private">
 <h2>$message</h2>
 <pre>$message </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_postcalldata"> </a><div class="element clickable property private property_postcalldata" data-toggle="collapse" data-target=".property_postcalldata .collapse">
+<a id="property_postcalldata"> </a><div class="element clickable property private property_postcalldata" data-toggle="collapse" data-target=".property_postcalldata .collapse" title="private">
 <h2>$postcalldata</h2>
 <pre>$postcalldata </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_postcallfunction"> </a><div class="element clickable property private property_postcallfunction" data-toggle="collapse" data-target=".property_postcallfunction .collapse">
+<a id="property_postcallfunction"> </a><div class="element clickable property private property_postcallfunction" data-toggle="collapse" data-target=".property_postcallfunction .collapse" title="private">
 <h2>$postcallfunction</h2>
 <pre>$postcallfunction </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_precalldata"> </a><div class="element clickable property private property_precalldata" data-toggle="collapse" data-target=".property_precalldata .collapse">
+<a id="property_precalldata"> </a><div class="element clickable property private property_precalldata" data-toggle="collapse" data-target=".property_precalldata .collapse" title="private">
 <h2>$precalldata</h2>
 <pre>$precalldata </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_precallfunction"> </a><div class="element clickable property private property_precallfunction" data-toggle="collapse" data-target=".property_precallfunction .collapse">
+<a id="property_precallfunction"> </a><div class="element clickable property private property_precallfunction" data-toggle="collapse" data-target=".property_precallfunction .collapse" title="private">
 <h2>$precallfunction</h2>
 <pre>$precallfunction </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_transport"> </a><div class="element clickable property private property_transport" data-toggle="collapse" data-target=".property_transport .collapse">
+<a id="property_transport"> </a><div class="element clickable property private property_transport" data-toggle="collapse" data-target=".property_transport .collapse" title="private">
 <h2>$transport</h2>
 <pre>$transport </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -955,9 +1007,9 @@ an associative array, (or else the message fails immediately).</h2>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.2.0
 </a> and<br>
-            generated on 2013-11-04T11:25:44-05:00.<br></footer></div>
+            generated on 2013-12-06T06:42:56-05:00.<br></footer></div>
 </div>
 </body>
 </html>

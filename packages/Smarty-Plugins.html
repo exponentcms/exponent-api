@@ -19,6 +19,9 @@
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Composer.html"><i class="icon-th"></i> Composer</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
 <li><a>Packages</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
 <li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
@@ -28,6 +31,7 @@
 <li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
+<li><a href="../packages/elFinder.html"><i class="icon-folder-open"></i> elFinder</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -38,7 +42,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">1819</span></a></li>
+                <span class="label label-info">2301</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -66,11 +70,28 @@
 <a href="../packages/Smarty-Plugins.html" title="Smarty-Plugins"><i class="icon-folder-open"></i>Smarty-Plugins</a><ul class="nav nav-list nav-packages"></ul>
 </li>
 <li class="nav-header">
-<i class="icon-custom icon-function"></i> Functions</li>
+<i title="Functions" class="icon-custom icon-function"></i> Functions</li>
 <li class="function  "><a href="#function_addPlus" title="addPlus() :: "><span class="description">addPlus()
         </span><pre>addPlus</pre></a></li>
 <li class="function  "><a href="#function_build_menu" title="build_menu() :: "><span class="description">build_menu()
         </span><pre>build_menu</pre></a></li>
+<li class="function  "><a href="#function_existing_links" title="existing_links() :: "><span class="description">existing_links()
+        </span><pre>existing_links</pre></a></li>
+<li class="function  "><a href="#function_http_link" title="http_link() :: "><span class="description">http_link()
+        </span><pre>http_link</pre></a></li>
+<li class="function  "><a href="#function_insert_link" title="insert_link() :: "><span class="description">insert_link()
+        </span><pre>insert_link</pre></a></li>
+<li class="function  "><a href="#function_mail_link" title="mail_link() :: "><span class="description">mail_link()
+        </span><pre>mail_link</pre></a></li>
+<li class="function  "><a href="#function_other_link" title="other_link() :: "><span class="description">other_link()
+        </span><pre>other_link</pre></a></li>
+<li class="function  "><a href="#function_smarty_block_assocarray" title="smarty_block_assocarray() :: Smarty {assocarray} block plugin
+Type:     block&lt;br&gt;
+Name:     assocarray&lt;br&gt;
+Purpose:  Set up a associatvie array"><span class="description">Smarty {assocarray} block plugin
+Type:     block&lt;br&gt;
+Name:     assocarray&lt;br&gt;
+Purpose:  Set up a associatvie array</span><pre>smarty_block_assocarray</pre></a></li>
 <li class="function  "><a href="#function_smarty_block_css" title="smarty_block_css() :: Smarty {css} block plugin"><span class="description">Smarty {css} block plugin</span><pre>smarty_block_css</pre></a></li>
 <li class="function  "><a href="#function_smarty_block_form" title="smarty_block_form() :: Smarty {form} block plugin"><span class="description">Smarty {form} block plugin</span><pre>smarty_block_form</pre></a></li>
 <li class="function  "><a href="#function_smarty_block_group" title="smarty_block_group() :: Smarty {group} block plugin"><span class="description">Smarty {group} block plugin</span><pre>smarty_block_group</pre></a></li>
@@ -212,6 +233,8 @@ Purpose:  return the username for a user id"><span class="description">Smarty {u
 Type:     modifier&lt;br&gt;
 Name:     username&lt;br&gt;
 Purpose:  return the username for a user id</span><pre>smarty_modifier_username</pre></a></li>
+<li class="function  "><a href="#function_twitter_link" title="twitter_link() :: "><span class="description">twitter_link()
+        </span><pre>twitter_link</pre></a></li>
 </ul>
 </div>
 <div class="span8 package-contents">
@@ -220,8 +243,8 @@ Purpose:  return the username for a user id</span><pre>smarty_modifier_username<
 </li></ul>
 <div class="package-indent">
 <h3>
-<i class="icon-custom icon-function"></i> Functions</h3>
-<a id="function_addPlus"></a><div class="element clickable function  function_addPlus" data-toggle="collapse" data-target=".function_addPlus .collapse">
+<i title="Functions" class="icon-custom icon-function"></i> Functions</h3>
+<a id="function_addPlus"></a><div class="element clickable function  function_addPlus" data-toggle="collapse" data-target=".function_addPlus .collapse" title="">
 <h2>addPlus()
         </h2>
 <pre>addPlus($link) </pre>
@@ -232,7 +255,7 @@ Purpose:  return the username for a user id</span><pre>smarty_modifier_username<
 <div class="subelement argument"><h4>$link</h4></div>
 </div></div>
 </div>
-<a id="function_build_menu"></a><div class="element clickable function  function_build_menu" data-toggle="collapse" data-target=".function_build_menu .collapse">
+<a id="function_build_menu"></a><div class="element clickable function  function_build_menu" data-toggle="collapse" data-target=".function_build_menu .collapse" title="">
 <h2>build_menu()
         </h2>
 <pre>build_menu($page, $params) </pre>
@@ -244,7 +267,112 @@ Purpose:  return the username for a user id</span><pre>smarty_modifier_username<
 <div class="subelement argument"><h4>$params</h4></div>
 </div></div>
 </div>
-<a id="function_smarty_block_css"></a><div class="element clickable function  function_smarty_block_css" data-toggle="collapse" data-target=".function_smarty_block_css .collapse">
+<a id="function_existing_links"></a><div class="element clickable function  function_existing_links" data-toggle="collapse" data-target=".function_existing_links .collapse" title="">
+<h2>existing_links()
+        </h2>
+<pre>existing_links($match) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$match</h4></div>
+</div></div>
+</div>
+<a id="function_http_link"></a><div class="element clickable function  function_http_link" data-toggle="collapse" data-target=".function_http_link .collapse" title="">
+<h2>http_link()
+        </h2>
+<pre>http_link($match) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$match</h4></div>
+</div></div>
+</div>
+<a id="function_insert_link"></a><div class="element clickable function  function_insert_link" data-toggle="collapse" data-target=".function_insert_link .collapse" title="">
+<h2>insert_link()
+        </h2>
+<pre>insert_link($match) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$match</h4></div>
+</div></div>
+</div>
+<a id="function_mail_link"></a><div class="element clickable function  function_mail_link" data-toggle="collapse" data-target=".function_mail_link .collapse" title="">
+<h2>mail_link()
+        </h2>
+<pre>mail_link($match) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$match</h4></div>
+</div></div>
+</div>
+<a id="function_other_link"></a><div class="element clickable function  function_other_link" data-toggle="collapse" data-target=".function_other_link .collapse" title="">
+<h2>other_link()
+        </h2>
+<pre>other_link($match) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$match</h4></div>
+</div></div>
+</div>
+<a id="function_smarty_block_assocarray"></a><div class="element clickable function  function_smarty_block_assocarray" data-toggle="collapse" data-target=".function_smarty_block_assocarray .collapse" title="">
+<h2>Smarty {assocarray} block plugin
+Type:     block&lt;br&gt;
+Name:     assocarray&lt;br&gt;
+Purpose:  Set up a associatvie array</h2>
+<pre>smarty_block_assocarray(mixed $params, mixed $content, \Smarty $smarty, mixed $repeat) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$params</h4></div>
+<div class="subelement argument"><h4>$content</h4></div>
+<div class="subelement argument">
+<h4>$smarty</h4>
+<code><a href="Smarty.html">\Smarty</a></code>
+</div>
+<div class="subelement argument">
+<h4>$repeat</h4><p>Version:  1.1</p>
+<pre><code>      Author:   boots
+      Purpose:  make assignnents from within a template with a simple syntax
+      supporting multiple assignments and allowing for simple
+      assignments as well as arrays and keyed arrays.
+      See:      http://www.phpinsider.com/smarty-forum/viewtopic.php?t=64
+      Example:
+      {dsrlz}
+         test: "test"
+         test2: 10
+         test3: "this is a test"
+         test4: ["test1", "test2", "test3"]
+         test5: [
+             key1: "value1"
+             key2: "value2"
+         ]
+         test6: [
+             key1: "value1"
+             key2: [
+                 subkey1: "subvalue1"
+                 subkey2: "subvalue2"
+             ]
+         ]
+      {/dsrlz}
+      creates the following smarty assignments:
+      $test  [= "test"]
+      $test2  [= 10]
+      $test3  [= "this is a test"]
+      $test4  [= array("test1", "test2", "test3")]
+      $test5  [= array('key1'=>"value1", 'key2'=>"value2")]
+      $test6  [= array('key1'=>"value1", 'key2'=>array('subkey1'=>"subvalue1", 'subkey2'=>"subvalue2"))]</code></pre></div>
+</div></div>
+</div>
+<a id="function_smarty_block_css"></a><div class="element clickable function  function_smarty_block_css" data-toggle="collapse" data-target=".function_smarty_block_css .collapse" title="">
 <h2>Smarty {css} block plugin</h2>
 <pre>smarty_block_css(mixed $params, mixed $content, \Smarty $smarty, mixed $repeat) </pre>
 <div class="labels"></div>
@@ -262,7 +390,7 @@ Purpose:  Set up a css block</div>
 <div class="subelement argument"><h4>$repeat</h4></div>
 </div></div>
 </div>
-<a id="function_smarty_block_form"></a><div class="element clickable function  function_smarty_block_form" data-toggle="collapse" data-target=".function_smarty_block_form .collapse">
+<a id="function_smarty_block_form"></a><div class="element clickable function  function_smarty_block_form" data-toggle="collapse" data-target=".function_smarty_block_form .collapse" title="">
 <h2>Smarty {form} block plugin</h2>
 <pre>smarty_block_form(mixed $params, mixed $content, \Smarty $smarty, mixed $repeat) </pre>
 <div class="labels"></div>
@@ -280,7 +408,7 @@ Purpose:  Set up a form block</div>
 <div class="subelement argument"><h4>$repeat</h4></div>
 </div></div>
 </div>
-<a id="function_smarty_block_group"></a><div class="element clickable function  function_smarty_block_group" data-toggle="collapse" data-target=".function_smarty_block_group .collapse">
+<a id="function_smarty_block_group"></a><div class="element clickable function  function_smarty_block_group" data-toggle="collapse" data-target=".function_smarty_block_group .collapse" title="">
 <h2>Smarty {group} block plugin</h2>
 <pre>smarty_block_group(mixed $params, mixed $content, \Smarty $smarty, mixed $repeat) </pre>
 <div class="labels"></div>
@@ -298,7 +426,7 @@ Purpose:  Set up a group block</div>
 <div class="subelement argument"><h4>$repeat</h4></div>
 </div></div>
 </div>
-<a id="function_smarty_block_if_elements"></a><div class="element clickable function  function_smarty_block_if_elements" data-toggle="collapse" data-target=".function_smarty_block_if_elements .collapse">
+<a id="function_smarty_block_if_elements"></a><div class="element clickable function  function_smarty_block_if_elements" data-toggle="collapse" data-target=".function_smarty_block_if_elements .collapse" title="">
 <h2>Smarty {if_elements} block plugin</h2>
 <pre>smarty_block_if_elements(mixed $params, mixed $content, \Smarty $smarty, mixed $repeat) : string</pre>
 <div class="labels"></div>
@@ -318,7 +446,7 @@ Purpose:  Set up a if elements block</div>
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a id="function_smarty_block_page"></a><div class="element clickable function  function_smarty_block_page" data-toggle="collapse" data-target=".function_smarty_block_page .collapse">
+<a id="function_smarty_block_page"></a><div class="element clickable function  function_smarty_block_page" data-toggle="collapse" data-target=".function_smarty_block_page .collapse" title="">
 <h2>Smarty {page} block plugin</h2>
 <pre>smarty_block_page(mixed $params, mixed $content, \Smarty $smarty, mixed $repeat) </pre>
 <div class="labels"></div>
@@ -336,7 +464,7 @@ Purpose:  Set up a form page (wizard) block</div>
 <div class="subelement argument"><h4>$repeat</h4></div>
 </div></div>
 </div>
-<a id="function_smarty_block_paginate"></a><div class="element clickable function  function_smarty_block_paginate" data-toggle="collapse" data-target=".function_smarty_block_paginate .collapse">
+<a id="function_smarty_block_paginate"></a><div class="element clickable function  function_smarty_block_paginate" data-toggle="collapse" data-target=".function_smarty_block_paginate .collapse" title="">
 <h2>Smarty {paginate} block plugin</h2>
 <pre>smarty_block_paginate(mixed $params, mixed $content, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -353,7 +481,7 @@ Purpose:  Set up a pagination block</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_block_permissions"></a><div class="element clickable function  function_smarty_block_permissions" data-toggle="collapse" data-target=".function_smarty_block_permissions .collapse">
+<a id="function_smarty_block_permissions"></a><div class="element clickable function  function_smarty_block_permissions" data-toggle="collapse" data-target=".function_smarty_block_permissions .collapse" title="">
 <h2>Smarty {permissions} block plugin</h2>
 <pre>smarty_block_permissions(mixed $params, mixed $content, \Smarty $smarty, mixed $repeat) : string</pre>
 <div class="labels"></div>
@@ -373,7 +501,7 @@ Purpose:  Set up a permissions block</div>
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a id="function_smarty_block_pop"></a><div class="element clickable function  function_smarty_block_pop" data-toggle="collapse" data-target=".function_smarty_block_pop .collapse">
+<a id="function_smarty_block_pop"></a><div class="element clickable function  function_smarty_block_pop" data-toggle="collapse" data-target=".function_smarty_block_pop .collapse" title="">
 <h2>Smarty {pop} block plugin</h2>
 <pre>smarty_block_pop(mixed $params, mixed $content, \Smarty $smarty, mixed $repeat) </pre>
 <div class="labels"></div>
@@ -391,7 +519,7 @@ Purpose:  Set up a pop block</div>
 <div class="subelement argument"><h4>$repeat</h4></div>
 </div></div>
 </div>
-<a id="function_smarty_block_script"></a><div class="element clickable function  function_smarty_block_script" data-toggle="collapse" data-target=".function_smarty_block_script .collapse">
+<a id="function_smarty_block_script"></a><div class="element clickable function  function_smarty_block_script" data-toggle="collapse" data-target=".function_smarty_block_script .collapse" title="">
 <h2>Smarty {script} block plugin</h2>
 <pre>smarty_block_script(mixed $params, mixed $content, \Smarty $smarty, mixed $repeat) </pre>
 <div class="labels"></div>
@@ -409,7 +537,7 @@ Purpose:  Set up a script block</div>
 <div class="subelement argument"><h4>$repeat</h4></div>
 </div></div>
 </div>
-<a id="function_smarty_block_toggle"></a><div class="element clickable function  function_smarty_block_toggle" data-toggle="collapse" data-target=".function_smarty_block_toggle .collapse">
+<a id="function_smarty_block_toggle"></a><div class="element clickable function  function_smarty_block_toggle" data-toggle="collapse" data-target=".function_smarty_block_toggle .collapse" title="">
 <h2>Smarty {toggle} block plugin</h2>
 <pre>smarty_block_toggle(mixed $params, mixed $content, \Smarty $smarty, mixed $repeat) </pre>
 <div class="labels"></div>
@@ -427,7 +555,7 @@ Purpose:  Set up a toggle block</div>
 <div class="subelement argument"><h4>$repeat</h4></div>
 </div></div>
 </div>
-<a id="function_smarty_function_assign_adv"></a><div class="element clickable function  function_smarty_function_assign_adv" data-toggle="collapse" data-target=".function_smarty_function_assign_adv .collapse">
+<a id="function_smarty_function_assign_adv"></a><div class="element clickable function  function_smarty_function_assign_adv" data-toggle="collapse" data-target=".function_smarty_function_assign_adv .collapse" title="">
 <h2>Smarty {assign_adv} function plugin</h2>
 <pre>smarty_function_assign_adv(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -443,7 +571,7 @@ Purpose:  Advanced assign variable to template</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_attribution"></a><div class="element clickable function  function_smarty_function_attribution" data-toggle="collapse" data-target=".function_smarty_function_attribution .collapse">
+<a id="function_smarty_function_attribution"></a><div class="element clickable function  function_smarty_function_attribution" data-toggle="collapse" data-target=".function_smarty_function_attribution .collapse" title="">
 <h2>Smarty {attribution} function plugin</h2>
 <pre>smarty_function_attribution(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -459,7 +587,7 @@ Purpose:  create an attribution phrase</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_backlink"></a><div class="element clickable function  function_smarty_function_backlink" data-toggle="collapse" data-target=".function_smarty_function_backlink .collapse">
+<a id="function_smarty_function_backlink"></a><div class="element clickable function  function_smarty_function_backlink" data-toggle="collapse" data-target=".function_smarty_function_backlink .collapse" title="">
 <h2>Smarty {backlink} function plugin</h2>
 <pre>smarty_function_backlink(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -475,7 +603,7 @@ Purpose:  create a back link</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_bootstrap_navbar"></a><div class="element clickable function  function_smarty_function_bootstrap_navbar" data-toggle="collapse" data-target=".function_smarty_function_bootstrap_navbar .collapse">
+<a id="function_smarty_function_bootstrap_navbar"></a><div class="element clickable function  function_smarty_function_bootstrap_navbar" data-toggle="collapse" data-target=".function_smarty_function_bootstrap_navbar .collapse" title="">
 <h2>Smarty {bootstrap_navbar} function plugin</h2>
 <pre>smarty_function_bootstrap_navbar(mixed $params, \Smarty $smarty) : string</pre>
 <div class="labels"></div>
@@ -493,7 +621,7 @@ Purpose:  display a twitter bootstrap menu navbar</div>
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a id="function_smarty_function_br"></a><div class="element clickable function  function_smarty_function_br" data-toggle="collapse" data-target=".function_smarty_function_br .collapse">
+<a id="function_smarty_function_br"></a><div class="element clickable function  function_smarty_function_br" data-toggle="collapse" data-target=".function_smarty_function_br .collapse" title="">
 <h2>Smarty {br} function plugin</h2>
 <pre>smarty_function_br(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -509,7 +637,7 @@ Purpose:  create an appropriate break depending on xhtml setting</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_button_style"></a><div class="element clickable function  function_smarty_function_button_style" data-toggle="collapse" data-target=".function_smarty_function_button_style .collapse">
+<a id="function_smarty_function_button_style"></a><div class="element clickable function  function_smarty_function_button_style" data-toggle="collapse" data-target=".function_smarty_function_button_style .collapse" title="">
 <h2>Smarty {button_style} function plugin</h2>
 <pre>smarty_function_button_style(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -525,7 +653,7 @@ Purpose:  return correct button style for current framework</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_chain"></a><div class="element clickable function  function_smarty_function_chain" data-toggle="collapse" data-target=".function_smarty_function_chain .collapse">
+<a id="function_smarty_function_chain"></a><div class="element clickable function  function_smarty_function_chain" data-toggle="collapse" data-target=".function_smarty_function_chain .collapse" title="">
 <h2>Smarty {chain} function plugin</h2>
 <pre>smarty_function_chain(mixed $params, \Smarty $smarty) : bool</pre>
 <div class="labels"></div>
@@ -543,7 +671,7 @@ Purpose:  chain/append templates</div>
 <div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
-<a id="function_smarty_function_chainbytags"></a><div class="element clickable function  function_smarty_function_chainbytags" data-toggle="collapse" data-target=".function_smarty_function_chainbytags .collapse">
+<a id="function_smarty_function_chainbytags"></a><div class="element clickable function  function_smarty_function_chainbytags" data-toggle="collapse" data-target=".function_smarty_function_chainbytags .collapse" title="">
 <h2>Smarty {chainbytags} function plugin</h2>
 <pre>smarty_function_chainbytags(mixed $params, \Smarty $smarty) : bool</pre>
 <div class="labels"></div>
@@ -561,7 +689,7 @@ Purpose:  chain template using the 'tags' view</div>
 <div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
-<a id="function_smarty_function_clear"></a><div class="element clickable function  function_smarty_function_clear" data-toggle="collapse" data-target=".function_smarty_function_clear .collapse">
+<a id="function_smarty_function_clear"></a><div class="element clickable function  function_smarty_function_clear" data-toggle="collapse" data-target=".function_smarty_function_clear .collapse" title="">
 <h2>Smarty {clear} function plugin</h2>
 <pre>smarty_function_clear(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -577,7 +705,7 @@ Purpose:  clear formatting</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_comments"></a><div class="element clickable function  function_smarty_function_comments" data-toggle="collapse" data-target=".function_smarty_function_comments .collapse">
+<a id="function_smarty_function_comments"></a><div class="element clickable function  function_smarty_function_comments" data-toggle="collapse" data-target=".function_smarty_function_comments .collapse" title="">
 <h2>Smarty {comments} function plugin</h2>
 <pre>smarty_function_comments(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -593,7 +721,7 @@ Purpose:  Get comments</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_comments_count"></a><div class="element clickable function  function_smarty_function_comments_count" data-toggle="collapse" data-target=".function_smarty_function_comments_count .collapse">
+<a id="function_smarty_function_comments_count"></a><div class="element clickable function  function_smarty_function_comments_count" data-toggle="collapse" data-target=".function_smarty_function_comments_count .collapse" title="">
 <h2>Smarty {comments_count} function plugin</h2>
 <pre>smarty_function_comments_count(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -609,7 +737,7 @@ Purpose:  format a link for displaying number of item comments</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_configpanel"></a><div class="element clickable function  function_smarty_function_configpanel" data-toggle="collapse" data-target=".function_smarty_function_configpanel .collapse">
+<a id="function_smarty_function_configpanel"></a><div class="element clickable function  function_smarty_function_configpanel" data-toggle="collapse" data-target=".function_smarty_function_configpanel .collapse" title="">
 <h2>Smarty {configpanel} function plugin</h2>
 <pre>smarty_function_configpanel(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -625,7 +753,7 @@ Purpose:  display a config panel</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_control"></a><div class="element clickable function  function_smarty_function_control" data-toggle="collapse" data-target=".function_smarty_function_control .collapse">
+<a id="function_smarty_function_control"></a><div class="element clickable function  function_smarty_function_control" data-toggle="collapse" data-target=".function_smarty_function_control .collapse" title="">
 <h2>Smarty {control} function plugin</h2>
 <pre>smarty_function_control(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -641,7 +769,7 @@ Purpose:  create a form control</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_currency_symbol"></a><div class="element clickable function  function_smarty_function_currency_symbol" data-toggle="collapse" data-target=".function_smarty_function_currency_symbol .collapse">
+<a id="function_smarty_function_currency_symbol"></a><div class="element clickable function  function_smarty_function_currency_symbol" data-toggle="collapse" data-target=".function_smarty_function_currency_symbol .collapse" title="">
 <h2>Smarty {currencty_symbol} function plugin</h2>
 <pre>smarty_function_currency_symbol(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -657,7 +785,7 @@ Purpose:  create appropriate currency symbol</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_ddrerank"></a><div class="element clickable function  function_smarty_function_ddrerank" data-toggle="collapse" data-target=".function_smarty_function_ddrerank .collapse">
+<a id="function_smarty_function_ddrerank"></a><div class="element clickable function  function_smarty_function_ddrerank" data-toggle="collapse" data-target=".function_smarty_function_ddrerank .collapse" title="">
 <h2>smarty_function_ddrerank()
         </h2>
 <pre>smarty_function_ddrerank($params, $smarty) </pre>
@@ -669,7 +797,7 @@ Purpose:  create appropriate currency symbol</div>
 <div class="subelement argument"><h4>$smarty</h4></div>
 </div></div>
 </div>
-<a id="function_smarty_function_ddrerank"></a><div class="element clickable function  function_smarty_function_ddrerank" data-toggle="collapse" data-target=".function_smarty_function_ddrerank .collapse">
+<a id="function_smarty_function_ddrerank"></a><div class="element clickable function  function_smarty_function_ddrerank" data-toggle="collapse" data-target=".function_smarty_function_ddrerank .collapse" title="">
 <h2>Smarty {ddrerank} function plugin</h2>
 <pre>smarty_function_ddrerank(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -685,7 +813,7 @@ Purpose:  display item re-ranking popup</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_ecomconfig"></a><div class="element clickable function  function_smarty_function_ecomconfig" data-toggle="collapse" data-target=".function_smarty_function_ecomconfig .collapse">
+<a id="function_smarty_function_ecomconfig"></a><div class="element clickable function  function_smarty_function_ecomconfig" data-toggle="collapse" data-target=".function_smarty_function_ecomconfig .collapse" title="">
 <h2>Smarty {ecomconfig} function plugin</h2>
 <pre>smarty_function_ecomconfig(mixed $params, \Smarty $smarty) : null | string</pre>
 <div class="labels"></div>
@@ -705,7 +833,7 @@ Purpose:  return the ecom configuration</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_edebug"></a><div class="element clickable function  function_smarty_function_edebug" data-toggle="collapse" data-target=".function_smarty_function_edebug .collapse">
+<a id="function_smarty_function_edebug"></a><div class="element clickable function  function_smarty_function_edebug" data-toggle="collapse" data-target=".function_smarty_function_edebug .collapse" title="">
 <h2>Smarty {edebug} function plugin</h2>
 <pre>smarty_function_edebug(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -721,7 +849,7 @@ Purpose:  dump a variable</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_editorinclude"></a><div class="element clickable function  function_smarty_function_editorinclude" data-toggle="collapse" data-target=".function_smarty_function_editorinclude .collapse">
+<a id="function_smarty_function_editorinclude"></a><div class="element clickable function  function_smarty_function_editorinclude" data-toggle="collapse" data-target=".function_smarty_function_editorinclude .collapse" title="">
 <h2>Smarty {editorinclude} function plugin</h2>
 <pre>smarty_function_editorinclude(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -737,7 +865,7 @@ Purpose:  include an external editor</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_export_pdf_link"></a><div class="element clickable function  function_smarty_function_export_pdf_link" data-toggle="collapse" data-target=".function_smarty_function_export_pdf_link .collapse">
+<a id="function_smarty_function_export_pdf_link"></a><div class="element clickable function  function_smarty_function_export_pdf_link" data-toggle="collapse" data-target=".function_smarty_function_export_pdf_link .collapse" title="">
 <h2>Smarty {export_pdf_link} function plugin</h2>
 <pre>smarty_function_export_pdf_link(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -753,7 +881,7 @@ Purpose:  format a link for exporting a PDF version of the page</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_export_pdf_link"></a><div class="element clickable function  function_smarty_function_export_pdf_link" data-toggle="collapse" data-target=".function_smarty_function_export_pdf_link .collapse">
+<a id="function_smarty_function_export_pdf_link"></a><div class="element clickable function  function_smarty_function_export_pdf_link" data-toggle="collapse" data-target=".function_smarty_function_export_pdf_link .collapse" title="">
 <h2>Smarty {export_pdf_link} function plugin</h2>
 <pre>smarty_function_export_pdf_link(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -769,7 +897,7 @@ Purpose:  format a link for exporting a PDF version of the page</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_filedisplayer"></a><div class="element clickable function  function_smarty_function_filedisplayer" data-toggle="collapse" data-target=".function_smarty_function_filedisplayer .collapse">
+<a id="function_smarty_function_filedisplayer"></a><div class="element clickable function  function_smarty_function_filedisplayer" data-toggle="collapse" data-target=".function_smarty_function_filedisplayer .collapse" title="">
 <h2>Smarty {filedisplayer} function plugin</h2>
 <pre>smarty_function_filedisplayer(mixed $params, \Smarty $smarty) : string</pre>
 <div class="labels"></div>
@@ -787,7 +915,7 @@ Purpose:  display files</div>
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a id="function_smarty_function_get_cart_summary"></a><div class="element clickable function  function_smarty_function_get_cart_summary" data-toggle="collapse" data-target=".function_smarty_function_get_cart_summary .collapse">
+<a id="function_smarty_function_get_cart_summary"></a><div class="element clickable function  function_smarty_function_get_cart_summary" data-toggle="collapse" data-target=".function_smarty_function_get_cart_summary .collapse" title="">
 <h2>Smarty {get_cart_summary} function plugin</h2>
 <pre>smarty_function_get_cart_summary(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -803,7 +931,7 @@ Purpose:  get summary of cart contents</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_get_object"></a><div class="element clickable function  function_smarty_function_get_object" data-toggle="collapse" data-target=".function_smarty_function_get_object .collapse">
+<a id="function_smarty_function_get_object"></a><div class="element clickable function  function_smarty_function_get_object" data-toggle="collapse" data-target=".function_smarty_function_get_object .collapse" title="">
 <h2>Smarty {get_object} function plugin</h2>
 <pre>smarty_function_get_object(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -819,7 +947,7 @@ Purpose:  get and assign object</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_get_user"></a><div class="element clickable function  function_smarty_function_get_user" data-toggle="collapse" data-target=".function_smarty_function_get_user .collapse">
+<a id="function_smarty_function_get_user"></a><div class="element clickable function  function_smarty_function_get_user" data-toggle="collapse" data-target=".function_smarty_function_get_user .collapse" title="">
 <h2>Smarty {get_user} function plugin</h2>
 <pre>smarty_function_get_user(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -835,7 +963,7 @@ Purpose:  get user name</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_getchromemenu"></a><div class="element clickable function  function_smarty_function_getchromemenu" data-toggle="collapse" data-target=".function_smarty_function_getchromemenu .collapse">
+<a id="function_smarty_function_getchromemenu"></a><div class="element clickable function  function_smarty_function_getchromemenu" data-toggle="collapse" data-target=".function_smarty_function_getchromemenu .collapse" title="">
 <h2>Smarty {getchromemenu} function plugin</h2>
 <pre>smarty_function_getchromemenu(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -851,7 +979,7 @@ Purpose:  display the chrome menu</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_getfileicon"></a><div class="element clickable function  function_smarty_function_getfileicon" data-toggle="collapse" data-target=".function_smarty_function_getfileicon .collapse">
+<a id="function_smarty_function_getfileicon"></a><div class="element clickable function  function_smarty_function_getfileicon" data-toggle="collapse" data-target=".function_smarty_function_getfileicon .collapse" title="">
 <h2>Smarty {getfilicon} function plugin</h2>
 <pre>smarty_function_getfileicon(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -867,7 +995,7 @@ Purpose:  displays on icon for a file</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_getnav"></a><div class="element clickable function  function_smarty_function_getnav" data-toggle="collapse" data-target=".function_smarty_function_getnav .collapse">
+<a id="function_smarty_function_getnav"></a><div class="element clickable function  function_smarty_function_getnav" data-toggle="collapse" data-target=".function_smarty_function_getnav .collapse" title="">
 <h2>Smarty {getnav} function plugin</h2>
 <pre>smarty_function_getnav(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -883,7 +1011,7 @@ Purpose:  get and assign navigation sub-structure based on type</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_gettext"></a><div class="element clickable function  function_smarty_function_gettext" data-toggle="collapse" data-target=".function_smarty_function_gettext .collapse">
+<a id="function_smarty_function_gettext"></a><div class="element clickable function  function_smarty_function_gettext" data-toggle="collapse" data-target=".function_smarty_function_gettext .collapse" title="">
 <h2>Smarty {gettext} function plugin</h2>
 <pre>smarty_function_gettext(mixed $params, mixed $smarty) </pre>
 <div class="labels"></div>
@@ -896,7 +1024,7 @@ Purpose:  Replace with the chosen language for this text</div>
 <div class="subelement argument"><h4>$smarty</h4></div>
 </div></div>
 </div>
-<a id="function_smarty_function_gettxtlist"></a><div class="element clickable function  function_smarty_function_gettxtlist" data-toggle="collapse" data-target=".function_smarty_function_gettxtlist .collapse">
+<a id="function_smarty_function_gettxtlist"></a><div class="element clickable function  function_smarty_function_gettxtlist" data-toggle="collapse" data-target=".function_smarty_function_gettxtlist .collapse" title="">
 <h2>Smarty {gettxtlist} function plugin</h2>
 <pre>smarty_function_gettxtlist(mixed $params, mixed $smarty) </pre>
 <div class="labels"></div>
@@ -909,7 +1037,7 @@ Purpose:  Replace comma separated list with the chosen language for the text</di
 <div class="subelement argument"><h4>$smarty</h4></div>
 </div></div>
 </div>
-<a id="function_smarty_function_google_maps_link"></a><div class="element clickable function  function_smarty_function_google_maps_link" data-toggle="collapse" data-target=".function_smarty_function_google_maps_link .collapse">
+<a id="function_smarty_function_google_maps_link"></a><div class="element clickable function  function_smarty_function_google_maps_link" data-toggle="collapse" data-target=".function_smarty_function_google_maps_link .collapse" title="">
 <h2>Smarty {google_maps_link} function plugin</h2>
 <pre>smarty_function_google_maps_link(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -925,7 +1053,7 @@ Purpose:  create a google maps link</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_grouplistcontrol"></a><div class="element clickable function  function_smarty_function_grouplistcontrol" data-toggle="collapse" data-target=".function_smarty_function_grouplistcontrol .collapse">
+<a id="function_smarty_function_grouplistcontrol"></a><div class="element clickable function  function_smarty_function_grouplistcontrol" data-toggle="collapse" data-target=".function_smarty_function_grouplistcontrol .collapse" title="">
 <h2>Smarty {grouplistcontrol} function plugin</h2>
 <pre>smarty_function_grouplistcontrol(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -941,7 +1069,7 @@ Purpose:  display a list control of user groups</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_help"></a><div class="element clickable function  function_smarty_function_help" data-toggle="collapse" data-target=".function_smarty_function_help .collapse">
+<a id="function_smarty_function_help"></a><div class="element clickable function  function_smarty_function_help" data-toggle="collapse" data-target=".function_smarty_function_help .collapse" title="">
 <h2>Smarty {help} function plugin</h2>
 <pre>smarty_function_help(mixed $params, \Smarty $smarty) : bool</pre>
 <div class="labels"></div>
@@ -959,7 +1087,7 @@ Purpose:  create a help link</div>
 <div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
-<a id="function_smarty_function_ical_link"></a><div class="element clickable function  function_smarty_function_ical_link" data-toggle="collapse" data-target=".function_smarty_function_ical_link .collapse">
+<a id="function_smarty_function_ical_link"></a><div class="element clickable function  function_smarty_function_ical_link" data-toggle="collapse" data-target=".function_smarty_function_ical_link .collapse" title="">
 <h2>Smarty {ical_link} function plugin</h2>
 <pre>smarty_function_ical_link(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -975,7 +1103,7 @@ Purpose:  format a link for an iCalendar feed of the module</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_icon"></a><div class="element clickable function  function_smarty_function_icon" data-toggle="collapse" data-target=".function_smarty_function_icon .collapse">
+<a id="function_smarty_function_icon"></a><div class="element clickable function  function_smarty_function_icon" data-toggle="collapse" data-target=".function_smarty_function_icon .collapse" title="">
 <h2>smarty_function_icon()
         </h2>
 <pre>smarty_function_icon($params, $smarty) </pre>
@@ -987,7 +1115,7 @@ Purpose:  format a link for an iCalendar feed of the module</div>
 <div class="subelement argument"><h4>$smarty</h4></div>
 </div></div>
 </div>
-<a id="function_smarty_function_icon"></a><div class="element clickable function  function_smarty_function_icon" data-toggle="collapse" data-target=".function_smarty_function_icon .collapse">
+<a id="function_smarty_function_icon"></a><div class="element clickable function  function_smarty_function_icon" data-toggle="collapse" data-target=".function_smarty_function_icon .collapse" title="">
 <h2>Smarty {icon} function plugin</h2>
 <pre>smarty_function_icon(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1003,7 +1131,7 @@ Purpose:  create an icon type link</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_img"></a><div class="element clickable function  function_smarty_function_img" data-toggle="collapse" data-target=".function_smarty_function_img .collapse">
+<a id="function_smarty_function_img"></a><div class="element clickable function  function_smarty_function_img" data-toggle="collapse" data-target=".function_smarty_function_img .collapse" title="">
 <h2>Smarty {img} function plugin</h2>
 <pre>smarty_function_img(mixed $params, \Smarty $smarty) : string</pre>
 <div class="labels"></div>
@@ -1021,7 +1149,7 @@ Purpose:  display an image using phpthumb-nailer</div>
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a id="function_smarty_function_keybyid"></a><div class="element clickable function  function_smarty_function_keybyid" data-toggle="collapse" data-target=".function_smarty_function_keybyid .collapse">
+<a id="function_smarty_function_keybyid"></a><div class="element clickable function  function_smarty_function_keybyid" data-toggle="collapse" data-target=".function_smarty_function_keybyid .collapse" title="">
 <h2>Smarty {keybyid} function plugin</h2>
 <pre>smarty_function_keybyid(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1037,7 +1165,7 @@ Purpose:  get and assign key by its id</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_last_url_of"></a><div class="element clickable function  function_smarty_function_last_url_of" data-toggle="collapse" data-target=".function_smarty_function_last_url_of .collapse">
+<a id="function_smarty_function_last_url_of"></a><div class="element clickable function  function_smarty_function_last_url_of" data-toggle="collapse" data-target=".function_smarty_function_last_url_of .collapse" title="">
 <h2>Smarty {last_url_of} function plugin</h2>
 <pre>smarty_function_last_url_of(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1053,7 +1181,7 @@ Purpose:  return the last url of type passed</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_link"></a><div class="element clickable function  function_smarty_function_link" data-toggle="collapse" data-target=".function_smarty_function_link .collapse">
+<a id="function_smarty_function_link"></a><div class="element clickable function  function_smarty_function_link" data-toggle="collapse" data-target=".function_smarty_function_link .collapse" title="">
 <h2>Smarty {link} function plugin</h2>
 <pre>smarty_function_link(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1069,7 +1197,7 @@ Purpose:  create a link</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_list_object"></a><div class="element clickable function  function_smarty_function_list_object" data-toggle="collapse" data-target=".function_smarty_function_list_object .collapse">
+<a id="function_smarty_function_list_object"></a><div class="element clickable function  function_smarty_function_list_object" data-toggle="collapse" data-target=".function_smarty_function_list_object .collapse" title="">
 <h2>Smarty {list_object} function plugin</h2>
 <pre>smarty_function_list_object(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1085,7 +1213,7 @@ Purpose:  place an object in a unordered list</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_makecase"></a><div class="element clickable function  function_smarty_function_makecase" data-toggle="collapse" data-target=".function_smarty_function_makecase .collapse">
+<a id="function_smarty_function_makecase"></a><div class="element clickable function  function_smarty_function_makecase" data-toggle="collapse" data-target=".function_smarty_function_makecase .collapse" title="">
 <h2>Smarty {makecase} function plugin</h2>
 <pre>smarty_function_makecase(mixed $params, \Smarty $smarty) : string</pre>
 <div class="labels"></div>
@@ -1103,7 +1231,7 @@ Purpose:  change case of string</div>
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a id="function_smarty_function_max_filesize"></a><div class="element clickable function  function_smarty_function_max_filesize" data-toggle="collapse" data-target=".function_smarty_function_max_filesize .collapse">
+<a id="function_smarty_function_max_filesize"></a><div class="element clickable function  function_smarty_function_max_filesize" data-toggle="collapse" data-target=".function_smarty_function_max_filesize .collapse" title="">
 <h2>Smarty {max_filesize} function plugin</h2>
 <pre>smarty_function_max_filesize(mixed $params, \Smarty $smarty) : string</pre>
 <div class="labels"></div>
@@ -1121,7 +1249,7 @@ Purpose:  display php max filesize</div>
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a id="function_smarty_function_messagequeue"></a><div class="element clickable function  function_smarty_function_messagequeue" data-toggle="collapse" data-target=".function_smarty_function_messagequeue .collapse">
+<a id="function_smarty_function_messagequeue"></a><div class="element clickable function  function_smarty_function_messagequeue" data-toggle="collapse" data-target=".function_smarty_function_messagequeue .collapse" title="">
 <h2>Smarty {messagequeue} function plugin</h2>
 <pre>smarty_function_messagequeue(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1137,7 +1265,7 @@ Purpose:  display 'flash' message queue</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_navtojson"></a><div class="element clickable function  function_smarty_function_navtojson" data-toggle="collapse" data-target=".function_smarty_function_navtojson .collapse">
+<a id="function_smarty_function_navtojson"></a><div class="element clickable function  function_smarty_function_navtojson" data-toggle="collapse" data-target=".function_smarty_function_navtojson .collapse" title="">
 <h2>Smarty {navtojson} function plugin</h2>
 <pre>smarty_function_navtojson(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1153,7 +1281,7 @@ Purpose:  caonvert navigation structure to javascript via json</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_nbsp"></a><div class="element clickable function  function_smarty_function_nbsp" data-toggle="collapse" data-target=".function_smarty_function_nbsp .collapse">
+<a id="function_smarty_function_nbsp"></a><div class="element clickable function  function_smarty_function_nbsp" data-toggle="collapse" data-target=".function_smarty_function_nbsp .collapse" title="">
 <h2>Smarty {nbsp} function plugin</h2>
 <pre>smarty_function_nbsp(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1169,7 +1297,7 @@ Purpose:  create an appropriate non-breaking space</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_obj2json"></a><div class="element clickable function  function_smarty_function_obj2json" data-toggle="collapse" data-target=".function_smarty_function_obj2json .collapse">
+<a id="function_smarty_function_obj2json"></a><div class="element clickable function  function_smarty_function_obj2json" data-toggle="collapse" data-target=".function_smarty_function_obj2json .collapse" title="">
 <h2>Smarty {obj2json} function plugin</h2>
 <pre>smarty_function_obj2json(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1185,7 +1313,7 @@ Purpose:  convert a php object to javascript via json</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_object_to_js"></a><div class="element clickable function  function_smarty_function_object_to_js" data-toggle="collapse" data-target=".function_smarty_function_object_to_js .collapse">
+<a id="function_smarty_function_object_to_js"></a><div class="element clickable function  function_smarty_function_object_to_js" data-toggle="collapse" data-target=".function_smarty_function_object_to_js .collapse" title="">
 <h2>Smarty {object_to_js} function plugin</h2>
 <pre>smarty_function_object_to_js(mixed $params, \Smarty $smarty) : string</pre>
 <div class="labels"></div>
@@ -1203,7 +1331,7 @@ Purpose:  convert a php object into javascript</div>
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a id="function_smarty_function_optiondisplayer"></a><div class="element clickable function  function_smarty_function_optiondisplayer" data-toggle="collapse" data-target=".function_smarty_function_optiondisplayer .collapse">
+<a id="function_smarty_function_optiondisplayer"></a><div class="element clickable function  function_smarty_function_optiondisplayer" data-toggle="collapse" data-target=".function_smarty_function_optiondisplayer .collapse" title="">
 <h2>Smarty {optiondisplayer} function plugin</h2>
 <pre>smarty_function_optiondisplayer(mixed $params, \Smarty $smarty) : bool</pre>
 <div class="labels"></div>
@@ -1221,7 +1349,7 @@ Purpose:  display option dropdown list</div>
 <div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
-<a id="function_smarty_function_pagebacklink"></a><div class="element clickable function  function_smarty_function_pagebacklink" data-toggle="collapse" data-target=".function_smarty_function_pagebacklink .collapse">
+<a id="function_smarty_function_pagebacklink"></a><div class="element clickable function  function_smarty_function_pagebacklink" data-toggle="collapse" data-target=".function_smarty_function_pagebacklink .collapse" title="">
 <h2>Smarty {pagebacklink} function plugin</h2>
 <pre>smarty_function_pagebacklink(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1237,7 +1365,7 @@ Purpose:  display pagination back page link</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_pagelinks"></a><div class="element clickable function  function_smarty_function_pagelinks" data-toggle="collapse" data-target=".function_smarty_function_pagelinks .collapse">
+<a id="function_smarty_function_pagelinks"></a><div class="element clickable function  function_smarty_function_pagelinks" data-toggle="collapse" data-target=".function_smarty_function_pagelinks .collapse" title="">
 <h2>Smarty {pagelinks} function plugin</h2>
 <pre>smarty_function_pagelinks(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1253,7 +1381,7 @@ Purpose:  display page links</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_pagenextlink"></a><div class="element clickable function  function_smarty_function_pagenextlink" data-toggle="collapse" data-target=".function_smarty_function_pagenextlink .collapse">
+<a id="function_smarty_function_pagenextlink"></a><div class="element clickable function  function_smarty_function_pagenextlink" data-toggle="collapse" data-target=".function_smarty_function_pagenextlink .collapse" title="">
 <h2>Smarty {pagenextlink} function plugin</h2>
 <pre>smarty_function_pagenextlink(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1269,7 +1397,7 @@ Purpose:  display pagination next page link</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_pagenumbers"></a><div class="element clickable function  function_smarty_function_pagenumbers" data-toggle="collapse" data-target=".function_smarty_function_pagenumbers .collapse">
+<a id="function_smarty_function_pagenumbers"></a><div class="element clickable function  function_smarty_function_pagenumbers" data-toggle="collapse" data-target=".function_smarty_function_pagenumbers .collapse" title="">
 <h2>Smarty {pagenumbers} function plugin</h2>
 <pre>smarty_function_pagenumbers(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1285,7 +1413,7 @@ Purpose:  display a pagination page numbers</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_plural"></a><div class="element clickable function  function_smarty_function_plural" data-toggle="collapse" data-target=".function_smarty_function_plural .collapse">
+<a id="function_smarty_function_plural"></a><div class="element clickable function  function_smarty_function_plural" data-toggle="collapse" data-target=".function_smarty_function_plural .collapse" title="">
 <h2>Smarty {plural} function plugin</h2>
 <pre>smarty_function_plural(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1301,7 +1429,7 @@ Purpose:  test and return a singular or plural form of phrase</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_podcastlink"></a><div class="element clickable function  function_smarty_function_podcastlink" data-toggle="collapse" data-target=".function_smarty_function_podcastlink .collapse">
+<a id="function_smarty_function_podcastlink"></a><div class="element clickable function  function_smarty_function_podcastlink" data-toggle="collapse" data-target=".function_smarty_function_podcastlink .collapse" title="">
 <h2>Smarty {podcastlink} function plugin</h2>
 <pre>smarty_function_podcastlink(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1317,7 +1445,7 @@ Purpose:  make a podcast link</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_printer_friendly_link"></a><div class="element clickable function  function_smarty_function_printer_friendly_link" data-toggle="collapse" data-target=".function_smarty_function_printer_friendly_link .collapse">
+<a id="function_smarty_function_printer_friendly_link"></a><div class="element clickable function  function_smarty_function_printer_friendly_link" data-toggle="collapse" data-target=".function_smarty_function_printer_friendly_link .collapse" title="">
 <h2>Smarty {printer_friendly_link} function plugin</h2>
 <pre>smarty_function_printer_friendly_link(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1333,7 +1461,7 @@ Purpose:  format a link for displaying a printer friendly version of the page</d
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_printer_friendly_link"></a><div class="element clickable function  function_smarty_function_printer_friendly_link" data-toggle="collapse" data-target=".function_smarty_function_printer_friendly_link .collapse">
+<a id="function_smarty_function_printer_friendly_link"></a><div class="element clickable function  function_smarty_function_printer_friendly_link" data-toggle="collapse" data-target=".function_smarty_function_printer_friendly_link .collapse" title="">
 <h2>Smarty {printer_friendly_link} function plugin</h2>
 <pre>smarty_function_printer_friendly_link(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1349,7 +1477,7 @@ Purpose:  format a link for displaying a printer friendly version of the page</d
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_prod_images"></a><div class="element clickable function  function_smarty_function_prod_images" data-toggle="collapse" data-target=".function_smarty_function_prod_images .collapse">
+<a id="function_smarty_function_prod_images"></a><div class="element clickable function  function_smarty_function_prod_images" data-toggle="collapse" data-target=".function_smarty_function_prod_images .collapse" title="">
 <h2>Smarty {prod_images} function plugin</h2>
 <pre>smarty_function_prod_images(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1365,7 +1493,7 @@ Purpose:  display product images</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_rating"></a><div class="element clickable function  function_smarty_function_rating" data-toggle="collapse" data-target=".function_smarty_function_rating .collapse">
+<a id="function_smarty_function_rating"></a><div class="element clickable function  function_smarty_function_rating" data-toggle="collapse" data-target=".function_smarty_function_rating .collapse" title="">
 <h2>Smarty {rating} function plugin</h2>
 <pre>smarty_function_rating(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1381,7 +1509,7 @@ Purpose:  display a rating</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_rss_link"></a><div class="element clickable function  function_smarty_function_rss_link" data-toggle="collapse" data-target=".function_smarty_function_rss_link .collapse">
+<a id="function_smarty_function_rss_link"></a><div class="element clickable function  function_smarty_function_rss_link" data-toggle="collapse" data-target=".function_smarty_function_rss_link .collapse" title="">
 <h2>Smarty {rss_link} function plugin</h2>
 <pre>smarty_function_rss_link(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1397,7 +1525,7 @@ Purpose:  format a link for an rss feed of the module</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_rsslink"></a><div class="element clickable function  function_smarty_function_rsslink" data-toggle="collapse" data-target=".function_smarty_function_rsslink .collapse">
+<a id="function_smarty_function_rsslink"></a><div class="element clickable function  function_smarty_function_rsslink" data-toggle="collapse" data-target=".function_smarty_function_rsslink .collapse" title="">
 <h2>Smarty {rsslink} function plugin</h2>
 <pre>smarty_function_rsslink(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1413,7 +1541,7 @@ Purpose:  create an rss link</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_scaffold"></a><div class="element clickable function  function_smarty_function_scaffold" data-toggle="collapse" data-target=".function_smarty_function_scaffold .collapse">
+<a id="function_smarty_function_scaffold"></a><div class="element clickable function  function_smarty_function_scaffold" data-toggle="collapse" data-target=".function_smarty_function_scaffold .collapse" title="">
 <h2>Smarty {scaffold} function plugin</h2>
 <pre>smarty_function_scaffold(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1429,7 +1557,7 @@ Purpose:  scaffold</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_securelink"></a><div class="element clickable function  function_smarty_function_securelink" data-toggle="collapse" data-target=".function_smarty_function_securelink .collapse">
+<a id="function_smarty_function_securelink"></a><div class="element clickable function  function_smarty_function_securelink" data-toggle="collapse" data-target=".function_smarty_function_securelink .collapse" title="">
 <h2>Smarty {securelink} function plugin</h2>
 <pre>smarty_function_securelink(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1445,7 +1573,7 @@ Purpose:  create a secure link</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_selectobjects"></a><div class="element clickable function  function_smarty_function_selectobjects" data-toggle="collapse" data-target=".function_smarty_function_selectobjects .collapse">
+<a id="function_smarty_function_selectobjects"></a><div class="element clickable function  function_smarty_function_selectobjects" data-toggle="collapse" data-target=".function_smarty_function_selectobjects .collapse" title="">
 <h2>Smarty {selectobjects} function plugin</h2>
 <pre>smarty_function_selectobjects(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1461,7 +1589,7 @@ Purpose:  select and assign objects</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_selectvalue"></a><div class="element clickable function  function_smarty_function_selectvalue" data-toggle="collapse" data-target=".function_smarty_function_selectvalue .collapse">
+<a id="function_smarty_function_selectvalue"></a><div class="element clickable function  function_smarty_function_selectvalue" data-toggle="collapse" data-target=".function_smarty_function_selectvalue .collapse" title="">
 <h2>Smarty {selectvalue} function plugin</h2>
 <pre>smarty_function_selectvalue(mixed $params, \Smarty $smarty) : bool | null</pre>
 <div class="labels"></div>
@@ -1481,7 +1609,7 @@ Purpose:  select a database table value</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_sessions_get"></a><div class="element clickable function  function_smarty_function_sessions_get" data-toggle="collapse" data-target=".function_smarty_function_sessions_get .collapse">
+<a id="function_smarty_function_sessions_get"></a><div class="element clickable function  function_smarty_function_sessions_get" data-toggle="collapse" data-target=".function_smarty_function_sessions_get .collapse" title="">
 <h2>Smarty {sessions_get} function plugin</h2>
 <pre>smarty_function_sessions_get(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1497,7 +1625,7 @@ Purpose:  get and assign sessions variables</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_showaction"></a><div class="element clickable function  function_smarty_function_showaction" data-toggle="collapse" data-target=".function_smarty_function_showaction .collapse">
+<a id="function_smarty_function_showaction"></a><div class="element clickable function  function_smarty_function_showaction" data-toggle="collapse" data-target=".function_smarty_function_showaction .collapse" title="">
 <h2>Smarty {showaction} function plugin</h2>
 <pre>smarty_function_showaction(array $params, mixed $smarty) </pre>
 <div class="labels"></div>
@@ -1516,7 +1644,7 @@ Purpose:  Display an action.<br></div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_showmodule"></a><div class="element clickable function  function_smarty_function_showmodule" data-toggle="collapse" data-target=".function_smarty_function_showmodule .collapse">
+<a id="function_smarty_function_showmodule"></a><div class="element clickable function  function_smarty_function_showmodule" data-toggle="collapse" data-target=".function_smarty_function_showmodule .collapse" title="">
 <h2>Smarty {showmodule} function plugin</h2>
 <pre>smarty_function_showmodule(array $params, mixed $smarty) </pre>
 <div class="labels"></div>
@@ -1535,7 +1663,7 @@ Purpose:  Display a module.<br></div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_simplenote"></a><div class="element clickable function  function_smarty_function_simplenote" data-toggle="collapse" data-target=".function_smarty_function_simplenote .collapse">
+<a id="function_smarty_function_simplenote"></a><div class="element clickable function  function_smarty_function_simplenote" data-toggle="collapse" data-target=".function_smarty_function_simplenote .collapse" title="">
 <h2>Smarty {simplenote} function plugin</h2>
 <pre>smarty_function_simplenote(array $params, mixed $smarty) : string</pre>
 <div class="labels"></div>
@@ -1566,7 +1694,7 @@ Purpose:  Include the SimpleNote Attachable Item on the page.<br></div>
 </div>
 </div>
 </div>
-<a id="function_smarty_function_stars"></a><div class="element clickable function  function_smarty_function_stars" data-toggle="collapse" data-target=".function_smarty_function_stars .collapse">
+<a id="function_smarty_function_stars"></a><div class="element clickable function  function_smarty_function_stars" data-toggle="collapse" data-target=".function_smarty_function_stars .collapse" title="">
 <h2>Smarty {stars} function plugin</h2>
 <pre>smarty_function_stars(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1582,7 +1710,7 @@ Purpose:  display a rating by stars</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_subscribe_link"></a><div class="element clickable function  function_smarty_function_subscribe_link" data-toggle="collapse" data-target=".function_smarty_function_subscribe_link .collapse">
+<a id="function_smarty_function_subscribe_link"></a><div class="element clickable function  function_smarty_function_subscribe_link" data-toggle="collapse" data-target=".function_smarty_function_subscribe_link .collapse" title="">
 <h2>Smarty {subscribe_link} function plugin</h2>
 <pre>smarty_function_subscribe_link(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1598,7 +1726,7 @@ Purpose:  format a link for subscribing/unsubscribing to email alerts for the mo
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_tags_assigned"></a><div class="element clickable function  function_smarty_function_tags_assigned" data-toggle="collapse" data-target=".function_smarty_function_tags_assigned .collapse">
+<a id="function_smarty_function_tags_assigned"></a><div class="element clickable function  function_smarty_function_tags_assigned" data-toggle="collapse" data-target=".function_smarty_function_tags_assigned .collapse" title="">
 <h2>Smarty {tags_assigned} function plugin</h2>
 <pre>smarty_function_tags_assigned(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1614,7 +1742,7 @@ Purpose:  format links for displaying tags assigned to an item</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_time_duration"></a><div class="element clickable function  function_smarty_function_time_duration" data-toggle="collapse" data-target=".function_smarty_function_time_duration .collapse">
+<a id="function_smarty_function_time_duration"></a><div class="element clickable function  function_smarty_function_time_duration" data-toggle="collapse" data-target=".function_smarty_function_time_duration .collapse" title="">
 <h2>Smarty {time_duration} function plugin</h2>
 <pre>smarty_function_time_duration(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1630,7 +1758,7 @@ Purpose:  calculate and assign a duration</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_uniqueid"></a><div class="element clickable function  function_smarty_function_uniqueid" data-toggle="collapse" data-target=".function_smarty_function_uniqueid .collapse">
+<a id="function_smarty_function_uniqueid"></a><div class="element clickable function  function_smarty_function_uniqueid" data-toggle="collapse" data-target=".function_smarty_function_uniqueid .collapse" title="">
 <h2>Smarty {uniqueid} function plugin</h2>
 <pre>smarty_function_uniqueid(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1646,7 +1774,7 @@ Purpose:  create a unique id</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_userlistcontrol"></a><div class="element clickable function  function_smarty_function_userlistcontrol" data-toggle="collapse" data-target=".function_smarty_function_userlistcontrol .collapse">
+<a id="function_smarty_function_userlistcontrol"></a><div class="element clickable function  function_smarty_function_userlistcontrol" data-toggle="collapse" data-target=".function_smarty_function_userlistcontrol .collapse" title="">
 <h2>Smarty {userlistcontrol} function plugin</h2>
 <pre>smarty_function_userlistcontrol(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1662,7 +1790,7 @@ Purpose:  display a list control of users</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_viewfile"></a><div class="element clickable function  function_smarty_function_viewfile" data-toggle="collapse" data-target=".function_smarty_function_viewfile .collapse">
+<a id="function_smarty_function_viewfile"></a><div class="element clickable function  function_smarty_function_viewfile" data-toggle="collapse" data-target=".function_smarty_function_viewfile .collapse" title="">
 <h2>Smarty {viewfile} function plugin</h2>
 <pre>smarty_function_viewfile(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1678,7 +1806,7 @@ Purpose:  get and assign a view file</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_yuilogger"></a><div class="element clickable function  function_smarty_function_yuilogger" data-toggle="collapse" data-target=".function_smarty_function_yuilogger .collapse">
+<a id="function_smarty_function_yuilogger"></a><div class="element clickable function  function_smarty_function_yuilogger" data-toggle="collapse" data-target=".function_smarty_function_yuilogger .collapse" title="">
 <h2>Smarty {yuilogger} function plugin</h2>
 <pre>smarty_function_yuilogger(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1694,7 +1822,7 @@ Purpose:  attempt to start the yui logger</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_yuimenu"></a><div class="element clickable function  function_smarty_function_yuimenu" data-toggle="collapse" data-target=".function_smarty_function_yuimenu .collapse">
+<a id="function_smarty_function_yuimenu"></a><div class="element clickable function  function_smarty_function_yuimenu" data-toggle="collapse" data-target=".function_smarty_function_yuimenu .collapse" title="">
 <h2>Smarty {yuimenu} function plugin</h2>
 <pre>smarty_function_yuimenu(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1710,7 +1838,7 @@ Purpose:  display a yui menu</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_function_yuimenubar"></a><div class="element clickable function  function_smarty_function_yuimenubar" data-toggle="collapse" data-target=".function_smarty_function_yuimenubar .collapse">
+<a id="function_smarty_function_yuimenubar"></a><div class="element clickable function  function_smarty_function_yuimenubar" data-toggle="collapse" data-target=".function_smarty_function_yuimenubar .collapse" title="">
 <h2>Smarty {yuimenubar} function plugin</h2>
 <pre>smarty_function_yuimenubar(mixed $params, \Smarty $smarty) </pre>
 <div class="labels"></div>
@@ -1726,7 +1854,7 @@ Purpose:  display a yui menu bar</div>
 </div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_address"></a><div class="element clickable function  function_smarty_modifier_address" data-toggle="collapse" data-target=".function_smarty_modifier_address .collapse">
+<a id="function_smarty_modifier_address"></a><div class="element clickable function  function_smarty_modifier_address" data-toggle="collapse" data-target=".function_smarty_modifier_address .collapse" title="">
 <h2>Smarty {address} modifier plugin</h2>
 <pre>smarty_modifier_address($address) : array</pre>
 <div class="labels"></div>
@@ -1740,9 +1868,9 @@ Purpose:  return an address display from an id</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_array_lookup"></a><div class="element clickable function  function_smarty_modifier_array_lookup" data-toggle="collapse" data-target=".function_smarty_modifier_array_lookup .collapse">
+<a id="function_smarty_modifier_array_lookup"></a><div class="element clickable function  function_smarty_modifier_array_lookup" data-toggle="collapse" data-target=".function_smarty_modifier_array_lookup .collapse" title="">
 <h2>Smarty {array_lookup} modifier plugin</h2>
-<pre>smarty_modifier_array_lookup(string $value, array $from, int $index) : array</pre>
+<pre>smarty_modifier_array_lookup(string $value<code> = ''</code>, array $from<code> = array()</code>, int $index<code> = 0</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description">Type:     modifier<br>
@@ -1765,9 +1893,9 @@ Purpose:  lookup a key within an array</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_brightness"></a><div class="element clickable function  function_smarty_modifier_brightness" data-toggle="collapse" data-target=".function_smarty_modifier_brightness .collapse">
+<a id="function_smarty_modifier_brightness"></a><div class="element clickable function  function_smarty_modifier_brightness" data-toggle="collapse" data-target=".function_smarty_modifier_brightness .collapse" title="">
 <h2>Smarty {brightness} modifier plugin</h2>
-<pre>smarty_modifier_brightness(string $colourstr, int $steps) : string</pre>
+<pre>smarty_modifier_brightness(string $colourstr, int $steps<code> = 20</code>) : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description">Type:     modifier<br>
@@ -1787,7 +1915,7 @@ Purpose:  Calculate a lighter/darker color from the one passed
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_bytes"></a><div class="element clickable function  function_smarty_modifier_bytes" data-toggle="collapse" data-target=".function_smarty_modifier_bytes .collapse">
+<a id="function_smarty_modifier_bytes"></a><div class="element clickable function  function_smarty_modifier_bytes" data-toggle="collapse" data-target=".function_smarty_modifier_bytes .collapse" title="">
 <h2>Smarty {bytes} modifier plugin</h2>
 <pre>smarty_modifier_bytes($bytes) : array</pre>
 <div class="labels"></div>
@@ -1801,9 +1929,9 @@ Purpose:  convert to mega/kilo/bytes</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_contrast"></a><div class="element clickable function  function_smarty_modifier_contrast" data-toggle="collapse" data-target=".function_smarty_modifier_contrast .collapse">
+<a id="function_smarty_modifier_contrast"></a><div class="element clickable function  function_smarty_modifier_contrast" data-toggle="collapse" data-target=".function_smarty_modifier_contrast .collapse" title="">
 <h2>Smarty {contrast} modifier plugin</h2>
-<pre>smarty_modifier_contrast(string $hexcolor, string $dark, string $light, bool $yiq) : array</pre>
+<pre>smarty_modifier_contrast(string $hexcolor, string $dark<code> = '#000000'</code>, string $light<code> = '#FFFFFF'</code>, bool $yiq<code> = false</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description">Type:     modifier<br>
@@ -1831,9 +1959,9 @@ Purpose:  Calculate a contrasting/complementary color from the one passed
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_convertlangcode"></a><div class="element clickable function  function_smarty_modifier_convertlangcode" data-toggle="collapse" data-target=".function_smarty_modifier_convertlangcode .collapse">
+<a id="function_smarty_modifier_convertlangcode"></a><div class="element clickable function  function_smarty_modifier_convertlangcode" data-toggle="collapse" data-target=".function_smarty_modifier_convertlangcode .collapse" title="">
 <h2>Smarty {convertlangcode} modifier plugin</h2>
-<pre>smarty_modifier_convertlangcode(mixed $lang_code, string $target) : array</pre>
+<pre>smarty_modifier_convertlangcode(mixed $lang_code, string $target<code> = "iso639-1"</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description">Type:     modifier<br>
@@ -1849,9 +1977,9 @@ Purpose:  attempt to convert language codes between different formats</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_countryname"></a><div class="element clickable function  function_smarty_modifier_countryname" data-toggle="collapse" data-target=".function_smarty_modifier_countryname .collapse">
+<a id="function_smarty_modifier_countryname"></a><div class="element clickable function  function_smarty_modifier_countryname" data-toggle="collapse" data-target=".function_smarty_modifier_countryname .collapse" title="">
 <h2>Smarty {countryname} modifier plugin</h2>
-<pre>smarty_modifier_countryname($country, string $col) : array</pre>
+<pre>smarty_modifier_countryname($country, string $col<code> = 'name'</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description">Type:     modifier<br>
@@ -1867,9 +1995,9 @@ Purpose:  lookup a country's name based a country id</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_currency"></a><div class="element clickable function  function_smarty_modifier_currency" data-toggle="collapse" data-target=".function_smarty_modifier_currency .collapse">
+<a id="function_smarty_modifier_currency"></a><div class="element clickable function  function_smarty_modifier_currency" data-toggle="collapse" data-target=".function_smarty_modifier_currency .collapse" title="">
 <h2>Smarty {currency} modifier plugin</h2>
-<pre>smarty_modifier_currency(mixed $number, mixed $decimals) : array</pre>
+<pre>smarty_modifier_currency(mixed $number, mixed $decimals<code> = 2</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description">Type:     modifier<br>
@@ -1882,7 +2010,7 @@ Purpose:  format a number as currency</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_expdate"></a><div class="element clickable function  function_smarty_modifier_expdate" data-toggle="collapse" data-target=".function_smarty_modifier_expdate .collapse">
+<a id="function_smarty_modifier_expdate"></a><div class="element clickable function  function_smarty_modifier_expdate" data-toggle="collapse" data-target=".function_smarty_modifier_expdate .collapse" title="">
 <h2>Smarty {expdate} modifier plugin</h2>
 <pre>smarty_modifier_expdate(mixed $timestamp, mixed $format) : array</pre>
 <div class="labels"></div>
@@ -1897,9 +2025,9 @@ Purpose:  Format a string according to the given format</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_format_date"></a><div class="element clickable function  function_smarty_modifier_format_date" data-toggle="collapse" data-target=".function_smarty_modifier_format_date .collapse">
+<a id="function_smarty_modifier_format_date"></a><div class="element clickable function  function_smarty_modifier_format_date" data-toggle="collapse" data-target=".function_smarty_modifier_format_date .collapse" title="">
 <h2>Smarty {format_date} modifier plugin</h2>
-<pre>smarty_modifier_format_date($timestamp, string $format) : array</pre>
+<pre>smarty_modifier_format_date($timestamp, string $format<code> = DISPLAY_DATE_FORMAT</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description">Type:     modifier<br>
@@ -1915,9 +2043,9 @@ Purpose:  format a date</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_format_tooltip"></a><div class="element clickable function  function_smarty_modifier_format_tooltip" data-toggle="collapse" data-target=".function_smarty_modifier_format_tooltip .collapse">
+<a id="function_smarty_modifier_format_tooltip"></a><div class="element clickable function  function_smarty_modifier_format_tooltip" data-toggle="collapse" data-target=".function_smarty_modifier_format_tooltip .collapse" title="">
 <h2>Smarty {format_tooltip} modifier plugin</h2>
-<pre>smarty_modifier_format_tooltip(string $text, int $length) : array</pre>
+<pre>smarty_modifier_format_tooltip(string $text<code> = ''</code>, int $length<code> = 77</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description">Type:     modifier<br>
@@ -1936,7 +2064,7 @@ Purpose:  shorten and strip a string</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_getcontrollerdisplayname"></a><div class="element clickable function  function_smarty_modifier_getcontrollerdisplayname" data-toggle="collapse" data-target=".function_smarty_modifier_getcontrollerdisplayname .collapse">
+<a id="function_smarty_modifier_getcontrollerdisplayname"></a><div class="element clickable function  function_smarty_modifier_getcontrollerdisplayname" data-toggle="collapse" data-target=".function_smarty_modifier_getcontrollerdisplayname .collapse" title="">
 <h2>Smarty {getcontrollerdisplayname} modifier plugin</h2>
 <pre>smarty_modifier_getcontrollerdisplayname(string $str) : string</pre>
 <div class="labels"></div>
@@ -1953,7 +2081,7 @@ Purpose:  Return the module display name for this module</div>
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_getcontrollername"></a><div class="element clickable function  function_smarty_modifier_getcontrollername" data-toggle="collapse" data-target=".function_smarty_modifier_getcontrollername .collapse">
+<a id="function_smarty_modifier_getcontrollername"></a><div class="element clickable function  function_smarty_modifier_getcontrollername" data-toggle="collapse" data-target=".function_smarty_modifier_getcontrollername .collapse" title="">
 <h2>Smarty {getcontrollername} modifier plugin</h2>
 <pre>smarty_modifier_getcontrollername(string $str) : string</pre>
 <div class="labels"></div>
@@ -1970,7 +2098,7 @@ Purpose:  Return the module name for this module</div>
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_gettext"></a><div class="element clickable function  function_smarty_modifier_gettext" data-toggle="collapse" data-target=".function_smarty_modifier_gettext .collapse">
+<a id="function_smarty_modifier_gettext"></a><div class="element clickable function  function_smarty_modifier_gettext" data-toggle="collapse" data-target=".function_smarty_modifier_gettext .collapse" title="">
 <h2>Smarty {gettext} modifier plugin</h2>
 <pre>smarty_modifier_gettext(string $str) : string</pre>
 <div class="labels"></div>
@@ -1987,7 +2115,7 @@ Purpose:  Replace with the chosen language for this text</div>
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_gettxtlist"></a><div class="element clickable function  function_smarty_modifier_gettxtlist" data-toggle="collapse" data-target=".function_smarty_modifier_gettxtlist .collapse">
+<a id="function_smarty_modifier_gettxtlist"></a><div class="element clickable function  function_smarty_modifier_gettxtlist" data-toggle="collapse" data-target=".function_smarty_modifier_gettxtlist .collapse" title="">
 <h2>Smarty {gettxtlist} modifier plugin</h2>
 <pre>smarty_modifier_gettxtlist(string $str) : string</pre>
 <div class="labels"></div>
@@ -2004,7 +2132,7 @@ Purpose:  Replace comma separated list with the chosen language for the text</di
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_groupname"></a><div class="element clickable function  function_smarty_modifier_groupname" data-toggle="collapse" data-target=".function_smarty_modifier_groupname .collapse">
+<a id="function_smarty_modifier_groupname"></a><div class="element clickable function  function_smarty_modifier_groupname" data-toggle="collapse" data-target=".function_smarty_modifier_groupname .collapse" title="">
 <h2>Smarty {groupname} modifier plugin</h2>
 <pre>smarty_modifier_groupname($groupid) : array</pre>
 <div class="labels"></div>
@@ -2018,7 +2146,7 @@ Purpose:  return the group name for a group id</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_hide_email"></a><div class="element clickable function  function_smarty_modifier_hide_email" data-toggle="collapse" data-target=".function_smarty_modifier_hide_email .collapse">
+<a id="function_smarty_modifier_hide_email"></a><div class="element clickable function  function_smarty_modifier_hide_email" data-toggle="collapse" data-target=".function_smarty_modifier_hide_email .collapse" title="">
 <h2>Smarty {hide_email} modifier plugin</h2>
 <pre>smarty_modifier_hide_email($string) : array</pre>
 <div class="labels"></div>
@@ -2032,9 +2160,9 @@ Purpose:  obfuscate an email address</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_highlight"></a><div class="element clickable function  function_smarty_modifier_highlight" data-toggle="collapse" data-target=".function_smarty_modifier_highlight .collapse">
+<a id="function_smarty_modifier_highlight"></a><div class="element clickable function  function_smarty_modifier_highlight" data-toggle="collapse" data-target=".function_smarty_modifier_highlight .collapse" title="">
 <h2>Smarty {highlight} modifier plugin</h2>
-<pre>smarty_modifier_highlight(string $text, string $word, string $highlight) : array</pre>
+<pre>smarty_modifier_highlight(string $text<code> = ''</code>, string $word<code> = ''</code>, string $highlight<code> = ''</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description">Type:     modifier<br>
@@ -2047,17 +2175,15 @@ Purpose:  highlight selected phrases in text</div>
 </div>
 <div class="subelement argument">
 <h4>$word</h4>
-<code>string</code><p>phrase(s) to highlight</p>
-</div>
+<code>string</code><p>phrase(s) to highlight</p></div>
 <div class="subelement argument">
 <h4>$highlight</h4>
-<code>string</code><p>type of highlight (style/class) to place inside <span> tag</p>
-</div>
+<code>string</code><p>type of highlight (style/class) to place inside <span> tag</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_is_logged_in"></a><div class="element clickable function  function_smarty_modifier_is_logged_in" data-toggle="collapse" data-target=".function_smarty_modifier_is_logged_in .collapse">
+<a id="function_smarty_modifier_is_logged_in"></a><div class="element clickable function  function_smarty_modifier_is_logged_in" data-toggle="collapse" data-target=".function_smarty_modifier_is_logged_in .collapse" title="">
 <h2>Smarty {is_logged_in} modifier plugin</h2>
 <pre>smarty_modifier_is_logged_in($string) : array</pre>
 <div class="labels"></div>
@@ -2071,7 +2197,7 @@ Purpose:  determine if user is logged in</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_kilobytes"></a><div class="element clickable function  function_smarty_modifier_kilobytes" data-toggle="collapse" data-target=".function_smarty_modifier_kilobytes .collapse">
+<a id="function_smarty_modifier_kilobytes"></a><div class="element clickable function  function_smarty_modifier_kilobytes" data-toggle="collapse" data-target=".function_smarty_modifier_kilobytes .collapse" title="">
 <h2>Smarty {kilobytes} modifier plugin</h2>
 <pre>smarty_modifier_kilobytes($bytes) : array</pre>
 <div class="labels"></div>
@@ -2085,7 +2211,7 @@ Purpose:  convert to kilobytes</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_megabytes"></a><div class="element clickable function  function_smarty_modifier_megabytes" data-toggle="collapse" data-target=".function_smarty_modifier_megabytes .collapse">
+<a id="function_smarty_modifier_megabytes"></a><div class="element clickable function  function_smarty_modifier_megabytes" data-toggle="collapse" data-target=".function_smarty_modifier_megabytes .collapse" title="">
 <h2>Smarty {kilobytes} modifier plugin</h2>
 <pre>smarty_modifier_megabytes($bytes) : array</pre>
 <div class="labels"></div>
@@ -2099,7 +2225,7 @@ Purpose:  convert to kilobytes</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_nobreak"></a><div class="element clickable function  function_smarty_modifier_nobreak" data-toggle="collapse" data-target=".function_smarty_modifier_nobreak .collapse">
+<a id="function_smarty_modifier_nobreak"></a><div class="element clickable function  function_smarty_modifier_nobreak" data-toggle="collapse" data-target=".function_smarty_modifier_nobreak .collapse" title="">
 <h2>Smarty {nobreak} modifier plugin</h2>
 <pre>smarty_modifier_nobreak($string) : array</pre>
 <div class="labels"></div>
@@ -2113,7 +2239,7 @@ Purpose:  replace spaces with non-breaking spaces</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_number_format"></a><div class="element clickable function  function_smarty_modifier_number_format" data-toggle="collapse" data-target=".function_smarty_modifier_number_format .collapse">
+<a id="function_smarty_modifier_number_format"></a><div class="element clickable function  function_smarty_modifier_number_format" data-toggle="collapse" data-target=".function_smarty_modifier_number_format .collapse" title="">
 <h2>Smarty {number_format} modifier plugin</h2>
 <pre>smarty_modifier_number_format(mixed $number, mixed $decimals) : array</pre>
 <div class="labels"></div>
@@ -2128,9 +2254,9 @@ Purpose:  format a number</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_plural"></a><div class="element clickable function  function_smarty_modifier_plural" data-toggle="collapse" data-target=".function_smarty_modifier_plural .collapse">
+<a id="function_smarty_modifier_plural"></a><div class="element clickable function  function_smarty_modifier_plural" data-toggle="collapse" data-target=".function_smarty_modifier_plural .collapse" title="">
 <h2>Smarty {plural} modifier plugin</h2>
-<pre>smarty_modifier_plural(string $word, int $counter) : array</pre>
+<pre>smarty_modifier_plural(string $word<code> = ''</code>, int $counter<code> = 0</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description">Type:     modifier<br>
@@ -2149,7 +2275,7 @@ Purpose:  pluralize a string</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_relative_date"></a><div class="element clickable function  function_smarty_modifier_relative_date" data-toggle="collapse" data-target=".function_smarty_modifier_relative_date .collapse">
+<a id="function_smarty_modifier_relative_date"></a><div class="element clickable function  function_smarty_modifier_relative_date" data-toggle="collapse" data-target=".function_smarty_modifier_relative_date .collapse" title="">
 <h2>Smarty {relative_date} modifier plugin
 Type:     modifier&lt;br&gt;
 Name:     relative_date&lt;br&gt;
@@ -2164,7 +2290,7 @@ Purpose:  convert a date in a relative format</h2>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_remove_space"></a><div class="element clickable function  function_smarty_modifier_remove_space" data-toggle="collapse" data-target=".function_smarty_modifier_remove_space .collapse">
+<a id="function_smarty_modifier_remove_space"></a><div class="element clickable function  function_smarty_modifier_remove_space" data-toggle="collapse" data-target=".function_smarty_modifier_remove_space .collapse" title="">
 <h2>Smarty {remove_space} modifier plugin</h2>
 <pre>smarty_modifier_remove_space($string) : array</pre>
 <div class="labels"></div>
@@ -2178,7 +2304,7 @@ Purpose:  remove spaces, replacing them with underscores</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_reverse_array"></a><div class="element clickable function  function_smarty_modifier_reverse_array" data-toggle="collapse" data-target=".function_smarty_modifier_reverse_array .collapse">
+<a id="function_smarty_modifier_reverse_array"></a><div class="element clickable function  function_smarty_modifier_reverse_array" data-toggle="collapse" data-target=".function_smarty_modifier_reverse_array .collapse" title="">
 <h2>Smarty {reverse_array} modifier plugin</h2>
 <pre>smarty_modifier_reverse_array($array) : array</pre>
 <div class="labels"></div>
@@ -2192,7 +2318,7 @@ Purpose:  reverse arrays</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_signature"></a><div class="element clickable function  function_smarty_modifier_signature" data-toggle="collapse" data-target=".function_smarty_modifier_signature .collapse">
+<a id="function_smarty_modifier_signature"></a><div class="element clickable function  function_smarty_modifier_signature" data-toggle="collapse" data-target=".function_smarty_modifier_signature .collapse" title="">
 <h2>Smarty {signature} modifier plugin
 Type:     modifier&lt;br&gt;
 Name:     signature&lt;br&gt;
@@ -2210,9 +2336,9 @@ Purpose:  return the stored signature for a user id if available</h2>
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_statename"></a><div class="element clickable function  function_smarty_modifier_statename" data-toggle="collapse" data-target=".function_smarty_modifier_statename .collapse">
+<a id="function_smarty_modifier_statename"></a><div class="element clickable function  function_smarty_modifier_statename" data-toggle="collapse" data-target=".function_smarty_modifier_statename .collapse" title="">
 <h2>Smarty {statename} modifier plugin</h2>
-<pre>smarty_modifier_statename($state, string $col) : array</pre>
+<pre>smarty_modifier_statename($state, string $col<code> = 'name'</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description">Type:     modifier<br>
@@ -2228,7 +2354,7 @@ Purpose:  lookup a state's name based o state id</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_summarize"></a><div class="element clickable function  function_smarty_modifier_summarize" data-toggle="collapse" data-target=".function_smarty_modifier_summarize .collapse">
+<a id="function_smarty_modifier_summarize"></a><div class="element clickable function  function_smarty_modifier_summarize" data-toggle="collapse" data-target=".function_smarty_modifier_summarize .collapse" title="">
 <h2>Smarty {summarize} modifier plugin</h2>
 <pre>smarty_modifier_summarize(mixed $string, mixed $strtype, mixed $type) : array</pre>
 <div class="labels"></div>
@@ -2244,7 +2370,7 @@ Purpose:  shorten and flatten a string removing some or all markup</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_urlencode"></a><div class="element clickable function  function_smarty_modifier_urlencode" data-toggle="collapse" data-target=".function_smarty_modifier_urlencode .collapse">
+<a id="function_smarty_modifier_urlencode"></a><div class="element clickable function  function_smarty_modifier_urlencode" data-toggle="collapse" data-target=".function_smarty_modifier_urlencode .collapse" title="">
 <h2>Smarty {urlencode} modifier plugin</h2>
 <pre>smarty_modifier_urlencode(mixed $string, mixed $ignore_whitespace) : array</pre>
 <div class="labels"></div>
@@ -2259,12 +2385,12 @@ Purpose:  urlencode a string</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="function_smarty_modifier_username"></a><div class="element clickable function  function_smarty_modifier_username" data-toggle="collapse" data-target=".function_smarty_modifier_username .collapse">
+<a id="function_smarty_modifier_username"></a><div class="element clickable function  function_smarty_modifier_username" data-toggle="collapse" data-target=".function_smarty_modifier_username .collapse" title="">
 <h2>Smarty {username} modifier plugin
 Type:     modifier&lt;br&gt;
 Name:     username&lt;br&gt;
 Purpose:  return the username for a user id</h2>
-<pre>smarty_modifier_username(mixed $userid, boolean $type) : array</pre>
+<pre>smarty_modifier_username(mixed $userid, boolean $type<code> = null</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -2277,14 +2403,25 @@ Purpose:  return the username for a user id</h2>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
+<a id="function_twitter_link"></a><div class="element clickable function  function_twitter_link" data-toggle="collapse" data-target=".function_twitter_link .collapse" title="">
+<h2>twitter_link()
+        </h2>
+<pre>twitter_link($match) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$match</h4></div>
+</div></div>
+</div>
 </div>
 </div>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.2.0
 </a> and<br>
-            generated on 2013-11-04T11:25:40-05:00.<br></footer></div>
+            generated on 2013-12-06T06:42:51-05:00.<br></footer></div>
 </div>
 </body>
 </html>

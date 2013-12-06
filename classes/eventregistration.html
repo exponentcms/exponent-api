@@ -19,6 +19,9 @@
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Composer.html"><i class="icon-th"></i> Composer</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
 <li><a>Packages</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
 <li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
@@ -28,6 +31,7 @@
 <li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
+<li><a href="../packages/elFinder.html"><i class="icon-folder-open"></i> elFinder</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -38,7 +42,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">1819</span></a></li>
+                <span class="label label-info">2301</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -56,12 +60,17 @@
                         </div></noscript>
 <div class="row">
 <div class="span4">
-<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<div class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
 <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
 </div>
 <ul class="side-nav nav nav-list">
 <li class="nav-header">
-<i class="icon-custom icon-method"></i> Methods
+<i title="Methods" class="icon-custom icon-method"></i> Methods
                     <ul>
 <li class="method public "><a href="#method___construct" title="__construct() :: "><span class="description">__construct()
         </span><pre>__construct()</pre></a></li>
@@ -122,7 +131,7 @@ this is where we create/update the eventregistration_registrants records</span><
 </ul>
 </li>
 <li class="nav-header">
-<i class="icon-custom icon-property"></i> Properties
+<i title="Properties" class="icon-custom icon-property"></i> Properties
                     <ul>
 <li class="property public "><a href="#property_default_sort_direction" title="$default_sort_direction() :: "><span class="description"></span><pre>$default_sort_direction</pre></a></li>
 <li class="property public "><a href="#property_default_sort_field" title="$default_sort_field() :: "><span class="description"></span><pre>$default_sort_field</pre></a></li>
@@ -147,7 +156,7 @@ this is where we create/update the eventregistration_registrants records</span><
 <div class="span8">
 <a id="\eventregistration"></a><ul class="breadcrumb">
 <li>
-<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
 <li class="active">
 <span class="divider">\</span><a href="../classes/eventregistration.html">eventregistration</a>
@@ -168,11 +177,11 @@ this is where we create/update the eventregistration_registrants records</span><
 </tr>
 </table>
 <h3>
-<i class="icon-custom icon-method"></i> Methods</h3>
-<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse" title="public">
 <h2>__construct()
         </h2>
-<pre>__construct($params, $get_assoc, $get_attached) </pre>
+<pre>__construct($params<code> = array()</code>, $get_assoc<code> = true</code>, $get_attached<code> = true</code>) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -182,10 +191,10 @@ this is where we create/update the eventregistration_registrants records</span><
 <div class="subelement argument"><h4>$get_attached</h4></div>
 </div></div>
 </div>
-<a id="method_addToCart"></a><div class="element clickable method public method_addToCart" data-toggle="collapse" data-target=".method_addToCart .collapse">
+<a id="method_addToCart"></a><div class="element clickable method public method_addToCart" data-toggle="collapse" data-target=".method_addToCart .collapse" title="public">
 <h2>addToCart - we are simply adding an event registration to our shopping cart
 this is where we create/update the eventregistration_registrants records</h2>
-<pre>addToCart(array $params, null $orderid) : bool</pre>
+<pre>addToCart(array $params, null $orderid<code> = null</code>) : bool</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -202,7 +211,7 @@ this is where we create/update the eventregistration_registrants records</h2>
 <div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
-<a id="method_cartSummary"></a><div class="element clickable method public method_cartSummary" data-toggle="collapse" data-target=".method_cartSummary .collapse">
+<a id="method_cartSummary"></a><div class="element clickable method public method_cartSummary" data-toggle="collapse" data-target=".method_cartSummary .collapse" title="public">
 <h2>cartSummary()
         </h2>
 <pre>cartSummary($item) </pre>
@@ -213,14 +222,14 @@ this is where we create/update the eventregistration_registrants records</h2>
 <div class="subelement argument"><h4>$item</h4></div>
 </div></div>
 </div>
-<a id="method_checkout"></a><div class="element clickable method public method_checkout" data-toggle="collapse" data-target=".method_checkout .collapse">
+<a id="method_checkout"></a><div class="element clickable method public method_checkout" data-toggle="collapse" data-target=".method_checkout .collapse" title="public">
 <h2>checkout()
         </h2>
 <pre>checkout() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_countRegistrants"></a><div class="element clickable method public method_countRegistrants" data-toggle="collapse" data-target=".method_countRegistrants .collapse">
+<a id="method_countRegistrants"></a><div class="element clickable method public method_countRegistrants" data-toggle="collapse" data-target=".method_countRegistrants .collapse" title="public">
 <h2>Return count of registrants confirmed for the event
   confirmation is invoice # set on order
   searches form table and/or non-form table</h2>
@@ -228,7 +237,7 @@ this is where we create/update the eventregistration_registrants records</h2>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_displayForm"></a><div class="element clickable method public method_displayForm" data-toggle="collapse" data-target=".method_displayForm .collapse">
+<a id="method_displayForm"></a><div class="element clickable method public method_displayForm" data-toggle="collapse" data-target=".method_displayForm .collapse" title="public">
 <h2>displayForm()
         </h2>
 <pre>displayForm($form, $params) </pre>
@@ -240,10 +249,10 @@ this is where we create/update the eventregistration_registrants records</h2>
 <div class="subelement argument"><h4>$params</h4></div>
 </div></div>
 </div>
-<a id="method_getAllControls"></a><div class="element clickable method public method_getAllControls" data-toggle="collapse" data-target=".method_getAllControls .collapse">
+<a id="method_getAllControls"></a><div class="element clickable method public method_getAllControls" data-toggle="collapse" data-target=".method_getAllControls .collapse" title="public">
 <h2>getAllControls()
         </h2>
-<pre>getAllControls($input_only) </pre>
+<pre>getAllControls($input_only<code> = null</code>) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -251,10 +260,10 @@ this is where we create/update the eventregistration_registrants records</h2>
 <div class="subelement argument"><h4>$input_only</h4></div>
 </div></div>
 </div>
-<a id="method_getBasePrice"></a><div class="element clickable method public method_getBasePrice" data-toggle="collapse" data-target=".method_getBasePrice .collapse">
+<a id="method_getBasePrice"></a><div class="element clickable method public method_getBasePrice" data-toggle="collapse" data-target=".method_getBasePrice .collapse" title="public">
 <h2>getBasePrice()
         </h2>
-<pre>getBasePrice($orderitem) </pre>
+<pre>getBasePrice($orderitem<code> = null</code>) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -262,14 +271,14 @@ this is where we create/update the eventregistration_registrants records</h2>
 <div class="subelement argument"><h4>$orderitem</h4></div>
 </div></div>
 </div>
-<a id="method_getDefaultQuantity"></a><div class="element clickable method public method_getDefaultQuantity" data-toggle="collapse" data-target=".method_getDefaultQuantity .collapse">
+<a id="method_getDefaultQuantity"></a><div class="element clickable method public method_getDefaultQuantity" data-toggle="collapse" data-target=".method_getDefaultQuantity .collapse" title="public">
 <h2>getDefaultQuantity()
         </h2>
 <pre>getDefaultQuantity() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_getForm"></a><div class="element clickable method public method_getForm" data-toggle="collapse" data-target=".method_getForm .collapse">
+<a id="method_getForm"></a><div class="element clickable method public method_getForm" data-toggle="collapse" data-target=".method_getForm .collapse" title="public">
 <h2>getForm()
         </h2>
 <pre>getForm($form) </pre>
@@ -280,7 +289,7 @@ this is where we create/update the eventregistration_registrants records</h2>
 <div class="subelement argument"><h4>$form</h4></div>
 </div></div>
 </div>
-<a id="method_getRegistrants"></a><div class="element clickable method public method_getRegistrants" data-toggle="collapse" data-target=".method_getRegistrants .collapse">
+<a id="method_getRegistrants"></a><div class="element clickable method public method_getRegistrants" data-toggle="collapse" data-target=".method_getRegistrants .collapse" title="public">
 <h2>Return list of all confirmed registrants for the event
   confirmation is invoice # set on order
   searches form table and/or non-form table
@@ -289,56 +298,56 @@ this is where we create/update the eventregistration_registrants records</h2>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_getSEFURL"></a><div class="element clickable method public method_getSEFURL" data-toggle="collapse" data-target=".method_getSEFURL .collapse">
+<a id="method_getSEFURL"></a><div class="element clickable method public method_getSEFURL" data-toggle="collapse" data-target=".method_getSEFURL .collapse" title="public">
 <h2>getSEFURL()
         </h2>
 <pre>getSEFURL() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_getSurcharge"></a><div class="element clickable method public method_getSurcharge" data-toggle="collapse" data-target=".method_getSurcharge .collapse">
+<a id="method_getSurcharge"></a><div class="element clickable method public method_getSurcharge" data-toggle="collapse" data-target=".method_getSurcharge .collapse" title="public">
 <h2>getSurcharge()
         </h2>
 <pre>getSurcharge() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_hasOptions"></a><div class="element clickable method public method_hasOptions" data-toggle="collapse" data-target=".method_hasOptions .collapse">
+<a id="method_hasOptions"></a><div class="element clickable method public method_hasOptions" data-toggle="collapse" data-target=".method_hasOptions .collapse" title="public">
 <h2>hasOptions()
         </h2>
 <pre>hasOptions() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_hasRequiredOptions"></a><div class="element clickable method public method_hasRequiredOptions" data-toggle="collapse" data-target=".method_hasRequiredOptions .collapse">
+<a id="method_hasRequiredOptions"></a><div class="element clickable method public method_hasRequiredOptions" data-toggle="collapse" data-target=".method_hasRequiredOptions .collapse" title="public">
 <h2>hasRequiredOptions()
         </h2>
 <pre>hasRequiredOptions() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_hasUserInputFields"></a><div class="element clickable method public method_hasUserInputFields" data-toggle="collapse" data-target=".method_hasUserInputFields .collapse">
+<a id="method_hasUserInputFields"></a><div class="element clickable method public method_hasUserInputFields" data-toggle="collapse" data-target=".method_hasUserInputFields .collapse" title="public">
 <h2>hasUserInputFields()
         </h2>
 <pre>hasUserInputFields() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_isAvailable"></a><div class="element clickable method public method_isAvailable" data-toggle="collapse" data-target=".method_isAvailable .collapse">
+<a id="method_isAvailable"></a><div class="element clickable method public method_isAvailable" data-toggle="collapse" data-target=".method_isAvailable .collapse" title="public">
 <h2>isAvailable()
         </h2>
 <pre>isAvailable() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_isChild"></a><div class="element clickable method public method_isChild" data-toggle="collapse" data-target=".method_isChild .collapse">
+<a id="method_isChild"></a><div class="element clickable method public method_isChild" data-toggle="collapse" data-target=".method_isChild .collapse" title="public">
 <h2>isChild()
         </h2>
 <pre>isChild() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_optionDropdown"></a><div class="element clickable method public method_optionDropdown" data-toggle="collapse" data-target=".method_optionDropdown .collapse">
+<a id="method_optionDropdown"></a><div class="element clickable method public method_optionDropdown" data-toggle="collapse" data-target=".method_optionDropdown .collapse" title="public">
 <h2>optionDropdown()
         </h2>
 <pre>optionDropdown($key, $display_price_as) </pre>
@@ -350,7 +359,7 @@ this is where we create/update the eventregistration_registrants records</h2>
 <div class="subelement argument"><h4>$display_price_as</h4></div>
 </div></div>
 </div>
-<a id="method_process"></a><div class="element clickable method public method_process" data-toggle="collapse" data-target=".method_process .collapse">
+<a id="method_process"></a><div class="element clickable method public method_process" data-toggle="collapse" data-target=".method_process .collapse" title="public">
 <h2>process - here we are actually making a 'reservation' by submitting the purchase</h2>
 <pre>process(\product $item) : bool</pre>
 <div class="labels"></div>
@@ -364,7 +373,7 @@ this is where we create/update the eventregistration_registrants records</h2>
 <div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
-<a id="method_removeItem"></a><div class="element clickable method public method_removeItem" data-toggle="collapse" data-target=".method_removeItem .collapse">
+<a id="method_removeItem"></a><div class="element clickable method public method_removeItem" data-toggle="collapse" data-target=".method_removeItem .collapse" title="public">
 <h2>removeItem()
         </h2>
 <pre>removeItem($item) </pre>
@@ -375,10 +384,10 @@ this is where we create/update the eventregistration_registrants records</h2>
 <div class="subelement argument"><h4>$item</h4></div>
 </div></div>
 </div>
-<a id="method_showControl"></a><div class="element clickable method public method_showControl" data-toggle="collapse" data-target=".method_showControl .collapse">
+<a id="method_showControl"></a><div class="element clickable method public method_showControl" data-toggle="collapse" data-target=".method_showControl .collapse" title="public">
 <h2>showControl()
         </h2>
-<pre>showControl($field, $name, $escape, $value, $adminedit, $hidecaption) </pre>
+<pre>showControl($field, $name, $escape<code> = ''</code>, $value<code> = ''</code>, $adminedit<code> = false</code>, $hidecaption<code> = false</code>) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -391,17 +400,17 @@ this is where we create/update the eventregistration_registrants records</h2>
 <div class="subelement argument"><h4>$hidecaption</h4></div>
 </div></div>
 </div>
-<a id="method_spacesLeft"></a><div class="element clickable method public method_spacesLeft" data-toggle="collapse" data-target=".method_spacesLeft .collapse">
+<a id="method_spacesLeft"></a><div class="element clickable method public method_spacesLeft" data-toggle="collapse" data-target=".method_spacesLeft .collapse" title="public">
 <h2>spacesLeft()
         </h2>
 <pre>spacesLeft() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_update"></a><div class="element clickable method public method_update" data-toggle="collapse" data-target=".method_update .collapse">
+<a id="method_update"></a><div class="element clickable method public method_update" data-toggle="collapse" data-target=".method_update .collapse" title="public">
 <h2>update()
         </h2>
-<pre>update($params) </pre>
+<pre>update($params<code> = array()</code>) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -410,88 +419,144 @@ this is where we create/update the eventregistration_registrants records</h2>
 </div></div>
 </div>
 <h3>
-<i class="icon-custom icon-property"></i> Properties</h3>
-<a id="property_default_sort_direction"> </a><div class="element clickable property public property_default_sort_direction" data-toggle="collapse" data-target=".property_default_sort_direction .collapse">
+<i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_default_sort_direction"> </a><div class="element clickable property public property_default_sort_direction" data-toggle="collapse" data-target=".property_default_sort_direction .collapse" title="public">
 <h2>$default_sort_direction</h2>
 <pre>$default_sort_direction </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>"asc"</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_default_sort_field"> </a><div class="element clickable property public property_default_sort_field" data-toggle="collapse" data-target=".property_default_sort_field .collapse">
+<a id="property_default_sort_field"> </a><div class="element clickable property public property_default_sort_field" data-toggle="collapse" data-target=".property_default_sort_field .collapse" title="public">
 <h2>$default_sort_field</h2>
 <pre>$default_sort_field </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>'rank'</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_early_discount_amount_modifiers"> </a><div class="element clickable property public property_early_discount_amount_modifiers" data-toggle="collapse" data-target=".property_early_discount_amount_modifiers .collapse">
+<a id="property_early_discount_amount_modifiers"> </a><div class="element clickable property public property_early_discount_amount_modifiers" data-toggle="collapse" data-target=".property_early_discount_amount_modifiers .collapse" title="public">
 <h2>$early_discount_amount_modifiers</h2>
 <pre>$early_discount_amount_modifiers </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array('$' => '$', '%' => '%')</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_get_assoc_for"> </a><div class="element clickable property public property_get_assoc_for" data-toggle="collapse" data-target=".property_get_assoc_for .collapse">
+<a id="property_get_assoc_for"> </a><div class="element clickable property public property_get_assoc_for" data-toggle="collapse" data-target=".property_get_assoc_for .collapse" title="public">
 <h2>$get_assoc_for</h2>
 <pre>$get_assoc_for </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array('optiongroup')</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_has_and_belongs_to_many"> </a><div class="element clickable property public property_has_and_belongs_to_many" data-toggle="collapse" data-target=".property_has_and_belongs_to_many .collapse">
+<a id="property_has_and_belongs_to_many"> </a><div class="element clickable property public property_has_and_belongs_to_many" data-toggle="collapse" data-target=".property_has_and_belongs_to_many .collapse" title="public">
 <h2>$has_and_belongs_to_many</h2>
 <pre>$has_and_belongs_to_many </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array('storeCategory')</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_has_many"> </a><div class="element clickable property public property_has_many" data-toggle="collapse" data-target=".property_has_many .collapse">
+<a id="property_has_many"> </a><div class="element clickable property public property_has_many" data-toggle="collapse" data-target=".property_has_many .collapse" title="public">
 <h2>$has_many</h2>
 <pre>$has_many </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array('optiongroup')</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_isQuantityAdjustable"> </a><div class="element clickable property public property_isQuantityAdjustable" data-toggle="collapse" data-target=".property_isQuantityAdjustable .collapse">
+<a id="property_isQuantityAdjustable"> </a><div class="element clickable property public property_isQuantityAdjustable" data-toggle="collapse" data-target=".property_isQuantityAdjustable .collapse" title="public">
 <h2>$isQuantityAdjustable</h2>
 <pre>$isQuantityAdjustable </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_product_name"> </a><div class="element clickable property public property_product_name" data-toggle="collapse" data-target=".property_product_name .collapse">
+<a id="property_product_name"> </a><div class="element clickable property public property_product_name" data-toggle="collapse" data-target=".property_product_name .collapse" title="public">
 <h2>$product_name</h2>
 <pre>$product_name </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>'Event Registration'</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_product_type"> </a><div class="element clickable property public property_product_type" data-toggle="collapse" data-target=".property_product_type .collapse">
+<a id="property_product_type"> </a><div class="element clickable property public property_product_type" data-toggle="collapse" data-target=".property_product_type .collapse" title="public">
 <h2>$product_type</h2>
 <pre>$product_type </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>'eventregistration'</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_rank_by_field"> </a><div class="element clickable property public property_rank_by_field" data-toggle="collapse" data-target=".property_rank_by_field .collapse">
+<a id="property_rank_by_field"> </a><div class="element clickable property public property_rank_by_field" data-toggle="collapse" data-target=".property_rank_by_field .collapse" title="public">
 <h2>$rank_by_field</h2>
 <pre>$rank_by_field </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>'rank'</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_requiresBilling"> </a><div class="element clickable property public property_requiresBilling" data-toggle="collapse" data-target=".property_requiresBilling .collapse">
+<a id="property_requiresBilling"> </a><div class="element clickable property public property_requiresBilling" data-toggle="collapse" data-target=".property_requiresBilling .collapse" title="public">
 <h2>$requiresBilling</h2>
 <pre>$requiresBilling </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>true</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_requiresShipping"> </a><div class="element clickable property public property_requiresShipping" data-toggle="collapse" data-target=".property_requiresShipping .collapse">
+<a id="property_requiresShipping"> </a><div class="element clickable property public property_requiresShipping" data-toggle="collapse" data-target=".property_requiresShipping .collapse" title="public">
 <h2>$requiresShipping</h2>
 <pre>$requiresShipping </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_table"> </a><div class="element clickable property public property_table" data-toggle="collapse" data-target=".property_table .collapse">
+<a id="property_table"> </a><div class="element clickable property public property_table" data-toggle="collapse" data-target=".property_table .collapse" title="public">
 <h2>$table</h2>
 <pre>$table </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>'product'</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_attachable_item_types"> </a><div class="element clickable property protected property_attachable_item_types" data-toggle="collapse" data-target=".property_attachable_item_types .collapse">
+<a id="property_attachable_item_types"> </a><div class="element clickable property protected property_attachable_item_types" data-toggle="collapse" data-target=".property_attachable_item_types .collapse" title="protected">
 <h2>$attachable_item_types</h2>
 <pre>$attachable_item_types </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array('content_expFiles' => 'expFile')</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -501,9 +566,9 @@ this is where we create/update the eventregistration_registrants records</h2>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.2.0
 </a> and<br>
-            generated on 2013-11-04T11:25:49-05:00.<br></footer></div>
+            generated on 2013-12-06T06:43:03-05:00.<br></footer></div>
 </div>
 </body>
 </html>

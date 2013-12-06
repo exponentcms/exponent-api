@@ -19,6 +19,9 @@
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Composer.html"><i class="icon-th"></i> Composer</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
 <li><a>Packages</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
 <li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
@@ -28,6 +31,7 @@
 <li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
+<li><a href="../packages/elFinder.html"><i class="icon-folder-open"></i> elFinder</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -38,7 +42,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">1819</span></a></li>
+                <span class="label label-info">2301</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -56,12 +60,17 @@
                         </div></noscript>
 <div class="row">
 <div class="span4">
-<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<div class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
 <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
 </div>
 <ul class="side-nav nav nav-list">
 <li class="nav-header">
-<i class="icon-custom icon-method"></i> Methods
+<i title="Methods" class="icon-custom icon-method"></i> Methods
                     <ul>
 <li class="method public "><a href="#method___construct" title="__construct() :: "><span class="description">__construct()
         </span><pre>__construct()</pre></a></li>
@@ -90,7 +99,7 @@
 </ul>
 </li>
 <li class="nav-header">
-<i class="icon-custom icon-property"></i> Properties
+<i title="Properties" class="icon-custom icon-property"></i> Properties
                     <ul>
 <li class="property public "><a href="#property_elapsed" title="$elapsed() :: "><span class="description"></span><pre>$elapsed</pre></a></li>
 <li class="property public "><a href="#property_endtime" title="$endtime() :: "><span class="description"></span><pre>$endtime</pre></a></li>
@@ -103,7 +112,7 @@
 <div class="span8">
 <a id="\expTimer"></a><ul class="breadcrumb">
 <li>
-<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
 <li class="active">
 <span class="divider">\</span><a href="../classes/expTimer.html">expTimer</a>
@@ -118,11 +127,11 @@
 <td>"BASE" "../../.."</td>
 </tr></table>
 <h3>
-<i class="icon-custom icon-method"></i> Methods</h3>
-<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse" title="public">
 <h2>__construct()
         </h2>
-<pre>__construct($start) </pre>
+<pre>__construct($start<code> = true</code>) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -130,35 +139,35 @@
 <div class="subelement argument"><h4>$start</h4></div>
 </div></div>
 </div>
-<a id="method_clear"></a><div class="element clickable method public method_clear" data-toggle="collapse" data-target=".method_clear .collapse">
+<a id="method_clear"></a><div class="element clickable method public method_clear" data-toggle="collapse" data-target=".method_clear .collapse" title="public">
 <h2>clear()
         </h2>
 <pre>clear() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_elapsed"></a><div class="element clickable method public method_elapsed" data-toggle="collapse" data-target=".method_elapsed .collapse">
+<a id="method_elapsed"></a><div class="element clickable method public method_elapsed" data-toggle="collapse" data-target=".method_elapsed .collapse" title="public">
 <h2>elapsed()
         </h2>
 <pre>elapsed() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_getTimerName"></a><div class="element clickable method public method_getTimerName" data-toggle="collapse" data-target=".method_getTimerName .collapse">
+<a id="method_getTimerName"></a><div class="element clickable method public method_getTimerName" data-toggle="collapse" data-target=".method_getTimerName .collapse" title="public">
 <h2>getTimerName()
         </h2>
 <pre>getTimerName() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_mark"></a><div class="element clickable method public method_mark" data-toggle="collapse" data-target=".method_mark .collapse">
+<a id="method_mark"></a><div class="element clickable method public method_mark" data-toggle="collapse" data-target=".method_mark .collapse" title="public">
 <h2>mark()
         </h2>
 <pre>mark() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_setTimerName"></a><div class="element clickable method public method_setTimerName" data-toggle="collapse" data-target=".method_setTimerName .collapse">
+<a id="method_setTimerName"></a><div class="element clickable method public method_setTimerName" data-toggle="collapse" data-target=".method_setTimerName .collapse" title="public">
 <h2>setTimerName()
         </h2>
 <pre>setTimerName($name) </pre>
@@ -169,28 +178,28 @@
 <div class="subelement argument"><h4>$name</h4></div>
 </div></div>
 </div>
-<a id="method_start"></a><div class="element clickable method public method_start" data-toggle="collapse" data-target=".method_start .collapse">
+<a id="method_start"></a><div class="element clickable method public method_start" data-toggle="collapse" data-target=".method_start .collapse" title="public">
 <h2>start()
         </h2>
 <pre>start() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_stop"></a><div class="element clickable method public method_stop" data-toggle="collapse" data-target=".method_stop .collapse">
+<a id="method_stop"></a><div class="element clickable method public method_stop" data-toggle="collapse" data-target=".method_stop .collapse" title="public">
 <h2>stop()
         </h2>
 <pre>stop() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method__compute"></a><div class="element clickable method private method__compute" data-toggle="collapse" data-target=".method__compute .collapse">
+<a id="method__compute"></a><div class="element clickable method private method__compute" data-toggle="collapse" data-target=".method__compute .collapse" title="private">
 <h2>_compute()
         </h2>
 <pre>_compute() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method__time"></a><div class="element clickable method private method__time" data-toggle="collapse" data-target=".method__time .collapse">
+<a id="method__time"></a><div class="element clickable method private method__time" data-toggle="collapse" data-target=".method__time .collapse" title="private">
 <h2>_time()
         </h2>
 <pre>_time() </pre>
@@ -198,28 +207,44 @@
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <h3>
-<i class="icon-custom icon-property"></i> Properties</h3>
-<a id="property_elapsed"> </a><div class="element clickable property public property_elapsed" data-toggle="collapse" data-target=".property_elapsed .collapse">
+<i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_elapsed"> </a><div class="element clickable property public property_elapsed" data-toggle="collapse" data-target=".property_elapsed .collapse" title="public">
 <h2>$elapsed</h2>
 <pre>$elapsed </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>0</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_endtime"> </a><div class="element clickable property public property_endtime" data-toggle="collapse" data-target=".property_endtime .collapse">
+<a id="property_endtime"> </a><div class="element clickable property public property_endtime" data-toggle="collapse" data-target=".property_endtime .collapse" title="public">
 <h2>$endtime</h2>
 <pre>$endtime </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>0</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_starttime"> </a><div class="element clickable property public property_starttime" data-toggle="collapse" data-target=".property_starttime .collapse">
+<a id="property_starttime"> </a><div class="element clickable property public property_starttime" data-toggle="collapse" data-target=".property_starttime .collapse" title="public">
 <h2>$starttime</h2>
 <pre>$starttime </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>0</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_timername"> </a><div class="element clickable property public property_timername" data-toggle="collapse" data-target=".property_timername .collapse">
+<a id="property_timername"> </a><div class="element clickable property public property_timername" data-toggle="collapse" data-target=".property_timername .collapse" title="public">
 <h2>$timername</h2>
 <pre>$timername </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>"Exponent Internal Timer"</code></div>
+</div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -229,9 +254,9 @@
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.2.0
 </a> and<br>
-            generated on 2013-11-04T11:25:47-05:00.<br></footer></div>
+            generated on 2013-12-06T06:43:01-05:00.<br></footer></div>
 </div>
 </body>
 </html>
