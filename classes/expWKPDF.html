@@ -23,11 +23,11 @@
 <li><a href="../namespaces/Composer.html"><i class="icon-th"></i> Composer</a></li>
 <li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
 <li><a>Packages</a></li>
+<li><a href="../packages/Connectors.html"><i class="icon-folder-open"></i> Connectors</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
 <li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 <li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
 <li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
-<li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
 <li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
@@ -42,7 +42,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">2301</span></a></li>
+                <span class="label label-info">5017</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -76,6 +76,7 @@
 <li class="method public "><a href="#method_createpdf" title="createpdf() :: Return PDF with various options."><span class="description">Return PDF with various options.</span><pre>createpdf()</pre></a></li>
 <li class="method public "><a href="#method_get_help" title="get_help() :: Attempts to return the library's full help."><span class="description">Attempts to return the library's full help.</span><pre>get_help()</pre></a></li>
 <li class="method public "><a href="#method_get_status" title="get_status() :: Returns WKPDF print status."><span class="description">Returns WKPDF print status.</span><pre>get_status()</pre></a></li>
+<li class="method public "><a href="#method_installed" title="installed() :: Return status of pdf engine being installed correctly"><span class="description">Return status of pdf engine being installed correctly</span><pre>installed()</pre></a></li>
 <li class="method public "><a href="#method_render" title="render() :: Convert HTML to PDF."><span class="description">Convert HTML to PDF.</span><pre>render()</pre></a></li>
 <li class="method public "><a href="#method_set_copies" title="set_copies() :: Set the number of copies to be printed."><span class="description">Set the number of copies to be printed.</span><pre>set_copies()</pre></a></li>
 <li class="method public "><a href="#method_set_html" title="set_html() :: Set html content."><span class="description">Set html content.</span><pre>set_html()</pre></a></li>
@@ -171,7 +172,7 @@ Found a bug? Want a modification? Contact me at <a href="mailto:uuf6429@gmail.co
 <i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
 <a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse" title="public">
 <h2>Constructor: initialize command line and reserve temporary file.</h2>
-<pre>__construct($paper_size<code> = "A4"</code>, $orientation<code> = "portrait"</code>, $html, $use_file<code> = false</code>) </pre>
+<pre>__construct($paper_size<code> = "A4"</code>, $orientation<code> = "portrait"</code>, $html<code> = null</code>, $use_file<code> = false</code>) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -231,6 +232,12 @@ Found a bug? Want a modification? Contact me at <a href="mailto:uuf6429@gmail.co
 <div class="subelement response">
 <code>string</code>WPDF print status.</div>
 </div></div>
+</div>
+<a id="method_installed"></a><div class="element clickable method public method_installed" data-toggle="collapse" data-target=".method_installed .collapse" title="public">
+<h2>Return status of pdf engine being installed correctly</h2>
+<pre>installed() </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="method_render"></a><div class="element clickable method public method_render" data-toggle="collapse" data-target=".method_render .collapse" title="public">
 <h2>Convert HTML to PDF.</h2>
@@ -439,7 +446,7 @@ Found a bug? Want a modification? Contact me at <a href="mailto:uuf6429@gmail.co
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.2.0
 </a> and<br>
-            generated on 2013-12-06T06:43:05-05:00.<br></footer></div>
+            generated on 2014-02-18T10:31:48-05:00.<br></footer></div>
 </div>
 </body>
 </html>

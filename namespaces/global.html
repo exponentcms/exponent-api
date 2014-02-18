@@ -23,11 +23,11 @@
 <li><a href="../namespaces/Composer.html"><i class="icon-th"></i> Composer</a></li>
 <li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
 <li><a>Packages</a></li>
+<li><a href="../packages/Connectors.html"><i class="icon-folder-open"></i> Connectors</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
 <li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 <li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
 <li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
-<li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
 <li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
@@ -42,7 +42,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">2301</span></a></li>
+                <span class="label label-info">5017</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -136,7 +136,7 @@ the iXHProfRuns interface.</span><pre>displayXHProfReport</pre></a></li>
         </span><pre>do_file</pre></a></li>
 <li class="function  "><a href="#function_do_file" title="do_file() :: "><span class="description">do_file()
         </span><pre>do_file</pre></a></li>
-<li class="function  "><a href="#function_eDebug" title="eDebug() :: dumps the passed variable to screen, but only if in development mode"><span class="description">dumps the passed variable to screen, but only if in development mode</span><pre>eDebug</pre></a></li>
+<li class="function  "><a href="#function_eDebug" title="eDebug() :: dumps the passed variable to screen/log, but only if in development mode"><span class="description">dumps the passed variable to screen/log, but only if in development mode</span><pre>eDebug</pre></a></li>
 <li class="function  "><a href="#function_eLog" title="eLog() :: dumps the passed variable to a log, but only if in development mode"><span class="description">dumps the passed variable to a log, but only if in development mode</span><pre>eLog</pre></a></li>
 <li class="function  "><a href="#function_echoFailure" title="echoFailure() :: "><span class="description">echoFailure()
         </span><pre>echoFailure</pre></a></li>
@@ -206,8 +206,7 @@ just before it gets rendered to the screen should happen here.</span><pre>expPro
         </span><pre>glist</pre></a></li>
 <li class="function  "><a href="#function_gt" title="gt() :: "><span class="description">gt()
         </span><pre>gt</pre></a></li>
-<li class="function  "><a href="#function_handleErrors" title="handleErrors() :: "><span class="description">handleErrors()
-        </span><pre>handleErrors</pre></a></li>
+<li class="function  "><a href="#function_handleErrors" title="handleErrors() :: called from exponent.php as the ajax error handler"><span class="description">called from exponent.php as the ajax error handler</span><pre>handleErrors</pre></a></li>
 <li class="function  "><a href="#function_hotspot" title="hotspot() :: "><span class="description">hotspot()
         </span><pre>hotspot</pre></a></li>
 <li class="function  "><a href="#function_http_link" title="http_link() :: "><span class="description">http_link()
@@ -307,6 +306,13 @@ Purpose:  Set up a associatvie array</span><pre>smarty_block_assocarray</pre></a
 <li class="function  "><a href="#function_smarty_block_pop" title="smarty_block_pop() :: Smarty {pop} block plugin"><span class="description">Smarty {pop} block plugin</span><pre>smarty_block_pop</pre></a></li>
 <li class="function  "><a href="#function_smarty_block_script" title="smarty_block_script() :: Smarty {script} block plugin"><span class="description">Smarty {script} block plugin</span><pre>smarty_block_script</pre></a></li>
 <li class="function  "><a href="#function_smarty_block_toggle" title="smarty_block_toggle() :: Smarty {toggle} block plugin"><span class="description">Smarty {toggle} block plugin</span><pre>smarty_block_toggle</pre></a></li>
+<li class="function  "><a href="#function_smarty_compiler_exp_include" title="smarty_compiler_exp_include() :: Smarty {exp_include} compiler plugin
+Type:     compiler&lt;br&gt;
+Name:     exp_include&lt;br&gt;
+Purpose:  includes appropriate file based on 'framework' with fallback"><span class="description">Smarty {exp_include} compiler plugin
+Type:     compiler&lt;br&gt;
+Name:     exp_include&lt;br&gt;
+Purpose:  includes appropriate file based on 'framework' with fallback</span><pre>smarty_compiler_exp_include</pre></a></li>
 <li class="function  "><a href="#function_smarty_function_assign_adv" title="smarty_function_assign_adv() :: Smarty {assign_adv} function plugin"><span class="description">Smarty {assign_adv} function plugin</span><pre>smarty_function_assign_adv</pre></a></li>
 <li class="function  "><a href="#function_smarty_function_attribution" title="smarty_function_attribution() :: Smarty {attribution} function plugin"><span class="description">Smarty {attribution} function plugin</span><pre>smarty_function_attribution</pre></a></li>
 <li class="function  "><a href="#function_smarty_function_backlink" title="smarty_function_backlink() :: Smarty {backlink} function plugin"><span class="description">Smarty {backlink} function plugin</span><pre>smarty_function_backlink</pre></a></li>
@@ -606,6 +612,7 @@ simple text entry date and/or time">datetimecontrol</a></li>
 <li><a href="#update_ckeditorv4" title="This is the class update_ckeditorv4">update_ckeditorv4</a></li>
 <li><a href="#rssfeed" title="">rssfeed</a></li>
 <li><a href="#update_ecom2" title="This is the class update_ecom2">update_ecom2</a></li>
+<li><a href="#fix_sectionref" title="This is the class fix_sectionref">fix_sectionref</a></li>
 <li><a href="#customcontrol" title="Custom Control">customcontrol</a></li>
 <li><a href="#payflowpro" title="This is the class expRecord">payflowpro</a></li>
 <li><a href="#fix_table_names" title="This is the class fix_table_names">fix_table_names</a></li>
@@ -624,6 +631,8 @@ interface to templates.">template</a></li>
 <li><a href="#billingtransaction" title="This is the class expRecord">billingtransaction</a></li>
 <li><a href="#emailcontrol" title="Email Control">emailcontrol</a></li>
 <li><a href="#upgrade_forms" title="This is the class upgrade_forms">upgrade_forms</a></li>
+<li><a href="#XHProfRuns_Default" title="XHProfRuns_Default is the default implementation of the
+iXHProfRuns interface for saving/fetching XHProf runs.">XHProfRuns_Default</a></li>
 <li><a href="#buttongroupcontrol" title="Button Group Control">buttongroupcontrol</a></li>
 <li><a href="#expAjaxReply" title="This is the class expAjaxReply">expAjaxReply</a></li>
 <li><a href="#tablebasedcalculator" title="This is the class expRecord">tablebasedcalculator</a></li>
@@ -705,6 +714,8 @@ text entry date and/or time w/ pop-up date selector">calendarcontrol</a></li>
 <li><a href="#text" title="This is the class expRecord">text</a></li>
 <li><a href="#basetheme" title="This is the base theme class">basetheme</a></li>
 <li><a href="#services" title="This is the class expRecord">services</a></li>
+<li><a href="#elFinderSimpleLogger" title="Simple logger function.">elFinderSimpleLogger</a></li>
+<li><a href="#elFinderTestACL" title="Access control example class">elFinderTestACL</a></li>
 <li><a href="#groupdiscounts" title="This is the class expRecord">groupdiscounts</a></li>
 <li><a href="#expeAlerts" title="This is the class expRecord">expeAlerts</a></li>
 <li><a href="#notfoundController" title="This is the class expController">notfoundController</a></li>
@@ -801,6 +812,7 @@ places a checkbox to disable calendar input">yuidatetimecontrol</a></li>
 <li><a href="#childProduct" title="This is the class expRecord">childProduct</a></li>
 <li><a href="#expController" title="This is the class expController">expController</a></li>
 <li><a href="#storeCategoryController" title="This is the class expNestedNodeController">storeCategoryController</a></li>
+<li><a href="#ComposerAutoloaderInitf6fc03a98bbccbaa8d7ab343434b6f89" title="">ComposerAutoloaderInitf6fc03a98bbccbaa8d7ab343434b6f89</a></li>
 <li><a href="#ealertController" title="This is the class expController">ealertController</a></li>
 <li><a href="#ecomconfigController" title="This is the class expController">ecomconfigController</a></li>
 <li><a href="#storeController" title="This is the class expController">storeController</a></li>
@@ -913,7 +925,7 @@ places an update calendar field/button">yuicalendarcontrol</a></li>
 <li><a href="#user_bio" title="This is the class expRecord">user_bio</a></li>
 <li><a href="#pricegrabber_product_types" title="This is the class expNestedNode">pricegrabber_product_types</a></li>
 <li><a href="#colorcontrol" title="Color Picker Control
-text entry hex color w/ pop-up color selector">colorcontrol</a></li>
+pop-up color selector">colorcontrol</a></li>
 <li><a href="#section" title="This is the class expRecord">section</a></li>
 <li><a href="#controllertemplate" title="Controller Template Wrapper">controllertemplate</a></li>
 <li><a href="#snippet" title="This is the class expRecord">snippet</a></li>
@@ -937,12 +949,23 @@ text entry hex color w/ pop-up color selector">colorcontrol</a></li>
 <li><a href="#twitterController" title="This is the class expController">twitterController</a></li>
 <li><a href="#upgrade_mediaplayer2" title="This is the class upgrade_mediaplayer2">upgrade_mediaplayer2</a></li>
 <li><a href="#orderitem" title="This is the class expRecord">orderitem</a></li>
-<li><a href="#elFinderSimpleLogger" title="Simple logger function.">elFinderSimpleLogger</a></li>
-<li><a href="#elFinderTestACL" title="Access control example class">elFinderTestACL</a></li>
-<li><a href="#fix_sectionref" title="This is the class fix_sectionref">fix_sectionref</a></li>
-<li><a href="#ComposerAutoloaderInitf6fc03a98bbccbaa8d7ab343434b6f89" title="">ComposerAutoloaderInitf6fc03a98bbccbaa8d7ab343434b6f89</a></li>
-<li><a href="#XHProfRuns_Default" title="XHProfRuns_Default is the default implementation of the
-iXHProfRuns interface for saving/fetching XHProf runs.">XHProfRuns_Default</a></li>
+<li><a href="#calendarcontrol" title="Date/Time Control w/ Popup Date Picker and time w/ am/pm combo
+text entry date and/or time w/ pop-up date selector">calendarcontrol</a></li>
+<li><a href="#datetimecontrol" title="Date Time Control
+simple text entry date and/or time">datetimecontrol</a></li>
+<li><a href="#listbuildercontrol" title="List Builder Control">listbuildercontrol</a></li>
+<li><a href="#popupdatetimecontrol" title="Popup Date/Time Picker Control">popupdatetimecontrol</a></li>
+<li><a href="#tagpickercontrol" title="Tag Picker Control">tagpickercontrol</a></li>
+<li><a href="#yuicalendarcontrol" title="Date Picker Control (compat w/ non-jQuery controls}
+standard calendar control w/o time
+places an update calendar field/button">yuicalendarcontrol</a></li>
+<li><a href="#yuidatetimecontrol" title="Date/Time Control
+uses/combines yuicalendarcontrol &amp; datetimecontrol (w/o date)
+places a checkbox to disable calendar input">yuidatetimecontrol</a></li>
+<li><a href="#elFinderExponent" title="This is the class elFinderExponent
+elFinder object subclass for Exponent CMS expFile filesystem.">elFinderExponent</a></li>
+<li><a href="#elFinderVolumeExponent" title="This is the class elFinderVolumeExponent
+elFinder volume driver for the Exponent CMS expFile filesystem.">elFinderVolumeExponent</a></li>
 <li class="nav-header">
 <i title="Constants" class="icon-custom icon-constant"></i> Constants</li>
 <li class="constant  "><a href="#constant_%22BLANKPADDING%22" title='"BLANKPADDING"() :: '><span class="description">"BLANKPADDING"</span><pre>"BLANKPADDING"</pre></a></li>
@@ -963,10 +986,6 @@ iXHProfRuns interface for saving/fetching XHProf runs.">XHProfRuns_Default</a></
 <li class="constant  "><a href="#constant_%22LOGO_TEXT_MAIN%22" title='"LOGO_TEXT_MAIN"() :: '><span class="description">"LOGO_TEXT_MAIN"</span><pre>"LOGO_TEXT_MAIN"</pre></a></li>
 <li class="constant  "><a href="#constant_%22LOGO_TEXT_SUPERSCRIPT%22" title='"LOGO_TEXT_SUPERSCRIPT"() :: '><span class="description">"LOGO_TEXT_SUPERSCRIPT"</span><pre>"LOGO_TEXT_SUPERSCRIPT"</pre></a></li>
 <li class="constant  "><a href="#constant_%22LOGO_TEXT_SUPERSCRIPT%22" title='"LOGO_TEXT_SUPERSCRIPT"() :: '><span class="description">"LOGO_TEXT_SUPERSCRIPT"</span><pre>"LOGO_TEXT_SUPERSCRIPT"</pre></a></li>
-<li class="constant  "><a href="#constant_%22SCRIPT_EXP_RELATIVE%22" title='"SCRIPT_EXP_RELATIVE"() :: Glue to open the module selection window for linking content from within the site url/link browser'><span class="description">Glue to open the module selection window for linking content from within the site url/link browser</span><pre>"SCRIPT_EXP_RELATIVE"</pre></a></li>
-<li class="constant  "><a href="#constant_%22SCRIPT_EXP_RELATIVE%22" title='"SCRIPT_EXP_RELATIVE"() :: Implements the quick upload feature within the CKEditor insert dialogs'><span class="description">Implements the quick upload feature within the CKEditor insert dialogs</span><pre>"SCRIPT_EXP_RELATIVE"</pre></a></li>
-<li class="constant  "><a href="#constant_%22SCRIPT_FILENAME%22" title='"SCRIPT_FILENAME"() :: '><span class="description">"SCRIPT_FILENAME"</span><pre>"SCRIPT_FILENAME"</pre></a></li>
-<li class="constant  "><a href="#constant_%22SCRIPT_FILENAME%22" title='"SCRIPT_FILENAME"() :: '><span class="description">"SCRIPT_FILENAME"</span><pre>"SCRIPT_FILENAME"</pre></a></li>
 <li class="constant  "><a href="#constant_ADVERTISE_RSS" title="ADVERTISE_RSS() :: "><span class="description">ADVERTISE_RSS</span><pre>ADVERTISE_RSS</pre></a></li>
 <li class="constant  "><a href="#constant_ANTI_SPAM_CONTROL" title="ANTI_SPAM_CONTROL() :: "><span class="description">ANTI_SPAM_CONTROL</span><pre>ANTI_SPAM_CONTROL</pre></a></li>
 <li class="constant  "><a href="#constant_ANTI_SPAM_USERS_SKIP" title="ANTI_SPAM_USERS_SKIP() :: "><span class="description">ANTI_SPAM_USERS_SKIP</span><pre>ANTI_SPAM_USERS_SKIP</pre></a></li>
@@ -1202,8 +1221,12 @@ The absolute url to Exponent's core javascript.</span><pre>JS_URL</pre></a></li>
 <li class="constant  "><a href="#constant_SCRIPT_EXP_RELATIVE" title="SCRIPT_EXP_RELATIVE() :: "><span class="description">SCRIPT_EXP_RELATIVE</span><pre>SCRIPT_EXP_RELATIVE</pre></a></li>
 <li class="constant  "><a href="#constant_SCRIPT_EXP_RELATIVE" title="SCRIPT_EXP_RELATIVE() :: "><span class="description">SCRIPT_EXP_RELATIVE</span><pre>SCRIPT_EXP_RELATIVE</pre></a></li>
 <li class="constant  "><a href="#constant_SCRIPT_EXP_RELATIVE" title="SCRIPT_EXP_RELATIVE() :: "><span class="description">SCRIPT_EXP_RELATIVE</span><pre>SCRIPT_EXP_RELATIVE</pre></a></li>
+<li class="constant  "><a href="#constant_SCRIPT_EXP_RELATIVE" title="SCRIPT_EXP_RELATIVE() :: Glue to open the module selection window for linking content from within the site url/link browser"><span class="description">Glue to open the module selection window for linking content from within the site url/link browser</span><pre>SCRIPT_EXP_RELATIVE</pre></a></li>
+<li class="constant  "><a href="#constant_SCRIPT_EXP_RELATIVE" title="SCRIPT_EXP_RELATIVE() :: Implements the quick upload feature within the CKEditor insert dialogs"><span class="description">Implements the quick upload feature within the CKEditor insert dialogs</span><pre>SCRIPT_EXP_RELATIVE</pre></a></li>
 <li class="constant  "><a href="#constant_SCRIPT_EXP_RELATIVE" title="SCRIPT_EXP_RELATIVE() :: "><span class="description">SCRIPT_EXP_RELATIVE</span><pre>SCRIPT_EXP_RELATIVE</pre></a></li>
 <li class="constant  "><a href="#constant_SCRIPT_EXP_RELATIVE" title="SCRIPT_EXP_RELATIVE() :: Implements the browse server feature within the CKEditor insert url/link dialogs"><span class="description">Implements the browse server feature within the CKEditor insert url/link dialogs</span><pre>SCRIPT_EXP_RELATIVE</pre></a></li>
+<li class="constant  "><a href="#constant_SCRIPT_FILENAME" title="SCRIPT_FILENAME() :: "><span class="description">SCRIPT_FILENAME</span><pre>SCRIPT_FILENAME</pre></a></li>
+<li class="constant  "><a href="#constant_SCRIPT_FILENAME" title="SCRIPT_FILENAME() :: "><span class="description">SCRIPT_FILENAME</span><pre>SCRIPT_FILENAME</pre></a></li>
 <li class="constant  "><a href="#constant_SCRIPT_FILENAME" title="SCRIPT_FILENAME() :: "><span class="description">SCRIPT_FILENAME</span><pre>SCRIPT_FILENAME</pre></a></li>
 <li class="constant  "><a href="#constant_SCRIPT_FILENAME" title="SCRIPT_FILENAME() :: "><span class="description">SCRIPT_FILENAME</span><pre>SCRIPT_FILENAME</pre></a></li>
 <li class="constant  "><a href="#constant_SCRIPT_FILENAME" title="SCRIPT_FILENAME() :: "><span class="description">SCRIPT_FILENAME</span><pre>SCRIPT_FILENAME</pre></a></li>
@@ -1365,7 +1388,7 @@ UI Level of Structure - All management links are shown.</span><pre>UILEVEL_STRUC
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.2.0
 </a> and<br>
-            generated on 2013-12-06T06:42:49-05:00.<br></footer></div>
+            generated on 2014-02-18T10:31:33-05:00.<br></footer></div>
 </div>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Exponent v2.2.4 » Smarty</title>
+<title>Exponent v2.2.4 » Connectors</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -23,11 +23,11 @@
 <li><a href="../namespaces/Composer.html"><i class="icon-th"></i> Composer</a></li>
 <li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
 <li><a>Packages</a></li>
+<li><a href="../packages/Connectors.html"><i class="icon-folder-open"></i> Connectors</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
 <li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 <li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
 <li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
-<li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
 <li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
@@ -42,7 +42,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">2301</span></a></li>
+                <span class="label label-info">5017</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -67,91 +67,42 @@
 <li class="nav-header">
 <i class="icon-map-marker"></i> Packages</li>
 <li>
-<a href="../packages/Smarty.html" title="Smarty"><i class="icon-folder-open"></i>Smarty</a><ul class="nav nav-list nav-packages"></ul>
+<span class="empty-package"><i class="icon-folder-close"></i>Connectors</span><ul class="nav nav-list nav-packages"><li>
+<a href="../packages/Connectors.Connectors.html" title="Connectors"><i class="icon-folder-open"></i>Connectors</a><ul class="nav nav-list nav-packages"></ul>
+</li></ul>
 </li>
-<li class="nav-header">
-<i title="Functions" class="icon-custom icon-function"></i> Functions</li>
-<li class="function  "><a href="#function_smarty_postfilter_switch" title="smarty_postfilter_switch() :: Filter the template after it is generated to fix switch bugs."><span class="description">Filter the template after it is generated to fix switch bugs.</span><pre>smarty_postfilter_switch</pre></a></li>
-<li class="nav-header">
-<i title="Classes" class="icon-custom icon-class"></i> Classes</li>
-<li><a href="#Smarty_Compiler_Switch" title="">Smarty_Compiler_Switch</a></li>
-<li><a href="#Smarty_Compiler_Case" title="">Smarty_Compiler_Case</a></li>
-<li><a href="#Smarty_Compiler_Default" title="">Smarty_Compiler_Default</a></li>
-<li><a href="#Smarty_Compiler_Break" title="">Smarty_Compiler_Break</a></li>
-<li><a href="#Smarty_Compiler_Caseclose" title="">Smarty_Compiler_Caseclose</a></li>
-<li><a href="#Smarty_Compiler_Switchclose" title="">Smarty_Compiler_Switchclose</a></li>
 </ul>
 </div>
 <div class="span8 package-contents">
 <ul class="breadcrumb"><li>
-<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li class="active"><a href="../packages/Smarty.html">Smarty</a></li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li class="active"><a href="../packages/Connectors.html">Connectors</a></li>
+</li></ul>
+<div class="package-indent">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/Connectors.html">Connectors</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/Connectors.Connectors.html">Connectors</a>
+</li>
 </li></ul>
 <div class="package-indent">
 <h3>
-<i title="Functions" class="icon-custom icon-function"></i> Functions</h3>
-<a id="function_smarty_postfilter_switch"></a><div class="element clickable function  function_smarty_postfilter_switch" data-toggle="collapse" data-target=".function_smarty_postfilter_switch .collapse" title="">
-<h2>Filter the template after it is generated to fix switch bugs.</h2>
-<pre>smarty_postfilter_switch(string $compiled, \Smarty_Compiler $smarty) : string</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description">Remove any spaces after the 'switch () {' code and before the first case.  Any tabs or spaces
-      for layout would cause php errors witch this reged will fix.</div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$compiled</h4>
-<code>string</code>
-</div>
-<div class="subelement argument">
-<h4>$smarty</h4>
-<code><a href="Smarty_Compiler.html">\Smarty_Compiler</a></code>
-</div>
-<h3>Returns</h3>
-<div class="subelement response"><code>string</code></div>
-</div></div>
-</div>
-<h3>
 <i title="Classes" class="icon-custom icon-class"></i> Classes and interfaces</h3>
-<div id="Smarty_Compiler_Break" class="element ajax clickable class">
-<h1>Smarty_Compiler_Break<a href="../classes/Smarty_Compiler_Break.html">¶</a>
+<div id="elFinderExponent" class="element ajax clickable class">
+<h1>elFinderExponent<a href="../classes/elFinderExponent.html">¶</a>
 </h1>
-<p class="short_description"></p>
+<p class="short_description">This is the class elFinderExponent
+elFinder object subclass for Exponent CMS expFile filesystem.</p>
 <div class="details collapse"></div>
-<a href="../classes/Smarty_Compiler_Break.html" class="more">« More »</a>
+<a href="../classes/elFinderExponent.html" class="more">« More »</a>
 </div>
-<div id="Smarty_Compiler_Case" class="element ajax clickable class">
-<h1>Smarty_Compiler_Case<a href="../classes/Smarty_Compiler_Case.html">¶</a>
+<div id="elFinderVolumeExponent" class="element ajax clickable class">
+<h1>elFinderVolumeExponent<a href="../classes/elFinderVolumeExponent.html">¶</a>
 </h1>
-<p class="short_description"></p>
+<p class="short_description">This is the class elFinderVolumeExponent
+elFinder volume driver for the Exponent CMS expFile filesystem.</p>
 <div class="details collapse"></div>
-<a href="../classes/Smarty_Compiler_Case.html" class="more">« More »</a>
+<a href="../classes/elFinderVolumeExponent.html" class="more">« More »</a>
 </div>
-<div id="Smarty_Compiler_Caseclose" class="element ajax clickable class">
-<h1>Smarty_Compiler_Caseclose<a href="../classes/Smarty_Compiler_Caseclose.html">¶</a>
-</h1>
-<p class="short_description"></p>
-<div class="details collapse"></div>
-<a href="../classes/Smarty_Compiler_Caseclose.html" class="more">« More »</a>
-</div>
-<div id="Smarty_Compiler_Default" class="element ajax clickable class">
-<h1>Smarty_Compiler_Default<a href="../classes/Smarty_Compiler_Default.html">¶</a>
-</h1>
-<p class="short_description"></p>
-<div class="details collapse"></div>
-<a href="../classes/Smarty_Compiler_Default.html" class="more">« More »</a>
-</div>
-<div id="Smarty_Compiler_Switch" class="element ajax clickable class">
-<h1>Smarty_Compiler_Switch<a href="../classes/Smarty_Compiler_Switch.html">¶</a>
-</h1>
-<p class="short_description"></p>
-<div class="details collapse"></div>
-<a href="../classes/Smarty_Compiler_Switch.html" class="more">« More »</a>
-</div>
-<div id="Smarty_Compiler_Switchclose" class="element ajax clickable class">
-<h1>Smarty_Compiler_Switchclose<a href="../classes/Smarty_Compiler_Switchclose.html">¶</a>
-</h1>
-<p class="short_description"></p>
-<div class="details collapse"></div>
-<a href="../classes/Smarty_Compiler_Switchclose.html" class="more">« More »</a>
 </div>
 </div>
 </div>
@@ -160,7 +111,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.2.0
 </a> and<br>
-            generated on 2013-12-06T06:42:50-05:00.<br></footer></div>
+            generated on 2014-02-18T10:31:33-05:00.<br></footer></div>
 </div>
 </body>
 </html>

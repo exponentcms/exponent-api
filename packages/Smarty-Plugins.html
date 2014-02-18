@@ -23,11 +23,11 @@
 <li><a href="../namespaces/Composer.html"><i class="icon-th"></i> Composer</a></li>
 <li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
 <li><a>Packages</a></li>
+<li><a href="../packages/Connectors.html"><i class="icon-folder-open"></i> Connectors</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
 <li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 <li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
 <li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
-<li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
 <li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
@@ -42,7 +42,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">2301</span></a></li>
+                <span class="label label-info">5017</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -102,6 +102,13 @@ Purpose:  Set up a associatvie array</span><pre>smarty_block_assocarray</pre></a
 <li class="function  "><a href="#function_smarty_block_pop" title="smarty_block_pop() :: Smarty {pop} block plugin"><span class="description">Smarty {pop} block plugin</span><pre>smarty_block_pop</pre></a></li>
 <li class="function  "><a href="#function_smarty_block_script" title="smarty_block_script() :: Smarty {script} block plugin"><span class="description">Smarty {script} block plugin</span><pre>smarty_block_script</pre></a></li>
 <li class="function  "><a href="#function_smarty_block_toggle" title="smarty_block_toggle() :: Smarty {toggle} block plugin"><span class="description">Smarty {toggle} block plugin</span><pre>smarty_block_toggle</pre></a></li>
+<li class="function  "><a href="#function_smarty_compiler_exp_include" title="smarty_compiler_exp_include() :: Smarty {exp_include} compiler plugin
+Type:     compiler&lt;br&gt;
+Name:     exp_include&lt;br&gt;
+Purpose:  includes appropriate file based on 'framework' with fallback"><span class="description">Smarty {exp_include} compiler plugin
+Type:     compiler&lt;br&gt;
+Name:     exp_include&lt;br&gt;
+Purpose:  includes appropriate file based on 'framework' with fallback</span><pre>smarty_compiler_exp_include</pre></a></li>
 <li class="function  "><a href="#function_smarty_function_assign_adv" title="smarty_function_assign_adv() :: Smarty {assign_adv} function plugin"><span class="description">Smarty {assign_adv} function plugin</span><pre>smarty_function_assign_adv</pre></a></li>
 <li class="function  "><a href="#function_smarty_function_attribution" title="smarty_function_attribution() :: Smarty {attribution} function plugin"><span class="description">Smarty {attribution} function plugin</span><pre>smarty_function_attribution</pre></a></li>
 <li class="function  "><a href="#function_smarty_function_backlink" title="smarty_function_backlink() :: Smarty {backlink} function plugin"><span class="description">Smarty {backlink} function plugin</span><pre>smarty_function_backlink</pre></a></li>
@@ -233,8 +240,17 @@ Purpose:  return the username for a user id"><span class="description">Smarty {u
 Type:     modifier&lt;br&gt;
 Name:     username&lt;br&gt;
 Purpose:  return the username for a user id</span><pre>smarty_modifier_username</pre></a></li>
+<li class="function  "><a href="#function_smarty_postfilter_switch" title="smarty_postfilter_switch() :: Filter the template after it is generated to fix switch bugs."><span class="description">Filter the template after it is generated to fix switch bugs.</span><pre>smarty_postfilter_switch</pre></a></li>
 <li class="function  "><a href="#function_twitter_link" title="twitter_link() :: "><span class="description">twitter_link()
         </span><pre>twitter_link</pre></a></li>
+<li class="nav-header">
+<i title="Classes" class="icon-custom icon-class"></i> Classes</li>
+<li><a href="#Smarty_Compiler_Switch" title="">Smarty_Compiler_Switch</a></li>
+<li><a href="#Smarty_Compiler_Case" title="">Smarty_Compiler_Case</a></li>
+<li><a href="#Smarty_Compiler_Default" title="">Smarty_Compiler_Default</a></li>
+<li><a href="#Smarty_Compiler_Break" title="">Smarty_Compiler_Break</a></li>
+<li><a href="#Smarty_Compiler_Caseclose" title="">Smarty_Compiler_Caseclose</a></li>
+<li><a href="#Smarty_Compiler_Switchclose" title="">Smarty_Compiler_Switchclose</a></li>
 </ul>
 </div>
 <div class="span8 package-contents">
@@ -553,6 +569,22 @@ Purpose:  Set up a toggle block</div>
 <code><a href="Smarty.html">\Smarty</a></code>
 </div>
 <div class="subelement argument"><h4>$repeat</h4></div>
+</div></div>
+</div>
+<a id="function_smarty_compiler_exp_include"></a><div class="element clickable function  function_smarty_compiler_exp_include" data-toggle="collapse" data-target=".function_smarty_compiler_exp_include .collapse" title="">
+<h2>Smarty {exp_include} compiler plugin
+Type:     compiler&lt;br&gt;
+Name:     exp_include&lt;br&gt;
+Purpose:  includes appropriate file based on 'framework' with fallback</h2>
+<pre>smarty_compiler_exp_include(mixed $_params, mixed $compiler) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$_params</h4></div>
+<div class="subelement argument"><h4>$compiler</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
 <a id="function_smarty_function_assign_adv"></a><div class="element clickable function  function_smarty_function_assign_adv" data-toggle="collapse" data-target=".function_smarty_function_assign_adv .collapse" title="">
@@ -2403,6 +2435,26 @@ Purpose:  return the username for a user id</h2>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
+<a id="function_smarty_postfilter_switch"></a><div class="element clickable function  function_smarty_postfilter_switch" data-toggle="collapse" data-target=".function_smarty_postfilter_switch .collapse" title="">
+<h2>Filter the template after it is generated to fix switch bugs.</h2>
+<pre>smarty_postfilter_switch(string $compiled, \Smarty_Compiler $smarty) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Remove any spaces after the 'switch () {' code and before the first case.  Any tabs or spaces
+      for layout would cause php errors witch this reged will fix.</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$compiled</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$smarty</h4>
+<code><a href="Smarty_Compiler.html">\Smarty_Compiler</a></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
 <a id="function_twitter_link"></a><div class="element clickable function  function_twitter_link" data-toggle="collapse" data-target=".function_twitter_link .collapse" title="">
 <h2>twitter_link()
         </h2>
@@ -2414,6 +2466,50 @@ Purpose:  return the username for a user id</h2>
 <div class="subelement argument"><h4>$match</h4></div>
 </div></div>
 </div>
+<h3>
+<i title="Classes" class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="Smarty_Compiler_Break" class="element ajax clickable class">
+<h1>Smarty_Compiler_Break<a href="../classes/Smarty_Compiler_Break.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Smarty_Compiler_Break.html" class="more">« More »</a>
+</div>
+<div id="Smarty_Compiler_Case" class="element ajax clickable class">
+<h1>Smarty_Compiler_Case<a href="../classes/Smarty_Compiler_Case.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Smarty_Compiler_Case.html" class="more">« More »</a>
+</div>
+<div id="Smarty_Compiler_Caseclose" class="element ajax clickable class">
+<h1>Smarty_Compiler_Caseclose<a href="../classes/Smarty_Compiler_Caseclose.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Smarty_Compiler_Caseclose.html" class="more">« More »</a>
+</div>
+<div id="Smarty_Compiler_Default" class="element ajax clickable class">
+<h1>Smarty_Compiler_Default<a href="../classes/Smarty_Compiler_Default.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Smarty_Compiler_Default.html" class="more">« More »</a>
+</div>
+<div id="Smarty_Compiler_Switch" class="element ajax clickable class">
+<h1>Smarty_Compiler_Switch<a href="../classes/Smarty_Compiler_Switch.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Smarty_Compiler_Switch.html" class="more">« More »</a>
+</div>
+<div id="Smarty_Compiler_Switchclose" class="element ajax clickable class">
+<h1>Smarty_Compiler_Switchclose<a href="../classes/Smarty_Compiler_Switchclose.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Smarty_Compiler_Switchclose.html" class="more">« More »</a>
+</div>
 </div>
 </div>
 </div>
@@ -2421,7 +2517,7 @@ Purpose:  return the username for a user id</h2>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.2.0
 </a> and<br>
-            generated on 2013-12-06T06:42:51-05:00.<br></footer></div>
+            generated on 2014-02-18T10:31:34-05:00.<br></footer></div>
 </div>
 </body>
 </html>

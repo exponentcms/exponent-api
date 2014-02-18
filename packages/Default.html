@@ -23,11 +23,11 @@
 <li><a href="../namespaces/Composer.html"><i class="icon-th"></i> Composer</a></li>
 <li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
 <li><a>Packages</a></li>
+<li><a href="../packages/Connectors.html"><i class="icon-folder-open"></i> Connectors</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
 <li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 <li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
 <li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
-<li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
 <li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
@@ -42,7 +42,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">2301</span></a></li>
+                <span class="label label-info">5017</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -130,7 +130,7 @@ the iXHProfRuns interface.</span><pre>displayXHProfReport</pre></a></li>
         </span><pre>do_file</pre></a></li>
 <li class="function  "><a href="#function_do_file" title="do_file() :: "><span class="description">do_file()
         </span><pre>do_file</pre></a></li>
-<li class="function  "><a href="#function_eDebug" title="eDebug() :: dumps the passed variable to screen, but only if in development mode"><span class="description">dumps the passed variable to screen, but only if in development mode</span><pre>eDebug</pre></a></li>
+<li class="function  "><a href="#function_eDebug" title="eDebug() :: dumps the passed variable to screen/log, but only if in development mode"><span class="description">dumps the passed variable to screen/log, but only if in development mode</span><pre>eDebug</pre></a></li>
 <li class="function  "><a href="#function_eLog" title="eLog() :: dumps the passed variable to a log, but only if in development mode"><span class="description">dumps the passed variable to a log, but only if in development mode</span><pre>eLog</pre></a></li>
 <li class="function  "><a href="#function_echoFailure" title="echoFailure() :: "><span class="description">echoFailure()
         </span><pre>echoFailure</pre></a></li>
@@ -197,8 +197,7 @@ just before it gets rendered to the screen should happen here.</span><pre>expPro
         </span><pre>glist</pre></a></li>
 <li class="function  "><a href="#function_gt" title="gt() :: "><span class="description">gt()
         </span><pre>gt</pre></a></li>
-<li class="function  "><a href="#function_handleErrors" title="handleErrors() :: "><span class="description">handleErrors()
-        </span><pre>handleErrors</pre></a></li>
+<li class="function  "><a href="#function_handleErrors" title="handleErrors() :: called from exponent.php as the ajax error handler"><span class="description">called from exponent.php as the ajax error handler</span><pre>handleErrors</pre></a></li>
 <li class="function  "><a href="#function_hotspot" title="hotspot() :: "><span class="description">hotspot()
         </span><pre>hotspot</pre></a></li>
 <li class="function  "><a href="#function_init_metrics" title="init_metrics() :: Initialize the metrics we'll display based on the information
@@ -409,10 +408,13 @@ of $functions_to_keep.</span><pre>xhprof_trim_run</pre></a></li>
 <li><a href="#iXHProfRuns" title="iXHProfRuns interface for getting/saving a XHProf run.">iXHProfRuns</a></li>
 <li class="nav-header">
 <i title="Classes" class="icon-custom icon-class"></i> Classes</li>
+<li><a href="#ClassLoader" title="ClassLoader implements a PSR-0 class loader">ClassLoader</a></li>
 <li><a href="#sermonseriesController" title="This is the class expController">sermonseriesController</a></li>
 <li><a href="#headlineController" title="This is the class expController">headlineController</a></li>
 <li><a href="#rssfeed" title="">rssfeed</a></li>
 <li><a href="#youtubeController" title="This is the class expController">youtubeController</a></li>
+<li><a href="#XHProfRuns_Default" title="XHProfRuns_Default is the default implementation of the
+iXHProfRuns interface for saving/fetching XHProf runs.">XHProfRuns_Default</a></li>
 <li><a href="#multioptionstheme" title="This is the base theme class">multioptionstheme</a></li>
 <li><a href="#Twitter" title="Twitter class">Twitter</a></li>
 <li><a href="#sermons" title="This is the class expRecord">sermons</a></li>
@@ -420,12 +422,14 @@ of $functions_to_keep.</span><pre>xhprof_trim_run</pre></a></li>
 <li><a href="#retrotheme" title="This is the base theme class">retrotheme</a></li>
 <li><a href="#basetheme" title="This is the base theme class">basetheme</a></li>
 <li><a href="#services" title="This is the class expRecord">services</a></li>
+<li><a href="#elFinderTestACL" title="Access control example class">elFinderTestACL</a></li>
 <li><a href="#flowplayerController" title="This is the class expController">flowplayerController</a></li>
 <li><a href="#htmleditorcontrol" title="Base Form Control Class">htmleditorcontrol</a></li>
 <li><a href="#sermonseries" title="This is the class expRecord">sermonseries</a></li>
 <li><a href="#speakers" title="This is the class expRecord">speakers</a></li>
 <li><a href="#emeraldtheme" title="This is the base theme class">emeraldtheme</a></li>
 <li><a href="#xmlrpc_server_methods_container" title="Used to test usage of object methods in dispatch maps">xmlrpc_server_methods_container</a></li>
+<li><a href="#ComposerAutoloaderInitf6fc03a98bbccbaa8d7ab343434b6f89" title="">ComposerAutoloaderInitf6fc03a98bbccbaa8d7ab343434b6f89</a></li>
 <li><a href="#expWKPDF" title="This is the class expHtmlToPDF">expWKPDF</a></li>
 <li><a href="#expDOMPDF" title="This is the class expHtmlToPDF">expDOMPDF</a></li>
 <li><a href="#expMPDF" title="This is the class expHtmlToPDF">expMPDF</a></li>
@@ -434,11 +438,6 @@ of $functions_to_keep.</span><pre>xhprof_trim_run</pre></a></li>
 <li><a href="#simpletheme" title="This is the base theme class">simpletheme</a></li>
 <li><a href="#hhbctheme" title="This is the base theme class">hhbctheme</a></li>
 <li><a href="#coolwatertheme" title="This is the base theme class">coolwatertheme</a></li>
-<li><a href="#elFinderTestACL" title="Access control example class">elFinderTestACL</a></li>
-<li><a href="#ComposerAutoloaderInitf6fc03a98bbccbaa8d7ab343434b6f89" title="">ComposerAutoloaderInitf6fc03a98bbccbaa8d7ab343434b6f89</a></li>
-<li><a href="#ClassLoader" title="ClassLoader implements a PSR-0 class loader">ClassLoader</a></li>
-<li><a href="#XHProfRuns_Default" title="XHProfRuns_Default is the default implementation of the
-iXHProfRuns interface for saving/fetching XHProf runs.">XHProfRuns_Default</a></li>
 <li class="nav-header">
 <i title="Constants" class="icon-custom icon-constant"></i> Constants</li>
 <li class="constant  "><a href="#constant_%22BLANKPADDING%22" title='"BLANKPADDING"() :: '><span class="description">"BLANKPADDING"</span><pre>"BLANKPADDING"</pre></a></li>
@@ -459,10 +458,6 @@ iXHProfRuns interface for saving/fetching XHProf runs.">XHProfRuns_Default</a></
 <li class="constant  "><a href="#constant_%22LOGO_TEXT_MAIN%22" title='"LOGO_TEXT_MAIN"() :: '><span class="description">"LOGO_TEXT_MAIN"</span><pre>"LOGO_TEXT_MAIN"</pre></a></li>
 <li class="constant  "><a href="#constant_%22LOGO_TEXT_SUPERSCRIPT%22" title='"LOGO_TEXT_SUPERSCRIPT"() :: '><span class="description">"LOGO_TEXT_SUPERSCRIPT"</span><pre>"LOGO_TEXT_SUPERSCRIPT"</pre></a></li>
 <li class="constant  "><a href="#constant_%22LOGO_TEXT_SUPERSCRIPT%22" title='"LOGO_TEXT_SUPERSCRIPT"() :: '><span class="description">"LOGO_TEXT_SUPERSCRIPT"</span><pre>"LOGO_TEXT_SUPERSCRIPT"</pre></a></li>
-<li class="constant  "><a href="#constant_%22SCRIPT_EXP_RELATIVE%22" title='"SCRIPT_EXP_RELATIVE"() :: Glue to open the module selection window for linking content from within the site url/link browser'><span class="description">Glue to open the module selection window for linking content from within the site url/link browser</span><pre>"SCRIPT_EXP_RELATIVE"</pre></a></li>
-<li class="constant  "><a href="#constant_%22SCRIPT_EXP_RELATIVE%22" title='"SCRIPT_EXP_RELATIVE"() :: Implements the quick upload feature within the CKEditor insert dialogs'><span class="description">Implements the quick upload feature within the CKEditor insert dialogs</span><pre>"SCRIPT_EXP_RELATIVE"</pre></a></li>
-<li class="constant  "><a href="#constant_%22SCRIPT_FILENAME%22" title='"SCRIPT_FILENAME"() :: '><span class="description">"SCRIPT_FILENAME"</span><pre>"SCRIPT_FILENAME"</pre></a></li>
-<li class="constant  "><a href="#constant_%22SCRIPT_FILENAME%22" title='"SCRIPT_FILENAME"() :: '><span class="description">"SCRIPT_FILENAME"</span><pre>"SCRIPT_FILENAME"</pre></a></li>
 <li class="constant  "><a href="#constant_ADVERTISE_RSS" title="ADVERTISE_RSS() :: "><span class="description">ADVERTISE_RSS</span><pre>ADVERTISE_RSS</pre></a></li>
 <li class="constant  "><a href="#constant_ANTI_SPAM_CONTROL" title="ANTI_SPAM_CONTROL() :: "><span class="description">ANTI_SPAM_CONTROL</span><pre>ANTI_SPAM_CONTROL</pre></a></li>
 <li class="constant  "><a href="#constant_ANTI_SPAM_USERS_SKIP" title="ANTI_SPAM_USERS_SKIP() :: "><span class="description">ANTI_SPAM_USERS_SKIP</span><pre>ANTI_SPAM_USERS_SKIP</pre></a></li>
@@ -686,8 +681,12 @@ The absolute url to Exponent's core javascript.</span><pre>JS_URL</pre></a></li>
 <li class="constant  "><a href="#constant_SCRIPT_EXP_RELATIVE" title="SCRIPT_EXP_RELATIVE() :: "><span class="description">SCRIPT_EXP_RELATIVE</span><pre>SCRIPT_EXP_RELATIVE</pre></a></li>
 <li class="constant  "><a href="#constant_SCRIPT_EXP_RELATIVE" title="SCRIPT_EXP_RELATIVE() :: "><span class="description">SCRIPT_EXP_RELATIVE</span><pre>SCRIPT_EXP_RELATIVE</pre></a></li>
 <li class="constant  "><a href="#constant_SCRIPT_EXP_RELATIVE" title="SCRIPT_EXP_RELATIVE() :: "><span class="description">SCRIPT_EXP_RELATIVE</span><pre>SCRIPT_EXP_RELATIVE</pre></a></li>
+<li class="constant  "><a href="#constant_SCRIPT_EXP_RELATIVE" title="SCRIPT_EXP_RELATIVE() :: Glue to open the module selection window for linking content from within the site url/link browser"><span class="description">Glue to open the module selection window for linking content from within the site url/link browser</span><pre>SCRIPT_EXP_RELATIVE</pre></a></li>
+<li class="constant  "><a href="#constant_SCRIPT_EXP_RELATIVE" title="SCRIPT_EXP_RELATIVE() :: Implements the quick upload feature within the CKEditor insert dialogs"><span class="description">Implements the quick upload feature within the CKEditor insert dialogs</span><pre>SCRIPT_EXP_RELATIVE</pre></a></li>
 <li class="constant  "><a href="#constant_SCRIPT_EXP_RELATIVE" title="SCRIPT_EXP_RELATIVE() :: "><span class="description">SCRIPT_EXP_RELATIVE</span><pre>SCRIPT_EXP_RELATIVE</pre></a></li>
 <li class="constant  "><a href="#constant_SCRIPT_EXP_RELATIVE" title="SCRIPT_EXP_RELATIVE() :: Implements the browse server feature within the CKEditor insert url/link dialogs"><span class="description">Implements the browse server feature within the CKEditor insert url/link dialogs</span><pre>SCRIPT_EXP_RELATIVE</pre></a></li>
+<li class="constant  "><a href="#constant_SCRIPT_FILENAME" title="SCRIPT_FILENAME() :: "><span class="description">SCRIPT_FILENAME</span><pre>SCRIPT_FILENAME</pre></a></li>
+<li class="constant  "><a href="#constant_SCRIPT_FILENAME" title="SCRIPT_FILENAME() :: "><span class="description">SCRIPT_FILENAME</span><pre>SCRIPT_FILENAME</pre></a></li>
 <li class="constant  "><a href="#constant_SCRIPT_FILENAME" title="SCRIPT_FILENAME() :: "><span class="description">SCRIPT_FILENAME</span><pre>SCRIPT_FILENAME</pre></a></li>
 <li class="constant  "><a href="#constant_SCRIPT_FILENAME" title="SCRIPT_FILENAME() :: "><span class="description">SCRIPT_FILENAME</span><pre>SCRIPT_FILENAME</pre></a></li>
 <li class="constant  "><a href="#constant_SCRIPT_FILENAME" title="SCRIPT_FILENAME() :: "><span class="description">SCRIPT_FILENAME</span><pre>SCRIPT_FILENAME</pre></a></li>
@@ -1177,7 +1176,7 @@ the iXHProfRuns interface.</h2>
 </div></div>
 </div>
 <a id="function_eDebug"></a><div class="element clickable function  function_eDebug" data-toggle="collapse" data-target=".function_eDebug .collapse" title="">
-<h2>dumps the passed variable to screen, but only if in development mode</h2>
+<h2>dumps the passed variable to screen/log, but only if in development mode</h2>
 <pre>eDebug(mixed $var, bool $halt<code> = false</code>) : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
@@ -1606,9 +1605,8 @@ and red for regression deltas.</div>
 </div></div>
 </div>
 <a id="function_handleErrors"></a><div class="element clickable function  function_handleErrors" data-toggle="collapse" data-target=".function_handleErrors .collapse" title="">
-<h2>handleErrors()
-        </h2>
-<pre>handleErrors($errno, $errstr, $errfile, $errline) </pre>
+<h2>called from exponent.php as the ajax error handler</h2>
+<pre>handleErrors(mixed $errno, mixed $errstr, mixed $errfile, mixed $errline) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -3216,30 +3214,6 @@ iXHProfRuns interface for saving/fetching XHProf runs.</p>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id='constant_"SCRIPT_EXP_RELATIVE"'> </a><div class='element clickable constant  constant_"SCRIPT_EXP_RELATIVE"' data-toggle="collapse" data-target='.constant_"SCRIPT_EXP_RELATIVE" .collapse' title="">
-<h2>Glue to open the module selection window for linking content from within the site url/link browser</h2>
-<pre>"SCRIPT_EXP_RELATIVE" = "framework/modules/file/connector/" </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id='constant_"SCRIPT_EXP_RELATIVE"'> </a><div class='element clickable constant  constant_"SCRIPT_EXP_RELATIVE"' data-toggle="collapse" data-target='.constant_"SCRIPT_EXP_RELATIVE" .collapse' title="">
-<h2>Implements the quick upload feature within the CKEditor insert dialogs</h2>
-<pre>"SCRIPT_EXP_RELATIVE" = "framework/modules/file/connector/" </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id='constant_"SCRIPT_FILENAME"'> </a><div class='element clickable constant  constant_"SCRIPT_FILENAME"' data-toggle="collapse" data-target='.constant_"SCRIPT_FILENAME" .collapse' title="">
-<h2>"SCRIPT_FILENAME"</h2>
-<pre>"SCRIPT_FILENAME" = "content_linked.php" </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id='constant_"SCRIPT_FILENAME"'> </a><div class='element clickable constant  constant_"SCRIPT_FILENAME"' data-toggle="collapse" data-target='.constant_"SCRIPT_FILENAME" .collapse' title="">
-<h2>"SCRIPT_FILENAME"</h2>
-<pre>"SCRIPT_FILENAME" = "uploader.php" </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
 <a id="constant_ADVERTISE_RSS"> </a><div class="element clickable constant  constant_ADVERTISE_RSS" data-toggle="collapse" data-target=".constant_ADVERTISE_RSS .collapse" title="">
 <h2>ADVERTISE_RSS</h2>
 <pre>ADVERTISE_RSS = '0' </pre>
@@ -4058,7 +4032,7 @@ when you have special needs for the form's input elements.</div></div></div>
 </div>
 <a id="constant_JQUERYUI_VERSION"> </a><div class="element clickable constant  constant_JQUERYUI_VERSION" data-toggle="collapse" data-target=".constant_JQUERYUI_VERSION .collapse" title="">
 <h2>JQUERYUI_VERSION</h2>
-<pre>JQUERYUI_VERSION = '1.10.3' </pre>
+<pre>JQUERYUI_VERSION = '1.10.4' </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -4088,7 +4062,7 @@ when you have special needs for the form's input elements.</div></div></div>
 </div>
 <a id="constant_JQUERY_VERSION"> </a><div class="element clickable constant  constant_JQUERY_VERSION" data-toggle="collapse" data-target=".constant_JQUERY_VERSION .collapse" title="">
 <h2>JQUERY_VERSION</h2>
-<pre>JQUERY_VERSION = '1.10.2' </pre>
+<pre>JQUERY_VERSION = '1.11.0' </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -4384,7 +4358,7 @@ The absolute url to Exponent's core javascript.</h2>
 </div>
 <a id="constant_MENU_WIDTH"> </a><div class="element clickable constant  constant_MENU_WIDTH" data-toggle="collapse" data-target=".constant_MENU_WIDTH .collapse" title="">
 <h2>MENU_WIDTH</h2>
-<pre>MENU_WIDTH = '979' </pre>
+<pre>MENU_WIDTH = '769' </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -4671,6 +4645,18 @@ The absolute url to Exponent's core javascript.</h2>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="constant_SCRIPT_EXP_RELATIVE"> </a><div class="element clickable constant  constant_SCRIPT_EXP_RELATIVE" data-toggle="collapse" data-target=".constant_SCRIPT_EXP_RELATIVE .collapse" title="">
+<h2>Glue to open the module selection window for linking content from within the site url/link browser</h2>
+<pre>SCRIPT_EXP_RELATIVE = "framework/modules/file/connector/" </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_SCRIPT_EXP_RELATIVE"> </a><div class="element clickable constant  constant_SCRIPT_EXP_RELATIVE" data-toggle="collapse" data-target=".constant_SCRIPT_EXP_RELATIVE .collapse" title="">
+<h2>Implements the quick upload feature within the CKEditor insert dialogs</h2>
+<pre>SCRIPT_EXP_RELATIVE = "framework/modules/file/connector/" </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_SCRIPT_EXP_RELATIVE"> </a><div class="element clickable constant  constant_SCRIPT_EXP_RELATIVE" data-toggle="collapse" data-target=".constant_SCRIPT_EXP_RELATIVE .collapse" title="">
 <h2>SCRIPT_EXP_RELATIVE</h2>
 <pre>SCRIPT_EXP_RELATIVE = '' </pre>
 <div class="labels"></div>
@@ -4709,6 +4695,18 @@ The absolute url to Exponent's core javascript.</h2>
 <a id="constant_SCRIPT_FILENAME"> </a><div class="element clickable constant  constant_SCRIPT_FILENAME" data-toggle="collapse" data-target=".constant_SCRIPT_FILENAME .collapse" title="">
 <h2>SCRIPT_FILENAME</h2>
 <pre>SCRIPT_FILENAME = 'xmlrpc.php' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_SCRIPT_FILENAME"> </a><div class="element clickable constant  constant_SCRIPT_FILENAME" data-toggle="collapse" data-target=".constant_SCRIPT_FILENAME .collapse" title="">
+<h2>SCRIPT_FILENAME</h2>
+<pre>SCRIPT_FILENAME = "content_linked.php" </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_SCRIPT_FILENAME"> </a><div class="element clickable constant  constant_SCRIPT_FILENAME" data-toggle="collapse" data-target=".constant_SCRIPT_FILENAME .collapse" title="">
+<h2>SCRIPT_FILENAME</h2>
+<pre>SCRIPT_FILENAME = "uploader.php" </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -4894,7 +4892,7 @@ The absolute url to Exponent's core javascript.</h2>
 </div>
 <a id="constant_SMARTY_VERSION"> </a><div class="element clickable constant  constant_SMARTY_VERSION" data-toggle="collapse" data-target=".constant_SMARTY_VERSION .collapse" title="">
 <h2>SMARTY_VERSION</h2>
-<pre>SMARTY_VERSION = '3.1.15' </pre>
+<pre>SMARTY_VERSION = '3.1.16' </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -4978,7 +4976,7 @@ The absolute url to Exponent's core javascript.</h2>
 </div>
 <a id="constant_SWIFT_VERSION"> </a><div class="element clickable constant  constant_SWIFT_VERSION" data-toggle="collapse" data-target=".constant_SWIFT_VERSION .collapse" title="">
 <h2>SWIFT_VERSION</h2>
-<pre>SWIFT_VERSION = '5.0.2' </pre>
+<pre>SWIFT_VERSION = '5.0.3' </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -5444,7 +5442,7 @@ UI Level of Structure - All management links are shown.</h2>
 </div>
 <a id="constant_YUI3_VERSION"> </a><div class="element clickable constant  constant_YUI3_VERSION" data-toggle="collapse" data-target=".constant_YUI3_VERSION .collapse" title="">
 <h2>YUI3_VERSION</h2>
-<pre>YUI3_VERSION = '3.14.0' </pre>
+<pre>YUI3_VERSION = '3.14.1' </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -5467,7 +5465,7 @@ UI Level of Structure - All management links are shown.</h2>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.2.0
 </a> and<br>
-            generated on 2013-12-06T06:42:50-05:00.<br></footer></div>
+            generated on 2014-02-18T10:31:34-05:00.<br></footer></div>
 </div>
 </body>
 </html>

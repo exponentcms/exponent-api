@@ -23,11 +23,11 @@
 <li><a href="namespaces/Composer.html"><i class="icon-th"></i> Composer</a></li>
 <li><a href="namespaces/global.html"><i class="icon-th"></i> global</a></li>
 <li><a>Packages</a></li>
+<li><a href="packages/Connectors.html"><i class="icon-folder-open"></i> Connectors</a></li>
 <li><a href="packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
 <li><a href="packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 <li><a href="packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
 <li><a href="packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
-<li><a href="packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
 <li><a href="packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
 <li><a href="packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
@@ -42,7 +42,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">2301</span></a></li>
+                <span class="label label-info">5017</span></a></li>
 <li><a href="markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -70,6 +70,7 @@
 <li><a href="#install%5Cpages%5Cinstall-7.php"><i class="icon-file"></i>install\pages\install-7.php</a></li>
 <li><a href="#framework%5Ccore%5Csubsystems%5Cdatabase%5Cmysql.info.php"><i class="icon-file"></i>framework\core\subsystems\database\mysql.info.php</a></li>
 <li><a href="#framework%5Cplugins%5Cblock.form.php"><i class="icon-file"></i>framework\plugins\block.form.php</a></li>
+<li><a href="#framework%5Cmodules%5Creport%5Ccontrollers%5CreportController.php"><i class="icon-file"></i>framework\modules\report\controllers\reportController.php</a></li>
 <li><a href="#framework%5Cmodules%5Cecommerce%5Cmodels%5Cshipping.php"><i class="icon-file"></i>framework\modules\ecommerce\models\shipping.php</a></li>
 <li><a href="#framework%5Ccore%5Cforms%5Ctemplate.php"><i class="icon-file"></i>framework\core\forms\template.php</a></li>
 <li><a href="#framework%5Cmodules%5Cadministration%5Cmenus%5Cadmin.php"><i class="icon-file"></i>framework\modules\administration\menus\admin.php</a></li>
@@ -83,6 +84,7 @@
 <li><a href="#framework%5Cmodules%5Cblog%5Ccontrollers%5CblogController.php"><i class="icon-file"></i>framework\modules\blog\controllers\blogController.php</a></li>
 <li><a href="#framework%5Cmodules%5Ctwitter%5Cmodels%5CTwitter.php"><i class="icon-file"></i>framework\modules\twitter\models\Twitter.php</a></li>
 <li><a href="#framework%5Cmodules%5Cforms%5Ccontrollers%5CformsController.php"><i class="icon-file"></i>framework\modules\forms\controllers\formsController.php</a></li>
+<li><a href="#framework%5Cplugins%5Cfunction.configpanel.php"><i class="icon-file"></i>framework\plugins\function.configpanel.php</a></li>
 <li><a href="#framework%5Ccore%5Cforms%5Ccontrols%5Ccheckboxcontrol.php"><i class="icon-file"></i>framework\core\forms\controls\checkboxcontrol.php</a></li>
 <li><a href="#framework%5Cmodules%5Cusers%5Cmodels%5Cuser.php"><i class="icon-file"></i>framework\modules\users\models\user.php</a></li>
 <li><a href="#framework%5Cmodules%5Cfile%5Cmodels%5CexpFile.php"><i class="icon-file"></i>framework\modules\file\models\expFile.php</a></li>
@@ -90,6 +92,7 @@
 <li><a href="#framework%5Cmodules%5Cecommerce%5Ccontrollers%5CorderController.php"><i class="icon-file"></i>framework\modules\ecommerce\controllers\orderController.php</a></li>
 <li><a href="#framework%5Cmodules%5Cecommerce%5Cbillingcalculators%5Ccreditcard.php"><i class="icon-file"></i>framework\modules\ecommerce\billingcalculators\creditcard.php</a></li>
 <li><a href="#framework%5Ccore%5Csubsystems%5CexpCore.php"><i class="icon-file"></i>framework\core\subsystems\expCore.php</a></li>
+<li><a href="#framework%5Cplugins%5Cfunction.prod_images.php"><i class="icon-file"></i>framework\plugins\function.prod_images.php</a></li>
 <li><a href="#framework%5Ccore%5Csubsystems%5CexpTemplate.php"><i class="icon-file"></i>framework\core\subsystems\expTemplate.php</a></li>
 <li><a href="#install%5Cpages%5Cinstall-3.php"><i class="icon-file"></i>install\pages\install-3.php</a></li>
 <li><a href="#framework%5Ccore%5Csubsystems%5CexpVersion.php"><i class="icon-file"></i>framework\core\subsystems\expVersion.php</a></li>
@@ -103,14 +106,18 @@
 <li><a href="#framework%5Ccore%5Csubsystems%5CexpTheme.php"><i class="icon-file"></i>framework\core\subsystems\expTheme.php</a></li>
 <li><a href="#framework%5Cplugins%5Cmodifier.summarize.php"><i class="icon-file"></i>framework\plugins\modifier.summarize.php</a></li>
 <li><a href="#framework%5Cmodules%5Cealerts%5Cmodels%5CexpeAlerts.php"><i class="icon-file"></i>framework\modules\ealerts\models\expeAlerts.php</a></li>
+<li><a href="#framework%5Cmodules%5Cfile%5Ccontrollers%5CfileController.php"><i class="icon-file"></i>framework\modules\file\controllers\fileController.php</a></li>
 <li><a href="#framework%5Ccore%5Cforms%5Cformtemplate.php"><i class="icon-file"></i>framework\core\forms\formtemplate.php</a></li>
 <li><a href="#framework%5Ccore%5Csubsystems%5Cdatabase%5Cmysqli.php"><i class="icon-file"></i>framework\core\subsystems\database\mysqli.php</a></li>
 <li><a href="#framework%5Cmodules%5Cecommerce%5Ccontrollers%5CcartController.php"><i class="icon-file"></i>framework\modules\ecommerce\controllers\cartController.php</a></li>
 <li><a href="#framework%5Ccore%5Cmodels%5CexpRecord.php"><i class="icon-file"></i>framework\core\models\expRecord.php</a></li>
+<li><a href="#framework%5Ccore%5Cforms%5Ccontrols%5Ccontactcontrol.php"><i class="icon-file"></i>framework\core\forms\controls\contactcontrol.php</a></li>
 <li><a href="#framework%5Cmodules%5Cecommerce%5Ccontrollers%5CeventregistrationController.php"><i class="icon-file"></i>framework\modules\ecommerce\controllers\eventregistrationController.php</a></li>
 <li><a href="#framework%5Cmodules%5Cecommerce%5Cbillingcalculators%5CpaypalExpressCheckout.php"><i class="icon-file"></i>framework\modules\ecommerce\billingcalculators\paypalExpressCheckout.php</a></li>
 <li><a href="#themes%5Chhbctheme%5Crouter_maps.php"><i class="icon-file"></i>themes\hhbctheme\router_maps.php</a></li>
 <li><a href="#cron%5Clang_extract.php"><i class="icon-file"></i>cron\lang_extract.php</a></li>
+<li><a href="#framework%5Ccore%5Cforms%5Ccontrols%5Cconfigcontrol.php"><i class="icon-file"></i>framework\core\forms\controls\configcontrol.php</a></li>
+<li><a href="#framework%5Cplugins%5Cfunction.yuilogger.php"><i class="icon-file"></i>framework\plugins\function.yuilogger.php</a></li>
 <li><a href="#framework%5Ccore%5Cforms%5Ccontrols%5Cyuieditorcontrol.php"><i class="icon-file"></i>framework\core\forms\controls\yuieditorcontrol.php</a></li>
 <li><a href="#framework%5Ccore%5Cforms%5Ccontrols%5Chtmleditorcontrol.php"><i class="icon-file"></i>framework\core\forms\controls\htmleditorcontrol.php</a></li>
 <li><a href="#framework%5Cmodules%5Caddressbook%5Ccontrollers%5CaddressController.php"><i class="icon-file"></i>framework\modules\addressbook\controllers\addressController.php</a></li>
@@ -125,11 +132,13 @@
 <li><a href="#framework%5Ccore%5Csubsystems%5Cdatabase%5Cmysqlid.php"><i class="icon-file"></i>framework\core\subsystems\database\mysqlid.php</a></li>
 <li><a href="#framework%5Cmodules%5Cadministration%5Ccontrollers%5CadministrationController.php"><i class="icon-file"></i>framework\modules\administration\controllers\administrationController.php</a></li>
 <li><a href="#framework%5Ccore%5Crouter_maps.php"><i class="icon-file"></i>framework\core\router_maps.php</a></li>
+<li><a href="#framework%5Ccore%5Cforms%5Ccontrols%5Cnextbackcontrol.php"><i class="icon-file"></i>framework\core\forms\controls\nextbackcontrol.php</a></li>
 <li><a href="#framework%5Ccore%5CexpFramework.php"><i class="icon-file"></i>framework\core\expFramework.php</a></li>
 <li><a href="#framework%5Cmodules%5Chelp%5Cmodels%5Chelp.php"><i class="icon-file"></i>framework\modules\help\models\help.php</a></li>
 <li><a href="#framework%5Ccore%5Csubsystems%5CexpSettings.php"><i class="icon-file"></i>framework\core\subsystems\expSettings.php</a></li>
 <li><a href="#framework%5Ccore%5Ccontrollers%5CexpController.php"><i class="icon-file"></i>framework\core\controllers\expController.php</a></li>
 <li><a href="#framework%5Cmodules%5Cecommerce%5Ccontrollers%5CstoreController.php"><i class="icon-file"></i>framework\modules\ecommerce\controllers\storeController.php</a></li>
+<li><a href="#framework%5Ccore%5Cforms%5Ccontrols%5Cmassmailcontrol.php"><i class="icon-file"></i>framework\core\forms\controls\massmailcontrol.php</a></li>
 <li><a href="#framework%5Ccore%5Cforms%5Ccontrols%5Ctagtreecontrol.php"><i class="icon-file"></i>framework\core\forms\controls\tagtreecontrol.php</a></li>
 <li><a href="#framework%5Ccore%5Csubsystems%5CexpModules.php"><i class="icon-file"></i>framework\core\subsystems\expModules.php</a></li>
 <li><a href="#framework%5Cmodules%5Ceaas%5Ccontrollers%5CeaasController.php"><i class="icon-file"></i>framework\modules\eaas\controllers\eaasController.php</a></li>
@@ -139,6 +148,7 @@
 <li><a href="#framework%5Cmodules%5Cecommerce%5Cmodels%5CstoreCategory.php"><i class="icon-file"></i>framework\modules\ecommerce\models\storeCategory.php</a></li>
 <li><a href="#framework%5Ccore%5Csubsystems%5CexpDatabase.php"><i class="icon-file"></i>framework\core\subsystems\expDatabase.php</a></li>
 <li><a href="#framework%5Cplugins%5Cfunction.control.php"><i class="icon-file"></i>framework\plugins\function.control.php</a></li>
+<li><a href="#framework%5Ccore%5Cforms%5Ccontrols%5Cyuicalendarcontrol.php"><i class="icon-file"></i>framework\core\forms\controls\yuicalendarcontrol.php</a></li>
 <li><a href="#install%5Cpages%5Cinstall-5.php"><i class="icon-file"></i>install\pages\install-5.php</a></li>
 <li><a href="#framework%5Cmodules%5Ccore%5Ccontrollers%5CexpDefinableFieldController.php"><i class="icon-file"></i>framework\modules\core\controllers\expDefinableFieldController.php</a></li>
 <li><a href="#framework%5Ccore%5Csubsystems%5CexpRouter.php"><i class="icon-file"></i>framework\core\subsystems\expRouter.php</a></li>
@@ -164,6 +174,12 @@
 <li><a href="#framework%5Cmodules%5Cusers%5Ccontrollers%5CusersController.php"><i class="icon-file"></i>framework\modules\users\controllers\usersController.php</a></li>
 <li><a href="#framework%5Cmodules%5Cmigration%5Ccontrollers%5CmigrationController.php"><i class="icon-file"></i>framework\modules\migration\controllers\migrationController.php</a></li>
 <li><a href="#framework%5Ccore%5Cforms%5Cbasetemplate.php"><i class="icon-file"></i>framework\core\forms\basetemplate.php</a></li>
+<li><a href="#framework%5Ccore%5Cforms%5Ccontrols%5Cbootstrap%5Ccalendarcontrol.php"><i class="icon-file"></i>framework\core\forms\controls\bootstrap\calendarcontrol.php</a></li>
+<li><a href="#framework%5Ccore%5Cforms%5Ccontrols%5Cbootstrap%5Clistbuildercontrol.php"><i class="icon-file"></i>framework\core\forms\controls\bootstrap\listbuildercontrol.php</a></li>
+<li><a href="#framework%5Ccore%5Cforms%5Ccontrols%5Cbootstrap%5Cpopupdatetimecontrol.php"><i class="icon-file"></i>framework\core\forms\controls\bootstrap\popupdatetimecontrol.php</a></li>
+<li><a href="#framework%5Ccore%5Cforms%5Ccontrols%5Cbootstrap%5Ctagpickercontrol.php"><i class="icon-file"></i>framework\core\forms\controls\bootstrap\tagpickercontrol.php</a></li>
+<li><a href="#framework%5Ccore%5Cforms%5Ccontrols%5Cbootstrap%5Cyuicalendarcontrol.php"><i class="icon-file"></i>framework\core\forms\controls\bootstrap\yuicalendarcontrol.php</a></li>
+<li><a href="#framework%5Ccore%5Cforms%5Ccontrols%5Cbootstrap%5Cyuidatetimecontrol.php"><i class="icon-file"></i>framework\core\forms\controls\bootstrap\yuidatetimecontrol.php</a></li>
 </ul></div>
 <div class="span8">
 <ul class="breadcrumb">
@@ -362,6 +378,23 @@
 </table></div>
 </div>
 <div class="package-contents">
+<a name="framework%5Cmodules%5Creport%5Ccontrollers%5CreportController.php" id="framework\modules\report\controllers\reportController.php"></a><h3>
+<i class="icon-file"></i>framework\modules\report\controllers\reportController.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>92</td>
+<td>OLD calendar control format</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
 <a name="framework%5Cmodules%5Cecommerce%5Cmodels%5Cshipping.php" id="framework\modules\ecommerce\models\shipping.php"></a><h3>
 <i class="icon-file"></i>framework\modules\ecommerce\models\shipping.php<small style="float: right;padding-right: 10px;">2</small>
 </h3>
@@ -412,7 +445,7 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>198</td>
+<td>204</td>
 <td>should a group admin get the entire User Management menu?</td>
 </tr>
 </table></div>
@@ -704,53 +737,70 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>183</td>
+<td>184</td>
 <td>we need to add a browse other records (next/prev) feature here</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>184</td>
+<td>185</td>
 <td>that would require a sort by which column and direction</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>989</td>
+<td>996</td>
 <td>change this to an expValidator call</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1025</td>
+<td>1032</td>
 <td>we also need to update any config column_names_list settings?</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1160</td>
+<td>1167</td>
 <td>should we defaul to only 5 columns or all columns?</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1312</td>
+<td>1319</td>
 <td>$individual_Header is ALWAYS in $rptcols?</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1399</td>
+<td>1406</td>
 <td>check for duplicate form data table name before import?</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1478</td>
+<td>1485</td>
 <td>quick hack to remove file model</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1533</td>
+<td>1540</td>
 <td></td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1647</td>
+<td>1654</td>
 <td>quick hack to remove file model</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cplugins%5Cfunction.configpanel.php" id="framework\plugins\function.configpanel.php"></a><h3>
+<i class="icon-file"></i>framework\plugins\function.configpanel.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>2</td>
+<td>Deprecated! Not used</td>
 </tr>
 </table></div>
 </div>
@@ -805,7 +855,7 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>1741</td>
+<td>1743</td>
 <td>We reject v1.0 eql files</td>
 </tr>
 </table></div>
@@ -968,78 +1018,95 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>85</td>
+<td>95</td>
 <td>Hardcoded controller stuff!!</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>127</td>
+<td>143</td>
 <td>$sef_name isn't set??</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>245</td>
+<td>278</td>
 <td>Investigate the chances of BASE occurring more than once</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>281</td>
+<td>317</td>
 <td>implement caching</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>282</td>
+<td>318</td>
 <td>optimization - walk the tree backwards and stop on the first match</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>292</td>
+<td>328</td>
 <td>convert everything to the new naming model</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>311</td>
+<td>351</td>
 <td>forms/calendar only used by calendarmodule</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>335</td>
+<td>375</td>
 <td>forms/calendar only used by calendarmodule</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>336</td>
+<td>376</td>
 <td>forms/calendar only used by calendarmodule</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>349</td>
+<td>389</td>
 <td>forms/calendar only used by calendarmodule</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>378</td>
+<td>418</td>
 <td>handle subthemes</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>379</td>
+<td>419</td>
 <td>now that glob is used build a syntax for it instead of calling it repeatedly</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>394</td>
+<td>434</td>
 <td>handle the - currently unused - case where there is the same file in different $type categories</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>407</td>
+<td>447</td>
 <td>invent better error handling, maybe an error message channel ?</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>426</td>
+<td>467</td>
 <td>only used by 1) event module edit action (email forms) & 2) expTemplate::listModuleViews for OS modules</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cplugins%5Cfunction.prod_images.php" id="framework\plugins\function.prod_images.php"></a><h3>
+<i class="icon-file"></i>framework\plugins\function.prod_images.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>2</td>
+<td>Deprecated! Not used</td>
 </tr>
 </table></div>
 </div>
@@ -1081,12 +1148,12 @@
 <tr>
 <td>fixme</td>
 <td>181</td>
-<td>we need to also look for custom & jquery controls</td>
+<td>we need to also look for custom & jquery & bootstrap controls</td>
 </tr>
 <tr>
 <td>fixme</td>
 <td>197</td>
-<td>we need to also look for custom & jquery controls</td>
+<td>we need to also look for custom & jquery & bootstrap controls</td>
 </tr>
 </table></div>
 </div>
@@ -1214,7 +1281,7 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>484</td>
+<td>476</td>
 <td>$hide & $footer are not defined below</td>
 </tr>
 </table></div>
@@ -1265,117 +1332,117 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>359</td>
+<td>364</td>
 <td>Not used</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>368</td>
+<td>373</td>
 <td>$form is not set??</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>375</td>
+<td>380</td>
 <td>Not used</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>387</td>
+<td>392</td>
 <td>this should be $file instead of $filename?</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>445</td>
+<td>450</td>
 <td>need to use $feed instead of $params</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>661</td>
+<td>666</td>
 <td>module/controller glue code..remove ASAP</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>728</td>
+<td>733</td>
 <td>only used by smarty functions, old school?</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>808</td>
+<td>813</td>
 <td>not sure how to convert this yet</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>845</td>
+<td>850</td>
 <td>change to showModule call</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>861</td>
+<td>866</td>
 <td>Deprecated</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>887</td>
+<td>892</td>
 <td>patch to cleanup module name</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>897</td>
+<td>902</td>
 <td>there is no such config index</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>911</td>
+<td>916</td>
 <td>Deprecated</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>937</td>
+<td>942</td>
 <td>patch to cleanup module name</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>943</td>
+<td>948</td>
 <td>let's try $sectionObj instead of last_section</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>954</td>
+<td>959</td>
 <td>Deprecated</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>970</td>
+<td>975</td>
 <td>not used in base system (custom themes?)</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>983</td>
+<td>988</td>
 <td>Deprecated</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1059</td>
+<td>1064</td>
 <td>long controller name</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1118</td>
+<td>1123</td>
 <td>- $section might be empty!  We're getting it from last_section instead of sectionObj??</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1121</td>
+<td>1126</td>
 <td>let's try $sectionObj instead of last_section</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1172</td>
+<td>1177</td>
 <td>patch to cleanup module name</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1244</td>
+<td>1249</td>
 <td>we are checking here for a new MVC style controller or an old school module. We only need to perform</td>
 </tr>
 </table></div>
@@ -1411,6 +1478,23 @@
 <td>fixme</td>
 <td>57</td>
 <td>, not pulling any items?</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cmodules%5Cfile%5Ccontrollers%5CfileController.php" id="framework\modules\file\controllers\fileController.php"></a><h3>
+<i class="icon-file"></i>framework\modules\file\controllers\fileController.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>409</td>
+<td>json error checking/reporting, may no longer be needed</td>
 </tr>
 </table></div>
 </div>
@@ -1487,13 +1571,8 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>389</td>
+<td>390</td>
 <td>only placed used is in helpController->copydocs, & migration</td>
-</tr>
-<tr>
-<td>fixme</td>
-<td>395</td>
-<td>plural vs single?</td>
 </tr>
 <tr>
 <td>fixme</td>
@@ -1502,18 +1581,18 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>426</td>
+<td>397</td>
+<td>plural vs single?</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>427</td>
 <td>we're not going to do this automagically until we get the refreshing figured out.</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>564</td>
+<td>565</td>
 <td>$where .= empty($this->rank_by_field) ? null : "AND " . $this->rank_by_field . "='" . $this->$this->rank_by_field . "'";</td>
-</tr>
-<tr>
-<td>fixme</td>
-<td>649</td>
-<td>find a better way to pluralize these names!!!</td>
 </tr>
 <tr>
 <td>fixme</td>
@@ -1522,43 +1601,65 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>713</td>
+<td>651</td>
+<td>find a better way to pluralize these names!!!</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>714</td>
 <td>shouldn't we also delete associated items or leave them to the afterDelete method?</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>774</td>
+<td>775</td>
 <td>not used??</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>821</td>
+<td>822</td>
 <td>is it plural where others are single?</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>876</td>
+<td>877</td>
 <td>find a better way to unpluralize the name!</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>931</td>
+<td>932</td>
 <td>perhaps add a 'in' option to the find so we can pass an array of ids and make ONE db call instead of looping</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1021</td>
+<td>1022</td>
 <td>not used??</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>1082</td>
+<td>1083</td>
 <td>should incorporate DISPLAY_ATTRIBUTION here</td>
 </tr>
 <tr>
 <td>todo</td>
-<td>1100</td>
+<td>1101</td>
 <td>should incorporate DISPLAY_DATETIME_FORMAT here</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Cforms%5Ccontrols%5Ccontactcontrol.php" id="framework\core\forms\controls\contactcontrol.php"></a><h3>
+<i class="icon-file"></i>framework\core\forms\controls\contactcontrol.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>2</td>
+<td>Deprecated! Not used, Missing js file any way</td>
 </tr>
 </table></div>
 </div>
@@ -1696,14 +1797,53 @@
 </table></div>
 </div>
 <div class="package-contents">
-<a name="framework%5Ccore%5Cforms%5Ccontrols%5Cyuieditorcontrol.php" id="framework\core\forms\controls\yuieditorcontrol.php"></a><h3>
-<i class="icon-file"></i>framework\core\forms\controls\yuieditorcontrol.php<small style="float: right;padding-right: 10px;">1</small>
+<a name="framework%5Ccore%5Cforms%5Ccontrols%5Cconfigcontrol.php" id="framework\core\forms\controls\configcontrol.php"></a><h3>
+<i class="icon-file"></i>framework\core\forms\controls\configcontrol.php<small style="float: right;padding-right: 10px;">1</small>
 </h3>
 <div><table class="table markers table-bordered">
 <tr>
 <th>Type</th>
 <th>Line</th>
 <th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>2</td>
+<td>Deprecated! Not used</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Cplugins%5Cfunction.yuilogger.php" id="framework\plugins\function.yuilogger.php"></a><h3>
+<i class="icon-file"></i>framework\plugins\function.yuilogger.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>2</td>
+<td>Deprecated! Not used</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Cforms%5Ccontrols%5Cyuieditorcontrol.php" id="framework\core\forms\controls\yuieditorcontrol.php"></a><h3>
+<i class="icon-file"></i>framework\core\forms\controls\yuieditorcontrol.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>2</td>
+<td>Deprecated! Not used</td>
 </tr>
 <tr>
 <td>fixme</td>
@@ -1753,13 +1893,18 @@
 </div>
 <div class="package-contents">
 <a name="framework%5Ccore%5Cforms%5Ccontrols%5Cquantitycontrol.php" id="framework\core\forms\controls\quantitycontrol.php"></a><h3>
-<i class="icon-file"></i>framework\core\forms\controls\quantitycontrol.php<small style="float: right;padding-right: 10px;">1</small>
+<i class="icon-file"></i>framework\core\forms\controls\quantitycontrol.php<small style="float: right;padding-right: 10px;">2</small>
 </h3>
 <div><table class="table markers table-bordered">
 <tr>
 <th>Type</th>
 <th>Line</th>
 <th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>2</td>
+<td>Deprecated! Not used replaced by generic html5 'number' control</td>
 </tr>
 <tr>
 <td>fixme</td>
@@ -1951,13 +2096,18 @@
 </div>
 <div class="package-contents">
 <a name="framework%5Cplugins%5Cfunction.yuimenubar.php" id="framework\plugins\function.yuimenubar.php"></a><h3>
-<i class="icon-file"></i>framework\plugins\function.yuimenubar.php<small style="float: right;padding-right: 10px;">1</small>
+<i class="icon-file"></i>framework\plugins\function.yuimenubar.php<small style="float: right;padding-right: 10px;">2</small>
 </h3>
 <div><table class="table markers table-bordered">
 <tr>
 <th>Type</th>
 <th>Line</th>
 <th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>2</td>
+<td>Deprecated! Not used</td>
 </tr>
 <tr>
 <td>fixme</td>
@@ -1985,13 +2135,18 @@
 </div>
 <div class="package-contents">
 <a name="framework%5Cplugins%5Cfunction.yuimenu.php" id="framework\plugins\function.yuimenu.php"></a><h3>
-<i class="icon-file"></i>framework\plugins\function.yuimenu.php<small style="float: right;padding-right: 10px;">1</small>
+<i class="icon-file"></i>framework\plugins\function.yuimenu.php<small style="float: right;padding-right: 10px;">2</small>
 </h3>
 <div><table class="table markers table-bordered">
 <tr>
 <th>Type</th>
 <th>Line</th>
 <th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>2</td>
+<td>Deprecated! Not used</td>
 </tr>
 <tr>
 <td>fixme</td>
@@ -2056,7 +2211,7 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>679</td>
+<td>682</td>
 <td>shouldn't use echo</td>
 </tr>
 </table></div>
@@ -2079,8 +2234,8 @@
 </table></div>
 </div>
 <div class="package-contents">
-<a name="framework%5Ccore%5CexpFramework.php" id="framework\core\expFramework.php"></a><h3>
-<i class="icon-file"></i>framework\core\expFramework.php<small style="float: right;padding-right: 10px;">4</small>
+<a name="framework%5Ccore%5Cforms%5Ccontrols%5Cnextbackcontrol.php" id="framework\core\forms\controls\nextbackcontrol.php"></a><h3>
+<i class="icon-file"></i>framework\core\forms\controls\nextbackcontrol.php<small style="float: right;padding-right: 10px;">1</small>
 </h3>
 <div><table class="table markers table-bordered">
 <tr>
@@ -2090,23 +2245,30 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>284</td>
-<td>do we process modules also needing this?</td>
+<td>2</td>
+<td>Deprecated! Not used</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5CexpFramework.php" id="framework\core\expFramework.php"></a><h3>
+<i class="icon-file"></i>framework\core\expFramework.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
 </tr>
 <tr>
 <td>fixme</td>
-<td>436</td>
+<td>441</td>
 <td>there is NO 'page' object and section has no _construct method</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>438</td>
+<td>443</td>
 <td>there is no getModulesBySource method anywhere</td>
-</tr>
-<tr>
-<td>fixme</td>
-<td>509</td>
-<td>this don't make sense?</td>
 </tr>
 </table></div>
 </div>
@@ -2334,6 +2496,23 @@
 </table></div>
 </div>
 <div class="package-contents">
+<a name="framework%5Ccore%5Cforms%5Ccontrols%5Cmassmailcontrol.php" id="framework\core\forms\controls\massmailcontrol.php"></a><h3>
+<i class="icon-file"></i>framework\core\forms\controls\massmailcontrol.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>2</td>
+<td>Deprecated! Not used, missing js file any way</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
 <a name="framework%5Ccore%5Cforms%5Ccontrols%5Ctagtreecontrol.php" id="framework\core\forms\controls\tagtreecontrol.php"></a><h3>
 <i class="icon-file"></i>framework\core\forms\controls\tagtreecontrol.php<small style="float: right;padding-right: 10px;">1</small>
 </h3>
@@ -2345,7 +2524,7 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>106</td>
+<td>108</td>
 <td>convert to yui3 because of call to exp-tree.js</td>
 </tr>
 </table></div>
@@ -2551,13 +2730,30 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>331</td>
+<td>326</td>
 <td>we don't really use this</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>332</td>
+<td>327</td>
 <td>we don't really use this</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Cforms%5Ccontrols%5Cyuicalendarcontrol.php" id="framework\core\forms\controls\yuicalendarcontrol.php"></a><h3>
+<i class="icon-file"></i>framework\core\forms\controls\yuicalendarcontrol.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>49</td>
+<td>$disable_text & $showtime are NOT used</td>
 </tr>
 </table></div>
 </div>
@@ -2612,12 +2808,12 @@
 </tr>
 <tr>
 <td>todo</td>
-<td>623</td>
+<td>624</td>
 <td>fully sanitize all params values here for</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>677</td>
+<td>676</td>
 <td>, we still need a good lighttpd.conf rewrite config for sef_urls to work</td>
 </tr>
 </table></div>
@@ -2910,13 +3106,18 @@
 </div>
 <div class="package-contents">
 <a name="framework%5Ccore%5Cforms%5Ccontrols%5Clistcontrol.php" id="framework\core\forms\controls\listcontrol.php"></a><h3>
-<i class="icon-file"></i>framework\core\forms\controls\listcontrol.php<small style="float: right;padding-right: 10px;">1</small>
+<i class="icon-file"></i>framework\core\forms\controls\listcontrol.php<small style="float: right;padding-right: 10px;">2</small>
 </h3>
 <div><table class="table markers table-bordered">
 <tr>
 <th>Type</th>
 <th>Line</th>
 <th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>2</td>
+<td>Deprecated! Not used</td>
 </tr>
 <tr>
 <td>fixme</td>
@@ -2995,13 +3196,18 @@
 </div>
 <div class="package-contents">
 <a name="framework%5Ccore%5Cforms%5Ccontrols%5Cantispamcontrol.php" id="framework\core\forms\controls\antispamcontrol.php"></a><h3>
-<i class="icon-file"></i>framework\core\forms\controls\antispamcontrol.php<small style="float: right;padding-right: 10px;">1</small>
+<i class="icon-file"></i>framework\core\forms\controls\antispamcontrol.php<small style="float: right;padding-right: 10px;">2</small>
 </h3>
 <div><table class="table markers table-bordered">
 <tr>
 <th>Type</th>
 <th>Line</th>
 <th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>2</td>
+<td>Deprecated! Not used</td>
 </tr>
 <tr>
 <td>fixme</td>
@@ -3012,7 +3218,7 @@
 </div>
 <div class="package-contents">
 <a name="framework%5Cmodules%5Cusers%5Ccontrollers%5CusersController.php" id="framework\modules\users\controllers\usersController.php"></a><h3>
-<i class="icon-file"></i>framework\modules\users\controllers\usersController.php<small style="float: right;padding-right: 10px;">6</small>
+<i class="icon-file"></i>framework\modules\users\controllers\usersController.php<small style="float: right;padding-right: 10px;">5</small>
 </h3>
 <div><table class="table markers table-bordered">
 <tr>
@@ -3022,32 +3228,27 @@
 </tr>
 <tr>
 <td>fixme</td>
-<td>117</td>
-<td>constant does NOT resolve</td>
-</tr>
-<tr>
-<td>fixme</td>
-<td>248</td>
+<td>250</td>
 <td>why are we doing this? this loads the edited user perms over the current user???</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>982</td>
+<td>983</td>
 <td>long controller name</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1082</td>
+<td>1083</td>
 <td>long controller name</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1202</td>
+<td>1203</td>
 <td>needs to be the newer fail form</td>
 </tr>
 <tr>
 <td>fixme</td>
-<td>1217</td>
+<td>1218</td>
 <td>quick hack to remove file model</td>
 </tr>
 </table></div>
@@ -3106,6 +3307,113 @@
 </tr>
 </table></div>
 </div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Cforms%5Ccontrols%5Cbootstrap%5Ccalendarcontrol.php" id="framework\core\forms\controls\bootstrap\calendarcontrol.php"></a><h3>
+<i class="icon-file"></i>framework\core\forms\controls\bootstrap\calendarcontrol.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>24</td>
+<td>this is NOT a bootstrap control, but jQuery</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Cforms%5Ccontrols%5Cbootstrap%5Clistbuildercontrol.php" id="framework\core\forms\controls\bootstrap\listbuildercontrol.php"></a><h3>
+<i class="icon-file"></i>framework\core\forms\controls\bootstrap\listbuildercontrol.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>22</td>
+<td>this is NOT a bootstrap control, but jQuery</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Cforms%5Ccontrols%5Cbootstrap%5Cpopupdatetimecontrol.php" id="framework\core\forms\controls\bootstrap\popupdatetimecontrol.php"></a><h3>
+<i class="icon-file"></i>framework\core\forms\controls\bootstrap\popupdatetimecontrol.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>24</td>
+<td>this is NOT a bootstrap control, but jQuery</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Cforms%5Ccontrols%5Cbootstrap%5Ctagpickercontrol.php" id="framework\core\forms\controls\bootstrap\tagpickercontrol.php"></a><h3>
+<i class="icon-file"></i>framework\core\forms\controls\bootstrap\tagpickercontrol.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>21</td>
+<td>this is NOT a bootstrap control, but jQuery</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Cforms%5Ccontrols%5Cbootstrap%5Cyuicalendarcontrol.php" id="framework\core\forms\controls\bootstrap\yuicalendarcontrol.php"></a><h3>
+<i class="icon-file"></i>framework\core\forms\controls\bootstrap\yuicalendarcontrol.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>24</td>
+<td>this is NOT a bootstrap control, but jQuery</td>
+</tr>
+<tr>
+<td>fixme</td>
+<td>57</td>
+<td>$disable_text & $showtime are NOT used</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="framework%5Ccore%5Cforms%5Ccontrols%5Cbootstrap%5Cyuidatetimecontrol.php" id="framework\core\forms\controls\bootstrap\yuidatetimecontrol.php"></a><h3>
+<i class="icon-file"></i>framework\core\forms\controls\bootstrap\yuidatetimecontrol.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>24</td>
+<td>this is NOT a bootstrap control, but jQuery</td>
+</tr>
+</table></div>
+</div>
 </div>
 </div>
 </div>
@@ -3113,7 +3421,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.2.0
 </a> and<br>
-            generated on 2013-12-06T06:43:10-05:00.<br></footer></div>
+            generated on 2014-02-18T10:31:53-05:00.<br></footer></div>
 </div>
 </body>
 </html>

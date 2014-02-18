@@ -23,11 +23,11 @@
 <li><a href="../namespaces/Composer.html"><i class="icon-th"></i> Composer</a></li>
 <li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
 <li><a>Packages</a></li>
+<li><a href="../packages/Connectors.html"><i class="icon-folder-open"></i> Connectors</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
 <li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 <li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
 <li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
-<li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
 <li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
@@ -42,7 +42,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">2301</span></a></li>
+                <span class="label label-info">5017</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -74,6 +74,10 @@
 <li class="method public "><a href="#method_advertiseRSS" title="advertiseRSS() :: exdoc
 Output &lt;link /&gt; elements for each RSS feed on the site"><span class="description">exdoc
 Output &lt;link /&gt; elements for each RSS feed on the site</span><pre>advertiseRSS()</pre></a></li>
+<li class="method public "><a href="#method_buttonColor" title="buttonColor() :: Return the color style for the current framework"><span class="description">Return the color style for the current framework</span><pre>buttonColor()</pre></a></li>
+<li class="method public "><a href="#method_buttonIcon" title="buttonIcon() :: Return the icon associated for the current frameowrk"><span class="description">Return the icon associated for the current frameowrk</span><pre>buttonIcon()</pre></a></li>
+<li class="method public "><a href="#method_buttonSize" title="buttonSize() :: Return the button size for the current framework"><span class="description">Return the button size for the current framework</span><pre>buttonSize()</pre></a></li>
+<li class="method public "><a href="#method_buttonStyle" title="buttonStyle() :: Return the button color and size style for the current framework"><span class="description">Return the button color and size style for the current framework</span><pre>buttonStyle()</pre></a></li>
 <li class="method public "><a href="#method_clearSmartyCache" title="clearSmartyCache() :: "><span class="description">clearSmartyCache()
         </span><pre>clearSmartyCache()</pre></a></li>
 <li class="method public "><a href="#method_deprecated" title="deprecated() :: "><span class="description">deprecated()
@@ -98,6 +102,7 @@ Redirect User to Default Section</span><pre>goDefaultSection()</pre></a></li>
         </span><pre>head()</pre></a></li>
 <li class="method public "><a href="#method_headerInfo" title="headerInfo() :: "><span class="description">headerInfo()
         </span><pre>headerInfo()</pre></a></li>
+<li class="method public "><a href="#method_iconSize" title="iconSize() :: Return the icon size for the current framework"><span class="description">Return the icon size for the current framework</span><pre>iconSize()</pre></a></li>
 <li class="method public "><a href="#method_inAction" title="inAction() :: "><span class="description">inAction()
         </span><pre>inAction()</pre></a></li>
 <li class="method public "><a href="#method_inPreview" title="inPreview() :: exdoc
@@ -182,6 +187,66 @@ Output &lt;link /&gt; elements for each RSS feed on the site</h2>
 <th>node</th>
 <td>Subsystems:Theme</td>
 </tr></table>
+</div></div>
+</div>
+<a id="method_buttonColor"></a><div class="element clickable method public method_buttonColor" data-toggle="collapse" data-target=".method_buttonColor .collapse" title="public">
+<h2>Return the color style for the current framework</h2>
+<pre>buttonColor(mixed $color<code> = null</code>) : mixed | string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$color</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code><code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_buttonIcon"></a><div class="element clickable method public method_buttonIcon" data-toggle="collapse" data-target=".method_buttonIcon .collapse" title="public">
+<h2>Return the icon associated for the current frameowrk</h2>
+<pre>buttonIcon(mixed $class) : <a href="stdClass.html">\stdClass</a> | string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$class</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="stdClass.html">\stdClass</a></code><code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_buttonSize"></a><div class="element clickable method public method_buttonSize" data-toggle="collapse" data-target=".method_buttonSize .collapse" title="public">
+<h2>Return the button size for the current framework</h2>
+<pre>buttonSize(mixed $size<code> = null</code>) : mixed | string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$size</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code><code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_buttonStyle"></a><div class="element clickable method public method_buttonStyle" data-toggle="collapse" data-target=".method_buttonStyle .collapse" title="public">
+<h2>Return the button color and size style for the current framework</h2>
+<pre>buttonStyle(null $color<code> = null</code>, mixed $size<code> = null</code>) : mixed | string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$color</h4>
+<code>null</code>
+</div>
+<div class="subelement argument"><h4>$size</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code><code>string</code>
+</div>
 </div></div>
 </div>
 <a id="method_clearSmartyCache"></a><div class="element clickable method public method_clearSmartyCache" data-toggle="collapse" data-target=".method_clearSmartyCache .collapse" title="public">
@@ -326,6 +391,20 @@ Redirect User to Default Section</h2>
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$config</h4></div>
+</div></div>
+</div>
+<a id="method_iconSize"></a><div class="element clickable method public method_iconSize" data-toggle="collapse" data-target=".method_iconSize .collapse" title="public">
+<h2>Return the icon size for the current framework</h2>
+<pre>iconSize(mixed $size<code> = null</code>) : mixed | string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$size</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code><code>string</code>
+</div>
 </div></div>
 </div>
 <a id="method_inAction"></a><div class="element clickable method public method_inAction" data-toggle="collapse" data-target=".method_inAction .collapse" title="public">
@@ -603,7 +682,7 @@ children, grand-children, grand-grand-children, etc.</h2>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.2.0
 </a> and<br>
-            generated on 2013-12-06T06:43:00-05:00.<br></footer></div>
+            generated on 2014-02-18T10:31:42-05:00.<br></footer></div>
 </div>
 </body>
 </html>
