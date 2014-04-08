@@ -1,688 +1,564 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-    <meta charset="utf-8"/>
-    <title>     &raquo; \Subsystems-Forms
-</title>
-    <meta name="author" content=""/>
-    <meta name="description" content=""/>
-
-            <link href="../css/template.css" rel="stylesheet" media="all"/>
-    
-            <!--[if lt IE 9]>
-        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-        <![endif]-->
-        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
-        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
-        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
-        <script src="../js/bootstrap.js" type="text/javascript"></script>
-        <script src="../js/template.js" type="text/javascript"></script>
-        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
-    
-            <link rel="shortcut icon" href="../img/favicon.ico"/>
-        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
-        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
-        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
-    </head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Exponent v2.3.0 » Subsystems-Forms</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
 <body>
-
-        <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span> <span class="icon-bar"></span>
-                    <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.3.0</a>
-
-                <div class="nav-collapse">
-                    <ul class="nav">
-                        <li class="dropdown">
-                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
-                                API Documentation <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                                                                            </ul>
-                        </li>
-                        <li class="dropdown" id="charts-menu">
-                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
-                                Charts <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="../graph_class.html">
-                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown" id="reports-menu">
-                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
-                                Reports <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="../errors.html">
-                                        <i class="icon-list-alt"></i>&#160;Errors
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="../markers.html">
-                                        <i class="icon-list-alt"></i>&#160;Markers
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="../deprecated.html">
-                                        <i class="icon-list-alt"></i>&#160;Deprecated
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="go_to_top">
-            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
-        </div>
-    </div>
-    
-    <div id="___" class="container">
-        <noscript>
-            <div class="alert alert-warning">
-                Javascript is disabled; several features are only available if Javascript is enabled.
-            </div>
-        </noscript>
-
-        
-            
-    <div class="row">
-
-        <div class="span4">
-            <div class="btn-group view pull-right" data-toggle="buttons-radio">
-                <button class="btn details" title="Show descriptions and method names">
-                    <i class="icon-list"></i></button><button class="btn simple" title="Show only method names">
-                    <i class="icon-align-justify"></i>
-                </button>
-            </div>
-            <ul class="side-nav nav nav-list">
-                <li class="nav-header">
-                    <i class="icon-map-marker"></i> Packages
-                </li>
-                    
-        <li>
-        <a href="../packages/Subsystems-Forms.Control.html" title="Control">
-            <i class="icon-th"></i> Control
-        </a>
-        <ul class="nav nav-list nav-packages">
-                
-    
-        </ul>
-    </li>
-        <li>
-        <a href="../packages/Subsystems-Forms.Template.html" title="Template">
-            <i class="icon-th"></i> Template
-        </a>
-        <ul class="nav nav-list nav-packages">
-                
-    
-        </ul>
-    </li>
-        <li>
-        <a href="../packages/Subsystems-Forms.Form.html" title="Form">
-            <i class="icon-th"></i> Form
-        </a>
-        <ul class="nav nav-list nav-packages">
-                
-    
-        </ul>
-    </li>
-    
-            </ul>
-        </div>
-
-        <div class="span8 package-contents">
-                
-    <ul class="breadcrumb">
-        <li><a href="../index.html"><i class="icon-th"></i></a></li>
-            
-    
-    <li>
-        <span class="divider">\</span><a href="../packages/Subsystems-Forms.html">Subsystems-Forms</a>
-    </li>
-
-    </ul>
-
-    
-                
-    <ul class="breadcrumb">
-        <li><a href="../index.html"><i class="icon-th"></i></a></li>
-            
-                
-    
-    <li>
-        <span class="divider">\</span><a href="../packages/Subsystems-Forms.html">Subsystems-Forms</a>
-    </li>
-
-    
-    <li>
-        <span class="divider">\</span><a href="../packages/Subsystems-Forms.Control.html">Control</a>
-    </li>
-
-    </ul>
-
-    
-        
-        
-                    <div class="package-indent">
-                <h3><i class="icon-custom icon-class"></i> Classes, interfaces and traits</h3>
-                
-                
-                                        <div id="checkboxcontrol" class="element ajax clickable class">
-        <h1>checkboxcontrol<a href="../classes/checkboxcontrol.html">¶</a></h1>
-        <p class="short_description">Check Box Control class</p>
-        <div class="details collapse">An HTML checkbox</div>
-        <a href="../classes/checkboxcontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="radiocontrol" class="element ajax clickable class">
-        <h1>radiocontrol<a href="../classes/radiocontrol.html">¶</a></h1>
-        <p class="short_description">Radio Button Control class</p>
-        <div class="details collapse">An HTML Radio Button</div>
-        <a href="../classes/radiocontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="datetimecontrol" class="element ajax clickable class">
-        <h1>datetimecontrol<a href="../classes/datetimecontrol.html">¶</a></h1>
-        <p class="short_description">Date Time Control
-simple text entry date and/or time</p>
-        <div class="details collapse"></div>
-        <a href="../classes/datetimecontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="countrycontrol" class="element ajax clickable class">
-        <h1>countrycontrol<a href="../classes/countrycontrol.html">¶</a></h1>
-        <p class="short_description">Country Control</p>
-        <div class="details collapse"></div>
-        <a href="../classes/countrycontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="monthyearcontrol" class="element ajax clickable class">
-        <h1>monthyearcontrol<a href="../classes/monthyearcontrol.html">¶</a></h1>
-        <p class="short_description">Month Year Picker</p>
-        <div class="details collapse"></div>
-        <a href="../classes/monthyearcontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="customcontrol" class="element ajax clickable class">
-        <h1>customcontrol<a href="../classes/customcontrol.html">¶</a></h1>
-        <p class="short_description">Custom Control</p>
-        <div class="details collapse"></div>
-        <a href="../classes/customcontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="tagpickercontrol" class="element ajax clickable class">
-        <h1>tagpickercontrol<a href="../classes/tagpickercontrol.html">¶</a></h1>
-        <p class="short_description">Tag Picker Control</p>
-        <div class="details collapse"></div>
-        <a href="../classes/tagpickercontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="texteditorcontrol" class="element ajax clickable class">
-        <h1>texteditorcontrol<a href="../classes/texteditorcontrol.html">¶</a></h1>
-        <p class="short_description">Text Editor Control - displays text area widget</p>
-        <div class="details collapse"></div>
-        <a href="../classes/texteditorcontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="emailcontrol" class="element ajax clickable class">
-        <h1>emailcontrol<a href="../classes/emailcontrol.html">¶</a></h1>
-        <p class="short_description">Email Control</p>
-        <div class="details collapse"></div>
-        <a href="../classes/emailcontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="buttongroupcontrol" class="element ajax clickable class">
-        <h1>buttongroupcontrol<a href="../classes/buttongroupcontrol.html">¶</a></h1>
-        <p class="short_description">Button Group Control</p>
-        <div class="details collapse">A group of buttons</div>
-        <a href="../classes/buttongroupcontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="datetimecontrol" class="element ajax clickable class">
-        <h1>datetimecontrol<a href="../classes/datetimecontrol.html">¶</a></h1>
-        <p class="short_description">Date Time Control
-simple text entry date and/or time</p>
-        <div class="details collapse"></div>
-        <a href="../classes/datetimecontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="listbuildercontrol" class="element ajax clickable class">
-        <h1>listbuildercontrol<a href="../classes/listbuildercontrol.html">¶</a></h1>
-        <p class="short_description">List Builder Control</p>
-        <div class="details collapse"></div>
-        <a href="../classes/listbuildercontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="statescontrol" class="element ajax clickable class">
-        <h1>statescontrol<a href="../classes/statescontrol.html">¶</a></h1>
-        <p class="short_description">States Control</p>
-        <div class="details collapse"></div>
-        <a href="../classes/statescontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="listbuildercontrol" class="element ajax clickable class">
-        <h1>listbuildercontrol<a href="../classes/listbuildercontrol.html">¶</a></h1>
-        <p class="short_description">List Builder Control</p>
-        <div class="details collapse"></div>
-        <a href="../classes/listbuildercontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="filemanagercontrol" class="element ajax clickable class">
-        <h1>filemanagercontrol<a href="../classes/filemanagercontrol.html">¶</a></h1>
-        <p class="short_description">File Manager Control - displays file picker widget</p>
-        <div class="details collapse"></div>
-        <a href="../classes/filemanagercontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="checkboxcontrol" class="element ajax clickable class">
-        <h1>checkboxcontrol<a href="../classes/checkboxcontrol.html">¶</a></h1>
-        <p class="short_description">Check Box Control class</p>
-        <div class="details collapse">An HTML checkbox</div>
-        <a href="../classes/checkboxcontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="dropdowncontrol" class="element ajax clickable class">
-        <h1>dropdowncontrol<a href="../classes/dropdowncontrol.html">¶</a></h1>
-        <p class="short_description">Dropdown Control</p>
-        <div class="details collapse"></div>
-        <a href="../classes/dropdowncontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="calendarcontrol" class="element ajax clickable class">
-        <h1>calendarcontrol<a href="../classes/calendarcontrol.html">¶</a></h1>
-        <p class="short_description">Date/Time Control w/ Popup Date Picker and time w/ am/pm combo
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent v2.3.0</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/.html"><i class="icon-th"></i> </a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Connectors.html"><i class="icon-folder-open"></i> Connectors</a></li>
+<li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
+<li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
+<li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
+<li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
+<li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
+<li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
+<li><a href="../packages/elFinder.html"><i class="icon-folder-open"></i> elFinder</a></li>
+<li><a href="../packages/global.html"><i class="icon-folder-open"></i> global</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">4659</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Packages</li>
+<li>
+<span class="empty-package"><i class="icon-folder-close"></i>Subsystems-Forms</span><ul class="nav nav-list nav-packages">
+<li>
+<a href="../packages/Subsystems-Forms.Control.html" title="Control"><i class="icon-folder-open"></i>Control</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li>
+<a href="../packages/Subsystems-Forms.Form.html" title="Form"><i class="icon-folder-open"></i>Form</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li>
+<a href="../packages/Subsystems-Forms.Template.html" title="Template"><i class="icon-folder-open"></i>Template</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8 package-contents">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li class="active"><a href="../packages/Subsystems-Forms.html">Subsystems-Forms</a></li>
+</li></ul>
+<div class="package-indent">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/Subsystems-Forms.html">Subsystems-Forms</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/Subsystems-Forms.Control.html">Control</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i title="Classes" class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="autocompletecontrol" class="element ajax clickable class">
+<h1>autocompletecontrol<a href="../classes/autocompletecontrol.html">¶</a>
+</h1>
+<p class="short_description">Auto-complete Control</p>
+<div class="details collapse"></div>
+<a href="../classes/autocompletecontrol.html" class="more">« More »</a>
+</div>
+<div id="buttongroupcontrol" class="element ajax clickable class">
+<h1>buttongroupcontrol<a href="../classes/buttongroupcontrol.html">¶</a>
+</h1>
+<p class="short_description">Button Group Control</p>
+<div class="details collapse"></div>
+<a href="../classes/buttongroupcontrol.html" class="more">« More »</a>
+</div>
+<div id="buttongroupcontrol" class="element ajax clickable class">
+<h1>buttongroupcontrol<a href="../classes/buttongroupcontrol.html">¶</a>
+</h1>
+<p class="short_description">Button Group Control</p>
+<div class="details collapse"></div>
+<a href="../classes/buttongroupcontrol.html" class="more">« More »</a>
+</div>
+<div id="calendarcontrol" class="element ajax clickable class">
+<h1>calendarcontrol<a href="../classes/calendarcontrol.html">¶</a>
+</h1>
+<p class="short_description">Date/Time Control w/ Popup Date Picker and time w/ am/pm combo
 text entry date and/or time w/ pop-up date selector</p>
-        <div class="details collapse"></div>
-        <a href="../classes/calendarcontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="tinymcecontrol" class="element ajax clickable class">
-        <h1>tinymcecontrol<a href="../classes/tinymcecontrol.html">¶</a></h1>
-        <p class="short_description">Text Editor Control</p>
-        <div class="details collapse"></div>
-        <a href="../classes/tinymcecontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="textcontrol" class="element ajax clickable class">
-        <h1>textcontrol<a href="../classes/textcontrol.html">¶</a></h1>
-        <p class="short_description">Text Control</p>
-        <div class="details collapse"></div>
-        <a href="../classes/textcontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="calendarcontrol" class="element ajax clickable class">
-        <h1>calendarcontrol<a href="../classes/calendarcontrol.html">¶</a></h1>
-        <p class="short_description">Date/Time Control w/ Popup Date Picker and time w/ am/pm combo
+<div class="details collapse"></div>
+<a href="../classes/calendarcontrol.html" class="more">« More »</a>
+</div>
+<div id="calendarcontrol" class="element ajax clickable class">
+<h1>calendarcontrol<a href="../classes/calendarcontrol.html">¶</a>
+</h1>
+<p class="short_description">Date/Time Control w/ Popup Date Picker and time w/ am/pm combo
 text entry date and/or time w/ pop-up date selector</p>
-        <div class="details collapse"></div>
-        <a href="../classes/calendarcontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="yuidatetimecontrol" class="element ajax clickable class">
-        <h1>yuidatetimecontrol<a href="../classes/yuidatetimecontrol.html">¶</a></h1>
-        <p class="short_description">Date/Time Control
-uses/combines yuicalendarcontrol &amp; datetimecontrol (w/o date)
-places a checkbox to disable calendar input</p>
-        <div class="details collapse"></div>
-        <a href="../classes/yuidatetimecontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="radiogroupcontrol" class="element ajax clickable class">
-        <h1>radiogroupcontrol<a href="../classes/radiogroupcontrol.html">¶</a></h1>
-        <p class="short_description">Radio Button Control class</p>
-        <div class="details collapse">An HTML Radio Button</div>
-        <a href="../classes/radiogroupcontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="buttongroupcontrol" class="element ajax clickable class">
-        <h1>buttongroupcontrol<a href="../classes/buttongroupcontrol.html">¶</a></h1>
-        <p class="short_description">Button Group Control</p>
-        <div class="details collapse">A group of buttons</div>
-        <a href="../classes/buttongroupcontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="formcontrol" class="element ajax clickable class">
-        <h1>formcontrol<a href="../classes/formcontrol.html">¶</a></h1>
-        <p class="short_description">Base Form Control Class</p>
-        <div class="details collapse"></div>
-        <a href="../classes/formcontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="radiocontrol" class="element ajax clickable class">
-        <h1>radiocontrol<a href="../classes/radiocontrol.html">¶</a></h1>
-        <p class="short_description">Radio Button Control class</p>
-        <div class="details collapse">An HTML Radio Button</div>
-        <a href="../classes/radiocontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="hiddenfieldcontrol" class="element ajax clickable class">
-        <h1>hiddenfieldcontrol<a href="../classes/hiddenfieldcontrol.html">¶</a></h1>
-        <p class="short_description">Hidden Field Control</p>
-        <div class="details collapse"></div>
-        <a href="../classes/hiddenfieldcontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="filemanagercontrol" class="element ajax clickable class">
-        <h1>filemanagercontrol<a href="../classes/filemanagercontrol.html">¶</a></h1>
-        <p class="short_description">File Manager Control - displays file picker widget</p>
-        <div class="details collapse"></div>
-        <a href="../classes/filemanagercontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="yuidatetimecontrol" class="element ajax clickable class">
-        <h1>yuidatetimecontrol<a href="../classes/yuidatetimecontrol.html">¶</a></h1>
-        <p class="short_description">YUI Date/Time Control
-uses/combines yuicalendarcontrol &amp; datetimecontrol (w/o date)
-places a checkbox to disable calendar input</p>
-        <div class="details collapse"></div>
-        <a href="../classes/yuidatetimecontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="urlcontrol" class="element ajax clickable class">
-        <h1>urlcontrol<a href="../classes/urlcontrol.html">¶</a></h1>
-        <p class="short_description">URL Control</p>
-        <div class="details collapse"></div>
-        <a href="../classes/urlcontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="pagecontrol" class="element ajax clickable class">
-        <h1>pagecontrol<a href="../classes/pagecontrol.html">¶</a></h1>
-        <p class="short_description">Page Control - Form Wizard Page marker</p>
-        <div class="details collapse"></div>
-        <a href="../classes/pagecontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="popupdatetimecontrol" class="element ajax clickable class">
-        <h1>popupdatetimecontrol<a href="../classes/popupdatetimecontrol.html">¶</a></h1>
-        <p class="short_description">Popup Date/Time Picker Control</p>
-        <div class="details collapse"></div>
-        <a href="../classes/popupdatetimecontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="formcontrol" class="element ajax clickable class">
-        <h1>formcontrol<a href="../classes/formcontrol.html">¶</a></h1>
-        <p class="short_description">Base Form Control Class</p>
-        <div class="details collapse"></div>
-        <a href="../classes/formcontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="tagtreecontrol" class="element ajax clickable class">
-        <h1>tagtreecontrol<a href="../classes/tagtreecontrol.html">¶</a></h1>
-        <p class="short_description">Tag Tree Control</p>
-        <div class="details collapse"></div>
-        <a href="../classes/tagtreecontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="genericcontrol" class="element ajax clickable class">
-        <h1>genericcontrol<a href="../classes/genericcontrol.html">¶</a></h1>
-        <p class="short_description">Generic HTML Input Control</p>
-        <div class="details collapse"></div>
-        <a href="../classes/genericcontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="uploadcontrol" class="element ajax clickable class">
-        <h1>uploadcontrol<a href="../classes/uploadcontrol.html">¶</a></h1>
-        <p class="short_description">Upload Control - display file upload widget</p>
-        <div class="details collapse"></div>
-        <a href="../classes/uploadcontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="ckeditorcontrol" class="element ajax clickable class">
-        <h1>ckeditorcontrol<a href="../classes/ckeditorcontrol.html">¶</a></h1>
-        <p class="short_description">Text Editor Control</p>
-        <div class="details collapse"></div>
-        <a href="../classes/ckeditorcontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="dropdowncontrol" class="element ajax clickable class">
-        <h1>dropdowncontrol<a href="../classes/dropdowncontrol.html">¶</a></h1>
-        <p class="short_description">Dropdown Control</p>
-        <div class="details collapse"></div>
-        <a href="../classes/dropdowncontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="telcontrol" class="element ajax clickable class">
-        <h1>telcontrol<a href="../classes/telcontrol.html">¶</a></h1>
-        <p class="short_description">Tel Control</p>
-        <div class="details collapse"></div>
-        <a href="../classes/telcontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="yuicalendarcontrol" class="element ajax clickable class">
-        <h1>yuicalendarcontrol<a href="../classes/yuicalendarcontrol.html">¶</a></h1>
-        <p class="short_description">YUI Date Picker Control
-standard calendar control w/o time
-places an update calendar field/button</p>
-        <div class="details collapse"></div>
-        <a href="../classes/yuicalendarcontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="passwordcontrol" class="element ajax clickable class">
-        <h1>passwordcontrol<a href="../classes/passwordcontrol.html">¶</a></h1>
-        <p class="short_description">Password Control</p>
-        <div class="details collapse"></div>
-        <a href="../classes/passwordcontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="popupdatetimecontrol" class="element ajax clickable class">
-        <h1>popupdatetimecontrol<a href="../classes/popupdatetimecontrol.html">¶</a></h1>
-        <p class="short_description">YUI Popup Date/Time Picker Control</p>
-        <div class="details collapse"></div>
-        <a href="../classes/popupdatetimecontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="countryregioncontrol" class="element ajax clickable class">
-        <h1>countryregioncontrol<a href="../classes/countryregioncontrol.html">¶</a></h1>
-        <p class="short_description">Country Region Control</p>
-        <div class="details collapse"></div>
-        <a href="../classes/countryregioncontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="yuicalendarcontrol" class="element ajax clickable class">
-        <h1>yuicalendarcontrol<a href="../classes/yuicalendarcontrol.html">¶</a></h1>
-        <p class="short_description">Date Picker Control (compat w/ non-jQuery controls}
-standard calendar control w/o time
-places an update calendar field/button</p>
-        <div class="details collapse"></div>
-        <a href="../classes/yuicalendarcontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="tagpickercontrol" class="element ajax clickable class">
-        <h1>tagpickercontrol<a href="../classes/tagpickercontrol.html">¶</a></h1>
-        <p class="short_description">Tag Picker Control</p>
-        <div class="details collapse"></div>
-        <a href="../classes/tagpickercontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="numbercontrol" class="element ajax clickable class">
-        <h1>numbercontrol<a href="../classes/numbercontrol.html">¶</a></h1>
-        <p class="short_description">Number Control</p>
-        <div class="details collapse"></div>
-        <a href="../classes/numbercontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="genericcontrol" class="element ajax clickable class">
-        <h1>genericcontrol<a href="../classes/genericcontrol.html">¶</a></h1>
-        <p class="short_description">Generic HTML Input Control</p>
-        <div class="details collapse"></div>
-        <a href="../classes/genericcontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="htmlcontrol" class="element ajax clickable class">
-        <h1>htmlcontrol<a href="../classes/htmlcontrol.html">¶</a></h1>
-        <p class="short_description">HTML Control - displays static wysiwyg text</p>
-        <div class="details collapse"></div>
-        <a href="../classes/htmlcontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="colorcontrol" class="element ajax clickable class">
-        <h1>colorcontrol<a href="../classes/colorcontrol.html">¶</a></h1>
-        <p class="short_description">Color Picker Control
+<div class="details collapse"></div>
+<a href="../classes/calendarcontrol.html" class="more">« More »</a>
+</div>
+<div id="checkboxcontrol" class="element ajax clickable class">
+<h1>checkboxcontrol<a href="../classes/checkboxcontrol.html">¶</a>
+</h1>
+<p class="short_description">Check Box Control class</p>
+<div class="details collapse"></div>
+<a href="../classes/checkboxcontrol.html" class="more">« More »</a>
+</div>
+<div id="checkboxcontrol" class="element ajax clickable class">
+<h1>checkboxcontrol<a href="../classes/checkboxcontrol.html">¶</a>
+</h1>
+<p class="short_description">Check Box Control class</p>
+<div class="details collapse"></div>
+<a href="../classes/checkboxcontrol.html" class="more">« More »</a>
+</div>
+<div id="ckeditorcontrol" class="element ajax clickable class">
+<h1>ckeditorcontrol<a href="../classes/ckeditorcontrol.html">¶</a>
+</h1>
+<p class="short_description">Text Editor Control</p>
+<div class="details collapse"></div>
+<a href="../classes/ckeditorcontrol.html" class="more">« More »</a>
+</div>
+<div id="colorcontrol" class="element ajax clickable class">
+<h1>colorcontrol<a href="../classes/colorcontrol.html">¶</a>
+</h1>
+<p class="short_description">Color Picker Control
 pop-up color selector</p>
-        <div class="details collapse"></div>
-        <a href="../classes/colorcontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="autocompletecontrol" class="element ajax clickable class">
-        <h1>autocompletecontrol<a href="../classes/autocompletecontrol.html">¶</a></h1>
-        <p class="short_description">Auto-complete Control</p>
-        <div class="details collapse"></div>
-        <a href="../classes/autocompletecontrol.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="rangecontrol" class="element ajax clickable class">
-        <h1>rangecontrol<a href="../classes/rangecontrol.html">¶</a></h1>
-        <p class="short_description">Range Control</p>
-        <div class="details collapse"></div>
-        <a href="../classes/rangecontrol.html" class="more">« More »</a>
-    </div>
-
-                            </div>
-            
-    
-                
-    <ul class="breadcrumb">
-        <li><a href="../index.html"><i class="icon-th"></i></a></li>
-            
-                
-    
-    <li>
-        <span class="divider">\</span><a href="../packages/Subsystems-Forms.html">Subsystems-Forms</a>
-    </li>
-
-    
-    <li>
-        <span class="divider">\</span><a href="../packages/Subsystems-Forms.Template.html">Template</a>
-    </li>
-
-    </ul>
-
-    
-        
-        
-                    <div class="package-indent">
-                <h3><i class="icon-custom icon-class"></i> Classes, interfaces and traits</h3>
-                
-                
-                                        <div id="template" class="element ajax clickable class">
-        <h1>template<a href="../classes/template.html">¶</a></h1>
-        <p class="short_description">Wraps the OS modules template system in use, to provide a uniform and consistent
+<div class="details collapse"></div>
+<a href="../classes/colorcontrol.html" class="more">« More »</a>
+</div>
+<div id="countrycontrol" class="element ajax clickable class">
+<h1>countrycontrol<a href="../classes/countrycontrol.html">¶</a>
+</h1>
+<p class="short_description">Country Control</p>
+<div class="details collapse"></div>
+<a href="../classes/countrycontrol.html" class="more">« More »</a>
+</div>
+<div id="countryregioncontrol" class="element ajax clickable class">
+<h1>countryregioncontrol<a href="../classes/countryregioncontrol.html">¶</a>
+</h1>
+<p class="short_description">Country Region Control</p>
+<div class="details collapse"></div>
+<a href="../classes/countryregioncontrol.html" class="more">« More »</a>
+</div>
+<div id="customcontrol" class="element ajax clickable class">
+<h1>customcontrol<a href="../classes/customcontrol.html">¶</a>
+</h1>
+<p class="short_description">Custom Control</p>
+<div class="details collapse"></div>
+<a href="../classes/customcontrol.html" class="more">« More »</a>
+</div>
+<div id="datetimecontrol" class="element ajax clickable class">
+<h1>datetimecontrol<a href="../classes/datetimecontrol.html">¶</a>
+</h1>
+<p class="short_description">Date Time Control
+simple text entry date and/or time</p>
+<div class="details collapse"></div>
+<a href="../classes/datetimecontrol.html" class="more">« More »</a>
+</div>
+<div id="datetimecontrol" class="element ajax clickable class">
+<h1>datetimecontrol<a href="../classes/datetimecontrol.html">¶</a>
+</h1>
+<p class="short_description">Date Time Control
+simple text entry date and/or time</p>
+<div class="details collapse"></div>
+<a href="../classes/datetimecontrol.html" class="more">« More »</a>
+</div>
+<div id="dropdowncontrol" class="element ajax clickable class">
+<h1>dropdowncontrol<a href="../classes/dropdowncontrol.html">¶</a>
+</h1>
+<p class="short_description">Dropdown Control</p>
+<div class="details collapse"></div>
+<a href="../classes/dropdowncontrol.html" class="more">« More »</a>
+</div>
+<div id="dropdowncontrol" class="element ajax clickable class">
+<h1>dropdowncontrol<a href="../classes/dropdowncontrol.html">¶</a>
+</h1>
+<p class="short_description">Dropdown Control</p>
+<div class="details collapse"></div>
+<a href="../classes/dropdowncontrol.html" class="more">« More »</a>
+</div>
+<div id="emailcontrol" class="element ajax clickable class">
+<h1>emailcontrol<a href="../classes/emailcontrol.html">¶</a>
+</h1>
+<p class="short_description">Email Control</p>
+<div class="details collapse"></div>
+<a href="../classes/emailcontrol.html" class="more">« More »</a>
+</div>
+<div id="filemanagercontrol" class="element ajax clickable class">
+<h1>filemanagercontrol<a href="../classes/filemanagercontrol.html">¶</a>
+</h1>
+<p class="short_description">File Manager Control - displays file picker widget</p>
+<div class="details collapse"></div>
+<a href="../classes/filemanagercontrol.html" class="more">« More »</a>
+</div>
+<div id="filemanagercontrol" class="element ajax clickable class">
+<h1>filemanagercontrol<a href="../classes/filemanagercontrol.html">¶</a>
+</h1>
+<p class="short_description">File Manager Control - displays file picker widget</p>
+<div class="details collapse"></div>
+<a href="../classes/filemanagercontrol.html" class="more">« More »</a>
+</div>
+<div id="formcontrol" class="element ajax clickable class">
+<h1>formcontrol<a href="../classes/formcontrol.html">¶</a>
+</h1>
+<p class="short_description">Base Form Control Class</p>
+<div class="details collapse"></div>
+<a href="../classes/formcontrol.html" class="more">« More »</a>
+</div>
+<div id="formcontrol" class="element ajax clickable class">
+<h1>formcontrol<a href="../classes/formcontrol.html">¶</a>
+</h1>
+<p class="short_description">Base Form Control Class</p>
+<div class="details collapse"></div>
+<a href="../classes/formcontrol.html" class="more">« More »</a>
+</div>
+<div id="genericcontrol" class="element ajax clickable class">
+<h1>genericcontrol<a href="../classes/genericcontrol.html">¶</a>
+</h1>
+<p class="short_description">Generic HTML Input Control</p>
+<div class="details collapse"></div>
+<a href="../classes/genericcontrol.html" class="more">« More »</a>
+</div>
+<div id="genericcontrol" class="element ajax clickable class">
+<h1>genericcontrol<a href="../classes/genericcontrol.html">¶</a>
+</h1>
+<p class="short_description">Generic HTML Input Control</p>
+<div class="details collapse"></div>
+<a href="../classes/genericcontrol.html" class="more">« More »</a>
+</div>
+<div id="hiddenfieldcontrol" class="element ajax clickable class">
+<h1>hiddenfieldcontrol<a href="../classes/hiddenfieldcontrol.html">¶</a>
+</h1>
+<p class="short_description">Hidden Field Control</p>
+<div class="details collapse"></div>
+<a href="../classes/hiddenfieldcontrol.html" class="more">« More »</a>
+</div>
+<div id="htmlcontrol" class="element ajax clickable class">
+<h1>htmlcontrol<a href="../classes/htmlcontrol.html">¶</a>
+</h1>
+<p class="short_description">HTML Control - displays static wysiwyg text</p>
+<div class="details collapse"></div>
+<a href="../classes/htmlcontrol.html" class="more">« More »</a>
+</div>
+<div id="listbuildercontrol" class="element ajax clickable class">
+<h1>listbuildercontrol<a href="../classes/listbuildercontrol.html">¶</a>
+</h1>
+<p class="short_description">List Builder Control</p>
+<div class="details collapse"></div>
+<a href="../classes/listbuildercontrol.html" class="more">« More »</a>
+</div>
+<div id="listbuildercontrol" class="element ajax clickable class">
+<h1>listbuildercontrol<a href="../classes/listbuildercontrol.html">¶</a>
+</h1>
+<p class="short_description">List Builder Control</p>
+<div class="details collapse"></div>
+<a href="../classes/listbuildercontrol.html" class="more">« More »</a>
+</div>
+<div id="monthyearcontrol" class="element ajax clickable class">
+<h1>monthyearcontrol<a href="../classes/monthyearcontrol.html">¶</a>
+</h1>
+<p class="short_description">Month Year Picker</p>
+<div class="details collapse"></div>
+<a href="../classes/monthyearcontrol.html" class="more">« More »</a>
+</div>
+<div id="numbercontrol" class="element ajax clickable class">
+<h1>numbercontrol<a href="../classes/numbercontrol.html">¶</a>
+</h1>
+<p class="short_description">Number Control</p>
+<div class="details collapse"></div>
+<a href="../classes/numbercontrol.html" class="more">« More »</a>
+</div>
+<div id="pagecontrol" class="element ajax clickable class">
+<h1>pagecontrol<a href="../classes/pagecontrol.html">¶</a>
+</h1>
+<p class="short_description">Page Control - Form Wizard Page marker</p>
+<div class="details collapse"></div>
+<a href="../classes/pagecontrol.html" class="more">« More »</a>
+</div>
+<div id="passwordcontrol" class="element ajax clickable class">
+<h1>passwordcontrol<a href="../classes/passwordcontrol.html">¶</a>
+</h1>
+<p class="short_description">Password Control</p>
+<div class="details collapse"></div>
+<a href="../classes/passwordcontrol.html" class="more">« More »</a>
+</div>
+<div id="popupdatetimecontrol" class="element ajax clickable class">
+<h1>popupdatetimecontrol<a href="../classes/popupdatetimecontrol.html">¶</a>
+</h1>
+<p class="short_description">Popup Date/Time Picker Control</p>
+<div class="details collapse"></div>
+<a href="../classes/popupdatetimecontrol.html" class="more">« More »</a>
+</div>
+<div id="popupdatetimecontrol" class="element ajax clickable class">
+<h1>popupdatetimecontrol<a href="../classes/popupdatetimecontrol.html">¶</a>
+</h1>
+<p class="short_description">YUI Popup Date/Time Picker Control</p>
+<div class="details collapse"></div>
+<a href="../classes/popupdatetimecontrol.html" class="more">« More »</a>
+</div>
+<div id="radiocontrol" class="element ajax clickable class">
+<h1>radiocontrol<a href="../classes/radiocontrol.html">¶</a>
+</h1>
+<p class="short_description">Radio Button Control class</p>
+<div class="details collapse"></div>
+<a href="../classes/radiocontrol.html" class="more">« More »</a>
+</div>
+<div id="radiocontrol" class="element ajax clickable class">
+<h1>radiocontrol<a href="../classes/radiocontrol.html">¶</a>
+</h1>
+<p class="short_description">Radio Button Control class</p>
+<div class="details collapse"></div>
+<a href="../classes/radiocontrol.html" class="more">« More »</a>
+</div>
+<div id="radiogroupcontrol" class="element ajax clickable class">
+<h1>radiogroupcontrol<a href="../classes/radiogroupcontrol.html">¶</a>
+</h1>
+<p class="short_description">Radio Button Control class</p>
+<div class="details collapse"></div>
+<a href="../classes/radiogroupcontrol.html" class="more">« More »</a>
+</div>
+<div id="rangecontrol" class="element ajax clickable class">
+<h1>rangecontrol<a href="../classes/rangecontrol.html">¶</a>
+</h1>
+<p class="short_description">Range Control</p>
+<div class="details collapse"></div>
+<a href="../classes/rangecontrol.html" class="more">« More »</a>
+</div>
+<div id="statescontrol" class="element ajax clickable class">
+<h1>statescontrol<a href="../classes/statescontrol.html">¶</a>
+</h1>
+<p class="short_description">States Control</p>
+<div class="details collapse"></div>
+<a href="../classes/statescontrol.html" class="more">« More »</a>
+</div>
+<div id="tagpickercontrol" class="element ajax clickable class">
+<h1>tagpickercontrol<a href="../classes/tagpickercontrol.html">¶</a>
+</h1>
+<p class="short_description">Tag Picker Control</p>
+<div class="details collapse"></div>
+<a href="../classes/tagpickercontrol.html" class="more">« More »</a>
+</div>
+<div id="tagpickercontrol" class="element ajax clickable class">
+<h1>tagpickercontrol<a href="../classes/tagpickercontrol.html">¶</a>
+</h1>
+<p class="short_description">Tag Picker Control</p>
+<div class="details collapse"></div>
+<a href="../classes/tagpickercontrol.html" class="more">« More »</a>
+</div>
+<div id="tagtreecontrol" class="element ajax clickable class">
+<h1>tagtreecontrol<a href="../classes/tagtreecontrol.html">¶</a>
+</h1>
+<p class="short_description">Tag Tree Control</p>
+<div class="details collapse"></div>
+<a href="../classes/tagtreecontrol.html" class="more">« More »</a>
+</div>
+<div id="telcontrol" class="element ajax clickable class">
+<h1>telcontrol<a href="../classes/telcontrol.html">¶</a>
+</h1>
+<p class="short_description">Tel Control</p>
+<div class="details collapse"></div>
+<a href="../classes/telcontrol.html" class="more">« More »</a>
+</div>
+<div id="textcontrol" class="element ajax clickable class">
+<h1>textcontrol<a href="../classes/textcontrol.html">¶</a>
+</h1>
+<p class="short_description">Text Control</p>
+<div class="details collapse"></div>
+<a href="../classes/textcontrol.html" class="more">« More »</a>
+</div>
+<div id="texteditorcontrol" class="element ajax clickable class">
+<h1>texteditorcontrol<a href="../classes/texteditorcontrol.html">¶</a>
+</h1>
+<p class="short_description">Text Editor Control - displays text area widget</p>
+<div class="details collapse"></div>
+<a href="../classes/texteditorcontrol.html" class="more">« More »</a>
+</div>
+<div id="tinymcecontrol" class="element ajax clickable class">
+<h1>tinymcecontrol<a href="../classes/tinymcecontrol.html">¶</a>
+</h1>
+<p class="short_description">Text Editor Control</p>
+<div class="details collapse"></div>
+<a href="../classes/tinymcecontrol.html" class="more">« More »</a>
+</div>
+<div id="uploadcontrol" class="element ajax clickable class">
+<h1>uploadcontrol<a href="../classes/uploadcontrol.html">¶</a>
+</h1>
+<p class="short_description">Upload Control - display file upload widget</p>
+<div class="details collapse"></div>
+<a href="../classes/uploadcontrol.html" class="more">« More »</a>
+</div>
+<div id="urlcontrol" class="element ajax clickable class">
+<h1>urlcontrol<a href="../classes/urlcontrol.html">¶</a>
+</h1>
+<p class="short_description">URL Control</p>
+<div class="details collapse"></div>
+<a href="../classes/urlcontrol.html" class="more">« More »</a>
+</div>
+<div id="yuicalendarcontrol" class="element ajax clickable class">
+<h1>yuicalendarcontrol<a href="../classes/yuicalendarcontrol.html">¶</a>
+</h1>
+<p class="short_description">YUI Date Picker Control
+standard calendar control w/o time
+places an update calendar field/button</p>
+<div class="details collapse"></div>
+<a href="../classes/yuicalendarcontrol.html" class="more">« More »</a>
+</div>
+<div id="yuicalendarcontrol" class="element ajax clickable class">
+<h1>yuicalendarcontrol<a href="../classes/yuicalendarcontrol.html">¶</a>
+</h1>
+<p class="short_description">Date Picker Control (compat w/ non-jQuery controls}
+standard calendar control w/o time
+places an update calendar field/button</p>
+<div class="details collapse"></div>
+<a href="../classes/yuicalendarcontrol.html" class="more">« More »</a>
+</div>
+<div id="yuidatetimecontrol" class="element ajax clickable class">
+<h1>yuidatetimecontrol<a href="../classes/yuidatetimecontrol.html">¶</a>
+</h1>
+<p class="short_description">Date/Time Control
+uses/combines yuicalendarcontrol & datetimecontrol (w/o date)
+places a checkbox to disable calendar input</p>
+<div class="details collapse"></div>
+<a href="../classes/yuidatetimecontrol.html" class="more">« More »</a>
+</div>
+<div id="yuidatetimecontrol" class="element ajax clickable class">
+<h1>yuidatetimecontrol<a href="../classes/yuidatetimecontrol.html">¶</a>
+</h1>
+<p class="short_description">YUI Date/Time Control
+uses/combines yuicalendarcontrol & datetimecontrol (w/o date)
+places a checkbox to disable calendar input</p>
+<div class="details collapse"></div>
+<a href="../classes/yuidatetimecontrol.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/Subsystems-Forms.html">Subsystems-Forms</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/Subsystems-Forms.Form.html">Form</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i title="Classes" class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="baseform" class="element ajax clickable class">
+<h1>baseform<a href="../classes/baseform.html">¶</a>
+</h1>
+<p class="short_description">Base Form Class for 'real' and fake form classes</p>
+<div class="details collapse"></div>
+<a href="../classes/baseform.html" class="more">« More »</a>
+</div>
+<div id="fakeform" class="element ajax clickable class">
+<h1>fakeform<a href="../classes/fakeform.html">¶</a>
+</h1>
+<p class="short_description">Fake Form Class for displaying a wysiwyg form designer</p>
+<div class="details collapse"></div>
+<a href="../classes/fakeform.html" class="more">« More »</a>
+</div>
+<div id="form" class="element ajax clickable class">
+<h1>form<a href="../classes/form.html">¶</a>
+</h1>
+<p class="short_description">Form Class for building and displaying a form</p>
+<div class="details collapse"></div>
+<a href="../classes/form.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/Subsystems-Forms.html">Subsystems-Forms</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/Subsystems-Forms.Template.html">Template</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i title="Classes" class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="basetemplate" class="element ajax clickable class">
+<h1>basetemplate<a href="../classes/basetemplate.html">¶</a>
+</h1>
+<p class="short_description">Base Template class</p>
+<div class="details collapse"></div>
+<a href="../classes/basetemplate.html" class="more">« More »</a>
+</div>
+<div id="controllertemplate" class="element ajax clickable class">
+<h1>controllertemplate<a href="../classes/controllertemplate.html">¶</a>
+</h1>
+<p class="short_description">Controller Template Wrapper</p>
+<div class="details collapse"></div>
+<a href="../classes/controllertemplate.html" class="more">« More »</a>
+</div>
+<div id="filetemplate" class="element ajax clickable class">
+<h1>filetemplate<a href="../classes/filetemplate.html">¶</a>
+</h1>
+<p class="short_description">File Template Wrapper</p>
+<div class="details collapse"></div>
+<a href="../classes/filetemplate.html" class="more">« More »</a>
+</div>
+<div id="formtemplate" class="element ajax clickable class">
+<h1>formtemplate<a href="../classes/formtemplate.html">¶</a>
+</h1>
+<p class="short_description">Form Template Wrapper</p>
+<div class="details collapse"></div>
+<a href="../classes/formtemplate.html" class="more">« More »</a>
+</div>
+<div id="standalonetemplate" class="element ajax clickable class">
+<h1>standalonetemplate<a href="../classes/standalonetemplate.html">¶</a>
+</h1>
+<p class="short_description">Standalone Template Class</p>
+<div class="details collapse"></div>
+<a href="../classes/standalonetemplate.html" class="more">« More »</a>
+</div>
+<div id="template" class="element ajax clickable class">
+<h1>template<a href="../classes/template.html">¶</a>
+</h1>
+<p class="short_description">Wraps the OS modules template system in use, to provide a uniform and consistent
 interface to templates.</p>
-        <div class="details collapse"></div>
-        <a href="../classes/template.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="filetemplate" class="element ajax clickable class">
-        <h1>filetemplate<a href="../classes/filetemplate.html">¶</a></h1>
-        <p class="short_description">File Template Wrapper</p>
-        <div class="details collapse"></div>
-        <a href="../classes/filetemplate.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="formtemplate" class="element ajax clickable class">
-        <h1>formtemplate<a href="../classes/formtemplate.html">¶</a></h1>
-        <p class="short_description">Form Template Wrapper</p>
-        <div class="details collapse">This class is used for site wide forms.</div>
-        <a href="../classes/formtemplate.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="standalonetemplate" class="element ajax clickable class">
-        <h1>standalonetemplate<a href="../classes/standalonetemplate.html">¶</a></h1>
-        <p class="short_description">Standalone Template Class</p>
-        <div class="details collapse">A standalone template is a global view template (tpl) file found in either
-THEME_ABSOLUTE/views or /framework/core/views.</div>
-        <a href="../classes/standalonetemplate.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="controllertemplate" class="element ajax clickable class">
-        <h1>controllertemplate<a href="../classes/controllertemplate.html">¶</a></h1>
-        <p class="short_description">Controller Template Wrapper</p>
-        <div class="details collapse"></div>
-        <a href="../classes/controllertemplate.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="basetemplate" class="element ajax clickable class">
-        <h1>basetemplate<a href="../classes/basetemplate.html">¶</a></h1>
-        <p class="short_description">Base Template class</p>
-        <div class="details collapse"></div>
-        <a href="../classes/basetemplate.html" class="more">« More »</a>
-    </div>
-
-                            </div>
-            
-    
-                
-    <ul class="breadcrumb">
-        <li><a href="../index.html"><i class="icon-th"></i></a></li>
-            
-                
-    
-    <li>
-        <span class="divider">\</span><a href="../packages/Subsystems-Forms.html">Subsystems-Forms</a>
-    </li>
-
-    
-    <li>
-        <span class="divider">\</span><a href="../packages/Subsystems-Forms.Form.html">Form</a>
-    </li>
-
-    </ul>
-
-    
-        
-        
-                    <div class="package-indent">
-                <h3><i class="icon-custom icon-class"></i> Classes, interfaces and traits</h3>
-                
-                
-                                        <div id="form" class="element ajax clickable class">
-        <h1>form<a href="../classes/form.html">¶</a></h1>
-        <p class="short_description">Form Class for building and displaying a form</p>
-        <div class="details collapse">An HTML-form building class, that supports
-registerable and unregisterable controls.</div>
-        <a href="../classes/form.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="baseform" class="element ajax clickable class">
-        <h1>baseform<a href="../classes/baseform.html">¶</a></h1>
-        <p class="short_description">Base Form Class for &#039;real&#039; and fake form classes</p>
-        <div class="details collapse">An HTML-form building class, that supports
-registerable and unregisterable controls.</div>
-        <a href="../classes/baseform.html" class="more">« More »</a>
-    </div>
-
-                                        <div id="fakeform" class="element ajax clickable class">
-        <h1>fakeform<a href="../classes/fakeform.html">¶</a></h1>
-        <p class="short_description">Fake Form Class for displaying a wysiwyg form designer</p>
-        <div class="details collapse">An HTML-form building class, that supports
-registerable and unregisterable controls.</div>
-        <a href="../classes/fakeform.html" class="more">« More »</a>
-    </div>
-
-                            </div>
-            
-    
-    
-        </div>
-    </div>
-    </div>
-
-        <footer class="span12">
-            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
-            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Tue, 08 Apr 2014 02:28:15 +0000.<br/>
-    </footer>
-    </body>
+<div class="details collapse"></div>
+<a href="../classes/template.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.4.0
+</a> and<br>
+            generated on 2014-04-07T22:32:03-04:00.<br></footer></div>
+</div>
+</body>
 </html>

@@ -1,350 +1,329 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-    <meta charset="utf-8"/>
-    <title>     &raquo; \Smarty-Plugins
-</title>
-    <meta name="author" content=""/>
-    <meta name="description" content=""/>
-
-            <link href="../css/template.css" rel="stylesheet" media="all"/>
-    
-            <!--[if lt IE 9]>
-        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-        <![endif]-->
-        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
-        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
-        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
-        <script src="../js/bootstrap.js" type="text/javascript"></script>
-        <script src="../js/template.js" type="text/javascript"></script>
-        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
-    
-            <link rel="shortcut icon" href="../img/favicon.ico"/>
-        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
-        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
-        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
-    </head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Exponent v2.3.0 » Smarty-Plugins</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
 <body>
-
-        <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span> <span class="icon-bar"></span>
-                    <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.3.0</a>
-
-                <div class="nav-collapse">
-                    <ul class="nav">
-                        <li class="dropdown">
-                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
-                                API Documentation <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                                                                            </ul>
-                        </li>
-                        <li class="dropdown" id="charts-menu">
-                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
-                                Charts <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="../graph_class.html">
-                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown" id="reports-menu">
-                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
-                                Reports <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="../errors.html">
-                                        <i class="icon-list-alt"></i>&#160;Errors
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="../markers.html">
-                                        <i class="icon-list-alt"></i>&#160;Markers
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="../deprecated.html">
-                                        <i class="icon-list-alt"></i>&#160;Deprecated
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="go_to_top">
-            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
-        </div>
-    </div>
-    
-    <div id="___" class="container">
-        <noscript>
-            <div class="alert alert-warning">
-                Javascript is disabled; several features are only available if Javascript is enabled.
-            </div>
-        </noscript>
-
-        
-            
-    <div class="row">
-
-        <div class="span4">
-            <div class="btn-group view pull-right" data-toggle="buttons-radio">
-                <button class="btn details" title="Show descriptions and method names">
-                    <i class="icon-list"></i></button><button class="btn simple" title="Show only method names">
-                    <i class="icon-align-justify"></i>
-                </button>
-            </div>
-            <ul class="side-nav nav nav-list">
-                <li class="nav-header">
-                    <i class="icon-map-marker"></i> Packages
-                </li>
-                    
-        <li>
-        <a href="../packages/Smarty-Plugins.Function.html" title="Function">
-            <i class="icon-th"></i> Function
-        </a>
-        <ul class="nav nav-list nav-packages">
-                
-    
-        </ul>
-    </li>
-        <li>
-        <a href="../packages/Smarty-Plugins.Modifier.html" title="Modifier">
-            <i class="icon-th"></i> Modifier
-        </a>
-        <ul class="nav nav-list nav-packages">
-                
-    
-        </ul>
-    </li>
-        <li>
-        <a href="../packages/Smarty-Plugins.Block.html" title="Block">
-            <i class="icon-th"></i> Block
-        </a>
-        <ul class="nav nav-list nav-packages">
-                
-    
-        </ul>
-    </li>
-        <li>
-        <a href="../packages/Smarty-Plugins.Compiler.html" title="Compiler">
-            <i class="icon-th"></i> Compiler
-        </a>
-        <ul class="nav nav-list nav-packages">
-                
-    
-        </ul>
-    </li>
-    
-            </ul>
-        </div>
-
-        <div class="span8 package-contents">
-                
-    <ul class="breadcrumb">
-        <li><a href="../index.html"><i class="icon-th"></i></a></li>
-            
-    
-    <li>
-        <span class="divider">\</span><a href="../packages/Smarty-Plugins.html">Smarty-Plugins</a>
-    </li>
-
-    </ul>
-
-    
-                    <div class="package-indent">
-                <h3><i class="icon-custom icon-function"></i> Functions</h3>
-                                        <div id="smarty_block_form" class="element ajax clickable function">
-        <h1>smarty_block_form<a href="../namespaces/.html#function_smarty_block_form">¶</a></h1>
-        <p class="short_description">Smarty {form} block plugin</p>
-        <div class="details collapse">Type:     block&lt;br&gt;
-Name:     form&lt;br&gt;
-Purpose:  Set up a form block</div>
-        <a href="../namespaces/.html#function_smarty_block_form" class="more">« More »</a>
-    </div>
-
-                                        <div id="smarty_function_optiondisplayer" class="element ajax clickable function">
-        <h1>smarty_function_optiondisplayer<a href="../namespaces/.html#function_smarty_function_optiondisplayer">¶</a></h1>
-        <p class="short_description">Smarty {optiondisplayer} function plugin</p>
-        <div class="details collapse">Type:     function&lt;br&gt;
-Name:     optiondisplayer&lt;br&gt;
-Purpose:  display option dropdown list</div>
-        <a href="../namespaces/.html#function_smarty_function_optiondisplayer" class="more">« More »</a>
-    </div>
-
-                                        <div id="smarty_function_subscribe_link" class="element ajax clickable function">
-        <h1>smarty_function_subscribe_link<a href="../namespaces/.html#function_smarty_function_subscribe_link">¶</a></h1>
-        <p class="short_description">Smarty {subscribe_link} function plugin</p>
-        <div class="details collapse">Type:     function&lt;br&gt;
-Name:     subscribe_link&lt;br&gt;
-Purpose:  format a link for subscribing/unsubscribing to email alerts for the module</div>
-        <a href="../namespaces/.html#function_smarty_function_subscribe_link" class="more">« More »</a>
-    </div>
-
-                                        <div id="smarty_function_filedisplayer" class="element ajax clickable function">
-        <h1>smarty_function_filedisplayer<a href="../namespaces/.html#function_smarty_function_filedisplayer">¶</a></h1>
-        <p class="short_description">Smarty {filedisplayer} function plugin</p>
-        <div class="details collapse">Type:     function&lt;br&gt;
-Name:     filedisplayer&lt;br&gt;
-Purpose:  display files</div>
-        <a href="../namespaces/.html#function_smarty_function_filedisplayer" class="more">« More »</a>
-    </div>
-
-                                        <div id="smarty_block_script" class="element ajax clickable function">
-        <h1>smarty_block_script<a href="../namespaces/.html#function_smarty_block_script">¶</a></h1>
-        <p class="short_description">Smarty {script} block plugin</p>
-        <div class="details collapse">Type:     block&lt;br&gt;
-Name:     script&lt;br&gt;
-Purpose:  Set up a script block</div>
-        <a href="../namespaces/.html#function_smarty_block_script" class="more">« More »</a>
-    </div>
-
-                                        <div id="smarty_function_viewfile" class="element ajax clickable function">
-        <h1>smarty_function_viewfile<a href="../namespaces/.html#function_smarty_function_viewfile">¶</a></h1>
-        <p class="short_description">Smarty {viewfile} function plugin</p>
-        <div class="details collapse">Type:     function&lt;br&gt;
-Name:     viewfile&lt;br&gt;
-Purpose:  get and assign a view file</div>
-        <a href="../namespaces/.html#function_smarty_function_viewfile" class="more">« More »</a>
-    </div>
-
-                                        <div id="smarty_function_help" class="element ajax clickable function">
-        <h1>smarty_function_help<a href="../namespaces/.html#function_smarty_function_help">¶</a></h1>
-        <p class="short_description">Smarty {help} function plugin</p>
-        <div class="details collapse">Type:     function&lt;br&gt;
-Name:     help&lt;br&gt;
-Purpose:  create a help link</div>
-        <a href="../namespaces/.html#function_smarty_function_help" class="more">« More »</a>
-    </div>
-
-                                        <div id="smarty_function_control" class="element ajax clickable function">
-        <h1>smarty_function_control<a href="../namespaces/.html#function_smarty_function_control">¶</a></h1>
-        <p class="short_description">Smarty {control} function plugin</p>
-        <div class="details collapse">Type:     function&lt;br&gt;
-Name:     control&lt;br&gt;
-Purpose:  create a form control</div>
-        <a href="../namespaces/.html#function_smarty_function_control" class="more">« More »</a>
-    </div>
-
-                                        <div id="smarty_function_scaffold" class="element ajax clickable function">
-        <h1>smarty_function_scaffold<a href="../namespaces/.html#function_smarty_function_scaffold">¶</a></h1>
-        <p class="short_description">Smarty {scaffold} function plugin</p>
-        <div class="details collapse">Type:     function&lt;br&gt;
-Name:     scaffold&lt;br&gt;
-Purpose:  scaffold</div>
-        <a href="../namespaces/.html#function_smarty_function_scaffold" class="more">« More »</a>
-    </div>
-
-                                        <div id="smarty_block_css" class="element ajax clickable function">
-        <h1>smarty_block_css<a href="../namespaces/.html#function_smarty_block_css">¶</a></h1>
-        <p class="short_description">Smarty {css} block plugin</p>
-        <div class="details collapse">Type:     block&lt;br&gt;
-Name:     css&lt;br&gt;
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent v2.3.0</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/.html"><i class="icon-th"></i> </a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Connectors.html"><i class="icon-folder-open"></i> Connectors</a></li>
+<li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
+<li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
+<li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
+<li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
+<li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
+<li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
+<li><a href="../packages/elFinder.html"><i class="icon-folder-open"></i> elFinder</a></li>
+<li><a href="../packages/global.html"><i class="icon-folder-open"></i> global</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">4659</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Packages</li>
+<li>
+<a href="../packages/Smarty-Plugins.html" title="Smarty-Plugins"><i class="icon-folder-open"></i>Smarty-Plugins</a><ul class="nav nav-list nav-packages">
+<li>
+<span class="empty-package"><i class="icon-folder-close"></i>Block</span><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li>
+<span class="empty-package"><i class="icon-folder-close"></i>Compiler</span><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li>
+<span class="empty-package"><i class="icon-folder-close"></i>Function</span><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li>
+<span class="empty-package"><i class="icon-folder-close"></i>Modifier</span><ul class="nav nav-list nav-packages"></ul>
+</li>
+</ul>
+</li>
+<li class="nav-header">
+<i title="Functions" class="icon-custom icon-function"></i> Functions</li>
+<li class="function  "><a href="#function_smarty_block_css" title="smarty_block_css() :: Smarty {css} block plugin"><span class="description">Smarty {css} block plugin</span><pre>smarty_block_css</pre></a></li>
+<li class="function  "><a href="#function_smarty_block_form" title="smarty_block_form() :: Smarty {form} block plugin"><span class="description">Smarty {form} block plugin</span><pre>smarty_block_form</pre></a></li>
+<li class="function  "><a href="#function_smarty_block_script" title="smarty_block_script() :: Smarty {script} block plugin"><span class="description">Smarty {script} block plugin</span><pre>smarty_block_script</pre></a></li>
+<li class="function  "><a href="#function_smarty_function_control" title="smarty_function_control() :: Smarty {control} function plugin"><span class="description">Smarty {control} function plugin</span><pre>smarty_function_control</pre></a></li>
+<li class="function  "><a href="#function_smarty_function_filedisplayer" title="smarty_function_filedisplayer() :: Smarty {filedisplayer} function plugin"><span class="description">Smarty {filedisplayer} function plugin</span><pre>smarty_function_filedisplayer</pre></a></li>
+<li class="function  "><a href="#function_smarty_function_help" title="smarty_function_help() :: Smarty {help} function plugin"><span class="description">Smarty {help} function plugin</span><pre>smarty_function_help</pre></a></li>
+<li class="function  "><a href="#function_smarty_function_optiondisplayer" title="smarty_function_optiondisplayer() :: Smarty {optiondisplayer} function plugin"><span class="description">Smarty {optiondisplayer} function plugin</span><pre>smarty_function_optiondisplayer</pre></a></li>
+<li class="function  "><a href="#function_smarty_function_scaffold" title="smarty_function_scaffold() :: Smarty {scaffold} function plugin"><span class="description">Smarty {scaffold} function plugin</span><pre>smarty_function_scaffold</pre></a></li>
+<li class="function  "><a href="#function_smarty_function_subscribe_link" title="smarty_function_subscribe_link() :: Smarty {subscribe_link} function plugin"><span class="description">Smarty {subscribe_link} function plugin</span><pre>smarty_function_subscribe_link</pre></a></li>
+<li class="function  "><a href="#function_smarty_function_viewfile" title="smarty_function_viewfile() :: Smarty {viewfile} function plugin"><span class="description">Smarty {viewfile} function plugin</span><pre>smarty_function_viewfile</pre></a></li>
+</ul>
+</div>
+<div class="span8 package-contents">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li class="active"><a href="../packages/Smarty-Plugins.html">Smarty-Plugins</a></li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i title="Functions" class="icon-custom icon-function"></i> Functions</h3>
+<a id="function_smarty_block_css"></a><div class="element clickable function  function_smarty_block_css" data-toggle="collapse" data-target=".function_smarty_block_css .collapse" title="">
+<h2>Smarty {css} block plugin</h2>
+<pre>smarty_block_css(mixed $params, mixed $content, \Smarty $smarty, mixed $repeat) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Type:     block<br>
+Name:     css<br>
 Purpose:  Set up a css block</div>
-        <a href="../namespaces/.html#function_smarty_block_css" class="more">« More »</a>
-    </div>
-
-                            </div>
-        
-        
-            
-                
-    <ul class="breadcrumb">
-        <li><a href="../index.html"><i class="icon-th"></i></a></li>
-            
-                
-    
-    <li>
-        <span class="divider">\</span><a href="../packages/Smarty-Plugins.html">Smarty-Plugins</a>
-    </li>
-
-    
-    <li>
-        <span class="divider">\</span><a href="../packages/Smarty-Plugins.Function.html">Function</a>
-    </li>
-
-    </ul>
-
-    
-    
-                
-    <ul class="breadcrumb">
-        <li><a href="../index.html"><i class="icon-th"></i></a></li>
-            
-                
-    
-    <li>
-        <span class="divider">\</span><a href="../packages/Smarty-Plugins.html">Smarty-Plugins</a>
-    </li>
-
-    
-    <li>
-        <span class="divider">\</span><a href="../packages/Smarty-Plugins.Modifier.html">Modifier</a>
-    </li>
-
-    </ul>
-
-    
-    
-                
-    <ul class="breadcrumb">
-        <li><a href="../index.html"><i class="icon-th"></i></a></li>
-            
-                
-    
-    <li>
-        <span class="divider">\</span><a href="../packages/Smarty-Plugins.html">Smarty-Plugins</a>
-    </li>
-
-    
-    <li>
-        <span class="divider">\</span><a href="../packages/Smarty-Plugins.Block.html">Block</a>
-    </li>
-
-    </ul>
-
-    
-    
-                
-    <ul class="breadcrumb">
-        <li><a href="../index.html"><i class="icon-th"></i></a></li>
-            
-                
-    
-    <li>
-        <span class="divider">\</span><a href="../packages/Smarty-Plugins.html">Smarty-Plugins</a>
-    </li>
-
-    
-    <li>
-        <span class="divider">\</span><a href="../packages/Smarty-Plugins.Compiler.html">Compiler</a>
-    </li>
-
-    </ul>
-
-    
-    
-    
-        </div>
-    </div>
-    </div>
-
-        <footer class="span12">
-            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
-            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Tue, 08 Apr 2014 02:28:14 +0000.<br/>
-    </footer>
-    </body>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Smarty-Plugins.html">Smarty-Plugins</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$params</h4></div>
+<div class="subelement argument"><h4>$content</h4></div>
+<div class="subelement argument">
+<h4>$smarty</h4>
+<code>\Smarty</code>
+</div>
+<div class="subelement argument"><h4>$repeat</h4></div>
+</div></div>
+</div>
+<a id="function_smarty_block_form"></a><div class="element clickable function  function_smarty_block_form" data-toggle="collapse" data-target=".function_smarty_block_form .collapse" title="">
+<h2>Smarty {form} block plugin</h2>
+<pre>smarty_block_form(mixed $params, mixed $content, \Smarty $smarty, mixed $repeat) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Type:     block<br>
+Name:     form<br>
+Purpose:  Set up a form block</div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Smarty-Plugins.html">Smarty-Plugins</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$params</h4></div>
+<div class="subelement argument"><h4>$content</h4></div>
+<div class="subelement argument">
+<h4>$smarty</h4>
+<code>\Smarty</code>
+</div>
+<div class="subelement argument"><h4>$repeat</h4></div>
+</div></div>
+</div>
+<a id="function_smarty_block_script"></a><div class="element clickable function  function_smarty_block_script" data-toggle="collapse" data-target=".function_smarty_block_script .collapse" title="">
+<h2>Smarty {script} block plugin</h2>
+<pre>smarty_block_script(mixed $params, mixed $content, \Smarty $smarty, mixed $repeat) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Type:     block<br>
+Name:     script<br>
+Purpose:  Set up a script block</div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Smarty-Plugins.html">Smarty-Plugins</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$params</h4></div>
+<div class="subelement argument"><h4>$content</h4></div>
+<div class="subelement argument">
+<h4>$smarty</h4>
+<code>\Smarty</code>
+</div>
+<div class="subelement argument"><h4>$repeat</h4></div>
+</div></div>
+</div>
+<a id="function_smarty_function_control"></a><div class="element clickable function  function_smarty_function_control" data-toggle="collapse" data-target=".function_smarty_function_control .collapse" title="">
+<h2>Smarty {control} function plugin</h2>
+<pre>smarty_function_control(mixed $params, \Smarty $smarty) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Type:     function<br>
+Name:     control<br>
+Purpose:  create a form control</div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Smarty-Plugins.html">Smarty-Plugins</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$params</h4></div>
+<div class="subelement argument">
+<h4>$smarty</h4>
+<code>\Smarty</code>
+</div>
+</div></div>
+</div>
+<a id="function_smarty_function_filedisplayer"></a><div class="element clickable function  function_smarty_function_filedisplayer" data-toggle="collapse" data-target=".function_smarty_function_filedisplayer .collapse" title="">
+<h2>Smarty {filedisplayer} function plugin</h2>
+<pre>smarty_function_filedisplayer(mixed $params, \Smarty $smarty) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Type:     function<br>
+Name:     filedisplayer<br>
+Purpose:  display files</div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Smarty-Plugins.html">Smarty-Plugins</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$params</h4></div>
+<div class="subelement argument">
+<h4>$smarty</h4>
+<code>\Smarty</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_smarty_function_help"></a><div class="element clickable function  function_smarty_function_help" data-toggle="collapse" data-target=".function_smarty_function_help .collapse" title="">
+<h2>Smarty {help} function plugin</h2>
+<pre>smarty_function_help(mixed $params, \Smarty $smarty) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Type:     function<br>
+Name:     help<br>
+Purpose:  create a help link</div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Smarty-Plugins.html">Smarty-Plugins</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$params</h4></div>
+<div class="subelement argument">
+<h4>$smarty</h4>
+<code>\Smarty</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="function_smarty_function_optiondisplayer"></a><div class="element clickable function  function_smarty_function_optiondisplayer" data-toggle="collapse" data-target=".function_smarty_function_optiondisplayer .collapse" title="">
+<h2>Smarty {optiondisplayer} function plugin</h2>
+<pre>smarty_function_optiondisplayer(mixed $params, \Smarty $smarty) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Type:     function<br>
+Name:     optiondisplayer<br>
+Purpose:  display option dropdown list</div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Smarty-Plugins.html">Smarty-Plugins</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$params</h4></div>
+<div class="subelement argument">
+<h4>$smarty</h4>
+<code>\Smarty</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="function_smarty_function_scaffold"></a><div class="element clickable function  function_smarty_function_scaffold" data-toggle="collapse" data-target=".function_smarty_function_scaffold .collapse" title="">
+<h2>Smarty {scaffold} function plugin</h2>
+<pre>smarty_function_scaffold(mixed $params, \Smarty $smarty) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Type:     function<br>
+Name:     scaffold<br>
+Purpose:  scaffold</div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Smarty-Plugins.html">Smarty-Plugins</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$params</h4></div>
+<div class="subelement argument">
+<h4>$smarty</h4>
+<code>\Smarty</code>
+</div>
+</div></div>
+</div>
+<a id="function_smarty_function_subscribe_link"></a><div class="element clickable function  function_smarty_function_subscribe_link" data-toggle="collapse" data-target=".function_smarty_function_subscribe_link .collapse" title="">
+<h2>Smarty {subscribe_link} function plugin</h2>
+<pre>smarty_function_subscribe_link(mixed $params, \Smarty $smarty) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Type:     function<br>
+Name:     subscribe_link<br>
+Purpose:  format a link for subscribing/unsubscribing to email alerts for the module</div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Smarty-Plugins.html">Smarty-Plugins</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$params</h4></div>
+<div class="subelement argument">
+<h4>$smarty</h4>
+<code>\Smarty</code>
+</div>
+</div></div>
+</div>
+<a id="function_smarty_function_viewfile"></a><div class="element clickable function  function_smarty_function_viewfile" data-toggle="collapse" data-target=".function_smarty_function_viewfile .collapse" title="">
+<h2>Smarty {viewfile} function plugin</h2>
+<pre>smarty_function_viewfile(mixed $params, \Smarty $smarty) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Type:     function<br>
+Name:     viewfile<br>
+Purpose:  get and assign a view file</div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Smarty-Plugins.html">Smarty-Plugins</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$params</h4></div>
+<div class="subelement argument">
+<h4>$smarty</h4>
+<code>\Smarty</code>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.4.0
+</a> and<br>
+            generated on 2014-04-07T22:32:02-04:00.<br></footer></div>
+</div>
+</body>
 </html>
