@@ -1,688 +1,2017 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-<meta charset="utf-8">
-<title>Exponent v2.2.4 » \expTheme</title>
-<meta name="author" content="Mike van Riel">
-<meta name="description" content="">
-<link href="../css/template.css" rel="stylesheet" media="all">
-<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
-<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    Exponent v2.3.0 &raquo; \expTheme
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
 <body>
-<div class="navbar navbar-fixed-top">
-<div class="navbar-inner"><div class="container">
-<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent v2.2.4</a><div class="nav-collapse"><ul class="nav">
-<li class="dropdown">
-<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
-                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a>Namespaces</a></li>
-<li><a href="../namespaces/Composer.html"><i class="icon-th"></i> Composer</a></li>
-<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
-<li><a>Packages</a></li>
-<li><a href="../packages/Connectors.html"><i class="icon-folder-open"></i> Connectors</a></li>
-<li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
-<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
-<li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
-<li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
-<li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
-<li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
-<li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
-<li><a href="../packages/elFinder.html"><i class="icon-folder-open"></i> elFinder</a></li>
-</ul>
-</li>
-<li class="dropdown" id="charts-menu">
-<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
-                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
-</li>
-<li class="dropdown" id="reports-menu">
-<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
-                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">5017</span></a></li>
-<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
-                <ul></ul></a></li>
-<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">0</span></a></li>
-</ul>
-</li>
-</ul></div>
-</div></div>
-<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
-</div>
-<div id="___" class="container">
-<noscript><div class="alert alert-warning">
-                            Javascript is disabled; several features are only available
-                            if Javascript is enabled.
-                        </div></noscript>
-<div class="row">
-<div class="span4">
-<div class="btn-toolbar">
-<div class="btn-group visibility" data-toggle="buttons-checkbox">
-<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button>
-</div>
-<div class="btn-group view pull-right" data-toggle="buttons-radio">
-<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
-</div>
-</div>
-<ul class="side-nav nav nav-list"><li class="nav-header">
-<i title="Methods" class="icon-custom icon-method"></i> Methods
-                    <ul>
-<li class="method public "><a href="#method_advertiseRSS" title="advertiseRSS() :: exdoc
-Output &lt;link /&gt; elements for each RSS feed on the site"><span class="description">exdoc
-Output &lt;link /&gt; elements for each RSS feed on the site</span><pre>advertiseRSS()</pre></a></li>
-<li class="method public "><a href="#method_buttonColor" title="buttonColor() :: Return the color style for the current framework"><span class="description">Return the color style for the current framework</span><pre>buttonColor()</pre></a></li>
-<li class="method public "><a href="#method_buttonIcon" title="buttonIcon() :: Return the icon associated for the current frameowrk"><span class="description">Return the icon associated for the current frameowrk</span><pre>buttonIcon()</pre></a></li>
-<li class="method public "><a href="#method_buttonSize" title="buttonSize() :: Return the button size for the current framework"><span class="description">Return the button size for the current framework</span><pre>buttonSize()</pre></a></li>
-<li class="method public "><a href="#method_buttonStyle" title="buttonStyle() :: Return the button color and size style for the current framework"><span class="description">Return the button color and size style for the current framework</span><pre>buttonStyle()</pre></a></li>
-<li class="method public "><a href="#method_clearSmartyCache" title="clearSmartyCache() :: "><span class="description">clearSmartyCache()
-        </span><pre>clearSmartyCache()</pre></a></li>
-<li class="method public "><a href="#method_deprecated" title="deprecated() :: "><span class="description">deprecated()
-        </span><pre>deprecated()</pre></a></li>
-<li class="method public "><a href="#method_foot" title="foot() :: "><span class="description">foot()
-        </span><pre>foot()</pre></a></li>
-<li class="method public "><a href="#method_footerInfo" title="footerInfo() :: "><span class="description">footerInfo()
-        </span><pre>footerInfo()</pre></a></li>
-<li class="method public "><a href="#method_getPrinterFriendlyTheme" title="getPrinterFriendlyTheme() :: "><span class="description">getPrinterFriendlyTheme()
-        </span><pre>getPrinterFriendlyTheme()</pre></a></li>
-<li class="method public "><a href="#method_getSubthemes" title="getSubthemes() :: exdoc"><span class="description">exdoc</span><pre>getSubthemes()</pre></a></li>
-<li class="method public "><a href="#method_getTheme" title="getTheme() :: "><span class="description">getTheme()
-        </span><pre>getTheme()</pre></a></li>
-<li class="method public "><a href="#method_goDefaultSection" title="goDefaultSection() :: exdoc
-Redirect User to Default Section"><span class="description">exdoc
-Redirect User to Default Section</span><pre>goDefaultSection()</pre></a></li>
-<li class="method public "><a href="#method_grabView" title="grabView() :: "><span class="description">grabView()
-        </span><pre>grabView()</pre></a></li>
-<li class="method public "><a href="#method_grabViews" title="grabViews() :: "><span class="description">grabViews()
-        </span><pre>grabViews()</pre></a></li>
-<li class="method public "><a href="#method_head" title="head() :: "><span class="description">head()
-        </span><pre>head()</pre></a></li>
-<li class="method public "><a href="#method_headerInfo" title="headerInfo() :: "><span class="description">headerInfo()
-        </span><pre>headerInfo()</pre></a></li>
-<li class="method public "><a href="#method_iconSize" title="iconSize() :: Return the icon size for the current framework"><span class="description">Return the icon size for the current framework</span><pre>iconSize()</pre></a></li>
-<li class="method public "><a href="#method_inAction" title="inAction() :: "><span class="description">inAction()
-        </span><pre>inAction()</pre></a></li>
-<li class="method public "><a href="#method_inPreview" title="inPreview() :: exdoc
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">Exponent v2.3.0</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                                            </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public">
+        <a href="#method_initialize" title="initialize :: ">
+            <span class="description"></span><pre>initialize</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_head" title="head :: ">
+            <span class="description"></span><pre>head</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_headerInfo" title="headerInfo :: ">
+            <span class="description"></span><pre>headerInfo</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_foot" title="foot :: ">
+            <span class="description"></span><pre>foot</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_footerInfo" title="footerInfo :: ">
+            <span class="description"></span><pre>footerInfo</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_pageMetaInfo" title="pageMetaInfo :: ">
+            <span class="description"></span><pre>pageMetaInfo</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_grabView" title="grabView :: ">
+            <span class="description"></span><pre>grabView</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_grabViews" title="grabViews :: ">
+            <span class="description"></span><pre>grabViews</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_processCSSandJS" title="processCSSandJS :: ">
+            <span class="description"></span><pre>processCSSandJS</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_removeCss" title="removeCss :: ">
+            <span class="description"></span><pre>removeCss</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_clearSmartyCache" title="clearSmartyCache :: ">
+            <span class="description"></span><pre>clearSmartyCache</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_removeSmartyCache" title="removeSmartyCache :: ">
+            <span class="description"></span><pre>removeSmartyCache</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_advertiseRSS" title="advertiseRSS :: exdoc
+Output &lt;link /&gt; elements for each RSS feed on the site">
+            <span class="description">exdoc
+Output &lt;link /&gt; elements for each RSS feed on the site</span><pre>advertiseRSS</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_loadActionMaps" title="loadActionMaps :: ">
+            <span class="description"></span><pre>loadActionMaps</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_satisfyThemeRequirements" title="satisfyThemeRequirements :: ">
+            <span class="description"></span><pre>satisfyThemeRequirements</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getTheme" title="getTheme :: ">
+            <span class="description"></span><pre>getTheme</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getSubthemes" title="getSubthemes :: exdoc">
+            <span class="description">exdoc</span><pre>getSubthemes</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getPrinterFriendlyTheme" title="getPrinterFriendlyTheme :: ">
+            <span class="description"></span><pre>getPrinterFriendlyTheme</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_inPreview" title="inPreview :: exdoc
 Checks to see if the page is currently in an action.  Useful only if the theme does not use the self::main() function
-Returns whether or not an action should be run."><span class="description">exdoc
+Returns whether or not an action should be run.">
+            <span class="description">exdoc
 Checks to see if the page is currently in an action.  Useful only if the theme does not use the self::main() function
-Returns whether or not an action should be run.</span><pre>inPreview()</pre></a></li>
-<li class="method public "><a href="#method_initialize" title="initialize() :: "><span class="description">initialize()
-        </span><pre>initialize()</pre></a></li>
-<li class="method public "><a href="#method_is_mobile" title="is_mobile() :: "><span class="description">is_mobile()
-        </span><pre>is_mobile()</pre></a></li>
-<li class="method public "><a href="#method_loadActionMaps" title="loadActionMaps() :: "><span class="description">loadActionMaps()
-        </span><pre>loadActionMaps()</pre></a></li>
-<li class="method public "><a href="#method_main" title="main() :: exdoc
-Takes care of all the specifics of either showing a sectional container or running an action."><span class="description">exdoc
-Takes care of all the specifics of either showing a sectional container or running an action.</span><pre>main()</pre></a></li>
-<li class="method public "><a href="#method_module" title="module() :: Entry point for displaying modules
-Packages $params for calling showModule method"><span class="description">Entry point for displaying modules
-Packages $params for calling showModule method</span><pre>module()</pre></a></li>
-<li class="method public "><a href="#method_pageMetaInfo" title="pageMetaInfo() :: "><span class="description">pageMetaInfo()
-        </span><pre>pageMetaInfo()</pre></a></li>
-<li class="method public "><a href="#method_processCSSandJS" title="processCSSandJS() :: "><span class="description">processCSSandJS()
-        </span><pre>processCSSandJS()</pre></a></li>
-<li class="method public "><a href="#method_reRoutActionTo" title="reRoutActionTo() :: "><span class="description">reRoutActionTo()
-        </span><pre>reRoutActionTo()</pre></a></li>
-<li class="method public "><a href="#method_removeCss" title="removeCss() :: "><span class="description">removeCss()
-        </span><pre>removeCss()</pre></a></li>
-<li class="method public "><a href="#method_removeSmartyCache" title="removeSmartyCache() :: "><span class="description">removeSmartyCache()
-        </span><pre>removeSmartyCache()</pre></a></li>
-<li class="method public "><a href="#method_runAction" title="runAction() :: exdoc
-Runs the appropriate action, by looking at the $_REQUEST variable."><span class="description">exdoc
-Runs the appropriate action, by looking at the $_REQUEST variable.</span><pre>runAction()</pre></a></li>
-<li class="method public "><a href="#method_satisfyThemeRequirements" title="satisfyThemeRequirements() :: "><span class="description">satisfyThemeRequirements()
-        </span><pre>satisfyThemeRequirements()</pre></a></li>
-<li class="method public "><a href="#method_showAction" title="showAction() :: "><span class="description">showAction()
-        </span><pre>showAction()</pre></a></li>
-<li class="method public "><a href="#method_showController" title="showController() :: "><span class="description">showController()
-        </span><pre>showController()</pre></a></li>
-<li class="method public "><a href="#method_showModule" title="showModule() :: exdoc
-Calls the necessary methods to show a specific module - NOT intended to be called directly from theme"><span class="description">exdoc
-Calls the necessary methods to show a specific module - NOT intended to be called directly from theme</span><pre>showModule()</pre></a></li>
-<li class="method public "><a href="#method_showSectionalModule" title="showSectionalModule() :: exdoc
-Calls the necessary methods to show a specific module, in a section-sensitive way."><span class="description">exdoc
-Calls the necessary methods to show a specific module, in a section-sensitive way.</span><pre>showSectionalModule()</pre></a></li>
-<li class="method public "><a href="#method_showTopSectionalModule" title="showTopSectionalModule() :: exdoc
+Returns whether or not an action should be run.</span><pre>inPreview</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_inAction" title="inAction :: ">
+            <span class="description"></span><pre>inAction</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_reRoutActionTo" title="reRoutActionTo :: ">
+            <span class="description"></span><pre>reRoutActionTo</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_runAction" title="runAction :: exdoc
+Runs the appropriate action, by looking at the $_REQUEST variable.">
+            <span class="description">exdoc
+Runs the appropriate action, by looking at the $_REQUEST variable.</span><pre>runAction</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_showAction" title="showAction :: ">
+            <span class="description"></span><pre>showAction</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_goDefaultSection" title="goDefaultSection :: exdoc
+Redirect User to Default Section">
+            <span class="description">exdoc
+Redirect User to Default Section</span><pre>goDefaultSection</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_main" title="main :: exdoc
+Takes care of all the specifics of either showing a sectional container or running an action.">
+            <span class="description">exdoc
+Takes care of all the specifics of either showing a sectional container or running an action.</span><pre>main</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_showSectionalModule" title="showSectionalModule :: exdoc
+Calls the necessary methods to show a specific module, in a section-sensitive way.">
+            <span class="description">exdoc
+Calls the necessary methods to show a specific module, in a section-sensitive way.</span><pre>showSectionalModule</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_showTopSectionalModule" title="showTopSectionalModule :: exdoc
 Calls the necessary methods to show a specific module in such a way that the current
-section displays the same content as its top-level parent and all of the top-level parent's
-children, grand-children, grand-grand-children, etc."><span class="description">exdoc
+section displays the same content as its top-level parent and all of the top-level parent&#039;s
+children, grand-children, grand-grand-children, etc.">
+            <span class="description">exdoc
 Calls the necessary methods to show a specific module in such a way that the current
-section displays the same content as its top-level parent and all of the top-level parent's
-children, grand-children, grand-grand-children, etc.</span><pre>showTopSectionalModule()</pre></a></li>
-</ul>
-</li></ul>
-</div>
-<div class="span8">
-<a id="\expTheme"></a><ul class="breadcrumb">
-<li>
-<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
-</li>
-<li class="active">
-<span class="divider">\</span><a href="../classes/expTheme.html">expTheme</a>
-</li>
-</ul>
-<div class="element class">
-<p class="short_description"></p>
-<div class="details">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>define</th>
-<td>"BASE" "../../.."</td>
-</tr></table>
-<h3>
-<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
-<a id="method_advertiseRSS"></a><div class="element clickable method public method_advertiseRSS" data-toggle="collapse" data-target=".method_advertiseRSS .collapse" title="public">
-<h2>exdoc
+section displays the same content as its top-level parent and all of the top-level parent&#039;s
+children, grand-children, grand-grand-children, etc.</span><pre>showTopSectionalModule</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_showController" title="showController :: ">
+            <span class="description"></span><pre>showController</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_module" title="module :: Entry point for displaying modules
+Packages $params for calling showModule method">
+            <span class="description">Entry point for displaying modules
+Packages $params for calling showModule method</span><pre>module</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_showModule" title="showModule :: exdoc
+Calls the necessary methods to show a specific module - NOT intended to be called directly from theme">
+            <span class="description">exdoc
+Calls the necessary methods to show a specific module - NOT intended to be called directly from theme</span><pre>showModule</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_buttonColor" title="buttonColor :: Return the color style for the current framework">
+            <span class="description">Return the color style for the current framework</span><pre>buttonColor</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_buttonSize" title="buttonSize :: Return the button size for the current framework">
+            <span class="description">Return the button size for the current framework</span><pre>buttonSize</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_buttonStyle" title="buttonStyle :: Return the button color and size style for the current framework">
+            <span class="description">Return the button color and size style for the current framework</span><pre>buttonStyle</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_buttonIcon" title="buttonIcon :: Return the icon associated for the current frameowrk">
+            <span class="description">Return the icon associated for the current frameowrk</span><pre>buttonIcon</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_iconSize" title="iconSize :: Return the icon size for the current framework">
+            <span class="description">Return the icon size for the current framework</span><pre>iconSize</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_is_mobile" title="is_mobile :: ">
+            <span class="description"></span><pre>is_mobile</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_deprecated" title="deprecated :: ">
+            <span class="description"></span><pre>deprecated</pre>
+        </a>
+    </li>
+
+                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>expTheme</h1>
+                <small style="display: block; text-align: right">
+                                                        </small>
+                <p class="short_description"></p>
+                <div class="details">
+                    <div class="long_description">
+                        
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        define
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>"BASE" "../../.."</p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                                                                                                                        </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method_initialize"></a>
+                        <div class="element clickable method public  method_initialize" data-toggle="collapse" data-target=".method_initialize .collapse">
+                            <h2>initialize</h2>
+                            <pre>initialize() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_head"></a>
+                        <div class="element clickable method public  method_head" data-toggle="collapse" data-target=".method_head .collapse">
+                            <h2>head</h2>
+                            <pre>head($config = array()) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$config</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_headerInfo"></a>
+                        <div class="element clickable method public  method_headerInfo" data-toggle="collapse" data-target=".method_headerInfo .collapse">
+                            <h2>headerInfo</h2>
+                            <pre>headerInfo($config) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$config</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_foot"></a>
+                        <div class="element clickable method public  method_foot" data-toggle="collapse" data-target=".method_foot .collapse">
+                            <h2>foot</h2>
+                            <pre>foot($params = array()) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$params</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_footerInfo"></a>
+                        <div class="element clickable method public  method_footerInfo" data-toggle="collapse" data-target=".method_footerInfo .collapse">
+                            <h2>footerInfo</h2>
+                            <pre>footerInfo($params = array()) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$params</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_pageMetaInfo"></a>
+                        <div class="element clickable method public  method_pageMetaInfo" data-toggle="collapse" data-target=".method_pageMetaInfo .collapse">
+                            <h2>pageMetaInfo</h2>
+                            <pre>pageMetaInfo() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_grabView"></a>
+                        <div class="element clickable method public  method_grabView" data-toggle="collapse" data-target=".method_grabView .collapse">
+                            <h2>grabView</h2>
+                            <pre>grabView($path, $filename) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$path</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filename</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_grabViews"></a>
+                        <div class="element clickable method public  method_grabViews" data-toggle="collapse" data-target=".method_grabViews .collapse">
+                            <h2>grabViews</h2>
+                            <pre>grabViews($path, $filter = &#039;&#039;) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$path</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filter</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_processCSSandJS"></a>
+                        <div class="element clickable method public  method_processCSSandJS" data-toggle="collapse" data-target=".method_processCSSandJS .collapse">
+                            <h2>processCSSandJS</h2>
+                            <pre>processCSSandJS() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_removeCss"></a>
+                        <div class="element clickable method public  method_removeCss" data-toggle="collapse" data-target=".method_removeCss .collapse">
+                            <h2>removeCss</h2>
+                            <pre>removeCss() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_clearSmartyCache"></a>
+                        <div class="element clickable method public  method_clearSmartyCache" data-toggle="collapse" data-target=".method_clearSmartyCache .collapse">
+                            <h2>clearSmartyCache</h2>
+                            <pre>clearSmartyCache() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_removeSmartyCache"></a>
+                        <div class="element clickable method public  method_removeSmartyCache" data-toggle="collapse" data-target=".method_removeSmartyCache .collapse">
+                            <h2>removeSmartyCache</h2>
+                            <pre>removeSmartyCache() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_advertiseRSS"></a>
+                        <div class="element clickable method public  method_advertiseRSS" data-toggle="collapse" data-target=".method_advertiseRSS .collapse">
+                            <h2>exdoc
 Output &lt;link /&gt; elements for each RSS feed on the site</h2>
-<pre>advertiseRSS() </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>node</th>
-<td>Subsystems:Theme</td>
-</tr></table>
-</div></div>
-</div>
-<a id="method_buttonColor"></a><div class="element clickable method public method_buttonColor" data-toggle="collapse" data-target=".method_buttonColor .collapse" title="public">
-<h2>Return the color style for the current framework</h2>
-<pre>buttonColor(mixed $color<code> = null</code>) : mixed | string</pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$color</h4></div>
-<h3>Returns</h3>
-<div class="subelement response">
-<code>mixed</code><code>string</code>
-</div>
-</div></div>
-</div>
-<a id="method_buttonIcon"></a><div class="element clickable method public method_buttonIcon" data-toggle="collapse" data-target=".method_buttonIcon .collapse" title="public">
-<h2>Return the icon associated for the current frameowrk</h2>
-<pre>buttonIcon(mixed $class) : <a href="stdClass.html">\stdClass</a> | string</pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$class</h4></div>
-<h3>Returns</h3>
-<div class="subelement response">
-<code><a href="stdClass.html">\stdClass</a></code><code>string</code>
-</div>
-</div></div>
-</div>
-<a id="method_buttonSize"></a><div class="element clickable method public method_buttonSize" data-toggle="collapse" data-target=".method_buttonSize .collapse" title="public">
-<h2>Return the button size for the current framework</h2>
-<pre>buttonSize(mixed $size<code> = null</code>) : mixed | string</pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$size</h4></div>
-<h3>Returns</h3>
-<div class="subelement response">
-<code>mixed</code><code>string</code>
-</div>
-</div></div>
-</div>
-<a id="method_buttonStyle"></a><div class="element clickable method public method_buttonStyle" data-toggle="collapse" data-target=".method_buttonStyle .collapse" title="public">
-<h2>Return the button color and size style for the current framework</h2>
-<pre>buttonStyle(null $color<code> = null</code>, mixed $size<code> = null</code>) : mixed | string</pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$color</h4>
-<code>null</code>
-</div>
-<div class="subelement argument"><h4>$size</h4></div>
-<h3>Returns</h3>
-<div class="subelement response">
-<code>mixed</code><code>string</code>
-</div>
-</div></div>
-</div>
-<a id="method_clearSmartyCache"></a><div class="element clickable method public method_clearSmartyCache" data-toggle="collapse" data-target=".method_clearSmartyCache .collapse" title="public">
-<h2>clearSmartyCache()
-        </h2>
-<pre>clearSmartyCache() </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="method_deprecated"></a><div class="element clickable method public method_deprecated" data-toggle="collapse" data-target=".method_deprecated .collapse" title="public">
-<h2>deprecated()
-        </h2>
-<pre>deprecated($newcall<code> = "expTheme::module()"</code>, $controller<code> = null</code>, $actionview<code> = null</code>) </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$newcall</h4></div>
-<div class="subelement argument"><h4>$controller</h4></div>
-<div class="subelement argument"><h4>$actionview</h4></div>
-</div></div>
-</div>
-<a id="method_foot"></a><div class="element clickable method public method_foot" data-toggle="collapse" data-target=".method_foot .collapse" title="public">
-<h2>foot()
-        </h2>
-<pre>foot($params<code> = array()</code>) </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$params</h4></div>
-</div></div>
-</div>
-<a id="method_footerInfo"></a><div class="element clickable method public method_footerInfo" data-toggle="collapse" data-target=".method_footerInfo .collapse" title="public">
-<h2>footerInfo()
-        </h2>
-<pre>footerInfo($params<code> = array()</code>) </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$params</h4></div>
-</div></div>
-</div>
-<a id="method_getPrinterFriendlyTheme"></a><div class="element clickable method public method_getPrinterFriendlyTheme" data-toggle="collapse" data-target=".method_getPrinterFriendlyTheme .collapse" title="public">
-<h2>getPrinterFriendlyTheme()
-        </h2>
-<pre>getPrinterFriendlyTheme() </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="method_getSubthemes"></a><div class="element clickable method public method_getSubthemes" data-toggle="collapse" data-target=".method_getSubthemes .collapse" title="public">
-<h2>exdoc</h2>
-<pre>getSubthemes(bool $include_default<code> = true</code>, string $theme<code> = DISPLAY_THEME</code>) : array</pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered">
-<tr>
-<th>state</th>
-<td><b>UNDOCUMENTED</b></td>
-</tr>
-<tr>
-<th>node</th>
-<td>Undocumented</td>
-</tr>
-</table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$include_default</h4>
-<code>bool</code>
-</div>
-<div class="subelement argument">
-<h4>$theme</h4>
-<code>string</code>
-</div>
-<h3>Returns</h3>
-<div class="subelement response"><code>array</code></div>
-</div></div>
-</div>
-<a id="method_getTheme"></a><div class="element clickable method public method_getTheme" data-toggle="collapse" data-target=".method_getTheme .collapse" title="public">
-<h2>getTheme()
-        </h2>
-<pre>getTheme() </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="method_goDefaultSection"></a><div class="element clickable method public method_goDefaultSection" data-toggle="collapse" data-target=".method_goDefaultSection .collapse" title="public">
-<h2>exdoc
-Redirect User to Default Section</h2>
-<pre>goDefaultSection() </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>node</th>
-<td>Subsystems:Theme</td>
-</tr></table>
-</div></div>
-</div>
-<a id="method_grabView"></a><div class="element clickable method public method_grabView" data-toggle="collapse" data-target=".method_grabView .collapse" title="public">
-<h2>grabView()
-        </h2>
-<pre>grabView($path, $filename) </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$path</h4></div>
-<div class="subelement argument"><h4>$filename</h4></div>
-</div></div>
-</div>
-<a id="method_grabViews"></a><div class="element clickable method public method_grabViews" data-toggle="collapse" data-target=".method_grabViews .collapse" title="public">
-<h2>grabViews()
-        </h2>
-<pre>grabViews($path, $filter<code> = ''</code>) </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$path</h4></div>
-<div class="subelement argument"><h4>$filter</h4></div>
-</div></div>
-</div>
-<a id="method_head"></a><div class="element clickable method public method_head" data-toggle="collapse" data-target=".method_head .collapse" title="public">
-<h2>head()
-        </h2>
-<pre>head($config<code> = array()</code>) </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$config</h4></div>
-</div></div>
-</div>
-<a id="method_headerInfo"></a><div class="element clickable method public method_headerInfo" data-toggle="collapse" data-target=".method_headerInfo .collapse" title="public">
-<h2>headerInfo()
-        </h2>
-<pre>headerInfo($config) </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$config</h4></div>
-</div></div>
-</div>
-<a id="method_iconSize"></a><div class="element clickable method public method_iconSize" data-toggle="collapse" data-target=".method_iconSize .collapse" title="public">
-<h2>Return the icon size for the current framework</h2>
-<pre>iconSize(mixed $size<code> = null</code>) : mixed | string</pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$size</h4></div>
-<h3>Returns</h3>
-<div class="subelement response">
-<code>mixed</code><code>string</code>
-</div>
-</div></div>
-</div>
-<a id="method_inAction"></a><div class="element clickable method public method_inAction" data-toggle="collapse" data-target=".method_inAction .collapse" title="public">
-<h2>inAction()
-        </h2>
-<pre>inAction() </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="method_inPreview"></a><div class="element clickable method public method_inPreview" data-toggle="collapse" data-target=".method_inPreview .collapse" title="public">
-<h2>exdoc
+                            <pre>advertiseRSS() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    node
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Subsystems:Theme</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_loadActionMaps"></a>
+                        <div class="element clickable method public  method_loadActionMaps" data-toggle="collapse" data-target=".method_loadActionMaps .collapse">
+                            <h2>loadActionMaps</h2>
+                            <pre>loadActionMaps() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_satisfyThemeRequirements"></a>
+                        <div class="element clickable method public  method_satisfyThemeRequirements" data-toggle="collapse" data-target=".method_satisfyThemeRequirements .collapse">
+                            <h2>satisfyThemeRequirements</h2>
+                            <pre>satisfyThemeRequirements() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getTheme"></a>
+                        <div class="element clickable method public  method_getTheme" data-toggle="collapse" data-target=".method_getTheme .collapse">
+                            <h2>getTheme</h2>
+                            <pre>getTheme() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getSubthemes"></a>
+                        <div class="element clickable method public  method_getSubthemes" data-toggle="collapse" data-target=".method_getSubthemes .collapse">
+                            <h2>exdoc</h2>
+                            <pre>getSubthemes(bool $include_default = true, string $theme = DISPLAY_THEME) : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    state
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p><b>UNDOCUMENTED</b></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    node
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Undocumented</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$include_default</h4>
+                                                <code>bool</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$theme</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getPrinterFriendlyTheme"></a>
+                        <div class="element clickable method public  method_getPrinterFriendlyTheme" data-toggle="collapse" data-target=".method_getPrinterFriendlyTheme .collapse">
+                            <h2>getPrinterFriendlyTheme</h2>
+                            <pre>getPrinterFriendlyTheme() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_inPreview"></a>
+                        <div class="element clickable method public  method_inPreview" data-toggle="collapse" data-target=".method_inPreview .collapse">
+                            <h2>exdoc
 Checks to see if the page is currently in an action.  Useful only if the theme does not use the self::main() function
 Returns whether or not an action should be run.</h2>
-<pre>inPreview() : boolean</pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>node</th>
-<td>Subsystems:Theme</td>
-</tr></table>
-<h3>Returns</h3>
-<div class="subelement response"><code>boolean</code></div>
-</div></div>
-</div>
-<a id="method_initialize"></a><div class="element clickable method public method_initialize" data-toggle="collapse" data-target=".method_initialize .collapse" title="public">
-<h2>initialize()
-        </h2>
-<pre>initialize() </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="method_is_mobile"></a><div class="element clickable method public method_is_mobile" data-toggle="collapse" data-target=".method_is_mobile .collapse" title="public">
-<h2>is_mobile()
-        </h2>
-<pre>is_mobile() </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="method_loadActionMaps"></a><div class="element clickable method public method_loadActionMaps" data-toggle="collapse" data-target=".method_loadActionMaps .collapse" title="public">
-<h2>loadActionMaps()
-        </h2>
-<pre>loadActionMaps() </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="method_main"></a><div class="element clickable method public method_main" data-toggle="collapse" data-target=".method_main .collapse" title="public">
-<h2>exdoc
-Takes care of all the specifics of either showing a sectional container or running an action.</h2>
-<pre>main() </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>node</th>
-<td>Subsystems:Theme</td>
-</tr></table>
-</div></div>
-</div>
-<a id="method_module"></a><div class="element clickable method public method_module" data-toggle="collapse" data-target=".method_module .collapse" title="public">
-<h2>Entry point for displaying modules
-Packages $params for calling showModule method</h2>
-<pre>module(array $params) : bool</pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$params</h4>
-<code>array</code><p>list of module parameters</p></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
-</div></div>
-</div>
-<a id="method_pageMetaInfo"></a><div class="element clickable method public method_pageMetaInfo" data-toggle="collapse" data-target=".method_pageMetaInfo .collapse" title="public">
-<h2>pageMetaInfo()
-        </h2>
-<pre>pageMetaInfo() </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="method_processCSSandJS"></a><div class="element clickable method public method_processCSSandJS" data-toggle="collapse" data-target=".method_processCSSandJS .collapse" title="public">
-<h2>processCSSandJS()
-        </h2>
-<pre>processCSSandJS() </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="method_reRoutActionTo"></a><div class="element clickable method public method_reRoutActionTo" data-toggle="collapse" data-target=".method_reRoutActionTo .collapse" title="public">
-<h2>reRoutActionTo()
-        </h2>
-<pre>reRoutActionTo($theme<code> = ""</code>) </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$theme</h4></div>
-</div></div>
-</div>
-<a id="method_removeCss"></a><div class="element clickable method public method_removeCss" data-toggle="collapse" data-target=".method_removeCss .collapse" title="public">
-<h2>removeCss()
-        </h2>
-<pre>removeCss() </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="method_removeSmartyCache"></a><div class="element clickable method public method_removeSmartyCache" data-toggle="collapse" data-target=".method_removeSmartyCache .collapse" title="public">
-<h2>removeSmartyCache()
-        </h2>
-<pre>removeSmartyCache() </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="method_runAction"></a><div class="element clickable method public method_runAction" data-toggle="collapse" data-target=".method_runAction .collapse" title="public">
-<h2>exdoc
+                            <pre>inPreview() : boolean</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    node
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Subsystems:Theme</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_inAction"></a>
+                        <div class="element clickable method public  method_inAction" data-toggle="collapse" data-target=".method_inAction .collapse">
+                            <h2>inAction</h2>
+                            <pre>inAction() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_reRoutActionTo"></a>
+                        <div class="element clickable method public  method_reRoutActionTo" data-toggle="collapse" data-target=".method_reRoutActionTo .collapse">
+                            <h2>reRoutActionTo</h2>
+                            <pre>reRoutActionTo($theme = &quot;&quot;) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$theme</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_runAction"></a>
+                        <div class="element clickable method public  method_runAction" data-toggle="collapse" data-target=".method_runAction .collapse">
+                            <h2>exdoc
 Runs the appropriate action, by looking at the $_REQUEST variable.</h2>
-<pre>runAction() : bool</pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>node</th>
-<td>Subsystems:Theme</td>
-</tr></table>
-<h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
-</div></div>
-</div>
-<a id="method_satisfyThemeRequirements"></a><div class="element clickable method public method_satisfyThemeRequirements" data-toggle="collapse" data-target=".method_satisfyThemeRequirements .collapse" title="public">
-<h2>satisfyThemeRequirements()
-        </h2>
-<pre>satisfyThemeRequirements() </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="method_showAction"></a><div class="element clickable method public method_showAction" data-toggle="collapse" data-target=".method_showAction .collapse" title="public">
-<h2>showAction()
-        </h2>
-<pre>showAction($module, $action, $src<code> = ""</code>, $params<code> = array()</code>) </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$module</h4></div>
-<div class="subelement argument"><h4>$action</h4></div>
-<div class="subelement argument"><h4>$src</h4></div>
-<div class="subelement argument"><h4>$params</h4></div>
-</div></div>
-</div>
-<a id="method_showController"></a><div class="element clickable method public method_showController" data-toggle="collapse" data-target=".method_showController .collapse" title="public">
-<h2>showController()
-        </h2>
-<pre>showController($params<code> = array()</code>) </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$params</h4></div>
-</div></div>
-</div>
-<a id="method_showModule"></a><div class="element clickable method public method_showModule" data-toggle="collapse" data-target=".method_showModule .collapse" title="public">
-<h2>exdoc
-Calls the necessary methods to show a specific module - NOT intended to be called directly from theme</h2>
-<pre>showModule(string $module, string $view<code> = "Default"</code>, string $title<code> = ""</code>, string $source<code> = null</code>, bool $pickable<code> = false</code>, null $section<code> = null</code>, bool $hide_menu<code> = false</code>, array $params<code> = array()</code>) : void</pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>node</th>
-<td>Subsystems:Theme</td>
-</tr></table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$module</h4>
-<code>string</code><p>The classname of the module to display</p></div>
-<div class="subelement argument">
-<h4>$view</h4>
-<code>string</code><p>The name of the view to display the module with</p></div>
-<div class="subelement argument">
-<h4>$title</h4>
-<code>string</code><p>The title of the module (support is view-dependent)</p></div>
-<div class="subelement argument">
-<h4>$source</h4>
-<code>string</code><p>The source of the module.</p></div>
-<div class="subelement argument">
-<h4>$pickable</h4>
-<code>bool</code><p>Whether or not the module is pickable in the Source Picker.</p></div>
-<div class="subelement argument">
-<h4>$section</h4>
-<code>null</code>
-</div>
-<div class="subelement argument">
-<h4>$hide_menu</h4>
-<code>bool</code>
-</div>
-<div class="subelement argument">
-<h4>$params</h4>
-<code>array</code>
-</div>
-</div></div>
-</div>
-<a id="method_showSectionalModule"></a><div class="element clickable method public method_showSectionalModule" data-toggle="collapse" data-target=".method_showSectionalModule .collapse" title="public">
-<h2>exdoc
+                            <pre>runAction() : bool</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    node
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Subsystems:Theme</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_showAction"></a>
+                        <div class="element clickable method public  method_showAction" data-toggle="collapse" data-target=".method_showAction .collapse">
+                            <h2>showAction</h2>
+                            <pre>showAction($module, $action, $src = &quot;&quot;, $params = array()) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$module</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$action</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$src</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$params</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_goDefaultSection"></a>
+                        <div class="element clickable method public  method_goDefaultSection" data-toggle="collapse" data-target=".method_goDefaultSection .collapse">
+                            <h2>exdoc
+Redirect User to Default Section</h2>
+                            <pre>goDefaultSection() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    node
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Subsystems:Theme</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_main"></a>
+                        <div class="element clickable method public  method_main" data-toggle="collapse" data-target=".method_main .collapse">
+                            <h2>exdoc
+Takes care of all the specifics of either showing a sectional container or running an action.</h2>
+                            <pre>main() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    node
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Subsystems:Theme</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_showSectionalModule"></a>
+                        <div class="element clickable method public  method_showSectionalModule" data-toggle="collapse" data-target=".method_showSectionalModule .collapse">
+                            <h2>exdoc
 Calls the necessary methods to show a specific module, in a section-sensitive way.</h2>
-<pre>showSectionalModule(string $module, string $view, string $title, string $prefix<code> = null</code>, bool $pickable<code> = false</code>, bool $hide_menu<code> = false</code>) : void</pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>node</th>
-<td>Subsystems:Theme</td>
-</tr></table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$module</h4>
-<code>string</code><p>The classname of the module to display</p></div>
-<div class="subelement argument">
-<h4>$view</h4>
-<code>string</code><p>The name of the view to display the module with</p></div>
-<div class="subelement argument">
-<h4>$title</h4>
-<code>string</code><p>The title of the module (support is view-dependent)</p></div>
-<div class="subelement argument">
-<h4>$prefix</h4>
-<code>string</code><p>The prefix of the module's source.  The current section id will be appended to this</p></div>
-<div class="subelement argument">
-<h4>$pickable</h4>
-<code>bool</code><p>Whether or not the module is pickable in the Source Picker.</p></div>
-<div class="subelement argument">
-<h4>$hide_menu</h4>
-<code>bool</code>
-</div>
-</div></div>
-</div>
-<a id="method_showTopSectionalModule"></a><div class="element clickable method public method_showTopSectionalModule" data-toggle="collapse" data-target=".method_showTopSectionalModule .collapse" title="public">
-<h2>exdoc
+                            <pre>showSectionalModule(string $module, string $view, string $title, string $prefix = null, bool $pickable = false, bool $hide_menu = false) : void</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    node
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Subsystems:Theme</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$module</h4>
+                                                <code>string</code><p><p>The classname of the module to display</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$view</h4>
+                                                <code>string</code><p><p>The name of the view to display the module with</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$title</h4>
+                                                <code>string</code><p><p>The title of the module (support is view-dependent)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$prefix</h4>
+                                                <code>string</code><p><p>The prefix of the module's source.  The current section id will be appended to this</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$pickable</h4>
+                                                <code>bool</code><p><p>Whether or not the module is pickable in the Source Picker.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$hide_menu</h4>
+                                                <code>bool</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_showTopSectionalModule"></a>
+                        <div class="element clickable method public  method_showTopSectionalModule" data-toggle="collapse" data-target=".method_showTopSectionalModule .collapse">
+                            <h2>exdoc
 Calls the necessary methods to show a specific module in such a way that the current
-section displays the same content as its top-level parent and all of the top-level parent's
+section displays the same content as its top-level parent and all of the top-level parent&#039;s
 children, grand-children, grand-grand-children, etc.</h2>
-<pre>showTopSectionalModule(string $module, string $view, string $title, string $prefix<code> = null</code>, bool $pickable<code> = false</code>, bool $hide_menu<code> = false</code>) </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>node</th>
-<td>Subsystems:Theme</td>
-</tr></table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$module</h4>
-<code>string</code><p>The classname of the module to display</p></div>
-<div class="subelement argument">
-<h4>$view</h4>
-<code>string</code><p>The name of the view to display the module with</p></div>
-<div class="subelement argument">
-<h4>$title</h4>
-<code>string</code><p>The title of the module (support is view-dependent)</p></div>
-<div class="subelement argument">
-<h4>$prefix</h4>
-<code>string</code><p>The prefix of the module's source.  The current section id will be appended to this</p></div>
-<div class="subelement argument">
-<h4>$pickable</h4>
-<code>bool</code><p>Whether or not the module is pickable in the Source Picker.</p></div>
-<div class="subelement argument">
-<h4>$hide_menu</h4>
-<code>bool</code>
-</div>
-</div></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="row"><footer class="span12">
-            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.2.0
-</a> and<br>
-            generated on 2014-02-18T10:31:42-05:00.<br></footer></div>
-</div>
-</body>
+                            <pre>showTopSectionalModule(string $module, string $view, string $title, string $prefix = null, bool $pickable = false, bool $hide_menu = false) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    node
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Subsystems:Theme</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$module</h4>
+                                                <code>string</code><p><p>The classname of the module to display</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$view</h4>
+                                                <code>string</code><p><p>The name of the view to display the module with</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$title</h4>
+                                                <code>string</code><p><p>The title of the module (support is view-dependent)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$prefix</h4>
+                                                <code>string</code><p><p>The prefix of the module's source.  The current section id will be appended to this</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$pickable</h4>
+                                                <code>bool</code><p><p>Whether or not the module is pickable in the Source Picker.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$hide_menu</h4>
+                                                <code>bool</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_showController"></a>
+                        <div class="element clickable method public  method_showController" data-toggle="collapse" data-target=".method_showController .collapse">
+                            <h2>showController</h2>
+                            <pre>showController($params = array()) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$params</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_module"></a>
+                        <div class="element clickable method public  method_module" data-toggle="collapse" data-target=".method_module .collapse">
+                            <h2>Entry point for displaying modules
+Packages $params for calling showModule method</h2>
+                            <pre>module(array $params) : bool</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$params</h4>
+                                                <code>array</code><p><p>list of module parameters</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_showModule"></a>
+                        <div class="element clickable method public  method_showModule" data-toggle="collapse" data-target=".method_showModule .collapse">
+                            <h2>exdoc
+Calls the necessary methods to show a specific module - NOT intended to be called directly from theme</h2>
+                            <pre>showModule(string $module, string $view = &quot;Default&quot;, string $title = &quot;&quot;, string $source = null, bool $pickable = false, null $section = null, bool $hide_menu = false, array $params = array()) : void</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    node
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Subsystems:Theme</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$module</h4>
+                                                <code>string</code><p><p>The classname of the module to display</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$view</h4>
+                                                <code>string</code><p><p>The name of the view to display the module with</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$title</h4>
+                                                <code>string</code><p><p>The title of the module (support is view-dependent)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$source</h4>
+                                                <code>string</code><p><p>The source of the module.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$pickable</h4>
+                                                <code>bool</code><p><p>Whether or not the module is pickable in the Source Picker.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$section</h4>
+                                                <code>null</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$hide_menu</h4>
+                                                <code>bool</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$params</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_buttonColor"></a>
+                        <div class="element clickable method public  method_buttonColor" data-toggle="collapse" data-target=".method_buttonColor .collapse">
+                            <h2>Return the color style for the current framework</h2>
+                            <pre>buttonColor(mixed $color = null) : mixed|string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$color</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed|string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_buttonSize"></a>
+                        <div class="element clickable method public  method_buttonSize" data-toggle="collapse" data-target=".method_buttonSize .collapse">
+                            <h2>Return the button size for the current framework</h2>
+                            <pre>buttonSize(mixed $size = null) : mixed|string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$size</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed|string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_buttonStyle"></a>
+                        <div class="element clickable method public  method_buttonStyle" data-toggle="collapse" data-target=".method_buttonStyle .collapse">
+                            <h2>Return the button color and size style for the current framework</h2>
+                            <pre>buttonStyle(null $color = null, mixed $size = null) : mixed|string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$color</h4>
+                                                <code>null</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$size</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed|string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_buttonIcon"></a>
+                        <div class="element clickable method public  method_buttonIcon" data-toggle="collapse" data-target=".method_buttonIcon .collapse">
+                            <h2>Return the icon associated for the current frameowrk</h2>
+                            <pre>buttonIcon(mixed $class) : \stdClass|string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$class</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\stdClass|string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_iconSize"></a>
+                        <div class="element clickable method public  method_iconSize" data-toggle="collapse" data-target=".method_iconSize .collapse">
+                            <h2>Return the icon size for the current framework</h2>
+                            <pre>iconSize(mixed $size = null) : mixed|string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$size</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed|string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_is_mobile"></a>
+                        <div class="element clickable method public  method_is_mobile" data-toggle="collapse" data-target=".method_is_mobile .collapse">
+                            <h2>is_mobile</h2>
+                            <pre>is_mobile() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_deprecated"></a>
+                        <div class="element clickable method public  method_deprecated" data-toggle="collapse" data-target=".method_deprecated .collapse">
+                            <h2>deprecated</h2>
+                            <pre>deprecated($newcall = &quot;expTheme::module()&quot;, $controller = null, $actionview = null) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$newcall</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$controller</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$actionview</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                    
+                    
+                                                        </div>
+            </div>
+            <a id="\expTheme"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/default.html">\</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/expTheme.html">expTheme</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Tue, 08 Apr 2014 02:28:38 +0000.<br/>
+    </footer>
+    </body>
 </html>

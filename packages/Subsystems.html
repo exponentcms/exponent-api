@@ -1,503 +1,587 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-<meta charset="utf-8">
-<title>Exponent v2.2.4 » Subsystems</title>
-<meta name="author" content="Mike van Riel">
-<meta name="description" content="">
-<link href="../css/template.css" rel="stylesheet" media="all">
-<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
-<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>     &raquo; \Subsystems
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
 <body>
-<div class="navbar navbar-fixed-top">
-<div class="navbar-inner"><div class="container">
-<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent v2.2.4</a><div class="nav-collapse"><ul class="nav">
-<li class="dropdown">
-<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
-                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a>Namespaces</a></li>
-<li><a href="../namespaces/Composer.html"><i class="icon-th"></i> Composer</a></li>
-<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
-<li><a>Packages</a></li>
-<li><a href="../packages/Connectors.html"><i class="icon-folder-open"></i> Connectors</a></li>
-<li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
-<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
-<li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
-<li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
-<li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
-<li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
-<li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
-<li><a href="../packages/elFinder.html"><i class="icon-folder-open"></i> elFinder</a></li>
-</ul>
-</li>
-<li class="dropdown" id="charts-menu">
-<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
-                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
-</li>
-<li class="dropdown" id="reports-menu">
-<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
-                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">5017</span></a></li>
-<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
-                <ul></ul></a></li>
-<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">0</span></a></li>
-</ul>
-</li>
-</ul></div>
-</div></div>
-<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
-</div>
-<div id="___" class="container">
-<noscript><div class="alert alert-warning">
-                            Javascript is disabled; several features are only available
-                            if Javascript is enabled.
-                        </div></noscript>
-<div class="row">
-<div class="span4">
-<div class="btn-group view pull-right" data-toggle="buttons-radio">
-<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
-</div>
-<ul class="side-nav nav nav-list">
-<li class="nav-header">
-<i class="icon-map-marker"></i> Packages</li>
-<li>
-<a href="../packages/Subsystems.html" title="Subsystems"><i class="icon-folder-open"></i>Subsystems</a><ul class="nav nav-list nav-packages">
-<li>
-<a href="../packages/Subsystems.Database%20=%20database.html" title="Database = database"><i class="icon-folder-open"></i>Database = database</a><ul class="nav nav-list nav-packages"></ul>
-</li>
-<li>
-<a href="../packages/Subsystems.Subsystems.html" title="Subsystems"><i class="icon-folder-open"></i>Subsystems</a><ul class="nav nav-list nav-packages"></ul>
-</li>
-</ul>
-</li>
-<li class="nav-header">
-<i title="Functions" class="icon-custom icon-function"></i> Functions</li>
-<li class="function  "><a href="#function_exponent_unhtmlentities" title="exponent_unhtmlentities() :: overides function html entity decode"><span class="description">overides function html entity decode</span><pre>exponent_unhtmlentities</pre></a></li>
-<li class="nav-header">
-<i title="Classes" class="icon-custom icon-class"></i> Classes</li>
-<li><a href="#expMail" title="The expMail class">expMail</a></li>
-<li><a href="#expUtil" title="">expUtil</a></li>
-<li><a href="#expCore" title="">expCore</a></li>
-<li><a href="#expTemplate" title="">expTemplate</a></li>
-<li><a href="#expDateTime" title="">expDateTime</a></li>
-<li><a href="#expVersion" title="">expVersion</a></li>
-<li><a href="#expJavascript" title="">expJavascript</a></li>
-<li><a href="#expTheme" title="">expTheme</a></li>
-<li><a href="#expTimer" title="">expTimer</a></li>
-<li><a href="#expPermissions" title="">expPermissions</a></li>
-<li><a href="#mysqlid_database" title="This is the class database">mysqlid_database</a></li>
-<li><a href="#expSettings" title="">expSettings</a></li>
-<li><a href="#expString" title="">expString</a></li>
-<li><a href="#expLang" title="">expLang</a></li>
-<li><a href="#expGeo" title="">expGeo</a></li>
-<li><a href="#expValidator" title="">expValidator</a></li>
-<li class="nav-header">
-<i title="Constants" class="icon-custom icon-constant"></i> Constants</li>
-<li class="constant  "><a href="#constant_BTN_COLOR" title="BTN_COLOR() :: "><span class="description">BTN_COLOR</span><pre>BTN_COLOR</pre></a></li>
-<li class="constant  "><a href="#constant_BTN_SIZE" title="BTN_SIZE() :: "><span class="description">BTN_SIZE</span><pre>BTN_SIZE</pre></a></li>
-<li class="constant  "><a href="#constant_DEFAULT_VIEW" title="DEFAULT_VIEW() :: "><span class="description">DEFAULT_VIEW</span><pre>DEFAULT_VIEW</pre></a></li>
-<li class="constant  "><a href="#constant_DISPLAY_THEME" title="DISPLAY_THEME() :: "><span class="description">DISPLAY_THEME</span><pre>DISPLAY_THEME</pre></a></li>
-<li class="constant  "><a href="#constant_JQUERYUI_CSS" title="JQUERYUI_CSS() :: "><span class="description">JQUERYUI_CSS</span><pre>JQUERYUI_CSS</pre></a></li>
-<li class="constant  "><a href="#constant_JQUERYUI_THEME" title="JQUERYUI_THEME() :: "><span class="description">JQUERYUI_THEME</span><pre>JQUERYUI_THEME</pre></a></li>
-<li class="constant  "><a href="#constant_LANG" title="LANG() :: "><span class="description">LANG</span><pre>LANG</pre></a></li>
-<li class="constant  "><a href="#constant_LANGUAGE" title="LANGUAGE() :: "><span class="description">LANGUAGE</span><pre>LANGUAGE</pre></a></li>
-<li class="constant  "><a href="#constant_LANG_CHARSET" title="LANG_CHARSET() :: "><span class="description">LANG_CHARSET</span><pre>LANG_CHARSET</pre></a></li>
-<li class="constant  "><a href="#constant_LOCALE" title="LOCALE() :: "><span class="description">LOCALE</span><pre>LOCALE</pre></a></li>
-<li class="constant  "><a href="#constant_SWATCH" title="SWATCH() :: "><span class="description">SWATCH</span><pre>SWATCH</pre></a></li>
-<li class="constant  "><a href="#constant_THEME_ABSOLUTE" title="THEME_ABSOLUTE() :: "><span class="description">THEME_ABSOLUTE</span><pre>THEME_ABSOLUTE</pre></a></li>
-<li class="constant  "><a href="#constant_THEME_RELATIVE" title="THEME_RELATIVE() :: "><span class="description">THEME_RELATIVE</span><pre>THEME_RELATIVE</pre></a></li>
-<li class="constant  "><a href="#constant_THEME_STYLE" title="THEME_STYLE() :: "><span class="description">THEME_STYLE</span><pre>THEME_STYLE</pre></a></li>
-<li class="constant  "><a href="#constant_XHTML" title="XHTML() :: "><span class="description">XHTML</span><pre>XHTML</pre></a></li>
-<li class="constant  "><a href="#constant_XHTML_CLOSING" title="XHTML_CLOSING() :: "><span class="description">XHTML_CLOSING</span><pre>XHTML_CLOSING</pre></a></li>
-</ul>
-</div>
-<div class="span8 package-contents">
-<ul class="breadcrumb"><li>
-<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li class="active"><a href="../packages/Subsystems.html">Subsystems</a></li>
-</li></ul>
-<div class="package-indent">
-<h3>
-<i title="Functions" class="icon-custom icon-function"></i> Functions</h3>
-<a id="function_exponent_unhtmlentities"></a><div class="element clickable function  function_exponent_unhtmlentities" data-toggle="collapse" data-target=".function_exponent_unhtmlentities .collapse" title="">
-<h2>overides function html entity decode</h2>
-<pre>exponent_unhtmlentities(mixed $str) : string</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$str</h4></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>string</code></div>
-</div></div>
-</div>
-<h3>
-<i title="Classes" class="icon-custom icon-class"></i> Classes and interfaces</h3>
-<div id="expCore" class="element ajax clickable class">
-<h1>expCore<a href="../classes/expCore.html">¶</a>
-</h1>
-<p class="short_description"></p>
-<div class="details collapse"></div>
-<a href="../classes/expCore.html" class="more">« More »</a>
-</div>
-<div id="expDateTime" class="element ajax clickable class">
-<h1>expDateTime<a href="../classes/expDateTime.html">¶</a>
-</h1>
-<p class="short_description"></p>
-<div class="details collapse"></div>
-<a href="../classes/expDateTime.html" class="more">« More »</a>
-</div>
-<div id="expGeo" class="element ajax clickable class">
-<h1>expGeo<a href="../classes/expGeo.html">¶</a>
-</h1>
-<p class="short_description"></p>
-<div class="details collapse"></div>
-<a href="../classes/expGeo.html" class="more">« More »</a>
-</div>
-<div id="expJavascript" class="element ajax clickable class">
-<h1>expJavascript<a href="../classes/expJavascript.html">¶</a>
-</h1>
-<p class="short_description"></p>
-<div class="details collapse"></div>
-<a href="../classes/expJavascript.html" class="more">« More »</a>
-</div>
-<div id="expLang" class="element ajax clickable class">
-<h1>expLang<a href="../classes/expLang.html">¶</a>
-</h1>
-<p class="short_description"></p>
-<div class="details collapse"></div>
-<a href="../classes/expLang.html" class="more">« More »</a>
-</div>
-<div id="expMail" class="element ajax clickable class">
-<h1>expMail<a href="../classes/expMail.html">¶</a>
-</h1>
-<p class="short_description">The expMail class</p>
-<div class="details collapse"></div>
-<a href="../classes/expMail.html" class="more">« More »</a>
-</div>
-<div id="expPermissions" class="element ajax clickable class">
-<h1>expPermissions<a href="../classes/expPermissions.html">¶</a>
-</h1>
-<p class="short_description"></p>
-<div class="details collapse"></div>
-<a href="../classes/expPermissions.html" class="more">« More »</a>
-</div>
-<div id="expSettings" class="element ajax clickable class">
-<h1>expSettings<a href="../classes/expSettings.html">¶</a>
-</h1>
-<p class="short_description"></p>
-<div class="details collapse"></div>
-<a href="../classes/expSettings.html" class="more">« More »</a>
-</div>
-<div id="expString" class="element ajax clickable class">
-<h1>expString<a href="../classes/expString.html">¶</a>
-</h1>
-<p class="short_description"></p>
-<div class="details collapse"></div>
-<a href="../classes/expString.html" class="more">« More »</a>
-</div>
-<div id="expTemplate" class="element ajax clickable class">
-<h1>expTemplate<a href="../classes/expTemplate.html">¶</a>
-</h1>
-<p class="short_description"></p>
-<div class="details collapse"></div>
-<a href="../classes/expTemplate.html" class="more">« More »</a>
-</div>
-<div id="expTheme" class="element ajax clickable class">
-<h1>expTheme<a href="../classes/expTheme.html">¶</a>
-</h1>
-<p class="short_description"></p>
-<div class="details collapse"></div>
-<a href="../classes/expTheme.html" class="more">« More »</a>
-</div>
-<div id="expTimer" class="element ajax clickable class">
-<h1>expTimer<a href="../classes/expTimer.html">¶</a>
-</h1>
-<p class="short_description"></p>
-<div class="details collapse"></div>
-<a href="../classes/expTimer.html" class="more">« More »</a>
-</div>
-<div id="expUtil" class="element ajax clickable class">
-<h1>expUtil<a href="../classes/expUtil.html">¶</a>
-</h1>
-<p class="short_description"></p>
-<div class="details collapse"></div>
-<a href="../classes/expUtil.html" class="more">« More »</a>
-</div>
-<div id="expValidator" class="element ajax clickable class">
-<h1>expValidator<a href="../classes/expValidator.html">¶</a>
-</h1>
-<p class="short_description"></p>
-<div class="details collapse"></div>
-<a href="../classes/expValidator.html" class="more">« More »</a>
-</div>
-<div id="expVersion" class="element ajax clickable class">
-<h1>expVersion<a href="../classes/expVersion.html">¶</a>
-</h1>
-<p class="short_description"></p>
-<div class="details collapse"></div>
-<a href="../classes/expVersion.html" class="more">« More »</a>
-</div>
-<div id="mysqlid_database" class="element ajax clickable class">
-<h1>mysqlid_database<a href="../classes/mysqlid_database.html">¶</a>
-</h1>
-<p class="short_description">This is the class database</p>
-<div class="details collapse"></div>
-<a href="../classes/mysqlid_database.html" class="more">« More »</a>
-</div>
-<h3>
-<i title="Constants" class="icon-custom icon-constant"></i> Constants</h3>
-<a id="constant_BTN_COLOR"> </a><div class="element clickable constant  constant_BTN_COLOR" data-toggle="collapse" data-target=".constant_BTN_COLOR .collapse" title="">
-<h2>BTN_COLOR</h2>
-<pre>BTN_COLOR = 'black' </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="constant_BTN_SIZE"> </a><div class="element clickable constant  constant_BTN_SIZE" data-toggle="collapse" data-target=".constant_BTN_SIZE .collapse" title="">
-<h2>BTN_SIZE</h2>
-<pre>BTN_SIZE = 'medium' </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="constant_DEFAULT_VIEW"> </a><div class="element clickable constant  constant_DEFAULT_VIEW" data-toggle="collapse" data-target=".constant_DEFAULT_VIEW .collapse" title="">
-<h2>DEFAULT_VIEW</h2>
-<pre>DEFAULT_VIEW = 'Default' </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="constant_DISPLAY_THEME"> </a><div class="element clickable constant  constant_DISPLAY_THEME" data-toggle="collapse" data-target=".constant_DISPLAY_THEME .collapse" title="">
-<h2>DISPLAY_THEME</h2>
-<pre>DISPLAY_THEME = DISPLAY_THEME_REAL </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="constant_JQUERYUI_CSS"> </a><div class="element clickable constant  constant_JQUERYUI_CSS" data-toggle="collapse" data-target=".constant_JQUERYUI_CSS .collapse" title="">
-<h2>JQUERYUI_CSS</h2>
-<pre>JQUERYUI_CSS = JQUERY_RELATIVE . 'css/' . JQUERYUI_THEME . '/jquery-ui.min.css' </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="constant_JQUERYUI_THEME"> </a><div class="element clickable constant  constant_JQUERYUI_THEME" data-toggle="collapse" data-target=".constant_JQUERYUI_THEME .collapse" title="">
-<h2>JQUERYUI_THEME</h2>
-<pre>JQUERYUI_THEME = 'exponent' </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="constant_LANG"> </a><div class="element clickable constant  constant_LANG" data-toggle="collapse" data-target=".constant_LANG .collapse" title="">
-<h2>LANG</h2>
-<pre>LANG = 'English - US' </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="constant_LANGUAGE"> </a><div class="element clickable constant  constant_LANGUAGE" data-toggle="collapse" data-target=".constant_LANGUAGE .collapse" title="">
-<h2>LANGUAGE</h2>
-<pre>LANGUAGE = 'English - US' </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="constant_LANG_CHARSET"> </a><div class="element clickable constant  constant_LANG_CHARSET" data-toggle="collapse" data-target=".constant_LANG_CHARSET .collapse" title="">
-<h2>LANG_CHARSET</h2>
-<pre>LANG_CHARSET = 'UTF-8' </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="constant_LOCALE"> </a><div class="element clickable constant  constant_LOCALE" data-toggle="collapse" data-target=".constant_LOCALE .collapse" title="">
-<h2>LOCALE</h2>
-<pre>LOCALE = 'en_US' </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="constant_SWATCH"> </a><div class="element clickable constant  constant_SWATCH" data-toggle="collapse" data-target=".constant_SWATCH .collapse" title="">
-<h2>SWATCH</h2>
-<pre>SWATCH = "''" </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="constant_THEME_ABSOLUTE"> </a><div class="element clickable constant  constant_THEME_ABSOLUTE" data-toggle="collapse" data-target=".constant_THEME_ABSOLUTE .collapse" title="">
-<h2>THEME_ABSOLUTE</h2>
-<pre>THEME_ABSOLUTE = BASE . 'themes/' . DISPLAY_THEME . '/' </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="constant_THEME_RELATIVE"> </a><div class="element clickable constant  constant_THEME_RELATIVE" data-toggle="collapse" data-target=".constant_THEME_RELATIVE .collapse" title="">
-<h2>THEME_RELATIVE</h2>
-<pre>THEME_RELATIVE = PATH_RELATIVE . 'themes/' . DISPLAY_THEME . '/' </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="constant_THEME_STYLE"> </a><div class="element clickable constant  constant_THEME_STYLE" data-toggle="collapse" data-target=".constant_THEME_STYLE .collapse" title="">
-<h2>THEME_STYLE</h2>
-<pre>THEME_STYLE = THEME_STYLE_REAL </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="constant_XHTML"> </a><div class="element clickable constant  constant_XHTML" data-toggle="collapse" data-target=".constant_XHTML .collapse" title="">
-<h2>XHTML</h2>
-<pre>XHTML = 0 </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="constant_XHTML_CLOSING"> </a><div class="element clickable constant  constant_XHTML_CLOSING" data-toggle="collapse" data-target=".constant_XHTML_CLOSING .collapse" title="">
-<h2>XHTML_CLOSING</h2>
-<pre>XHTML_CLOSING = "" </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<ul class="breadcrumb"><li>
-<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/Subsystems.html">Subsystems</a></li>
-<li class="active">
-<span class="divider">\</span><a href="../packages/Subsystems.Database%20=%20database.html">Database = database</a>
-</li>
-</li></ul>
-<div class="package-indent">
-<h3>
-<i title="Classes" class="icon-custom icon-class"></i> Classes and interfaces</h3>
-<div id="database" class="element ajax clickable class">
-<h1>database<a href="../classes/database.html">¶</a>
-</h1>
-<p class="short_description">This is the class database</p>
-<div class="details collapse"></div>
-<a href="../classes/database.html" class="more">« More »</a>
-</div>
-<div id="mysql_database" class="element ajax clickable class">
-<h1>mysql_database<a href="../classes/mysql_database.html">¶</a>
-</h1>
-<p class="short_description">This is the class database</p>
-<div class="details collapse"></div>
-<a href="../classes/mysql_database.html" class="more">« More »</a>
-</div>
-<div id="mysqli_database" class="element ajax clickable class">
-<h1>mysqli_database<a href="../classes/mysqli_database.html">¶</a>
-</h1>
-<p class="short_description">This is the class database</p>
-<div class="details collapse"></div>
-<a href="../classes/mysqli_database.html" class="more">« More »</a>
-</div>
-<div id="postgres_database" class="element ajax clickable class">
-<h1>postgres_database<a href="../classes/postgres_database.html">¶</a>
-</h1>
-<p class="short_description">This is the class database</p>
-<div class="details collapse"></div>
-<a href="../classes/postgres_database.html" class="more">« More »</a>
-</div>
-</div>
-<ul class="breadcrumb"><li>
-<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/Subsystems.html">Subsystems</a></li>
-<li class="active">
-<span class="divider">\</span><a href="../packages/Subsystems.Subsystems.html">Subsystems</a>
-</li>
-</li></ul>
-<div class="package-indent">
-<h3>
-<i title="Classes" class="icon-custom icon-class"></i> Classes and interfaces</h3>
-<div id="expAjaxReply" class="element ajax clickable class">
-<h1>expAjaxReply<a href="../classes/expAjaxReply.html">¶</a>
-</h1>
-<p class="short_description">This is the class expAjaxReply</p>
-<div class="details collapse"></div>
-<a href="../classes/expAjaxReply.html" class="more">« More »</a>
-</div>
-<div id="expBot" class="element ajax clickable class">
-<h1>expBot<a href="../classes/expBot.html">¶</a>
-</h1>
-<p class="short_description">This is the class expBot</p>
-<div class="details collapse"></div>
-<a href="../classes/expBot.html" class="more">« More »</a>
-</div>
-<div id="expCSS" class="element ajax clickable class">
-<h1>expCSS<a href="../classes/expCSS.html">¶</a>
-</h1>
-<p class="short_description">This is the class expCSS</p>
-<div class="details collapse"></div>
-<a href="../classes/expCSS.html" class="more">« More »</a>
-</div>
-<div id="expDatabase" class="element ajax clickable class">
-<h1>expDatabase<a href="../classes/expDatabase.html">¶</a>
-</h1>
-<p class="short_description">This is the expDatabase subsystem
-Handles all database abstraction in Exponent.</p>
-<div class="details collapse"></div>
-<a href="../classes/expDatabase.html" class="more">« More »</a>
-</div>
-<div id="expHistory" class="element ajax clickable class">
-<h1>expHistory<a href="../classes/expHistory.html">¶</a>
-</h1>
-<p class="short_description">This is the class expHistory
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">Exponent v2.3.0</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                                            </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            
+    <div class="row">
+
+        <div class="span4">
+            <div class="btn-group view pull-right" data-toggle="buttons-radio">
+                <button class="btn details" title="Show descriptions and method names">
+                    <i class="icon-list"></i></button><button class="btn simple" title="Show only method names">
+                    <i class="icon-align-justify"></i>
+                </button>
+            </div>
+            <ul class="side-nav nav nav-list">
+                <li class="nav-header">
+                    <i class="icon-map-marker"></i> Packages
+                </li>
+                    
+        <li>
+        <a href="../packages/Subsystems.Subsystems.html" title="Subsystems">
+            <i class="icon-th"></i> Subsystems
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/Subsystems.Database.html" title="Database">
+            <i class="icon-th"></i> Database
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/Subsystems.Database = mysqli.html" title="Database = mysqli">
+            <i class="icon-th"></i> Database = mysqli
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/Subsystems.Database = Postgres.html" title="Database = Postgres">
+            <i class="icon-th"></i> Database = Postgres
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/Subsystems.Database = mysqlid (debug).html" title="Database = mysqlid (debug)">
+            <i class="icon-th"></i> Database = mysqlid (debug)
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+        <li>
+        <a href="../packages/Subsystems.Database = database.html" title="Database = database">
+            <i class="icon-th"></i> Database = database
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+    
+            </ul>
+        </div>
+
+        <div class="span8 package-contents">
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Subsystems.html">Subsystems</a>
+    </li>
+
+    </ul>
+
+    
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-function"></i> Functions</h3>
+                                        <div id="exponent_unhtmlentities" class="element ajax clickable function">
+        <h1>exponent_unhtmlentities<a href="../namespaces/.html#function_exponent_unhtmlentities">¶</a></h1>
+        <p class="short_description">overides function html entity decode</p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#function_exponent_unhtmlentities" class="more">« More »</a>
+    </div>
+
+                            </div>
+        
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-constant"></i> Constants</h3>
+                                        <div id="DISPLAY_THEME" class="element ajax clickable constant">
+        <h1>DISPLAY_THEME<a href="../namespaces/.html#constant_DISPLAY_THEME">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#constant_DISPLAY_THEME" class="more">« More »</a>
+    </div>
+
+                                        <div id="THEME_ABSOLUTE" class="element ajax clickable constant">
+        <h1>THEME_ABSOLUTE<a href="../namespaces/.html#constant_THEME_ABSOLUTE">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#constant_THEME_ABSOLUTE" class="more">« More »</a>
+    </div>
+
+                                        <div id="THEME_RELATIVE" class="element ajax clickable constant">
+        <h1>THEME_RELATIVE<a href="../namespaces/.html#constant_THEME_RELATIVE">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#constant_THEME_RELATIVE" class="more">« More »</a>
+    </div>
+
+                                        <div id="THEME_STYLE" class="element ajax clickable constant">
+        <h1>THEME_STYLE<a href="../namespaces/.html#constant_THEME_STYLE">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#constant_THEME_STYLE" class="more">« More »</a>
+    </div>
+
+                                        <div id="BTN_SIZE" class="element ajax clickable constant">
+        <h1>BTN_SIZE<a href="../namespaces/.html#constant_BTN_SIZE">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#constant_BTN_SIZE" class="more">« More »</a>
+    </div>
+
+                                        <div id="BTN_COLOR" class="element ajax clickable constant">
+        <h1>BTN_COLOR<a href="../namespaces/.html#constant_BTN_COLOR">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#constant_BTN_COLOR" class="more">« More »</a>
+    </div>
+
+                                        <div id="SWATCH" class="element ajax clickable constant">
+        <h1>SWATCH<a href="../namespaces/.html#constant_SWATCH">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#constant_SWATCH" class="more">« More »</a>
+    </div>
+
+                                        <div id="JQUERYUI_THEME" class="element ajax clickable constant">
+        <h1>JQUERYUI_THEME<a href="../namespaces/.html#constant_JQUERYUI_THEME">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#constant_JQUERYUI_THEME" class="more">« More »</a>
+    </div>
+
+                                        <div id="JQUERYUI_CSS" class="element ajax clickable constant">
+        <h1>JQUERYUI_CSS<a href="../namespaces/.html#constant_JQUERYUI_CSS">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#constant_JQUERYUI_CSS" class="more">« More »</a>
+    </div>
+
+                                        <div id="XHTML" class="element ajax clickable constant">
+        <h1>XHTML<a href="../namespaces/.html#constant_XHTML">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#constant_XHTML" class="more">« More »</a>
+    </div>
+
+                                        <div id="XHTML_CLOSING" class="element ajax clickable constant">
+        <h1>XHTML_CLOSING<a href="../namespaces/.html#constant_XHTML_CLOSING">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse"></div>
+        <a href="../namespaces/.html#constant_XHTML_CLOSING" class="more">« More »</a>
+    </div>
+
+                            </div>
+        
+            
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Subsystems.html">Subsystems</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Subsystems.Subsystems.html">Subsystems</a>
+    </li>
+
+    </ul>
+
+    
+        
+        
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-class"></i> Classes, interfaces and traits</h3>
+                
+                
+                                        <div id="expAjaxReply" class="element ajax clickable class">
+        <h1>expAjaxReply<a href="../classes/expAjaxReply.html">¶</a></h1>
+        <p class="short_description">This is the class expAjaxReply</p>
+        <div class="details collapse"></div>
+        <a href="../classes/expAjaxReply.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="expSorter" class="element ajax clickable class">
+        <h1>expSorter<a href="../classes/expSorter.html">¶</a></h1>
+        <p class="short_description">This is the class expSorter</p>
+        <div class="details collapse"></div>
+        <a href="../classes/expSorter.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="expHistory" class="element ajax clickable class">
+        <h1>expHistory<a href="../classes/expHistory.html">¶</a></h1>
+        <p class="short_description">This is the class expHistory
 Exponent History Subsystem</p>
-<div class="details collapse"></div>
-<a href="../classes/expHistory.html" class="more">« More »</a>
-</div>
-<div id="expHtmlToPDF" class="element ajax clickable class">
-<h1>expHtmlToPDF<a href="../classes/expHtmlToPDF.html">¶</a>
-</h1>
-<p class="short_description">This is the class expHtmlToPDF</p>
-<div class="details collapse"></div>
-<a href="../classes/expHtmlToPDF.html" class="more">« More »</a>
-</div>
-<div id="expLDAP" class="element ajax clickable class">
-<h1>expLDAP<a href="../classes/expLDAP.html">¶</a>
-</h1>
-<p class="short_description">This is the class expLDAP</p>
-<div class="details collapse"></div>
-<a href="../classes/expLDAP.html" class="more">« More »</a>
-</div>
-<div id="expModules" class="element ajax clickable class">
-<h1>expModules<a href="../classes/expModules.html">¶</a>
-</h1>
-<p class="short_description">This is the class expModules</p>
-<div class="details collapse"></div>
-<a href="../classes/expModules.html" class="more">« More »</a>
-</div>
-<div id="expPaginator" class="element ajax clickable class">
-<h1>expPaginator<a href="../classes/expPaginator.html">¶</a>
-</h1>
-<p class="short_description">This is the class expPaginator
+        <div class="details collapse">The expHistory class is responsible for keeping track of which pages a user
+has visited while on the site. It also tracks what type of page/view each one is,
+viewable, manageable, editable and uses this information to intelligently route
+the user to proper places.  A developer can also use the methods of this class
+help Exponent know where to route users.
+
+&lt;b&gt;DEFINITIONS&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;viewable&lt;/b&gt; - standard (public) page/view like that for showall, show, etc...&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;manageable&lt;/b&gt; - page/view with list of editable items for management like manage_tags, etc...  Typically you wouldn&#039;t edit in this view&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;editable&lt;/b&gt; - a page/view used to edit an item or settings&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;b&gt;USAGE EXAMPLES:&lt;/b&gt;
+
+&lt;b&gt;Example: How to set a history WayPoint&lt;/b&gt;
+
+This example shows how you would use expHistory to set a waypoint inside one of your actions
+
+&lt;code&gt;
+public function showall() {
+    expHistory::set(&#039;viewable&#039;, $this-&gt;params);
+     $record = new foo($id);
+     assign_to_template(array(&#039;record&#039;=&gt;$record));
+}
+&lt;/code&gt;
+
+&lt;b&gt;Example: Return to a waypoint (automagically)&lt;/b&gt;
+
+This example shows how to let expHistory::back() automagically determine where to route the user after an action completes
+
+&lt;code&gt;
+public function delete() {
+     $record = new foo($id);
+     $record-&gt;delete();
+     expHistory::back();
+}
+&lt;/code&gt;
+
+&lt;b&gt;Example: Return to a waypoint &#039;type&#039; (manually)&lt;/b&gt;
+This example shows how use expHistory::returnTo() to manually route the user after an
+action completes. In this example the user will be routed to the last form he/she was on.
+
+&lt;code&gt;
+public function delete() {
+     $record = new foo($id);
+     $record-&gt;delete();
+     expHistory::returnTo(&#039;editable&#039;);
+}
+&lt;/code&gt;</div>
+        <a href="../classes/expHistory.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="expPaginator" class="element ajax clickable class">
+        <h1>expPaginator<a href="../classes/expPaginator.html">¶</a></h1>
+        <p class="short_description">This is the class expPaginator
 Exponent Pagination Subsystem</p>
-<div class="details collapse"></div>
-<a href="../classes/expPaginator.html" class="more">« More »</a>
-</div>
-<div id="expQueue" class="element ajax clickable class">
-<h1>expQueue<a href="../classes/expQueue.html">¶</a>
-</h1>
-<p class="short_description">This is the class expQueue</p>
-<div class="details collapse"></div>
-<a href="../classes/expQueue.html" class="more">« More »</a>
-</div>
-<div id="expRouter" class="element ajax clickable class">
-<h1>expRouter<a href="../classes/expRouter.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRouter</p>
-<div class="details collapse"></div>
-<a href="../classes/expRouter.html" class="more">« More »</a>
-</div>
-<div id="expSession" class="element ajax clickable class">
-<h1>expSession<a href="../classes/expSession.html">¶</a>
-</h1>
-<p class="short_description">This is the class expSession</p>
-<div class="details collapse"></div>
-<a href="../classes/expSession.html" class="more">« More »</a>
-</div>
-<div id="expSorter" class="element ajax clickable class">
-<h1>expSorter<a href="../classes/expSorter.html">¶</a>
-</h1>
-<p class="short_description">This is the class expSorter</p>
-<div class="details collapse"></div>
-<a href="../classes/expSorter.html" class="more">« More »</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="row"><footer class="span12">
-            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.2.0
-</a> and<br>
-            generated on 2014-02-18T10:31:34-05:00.<br></footer></div>
-</div>
-</body>
+        <div class="details collapse">The expPaginator class is used to retrieve objects from the database
+and paginate them and optionally group the by category.
+It automagically handles the calls to other pages
+and has built-in sorting using the defined column headers.
+
+Usage Example:
+
+&lt;code&gt;
+
+$page = new expPaginator(array(
+     &#039;model&#039;=&gt;&#039;faq&#039;,
+     &#039;where&#039;=&gt;1,
+     &#039;limit&#039;=&gt;25,
+     &#039;order&#039;=&gt;&#039;rank&#039;,
+     &#039;controller&#039;=&gt;$this-&gt;baseclassname,
+     &#039;action&#039;=&gt;$this-&gt;params[&#039;action&#039;],
+     &#039;columns&#039;=&gt;array(&#039;In FAQ&#039;=&gt;&#039;include_in_faq&#039;, &#039;Submitted&#039;=&gt;&#039;created_at&#039;, &#039;Submitted By&#039;=&gt;&#039;submitter_name&#039;),
+ ));
+&lt;/code&gt;</div>
+        <a href="../classes/expPaginator.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="expQueue" class="element ajax clickable class">
+        <h1>expQueue<a href="../classes/expQueue.html">¶</a></h1>
+        <p class="short_description">This is the class expQueue</p>
+        <div class="details collapse"></div>
+        <a href="../classes/expQueue.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="expSession" class="element ajax clickable class">
+        <h1>expSession<a href="../classes/expSession.html">¶</a></h1>
+        <p class="short_description">This is the class expSession</p>
+        <div class="details collapse"></div>
+        <a href="../classes/expSession.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="expModules" class="element ajax clickable class">
+        <h1>expModules<a href="../classes/expModules.html">¶</a></h1>
+        <p class="short_description">This is the class expModules</p>
+        <div class="details collapse"></div>
+        <a href="../classes/expModules.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="expHtmlToPDF" class="element ajax clickable class">
+        <h1>expHtmlToPDF<a href="../classes/expHtmlToPDF.html">¶</a></h1>
+        <p class="short_description">This is the class expHtmlToPDF</p>
+        <div class="details collapse"></div>
+        <a href="../classes/expHtmlToPDF.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="expDatabase" class="element ajax clickable class">
+        <h1>expDatabase<a href="../classes/expDatabase.html">¶</a></h1>
+        <p class="short_description">This is the expDatabase subsystem
+Handles all database abstraction in Exponent.</p>
+        <div class="details collapse"></div>
+        <a href="../classes/expDatabase.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="expRouter" class="element ajax clickable class">
+        <h1>expRouter<a href="../classes/expRouter.html">¶</a></h1>
+        <p class="short_description">This is the class expRouter</p>
+        <div class="details collapse"></div>
+        <a href="../classes/expRouter.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="expCSS" class="element ajax clickable class">
+        <h1>expCSS<a href="../classes/expCSS.html">¶</a></h1>
+        <p class="short_description">This is the class expCSS</p>
+        <div class="details collapse"></div>
+        <a href="../classes/expCSS.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="expBot" class="element ajax clickable class">
+        <h1>expBot<a href="../classes/expBot.html">¶</a></h1>
+        <p class="short_description">This is the class expBot</p>
+        <div class="details collapse"></div>
+        <a href="../classes/expBot.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="expLDAP" class="element ajax clickable class">
+        <h1>expLDAP<a href="../classes/expLDAP.html">¶</a></h1>
+        <p class="short_description">This is the class expLDAP</p>
+        <div class="details collapse"></div>
+        <a href="../classes/expLDAP.html" class="more">« More »</a>
+    </div>
+
+                            </div>
+            
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Subsystems.html">Subsystems</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Subsystems.Database.html">Database</a>
+    </li>
+
+    </ul>
+
+    
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Subsystems.html">Subsystems</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Subsystems.Database = mysqli.html">Database = mysqli</a>
+    </li>
+
+    </ul>
+
+    
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Subsystems.html">Subsystems</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Subsystems.Database = Postgres.html">Database = Postgres</a>
+    </li>
+
+    </ul>
+
+    
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Subsystems.html">Subsystems</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Subsystems.Database = mysqlid (debug).html">Database = mysqlid (debug)</a>
+    </li>
+
+    </ul>
+
+    
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Subsystems.html">Subsystems</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Subsystems.Database = database.html">Database = database</a>
+    </li>
+
+    </ul>
+
+    
+        
+        
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-class"></i> Classes, interfaces and traits</h3>
+                
+                
+                                        <div id="database" class="element ajax clickable class">
+        <h1>database<a href="../classes/database.html">¶</a></h1>
+        <p class="short_description">This is the class database</p>
+        <div class="details collapse">This is the generic implementation of the database class.</div>
+        <a href="../classes/database.html" class="more">« More »</a>
+    </div>
+
+                            </div>
+            
+    
+    
+        </div>
+    </div>
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Tue, 08 Apr 2014 02:28:15 +0000.<br/>
+    </footer>
+    </body>
 </html>

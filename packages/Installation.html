@@ -1,413 +1,170 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-<meta charset="utf-8">
-<title>Exponent v2.2.4 » Installation</title>
-<meta name="author" content="Mike van Riel">
-<meta name="description" content="">
-<link href="../css/template.css" rel="stylesheet" media="all">
-<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
-<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>     &raquo; \Installation
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
 <body>
-<div class="navbar navbar-fixed-top">
-<div class="navbar-inner"><div class="container">
-<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent v2.2.4</a><div class="nav-collapse"><ul class="nav">
-<li class="dropdown">
-<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
-                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a>Namespaces</a></li>
-<li><a href="../namespaces/Composer.html"><i class="icon-th"></i> Composer</a></li>
-<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
-<li><a>Packages</a></li>
-<li><a href="../packages/Connectors.html"><i class="icon-folder-open"></i> Connectors</a></li>
-<li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
-<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
-<li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
-<li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
-<li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
-<li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
-<li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
-<li><a href="../packages/elFinder.html"><i class="icon-folder-open"></i> elFinder</a></li>
-</ul>
-</li>
-<li class="dropdown" id="charts-menu">
-<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
-                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
-</li>
-<li class="dropdown" id="reports-menu">
-<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
-                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">5017</span></a></li>
-<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
-                <ul></ul></a></li>
-<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">0</span></a></li>
-</ul>
-</li>
-</ul></div>
-</div></div>
-<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
-</div>
-<div id="___" class="container">
-<noscript><div class="alert alert-warning">
-                            Javascript is disabled; several features are only available
-                            if Javascript is enabled.
-                        </div></noscript>
-<div class="row">
-<div class="span4">
-<div class="btn-group view pull-right" data-toggle="buttons-radio">
-<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
-</div>
-<ul class="side-nav nav nav-list">
-<li class="nav-header">
-<i class="icon-map-marker"></i> Packages</li>
-<li>
-<a href="../packages/Installation.html" title="Installation"><i class="icon-folder-open"></i>Installation</a><ul class="nav nav-list nav-packages"></ul>
-</li>
-<li class="nav-header">
-<i title="Classes" class="icon-custom icon-class"></i> Classes</li>
-<li><a href="#invert_news_items_rank" title="This is the class invert_news_items_rank">invert_news_items_rank</a></li>
-<li><a href="#upgrade_navigation" title="This is the class upgrade_navigation">upgrade_navigation</a></li>
-<li><a href="#update_root_user" title="This is the class update_root_user">update_root_user</a></li>
-<li><a href="#update_ckeditorv4" title="This is the class update_ckeditorv4">update_ckeditorv4</a></li>
-<li><a href="#update_ecom2" title="This is the class update_ecom2">update_ecom2</a></li>
-<li><a href="#fix_sectionref" title="This is the class fix_sectionref">fix_sectionref</a></li>
-<li><a href="#fix_table_names" title="This is the class fix_table_names">fix_table_names</a></li>
-<li><a href="#clean_modstate" title="This is the class clean_modstate">clean_modstate</a></li>
-<li><a href="#add_blog_published" title="This is the class add_blog_published">add_blog_published</a></li>
-<li><a href="#upgrade_forms" title="This is the class upgrade_forms">upgrade_forms</a></li>
-<li><a href="#convert_permissions" title="This is the class convert_permissions">convert_permissions</a></li>
-<li><a href="#update_page_ranks" title="This is the class update_page_ranks">update_page_ranks</a></li>
-<li><a href="#clear_cache" title="This is the class clear_cache">clear_cache</a></li>
-<li><a href="#upgrade_calendar" title="This is the class upgrade_calendar">upgrade_calendar</a></li>
-<li><a href="#fix_photo_module" title="This is the class fix_photo_module">fix_photo_module</a></li>
-<li><a href="#add_filedownload_published" title="This is the class add_filedownload_published">add_filedownload_published</a></li>
-<li><a href="#update_profile_paths" title="This is the class update_profile_paths">update_profile_paths</a></li>
-<li><a href="#fix_text_tabbedview" title="This is the class fix_text_tabbedview">fix_text_tabbedview</a></li>
-<li><a href="#update_rssfeeds" title="This is the class update_rssfeeds">update_rssfeeds</a></li>
-<li><a href="#upgrade_container2" title="This is the class upgrade_container2">upgrade_container2</a></li>
-<li><a href="#update_countdown" title="This is the class update_countdown">update_countdown</a></li>
-<li><a href="#update_ecom" title="This is the class update_ecom">update_ecom</a></li>
-<li><a href="#version_tracking" title="This is the class version_tracking">version_tracking</a></li>
-<li><a href="#update_event_registration" title="This is the class update_event_registration">update_event_registration</a></li>
-<li><a href="#remove_oldfiles" title="This is the class remove_oldfiles">remove_oldfiles</a></li>
-<li><a href="#upgrade_simplepoll" title="This is the class upgrade_simplepoll">upgrade_simplepoll</a></li>
-<li><a href="#upgrade_mediaplayer" title="This is the class upgrade_mediaplayer">upgrade_mediaplayer</a></li>
-<li><a href="#upgrade_sermonseries" title="This is the class upgrade_sermonseries">upgrade_sermonseries</a></li>
-<li><a href="#update_ealerts" title="This is the class update_ealerts">update_ealerts</a></li>
-<li><a href="#fix_database" title="This is the class fix_database">fix_database</a></li>
-<li><a href="#remove_headlinecontroller" title="This is the class remove_headlinecontroller">remove_headlinecontroller</a></li>
-<li><a href="#remove_global_categories" title="This is the class remove_global_categories">remove_global_categories</a></li>
-<li><a href="#remove_oldtables" title="This is the class remove_oldtables">remove_oldtables</a></li>
-<li><a href="#fix_faq_filedownload_modules" title="This is the class fix_faq_filedownload_modules">fix_faq_filedownload_modules</a></li>
-<li><a href="#add_file_posted" title="This is the class add_file_posted">add_file_posted</a></li>
-<li><a href="#upgradescript" title="This is the abstract class upgradescript">upgradescript</a></li>
-<li><a href="#fix_forms" title="This is the class fix_forms">fix_forms</a></li>
-<li><a href="#update_corecss" title="This is the class update_corecss">update_corecss</a></li>
-<li><a href="#update_mediaplayer" title="This is the class update_mediaplayer">update_mediaplayer</a></li>
-<li><a href="#upgrade_mediaplayer2" title="This is the class upgrade_mediaplayer2">upgrade_mediaplayer2</a></li>
-</ul>
-</div>
-<div class="span8 package-contents">
-<ul class="breadcrumb"><li>
-<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li class="active"><a href="../packages/Installation.html">Installation</a></li>
-</li></ul>
-<div class="package-indent">
-<h3>
-<i title="Classes" class="icon-custom icon-class"></i> Classes and interfaces</h3>
-<div id="add_blog_published" class="element ajax clickable class">
-<h1>add_blog_published<a href="../classes/add_blog_published.html">¶</a>
-</h1>
-<p class="short_description">This is the class add_blog_published</p>
-<div class="details collapse"></div>
-<a href="../classes/add_blog_published.html" class="more">« More »</a>
-</div>
-<div id="add_file_posted" class="element ajax clickable class">
-<h1>add_file_posted<a href="../classes/add_file_posted.html">¶</a>
-</h1>
-<p class="short_description">This is the class add_file_posted</p>
-<div class="details collapse"></div>
-<a href="../classes/add_file_posted.html" class="more">« More »</a>
-</div>
-<div id="add_filedownload_published" class="element ajax clickable class">
-<h1>add_filedownload_published<a href="../classes/add_filedownload_published.html">¶</a>
-</h1>
-<p class="short_description">This is the class add_filedownload_published</p>
-<div class="details collapse"></div>
-<a href="../classes/add_filedownload_published.html" class="more">« More »</a>
-</div>
-<div id="clean_modstate" class="element ajax clickable class">
-<h1>clean_modstate<a href="../classes/clean_modstate.html">¶</a>
-</h1>
-<p class="short_description">This is the class clean_modstate</p>
-<div class="details collapse"></div>
-<a href="../classes/clean_modstate.html" class="more">« More »</a>
-</div>
-<div id="clear_cache" class="element ajax clickable class">
-<h1>clear_cache<a href="../classes/clear_cache.html">¶</a>
-</h1>
-<p class="short_description">This is the class clear_cache</p>
-<div class="details collapse"></div>
-<a href="../classes/clear_cache.html" class="more">« More »</a>
-</div>
-<div id="convert_permissions" class="element ajax clickable class">
-<h1>convert_permissions<a href="../classes/convert_permissions.html">¶</a>
-</h1>
-<p class="short_description">This is the class convert_permissions</p>
-<div class="details collapse"></div>
-<a href="../classes/convert_permissions.html" class="more">« More »</a>
-</div>
-<div id="fix_database" class="element ajax clickable class">
-<h1>fix_database<a href="../classes/fix_database.html">¶</a>
-</h1>
-<p class="short_description">This is the class fix_database</p>
-<div class="details collapse"></div>
-<a href="../classes/fix_database.html" class="more">« More »</a>
-</div>
-<div id="fix_faq_filedownload_modules" class="element ajax clickable class">
-<h1>fix_faq_filedownload_modules<a href="../classes/fix_faq_filedownload_modules.html">¶</a>
-</h1>
-<p class="short_description">This is the class fix_faq_filedownload_modules</p>
-<div class="details collapse"></div>
-<a href="../classes/fix_faq_filedownload_modules.html" class="more">« More »</a>
-</div>
-<div id="fix_forms" class="element ajax clickable class">
-<h1>fix_forms<a href="../classes/fix_forms.html">¶</a>
-</h1>
-<p class="short_description">This is the class fix_forms</p>
-<div class="details collapse"></div>
-<a href="../classes/fix_forms.html" class="more">« More »</a>
-</div>
-<div id="fix_photo_module" class="element ajax clickable class">
-<h1>fix_photo_module<a href="../classes/fix_photo_module.html">¶</a>
-</h1>
-<p class="short_description">This is the class fix_photo_module</p>
-<div class="details collapse"></div>
-<a href="../classes/fix_photo_module.html" class="more">« More »</a>
-</div>
-<div id="fix_sectionref" class="element ajax clickable class">
-<h1>fix_sectionref<a href="../classes/fix_sectionref.html">¶</a>
-</h1>
-<p class="short_description">This is the class fix_sectionref</p>
-<div class="details collapse"></div>
-<a href="../classes/fix_sectionref.html" class="more">« More »</a>
-</div>
-<div id="fix_table_names" class="element ajax clickable class">
-<h1>fix_table_names<a href="../classes/fix_table_names.html">¶</a>
-</h1>
-<p class="short_description">This is the class fix_table_names</p>
-<div class="details collapse"></div>
-<a href="../classes/fix_table_names.html" class="more">« More »</a>
-</div>
-<div id="fix_text_tabbedview" class="element ajax clickable class">
-<h1>fix_text_tabbedview<a href="../classes/fix_text_tabbedview.html">¶</a>
-</h1>
-<p class="short_description">This is the class fix_text_tabbedview</p>
-<div class="details collapse"></div>
-<a href="../classes/fix_text_tabbedview.html" class="more">« More »</a>
-</div>
-<div id="invert_news_items_rank" class="element ajax clickable class">
-<h1>invert_news_items_rank<a href="../classes/invert_news_items_rank.html">¶</a>
-</h1>
-<p class="short_description">This is the class invert_news_items_rank</p>
-<div class="details collapse"></div>
-<a href="../classes/invert_news_items_rank.html" class="more">« More »</a>
-</div>
-<div id="remove_global_categories" class="element ajax clickable class">
-<h1>remove_global_categories<a href="../classes/remove_global_categories.html">¶</a>
-</h1>
-<p class="short_description">This is the class remove_global_categories</p>
-<div class="details collapse"></div>
-<a href="../classes/remove_global_categories.html" class="more">« More »</a>
-</div>
-<div id="remove_headlinecontroller" class="element ajax clickable class">
-<h1>remove_headlinecontroller<a href="../classes/remove_headlinecontroller.html">¶</a>
-</h1>
-<p class="short_description">This is the class remove_headlinecontroller</p>
-<div class="details collapse"></div>
-<a href="../classes/remove_headlinecontroller.html" class="more">« More »</a>
-</div>
-<div id="remove_oldfiles" class="element ajax clickable class">
-<h1>remove_oldfiles<a href="../classes/remove_oldfiles.html">¶</a>
-</h1>
-<p class="short_description">This is the class remove_oldfiles</p>
-<div class="details collapse"></div>
-<a href="../classes/remove_oldfiles.html" class="more">« More »</a>
-</div>
-<div id="remove_oldtables" class="element ajax clickable class">
-<h1>remove_oldtables<a href="../classes/remove_oldtables.html">¶</a>
-</h1>
-<p class="short_description">This is the class remove_oldtables</p>
-<div class="details collapse"></div>
-<a href="../classes/remove_oldtables.html" class="more">« More »</a>
-</div>
-<div id="update_ckeditorv4" class="element ajax clickable class">
-<h1>update_ckeditorv4<a href="../classes/update_ckeditorv4.html">¶</a>
-</h1>
-<p class="short_description">This is the class update_ckeditorv4</p>
-<div class="details collapse"></div>
-<a href="../classes/update_ckeditorv4.html" class="more">« More »</a>
-</div>
-<div id="update_corecss" class="element ajax clickable class">
-<h1>update_corecss<a href="../classes/update_corecss.html">¶</a>
-</h1>
-<p class="short_description">This is the class update_corecss</p>
-<div class="details collapse"></div>
-<a href="../classes/update_corecss.html" class="more">« More »</a>
-</div>
-<div id="update_countdown" class="element ajax clickable class">
-<h1>update_countdown<a href="../classes/update_countdown.html">¶</a>
-</h1>
-<p class="short_description">This is the class update_countdown</p>
-<div class="details collapse"></div>
-<a href="../classes/update_countdown.html" class="more">« More »</a>
-</div>
-<div id="update_ealerts" class="element ajax clickable class">
-<h1>update_ealerts<a href="../classes/update_ealerts.html">¶</a>
-</h1>
-<p class="short_description">This is the class update_ealerts</p>
-<div class="details collapse"></div>
-<a href="../classes/update_ealerts.html" class="more">« More »</a>
-</div>
-<div id="update_ecom" class="element ajax clickable class">
-<h1>update_ecom<a href="../classes/update_ecom.html">¶</a>
-</h1>
-<p class="short_description">This is the class update_ecom</p>
-<div class="details collapse"></div>
-<a href="../classes/update_ecom.html" class="more">« More »</a>
-</div>
-<div id="update_ecom2" class="element ajax clickable class">
-<h1>update_ecom2<a href="../classes/update_ecom2.html">¶</a>
-</h1>
-<p class="short_description">This is the class update_ecom2</p>
-<div class="details collapse"></div>
-<a href="../classes/update_ecom2.html" class="more">« More »</a>
-</div>
-<div id="update_event_registration" class="element ajax clickable class">
-<h1>update_event_registration<a href="../classes/update_event_registration.html">¶</a>
-</h1>
-<p class="short_description">This is the class update_event_registration</p>
-<div class="details collapse"></div>
-<a href="../classes/update_event_registration.html" class="more">« More »</a>
-</div>
-<div id="update_mediaplayer" class="element ajax clickable class">
-<h1>update_mediaplayer<a href="../classes/update_mediaplayer.html">¶</a>
-</h1>
-<p class="short_description">This is the class update_mediaplayer</p>
-<div class="details collapse"></div>
-<a href="../classes/update_mediaplayer.html" class="more">« More »</a>
-</div>
-<div id="update_page_ranks" class="element ajax clickable class">
-<h1>update_page_ranks<a href="../classes/update_page_ranks.html">¶</a>
-</h1>
-<p class="short_description">This is the class update_page_ranks</p>
-<div class="details collapse"></div>
-<a href="../classes/update_page_ranks.html" class="more">« More »</a>
-</div>
-<div id="update_profile_paths" class="element ajax clickable class">
-<h1>update_profile_paths<a href="../classes/update_profile_paths.html">¶</a>
-</h1>
-<p class="short_description">This is the class update_profile_paths</p>
-<div class="details collapse"></div>
-<a href="../classes/update_profile_paths.html" class="more">« More »</a>
-</div>
-<div id="update_root_user" class="element ajax clickable class">
-<h1>update_root_user<a href="../classes/update_root_user.html">¶</a>
-</h1>
-<p class="short_description">This is the class update_root_user</p>
-<div class="details collapse"></div>
-<a href="../classes/update_root_user.html" class="more">« More »</a>
-</div>
-<div id="update_rssfeeds" class="element ajax clickable class">
-<h1>update_rssfeeds<a href="../classes/update_rssfeeds.html">¶</a>
-</h1>
-<p class="short_description">This is the class update_rssfeeds</p>
-<div class="details collapse"></div>
-<a href="../classes/update_rssfeeds.html" class="more">« More »</a>
-</div>
-<div id="upgrade_calendar" class="element ajax clickable class">
-<h1>upgrade_calendar<a href="../classes/upgrade_calendar.html">¶</a>
-</h1>
-<p class="short_description">This is the class upgrade_calendar</p>
-<div class="details collapse"></div>
-<a href="../classes/upgrade_calendar.html" class="more">« More »</a>
-</div>
-<div id="upgrade_container2" class="element ajax clickable class">
-<h1>upgrade_container2<a href="../classes/upgrade_container2.html">¶</a>
-</h1>
-<p class="short_description">This is the class upgrade_container2</p>
-<div class="details collapse"></div>
-<a href="../classes/upgrade_container2.html" class="more">« More »</a>
-</div>
-<div id="upgrade_forms" class="element ajax clickable class">
-<h1>upgrade_forms<a href="../classes/upgrade_forms.html">¶</a>
-</h1>
-<p class="short_description">This is the class upgrade_forms</p>
-<div class="details collapse"></div>
-<a href="../classes/upgrade_forms.html" class="more">« More »</a>
-</div>
-<div id="upgrade_mediaplayer" class="element ajax clickable class">
-<h1>upgrade_mediaplayer<a href="../classes/upgrade_mediaplayer.html">¶</a>
-</h1>
-<p class="short_description">This is the class upgrade_mediaplayer</p>
-<div class="details collapse"></div>
-<a href="../classes/upgrade_mediaplayer.html" class="more">« More »</a>
-</div>
-<div id="upgrade_mediaplayer2" class="element ajax clickable class">
-<h1>upgrade_mediaplayer2<a href="../classes/upgrade_mediaplayer2.html">¶</a>
-</h1>
-<p class="short_description">This is the class upgrade_mediaplayer2</p>
-<div class="details collapse"></div>
-<a href="../classes/upgrade_mediaplayer2.html" class="more">« More »</a>
-</div>
-<div id="upgrade_navigation" class="element ajax clickable class">
-<h1>upgrade_navigation<a href="../classes/upgrade_navigation.html">¶</a>
-</h1>
-<p class="short_description">This is the class upgrade_navigation</p>
-<div class="details collapse"></div>
-<a href="../classes/upgrade_navigation.html" class="more">« More »</a>
-</div>
-<div id="upgrade_sermonseries" class="element ajax clickable class">
-<h1>upgrade_sermonseries<a href="../classes/upgrade_sermonseries.html">¶</a>
-</h1>
-<p class="short_description">This is the class upgrade_sermonseries</p>
-<div class="details collapse"></div>
-<a href="../classes/upgrade_sermonseries.html" class="more">« More »</a>
-</div>
-<div id="upgrade_simplepoll" class="element ajax clickable class">
-<h1>upgrade_simplepoll<a href="../classes/upgrade_simplepoll.html">¶</a>
-</h1>
-<p class="short_description">This is the class upgrade_simplepoll</p>
-<div class="details collapse"></div>
-<a href="../classes/upgrade_simplepoll.html" class="more">« More »</a>
-</div>
-<div id="upgradescript" class="element ajax clickable class">
-<h1>upgradescript<a href="../classes/upgradescript.html">¶</a>
-</h1>
-<p class="short_description">This is the abstract class upgradescript</p>
-<div class="details collapse"></div>
-<a href="../classes/upgradescript.html" class="more">« More »</a>
-</div>
-<div id="version_tracking" class="element ajax clickable class">
-<h1>version_tracking<a href="../classes/version_tracking.html">¶</a>
-</h1>
-<p class="short_description">This is the class version_tracking</p>
-<div class="details collapse"></div>
-<a href="../classes/version_tracking.html" class="more">« More »</a>
-</div>
-</div>
-</div>
-</div>
-<div class="row"><footer class="span12">
-            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.2.0
-</a> and<br>
-            generated on 2014-02-18T10:31:34-05:00.<br></footer></div>
-</div>
-</body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">Exponent v2.3.0</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                                            </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            
+    <div class="row">
+
+        <div class="span4">
+            <div class="btn-group view pull-right" data-toggle="buttons-radio">
+                <button class="btn details" title="Show descriptions and method names">
+                    <i class="icon-list"></i></button><button class="btn simple" title="Show only method names">
+                    <i class="icon-align-justify"></i>
+                </button>
+            </div>
+            <ul class="side-nav nav nav-list">
+                <li class="nav-header">
+                    <i class="icon-map-marker"></i> Packages
+                </li>
+                    
+        <li>
+        <a href="../packages/Installation.Upgrade.html" title="Upgrade">
+            <i class="icon-th"></i> Upgrade
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+    
+            </ul>
+        </div>
+
+        <div class="span8 package-contents">
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Installation.html">Installation</a>
+    </li>
+
+    </ul>
+
+    
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Installation.html">Installation</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Installation.Upgrade.html">Upgrade</a>
+    </li>
+
+    </ul>
+
+    
+    
+    
+        </div>
+    </div>
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Tue, 08 Apr 2014 02:28:15 +0000.<br/>
+    </footer>
+    </body>
 </html>

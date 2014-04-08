@@ -1,538 +1,546 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-<meta charset="utf-8">
-<title>Exponent v2.2.4 » Core\Models</title>
-<meta name="author" content="Mike van Riel">
-<meta name="description" content="">
-<link href="../css/template.css" rel="stylesheet" media="all">
-<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
-<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>     &raquo; \Core\Models
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
 <body>
-<div class="navbar navbar-fixed-top">
-<div class="navbar-inner"><div class="container">
-<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent v2.2.4</a><div class="nav-collapse"><ul class="nav">
-<li class="dropdown">
-<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
-                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a>Namespaces</a></li>
-<li><a href="../namespaces/Composer.html"><i class="icon-th"></i> Composer</a></li>
-<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
-<li><a>Packages</a></li>
-<li><a href="../packages/Connectors.html"><i class="icon-folder-open"></i> Connectors</a></li>
-<li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
-<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
-<li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
-<li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
-<li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
-<li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
-<li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
-<li><a href="../packages/elFinder.html"><i class="icon-folder-open"></i> elFinder</a></li>
-</ul>
-</li>
-<li class="dropdown" id="charts-menu">
-<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
-                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
-</li>
-<li class="dropdown" id="reports-menu">
-<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
-                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">5017</span></a></li>
-<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
-                <ul></ul></a></li>
-<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">0</span></a></li>
-</ul>
-</li>
-</ul></div>
-</div></div>
-<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
-</div>
-<div id="___" class="container">
-<noscript><div class="alert alert-warning">
-                            Javascript is disabled; several features are only available
-                            if Javascript is enabled.
-                        </div></noscript>
-<div class="row">
-<div class="span4">
-<div class="btn-group view pull-right" data-toggle="buttons-radio">
-<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
-</div>
-<ul class="side-nav nav nav-list">
-<li class="nav-header">
-<i class="icon-map-marker"></i> Packages</li>
-<li>
-<a href="../packages/Core.Models.html" title="Models"><i class="icon-folder-open"></i>Models</a><ul class="nav nav-list nav-packages"></ul>
-</li>
-<li class="nav-header">
-<i title="Classes" class="icon-custom icon-class"></i> Classes</li>
-<li><a href="#option" title="This is the class expRecord">option</a></li>
-<li><a href="#sales_rep" title="This is the class expRecord">sales_rep</a></li>
-<li><a href="#external_address" title="This is the class expRecord">external_address</a></li>
-<li><a href="#shippingcalculator" title="This is the class expRecord">shippingcalculator</a></li>
-<li><a href="#shipping" title="This is the class expRecord">shipping</a></li>
-<li><a href="#order_type" title="This is the class expRecord">order_type</a></li>
-<li><a href="#billingtransaction" title="This is the class expRecord">billingtransaction</a></li>
-<li><a href="#expConfig" title="This is the class expCoonfig">expConfig</a></li>
-<li><a href="#order_status" title="This is the class expRecord">order_status</a></li>
-<li><a href="#geoCountry" title="This is the class expRecord">geoCountry</a></li>
-<li><a href="#vendor" title="This is the class expRecord">vendor</a></li>
-<li><a href="#optiongroup_master" title="This is the class expRecord">optiongroup_master</a></li>
-<li><a href="#expFile" title="Class to handle files at the File System Level and updating
-the record for each file.">expFile</a></li>
-<li><a href="#option_master" title="This is the class expRecord">option_master</a></li>
-<li><a href="#expTag" title="This is the class expTag">expTag</a></li>
-<li><a href="#expDefinableField" title="This is the class expDefinableField">expDefinableField</a></li>
-<li><a href="#product_status" title="This is the class expRecord">product_status</a></li>
-<li><a href="#storeCategoryFeeds" title="This is the class expNestedNode">storeCategoryFeeds</a></li>
-<li><a href="#purchase_order" title="This is the class expRecord">purchase_order</a></li>
-<li><a href="#groupdiscounts" title="This is the class expRecord">groupdiscounts</a></li>
-<li><a href="#shopzilla_product_types" title="This is the class expNestedNode">shopzilla_product_types</a></li>
-<li><a href="#expRecord" title="This is the class expRecord">expRecord</a></li>
-<li><a href="#promocodes" title="This is the class expRecord">promocodes</a></li>
-<li><a href="#keywords" title="">keywords</a></li>
-<li><a href="#billingmethod" title="This is the class expRecord">billingmethod</a></li>
-<li><a href="#billingcalculator" title="This is the class expRecord">billingcalculator</a></li>
-<li><a href="#optiongroup" title="This is the class expRecord">optiongroup</a></li>
-<li><a href="#shopping_product_types" title="This is the class expNestedNode">shopping_product_types</a></li>
-<li><a href="#discounts" title="This is the class expRecord">discounts</a></li>
-<li><a href="#product_type" title="This is the class expNestedNode">product_type</a></li>
-<li><a href="#ecomconfig" title="This is the class expCoonfig">ecomconfig</a></li>
-<li><a href="#model_alias" title="This is the class expRecord">model_alias</a></li>
-<li><a href="#order_status_messages" title="This is the class expRecord">order_status_messages</a></li>
-<li><a href="#nextag_product_types" title="This is the class expNestedNode">nextag_product_types</a></li>
-<li><a href="#expComment" title="This is the class expComment">expComment</a></li>
-<li><a href="#product_notes" title="This is the class expRecord">product_notes</a></li>
-<li><a href="#childProduct" title="This is the class expRecord">childProduct</a></li>
-<li><a href="#expNestedNode" title="This is the class expNestedNode">expNestedNode</a></li>
-<li><a href="#bing_product_types" title="This is the class expNestedNode">bing_product_types</a></li>
-<li><a href="#storeCategory" title="This is the class expNestedNode">storeCategory</a></li>
-<li><a href="#expSimpleNote" title="This is the class expSimpleNote">expSimpleNote</a></li>
-<li><a href="#expRating" title="This is the class expRating">expRating</a></li>
-<li><a href="#order" title="This is the class expRecord">order</a></li>
-<li><a href="#crosssellItem" title="This is the class expRecord">crosssellItem</a></li>
-<li><a href="#taxclass" title="This is the class expRecord">taxclass</a></li>
-<li><a href="#google_product_types" title="This is the class expNestedNode">google_product_types</a></li>
-<li><a href="#order_status_changes" title="This is the class expRecord">order_status_changes</a></li>
-<li><a href="#billing" title="This is the class expRecord">billing</a></li>
-<li><a href="#shippingspeeds" title="This is the class expRecord">shippingspeeds</a></li>
-<li><a href="#expCat" title="This is the class expCat">expCat</a></li>
-<li><a href="#shippingmethod" title="This is the class expRecord">shippingmethod</a></li>
-<li><a href="#geoRegion" title="This is the class expRecord">geoRegion</a></li>
-<li><a href="#pricegrabber_product_types" title="This is the class expNestedNode">pricegrabber_product_types</a></li>
-<li><a href="#order_discounts" title="This is the class expRecord">order_discounts</a></li>
-<li><a href="#orderitem" title="This is the class expRecord">orderitem</a></li>
-</ul>
-</div>
-<div class="span8 package-contents">
-<ul class="breadcrumb"><li>
-<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/Core.html">Core</a></li>
-<li class="active">
-<span class="divider">\</span><a href="../packages/Core.Models.html">Models</a>
-</li>
-</li></ul>
-<div class="package-indent">
-<h3>
-<i title="Classes" class="icon-custom icon-class"></i> Classes and interfaces</h3>
-<div id="billing" class="element ajax clickable class">
-<h1>billing<a href="../classes/billing.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/billing.html" class="more">« More »</a>
-</div>
-<div id="billingcalculator" class="element ajax clickable class">
-<h1>billingcalculator<a href="../classes/billingcalculator.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/billingcalculator.html" class="more">« More »</a>
-</div>
-<div id="billingmethod" class="element ajax clickable class">
-<h1>billingmethod<a href="../classes/billingmethod.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/billingmethod.html" class="more">« More »</a>
-</div>
-<div id="billingtransaction" class="element ajax clickable class">
-<h1>billingtransaction<a href="../classes/billingtransaction.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/billingtransaction.html" class="more">« More »</a>
-</div>
-<div id="bing_product_types" class="element ajax clickable class">
-<h1>bing_product_types<a href="../classes/bing_product_types.html">¶</a>
-</h1>
-<p class="short_description">This is the class expNestedNode</p>
-<div class="details collapse"></div>
-<a href="../classes/bing_product_types.html" class="more">« More »</a>
-</div>
-<div id="childProduct" class="element ajax clickable class">
-<h1>childProduct<a href="../classes/childProduct.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/childProduct.html" class="more">« More »</a>
-</div>
-<div id="crosssellItem" class="element ajax clickable class">
-<h1>crosssellItem<a href="../classes/crosssellItem.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/crosssellItem.html" class="more">« More »</a>
-</div>
-<div id="discounts" class="element ajax clickable class">
-<h1>discounts<a href="../classes/discounts.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/discounts.html" class="more">« More »</a>
-</div>
-<div id="ecomconfig" class="element ajax clickable class">
-<h1>ecomconfig<a href="../classes/ecomconfig.html">¶</a>
-</h1>
-<p class="short_description">This is the class expCoonfig</p>
-<div class="details collapse"></div>
-<a href="../classes/ecomconfig.html" class="more">« More »</a>
-</div>
-<div id="expCat" class="element ajax clickable class">
-<h1>expCat<a href="../classes/expCat.html">¶</a>
-</h1>
-<p class="short_description">This is the class expCat</p>
-<div class="details collapse"></div>
-<a href="../classes/expCat.html" class="more">« More »</a>
-</div>
-<div id="expComment" class="element ajax clickable class">
-<h1>expComment<a href="../classes/expComment.html">¶</a>
-</h1>
-<p class="short_description">This is the class expComment</p>
-<div class="details collapse"></div>
-<a href="../classes/expComment.html" class="more">« More »</a>
-</div>
-<div id="expConfig" class="element ajax clickable class">
-<h1>expConfig<a href="../classes/expConfig.html">¶</a>
-</h1>
-<p class="short_description">This is the class expCoonfig</p>
-<div class="details collapse"></div>
-<a href="../classes/expConfig.html" class="more">« More »</a>
-</div>
-<div id="expDefinableField" class="element ajax clickable class">
-<h1>expDefinableField<a href="../classes/expDefinableField.html">¶</a>
-</h1>
-<p class="short_description">This is the class expDefinableField</p>
-<div class="details collapse"></div>
-<a href="../classes/expDefinableField.html" class="more">« More »</a>
-</div>
-<div id="expFile" class="element ajax clickable class">
-<h1>expFile<a href="../classes/expFile.html">¶</a>
-</h1>
-<p class="short_description">Class to handle files at the File System Level and updating
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">Exponent v2.3.0</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                                            </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            
+    <div class="row">
+
+        <div class="span4">
+            <div class="btn-group view pull-right" data-toggle="buttons-radio">
+                <button class="btn details" title="Show descriptions and method names">
+                    <i class="icon-list"></i></button><button class="btn simple" title="Show only method names">
+                    <i class="icon-align-justify"></i>
+                </button>
+            </div>
+            <ul class="side-nav nav nav-list">
+                <li class="nav-header">
+                    <i class="icon-map-marker"></i> Packages
+                </li>
+                    
+    
+            </ul>
+        </div>
+
+        <div class="span8 package-contents">
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Core.html">Core</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Core.Models.html">Models</a>
+    </li>
+
+    </ul>
+
+    
+        
+        
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-class"></i> Classes, interfaces and traits</h3>
+                
+                
+                                        <div id="option" class="element ajax clickable class">
+        <h1>option<a href="../classes/option.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/option.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="sales_rep" class="element ajax clickable class">
+        <h1>sales_rep<a href="../classes/sales_rep.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/sales_rep.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="shippingcalculator" class="element ajax clickable class">
+        <h1>shippingcalculator<a href="../classes/shippingcalculator.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/shippingcalculator.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="external_address" class="element ajax clickable class">
+        <h1>external_address<a href="../classes/external_address.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/external_address.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="shipping" class="element ajax clickable class">
+        <h1>shipping<a href="../classes/shipping.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/shipping.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="order_type" class="element ajax clickable class">
+        <h1>order_type<a href="../classes/order_type.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/order_type.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="billingtransaction" class="element ajax clickable class">
+        <h1>billingtransaction<a href="../classes/billingtransaction.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/billingtransaction.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="expConfig" class="element ajax clickable class">
+        <h1>expConfig<a href="../classes/expConfig.html">¶</a></h1>
+        <p class="short_description">This is the class expCoonfig</p>
+        <div class="details collapse"></div>
+        <a href="../classes/expConfig.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="order_status" class="element ajax clickable class">
+        <h1>order_status<a href="../classes/order_status.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/order_status.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="geoCountry" class="element ajax clickable class">
+        <h1>geoCountry<a href="../classes/geoCountry.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/geoCountry.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="vendor" class="element ajax clickable class">
+        <h1>vendor<a href="../classes/vendor.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/vendor.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="optiongroup_master" class="element ajax clickable class">
+        <h1>optiongroup_master<a href="../classes/optiongroup_master.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/optiongroup_master.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="expFile" class="element ajax clickable class">
+        <h1>expFile<a href="../classes/expFile.html">¶</a></h1>
+        <p class="short_description">Class to handle files at the File System Level and updating
 the record for each file.</p>
-<div class="details collapse"></div>
-<a href="../classes/expFile.html" class="more">« More »</a>
-</div>
-<div id="expNestedNode" class="element ajax clickable class">
-<h1>expNestedNode<a href="../classes/expNestedNode.html">¶</a>
-</h1>
-<p class="short_description">This is the class expNestedNode</p>
-<div class="details collapse"></div>
-<a href="../classes/expNestedNode.html" class="more">« More »</a>
-</div>
-<div id="expRating" class="element ajax clickable class">
-<h1>expRating<a href="../classes/expRating.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRating</p>
-<div class="details collapse"></div>
-<a href="../classes/expRating.html" class="more">« More »</a>
-</div>
-<div id="expRecord" class="element ajax clickable class">
-<h1>expRecord<a href="../classes/expRecord.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/expRecord.html" class="more">« More »</a>
-</div>
-<div id="expSimpleNote" class="element ajax clickable class">
-<h1>expSimpleNote<a href="../classes/expSimpleNote.html">¶</a>
-</h1>
-<p class="short_description">This is the class expSimpleNote</p>
-<div class="details collapse"></div>
-<a href="../classes/expSimpleNote.html" class="more">« More »</a>
-</div>
-<div id="expTag" class="element ajax clickable class">
-<h1>expTag<a href="../classes/expTag.html">¶</a>
-</h1>
-<p class="short_description">This is the class expTag</p>
-<div class="details collapse"></div>
-<a href="../classes/expTag.html" class="more">« More »</a>
-</div>
-<div id="external_address" class="element ajax clickable class">
-<h1>external_address<a href="../classes/external_address.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/external_address.html" class="more">« More »</a>
-</div>
-<div id="geoCountry" class="element ajax clickable class">
-<h1>geoCountry<a href="../classes/geoCountry.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/geoCountry.html" class="more">« More »</a>
-</div>
-<div id="geoRegion" class="element ajax clickable class">
-<h1>geoRegion<a href="../classes/geoRegion.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/geoRegion.html" class="more">« More »</a>
-</div>
-<div id="google_product_types" class="element ajax clickable class">
-<h1>google_product_types<a href="../classes/google_product_types.html">¶</a>
-</h1>
-<p class="short_description">This is the class expNestedNode</p>
-<div class="details collapse"></div>
-<a href="../classes/google_product_types.html" class="more">« More »</a>
-</div>
-<div id="groupdiscounts" class="element ajax clickable class">
-<h1>groupdiscounts<a href="../classes/groupdiscounts.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/groupdiscounts.html" class="more">« More »</a>
-</div>
-<div id="keywords" class="element ajax clickable class">
-<h1>keywords<a href="../classes/keywords.html">¶</a>
-</h1>
-<p class="short_description"></p>
-<div class="details collapse"></div>
-<a href="../classes/keywords.html" class="more">« More »</a>
-</div>
-<div id="model_alias" class="element ajax clickable class">
-<h1>model_alias<a href="../classes/model_alias.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/model_alias.html" class="more">« More »</a>
-</div>
-<div id="nextag_product_types" class="element ajax clickable class">
-<h1>nextag_product_types<a href="../classes/nextag_product_types.html">¶</a>
-</h1>
-<p class="short_description">This is the class expNestedNode</p>
-<div class="details collapse"></div>
-<a href="../classes/nextag_product_types.html" class="more">« More »</a>
-</div>
-<div id="option" class="element ajax clickable class">
-<h1>option<a href="../classes/option.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/option.html" class="more">« More »</a>
-</div>
-<div id="option_master" class="element ajax clickable class">
-<h1>option_master<a href="../classes/option_master.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/option_master.html" class="more">« More »</a>
-</div>
-<div id="optiongroup" class="element ajax clickable class">
-<h1>optiongroup<a href="../classes/optiongroup.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/optiongroup.html" class="more">« More »</a>
-</div>
-<div id="optiongroup_master" class="element ajax clickable class">
-<h1>optiongroup_master<a href="../classes/optiongroup_master.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/optiongroup_master.html" class="more">« More »</a>
-</div>
-<div id="order" class="element ajax clickable class">
-<h1>order<a href="../classes/order.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/order.html" class="more">« More »</a>
-</div>
-<div id="order_discounts" class="element ajax clickable class">
-<h1>order_discounts<a href="../classes/order_discounts.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/order_discounts.html" class="more">« More »</a>
-</div>
-<div id="order_status" class="element ajax clickable class">
-<h1>order_status<a href="../classes/order_status.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/order_status.html" class="more">« More »</a>
-</div>
-<div id="order_status_changes" class="element ajax clickable class">
-<h1>order_status_changes<a href="../classes/order_status_changes.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/order_status_changes.html" class="more">« More »</a>
-</div>
-<div id="order_status_messages" class="element ajax clickable class">
-<h1>order_status_messages<a href="../classes/order_status_messages.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/order_status_messages.html" class="more">« More »</a>
-</div>
-<div id="order_type" class="element ajax clickable class">
-<h1>order_type<a href="../classes/order_type.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/order_type.html" class="more">« More »</a>
-</div>
-<div id="orderitem" class="element ajax clickable class">
-<h1>orderitem<a href="../classes/orderitem.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/orderitem.html" class="more">« More »</a>
-</div>
-<div id="pricegrabber_product_types" class="element ajax clickable class">
-<h1>pricegrabber_product_types<a href="../classes/pricegrabber_product_types.html">¶</a>
-</h1>
-<p class="short_description">This is the class expNestedNode</p>
-<div class="details collapse"></div>
-<a href="../classes/pricegrabber_product_types.html" class="more">« More »</a>
-</div>
-<div id="product_notes" class="element ajax clickable class">
-<h1>product_notes<a href="../classes/product_notes.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/product_notes.html" class="more">« More »</a>
-</div>
-<div id="product_status" class="element ajax clickable class">
-<h1>product_status<a href="../classes/product_status.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/product_status.html" class="more">« More »</a>
-</div>
-<div id="product_type" class="element ajax clickable class">
-<h1>product_type<a href="../classes/product_type.html">¶</a>
-</h1>
-<p class="short_description">This is the class expNestedNode</p>
-<div class="details collapse"></div>
-<a href="../classes/product_type.html" class="more">« More »</a>
-</div>
-<div id="promocodes" class="element ajax clickable class">
-<h1>promocodes<a href="../classes/promocodes.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/promocodes.html" class="more">« More »</a>
-</div>
-<div id="purchase_order" class="element ajax clickable class">
-<h1>purchase_order<a href="../classes/purchase_order.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/purchase_order.html" class="more">« More »</a>
-</div>
-<div id="sales_rep" class="element ajax clickable class">
-<h1>sales_rep<a href="../classes/sales_rep.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/sales_rep.html" class="more">« More »</a>
-</div>
-<div id="shipping" class="element ajax clickable class">
-<h1>shipping<a href="../classes/shipping.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/shipping.html" class="more">« More »</a>
-</div>
-<div id="shippingcalculator" class="element ajax clickable class">
-<h1>shippingcalculator<a href="../classes/shippingcalculator.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/shippingcalculator.html" class="more">« More »</a>
-</div>
-<div id="shippingmethod" class="element ajax clickable class">
-<h1>shippingmethod<a href="../classes/shippingmethod.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/shippingmethod.html" class="more">« More »</a>
-</div>
-<div id="shippingspeeds" class="element ajax clickable class">
-<h1>shippingspeeds<a href="../classes/shippingspeeds.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/shippingspeeds.html" class="more">« More »</a>
-</div>
-<div id="shopping_product_types" class="element ajax clickable class">
-<h1>shopping_product_types<a href="../classes/shopping_product_types.html">¶</a>
-</h1>
-<p class="short_description">This is the class expNestedNode</p>
-<div class="details collapse"></div>
-<a href="../classes/shopping_product_types.html" class="more">« More »</a>
-</div>
-<div id="shopzilla_product_types" class="element ajax clickable class">
-<h1>shopzilla_product_types<a href="../classes/shopzilla_product_types.html">¶</a>
-</h1>
-<p class="short_description">This is the class expNestedNode</p>
-<div class="details collapse"></div>
-<a href="../classes/shopzilla_product_types.html" class="more">« More »</a>
-</div>
-<div id="storeCategory" class="element ajax clickable class">
-<h1>storeCategory<a href="../classes/storeCategory.html">¶</a>
-</h1>
-<p class="short_description">This is the class expNestedNode</p>
-<div class="details collapse"></div>
-<a href="../classes/storeCategory.html" class="more">« More »</a>
-</div>
-<div id="storeCategoryFeeds" class="element ajax clickable class">
-<h1>storeCategoryFeeds<a href="../classes/storeCategoryFeeds.html">¶</a>
-</h1>
-<p class="short_description">This is the class expNestedNode</p>
-<div class="details collapse"></div>
-<a href="../classes/storeCategoryFeeds.html" class="more">« More »</a>
-</div>
-<div id="taxclass" class="element ajax clickable class">
-<h1>taxclass<a href="../classes/taxclass.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/taxclass.html" class="more">« More »</a>
-</div>
-<div id="vendor" class="element ajax clickable class">
-<h1>vendor<a href="../classes/vendor.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/vendor.html" class="more">« More »</a>
-</div>
-</div>
-</div>
-</div>
-<div class="row"><footer class="span12">
-            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.2.0
-</a> and<br>
-            generated on 2014-02-18T10:31:34-05:00.<br></footer></div>
-</div>
-</body>
+        <div class="details collapse">expFile is an extension of expRecord because File information is stored
+in the database for future access and retrieval. This class also handles
+and and all File System handling as well: copy, move, delete, upload,
+and importing of data in preparation of data importation. Upload and
+import via child classes.</div>
+        <a href="../classes/expFile.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="option_master" class="element ajax clickable class">
+        <h1>option_master<a href="../classes/option_master.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/option_master.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="expTag" class="element ajax clickable class">
+        <h1>expTag<a href="../classes/expTag.html">¶</a></h1>
+        <p class="short_description">This is the class expTag</p>
+        <div class="details collapse"></div>
+        <a href="../classes/expTag.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="expDefinableField" class="element ajax clickable class">
+        <h1>expDefinableField<a href="../classes/expDefinableField.html">¶</a></h1>
+        <p class="short_description">This is the class expDefinableField</p>
+        <div class="details collapse"></div>
+        <a href="../classes/expDefinableField.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="product_status" class="element ajax clickable class">
+        <h1>product_status<a href="../classes/product_status.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/product_status.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="storeCategoryFeeds" class="element ajax clickable class">
+        <h1>storeCategoryFeeds<a href="../classes/storeCategoryFeeds.html">¶</a></h1>
+        <p class="short_description">This is the class expNestedNode</p>
+        <div class="details collapse"></div>
+        <a href="../classes/storeCategoryFeeds.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="purchase_order" class="element ajax clickable class">
+        <h1>purchase_order<a href="../classes/purchase_order.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/purchase_order.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="groupdiscounts" class="element ajax clickable class">
+        <h1>groupdiscounts<a href="../classes/groupdiscounts.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/groupdiscounts.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="shopzilla_product_types" class="element ajax clickable class">
+        <h1>shopzilla_product_types<a href="../classes/shopzilla_product_types.html">¶</a></h1>
+        <p class="short_description">This is the class expNestedNode</p>
+        <div class="details collapse"></div>
+        <a href="../classes/shopzilla_product_types.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="expRecord" class="element ajax clickable class">
+        <h1>expRecord<a href="../classes/expRecord.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/expRecord.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="promocodes" class="element ajax clickable class">
+        <h1>promocodes<a href="../classes/promocodes.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/promocodes.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="keywords" class="element ajax clickable class">
+        <h1>keywords<a href="../classes/keywords.html">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse"></div>
+        <a href="../classes/keywords.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="billingmethod" class="element ajax clickable class">
+        <h1>billingmethod<a href="../classes/billingmethod.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/billingmethod.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="billingcalculator" class="element ajax clickable class">
+        <h1>billingcalculator<a href="../classes/billingcalculator.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/billingcalculator.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="optiongroup" class="element ajax clickable class">
+        <h1>optiongroup<a href="../classes/optiongroup.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/optiongroup.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="shopping_product_types" class="element ajax clickable class">
+        <h1>shopping_product_types<a href="../classes/shopping_product_types.html">¶</a></h1>
+        <p class="short_description">This is the class expNestedNode</p>
+        <div class="details collapse"></div>
+        <a href="../classes/shopping_product_types.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="discounts" class="element ajax clickable class">
+        <h1>discounts<a href="../classes/discounts.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/discounts.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="product_type" class="element ajax clickable class">
+        <h1>product_type<a href="../classes/product_type.html">¶</a></h1>
+        <p class="short_description">This is the class expNestedNode</p>
+        <div class="details collapse"></div>
+        <a href="../classes/product_type.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="ecomconfig" class="element ajax clickable class">
+        <h1>ecomconfig<a href="../classes/ecomconfig.html">¶</a></h1>
+        <p class="short_description">This is the class expCoonfig</p>
+        <div class="details collapse"></div>
+        <a href="../classes/ecomconfig.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="model_alias" class="element ajax clickable class">
+        <h1>model_alias<a href="../classes/model_alias.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/model_alias.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="order_status_messages" class="element ajax clickable class">
+        <h1>order_status_messages<a href="../classes/order_status_messages.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/order_status_messages.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="nextag_product_types" class="element ajax clickable class">
+        <h1>nextag_product_types<a href="../classes/nextag_product_types.html">¶</a></h1>
+        <p class="short_description">This is the class expNestedNode</p>
+        <div class="details collapse"></div>
+        <a href="../classes/nextag_product_types.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="expComment" class="element ajax clickable class">
+        <h1>expComment<a href="../classes/expComment.html">¶</a></h1>
+        <p class="short_description">This is the class expComment</p>
+        <div class="details collapse"></div>
+        <a href="../classes/expComment.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="product_notes" class="element ajax clickable class">
+        <h1>product_notes<a href="../classes/product_notes.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/product_notes.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="childProduct" class="element ajax clickable class">
+        <h1>childProduct<a href="../classes/childProduct.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/childProduct.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="expNestedNode" class="element ajax clickable class">
+        <h1>expNestedNode<a href="../classes/expNestedNode.html">¶</a></h1>
+        <p class="short_description">This is the class expNestedNode</p>
+        <div class="details collapse"></div>
+        <a href="../classes/expNestedNode.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="bing_product_types" class="element ajax clickable class">
+        <h1>bing_product_types<a href="../classes/bing_product_types.html">¶</a></h1>
+        <p class="short_description">This is the class expNestedNode</p>
+        <div class="details collapse"></div>
+        <a href="../classes/bing_product_types.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="storeCategory" class="element ajax clickable class">
+        <h1>storeCategory<a href="../classes/storeCategory.html">¶</a></h1>
+        <p class="short_description">This is the class expNestedNode</p>
+        <div class="details collapse"></div>
+        <a href="../classes/storeCategory.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="expSimpleNote" class="element ajax clickable class">
+        <h1>expSimpleNote<a href="../classes/expSimpleNote.html">¶</a></h1>
+        <p class="short_description">This is the class expSimpleNote</p>
+        <div class="details collapse"></div>
+        <a href="../classes/expSimpleNote.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="expRating" class="element ajax clickable class">
+        <h1>expRating<a href="../classes/expRating.html">¶</a></h1>
+        <p class="short_description">This is the class expRating</p>
+        <div class="details collapse"></div>
+        <a href="../classes/expRating.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="order" class="element ajax clickable class">
+        <h1>order<a href="../classes/order.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/order.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="crosssellItem" class="element ajax clickable class">
+        <h1>crosssellItem<a href="../classes/crosssellItem.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/crosssellItem.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="taxclass" class="element ajax clickable class">
+        <h1>taxclass<a href="../classes/taxclass.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/taxclass.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="google_product_types" class="element ajax clickable class">
+        <h1>google_product_types<a href="../classes/google_product_types.html">¶</a></h1>
+        <p class="short_description">This is the class expNestedNode</p>
+        <div class="details collapse"></div>
+        <a href="../classes/google_product_types.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="order_status_changes" class="element ajax clickable class">
+        <h1>order_status_changes<a href="../classes/order_status_changes.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/order_status_changes.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="billing" class="element ajax clickable class">
+        <h1>billing<a href="../classes/billing.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/billing.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="shippingspeeds" class="element ajax clickable class">
+        <h1>shippingspeeds<a href="../classes/shippingspeeds.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/shippingspeeds.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="expCat" class="element ajax clickable class">
+        <h1>expCat<a href="../classes/expCat.html">¶</a></h1>
+        <p class="short_description">This is the class expCat</p>
+        <div class="details collapse"></div>
+        <a href="../classes/expCat.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="shippingmethod" class="element ajax clickable class">
+        <h1>shippingmethod<a href="../classes/shippingmethod.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/shippingmethod.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="geoRegion" class="element ajax clickable class">
+        <h1>geoRegion<a href="../classes/geoRegion.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/geoRegion.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="pricegrabber_product_types" class="element ajax clickable class">
+        <h1>pricegrabber_product_types<a href="../classes/pricegrabber_product_types.html">¶</a></h1>
+        <p class="short_description">This is the class expNestedNode</p>
+        <div class="details collapse"></div>
+        <a href="../classes/pricegrabber_product_types.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="order_discounts" class="element ajax clickable class">
+        <h1>order_discounts<a href="../classes/order_discounts.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/order_discounts.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="orderitem" class="element ajax clickable class">
+        <h1>orderitem<a href="../classes/orderitem.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/orderitem.html" class="more">« More »</a>
+    </div>
+
+                            </div>
+            
+    
+        </div>
+    </div>
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Tue, 08 Apr 2014 02:28:15 +0000.<br/>
+    </footer>
+    </body>
 </html>
