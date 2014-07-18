@@ -43,7 +43,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">4659</span></a></li>
+                <span class="label label-info">5328</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -160,8 +160,24 @@ SELECT MAX(field) .</span><pre>max()</pre></a></li>
         </span><pre>selectAndJoinObjects()</pre></a></li>
 <li class="method public "><a href="#method_selectAndJoinObjects" title="selectAndJoinObjects() :: "><span class="description">selectAndJoinObjects()
         </span><pre>selectAndJoinObjects()</pre></a></li>
-<li class="method public "><a href="#method_selectArray" title="selectArray() :: Select a record from the database as an array"><span class="description">Select a record from the database as an array</span><pre>selectArray()</pre></a></li>
-<li class="method public "><a href="#method_selectArray" title="selectArray() :: Select a record from the database as an array"><span class="description">Select a record from the database as an array</span><pre>selectArray()</pre></a></li>
+<li class="method public "><a href="#method_selectArray" title="selectArray() :: Select a record from the database as an array
+Selects a set of arrays from the database.  Because of the way
+Exponent handles objects and database tables, this is akin to
+SELECTing a set of records from a database table.  Returns an
+array of arrays, in any random order."><span class="description">Select a record from the database as an array
+Selects a set of arrays from the database.  Because of the way
+Exponent handles objects and database tables, this is akin to
+SELECTing a set of records from a database table.  Returns an
+array of arrays, in any random order.</span><pre>selectArray()</pre></a></li>
+<li class="method public "><a href="#method_selectArray" title="selectArray() :: Select a record from the database as an array
+Selects a set of arrays from the database.  Because of the way
+Exponent handles objects and database tables, this is akin to
+SELECTing a set of records from a database table.  Returns an
+array of arrays, in any random order."><span class="description">Select a record from the database as an array
+Selects a set of arrays from the database.  Because of the way
+Exponent handles objects and database tables, this is akin to
+SELECTing a set of records from a database table.  Returns an
+array of arrays, in any random order.</span><pre>selectArray()</pre></a></li>
 <li class="method public "><a href="#method_selectArrays" title="selectArrays() :: Select an array of arrays"><span class="description">Select an array of arrays</span><pre>selectArrays()</pre></a></li>
 <li class="method public "><a href="#method_selectArrays" title="selectArrays() :: Select an array of arrays"><span class="description">Select an array of arrays</span><pre>selectArrays()</pre></a></li>
 <li class="method public "><a href="#method_selectArraysBySql" title="selectArraysBySql() :: Select an array of arrays"><span class="description">Select an array of arrays</span><pre>selectArraysBySql()</pre></a></li>
@@ -239,6 +255,7 @@ SELECT MAX(field) .</span><pre>max()</pre></a></li>
 <li class="method public "><a href="#method_tableIsEmpty" title="tableIsEmpty() :: Check whether or not a table in the database is empty (0 rows)."><span class="description">Check whether or not a table in the database is empty (0 rows).</span><pre>tableIsEmpty()</pre></a></li>
 <li class="method public "><a href="#method_testPrivileges" title="testPrivileges() :: Test the privileges of the user account for the connection."><span class="description">Test the privileges of the user account for the connection.</span><pre>testPrivileges()</pre></a></li>
 <li class="method public "><a href="#method_toggle" title="toggle() :: Toggle a boolean value in a Table Entry"><span class="description">Toggle a boolean value in a Table Entry</span><pre>toggle()</pre></a></li>
+<li class="method public "><a href="#method_trim_revisions" title="trim_revisions() :: Reduces table item revisions to a passed total"><span class="description">Reduces table item revisions to a passed total</span><pre>trim_revisions()</pre></a></li>
 <li class="method public "><a href="#method_unlockTables" title="unlockTables() :: "><span class="description">unlockTables()
         </span><pre>unlockTables()</pre></a></li>
 <li class="method public "><a href="#method_unlockTables" title="unlockTables() :: "><span class="description">unlockTables()
@@ -426,7 +443,7 @@ its general structure for databases.</div>
 </div>
 <a id="method_countObjects"></a><div class="element clickable method public method_countObjects" data-toggle="collapse" data-target=".method_countObjects .collapse" title="public">
 <h2>Count Objects matching a given criteria</h2>
-<pre>countObjects(string $table, string $where<code> = null</code>) : int</pre>
+<pre>countObjects(string $table, string $where<code> = null</code>, bool $is_revisioned<code> = false</code>, bool $needs_approval<code> = false</code>) : int</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -437,13 +454,21 @@ its general structure for databases.</div>
 <div class="subelement argument">
 <h4>$where</h4>
 <code>string</code><p>Criteria for counting.</p></div>
+<div class="subelement argument">
+<h4>$is_revisioned</h4>
+<code>bool</code>
+</div>
+<div class="subelement argument">
+<h4>$needs_approval</h4>
+<code>bool</code>
+</div>
 <h3>Returns</h3>
 <div class="subelement response"><code>int</code></div>
 </div></div>
 </div>
 <a id="method_countObjects"></a><div class="element clickable method public method_countObjects" data-toggle="collapse" data-target=".method_countObjects .collapse" title="public">
 <h2>Count Objects matching a given criteria</h2>
-<pre>countObjects(string $table, string $where<code> = null</code>) : int</pre>
+<pre>countObjects(string $table, string $where<code> = null</code>, bool $is_revisioned<code> = false</code>, bool $needs_approval<code> = false</code>) : int</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -454,6 +479,14 @@ its general structure for databases.</div>
 <div class="subelement argument">
 <h4>$where</h4>
 <code>string</code><p>Criteria for counting.</p></div>
+<div class="subelement argument">
+<h4>$is_revisioned</h4>
+<code>bool</code>
+</div>
+<div class="subelement argument">
+<h4>$needs_approval</h4>
+<code>bool</code>
+</div>
 <h3>Returns</h3>
 <div class="subelement response"><code>int</code></div>
 </div></div>
@@ -1170,14 +1203,15 @@ SELECT MAX(field) .</h2>
 </div></div>
 </div>
 <a id="method_selectArray"></a><div class="element clickable method public method_selectArray" data-toggle="collapse" data-target=".method_selectArray .collapse" title="public">
-<h2>Select a record from the database as an array</h2>
-<pre>selectArray(string $table, string $where<code> = null</code>, null $orderby<code> = null</code>, bool $is_revisioned<code> = false</code>) : array | void</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description">Selects a set of arrays from the database.  Because of the way
+<h2>Select a record from the database as an array
+Selects a set of arrays from the database.  Because of the way
 Exponent handles objects and database tables, this is akin to
 SELECTing a set of records from a database table.  Returns an
-array of arrays, in any random order.</div>
+array of arrays, in any random order.</h2>
+<pre>selectArray(string $table, string $where<code> = null</code>, null $orderby<code> = null</code>, bool $is_revisioned<code> = false</code>, bool $needs_approval<code> = false</code>) : array | void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$table</h4>
@@ -1185,14 +1219,18 @@ array of arrays, in any random order.</div>
 <div class="subelement argument">
 <h4>$where</h4>
 <code>string</code><p>Criteria used to narrow the result set.  If this
-  is specified as null, then no criteria is applied, and all objects are
-  returned</p></div>
+                     is specified as null, then no criteria is applied, and all objects are
+                     returned</p></div>
 <div class="subelement argument">
 <h4>$orderby</h4>
 <code>null</code>
 </div>
 <div class="subelement argument">
 <h4>$is_revisioned</h4>
+<code>bool</code>
+</div>
+<div class="subelement argument">
+<h4>$needs_approval</h4>
 <code>bool</code>
 </div>
 <h3>Returns</h3>
@@ -1202,14 +1240,15 @@ array of arrays, in any random order.</div>
 </div></div>
 </div>
 <a id="method_selectArray"></a><div class="element clickable method public method_selectArray" data-toggle="collapse" data-target=".method_selectArray .collapse" title="public">
-<h2>Select a record from the database as an array</h2>
-<pre>selectArray(string $table, string $where<code> = null</code>, null $orderby<code> = null</code>, bool $is_revisioned<code> = false</code>) : array | void</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description">Selects a set of arrays from the database.  Because of the way
+<h2>Select a record from the database as an array
+Selects a set of arrays from the database.  Because of the way
 Exponent handles objects and database tables, this is akin to
 SELECTing a set of records from a database table.  Returns an
-array of arrays, in any random order.</div>
+array of arrays, in any random order.</h2>
+<pre>selectArray(string $table, string $where<code> = null</code>, null $orderby<code> = null</code>, bool $is_revisioned<code> = false</code>, bool $needs_approval<code> = false</code>) : array | void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$table</h4>
@@ -1217,14 +1256,18 @@ array of arrays, in any random order.</div>
 <div class="subelement argument">
 <h4>$where</h4>
 <code>string</code><p>Criteria used to narrow the result set.  If this
-  is specified as null, then no criteria is applied, and all objects are
-  returned</p></div>
+                     is specified as null, then no criteria is applied, and all objects are
+                     returned</p></div>
 <div class="subelement argument">
 <h4>$orderby</h4>
 <code>null</code>
 </div>
 <div class="subelement argument">
 <h4>$is_revisioned</h4>
+<code>bool</code>
+</div>
+<div class="subelement argument">
+<h4>$needs_approval</h4>
 <code>bool</code>
 </div>
 <h3>Returns</h3>
@@ -1417,7 +1460,7 @@ array of arrays, in any random order.</div>
 </div>
 <a id="method_selectExpObjects"></a><div class="element clickable method public method_selectExpObjects" data-toggle="collapse" data-target=".method_selectExpObjects .collapse" title="public">
 <h2>Select records from the database</h2>
-<pre>selectExpObjects(string $table, string $where<code> = null</code>, string $classname, bool $get_assoc<code> = true</code>, bool $get_attached<code> = true</code>, array $except<code> = array()</code>, bool $cascade_except<code> = false</code>) : array</pre>
+<pre>selectExpObjects(string $table, string $where<code> = null</code>, string $classname, bool $get_assoc<code> = true</code>, bool $get_attached<code> = true</code>, array $except<code> = array()</code>, bool $cascade_except<code> = false</code>, null $order<code> = null</code>, null $limitsql<code> = null</code>, bool $is_revisioned<code> = false</code>, bool $needs_approval<code> = false</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -1428,8 +1471,8 @@ array of arrays, in any random order.</div>
 <div class="subelement argument">
 <h4>$where</h4>
 <code>string</code><p>Criteria used to narrow the result set.  If this
-  is specified as null, then no criteria is applied, and all objects are
-  returned</p></div>
+                     is specified as null, then no criteria is applied, and all objects are
+                     returned</p></div>
 <div class="subelement argument">
 <h4>$classname</h4>
 <code>string</code>
@@ -1450,13 +1493,29 @@ array of arrays, in any random order.</div>
 <h4>$cascade_except</h4>
 <code>bool</code>
 </div>
+<div class="subelement argument">
+<h4>$order</h4>
+<code>null</code>
+</div>
+<div class="subelement argument">
+<h4>$limitsql</h4>
+<code>null</code>
+</div>
+<div class="subelement argument">
+<h4>$is_revisioned</h4>
+<code>bool</code>
+</div>
+<div class="subelement argument">
+<h4>$needs_approval</h4>
+<code>bool</code>
+</div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
 <a id="method_selectExpObjects"></a><div class="element clickable method public method_selectExpObjects" data-toggle="collapse" data-target=".method_selectExpObjects .collapse" title="public">
 <h2>Select a records from the database</h2>
-<pre>selectExpObjects(string $table, string $where<code> = null</code>, mixed $classname, bool $get_assoc<code> = true</code>, bool $get_attached<code> = true</code>, array $except<code> = array()</code>, bool $cascade_except<code> = false</code>) : array</pre>
+<pre>selectExpObjects(string $table, string $where<code> = null</code>, mixed $classname, bool $get_assoc<code> = true</code>, bool $get_attached<code> = true</code>, array $except<code> = array()</code>, bool $cascade_except<code> = false</code>, null $order<code> = null</code>, null $limitsql<code> = null</code>, bool $is_revisioned<code> = false</code>, bool $needs_approval<code> = false</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -1467,8 +1526,8 @@ array of arrays, in any random order.</div>
 <div class="subelement argument">
 <h4>$where</h4>
 <code>string</code><p>Criteria used to narrow the result set.  If this
-  is specified as null, then no criteria is applied, and all objects are
-  returned</p></div>
+                     is specified as null, then no criteria is applied, and all objects are
+                     returned</p></div>
 <div class="subelement argument"><h4>$classname</h4></div>
 <div class="subelement argument">
 <h4>$get_assoc</h4>
@@ -1484,6 +1543,22 @@ array of arrays, in any random order.</div>
 </div>
 <div class="subelement argument">
 <h4>$cascade_except</h4>
+<code>bool</code>
+</div>
+<div class="subelement argument">
+<h4>$order</h4>
+<code>null</code>
+</div>
+<div class="subelement argument">
+<h4>$limitsql</h4>
+<code>null</code>
+</div>
+<div class="subelement argument">
+<h4>$is_revisioned</h4>
+<code>bool</code>
+</div>
+<div class="subelement argument">
+<h4>$needs_approval</h4>
 <code>bool</code>
 </div>
 <h3>Returns</h3>
@@ -2197,6 +2272,27 @@ true if the test succeeded, and false if it failed.</div>
 </div>
 </div></div>
 </div>
+<a id="method_trim_revisions"></a><div class="element clickable method public method_trim_revisions" data-toggle="collapse" data-target=".method_trim_revisions .collapse" title="public">
+<h2>Reduces table item revisions to a passed total</h2>
+<pre>trim_revisions(string $table, integer $id, integer $num, int $workflow<code> = ENABLE_WORKFLOW</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$table</h4>
+<code>string</code><p>The name of the table to trim</p></div>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>integer</code><p>The item id</p></div>
+<div class="subelement argument">
+<h4>$num</h4>
+<code>integer</code><p>The number of revisions to retain</p></div>
+<div class="subelement argument">
+<h4>$workflow</h4>
+<code>int</code><p>is workflow turned on (or force)</p></div>
+</div></div>
+</div>
 <a id="method_unlockTables"></a><div class="element clickable method public method_unlockTables" data-toggle="collapse" data-target=".method_unlockTables .collapse" title="public">
 <h2>unlockTables()
         </h2>
@@ -2325,7 +2421,7 @@ that are also member attributes of the $object object.</div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.4.0
 </a> and<br>
-            generated on 2014-04-07T22:32:14-04:00.<br></footer></div>
+            generated on 2014-07-18T16:23:08-04:00.<br></footer></div>
 </div>
 </body>
 </html>

@@ -43,7 +43,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">4659</span></a></li>
+                <span class="label label-info">5328</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -101,7 +101,7 @@ Used to determine if control has field data behind it</span><pre>isStatic()</pre
 <li class="method public "><a href="#method_parseData" title="parseData() :: Parse the control value"><span class="description">Parse the control value</span><pre>parseData()</pre></a></li>
 <li class="method public "><a href="#method_templateFormat" title="templateFormat() :: Format the control's data for user display"><span class="description">Format the control's data for user display</span><pre>templateFormat()</pre></a></li>
 <li class="method public "><a href="#method_templateFormat" title="templateFormat() :: Format the control's data for user display"><span class="description">Format the control's data for user display</span><pre>templateFormat()</pre></a></li>
-<li class="method public "><a href="#method_toHTML" title="toHTML() :: Place the control in the form"><span class="description">Place the control in the form</span><pre>toHTML()</pre></a></li>
+<li class="method public "><a href="#method_toHTML" title="toHTML() :: Place the control in the form with label and description"><span class="description">Place the control in the form with label and description</span><pre>toHTML()</pre></a></li>
 <li class="method public "><a href="#method_update" title="update() :: Update the control settings"><span class="description">Update the control settings</span><pre>update()</pre></a></li>
 <li class="method public "><a href="#method_update" title="update() :: Update the control settings"><span class="description">Update the control settings</span><pre>update()</pre></a></li>
 <li class="method public "><a href="#method_useGeneric" title="useGeneric() :: Use the Generic Control instead?
@@ -116,10 +116,13 @@ Used to determine if control is actually a generic control</span><pre>useGeneric
 <li class="property public "><a href="#property_class" title="$class() :: "><span class="description"></span><pre>$class</pre></a></li>
 <li class="property public "><a href="#property_default" title="$default() :: "><span class="description"></span><pre>$default</pre></a></li>
 <li class="property public "><a href="#property_disabled" title="$disabled() :: "><span class="description"></span><pre>$disabled</pre></a></li>
+<li class="property public "><a href="#property_focus" title="$focus() :: "><span class="description"></span><pre>$focus</pre></a></li>
 <li class="property public "><a href="#property_inError" title="$inError() :: "><span class="description"></span><pre>$inError</pre></a></li>
 <li class="property public "><a href="#property_include_blank" title="$include_blank() :: "><span class="description"></span><pre>$include_blank</pre></a></li>
+<li class="property public "><a href="#property_is_hidden" title="$is_hidden() :: "><span class="description"></span><pre>$is_hidden</pre></a></li>
 <li class="property public "><a href="#property_items" title="$items() :: "><span class="description"></span><pre>$items</pre></a></li>
 <li class="property public "><a href="#property_jsHooks" title="$jsHooks() :: "><span class="description"></span><pre>$jsHooks</pre></a></li>
+<li class="property public "><a href="#property_multiple" title="$multiple() :: "><span class="description"></span><pre>$multiple</pre></a></li>
 <li class="property public "><a href="#property_required" title="$required() :: "><span class="description"></span><pre>$required</pre></a></li>
 <li class="property public "><a href="#property_size" title="$size() :: "><span class="description"></span><pre>$size</pre></a></li>
 <li class="property public "><a href="#property_tabindex" title="$tabindex() :: "><span class="description"></span><pre>$tabindex</pre></a></li>
@@ -157,13 +160,12 @@ Used to determine if control is actually a generic control</span><pre>useGeneric
 <a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse" title="public">
 <h2>__construct()
         </h2>
-<pre>__construct($default<code> = ""</code>, $items<code> = array()</code>, $include_blank<code> = false</code>, $multiple<code> = false</code>, $abbv<code> = false</code>, $add_other<code> = false</code>) </pre>
+<pre>__construct($default<code> = ""</code>, $include_blank<code> = false</code>, $multiple<code> = false</code>, $abbv<code> = false</code>, $add_other<code> = false</code>) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$default</h4></div>
-<div class="subelement argument"><h4>$items</h4></div>
 <div class="subelement argument"><h4>$include_blank</h4></div>
 <div class="subelement argument"><h4>$multiple</h4></div>
 <div class="subelement argument"><h4>$abbv</h4></div>
@@ -370,7 +372,7 @@ Used to determine if control has field data behind it</h2>
 </div></div>
 </div>
 <a id="method_toHTML"></a><div class="element clickable method public method_toHTML" data-toggle="collapse" data-target=".method_toHTML .collapse" title="public">
-<h2>Place the control in the form</h2>
+<h2>Place the control in the form with label and description</h2>
 <pre>toHTML(mixed $label, mixed $name) : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
@@ -457,6 +459,16 @@ Used to determine if control is actually a generic control</h2>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="property_focus"> </a><div class="element clickable property public property_focus" data-toggle="collapse" data-target=".property_focus .collapse" title="public">
+<h2>$focus</h2>
+<pre>$focus </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="property_inError"> </a><div class="element clickable property public property_inError" data-toggle="collapse" data-target=".property_inError .collapse" title="public">
 <h2>$inError</h2>
 <pre>$inError </pre>
@@ -470,6 +482,16 @@ Used to determine if control is actually a generic control</h2>
 <a id="property_include_blank"> </a><div class="element clickable property public property_include_blank" data-toggle="collapse" data-target=".property_include_blank .collapse" title="public">
 <h2>$include_blank</h2>
 <pre>$include_blank </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_is_hidden"> </a><div class="element clickable property public property_is_hidden" data-toggle="collapse" data-target=".property_is_hidden .collapse" title="public">
+<h2>$is_hidden</h2>
+<pre>$is_hidden </pre>
 <div class="row collapse"><div class="detail-description">
 <h3>Default</h3>
 <div class="subelement argument"><code>false</code></div>
@@ -493,6 +515,16 @@ Used to determine if control is actually a generic control</h2>
 <div class="row collapse"><div class="detail-description">
 <h3>Default</h3>
 <div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_multiple"> </a><div class="element clickable property public property_multiple" data-toggle="collapse" data-target=".property_multiple .collapse" title="public">
+<h2>$multiple</h2>
+<pre>$multiple </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
 </div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
@@ -545,7 +577,7 @@ Used to determine if control is actually a generic control</h2>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.4.0
 </a> and<br>
-            generated on 2014-04-07T22:32:08-04:00.<br></footer></div>
+            generated on 2014-07-18T16:23:00-04:00.<br></footer></div>
 </div>
 </body>
 </html>

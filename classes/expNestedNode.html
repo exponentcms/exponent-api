@@ -43,7 +43,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">4659</span></a></li>
+                <span class="label label-info">5328</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -168,6 +168,7 @@
 <li class="property public "><a href="#property_has_many_self" title="$has_many_self() :: "><span class="description"></span><pre>$has_many_self</pre></a></li>
 <li class="property public "><a href="#property_has_one" title="$has_one() :: "><span class="description"></span><pre>$has_one</pre></a></li>
 <li class="property public "><a href="#property_identifier" title="$identifier() :: "><span class="description"></span><pre>$identifier</pre></a></li>
+<li class="property public "><a href="#property_needs_approval" title="$needs_approval() :: "><span class="description"></span><pre>$needs_approval</pre></a></li>
 <li class="property public "><a href="#property_nodes" title="$nodes() :: Array of Tag Node Objects, siblings or children, depending
 how the class is called."><span class="description"></span><pre>$nodes</pre></a></li>
 <li class="property public "><a href="#property_rank_by_field" title="$rank_by_field() :: "><span class="description"></span><pre>$rank_by_field</pre></a></li>
@@ -757,13 +758,17 @@ field values are also populated into class properties.</div>
 </div>
 <a id="method_save"></a><div class="element clickable method public method_save" data-toggle="collapse" data-target=".method_save .collapse" title="public">
 <h2>save item</h2>
-<pre>save(bool $validate<code> = false</code>) </pre>
+<pre>save(bool $validate<code> = false</code>, bool $force_no_revisions<code> = false</code>) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$validate</h4>
+<code>bool</code>
+</div>
+<div class="subelement argument">
+<h4>$force_no_revisions</h4>
 <code>bool</code>
 </div>
 </div></div>
@@ -1015,6 +1020,16 @@ field values are also populated into class properties.</div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="property_needs_approval"> </a><div class="element clickable property public property_needs_approval" data-toggle="collapse" data-target=".property_needs_approval .collapse" title="public">
+<h2>$needs_approval</h2>
+<pre>$needs_approval </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="property_nodes"> </a><div class="element clickable property public property_nodes" data-toggle="collapse" data-target=".property_nodes .collapse" title="public">
 <h2>Array of Tag Node Objects, siblings or children, depending
 how the class is called.</h2>
@@ -1110,7 +1125,7 @@ how the class is called.</h2>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.4.0
 </a> and<br>
-            generated on 2014-04-07T22:32:21-04:00.<br></footer></div>
+            generated on 2014-07-18T16:23:17-04:00.<br></footer></div>
 </div>
 </body>
 </html>

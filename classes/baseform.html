@@ -43,7 +43,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">4659</span></a></li>
+                <span class="label label-info">5328</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -76,10 +76,8 @@
 <li class="method public "><a href="#method___construct" title="__construct() :: "><span class="description">__construct()
         </span><pre>__construct()</pre></a></li>
 <li class="method public "><a href="#method_addScript" title="addScript() :: Adds a javascript to the form."><span class="description">Adds a javascript to the form.</span><pre>addScript()</pre></a></li>
-<li class="method public "><a href="#method_location" title="location() :: "><span class="description">location()
-        </span><pre>location()</pre></a></li>
-<li class="method public "><a href="#method_meta" title="meta() :: "><span class="description">meta()
-        </span><pre>meta()</pre></a></li>
+<li class="method public "><a href="#method_location" title="location() :: Sets form location data"><span class="description">Sets form location data</span><pre>location()</pre></a></li>
+<li class="method public "><a href="#method_meta" title="meta() :: Adds form meta data (hidden inputs)"><span class="description">Adds form meta data (hidden inputs)</span><pre>meta()</pre></a></li>
 <li class="method public "><a href="#method_removeScript" title="removeScript() :: Removes a javascript from the form."><span class="description">Removes a javascript from the form.</span><pre>removeScript()</pre></a></li>
 <li class="method public "><a href="#method_toHTML" title="toHTML() :: "><span class="description">toHTML()
         </span><pre>toHTML()</pre></a></li>
@@ -94,6 +92,7 @@
 <li class="property public "><a href="#property_method" title="$method() :: "><span class="description"></span><pre>$method</pre></a></li>
 <li class="property public "><a href="#property_name" title="$name() :: "><span class="description"></span><pre>$name</pre></a></li>
 <li class="property public "><a href="#property_scripts" title="$scripts() :: "><span class="description"></span><pre>$scripts</pre></a></li>
+<li class="property public "><a href="#property_style" title="$style() :: "><span class="description"></span><pre>$style</pre></a></li>
 </ul>
 </li>
 </ul>
@@ -153,26 +152,28 @@ registerable and unregisterable controls.</div>
 </div></div>
 </div>
 <a id="method_location"></a><div class="element clickable method public method_location" data-toggle="collapse" data-target=".method_location .collapse" title="public">
-<h2>location()
-        </h2>
-<pre>location($loc) </pre>
+<h2>Sets form location data</h2>
+<pre>location(mixed $loc) : bool</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$loc</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
 <a id="method_meta"></a><div class="element clickable method public method_meta" data-toggle="collapse" data-target=".method_meta .collapse" title="public">
-<h2>meta()
-        </h2>
-<pre>meta($name, $value) </pre>
+<h2>Adds form meta data (hidden inputs)</h2>
+<pre>meta(mixed $name, mixed $value) : bool</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$name</h4></div>
 <div class="subelement argument"><h4>$value</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
 <a id="method_removeScript"></a><div class="element clickable method public method_removeScript" data-toggle="collapse" data-target=".method_removeScript .collapse" title="public">
@@ -195,13 +196,12 @@ registerable and unregisterable controls.</div>
 <a id="method_toHTML"></a><div class="element clickable method public method_toHTML" data-toggle="collapse" data-target=".method_toHTML .collapse" title="public">
 <h2>toHTML()
         </h2>
-<pre>toHTML($form_id, $module) </pre>
+<pre>toHTML($form_id) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$form_id</h4></div>
-<div class="subelement argument"><h4>$module</h4></div>
 </div></div>
 </div>
 <h3>
@@ -266,6 +266,16 @@ registerable and unregisterable controls.</div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="property_style"> </a><div class="element clickable property public property_style" data-toggle="collapse" data-target=".property_style .collapse" title="public">
+<h2>$style</h2>
+<pre>$style </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 </div>
 </div>
 </div>
@@ -274,7 +284,7 @@ registerable and unregisterable controls.</div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.4.0
 </a> and<br>
-            generated on 2014-04-07T22:32:15-04:00.<br></footer></div>
+            generated on 2014-07-18T16:23:09-04:00.<br></footer></div>
 </div>
 </body>
 </html>

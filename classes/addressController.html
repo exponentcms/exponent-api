@@ -43,7 +43,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">4659</span></a></li>
+                <span class="label label-info">5328</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -79,6 +79,7 @@
         </span><pre>activate_address()</pre></a></li>
 <li class="method public "><a href="#method_addContentToSearch" title="addContentToSearch() :: add all module items to search index"><span class="description">add all module items to search index</span><pre>addContentToSearch()</pre></a></li>
 <li class="method public "><a href="#method_aggregateWhereClause" title="aggregateWhereClause() :: The aggregateWhereClause function creates a sql where clause which also includes aggregated module content"><span class="description">The aggregateWhereClause function creates a sql where clause which also includes aggregated module content</span><pre>aggregateWhereClause()</pre></a></li>
+<li class="method public "><a href="#method_approve" title="approve() :: approve module item"><span class="description">approve module item</span><pre>approve()</pre></a></li>
 <li class="method public "><a href="#method_author" title="author() :: author of module"><span class="description">author of module</span><pre>author()</pre></a></li>
 <li class="method public "><a href="#method_canExportData" title="canExportData() :: can this module export data?"><span class="description">can this module export data?</span><pre>canExportData()</pre></a></li>
 <li class="method public "><a href="#method_canImportData" title="canImportData() :: can this module import data?"><span class="description">can this module import data?</span><pre>canImportData()</pre></a></li>
@@ -88,11 +89,15 @@
 <li class="method public "><a href="#method_comments" title="comments() :: "><span class="description">comments()
         </span><pre>comments()</pre></a></li>
 <li class="method public "><a href="#method_configure" title="configure() :: Configure the module"><span class="description">Configure the module</span><pre>configure()</pre></a></li>
-<li class="method public "><a href="#method_create" title="create() :: create an item in this module (deprecated in favor of edit w/o id param"><span class="description">create an item in this module (deprecated in favor of edit w/o id param</span><pre>create()</pre></a></li>
+<li class="method public "><a href="#method_create" title="create() :: create an item in this module (deprecated in favor of edit w/o id param)"><span class="description">create an item in this module (deprecated in favor of edit w/o id param)</span><pre>create()</pre></a></li>
 <li class="method public "><a href="#method_delete" title="delete() :: delete item in module"><span class="description">delete item in module</span><pre>delete()</pre></a></li>
 <li class="method public "><a href="#method_delete" title="delete() :: delete item in module"><span class="description">delete item in module</span><pre>delete()</pre></a></li>
 <li class="method public "><a href="#method_delete_In" title="delete_In() :: delete module and all its items for backwards compat with old modules"><span class="description">delete module and all its items for backwards compat with old modules</span><pre>delete_In()</pre></a></li>
+<li class="method public "><a href="#method_delete_country" title="delete_country() :: "><span class="description">delete_country()
+        </span><pre>delete_country()</pre></a></li>
 <li class="method public "><a href="#method_delete_instance" title="delete_instance() :: delete module, config, and all its items"><span class="description">delete module, config, and all its items</span><pre>delete_instance()</pre></a></li>
+<li class="method public "><a href="#method_delete_region" title="delete_region() :: "><span class="description">delete_region()
+        </span><pre>delete_region()</pre></a></li>
 <li class="method public "><a href="#method_delete_search" title="delete_search() :: remove module items from search index"><span class="description">remove module items from search index</span><pre>delete_search()</pre></a></li>
 <li class="method public "><a href="#method_description" title="description() :: description of module"><span class="description">description of module</span><pre>description()</pre></a></li>
 <li class="method public "><a href="#method_description" title="description() :: description of module"><span class="description">description of module</span><pre>description()</pre></a></li>
@@ -101,6 +106,10 @@
 <li class="method public "><a href="#method_downloadfile" title="downloadfile() :: download a file attached to item"><span class="description">download a file attached to item</span><pre>downloadfile()</pre></a></li>
 <li class="method public "><a href="#method_edit" title="edit() :: edit item in module, also used to copy items"><span class="description">edit item in module, also used to copy items</span><pre>edit()</pre></a></li>
 <li class="method public "><a href="#method_edit" title="edit() :: edit item in module, also used to copy items"><span class="description">edit item in module, also used to copy items</span><pre>edit()</pre></a></li>
+<li class="method public "><a href="#method_edit_country" title="edit_country() :: "><span class="description">edit_country()
+        </span><pre>edit_country()</pre></a></li>
+<li class="method public "><a href="#method_edit_region" title="edit_region() :: "><span class="description">edit_region()
+        </span><pre>edit_region()</pre></a></li>
 <li class="method public "><a href="#method_getModels" title="getModels() :: get the models associated with this module"><span class="description">get the models associated with this module</span><pre>getModels()</pre></a></li>
 <li class="method public "><a href="#method_getRSSContent" title="getRSSContent() :: get the items in an rss feed format"><span class="description">get the items in an rss feed format</span><pre>getRSSContent()</pre></a></li>
 <li class="method public "><a href="#method_hasContent" title="hasContent() :: does module have content available?"><span class="description">does module have content available?</span><pre>hasContent()</pre></a></li>
@@ -116,7 +125,7 @@
 <li class="method public "><a href="#method_merge" title="merge() :: merge/move aggregated item into this module"><span class="description">merge/move aggregated item into this module</span><pre>merge()</pre></a></li>
 <li class="method public "><a href="#method_meta_rich" title="meta_rich() :: Returns rich snippet PageMap meta data"><span class="description">Returns rich snippet PageMap meta data</span><pre>meta_rich()</pre></a></li>
 <li class="method public "><a href="#method_metainfo" title="metainfo() :: get the metainfo for this module"><span class="description">get the metainfo for this module</span><pre>metainfo()</pre></a></li>
-<li class="method public "><a href="#method_moduleSelfAwareness" title="moduleSelfAwareness() :: glue to make module aware of itself"><span class="description">glue to make module aware of itself</span><pre>moduleSelfAwareness()</pre></a></li>
+<li class="method public "><a href="#method_moduleSelfAwareness" title="moduleSelfAwareness() :: glue to make the view template aware of the module"><span class="description">glue to make the view template aware of the module</span><pre>moduleSelfAwareness()</pre></a></li>
 <li class="method public "><a href="#method_myaddressbook" title="myaddressbook() :: "><span class="description">myaddressbook()
         </span><pre>myaddressbook()</pre></a></li>
 <li class="method public "><a href="#method_name" title="name() :: name of module for backwards compat with old modules"><span class="description">name of module for backwards compat with old modules</span><pre>name()</pre></a></li>
@@ -128,6 +137,7 @@
 <li class="method public "><a href="#method_rss" title="rss() :: method to display an rss feed from this module"><span class="description">method to display an rss feed from this module</span><pre>rss()</pre></a></li>
 <li class="method public "><a href="#method_saveconfig" title="saveconfig() :: save module configuration"><span class="description">save module configuration</span><pre>saveconfig()</pre></a></li>
 <li class="method public "><a href="#method_searchCategory" title="searchCategory() :: category of items searched in the module"><span class="description">category of items searched in the module</span><pre>searchCategory()</pre></a></li>
+<li class="method public "><a href="#method_searchHit" title="searchHit() :: additional check for display of search hit"><span class="description">additional check for display of search hit</span><pre>searchHit()</pre></a></li>
 <li class="method public "><a href="#method_searchName" title="searchName() :: type of items searched in the module"><span class="description">type of items searched in the module</span><pre>searchName()</pre></a></li>
 <li class="method public "><a href="#method_show" title="show() :: default view for individual item"><span class="description">default view for individual item</span><pre>show()</pre></a></li>
 <li class="method public "><a href="#method_show" title="show() :: default view for individual item"><span class="description">default view for individual item</span><pre>show()</pre></a></li>
@@ -146,6 +156,10 @@
         </span><pre>tags()</pre></a></li>
 <li class="method public "><a href="#method_update" title="update() :: update (save) item in module"><span class="description">update (save) item in module</span><pre>update()</pre></a></li>
 <li class="method public "><a href="#method_update" title="update() :: update (save) item in module"><span class="description">update (save) item in module</span><pre>update()</pre></a></li>
+<li class="method public "><a href="#method_update_country" title="update_country() :: "><span class="description">update_country()
+        </span><pre>update_country()</pre></a></li>
+<li class="method public "><a href="#method_update_region" title="update_region() :: "><span class="description">update_region()
+        </span><pre>update_region()</pre></a></li>
 </ul>
 </li>
 <li class="nav-header">
@@ -260,6 +274,12 @@
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
+<a id="method_approve"></a><div class="element clickable method public method_approve" data-toggle="collapse" data-target=".method_approve .collapse" title="public">
+<h2>approve module item</h2>
+<pre>approve() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="method_author"></a><div class="element clickable method public method_author" data-toggle="collapse" data-target=".method_author .collapse" title="public">
 <h2>author of module</h2>
 <pre>author() : string</pre>
@@ -317,7 +337,7 @@
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="method_create"></a><div class="element clickable method public method_create" data-toggle="collapse" data-target=".method_create .collapse" title="public">
-<h2>create an item in this module (deprecated in favor of edit w/o id param</h2>
+<h2>create an item in this module (deprecated in favor of edit w/o id param)</h2>
 <pre>create() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
@@ -344,6 +364,13 @@
 <div class="subelement argument"><h4>$loc</h4></div>
 </div></div>
 </div>
+<a id="method_delete_country"></a><div class="element clickable method public method_delete_country" data-toggle="collapse" data-target=".method_delete_country .collapse" title="public">
+<h2>delete_country()
+        </h2>
+<pre>delete_country() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="method_delete_instance"></a><div class="element clickable method public method_delete_instance" data-toggle="collapse" data-target=".method_delete_instance .collapse" title="public">
 <h2>delete module, config, and all its items</h2>
 <pre>delete_instance($loc<code> = false</code>) </pre>
@@ -353,6 +380,13 @@
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$loc</h4></div>
 </div></div>
+</div>
+<a id="method_delete_region"></a><div class="element clickable method public method_delete_region" data-toggle="collapse" data-target=".method_delete_region .collapse" title="public">
+<h2>delete_region()
+        </h2>
+<pre>delete_region() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="method_delete_search"></a><div class="element clickable method public method_delete_search" data-toggle="collapse" data-target=".method_delete_search .collapse" title="public">
 <h2>remove module items from search index</h2>
@@ -407,6 +441,20 @@
 <a id="method_edit"></a><div class="element clickable method public method_edit" data-toggle="collapse" data-target=".method_edit .collapse" title="public">
 <h2>edit item in module, also used to copy items</h2>
 <pre>edit() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_edit_country"></a><div class="element clickable method public method_edit_country" data-toggle="collapse" data-target=".method_edit_country .collapse" title="public">
+<h2>edit_country()
+        </h2>
+<pre>edit_country() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_edit_region"></a><div class="element clickable method public method_edit_region" data-toggle="collapse" data-target=".method_edit_region .collapse" title="public">
+<h2>edit_region()
+        </h2>
+<pre>edit_region() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -531,7 +579,7 @@
 </div></div>
 </div>
 <a id="method_moduleSelfAwareness"></a><div class="element clickable method public method_moduleSelfAwareness" data-toggle="collapse" data-target=".method_moduleSelfAwareness .collapse" title="public">
-<h2>glue to make module aware of itself</h2>
+<h2>glue to make the view template aware of the module</h2>
 <pre>moduleSelfAwareness() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
@@ -606,6 +654,18 @@
 <div class="long_description"></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_searchHit"></a><div class="element clickable method public method_searchHit" data-toggle="collapse" data-target=".method_searchHit .collapse" title="public">
+<h2>additional check for display of search hit</h2>
+<pre>searchHit(mixed $record) : bool</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$record</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
 <a id="method_searchName"></a><div class="element clickable method public method_searchName" data-toggle="collapse" data-target=".method_searchName .collapse" title="public">
@@ -714,6 +774,20 @@
 <a id="method_update"></a><div class="element clickable method public method_update" data-toggle="collapse" data-target=".method_update .collapse" title="public">
 <h2>update (save) item in module</h2>
 <pre>update() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_update_country"></a><div class="element clickable method public method_update_country" data-toggle="collapse" data-target=".method_update_country .collapse" title="public">
+<h2>update_country()
+        </h2>
+<pre>update_country() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_update_region"></a><div class="element clickable method public method_update_region" data-toggle="collapse" data-target=".method_update_region .collapse" title="public">
+<h2>update_region()
+        </h2>
+<pre>update_region() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -924,7 +998,7 @@
 <pre>$permissions </pre>
 <div class="row collapse"><div class="detail-description">
 <h3>Default</h3>
-<div class="subelement argument"><code>array('manage' => 'Manage', 'configure' => 'Configure', 'create' => 'Create', 'edit' => 'Edit', 'delete' => 'Delete')</code></div>
+<div class="subelement argument"><code>array('manage' => 'Manage', 'configure' => 'Configure', 'create' => 'Create', 'edit' => 'Edit', 'delete' => 'Delete', 'approve' => 'Approval')</code></div>
 </div></div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
@@ -957,7 +1031,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.4.0
 </a> and<br>
-            generated on 2014-04-07T22:32:17-04:00.<br></footer></div>
+            generated on 2014-07-18T16:23:12-04:00.<br></footer></div>
 </div>
 </body>
 </html>

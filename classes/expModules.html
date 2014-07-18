@@ -43,7 +43,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">4659</span></a></li>
+                <span class="label label-info">5328</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -73,6 +73,11 @@
 <i title="Methods" class="icon-custom icon-method"></i> Methods
                     <ul>
 <li class="method public "><a href="#method_controllerExists" title="controllerExists() :: Does a controller of controllername exist in system?"><span class="description">Does a controller of controllername exist in system?</span><pre>controllerExists()</pre></a></li>
+<li class="method public "><a href="#method_getActiveControllersList" title="getActiveControllersList() :: Looks through the database returns a list of all module class
+names that exist in the system and have been turned on by
+the administrator.  Inactive modules will not be included."><span class="description">Looks through the database returns a list of all module class
+names that exist in the system and have been turned on by
+the administrator.  Inactive modules will not be included.</span><pre>getActiveControllersList()</pre></a></li>
 <li class="method public "><a href="#method_getActiveModulesAndControllersList" title="getActiveModulesAndControllersList() :: Looks through the database returns a list of all module class
 names that exist in the system and have been turned on by
 the administrator.  Inactive modules will not be included."><span class="description">Looks through the database returns a list of all module class
@@ -93,15 +98,15 @@ this is how we store them in the db as 2.0/old school
 and in most cases it is the name of the model/data"><span class="description">Returns the controller sans the 'Controller' or module name with 'module' suffix
 this is how we store them in the db as 2.0/old school
 and in most cases it is the name of the model/data</span><pre>getModuleName()</pre></a></li>
-<li class="method public "><a href="#method_initializeControllers" title="initializeControllers() :: Initializes list of system and custom (theme) controllers and models"><span class="description">Initializes list of system and custom (theme) controllers and models</span><pre>initializeControllers()</pre></a></li>
+<li class="method public "><a href="#method_initializeControllers" title="initializeControllers() :: Initializes list of system and custom (theme) controllers"><span class="description">Initializes list of system and custom (theme) controllers</span><pre>initializeControllers()</pre></a></li>
+<li class="method public "><a href="#method_initializeModels" title="initializeModels() :: Initializes list of system and custom (theme) models"><span class="description">Initializes list of system and custom (theme) models</span><pre>initializeModels()</pre></a></li>
 <li class="method public "><a href="#method_listActiveControllers" title="listActiveControllers() :: Returns list of active controllers"><span class="description">Returns list of active controllers</span><pre>listActiveControllers()</pre></a></li>
-<li class="method public "><a href="#method_listActiveOSMods" title="listActiveOSMods() :: Returns list of active old school modules"><span class="description">Returns list of active old school modules</span><pre>listActiveOSMods()</pre></a></li>
 <li class="method public "><a href="#method_listControllers" title="listControllers() :: "><span class="description">listControllers()
         </span><pre>listControllers()</pre></a></li>
 <li class="method public "><a href="#method_listInstalledControllers" title="listInstalledControllers() :: Returns list of installed/used controllers"><span class="description">Returns list of installed/used controllers</span><pre>listInstalledControllers()</pre></a></li>
 <li class="method public "><a href="#method_listUserRunnableControllers" title="listUserRunnableControllers() :: Returns list of controllers with user actions"><span class="description">Returns list of controllers with user actions</span><pre>listUserRunnableControllers()</pre></a></li>
-<li class="method public "><a href="#method_loadModulesDir" title="loadModulesDir() :: Recursive function used to (auto?)load 2.0 modules controllers &amp; models"><span class="description">Recursive function used to (auto?)load 2.0 modules controllers &amp; models</span><pre>loadModulesDir()</pre></a></li>
-<li class="method public "><a href="#method_modules_list" title="modules_list() :: Returns list of old school modules"><span class="description">Returns list of old school modules</span><pre>modules_list()</pre></a></li>
+<li class="method public "><a href="#method_loadModels" title="loadModels() :: Recursive function used to load 2.0 models"><span class="description">Recursive function used to load 2.0 models</span><pre>loadModels()</pre></a></li>
+<li class="method public "><a href="#method_loadModules" title="loadModules() :: Recursive function used to load 2.0 modules controllers"><span class="description">Recursive function used to load 2.0 modules controllers</span><pre>loadModules()</pre></a></li>
 </ul>
 </li></ul>
 </div>
@@ -144,6 +149,22 @@ and in most cases it is the name of the model/data</span><pre>getModuleName()</p
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_getActiveControllersList"></a><div class="element clickable method public method_getActiveControllersList" data-toggle="collapse" data-target=".method_getActiveControllersList .collapse" title="public">
+<h2>Looks through the database returns a list of all module class
+names that exist in the system and have been turned on by
+the administrator.  Inactive modules will not be included.</h2>
+<pre>getActiveControllersList() : array</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Returns the list of active module class names.</div>
+<table class="table table-bordered"><tr>
+<th>node</th>
+<td>Subsystems:Modules</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
 <a id="method_getActiveModulesAndControllersList"></a><div class="element clickable method public method_getActiveModulesAndControllersList" data-toggle="collapse" data-target=".method_getActiveModulesAndControllersList .collapse" title="public">
@@ -270,8 +291,18 @@ and in most cases it is the name of the model/data</h2>
 </div></div>
 </div>
 <a id="method_initializeControllers"></a><div class="element clickable method public method_initializeControllers" data-toggle="collapse" data-target=".method_initializeControllers .collapse" title="public">
-<h2>Initializes list of system and custom (theme) controllers and models</h2>
+<h2>Initializes list of system and custom (theme) controllers</h2>
 <pre>initializeControllers() : array</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_initializeModels"></a><div class="element clickable method public method_initializeModels" data-toggle="collapse" data-target=".method_initializeModels .collapse" title="public">
+<h2>Initializes list of system and custom (theme) models</h2>
+<pre>initializeModels() : array</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -287,16 +318,6 @@ and in most cases it is the name of the model/data</h2>
 <div class="long_description"></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
-</div></div>
-</div>
-<a id="method_listActiveOSMods"></a><div class="element clickable method public method_listActiveOSMods" data-toggle="collapse" data-target=".method_listActiveOSMods .collapse" title="public">
-<h2>Returns list of active old school modules</h2>
-<pre>listActiveOSMods() : mixed</pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>mixed</code></div>
 </div></div>
 </div>
 <a id="method_listControllers"></a><div class="element clickable method public method_listControllers" data-toggle="collapse" data-target=".method_listControllers .collapse" title="public">
@@ -327,25 +348,26 @@ and in most cases it is the name of the model/data</h2>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_loadModulesDir"></a><div class="element clickable method public method_loadModulesDir" data-toggle="collapse" data-target=".method_loadModulesDir .collapse" title="public">
-<h2>Recursive function used to (auto?)load 2.0 modules controllers &amp; models</h2>
-<pre>loadModulesDir($dir, $controllers) </pre>
+<a id="method_loadModels"></a><div class="element clickable method public method_loadModels" data-toggle="collapse" data-target=".method_loadModels .collapse" title="public">
+<h2>Recursive function used to load 2.0 models</h2>
+<pre>loadModels($dir, $models) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dir</h4></div>
+<div class="subelement argument"><h4>$models</h4></div>
+</div></div>
+</div>
+<a id="method_loadModules"></a><div class="element clickable method public method_loadModules" data-toggle="collapse" data-target=".method_loadModules .collapse" title="public">
+<h2>Recursive function used to load 2.0 modules controllers</h2>
+<pre>loadModules($dir, $controllers) </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$dir</h4></div>
 <div class="subelement argument"><h4>$controllers</h4></div>
-</div></div>
-</div>
-<a id="method_modules_list"></a><div class="element clickable method public method_modules_list" data-toggle="collapse" data-target=".method_modules_list .collapse" title="public">
-<h2>Returns list of old school modules</h2>
-<pre>modules_list() : array</pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
 </div>
@@ -356,7 +378,7 @@ and in most cases it is the name of the model/data</h2>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.4.0
 </a> and<br>
-            generated on 2014-04-07T22:32:20-04:00.<br></footer></div>
+            generated on 2014-07-18T16:23:16-04:00.<br></footer></div>
 </div>
 </body>
 </html>

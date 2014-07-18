@@ -43,7 +43,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">4659</span></a></li>
+                <span class="label label-info">5328</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -78,10 +78,8 @@
 <li class="method public "><a href="#method_addScript" title="addScript() :: Adds a javascript to the form."><span class="description">Adds a javascript to the form.</span><pre>addScript()</pre></a></li>
 <li class="method public "><a href="#method_ajaxUpdater" title="ajaxUpdater() :: "><span class="description">ajaxUpdater()
         </span><pre>ajaxUpdater()</pre></a></li>
-<li class="method public "><a href="#method_location" title="location() :: "><span class="description">location()
-        </span><pre>location()</pre></a></li>
-<li class="method public "><a href="#method_meta" title="meta() :: "><span class="description">meta()
-        </span><pre>meta()</pre></a></li>
+<li class="method public "><a href="#method_location" title="location() :: Sets form location data"><span class="description">Sets form location data</span><pre>location()</pre></a></li>
+<li class="method public "><a href="#method_meta" title="meta() :: Adds form meta data (hidden inputs)"><span class="description">Adds form meta data (hidden inputs)</span><pre>meta()</pre></a></li>
 <li class="method public "><a href="#method_register" title="register() :: Registers a new Control with the form.  This function will simply append the new Control to the end of the Form."><span class="description">Registers a new Control with the form.  This function will simply append the new Control to the end of the Form.</span><pre>register()</pre></a></li>
 <li class="method public "><a href="#method_registerAfter" title="registerAfter() :: Registers a new Control, placing it after a pre-existing named Control.  If the Control that the caller wants to insert after does not exist, the new Control is appended to the end of the Form."><span class="description">Registers a new Control, placing it after a pre-existing named Control.  If the Control that the caller wants to insert after does not exist, the new Control is appended to the end of the Form.</span><pre>registerAfter()</pre></a></li>
 <li class="method public "><a href="#method_registerBefore" title="registerBefore() :: Registers a new Control, placing it before a pre-existing named Control.  If the Control that the caller wants to insert the new Control before does not exist, the new Control is prepended to the form."><span class="description">Registers a new Control, placing it before a pre-existing named Control.  If the Control that the caller wants to insert the new Control before does not exist, the new Control is prepended to the form.</span><pre>registerBefore()</pre></a></li>
@@ -109,6 +107,7 @@
 <li class="property public "><a href="#property_method" title="$method() :: "><span class="description"></span><pre>$method</pre></a></li>
 <li class="property public "><a href="#property_name" title="$name() :: "><span class="description"></span><pre>$name</pre></a></li>
 <li class="property public "><a href="#property_scripts" title="$scripts() :: "><span class="description"></span><pre>$scripts</pre></a></li>
+<li class="property public "><a href="#property_style" title="$style() :: "><span class="description"></span><pre>$style</pre></a></li>
 <li class="property public "><a href="#property_validationScript" title="$validationScript() :: "><span class="description"></span><pre>$validationScript</pre></a></li>
 </ul>
 </li>
@@ -182,26 +181,28 @@ registerable and unregisterable controls.</div>
 </div></div>
 </div>
 <a id="method_location"></a><div class="element clickable method public method_location" data-toggle="collapse" data-target=".method_location .collapse" title="public">
-<h2>location()
-        </h2>
-<pre>location($loc) </pre>
+<h2>Sets form location data</h2>
+<pre>location(mixed $loc) : bool</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$loc</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
 <a id="method_meta"></a><div class="element clickable method public method_meta" data-toggle="collapse" data-target=".method_meta .collapse" title="public">
-<h2>meta()
-        </h2>
-<pre>meta($name, $value) </pre>
+<h2>Adds form meta data (hidden inputs)</h2>
+<pre>meta(mixed $name, mixed $value) : bool</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$name</h4></div>
 <div class="subelement argument"><h4>$value</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
 <a id="method_register"></a><div class="element clickable method public method_register" data-toggle="collapse" data-target=".method_register .collapse" title="public">
@@ -321,17 +322,13 @@ registerable and unregisterable controls.</div>
 </div>
 <a id="method_toHTML"></a><div class="element clickable method public method_toHTML" data-toggle="collapse" data-target=".method_toHTML .collapse" title="public">
 <h2>Convert the form to HTML output.</h2>
-<pre>toHTML(null $form_id<code> = null</code>, null $module<code> = null</code>) : string</pre>
+<pre>toHTML(null $form_id<code> = null</code>) : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$form_id</h4>
-<code>null</code>
-</div>
-<div class="subelement argument">
-<h4>$module</h4>
 <code>null</code>
 </div>
 <h3>Returns</h3>
@@ -342,13 +339,12 @@ registerable and unregisterable controls.</div>
 <a id="method_toHTML"></a><div class="element clickable method public method_toHTML" data-toggle="collapse" data-target=".method_toHTML .collapse" title="public">
 <h2>toHTML()
         </h2>
-<pre>toHTML($form_id, $module) </pre>
+<pre>toHTML($form_id) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$form_id</h4></div>
-<div class="subelement argument"><h4>$module</h4></div>
 </div></div>
 </div>
 <a id="method_unregister"></a><div class="element clickable method public method_unregister" data-toggle="collapse" data-target=".method_unregister .collapse" title="public">
@@ -488,6 +484,16 @@ registerable and unregisterable controls.</div>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="property_style"> </a><div class="element clickable property public property_style" data-toggle="collapse" data-target=".property_style .collapse" title="public">
+<h2>$style</h2>
+<pre>$style </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="property_validationScript"> </a><div class="element clickable property public property_validationScript" data-toggle="collapse" data-target=".property_validationScript .collapse" title="public">
 <h2>$validationScript</h2>
 <pre>$validationScript </pre>
@@ -506,7 +512,7 @@ registerable and unregisterable controls.</div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.4.0
 </a> and<br>
-            generated on 2014-04-07T22:32:07-04:00.<br></footer></div>
+            generated on 2014-07-18T16:22:59-04:00.<br></footer></div>
 </div>
 </body>
 </html>
