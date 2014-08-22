@@ -19,12 +19,10 @@
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a>Namespaces</a></li>
-<li><a href="../namespaces/.html"><i class="icon-th"></i> </a></li>
-<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
 <li><a>Packages</a></li>
 <li><a href="../packages/Connectors.html"><i class="icon-folder-open"></i> Connectors</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 <li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
 <li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
 <li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
@@ -32,7 +30,6 @@
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
 <li><a href="../packages/elFinder.html"><i class="icon-folder-open"></i> elFinder</a></li>
-<li><a href="../packages/global.html"><i class="icon-folder-open"></i> global</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -43,7 +40,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">5328</span></a></li>
+                <span class="label label-info">6529</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -61,7 +58,7 @@
                         </div></noscript>
 <div class="row">
 <div class="span4">
-<div class="btn-toolbar">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
 <div class="btn-group visibility" data-toggle="buttons-checkbox">
 <button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button>
 </div>
@@ -69,7 +66,7 @@
 <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
 </div>
 </div>
-<ul class="side-nav nav nav-list"><li class="nav-header">
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list"><li class="nav-header">
 <i title="Methods" class="icon-custom icon-method"></i> Methods
                     <ul>
 <li class="method public "><a href="#method_browser_info" title="browser_info() :: Returns info about browser being used
@@ -90,26 +87,35 @@ a windows platform as well as Linux.</span><pre>isReallyWritable()</pre></a></li
 </li></ul>
 </div>
 <div class="span8">
-<a id="\expUtil"></a><ul class="breadcrumb">
+<a xmlns:php="http://php.net/xsl" id="\expUtil"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
 <li>
 <a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
-<li><a href="../namespaces/.html"></a></li>
 <li class="active">
 <span class="divider">\</span><a href="../classes/expUtil.html">expUtil</a>
 </li>
 </ul>
-<div class="element class">
+<div xmlns:php="http://php.net/xsl" class="element class">
 <p class="short_description"></p>
 <div class="details">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>define</th>
 <td>"BASE" "../../.."</td>
-</tr></table>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.html">Subsystems</a></td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.html">Subsystems</a></td>
+</tr>
+</table>
 <h3>
 <i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
-<a id="method_browser_info"></a><div class="element clickable method public method_browser_info" data-toggle="collapse" data-target=".method_browser_info .collapse" title="public">
+<a id="method_browser_info"></a><div class="element clickable method public method_browser_info " data-toggle="collapse" data-target=".method_browser_info .collapse" title="public">
 <h2>Returns info about browser being used
 this should work on all server installation</h2>
 <pre>browser_info(null $agent<code> = null</code>) : array</pre>
@@ -125,7 +131,7 @@ this should work on all server installation</h2>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_currency_to_float"></a><div class="element clickable method public method_currency_to_float" data-toggle="collapse" data-target=".method_currency_to_float .collapse" title="public">
+<a id="method_currency_to_float"></a><div class="element clickable method public method_currency_to_float " data-toggle="collapse" data-target=".method_currency_to_float .collapse" title="public">
 <h2>Converts a currency amount to the floating point value</h2>
 <pre>currency_to_float($amount) </pre>
 <div class="labels"><span class="label">Static</span></div>
@@ -135,7 +141,7 @@ this should work on all server installation</h2>
 <div class="subelement argument"><h4>$amount</h4></div>
 </div></div>
 </div>
-<a id="method_getOrigReferrer"></a><div class="element clickable method public method_getOrigReferrer" data-toggle="collapse" data-target=".method_getOrigReferrer .collapse" title="public">
+<a id="method_getOrigReferrer"></a><div class="element clickable method public method_getOrigReferrer " data-toggle="collapse" data-target=".method_getOrigReferrer .collapse" title="public">
 <h2>returns original referrer url from ticket</h2>
 <pre>getOrigReferrer(null $ticket<code> = null</code>) : null</pre>
 <div class="labels"><span class="label">Static</span></div>
@@ -150,9 +156,9 @@ this should work on all server installation</h2>
 <div class="subelement response"><code>null</code></div>
 </div></div>
 </div>
-<a id="method_isNumberEqualTo"></a><div class="element clickable method public method_isNumberEqualTo" data-toggle="collapse" data-target=".method_isNumberEqualTo .collapse" title="public">
+<a id="method_isNumberEqualTo"></a><div class="element clickable method public method_isNumberEqualTo " data-toggle="collapse" data-target=".method_isNumberEqualTo .collapse" title="public">
 <h2>function to compare float numbers for equality</h2>
-<pre>isNumberEqualTo(mixed $firstnumber, mixed $secondnumber, int $precision<code> = 10</code>) : bool</pre>
+<pre>isNumberEqualTo($firstnumber, $secondnumber, integer $precision<code> = 10</code>) : boolean</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -161,15 +167,15 @@ this should work on all server installation</h2>
 <div class="subelement argument"><h4>$secondnumber</h4></div>
 <div class="subelement argument">
 <h4>$precision</h4>
-<code>int</code>
+<code>integer</code>
 </div>
 <h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
+<div class="subelement response"><code>boolean</code></div>
 </div></div>
 </div>
-<a id="method_isNumberGreaterThan"></a><div class="element clickable method public method_isNumberGreaterThan" data-toggle="collapse" data-target=".method_isNumberGreaterThan .collapse" title="public">
+<a id="method_isNumberGreaterThan"></a><div class="element clickable method public method_isNumberGreaterThan " data-toggle="collapse" data-target=".method_isNumberGreaterThan .collapse" title="public">
 <h2>function to compare float numbers for greater than</h2>
-<pre>isNumberGreaterThan(mixed $firstnumber, mixed $secondnumber, int $precision<code> = 10</code>) : bool</pre>
+<pre>isNumberGreaterThan($firstnumber, $secondnumber, integer $precision<code> = 10</code>) : boolean</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -178,15 +184,15 @@ this should work on all server installation</h2>
 <div class="subelement argument"><h4>$secondnumber</h4></div>
 <div class="subelement argument">
 <h4>$precision</h4>
-<code>int</code>
+<code>integer</code>
 </div>
 <h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
+<div class="subelement response"><code>boolean</code></div>
 </div></div>
 </div>
-<a id="method_isNumberGreaterThanOrEqualTo"></a><div class="element clickable method public method_isNumberGreaterThanOrEqualTo" data-toggle="collapse" data-target=".method_isNumberGreaterThanOrEqualTo .collapse" title="public">
+<a id="method_isNumberGreaterThanOrEqualTo"></a><div class="element clickable method public method_isNumberGreaterThanOrEqualTo " data-toggle="collapse" data-target=".method_isNumberGreaterThanOrEqualTo .collapse" title="public">
 <h2>function to compare float numbers for greater than or equality</h2>
-<pre>isNumberGreaterThanOrEqualTo(mixed $firstnumber, mixed $secondnumber, int $precision<code> = 10</code>) : bool</pre>
+<pre>isNumberGreaterThanOrEqualTo($firstnumber, $secondnumber, integer $precision<code> = 10</code>) : boolean</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -195,15 +201,15 @@ this should work on all server installation</h2>
 <div class="subelement argument"><h4>$secondnumber</h4></div>
 <div class="subelement argument">
 <h4>$precision</h4>
-<code>int</code>
+<code>integer</code>
 </div>
 <h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
+<div class="subelement response"><code>boolean</code></div>
 </div></div>
 </div>
-<a id="method_isNumberLessThan"></a><div class="element clickable method public method_isNumberLessThan" data-toggle="collapse" data-target=".method_isNumberLessThan .collapse" title="public">
+<a id="method_isNumberLessThan"></a><div class="element clickable method public method_isNumberLessThan " data-toggle="collapse" data-target=".method_isNumberLessThan .collapse" title="public">
 <h2>function to compare float numbers for less than</h2>
-<pre>isNumberLessThan(mixed $firstnumber, mixed $secondnumber, int $precision<code> = 10</code>) : bool</pre>
+<pre>isNumberLessThan($firstnumber, $secondnumber, integer $precision<code> = 10</code>) : boolean</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -212,15 +218,15 @@ this should work on all server installation</h2>
 <div class="subelement argument"><h4>$secondnumber</h4></div>
 <div class="subelement argument">
 <h4>$precision</h4>
-<code>int</code>
+<code>integer</code>
 </div>
 <h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
+<div class="subelement response"><code>boolean</code></div>
 </div></div>
 </div>
-<a id="method_isNumberLessThanOrEqualTo"></a><div class="element clickable method public method_isNumberLessThanOrEqualTo" data-toggle="collapse" data-target=".method_isNumberLessThanOrEqualTo .collapse" title="public">
+<a id="method_isNumberLessThanOrEqualTo"></a><div class="element clickable method public method_isNumberLessThanOrEqualTo " data-toggle="collapse" data-target=".method_isNumberLessThanOrEqualTo .collapse" title="public">
 <h2>function to compare float numbers for less than or equality</h2>
-<pre>isNumberLessThanOrEqualTo(mixed $firstnumber, mixed $secondnumber, int $precision<code> = 10</code>) : bool</pre>
+<pre>isNumberLessThanOrEqualTo($firstnumber, $secondnumber, integer $precision<code> = 10</code>) : boolean</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -229,28 +235,28 @@ this should work on all server installation</h2>
 <div class="subelement argument"><h4>$secondnumber</h4></div>
 <div class="subelement argument">
 <h4>$precision</h4>
-<code>int</code>
+<code>integer</code>
 </div>
 <h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
+<div class="subelement response"><code>boolean</code></div>
 </div></div>
 </div>
-<a id="method_isReallyWritable"></a><div class="element clickable method public method_isReallyWritable" data-toggle="collapse" data-target=".method_isReallyWritable .collapse" title="public">
+<a id="method_isReallyWritable"></a><div class="element clickable method public method_isReallyWritable " data-toggle="collapse" data-target=".method_isReallyWritable .collapse" title="public">
 <h2>isReallyWritable is an alternate implementation of is_writable that should work on
 a windows platform as well as Linux.</h2>
-<pre>isReallyWritable(mixed $file) : bool</pre>
+<pre>isReallyWritable($file) : boolean</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$file</h4></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
+<div class="subelement response"><code>boolean</code></div>
 </div></div>
 </div>
-<a id="method_right"></a><div class="element clickable method public method_right" data-toggle="collapse" data-target=".method_right .collapse" title="public">
+<a id="method_right"></a><div class="element clickable method public method_right " data-toggle="collapse" data-target=".method_right .collapse" title="public">
 <h2>function to return the right side of a string</h2>
-<pre>right(mixed $string, mixed $chars) : string</pre>
+<pre>right($string, $chars) : string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -267,9 +273,8 @@ a windows platform as well as Linux.</h2>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.5.0
-</a> and<br>
-            generated on 2014-07-18T16:28:54-04:00.<br></footer></div>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.7.0</a> and<br>
+            generated on 2014-08-22T07:06:35-04:00.<br></footer></div>
 </div>
 </body>
 </html>

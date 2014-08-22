@@ -19,12 +19,10 @@
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a>Namespaces</a></li>
-<li><a href="../namespaces/.html"><i class="icon-th"></i> </a></li>
-<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
 <li><a>Packages</a></li>
 <li><a href="../packages/Connectors.html"><i class="icon-folder-open"></i> Connectors</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 <li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
 <li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
 <li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
@@ -32,7 +30,6 @@
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
 <li><a href="../packages/elFinder.html"><i class="icon-folder-open"></i> elFinder</a></li>
-<li><a href="../packages/global.html"><i class="icon-folder-open"></i> global</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -43,7 +40,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">5328</span></a></li>
+                <span class="label label-info">6529</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -61,7 +58,7 @@
                         </div></noscript>
 <div class="row">
 <div class="span4">
-<div class="btn-toolbar">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
 <div class="btn-group visibility" data-toggle="buttons-checkbox">
 <button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button>
 </div>
@@ -69,7 +66,7 @@
 <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
 </div>
 </div>
-<ul class="side-nav nav nav-list"><li class="nav-header">
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list"><li class="nav-header">
 <i title="Methods" class="icon-custom icon-method"></i> Methods
                     <ul>
 <li class="method public "><a href="#method_advertiseRSS" title="advertiseRSS() :: exdoc
@@ -159,26 +156,35 @@ children, grand-children, grand-grand-children, etc.</span><pre>showTopSectional
 </li></ul>
 </div>
 <div class="span8">
-<a id="\expTheme"></a><ul class="breadcrumb">
+<a xmlns:php="http://php.net/xsl" id="\expTheme"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
 <li>
 <a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
-<li><a href="../namespaces/.html"></a></li>
 <li class="active">
 <span class="divider">\</span><a href="../classes/expTheme.html">expTheme</a>
 </li>
 </ul>
-<div class="element class">
+<div xmlns:php="http://php.net/xsl" class="element class">
 <p class="short_description"></p>
 <div class="details">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>define</th>
 <td>"BASE" "../../.."</td>
-</tr></table>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.html">Subsystems</a></td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.html">Subsystems</a></td>
+</tr>
+</table>
 <h3>
 <i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
-<a id="method_advertiseRSS"></a><div class="element clickable method public method_advertiseRSS" data-toggle="collapse" data-target=".method_advertiseRSS .collapse" title="public">
+<a id="method_advertiseRSS"></a><div class="element clickable method public method_advertiseRSS " data-toggle="collapse" data-target=".method_advertiseRSS .collapse" title="public">
 <h2>exdoc
 Output &lt;link /&gt; elements for each RSS feed on the site</h2>
 <pre>advertiseRSS() </pre>
@@ -191,9 +197,9 @@ Output &lt;link /&gt; elements for each RSS feed on the site</h2>
 </tr></table>
 </div></div>
 </div>
-<a id="method_buttonColor"></a><div class="element clickable method public method_buttonColor" data-toggle="collapse" data-target=".method_buttonColor .collapse" title="public">
+<a id="method_buttonColor"></a><div class="element clickable method public method_buttonColor " data-toggle="collapse" data-target=".method_buttonColor .collapse" title="public">
 <h2>Return the color style for the current framework</h2>
-<pre>buttonColor(mixed $color<code> = null</code>) : mixed | string</pre>
+<pre>buttonColor($color<code> = null</code>) : mixed | string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -205,23 +211,24 @@ Output &lt;link /&gt; elements for each RSS feed on the site</h2>
 </div>
 </div></div>
 </div>
-<a id="method_buttonIcon"></a><div class="element clickable method public method_buttonIcon" data-toggle="collapse" data-target=".method_buttonIcon .collapse" title="public">
+<a id="method_buttonIcon"></a><div class="element clickable method public method_buttonIcon " data-toggle="collapse" data-target=".method_buttonIcon .collapse" title="public">
 <h2>Return the icon associated for the current frameowrk</h2>
-<pre>buttonIcon(mixed $class) : \stdClass | string</pre>
+<pre>buttonIcon($class, $size<code> = null</code>) : \stdClass | string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$class</h4></div>
+<div class="subelement argument"><h4>$size</h4></div>
 <h3>Returns</h3>
 <div class="subelement response">
 <code>\stdClass</code><code>string</code>
 </div>
 </div></div>
 </div>
-<a id="method_buttonSize"></a><div class="element clickable method public method_buttonSize" data-toggle="collapse" data-target=".method_buttonSize .collapse" title="public">
+<a id="method_buttonSize"></a><div class="element clickable method public method_buttonSize " data-toggle="collapse" data-target=".method_buttonSize .collapse" title="public">
 <h2>Return the button size for the current framework</h2>
-<pre>buttonSize(mixed $size<code> = null</code>) : mixed | string</pre>
+<pre>buttonSize($size<code> = null</code>) : mixed | string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -233,9 +240,9 @@ Output &lt;link /&gt; elements for each RSS feed on the site</h2>
 </div>
 </div></div>
 </div>
-<a id="method_buttonStyle"></a><div class="element clickable method public method_buttonStyle" data-toggle="collapse" data-target=".method_buttonStyle .collapse" title="public">
+<a id="method_buttonStyle"></a><div class="element clickable method public method_buttonStyle " data-toggle="collapse" data-target=".method_buttonStyle .collapse" title="public">
 <h2>Return the button color and size style for the current framework</h2>
-<pre>buttonStyle(null $color<code> = null</code>, mixed $size<code> = null</code>) : mixed | string</pre>
+<pre>buttonStyle(null $color<code> = null</code>, $size<code> = null</code>) : mixed | string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -251,14 +258,14 @@ Output &lt;link /&gt; elements for each RSS feed on the site</h2>
 </div>
 </div></div>
 </div>
-<a id="method_clearSmartyCache"></a><div class="element clickable method public method_clearSmartyCache" data-toggle="collapse" data-target=".method_clearSmartyCache .collapse" title="public">
+<a id="method_clearSmartyCache"></a><div class="element clickable method public method_clearSmartyCache " data-toggle="collapse" data-target=".method_clearSmartyCache .collapse" title="public">
 <h2>clearSmartyCache()
         </h2>
 <pre>clearSmartyCache() </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_deprecated"></a><div class="element clickable method public method_deprecated" data-toggle="collapse" data-target=".method_deprecated .collapse" title="public">
+<a id="method_deprecated"></a><div class="element clickable method public method_deprecated " data-toggle="collapse" data-target=".method_deprecated .collapse" title="public">
 <h2>deprecated()
         </h2>
 <pre>deprecated($newcall<code> = "expTheme::module()"</code>, $controller<code> = null</code>, $actionview<code> = null</code>) </pre>
@@ -271,7 +278,7 @@ Output &lt;link /&gt; elements for each RSS feed on the site</h2>
 <div class="subelement argument"><h4>$actionview</h4></div>
 </div></div>
 </div>
-<a id="method_foot"></a><div class="element clickable method public method_foot" data-toggle="collapse" data-target=".method_foot .collapse" title="public">
+<a id="method_foot"></a><div class="element clickable method public method_foot " data-toggle="collapse" data-target=".method_foot .collapse" title="public">
 <h2>foot()
         </h2>
 <pre>foot($params<code> = array()</code>) </pre>
@@ -282,7 +289,7 @@ Output &lt;link /&gt; elements for each RSS feed on the site</h2>
 <div class="subelement argument"><h4>$params</h4></div>
 </div></div>
 </div>
-<a id="method_footerInfo"></a><div class="element clickable method public method_footerInfo" data-toggle="collapse" data-target=".method_footerInfo .collapse" title="public">
+<a id="method_footerInfo"></a><div class="element clickable method public method_footerInfo " data-toggle="collapse" data-target=".method_footerInfo .collapse" title="public">
 <h2>footerInfo()
         </h2>
 <pre>footerInfo($params<code> = array()</code>) </pre>
@@ -293,16 +300,16 @@ Output &lt;link /&gt; elements for each RSS feed on the site</h2>
 <div class="subelement argument"><h4>$params</h4></div>
 </div></div>
 </div>
-<a id="method_getPrinterFriendlyTheme"></a><div class="element clickable method public method_getPrinterFriendlyTheme" data-toggle="collapse" data-target=".method_getPrinterFriendlyTheme .collapse" title="public">
+<a id="method_getPrinterFriendlyTheme"></a><div class="element clickable method public method_getPrinterFriendlyTheme " data-toggle="collapse" data-target=".method_getPrinterFriendlyTheme .collapse" title="public">
 <h2>getPrinterFriendlyTheme()
         </h2>
 <pre>getPrinterFriendlyTheme() </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_getSubthemes"></a><div class="element clickable method public method_getSubthemes" data-toggle="collapse" data-target=".method_getSubthemes .collapse" title="public">
+<a id="method_getSubthemes"></a><div class="element clickable method public method_getSubthemes " data-toggle="collapse" data-target=".method_getSubthemes .collapse" title="public">
 <h2>exdoc</h2>
-<pre>getSubthemes(bool $include_default<code> = true</code>, string $theme<code> = DISPLAY_THEME</code>) : array</pre>
+<pre>getSubthemes(boolean $include_default<code> = true</code>, string $theme<code> = DISPLAY_THEME</code>) : array</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -319,7 +326,7 @@ Output &lt;link /&gt; elements for each RSS feed on the site</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$include_default</h4>
-<code>bool</code>
+<code>boolean</code>
 </div>
 <div class="subelement argument">
 <h4>$theme</h4>
@@ -329,14 +336,14 @@ Output &lt;link /&gt; elements for each RSS feed on the site</h2>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_getTheme"></a><div class="element clickable method public method_getTheme" data-toggle="collapse" data-target=".method_getTheme .collapse" title="public">
+<a id="method_getTheme"></a><div class="element clickable method public method_getTheme " data-toggle="collapse" data-target=".method_getTheme .collapse" title="public">
 <h2>getTheme()
         </h2>
 <pre>getTheme() </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_goDefaultSection"></a><div class="element clickable method public method_goDefaultSection" data-toggle="collapse" data-target=".method_goDefaultSection .collapse" title="public">
+<a id="method_goDefaultSection"></a><div class="element clickable method public method_goDefaultSection " data-toggle="collapse" data-target=".method_goDefaultSection .collapse" title="public">
 <h2>exdoc
 Redirect User to Default Section</h2>
 <pre>goDefaultSection() </pre>
@@ -349,7 +356,7 @@ Redirect User to Default Section</h2>
 </tr></table>
 </div></div>
 </div>
-<a id="method_grabView"></a><div class="element clickable method public method_grabView" data-toggle="collapse" data-target=".method_grabView .collapse" title="public">
+<a id="method_grabView"></a><div class="element clickable method public method_grabView " data-toggle="collapse" data-target=".method_grabView .collapse" title="public">
 <h2>grabView()
         </h2>
 <pre>grabView($path, $filename) </pre>
@@ -361,7 +368,7 @@ Redirect User to Default Section</h2>
 <div class="subelement argument"><h4>$filename</h4></div>
 </div></div>
 </div>
-<a id="method_grabViews"></a><div class="element clickable method public method_grabViews" data-toggle="collapse" data-target=".method_grabViews .collapse" title="public">
+<a id="method_grabViews"></a><div class="element clickable method public method_grabViews " data-toggle="collapse" data-target=".method_grabViews .collapse" title="public">
 <h2>grabViews()
         </h2>
 <pre>grabViews($path, $filter<code> = ''</code>) </pre>
@@ -373,7 +380,7 @@ Redirect User to Default Section</h2>
 <div class="subelement argument"><h4>$filter</h4></div>
 </div></div>
 </div>
-<a id="method_head"></a><div class="element clickable method public method_head" data-toggle="collapse" data-target=".method_head .collapse" title="public">
+<a id="method_head"></a><div class="element clickable method public method_head " data-toggle="collapse" data-target=".method_head .collapse" title="public">
 <h2>head()
         </h2>
 <pre>head($config<code> = array()</code>) </pre>
@@ -384,7 +391,7 @@ Redirect User to Default Section</h2>
 <div class="subelement argument"><h4>$config</h4></div>
 </div></div>
 </div>
-<a id="method_headerInfo"></a><div class="element clickable method public method_headerInfo" data-toggle="collapse" data-target=".method_headerInfo .collapse" title="public">
+<a id="method_headerInfo"></a><div class="element clickable method public method_headerInfo " data-toggle="collapse" data-target=".method_headerInfo .collapse" title="public">
 <h2>headerInfo()
         </h2>
 <pre>headerInfo($config) </pre>
@@ -395,9 +402,9 @@ Redirect User to Default Section</h2>
 <div class="subelement argument"><h4>$config</h4></div>
 </div></div>
 </div>
-<a id="method_iconSize"></a><div class="element clickable method public method_iconSize" data-toggle="collapse" data-target=".method_iconSize .collapse" title="public">
+<a id="method_iconSize"></a><div class="element clickable method public method_iconSize " data-toggle="collapse" data-target=".method_iconSize .collapse" title="public">
 <h2>Return the icon size for the current framework</h2>
-<pre>iconSize(mixed $size<code> = null</code>) : mixed | string</pre>
+<pre>iconSize($size<code> = null</code>) : mixed | string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -409,7 +416,7 @@ Redirect User to Default Section</h2>
 </div>
 </div></div>
 </div>
-<a id="method_inAction"></a><div class="element clickable method public method_inAction" data-toggle="collapse" data-target=".method_inAction .collapse" title="public">
+<a id="method_inAction"></a><div class="element clickable method public method_inAction " data-toggle="collapse" data-target=".method_inAction .collapse" title="public">
 <h2>inAction()
         </h2>
 <pre>inAction($action<code> = null</code>) </pre>
@@ -420,7 +427,7 @@ Redirect User to Default Section</h2>
 <div class="subelement argument"><h4>$action</h4></div>
 </div></div>
 </div>
-<a id="method_inPreview"></a><div class="element clickable method public method_inPreview" data-toggle="collapse" data-target=".method_inPreview .collapse" title="public">
+<a id="method_inPreview"></a><div class="element clickable method public method_inPreview " data-toggle="collapse" data-target=".method_inPreview .collapse" title="public">
 <h2>exdoc
 Checks to see if the page is currently in an action.  Useful only if the theme does not use the self::main() function
 Returns whether or not an action should be run.</h2>
@@ -436,28 +443,28 @@ Returns whether or not an action should be run.</h2>
 <div class="subelement response"><code>boolean</code></div>
 </div></div>
 </div>
-<a id="method_initialize"></a><div class="element clickable method public method_initialize" data-toggle="collapse" data-target=".method_initialize .collapse" title="public">
+<a id="method_initialize"></a><div class="element clickable method public method_initialize " data-toggle="collapse" data-target=".method_initialize .collapse" title="public">
 <h2>initialize()
         </h2>
 <pre>initialize() </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_is_mobile"></a><div class="element clickable method public method_is_mobile" data-toggle="collapse" data-target=".method_is_mobile .collapse" title="public">
+<a id="method_is_mobile"></a><div class="element clickable method public method_is_mobile " data-toggle="collapse" data-target=".method_is_mobile .collapse" title="public">
 <h2>is_mobile()
         </h2>
 <pre>is_mobile() </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_loadActionMaps"></a><div class="element clickable method public method_loadActionMaps" data-toggle="collapse" data-target=".method_loadActionMaps .collapse" title="public">
+<a id="method_loadActionMaps"></a><div class="element clickable method public method_loadActionMaps " data-toggle="collapse" data-target=".method_loadActionMaps .collapse" title="public">
 <h2>loadActionMaps()
         </h2>
 <pre>loadActionMaps() </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_main"></a><div class="element clickable method public method_main" data-toggle="collapse" data-target=".method_main .collapse" title="public">
+<a id="method_main"></a><div class="element clickable method public method_main " data-toggle="collapse" data-target=".method_main .collapse" title="public">
 <h2>exdoc
 Takes care of all the specifics of either showing a sectional container or running an action.</h2>
 <pre>main() </pre>
@@ -470,10 +477,10 @@ Takes care of all the specifics of either showing a sectional container or runni
 </tr></table>
 </div></div>
 </div>
-<a id="method_module"></a><div class="element clickable method public method_module" data-toggle="collapse" data-target=".method_module .collapse" title="public">
+<a id="method_module"></a><div class="element clickable method public method_module " data-toggle="collapse" data-target=".method_module .collapse" title="public">
 <h2>Entry point for displaying modules
 Packages $params for calling showModule method</h2>
-<pre>module(array $params) : bool</pre>
+<pre>module(array $params) : boolean</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -482,24 +489,24 @@ Packages $params for calling showModule method</h2>
 <h4>$params</h4>
 <code>array</code><p>list of module parameters</p></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
+<div class="subelement response"><code>boolean</code></div>
 </div></div>
 </div>
-<a id="method_pageMetaInfo"></a><div class="element clickable method public method_pageMetaInfo" data-toggle="collapse" data-target=".method_pageMetaInfo .collapse" title="public">
+<a id="method_pageMetaInfo"></a><div class="element clickable method public method_pageMetaInfo " data-toggle="collapse" data-target=".method_pageMetaInfo .collapse" title="public">
 <h2>pageMetaInfo()
         </h2>
 <pre>pageMetaInfo() </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_processCSSandJS"></a><div class="element clickable method public method_processCSSandJS" data-toggle="collapse" data-target=".method_processCSSandJS .collapse" title="public">
+<a id="method_processCSSandJS"></a><div class="element clickable method public method_processCSSandJS " data-toggle="collapse" data-target=".method_processCSSandJS .collapse" title="public">
 <h2>processCSSandJS()
         </h2>
 <pre>processCSSandJS() </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_reRoutActionTo"></a><div class="element clickable method public method_reRoutActionTo" data-toggle="collapse" data-target=".method_reRoutActionTo .collapse" title="public">
+<a id="method_reRoutActionTo"></a><div class="element clickable method public method_reRoutActionTo " data-toggle="collapse" data-target=".method_reRoutActionTo .collapse" title="public">
 <h2>reRoutActionTo()
         </h2>
 <pre>reRoutActionTo($theme<code> = ""</code>) </pre>
@@ -510,24 +517,24 @@ Packages $params for calling showModule method</h2>
 <div class="subelement argument"><h4>$theme</h4></div>
 </div></div>
 </div>
-<a id="method_removeCss"></a><div class="element clickable method public method_removeCss" data-toggle="collapse" data-target=".method_removeCss .collapse" title="public">
+<a id="method_removeCss"></a><div class="element clickable method public method_removeCss " data-toggle="collapse" data-target=".method_removeCss .collapse" title="public">
 <h2>removeCss()
         </h2>
 <pre>removeCss() </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_removeSmartyCache"></a><div class="element clickable method public method_removeSmartyCache" data-toggle="collapse" data-target=".method_removeSmartyCache .collapse" title="public">
+<a id="method_removeSmartyCache"></a><div class="element clickable method public method_removeSmartyCache " data-toggle="collapse" data-target=".method_removeSmartyCache .collapse" title="public">
 <h2>removeSmartyCache()
         </h2>
 <pre>removeSmartyCache() </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_runAction"></a><div class="element clickable method public method_runAction" data-toggle="collapse" data-target=".method_runAction .collapse" title="public">
+<a id="method_runAction"></a><div class="element clickable method public method_runAction " data-toggle="collapse" data-target=".method_runAction .collapse" title="public">
 <h2>exdoc
 Runs the appropriate action, by looking at the $_REQUEST variable.</h2>
-<pre>runAction() : bool</pre>
+<pre>runAction() : boolean</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -536,17 +543,17 @@ Runs the appropriate action, by looking at the $_REQUEST variable.</h2>
 <td>Subsystems:Theme</td>
 </tr></table>
 <h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
+<div class="subelement response"><code>boolean</code></div>
 </div></div>
 </div>
-<a id="method_satisfyThemeRequirements"></a><div class="element clickable method public method_satisfyThemeRequirements" data-toggle="collapse" data-target=".method_satisfyThemeRequirements .collapse" title="public">
+<a id="method_satisfyThemeRequirements"></a><div class="element clickable method public method_satisfyThemeRequirements " data-toggle="collapse" data-target=".method_satisfyThemeRequirements .collapse" title="public">
 <h2>satisfyThemeRequirements()
         </h2>
 <pre>satisfyThemeRequirements() </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_showAction"></a><div class="element clickable method public method_showAction" data-toggle="collapse" data-target=".method_showAction .collapse" title="public">
+<a id="method_showAction"></a><div class="element clickable method public method_showAction " data-toggle="collapse" data-target=".method_showAction .collapse" title="public">
 <h2>showAction()
         </h2>
 <pre>showAction($module, $action, $src<code> = ""</code>, $params<code> = array()</code>) </pre>
@@ -560,7 +567,7 @@ Runs the appropriate action, by looking at the $_REQUEST variable.</h2>
 <div class="subelement argument"><h4>$params</h4></div>
 </div></div>
 </div>
-<a id="method_showController"></a><div class="element clickable method public method_showController" data-toggle="collapse" data-target=".method_showController .collapse" title="public">
+<a id="method_showController"></a><div class="element clickable method public method_showController " data-toggle="collapse" data-target=".method_showController .collapse" title="public">
 <h2>showController()
         </h2>
 <pre>showController($params<code> = array()</code>) </pre>
@@ -571,10 +578,10 @@ Runs the appropriate action, by looking at the $_REQUEST variable.</h2>
 <div class="subelement argument"><h4>$params</h4></div>
 </div></div>
 </div>
-<a id="method_showModule"></a><div class="element clickable method public method_showModule" data-toggle="collapse" data-target=".method_showModule .collapse" title="public">
+<a id="method_showModule"></a><div class="element clickable method public method_showModule " data-toggle="collapse" data-target=".method_showModule .collapse" title="public">
 <h2>exdoc
 Calls the necessary methods to show a specific module - NOT intended to be called directly from theme</h2>
-<pre>showModule(string $module, string $view<code> = "Default"</code>, string $title<code> = ""</code>, string $source<code> = null</code>, bool $pickable<code> = false</code>, null $section<code> = null</code>, bool $hide_menu<code> = false</code>, array $params<code> = array()</code>) : void</pre>
+<pre>showModule(string $module, string $view<code> = "Default"</code>, string $title<code> = ""</code>, string $source<code> = null</code>, boolean $pickable<code> = false</code>, null $section<code> = null</code>, boolean $hide_menu<code> = false</code>, array $params<code> = array()</code>) : void</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -597,14 +604,14 @@ Calls the necessary methods to show a specific module - NOT intended to be calle
 <code>string</code><p>The source of the module.</p></div>
 <div class="subelement argument">
 <h4>$pickable</h4>
-<code>bool</code><p>Whether or not the module is pickable in the Source Picker.</p></div>
+<code>boolean</code><p>Whether or not the module is pickable in the Source Picker.</p></div>
 <div class="subelement argument">
 <h4>$section</h4>
 <code>null</code>
 </div>
 <div class="subelement argument">
 <h4>$hide_menu</h4>
-<code>bool</code>
+<code>boolean</code>
 </div>
 <div class="subelement argument">
 <h4>$params</h4>
@@ -612,10 +619,10 @@ Calls the necessary methods to show a specific module - NOT intended to be calle
 </div>
 </div></div>
 </div>
-<a id="method_showSectionalModule"></a><div class="element clickable method public method_showSectionalModule" data-toggle="collapse" data-target=".method_showSectionalModule .collapse" title="public">
+<a id="method_showSectionalModule"></a><div class="element clickable method public method_showSectionalModule " data-toggle="collapse" data-target=".method_showSectionalModule .collapse" title="public">
 <h2>exdoc
 Calls the necessary methods to show a specific module, in a section-sensitive way.</h2>
-<pre>showSectionalModule(string $module, string $view, string $title, string $prefix<code> = null</code>, bool $pickable<code> = false</code>, bool $hide_menu<code> = false</code>) : void</pre>
+<pre>showSectionalModule(string $module, string $view, string $title, string $prefix<code> = null</code>, boolean $pickable<code> = false</code>, boolean $hide_menu<code> = false</code>) : void</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -638,19 +645,19 @@ Calls the necessary methods to show a specific module, in a section-sensitive wa
 <code>string</code><p>The prefix of the module's source.  The current section id will be appended to this</p></div>
 <div class="subelement argument">
 <h4>$pickable</h4>
-<code>bool</code><p>Whether or not the module is pickable in the Source Picker.</p></div>
+<code>boolean</code><p>Whether or not the module is pickable in the Source Picker.</p></div>
 <div class="subelement argument">
 <h4>$hide_menu</h4>
-<code>bool</code>
+<code>boolean</code>
 </div>
 </div></div>
 </div>
-<a id="method_showTopSectionalModule"></a><div class="element clickable method public method_showTopSectionalModule" data-toggle="collapse" data-target=".method_showTopSectionalModule .collapse" title="public">
+<a id="method_showTopSectionalModule"></a><div class="element clickable method public method_showTopSectionalModule " data-toggle="collapse" data-target=".method_showTopSectionalModule .collapse" title="public">
 <h2>exdoc
 Calls the necessary methods to show a specific module in such a way that the current
 section displays the same content as its top-level parent and all of the top-level parent's
 children, grand-children, grand-grand-children, etc.</h2>
-<pre>showTopSectionalModule(string $module, string $view, string $title, string $prefix<code> = null</code>, bool $pickable<code> = false</code>, bool $hide_menu<code> = false</code>) </pre>
+<pre>showTopSectionalModule(string $module, string $view, string $title, string $prefix<code> = null</code>, boolean $pickable<code> = false</code>, boolean $hide_menu<code> = false</code>) </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -673,10 +680,10 @@ children, grand-children, grand-grand-children, etc.</h2>
 <code>string</code><p>The prefix of the module's source.  The current section id will be appended to this</p></div>
 <div class="subelement argument">
 <h4>$pickable</h4>
-<code>bool</code><p>Whether or not the module is pickable in the Source Picker.</p></div>
+<code>boolean</code><p>Whether or not the module is pickable in the Source Picker.</p></div>
 <div class="subelement argument">
 <h4>$hide_menu</h4>
-<code>bool</code>
+<code>boolean</code>
 </div>
 </div></div>
 </div>
@@ -686,9 +693,8 @@ children, grand-children, grand-grand-children, etc.</h2>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.5.0
-</a> and<br>
-            generated on 2014-07-18T16:28:59-04:00.<br></footer></div>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.7.0</a> and<br>
+            generated on 2014-08-22T07:06:34-04:00.<br></footer></div>
 </div>
 </body>
 </html>

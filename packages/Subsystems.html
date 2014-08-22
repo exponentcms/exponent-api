@@ -19,12 +19,10 @@
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a>Namespaces</a></li>
-<li><a href="../namespaces/.html"><i class="icon-th"></i> </a></li>
-<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
 <li><a>Packages</a></li>
 <li><a href="../packages/Connectors.html"><i class="icon-folder-open"></i> Connectors</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 <li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
 <li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
 <li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
@@ -32,7 +30,6 @@
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
 <li><a href="../packages/elFinder.html"><i class="icon-folder-open"></i> elFinder</a></li>
-<li><a href="../packages/global.html"><i class="icon-folder-open"></i> global</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -43,7 +40,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">5328</span></a></li>
+                <span class="label label-info">6529</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -93,6 +90,27 @@
 <i title="Functions" class="icon-custom icon-function"></i> Functions</li>
 <li class="function  "><a href="#function_exponent_unhtmlentities" title="exponent_unhtmlentities() :: overides function html entity decode"><span class="description">overides function html entity decode</span><pre>exponent_unhtmlentities</pre></a></li>
 <li class="nav-header">
+<i title="Classes" class="icon-custom icon-class"></i> Classes</li>
+<li><a href="#mysql_database" title="This is the class database">mysql_database</a></li>
+<li><a href="#mysqli_database" title="This is the class database">mysqli_database</a></li>
+<li><a href="#mysqlid_database" title="This is the class database">mysqlid_database</a></li>
+<li><a href="#postgres_database" title="This is the class database">postgres_database</a></li>
+<li><a href="#expCore" title="">expCore</a></li>
+<li><a href="#expDateTime" title="">expDateTime</a></li>
+<li><a href="#expGeo" title="">expGeo</a></li>
+<li><a href="#expJavascript" title="">expJavascript</a></li>
+<li><a href="#expLang" title="">expLang</a></li>
+<li><a href="#expMail" title="The expMail class">expMail</a></li>
+<li><a href="#expPermissions" title="">expPermissions</a></li>
+<li><a href="#expSettings" title="">expSettings</a></li>
+<li><a href="#expString" title="">expString</a></li>
+<li><a href="#expTemplate" title="">expTemplate</a></li>
+<li><a href="#expTheme" title="">expTheme</a></li>
+<li><a href="#expTimer" title="">expTimer</a></li>
+<li><a href="#expUtil" title="">expUtil</a></li>
+<li><a href="#expValidator" title="">expValidator</a></li>
+<li><a href="#expVersion" title="">expVersion</a></li>
+<li class="nav-header">
 <i title="Constants" class="icon-custom icon-constant"></i> Constants</li>
 <li class="constant  "><a href="#constant_BTN_COLOR" title="BTN_COLOR() :: "><span class="description">BTN_COLOR</span><pre>BTN_COLOR</pre></a></li>
 <li class="constant  "><a href="#constant_BTN_SIZE" title="BTN_SIZE() :: "><span class="description">BTN_SIZE</span><pre>BTN_SIZE</pre></a></li>
@@ -119,16 +137,22 @@
 <div class="package-indent">
 <h3>
 <i title="Functions" class="icon-custom icon-function"></i> Functions</h3>
-<a id="function_exponent_unhtmlentities"></a><div class="element clickable function  function_exponent_unhtmlentities" data-toggle="collapse" data-target=".function_exponent_unhtmlentities .collapse" title="">
+<a xmlns:php="http://php.net/xsl" id="function_exponent_unhtmlentities"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_exponent_unhtmlentities " data-toggle="collapse" data-target=".function_exponent_unhtmlentities .collapse" title="">
 <h2>overides function html entity decode</h2>
-<pre>exponent_unhtmlentities(mixed $str) : string</pre>
+<pre>exponent_unhtmlentities($str) : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>package</th>
 <td><a href="../packages/Subsystems.html">Subsystems</a></td>
-</tr></table>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.html">Subsystems</a></td>
+</tr>
+</table>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$str</h4></div>
 <h3>Returns</h3>
@@ -136,197 +160,428 @@
 </div></div>
 </div>
 <h3>
+<i title="Classes" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="expCore" class="element ajax clickable class">
+<h1>expCore<a href="../classes/expCore.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/expCore.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="expDateTime" class="element ajax clickable class">
+<h1>expDateTime<a href="../classes/expDateTime.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/expDateTime.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="expGeo" class="element ajax clickable class">
+<h1>expGeo<a href="../classes/expGeo.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/expGeo.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="expJavascript" class="element ajax clickable class">
+<h1>expJavascript<a href="../classes/expJavascript.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/expJavascript.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="expLang" class="element ajax clickable class">
+<h1>expLang<a href="../classes/expLang.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/expLang.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="expMail" class="element ajax clickable class">
+<h1>expMail<a href="../classes/expMail.html">¶</a>
+</h1>
+<p class="short_description">The expMail class</p>
+<div class="details collapse"></div>
+<a href="../classes/expMail.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="expPermissions" class="element ajax clickable class">
+<h1>expPermissions<a href="../classes/expPermissions.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/expPermissions.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="expSettings" class="element ajax clickable class">
+<h1>expSettings<a href="../classes/expSettings.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/expSettings.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="expString" class="element ajax clickable class">
+<h1>expString<a href="../classes/expString.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/expString.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="expTemplate" class="element ajax clickable class">
+<h1>expTemplate<a href="../classes/expTemplate.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/expTemplate.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="expTheme" class="element ajax clickable class">
+<h1>expTheme<a href="../classes/expTheme.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/expTheme.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="expTimer" class="element ajax clickable class">
+<h1>expTimer<a href="../classes/expTimer.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/expTimer.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="expUtil" class="element ajax clickable class">
+<h1>expUtil<a href="../classes/expUtil.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/expUtil.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="expValidator" class="element ajax clickable class">
+<h1>expValidator<a href="../classes/expValidator.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/expValidator.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="expVersion" class="element ajax clickable class">
+<h1>expVersion<a href="../classes/expVersion.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/expVersion.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="mysql_database" class="element ajax clickable class">
+<h1>mysql_database<a href="../classes/mysql_database.html">¶</a>
+</h1>
+<p class="short_description">This is the class database</p>
+<div class="details collapse"></div>
+<a href="../classes/mysql_database.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="mysqli_database" class="element ajax clickable class">
+<h1>mysqli_database<a href="../classes/mysqli_database.html">¶</a>
+</h1>
+<p class="short_description">This is the class database</p>
+<div class="details collapse"></div>
+<a href="../classes/mysqli_database.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="mysqlid_database" class="element ajax clickable class">
+<h1>mysqlid_database<a href="../classes/mysqlid_database.html">¶</a>
+</h1>
+<p class="short_description">This is the class database</p>
+<div class="details collapse"></div>
+<a href="../classes/mysqlid_database.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="postgres_database" class="element ajax clickable class">
+<h1>postgres_database<a href="../classes/postgres_database.html">¶</a>
+</h1>
+<p class="short_description">This is the class database</p>
+<div class="details collapse"></div>
+<a href="../classes/postgres_database.html" class="more">« More »</a>
+</div>
+<h3>
 <i title="Constants" class="icon-custom icon-constant"></i> Constants</h3>
-<a id="constant_BTN_COLOR"> </a><div class="element clickable constant  constant_BTN_COLOR" data-toggle="collapse" data-target=".constant_BTN_COLOR .collapse" title="">
+<a xmlns:php="http://php.net/xsl" id="constant_BTN_COLOR"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_BTN_COLOR" data-toggle="collapse" data-target=".constant_BTN_COLOR .collapse" title="">
 <h2>BTN_COLOR</h2>
 <pre>BTN_COLOR = 'black' </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>package</th>
 <td><a href="../packages/Subsystems.html">Subsystems</a></td>
-</tr></table>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.html">Subsystems</a></td>
+</tr>
+</table>
 </div></div>
 </div>
-<a id="constant_BTN_SIZE"> </a><div class="element clickable constant  constant_BTN_SIZE" data-toggle="collapse" data-target=".constant_BTN_SIZE .collapse" title="">
+<a xmlns:php="http://php.net/xsl" id="constant_BTN_SIZE"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_BTN_SIZE" data-toggle="collapse" data-target=".constant_BTN_SIZE .collapse" title="">
 <h2>BTN_SIZE</h2>
 <pre>BTN_SIZE = 'small' </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>package</th>
 <td><a href="../packages/Subsystems.html">Subsystems</a></td>
-</tr></table>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.html">Subsystems</a></td>
+</tr>
+</table>
 </div></div>
 </div>
-<a id="constant_DEFAULT_VIEW"> </a><div class="element clickable constant  constant_DEFAULT_VIEW" data-toggle="collapse" data-target=".constant_DEFAULT_VIEW .collapse" title="">
+<a xmlns:php="http://php.net/xsl" id="constant_DEFAULT_VIEW"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_DEFAULT_VIEW" data-toggle="collapse" data-target=".constant_DEFAULT_VIEW .collapse" title="">
 <h2>DEFAULT_VIEW</h2>
 <pre>DEFAULT_VIEW = 'Default' </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>package</th>
 <td><a href="../packages/Subsystems.html">Subsystems</a></td>
-</tr></table>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.html">Subsystems</a></td>
+</tr>
+</table>
 </div></div>
 </div>
-<a id="constant_DISPLAY_THEME"> </a><div class="element clickable constant  constant_DISPLAY_THEME" data-toggle="collapse" data-target=".constant_DISPLAY_THEME .collapse" title="">
+<a xmlns:php="http://php.net/xsl" id="constant_DISPLAY_THEME"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_DISPLAY_THEME" data-toggle="collapse" data-target=".constant_DISPLAY_THEME .collapse" title="">
 <h2>DISPLAY_THEME</h2>
 <pre>DISPLAY_THEME = DISPLAY_THEME_REAL </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>package</th>
 <td><a href="../packages/Subsystems.html">Subsystems</a></td>
-</tr></table>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.html">Subsystems</a></td>
+</tr>
+</table>
 </div></div>
 </div>
-<a id="constant_JQUERYUI_CSS"> </a><div class="element clickable constant  constant_JQUERYUI_CSS" data-toggle="collapse" data-target=".constant_JQUERYUI_CSS .collapse" title="">
+<a xmlns:php="http://php.net/xsl" id="constant_JQUERYUI_CSS"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_JQUERYUI_CSS" data-toggle="collapse" data-target=".constant_JQUERYUI_CSS .collapse" title="">
 <h2>JQUERYUI_CSS</h2>
 <pre>JQUERYUI_CSS = JQUERY_RELATIVE . 'css/' . JQUERYUI_THEME . '/jquery-ui.min.css' </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>package</th>
 <td><a href="../packages/Subsystems.html">Subsystems</a></td>
-</tr></table>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.html">Subsystems</a></td>
+</tr>
+</table>
 </div></div>
 </div>
-<a id="constant_JQUERYUI_THEME"> </a><div class="element clickable constant  constant_JQUERYUI_THEME" data-toggle="collapse" data-target=".constant_JQUERYUI_THEME .collapse" title="">
+<a xmlns:php="http://php.net/xsl" id="constant_JQUERYUI_THEME"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_JQUERYUI_THEME" data-toggle="collapse" data-target=".constant_JQUERYUI_THEME .collapse" title="">
 <h2>JQUERYUI_THEME</h2>
 <pre>JQUERYUI_THEME = 'exponent' </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>package</th>
 <td><a href="../packages/Subsystems.html">Subsystems</a></td>
-</tr></table>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.html">Subsystems</a></td>
+</tr>
+</table>
 </div></div>
 </div>
-<a id="constant_LANG"> </a><div class="element clickable constant  constant_LANG" data-toggle="collapse" data-target=".constant_LANG .collapse" title="">
+<a xmlns:php="http://php.net/xsl" id="constant_LANG"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_LANG" data-toggle="collapse" data-target=".constant_LANG .collapse" title="">
 <h2>LANG</h2>
 <pre>LANG = 'English - US' </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>package</th>
 <td><a href="../packages/Subsystems.html">Subsystems</a></td>
-</tr></table>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.html">Subsystems</a></td>
+</tr>
+</table>
 </div></div>
 </div>
-<a id="constant_LANGUAGE"> </a><div class="element clickable constant  constant_LANGUAGE" data-toggle="collapse" data-target=".constant_LANGUAGE .collapse" title="">
+<a xmlns:php="http://php.net/xsl" id="constant_LANGUAGE"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_LANGUAGE" data-toggle="collapse" data-target=".constant_LANGUAGE .collapse" title="">
 <h2>LANGUAGE</h2>
 <pre>LANGUAGE = 'English - US' </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>package</th>
 <td><a href="../packages/Subsystems.html">Subsystems</a></td>
-</tr></table>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.html">Subsystems</a></td>
+</tr>
+</table>
 </div></div>
 </div>
-<a id="constant_LANG_CHARSET"> </a><div class="element clickable constant  constant_LANG_CHARSET" data-toggle="collapse" data-target=".constant_LANG_CHARSET .collapse" title="">
+<a xmlns:php="http://php.net/xsl" id="constant_LANG_CHARSET"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_LANG_CHARSET" data-toggle="collapse" data-target=".constant_LANG_CHARSET .collapse" title="">
 <h2>LANG_CHARSET</h2>
 <pre>LANG_CHARSET = 'UTF-8' </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>package</th>
 <td><a href="../packages/Subsystems.html">Subsystems</a></td>
-</tr></table>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.html">Subsystems</a></td>
+</tr>
+</table>
 </div></div>
 </div>
-<a id="constant_LOCALE"> </a><div class="element clickable constant  constant_LOCALE" data-toggle="collapse" data-target=".constant_LOCALE .collapse" title="">
+<a xmlns:php="http://php.net/xsl" id="constant_LOCALE"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_LOCALE" data-toggle="collapse" data-target=".constant_LOCALE .collapse" title="">
 <h2>LOCALE</h2>
 <pre>LOCALE = 'en_US' </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>package</th>
 <td><a href="../packages/Subsystems.html">Subsystems</a></td>
-</tr></table>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.html">Subsystems</a></td>
+</tr>
+</table>
 </div></div>
 </div>
-<a id="constant_SWATCH"> </a><div class="element clickable constant  constant_SWATCH" data-toggle="collapse" data-target=".constant_SWATCH .collapse" title="">
+<a xmlns:php="http://php.net/xsl" id="constant_SWATCH"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_SWATCH" data-toggle="collapse" data-target=".constant_SWATCH .collapse" title="">
 <h2>SWATCH</h2>
 <pre>SWATCH = "''" </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>package</th>
 <td><a href="../packages/Subsystems.html">Subsystems</a></td>
-</tr></table>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.html">Subsystems</a></td>
+</tr>
+</table>
 </div></div>
 </div>
-<a id="constant_THEME_ABSOLUTE"> </a><div class="element clickable constant  constant_THEME_ABSOLUTE" data-toggle="collapse" data-target=".constant_THEME_ABSOLUTE .collapse" title="">
+<a xmlns:php="http://php.net/xsl" id="constant_THEME_ABSOLUTE"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_THEME_ABSOLUTE" data-toggle="collapse" data-target=".constant_THEME_ABSOLUTE .collapse" title="">
 <h2>THEME_ABSOLUTE</h2>
 <pre>THEME_ABSOLUTE = BASE . 'themes/' . DISPLAY_THEME . '/' </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>package</th>
 <td><a href="../packages/Subsystems.html">Subsystems</a></td>
-</tr></table>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.html">Subsystems</a></td>
+</tr>
+</table>
 </div></div>
 </div>
-<a id="constant_THEME_RELATIVE"> </a><div class="element clickable constant  constant_THEME_RELATIVE" data-toggle="collapse" data-target=".constant_THEME_RELATIVE .collapse" title="">
+<a xmlns:php="http://php.net/xsl" id="constant_THEME_RELATIVE"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_THEME_RELATIVE" data-toggle="collapse" data-target=".constant_THEME_RELATIVE .collapse" title="">
 <h2>THEME_RELATIVE</h2>
 <pre>THEME_RELATIVE = PATH_RELATIVE . 'themes/' . DISPLAY_THEME . '/' </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>package</th>
 <td><a href="../packages/Subsystems.html">Subsystems</a></td>
-</tr></table>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.html">Subsystems</a></td>
+</tr>
+</table>
 </div></div>
 </div>
-<a id="constant_THEME_STYLE"> </a><div class="element clickable constant  constant_THEME_STYLE" data-toggle="collapse" data-target=".constant_THEME_STYLE .collapse" title="">
+<a xmlns:php="http://php.net/xsl" id="constant_THEME_STYLE"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_THEME_STYLE" data-toggle="collapse" data-target=".constant_THEME_STYLE .collapse" title="">
 <h2>THEME_STYLE</h2>
 <pre>THEME_STYLE = THEME_STYLE_REAL </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>package</th>
 <td><a href="../packages/Subsystems.html">Subsystems</a></td>
-</tr></table>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.html">Subsystems</a></td>
+</tr>
+</table>
 </div></div>
 </div>
-<a id="constant_XHTML"> </a><div class="element clickable constant  constant_XHTML" data-toggle="collapse" data-target=".constant_XHTML .collapse" title="">
+<a xmlns:php="http://php.net/xsl" id="constant_XHTML"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_XHTML" data-toggle="collapse" data-target=".constant_XHTML .collapse" title="">
 <h2>XHTML</h2>
 <pre>XHTML = 0 </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>package</th>
 <td><a href="../packages/Subsystems.html">Subsystems</a></td>
-</tr></table>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.html">Subsystems</a></td>
+</tr>
+</table>
 </div></div>
 </div>
-<a id="constant_XHTML_CLOSING"> </a><div class="element clickable constant  constant_XHTML_CLOSING" data-toggle="collapse" data-target=".constant_XHTML_CLOSING .collapse" title="">
+<a xmlns:php="http://php.net/xsl" id="constant_XHTML_CLOSING"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_XHTML_CLOSING" data-toggle="collapse" data-target=".constant_XHTML_CLOSING .collapse" title="">
 <h2>XHTML_CLOSING</h2>
 <pre>XHTML_CLOSING = "" </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>package</th>
 <td><a href="../packages/Subsystems.html">Subsystems</a></td>
-</tr></table>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.html">Subsystems</a></td>
+</tr>
+</table>
 </div></div>
 </div>
 <ul class="breadcrumb"><li>
@@ -337,8 +592,8 @@
 </li></ul>
 <div class="package-indent">
 <h3>
-<i title="Classes" class="icon-custom icon-class"></i> Classes and interfaces</h3>
-<div id="database" class="element ajax clickable class">
+<i title="Classes" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="database" class="element ajax clickable class">
 <h1>database<a href="../classes/database.html">¶</a>
 </h1>
 <p class="short_description">This is the class database</p>
@@ -354,29 +609,29 @@
 </li></ul>
 <div class="package-indent">
 <h3>
-<i title="Classes" class="icon-custom icon-class"></i> Classes and interfaces</h3>
-<div id="expAjaxReply" class="element ajax clickable class">
+<i title="Classes" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="expAjaxReply" class="element ajax clickable class">
 <h1>expAjaxReply<a href="../classes/expAjaxReply.html">¶</a>
 </h1>
 <p class="short_description">This is the class expAjaxReply</p>
 <div class="details collapse"></div>
 <a href="../classes/expAjaxReply.html" class="more">« More »</a>
 </div>
-<div id="expBot" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="expBot" class="element ajax clickable class">
 <h1>expBot<a href="../classes/expBot.html">¶</a>
 </h1>
 <p class="short_description">This is the class expBot</p>
 <div class="details collapse"></div>
 <a href="../classes/expBot.html" class="more">« More »</a>
 </div>
-<div id="expCSS" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="expCSS" class="element ajax clickable class">
 <h1>expCSS<a href="../classes/expCSS.html">¶</a>
 </h1>
 <p class="short_description">This is the class expCSS</p>
 <div class="details collapse"></div>
 <a href="../classes/expCSS.html" class="more">« More »</a>
 </div>
-<div id="expDatabase" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="expDatabase" class="element ajax clickable class">
 <h1>expDatabase<a href="../classes/expDatabase.html">¶</a>
 </h1>
 <p class="short_description">This is the expDatabase subsystem
@@ -384,7 +639,7 @@ Handles all database abstraction in Exponent.</p>
 <div class="details collapse"></div>
 <a href="../classes/expDatabase.html" class="more">« More »</a>
 </div>
-<div id="expHistory" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="expHistory" class="element ajax clickable class">
 <h1>expHistory<a href="../classes/expHistory.html">¶</a>
 </h1>
 <p class="short_description">This is the class expHistory
@@ -392,28 +647,28 @@ Exponent History Subsystem</p>
 <div class="details collapse"></div>
 <a href="../classes/expHistory.html" class="more">« More »</a>
 </div>
-<div id="expHtmlToPDF" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="expHtmlToPDF" class="element ajax clickable class">
 <h1>expHtmlToPDF<a href="../classes/expHtmlToPDF.html">¶</a>
 </h1>
 <p class="short_description">This is the class expHtmlToPDF</p>
 <div class="details collapse"></div>
 <a href="../classes/expHtmlToPDF.html" class="more">« More »</a>
 </div>
-<div id="expLDAP" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="expLDAP" class="element ajax clickable class">
 <h1>expLDAP<a href="../classes/expLDAP.html">¶</a>
 </h1>
 <p class="short_description">This is the class expLDAP</p>
 <div class="details collapse"></div>
 <a href="../classes/expLDAP.html" class="more">« More »</a>
 </div>
-<div id="expModules" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="expModules" class="element ajax clickable class">
 <h1>expModules<a href="../classes/expModules.html">¶</a>
 </h1>
 <p class="short_description">This is the class expModules</p>
 <div class="details collapse"></div>
 <a href="../classes/expModules.html" class="more">« More »</a>
 </div>
-<div id="expPaginator" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="expPaginator" class="element ajax clickable class">
 <h1>expPaginator<a href="../classes/expPaginator.html">¶</a>
 </h1>
 <p class="short_description">This is the class expPaginator
@@ -421,28 +676,28 @@ Exponent Pagination Subsystem</p>
 <div class="details collapse"></div>
 <a href="../classes/expPaginator.html" class="more">« More »</a>
 </div>
-<div id="expQueue" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="expQueue" class="element ajax clickable class">
 <h1>expQueue<a href="../classes/expQueue.html">¶</a>
 </h1>
 <p class="short_description">This is the class expQueue</p>
 <div class="details collapse"></div>
 <a href="../classes/expQueue.html" class="more">« More »</a>
 </div>
-<div id="expRouter" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="expRouter" class="element ajax clickable class">
 <h1>expRouter<a href="../classes/expRouter.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRouter</p>
 <div class="details collapse"></div>
 <a href="../classes/expRouter.html" class="more">« More »</a>
 </div>
-<div id="expSession" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="expSession" class="element ajax clickable class">
 <h1>expSession<a href="../classes/expSession.html">¶</a>
 </h1>
 <p class="short_description">This is the class expSession</p>
 <div class="details collapse"></div>
 <a href="../classes/expSession.html" class="more">« More »</a>
 </div>
-<div id="expSorter" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="expSorter" class="element ajax clickable class">
 <h1>expSorter<a href="../classes/expSorter.html">¶</a>
 </h1>
 <p class="short_description">This is the class expSorter</p>
@@ -455,9 +710,8 @@ Exponent Pagination Subsystem</p>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.5.0
-</a> and<br>
-            generated on 2014-07-18T16:28:47-04:00.<br></footer></div>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.7.0</a> and<br>
+            generated on 2014-08-22T07:06:16-04:00.<br></footer></div>
 </div>
 </body>
 </html>

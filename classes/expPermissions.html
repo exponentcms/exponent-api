@@ -19,12 +19,10 @@
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a>Namespaces</a></li>
-<li><a href="../namespaces/.html"><i class="icon-th"></i> </a></li>
-<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
 <li><a>Packages</a></li>
 <li><a href="../packages/Connectors.html"><i class="icon-folder-open"></i> Connectors</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 <li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
 <li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
 <li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
@@ -32,7 +30,6 @@
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
 <li><a href="../packages/elFinder.html"><i class="icon-folder-open"></i> elFinder</a></li>
-<li><a href="../packages/global.html"><i class="icon-folder-open"></i> global</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -43,7 +40,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">5328</span></a></li>
+                <span class="label label-info">6529</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -61,7 +58,7 @@
                         </div></noscript>
 <div class="row">
 <div class="span4">
-<div class="btn-toolbar">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
 <div class="btn-group visibility" data-toggle="buttons-checkbox">
 <button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button>
 </div>
@@ -69,7 +66,7 @@
 <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
 </div>
 </div>
-<ul class="side-nav nav nav-list"><li class="nav-header">
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list"><li class="nav-header">
 <i title="Methods" class="icon-custom icon-method"></i> Methods
                     <ul>
 <li class="method public "><a href="#method_check" title="check() :: exdoc
@@ -121,34 +118,43 @@ are assigned or revoked, and is required to see these changes.</span><pre>trigge
 </li></ul>
 </div>
 <div class="span8">
-<a id="\expPermissions"></a><ul class="breadcrumb">
+<a xmlns:php="http://php.net/xsl" id="\expPermissions"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
 <li>
 <a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
-<li><a href="../namespaces/.html"></a></li>
 <li class="active">
 <span class="divider">\</span><a href="../classes/expPermissions.html">expPermissions</a>
 </li>
 </ul>
-<div class="element class">
+<div xmlns:php="http://php.net/xsl" class="element class">
 <p class="short_description"></p>
 <div class="details">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>define</th>
 <td>"BASE" "../../.."</td>
-</tr></table>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.html">Subsystems</a></td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.html">Subsystems</a></td>
+</tr>
+</table>
 <h3>
 <i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
-<a id="method_check"></a><div class="element clickable method public method_check" data-toggle="collapse" data-target=".method_check .collapse" title="public">
+<a id="method_check"></a><div class="element clickable method public method_check " data-toggle="collapse" data-target=".method_check .collapse" title="public">
 <h2>exdoc
 Looks to the permission data and checks to see
 if the current user has been granted the given permission(s)
 on the granted the given location.</h2>
-<pre>check(string $permission, object $location) : bool</pre>
+<pre>check(string $permission, object $location) : boolean</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">Returns true if the permission is granted, false if it is not.</div>
+<div class="long_description"><p>Returns true if the permission is granted, false if it is not.</p></div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:expPermissions</td>
@@ -163,16 +169,16 @@ on the granted the given location.</h2>
 to getLocationHierarchy (defined by the module) for a full hierarchy
 of permissions.</p></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
+<div class="subelement response"><code>boolean</code></div>
 </div></div>
 </div>
-<a id="method_checkGroup"></a><div class="element clickable method public method_checkGroup" data-toggle="collapse" data-target=".method_checkGroup .collapse" title="public">
+<a id="method_checkGroup"></a><div class="element clickable method public method_checkGroup " data-toggle="collapse" data-target=".method_checkGroup .collapse" title="public">
 <h2>exdoc
 Checks to see if the given group has been given a specific permission on a location.</h2>
-<pre>checkGroup(\group/object $group, string $permission, object $location, bool $explicitOnly<code> = false</code>) : bool</pre>
+<pre>checkGroup(\group/object $group, string $permission, object $location, boolean $explicitOnly<code> = false</code>) : boolean</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">Returns true if the permission is granted, false if it is not.</div>
+<div class="long_description"><p>Returns true if the permission is granted, false if it is not.</p></div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:expPermissions</td>
@@ -189,20 +195,20 @@ Checks to see if the given group has been given a specific permission on a locat
 <code>object</code><p>The location to check on.</p></div>
 <div class="subelement argument">
 <h4>$explicitOnly</h4>
-<code>bool</code>
+<code>boolean</code>
 </div>
 <h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
+<div class="subelement response"><code>boolean</code></div>
 </div></div>
 </div>
-<a id="method_checkUser"></a><div class="element clickable method public method_checkUser" data-toggle="collapse" data-target=".method_checkUser .collapse" title="public">
+<a id="method_checkUser"></a><div class="element clickable method public method_checkUser " data-toggle="collapse" data-target=".method_checkUser .collapse" title="public">
 <h2>exdoc
 Checks to see if the given user has been given a specific permission.</h2>
-<pre>checkUser(\user/object $user, string $permission, object $location, boolean $explicitOnly<code> = false</code>) : bool</pre>
+<pre>checkUser(\user/object $user, string $permission, object $location, boolean $explicitOnly<code> = false</code>) : boolean</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">Handles explicit checks (actually assigned to the user)  implicit  and inherited checks
-(assigned to a group the user belongs to).  Returns true if the permission is granted, false if it is not.</div>
+<div class="long_description"><p>Handles explicit checks (actually assigned to the user)  implicit  and inherited checks
+(assigned to a group the user belongs to).  Returns true if the permission is granted, false if it is not.</p></div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:expPermissions</td>
@@ -221,10 +227,10 @@ Checks to see if the given user has been given a specific permission.</h2>
 <h4>$explicitOnly</h4>
 <code>boolean</code><p>Whether to check for explicit/implicit assignment or inherited.</p></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
+<div class="subelement response"><code>boolean</code></div>
 </div></div>
 </div>
-<a id="method_grant"></a><div class="element clickable method public method_grant" data-toggle="collapse" data-target=".method_grant .collapse" title="public">
+<a id="method_grant"></a><div class="element clickable method public method_grant " data-toggle="collapse" data-target=".method_grant .collapse" title="public">
 <h2>exdoc
 Grants the specified permission to the specified user, on the given location</h2>
 <pre>grant(\user/object $user, string $permission, object $location) </pre>
@@ -247,7 +253,7 @@ Grants the specified permission to the specified user, on the given location</h2
 <code>object</code><p>The location to grant the permission on</p></div>
 </div></div>
 </div>
-<a id="method_grantGroup"></a><div class="element clickable method public method_grantGroup" data-toggle="collapse" data-target=".method_grantGroup .collapse" title="public">
+<a id="method_grantGroup"></a><div class="element clickable method public method_grantGroup " data-toggle="collapse" data-target=".method_grantGroup .collapse" title="public">
 <h2>exdoc
 Grants the specified permission to the specified user group, on the given location</h2>
 <pre>grantGroup(\group/object $group, string $permission, object $location) </pre>
@@ -270,7 +276,7 @@ Grants the specified permission to the specified user group, on the given locati
 <code>object</code><p>The location to grant the permission on</p></div>
 </div></div>
 </div>
-<a id="method_load"></a><div class="element clickable method public method_load" data-toggle="collapse" data-target=".method_load .collapse" title="public">
+<a id="method_load"></a><div class="element clickable method public method_load " data-toggle="collapse" data-target=".method_load .collapse" title="public">
 <h2>exdoc
 Loads permission data from the database for the specified user.</h2>
 <pre>load(\user/object $user) </pre>
@@ -287,7 +293,7 @@ Loads permission data from the database for the specified user.</h2>
 <code>\user/object</code><p>the user to load permissions for.</p></div>
 </div></div>
 </div>
-<a id="method_revokeAll"></a><div class="element clickable method public method_revokeAll" data-toggle="collapse" data-target=".method_revokeAll .collapse" title="public">
+<a id="method_revokeAll"></a><div class="element clickable method public method_revokeAll " data-toggle="collapse" data-target=".method_revokeAll .collapse" title="public">
 <h2>exdoc
 Removes all permissions from a user, on a specific location.</h2>
 <pre>revokeAll(\user/object $user, object $location) : mixed</pre>
@@ -309,7 +315,7 @@ Removes all permissions from a user, on a specific location.</h2>
 <div class="subelement response"><code>mixed</code></div>
 </div></div>
 </div>
-<a id="method_revokeAllGroup"></a><div class="element clickable method public method_revokeAllGroup" data-toggle="collapse" data-target=".method_revokeAllGroup .collapse" title="public">
+<a id="method_revokeAllGroup"></a><div class="element clickable method public method_revokeAllGroup " data-toggle="collapse" data-target=".method_revokeAllGroup .collapse" title="public">
 <h2>exdoc
 Removes all permissions from a group, on a specific location.</h2>
 <pre>revokeAllGroup(\group/object $group, object $location) : mixed</pre>
@@ -331,10 +337,10 @@ Removes all permissions from a group, on a specific location.</h2>
 <div class="subelement response"><code>mixed</code></div>
 </div></div>
 </div>
-<a id="method_revokeComplete"></a><div class="element clickable method public method_revokeComplete" data-toggle="collapse" data-target=".method_revokeComplete .collapse" title="public">
+<a id="method_revokeComplete"></a><div class="element clickable method public method_revokeComplete " data-toggle="collapse" data-target=".method_revokeComplete .collapse" title="public">
 <h2>exdoc
 Removes all user and group permissions, on a specific location.</h2>
-<pre>revokeComplete(object $location) : bool</pre>
+<pre>revokeComplete(object $location) : boolean</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -348,10 +354,10 @@ Removes all user and group permissions, on a specific location.</h2>
 <code>object</code>
 </div>
 <h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
+<div class="subelement response"><code>boolean</code></div>
 </div></div>
 </div>
-<a id="method_triggerRefresh"></a><div class="element clickable method public method_triggerRefresh" data-toggle="collapse" data-target=".method_triggerRefresh .collapse" title="public">
+<a id="method_triggerRefresh"></a><div class="element clickable method public method_triggerRefresh " data-toggle="collapse" data-target=".method_triggerRefresh .collapse" title="public">
 <h2>exdoc
 This call will force all active session to reload their
 permission data.  This is useful if permissions are assigned
@@ -366,7 +372,7 @@ or revoked, and is required to see these changes.</h2>
 </tr></table>
 </div></div>
 </div>
-<a id="method_triggerSingleRefresh"></a><div class="element clickable method public method_triggerSingleRefresh" data-toggle="collapse" data-target=".method_triggerSingleRefresh .collapse" title="public">
+<a id="method_triggerSingleRefresh"></a><div class="element clickable method public method_triggerSingleRefresh " data-toggle="collapse" data-target=".method_triggerSingleRefresh .collapse" title="public">
 <h2>exdoc
 This call will force all active sessions for the given user to
 reload their permission data.  This is useful if permissions
@@ -392,9 +398,8 @@ are assigned or revoked, and is required to see these changes.</h2>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.5.0
-</a> and<br>
-            generated on 2014-07-18T16:29:06-04:00.<br></footer></div>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.7.0</a> and<br>
+            generated on 2014-08-22T07:06:33-04:00.<br></footer></div>
 </div>
 </body>
 </html>

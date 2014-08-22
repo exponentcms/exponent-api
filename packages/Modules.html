@@ -19,12 +19,10 @@
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a>Namespaces</a></li>
-<li><a href="../namespaces/.html"><i class="icon-th"></i> </a></li>
-<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
 <li><a>Packages</a></li>
 <li><a href="../packages/Connectors.html"><i class="icon-folder-open"></i> Connectors</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 <li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
 <li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
 <li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
@@ -32,7 +30,6 @@
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
 <li><a href="../packages/elFinder.html"><i class="icon-folder-open"></i> elFinder</a></li>
-<li><a href="../packages/global.html"><i class="icon-folder-open"></i> global</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -43,7 +40,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">5328</span></a></li>
+                <span class="label label-info">6529</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -96,6 +93,23 @@
 <li class="function  "><a href="#function_sortSearch" title="sortSearch() :: "><span class="description">sortSearch()
         </span><pre>sortSearch</pre></a></li>
 <li class="nav-header">
+<i title="Classes" class="icon-custom icon-class"></i> Classes</li>
+<li><a href="#administrationController" title="This is the class expController">administrationController</a></li>
+<li><a href="#authorizedotnet" title="This is the class expRecord">authorizedotnet</a></li>
+<li><a href="#cash" title="This is the class expRecord">cash</a></li>
+<li><a href="#passthru" title="This is the class expRecord">passthru</a></li>
+<li><a href="#paylater" title="This is the class expRecord">paylater</a></li>
+<li><a href="#ecomconfigController" title="This is the class expController">ecomconfigController</a></li>
+<li><a href="#eventregistrationController" title="This is the class expController">eventregistrationController</a></li>
+<li><a href="#storeController" title="This is the class expController">storeController</a></li>
+<li><a href="#product" title="This is the class expRecord">product</a></li>
+<li><a href="#fedexcalculator" title="This is the class expRecord">fedexcalculator</a></li>
+<li><a href="#upscalculator" title="This is the class expRecord">upscalculator</a></li>
+<li><a href="#motdController" title="This is the class expController">motdController</a></li>
+<li><a href="#photoController" title="We must subclass the photosController due to a plural/singular naming issue">photoController</a></li>
+<li><a href="#loginController" title="This is the class expController">loginController</a></li>
+<li><a href="#usersController" title="This is the class expController">usersController</a></li>
+<li class="nav-header">
 <i title="Constants" class="icon-custom icon-constant"></i> Constants</li>
 <li class="constant  "><a href="#constant_ECOM_AUTHORIZENET_AUTH_CAPTURE" title="ECOM_AUTHORIZENET_AUTH_CAPTURE() :: "><span class="description">ECOM_AUTHORIZENET_AUTH_CAPTURE</span><pre>ECOM_AUTHORIZENET_AUTH_CAPTURE</pre></a></li>
 <li class="constant  "><a href="#constant_ECOM_AUTHORIZENET_AUTH_ONLY" title="ECOM_AUTHORIZENET_AUTH_ONLY() :: "><span class="description">ECOM_AUTHORIZENET_AUTH_ONLY</span><pre>ECOM_AUTHORIZENET_AUTH_ONLY</pre></a></li>
@@ -108,62 +122,193 @@
 <div class="package-indent">
 <h3>
 <i title="Functions" class="icon-custom icon-function"></i> Functions</h3>
-<a id="function_compare"></a><div class="element clickable function  function_compare" data-toggle="collapse" data-target=".function_compare .collapse" title="">
+<a xmlns:php="http://php.net/xsl" id="function_compare"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_compare " data-toggle="collapse" data-target=".function_compare .collapse" title="">
 <h2>compare()
         </h2>
 <pre>compare($x, $y) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>package</th>
 <td><a href="../packages/Modules.html">Modules</a></td>
-</tr></table>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Modules.html">Modules</a></td>
+</tr>
+</table>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$x</h4></div>
 <div class="subelement argument"><h4>$y</h4></div>
 </div></div>
 </div>
-<a id="function_sortSearch"></a><div class="element clickable function  function_sortSearch" data-toggle="collapse" data-target=".function_sortSearch .collapse" title="">
+<a xmlns:php="http://php.net/xsl" id="function_sortSearch"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_sortSearch " data-toggle="collapse" data-target=".function_sortSearch .collapse" title="">
 <h2>sortSearch()
         </h2>
 <pre>sortSearch($a, $b) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>package</th>
 <td><a href="../packages/Modules.html">Modules</a></td>
-</tr></table>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Modules.html">Modules</a></td>
+</tr>
+</table>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$a</h4></div>
 <div class="subelement argument"><h4>$b</h4></div>
 </div></div>
 </div>
 <h3>
+<i title="Classes" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="administrationController" class="element ajax clickable class">
+<h1>administrationController<a href="../classes/administrationController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/administrationController.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="authorizedotnet" class="element ajax clickable class">
+<h1>authorizedotnet<a href="../classes/authorizedotnet.html">¶</a>
+</h1>
+<p class="short_description">This is the class expRecord</p>
+<div class="details collapse"></div>
+<a href="../classes/authorizedotnet.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="cash" class="element ajax clickable class">
+<h1>cash<a href="../classes/cash.html">¶</a>
+</h1>
+<p class="short_description">This is the class expRecord</p>
+<div class="details collapse"></div>
+<a href="../classes/cash.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="ecomconfigController" class="element ajax clickable class">
+<h1>ecomconfigController<a href="../classes/ecomconfigController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/ecomconfigController.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="eventregistrationController" class="element ajax clickable class">
+<h1>eventregistrationController<a href="../classes/eventregistrationController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/eventregistrationController.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="fedexcalculator" class="element ajax clickable class">
+<h1>fedexcalculator<a href="../classes/fedexcalculator.html">¶</a>
+</h1>
+<p class="short_description">This is the class expRecord</p>
+<div class="details collapse"></div>
+<a href="../classes/fedexcalculator.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="loginController" class="element ajax clickable class">
+<h1>loginController<a href="../classes/loginController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/loginController.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="motdController" class="element ajax clickable class">
+<h1>motdController<a href="../classes/motdController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/motdController.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="passthru" class="element ajax clickable class">
+<h1>passthru<a href="../classes/passthru.html">¶</a>
+</h1>
+<p class="short_description">This is the class expRecord</p>
+<div class="details collapse"></div>
+<a href="../classes/passthru.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="paylater" class="element ajax clickable class">
+<h1>paylater<a href="../classes/paylater.html">¶</a>
+</h1>
+<p class="short_description">This is the class expRecord</p>
+<div class="details collapse"></div>
+<a href="../classes/paylater.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="photoController" class="element ajax clickable class">
+<h1>photoController<a href="../classes/photoController.html">¶</a>
+</h1>
+<p class="short_description">We must subclass the photosController due to a plural/singular naming issue</p>
+<div class="details collapse"></div>
+<a href="../classes/photoController.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="product" class="element ajax clickable class">
+<h1>product<a href="../classes/product.html">¶</a>
+</h1>
+<p class="short_description">This is the class expRecord</p>
+<div class="details collapse"></div>
+<a href="../classes/product.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="storeController" class="element ajax clickable class">
+<h1>storeController<a href="../classes/storeController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/storeController.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="upscalculator" class="element ajax clickable class">
+<h1>upscalculator<a href="../classes/upscalculator.html">¶</a>
+</h1>
+<p class="short_description">This is the class expRecord</p>
+<div class="details collapse"></div>
+<a href="../classes/upscalculator.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="usersController" class="element ajax clickable class">
+<h1>usersController<a href="../classes/usersController.html">¶</a>
+</h1>
+<p class="short_description">This is the class expController</p>
+<div class="details collapse"></div>
+<a href="../classes/usersController.html" class="more">« More »</a>
+</div>
+<h3>
 <i title="Constants" class="icon-custom icon-constant"></i> Constants</h3>
-<a id="constant_ECOM_AUTHORIZENET_AUTH_CAPTURE"> </a><div class="element clickable constant  constant_ECOM_AUTHORIZENET_AUTH_CAPTURE" data-toggle="collapse" data-target=".constant_ECOM_AUTHORIZENET_AUTH_CAPTURE .collapse" title="">
+<a xmlns:php="http://php.net/xsl" id="constant_ECOM_AUTHORIZENET_AUTH_CAPTURE"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_ECOM_AUTHORIZENET_AUTH_CAPTURE" data-toggle="collapse" data-target=".constant_ECOM_AUTHORIZENET_AUTH_CAPTURE .collapse" title="">
 <h2>ECOM_AUTHORIZENET_AUTH_CAPTURE</h2>
 <pre>ECOM_AUTHORIZENET_AUTH_CAPTURE = 0 </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>package</th>
 <td><a href="../packages/Modules.html">Modules</a></td>
-</tr></table>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Modules.html">Modules</a></td>
+</tr>
+</table>
 </div></div>
 </div>
-<a id="constant_ECOM_AUTHORIZENET_AUTH_ONLY"> </a><div class="element clickable constant  constant_ECOM_AUTHORIZENET_AUTH_ONLY" data-toggle="collapse" data-target=".constant_ECOM_AUTHORIZENET_AUTH_ONLY .collapse" title="">
+<a xmlns:php="http://php.net/xsl" id="constant_ECOM_AUTHORIZENET_AUTH_ONLY"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_ECOM_AUTHORIZENET_AUTH_ONLY" data-toggle="collapse" data-target=".constant_ECOM_AUTHORIZENET_AUTH_ONLY .collapse" title="">
 <h2>ECOM_AUTHORIZENET_AUTH_ONLY</h2>
 <pre>ECOM_AUTHORIZENET_AUTH_ONLY = 1 </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>package</th>
 <td><a href="../packages/Modules.html">Modules</a></td>
-</tr></table>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Modules.html">Modules</a></td>
+</tr>
+</table>
 </div></div>
 </div>
 <ul class="breadcrumb"><li>
@@ -174,64 +319,64 @@
 </li></ul>
 <div class="package-indent">
 <h3>
-<i title="Classes" class="icon-custom icon-class"></i> Classes and interfaces</h3>
-<div id="creditcard" class="element ajax clickable class">
+<i title="Classes" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="creditcard" class="element ajax clickable class">
 <h1>creditcard<a href="../classes/creditcard.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/creditcard.html" class="more">« More »</a>
 </div>
-<div id="flatratecalculator" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="flatratecalculator" class="element ajax clickable class">
 <h1>flatratecalculator<a href="../classes/flatratecalculator.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/flatratecalculator.html" class="more">« More »</a>
 </div>
-<div id="freeshippingcalculator" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="freeshippingcalculator" class="element ajax clickable class">
 <h1>freeshippingcalculator<a href="../classes/freeshippingcalculator.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/freeshippingcalculator.html" class="more">« More »</a>
 </div>
-<div id="instorepickupcalculator" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="instorepickupcalculator" class="element ajax clickable class">
 <h1>instorepickupcalculator<a href="../classes/instorepickupcalculator.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/instorepickupcalculator.html" class="more">« More »</a>
 </div>
-<div id="payflowpro" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="payflowpro" class="element ajax clickable class">
 <h1>payflowpro<a href="../classes/payflowpro.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/payflowpro.html" class="more">« More »</a>
 </div>
-<div id="paypalExpressCheckout" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="paypalExpressCheckout" class="element ajax clickable class">
 <h1>paypalExpressCheckout<a href="../classes/paypalExpressCheckout.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/paypalExpressCheckout.html" class="more">« More »</a>
 </div>
-<div id="splitcreditcard" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="splitcreditcard" class="element ajax clickable class">
 <h1>splitcreditcard<a href="../classes/splitcreditcard.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/splitcreditcard.html" class="more">« More »</a>
 </div>
-<div id="tablebasedcalculator" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="tablebasedcalculator" class="element ajax clickable class">
 <h1>tablebasedcalculator<a href="../classes/tablebasedcalculator.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/tablebasedcalculator.html" class="more">« More »</a>
 </div>
-<div id="worldpayCheckout" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="worldpayCheckout" class="element ajax clickable class">
 <h1>worldpayCheckout<a href="../classes/worldpayCheckout.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
@@ -247,316 +392,316 @@
 </li></ul>
 <div class="package-indent">
 <h3>
-<i title="Classes" class="icon-custom icon-class"></i> Classes and interfaces</h3>
-<div id="addressController" class="element ajax clickable class">
+<i title="Classes" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="addressController" class="element ajax clickable class">
 <h1>addressController<a href="../classes/addressController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/addressController.html" class="more">« More »</a>
 </div>
-<div id="bannerController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="bannerController" class="element ajax clickable class">
 <h1>bannerController<a href="../classes/bannerController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/bannerController.html" class="more">« More »</a>
 </div>
-<div id="billingController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="billingController" class="element ajax clickable class">
 <h1>billingController<a href="../classes/billingController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/billingController.html" class="more">« More »</a>
 </div>
-<div id="blogController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="blogController" class="element ajax clickable class">
 <h1>blogController<a href="../classes/blogController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/blogController.html" class="more">« More »</a>
 </div>
-<div id="cartController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="cartController" class="element ajax clickable class">
 <h1>cartController<a href="../classes/cartController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/cartController.html" class="more">« More »</a>
 </div>
-<div id="companyController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="companyController" class="element ajax clickable class">
 <h1>companyController<a href="../classes/companyController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/companyController.html" class="more">« More »</a>
 </div>
-<div id="containerController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="containerController" class="element ajax clickable class">
 <h1>containerController<a href="../classes/containerController.html">¶</a>
 </h1>
 <p class="short_description">This is the class contqinerController</p>
 <div class="details collapse"></div>
 <a href="../classes/containerController.html" class="more">« More »</a>
 </div>
-<div id="countdownController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="countdownController" class="element ajax clickable class">
 <h1>countdownController<a href="../classes/countdownController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/countdownController.html" class="more">« More »</a>
 </div>
-<div id="donationController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="donationController" class="element ajax clickable class">
 <h1>donationController<a href="../classes/donationController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/donationController.html" class="more">« More »</a>
 </div>
-<div id="eaasController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="eaasController" class="element ajax clickable class">
 <h1>eaasController<a href="../classes/eaasController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/eaasController.html" class="more">« More »</a>
 </div>
-<div id="ealertController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="ealertController" class="element ajax clickable class">
 <h1>ealertController<a href="../classes/ealertController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/ealertController.html" class="more">« More »</a>
 </div>
-<div id="eventController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="eventController" class="element ajax clickable class">
 <h1>eventController<a href="../classes/eventController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/eventController.html" class="more">« More »</a>
 </div>
-<div id="facebookController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="facebookController" class="element ajax clickable class">
 <h1>facebookController<a href="../classes/facebookController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/facebookController.html" class="more">« More »</a>
 </div>
-<div id="faqController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="faqController" class="element ajax clickable class">
 <h1>faqController<a href="../classes/faqController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/faqController.html" class="more">« More »</a>
 </div>
-<div id="fileController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="fileController" class="element ajax clickable class">
 <h1>fileController<a href="../classes/fileController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/fileController.html" class="more">« More »</a>
 </div>
-<div id="filedownloadController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="filedownloadController" class="element ajax clickable class">
 <h1>filedownloadController<a href="../classes/filedownloadController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/filedownloadController.html" class="more">« More »</a>
 </div>
-<div id="flickrfeedController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="flickrfeedController" class="element ajax clickable class">
 <h1>flickrfeedController<a href="../classes/flickrfeedController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/flickrfeedController.html" class="more">« More »</a>
 </div>
-<div id="formsController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="formsController" class="element ajax clickable class">
 <h1>formsController<a href="../classes/formsController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/formsController.html" class="more">« More »</a>
 </div>
-<div id="helpController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="helpController" class="element ajax clickable class">
 <h1>helpController<a href="../classes/helpController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/helpController.html" class="more">« More »</a>
 </div>
-<div id="importexportController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="importexportController" class="element ajax clickable class">
 <h1>importexportController<a href="../classes/importexportController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/importexportController.html" class="more">« More »</a>
 </div>
-<div id="linksController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="linksController" class="element ajax clickable class">
 <h1>linksController<a href="../classes/linksController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/linksController.html" class="more">« More »</a>
 </div>
-<div id="mediaController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="mediaController" class="element ajax clickable class">
 <h1>mediaController<a href="../classes/mediaController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/mediaController.html" class="more">« More »</a>
 </div>
-<div id="migrationController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="migrationController" class="element ajax clickable class">
 <h1>migrationController<a href="../classes/migrationController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/migrationController.html" class="more">« More »</a>
 </div>
-<div id="navigationController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="navigationController" class="element ajax clickable class">
 <h1>navigationController<a href="../classes/navigationController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/navigationController.html" class="more">« More »</a>
 </div>
-<div id="newsController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="newsController" class="element ajax clickable class">
 <h1>newsController<a href="../classes/newsController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/newsController.html" class="more">« More »</a>
 </div>
-<div id="notfoundController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="notfoundController" class="element ajax clickable class">
 <h1>notfoundController<a href="../classes/notfoundController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/notfoundController.html" class="more">« More »</a>
 </div>
-<div id="orderController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="orderController" class="element ajax clickable class">
 <h1>orderController<a href="../classes/orderController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/orderController.html" class="more">« More »</a>
 </div>
-<div id="order_statusController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="order_statusController" class="element ajax clickable class">
 <h1>order_statusController<a href="../classes/order_statusController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/order_statusController.html" class="more">« More »</a>
 </div>
-<div id="order_typeController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="order_typeController" class="element ajax clickable class">
 <h1>order_typeController<a href="../classes/order_typeController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/order_typeController.html" class="more">« More »</a>
 </div>
-<div id="photosController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="photosController" class="element ajax clickable class">
 <h1>photosController<a href="../classes/photosController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/photosController.html" class="more">« More »</a>
 </div>
-<div id="portfolioController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="portfolioController" class="element ajax clickable class">
 <h1>portfolioController<a href="../classes/portfolioController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/portfolioController.html" class="more">« More »</a>
 </div>
-<div id="product_statusController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="product_statusController" class="element ajax clickable class">
 <h1>product_statusController<a href="../classes/product_statusController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/product_statusController.html" class="more">« More »</a>
 </div>
-<div id="purchaseOrderController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="purchaseOrderController" class="element ajax clickable class">
 <h1>purchaseOrderController<a href="../classes/purchaseOrderController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/purchaseOrderController.html" class="more">« More »</a>
 </div>
-<div id="recyclebinController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="recyclebinController" class="element ajax clickable class">
 <h1>recyclebinController<a href="../classes/recyclebinController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/recyclebinController.html" class="more">« More »</a>
 </div>
-<div id="reportController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="reportController" class="element ajax clickable class">
 <h1>reportController<a href="../classes/reportController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/reportController.html" class="more">« More »</a>
 </div>
-<div id="rssController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="rssController" class="element ajax clickable class">
 <h1>rssController<a href="../classes/rssController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/rssController.html" class="more">« More »</a>
 </div>
-<div id="sales_repController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="sales_repController" class="element ajax clickable class">
 <h1>sales_repController<a href="../classes/sales_repController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/sales_repController.html" class="more">« More »</a>
 </div>
-<div id="searchController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="searchController" class="element ajax clickable class">
 <h1>searchController<a href="../classes/searchController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/searchController.html" class="more">« More »</a>
 </div>
-<div id="shippingController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="shippingController" class="element ajax clickable class">
 <h1>shippingController<a href="../classes/shippingController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/shippingController.html" class="more">« More »</a>
 </div>
-<div id="simplePollController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="simplePollController" class="element ajax clickable class">
 <h1>simplePollController<a href="../classes/simplePollController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/simplePollController.html" class="more">« More »</a>
 </div>
-<div id="snippetController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="snippetController" class="element ajax clickable class">
 <h1>snippetController<a href="../classes/snippetController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/snippetController.html" class="more">« More »</a>
 </div>
-<div id="storeCategoryController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="storeCategoryController" class="element ajax clickable class">
 <h1>storeCategoryController<a href="../classes/storeCategoryController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expNestedNodeController</p>
 <div class="details collapse"></div>
 <a href="../classes/storeCategoryController.html" class="more">« More »</a>
 </div>
-<div id="taxController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="taxController" class="element ajax clickable class">
 <h1>taxController<a href="../classes/taxController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/taxController.html" class="more">« More »</a>
 </div>
-<div id="textController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="textController" class="element ajax clickable class">
 <h1>textController<a href="../classes/textController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
 <div class="details collapse"></div>
 <a href="../classes/textController.html" class="more">« More »</a>
 </div>
-<div id="twitterController" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="twitterController" class="element ajax clickable class">
 <h1>twitterController<a href="../classes/twitterController.html">¶</a>
 </h1>
 <p class="short_description">This is the class expController</p>
@@ -572,8 +717,8 @@
 </li></ul>
 <div class="package-indent">
 <h3>
-<i title="Classes" class="icon-custom icon-class"></i> Classes and interfaces</h3>
-<div id="theme" class="element ajax clickable class">
+<i title="Classes" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="theme" class="element ajax clickable class">
 <h1>theme<a href="../classes/theme.html">¶</a>
 </h1>
 <p class="short_description">This is the base theme class</p>
@@ -589,260 +734,260 @@
 </li></ul>
 <div class="package-indent">
 <h3>
-<i title="Classes" class="icon-custom icon-class"></i> Classes and interfaces</h3>
-<div id="address" class="element ajax clickable class">
+<i title="Classes" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="address" class="element ajax clickable class">
 <h1>address<a href="../classes/address.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/address.html" class="more">« More »</a>
 </div>
-<div id="banner" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="banner" class="element ajax clickable class">
 <h1>banner<a href="../classes/banner.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/banner.html" class="more">« More »</a>
 </div>
-<div id="blog" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="blog" class="element ajax clickable class">
 <h1>blog<a href="../classes/blog.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/blog.html" class="more">« More »</a>
 </div>
-<div id="company" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="company" class="element ajax clickable class">
 <h1>company<a href="../classes/company.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/company.html" class="more">« More »</a>
 </div>
-<div id="container" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="container" class="element ajax clickable class">
 <h1>container<a href="../classes/container.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/container.html" class="more">« More »</a>
 </div>
-<div id="donation" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="donation" class="element ajax clickable class">
 <h1>donation<a href="../classes/donation.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/donation.html" class="more">« More »</a>
 </div>
-<div id="event" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="event" class="element ajax clickable class">
 <h1>event<a href="../classes/event.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/event.html" class="more">« More »</a>
 </div>
-<div id="eventdate" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="eventdate" class="element ajax clickable class">
 <h1>eventdate<a href="../classes/eventdate.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/eventdate.html" class="more">« More »</a>
 </div>
-<div id="eventregistration" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="eventregistration" class="element ajax clickable class">
 <h1>eventregistration<a href="../classes/eventregistration.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/eventregistration.html" class="more">« More »</a>
 </div>
-<div id="expTwitter" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="expTwitter" class="element ajax clickable class">
 <h1>expTwitter<a href="../classes/expTwitter.html">¶</a>
 </h1>
 <p class="short_description">Twitter class</p>
 <div class="details collapse"></div>
 <a href="../classes/expTwitter.html" class="more">« More »</a>
 </div>
-<div id="expeAlerts" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="expeAlerts" class="element ajax clickable class">
 <h1>expeAlerts<a href="../classes/expeAlerts.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/expeAlerts.html" class="more">« More »</a>
 </div>
-<div id="faq" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="faq" class="element ajax clickable class">
 <h1>faq<a href="../classes/faq.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/faq.html" class="more">« More »</a>
 </div>
-<div id="filedownload" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="filedownload" class="element ajax clickable class">
 <h1>filedownload<a href="../classes/filedownload.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/filedownload.html" class="more">« More »</a>
 </div>
-<div id="forms" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="forms" class="element ajax clickable class">
 <h1>forms<a href="../classes/forms.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/forms.html" class="more">« More »</a>
 </div>
-<div id="forms_control" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="forms_control" class="element ajax clickable class">
 <h1>forms_control<a href="../classes/forms_control.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/forms_control.html" class="more">« More »</a>
 </div>
-<div id="giftcard" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="giftcard" class="element ajax clickable class">
 <h1>giftcard<a href="../classes/giftcard.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/giftcard.html" class="more">« More »</a>
 </div>
-<div id="group" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="group" class="element ajax clickable class">
 <h1>group<a href="../classes/group.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/group.html" class="more">« More »</a>
 </div>
-<div id="help" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="help" class="element ajax clickable class">
 <h1>help<a href="../classes/help.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/help.html" class="more">« More »</a>
 </div>
-<div id="help_version" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="help_version" class="element ajax clickable class">
 <h1>help_version<a href="../classes/help_version.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/help_version.html" class="more">« More »</a>
 </div>
-<div id="links" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="links" class="element ajax clickable class">
 <h1>links<a href="../classes/links.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/links.html" class="more">« More »</a>
 </div>
-<div id="media" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="media" class="element ajax clickable class">
 <h1>media<a href="../classes/media.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/media.html" class="more">« More »</a>
 </div>
-<div id="motd" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="motd" class="element ajax clickable class">
 <h1>motd<a href="../classes/motd.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/motd.html" class="more">« More »</a>
 </div>
-<div id="news" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="news" class="element ajax clickable class">
 <h1>news<a href="../classes/news.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/news.html" class="more">« More »</a>
 </div>
-<div id="photo" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="photo" class="element ajax clickable class">
 <h1>photo<a href="../classes/photo.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/photo.html" class="more">« More »</a>
 </div>
-<div id="portfolio" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="portfolio" class="element ajax clickable class">
 <h1>portfolio<a href="../classes/portfolio.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/portfolio.html" class="more">« More »</a>
 </div>
-<div id="profileextension" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="profileextension" class="element ajax clickable class">
 <h1>profileextension<a href="../classes/profileextension.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/profileextension.html" class="more">« More »</a>
 </div>
-<div id="recyclebin" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="recyclebin" class="element ajax clickable class">
 <h1>recyclebin<a href="../classes/recyclebin.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/recyclebin.html" class="more">« More »</a>
 </div>
-<div id="search" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="search" class="element ajax clickable class">
 <h1>search<a href="../classes/search.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/search.html" class="more">« More »</a>
 </div>
-<div id="search_queries" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="search_queries" class="element ajax clickable class">
 <h1>search_queries<a href="../classes/search_queries.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/search_queries.html" class="more">« More »</a>
 </div>
-<div id="section" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="section" class="element ajax clickable class">
 <h1>section<a href="../classes/section.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/section.html" class="more">« More »</a>
 </div>
-<div id="sectionref" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="sectionref" class="element ajax clickable class">
 <h1>sectionref<a href="../classes/sectionref.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/sectionref.html" class="more">« More »</a>
 </div>
-<div id="simplepoll_answer" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="simplepoll_answer" class="element ajax clickable class">
 <h1>simplepoll_answer<a href="../classes/simplepoll_answer.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/simplepoll_answer.html" class="more">« More »</a>
 </div>
-<div id="simplepoll_question" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="simplepoll_question" class="element ajax clickable class">
 <h1>simplepoll_question<a href="../classes/simplepoll_question.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/simplepoll_question.html" class="more">« More »</a>
 </div>
-<div id="simplepoll_timeblock" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="simplepoll_timeblock" class="element ajax clickable class">
 <h1>simplepoll_timeblock<a href="../classes/simplepoll_timeblock.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/simplepoll_timeblock.html" class="more">« More »</a>
 </div>
-<div id="snippet" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="snippet" class="element ajax clickable class">
 <h1>snippet<a href="../classes/snippet.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/snippet.html" class="more">« More »</a>
 </div>
-<div id="text" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="text" class="element ajax clickable class">
 <h1>text<a href="../classes/text.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/text.html" class="more">« More »</a>
 </div>
-<div id="user" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="user" class="element ajax clickable class">
 <h1>user<a href="../classes/user.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
@@ -858,50 +1003,50 @@
 </li></ul>
 <div class="package-indent">
 <h3>
-<i title="Classes" class="icon-custom icon-class"></i> Classes and interfaces</h3>
-<div id="user_address" class="element ajax clickable class">
+<i title="Classes" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="user_address" class="element ajax clickable class">
 <h1>user_address<a href="../classes/user_address.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/user_address.html" class="more">« More »</a>
 </div>
-<div id="user_avatar" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="user_avatar" class="element ajax clickable class">
 <h1>user_avatar<a href="../classes/user_avatar.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/user_avatar.html" class="more">« More »</a>
 </div>
-<div id="user_bio" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="user_bio" class="element ajax clickable class">
 <h1>user_bio<a href="../classes/user_bio.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/user_bio.html" class="more">« More »</a>
 </div>
-<div id="user_instant_messenger" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="user_instant_messenger" class="element ajax clickable class">
 <h1>user_instant_messenger<a href="../classes/user_instant_messenger.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/user_instant_messenger.html" class="more">« More »</a>
 </div>
-<div id="user_phone" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="user_phone" class="element ajax clickable class">
 <h1>user_phone<a href="../classes/user_phone.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/user_phone.html" class="more">« More »</a>
 </div>
-<div id="user_signature" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="user_signature" class="element ajax clickable class">
 <h1>user_signature<a href="../classes/user_signature.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
 <div class="details collapse"></div>
 <a href="../classes/user_signature.html" class="more">« More »</a>
 </div>
-<div id="user_subscriptions" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="user_subscriptions" class="element ajax clickable class">
 <h1>user_subscriptions<a href="../classes/user_subscriptions.html">¶</a>
 </h1>
 <p class="short_description">This is the class expRecord</p>
@@ -914,9 +1059,8 @@
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.5.0
-</a> and<br>
-            generated on 2014-07-18T16:28:45-04:00.<br></footer></div>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.7.0</a> and<br>
+            generated on 2014-08-22T07:06:15-04:00.<br></footer></div>
 </div>
 </body>
 </html>

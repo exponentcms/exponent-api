@@ -19,12 +19,10 @@
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a>Namespaces</a></li>
-<li><a href="../namespaces/.html"><i class="icon-th"></i> </a></li>
-<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
 <li><a>Packages</a></li>
 <li><a href="../packages/Connectors.html"><i class="icon-folder-open"></i> Connectors</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 <li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
 <li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
 <li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
@@ -32,7 +30,6 @@
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
 <li><a href="../packages/elFinder.html"><i class="icon-folder-open"></i> elFinder</a></li>
-<li><a href="../packages/global.html"><i class="icon-folder-open"></i> global</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -43,7 +40,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">5328</span></a></li>
+                <span class="label label-info">6529</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -61,7 +58,7 @@
                         </div></noscript>
 <div class="row">
 <div class="span4">
-<div class="btn-toolbar">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
 <div class="btn-group visibility" data-toggle="buttons-checkbox">
 <button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button>
 </div>
@@ -69,7 +66,7 @@
 <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
 </div>
 </div>
-<ul class="side-nav nav nav-list">
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list">
 <li class="nav-header">
 <i title="Methods" class="icon-custom icon-method"></i> Methods
                     <ul>
@@ -133,22 +130,31 @@ an associative array, (or else the message fails immediately).</span><pre>quickS
 </ul>
 </div>
 <div class="span8">
-<a id="\expMail"></a><ul class="breadcrumb">
+<a xmlns:php="http://php.net/xsl" id="\expMail"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
 <li>
 <a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
-<li><a href="../namespaces/.html"></a></li>
 <li class="active">
 <span class="divider">\</span><a href="../classes/expMail.html">expMail</a>
 </li>
 </ul>
-<div class="element class">
+<div xmlns:php="http://php.net/xsl" class="element class">
 <p class="short_description">The expMail class</p>
 <div class="details">
 <div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.html">Subsystems</a></td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.html">Subsystems</a></td>
+</tr>
+</table>
 <h3>
 <i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
-<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<a id="method___construct"></a><div class="element clickable method public method___construct " data-toggle="collapse" data-target=".method___construct .collapse" title="public">
 <h2>__construct() - This function constructs the message to be send in this object, filling it out with connection information based on the site config.</h2>
 <pre>__construct(array $params<code> = array()</code>) </pre>
 <div class="labels"></div>
@@ -163,8 +169,11 @@ an associative array, (or else the message fails immediately).</span><pre>quickS
 <tr>
 <th>example</th>
 <td>can specify how you would like to send mail, overriding the system default.
+
 //Here you are using the system default, whether it is smtp, php mail, sendmail, exim, native, or rotator.
+
   $emailItem = new expMail();
+
   //Here you are trying different types of connections:
   $emailItem = new expMail(array('method'=>'smtp'));
   $emailItem = new expMail(array('method'=>'sendmail');
@@ -196,13 +205,13 @@ an associative array, (or else the message fails immediately).</span><pre>quickS
 </div>
 </div>
 </div>
-<a id="method___destruct"></a><div class="element clickable method public method___destruct" data-toggle="collapse" data-target=".method___destruct .collapse" title="public">
+<a id="method___destruct"></a><div class="element clickable method public method___destruct " data-toggle="collapse" data-target=".method___destruct .collapse" title="public">
 <h2>expMail class destructor</h2>
 <pre>__destruct() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_addBcc"></a><div class="element clickable method public method_addBcc" data-toggle="collapse" data-target=".method_addBcc .collapse" title="public">
+<a id="method_addBcc"></a><div class="element clickable method public method_addBcc " data-toggle="collapse" data-target=".method_addBcc .collapse" title="public">
 <h2>addBcc() - This adds Blind Carbon Copy addresses to the message one at a time, so if you want to add multiple BCC's it is best to run through a loop in order to put them in.</h2>
 <pre>addBcc(string $email, string $name<code> = null</code>) </pre>
 <div class="labels"></div>
@@ -217,19 +226,25 @@ an associative array, (or else the message fails immediately).</span><pre>quickS
 <tr>
 <th>example</th>
 <td>will send a basic message, looping through an array of email addresses add adding them to the BCC list.
+
 $emailItem = new expMail();
+
  $emailItem->addText('My Text ');
 $emailItem->addText('Line Two ');
  $emailItem->addText('Line Three ');
+
 $bccs = array('a@website.com'=>'Mr A.', 'b@website.com'=>'Mr B.', 'c@website.com'=>'Mr C.', 'd@website.com'=>'Mr D.', 'e@website.com'=>'Mr E.', 'f@website.com'=>'Mr F.');
+
 //add multiple bcc recipients to the email
 foreach ($bccs as $email => $name)
 {
 	$emailItem->addBcc($email, $name);
 }
+
 $emailItem->addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));
 $emailItem->addFrom('from@sender.com'); //setting the From field using just the email.
 $emailItem->subject('Hello World!');
+
 $emailItem->send();</td>
 </tr>
 </table>
@@ -247,7 +262,7 @@ $emailItem->send();</td>
 </div>
 </div>
 </div>
-<a id="method_addCc"></a><div class="element clickable method public method_addCc" data-toggle="collapse" data-target=".method_addCc .collapse" title="public">
+<a id="method_addCc"></a><div class="element clickable method public method_addCc " data-toggle="collapse" data-target=".method_addCc .collapse" title="public">
 <h2>addCc() - This adds Carbon Copy addresses to the message one at a time, so if you want to add multiple CC's it is best to run through a loop in order to put them in.</h2>
 <pre>addCc(string $email, string $name<code> = null</code>) </pre>
 <div class="labels"></div>
@@ -262,19 +277,25 @@ $emailItem->send();</td>
 <tr>
 <th>example</th>
 <td>will send a basic message, looping through an array of email addresses add adding them to the CC list.
+
 $emailItem = new expMail();
+
  $emailItem->addText('My Text ');
 $emailItem->addText('Line Two ');
  $emailItem->addText('Line Three ');
+
 $ccs = array('a@website.com'=>'Mr A.', 'b@website.com'=>'Mr B.', 'c@website.com'=>'Mr C.', 'd@website.com'=>'Mr D.', 'e@website.com'=>'Mr E.', 'f@website.com'=>'Mr F.');
+
 //add multiple bcc recipients to the email
 foreach ($ccs as $email => $name)
 {
 	$emailItem->addCc($email, $name);
 }
+
 $emailItem->addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));
 $emailItem->addFrom('from@sender.com'); //setting the From field using just the email.
 $emailItem->subject('Hello World!');
+
 $emailItem->send();</td>
 </tr>
 </table>
@@ -292,14 +313,14 @@ $emailItem->send();</td>
 </div>
 </div>
 </div>
-<a id="method_addFrom"></a><div class="element clickable method public method_addFrom" data-toggle="collapse" data-target=".method_addFrom .collapse" title="public">
+<a id="method_addFrom"></a><div class="element clickable method public method_addFrom " data-toggle="collapse" data-target=".method_addFrom .collapse" title="public">
 <h2>addFrom() - This adds the singular From address, if you call it twice, it will replace the old from address.</h2>
 <pre>addFrom(string $email<code> = null</code>) </pre>
 <div class="labels"></div>
 <div class="row collapse">
 <div class="span4">
-<div class="long_description">It also sets the private var from with whatever you desire. This is a relic from the Swift 3.x days and should be gutted out
-   the next time someone upgrades the mailer.</div>
+<div class="long_description"><p>It also sets the private var from with whatever you desire. This is a relic from the Swift 3.x days and should be gutted out
+the next time someone upgrades the mailer.</p></div>
 <table class="table table-bordered">
 <tr>
 <th>author</th>
@@ -330,14 +351,14 @@ $emailItem->send();</td>
 </div>
 </div>
 </div>
-<a id="method_addHTML"></a><div class="element clickable method public method_addHTML" data-toggle="collapse" data-target=".method_addHTML .collapse" title="public">
+<a id="method_addHTML"></a><div class="element clickable method public method_addHTML " data-toggle="collapse" data-target=".method_addHTML .collapse" title="public">
 <h2>addHTML() - This function is similar to setHTMLBody except that it includes the HTML in the message body rather than sets it as default. Many
  mail clients will read the HTML over plain text as default behavior, so even if you use setTextBody and addHTML, they will default to reading the HTML.</h2>
 <pre>addHTML(string $html) </pre>
 <div class="labels"></div>
 <div class="row collapse">
 <div class="span4">
-<div class="long_description">setHTMLBody is to be preferred as the default for setting the body of the email.</div>
+<div class="long_description"><p>setHTMLBody is to be preferred as the default for setting the body of the email.</p></div>
 <table class="table table-bordered">
 <tr>
 <th>author</th>
@@ -346,20 +367,29 @@ $emailItem->send();</td>
 <tr>
 <th>example</th>
 <td>will include the passed HTML and will set it as an addition to the message body.
+
  $emailItem = new expMail();
+
  $emailItem->addHTML('<h2>My Text</h2> '); //This adds an alternate version if your email in HTML format
+
  $emailItem->addTo('myemail@mysite.com');
  $emailItem->addFrom('from@sender.com');
  $emailItem->subject('Hello World!');
+
  $emailItem->send();
+
 You can also call the addHTML multiple times to append to the message:
+
  $emailItem = new expMail();
+
   $emailItem->addHTML('My HTML <br>');
  $emailItem->addHTML('Line Two <br>');
   $emailItem->addHTML('Line Three <br>');
+
  $emailItem->addTo('myemail@mysite.com');
  $emailItem->addFrom('from@sender.com');
  $emailItem->subject('Hello World!');
+
  $emailItem->send();</td>
 </tr>
 </table>
@@ -374,7 +404,7 @@ You can also call the addHTML multiple times to append to the message:
 </div>
 </div>
 </div>
-<a id="method_addHeaders"></a><div class="element clickable method public method_addHeaders" data-toggle="collapse" data-target=".method_addHeaders .collapse" title="public">
+<a id="method_addHeaders"></a><div class="element clickable method public method_addHeaders " data-toggle="collapse" data-target=".method_addHeaders .collapse" title="public">
 <h2>addHeaders() - Add text headers to the message. Limited to text headers for now.</h2>
 <pre>addHeaders(array $headers) </pre>
 <div class="labels"></div>
@@ -389,18 +419,24 @@ You can also call the addHTML multiple times to append to the message:
 <tr>
 <th>example</th>
 <td>will include the passed HTML and will set it as an addition to the message body.
+
  $emailItem = new expMail();
+
  $emailItem->addHTML('<h2>My Text</h2> '); //This adds an alternate version if your email in HTML format
+
  $emailItem->addTo('myemail@mysite.com');
  $emailItem->addFrom('from@sender.com');
  $emailItem->subject('Hello World!');
+
  $headersToAdd = array('Your-Header-Name' => 'the header value', 'SecondHeader-Name' => '2nd header value');
  $emailItem->addHeaders($headersToAdd);
+
  $emailItem->send();</td>
 </tr>
 <tr>
 <th>todo</th>
 <td>add support for other types of headers mentioned below, and a second pass in value/switch to specify what kind headers you are adding
+
   # Text Headers
 		Text headers are the simplest type of Header. They contain textual information with no special information included within it for example the Subject header in a message.
   # Parameterized Headers
@@ -426,9 +462,9 @@ You can also call the addHTML multiple times to append to the message:
 </div>
 </div>
 </div>
-<a id="method_addRaw"></a><div class="element clickable method public method_addRaw" data-toggle="collapse" data-target=".method_addRaw .collapse" title="public">
+<a id="method_addRaw"></a><div class="element clickable method public method_addRaw " data-toggle="collapse" data-target=".method_addRaw .collapse" title="public">
 <h2>addRaw() - This is a wrapper around setHTMLBody for backwards compatibility</h2>
-<pre>addRaw(mixed $body) </pre>
+<pre>addRaw($body) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -440,7 +476,7 @@ You can also call the addHTML multiple times to append to the message:
 <div class="subelement argument"><h4>$body</h4></div>
 </div></div>
 </div>
-<a id="method_addSubject"></a><div class="element clickable method public method_addSubject" data-toggle="collapse" data-target=".method_addSubject .collapse" title="public">
+<a id="method_addSubject"></a><div class="element clickable method public method_addSubject " data-toggle="collapse" data-target=".method_addSubject .collapse" title="public">
 <h2>subject() - This will set the subject of the message, ensuring first that message has been instantiated.</h2>
 <pre>addSubject(string $subj) </pre>
 <div class="labels"></div>
@@ -456,12 +492,15 @@ You can also call the addHTML multiple times to append to the message:
 <th>example</th>
 <td>will send a basic message, but you can see how the subject line works.
  $emailItem = new expMail();
+
   $emailItem->addText('My Text ');
  $emailItem->addText('Line Two ');
   $emailItem->addText('Line Three ');
+
 	 $emailItem->addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));
  $emailItem->addFrom('from@sender.com');
  $emailItem->subject('Hello World!');
+
  $emailItem->send();</td>
 </tr>
 </table>
@@ -476,14 +515,14 @@ You can also call the addHTML multiple times to append to the message:
 </div>
 </div>
 </div>
-<a id="method_addText"></a><div class="element clickable method public method_addText" data-toggle="collapse" data-target=".method_addText .collapse" title="public">
+<a id="method_addText"></a><div class="element clickable method public method_addText " data-toggle="collapse" data-target=".method_addText .collapse" title="public">
 <h2>addText() - This function is similar to the addHTML function above, it adds a plain text part to the message in case
  your recipient cannot receive HTML email, if you have added a text version of the email, they will have this to fall back on.</h2>
 <pre>addText(string $text) </pre>
 <div class="labels"></div>
 <div class="row collapse">
 <div class="span4">
-<div class="long_description">Every email send out should have an HTML version and a TEXT version.</div>
+<div class="long_description"><p>Every email send out should have an HTML version and a TEXT version.</p></div>
 <table class="table table-bordered">
 <tr>
 <th>author</th>
@@ -492,12 +531,16 @@ You can also call the addHTML multiple times to append to the message:
 <tr>
 <th>example</th>
 <td>will set the message body in HTML and also include a text counterpart in case the recipient cannot view HTML.
+
  $emailItem = new expMail();
+
   $emailItem->setHTMLBody('<b>My Text</b> '); //This is an HTML version of the message
  $emailItem->addText('My Text '); //This adds a Text version in case they cannot read HTML
+
  $emailItem->addTo('myemail@mysite.com');
  $emailItem->addFrom('from@sender.com');
  $emailItem->subject('Hello World!');
+
  $emailItem->send();</td>
 </tr>
 </table>
@@ -512,16 +555,16 @@ You can also call the addHTML multiple times to append to the message:
 </div>
 </div>
 </div>
-<a id="method_addTo"></a><div class="element clickable method public method_addTo" data-toggle="collapse" data-target=".method_addTo .collapse" title="public">
+<a id="method_addTo"></a><div class="element clickable method public method_addTo " data-toggle="collapse" data-target=".method_addTo .collapse" title="public">
 <h2>addTo() - This adds people to the Recipient List in the To Field.</h2>
 <pre>addTo(array|string $email<code> = null</code>) </pre>
 <div class="labels"></div>
 <div class="row collapse">
 <div class="span4">
-<div class="long_description">If the first variable passed is an array,
-   it assumes you are sending messages to multiple people.
-   If you want to add people with their names associated with the email, you must use an outside for loop.
- This function does not yet support the parsing of associative arrays for a quick add to the To recipient list.</div>
+<div class="long_description"><p>If the first variable passed is an array,
+it assumes you are sending messages to multiple people.
+If you want to add people with their names associated with the email, you must use an outside for loop.
+This function does not yet support the parsing of associative arrays for a quick add to the To recipient list.</p></div>
 <table class="table table-bordered">
 <tr>
 <th>author</th>
@@ -583,7 +626,7 @@ You can also call the addHTML multiple times to append to the message:
 </div>
 </div>
 </div>
-<a id="method_attach_file_on_disk"></a><div class="element clickable method public method_attach_file_on_disk" data-toggle="collapse" data-target=".method_attach_file_on_disk .collapse" title="public">
+<a id="method_attach_file_on_disk"></a><div class="element clickable method public method_attach_file_on_disk " data-toggle="collapse" data-target=".method_attach_file_on_disk .collapse" title="public">
 <h2>attach_file_on_disk() - This function will utilize the swift mailer's ability to attach files
 that are on disk, unlike the one above, which just attached one that is available in memory.</h2>
 <pre>attach_file_on_disk(string $file_to_attach, string $file_type) </pre>
@@ -602,10 +645,13 @@ that are on disk, unlike the one above, which just attached one that is availabl
      //Create the attachment
 	// * Note that you can technically leave the content-type parameter out
 	$attachment = Swift_Attachment::fromPath('/path/to/image.jpg', 'image/jpeg');
+
 	//Attach it to the message
 	$message->attach($attachment);
+
 	//The two statements above could be written in one line instead
 	$message->attach(Swift_Attachment::fromPath('/path/to/image.jpg'));
+
 	//You can attach files from a URL if allow_url_fopen is on in php.ini
 	$message->attach(Swift_Attachment::fromPath('http://site.tld/logo.png'));</td>
 </tr>
@@ -624,13 +670,13 @@ that are on disk, unlike the one above, which just attached one that is availabl
 </div>
 </div>
 </div>
-<a id="method_batchSend"></a><div class="element clickable method public method_batchSend" data-toggle="collapse" data-target=".method_batchSend .collapse" title="public">
+<a id="method_batchSend"></a><div class="element clickable method public method_batchSend " data-toggle="collapse" data-target=".method_batchSend .collapse" title="public">
 <h2>batchSend() - Does not seem to be working correctly.  Use at your own risk!</h2>
 <pre>batchSend() : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">This should probably be taken out as it look like a failed attempt to use the old-school AntiFlood plugin
- This is leftover code from Swift 3.x</div>
+<div class="long_description"><p>This should probably be taken out as it look like a failed attempt to use the old-school AntiFlood plugin
+This is leftover code from Swift 3.x</p></div>
 <table class="table table-bordered">
 <tr>
 <th>todo</th>
@@ -645,7 +691,7 @@ that are on disk, unlike the one above, which just attached one that is availabl
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_clearBody"></a><div class="element clickable method public method_clearBody" data-toggle="collapse" data-target=".method_clearBody .collapse" title="public">
+<a id="method_clearBody"></a><div class="element clickable method public method_clearBody " data-toggle="collapse" data-target=".method_clearBody .collapse" title="public">
 <h2>clearBody() - This function will set the body of the message to empty, a blank text string</h2>
 <pre>clearBody() </pre>
 <div class="labels"></div>
@@ -657,7 +703,7 @@ that are on disk, unlike the one above, which just attached one that is availabl
 </tr></table>
 </div></div>
 </div>
-<a id="method_flushRecipients"></a><div class="element clickable method public method_flushRecipients" data-toggle="collapse" data-target=".method_flushRecipients .collapse" title="public">
+<a id="method_flushRecipients"></a><div class="element clickable method public method_flushRecipients " data-toggle="collapse" data-target=".method_flushRecipients .collapse" title="public">
 <h2>flushRecipients() - this will clear all of the recipients in the To array, ignoring CC and BCC</h2>
 <pre>flushRecipients() </pre>
 <div class="labels"></div>
@@ -673,14 +719,19 @@ that are on disk, unlike the one above, which just attached one that is availabl
 <th>example</th>
 <td>will set some recipients and then clear them
  $emailItem = new expMail();
+
   $emailItem->addText('My Text ');
  $emailItem->addText('Line Two ');
   $emailItem->addText('Line Three ');
+
  $emailItem->addTo('bob@smith.com', 'Bob Smith');
  $emailItem->addTo('bob2@smith.com', 'Bob2 Smith');
  $emailItem->addTo('bob3@smith.com', 'Bob3 Smith');
+
   $emailItem->flushRecipients();
+
  $emailItem->addTo('whataboutbob@smith.com', 'Frank Smith');
+
  $emailItem->send();</td>
 </tr>
 </table>
@@ -691,17 +742,15 @@ that are on disk, unlike the one above, which just attached one that is availabl
 </div>
 </div>
 </div>
-<a id="method_messageId"></a><div class="element clickable method public method_messageId" data-toggle="collapse" data-target=".method_messageId .collapse" title="public">
+<a id="method_messageId"></a><div class="element clickable method public method_messageId " data-toggle="collapse" data-target=".method_messageId .collapse" title="public">
 <h2>messageId() - This will return the unique ID of the mail message.</h2>
 <pre>messageId() : array</pre>
 <div class="labels"></div>
 <div class="row collapse">
 <div class="span4">
-<div class="long_description">Courtesy of the underlying Swift mailer:
-
-ID headers contain identifiers for the entity (or the message). The most notable ID header is the Message-ID header on the message itself.
-
-An ID that exists inside an ID header looks more-or-less less like an email address. For example, <1234955437.499becad62ec2@example.org>. The part to the left of the @ sign is usually unique, based on the	      * current time and some random factor. The part on the right is usually a domain name.</div>
+<div class="long_description"><p>Courtesy of the underlying Swift mailer:</p>
+<p>ID headers contain identifiers for the entity (or the message). The most notable ID header is the Message-ID header on the message itself.</p>
+<p>An ID that exists inside an ID header looks more-or-less less like an email address. For example, <a href="mailto:1234955437.499becad62ec2@example.org">1234955437.499becad62ec2@example.org</a>. The part to the left of the @ sign is usually unique, based on the          * current time and some random factor. The part on the right is usually a domain name.</p></div>
 <table class="table table-bordered">
 <tr>
 <th>author</th>
@@ -710,14 +759,19 @@ An ID that exists inside an ID header looks more-or-less less like an email addr
 <tr>
 <th>example</th>
 <td>returns the Message ID on the mail
+
 $emailItem = new expMail();
+
  $emailItem->addText('My Text ');
 $emailItem->addText('Line Two ');
  $emailItem->addText('Line Three ');
+
 $emailItem->addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));
 $emailItem->addFrom('from@sender.com');
 $emailItem->subject('Hello World!');
+
  echo "$emailItem->messageID()";
+
 $emailItem->send();</td>
 </tr>
 </table>
@@ -730,7 +784,7 @@ $emailItem->send();</td>
 </div>
 </div>
 </div>
-<a id="method_quickBatchSend"></a><div class="element clickable method public method_quickBatchSend" data-toggle="collapse" data-target=".method_quickBatchSend .collapse" title="public">
+<a id="method_quickBatchSend"></a><div class="element clickable method public method_quickBatchSend " data-toggle="collapse" data-target=".method_quickBatchSend .collapse" title="public">
 <h2>quickBatchSend() - a quick way to send a batch of emails one at a time
 This function is similar to quickSend, but sends each email separately to protect others identity in the mailing</h2>
 <pre>quickBatchSend(array $params<code> = array()</code>) : array</pre>
@@ -750,10 +804,10 @@ This function is similar to quickSend, but sends each email separately to protec
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_quickSend"></a><div class="element clickable method public method_quickSend" data-toggle="collapse" data-target=".method_quickSend .collapse" title="public">
+<a id="method_quickSend"></a><div class="element clickable method public method_quickSend " data-toggle="collapse" data-target=".method_quickSend .collapse" title="public">
 <h2>quickSend() - This is a quick method for sending email messages.  It only requires a message value be passed in
 an associative array, (or else the message fails immediately).</h2>
-<pre>quickSend(array $params<code> = array()</code>) : int</pre>
+<pre>quickSend(array $params<code> = array()</code>) : integer</pre>
 <div class="labels"></div>
 <div class="row collapse">
 <div class="span4">
@@ -770,9 +824,11 @@ an associative array, (or else the message fails immediately).</h2>
 <tr>
 <th>example</th>
 <td>will send a quick message, showing you what basic fields are required.
+
  $body = "My body.";
  $tos = explode(',', str_replace(' ', '', COMMENTS_NOTIFICATION_EMAIL)); //pull list of CSV emails from the site config
   $subject = "My subject";
+
   $mail = new expMail();
   $mail->quickSend(array(
          'html_message'=>$body,
@@ -780,6 +836,7 @@ an associative array, (or else the message fails immediately).</h2>
 	    'from'=>trim(SMTP_FROMADDRESS), //pull EMAIL from site config
 	    'subject'=>$subject,
   ));
+
   (or even simpler)
  $mail = new expMail();
   $mail->quickSend(array('html_message'=>'Hello'));</td>
@@ -789,18 +846,18 @@ an associative array, (or else the message fails immediately).</h2>
 <div class="subelement argument">
 <h4>$params</h4>
 <code>array</code><p>This is the associative array required to send the email. The minimum basics for sending an email are:
-  -html_message or -text_message
- If a from or a to is not specified, the send method will pull the default SMTP_FROMADDRESS from the site config.
- Usable parameters include:
-  -to
-  -from
-  -subject
-  -html_message
-  -text_message
-  -headers</p></div>
+-html_message or -text_message
+If a from or a to is not specified, the send method will pull the default SMTP_FROMADDRESS from the site config.
+Usable parameters include:
+-to
+-from
+-subject
+-html_message
+-text_message
+-headers</p></div>
 <h3>Returns</h3>
 <div class="subelement response">
-<code>int</code>number of recipients to which the email was successfully sent.</div>
+<code>integer</code>number of recipients to which the email was successfully sent.</div>
 </div>
 <div class="span4">
 <h3>Examples</h3>
@@ -808,14 +865,14 @@ an associative array, (or else the message fails immediately).</h2>
 </div>
 </div>
 </div>
-<a id="method_send"></a><div class="element clickable method public method_send" data-toggle="collapse" data-target=".method_send .collapse" title="public">
+<a id="method_send"></a><div class="element clickable method public method_send " data-toggle="collapse" data-target=".method_send .collapse" title="public">
 <h2>send()
         </h2>
 <pre>send() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_setHTMLBody"></a><div class="element clickable method public method_setHTMLBody" data-toggle="collapse" data-target=".method_setHTMLBody .collapse" title="public">
+<a id="method_setHTMLBody"></a><div class="element clickable method public method_setHTMLBody " data-toggle="collapse" data-target=".method_setHTMLBody .collapse" title="public">
 <h2>setHTMLBody() - This function sets the main version of the message to HTML.</h2>
 <pre>setHTMLBody(string $html) </pre>
 <div class="labels"></div>
@@ -830,11 +887,15 @@ an associative array, (or else the message fails immediately).</h2>
 <tr>
 <th>example</th>
 <td>will set the message body to the HTML that is passed in. This is the standard way to set the email message body.
+
  $emailItem = new expMail();
+
  $emailItem->setHTMLBody('<h2>My Text</h2> '); //This sets the body to be an HTML version
+
  $emailItem->addTo('myemail@mysite.com');
  $emailItem->addFrom('from@sender.com');
  $emailItem->subject('Hello World!');
+
  $emailItem->send();</td>
 </tr>
 </table>
@@ -849,7 +910,7 @@ an associative array, (or else the message fails immediately).</h2>
 </div>
 </div>
 </div>
-<a id="method_setTextBody"></a><div class="element clickable method public method_setTextBody" data-toggle="collapse" data-target=".method_setTextBody .collapse" title="public">
+<a id="method_setTextBody"></a><div class="element clickable method public method_setTextBody " data-toggle="collapse" data-target=".method_setTextBody .collapse" title="public">
 <h2>setTextBody() - This function sets the main version of the message to plain text. No HTML</h2>
 <pre>setTextBody(string $text) </pre>
 <div class="labels"></div>
@@ -864,11 +925,15 @@ an associative array, (or else the message fails immediately).</h2>
 <tr>
 <th>example</th>
 <td>will set the message body to plain text. Usually people do this because the recipient cannot read HTML email.
+
  $emailItem = new expMail();
+
  $emailItem->setTextBody('My Text '); //This adds a Text version in case they cannot read HTML
+
  $emailItem->addTo('myemail@mysite.com');
  $emailItem->addFrom('from@sender.com');
  $emailItem->subject('Hello World!');
+
  $emailItem->send();</td>
 </tr>
 </table>
@@ -883,7 +948,7 @@ an associative array, (or else the message fails immediately).</h2>
 </div>
 </div>
 </div>
-<a id="method_test"></a><div class="element clickable method public method_test" data-toggle="collapse" data-target=".method_test .collapse" title="public">
+<a id="method_test"></a><div class="element clickable method public method_test " data-toggle="collapse" data-target=".method_test .collapse" title="public">
 <h2>test() - Does the mail system seem to be working correctly?
   This is useless for the Native mail system</h2>
 <pre>test() </pre>
@@ -1014,9 +1079,8 @@ an associative array, (or else the message fails immediately).</h2>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.5.0
-</a> and<br>
-            generated on 2014-07-18T16:28:54-04:00.<br></footer></div>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.7.0</a> and<br>
+            generated on 2014-08-22T07:06:33-04:00.<br></footer></div>
 </div>
 </body>
 </html>

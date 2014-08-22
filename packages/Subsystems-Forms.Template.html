@@ -19,12 +19,10 @@
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a>Namespaces</a></li>
-<li><a href="../namespaces/.html"><i class="icon-th"></i> </a></li>
-<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
 <li><a>Packages</a></li>
 <li><a href="../packages/Connectors.html"><i class="icon-folder-open"></i> Connectors</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 <li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
 <li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
 <li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
@@ -32,7 +30,6 @@
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
 <li><a href="../packages/elFinder.html"><i class="icon-folder-open"></i> elFinder</a></li>
-<li><a href="../packages/global.html"><i class="icon-folder-open"></i> global</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -43,7 +40,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">5328</span></a></li>
+                <span class="label label-info">6529</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -72,13 +69,13 @@
 </li>
 <li class="nav-header">
 <i title="Classes" class="icon-custom icon-class"></i> Classes</li>
-<li><a href="#template" title="Wraps the OS modules template system in use, to provide a uniform and consistent
-interface to templates.">template</a></li>
+<li><a href="#basetemplate" title="Base Template class">basetemplate</a></li>
+<li><a href="#controllertemplate" title="Controller Template Wrapper">controllertemplate</a></li>
 <li><a href="#filetemplate" title="File Template Wrapper">filetemplate</a></li>
 <li><a href="#formtemplate" title="Form Template Wrapper">formtemplate</a></li>
 <li><a href="#standalonetemplate" title="Standalone Template Class">standalonetemplate</a></li>
-<li><a href="#controllertemplate" title="Controller Template Wrapper">controllertemplate</a></li>
-<li><a href="#basetemplate" title="Base Template class">basetemplate</a></li>
+<li><a href="#template" title="Wraps the OS modules template system in use, to provide a uniform and consistent
+interface to templates.">template</a></li>
 </ul>
 </div>
 <div class="span8 package-contents">
@@ -90,43 +87,43 @@ interface to templates.">template</a></li>
 </li></ul>
 <div class="package-indent">
 <h3>
-<i title="Classes" class="icon-custom icon-class"></i> Classes and interfaces</h3>
-<div id="basetemplate" class="element ajax clickable class">
+<i title="Classes" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="basetemplate" class="element ajax clickable class">
 <h1>basetemplate<a href="../classes/basetemplate.html">¶</a>
 </h1>
 <p class="short_description">Base Template class</p>
 <div class="details collapse"></div>
 <a href="../classes/basetemplate.html" class="more">« More »</a>
 </div>
-<div id="controllertemplate" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="controllertemplate" class="element ajax clickable class">
 <h1>controllertemplate<a href="../classes/controllertemplate.html">¶</a>
 </h1>
 <p class="short_description">Controller Template Wrapper</p>
 <div class="details collapse"></div>
 <a href="../classes/controllertemplate.html" class="more">« More »</a>
 </div>
-<div id="filetemplate" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="filetemplate" class="element ajax clickable class">
 <h1>filetemplate<a href="../classes/filetemplate.html">¶</a>
 </h1>
 <p class="short_description">File Template Wrapper</p>
 <div class="details collapse"></div>
 <a href="../classes/filetemplate.html" class="more">« More »</a>
 </div>
-<div id="formtemplate" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="formtemplate" class="element ajax clickable class">
 <h1>formtemplate<a href="../classes/formtemplate.html">¶</a>
 </h1>
 <p class="short_description">Form Template Wrapper</p>
 <div class="details collapse"></div>
 <a href="../classes/formtemplate.html" class="more">« More »</a>
 </div>
-<div id="standalonetemplate" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="standalonetemplate" class="element ajax clickable class">
 <h1>standalonetemplate<a href="../classes/standalonetemplate.html">¶</a>
 </h1>
 <p class="short_description">Standalone Template Class</p>
 <div class="details collapse"></div>
 <a href="../classes/standalonetemplate.html" class="more">« More »</a>
 </div>
-<div id="template" class="element ajax clickable class">
+<div xmlns:php="http://php.net/xsl" id="template" class="element ajax clickable class">
 <h1>template<a href="../classes/template.html">¶</a>
 </h1>
 <p class="short_description">Wraps the OS modules template system in use, to provide a uniform and consistent
@@ -139,9 +136,8 @@ interface to templates.</p>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.5.0
-</a> and<br>
-            generated on 2014-07-18T16:28:47-04:00.<br></footer></div>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.7.0</a> and<br>
+            generated on 2014-08-22T07:06:17-04:00.<br></footer></div>
 </div>
 </body>
 </html>

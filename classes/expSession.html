@@ -19,12 +19,10 @@
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a>Namespaces</a></li>
-<li><a href="../namespaces/.html"><i class="icon-th"></i> </a></li>
-<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
 <li><a>Packages</a></li>
 <li><a href="../packages/Connectors.html"><i class="icon-folder-open"></i> Connectors</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 <li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
 <li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
 <li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
@@ -32,7 +30,6 @@
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
 <li><a href="../packages/elFinder.html"><i class="icon-folder-open"></i> elFinder</a></li>
-<li><a href="../packages/global.html"><i class="icon-folder-open"></i> global</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -43,7 +40,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">5328</span></a></li>
+                <span class="label label-info">6529</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -61,7 +58,7 @@
                         </div></noscript>
 <div class="row">
 <div class="span4">
-<div class="btn-toolbar">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
 <div class="btn-group visibility" data-toggle="buttons-checkbox">
 <button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button>
 </div>
@@ -69,7 +66,7 @@
 <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
 </div>
 </div>
-<ul class="side-nav nav nav-list"><li class="nav-header">
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list"><li class="nav-header">
 <i title="Methods" class="icon-custom icon-method"></i> Methods
                     <ul>
 <li class="method public "><a href="#method_clearAllSessionData" title="clearAllSessionData() :: Clears entire user session data and truncates the sessionticket table"><span class="description">Clears entire user session data and truncates the sessionticket table</span><pre>clearAllSessionData()</pre></a></li>
@@ -136,16 +133,15 @@ to force refreshes and force logouts.  It also updates activity time.</span><pre
 </li></ul>
 </div>
 <div class="span8">
-<a id="\expSession"></a><ul class="breadcrumb">
+<a xmlns:php="http://php.net/xsl" id="\expSession"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
 <li>
 <a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
-<li><a href="../namespaces/.html"></a></li>
 <li class="active">
 <span class="divider">\</span><a href="../classes/expSession.html">expSession</a>
 </li>
 </ul>
-<div class="element class">
+<div xmlns:php="http://php.net/xsl" class="element class">
 <p class="short_description">This is the class expSession</p>
 <div class="details">
 <div class="long_description"></div>
@@ -161,13 +157,13 @@ to force refreshes and force logouts.  It also updates activity time.</span><pre
 </table>
 <h3>
 <i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
-<a id="method_clearAllSessionData"></a><div class="element clickable method public method_clearAllSessionData" data-toggle="collapse" data-target=".method_clearAllSessionData .collapse" title="public">
+<a id="method_clearAllSessionData"></a><div class="element clickable method public method_clearAllSessionData " data-toggle="collapse" data-target=".method_clearAllSessionData .collapse" title="public">
 <h2>Clears entire user session data and truncates the sessionticket table</h2>
 <pre>clearAllSessionData() </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_clearAllUsersSessionCache"></a><div class="element clickable method public method_clearAllUsersSessionCache" data-toggle="collapse" data-target=".method_clearAllUsersSessionCache .collapse" title="public">
+<a id="method_clearAllUsersSessionCache"></a><div class="element clickable method public method_clearAllUsersSessionCache " data-toggle="collapse" data-target=".method_clearAllUsersSessionCache .collapse" title="public">
 <h2>exdoc
 Clears global users session cache</h2>
 <pre>clearAllUsersSessionCache(mixed $modules<code> = null</code>, \User $user<code> = null</code>) </pre>
@@ -187,7 +183,7 @@ Clears global users session cache</h2>
 <code>\User</code><p>if not set,applies to all users. If set, will only clear for that user</p></div>
 </div></div>
 </div>
-<a id="method_createTicket"></a><div class="element clickable method public method_createTicket" data-toggle="collapse" data-target=".method_createTicket .collapse" title="public">
+<a id="method_createTicket"></a><div class="element clickable method public method_createTicket " data-toggle="collapse" data-target=".method_createTicket .collapse" title="public">
 <h2>exdoc
 Creates user ticket in sessionticket table and session</h2>
 <pre>createTicket(\user/object $user<code> = null</code>) : null</pre>
@@ -206,7 +202,7 @@ Creates user ticket in sessionticket table and session</h2>
 <div class="subelement response"><code>null</code></div>
 </div></div>
 </div>
-<a id="method_deleteVar"></a><div class="element clickable method public method_deleteVar" data-toggle="collapse" data-target=".method_deleteVar .collapse" title="public">
+<a id="method_deleteVar"></a><div class="element clickable method public method_deleteVar " data-toggle="collapse" data-target=".method_deleteVar .collapse" title="public">
 <h2>deleteVar()
         </h2>
 <pre>deleteVar($var) </pre>
@@ -217,7 +213,7 @@ Creates user ticket in sessionticket table and session</h2>
 <div class="subelement argument"><h4>$var</h4></div>
 </div></div>
 </div>
-<a id="method_exists"></a><div class="element clickable method public method_exists" data-toggle="collapse" data-target=".method_exists .collapse" title="public">
+<a id="method_exists"></a><div class="element clickable method public method_exists " data-toggle="collapse" data-target=".method_exists .collapse" title="public">
 <h2>exists()
         </h2>
 <pre>exists($var) </pre>
@@ -228,15 +224,15 @@ Creates user ticket in sessionticket table and session</h2>
 <div class="subelement argument"><h4>$var</h4></div>
 </div></div>
 </div>
-<a id="method_get"></a><div class="element clickable method public method_get" data-toggle="collapse" data-target=".method_get .collapse" title="public">
+<a id="method_get"></a><div class="element clickable method public method_get " data-toggle="collapse" data-target=".method_get .collapse" title="public">
 <h2>exdoc
 This retrieves the value of a persistent session variable. Returns
 null if the variable is not set in the session, or the value of the stored variable.</h2>
 <pre>get(string $var) : mixed</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">Note that some session variables (like the user object and the ticket)
-cannot be changed using this call (for security / sanity reason)</div>
+<div class="long_description"><p>Note that some session variables (like the user object and the ticket)
+cannot be changed using this call (for security / sanity reason)</p></div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:Sessions</td>
@@ -249,7 +245,7 @@ cannot be changed using this call (for security / sanity reason)</div>
 <div class="subelement response"><code>mixed</code></div>
 </div></div>
 </div>
-<a id="method_getCacheValue"></a><div class="element clickable method public method_getCacheValue" data-toggle="collapse" data-target=".method_getCacheValue .collapse" title="public">
+<a id="method_getCacheValue"></a><div class="element clickable method public method_getCacheValue " data-toggle="collapse" data-target=".method_getCacheValue .collapse" title="public">
 <h2>getCacheValue()
         </h2>
 <pre>getCacheValue($module) </pre>
@@ -260,7 +256,7 @@ cannot be changed using this call (for security / sanity reason)</div>
 <div class="subelement argument"><h4>$module</h4></div>
 </div></div>
 </div>
-<a id="method_getTableCache"></a><div class="element clickable method public method_getTableCache" data-toggle="collapse" data-target=".method_getTableCache .collapse" title="public">
+<a id="method_getTableCache"></a><div class="element clickable method public method_getTableCache " data-toggle="collapse" data-target=".method_getTableCache .collapse" title="public">
 <h2>getTableCache()
         </h2>
 <pre>getTableCache($tablename) </pre>
@@ -271,36 +267,36 @@ cannot be changed using this call (for security / sanity reason)</div>
 <div class="subelement argument"><h4>$tablename</h4></div>
 </div></div>
 </div>
-<a id="method_getTicketString"></a><div class="element clickable method public method_getTicketString" data-toggle="collapse" data-target=".method_getTicketString .collapse" title="public">
+<a id="method_getTicketString"></a><div class="element clickable method public method_getTicketString " data-toggle="collapse" data-target=".method_getTicketString .collapse" title="public">
 <h2>getTicketString()
         </h2>
 <pre>getTicketString() </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_initialize"></a><div class="element clickable method public method_initialize" data-toggle="collapse" data-target=".method_initialize .collapse" title="public">
+<a id="method_initialize"></a><div class="element clickable method public method_initialize " data-toggle="collapse" data-target=".method_initialize .collapse" title="public">
 <h2>exdoc
 Runs necessary code to initialize sessions for use.</h2>
 <pre>initialize() </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">This sends the session cookie header (via the session_start
+<div class="long_description"><p>This sends the session cookie header (via the session_start
 PHP function) and sets up session variables needed by the
-rest of the system and this subsystem.</div>
+rest of the system and this subsystem.</p></div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:Sessions</td>
 </tr></table>
 </div></div>
 </div>
-<a id="method_is_set"></a><div class="element clickable method public method_is_set" data-toggle="collapse" data-target=".method_is_set .collapse" title="public">
+<a id="method_is_set"></a><div class="element clickable method public method_is_set " data-toggle="collapse" data-target=".method_is_set .collapse" title="public">
 <h2>exdoc
 Checks to see if the session holds a set variable of the given name.</h2>
-<pre>is_set(mixed $var) : bool</pre>
+<pre>is_set($var) : boolean</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">Note that some session variables (like the user object and the ticket)
-cannot be changed using this call (for security / sanity reason)</div>
+<div class="long_description"><p>Note that some session variables (like the user object and the ticket)
+cannot be changed using this call (for security / sanity reason)</p></div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:Sessions</td>
@@ -308,10 +304,10 @@ cannot be changed using this call (for security / sanity reason)</div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$var</h4></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
+<div class="subelement response"><code>boolean</code></div>
 </div></div>
 </div>
-<a id="method_issetTableCache"></a><div class="element clickable method public method_issetTableCache" data-toggle="collapse" data-target=".method_issetTableCache .collapse" title="public">
+<a id="method_issetTableCache"></a><div class="element clickable method public method_issetTableCache " data-toggle="collapse" data-target=".method_issetTableCache .collapse" title="public">
 <h2>issetTableCache()
         </h2>
 <pre>issetTableCache($tablename) </pre>
@@ -322,12 +318,12 @@ cannot be changed using this call (for security / sanity reason)</div>
 <div class="subelement argument"><h4>$tablename</h4></div>
 </div></div>
 </div>
-<a id="method_loggedIn"></a><div class="element clickable method public method_loggedIn" data-toggle="collapse" data-target=".method_loggedIn .collapse" title="public">
+<a id="method_loggedIn"></a><div class="element clickable method public method_loggedIn " data-toggle="collapse" data-target=".method_loggedIn .collapse" title="public">
 <h2>exdoc
 Looks at the session data to see if the current session is
 that of a logged in user. Returns true if the viewer is logged
 in, and false if it is not</h2>
-<pre>loggedIn() : bool</pre>
+<pre>loggedIn() : boolean</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -336,10 +332,10 @@ in, and false if it is not</h2>
 <td>Subsystems:Sessions</td>
 </tr></table>
 <h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
+<div class="subelement response"><code>boolean</code></div>
 </div></div>
 </div>
-<a id="method_login"></a><div class="element clickable method public method_login" data-toggle="collapse" data-target=".method_login .collapse" title="public">
+<a id="method_login"></a><div class="element clickable method public method_login " data-toggle="collapse" data-target=".method_login .collapse" title="public">
 <h2>login()
         </h2>
 <pre>login($user) </pre>
@@ -350,27 +346,27 @@ in, and false if it is not</h2>
 <div class="subelement argument"><h4>$user</h4></div>
 </div></div>
 </div>
-<a id="method_logout"></a><div class="element clickable method public method_logout" data-toggle="collapse" data-target=".method_logout .collapse" title="public">
+<a id="method_logout"></a><div class="element clickable method public method_logout " data-toggle="collapse" data-target=".method_logout .collapse" title="public">
 <h2>exdoc
 Clears the session of all user data, used when a user logs out.</h2>
 <pre>logout() </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">This gets rid of stale session tickets, and resets the session
-to a blank state.</div>
+<div class="long_description"><p>This gets rid of stale session tickets, and resets the session
+to a blank state.</p></div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:Sessions</td>
 </tr></table>
 </div></div>
 </div>
-<a id="method_set"></a><div class="element clickable method public method_set" data-toggle="collapse" data-target=".method_set .collapse" title="public">
+<a id="method_set"></a><div class="element clickable method public method_set " data-toggle="collapse" data-target=".method_set .collapse" title="public">
 <h2>Sets a variable in the session data, for use on subsequent page calls.</h2>
 <pre>set(string $var, mixed $val) </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">Note that some session variables (like the user object and the ticket)
-cannot be changed using this call (for security / sanity reason)</div>
+<div class="long_description"><p>Note that some session variables (like the user object and the ticket)
+cannot be changed using this call (for security / sanity reason)</p></div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:Sessions</td>
@@ -384,7 +380,7 @@ cannot be changed using this call (for security / sanity reason)</div>
 <code>mixed</code><p>The value to store</p></div>
 </div></div>
 </div>
-<a id="method_setCache"></a><div class="element clickable method public method_setCache" data-toggle="collapse" data-target=".method_setCache .collapse" title="public">
+<a id="method_setCache"></a><div class="element clickable method public method_setCache " data-toggle="collapse" data-target=".method_setCache .collapse" title="public">
 <h2>setCache()
         </h2>
 <pre>setCache($params<code> = array()</code>) </pre>
@@ -395,7 +391,7 @@ cannot be changed using this call (for security / sanity reason)</div>
 <div class="subelement argument"><h4>$params</h4></div>
 </div></div>
 </div>
-<a id="method_setCacheValue"></a><div class="element clickable method public method_setCacheValue" data-toggle="collapse" data-target=".method_setCacheValue .collapse" title="public">
+<a id="method_setCacheValue"></a><div class="element clickable method public method_setCacheValue " data-toggle="collapse" data-target=".method_setCacheValue .collapse" title="public">
 <h2>setCacheValue()
         </h2>
 <pre>setCacheValue($module, $val) </pre>
@@ -407,7 +403,7 @@ cannot be changed using this call (for security / sanity reason)</div>
 <div class="subelement argument"><h4>$val</h4></div>
 </div></div>
 </div>
-<a id="method_setTableCache"></a><div class="element clickable method public method_setTableCache" data-toggle="collapse" data-target=".method_setTableCache .collapse" title="public">
+<a id="method_setTableCache"></a><div class="element clickable method public method_setTableCache " data-toggle="collapse" data-target=".method_setTableCache .collapse" title="public">
 <h2>setTableCache()
         </h2>
 <pre>setTableCache($tablename, $desc) </pre>
@@ -419,14 +415,14 @@ cannot be changed using this call (for security / sanity reason)</div>
 <div class="subelement argument"><h4>$desc</h4></div>
 </div></div>
 </div>
-<a id="method_un_set"></a><div class="element clickable method public method_un_set" data-toggle="collapse" data-target=".method_un_set .collapse" title="public">
+<a id="method_un_set"></a><div class="element clickable method public method_un_set " data-toggle="collapse" data-target=".method_un_set .collapse" title="public">
 <h2>exdoc
 Removes a variable from the session.</h2>
 <pre>un_set(string $var) </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">Note that some session variables (like the user object and the ticket)
-cannot be changed using this call (for security / sanity reason)</div>
+<div class="long_description"><p>Note that some session variables (like the user object and the ticket)
+cannot be changed using this call (for security / sanity reason)</p></div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:Sessions</td>
@@ -437,10 +433,10 @@ cannot be changed using this call (for security / sanity reason)</div>
 <code>string</code><p>The name of the variable to unset.</p></div>
 </div></div>
 </div>
-<a id="method_updateTicket"></a><div class="element clickable method public method_updateTicket" data-toggle="collapse" data-target=".method_updateTicket .collapse" title="public">
+<a id="method_updateTicket"></a><div class="element clickable method public method_updateTicket " data-toggle="collapse" data-target=".method_updateTicket .collapse" title="public">
 <h2>exdoc
 Creates user ticket in sessionticket table and session</h2>
-<pre>updateTicket(mixed $ticket, \user/object $user) : </pre>
+<pre>updateTicket($ticket, \user/object $user) : </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -457,7 +453,7 @@ Creates user ticket in sessionticket table and session</h2>
 <div class="subelement response"></div>
 </div></div>
 </div>
-<a id="method_validate"></a><div class="element clickable method public method_validate" data-toggle="collapse" data-target=".method_validate .collapse" title="public">
+<a id="method_validate"></a><div class="element clickable method public method_validate " data-toggle="collapse" data-target=".method_validate .collapse" title="public">
 <h2>exdoc
 Validates the stored session ticket against the database.  This is used
 to force refreshes and force logouts.  It also updates activity time.</h2>
@@ -477,9 +473,8 @@ to force refreshes and force logouts.  It also updates activity time.</h2>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.5.0
-</a> and<br>
-            generated on 2014-07-18T16:29:08-04:00.<br></footer></div>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.7.0</a> and<br>
+            generated on 2014-08-22T07:06:34-04:00.<br></footer></div>
 </div>
 </body>
 </html>

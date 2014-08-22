@@ -19,12 +19,10 @@
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a>Namespaces</a></li>
-<li><a href="../namespaces/.html"><i class="icon-th"></i> </a></li>
-<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
 <li><a>Packages</a></li>
 <li><a href="../packages/Connectors.html"><i class="icon-folder-open"></i> Connectors</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 <li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
 <li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
 <li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
@@ -32,7 +30,6 @@
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
 <li><a href="../packages/elFinder.html"><i class="icon-folder-open"></i> elFinder</a></li>
-<li><a href="../packages/global.html"><i class="icon-folder-open"></i> global</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -43,7 +40,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">5328</span></a></li>
+                <span class="label label-info">6529</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -61,7 +58,7 @@
                         </div></noscript>
 <div class="row">
 <div class="span4">
-<div class="btn-toolbar">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
 <div class="btn-group visibility" data-toggle="buttons-checkbox">
 <button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button>
 </div>
@@ -69,7 +66,7 @@
 <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
 </div>
 </div>
-<ul class="side-nav nav nav-list">
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list">
 <li class="nav-header">
 <i title="Methods" class="icon-custom icon-method"></i> Methods
                     <ul>
@@ -195,19 +192,18 @@ array of arrays, in any random order.</span><pre>selectArray()</pre></a></li>
 </ul>
 </div>
 <div class="span8">
-<a id="\database"></a><ul class="breadcrumb">
+<a xmlns:php="http://php.net/xsl" id="\database"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
 <li>
 <a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
-<li><a href="../namespaces/.html"></a></li>
 <li class="active">
 <span class="divider">\</span><a href="../classes/database.html">database</a>
 </li>
 </ul>
-<div class="element class">
+<div xmlns:php="http://php.net/xsl" class="element class">
 <p class="short_description">This is the class database</p>
 <div class="details">
-<div class="long_description">This is the generic implementation of the database class.</div>
+<div class="long_description"><p>This is the generic implementation of the database class.</p></div>
 <table class="table table-bordered">
 <tr>
 <th>subpackage</th>
@@ -220,7 +216,7 @@ array of arrays, in any random order.</span><pre>selectArray()</pre></a></li>
 </table>
 <h3>
 <i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
-<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<a id="method___construct"></a><div class="element clickable method public method___construct " data-toggle="collapse" data-target=".method___construct .collapse" title="public">
 <h2>__construct()
         </h2>
 <pre>__construct($username, $password, $hostname, $database, $new<code> = false</code>) </pre>
@@ -235,10 +231,10 @@ array of arrays, in any random order.</span><pre>selectArray()</pre></a></li>
 <div class="subelement argument"><h4>$new</h4></div>
 </div></div>
 </div>
-<a id="method_adjustNestedTreeBetween"></a><div class="element clickable method public method_adjustNestedTreeBetween" data-toggle="collapse" data-target=".method_adjustNestedTreeBetween .collapse" title="public">
+<a id="method_adjustNestedTreeBetween"></a><div class="element clickable method public method_adjustNestedTreeBetween " data-toggle="collapse" data-target=".method_adjustNestedTreeBetween .collapse" title="public">
 <h2>adjustNestedTreeBetween()
         </h2>
-<pre>adjustNestedTreeBetween(mixed $table, mixed $lft, mixed $rgt, mixed $width) : void</pre>
+<pre>adjustNestedTreeBetween($table, $lft, $rgt, $width) : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -249,10 +245,10 @@ array of arrays, in any random order.</span><pre>selectArray()</pre></a></li>
 <div class="subelement argument"><h4>$width</h4></div>
 </div></div>
 </div>
-<a id="method_adjustNestedTreeFrom"></a><div class="element clickable method public method_adjustNestedTreeFrom" data-toggle="collapse" data-target=".method_adjustNestedTreeFrom .collapse" title="public">
+<a id="method_adjustNestedTreeFrom"></a><div class="element clickable method public method_adjustNestedTreeFrom " data-toggle="collapse" data-target=".method_adjustNestedTreeFrom .collapse" title="public">
 <h2>adjustNestedTreeFrom()
         </h2>
-<pre>adjustNestedTreeFrom(mixed $table, mixed $start, mixed $width) : void</pre>
+<pre>adjustNestedTreeFrom($table, $start, $width) : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -262,16 +258,15 @@ array of arrays, in any random order.</span><pre>selectArray()</pre></a></li>
 <div class="subelement argument"><h4>$width</h4></div>
 </div></div>
 </div>
-<a id="method_alterTable"></a><div class="element clickable method public method_alterTable" data-toggle="collapse" data-target=".method_alterTable .collapse" title="public">
+<a id="method_alterTable"></a><div class="element clickable method public method_alterTable " data-toggle="collapse" data-target=".method_alterTable .collapse" title="public">
 <h2>Alter an existing table</h2>
-<pre>alterTable(string $tablename, array $newdatadef, array $info, bool $aggressive<code> = false</code>) : array</pre>
+<pre>alterTable(string $tablename, array $newdatadef, array $info, boolean $aggressive<code> = false</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">Alters the structure of an existing database table to conform to the passed
-data definition.
-
-This function abides by the Exponent Data Definition Language, and interprets
-its general structure for databases.</div>
+<div class="long_description"><p>Alters the structure of an existing database table to conform to the passed
+data definition.</p>
+<p>This function abides by the Exponent Data Definition Language, and interprets
+its general structure for databases.</p></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$tablename</h4>
@@ -285,15 +280,15 @@ its general structure for databases.</div>
 <code>array</code><p>Information about the table itself.</p></div>
 <div class="subelement argument">
 <h4>$aggressive</h4>
-<code>bool</code><p>Whether or not to aggressively update the table definition.
+<code>boolean</code><p>Whether or not to aggressively update the table definition.
   An aggressive update will drop columns in the table that are not in the Exponent definition.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_columnUpdate"></a><div class="element clickable method public method_columnUpdate" data-toggle="collapse" data-target=".method_columnUpdate .collapse" title="public">
+<a id="method_columnUpdate"></a><div class="element clickable method public method_columnUpdate " data-toggle="collapse" data-target=".method_columnUpdate .collapse" title="public">
 <h2>Update a column in all records in a table</h2>
-<pre>columnUpdate(mixed $table, mixed $col, mixed $val, int|null $where<code> = 1</code>) : void</pre>
+<pre>columnUpdate($table, $col, $val, integer|null $where<code> = 1</code>) : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -303,13 +298,13 @@ its general structure for databases.</div>
 <div class="subelement argument"><h4>$val</h4></div>
 <div class="subelement argument">
 <h4>$where</h4>
-<code>int</code><code>null</code>
+<code>integer</code><code>null</code>
 </div>
 </div></div>
 </div>
-<a id="method_countObjects"></a><div class="element clickable method public method_countObjects" data-toggle="collapse" data-target=".method_countObjects .collapse" title="public">
+<a id="method_countObjects"></a><div class="element clickable method public method_countObjects " data-toggle="collapse" data-target=".method_countObjects .collapse" title="public">
 <h2>Count Objects matching a given criteria</h2>
-<pre>countObjects(string $table, string $where<code> = null</code>, bool $is_revisioned<code> = false</code>, bool $needs_approval<code> = false</code>) : int</pre>
+<pre>countObjects(string $table, string $where<code> = null</code>, boolean $is_revisioned<code> = false</code>, boolean $needs_approval<code> = false</code>) : integer</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -322,19 +317,19 @@ its general structure for databases.</div>
 <code>string</code><p>Criteria for counting.</p></div>
 <div class="subelement argument">
 <h4>$is_revisioned</h4>
-<code>bool</code>
+<code>boolean</code>
 </div>
 <div class="subelement argument">
 <h4>$needs_approval</h4>
-<code>bool</code>
+<code>boolean</code>
 </div>
 <h3>Returns</h3>
-<div class="subelement response"><code>int</code></div>
+<div class="subelement response"><code>integer</code></div>
 </div></div>
 </div>
-<a id="method_countObjectsBySql"></a><div class="element clickable method public method_countObjectsBySql" data-toggle="collapse" data-target=".method_countObjectsBySql .collapse" title="public">
+<a id="method_countObjectsBySql"></a><div class="element clickable method public method_countObjectsBySql " data-toggle="collapse" data-target=".method_countObjectsBySql .collapse" title="public">
 <h2>Count Objects matching a given criteria using raw sql</h2>
-<pre>countObjectsBySql(string $sql) : int</pre>
+<pre>countObjectsBySql(string $sql) : integer</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -343,18 +338,17 @@ its general structure for databases.</div>
 <h4>$sql</h4>
 <code>string</code><p>The sql query to be run</p></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>int</code></div>
+<div class="subelement response"><code>integer</code></div>
 </div></div>
 </div>
-<a id="method_createTable"></a><div class="element clickable method public method_createTable" data-toggle="collapse" data-target=".method_createTable .collapse" title="public">
+<a id="method_createTable"></a><div class="element clickable method public method_createTable " data-toggle="collapse" data-target=".method_createTable .collapse" title="public">
 <h2>Create a new Table</h2>
 <pre>createTable(string $tablename, array $datadef, array $info) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">Creates a new database table, according to the passed data definition.
-
-This function abides by the Exponent Data Definition Language, and interprets
-its general structure for databases.</div>
+<div class="long_description"><p>Creates a new database table, according to the passed data definition.</p>
+<p>This function abides by the Exponent Data Definition Language, and interprets
+its general structure for databases.</p></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$tablename</h4>
@@ -370,17 +364,17 @@ its general structure for databases.</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_databaseInfo"></a><div class="element clickable method public method_databaseInfo" data-toggle="collapse" data-target=".method_databaseInfo .collapse" title="public">
+<a id="method_databaseInfo"></a><div class="element clickable method public method_databaseInfo " data-toggle="collapse" data-target=".method_databaseInfo .collapse" title="public">
 <h2>Returns table information for all tables in the database.</h2>
 <pre>databaseInfo() : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">This function effectively calls tableInfo() on each table found.</div>
+<div class="long_description"><p>This function effectively calls tableInfo() on each table found.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_decrement"></a><div class="element clickable method public method_decrement" data-toggle="collapse" data-target=".method_decrement .collapse" title="public">
+<a id="method_decrement"></a><div class="element clickable method public method_decrement " data-toggle="collapse" data-target=".method_decrement .collapse" title="public">
 <h2>Decrement a numeric table field in a table.</h2>
 <pre>decrement(string $table, string $field, integer $step, string $where<code> = null</code>) </pre>
 <div class="labels"></div>
@@ -396,13 +390,13 @@ its general structure for databases.</div>
 <div class="subelement argument">
 <h4>$step</h4>
 <code>integer</code><p>The step value.  Usually 1.  This can be negative, to
-   increment, but the increment() method is preferred, for readability.</p></div>
+increment, but the increment() method is preferred, for readability.</p></div>
 <div class="subelement argument">
 <h4>$where</h4>
 <code>string</code><p>Optional criteria to determine which records to update.</p></div>
 </div></div>
 </div>
-<a id="method_delete"></a><div class="element clickable method public method_delete" data-toggle="collapse" data-target=".method_delete .collapse" title="public">
+<a id="method_delete"></a><div class="element clickable method public method_delete " data-toggle="collapse" data-target=".method_delete .collapse" title="public">
 <h2>Delete one or more objects from the given table.</h2>
 <pre>delete(string $table, string $where<code> = null</code>) : mixed</pre>
 <div class="labels"></div>
@@ -419,10 +413,10 @@ its general structure for databases.</div>
 <div class="subelement response"><code>mixed</code></div>
 </div></div>
 </div>
-<a id="method_deleteNestedNode"></a><div class="element clickable method public method_deleteNestedNode" data-toggle="collapse" data-target=".method_deleteNestedNode .collapse" title="public">
+<a id="method_deleteNestedNode"></a><div class="element clickable method public method_deleteNestedNode " data-toggle="collapse" data-target=".method_deleteNestedNode .collapse" title="public">
 <h2>deleteNestedNode()
         </h2>
-<pre>deleteNestedNode(mixed $table, mixed $lft, mixed $rgt) : void</pre>
+<pre>deleteNestedNode($table, $lft, $rgt) : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -432,10 +426,10 @@ its general structure for databases.</div>
 <div class="subelement argument"><h4>$rgt</h4></div>
 </div></div>
 </div>
-<a id="method_describeTable"></a><div class="element clickable method public method_describeTable" data-toggle="collapse" data-target=".method_describeTable .collapse" title="public">
+<a id="method_describeTable"></a><div class="element clickable method public method_describeTable " data-toggle="collapse" data-target=".method_describeTable .collapse" title="public">
 <h2>describeTable()
         </h2>
-<pre>describeTable(mixed $table) : array</pre>
+<pre>describeTable($table) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -445,22 +439,22 @@ its general structure for databases.</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_dropTable"></a><div class="element clickable method public method_dropTable" data-toggle="collapse" data-target=".method_dropTable .collapse" title="public">
+<a id="method_dropTable"></a><div class="element clickable method public method_dropTable " data-toggle="collapse" data-target=".method_dropTable .collapse" title="public">
 <h2>Drop a table from the database</h2>
-<pre>dropTable(string $table) : bool</pre>
+<pre>dropTable(string $table) : boolean</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">Removes an existing table from the database. Returns true if the table was dropped, false if there
-was an error returned by the database server.</div>
+<div class="long_description"><p>Removes an existing table from the database. Returns true if the table was dropped, false if there
+was an error returned by the database server.</p></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$table</h4>
 <code>string</code><p>The name of the table to drop.</p></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
+<div class="subelement response"><code>boolean</code></div>
 </div></div>
 </div>
-<a id="method_error"></a><div class="element clickable method public method_error" data-toggle="collapse" data-target=".method_error .collapse" title="public">
+<a id="method_error"></a><div class="element clickable method public method_error " data-toggle="collapse" data-target=".method_error .collapse" title="public">
 <h2>Returns an error message from the database server.  This is intended to be
 used by the implementers of the database wrapper, so that certain
 cryptic error messages can be reworded.</h2>
@@ -472,9 +466,9 @@ cryptic error messages can be reworded.</h2>
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a id="method_escapeString"></a><div class="element clickable method public method_escapeString" data-toggle="collapse" data-target=".method_escapeString .collapse" title="public">
+<a id="method_escapeString"></a><div class="element clickable method public method_escapeString " data-toggle="collapse" data-target=".method_escapeString .collapse" title="public">
 <h2>Unescape a string based on the database connection</h2>
-<pre>escapeString(mixed $string) : string</pre>
+<pre>escapeString($string) : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -484,7 +478,7 @@ cryptic error messages can be reworded.</h2>
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a id="method_getDataDefinition"></a><div class="element clickable method public method_getDataDefinition" data-toggle="collapse" data-target=".method_getDataDefinition .collapse" title="public">
+<a id="method_getDataDefinition"></a><div class="element clickable method public method_getDataDefinition " data-toggle="collapse" data-target=".method_getDataDefinition .collapse" title="public">
 <h2>Build a data definition from a pre-existing table.  This is used
 to intelligently alter tables that have already been installed.</h2>
 <pre>getDataDefinition(string $table) : array | null</pre>
@@ -501,26 +495,26 @@ to intelligently alter tables that have already been installed.</h2>
 </div>
 </div></div>
 </div>
-<a id="method_getTables"></a><div class="element clickable method public method_getTables" data-toggle="collapse" data-target=".method_getTables .collapse" title="public">
+<a id="method_getTables"></a><div class="element clickable method public method_getTables " data-toggle="collapse" data-target=".method_getTables .collapse" title="public">
 <h2>Get a list of all tables in the database.  Optionally, only the tables
 in the current logical database (tables with the same prefix) can
 be retrieved.</h2>
-<pre>getTables(bool $prefixed_only<code> = true</code>) : array</pre>
+<pre>getTables(boolean $prefixed_only<code> = true</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$prefixed_only</h4>
-<code>bool</code><p>Whether to return only the tables
+<code>boolean</code><p>Whether to return only the tables
    for the logical database, or all tables in the physical database.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_getTextColumns"></a><div class="element clickable method public method_getTextColumns" data-toggle="collapse" data-target=".method_getTextColumns .collapse" title="public">
+<a id="method_getTextColumns"></a><div class="element clickable method public method_getTextColumns " data-toggle="collapse" data-target=".method_getTextColumns .collapse" title="public">
 <h2>This function returns all the text columns in the given table</h2>
-<pre>getTextColumns(mixed $table) : array</pre>
+<pre>getTextColumns($table) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -530,17 +524,17 @@ be retrieved.</h2>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_inError"></a><div class="element clickable method public method_inError" data-toggle="collapse" data-target=".method_inError .collapse" title="public">
+<a id="method_inError"></a><div class="element clickable method public method_inError " data-toggle="collapse" data-target=".method_inError .collapse" title="public">
 <h2>Checks whether the database connection has experienced an error.</h2>
-<pre>inError() : bool</pre>
+<pre>inError() : boolean</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
+<div class="subelement response"><code>boolean</code></div>
 </div></div>
 </div>
-<a id="method_increment"></a><div class="element clickable method public method_increment" data-toggle="collapse" data-target=".method_increment .collapse" title="public">
+<a id="method_increment"></a><div class="element clickable method public method_increment " data-toggle="collapse" data-target=".method_increment .collapse" title="public">
 <h2>Increment a numeric table field in a table.</h2>
 <pre>increment(string $table, string $field, integer $step, string $where<code> = null</code>) : mixed</pre>
 <div class="labels"></div>
@@ -556,7 +550,7 @@ be retrieved.</h2>
 <div class="subelement argument">
 <h4>$step</h4>
 <code>integer</code><p>The step value.  Usually 1.  This can be negative, to
-   decrement, but the decrement() method is preferred, for readability.</p></div>
+decrement, but the decrement() method is preferred, for readability.</p></div>
 <div class="subelement argument">
 <h4>$where</h4>
 <code>string</code><p>Optional criteria to determine which records to update.</p></div>
@@ -564,14 +558,14 @@ be retrieved.</h2>
 <div class="subelement response"><code>mixed</code></div>
 </div></div>
 </div>
-<a id="method_insertObject"></a><div class="element clickable method public method_insertObject" data-toggle="collapse" data-target=".method_insertObject .collapse" title="public">
+<a id="method_insertObject"></a><div class="element clickable method public method_insertObject " data-toggle="collapse" data-target=".method_insertObject .collapse" title="public">
 <h2>Insert an Object into some table in the Database</h2>
-<pre>insertObject(object $object, string $table) : int | void</pre>
+<pre>insertObject(object $object, string $table) : integer | void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">This method will return the ID assigned to the new record by database.  Note that
+<div class="long_description"><p>This method will return the ID assigned to the new record by database.  Note that
 object attributes starting with an underscore ('_') will be ignored and NOT inserted
-into the table as a field value.</div>
+into the table as a field value.</p></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$object</h4>
@@ -582,24 +576,24 @@ into the table as a field value.</div>
    is automagically prepended for you.</p></div>
 <h3>Returns</h3>
 <div class="subelement response">
-<code>int</code><code>void</code>
+<code>integer</code><code>void</code>
 </div>
 </div></div>
 </div>
-<a id="method_isValid"></a><div class="element clickable method public method_isValid" data-toggle="collapse" data-target=".method_isValid .collapse" title="public">
+<a id="method_isValid"></a><div class="element clickable method public method_isValid " data-toggle="collapse" data-target=".method_isValid .collapse" title="public">
 <h2>Checks to see if the connection for this database object is valid.</h2>
-<pre>isValid() : bool</pre>
+<pre>isValid() : boolean</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Returns</h3>
 <div class="subelement response">
-<code>bool</code>True if the connection can be used to execute SQL queries.</div>
+<code>boolean</code>True if the connection can be used to execute SQL queries.</div>
 </div></div>
 </div>
-<a id="method_limit"></a><div class="element clickable method public method_limit" data-toggle="collapse" data-target=".method_limit .collapse" title="public">
+<a id="method_limit"></a><div class="element clickable method public method_limit " data-toggle="collapse" data-target=".method_limit .collapse" title="public">
 <h2>Create a SQL "limit" phrase</h2>
-<pre>limit(mixed $num, mixed $offset) : string</pre>
+<pre>limit($num, $offset) : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -610,10 +604,10 @@ into the table as a field value.</div>
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a id="method_lockTable"></a><div class="element clickable method public method_lockTable" data-toggle="collapse" data-target=".method_lockTable .collapse" title="public">
+<a id="method_lockTable"></a><div class="element clickable method public method_lockTable " data-toggle="collapse" data-target=".method_lockTable .collapse" title="public">
 <h2>lockTable()
         </h2>
-<pre>lockTable(mixed $table, string $lockType<code> = "WRITE"</code>) : mixed</pre>
+<pre>lockTable($table, string $lockType<code> = "WRITE"</code>) : mixed</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -627,13 +621,13 @@ into the table as a field value.</div>
 <div class="subelement response"><code>mixed</code></div>
 </div></div>
 </div>
-<a id="method_max"></a><div class="element clickable method public method_max" data-toggle="collapse" data-target=".method_max .collapse" title="public">
+<a id="method_max"></a><div class="element clickable method public method_max " data-toggle="collapse" data-target=".method_max .collapse" title="public">
 <h2>Find the maximum value of a field.  This is similar to a standard
 SELECT MAX(field) .</h2>
 <pre>max(string $table, string $attribute, string $groupfields<code> = null</code>, string $where<code> = null</code>) : mixed</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">.. query.</div>
+<div class="long_description"><p>.. query.</p></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$table</h4>
@@ -644,7 +638,7 @@ SELECT MAX(field) .</h2>
 <div class="subelement argument">
 <h4>$groupfields</h4>
 <code>string</code><p>A comma-separated list of fields (or a single field) name, used
-   for a GROUP BY clause.  This can also be passed as an array of fields.</p></div>
+for a GROUP BY clause.  This can also be passed as an array of fields.</p></div>
 <div class="subelement argument">
 <h4>$where</h4>
 <code>string</code><p>Optional criteria for narrowing the result set.</p></div>
@@ -652,9 +646,9 @@ SELECT MAX(field) .</h2>
 <div class="subelement response"><code>mixed</code></div>
 </div></div>
 </div>
-<a id="method_optimize"></a><div class="element clickable method public method_optimize" data-toggle="collapse" data-target=".method_optimize .collapse" title="public">
+<a id="method_optimize"></a><div class="element clickable method public method_optimize " data-toggle="collapse" data-target=".method_optimize .collapse" title="public">
 <h2>Runs whatever table optimization routines the database engine supports.</h2>
-<pre>optimize(string $table) : bool</pre>
+<pre>optimize(string $table) : boolean</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -663,12 +657,12 @@ SELECT MAX(field) .</h2>
 <h4>$table</h4>
 <code>string</code><p>The name of the table to optimize.</p></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
+<div class="subelement response"><code>boolean</code></div>
 </div></div>
 </div>
-<a id="method_queryRows"></a><div class="element clickable method public method_queryRows" data-toggle="collapse" data-target=".method_queryRows .collapse" title="public">
+<a id="method_queryRows"></a><div class="element clickable method public method_queryRows " data-toggle="collapse" data-target=".method_queryRows .collapse" title="public">
 <h2>Count Objects matching a given criteria using raw sql</h2>
-<pre>queryRows(string $sql) : int | void</pre>
+<pre>queryRows(string $sql) : integer | void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -678,14 +672,14 @@ SELECT MAX(field) .</h2>
 <code>string</code><p>The sql query to be run</p></div>
 <h3>Returns</h3>
 <div class="subelement response">
-<code>int</code><code>void</code>
+<code>integer</code><code>void</code>
 </div>
 </div></div>
 </div>
-<a id="method_selectAndJoinObjects"></a><div class="element clickable method public method_selectAndJoinObjects" data-toggle="collapse" data-target=".method_selectAndJoinObjects .collapse" title="public">
+<a id="method_selectAndJoinObjects"></a><div class="element clickable method public method_selectAndJoinObjects " data-toggle="collapse" data-target=".method_selectAndJoinObjects .collapse" title="public">
 <h2>selectAndJoinObjects()
         </h2>
-<pre>selectAndJoinObjects(null $colsA<code> = null</code>, null $colsB<code> = null</code>, mixed $tableA, mixed $tableB, mixed $keyA, null $keyB<code> = null</code>, null $where<code> = null</code>, null $orderby<code> = null</code>) : \array'</pre>
+<pre>selectAndJoinObjects(null $colsA<code> = null</code>, null $colsB<code> = null</code>, $tableA, $tableB, $keyA, null $keyB<code> = null</code>, null $where<code> = null</code>, null $orderby<code> = null</code>) : \array'</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -717,13 +711,13 @@ SELECT MAX(field) .</h2>
 <div class="subelement response"><code>\array'</code></div>
 </div></div>
 </div>
-<a id="method_selectArray"></a><div class="element clickable method public method_selectArray" data-toggle="collapse" data-target=".method_selectArray .collapse" title="public">
+<a id="method_selectArray"></a><div class="element clickable method public method_selectArray " data-toggle="collapse" data-target=".method_selectArray .collapse" title="public">
 <h2>Select a record from the database as an array
 Selects a set of arrays from the database.  Because of the way
 Exponent handles objects and database tables, this is akin to
 SELECTing a set of records from a database table.  Returns an
 array of arrays, in any random order.</h2>
-<pre>selectArray(string $table, string $where<code> = null</code>, null $orderby<code> = null</code>, bool $is_revisioned<code> = false</code>, bool $needs_approval<code> = false</code>) : array | void</pre>
+<pre>selectArray(string $table, string $where<code> = null</code>, null $orderby<code> = null</code>, boolean $is_revisioned<code> = false</code>, boolean $needs_approval<code> = false</code>) : array | void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -742,11 +736,11 @@ array of arrays, in any random order.</h2>
 </div>
 <div class="subelement argument">
 <h4>$is_revisioned</h4>
-<code>bool</code>
+<code>boolean</code>
 </div>
 <div class="subelement argument">
 <h4>$needs_approval</h4>
-<code>bool</code>
+<code>boolean</code>
 </div>
 <h3>Returns</h3>
 <div class="subelement response">
@@ -754,15 +748,15 @@ array of arrays, in any random order.</h2>
 </div>
 </div></div>
 </div>
-<a id="method_selectArrays"></a><div class="element clickable method public method_selectArrays" data-toggle="collapse" data-target=".method_selectArrays .collapse" title="public">
+<a id="method_selectArrays"></a><div class="element clickable method public method_selectArrays " data-toggle="collapse" data-target=".method_selectArrays .collapse" title="public">
 <h2>Select an array of arrays</h2>
 <pre>selectArrays(string $table, string $where<code> = null</code>, string $orderby<code> = null</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">Selects a set of arrays from the database.  Because of the way
+<div class="long_description"><p>Selects a set of arrays from the database.  Because of the way
 Exponent handles objects and database tables, this is akin to
 SELECTing a set of records from a database table.  Returns an
-array of arrays, in any random order.</div>
+array of arrays, in any random order.</p></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$table</h4>
@@ -780,15 +774,15 @@ array of arrays, in any random order.</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_selectArraysBySql"></a><div class="element clickable method public method_selectArraysBySql" data-toggle="collapse" data-target=".method_selectArraysBySql .collapse" title="public">
+<a id="method_selectArraysBySql"></a><div class="element clickable method public method_selectArraysBySql " data-toggle="collapse" data-target=".method_selectArraysBySql .collapse" title="public">
 <h2>Select an array of arrays</h2>
 <pre>selectArraysBySql(string $sql) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">Selects a set of arrays from the database.  Because of the way
+<div class="long_description"><p>Selects a set of arrays from the database.  Because of the way
 Exponent handles objects and database tables, this is akin to
 SELECTing a set of records from a database table.  Returns an
-array of arrays, in any random order.</div>
+array of arrays, in any random order.</p></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$sql</h4>
@@ -797,10 +791,10 @@ array of arrays, in any random order.</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_selectColumn"></a><div class="element clickable method public method_selectColumn" data-toggle="collapse" data-target=".method_selectColumn .collapse" title="public">
+<a id="method_selectColumn"></a><div class="element clickable method public method_selectColumn " data-toggle="collapse" data-target=".method_selectColumn .collapse" title="public">
 <h2>selectColumn()
         </h2>
-<pre>selectColumn(mixed $table, mixed $col, null $where<code> = null</code>, null $orderby<code> = null</code>, bool $distinct<code> = false</code>) : array</pre>
+<pre>selectColumn($table, $col, null $where<code> = null</code>, null $orderby<code> = null</code>, boolean $distinct<code> = false</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -817,16 +811,16 @@ array of arrays, in any random order.</div>
 </div>
 <div class="subelement argument">
 <h4>$distinct</h4>
-<code>bool</code>
+<code>boolean</code>
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_selectDropdown"></a><div class="element clickable method public method_selectDropdown" data-toggle="collapse" data-target=".method_selectDropdown .collapse" title="public">
+<a id="method_selectDropdown"></a><div class="element clickable method public method_selectDropdown " data-toggle="collapse" data-target=".method_selectDropdown .collapse" title="public">
 <h2>selectDropdown()
         </h2>
-<pre>selectDropdown(mixed $table, mixed $col, null $where<code> = null</code>, null $orderby<code> = null</code>) : array</pre>
+<pre>selectDropdown($table, $col, null $where<code> = null</code>, null $orderby<code> = null</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -845,9 +839,9 @@ array of arrays, in any random order.</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_selectExpObjects"></a><div class="element clickable method public method_selectExpObjects" data-toggle="collapse" data-target=".method_selectExpObjects .collapse" title="public">
+<a id="method_selectExpObjects"></a><div class="element clickable method public method_selectExpObjects " data-toggle="collapse" data-target=".method_selectExpObjects .collapse" title="public">
 <h2>Select a records from the database</h2>
-<pre>selectExpObjects(string $table, string $where<code> = null</code>, mixed $classname, bool $get_assoc<code> = true</code>, bool $get_attached<code> = true</code>, array $except<code> = array()</code>, bool $cascade_except<code> = false</code>, null $order<code> = null</code>, null $limitsql<code> = null</code>, bool $is_revisioned<code> = false</code>, bool $needs_approval<code> = false</code>) : array</pre>
+<pre>selectExpObjects(string $table, string $where<code> = null</code>, $classname, boolean $get_assoc<code> = true</code>, boolean $get_attached<code> = true</code>, array $except<code> = array()</code>, boolean $cascade_except<code> = false</code>, null $order<code> = null</code>, null $limitsql<code> = null</code>, boolean $is_revisioned<code> = false</code>, boolean $needs_approval<code> = false</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -863,11 +857,11 @@ array of arrays, in any random order.</div>
 <div class="subelement argument"><h4>$classname</h4></div>
 <div class="subelement argument">
 <h4>$get_assoc</h4>
-<code>bool</code>
+<code>boolean</code>
 </div>
 <div class="subelement argument">
 <h4>$get_attached</h4>
-<code>bool</code>
+<code>boolean</code>
 </div>
 <div class="subelement argument">
 <h4>$except</h4>
@@ -875,7 +869,7 @@ array of arrays, in any random order.</div>
 </div>
 <div class="subelement argument">
 <h4>$cascade_except</h4>
-<code>bool</code>
+<code>boolean</code>
 </div>
 <div class="subelement argument">
 <h4>$order</h4>
@@ -887,20 +881,20 @@ array of arrays, in any random order.</div>
 </div>
 <div class="subelement argument">
 <h4>$is_revisioned</h4>
-<code>bool</code>
+<code>boolean</code>
 </div>
 <div class="subelement argument">
 <h4>$needs_approval</h4>
-<code>bool</code>
+<code>boolean</code>
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_selectExpObjectsBySql"></a><div class="element clickable method public method_selectExpObjectsBySql" data-toggle="collapse" data-target=".method_selectExpObjectsBySql .collapse" title="public">
+<a id="method_selectExpObjectsBySql"></a><div class="element clickable method public method_selectExpObjectsBySql " data-toggle="collapse" data-target=".method_selectExpObjectsBySql .collapse" title="public">
 <h2>selectExpObjectsBySql()
         </h2>
-<pre>selectExpObjectsBySql(string $sql, string $classname, bool $get_assoc<code> = true</code>, bool $get_attached<code> = true</code>) : array</pre>
+<pre>selectExpObjectsBySql(string $sql, string $classname, boolean $get_assoc<code> = true</code>, boolean $get_attached<code> = true</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -914,17 +908,17 @@ array of arrays, in any random order.</div>
 Returns an array of fields</p></div>
 <div class="subelement argument">
 <h4>$get_assoc</h4>
-<code>bool</code>
+<code>boolean</code>
 </div>
 <div class="subelement argument">
 <h4>$get_attached</h4>
-<code>bool</code>
+<code>boolean</code>
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_selectFormattedNestedTree"></a><div class="element clickable method public method_selectFormattedNestedTree" data-toggle="collapse" data-target=".method_selectFormattedNestedTree .collapse" title="public">
+<a id="method_selectFormattedNestedTree"></a><div class="element clickable method public method_selectFormattedNestedTree " data-toggle="collapse" data-target=".method_selectFormattedNestedTree .collapse" title="public">
 <h2>selectFormattedNestedTree()
         </h2>
 <pre>selectFormattedNestedTree($table) </pre>
@@ -935,10 +929,10 @@ Returns an array of fields</p></div>
 <div class="subelement argument"><h4>$table</h4></div>
 </div></div>
 </div>
-<a id="method_selectNestedBranch"></a><div class="element clickable method public method_selectNestedBranch" data-toggle="collapse" data-target=".method_selectNestedBranch .collapse" title="public">
+<a id="method_selectNestedBranch"></a><div class="element clickable method public method_selectNestedBranch " data-toggle="collapse" data-target=".method_selectNestedBranch .collapse" title="public">
 <h2>selectNestedBranch()
         </h2>
-<pre>selectNestedBranch(mixed $table, null $node<code> = null</code>) : array</pre>
+<pre>selectNestedBranch($table, null $node<code> = null</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -952,10 +946,10 @@ Returns an array of fields</p></div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_selectNestedNodeChildren"></a><div class="element clickable method public method_selectNestedNodeChildren" data-toggle="collapse" data-target=".method_selectNestedNodeChildren .collapse" title="public">
+<a id="method_selectNestedNodeChildren"></a><div class="element clickable method public method_selectNestedNodeChildren " data-toggle="collapse" data-target=".method_selectNestedNodeChildren .collapse" title="public">
 <h2>selectNestedNodeChildren()
         </h2>
-<pre>selectNestedNodeChildren(mixed $table, null $node<code> = null</code>) : array</pre>
+<pre>selectNestedNodeChildren($table, null $node<code> = null</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -969,10 +963,10 @@ Returns an array of fields</p></div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_selectNestedNodeParent"></a><div class="element clickable method public method_selectNestedNodeParent" data-toggle="collapse" data-target=".method_selectNestedNodeParent .collapse" title="public">
+<a id="method_selectNestedNodeParent"></a><div class="element clickable method public method_selectNestedNodeParent " data-toggle="collapse" data-target=".method_selectNestedNodeParent .collapse" title="public">
 <h2>selectNestedNodeParent()
         </h2>
-<pre>selectNestedNodeParent(mixed $table, null $node<code> = null</code>) : array</pre>
+<pre>selectNestedNodeParent($table, null $node<code> = null</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -986,10 +980,10 @@ Returns an array of fields</p></div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_selectNestedTree"></a><div class="element clickable method public method_selectNestedTree" data-toggle="collapse" data-target=".method_selectNestedTree .collapse" title="public">
+<a id="method_selectNestedTree"></a><div class="element clickable method public method_selectNestedTree " data-toggle="collapse" data-target=".method_selectNestedTree .collapse" title="public">
 <h2>selectNestedTree()
         </h2>
-<pre>selectNestedTree(mixed $table) : array</pre>
+<pre>selectNestedTree($table) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -999,17 +993,17 @@ Returns an array of fields</p></div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_selectObject"></a><div class="element clickable method public method_selectObject" data-toggle="collapse" data-target=".method_selectObject .collapse" title="public">
+<a id="method_selectObject"></a><div class="element clickable method public method_selectObject " data-toggle="collapse" data-target=".method_selectObject .collapse" title="public">
 <h2>Select a single object.</h2>
 <pre>selectObject(string $table, string $where) : object | null | void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">Selects an objects from the database.  Because of the way
+<div class="long_description"><p>Selects an objects from the database.  Because of the way
 Exponent handles objects and database tables, this is akin to
 SELECTing a single record from a database table. Returns the
 first record/object found (in the case of multiple-result queries,
 there is no way to determine which of the set will be returned).
-If no record(s) match the query, null is returned.</div>
+If no record(s) match the query, null is returned.</p></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$table</h4>
@@ -1023,10 +1017,10 @@ If no record(s) match the query, null is returned.</div>
 </div>
 </div></div>
 </div>
-<a id="method_selectObjectBySql"></a><div class="element clickable method public method_selectObjectBySql" data-toggle="collapse" data-target=".method_selectObjectBySql .collapse" title="public">
+<a id="method_selectObjectBySql"></a><div class="element clickable method public method_selectObjectBySql " data-toggle="collapse" data-target=".method_selectObjectBySql .collapse" title="public">
 <h2>selectObjectBySql()
         </h2>
-<pre>selectObjectBySql(mixed $sql) : null | void</pre>
+<pre>selectObjectBySql($sql) : null | void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -1038,15 +1032,15 @@ If no record(s) match the query, null is returned.</div>
 </div>
 </div></div>
 </div>
-<a id="method_selectObjects"></a><div class="element clickable method public method_selectObjects" data-toggle="collapse" data-target=".method_selectObjects .collapse" title="public">
+<a id="method_selectObjects"></a><div class="element clickable method public method_selectObjects " data-toggle="collapse" data-target=".method_selectObjects .collapse" title="public">
 <h2>Select a series of objects</h2>
 <pre>selectObjects(string $table, string $where<code> = null</code>, null $orderby<code> = null</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">Selects a set of objects from the database.  Because of the way
+<div class="long_description"><p>Selects a set of objects from the database.  Because of the way
 Exponent handles objects and database tables, this is akin to
 SELECTing a set of records from a database table.  Returns an
-array of objects, in any random order.</div>
+array of objects, in any random order.</p></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$table</h4>
@@ -1064,10 +1058,10 @@ array of objects, in any random order.</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_selectObjectsBySql"></a><div class="element clickable method public method_selectObjectsBySql" data-toggle="collapse" data-target=".method_selectObjectsBySql .collapse" title="public">
+<a id="method_selectObjectsBySql"></a><div class="element clickable method public method_selectObjectsBySql " data-toggle="collapse" data-target=".method_selectObjectsBySql .collapse" title="public">
 <h2>selectObjectsBySql()
         </h2>
-<pre>selectObjectsBySql(mixed $sql) : array</pre>
+<pre>selectObjectsBySql($sql) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -1077,9 +1071,9 @@ array of objects, in any random order.</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_selectObjectsInArray"></a><div class="element clickable method public method_selectObjectsInArray" data-toggle="collapse" data-target=".method_selectObjectsInArray .collapse" title="public">
+<a id="method_selectObjectsInArray"></a><div class="element clickable method public method_selectObjectsInArray " data-toggle="collapse" data-target=".method_selectObjectsInArray .collapse" title="public">
 <h2>This function takes an array of indexes and returns an array with the objects associated with each id</h2>
-<pre>selectObjectsInArray(mixed $table, array $array<code> = array()</code>, null $orderby<code> = null</code>) : array</pre>
+<pre>selectObjectsInArray($table, array $array<code> = array()</code>, null $orderby<code> = null</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -1097,16 +1091,16 @@ array of objects, in any random order.</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_selectObjectsIndexedArray"></a><div class="element clickable method public method_selectObjectsIndexedArray" data-toggle="collapse" data-target=".method_selectObjectsIndexedArray .collapse" title="public">
+<a id="method_selectObjectsIndexedArray"></a><div class="element clickable method public method_selectObjectsIndexedArray " data-toggle="collapse" data-target=".method_selectObjectsIndexedArray .collapse" title="public">
 <h2>Select a series of objects, and return by ID</h2>
 <pre>selectObjectsIndexedArray(string $table, string $where<code> = null</code>, null $orderby<code> = null</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">Selects a set of objects from the database.  Because of the way
+<div class="long_description"><p>Selects a set of objects from the database.  Because of the way
 Exponent handles objects and database tables, this is akin to
 SELECTing a set of records from a database table. Returns an
 array of objects, in any random order.  The indices of the array
-are the IDs of the objects.</div>
+are the IDs of the objects.</p></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$table</h4>
@@ -1124,10 +1118,10 @@ are the IDs of the objects.</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_selectPathToNestedNode"></a><div class="element clickable method public method_selectPathToNestedNode" data-toggle="collapse" data-target=".method_selectPathToNestedNode .collapse" title="public">
+<a id="method_selectPathToNestedNode"></a><div class="element clickable method public method_selectPathToNestedNode " data-toggle="collapse" data-target=".method_selectPathToNestedNode .collapse" title="public">
 <h2>selectPathToNestedNode()
         </h2>
-<pre>selectPathToNestedNode(mixed $table, null $node<code> = null</code>) : array</pre>
+<pre>selectPathToNestedNode($table, null $node<code> = null</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -1141,10 +1135,10 @@ are the IDs of the objects.</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_selectSearch"></a><div class="element clickable method public method_selectSearch" data-toggle="collapse" data-target=".method_selectSearch .collapse" title="public">
+<a id="method_selectSearch"></a><div class="element clickable method public method_selectSearch " data-toggle="collapse" data-target=".method_selectSearch .collapse" title="public">
 <h2>selectSearch()
         </h2>
-<pre>selectSearch(mixed $terms, null $where<code> = null</code>) : array</pre>
+<pre>selectSearch($terms, null $where<code> = null</code>) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -1158,10 +1152,10 @@ are the IDs of the objects.</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_selectSum"></a><div class="element clickable method public method_selectSum" data-toggle="collapse" data-target=".method_selectSum .collapse" title="public">
+<a id="method_selectSum"></a><div class="element clickable method public method_selectSum " data-toggle="collapse" data-target=".method_selectSum .collapse" title="public">
 <h2>selectSum()
         </h2>
-<pre>selectSum(mixed $table, mixed $col, null $where<code> = null</code>) : int</pre>
+<pre>selectSum($table, $col, null $where<code> = null</code>) : integer</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -1173,13 +1167,13 @@ are the IDs of the objects.</div>
 <code>null</code>
 </div>
 <h3>Returns</h3>
-<div class="subelement response"><code>int</code></div>
+<div class="subelement response"><code>integer</code></div>
 </div></div>
 </div>
-<a id="method_selectValue"></a><div class="element clickable method public method_selectValue" data-toggle="collapse" data-target=".method_selectValue .collapse" title="public">
+<a id="method_selectValue"></a><div class="element clickable method public method_selectValue " data-toggle="collapse" data-target=".method_selectValue .collapse" title="public">
 <h2>selectValue()
         </h2>
-<pre>selectValue(mixed $table, mixed $col, null $where<code> = null</code>) : null</pre>
+<pre>selectValue($table, $col, null $where<code> = null</code>) : null</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -1194,10 +1188,10 @@ are the IDs of the objects.</div>
 <div class="subelement response"><code>null</code></div>
 </div></div>
 </div>
-<a id="method_selectValueBySql"></a><div class="element clickable method public method_selectValueBySql" data-toggle="collapse" data-target=".method_selectValueBySql .collapse" title="public">
+<a id="method_selectValueBySql"></a><div class="element clickable method public method_selectValueBySql " data-toggle="collapse" data-target=".method_selectValueBySql .collapse" title="public">
 <h2>selectValueBySql()
         </h2>
-<pre>selectValueBySql(mixed $sql) : null</pre>
+<pre>selectValueBySql($sql) : null</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -1207,10 +1201,10 @@ are the IDs of the objects.</div>
 <div class="subelement response"><code>null</code></div>
 </div></div>
 </div>
-<a id="method_setUniqueFlag"></a><div class="element clickable method public method_setUniqueFlag" data-toggle="collapse" data-target=".method_setUniqueFlag .collapse" title="public">
+<a id="method_setUniqueFlag"></a><div class="element clickable method public method_setUniqueFlag " data-toggle="collapse" data-target=".method_setUniqueFlag .collapse" title="public">
 <h2>setUniqueFlag()
         </h2>
-<pre>setUniqueFlag(mixed $object, mixed $table, mixed $col, int|null $where<code> = 1</code>) : bool</pre>
+<pre>setUniqueFlag($object, $table, $col, integer|null $where<code> = 1</code>) : boolean</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -1220,41 +1214,40 @@ are the IDs of the objects.</div>
 <div class="subelement argument"><h4>$col</h4></div>
 <div class="subelement argument">
 <h4>$where</h4>
-<code>int</code><code>null</code>
+<code>integer</code><code>null</code>
 </div>
 <h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
+<div class="subelement response"><code>boolean</code></div>
 </div></div>
 </div>
-<a id="method_sql"></a><div class="element clickable method public method_sql" data-toggle="collapse" data-target=".method_sql .collapse" title="public">
+<a id="method_sql"></a><div class="element clickable method public method_sql " data-toggle="collapse" data-target=".method_sql .collapse" title="public">
 <h2>Run raw SQL.  Returns true if the query succeeded, and false
   if an error was returned from the database server.</h2>
-<pre>sql(string $sql, bool $escape<code> = true</code>) : mixed</pre>
+<pre>sql(string $sql, boolean $escape<code> = true</code>) : mixed</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"><div style="color:red">If you can help it, do not use this function.  It presents Database Portability Issues.</div>
-
-Runs a straight SQL query on the database.  This is not a
+<p>Runs a straight SQL query on the database.  This is not a
 very portable way of dealing with the database, and is only
-provided as a last resort.</div>
+provided as a last resort.</p></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$sql</h4>
 <code>string</code><p>The SQL query to run</p></div>
 <div class="subelement argument">
 <h4>$escape</h4>
-<code>bool</code>
+<code>boolean</code>
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code>mixed</code></div>
 </div></div>
 </div>
-<a id="method_switchValues"></a><div class="element clickable method public method_switchValues" data-toggle="collapse" data-target=".method_switchValues .collapse" title="public">
+<a id="method_switchValues"></a><div class="element clickable method public method_switchValues " data-toggle="collapse" data-target=".method_switchValues .collapse" title="public">
 <h2>Switch field values between two entries in a  Table</h2>
-<pre>switchValues(mixed $table, mixed $field, mixed $a, mixed $b, null $additional_where<code> = null</code>) : bool</pre>
+<pre>switchValues($table, $field, $a, $b, null $additional_where<code> = null</code>) : boolean</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">Switches values between two table entries for things like swapping rank, etc...</div>
+<div class="long_description"><p>Switches values between two table entries for things like swapping rank, etc...</p></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$table</h4></div>
 <div class="subelement argument"><h4>$field</h4></div>
@@ -1265,29 +1258,29 @@ provided as a last resort.</div>
 <code>null</code>
 </div>
 <h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
+<div class="subelement response"><code>boolean</code></div>
 </div></div>
 </div>
-<a id="method_tableExists"></a><div class="element clickable method public method_tableExists" data-toggle="collapse" data-target=".method_tableExists .collapse" title="public">
+<a id="method_tableExists"></a><div class="element clickable method public method_tableExists " data-toggle="collapse" data-target=".method_tableExists .collapse" title="public">
 <h2>Check to see if the named table exists in the database.</h2>
-<pre>tableExists(string $table) : bool</pre>
+<pre>tableExists(string $table) : boolean</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">Returns true if the table exists, and false if it doesn't.</div>
+<div class="long_description"><p>Returns true if the table exists, and false if it doesn't.</p></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$table</h4>
 <code>string</code><p>Name of the table to look for.</p></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
+<div class="subelement response"><code>boolean</code></div>
 </div></div>
 </div>
-<a id="method_tableInfo"></a><div class="element clickable method public method_tableInfo" data-toggle="collapse" data-target=".method_tableInfo .collapse" title="public">
+<a id="method_tableInfo"></a><div class="element clickable method public method_tableInfo " data-toggle="collapse" data-target=".method_tableInfo .collapse" title="public">
 <h2>Retrieve table information for a named table.</h2>
-<pre>tableInfo(mixed $table) : null</pre>
+<pre>tableInfo($table) : null</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">Returns an object, with the following attributes:
+<div class="long_description"><p>Returns an object, with the following attributes:</p>
 <ul>
 <li><b>rows</b> -- The number of rows in the table.</li>
 <li><b>average_row_length</b> -- The average storage size of a row in the table.</li>
@@ -1300,26 +1293,26 @@ provided as a last resort.</div>
 <div class="subelement response"><code>null</code></div>
 </div></div>
 </div>
-<a id="method_tableIsEmpty"></a><div class="element clickable method public method_tableIsEmpty" data-toggle="collapse" data-target=".method_tableIsEmpty .collapse" title="public">
+<a id="method_tableIsEmpty"></a><div class="element clickable method public method_tableIsEmpty " data-toggle="collapse" data-target=".method_tableIsEmpty .collapse" title="public">
 <h2>Check whether or not a table in the database is empty (0 rows).</h2>
-<pre>tableIsEmpty(string $table) : bool</pre>
+<pre>tableIsEmpty(string $table) : boolean</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">Returns tue of the specified table has no rows, and false if otherwise.</div>
+<div class="long_description"><p>Returns tue of the specified table has no rows, and false if otherwise.</p></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$table</h4>
 <code>string</code><p>Name of the table to check.</p></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
+<div class="subelement response"><code>boolean</code></div>
 </div></div>
 </div>
-<a id="method_testPrivileges"></a><div class="element clickable method public method_testPrivileges" data-toggle="collapse" data-target=".method_testPrivileges .collapse" title="public">
+<a id="method_testPrivileges"></a><div class="element clickable method public method_testPrivileges " data-toggle="collapse" data-target=".method_testPrivileges .collapse" title="public">
 <h2>Test the privileges of the user account for the connection.</h2>
 <pre>testPrivileges() : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">Tests run include:
+<div class="long_description"><p>Tests run include:</p>
 <ul>
 <li>CREATE TABLE</li>
 <li>INSERT</li>
@@ -1329,17 +1322,17 @@ provided as a last resort.</div>
 <li>ALTER TABLE</li>
 <li>DROP TABLE</li>
 </ul>
-These tests must be performed in order, for logical reasons.  Execution
+<p>These tests must be performed in order, for logical reasons.  Execution
 terminates when the first test fails, and the status flag array is returned then.
 Returns an array of status flags.  Key is the test name.  Value is a boolean,
-true if the test succeeded, and false if it failed.</div>
+true if the test succeeded, and false if it failed.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_toggle"></a><div class="element clickable method public method_toggle" data-toggle="collapse" data-target=".method_toggle .collapse" title="public">
+<a id="method_toggle"></a><div class="element clickable method public method_toggle " data-toggle="collapse" data-target=".method_toggle .collapse" title="public">
 <h2>Toggle a boolean value in a Table Entry</h2>
-<pre>toggle(mixed $table, mixed $col, null $where<code> = null</code>) : void</pre>
+<pre>toggle($table, $col, null $where<code> = null</code>) : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -1352,9 +1345,9 @@ true if the test succeeded, and false if it failed.</div>
 </div>
 </div></div>
 </div>
-<a id="method_trim_revisions"></a><div class="element clickable method public method_trim_revisions" data-toggle="collapse" data-target=".method_trim_revisions .collapse" title="public">
+<a id="method_trim_revisions"></a><div class="element clickable method public method_trim_revisions " data-toggle="collapse" data-target=".method_trim_revisions .collapse" title="public">
 <h2>Reduces table item revisions to a passed total</h2>
-<pre>trim_revisions(string $table, integer $id, integer $num, int $workflow<code> = ENABLE_WORKFLOW</code>) </pre>
+<pre>trim_revisions(string $table, integer $id, integer $num, integer $workflow<code> = ENABLE_WORKFLOW</code>) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -1370,10 +1363,10 @@ true if the test succeeded, and false if it failed.</div>
 <code>integer</code><p>The number of revisions to retain</p></div>
 <div class="subelement argument">
 <h4>$workflow</h4>
-<code>int</code><p>is workflow turned on (or force)</p></div>
+<code>integer</code><p>is workflow turned on (or force)</p></div>
 </div></div>
 </div>
-<a id="method_unlockTables"></a><div class="element clickable method public method_unlockTables" data-toggle="collapse" data-target=".method_unlockTables .collapse" title="public">
+<a id="method_unlockTables"></a><div class="element clickable method public method_unlockTables " data-toggle="collapse" data-target=".method_unlockTables .collapse" title="public">
 <h2>unlockTables()
         </h2>
 <pre>unlockTables() : mixed</pre>
@@ -1384,19 +1377,19 @@ true if the test succeeded, and false if it failed.</div>
 <div class="subelement response"><code>mixed</code></div>
 </div></div>
 </div>
-<a id="method_updateObject"></a><div class="element clickable method public method_updateObject" data-toggle="collapse" data-target=".method_updateObject .collapse" title="public">
+<a id="method_updateObject"></a><div class="element clickable method public method_updateObject " data-toggle="collapse" data-target=".method_updateObject .collapse" title="public">
 <h2>Update one or more objects in the database.</h2>
-<pre>updateObject(object $object, string $table, string $where<code> = null</code>, string $identifier<code> = 'id'</code>, bool $is_revisioned<code> = false</code>) : bool | int | void</pre>
+<pre>updateObject(object $object, string $table, string $where<code> = null</code>, string $identifier<code> = 'id'</code>, boolean $is_revisioned<code> = false</code>) : boolean | integer | void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">This function will only update the attributes of the resulting record(s)
-that are also member attributes of the $object object.</div>
+<div class="long_description"><p>This function will only update the attributes of the resulting record(s)
+that are also member attributes of the $object object.</p></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$object</h4>
 <code>object</code><p>An object specifying the fields and values for updating.
-   In most cases, this will be the altered object originally returned from one of
-   the select* methods.</p></div>
+In most cases, this will be the altered object originally returned from one of
+the select* methods.</p></div>
 <div class="subelement argument">
 <h4>$table</h4>
 <code>string</code><p>The table to update in.</p></div>
@@ -1409,11 +1402,11 @@ that are also member attributes of the $object object.</div>
 </div>
 <div class="subelement argument">
 <h4>$is_revisioned</h4>
-<code>bool</code>
+<code>boolean</code>
 </div>
 <h3>Returns</h3>
 <div class="subelement response">
-<code>bool</code><code>int</code><code>void</code>
+<code>boolean</code><code>integer</code><code>void</code>
 </div>
 </div></div>
 </div>
@@ -1455,9 +1448,8 @@ that are also member attributes of the $object object.</div>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.5.0
-</a> and<br>
-            generated on 2014-07-18T16:29:11-04:00.<br></footer></div>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.7.0</a> and<br>
+            generated on 2014-08-22T07:06:32-04:00.<br></footer></div>
 </div>
 </body>
 </html>

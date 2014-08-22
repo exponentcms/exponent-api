@@ -19,12 +19,10 @@
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a>Namespaces</a></li>
-<li><a href="../namespaces/.html"><i class="icon-th"></i> </a></li>
-<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
 <li><a>Packages</a></li>
 <li><a href="../packages/Connectors.html"><i class="icon-folder-open"></i> Connectors</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 <li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
 <li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
 <li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
@@ -32,7 +30,6 @@
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
 <li><a href="../packages/elFinder.html"><i class="icon-folder-open"></i> elFinder</a></li>
-<li><a href="../packages/global.html"><i class="icon-folder-open"></i> global</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -43,7 +40,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">5328</span></a></li>
+                <span class="label label-info">6529</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -61,7 +58,7 @@
                         </div></noscript>
 <div class="row">
 <div class="span4">
-<div class="btn-toolbar">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
 <div class="btn-group visibility" data-toggle="buttons-checkbox">
 <button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button>
 </div>
@@ -69,7 +66,7 @@
 <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
 </div>
 </div>
-<ul class="side-nav nav nav-list"><li class="nav-header">
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list"><li class="nav-header">
 <i title="Methods" class="icon-custom icon-method"></i> Methods
                     <ul>
 <li class="method public "><a href="#method_duration" title="duration() :: exdoc
@@ -179,33 +176,42 @@ would return a timestamp representing January 1st 1984, at 12:00am.</span><pre>s
 </li></ul>
 </div>
 <div class="span8">
-<a id="\expDateTime"></a><ul class="breadcrumb">
+<a xmlns:php="http://php.net/xsl" id="\expDateTime"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
 <li>
 <a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
-<li><a href="../namespaces/.html"></a></li>
 <li class="active">
 <span class="divider">\</span><a href="../classes/expDateTime.html">expDateTime</a>
 </li>
 </ul>
-<div class="element class">
+<div xmlns:php="http://php.net/xsl" class="element class">
 <p class="short_description"></p>
 <div class="details">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>define</th>
 <td>"BASE" "../../.."</td>
-</tr></table>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.html">Subsystems</a></td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Subsystems.html">Subsystems</a></td>
+</tr>
+</table>
 <h3>
 <i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
-<a id="method_duration"></a><div class="element clickable method public method_duration" data-toggle="collapse" data-target=".method_duration .collapse" title="public">
+<a id="method_duration"></a><div class="element clickable method public method_duration " data-toggle="collapse" data-target=".method_duration .collapse" title="public">
 <h2>exdoc
 Looks at a start and end time and figures out
 how many seconds elapsed since between the earlier
 timestamp and the later timestamp.  It doesn't matter
 if the bigger argument is specified first or not. Returns
 the number of seconds between $time_a and $time_b</h2>
-<pre>duration(int $time_a, int $time_b, bool $iso8601<code> = false</code>) : array</pre>
+<pre>duration(integer $time_a, integer $time_b, boolean $iso8601<code> = false</code>) : array</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -216,22 +222,22 @@ the number of seconds between $time_a and $time_b</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$time_a</h4>
-<code>int</code><p>The first timestamp</p></div>
+<code>integer</code><p>The first timestamp</p></div>
 <div class="subelement argument">
 <h4>$time_b</h4>
-<code>int</code><p>The second timestamp</p></div>
+<code>integer</code><p>The second timestamp</p></div>
 <div class="subelement argument">
 <h4>$iso8601</h4>
-<code>bool</code><p>return duration as an iso8601 string</p></div>
+<code>boolean</code><p>return duration as an iso8601 string</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_endOfDayTimestamp"></a><div class="element clickable method public method_endOfDayTimestamp" data-toggle="collapse" data-target=".method_endOfDayTimestamp .collapse" title="public">
+<a id="method_endOfDayTimestamp"></a><div class="element clickable method public method_endOfDayTimestamp " data-toggle="collapse" data-target=".method_endOfDayTimestamp .collapse" title="public">
 <h2>exdoc
 Looks at a timestamp and returns another timestamp representing
 11:59:59 pm of the same day.</h2>
-<pre>endOfDayTimestamp(int $timestamp) : int</pre>
+<pre>endOfDayTimestamp(integer $timestamp) : integer</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -242,17 +248,17 @@ Looks at a timestamp and returns another timestamp representing
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$timestamp</h4>
-<code>int</code><p>The timestamp to check.</p></div>
+<code>integer</code><p>The timestamp to check.</p></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>int</code></div>
+<div class="subelement response"><code>integer</code></div>
 </div></div>
 </div>
-<a id="method_endOfMonthDay"></a><div class="element clickable method public method_endOfMonthDay" data-toggle="collapse" data-target=".method_endOfMonthDay .collapse" title="public">
+<a id="method_endOfMonthDay"></a><div class="element clickable method public method_endOfMonthDay " data-toggle="collapse" data-target=".method_endOfMonthDay .collapse" title="public">
 <h2>exdoc
 Looks at a timestamp and returns the date of the last
 day.  For instance, if the passed timestamp was in January,
 this function would return 31.  Leap year is taken into account.</h2>
-<pre>endOfMonthDay(int $timestamp) : int</pre>
+<pre>endOfMonthDay(integer $timestamp) : integer</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -263,18 +269,18 @@ this function would return 31.  Leap year is taken into account.</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$timestamp</h4>
-<code>int</code><p>The timestamp to check.</p></div>
+<code>integer</code><p>The timestamp to check.</p></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>int</code></div>
+<div class="subelement response"><code>integer</code></div>
 </div></div>
 </div>
-<a id="method_endOfMonthTimestamp"></a><div class="element clickable method public method_endOfMonthTimestamp" data-toggle="collapse" data-target=".method_endOfMonthTimestamp .collapse" title="public">
+<a id="method_endOfMonthTimestamp"></a><div class="element clickable method public method_endOfMonthTimestamp " data-toggle="collapse" data-target=".method_endOfMonthTimestamp .collapse" title="public">
 <h2>exdoc
 Given a timestamp, this function will calculate another timestamp
 that represents the end of the month that the passed timestamp
 falls into.  For instance, passing a timestamp representing January 25th 1984
 would return a timestamp representing January 31st 1984, at 11:59pm.</h2>
-<pre>endOfMonthTimestamp(int $timestamp) : int</pre>
+<pre>endOfMonthTimestamp(integer $timestamp) : integer</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -285,16 +291,16 @@ would return a timestamp representing January 31st 1984, at 11:59pm.</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$timestamp</h4>
-<code>int</code><p>The original timestamp to use when calculating.</p></div>
+<code>integer</code><p>The original timestamp to use when calculating.</p></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>int</code></div>
+<div class="subelement response"><code>integer</code></div>
 </div></div>
 </div>
-<a id="method_endOfWeekTimestamp"></a><div class="element clickable method public method_endOfWeekTimestamp" data-toggle="collapse" data-target=".method_endOfWeekTimestamp .collapse" title="public">
+<a id="method_endOfWeekTimestamp"></a><div class="element clickable method public method_endOfWeekTimestamp " data-toggle="collapse" data-target=".method_endOfWeekTimestamp .collapse" title="public">
 <h2>exdoc
 Looks at a timestamp and returns another timestamp representing
 12:00:01 am of the DISPLAY_START_OF_WEEK day of the same week.</h2>
-<pre>endOfWeekTimestamp(int $timestamp) : int</pre>
+<pre>endOfWeekTimestamp(integer $timestamp) : integer</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -305,18 +311,18 @@ Looks at a timestamp and returns another timestamp representing
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$timestamp</h4>
-<code>int</code><p>The timestamp to check.</p></div>
+<code>integer</code><p>The timestamp to check.</p></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>int</code></div>
+<div class="subelement response"><code>integer</code></div>
 </div></div>
 </div>
-<a id="method_endOfYearTimestamp"></a><div class="element clickable method public method_endOfYearTimestamp" data-toggle="collapse" data-target=".method_endOfYearTimestamp .collapse" title="public">
+<a id="method_endOfYearTimestamp"></a><div class="element clickable method public method_endOfYearTimestamp " data-toggle="collapse" data-target=".method_endOfYearTimestamp .collapse" title="public">
 <h2>exdoc
 Given a timestamp, this function will calculate another timestamp
 that represents the end of the year that the passed timestamp
 falls into.  For instance, passing a timestamp representing January 25th 1984
 would return a timestamp representing December 31st 1984, at 11:59pm.</h2>
-<pre>endOfYearTimestamp(int $timestamp) : int</pre>
+<pre>endOfYearTimestamp(integer $timestamp) : integer</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -327,12 +333,12 @@ would return a timestamp representing December 31st 1984, at 11:59pm.</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$timestamp</h4>
-<code>int</code><p>The original timestamp to use when calculating.</p></div>
+<code>integer</code><p>The original timestamp to use when calculating.</p></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>int</code></div>
+<div class="subelement response"><code>integer</code></div>
 </div></div>
 </div>
-<a id="method_format_date"></a><div class="element clickable method public method_format_date" data-toggle="collapse" data-target=".method_format_date .collapse" title="public">
+<a id="method_format_date"></a><div class="element clickable method public method_format_date " data-toggle="collapse" data-target=".method_format_date .collapse" title="public">
 <h2>Return a date in the preferred format</h2>
 <pre>format_date($timestamp, string $format<code> = DISPLAY_DATE_FORMAT</code>) : array</pre>
 <div class="labels"><span class="label">Static</span></div>
@@ -348,7 +354,7 @@ would return a timestamp representing December 31st 1984, at 11:59pm.</h2>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_monthlyDaysTimestamp"></a><div class="element clickable method public method_monthlyDaysTimestamp" data-toggle="collapse" data-target=".method_monthlyDaysTimestamp .collapse" title="public">
+<a id="method_monthlyDaysTimestamp"></a><div class="element clickable method public method_monthlyDaysTimestamp " data-toggle="collapse" data-target=".method_monthlyDaysTimestamp .collapse" title="public">
 <h2>exdoc
 Adapted from calendar module's minical view to be more modular.</h2>
 <pre>monthlyDaysTimestamp(null $time<code> = null</code>) : array</pre>
@@ -364,9 +370,9 @@ Adapted from calendar module's minical view to be more modular.</h2>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_monthsDropdown"></a><div class="element clickable method public method_monthsDropdown" data-toggle="collapse" data-target=".method_monthsDropdown .collapse" title="public">
+<a id="method_monthsDropdown"></a><div class="element clickable method public method_monthsDropdown " data-toggle="collapse" data-target=".method_monthsDropdown .collapse" title="public">
 <h2>exdoc</h2>
-<pre>monthsDropdown(mixed $controlName, mixed $default_month) : string</pre>
+<pre>monthsDropdown($controlName, $default_month) : string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -387,14 +393,14 @@ Adapted from calendar module's minical view to be more modular.</h2>
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a id="method_recurringDailyDates"></a><div class="element clickable method public method_recurringDailyDates" data-toggle="collapse" data-target=".method_recurringDailyDates .collapse" title="public">
+<a id="method_recurringDailyDates"></a><div class="element clickable method public method_recurringDailyDates " data-toggle="collapse" data-target=".method_recurringDailyDates .collapse" title="public">
 <h2>exdoc
 Find all of the dates that fall within the daily recurrence criteria.</h2>
-<pre>recurringDailyDates(int $start, int $end, integer $freq) : array</pre>
+<pre>recurringDailyDates(integer $start, integer $end, integer $freq) : array</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">This is the simplest form of recurrence, events are spaced a given
-number of days apart.</div>
+<div class="long_description"><p>This is the simplest form of recurrence, events are spaced a given
+number of days apart.</p></div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:expDateTime</td>
@@ -402,10 +408,10 @@ number of days apart.</div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$start</h4>
-<code>int</code><p>The start of the recurrence range</p></div>
+<code>integer</code><p>The start of the recurrence range</p></div>
 <div class="subelement argument">
 <h4>$end</h4>
-<code>int</code><p>The end of the recurrence range</p></div>
+<code>integer</code><p>The end of the recurrence range</p></div>
 <div class="subelement argument">
 <h4>$freq</h4>
 <code>integer</code><p>Frequency of recurrence - 2 means every 2 days, and 1</p>
@@ -414,13 +420,13 @@ number of days apart.</div>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_recurringMonthlyDates"></a><div class="element clickable method public method_recurringMonthlyDates" data-toggle="collapse" data-target=".method_recurringMonthlyDates .collapse" title="public">
+<a id="method_recurringMonthlyDates"></a><div class="element clickable method public method_recurringMonthlyDates " data-toggle="collapse" data-target=".method_recurringMonthlyDates .collapse" title="public">
 <h2>exdoc
 Finds all of the dates that fall within the monthly recurrence criteria
 and within the $start to $end timestamp range.  Monthly recurrence can be
 done on a specific date (the 14th of the month) or on a specific weekday / offset
 pair (the third sunday of the month).</h2>
-<pre>recurringMonthlyDates(int $start, int $end, integer $freq, bool $by_day<code> = false</code>) : array</pre>
+<pre>recurringMonthlyDates(integer $start, integer $end, integer $freq, boolean $by_day<code> = false</code>) : array</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -431,31 +437,31 @@ pair (the third sunday of the month).</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$start</h4>
-<code>int</code><p>The start of the recurrence range</p></div>
+<code>integer</code><p>The start of the recurrence range</p></div>
 <div class="subelement argument">
 <h4>$end</h4>
-<code>int</code><p>The end of the recurrence range</p></div>
+<code>integer</code><p>The end of the recurrence range</p></div>
 <div class="subelement argument">
 <h4>$freq</h4>
 <code>integer</code><p>Monthly frequency - 1 means every month, 2 means every
-  other month, etc.</p></div>
+other month, etc.</p></div>
 <div class="subelement argument">
 <h4>$by_day</h4>
-<code>bool</code><p>Whether or not to recur by the weekday and week offset
+<code>boolean</code><p>Whether or not to recur by the weekday and week offset
 (in case of true), or by the date (in case of false).</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_recurringWeeklyDates"></a><div class="element clickable method public method_recurringWeeklyDates" data-toggle="collapse" data-target=".method_recurringWeeklyDates .collapse" title="public">
+<a id="method_recurringWeeklyDates"></a><div class="element clickable method public method_recurringWeeklyDates " data-toggle="collapse" data-target=".method_recurringWeeklyDates .collapse" title="public">
 <h2>exdoc
 Finds all of the dates that fall within the weekly recurrence criteria
 (namely, which weekdays) and within the $start to $end timestamp range.</h2>
-<pre>recurringWeeklyDates(int $start, int $end, integer $freq, array $days) : array</pre>
+<pre>recurringWeeklyDates(integer $start, integer $end, integer $freq, array $days) : array</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">For a technical discussion of this function and the mathematics involved,
-please see the sdk/analysis/subsystems/datetime.txt file.</div>
+<div class="long_description"><p>For a technical discussion of this function and the mathematics involved,
+please see the sdk/analysis/subsystems/datetime.txt file.</p></div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:expDateTime</td>
@@ -463,32 +469,32 @@ please see the sdk/analysis/subsystems/datetime.txt file.</div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$start</h4>
-<code>int</code><p>The start of the recurrence range</p></div>
+<code>integer</code><p>The start of the recurrence range</p></div>
 <div class="subelement argument">
 <h4>$end</h4>
-<code>int</code><p>The end of the recurrence range</p></div>
+<code>integer</code><p>The end of the recurrence range</p></div>
 <div class="subelement argument">
 <h4>$freq</h4>
 <code>integer</code><p>Weekly frequency - 1 means every week, 2 means every
-  other week, etc.</p></div>
+other week, etc.</p></div>
 <div class="subelement argument">
 <h4>$days</h4>
 <code>array</code><p>The weekdays (in integer notation, 0 = Sunday, etc.) that
-  should be matched.  A MWF recurrence rotation would contain the values
- 1,3 and 5.</p></div>
+should be matched.  A MWF recurrence rotation would contain the values
+1,3 and 5.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_recurringYearlyDates"></a><div class="element clickable method public method_recurringYearlyDates" data-toggle="collapse" data-target=".method_recurringYearlyDates .collapse" title="public">
+<a id="method_recurringYearlyDates"></a><div class="element clickable method public method_recurringYearlyDates " data-toggle="collapse" data-target=".method_recurringYearlyDates .collapse" title="public">
 <h2>exdoc
 Finds all of the dates that fall within the yearly recurrence criteria
 (similar to monthly) and within the $start to $end timestamp range.</h2>
-<pre>recurringYearlyDates(int $start, int $end, integer $freq) : array</pre>
+<pre>recurringYearlyDates(integer $start, integer $end, integer $freq) : array</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">Unlike monthly recurrence, yearly cannot do recurrence like 'the
-17th sunday of the year'.</div>
+<div class="long_description"><p>Unlike monthly recurrence, yearly cannot do recurrence like 'the
+17th sunday of the year'.</p></div>
 <table class="table table-bordered"><tr>
 <th>node</th>
 <td>Subsystems:expDateTime</td>
@@ -496,33 +502,33 @@ Finds all of the dates that fall within the yearly recurrence criteria
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$start</h4>
-<code>int</code><p>The start of the recurrence range</p></div>
+<code>integer</code><p>The start of the recurrence range</p></div>
 <div class="subelement argument">
 <h4>$end</h4>
-<code>int</code><p>The end of the recurrence range</p></div>
+<code>integer</code><p>The end of the recurrence range</p></div>
 <div class="subelement argument">
 <h4>$freq</h4>
 <code>integer</code><p>Yearly frequency - 1 means every year, 2 means every
-  other year, etc.</p></div>
+other year, etc.</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_relativeDate"></a><div class="element clickable method public method_relativeDate" data-toggle="collapse" data-target=".method_relativeDate .collapse" title="public">
+<a id="method_relativeDate"></a><div class="element clickable method public method_relativeDate " data-toggle="collapse" data-target=".method_relativeDate .collapse" title="public">
 <h2>Returns date as a relative phrase (2 days ago, etc.</h2>
-<pre>relativeDate(mixed $posted_date) : string</pre>
+<pre>relativeDate($posted_date) : string</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description">.)</div>
+<div class="long_description"><p>.)</p></div>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$posted_date</h4></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
-<a id="method_sameDay"></a><div class="element clickable method public method_sameDay" data-toggle="collapse" data-target=".method_sameDay .collapse" title="public">
+<a id="method_sameDay"></a><div class="element clickable method public method_sameDay " data-toggle="collapse" data-target=".method_sameDay .collapse" title="public">
 <h2>Function to check if dates are same day</h2>
-<pre>sameDay(mixed $date1, mixed $date2) : bool</pre>
+<pre>sameDay($date1, $date2) : boolean</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -530,14 +536,14 @@ Finds all of the dates that fall within the yearly recurrence criteria
 <div class="subelement argument"><h4>$date1</h4></div>
 <div class="subelement argument"><h4>$date2</h4></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>bool</code></div>
+<div class="subelement response"><code>boolean</code></div>
 </div></div>
 </div>
-<a id="method_startOfDayTimestamp"></a><div class="element clickable method public method_startOfDayTimestamp" data-toggle="collapse" data-target=".method_startOfDayTimestamp .collapse" title="public">
+<a id="method_startOfDayTimestamp"></a><div class="element clickable method public method_startOfDayTimestamp " data-toggle="collapse" data-target=".method_startOfDayTimestamp .collapse" title="public">
 <h2>exdoc
 Looks at a timestamp and returns another timestamp representing
 12:00:01 am of the same day.</h2>
-<pre>startOfDayTimestamp(int $timestamp) : int</pre>
+<pre>startOfDayTimestamp(integer $timestamp) : integer</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -548,18 +554,18 @@ Looks at a timestamp and returns another timestamp representing
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$timestamp</h4>
-<code>int</code><p>The timestamp to check.</p></div>
+<code>integer</code><p>The timestamp to check.</p></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>int</code></div>
+<div class="subelement response"><code>integer</code></div>
 </div></div>
 </div>
-<a id="method_startOfMonthTimestamp"></a><div class="element clickable method public method_startOfMonthTimestamp" data-toggle="collapse" data-target=".method_startOfMonthTimestamp .collapse" title="public">
+<a id="method_startOfMonthTimestamp"></a><div class="element clickable method public method_startOfMonthTimestamp " data-toggle="collapse" data-target=".method_startOfMonthTimestamp .collapse" title="public">
 <h2>exdoc
 Given a timestamp, this function will calculate another timestamp
 that represents the beginning of the month that the passed timestamp
 falls into.  For instance, passing a timestamp representing January 25th 1984
 would return a timestamp representing January 1st 1984, at 12:00am.</h2>
-<pre>startOfMonthTimestamp(int $timestamp) : int</pre>
+<pre>startOfMonthTimestamp(integer $timestamp) : integer</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -570,16 +576,16 @@ would return a timestamp representing January 1st 1984, at 12:00am.</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$timestamp</h4>
-<code>int</code><p>The original timestamp to use when calculating.</p></div>
+<code>integer</code><p>The original timestamp to use when calculating.</p></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>int</code></div>
+<div class="subelement response"><code>integer</code></div>
 </div></div>
 </div>
-<a id="method_startOfWeekTimestamp"></a><div class="element clickable method public method_startOfWeekTimestamp" data-toggle="collapse" data-target=".method_startOfWeekTimestamp .collapse" title="public">
+<a id="method_startOfWeekTimestamp"></a><div class="element clickable method public method_startOfWeekTimestamp " data-toggle="collapse" data-target=".method_startOfWeekTimestamp .collapse" title="public">
 <h2>exdoc
 Looks at a timestamp and returns another timestamp representing
 12:00:01 am of the DISPLAY_START_OF_WEEK day of the same week.</h2>
-<pre>startOfWeekTimestamp(int $timestamp) : int</pre>
+<pre>startOfWeekTimestamp(integer $timestamp) : integer</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -590,18 +596,18 @@ Looks at a timestamp and returns another timestamp representing
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$timestamp</h4>
-<code>int</code><p>The timestamp to check.</p></div>
+<code>integer</code><p>The timestamp to check.</p></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>int</code></div>
+<div class="subelement response"><code>integer</code></div>
 </div></div>
 </div>
-<a id="method_startOfYearTimestamp"></a><div class="element clickable method public method_startOfYearTimestamp" data-toggle="collapse" data-target=".method_startOfYearTimestamp .collapse" title="public">
+<a id="method_startOfYearTimestamp"></a><div class="element clickable method public method_startOfYearTimestamp " data-toggle="collapse" data-target=".method_startOfYearTimestamp .collapse" title="public">
 <h2>exdoc
 Given a timestamp, this function will calculate another timestamp
 that represents the beginning of the year that the passed timestamp
 falls into.  For instance, passing a timestamp representing January 25th 1984
 would return a timestamp representing January 1st 1984, at 12:00am.</h2>
-<pre>startOfYearTimestamp(int $timestamp) : int</pre>
+<pre>startOfYearTimestamp(integer $timestamp) : integer</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -612,9 +618,9 @@ would return a timestamp representing January 1st 1984, at 12:00am.</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$timestamp</h4>
-<code>int</code><p>The original timestamp to use when calculating.</p></div>
+<code>integer</code><p>The original timestamp to use when calculating.</p></div>
 <h3>Returns</h3>
-<div class="subelement response"><code>int</code></div>
+<div class="subelement response"><code>integer</code></div>
 </div></div>
 </div>
 </div>
@@ -623,9 +629,8 @@ would return a timestamp representing January 1st 1984, at 12:00am.</h2>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.5.0
-</a> and<br>
-            generated on 2014-07-18T16:28:57-04:00.<br></footer></div>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.7.0</a> and<br>
+            generated on 2014-08-22T07:06:32-04:00.<br></footer></div>
 </div>
 </body>
 </html>

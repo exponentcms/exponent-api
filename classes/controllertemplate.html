@@ -19,12 +19,10 @@
 <li class="dropdown">
 <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a>Namespaces</a></li>
-<li><a href="../namespaces/.html"><i class="icon-th"></i> </a></li>
-<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
 <li><a>Packages</a></li>
 <li><a href="../packages/Connectors.html"><i class="icon-folder-open"></i> Connectors</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 <li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
 <li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
 <li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
@@ -32,7 +30,6 @@
 <li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
 <li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
 <li><a href="../packages/elFinder.html"><i class="icon-folder-open"></i> elFinder</a></li>
-<li><a href="../packages/global.html"><i class="icon-folder-open"></i> global</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -43,7 +40,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">5328</span></a></li>
+                <span class="label label-info">6529</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -61,7 +58,7 @@
                         </div></noscript>
 <div class="row">
 <div class="span4">
-<div class="btn-toolbar">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
 <div class="btn-group visibility" data-toggle="buttons-checkbox">
 <button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button>
 </div>
@@ -69,19 +66,19 @@
 <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
 </div>
 </div>
-<ul class="side-nav nav nav-list">
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list">
 <li class="nav-header">
 <i title="Methods" class="icon-custom icon-method"></i> Methods
                     <ul>
 <li class="method public "><a href="#method___construct" title="__construct() :: "><span class="description">__construct()
         </span><pre>__construct()</pre></a></li>
-<li class="method public "><a href="#method___construct" title="__construct() :: "><span class="description">__construct()
+<li class="method public inherited"><a href="#method___construct" title="__construct() :: "><span class="description">__construct()
         </span><pre>__construct()</pre></a></li>
-<li class="method public "><a href="#method_assign" title="assign() :: Assign a variable to the template."><span class="description">Assign a variable to the template.</span><pre>assign()</pre></a></li>
-<li class="method public "><a href="#method_output" title="output() :: Render the template and echo it to the screen."><span class="description">Render the template and echo it to the screen.</span><pre>output()</pre></a></li>
-<li class="method public "><a href="#method_register_permissions" title="register_permissions() :: "><span class="description">register_permissions()
+<li class="method public inherited"><a href="#method_assign" title="assign() :: Assign a variable to the template."><span class="description">Assign a variable to the template.</span><pre>assign()</pre></a></li>
+<li class="method public inherited"><a href="#method_output" title="output() :: Render the template and echo it to the screen."><span class="description">Render the template and echo it to the screen.</span><pre>output()</pre></a></li>
+<li class="method public inherited"><a href="#method_register_permissions" title="register_permissions() :: "><span class="description">register_permissions()
         </span><pre>register_permissions()</pre></a></li>
-<li class="method public "><a href="#method_render" title="render() :: Render the template and return the result to the caller."><span class="description">Render the template and return the result to the caller.</span><pre>render()</pre></a></li>
+<li class="method public inherited"><a href="#method_render" title="render() :: Render the template and return the result to the caller."><span class="description">Render the template and return the result to the caller.</span><pre>render()</pre></a></li>
 </ul>
 </li>
 <li class="nav-header">
@@ -97,16 +94,15 @@
 </ul>
 </div>
 <div class="span8">
-<a id="\controllertemplate"></a><ul class="breadcrumb">
+<a xmlns:php="http://php.net/xsl" id="\controllertemplate"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
 <li>
 <a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
-<li><a href="../namespaces/.html"></a></li>
 <li class="active">
 <span class="divider">\</span><a href="../classes/controllertemplate.html">controllertemplate</a>
 </li>
 </ul>
-<div class="element class">
+<div xmlns:php="http://php.net/xsl" class="element class">
 <p class="short_description">Controller Template Wrapper</p>
 <div class="details">
 <div class="long_description"></div>
@@ -119,26 +115,34 @@
 <th>subpackage</th>
 <td>Template</td>
 </tr>
+<tr>
+<th>inherited_from</th>
+<td>\basetemplate</td>
+</tr>
 </table>
 <h3>
 <i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
-<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<a id="method___construct"></a><div class="element clickable method public method___construct " data-toggle="collapse" data-target=".method___construct .collapse" title="public">
 <h2>__construct()
         </h2>
 <pre>__construct($controller, $viewfile) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\basetemplate::__construct()</td>
+</tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$controller</h4></div>
 <div class="subelement argument"><h4>$viewfile</h4></div>
 </div></div>
 </div>
-<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<a id="method___construct"></a><div class="element clickable method public method___construct inherited" data-toggle="collapse" data-target=".method___construct .collapse" title="public">
 <h2>__construct()
         </h2>
 <pre>__construct($item_type, $item_dir, $view<code> = "Default"</code>) </pre>
-<div class="labels"></div>
+<div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
@@ -147,10 +151,10 @@
 <div class="subelement argument"><h4>$view</h4></div>
 </div></div>
 </div>
-<a id="method_assign"></a><div class="element clickable method public method_assign" data-toggle="collapse" data-target=".method_assign .collapse" title="public">
+<a id="method_assign"></a><div class="element clickable method public method_assign inherited" data-toggle="collapse" data-target=".method_assign .collapse" title="public">
 <h2>Assign a variable to the template.</h2>
 <pre>assign(string $var, mixed $val) </pre>
-<div class="labels"></div>
+<div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
@@ -162,17 +166,17 @@
 <code>mixed</code><p>The value of the variable.</p></div>
 </div></div>
 </div>
-<a id="method_output"></a><div class="element clickable method public method_output" data-toggle="collapse" data-target=".method_output .collapse" title="public">
+<a id="method_output"></a><div class="element clickable method public method_output inherited" data-toggle="collapse" data-target=".method_output .collapse" title="public">
 <h2>Render the template and echo it to the screen.</h2>
 <pre>output() </pre>
-<div class="labels"></div>
+<div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_register_permissions"></a><div class="element clickable method public method_register_permissions" data-toggle="collapse" data-target=".method_register_permissions .collapse" title="public">
+<a id="method_register_permissions"></a><div class="element clickable method public method_register_permissions inherited" data-toggle="collapse" data-target=".method_register_permissions .collapse" title="public">
 <h2>register_permissions()
         </h2>
 <pre>register_permissions($perms, $locs) </pre>
-<div class="labels"></div>
+<div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
@@ -180,15 +184,15 @@
 <div class="subelement argument"><h4>$locs</h4></div>
 </div></div>
 </div>
-<a id="method_render"></a><div class="element clickable method public method_render" data-toggle="collapse" data-target=".method_render .collapse" title="public">
+<a id="method_render"></a><div class="element clickable method public method_render inherited" data-toggle="collapse" data-target=".method_render .collapse" title="public">
 <h2>Render the template and return the result to the caller.</h2>
-<pre>render() : bool | mixed | string</pre>
-<div class="labels"></div>
+<pre>render() : boolean | mixed | string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Returns</h3>
 <div class="subelement response">
-<code>bool</code><code>mixed</code><code>string</code>
+<code>boolean</code><code>mixed</code><code>string</code>
 </div>
 </div></div>
 </div>
@@ -250,9 +254,8 @@
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.5.0
-</a> and<br>
-            generated on 2014-07-18T16:29:18-04:00.<br></footer></div>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.7.0</a> and<br>
+            generated on 2014-08-22T07:06:18-04:00.<br></footer></div>
 </div>
 </body>
 </html>
