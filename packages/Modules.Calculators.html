@@ -1,165 +1,238 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-<meta charset="utf-8">
-<title>Exponent v2.3.0 » Modules\Calculators</title>
-<meta name="author" content="Mike van Riel">
-<meta name="description" content="">
-<link href="../css/template.css" rel="stylesheet" media="all">
-<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
-<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>     &raquo; \Modules\Calculators
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
 <body>
-<div class="navbar navbar-fixed-top">
-<div class="navbar-inner"><div class="container">
-<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent v2.3.0</a><div class="nav-collapse"><ul class="nav">
-<li class="dropdown">
-<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
-                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a>Packages</a></li>
-<li><a href="../packages/Connectors.html"><i class="icon-folder-open"></i> Connectors</a></li>
-<li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
-<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
-<li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
-<li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
-<li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
-<li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
-<li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
-<li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
-<li><a href="../packages/elFinder.html"><i class="icon-folder-open"></i> elFinder</a></li>
-</ul>
-</li>
-<li class="dropdown" id="charts-menu">
-<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
-                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
-</li>
-<li class="dropdown" id="reports-menu">
-<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
-                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">6529</span></a></li>
-<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
-                <ul></ul></a></li>
-<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">0</span></a></li>
-</ul>
-</li>
-</ul></div>
-</div></div>
-<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
-</div>
-<div id="___" class="container">
-<noscript><div class="alert alert-warning">
-                            Javascript is disabled; several features are only available
-                            if Javascript is enabled.
-                        </div></noscript>
-<div class="row">
-<div class="span4">
-<div class="btn-group view pull-right" data-toggle="buttons-radio">
-<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
-</div>
-<ul class="side-nav nav nav-list">
-<li class="nav-header">
-<i class="icon-map-marker"></i> Packages</li>
-<li>
-<a href="../packages/Modules.Calculators.html" title="Calculators"><i class="icon-folder-open"></i>Calculators</a><ul class="nav nav-list nav-packages"></ul>
-</li>
-<li class="nav-header">
-<i title="Classes" class="icon-custom icon-class"></i> Classes</li>
-<li><a href="#creditcard" title="This is the class expRecord">creditcard</a></li>
-<li><a href="#payflowpro" title="This is the class expRecord">payflowpro</a></li>
-<li><a href="#paypalExpressCheckout" title="This is the class expRecord">paypalExpressCheckout</a></li>
-<li><a href="#splitcreditcard" title="This is the class expRecord">splitcreditcard</a></li>
-<li><a href="#worldpayCheckout" title="This is the class expRecord">worldpayCheckout</a></li>
-<li><a href="#flatratecalculator" title="This is the class expRecord">flatratecalculator</a></li>
-<li><a href="#freeshippingcalculator" title="This is the class expRecord">freeshippingcalculator</a></li>
-<li><a href="#instorepickupcalculator" title="This is the class expRecord">instorepickupcalculator</a></li>
-<li><a href="#tablebasedcalculator" title="This is the class expRecord">tablebasedcalculator</a></li>
-</ul>
-</div>
-<div class="span8 package-contents">
-<ul class="breadcrumb"><li>
-<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/Modules.html">Modules</a></li>
-<li class="active">
-<span class="divider">\</span><a href="../packages/Modules.Calculators.html">Calculators</a>
-</li>
-</li></ul>
-<div class="package-indent">
-<h3>
-<i title="Classes" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
-<div xmlns:php="http://php.net/xsl" id="creditcard" class="element ajax clickable class">
-<h1>creditcard<a href="../classes/creditcard.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/creditcard.html" class="more">« More »</a>
-</div>
-<div xmlns:php="http://php.net/xsl" id="flatratecalculator" class="element ajax clickable class">
-<h1>flatratecalculator<a href="../classes/flatratecalculator.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/flatratecalculator.html" class="more">« More »</a>
-</div>
-<div xmlns:php="http://php.net/xsl" id="freeshippingcalculator" class="element ajax clickable class">
-<h1>freeshippingcalculator<a href="../classes/freeshippingcalculator.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/freeshippingcalculator.html" class="more">« More »</a>
-</div>
-<div xmlns:php="http://php.net/xsl" id="instorepickupcalculator" class="element ajax clickable class">
-<h1>instorepickupcalculator<a href="../classes/instorepickupcalculator.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/instorepickupcalculator.html" class="more">« More »</a>
-</div>
-<div xmlns:php="http://php.net/xsl" id="payflowpro" class="element ajax clickable class">
-<h1>payflowpro<a href="../classes/payflowpro.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/payflowpro.html" class="more">« More »</a>
-</div>
-<div xmlns:php="http://php.net/xsl" id="paypalExpressCheckout" class="element ajax clickable class">
-<h1>paypalExpressCheckout<a href="../classes/paypalExpressCheckout.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/paypalExpressCheckout.html" class="more">« More »</a>
-</div>
-<div xmlns:php="http://php.net/xsl" id="splitcreditcard" class="element ajax clickable class">
-<h1>splitcreditcard<a href="../classes/splitcreditcard.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/splitcreditcard.html" class="more">« More »</a>
-</div>
-<div xmlns:php="http://php.net/xsl" id="tablebasedcalculator" class="element ajax clickable class">
-<h1>tablebasedcalculator<a href="../classes/tablebasedcalculator.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/tablebasedcalculator.html" class="more">« More »</a>
-</div>
-<div xmlns:php="http://php.net/xsl" id="worldpayCheckout" class="element ajax clickable class">
-<h1>worldpayCheckout<a href="../classes/worldpayCheckout.html">¶</a>
-</h1>
-<p class="short_description">This is the class expRecord</p>
-<div class="details collapse"></div>
-<a href="../classes/worldpayCheckout.html" class="more">« More »</a>
-</div>
-</div>
-</div>
-</div>
-<div class="row"><footer class="span12">
-            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.7.0</a> and<br>
-            generated on 2014-08-22T07:06:15-04:00.<br></footer></div>
-</div>
-</body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">Exponent v2.3.2</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                                            </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            
+    <div class="row">
+
+        <div class="span4">
+            <div class="btn-group view pull-right" data-toggle="buttons-radio">
+                <button class="btn details" title="Show descriptions and method names">
+                    <i class="icon-list"></i></button><button class="btn simple" title="Show only method names">
+                    <i class="icon-align-justify"></i>
+                </button>
+            </div>
+            <ul class="side-nav nav nav-list">
+                <li class="nav-header">
+                    <i class="icon-map-marker"></i> Packages
+                </li>
+                <a href="../packages/Modules.Calculators.html" title="Calculators">
+                    <i class="icon-th"></i> Calculators
+                </a>
+                <ul class="nav nav-list nav-packages">
+                        
+    
+                </ul>
+            </ul>
+        </div>
+
+        <div class="span8 package-contents">
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Modules.html">Modules</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/Modules.Calculators.html">Calculators</a>
+    </li>
+
+    </ul>
+
+    
+        
+        
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-class"></i> Classes, interfaces and traits</h3>
+                
+                
+                                        <div id="creditcard" class="element ajax clickable class">
+        <h1>creditcard<a href="../classes/creditcard.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/creditcard.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="flatratecalculator" class="element ajax clickable class">
+        <h1>flatratecalculator<a href="../classes/flatratecalculator.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/flatratecalculator.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="freeshippingcalculator" class="element ajax clickable class">
+        <h1>freeshippingcalculator<a href="../classes/freeshippingcalculator.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/freeshippingcalculator.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="instorepickupcalculator" class="element ajax clickable class">
+        <h1>instorepickupcalculator<a href="../classes/instorepickupcalculator.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/instorepickupcalculator.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="payflowpro" class="element ajax clickable class">
+        <h1>payflowpro<a href="../classes/payflowpro.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/payflowpro.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="paypalExpressCheckout" class="element ajax clickable class">
+        <h1>paypalExpressCheckout<a href="../classes/paypalExpressCheckout.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/paypalExpressCheckout.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="peritemcalculator" class="element ajax clickable class">
+        <h1>peritemcalculator<a href="../classes/peritemcalculator.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/peritemcalculator.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="perweightcalculator" class="element ajax clickable class">
+        <h1>perweightcalculator<a href="../classes/perweightcalculator.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/perweightcalculator.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="splitcreditcard" class="element ajax clickable class">
+        <h1>splitcreditcard<a href="../classes/splitcreditcard.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/splitcreditcard.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="tablebasedcalculator" class="element ajax clickable class">
+        <h1>tablebasedcalculator<a href="../classes/tablebasedcalculator.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/tablebasedcalculator.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="worldpayCheckout" class="element ajax clickable class">
+        <h1>worldpayCheckout<a href="../classes/worldpayCheckout.html">¶</a></h1>
+        <p class="short_description">This is the class expRecord</p>
+        <div class="details collapse"></div>
+        <a href="../classes/worldpayCheckout.html" class="more">« More »</a>
+    </div>
+
+                            </div>
+            
+    
+        </div>
+    </div>
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Sat, 08 Nov 2014 15:58:20 +0000.<br/>
+    </footer>
+    </body>
 </html>

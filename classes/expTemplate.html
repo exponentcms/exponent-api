@@ -1,474 +1,1143 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-<meta charset="utf-8">
-<title>Exponent v2.3.0 » \expTemplate</title>
-<meta name="author" content="Mike van Riel">
-<meta name="description" content="">
-<link href="../css/template.css" rel="stylesheet" media="all">
-<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
-<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    Exponent v2.3.2 &raquo; \expTemplate
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
 <body>
-<div class="navbar navbar-fixed-top">
-<div class="navbar-inner"><div class="container">
-<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent v2.3.0</a><div class="nav-collapse"><ul class="nav">
-<li class="dropdown">
-<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
-                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a>Packages</a></li>
-<li><a href="../packages/Connectors.html"><i class="icon-folder-open"></i> Connectors</a></li>
-<li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
-<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
-<li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
-<li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
-<li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
-<li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
-<li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
-<li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
-<li><a href="../packages/elFinder.html"><i class="icon-folder-open"></i> elFinder</a></li>
-</ul>
-</li>
-<li class="dropdown" id="charts-menu">
-<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
-                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
-</li>
-<li class="dropdown" id="reports-menu">
-<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
-                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">6529</span></a></li>
-<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
-                <ul></ul></a></li>
-<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">0</span></a></li>
-</ul>
-</li>
-</ul></div>
-</div></div>
-<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
-</div>
-<div id="___" class="container">
-<noscript><div class="alert alert-warning">
-                            Javascript is disabled; several features are only available
-                            if Javascript is enabled.
-                        </div></noscript>
-<div class="row">
-<div class="span4">
-<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
-<div class="btn-group visibility" data-toggle="buttons-checkbox">
-<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button>
-</div>
-<div class="btn-group view pull-right" data-toggle="buttons-radio">
-<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
-</div>
-</div>
-<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list"><li class="nav-header">
-<i title="Methods" class="icon-custom icon-method"></i> Methods
-                    <ul>
-<li class="method public "><a href="#method_buildNameList" title="buildNameList() :: exdoc
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">Exponent v2.3.2</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                                            </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public">
+        <a href="#method_buildNameList" title="buildNameList :: exdoc
 This function is a wrapper around self::resolveFilePaths()
-and returns a list of the basenames, minus the file extensions - if any"><span class="description">exdoc
+and returns a list of the basenames, minus the file extensions - if any">
+            <span class="description">exdoc
 This function is a wrapper around self::resolveFilePaths()
-and returns a list of the basenames, minus the file extensions - if any</span><pre>buildNameList()</pre></a></li>
-<li class="method public "><a href="#method_find_config_views" title="find_config_views() :: Return list of controller configuration views"><span class="description">Return list of controller configuration views</span><pre>find_config_views()</pre></a></li>
-<li class="method public "><a href="#method_find_template" title="find_template() :: Return the best match template file for the framework, including custom views
- If we receive a pathname, we'll only look there, otherwise we'll run the 'framework' flow
- allowing for custom/theme views"><span class="description">Return the best match template file for the framework, including custom views
- If we receive a pathname, we'll only look there, otherwise we'll run the 'framework' flow
- allowing for custom/theme views</span><pre>find_template()</pre></a></li>
-<li class="method public "><a href="#method_getFormTemplates" title="getFormTemplates() :: "><span class="description">getFormTemplates()
-        </span><pre>getFormTemplates()</pre></a></li>
-<li class="method public "><a href="#method_getModuleViewFile" title="getModuleViewFile() :: "><span class="description">getModuleViewFile()
-        </span><pre>getModuleViewFile()</pre></a></li>
-<li class="method public "><a href="#method_getViewConfigForm" title="getViewConfigForm() :: "><span class="description">getViewConfigForm()
-        </span><pre>getViewConfigForm()</pre></a></li>
-<li class="method public "><a href="#method_getViewConfigOptions" title="getViewConfigOptions() :: "><span class="description">getViewConfigOptions()
-        </span><pre>getViewConfigOptions()</pre></a></li>
-<li class="method public "><a href="#method_getViewFile" title="getViewFile() :: Retrieve Module-Independent View File"><span class="description">Retrieve Module-Independent View File</span><pre>getViewFile()</pre></a></li>
-<li class="method public "><a href="#method_getViewParams" title="getViewParams() :: "><span class="description">getViewParams()
-        </span><pre>getViewParams()</pre></a></li>
-<li class="method public "><a href="#method_get_action_views" title="get_action_views() :: Return list of controller display views available"><span class="description">Return list of controller display views available</span><pre>get_action_views()</pre></a></li>
-<li class="method public "><a href="#method_get_common_template" title="get_common_template() :: "><span class="description">get_common_template()
-        </span><pre>get_common_template()</pre></a></li>
-<li class="method public "><a href="#method_get_config_template" title="get_config_template() :: Returns configuration template for view"><span class="description">Returns configuration template for view</span><pre>get_config_template()</pre></a></li>
-<li class="method public "><a href="#method_get_config_templates" title="get_config_templates() :: Return entire list of all controller configuration views available"><span class="description">Return entire list of all controller configuration views available</span><pre>get_config_templates()</pre></a></li>
-<li class="method public "><a href="#method_get_filedisplay_views" title="get_filedisplay_views() :: Return list of attached file display views available"><span class="description">Return list of attached file display views available</span><pre>get_filedisplay_views()</pre></a></li>
-<li class="method public "><a href="#method_get_template_for_action" title="get_template_for_action() :: "><span class="description">get_template_for_action()
-        </span><pre>get_template_for_action()</pre></a></li>
-<li class="method public "><a href="#method_glob2keyedArray" title="glob2keyedArray() :: helper function for building assoc array of pathnames"><span class="description">helper function for building assoc array of pathnames</span><pre>glob2keyedArray()</pre></a></li>
-<li class="method public "><a href="#method_guessControlType" title="guessControlType() :: "><span class="description">guessControlType()
-        </span><pre>guessControlType()</pre></a></li>
-<li class="method public "><a href="#method_listControlTypes" title="listControlTypes() :: "><span class="description">listControlTypes()
-        </span><pre>listControlTypes()</pre></a></li>
-<li class="method public "><a href="#method_listModuleViews" title="listModuleViews() :: "><span class="description">listModuleViews()
-        </span><pre>listModuleViews()</pre></a></li>
-<li class="method public "><a href="#method_listSimilarControlTypes" title="listSimilarControlTypes() :: "><span class="description">listSimilarControlTypes()
-        </span><pre>listSimilarControlTypes()</pre></a></li>
-<li class="method public "><a href="#method_resolveFilePaths" title="resolveFilePaths() :: exdoc
+and returns a list of the basenames, minus the file extensions - if any</span><pre>buildNameList</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_find_config_views" title="find_config_views :: Return list of controller configuration views">
+            <span class="description">Return list of controller configuration views</span><pre>find_config_views</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_find_template" title="find_template :: Return the best match template file for the framework, including custom views
+ If we receive a pathname, we&#039;ll only look there, otherwise we&#039;ll run the &#039;framework&#039; flow
+ allowing for custom/theme views">
+            <span class="description">Return the best match template file for the framework, including custom views
+ If we receive a pathname, we&#039;ll only look there, otherwise we&#039;ll run the &#039;framework&#039; flow
+ allowing for custom/theme views</span><pre>find_template</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_get_action_views" title="get_action_views :: Return list of controller display views available">
+            <span class="description">Return list of controller display views available</span><pre>get_action_views</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_get_common_template" title="get_common_template :: ">
+            <span class="description"></span><pre>get_common_template</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_get_config_templates" title="get_config_templates :: Return entire list of all controller configuration views available">
+            <span class="description">Return entire list of all controller configuration views available</span><pre>get_config_templates</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_get_filedisplay_views" title="get_filedisplay_views :: Return list of attached file display views available">
+            <span class="description">Return list of attached file display views available</span><pre>get_filedisplay_views</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_get_template_for_action" title="get_template_for_action :: ">
+            <span class="description"></span><pre>get_template_for_action</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getFormTemplates" title="getFormTemplates :: ">
+            <span class="description"></span><pre>getFormTemplates</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getModuleViewFile" title="getModuleViewFile :: ">
+            <span class="description"></span><pre>getModuleViewFile</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getViewConfigForm" title="getViewConfigForm :: ">
+            <span class="description"></span><pre>getViewConfigForm</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getViewConfigOptions" title="getViewConfigOptions :: ">
+            <span class="description"></span><pre>getViewConfigOptions</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getViewFile" title="getViewFile :: Retrieve Module-Independent View File">
+            <span class="description">Retrieve Module-Independent View File</span><pre>getViewFile</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getViewParams" title="getViewParams :: ">
+            <span class="description"></span><pre>getViewParams</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_glob2keyedArray" title="glob2keyedArray :: helper function for building assoc array of pathnames">
+            <span class="description">helper function for building assoc array of pathnames</span><pre>glob2keyedArray</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_guessControlType" title="guessControlType :: ">
+            <span class="description"></span><pre>guessControlType</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_listControlTypes" title="listControlTypes :: ">
+            <span class="description"></span><pre>listControlTypes</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_listModuleViews" title="listModuleViews :: ">
+            <span class="description"></span><pre>listModuleViews</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_listSimilarControlTypes" title="listSimilarControlTypes :: ">
+            <span class="description"></span><pre>listSimilarControlTypes</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_resolveFilePaths" title="resolveFilePaths :: exdoc
 This function finds the most appropriate version of a file
  - if given wildcards, files -
-and returns an array with the file's physical location's full path or,
-if no file was found, false"><span class="description">exdoc
+and returns an array with the file&#039;s physical location&#039;s full path or,
+if no file was found, false">
+            <span class="description">exdoc
 This function finds the most appropriate version of a file
  - if given wildcards, files -
-and returns an array with the file's physical location's full path or,
-if no file was found, false</span><pre>resolveFilePaths()</pre></a></li>
-</ul>
-</li></ul>
-</div>
-<div class="span8">
-<a xmlns:php="http://php.net/xsl" id="\expTemplate"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
-<li>
-<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
-</li>
-<li class="active">
-<span class="divider">\</span><a href="../classes/expTemplate.html">expTemplate</a>
-</li>
-</ul>
-<div xmlns:php="http://php.net/xsl" class="element class">
-<p class="short_description"></p>
-<div class="details">
-<div class="long_description"></div>
-<table class="table table-bordered">
-<tr>
-<th>define</th>
-<td>"BASE" "../../.."</td>
-</tr>
-<tr>
-<th>package</th>
-<td><a href="../packages/Subsystems.html">Subsystems</a></td>
-</tr>
-<tr>
-<th>package</th>
-<td><a href="../packages/Subsystems.html">Subsystems</a></td>
-</tr>
-</table>
-<h3>
-<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
-<a id="method_buildNameList"></a><div class="element clickable method public method_buildNameList " data-toggle="collapse" data-target=".method_buildNameList .collapse" title="public">
-<h2>exdoc
+and returns an array with the file&#039;s physical location&#039;s full path or,
+if no file was found, false</span><pre>resolveFilePaths</pre>
+        </a>
+    </li>
+
+                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>expTemplate</h1>
+                <small style="display: block; text-align: right">
+                                                        </small>
+                <p class="short_description"></p>
+                <div class="details">
+                    <div class="long_description">
+                        
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        define
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>"BASE" "../../.."</p>
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Subsystems</p>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Subsystems</p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method_buildNameList"></a>
+                        <div class="element clickable method public  method_buildNameList" data-toggle="collapse" data-target=".method_buildNameList .collapse">
+                            <h2>exdoc
 This function is a wrapper around self::resolveFilePaths()
 and returns a list of the basenames, minus the file extensions - if any</h2>
-<pre>buildNameList(string $type, string $name, string $subtype, string $subname) : array</pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>node</th>
-<td>Subsystems:expTemplate</td>
-</tr></table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$type</h4>
-<code>string</code><p>(to be superseded) type of base resource (= directory name)</p></div>
-<div class="subelement argument">
-<h4>$name</h4>
-<code>string</code><p>(hopefully in the future type named) Resource identifier (= class name = directory name)</p></div>
-<div class="subelement argument">
-<h4>$subtype</h4>
-<code>string</code><p>type of the actual file (= file extension = (future) directory name)</p></div>
-<div class="subelement argument">
-<h4>$subname</h4>
-<code>string</code><p>name of the actual file (= filename name without extension)</p></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>array</code></div>
-</div></div>
-</div>
-<a id="method_find_config_views"></a><div class="element clickable method public method_find_config_views " data-toggle="collapse" data-target=".method_find_config_views .collapse" title="public">
-<h2>Return list of controller configuration views</h2>
-<pre>find_config_views(array $paths<code> = array()</code>, array $excludes<code> = array()</code>) : array</pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$paths</h4>
-<code>array</code>
-</div>
-<div class="subelement argument">
-<h4>$excludes</h4>
-<code>array</code>
-</div>
-<h3>Returns</h3>
-<div class="subelement response"><code>array</code></div>
-</div></div>
-</div>
-<a id="method_find_template"></a><div class="element clickable method public method_find_template " data-toggle="collapse" data-target=".method_find_template .collapse" title="public">
-<h2>Return the best match template file for the framework, including custom views
- If we receive a pathname, we'll only look there, otherwise we'll run the 'framework' flow
+                            <pre>buildNameList(string $type, string $name, string $subtype, string $subname) : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    node
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Subsystems:expTemplate</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$type</h4>
+                                                <code>string</code><p><p>(to be superseded) type of base resource (= directory name)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>string</code><p><p>(hopefully in the future type named) Resource identifier (= class name = directory name)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$subtype</h4>
+                                                <code>string</code><p><p>type of the actual file (= file extension = (future) directory name)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$subname</h4>
+                                                <code>string</code><p><p>name of the actual file (= filename name without extension)</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_find_config_views"></a>
+                        <div class="element clickable method public  method_find_config_views" data-toggle="collapse" data-target=".method_find_config_views .collapse">
+                            <h2>Return list of controller configuration views</h2>
+                            <pre>find_config_views(array $paths = array(), array $excludes = array()) : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$paths</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$excludes</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_find_template"></a>
+                        <div class="element clickable method public  method_find_template" data-toggle="collapse" data-target=".method_find_template .collapse">
+                            <h2>Return the best match template file for the framework, including custom views
+ If we receive a pathname, we&#039;ll only look there, otherwise we&#039;ll run the &#039;framework&#039; flow
  allowing for custom/theme views</h2>
-<pre>find_template($ctl, $view) : mixed | string</pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$ctl</h4></div>
-<div class="subelement argument"><h4>$view</h4></div>
-<h3>Returns</h3>
-<div class="subelement response">
-<code>mixed</code><code>string</code>
-</div>
-</div></div>
-</div>
-<a id="method_getFormTemplates"></a><div class="element clickable method public method_getFormTemplates " data-toggle="collapse" data-target=".method_getFormTemplates .collapse" title="public">
-<h2>getFormTemplates()
-        </h2>
-<pre>getFormTemplates($type) </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$type</h4></div>
-</div></div>
-</div>
-<a id="method_getModuleViewFile"></a><div class="element clickable method public method_getModuleViewFile " data-toggle="collapse" data-target=".method_getModuleViewFile .collapse" title="public">
-<h2>getModuleViewFile()
-        </h2>
-<pre>getModuleViewFile($name, $view, $recurse<code> = true</code>) </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$name</h4></div>
-<div class="subelement argument"><h4>$view</h4></div>
-<div class="subelement argument"><h4>$recurse</h4></div>
-</div></div>
-</div>
-<a id="method_getViewConfigForm"></a><div class="element clickable method public method_getViewConfigForm " data-toggle="collapse" data-target=".method_getViewConfigForm .collapse" title="public">
-<h2>getViewConfigForm()
-        </h2>
-<pre>getViewConfigForm($module, $view, $form, $values) </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$module</h4></div>
-<div class="subelement argument"><h4>$view</h4></div>
-<div class="subelement argument"><h4>$form</h4></div>
-<div class="subelement argument"><h4>$values</h4></div>
-</div></div>
-</div>
-<a id="method_getViewConfigOptions"></a><div class="element clickable method public method_getViewConfigOptions " data-toggle="collapse" data-target=".method_getViewConfigOptions .collapse" title="public">
-<h2>getViewConfigOptions()
-        </h2>
-<pre>getViewConfigOptions($module, $view) </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$module</h4></div>
-<div class="subelement argument"><h4>$view</h4></div>
-</div></div>
-</div>
-<a id="method_getViewFile"></a><div class="element clickable method public method_getViewFile " data-toggle="collapse" data-target=".method_getViewFile .collapse" title="public">
-<h2>Retrieve Module-Independent View File</h2>
-<pre>getViewFile(string $type<code> = ""</code>, string $name<code> = ""</code>, string $view<code> = "Default"</code>) : string</pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>Looks in the theme and the /views directory for a .tpl file
+                            <pre>find_template( $ctl,  $view) : mixed|string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$ctl</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$view</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed|string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_get_action_views"></a>
+                        <div class="element clickable method public  method_get_action_views" data-toggle="collapse" data-target=".method_get_action_views .collapse">
+                            <h2>Return list of controller display views available</h2>
+                            <pre>get_action_views( $ctl,  $action,  $human_readable) : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$ctl</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$action</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$human_readable</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_get_common_template"></a>
+                        <div class="element clickable method public  method_get_common_template" data-toggle="collapse" data-target=".method_get_common_template .collapse">
+                            <h2>get_common_template</h2>
+                            <pre>get_common_template( $view,  $loc,  $controllername = &#039;&#039;) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$view</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$loc</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$controllername</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_get_config_templates"></a>
+                        <div class="element clickable method public  method_get_config_templates" data-toggle="collapse" data-target=".method_get_config_templates .collapse">
+                            <h2>Return entire list of all controller configuration views available</h2>
+                            <pre>get_config_templates( $controller,  $loc) : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$controller</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$loc</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_get_filedisplay_views"></a>
+                        <div class="element clickable method public  method_get_filedisplay_views" data-toggle="collapse" data-target=".method_get_filedisplay_views .collapse">
+                            <h2>Return list of attached file display views available</h2>
+                            <pre>get_filedisplay_views() : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_get_template_for_action"></a>
+                        <div class="element clickable method public  method_get_template_for_action" data-toggle="collapse" data-target=".method_get_template_for_action .collapse">
+                            <h2>get_template_for_action</h2>
+                            <pre>get_template_for_action( $controller,  $action,  $loc = null) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$controller</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$action</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$loc</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getFormTemplates"></a>
+                        <div class="element clickable method public  method_getFormTemplates" data-toggle="collapse" data-target=".method_getFormTemplates .collapse">
+                            <h2>getFormTemplates</h2>
+                            <pre>getFormTemplates( $type) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$type</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getModuleViewFile"></a>
+                        <div class="element clickable method public  method_getModuleViewFile" data-toggle="collapse" data-target=".method_getModuleViewFile .collapse">
+                            <h2>getModuleViewFile</h2>
+                            <pre>getModuleViewFile( $name,  $view,  $recurse = true) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$view</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$recurse</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getViewConfigForm"></a>
+                        <div class="element clickable method public  method_getViewConfigForm" data-toggle="collapse" data-target=".method_getViewConfigForm .collapse">
+                            <h2>getViewConfigForm</h2>
+                            <pre>getViewConfigForm( $module,  $view,  $form,  $values) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$module</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$view</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$form</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$values</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getViewConfigOptions"></a>
+                        <div class="element clickable method public  method_getViewConfigOptions" data-toggle="collapse" data-target=".method_getViewConfigOptions .collapse">
+                            <h2>getViewConfigOptions</h2>
+                            <pre>getViewConfigOptions( $module,  $view) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$module</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$view</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getViewFile"></a>
+                        <div class="element clickable method public  method_getViewFile" data-toggle="collapse" data-target=".method_getViewFile .collapse">
+                            <h2>Retrieve Module-Independent View File</h2>
+                            <pre>getViewFile(string $type = &quot;&quot;, string $name = &quot;&quot;, string $view = &quot;Default&quot;) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Looks in the theme and the /views directory for a .tpl file
 corresponding to the passed view.</p></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$type</h4>
-<code>string</code><p>One of "modules"", "controls"", "forms" or ""</p></div>
-<div class="subelement argument">
-<h4>$name</h4>
-<code>string</code><p>The name the object we are requesting a view from</p></div>
-<div class="subelement argument">
-<h4>$view</h4>
-<code>string</code><p>The name of the requested view</p></div>
-<h3>Returns</h3>
-<div class="subelement response">
-<code>string</code>The full filepath of the view template</div>
-</div></div>
-</div>
-<a id="method_getViewParams"></a><div class="element clickable method public method_getViewParams " data-toggle="collapse" data-target=".method_getViewParams .collapse" title="public">
-<h2>getViewParams()
-        </h2>
-<pre>getViewParams($viewfile) </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$viewfile</h4></div>
-</div></div>
-</div>
-<a id="method_get_action_views"></a><div class="element clickable method public method_get_action_views " data-toggle="collapse" data-target=".method_get_action_views .collapse" title="public">
-<h2>Return list of controller display views available</h2>
-<pre>get_action_views($ctl, $action, $human_readable) : array</pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$ctl</h4></div>
-<div class="subelement argument"><h4>$action</h4></div>
-<div class="subelement argument"><h4>$human_readable</h4></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>array</code></div>
-</div></div>
-</div>
-<a id="method_get_common_template"></a><div class="element clickable method public method_get_common_template " data-toggle="collapse" data-target=".method_get_common_template .collapse" title="public">
-<h2>get_common_template()
-        </h2>
-<pre>get_common_template($view, $loc, $controllername<code> = ''</code>) </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$view</h4></div>
-<div class="subelement argument"><h4>$loc</h4></div>
-<div class="subelement argument"><h4>$controllername</h4></div>
-</div></div>
-</div>
-<a id="method_get_config_template"></a><div class="element clickable method public method_get_config_template " data-toggle="collapse" data-target=".method_get_config_template .collapse" title="public">
-<h2>Returns configuration template for view</h2>
-<pre>get_config_template($caller) : array</pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$caller</h4></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>array</code></div>
-</div></div>
-</div>
-<a id="method_get_config_templates"></a><div class="element clickable method public method_get_config_templates " data-toggle="collapse" data-target=".method_get_config_templates .collapse" title="public">
-<h2>Return entire list of all controller configuration views available</h2>
-<pre>get_config_templates($controller, $loc) : array</pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$controller</h4></div>
-<div class="subelement argument"><h4>$loc</h4></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>array</code></div>
-</div></div>
-</div>
-<a id="method_get_filedisplay_views"></a><div class="element clickable method public method_get_filedisplay_views " data-toggle="collapse" data-target=".method_get_filedisplay_views .collapse" title="public">
-<h2>Return list of attached file display views available</h2>
-<pre>get_filedisplay_views() : array</pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>array</code></div>
-</div></div>
-</div>
-<a id="method_get_template_for_action"></a><div class="element clickable method public method_get_template_for_action " data-toggle="collapse" data-target=".method_get_template_for_action .collapse" title="public">
-<h2>get_template_for_action()
-        </h2>
-<pre>get_template_for_action($controller, $action, $loc<code> = null</code>) </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$controller</h4></div>
-<div class="subelement argument"><h4>$action</h4></div>
-<div class="subelement argument"><h4>$loc</h4></div>
-</div></div>
-</div>
-<a id="method_glob2keyedArray"></a><div class="element clickable method public method_glob2keyedArray " data-toggle="collapse" data-target=".method_glob2keyedArray .collapse" title="public">
-<h2>helper function for building assoc array of pathnames</h2>
-<pre>glob2keyedArray($workArray) : array</pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$workArray</h4></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>array</code></div>
-</div></div>
-</div>
-<a id="method_guessControlType"></a><div class="element clickable method public method_guessControlType " data-toggle="collapse" data-target=".method_guessControlType .collapse" title="public">
-<h2>guessControlType()
-        </h2>
-<pre>guessControlType($ddcol, $default_value<code> = null</code>, $colname<code> = null</code>) </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$ddcol</h4></div>
-<div class="subelement argument"><h4>$default_value</h4></div>
-<div class="subelement argument"><h4>$colname</h4></div>
-</div></div>
-</div>
-<a id="method_listControlTypes"></a><div class="element clickable method public method_listControlTypes " data-toggle="collapse" data-target=".method_listControlTypes .collapse" title="public">
-<h2>listControlTypes()
-        </h2>
-<pre>listControlTypes($include_static<code> = true</code>) </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$include_static</h4></div>
-</div></div>
-</div>
-<a id="method_listModuleViews"></a><div class="element clickable method public method_listModuleViews " data-toggle="collapse" data-target=".method_listModuleViews .collapse" title="public">
-<h2>listModuleViews()
-        </h2>
-<pre>listModuleViews($module) </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$module</h4></div>
-</div></div>
-</div>
-<a id="method_listSimilarControlTypes"></a><div class="element clickable method public method_listSimilarControlTypes " data-toggle="collapse" data-target=".method_listSimilarControlTypes .collapse" title="public">
-<h2>listSimilarControlTypes()
-        </h2>
-<pre>listSimilarControlTypes($type) </pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$type</h4></div>
-</div></div>
-</div>
-<a id="method_resolveFilePaths"></a><div class="element clickable method public method_resolveFilePaths " data-toggle="collapse" data-target=".method_resolveFilePaths .collapse" title="public">
-<h2>exdoc
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$type</h4>
+                                                <code>string</code><p><p>One of "modules"", "controls"", "forms" or ""</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>string</code><p><p>The name the object we are requesting a view from</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$view</h4>
+                                                <code>string</code><p><p>The name of the requested view</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>The full filepath of the view template</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getViewParams"></a>
+                        <div class="element clickable method public  method_getViewParams" data-toggle="collapse" data-target=".method_getViewParams .collapse">
+                            <h2>getViewParams</h2>
+                            <pre>getViewParams( $viewfile) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$viewfile</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_glob2keyedArray"></a>
+                        <div class="element clickable method public  method_glob2keyedArray" data-toggle="collapse" data-target=".method_glob2keyedArray .collapse">
+                            <h2>helper function for building assoc array of pathnames</h2>
+                            <pre>glob2keyedArray( $workArray) : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$workArray</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_guessControlType"></a>
+                        <div class="element clickable method public  method_guessControlType" data-toggle="collapse" data-target=".method_guessControlType .collapse">
+                            <h2>guessControlType</h2>
+                            <pre>guessControlType( $ddcol,  $default_value = null,  $colname = null) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$ddcol</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$default_value</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$colname</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_listControlTypes"></a>
+                        <div class="element clickable method public  method_listControlTypes" data-toggle="collapse" data-target=".method_listControlTypes .collapse">
+                            <h2>listControlTypes</h2>
+                            <pre>listControlTypes( $include_static = true) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$include_static</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_listModuleViews"></a>
+                        <div class="element clickable method public  method_listModuleViews" data-toggle="collapse" data-target=".method_listModuleViews .collapse">
+                            <h2>listModuleViews</h2>
+                            <pre>listModuleViews( $module) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$module</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_listSimilarControlTypes"></a>
+                        <div class="element clickable method public  method_listSimilarControlTypes" data-toggle="collapse" data-target=".method_listSimilarControlTypes .collapse">
+                            <h2>listSimilarControlTypes</h2>
+                            <pre>listSimilarControlTypes( $type) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$type</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_resolveFilePaths"></a>
+                        <div class="element clickable method public  method_resolveFilePaths" data-toggle="collapse" data-target=".method_resolveFilePaths .collapse">
+                            <h2>exdoc
 This function finds the most appropriate version of a file
  - if given wildcards, files -
-and returns an array with the file's physical location's full path or,
+and returns an array with the file&#039;s physical location&#039;s full path or,
 if no file was found, false</h2>
-<pre>resolveFilePaths(string $type, string $name, string $subtype, string $subname) : mixed</pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>node</th>
-<td>Subsystems:expTemplate</td>
-</tr></table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$type</h4>
-<code>string</code><p>(to be superseded) type of base resource (= directory name)</p></div>
-<div class="subelement argument">
-<h4>$name</h4>
-<code>string</code><p>(hopefully in the future type named) Resource identifier (= class name = directory name)</p></div>
-<div class="subelement argument">
-<h4>$subtype</h4>
-<code>string</code><p>type of the actual file (= file extension = (future) directory name)</p></div>
-<div class="subelement argument">
-<h4>$subname</h4>
-<code>string</code><p>name of the actual file (= filename name without extension)</p></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>mixed</code></div>
-</div></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="row"><footer class="span12">
-            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.7.0</a> and<br>
-            generated on 2014-08-22T07:06:34-04:00.<br></footer></div>
-</div>
-</body>
+                            <pre>resolveFilePaths(string $type, string $name, string $subtype, string $subname) : mixed</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    node
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Subsystems:expTemplate</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$type</h4>
+                                                <code>string</code><p><p>(to be superseded) type of base resource (= directory name)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>string</code><p><p>(hopefully in the future type named) Resource identifier (= class name = directory name)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$subtype</h4>
+                                                <code>string</code><p><p>type of the actual file (= file extension = (future) directory name)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$subname</h4>
+                                                <code>string</code><p><p>name of the actual file (= filename name without extension)</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                    
+                    
+                                                        </div>
+            </div>
+            <a id="\expTemplate"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/default.html">\</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/expTemplate.html">expTemplate</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Sat, 08 Nov 2014 15:58:45 +0000.<br/>
+    </footer>
+    </body>
 </html>

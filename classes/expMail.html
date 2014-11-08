@@ -1,851 +1,1394 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-<meta charset="utf-8">
-<title>Exponent v2.3.0 » \expMail</title>
-<meta name="author" content="Mike van Riel">
-<meta name="description" content="">
-<link href="../css/template.css" rel="stylesheet" media="all">
-<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
-<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    Exponent v2.3.2 &raquo; \expMail
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
 <body>
-<div class="navbar navbar-fixed-top">
-<div class="navbar-inner"><div class="container">
-<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Exponent v2.3.0</a><div class="nav-collapse"><ul class="nav">
-<li class="dropdown">
-<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
-                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a>Packages</a></li>
-<li><a href="../packages/Connectors.html"><i class="icon-folder-open"></i> Connectors</a></li>
-<li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
-<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
-<li><a href="../packages/Installation.html"><i class="icon-folder-open"></i> Installation</a></li>
-<li><a href="../packages/Modules.html"><i class="icon-folder-open"></i> Modules</a></li>
-<li><a href="../packages/Smarty.html"><i class="icon-folder-open"></i> Smarty</a></li>
-<li><a href="../packages/Smarty-Plugins.html"><i class="icon-folder-open"></i> Smarty-Plugins</a></li>
-<li><a href="../packages/Subsystems.html"><i class="icon-folder-open"></i> Subsystems</a></li>
-<li><a href="../packages/Subsystems-Forms.html"><i class="icon-folder-open"></i> Subsystems-Forms</a></li>
-<li><a href="../packages/elFinder.html"><i class="icon-folder-open"></i> elFinder</a></li>
-</ul>
-</li>
-<li class="dropdown" id="charts-menu">
-<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
-                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
-</li>
-<li class="dropdown" id="reports-menu">
-<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
-                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">6529</span></a></li>
-<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
-                <ul></ul></a></li>
-<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">0</span></a></li>
-</ul>
-</li>
-</ul></div>
-</div></div>
-<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
-</div>
-<div id="___" class="container">
-<noscript><div class="alert alert-warning">
-                            Javascript is disabled; several features are only available
-                            if Javascript is enabled.
-                        </div></noscript>
-<div class="row">
-<div class="span4">
-<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
-<div class="btn-group visibility" data-toggle="buttons-checkbox">
-<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button>
-</div>
-<div class="btn-group view pull-right" data-toggle="buttons-radio">
-<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
-</div>
-</div>
-<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list">
-<li class="nav-header">
-<i title="Methods" class="icon-custom icon-method"></i> Methods
-                    <ul>
-<li class="method public "><a href="#method___construct" title="__construct() :: __construct() - This function constructs the message to be send in this object, filling it out with connection information based on the site config."><span class="description">__construct() - This function constructs the message to be send in this object, filling it out with connection information based on the site config.</span><pre>__construct()</pre></a></li>
-<li class="method public "><a href="#method___destruct" title="__destruct() :: expMail class destructor"><span class="description">expMail class destructor</span><pre>__destruct()</pre></a></li>
-<li class="method public "><a href="#method_addBcc" title="addBcc() :: addBcc() - This adds Blind Carbon Copy addresses to the message one at a time, so if you want to add multiple BCC's it is best to run through a loop in order to put them in."><span class="description">addBcc() - This adds Blind Carbon Copy addresses to the message one at a time, so if you want to add multiple BCC's it is best to run through a loop in order to put them in.</span><pre>addBcc()</pre></a></li>
-<li class="method public "><a href="#method_addCc" title="addCc() :: addCc() - This adds Carbon Copy addresses to the message one at a time, so if you want to add multiple CC's it is best to run through a loop in order to put them in."><span class="description">addCc() - This adds Carbon Copy addresses to the message one at a time, so if you want to add multiple CC's it is best to run through a loop in order to put them in.</span><pre>addCc()</pre></a></li>
-<li class="method public "><a href="#method_addFrom" title="addFrom() :: addFrom() - This adds the singular From address, if you call it twice, it will replace the old from address."><span class="description">addFrom() - This adds the singular From address, if you call it twice, it will replace the old from address.</span><pre>addFrom()</pre></a></li>
-<li class="method public "><a href="#method_addHTML" title="addHTML() :: addHTML() - This function is similar to setHTMLBody except that it includes the HTML in the message body rather than sets it as default. Many
- mail clients will read the HTML over plain text as default behavior, so even if you use setTextBody and addHTML, they will default to reading the HTML."><span class="description">addHTML() - This function is similar to setHTMLBody except that it includes the HTML in the message body rather than sets it as default. Many
- mail clients will read the HTML over plain text as default behavior, so even if you use setTextBody and addHTML, they will default to reading the HTML.</span><pre>addHTML()</pre></a></li>
-<li class="method public "><a href="#method_addHeaders" title="addHeaders() :: addHeaders() - Add text headers to the message. Limited to text headers for now."><span class="description">addHeaders() - Add text headers to the message. Limited to text headers for now.</span><pre>addHeaders()</pre></a></li>
-<li class="method public "><a href="#method_addRaw" title="addRaw() :: addRaw() - This is a wrapper around setHTMLBody for backwards compatibility"><span class="description">addRaw() - This is a wrapper around setHTMLBody for backwards compatibility</span><pre>addRaw()</pre></a></li>
-<li class="method public "><a href="#method_addSubject" title="addSubject() :: subject() - This will set the subject of the message, ensuring first that message has been instantiated."><span class="description">subject() - This will set the subject of the message, ensuring first that message has been instantiated.</span><pre>addSubject()</pre></a></li>
-<li class="method public "><a href="#method_addText" title="addText() :: addText() - This function is similar to the addHTML function above, it adds a plain text part to the message in case
- your recipient cannot receive HTML email, if you have added a text version of the email, they will have this to fall back on."><span class="description">addText() - This function is similar to the addHTML function above, it adds a plain text part to the message in case
- your recipient cannot receive HTML email, if you have added a text version of the email, they will have this to fall back on.</span><pre>addText()</pre></a></li>
-<li class="method public "><a href="#method_addTo" title="addTo() :: addTo() - This adds people to the Recipient List in the To Field."><span class="description">addTo() - This adds people to the Recipient List in the To Field.</span><pre>addTo()</pre></a></li>
-<li class="method public "><a href="#method_attach_file_on_disk" title="attach_file_on_disk() :: attach_file_on_disk() - This function will utilize the swift mailer's ability to attach files
-that are on disk, unlike the one above, which just attached one that is available in memory."><span class="description">attach_file_on_disk() - This function will utilize the swift mailer's ability to attach files
-that are on disk, unlike the one above, which just attached one that is available in memory.</span><pre>attach_file_on_disk()</pre></a></li>
-<li class="method public "><a href="#method_batchSend" title="batchSend() :: batchSend() - Does not seem to be working correctly.  Use at your own risk!"><span class="description">batchSend() - Does not seem to be working correctly.  Use at your own risk!</span><pre>batchSend()</pre></a></li>
-<li class="method public "><a href="#method_clearBody" title="clearBody() :: clearBody() - This function will set the body of the message to empty, a blank text string"><span class="description">clearBody() - This function will set the body of the message to empty, a blank text string</span><pre>clearBody()</pre></a></li>
-<li class="method public "><a href="#method_flushRecipients" title="flushRecipients() :: flushRecipients() - this will clear all of the recipients in the To array, ignoring CC and BCC"><span class="description">flushRecipients() - this will clear all of the recipients in the To array, ignoring CC and BCC</span><pre>flushRecipients()</pre></a></li>
-<li class="method public "><a href="#method_messageId" title="messageId() :: messageId() - This will return the unique ID of the mail message."><span class="description">messageId() - This will return the unique ID of the mail message.</span><pre>messageId()</pre></a></li>
-<li class="method public "><a href="#method_quickBatchSend" title="quickBatchSend() :: quickBatchSend() - a quick way to send a batch of emails one at a time
-This function is similar to quickSend, but sends each email separately to protect others identity in the mailing"><span class="description">quickBatchSend() - a quick way to send a batch of emails one at a time
-This function is similar to quickSend, but sends each email separately to protect others identity in the mailing</span><pre>quickBatchSend()</pre></a></li>
-<li class="method public "><a href="#method_quickSend" title="quickSend() :: quickSend() - This is a quick method for sending email messages.  It only requires a message value be passed in
-an associative array, (or else the message fails immediately)."><span class="description">quickSend() - This is a quick method for sending email messages.  It only requires a message value be passed in
-an associative array, (or else the message fails immediately).</span><pre>quickSend()</pre></a></li>
-<li class="method public "><a href="#method_send" title="send() :: "><span class="description">send()
-        </span><pre>send()</pre></a></li>
-<li class="method public "><a href="#method_setHTMLBody" title="setHTMLBody() :: setHTMLBody() - This function sets the main version of the message to HTML."><span class="description">setHTMLBody() - This function sets the main version of the message to HTML.</span><pre>setHTMLBody()</pre></a></li>
-<li class="method public "><a href="#method_setTextBody" title="setTextBody() :: setTextBody() - This function sets the main version of the message to plain text. No HTML"><span class="description">setTextBody() - This function sets the main version of the message to plain text. No HTML</span><pre>setTextBody()</pre></a></li>
-<li class="method public "><a href="#method_test" title="test() :: test() - Does the mail system seem to be working correctly?
-  This is useless for the Native mail system"><span class="description">test() - Does the mail system seem to be working correctly?
-  This is useless for the Native mail system</span><pre>test()</pre></a></li>
-</ul>
-</li>
-<li class="nav-header">
-<i title="Properties" class="icon-custom icon-property"></i> Properties
-                    <ul>
-<li class="property public "><a href="#property_from" title="$from() :: "><span class="description"></span><pre>$from</pre></a></li>
-<li class="property public "><a href="#property_to" title="$to() :: "><span class="description"></span><pre>$to</pre></a></li>
-</ul>
-</li>
-<li class="nav-header private">» Private
-                    <ul>
-<li class="property private "><a href="#property_errStack" title="$errStack() :: "><span class="description"></span><pre>$errStack</pre></a></li>
-<li class="property private "><a href="#property_log" title="$log() :: "><span class="description"></span><pre>$log</pre></a></li>
-<li class="property private "><a href="#property_mailer" title="$mailer() :: "><span class="description"></span><pre>$mailer</pre></a></li>
-<li class="property private "><a href="#property_message" title="$message() :: "><span class="description"></span><pre>$message</pre></a></li>
-<li class="property private "><a href="#property_postcalldata" title="$postcalldata() :: "><span class="description"></span><pre>$postcalldata</pre></a></li>
-<li class="property private "><a href="#property_postcallfunction" title="$postcallfunction() :: "><span class="description"></span><pre>$postcallfunction</pre></a></li>
-<li class="property private "><a href="#property_precalldata" title="$precalldata() :: "><span class="description"></span><pre>$precalldata</pre></a></li>
-<li class="property private "><a href="#property_precallfunction" title="$precallfunction() :: "><span class="description"></span><pre>$precallfunction</pre></a></li>
-<li class="property private "><a href="#property_transport" title="$transport() :: "><span class="description"></span><pre>$transport</pre></a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="span8">
-<a xmlns:php="http://php.net/xsl" id="\expMail"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
-<li>
-<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
-</li>
-<li class="active">
-<span class="divider">\</span><a href="../classes/expMail.html">expMail</a>
-</li>
-</ul>
-<div xmlns:php="http://php.net/xsl" class="element class">
-<p class="short_description">The expMail class</p>
-<div class="details">
-<div class="long_description"></div>
-<table class="table table-bordered">
-<tr>
-<th>package</th>
-<td><a href="../packages/Subsystems.html">Subsystems</a></td>
-</tr>
-<tr>
-<th>package</th>
-<td><a href="../packages/Subsystems.html">Subsystems</a></td>
-</tr>
-</table>
-<h3>
-<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
-<a id="method___construct"></a><div class="element clickable method public method___construct " data-toggle="collapse" data-target=".method___construct .collapse" title="public">
-<h2>__construct() - This function constructs the message to be send in this object, filling it out with connection information based on the site config.</h2>
-<pre>__construct(array $params<code> = array()</code>) </pre>
-<div class="labels"></div>
-<div class="row collapse">
-<div class="span4">
-<div class="long_description"></div>
-<table class="table table-bordered">
-<tr>
-<th>author</th>
-<td><a href="mailto:tyleresmart@gmail.com">Tyler Smart</a></td>
-</tr>
-<tr>
-<th>example</th>
-<td>can specify how you would like to send mail, overriding the system default.
 
-//Here you are using the system default, whether it is smtp, php mail, sendmail, exim, native, or rotator.
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">Exponent v2.3.2</a>
 
-  $emailItem = new expMail();
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                                            </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
 
-  //Here you are trying different types of connections:
-  $emailItem = new expMail(array('method'=>'smtp'));
-  $emailItem = new expMail(array('method'=>'sendmail');
-  $emailItem = new expMail(array('method'=>'exim');
-  $emailItem = new expMail(array('method'=>'native');
-  $emailItem = new expMail(array('method'=>'rotator');</td>
-</tr>
-<tr>
-<th>todo</th>
-<td>add support for telling the constructor where the system specific Mail Transit Authority is: i.e. where sendmail or exim is if not in the default /usr/sbin</td>
-</tr>
-<tr>
-<th>todo</th>
-<td>drop support for passing in custom "connections", a Swift 3.x relic that we do not need.</td>
-</tr>
-<tr>
-<th>todo</th>
-<td>add further documentation for using settings other than the system default</td>
-</tr>
-</table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$params</h4>
-<code>array</code><p>You can specify which method by which you would like to send mail.</p></div>
-</div>
-<div class="span4">
-<h3>Examples</h3>
-<pre class="prettyprint linenums"></pre>
-</div>
-</div>
-</div>
-<a id="method___destruct"></a><div class="element clickable method public method___destruct " data-toggle="collapse" data-target=".method___destruct .collapse" title="public">
-<h2>expMail class destructor</h2>
-<pre>__destruct() </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="method_addBcc"></a><div class="element clickable method public method_addBcc " data-toggle="collapse" data-target=".method_addBcc .collapse" title="public">
-<h2>addBcc() - This adds Blind Carbon Copy addresses to the message one at a time, so if you want to add multiple BCC's it is best to run through a loop in order to put them in.</h2>
-<pre>addBcc(string $email, string $name<code> = null</code>) </pre>
-<div class="labels"></div>
-<div class="row collapse">
-<div class="span4">
-<div class="long_description"></div>
-<table class="table table-bordered">
-<tr>
-<th>author</th>
-<td><a href="mailto:tyleresmart@gmail.com">Tyler Smart</a></td>
-</tr>
-<tr>
-<th>example</th>
-<td>will send a basic message, looping through an array of email addresses add adding them to the BCC list.
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
 
-$emailItem = new expMail();
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public">
+        <a href="#method___construct" title="__construct :: __construct() - This function constructs the message to be send in this object, filling it out with connection information based on the site config.">
+            <span class="description">__construct() - This function constructs the message to be send in this object, filling it out with connection information based on the site config.</span><pre>__construct</pre>
+        </a>
+    </li>
 
- $emailItem->addText('My Text ');
+                                                                                                        <li class="method public">
+        <a href="#method___destruct" title="__destruct :: expMail class destructor">
+            <span class="description">expMail class destructor</span><pre>__destruct</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_addBcc" title="addBcc :: addBcc() - This adds Blind Carbon Copy addresses to the message one at a time, so if you want to add multiple BCC&#039;s it is best to run through a loop in order to put them in.">
+            <span class="description">addBcc() - This adds Blind Carbon Copy addresses to the message one at a time, so if you want to add multiple BCC&#039;s it is best to run through a loop in order to put them in.</span><pre>addBcc</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_addCc" title="addCc :: addCc() - This adds Carbon Copy addresses to the message one at a time, so if you want to add multiple CC&#039;s it is best to run through a loop in order to put them in.">
+            <span class="description">addCc() - This adds Carbon Copy addresses to the message one at a time, so if you want to add multiple CC&#039;s it is best to run through a loop in order to put them in.</span><pre>addCc</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_addFrom" title="addFrom :: addFrom() - This adds the singular From address, if you call it twice, it will replace the old from address.">
+            <span class="description">addFrom() - This adds the singular From address, if you call it twice, it will replace the old from address.</span><pre>addFrom</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_addHeaders" title="addHeaders :: addHeaders() - Add text headers to the message. Limited to text headers for now.">
+            <span class="description">addHeaders() - Add text headers to the message. Limited to text headers for now.</span><pre>addHeaders</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_addHTML" title="addHTML :: addHTML() - This function is similar to setHTMLBody except that it includes the HTML in the message body rather than sets it as default. Many
+ mail clients will read the HTML over plain text as default behavior, so even if you use setTextBody and addHTML, they will default to reading the HTML.">
+            <span class="description">addHTML() - This function is similar to setHTMLBody except that it includes the HTML in the message body rather than sets it as default. Many
+ mail clients will read the HTML over plain text as default behavior, so even if you use setTextBody and addHTML, they will default to reading the HTML.</span><pre>addHTML</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_addRaw" title="addRaw :: addRaw() - This is a wrapper around setHTMLBody for backwards compatibility">
+            <span class="description">addRaw() - This is a wrapper around setHTMLBody for backwards compatibility</span><pre>addRaw</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_addSubject" title="addSubject :: subject() - This will set the subject of the message, ensuring first that message has been instantiated.">
+            <span class="description">subject() - This will set the subject of the message, ensuring first that message has been instantiated.</span><pre>addSubject</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_addText" title="addText :: addText() - This function is similar to the addHTML function above, it adds a plain text part to the message in case
+ your recipient cannot receive HTML email, if you have added a text version of the email, they will have this to fall back on.">
+            <span class="description">addText() - This function is similar to the addHTML function above, it adds a plain text part to the message in case
+ your recipient cannot receive HTML email, if you have added a text version of the email, they will have this to fall back on.</span><pre>addText</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_addTo" title="addTo :: addTo() - This adds people to the Recipient List in the To Field.">
+            <span class="description">addTo() - This adds people to the Recipient List in the To Field.</span><pre>addTo</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_attach_file_on_disk" title="attach_file_on_disk :: attach_file_on_disk() - This function will utilize the swift mailer&#039;s ability to attach files
+that are on disk, unlike the one above, which just attached one that is available in memory.">
+            <span class="description">attach_file_on_disk() - This function will utilize the swift mailer&#039;s ability to attach files
+that are on disk, unlike the one above, which just attached one that is available in memory.</span><pre>attach_file_on_disk</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_batchSend" title="batchSend :: batchSend() - Does not seem to be working correctly.  Use at your own risk!">
+            <span class="description">batchSend() - Does not seem to be working correctly.  Use at your own risk!</span><pre>batchSend</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_clearBody" title="clearBody :: clearBody() - This function will set the body of the message to empty, a blank text string">
+            <span class="description">clearBody() - This function will set the body of the message to empty, a blank text string</span><pre>clearBody</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_flushRecipients" title="flushRecipients :: flushRecipients() - this will clear all of the recipients in the To array, ignoring CC and BCC">
+            <span class="description">flushRecipients() - this will clear all of the recipients in the To array, ignoring CC and BCC</span><pre>flushRecipients</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_messageId" title="messageId :: messageId() - This will return the unique ID of the mail message.">
+            <span class="description">messageId() - This will return the unique ID of the mail message.</span><pre>messageId</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_quickBatchSend" title="quickBatchSend :: quickBatchSend() - a quick way to send a batch of emails one at a time
+This function is similar to quickSend, but sends each email separately to protect others identity in the mailing">
+            <span class="description">quickBatchSend() - a quick way to send a batch of emails one at a time
+This function is similar to quickSend, but sends each email separately to protect others identity in the mailing</span><pre>quickBatchSend</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_quickSend" title="quickSend :: quickSend() - This is a quick method for sending email messages.  It only requires a message value be passed in
+an associative array, (or else the message fails immediately).">
+            <span class="description">quickSend() - This is a quick method for sending email messages.  It only requires a message value be passed in
+an associative array, (or else the message fails immediately).</span><pre>quickSend</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_send" title="send :: ">
+            <span class="description"></span><pre>send</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setHTMLBody" title="setHTMLBody :: setHTMLBody() - This function sets the main version of the message to HTML.">
+            <span class="description">setHTMLBody() - This function sets the main version of the message to HTML.</span><pre>setHTMLBody</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setTextBody" title="setTextBody :: setTextBody() - This function sets the main version of the message to plain text. No HTML">
+            <span class="description">setTextBody() - This function sets the main version of the message to plain text. No HTML</span><pre>setTextBody</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_test" title="test :: test() - Does the mail system seem to be working correctly?
+  This is useless for the Native mail system">
+            <span class="description">test() - Does the mail system seem to be working correctly?
+  This is useless for the Native mail system</span><pre>test</pre>
+        </a>
+    </li>
+
+                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>expMail</h1>
+                <small style="display: block; text-align: right">
+                                                        </small>
+                <p class="short_description">The expMail class</p>
+                <div class="details">
+                    <div class="long_description">
+                        
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Subsystems</p>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Subsystems</p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method___construct"></a>
+                        <div class="element clickable method public  method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+                            <h2>__construct() - This function constructs the message to be send in this object, filling it out with connection information based on the site config.</h2>
+                            <pre>__construct(array $params = array()) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    author
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Tyler Smart <a href="mailto:tyleresmart@gmail.com">tyleresmart@gmail.com</a></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    example
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>can specify how you would like to send mail, overriding the system default.</p>
+<p>//Here you are using the system default, whether it is smtp, php mail, sendmail, exim, native, or rotator.</p>
+<p>$emailItem = new expMail();</p>
+<p>//Here you are trying different types of connections:
+$emailItem = new expMail(array('method'=>'smtp'));
+$emailItem = new expMail(array('method'=>'sendmail');
+$emailItem = new expMail(array('method'=>'exim');
+$emailItem = new expMail(array('method'=>'native');
+$emailItem = new expMail(array('method'=>'rotator');</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    todo
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>add support for telling the constructor where the system specific Mail Transit Authority is: i.e. where sendmail or exim is if not in the default /usr/sbin</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>drop support for passing in custom "connections", a Swift 3.x relic that we do not need.</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>add further documentation for using settings other than the system default</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$params</h4>
+                                                <code>array</code><p><p>You can specify which method by which you would like to send mail.</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method___destruct"></a>
+                        <div class="element clickable method public  method___destruct" data-toggle="collapse" data-target=".method___destruct .collapse">
+                            <h2>expMail class destructor</h2>
+                            <pre>__destruct() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_addBcc"></a>
+                        <div class="element clickable method public  method_addBcc" data-toggle="collapse" data-target=".method_addBcc .collapse">
+                            <h2>addBcc() - This adds Blind Carbon Copy addresses to the message one at a time, so if you want to add multiple BCC&#039;s it is best to run through a loop in order to put them in.</h2>
+                            <pre>addBcc(string $email, string $name = null) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    author
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Tyler Smart <a href="mailto:tyleresmart@gmail.com">tyleresmart@gmail.com</a></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    example
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>will send a basic message, looping through an array of email addresses add adding them to the BCC list.</p>
+<p>$emailItem = new expMail();</p>
+<p>$emailItem->addText('My Text ');
 $emailItem->addText('Line Two ');
- $emailItem->addText('Line Three ');
-
-$bccs = array('a@website.com'=>'Mr A.', 'b@website.com'=>'Mr B.', 'c@website.com'=>'Mr C.', 'd@website.com'=>'Mr D.', 'e@website.com'=>'Mr E.', 'f@website.com'=>'Mr F.');
-
-//add multiple bcc recipients to the email
+$emailItem->addText('Line Three ');</p>
+<p>$bccs = array('a@website.com'=>'Mr A.', 'b@website.com'=>'Mr B.', 'c@website.com'=>'Mr C.', 'd@website.com'=>'Mr D.', 'e@website.com'=>'Mr E.', 'f@website.com'=>'Mr F.');</p>
+<p>//add multiple bcc recipients to the email
 foreach ($bccs as $email => $name)
-{
-	$emailItem->addBcc($email, $name);
-}
-
-$emailItem->addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));
+{</p>
+<pre><code>$emailItem-&gt;addBcc($email, $name);</code></pre>
+<p>}</p>
+<p>$emailItem->addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));
 $emailItem->addFrom('from@sender.com'); //setting the From field using just the email.
-$emailItem->subject('Hello World!');
+$emailItem->subject('Hello World!');</p>
+<p>$emailItem->send();</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
 
-$emailItem->send();</td>
-</tr>
-</table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$email</h4>
-<code>string</code><p>This is the email address for the BCC.</p></div>
-<div class="subelement argument">
-<h4>$name</h4>
-<code>string</code><p>This is the name associated with the above email address.</p></div>
-</div>
-<div class="span4">
-<h3>Examples</h3>
-<pre class="prettyprint linenums"></pre>
-</div>
-</div>
-</div>
-<a id="method_addCc"></a><div class="element clickable method public method_addCc " data-toggle="collapse" data-target=".method_addCc .collapse" title="public">
-<h2>addCc() - This adds Carbon Copy addresses to the message one at a time, so if you want to add multiple CC's it is best to run through a loop in order to put them in.</h2>
-<pre>addCc(string $email, string $name<code> = null</code>) </pre>
-<div class="labels"></div>
-<div class="row collapse">
-<div class="span4">
-<div class="long_description"></div>
-<table class="table table-bordered">
-<tr>
-<th>author</th>
-<td><a href="mailto:tyleresmart@gmail.com">Tyler Smart</a></td>
-</tr>
-<tr>
-<th>example</th>
-<td>will send a basic message, looping through an array of email addresses add adding them to the CC list.
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$email</h4>
+                                                <code>string</code><p><p>This is the email address for the BCC.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>string</code><p><p>This is the name associated with the above email address.</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
 
-$emailItem = new expMail();
+                        </div>
+                                            <a id="method_addCc"></a>
+                        <div class="element clickable method public  method_addCc" data-toggle="collapse" data-target=".method_addCc .collapse">
+                            <h2>addCc() - This adds Carbon Copy addresses to the message one at a time, so if you want to add multiple CC&#039;s it is best to run through a loop in order to put them in.</h2>
+                            <pre>addCc(string $email, string $name = null) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
 
- $emailItem->addText('My Text ');
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    author
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Tyler Smart <a href="mailto:tyleresmart@gmail.com">tyleresmart@gmail.com</a></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    example
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>will send a basic message, looping through an array of email addresses add adding them to the CC list.</p>
+<p>$emailItem = new expMail();</p>
+<p>$emailItem->addText('My Text ');
 $emailItem->addText('Line Two ');
- $emailItem->addText('Line Three ');
-
-$ccs = array('a@website.com'=>'Mr A.', 'b@website.com'=>'Mr B.', 'c@website.com'=>'Mr C.', 'd@website.com'=>'Mr D.', 'e@website.com'=>'Mr E.', 'f@website.com'=>'Mr F.');
-
-//add multiple bcc recipients to the email
+$emailItem->addText('Line Three ');</p>
+<p>$ccs = array('a@website.com'=>'Mr A.', 'b@website.com'=>'Mr B.', 'c@website.com'=>'Mr C.', 'd@website.com'=>'Mr D.', 'e@website.com'=>'Mr E.', 'f@website.com'=>'Mr F.');</p>
+<p>//add multiple bcc recipients to the email
 foreach ($ccs as $email => $name)
-{
-	$emailItem->addCc($email, $name);
-}
-
-$emailItem->addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));
+{</p>
+<pre><code>$emailItem-&gt;addCc($email, $name);</code></pre>
+<p>}</p>
+<p>$emailItem->addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));
 $emailItem->addFrom('from@sender.com'); //setting the From field using just the email.
-$emailItem->subject('Hello World!');
+$emailItem->subject('Hello World!');</p>
+<p>$emailItem->send();</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
 
-$emailItem->send();</td>
-</tr>
-</table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$email</h4>
-<code>string</code><p>This is the email address for the BCC.</p></div>
-<div class="subelement argument">
-<h4>$name</h4>
-<code>string</code><p>This is the name associated with the above email address.</p></div>
-</div>
-<div class="span4">
-<h3>Examples</h3>
-<pre class="prettyprint linenums"></pre>
-</div>
-</div>
-</div>
-<a id="method_addFrom"></a><div class="element clickable method public method_addFrom " data-toggle="collapse" data-target=".method_addFrom .collapse" title="public">
-<h2>addFrom() - This adds the singular From address, if you call it twice, it will replace the old from address.</h2>
-<pre>addFrom(string $email<code> = null</code>) </pre>
-<div class="labels"></div>
-<div class="row collapse">
-<div class="span4">
-<div class="long_description"><p>It also sets the private var from with whatever you desire. This is a relic from the Swift 3.x days and should be gutted out
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$email</h4>
+                                                <code>string</code><p><p>This is the email address for the BCC.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>string</code><p><p>This is the name associated with the above email address.</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_addFrom"></a>
+                        <div class="element clickable method public  method_addFrom" data-toggle="collapse" data-target=".method_addFrom .collapse">
+                            <h2>addFrom() - This adds the singular From address, if you call it twice, it will replace the old from address.</h2>
+                            <pre>addFrom(string $email = null) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>It also sets the private var from with whatever you desire. This is a relic from the Swift 3.x days and should be gutted out
 the next time someone upgrades the mailer.</p></div>
-<table class="table table-bordered">
-<tr>
-<th>author</th>
-<td><a href="mailto:tyleresmart@gmail.com">Tyler Smart</a></td>
-</tr>
-<tr>
-<th>example</th>
-<td>will send a basic message, but you can see how the subject line works.
-          $emailItem = new expMail();
-          $emailItem->addText('My Text ');
-          $emailItem->addText('Line Two ');
-          $emailItem->addText('Line Three ');
-          $emailItem->addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));
-          $emailItem->addFrom('from@sender.com'); //setting the From field using just the email.
-          $emailItem->addFrom('from@sender.com', 'Mr. Sender'); //resetting the From field using the email and the name.
-          $emailItem->subject('Hello World!');
-          $emailItem->send();</td>
-</tr>
-</table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$email</h4>
-<code>string</code><p>This is the email address you want to use as the sender.</p></div>
-</div>
-<div class="span4">
-<h3>Examples</h3>
-<pre class="prettyprint linenums"></pre>
-</div>
-</div>
-</div>
-<a id="method_addHTML"></a><div class="element clickable method public method_addHTML " data-toggle="collapse" data-target=".method_addHTML .collapse" title="public">
-<h2>addHTML() - This function is similar to setHTMLBody except that it includes the HTML in the message body rather than sets it as default. Many
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    author
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Tyler Smart <a href="mailto:tyleresmart@gmail.com">tyleresmart@gmail.com</a></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    example
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>will send a basic message, but you can see how the subject line works.</p>
+<pre><code>      $emailItem = new expMail();
+      $emailItem-&gt;addText('My Text ');
+      $emailItem-&gt;addText('Line Two ');
+      $emailItem-&gt;addText('Line Three ');
+      $emailItem-&gt;addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));
+      $emailItem-&gt;addFrom('from@sender.com'); //setting the From field using just the email.
+      $emailItem-&gt;addFrom('from@sender.com', 'Mr. Sender'); //resetting the From field using the email and the name.
+      $emailItem-&gt;subject('Hello World!');
+      $emailItem-&gt;send();</code></pre>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$email</h4>
+                                                <code>string</code><p><p>This is the email address you want to use as the sender.</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_addHeaders"></a>
+                        <div class="element clickable method public  method_addHeaders" data-toggle="collapse" data-target=".method_addHeaders .collapse">
+                            <h2>addHeaders() - Add text headers to the message. Limited to text headers for now.</h2>
+                            <pre>addHeaders(array $headers) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    author
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Tyler Smart <a href="mailto:tyleresmart@gmail.com">tyleresmart@gmail.com</a></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    example
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>will include the passed HTML and will set it as an addition to the message body.</p>
+<p>$emailItem = new expMail();</p>
+<p>$emailItem->addHTML('<h2>My Text</h2> '); //This adds an alternate version if your email in HTML format</p>
+<p>$emailItem->addTo('myemail@mysite.com');
+$emailItem->addFrom('from@sender.com');
+$emailItem->subject('Hello World!');</p>
+<p>$headersToAdd = array('Your-Header-Name' => 'the header value', 'SecondHeader-Name' => '2nd header value');
+$emailItem->addHeaders($headersToAdd);</p>
+<p>$emailItem->send();</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    todo
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>add support for other types of headers mentioned below, and a second pass in value/switch to specify what kind headers you are adding</p>
+<h1>Text Headers</h1>
+<pre><code>    Text headers are the simplest type of Header. They contain textual information with no special information included within it for example the Subject header in a message.</code></pre>
+<h1>Parameterized Headers</h1>
+<pre><code>    Parameterized headers are text headers that contain key-value parameters following the textual content. The Content-Type header of a message is a parameterized header since it contains charset information after the content type.</code></pre>
+<h1>Date Headers</h1>
+<pre><code>    Date headers contains an RFC 2822 formatted date (i.e. what PHP's date('r') returns). They are used anywhere a date or time is needed to be presented as a message header.</code></pre>
+<h1>Mailbox (e-mail address) Headers</h1>
+<pre><code>    Mailbox headers contain one or more email addresses, possibly with personalized names attached to them. The data on which they are modeled is represented by an associative array of email addresses and names.</code></pre>
+<h1>ID Headers</h1>
+<pre><code>    ID headers contain identifiers for the entity (or the message). The most notable ID header is the Message-ID header on the message itself.</code></pre>
+<h1>Path Headers</h1>
+<pre><code>    Path headers are like very-restricted mailbox headers. They contain a single email address with no associated name. The Return-Path header of a message is a path header.</code></pre>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$headers</h4>
+                                                <code>array</code><p><p>Array of text headers to add to the message</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_addHTML"></a>
+                        <div class="element clickable method public  method_addHTML" data-toggle="collapse" data-target=".method_addHTML .collapse">
+                            <h2>addHTML() - This function is similar to setHTMLBody except that it includes the HTML in the message body rather than sets it as default. Many
  mail clients will read the HTML over plain text as default behavior, so even if you use setTextBody and addHTML, they will default to reading the HTML.</h2>
-<pre>addHTML(string $html) </pre>
-<div class="labels"></div>
-<div class="row collapse">
-<div class="span4">
-<div class="long_description"><p>setHTMLBody is to be preferred as the default for setting the body of the email.</p></div>
-<table class="table table-bordered">
-<tr>
-<th>author</th>
-<td><a href="mailto:tyleresmart@gmail.com">Tyler Smart</a></td>
-</tr>
-<tr>
-<th>example</th>
-<td>will include the passed HTML and will set it as an addition to the message body.
+                            <pre>addHTML(string $html) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
 
- $emailItem = new expMail();
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>setHTMLBody is to be preferred as the default for setting the body of the email.</p></div>
 
- $emailItem->addHTML('<h2>My Text</h2> '); //This adds an alternate version if your email in HTML format
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    author
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Tyler Smart <a href="mailto:tyleresmart@gmail.com">tyleresmart@gmail.com</a></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    example
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>will include the passed HTML and will set it as an addition to the message body.</p>
+<p>$emailItem = new expMail();</p>
+<p>$emailItem->addHTML('<h2>My Text</h2> '); //This adds an alternate version if your email in HTML format</p>
+<p>$emailItem->addTo('myemail@mysite.com');
+$emailItem->addFrom('from@sender.com');
+$emailItem->subject('Hello World!');</p>
+<p>$emailItem->send();</p>
+<p>You can also call the addHTML multiple times to append to the message:</p>
+<p>$emailItem = new expMail();</p>
+<p>$emailItem->addHTML('My HTML <br>');
+$emailItem->addHTML('Line Two <br>');
+$emailItem->addHTML('Line Three <br>');</p>
+<p>$emailItem->addTo('myemail@mysite.com');
+$emailItem->addFrom('from@sender.com');
+$emailItem->subject('Hello World!');</p>
+<p>$emailItem->send();</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
 
- $emailItem->addTo('myemail@mysite.com');
- $emailItem->addFrom('from@sender.com');
- $emailItem->subject('Hello World!');
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$html</h4>
+                                                <code>string</code><p><p>This is the html that you want added to the message.</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
 
- $emailItem->send();
+                        </div>
+                                            <a id="method_addRaw"></a>
+                        <div class="element clickable method public  method_addRaw" data-toggle="collapse" data-target=".method_addRaw .collapse">
+                            <h2>addRaw() - This is a wrapper around setHTMLBody for backwards compatibility</h2>
+                            <pre>addRaw( $body) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
 
-You can also call the addHTML multiple times to append to the message:
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
 
- $emailItem = new expMail();
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    author
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Tyler Smart <a href="mailto:tyleresmart@gmail.com">tyleresmart@gmail.com</a></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
 
-  $emailItem->addHTML('My HTML <br>');
- $emailItem->addHTML('Line Two <br>');
-  $emailItem->addHTML('Line Three <br>');
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$body</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
 
- $emailItem->addTo('myemail@mysite.com');
- $emailItem->addFrom('from@sender.com');
- $emailItem->subject('Hello World!');
+                        </div>
+                                            <a id="method_addSubject"></a>
+                        <div class="element clickable method public  method_addSubject" data-toggle="collapse" data-target=".method_addSubject .collapse">
+                            <h2>subject() - This will set the subject of the message, ensuring first that message has been instantiated.</h2>
+                            <pre>addSubject(string $subj) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
 
- $emailItem->send();</td>
-</tr>
-</table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$html</h4>
-<code>string</code><p>This is the html that you want added to the message.</p></div>
-</div>
-<div class="span4">
-<h3>Examples</h3>
-<pre class="prettyprint linenums"></pre>
-</div>
-</div>
-</div>
-<a id="method_addHeaders"></a><div class="element clickable method public method_addHeaders " data-toggle="collapse" data-target=".method_addHeaders .collapse" title="public">
-<h2>addHeaders() - Add text headers to the message. Limited to text headers for now.</h2>
-<pre>addHeaders(array $headers) </pre>
-<div class="labels"></div>
-<div class="row collapse">
-<div class="span4">
-<div class="long_description"></div>
-<table class="table table-bordered">
-<tr>
-<th>author</th>
-<td><a href="mailto:tyleresmart@gmail.com">Tyler Smart</a></td>
-</tr>
-<tr>
-<th>example</th>
-<td>will include the passed HTML and will set it as an addition to the message body.
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
 
- $emailItem = new expMail();
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    author
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Tyler Smart <a href="mailto:tyleresmart@gmail.com">tyleresmart@gmail.com</a></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    example
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>will send a basic message, but you can see how the subject line works.
+$emailItem = new expMail();</p>
+<p>$emailItem->addText('My Text ');
+$emailItem->addText('Line Two ');
+$emailItem->addText('Line Three ');</p>
+<pre><code> $emailItem-&gt;addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));</code></pre>
+<p>$emailItem->addFrom('from@sender.com');
+$emailItem->subject('Hello World!');</p>
+<p>$emailItem->send();</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
 
- $emailItem->addHTML('<h2>My Text</h2> '); //This adds an alternate version if your email in HTML format
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$subj</h4>
+                                                <code>string</code><p><p>This is the string that you want to be used as the subject for the message, it must be plain text.</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
 
- $emailItem->addTo('myemail@mysite.com');
- $emailItem->addFrom('from@sender.com');
- $emailItem->subject('Hello World!');
-
- $headersToAdd = array('Your-Header-Name' => 'the header value', 'SecondHeader-Name' => '2nd header value');
- $emailItem->addHeaders($headersToAdd);
-
- $emailItem->send();</td>
-</tr>
-<tr>
-<th>todo</th>
-<td>add support for other types of headers mentioned below, and a second pass in value/switch to specify what kind headers you are adding
-
-  # Text Headers
-		Text headers are the simplest type of Header. They contain textual information with no special information included within it for example the Subject header in a message.
-  # Parameterized Headers
-		Parameterized headers are text headers that contain key-value parameters following the textual content. The Content-Type header of a message is a parameterized header since it contains charset information after the content type.
-  # Date Headers
-		Date headers contains an RFC 2822 formatted date (i.e. what PHP's date('r') returns). They are used anywhere a date or time is needed to be presented as a message header.
-  # Mailbox (e-mail address) Headers
-		Mailbox headers contain one or more email addresses, possibly with personalized names attached to them. The data on which they are modeled is represented by an associative array of email addresses and names.
-  # ID Headers
-		ID headers contain identifiers for the entity (or the message). The most notable ID header is the Message-ID header on the message itself.
-  # Path Headers
-		Path headers are like very-restricted mailbox headers. They contain a single email address with no associated name. The Return-Path header of a message is a path header.</td>
-</tr>
-</table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$headers</h4>
-<code>array</code><p>Array of text headers to add to the message</p></div>
-</div>
-<div class="span4">
-<h3>Examples</h3>
-<pre class="prettyprint linenums"></pre>
-</div>
-</div>
-</div>
-<a id="method_addRaw"></a><div class="element clickable method public method_addRaw " data-toggle="collapse" data-target=".method_addRaw .collapse" title="public">
-<h2>addRaw() - This is a wrapper around setHTMLBody for backwards compatibility</h2>
-<pre>addRaw($body) </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>author</th>
-<td><a href="mailto:tyleresmart@gmail.com">Tyler Smart</a></td>
-</tr></table>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$body</h4></div>
-</div></div>
-</div>
-<a id="method_addSubject"></a><div class="element clickable method public method_addSubject " data-toggle="collapse" data-target=".method_addSubject .collapse" title="public">
-<h2>subject() - This will set the subject of the message, ensuring first that message has been instantiated.</h2>
-<pre>addSubject(string $subj) </pre>
-<div class="labels"></div>
-<div class="row collapse">
-<div class="span4">
-<div class="long_description"></div>
-<table class="table table-bordered">
-<tr>
-<th>author</th>
-<td><a href="mailto:tyleresmart@gmail.com">Tyler Smart</a></td>
-</tr>
-<tr>
-<th>example</th>
-<td>will send a basic message, but you can see how the subject line works.
- $emailItem = new expMail();
-
-  $emailItem->addText('My Text ');
- $emailItem->addText('Line Two ');
-  $emailItem->addText('Line Three ');
-
-	 $emailItem->addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));
- $emailItem->addFrom('from@sender.com');
- $emailItem->subject('Hello World!');
-
- $emailItem->send();</td>
-</tr>
-</table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$subj</h4>
-<code>string</code><p>This is the string that you want to be used as the subject for the message, it must be plain text.</p></div>
-</div>
-<div class="span4">
-<h3>Examples</h3>
-<pre class="prettyprint linenums"></pre>
-</div>
-</div>
-</div>
-<a id="method_addText"></a><div class="element clickable method public method_addText " data-toggle="collapse" data-target=".method_addText .collapse" title="public">
-<h2>addText() - This function is similar to the addHTML function above, it adds a plain text part to the message in case
+                        </div>
+                                            <a id="method_addText"></a>
+                        <div class="element clickable method public  method_addText" data-toggle="collapse" data-target=".method_addText .collapse">
+                            <h2>addText() - This function is similar to the addHTML function above, it adds a plain text part to the message in case
  your recipient cannot receive HTML email, if you have added a text version of the email, they will have this to fall back on.</h2>
-<pre>addText(string $text) </pre>
-<div class="labels"></div>
-<div class="row collapse">
-<div class="span4">
-<div class="long_description"><p>Every email send out should have an HTML version and a TEXT version.</p></div>
-<table class="table table-bordered">
-<tr>
-<th>author</th>
-<td><a href="mailto:tyleresmart@gmail.com">Tyler Smart</a></td>
-</tr>
-<tr>
-<th>example</th>
-<td>will set the message body in HTML and also include a text counterpart in case the recipient cannot view HTML.
+                            <pre>addText(string $text) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
 
- $emailItem = new expMail();
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Every email send out should have an HTML version and a TEXT version.</p></div>
 
-  $emailItem->setHTMLBody('<b>My Text</b> '); //This is an HTML version of the message
- $emailItem->addText('My Text '); //This adds a Text version in case they cannot read HTML
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    author
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Tyler Smart <a href="mailto:tyleresmart@gmail.com">tyleresmart@gmail.com</a></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    example
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>will set the message body in HTML and also include a text counterpart in case the recipient cannot view HTML.</p>
+<p>$emailItem = new expMail();</p>
+<p>$emailItem->setHTMLBody('<b>My Text</b> '); //This is an HTML version of the message
+$emailItem->addText('My Text '); //This adds a Text version in case they cannot read HTML</p>
+<p>$emailItem->addTo('myemail@mysite.com');
+$emailItem->addFrom('from@sender.com');
+$emailItem->subject('Hello World!');</p>
+<p>$emailItem->send();</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
 
- $emailItem->addTo('myemail@mysite.com');
- $emailItem->addFrom('from@sender.com');
- $emailItem->subject('Hello World!');
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$text</h4>
+                                                <code>string</code><p><p>This is the text version of the email you are sending along with the HTML</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
 
- $emailItem->send();</td>
-</tr>
-</table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$text</h4>
-<code>string</code><p>This is the text version of the email you are sending along with the HTML</p></div>
-</div>
-<div class="span4">
-<h3>Examples</h3>
-<pre class="prettyprint linenums"></pre>
-</div>
-</div>
-</div>
-<a id="method_addTo"></a><div class="element clickable method public method_addTo " data-toggle="collapse" data-target=".method_addTo .collapse" title="public">
-<h2>addTo() - This adds people to the Recipient List in the To Field.</h2>
-<pre>addTo(array|string $email<code> = null</code>) </pre>
-<div class="labels"></div>
-<div class="row collapse">
-<div class="span4">
-<div class="long_description"><p>If the first variable passed is an array,
+                        </div>
+                                            <a id="method_addTo"></a>
+                        <div class="element clickable method public  method_addTo" data-toggle="collapse" data-target=".method_addTo .collapse">
+                            <h2>addTo() - This adds people to the Recipient List in the To Field.</h2>
+                            <pre>addTo(array|string $email = null) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>If the first variable passed is an array,
 it assumes you are sending messages to multiple people.
 If you want to add people with their names associated with the email, you must use an outside for loop.
 This function does not yet support the parsing of associative arrays for a quick add to the To recipient list.</p></div>
-<table class="table table-bordered">
-<tr>
-<th>author</th>
-<td><a href="mailto:tyleresmart@gmail.com">Tyler Smart</a></td>
-</tr>
-<tr>
-<th>example</th>
-<td>will send a basic message, looping through an array of email addresses add adding them to the BCC list.
-               $emailItem = new expMail();
-               $emailItem->addText('My Text ');
-               $emailItem->addText('Line Two ');
-               $emailItem->addText('Line Three ');
-               $to_array = array('a@website.com'=>'Mr A.', 'b@website.com'=>'Mr B.', 'c@website.com'=>'Mr C.', 'd@website.com'=>'Mr D.', 'e@website.com'=>'Mr E.', 'f@website.com'=>'Mr F.');
-               //add multiple bcc recipients to the email
-               foreach ($to_array as $email => $name)
-               {
-               $emailItem->addBcc($email, $name);
-               }
-               $emailItem->addFrom('from@sender.com');
-               $emailItem->subject('Hello World!');
-               $emailItem->send();
-               //You can also just specify the email without the name, like so:
-               $emailItem = new expMail();
-               $emailItem->addText('My Text ');
-               $emailItem->addText('Line Two ');
-               $emailItem->addText('Line Three ');
-               $emailItem->addTo('bob@smith.com');
-               $emailItem->addFrom('from@sender.com');
-               $emailItem->subject('Hello World!');
-               $emailItem->send();
-               //You can also send an array of email addresses as the first argument, like so:
-               $emailItem = new expMail();
-               $emailItem->addText('My Text ');
-               $emailItem->addText('Line Two ');
-               $emailItem->addText('Line Three ');
-               $emailItem->addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));
-               $emailItem->addFrom('from@sender.com');
-               $emailItem->subject('Hello World!');
-               $emailItem->send();</td>
-</tr>
-<tr>
-<th>todo</th>
-<td>A nice future feature addition would be to allow the passing in of associative arrays like so:
-               $emailsToSendTo = array('bob@smith.com'=>'Bob Smith', 'mary@smith.com'=>'Mary Smith');
-               $emailItem->addTo($emailsToSendTo);
-               OR
-               $emailItem->addTo('array('myemail@mysite.com'=>'Website Owner', 'secondemail@website.com'=>'Frank Jones');
-               Actually, cleanup should be done so that this function only takes associative arrays, and nothing else.</td>
-</tr>
-</table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$email</h4>
-<code>array</code><code>string</code><p>This is the string or array to send email to</p></div>
-</div>
-<div class="span4">
-<h3>Examples</h3>
-<pre class="prettyprint linenums"></pre>
-</div>
-</div>
-</div>
-<a id="method_attach_file_on_disk"></a><div class="element clickable method public method_attach_file_on_disk " data-toggle="collapse" data-target=".method_attach_file_on_disk .collapse" title="public">
-<h2>attach_file_on_disk() - This function will utilize the swift mailer's ability to attach files
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    author
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Tyler Smart <a href="mailto:tyleresmart@gmail.com">tyleresmart@gmail.com</a></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    example
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>will send a basic message, looping through an array of email addresses add adding them to the BCC list.</p>
+<pre><code>           $emailItem = new expMail();
+           $emailItem-&gt;addText('My Text ');
+           $emailItem-&gt;addText('Line Two ');
+           $emailItem-&gt;addText('Line Three ');
+           $to_array = array('a@website.com'=&gt;'Mr A.', 'b@website.com'=&gt;'Mr B.', 'c@website.com'=&gt;'Mr C.', 'd@website.com'=&gt;'Mr D.', 'e@website.com'=&gt;'Mr E.', 'f@website.com'=&gt;'Mr F.');
+           //add multiple bcc recipients to the email
+           foreach ($to_array as $email =&gt; $name)
+           {
+           $emailItem-&gt;addBcc($email, $name);
+           }
+           $emailItem-&gt;addFrom('from@sender.com');
+           $emailItem-&gt;subject('Hello World!');
+           $emailItem-&gt;send();
+           //You can also just specify the email without the name, like so:
+           $emailItem = new expMail();
+           $emailItem-&gt;addText('My Text ');
+           $emailItem-&gt;addText('Line Two ');
+           $emailItem-&gt;addText('Line Three ');
+           $emailItem-&gt;addTo('bob@smith.com');
+           $emailItem-&gt;addFrom('from@sender.com');
+           $emailItem-&gt;subject('Hello World!');
+           $emailItem-&gt;send();
+           //You can also send an array of email addresses as the first argument, like so:
+           $emailItem = new expMail();
+           $emailItem-&gt;addText('My Text ');
+           $emailItem-&gt;addText('Line Two ');
+           $emailItem-&gt;addText('Line Three ');
+           $emailItem-&gt;addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));
+           $emailItem-&gt;addFrom('from@sender.com');
+           $emailItem-&gt;subject('Hello World!');
+           $emailItem-&gt;send();</code></pre>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    todo
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>A nice future feature addition would be to allow the passing in of associative arrays like so:</p>
+<pre><code>           $emailsToSendTo = array('bob@smith.com'=&gt;'Bob Smith', 'mary@smith.com'=&gt;'Mary Smith');
+           $emailItem-&gt;addTo($emailsToSendTo);
+           OR
+           $emailItem-&gt;addTo('array('myemail@mysite.com'=&gt;'Website Owner', 'secondemail@website.com'=&gt;'Frank Jones');
+           Actually, cleanup should be done so that this function only takes associative arrays, and nothing else.</code></pre>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$email</h4>
+                                                <code>array|string</code><p><p>This is the string or array to send email to</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_attach_file_on_disk"></a>
+                        <div class="element clickable method public  method_attach_file_on_disk" data-toggle="collapse" data-target=".method_attach_file_on_disk .collapse">
+                            <h2>attach_file_on_disk() - This function will utilize the swift mailer&#039;s ability to attach files
 that are on disk, unlike the one above, which just attached one that is available in memory.</h2>
-<pre>attach_file_on_disk(string $file_to_attach, string $file_type) </pre>
-<div class="labels"></div>
-<div class="row collapse">
-<div class="span4">
-<div class="long_description"></div>
-<table class="table table-bordered">
-<tr>
-<th>author</th>
-<td><a href="mailto:tyleresmart@gmail.com">Tyler Smart</a></td>
-</tr>
-<tr>
-<th>example</th>
-<td>will show three different ways to attach files, two from a path on disk, and one from a url.
-     //Create the attachment
-	// * Note that you can technically leave the content-type parameter out
-	$attachment = Swift_Attachment::fromPath('/path/to/image.jpg', 'image/jpeg');
+                            <pre>attach_file_on_disk(string $file_to_attach, string $file_type) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
 
-	//Attach it to the message
-	$message->attach($attachment);
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
 
-	//The two statements above could be written in one line instead
-	$message->attach(Swift_Attachment::fromPath('/path/to/image.jpg'));
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    author
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Tyler Smart <a href="mailto:tyleresmart@gmail.com">tyleresmart@gmail.com</a></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    example
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>will show three different ways to attach files, two from a path on disk, and one from a url.</p>
+<pre><code> //Create the attachment
+// * Note that you can technically leave the content-type parameter out
+$attachment = Swift_Attachment::fromPath('/path/to/image.jpg', 'image/jpeg');
 
-	//You can attach files from a URL if allow_url_fopen is on in php.ini
-	$message->attach(Swift_Attachment::fromPath('http://site.tld/logo.png'));</td>
-</tr>
-</table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$file_to_attach</h4>
-<code>string</code><p>This is the path to the file that you want to attach to the message</p></div>
-<div class="subelement argument">
-<h4>$file_type</h4>
-<code>string</code><p>This is the MIME type of the file that you are attaching</p></div>
-</div>
-<div class="span4">
-<h3>Examples</h3>
-<pre class="prettyprint linenums"></pre>
-</div>
-</div>
-</div>
-<a id="method_batchSend"></a><div class="element clickable method public method_batchSend " data-toggle="collapse" data-target=".method_batchSend .collapse" title="public">
-<h2>batchSend() - Does not seem to be working correctly.  Use at your own risk!</h2>
-<pre>batchSend() : array</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>This should probably be taken out as it look like a failed attempt to use the old-school AntiFlood plugin
+//Attach it to the message
+$message-&gt;attach($attachment);
+
+//The two statements above could be written in one line instead
+$message-&gt;attach(Swift_Attachment::fromPath('/path/to/image.jpg'));
+
+//You can attach files from a URL if allow_url_fopen is on in php.ini
+$message-&gt;attach(Swift_Attachment::fromPath('http://site.tld/logo.png'));</code></pre>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$file_to_attach</h4>
+                                                <code>string</code><p><p>This is the path to the file that you want to attach to the message</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$file_type</h4>
+                                                <code>string</code><p><p>This is the MIME type of the file that you are attaching</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_batchSend"></a>
+                        <div class="element clickable method public  method_batchSend" data-toggle="collapse" data-target=".method_batchSend .collapse">
+                            <h2>batchSend() - Does not seem to be working correctly.  Use at your own risk!</h2>
+                            <pre>batchSend() : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This should probably be taken out as it look like a failed attempt to use the old-school AntiFlood plugin
 This is leftover code from Swift 3.x</p></div>
-<table class="table table-bordered">
-<tr>
-<th>todo</th>
-<td>Update this section to use batch processing properly</td>
-</tr>
-<tr>
-<th>author</th>
-<td><a href="mailto:tyleresmart@gmail.com">Tyler Smart</a></td>
-</tr>
-</table>
-<h3>Returns</h3>
-<div class="subelement response"><code>array</code></div>
-</div></div>
-</div>
-<a id="method_clearBody"></a><div class="element clickable method public method_clearBody " data-toggle="collapse" data-target=".method_clearBody .collapse" title="public">
-<h2>clearBody() - This function will set the body of the message to empty, a blank text string</h2>
-<pre>clearBody() </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>author</th>
-<td><a href="mailto:tyleresmart@gmail.com">Tyler Smart</a></td>
-</tr></table>
-</div></div>
-</div>
-<a id="method_flushRecipients"></a><div class="element clickable method public method_flushRecipients " data-toggle="collapse" data-target=".method_flushRecipients .collapse" title="public">
-<h2>flushRecipients() - this will clear all of the recipients in the To array, ignoring CC and BCC</h2>
-<pre>flushRecipients() </pre>
-<div class="labels"></div>
-<div class="row collapse">
-<div class="span4">
-<div class="long_description"></div>
-<table class="table table-bordered">
-<tr>
-<th>author</th>
-<td><a href="mailto:tyleresmart@gmail.com">Tyler Smart</a></td>
-</tr>
-<tr>
-<th>example</th>
-<td>will set some recipients and then clear them
- $emailItem = new expMail();
 
-  $emailItem->addText('My Text ');
- $emailItem->addText('Line Two ');
-  $emailItem->addText('Line Three ');
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    todo
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Update this section to use batch processing properly</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    author
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Tyler Smart <a href="mailto:tyleresmart@gmail.com">tyleresmart@gmail.com</a></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
 
- $emailItem->addTo('bob@smith.com', 'Bob Smith');
- $emailItem->addTo('bob2@smith.com', 'Bob2 Smith');
- $emailItem->addTo('bob3@smith.com', 'Bob3 Smith');
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
 
-  $emailItem->flushRecipients();
+                        </div>
+                                            <a id="method_clearBody"></a>
+                        <div class="element clickable method public  method_clearBody" data-toggle="collapse" data-target=".method_clearBody .collapse">
+                            <h2>clearBody() - This function will set the body of the message to empty, a blank text string</h2>
+                            <pre>clearBody() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
 
- $emailItem->addTo('whataboutbob@smith.com', 'Frank Smith');
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
 
- $emailItem->send();</td>
-</tr>
-</table>
-</div>
-<div class="span4">
-<h3>Examples</h3>
-<pre class="prettyprint linenums"></pre>
-</div>
-</div>
-</div>
-<a id="method_messageId"></a><div class="element clickable method public method_messageId " data-toggle="collapse" data-target=".method_messageId .collapse" title="public">
-<h2>messageId() - This will return the unique ID of the mail message.</h2>
-<pre>messageId() : array</pre>
-<div class="labels"></div>
-<div class="row collapse">
-<div class="span4">
-<div class="long_description"><p>Courtesy of the underlying Swift mailer:</p>
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    author
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Tyler Smart <a href="mailto:tyleresmart@gmail.com">tyleresmart@gmail.com</a></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_flushRecipients"></a>
+                        <div class="element clickable method public  method_flushRecipients" data-toggle="collapse" data-target=".method_flushRecipients .collapse">
+                            <h2>flushRecipients() - this will clear all of the recipients in the To array, ignoring CC and BCC</h2>
+                            <pre>flushRecipients() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    author
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Tyler Smart <a href="mailto:tyleresmart@gmail.com">tyleresmart@gmail.com</a></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    example
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>will set some recipients and then clear them
+$emailItem = new expMail();</p>
+<p>$emailItem->addText('My Text ');
+$emailItem->addText('Line Two ');
+$emailItem->addText('Line Three ');</p>
+<p>$emailItem->addTo('bob@smith.com', 'Bob Smith');
+$emailItem->addTo('bob2@smith.com', 'Bob2 Smith');
+$emailItem->addTo('bob3@smith.com', 'Bob3 Smith');</p>
+<p>$emailItem->flushRecipients();</p>
+<p>$emailItem->addTo('whataboutbob@smith.com', 'Frank Smith');</p>
+<p>$emailItem->send();</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_messageId"></a>
+                        <div class="element clickable method public  method_messageId" data-toggle="collapse" data-target=".method_messageId .collapse">
+                            <h2>messageId() - This will return the unique ID of the mail message.</h2>
+                            <pre>messageId() : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Courtesy of the underlying Swift mailer:</p>
 <p>ID headers contain identifiers for the entity (or the message). The most notable ID header is the Message-ID header on the message itself.</p>
 <p>An ID that exists inside an ID header looks more-or-less less like an email address. For example, <a href="mailto:1234955437.499becad62ec2@example.org">1234955437.499becad62ec2@example.org</a>. The part to the left of the @ sign is usually unique, based on the          * current time and some random factor. The part on the right is usually a domain name.</p></div>
-<table class="table table-bordered">
-<tr>
-<th>author</th>
-<td><a href="mailto:tyleresmart@gmail.com">Tyler Smart</a></td>
-</tr>
-<tr>
-<th>example</th>
-<td>returns the Message ID on the mail
 
-$emailItem = new expMail();
-
- $emailItem->addText('My Text ');
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    author
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Tyler Smart <a href="mailto:tyleresmart@gmail.com">tyleresmart@gmail.com</a></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    example
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>returns the Message ID on the mail</p>
+<p>$emailItem = new expMail();</p>
+<p>$emailItem->addText('My Text ');
 $emailItem->addText('Line Two ');
- $emailItem->addText('Line Three ');
-
-$emailItem->addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));
+$emailItem->addText('Line Three ');</p>
+<p>$emailItem->addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));
 $emailItem->addFrom('from@sender.com');
-$emailItem->subject('Hello World!');
+$emailItem->subject('Hello World!');</p>
+<p>echo "$emailItem->messageID()";</p>
+<p>$emailItem->send();</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
 
- echo "$emailItem->messageID()";
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
 
-$emailItem->send();</td>
-</tr>
-</table>
-<h3>Returns</h3>
-<div class="subelement response"><code>array</code></div>
-</div>
-<div class="span4">
-<h3>Examples</h3>
-<pre class="prettyprint linenums"></pre>
-</div>
-</div>
-</div>
-<a id="method_quickBatchSend"></a><div class="element clickable method public method_quickBatchSend " data-toggle="collapse" data-target=".method_quickBatchSend .collapse" title="public">
-<h2>quickBatchSend() - a quick way to send a batch of emails one at a time
+                        </div>
+                                            <a id="method_quickBatchSend"></a>
+                        <div class="element clickable method public  method_quickBatchSend" data-toggle="collapse" data-target=".method_quickBatchSend .collapse">
+                            <h2>quickBatchSend() - a quick way to send a batch of emails one at a time
 This function is similar to quickSend, but sends each email separately to protect others identity in the mailing</h2>
-<pre>quickBatchSend(array $params<code> = array()</code>) : array</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>author</th>
-<td><a href="mailto:tyleresmart@gmail.com">Tyler Smart</a></td>
-</tr></table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$params</h4>
-<code>array</code>
-</div>
-<h3>Returns</h3>
-<div class="subelement response"><code>array</code></div>
-</div></div>
-</div>
-<a id="method_quickSend"></a><div class="element clickable method public method_quickSend " data-toggle="collapse" data-target=".method_quickSend .collapse" title="public">
-<h2>quickSend() - This is a quick method for sending email messages.  It only requires a message value be passed in
+                            <pre>quickBatchSend(array $params = array()) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    author
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Tyler Smart <a href="mailto:tyleresmart@gmail.com">tyleresmart@gmail.com</a></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$params</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_quickSend"></a>
+                        <div class="element clickable method public  method_quickSend" data-toggle="collapse" data-target=".method_quickSend .collapse">
+                            <h2>quickSend() - This is a quick method for sending email messages.  It only requires a message value be passed in
 an associative array, (or else the message fails immediately).</h2>
-<pre>quickSend(array $params<code> = array()</code>) : integer</pre>
-<div class="labels"></div>
-<div class="row collapse">
-<div class="span4">
-<div class="long_description"></div>
-<table class="table table-bordered">
-<tr>
-<th>todo</th>
-<td>May add allowing a string param to be passed as the message (text_message) using all defaults to mail it.</td>
-</tr>
-<tr>
-<th>author</th>
-<td><a href="mailto:tyleresmart@gmail.com">Tyler Smart</a></td>
-</tr>
-<tr>
-<th>example</th>
-<td>will send a quick message, showing you what basic fields are required.
+                            <pre>quickSend(array $params = array()) : integer</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
 
- $body = "My body.";
- $tos = explode(',', str_replace(' ', '', COMMENTS_NOTIFICATION_EMAIL)); //pull list of CSV emails from the site config
-  $subject = "My subject";
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
 
-  $mail = new expMail();
-  $mail->quickSend(array(
-         'html_message'=>$body,
-	    'to'=>$tos,
-	    'from'=>trim(SMTP_FROMADDRESS), //pull EMAIL from site config
-	    'subject'=>$subject,
-  ));
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    todo
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>May add allowing a string param to be passed as the message (text_message) using all defaults to mail it.</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    author
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Tyler Smart <a href="mailto:tyleresmart@gmail.com">tyleresmart@gmail.com</a></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    example
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>will send a quick message, showing you what basic fields are required.</p>
+<p>$body = "My body.";
+$tos = explode(',', str_replace(' ', '', COMMENTS_NOTIFICATION_EMAIL)); //pull list of CSV emails from the site config
+$subject = "My subject";</p>
+<p>$mail = new expMail();
+$mail->quickSend(array(</p>
+<pre><code>     'html_message'=&gt;$body,
+    'to'=&gt;$tos,
+    'from'=&gt;trim(SMTP_FROMADDRESS), //pull EMAIL from site config
+    'subject'=&gt;$subject,</code></pre>
+<p>));</p>
+<p>(or even simpler)
+$mail = new expMail();
+$mail->quickSend(array('html_message'=>'Hello'));</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
 
-  (or even simpler)
- $mail = new expMail();
-  $mail->quickSend(array('html_message'=>'Hello'));</td>
-</tr>
-</table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$params</h4>
-<code>array</code><p>This is the associative array required to send the email. The minimum basics for sending an email are:
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$params</h4>
+                                                <code>array</code><p><p>This is the associative array required to send the email. The minimum basics for sending an email are:
 -html_message or -text_message
 If a from or a to is not specified, the send method will pull the default SMTP_FROMADDRESS from the site config.
 Usable parameters include:
@@ -854,233 +1397,504 @@ Usable parameters include:
 -subject
 -html_message
 -text_message
--headers</p></div>
-<h3>Returns</h3>
-<div class="subelement response">
-<code>integer</code>number of recipients to which the email was successfully sent.</div>
-</div>
-<div class="span4">
-<h3>Examples</h3>
-<pre class="prettyprint linenums"></pre>
-</div>
-</div>
-</div>
-<a id="method_send"></a><div class="element clickable method public method_send " data-toggle="collapse" data-target=".method_send .collapse" title="public">
-<h2>send()
-        </h2>
-<pre>send() </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="method_setHTMLBody"></a><div class="element clickable method public method_setHTMLBody " data-toggle="collapse" data-target=".method_setHTMLBody .collapse" title="public">
-<h2>setHTMLBody() - This function sets the main version of the message to HTML.</h2>
-<pre>setHTMLBody(string $html) </pre>
-<div class="labels"></div>
-<div class="row collapse">
-<div class="span4">
-<div class="long_description"></div>
-<table class="table table-bordered">
-<tr>
-<th>author</th>
-<td><a href="mailto:tyleresmart@gmail.com">Tyler Smart</a></td>
-</tr>
-<tr>
-<th>example</th>
-<td>will set the message body to the HTML that is passed in. This is the standard way to set the email message body.
+-headers</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p><p>number of recipients to which the email was successfully sent.</p></p>
+                                                                    </div>
+                            </div>
 
- $emailItem = new expMail();
+                        </div>
+                                            <a id="method_send"></a>
+                        <div class="element clickable method public  method_send" data-toggle="collapse" data-target=".method_send .collapse">
+                            <h2>send</h2>
+                            <pre>send() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
 
- $emailItem->setHTMLBody('<h2>My Text</h2> '); //This sets the body to be an HTML version
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
 
- $emailItem->addTo('myemail@mysite.com');
- $emailItem->addFrom('from@sender.com');
- $emailItem->subject('Hello World!');
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
 
- $emailItem->send();</td>
-</tr>
-</table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$html</h4>
-<code>string</code><p>This is the HTML that you want set as the body</p></div>
-</div>
-<div class="span4">
-<h3>Examples</h3>
-<pre class="prettyprint linenums"></pre>
-</div>
-</div>
-</div>
-<a id="method_setTextBody"></a><div class="element clickable method public method_setTextBody " data-toggle="collapse" data-target=".method_setTextBody .collapse" title="public">
-<h2>setTextBody() - This function sets the main version of the message to plain text. No HTML</h2>
-<pre>setTextBody(string $text) </pre>
-<div class="labels"></div>
-<div class="row collapse">
-<div class="span4">
-<div class="long_description"></div>
-<table class="table table-bordered">
-<tr>
-<th>author</th>
-<td><a href="mailto:tyleresmart@gmail.com">Tyler Smart</a></td>
-</tr>
-<tr>
-<th>example</th>
-<td>will set the message body to plain text. Usually people do this because the recipient cannot read HTML email.
+                                    
+                                                                    </div>
+                            </div>
 
- $emailItem = new expMail();
+                        </div>
+                                            <a id="method_setHTMLBody"></a>
+                        <div class="element clickable method public  method_setHTMLBody" data-toggle="collapse" data-target=".method_setHTMLBody .collapse">
+                            <h2>setHTMLBody() - This function sets the main version of the message to HTML.</h2>
+                            <pre>setHTMLBody(string $html) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
 
- $emailItem->setTextBody('My Text '); //This adds a Text version in case they cannot read HTML
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
 
- $emailItem->addTo('myemail@mysite.com');
- $emailItem->addFrom('from@sender.com');
- $emailItem->subject('Hello World!');
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    author
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Tyler Smart <a href="mailto:tyleresmart@gmail.com">tyleresmart@gmail.com</a></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    example
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>will set the message body to the HTML that is passed in. This is the standard way to set the email message body.</p>
+<p>$emailItem = new expMail();</p>
+<p>$emailItem->setHTMLBody('<h2>My Text</h2> '); //This sets the body to be an HTML version</p>
+<p>$emailItem->addTo('myemail@mysite.com');
+$emailItem->addFrom('from@sender.com');
+$emailItem->subject('Hello World!');</p>
+<p>$emailItem->send();</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
 
- $emailItem->send();</td>
-</tr>
-</table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$text</h4>
-<code>string</code><p>This is the text version of the email you are sending</p></div>
-</div>
-<div class="span4">
-<h3>Examples</h3>
-<pre class="prettyprint linenums"></pre>
-</div>
-</div>
-</div>
-<a id="method_test"></a><div class="element clickable method public method_test " data-toggle="collapse" data-target=".method_test .collapse" title="public">
-<h2>test() - Does the mail system seem to be working correctly?
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$html</h4>
+                                                <code>string</code><p><p>This is the HTML that you want set as the body</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setTextBody"></a>
+                        <div class="element clickable method public  method_setTextBody" data-toggle="collapse" data-target=".method_setTextBody .collapse">
+                            <h2>setTextBody() - This function sets the main version of the message to plain text. No HTML</h2>
+                            <pre>setTextBody(string $text) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    author
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Tyler Smart <a href="mailto:tyleresmart@gmail.com">tyleresmart@gmail.com</a></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    example
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>will set the message body to plain text. Usually people do this because the recipient cannot read HTML email.</p>
+<p>$emailItem = new expMail();</p>
+<p>$emailItem->setTextBody('My Text '); //This adds a Text version in case they cannot read HTML</p>
+<p>$emailItem->addTo('myemail@mysite.com');
+$emailItem->addFrom('from@sender.com');
+$emailItem->subject('Hello World!');</p>
+<p>$emailItem->send();</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$text</h4>
+                                                <code>string</code><p><p>This is the text version of the email you are sending</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_test"></a>
+                        <div class="element clickable method public  method_test" data-toggle="collapse" data-target=".method_test .collapse">
+                            <h2>test() - Does the mail system seem to be working correctly?
   This is useless for the Native mail system</h2>
-<pre>test() </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>todo</th>
-<td>Update this section to use more error checking</td>
-</tr></table>
-</div></div>
-</div>
-<h3>
-<i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
-<a id="property_from"> </a><div class="element clickable property public property_from" data-toggle="collapse" data-target=".property_from .collapse" title="public">
-<h2>$from</h2>
-<pre>$from </pre>
-<div class="row collapse"><div class="detail-description">
-<h3>Default</h3>
-<div class="subelement argument"><code>NULL</code></div>
-</div></div>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="property_to"> </a><div class="element clickable property public property_to" data-toggle="collapse" data-target=".property_to .collapse" title="public">
-<h2>$to</h2>
-<pre>$to </pre>
-<div class="row collapse"><div class="detail-description">
-<h3>Default</h3>
-<div class="subelement argument"><code>null</code></div>
-</div></div>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="property_errStack"> </a><div class="element clickable property private property_errStack" data-toggle="collapse" data-target=".property_errStack .collapse" title="private">
-<h2>$errStack</h2>
-<pre>$errStack </pre>
-<div class="row collapse"><div class="detail-description">
-<h3>Default</h3>
-<div class="subelement argument"><code>null</code></div>
-</div></div>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="property_log"> </a><div class="element clickable property private property_log" data-toggle="collapse" data-target=".property_log .collapse" title="private">
-<h2>$log</h2>
-<pre>$log </pre>
-<div class="row collapse"><div class="detail-description">
-<h3>Default</h3>
-<div class="subelement argument"><code>null</code></div>
-</div></div>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="property_mailer"> </a><div class="element clickable property private property_mailer" data-toggle="collapse" data-target=".property_mailer .collapse" title="private">
-<h2>$mailer</h2>
-<pre>$mailer </pre>
-<div class="row collapse"><div class="detail-description">
-<h3>Default</h3>
-<div class="subelement argument"><code>null</code></div>
-</div></div>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="property_message"> </a><div class="element clickable property private property_message" data-toggle="collapse" data-target=".property_message .collapse" title="private">
-<h2>$message</h2>
-<pre>$message </pre>
-<div class="row collapse"><div class="detail-description">
-<h3>Default</h3>
-<div class="subelement argument"><code>null</code></div>
-</div></div>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="property_postcalldata"> </a><div class="element clickable property private property_postcalldata" data-toggle="collapse" data-target=".property_postcalldata .collapse" title="private">
-<h2>$postcalldata</h2>
-<pre>$postcalldata </pre>
-<div class="row collapse"><div class="detail-description">
-<h3>Default</h3>
-<div class="subelement argument"><code>null</code></div>
-</div></div>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="property_postcallfunction"> </a><div class="element clickable property private property_postcallfunction" data-toggle="collapse" data-target=".property_postcallfunction .collapse" title="private">
-<h2>$postcallfunction</h2>
-<pre>$postcallfunction </pre>
-<div class="row collapse"><div class="detail-description">
-<h3>Default</h3>
-<div class="subelement argument"><code>null</code></div>
-</div></div>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="property_precalldata"> </a><div class="element clickable property private property_precalldata" data-toggle="collapse" data-target=".property_precalldata .collapse" title="private">
-<h2>$precalldata</h2>
-<pre>$precalldata </pre>
-<div class="row collapse"><div class="detail-description">
-<h3>Default</h3>
-<div class="subelement argument"><code>null</code></div>
-</div></div>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="property_precallfunction"> </a><div class="element clickable property private property_precallfunction" data-toggle="collapse" data-target=".property_precallfunction .collapse" title="private">
-<h2>$precallfunction</h2>
-<pre>$precallfunction </pre>
-<div class="row collapse"><div class="detail-description">
-<h3>Default</h3>
-<div class="subelement argument"><code>null</code></div>
-</div></div>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-<a id="property_transport"> </a><div class="element clickable property private property_transport" data-toggle="collapse" data-target=".property_transport .collapse" title="private">
-<h2>$transport</h2>
-<pre>$transport </pre>
-<div class="row collapse"><div class="detail-description">
-<h3>Default</h3>
-<div class="subelement argument"><code>null</code></div>
-</div></div>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="row"><footer class="span12">
-            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.7.0</a> and<br>
-            generated on 2014-08-22T07:06:33-04:00.<br></footer></div>
-</div>
-</body>
+                            <pre>test() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    todo
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Update this section to use more error checking</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                    
+                    
+                                                                <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_log"> </a>
+                            <div class="element clickable property  private property_log" data-toggle="collapse" data-target=".property_log .collapse">
+                                <h2>log</h2>
+                                <pre>log : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_errStack"> </a>
+                            <div class="element clickable property  private property_errStack" data-toggle="collapse" data-target=".property_errStack .collapse">
+                                <h2>errStack</h2>
+                                <pre>errStack : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_to"> </a>
+                            <div class="element clickable property  public property_to" data-toggle="collapse" data-target=".property_to .collapse">
+                                <h2>to</h2>
+                                <pre>to : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_from"> </a>
+                            <div class="element clickable property  public property_from" data-toggle="collapse" data-target=".property_from .collapse">
+                                <h2>from</h2>
+                                <pre>from : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_message"> </a>
+                            <div class="element clickable property  private property_message" data-toggle="collapse" data-target=".property_message .collapse">
+                                <h2>message</h2>
+                                <pre>message : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_transport"> </a>
+                            <div class="element clickable property  private property_transport" data-toggle="collapse" data-target=".property_transport .collapse">
+                                <h2>transport</h2>
+                                <pre>transport : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_mailer"> </a>
+                            <div class="element clickable property  private property_mailer" data-toggle="collapse" data-target=".property_mailer .collapse">
+                                <h2>mailer</h2>
+                                <pre>mailer : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_precallfunction"> </a>
+                            <div class="element clickable property  private property_precallfunction" data-toggle="collapse" data-target=".property_precallfunction .collapse">
+                                <h2>precallfunction</h2>
+                                <pre>precallfunction : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_precalldata"> </a>
+                            <div class="element clickable property  private property_precalldata" data-toggle="collapse" data-target=".property_precalldata .collapse">
+                                <h2>precalldata</h2>
+                                <pre>precalldata : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_postcallfunction"> </a>
+                            <div class="element clickable property  private property_postcallfunction" data-toggle="collapse" data-target=".property_postcallfunction .collapse">
+                                <h2>postcallfunction</h2>
+                                <pre>postcallfunction : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_postcalldata"> </a>
+                            <div class="element clickable property  private property_postcalldata" data-toggle="collapse" data-target=".property_postcalldata .collapse">
+                                <h2>postcalldata</h2>
+                                <pre>postcalldata : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\expMail"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/default.html">\</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/expMail.html">expMail</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Sat, 08 Nov 2014 15:58:36 +0000.<br/>
+    </footer>
+    </body>
 </html>
