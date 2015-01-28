@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.3.2</a>
+                <a class="brand" href="../index.html">Exponent v2.3.3</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -590,7 +590,8 @@
 
                                         <div id="function_access" class="element ajax clickable function" data-toggle="collapse" data-target="#function_access .collapse">
         <h1>access<a href="../namespaces/default.html#function_access">¶</a></h1>
-        <p class="short_description">Simple function to demonstrate how to control file access using &quot;accessControl&quot; callback.</p>
+        <p class="short_description">example accessControl function
+to demonstrate how to control file access using &quot;accessControl&quot; callback.</p>
         <div class="details collapse">
                             
                             <div class="row collapse">
@@ -1227,6 +1228,14 @@
                                                 <h4>$file</h4>
                                                 <code></code><p></p>
                                             </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$regex</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$isalist</h4>
+                                                <code></code><p></p>
+                                            </div>
                                                                             
                                                                     </div>
                             </div>
@@ -1264,14 +1273,6 @@
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$file</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$regex</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$isalist</h4>
                                                 <code></code><p></p>
                                             </div>
                                                                             
@@ -1522,6 +1523,40 @@
                     </div>
         <a href="../namespaces/default.html#function_echoWarning" class="more">« More »</a>    </div>
 
+                                        <div id="function_ecom_active" class="element ajax clickable function" data-toggle="collapse" data-target="#function_ecom_active .collapse">
+        <h1>ecom_active<a href="../namespaces/default.html#function_ecom_active">¶</a></h1>
+        <p class="short_description">Return status of e-commerce</p>
+        <div class="details collapse">
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    package
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Default</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                    </div>
+        <a href="../namespaces/default.html#function_ecom_active" class="more">« More »</a>    </div>
+
                                         <div id="function_eDebug" class="element ajax clickable function" data-toggle="collapse" data-target="#function_eDebug .collapse">
         <h1>eDebug<a href="../namespaces/default.html#function_eDebug">¶</a></h1>
         <p class="short_description">dumps the passed variable to screen/log, but only if in development mode</p>
@@ -1551,6 +1586,10 @@
                                                                                     <div class="subelement argument">
                                                 <h4>$halt</h4>
                                                 <code>boolean</code><p><p>if set to true will halt execution</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$disable_log</h4>
+                                                <code>boolean</code><p><p>if set to true will disable logging and force to screen</p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -1660,13 +1699,6 @@
                                                                                                                                                                         <p>Default</p>
                                                                                                     </td>
                                             </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                             </table>
 
                                                                             <h3>Arguments</h3>
@@ -1679,6 +1711,8 @@
                                                 <code></code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
                                                                     </div>
                             </div>
                     </div>
@@ -1703,6 +1737,13 @@
                                                                                                                                                                         <p>Default</p>
                                                                                                     </td>
                                             </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
                                                                             </table>
 
                                                                             <h3>Arguments</h3>
@@ -1715,8 +1756,6 @@
                                                 <code></code><p></p>
                                             </div>
                                                                             
-                                                                            <h3>Response</h3>
-                                        <code>string</code><p></p>
                                                                     </div>
                             </div>
                     </div>
@@ -3787,7 +3826,7 @@ just before it gets rendered to the screen should happen here.</p>
 
                                         <div id="function_logger" class="element ajax clickable function" data-toggle="collapse" data-target="#function_logger .collapse">
         <h1>logger<a href="../namespaces/default.html#function_logger">¶</a></h1>
-        <p class="short_description">Smart logger function
+        <p class="short_description">example logger function
 Demonstrate how to work with elFinder event api</p>
         <div class="details collapse">
                             
@@ -4418,7 +4457,7 @@ Demonstrate how to work with elFinder event api</p>
 
                                         <div id="function_renderAction" class="element ajax clickable function" data-toggle="collapse" data-target="#function_renderAction .collapse">
         <h1>renderAction<a href="../namespaces/default.html#function_renderAction">¶</a></h1>
-        <p class="short_description">Main module display logic/routine for MVC modules</p>
+        <p class="short_description">Main module action/display logic/routine; initializes/checks controller before calling action/method</p>
         <div class="details collapse">
                             
                             <div class="row collapse">
@@ -5135,56 +5174,6 @@ Purpose:  Set up a pagination block</p></div>
 
                                         <div id="function_smarty_block_permissions" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_block_permissions .collapse">
         <h1>smarty_block_permissions<a href="../namespaces/default.html#function_smarty_block_permissions">¶</a></h1>
-        <p class="short_description">Smarty {permissions} block plugin</p>
-        <div class="details collapse">
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"><p>Type:     block<br>
-Name:     permissions<br>
-Purpose:  Set up a permissions block</p></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    package
-                                                </th>
-                                                <td>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>Smarty-Plugins</p>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>Smarty-Plugins</p>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$params</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$content</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$smarty</h4>
-                                                <code>\Smarty</code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$repeat</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>string</code><p></p>
-                                                                    </div>
-                            </div>
-                    </div>
-        <a href="../namespaces/default.html#function_smarty_block_permissions" class="more">« More »</a>    </div>
-
-                                        <div id="function_smarty_block_permissions" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_block_permissions .collapse">
-        <h1>smarty_block_permissions<a href="../namespaces/default.html#function_smarty_block_permissions">¶</a></h1>
         <p class="short_description"></p>
         <div class="details collapse">
                             
@@ -5231,6 +5220,56 @@ Purpose:  Set up a permissions block</p></div>
                                                 <code></code><p></p>
                                             </div>
                                                                             
+                                                                    </div>
+                            </div>
+                    </div>
+        <a href="../namespaces/default.html#function_smarty_block_permissions" class="more">« More »</a>    </div>
+
+                                        <div id="function_smarty_block_permissions" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_block_permissions .collapse">
+        <h1>smarty_block_permissions<a href="../namespaces/default.html#function_smarty_block_permissions">¶</a></h1>
+        <p class="short_description">Smarty {permissions} block plugin</p>
+        <div class="details collapse">
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Type:     block<br>
+Name:     permissions<br>
+Purpose:  Set up a permissions block</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    package
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Smarty-Plugins</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Smarty-Plugins</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$params</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$content</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$smarty</h4>
+                                                <code>\Smarty</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$repeat</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
                                                                     </div>
                             </div>
                     </div>
@@ -5991,96 +6030,6 @@ Purpose:  create appropriate currency symbol</p></div>
 
                                         <div id="function_smarty_function_ddrerank" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_function_ddrerank .collapse">
         <h1>smarty_function_ddrerank<a href="../namespaces/default.html#function_smarty_function_ddrerank">¶</a></h1>
-        <p class="short_description"></p>
-        <div class="details collapse">
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    package
-                                                </th>
-                                                <td>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>Smarty-Plugins</p>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>Smarty-Plugins</p>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$params</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$smarty</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                            
-                                                                    </div>
-                            </div>
-                    </div>
-        <a href="../namespaces/default.html#function_smarty_function_ddrerank" class="more">« More »</a>    </div>
-
-                                        <div id="function_smarty_function_ddrerank" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_function_ddrerank .collapse">
-        <h1>smarty_function_ddrerank<a href="../namespaces/default.html#function_smarty_function_ddrerank">¶</a></h1>
-        <p class="short_description"></p>
-        <div class="details collapse">
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    package
-                                                </th>
-                                                <td>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>Smarty-Plugins</p>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>Smarty-Plugins</p>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$params</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$smarty</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                            
-                                                                    </div>
-                            </div>
-                    </div>
-        <a href="../namespaces/default.html#function_smarty_function_ddrerank" class="more">« More »</a>    </div>
-
-                                        <div id="function_smarty_function_ddrerank" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_function_ddrerank .collapse">
-        <h1>smarty_function_ddrerank<a href="../namespaces/default.html#function_smarty_function_ddrerank">¶</a></h1>
         <p class="short_description">Smarty {ddrerank} function plugin</p>
         <div class="details collapse">
                             
@@ -6112,6 +6061,96 @@ Purpose:  display item re-ranking popup</p></div>
                                                                                     <div class="subelement argument">
                                                 <h4>$smarty</h4>
                                                 <code>\Smarty</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                    </div>
+        <a href="../namespaces/default.html#function_smarty_function_ddrerank" class="more">« More »</a>    </div>
+
+                                        <div id="function_smarty_function_ddrerank" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_function_ddrerank .collapse">
+        <h1>smarty_function_ddrerank<a href="../namespaces/default.html#function_smarty_function_ddrerank">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse">
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    package
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Smarty-Plugins</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Smarty-Plugins</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$params</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$smarty</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                    </div>
+        <a href="../namespaces/default.html#function_smarty_function_ddrerank" class="more">« More »</a>    </div>
+
+                                        <div id="function_smarty_function_ddrerank" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_function_ddrerank .collapse">
+        <h1>smarty_function_ddrerank<a href="../namespaces/default.html#function_smarty_function_ddrerank">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse">
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    package
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Smarty-Plugins</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Smarty-Plugins</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$params</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$smarty</h4>
+                                                <code></code><p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -6288,6 +6327,46 @@ Purpose:  include an external editor</p></div>
 
                                         <div id="function_smarty_function_export_pdf_link" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_function_export_pdf_link .collapse">
         <h1>smarty_function_export_pdf_link<a href="../namespaces/default.html#function_smarty_function_export_pdf_link">¶</a></h1>
+        <p class="short_description">Smarty {export_pdf_link} function plugin</p>
+        <div class="details collapse">
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Type:     function<br>
+Name:     export_pdf_link<br>
+Purpose:  format a link for exporting a PDF version of the page</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    package
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Smarty-Plugins</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Smarty-Plugins</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$params</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$smarty</h4>
+                                                <code>\Smarty</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                    </div>
+        <a href="../namespaces/default.html#function_smarty_function_export_pdf_link" class="more">« More »</a>    </div>
+
+                                        <div id="function_smarty_function_export_pdf_link" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_function_export_pdf_link .collapse">
+        <h1>smarty_function_export_pdf_link<a href="../namespaces/default.html#function_smarty_function_export_pdf_link">¶</a></h1>
         <p class="short_description"></p>
         <div class="details collapse">
                             
@@ -6324,46 +6403,6 @@ Purpose:  include an external editor</p></div>
                                                                                     <div class="subelement argument">
                                                 <h4>$smarty</h4>
                                                 <code></code><p></p>
-                                            </div>
-                                                                            
-                                                                    </div>
-                            </div>
-                    </div>
-        <a href="../namespaces/default.html#function_smarty_function_export_pdf_link" class="more">« More »</a>    </div>
-
-                                        <div id="function_smarty_function_export_pdf_link" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_function_export_pdf_link .collapse">
-        <h1>smarty_function_export_pdf_link<a href="../namespaces/default.html#function_smarty_function_export_pdf_link">¶</a></h1>
-        <p class="short_description">Smarty {export_pdf_link} function plugin</p>
-        <div class="details collapse">
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"><p>Type:     function<br>
-Name:     export_pdf_link<br>
-Purpose:  format a link for exporting a PDF version of the page</p></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    package
-                                                </th>
-                                                <td>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>Smarty-Plugins</p>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>Smarty-Plugins</p>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$params</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$smarty</h4>
-                                                <code>\Smarty</code><p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -6615,6 +6654,96 @@ Purpose:  get user name</p></div>
 
                                         <div id="function_smarty_function_getchromemenu" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_function_getchromemenu .collapse">
         <h1>smarty_function_getchromemenu<a href="../namespaces/default.html#function_smarty_function_getchromemenu">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse">
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    package
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Smarty-Plugins</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Smarty-Plugins</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$params</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$smarty</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                    </div>
+        <a href="../namespaces/default.html#function_smarty_function_getchromemenu" class="more">« More »</a>    </div>
+
+                                        <div id="function_smarty_function_getchromemenu" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_function_getchromemenu .collapse">
+        <h1>smarty_function_getchromemenu<a href="../namespaces/default.html#function_smarty_function_getchromemenu">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse">
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    package
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Smarty-Plugins</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Smarty-Plugins</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$params</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$smarty</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                    </div>
+        <a href="../namespaces/default.html#function_smarty_function_getchromemenu" class="more">« More »</a>    </div>
+
+                                        <div id="function_smarty_function_getchromemenu" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_function_getchromemenu .collapse">
+        <h1>smarty_function_getchromemenu<a href="../namespaces/default.html#function_smarty_function_getchromemenu">¶</a></h1>
         <p class="short_description">Smarty {getchromemenu} function plugin</p>
         <div class="details collapse">
                             
@@ -6646,96 +6775,6 @@ Purpose:  display the chrome menu</p></div>
                                                                                     <div class="subelement argument">
                                                 <h4>$smarty</h4>
                                                 <code>\Smarty</code><p></p>
-                                            </div>
-                                                                            
-                                                                    </div>
-                            </div>
-                    </div>
-        <a href="../namespaces/default.html#function_smarty_function_getchromemenu" class="more">« More »</a>    </div>
-
-                                        <div id="function_smarty_function_getchromemenu" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_function_getchromemenu .collapse">
-        <h1>smarty_function_getchromemenu<a href="../namespaces/default.html#function_smarty_function_getchromemenu">¶</a></h1>
-        <p class="short_description"></p>
-        <div class="details collapse">
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    package
-                                                </th>
-                                                <td>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>Smarty-Plugins</p>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>Smarty-Plugins</p>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$params</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$smarty</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                            
-                                                                    </div>
-                            </div>
-                    </div>
-        <a href="../namespaces/default.html#function_smarty_function_getchromemenu" class="more">« More »</a>    </div>
-
-                                        <div id="function_smarty_function_getchromemenu" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_function_getchromemenu .collapse">
-        <h1>smarty_function_getchromemenu<a href="../namespaces/default.html#function_smarty_function_getchromemenu">¶</a></h1>
-        <p class="short_description"></p>
-        <div class="details collapse">
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    package
-                                                </th>
-                                                <td>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>Smarty-Plugins</p>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>Smarty-Plugins</p>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$params</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$smarty</h4>
-                                                <code></code><p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -7025,90 +7064,6 @@ Purpose:  display a list control of user groups</p></div>
 
                                         <div id="function_smarty_function_help" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_function_help .collapse">
         <h1>smarty_function_help<a href="../namespaces/default.html#function_smarty_function_help">¶</a></h1>
-        <p class="short_description">Smarty {help} function plugin</p>
-        <div class="details collapse">
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"><p>Type:     function<br>
-Name:     help<br>
-Purpose:  create a help link</p></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    package
-                                                </th>
-                                                <td>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>Smarty-Plugins</p>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>Smarty-Plugins</p>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$params</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$smarty</h4>
-                                                <code>\Smarty</code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>boolean</code><p></p>
-                                                                    </div>
-                            </div>
-                    </div>
-        <a href="../namespaces/default.html#function_smarty_function_help" class="more">« More »</a>    </div>
-
-                                        <div id="function_smarty_function_help" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_function_help .collapse">
-        <h1>smarty_function_help<a href="../namespaces/default.html#function_smarty_function_help">¶</a></h1>
-        <p class="short_description">Smarty {help} function plugin</p>
-        <div class="details collapse">
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"><p>Type:     function<br>
-Name:     help<br>
-Purpose:  create a help link</p></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    package
-                                                </th>
-                                                <td>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>Smarty-Plugins</p>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>Smarty-Plugins</p>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$params</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$smarty</h4>
-                                                <code>\Smarty</code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>boolean</code><p></p>
-                                                                    </div>
-                            </div>
-                    </div>
-        <a href="../namespaces/default.html#function_smarty_function_help" class="more">« More »</a>    </div>
-
-                                        <div id="function_smarty_function_help" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_function_help .collapse">
-        <h1>smarty_function_help<a href="../namespaces/default.html#function_smarty_function_help">¶</a></h1>
         <p class="short_description"></p>
         <div class="details collapse">
                             
@@ -7147,6 +7102,90 @@ Purpose:  create a help link</p></div>
                                                 <code></code><p></p>
                                             </div>
                                                                             
+                                                                    </div>
+                            </div>
+                    </div>
+        <a href="../namespaces/default.html#function_smarty_function_help" class="more">« More »</a>    </div>
+
+                                        <div id="function_smarty_function_help" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_function_help .collapse">
+        <h1>smarty_function_help<a href="../namespaces/default.html#function_smarty_function_help">¶</a></h1>
+        <p class="short_description">Smarty {help} function plugin</p>
+        <div class="details collapse">
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Type:     function<br>
+Name:     help<br>
+Purpose:  create a help link</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    package
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Smarty-Plugins</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Smarty-Plugins</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$params</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$smarty</h4>
+                                                <code>\Smarty</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+                    </div>
+        <a href="../namespaces/default.html#function_smarty_function_help" class="more">« More »</a>    </div>
+
+                                        <div id="function_smarty_function_help" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_function_help .collapse">
+        <h1>smarty_function_help<a href="../namespaces/default.html#function_smarty_function_help">¶</a></h1>
+        <p class="short_description">Smarty {help} function plugin</p>
+        <div class="details collapse">
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Type:     function<br>
+Name:     help<br>
+Purpose:  create a help link</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    package
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Smarty-Plugins</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Smarty-Plugins</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$params</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$smarty</h4>
+                                                <code>\Smarty</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
                                                                     </div>
                             </div>
                     </div>
@@ -7313,96 +7352,6 @@ Purpose:  format a link for an iCalendar feed of the module</p></div>
                             </div>
                     </div>
         <a href="../namespaces/default.html#function_smarty_function_ical_link" class="more">« More »</a>    </div>
-
-                                        <div id="function_smarty_function_icon" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_function_icon .collapse">
-        <h1>smarty_function_icon<a href="../namespaces/default.html#function_smarty_function_icon">¶</a></h1>
-        <p class="short_description"></p>
-        <div class="details collapse">
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    package
-                                                </th>
-                                                <td>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>Smarty-Plugins</p>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>Smarty-Plugins</p>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$params</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$smarty</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                            
-                                                                    </div>
-                            </div>
-                    </div>
-        <a href="../namespaces/default.html#function_smarty_function_icon" class="more">« More »</a>    </div>
-
-                                        <div id="function_smarty_function_icon" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_function_icon .collapse">
-        <h1>smarty_function_icon<a href="../namespaces/default.html#function_smarty_function_icon">¶</a></h1>
-        <p class="short_description"></p>
-        <div class="details collapse">
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    package
-                                                </th>
-                                                <td>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>Smarty-Plugins</p>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>Smarty-Plugins</p>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$params</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$smarty</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                            
-                                                                    </div>
-                            </div>
-                    </div>
-        <a href="../namespaces/default.html#function_smarty_function_icon" class="more">« More »</a>    </div>
 
                                         <div id="function_smarty_function_icon" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_function_icon .collapse">
         <h1>smarty_function_icon<a href="../namespaces/default.html#function_smarty_function_icon">¶</a></h1>
@@ -7437,6 +7386,96 @@ Purpose:  create an icon type link</p></div>
                                                                                     <div class="subelement argument">
                                                 <h4>$smarty</h4>
                                                 <code>\Smarty</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                    </div>
+        <a href="../namespaces/default.html#function_smarty_function_icon" class="more">« More »</a>    </div>
+
+                                        <div id="function_smarty_function_icon" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_function_icon .collapse">
+        <h1>smarty_function_icon<a href="../namespaces/default.html#function_smarty_function_icon">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse">
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    package
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Smarty-Plugins</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Smarty-Plugins</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$params</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$smarty</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                    </div>
+        <a href="../namespaces/default.html#function_smarty_function_icon" class="more">« More »</a>    </div>
+
+                                        <div id="function_smarty_function_icon" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_function_icon .collapse">
+        <h1>smarty_function_icon<a href="../namespaces/default.html#function_smarty_function_icon">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse">
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    package
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Smarty-Plugins</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Smarty-Plugins</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$params</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$smarty</h4>
+                                                <code></code><p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -8397,6 +8436,46 @@ Purpose:  make a podcast link</p></div>
 
                                         <div id="function_smarty_function_printer_friendly_link" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_function_printer_friendly_link .collapse">
         <h1>smarty_function_printer_friendly_link<a href="../namespaces/default.html#function_smarty_function_printer_friendly_link">¶</a></h1>
+        <p class="short_description">Smarty {printer_friendly_link} function plugin</p>
+        <div class="details collapse">
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Type:     function<br>
+Name:     printer_friendly_link<br>
+Purpose:  format a link for displaying a printer friendly version of the page</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    package
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Smarty-Plugins</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Smarty-Plugins</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$params</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$smarty</h4>
+                                                <code>\Smarty</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                    </div>
+        <a href="../namespaces/default.html#function_smarty_function_printer_friendly_link" class="more">« More »</a>    </div>
+
+                                        <div id="function_smarty_function_printer_friendly_link" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_function_printer_friendly_link .collapse">
+        <h1>smarty_function_printer_friendly_link<a href="../namespaces/default.html#function_smarty_function_printer_friendly_link">¶</a></h1>
         <p class="short_description"></p>
         <div class="details collapse">
                             
@@ -8433,46 +8512,6 @@ Purpose:  make a podcast link</p></div>
                                                                                     <div class="subelement argument">
                                                 <h4>$smarty</h4>
                                                 <code></code><p></p>
-                                            </div>
-                                                                            
-                                                                    </div>
-                            </div>
-                    </div>
-        <a href="../namespaces/default.html#function_smarty_function_printer_friendly_link" class="more">« More »</a>    </div>
-
-                                        <div id="function_smarty_function_printer_friendly_link" class="element ajax clickable function" data-toggle="collapse" data-target="#function_smarty_function_printer_friendly_link .collapse">
-        <h1>smarty_function_printer_friendly_link<a href="../namespaces/default.html#function_smarty_function_printer_friendly_link">¶</a></h1>
-        <p class="short_description">Smarty {printer_friendly_link} function plugin</p>
-        <div class="details collapse">
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"><p>Type:     function<br>
-Name:     printer_friendly_link<br>
-Purpose:  format a link for displaying a printer friendly version of the page</p></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    package
-                                                </th>
-                                                <td>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>Smarty-Plugins</p>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>Smarty-Plugins</p>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$params</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$smarty</h4>
-                                                <code>\Smarty</code><p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -11109,6 +11148,40 @@ Purpose:  return the username for a user id</p>
                     </div>
         <a href="../namespaces/default.html#function_sortSearch" class="more">« More »</a>    </div>
 
+                                        <div id="function_stripslashes_deep" class="element ajax clickable function" data-toggle="collapse" data-target="#function_stripslashes_deep .collapse">
+        <h1>stripslashes_deep<a href="../namespaces/default.html#function_stripslashes_deep">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse">
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    package
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Default</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p></p>
+                                                                    </div>
+                            </div>
+                    </div>
+        <a href="../namespaces/default.html#function_stripslashes_deep" class="more">« More »</a>    </div>
+
                                         <div id="function_tmp_removePrefix" class="element ajax clickable function" data-toggle="collapse" data-target="#function_tmp_removePrefix .collapse">
         <h1>tmp_removePrefix<a href="../namespaces/default.html#function_tmp_removePrefix">¶</a></h1>
         <p class="short_description"></p>
@@ -11125,7 +11198,9 @@ Purpose:  return the username for a user id</p>
                                                 </th>
                                                 <td>
                                                                                                                                                                         
-                                                                                                                                                                        <p>Default</p>
+                                                                                                                                                                        <p>Core</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Core</p>
                                                                                                     </td>
                                             </tr>
                                                                                     <tr>
@@ -11164,9 +11239,7 @@ Purpose:  return the username for a user id</p>
                                                 </th>
                                                 <td>
                                                                                                                                                                         
-                                                                                                                                                                        <p>Core</p>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>Core</p>
+                                                                                                                                                                        <p>Default</p>
                                                                                                     </td>
                                             </tr>
                                                                                     <tr>
@@ -11283,7 +11356,7 @@ Purpose:  return the username for a user id</p>
 
                                         <div id="function_validName" class="element ajax clickable function" data-toggle="collapse" data-target="#function_validName .collapse">
         <h1>validName<a href="../namespaces/default.html#function_validName">¶</a></h1>
-        <p class="short_description"></p>
+        <p class="short_description">example acceptedName function</p>
         <div class="details collapse">
                             
                             <div class="row collapse">
@@ -12002,6 +12075,22 @@ The absolute url to Exponent&#039;s core javascript.</p>
                     </div>
         <a href="../namespaces/default.html#constant_JQUERYUI_SCRIPT" class="more">« More »</a>    </div>
 
+                                        <div id="constant_JQUERYUI_THEME" class="element ajax clickable constant" data-toggle="collapse" data-target="#constant_JQUERYUI_THEME .collapse">
+        <h1>JQUERYUI_THEME<a href="../namespaces/default.html#constant_JQUERYUI_THEME">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../namespaces/default.html#constant_JQUERYUI_THEME" class="more">« More »</a>    </div>
+
+                                        <div id="constant_JQUERYUI_CSS" class="element ajax clickable constant" data-toggle="collapse" data-target="#constant_JQUERYUI_CSS .collapse">
+        <h1>JQUERYUI_CSS<a href="../namespaces/default.html#constant_JQUERYUI_CSS">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../namespaces/default.html#constant_JQUERYUI_CSS" class="more">« More »</a>    </div>
+
                                         <div id="constant_SMARTY_VERSION" class="element ajax clickable constant" data-toggle="collapse" data-target="#constant_SMARTY_VERSION .collapse">
         <h1>SMARTY_VERSION<a href="../namespaces/default.html#constant_SMARTY_VERSION">¶</a></h1>
         <p class="short_description"></p>
@@ -12337,6 +12426,62 @@ The absolute url to Exponent&#039;s core javascript.</p>
                             
                     </div>
         <a href="../namespaces/default.html#constant_QUICK_UPLOAD_FOLDER" class="more">« More »</a>    </div>
+
+                                        <div id="constant_BTN_COLOR" class="element ajax clickable constant" data-toggle="collapse" data-target="#constant_BTN_COLOR .collapse">
+        <h1>BTN_COLOR<a href="../namespaces/default.html#constant_BTN_COLOR">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../namespaces/default.html#constant_BTN_COLOR" class="more">« More »</a>    </div>
+
+                                        <div id="constant_SWATCH" class="element ajax clickable constant" data-toggle="collapse" data-target="#constant_SWATCH .collapse">
+        <h1>SWATCH<a href="../namespaces/default.html#constant_SWATCH">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../namespaces/default.html#constant_SWATCH" class="more">« More »</a>    </div>
+
+                                        <div id="constant_BTN_SIZE" class="element ajax clickable constant" data-toggle="collapse" data-target="#constant_BTN_SIZE .collapse">
+        <h1>BTN_SIZE<a href="../namespaces/default.html#constant_BTN_SIZE">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../namespaces/default.html#constant_BTN_SIZE" class="more">« More »</a>    </div>
+
+                                        <div id="constant_MENU_LOCATION" class="element ajax clickable constant" data-toggle="collapse" data-target="#constant_MENU_LOCATION .collapse">
+        <h1>MENU_LOCATION<a href="../namespaces/default.html#constant_MENU_LOCATION">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../namespaces/default.html#constant_MENU_LOCATION" class="more">« More »</a>    </div>
+
+                                        <div id="constant_MENU_HEIGHT" class="element ajax clickable constant" data-toggle="collapse" data-target="#constant_MENU_HEIGHT .collapse">
+        <h1>MENU_HEIGHT<a href="../namespaces/default.html#constant_MENU_HEIGHT">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../namespaces/default.html#constant_MENU_HEIGHT" class="more">« More »</a>    </div>
+
+                                        <div id="constant_MENU_WIDTH" class="element ajax clickable constant" data-toggle="collapse" data-target="#constant_MENU_WIDTH .collapse">
+        <h1>MENU_WIDTH<a href="../namespaces/default.html#constant_MENU_WIDTH">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../namespaces/default.html#constant_MENU_WIDTH" class="more">« More »</a>    </div>
+
+                                        <div id="constant_MENU_ALIGN" class="element ajax clickable constant" data-toggle="collapse" data-target="#constant_MENU_ALIGN .collapse">
+        <h1>MENU_ALIGN<a href="../namespaces/default.html#constant_MENU_ALIGN">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../namespaces/default.html#constant_MENU_ALIGN" class="more">« More »</a>    </div>
 
                                         <div id="constant_BTN_COLOR" class="element ajax clickable constant" data-toggle="collapse" data-target="#constant_BTN_COLOR .collapse">
         <h1>BTN_COLOR<a href="../namespaces/default.html#constant_BTN_COLOR">¶</a></h1>
@@ -12945,22 +13090,6 @@ The absolute url to Exponent&#039;s core javascript.</p>
                             
                     </div>
         <a href="../namespaces/default.html#constant_SWATCH" class="more">« More »</a>    </div>
-
-                                        <div id="constant_JQUERYUI_THEME" class="element ajax clickable constant" data-toggle="collapse" data-target="#constant_JQUERYUI_THEME .collapse">
-        <h1>JQUERYUI_THEME<a href="../namespaces/default.html#constant_JQUERYUI_THEME">¶</a></h1>
-        <p class="short_description"></p>
-        <div class="details collapse">
-                            
-                    </div>
-        <a href="../namespaces/default.html#constant_JQUERYUI_THEME" class="more">« More »</a>    </div>
-
-                                        <div id="constant_JQUERYUI_CSS" class="element ajax clickable constant" data-toggle="collapse" data-target="#constant_JQUERYUI_CSS .collapse">
-        <h1>JQUERYUI_CSS<a href="../namespaces/default.html#constant_JQUERYUI_CSS">¶</a></h1>
-        <p class="short_description"></p>
-        <div class="details collapse">
-                            
-                    </div>
-        <a href="../namespaces/default.html#constant_JQUERYUI_CSS" class="more">« More »</a>    </div>
 
                                         <div id="constant_XHTML" class="element ajax clickable constant" data-toggle="collapse" data-target="#constant_XHTML .collapse">
         <h1>XHTML<a href="../namespaces/default.html#constant_XHTML">¶</a></h1>
@@ -15309,15 +15438,16 @@ elFinder object subclass for Exponent CMS expFile filesystem.</p>
 
                                         <div id="class_elFinderSimpleLogger" class="element ajax clickable class" data-toggle="collapse" data-target="#class_elFinderSimpleLogger .collapse">
         <h1>elFinderSimpleLogger<a href="../classes/elFinderSimpleLogger.html">¶</a></h1>
-        <p class="short_description">Simple logger function.</p>
+        <p class="short_description">example logger class
+Demonstrate how to work with elFinder event api.</p>
         <div class="details collapse">
-                            <p>Demonstrate how to work with elFinder event api.</p>
+                            
                     </div>
         <a href="../classes/elFinderSimpleLogger.html" class="more">« More »</a>    </div>
 
                                         <div id="class_elFinderTestACL" class="element ajax clickable class" data-toggle="collapse" data-target="#class_elFinderTestACL .collapse">
         <h1>elFinderTestACL<a href="../classes/elFinderTestACL.html">¶</a></h1>
-        <p class="short_description">Access control example class</p>
+        <p class="short_description">example accessControl class</p>
         <div class="details collapse">
                             
                     </div>
@@ -16172,6 +16302,14 @@ registerable and unregisterable controls.</p>
                     </div>
         <a href="../classes/freeshippingcalculator.html" class="more">« More »</a>    </div>
 
+                                        <div id="class_gen230theme_c" class="element ajax clickable class" data-toggle="collapse" data-target="#class_gen230theme_c .collapse">
+        <h1>gen230theme_c<a href="../classes/gen230theme_c.html">¶</a></h1>
+        <p class="short_description">This is the base theme class</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/gen230theme_c.html" class="more">« More »</a>    </div>
+
                                         <div id="class_genericcontrol" class="element ajax clickable class" data-toggle="collapse" data-target="#class_genericcontrol .collapse">
         <h1>genericcontrol<a href="../classes/genericcontrol.html">¶</a></h1>
         <p class="short_description">Generic HTML Input Control</p>
@@ -16460,14 +16598,6 @@ registerable and unregisterable controls.</p>
                     </div>
         <a href="../classes/multioptionstheme.html" class="more">« More »</a>    </div>
 
-                                        <div id="class_mysql_database" class="element ajax clickable class" data-toggle="collapse" data-target="#class_mysql_database .collapse">
-        <h1>mysql_database<a href="../classes/mysql_database.html">¶</a></h1>
-        <p class="short_description">This is the class database</p>
-        <div class="details collapse">
-                            <p>This is the generic implementation of the database class.</p>
-                    </div>
-        <a href="../classes/mysql_database.html" class="more">« More »</a>    </div>
-
                                         <div id="class_mysqli_database" class="element ajax clickable class" data-toggle="collapse" data-target="#class_mysqli_database .collapse">
         <h1>mysqli_database<a href="../classes/mysqli_database.html">¶</a></h1>
         <p class="short_description">This is the class database</p>
@@ -16478,9 +16608,9 @@ registerable and unregisterable controls.</p>
 
                                         <div id="class_mysqlid_database" class="element ajax clickable class" data-toggle="collapse" data-target="#class_mysqlid_database .collapse">
         <h1>mysqlid_database<a href="../classes/mysqlid_database.html">¶</a></h1>
-        <p class="short_description">This is the class database</p>
+        <p class="short_description"></p>
         <div class="details collapse">
-                            <p>This is the generic implementation of the database class.</p>
+                            
                     </div>
         <a href="../classes/mysqlid_database.html" class="more">« More »</a>    </div>
 
@@ -16734,7 +16864,7 @@ registerable and unregisterable controls.</p>
 
                                         <div id="class_popupdatetimecontrol" class="element ajax clickable class" data-toggle="collapse" data-target="#class_popupdatetimecontrol .collapse">
         <h1>popupdatetimecontrol<a href="../classes/popupdatetimecontrol.html">¶</a></h1>
-        <p class="short_description">Popup Date/Time Picker Control</p>
+        <p class="short_description">YUI Popup Date/Time Picker Control</p>
         <div class="details collapse">
                             
                     </div>
@@ -16742,7 +16872,7 @@ registerable and unregisterable controls.</p>
 
                                         <div id="class_popupdatetimecontrol" class="element ajax clickable class" data-toggle="collapse" data-target="#class_popupdatetimecontrol .collapse">
         <h1>popupdatetimecontrol<a href="../classes/popupdatetimecontrol.html">¶</a></h1>
-        <p class="short_description">YUI Popup Date/Time Picker Control</p>
+        <p class="short_description">Popup Date/Time Picker Control</p>
         <div class="details collapse">
                             
                     </div>
@@ -17367,23 +17497,23 @@ THEME_ABSOLUTE/views or /framework/core/views.</p>
 
                                         <div id="class_tagpickercontrol" class="element ajax clickable class" data-toggle="collapse" data-target="#class_tagpickercontrol .collapse">
         <h1>tagpickercontrol<a href="../classes/tagpickercontrol.html">¶</a></h1>
+        <p class="short_description">Tag Picker Control using jQuery tag-it</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/tagpickercontrol.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_tagpickercontrol" class="element ajax clickable class" data-toggle="collapse" data-target="#class_tagpickercontrol .collapse">
+        <h1>tagpickercontrol<a href="../classes/tagpickercontrol.html">¶</a></h1>
+        <p class="short_description">Tag Picker Control using jQuery tag-it</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/tagpickercontrol.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_tagpickercontrol" class="element ajax clickable class" data-toggle="collapse" data-target="#class_tagpickercontrol .collapse">
+        <h1>tagpickercontrol<a href="../classes/tagpickercontrol.html">¶</a></h1>
         <p class="short_description">Tag Picker Control</p>
-        <div class="details collapse">
-                            
-                    </div>
-        <a href="../classes/tagpickercontrol.html" class="more">« More »</a>    </div>
-
-                                        <div id="class_tagpickercontrol" class="element ajax clickable class" data-toggle="collapse" data-target="#class_tagpickercontrol .collapse">
-        <h1>tagpickercontrol<a href="../classes/tagpickercontrol.html">¶</a></h1>
-        <p class="short_description">Tag Picker Control using jQuery tag-it</p>
-        <div class="details collapse">
-                            
-                    </div>
-        <a href="../classes/tagpickercontrol.html" class="more">« More »</a>    </div>
-
-                                        <div id="class_tagpickercontrol" class="element ajax clickable class" data-toggle="collapse" data-target="#class_tagpickercontrol .collapse">
-        <h1>tagpickercontrol<a href="../classes/tagpickercontrol.html">¶</a></h1>
-        <p class="short_description">Tag Picker Control using jQuery tag-it</p>
         <div class="details collapse">
                             
                     </div>
@@ -17565,6 +17695,14 @@ interface to templates.</p>
                             
                     </div>
         <a href="../classes/update_ecom2.html" class="more">« More »</a>    </div>
+
+                                        <div id="class_update_ecom3" class="element ajax clickable class" data-toggle="collapse" data-target="#class_update_ecom3 .collapse">
+        <h1>update_ecom3<a href="../classes/update_ecom3.html">¶</a></h1>
+        <p class="short_description">This is the class update_ecom3</p>
+        <div class="details collapse">
+                            
+                    </div>
+        <a href="../classes/update_ecom3.html" class="more">« More »</a>    </div>
 
                                         <div id="class_update_event_registration" class="element ajax clickable class" data-toggle="collapse" data-target="#class_update_event_registration .collapse">
         <h1>update_event_registration<a href="../classes/update_event_registration.html">¶</a></h1>
@@ -17866,8 +18004,8 @@ places an update calendar field/button</p>
 
                                         <div id="class_yuicalendarcontrol" class="element ajax clickable class" data-toggle="collapse" data-target="#class_yuicalendarcontrol .collapse">
         <h1>yuicalendarcontrol<a href="../classes/yuicalendarcontrol.html">¶</a></h1>
-        <p class="short_description">Date Picker Control using jQuery datetimepicker
-standard calendar control
+        <p class="short_description">YUI Date Picker Control
+standard calendar control w/o time
 places an update calendar field/button</p>
         <div class="details collapse">
                             
@@ -17876,8 +18014,8 @@ places an update calendar field/button</p>
 
                                         <div id="class_yuicalendarcontrol" class="element ajax clickable class" data-toggle="collapse" data-target="#class_yuicalendarcontrol .collapse">
         <h1>yuicalendarcontrol<a href="../classes/yuicalendarcontrol.html">¶</a></h1>
-        <p class="short_description">YUI Date Picker Control
-standard calendar control w/o time
+        <p class="short_description">Date Picker Control using jQuery datetimepicker
+standard calendar control
 places an update calendar field/button</p>
         <div class="details collapse">
                             
@@ -17935,7 +18073,7 @@ places a checkbox to disable calendar input</p>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Sat, 08 Nov 2014 15:58:17 +0000.<br/>
+            generated on Wed, 28 Jan 2015 15:26:56 +0000.<br/>
     </footer>
     </body>
 </html>

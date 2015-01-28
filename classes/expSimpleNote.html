@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.3.2 &raquo; \expSimpleNote
+    <title>    Exponent v2.3.3 &raquo; \expSimpleNote
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.3.2</a>
+                <a class="brand" href="../index.html">Exponent v2.3.3</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -177,6 +177,12 @@
         </a>
     </li>
 
+                                                                                                        <li class="method public">
+        <a href="#method_attachNote" title="attachNote :: attach the note to the item it belongs to (product, order, etc.">
+            <span class="description">attach the note to the item it belongs to (product, order, etc.</span><pre>attachNote</pre>
+        </a>
+    </li>
+
                                                                                                         <li class="method public inherited">
         <a href="#method_beforeCreate" title="beforeCreate :: before creating item">
             <span class="description">before creating item</span><pre>beforeCreate</pre>
@@ -262,8 +268,8 @@
     </li>
 
                                                                                                                                                                                                                         <li class="method public inherited">
-        <a href="#method_getAttachableItemTables" title="getAttachableItemTables :: ">
-            <span class="description"></span><pre>getAttachableItemTables</pre>
+        <a href="#method_getAttachableItemTables" title="getAttachableItemTables :: used for import/export">
+            <span class="description">used for import/export</span><pre>getAttachableItemTables</pre>
         </a>
     </li>
 
@@ -337,7 +343,7 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method protected inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method protected inherited">
                             <a href="#method_checkForAttachableItems" title="checkForAttachableItems :: check for what objects may be attached">
                                 <span class="description">check for what objects may be attached</span><pre>checkForAttachableItems</pre>
                             </a>
@@ -351,7 +357,7 @@
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method private inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method private inherited">
                             <a href="#method_getAssociatedObjectsForThisModel" title="getAssociatedObjectsForThisModel :: gets associated objects for this model">
                                 <span class="description">gets associated objects for this model</span><pre>getAssociatedObjectsForThisModel</pre>
                             </a>
@@ -724,7 +730,7 @@ has_and_belongs_to_many</p></div>
                                             <a id="method_attachItem"></a>
                         <div class="element clickable method public  method_attachItem inherited" data-toggle="collapse" data-target=".method_attachItem .collapse">
                             <h2>attach to item</h2>
-                            <pre>attachItem( $item, string $subtype = &#039;&#039;) : boolean</pre>
+                            <pre>attachItem( $item, string $subtype = &#039;&#039;, boolean $replace = true) : boolean</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
 
@@ -745,9 +751,60 @@ has_and_belongs_to_many</p></div>
                                                 <h4>$subtype</h4>
                                                 <code>string</code><p></p>
                                             </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$replace</h4>
+                                                <code>boolean</code><p></p>
+                                            </div>
                                                                             
                                                                             <h3>Response</h3>
                                         <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_attachNote"></a>
+                        <div class="element clickable method public  method_attachNote" data-toggle="collapse" data-target=".method_attachNote .collapse">
+                            <h2>attach the note to the item it belongs to (product, order, etc.</h2>
+                            <pre>attachNote( $content_type,  $content_id,  $subtype = null) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>.);</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$content_type</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$content_id</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$subtype</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
                                                                     </div>
                             </div>
 
@@ -1435,8 +1492,8 @@ has_and_belongs_to_self</p></div>
                         </div>
                                             <a id="method_getAttachableItemTables"></a>
                         <div class="element clickable method public  method_getAttachableItemTables inherited" data-toggle="collapse" data-target=".method_getAttachableItemTables .collapse">
-                            <h2>getAttachableItemTables</h2>
-                            <pre>getAttachableItemTables() </pre>
+                            <h2>used for import/export</h2>
+                            <pre>getAttachableItemTables() : array</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
 
@@ -1453,16 +1510,11 @@ has_and_belongs_to_self</p></div>
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                             </table>
 
                                     
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
                                                                     </div>
                             </div>
 
@@ -1470,7 +1522,7 @@ has_and_belongs_to_self</p></div>
                                             <a id="method_getPoster"></a>
                         <div class="element clickable method public  method_getPoster inherited" data-toggle="collapse" data-target=".method_getPoster .collapse">
                             <h2>return the item poster</h2>
-                            <pre>getPoster() : null|string</pre>
+                            <pre>getPoster( $display = null) : null|string</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
 
@@ -1489,7 +1541,12 @@ has_and_belongs_to_self</p></div>
                                             </tr>
                                                                             </table>
 
-                                    
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$display</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
                                                                             <h3>Response</h3>
                                         <code>null|string</code><p></p>
                                                                     </div>
@@ -2482,7 +2539,7 @@ has_one</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Sat, 08 Nov 2014 15:59:28 +0000.<br/>
+            generated on Wed, 28 Jan 2015 15:28:03 +0000.<br/>
     </footer>
     </body>
 </html>
