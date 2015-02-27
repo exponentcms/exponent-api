@@ -252,6 +252,30 @@ Clears the session of all user data, used when a user logs out.</span><pre>logou
     </li>
 
                                                                                                         <li class="method public">
+        <a href="#method_triggerRefresh" title="triggerRefresh :: exdoc
+This call will force all active session to reload their
+permission data.  This is useful if permissions are assigned
+or revoked, and is required to see these changes.">
+            <span class="description">exdoc
+This call will force all active session to reload their
+permission data.  This is useful if permissions are assigned
+or revoked, and is required to see these changes.</span><pre>triggerRefresh</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_triggerSingleRefresh" title="triggerSingleRefresh :: exdoc
+This call will force all active sessions for the given user to
+reload their permission data.  This is useful if permissions
+are assigned or revoked, and is required to see these changes.">
+            <span class="description">exdoc
+This call will force all active sessions for the given user to
+reload their permission data.  This is useful if permissions
+are assigned or revoked, and is required to see these changes.</span><pre>triggerSingleRefresh</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
         <a href="#method_un_set" title="un_set :: exdoc
 Removes a variable from the session.">
             <span class="description">exdoc
@@ -281,11 +305,11 @@ to force refreshes and force logouts.  It also updates activity time.</span><pre
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -1094,6 +1118,96 @@ cannot be changed using this call (for security / sanity reason)</p></div>
                             </div>
 
                         </div>
+                                            <a id="method_triggerRefresh"></a>
+                        <div class="element clickable method public  method_triggerRefresh" data-toggle="collapse" data-target=".method_triggerRefresh .collapse">
+                            <h2>exdoc
+This call will force all active session to reload their
+permission data.  This is useful if permissions are assigned
+or revoked, and is required to see these changes.</h2>
+                            <pre>triggerRefresh() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    node
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Subsystems:expPermissions</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_triggerSingleRefresh"></a>
+                        <div class="element clickable method public  method_triggerSingleRefresh" data-toggle="collapse" data-target=".method_triggerSingleRefresh .collapse">
+                            <h2>exdoc
+This call will force all active sessions for the given user to
+reload their permission data.  This is useful if permissions
+are assigned or revoked, and is required to see these changes.</h2>
+                            <pre>triggerSingleRefresh(\user/object $user) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    node
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Subsystems:expPermissions</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$user</h4>
+                                                <code>\user/object</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_un_set"></a>
                         <div class="element clickable method public  method_un_set" data-toggle="collapse" data-target=".method_un_set .collapse">
                             <h2>exdoc
@@ -1245,7 +1359,7 @@ to force refreshes and force logouts.  It also updates activity time.</h2>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Wed, 28 Jan 2015 15:27:51 +0000.<br/>
+            generated on Fri, 27 Feb 2015 12:14:11 +0000.<br/>
     </footer>
     </body>
 </html>

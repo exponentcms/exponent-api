@@ -225,6 +225,12 @@
         </a>
     </li>
 
+                                                                                                        <li class="method public">
+        <a href="#method_buildCategoryString" title="buildCategoryString :: Convert nested store category into a string">
+            <span class="description">Convert nested store category into a string</span><pre>buildCategoryString</pre>
+        </a>
+    </li>
+
                                                                                                                                                                 <li class="method public inherited">
         <a href="#method_create" title="create :: ">
             <span class="description"></span><pre>create</pre>
@@ -280,8 +286,8 @@
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_getCategoryImage" title="getCategoryImage :: ">
-            <span class="description"></span><pre>getCategoryImage</pre>
+        <a href="#method_getCategoryImage" title="getCategoryImage :: Return an image object">
+            <span class="description">Return an image object</span><pre>getCategoryImage</pre>
         </a>
     </li>
 
@@ -333,6 +339,12 @@
         </a>
     </li>
 
+                                                                                                        <li class="method public">
+        <a href="#method_importCategoryString" title="importCategoryString :: Convert string into a nested store category">
+            <span class="description">Convert string into a nested store category</span><pre>importCategoryString</pre>
+        </a>
+    </li>
+
                                                                                                         <li class="method public inherited">
         <a href="#method_isSearchable" title="isSearchable :: is model content searchable?">
             <span class="description">is model content searchable?</span><pre>isSearchable</pre>
@@ -366,6 +378,14 @@
                                                                                                         <li class="method public inherited">
         <a href="#method_moveInto" title="moveInto :: ">
             <span class="description"></span><pre>moveInto</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_parseCategory" title="parseCategory :: Return existing store category id of string nested category
+  checks to ensure each level of nesting exists">
+            <span class="description">Return existing store category id of string nested category
+  checks to ensure each level of nesting exists</span><pre>parseCategory</pre>
         </a>
     </li>
 
@@ -415,7 +435,7 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method protected inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method protected inherited">
                             <a href="#method_checkForAttachableItems" title="checkForAttachableItems :: check for what objects may be attached">
                                 <span class="description">check for what objects may be attached</span><pre>checkForAttachableItems</pre>
                             </a>
@@ -425,21 +445,21 @@
                                 <span class="description">get attached objects for this item</span><pre>getAttachableItems</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method private inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method private inherited">
                             <a href="#method_getAssociatedObjectsForThisModel" title="getAssociatedObjectsForThisModel :: gets associated objects for this model">
                                 <span class="description">gets associated objects for this model</span><pre>getAssociatedObjectsForThisModel</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method private inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method private inherited">
                             <a href="#method_makeManyToManyTablename" title="makeManyToManyTablename :: create a many to many table relationship">
                                 <span class="description">create a many to many table relationship</span><pre>makeManyToManyTablename</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                <li class="method private inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method private inherited">
                             <a href="#method_runCallback" title="runCallback :: jump to subclass calling routine">
                                 <span class="description">jump to subclass calling routine</span><pre>runCallback</pre>
                             </a>
@@ -486,7 +506,7 @@
                                                                                 <p>Core</p>
                                     </td>
                                 </tr>
-                                                                                                                                                                                                                                                                                        </table>
+                                                                                                                            </table>
 
                     <h3><i class="icon-custom icon-method"></i> Methods</h3>
                                                                 <a id="method___construct"></a>
@@ -1179,6 +1199,37 @@ field values are also populated into class properties.</p></div>
                             </div>
 
                         </div>
+                                            <a id="method_buildCategoryString"></a>
+                        <div class="element clickable method public  method_buildCategoryString" data-toggle="collapse" data-target=".method_buildCategoryString .collapse">
+                            <h2>Convert nested store category into a string</h2>
+                            <pre>buildCategoryString( $catID, boolean $reset = false) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$catID</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$reset</h4>
+                                                <code>boolean</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_checkForAttachableItems"></a>
                         <div class="element clickable method protected  method_checkForAttachableItems inherited" data-toggle="collapse" data-target=".method_checkForAttachableItems .collapse">
                             <h2>check for what objects may be attached</h2>
@@ -1619,8 +1670,8 @@ has_and_belongs_to_self</p></div>
                         </div>
                                             <a id="method_getCategoryImage"></a>
                         <div class="element clickable method public  method_getCategoryImage" data-toggle="collapse" data-target=".method_getCategoryImage .collapse">
-                            <h2>getCategoryImage</h2>
-                            <pre>getCategoryImage( $id = &#039;&#039;) </pre>
+                            <h2>Return an image object</h2>
+                            <pre>getCategoryImage(string $id = &#039;&#039;) : string</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -1630,28 +1681,16 @@ has_and_belongs_to_self</p></div>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                             </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$id</h4>
-                                                <code></code><p></p>
+                                                <code>string</code><p><p>specific expFile to return</p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
                                                                     </div>
                             </div>
 
@@ -1939,6 +1978,33 @@ has_and_belongs_to_self</p></div>
                             </div>
 
                         </div>
+                                            <a id="method_importCategoryString"></a>
+                        <div class="element clickable method public  method_importCategoryString" data-toggle="collapse" data-target=".method_importCategoryString .collapse">
+                            <h2>Convert string into a nested store category</h2>
+                            <pre>importCategoryString( $data) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code></code><p><p>nested category string with :: separators</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_isSearchable"></a>
                         <div class="element clickable method public  method_isSearchable inherited" data-toggle="collapse" data-target=".method_isSearchable .collapse">
                             <h2>is model content searchable?</h2>
@@ -2185,6 +2251,34 @@ has_and_belongs_to_self</p></div>
                                                 <code></code><p></p>
                                             </div>
                                                                             
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_parseCategory"></a>
+                        <div class="element clickable method public  method_parseCategory" data-toggle="collapse" data-target=".method_parseCategory .collapse">
+                            <h2>Return existing store category id of string nested category
+  checks to ensure each level of nesting exists</h2>
+                            <pre>parseCategory( $data) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
                                                                     </div>
                             </div>
 
@@ -3121,7 +3215,7 @@ how the class is called.</h2>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Wed, 28 Jan 2015 15:28:01 +0000.<br/>
+            generated on Fri, 27 Feb 2015 12:14:50 +0000.<br/>
     </footer>
     </body>
 </html>
