@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.3.3 &raquo; \expTheme
+    <title>    Exponent v2.3.4 &raquo; \expTheme
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.3.3</a>
+                <a class="brand" href="../index.html">Exponent v2.3.4</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -236,6 +236,12 @@ Redirect User to Default Section</span><pre>goDefaultSection</pre>
     </li>
 
                                                                                                         <li class="method public">
+        <a href="#method_iconStyle" title="iconStyle :: Return the full icon style string for the current framework">
+            <span class="description">Return the full icon style string for the current framework</span><pre>iconStyle</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
         <a href="#method_inAction" title="inAction :: ">
             <span class="description"></span><pre>inAction</pre>
         </a>
@@ -373,11 +379,11 @@ children, grand-children, grand-grand-children, etc.</span><pre>showTopSectional
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -1128,6 +1134,37 @@ Redirect User to Default Section</h2>
                             </div>
 
                         </div>
+                                            <a id="method_iconStyle"></a>
+                        <div class="element clickable method public  method_iconStyle" data-toggle="collapse" data-target=".method_iconStyle .collapse">
+                            <h2>Return the full icon style string for the current framework</h2>
+                            <pre>iconStyle( $class,  $text = null) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$class</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$text</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_inAction"></a>
                         <div class="element clickable method public  method_inAction" data-toggle="collapse" data-target=".method_inAction .collapse">
                             <h2>inAction</h2>
@@ -1681,7 +1718,7 @@ Runs the appropriate action, by looking at the $_REQUEST variable.</h2>
 
                         </div>
                                             <a id="method_showController"></a>
-                        <div class="element clickable method public  method_showController" data-toggle="collapse" data-target=".method_showController .collapse">
+                        <div class="element clickable method public deprecated method_showController" data-toggle="collapse" data-target=".method_showController .collapse">
                             <h2>showController</h2>
                             <pre>showController( $params = array()) </pre>
                             <div class="labels">
@@ -1693,6 +1730,15 @@ Runs the appropriate action, by looking at the $_REQUEST variable.</h2>
                                     <div class="long_description"></div>
 
                                     <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    deprecated
+                                                </th>
+                                                <td>
+                                                                                                                                                                        2.2.1
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
                                                                                     <tr>
                                                 <th>
                                                     
@@ -1783,7 +1829,7 @@ Calls the necessary methods to show a specific module - NOT intended to be calle
 
                         </div>
                                             <a id="method_showSectionalModule"></a>
-                        <div class="element clickable method public  method_showSectionalModule" data-toggle="collapse" data-target=".method_showSectionalModule .collapse">
+                        <div class="element clickable method public deprecated method_showSectionalModule" data-toggle="collapse" data-target=".method_showSectionalModule .collapse">
                             <h2>exdoc
 Calls the necessary methods to show a specific module, in a section-sensitive way.</h2>
                             <pre>showSectionalModule(string $module, string $view, string $title, string $prefix = null, boolean $pickable = false, boolean $hide_menu = false) : void</pre>
@@ -1803,6 +1849,15 @@ Calls the necessary methods to show a specific module, in a section-sensitive wa
                                                 <td>
                                                                                                                                                                         
                                                                                                                                                                         <p>Subsystems:Theme</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    deprecated
+                                                </th>
+                                                <td>
+                                                                                                                                                                        2.2.1
+                                                                                                                                                                        
                                                                                                     </td>
                                             </tr>
                                                                             </table>
@@ -1838,7 +1893,7 @@ Calls the necessary methods to show a specific module, in a section-sensitive wa
 
                         </div>
                                             <a id="method_showTopSectionalModule"></a>
-                        <div class="element clickable method public  method_showTopSectionalModule" data-toggle="collapse" data-target=".method_showTopSectionalModule .collapse">
+                        <div class="element clickable method public deprecated method_showTopSectionalModule" data-toggle="collapse" data-target=".method_showTopSectionalModule .collapse">
                             <h2>exdoc
 Calls the necessary methods to show a specific module in such a way that the current
 section displays the same content as its top-level parent and all of the top-level parent&#039;s
@@ -1860,6 +1915,15 @@ children, grand-children, grand-grand-children, etc.</h2>
                                                 <td>
                                                                                                                                                                         
                                                                                                                                                                         <p>Subsystems:Theme</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    deprecated
+                                                </th>
+                                                <td>
+                                                                                                                                                                        2.2.1
+                                                                                                                                                                        
                                                                                                     </td>
                                             </tr>
                                                                                     <tr>
@@ -1923,7 +1987,7 @@ children, grand-children, grand-grand-children, etc.</h2>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 27 Feb 2015 12:14:12 +0000.<br/>
+            generated on Fri, 01 May 2015 22:11:51 +0000.<br/>
     </footer>
     </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.3.3 &raquo; \billingcalculator
+    <title>    Exponent v2.3.4 &raquo; \billingcalculator
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.3.3</a>
+                <a class="brand" href="../index.html">Exponent v2.3.4</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -412,6 +412,12 @@
     </li>
 
                                                                                                         <li class="method public">
+        <a href="#method_name" title="name :: ">
+            <span class="description"></span><pre>name</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
         <a href="#method_parseConfig" title="parseConfig :: ">
             <span class="description"></span><pre>parseConfig</pre>
         </a>
@@ -424,8 +430,8 @@
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_preprocess" title="preprocess :: ">
-            <span class="description"></span><pre>preprocess</pre>
+        <a href="#method_preprocess" title="preprocess :: Called for billing method selection screen, return true if it&#039;s a valid billing method.">
+            <span class="description">Called for billing method selection screen, return true if it&#039;s a valid billing method.</span><pre>preprocess</pre>
         </a>
     </li>
 
@@ -478,14 +484,14 @@
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_userFormUpdate" title="userFormUpdate :: ">
-            <span class="description"></span><pre>userFormUpdate</pre>
+        <a href="#method_userFormUpdate" title="userFormUpdate :: process user input. This function should return an object of the user input.">
+            <span class="description">process user input. This function should return an object of the user input.</span><pre>userFormUpdate</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_userView" title="userView :: ">
-            <span class="description"></span><pre>userView</pre>
+        <a href="#method_userView" title="userView :: Should return html to display user data.">
+            <span class="description">Should return html to display user data.</span><pre>userView</pre>
         </a>
     </li>
 
@@ -515,7 +521,7 @@
                                 <span class="description">get attached objects for this item</span><pre>getAttachableItems</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
@@ -529,7 +535,7 @@
                                 <span class="description">create a many to many table relationship</span><pre>makeManyToManyTablename</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                            <li class="method private inherited">
+                                                                                                                                                                                                                                                                                                                                                                                <li class="method private inherited">
                             <a href="#method_runCallback" title="runCallback :: jump to subclass calling routine">
                                 <span class="description">jump to subclass calling routine</span><pre>runCallback</pre>
                             </a>
@@ -573,7 +579,7 @@
                                                                             </th>
                                     <td>
                                                                                     
-                                                                                <p>Core</p>
+                                                                                <p>Modules</p>
                                     </td>
                                 </tr>
                                                                                                                                                                                                                                                                                         </table>
@@ -2144,7 +2150,7 @@ has_and_belongs_to_self</p></div>
                                             <a id="method_getPaymentReferenceNumber"></a>
                         <div class="element clickable method public  method_getPaymentReferenceNumber" data-toggle="collapse" data-target=".method_getPaymentReferenceNumber .collapse">
                             <h2>getPaymentReferenceNumber</h2>
-                            <pre>getPaymentReferenceNumber( $opts) </pre>
+                            <pre>getPaymentReferenceNumber( $billingmethod) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -2172,7 +2178,7 @@ has_and_belongs_to_self</p></div>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>$opts</h4>
+                                                <h4>$billingmethod</h4>
                                                 <code></code><p></p>
                                             </div>
                                                                             
@@ -2222,7 +2228,7 @@ has_and_belongs_to_self</p></div>
                                             <a id="method_getPoster"></a>
                         <div class="element clickable method public  method_getPoster inherited" data-toggle="collapse" data-target=".method_getPoster .collapse">
                             <h2>return the item poster</h2>
-                            <pre>getPoster( $display = null) : null|string</pre>
+                            <pre>getPoster(null $display = null) : null|string</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
 
@@ -2232,19 +2238,12 @@ has_and_belongs_to_self</p></div>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                             </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$display</h4>
-                                                <code></code><p></p>
+                                                <code>null</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -2535,6 +2534,40 @@ has_and_belongs_to_self</p></div>
                             </div>
 
                         </div>
+                                            <a id="method_name"></a>
+                        <div class="element clickable method public  method_name" data-toggle="collapse" data-target=".method_name .collapse">
+                            <h2>name</h2>
+                            <pre>name() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_parseConfig"></a>
                         <div class="element clickable method public  method_parseConfig" data-toggle="collapse" data-target=".method_parseConfig .collapse">
                             <h2>parseConfig</h2>
@@ -2619,7 +2652,7 @@ has_and_belongs_to_self</p></div>
                         </div>
                                             <a id="method_preprocess"></a>
                         <div class="element clickable method public  method_preprocess" data-toggle="collapse" data-target=".method_preprocess .collapse">
-                            <h2>preprocess</h2>
+                            <h2>Called for billing method selection screen, return true if it&#039;s a valid billing method.</h2>
                             <pre>preprocess( $method,  $opts,  $params,  $order) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
@@ -2630,13 +2663,6 @@ has_and_belongs_to_self</p></div>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                     <tr>
                                                 <th>
                                                     
@@ -2993,7 +3019,7 @@ has_one</p></div>
                         </div>
                                             <a id="method_userFormUpdate"></a>
                         <div class="element clickable method public  method_userFormUpdate" data-toggle="collapse" data-target=".method_userFormUpdate .collapse">
-                            <h2>userFormUpdate</h2>
+                            <h2>process user input. This function should return an object of the user input.</h2>
                             <pre>userFormUpdate( $params) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
@@ -3001,16 +3027,10 @@ has_one</p></div>
                             
                             <div class="row collapse">
                                 <div class="detail-description">
-                                    <div class="long_description"></div>
+                                    <div class="long_description"><p>the returned object will be saved in the session and passed to post_process.
+If need be this could use another method of data storage, as long post_process can get the data.</p></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                     <tr>
                                                 <th>
                                                     
@@ -3032,8 +3052,8 @@ has_one</p></div>
                         </div>
                                             <a id="method_userView"></a>
                         <div class="element clickable method public  method_userView" data-toggle="collapse" data-target=".method_userView .collapse">
-                            <h2>userView</h2>
-                            <pre>userView( $opts) </pre>
+                            <h2>Should return html to display user data.</h2>
+                            <pre>userView( $billingmethod) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -3061,7 +3081,7 @@ has_one</p></div>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>$opts</h4>
+                                                <h4>$billingmethod</h4>
                                                 <code></code><p></p>
                                             </div>
                                                                             
@@ -3160,10 +3180,10 @@ has_one</p></div>
                                                                             </div>
                                 </div>
                             </div>
-                                                    <a id="property_title"> </a>
-                            <div class="element clickable property  public property_title" data-toggle="collapse" data-target=".property_title .collapse">
-                                <h2>title</h2>
-                                <pre>title : </pre>
+                                                    <a id="property_configdata"> </a>
+                            <div class="element clickable property  public property_configdata" data-toggle="collapse" data-target=".property_configdata .collapse">
+                                <h2>configdata</h2>
+                                <pre>configdata : </pre>
                                 <div class="labels">
                                                                                                         </div>
                                 <div class="row collapse">
@@ -3780,7 +3800,7 @@ has_one</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 27 Feb 2015 12:14:37 +0000.<br/>
+            generated on Fri, 01 May 2015 22:12:01 +0000.<br/>
     </footer>
     </body>
 </html>

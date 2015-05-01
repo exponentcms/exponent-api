@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.3.3 &raquo; \billing
+    <title>    Exponent v2.3.4 &raquo; \billing
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.3.3</a>
+                <a class="brand" href="../index.html">Exponent v2.3.4</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -268,6 +268,12 @@
     </li>
 
                                                                                                         <li class="method public">
+        <a href="#method_getBillingInfo" title="getBillingInfo :: ">
+            <span class="description"></span><pre>getBillingInfo</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
         <a href="#method_getCalcForms" title="getCalcForms :: ">
             <span class="description"></span><pre>getCalcForms</pre>
         </a>
@@ -365,7 +371,7 @@
                                 <span class="description">get attached objects for this item</span><pre>getAttachableItems</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
@@ -374,7 +380,7 @@
                                 <span class="description">gets associated objects for this model</span><pre>getAssociatedObjectsForThisModel</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                <li class="method private inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method private inherited">
                             <a href="#method_makeManyToManyTablename" title="makeManyToManyTablename :: create a many to many table relationship">
                                 <span class="description">create a many to many table relationship</span><pre>makeManyToManyTablename</pre>
                             </a>
@@ -423,7 +429,7 @@
                                                                             </th>
                                     <td>
                                                                                     
-                                                                                <p>Core</p>
+                                                                                <p>Modules</p>
                                     </td>
                                 </tr>
                                                                                                                             </table>
@@ -1484,6 +1490,45 @@ has_and_belongs_to_self</p></div>
                             </div>
 
                         </div>
+                                            <a id="method_getBillingInfo"></a>
+                        <div class="element clickable method public  method_getBillingInfo" data-toggle="collapse" data-target=".method_getBillingInfo .collapse">
+                            <h2>getBillingInfo</h2>
+                            <pre>getBillingInfo( $opts = null) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$opts</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_getCalcForms"></a>
                         <div class="element clickable method public  method_getCalcForms" data-toggle="collapse" data-target=".method_getCalcForms .collapse">
                             <h2>getCalcForms</h2>
@@ -1555,7 +1600,7 @@ has_and_belongs_to_self</p></div>
                                             <a id="method_getPoster"></a>
                         <div class="element clickable method public  method_getPoster inherited" data-toggle="collapse" data-target=".method_getPoster .collapse">
                             <h2>return the item poster</h2>
-                            <pre>getPoster( $display = null) : null|string</pre>
+                            <pre>getPoster(null $display = null) : null|string</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
 
@@ -1565,19 +1610,12 @@ has_and_belongs_to_self</p></div>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                             </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$display</h4>
-                                                <code></code><p></p>
+                                                <code>null</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -2718,7 +2756,7 @@ has_one</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 27 Feb 2015 12:14:36 +0000.<br/>
+            generated on Fri, 01 May 2015 22:12:47 +0000.<br/>
     </footer>
     </body>
 </html>

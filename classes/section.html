@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.3.3 &raquo; \section
+    <title>    Exponent v2.3.4 &raquo; \section
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.3.3</a>
+                <a class="brand" href="../index.html">Exponent v2.3.4</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -225,9 +225,21 @@
         </a>
     </li>
 
+                                                                                                        <li class="method public">
+        <a href="#method_canView" title="canView :: Check for cascading page view permission, esp. if not public">
+            <span class="description">Check for cascading page view permission, esp. if not public</span><pre>canView</pre>
+        </a>
+    </li>
+
                                                                                                                                                                 <li class="method public inherited">
         <a href="#method_delete" title="delete :: delete item">
             <span class="description">delete item</span><pre>delete</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_deleteLevel" title="deleteLevel :: Delete page and send its contents to the recycle bin">
+            <span class="description">Delete page and send its contents to the recycle bin</span><pre>deleteLevel</pre>
         </a>
     </li>
 
@@ -267,9 +279,27 @@
         </a>
     </li>
 
+                                                                                                        <li class="method public">
+        <a href="#method_getChildren" title="getChildren :: Returns all subordinate sections">
+            <span class="description">Returns all subordinate sections</span><pre>getChildren</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getParent" title="getParent :: return page parent">
+            <span class="description">return page parent</span><pre>getParent</pre>
+        </a>
+    </li>
+
                                                                                                         <li class="method public inherited">
         <a href="#method_getPoster" title="getPoster :: return the item poster">
             <span class="description">return the item poster</span><pre>getPoster</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getSiblings" title="getSiblings :: return sibling pages including top level and standalone">
+            <span class="description">return sibling pages including top level and standalone</span><pre>getSiblings</pre>
         </a>
     </li>
 
@@ -279,9 +309,69 @@
         </a>
     </li>
 
+                                                                                                        <li class="method public">
+        <a href="#method_getTopParent" title="getTopParent :: return page&#039;s top level parent">
+            <span class="description">return page&#039;s top level parent</span><pre>getTopParent</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_hasChildren" title="hasChildren :: ">
+            <span class="description"></span><pre>hasChildren</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_initializeNavigation" title="initializeNavigation :: exdoc
+Creates a location object, based off of the three arguments passed, and returns it.">
+            <span class="description">exdoc
+Creates a location object, based off of the three arguments passed, and returns it.</span><pre>initializeNavigation</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_isPublic" title="isPublic :: Check to see if page is public with cascading">
+            <span class="description">Check to see if page is public with cascading</span><pre>isPublic</pre>
+        </a>
+    </li>
+
                                                                                                         <li class="method public inherited">
         <a href="#method_isSearchable" title="isSearchable :: is model content searchable?">
             <span class="description">is model content searchable?</span><pre>isSearchable</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_isStandalone" title="isStandalone :: Check to see if page is standalone">
+            <span class="description">Check to see if page is standalone</span><pre>isStandalone</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_isTopLevel" title="isTopLevel :: Check to see if page is top level page">
+            <span class="description">Check to see if page is top level page</span><pre>isTopLevel</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_levelDropdownControlArray" title="levelDropdownControlArray :: Returns a flat representation of the full site hierarchy.">
+            <span class="description">Returns a flat representation of the full site hierarchy.</span><pre>levelDropdownControlArray</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_levelShowDropdown" title="levelShowDropdown :: Retrieve either the entire hierarchy, or a subset of the hierarchy, as an array suitable for use
+in a dropdowncontrol.  This is used primarily by the section datatype for moving and adding
+sections to specific parts of the site hierarchy.">
+            <span class="description">Retrieve either the entire hierarchy, or a subset of the hierarchy, as an array suitable for use
+in a dropdowncontrol.  This is used primarily by the section datatype for moving and adding
+sections to specific parts of the site hierarchy.</span><pre>levelShowDropdown</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_levelTemplate" title="levelTemplate :: returns all the section&#039;s children">
+            <span class="description">returns all the section&#039;s children</span><pre>levelTemplate</pre>
         </a>
     </li>
 
@@ -291,9 +381,27 @@
         </a>
     </li>
 
+                                                                                                        <li class="method public">
+        <a href="#method_navhierarchy" title="navhierarchy :: ">
+            <span class="description"></span><pre>navhierarchy</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_navtojson" title="navtojson :: ">
+            <span class="description"></span><pre>navtojson</pre>
+        </a>
+    </li>
+
                                                                                                         <li class="method public inherited">
         <a href="#method_refresh" title="refresh :: re-construct the item from the database">
             <span class="description">re-construct the item from the database</span><pre>refresh</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_removeLevel" title="removeLevel :: Move content page and its children to stand-alones">
+            <span class="description">Move content page and its children to stand-alones</span><pre>removeLevel</pre>
         </a>
     </li>
 
@@ -331,31 +439,31 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method protected inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method protected inherited">
                             <a href="#method_checkForAttachableItems" title="checkForAttachableItems :: check for what objects may be attached">
                                 <span class="description">check for what objects may be attached</span><pre>checkForAttachableItems</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                            <li class="method protected inherited">
+                                                                                                                                                                                                                                                                                                                                                                                <li class="method protected inherited">
                             <a href="#method_getAttachableItems" title="getAttachableItems :: get attached objects for this item">
                                 <span class="description">get attached objects for this item</span><pre>getAttachableItems</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method private inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method private inherited">
                             <a href="#method_getAssociatedObjectsForThisModel" title="getAssociatedObjectsForThisModel :: gets associated objects for this model">
                                 <span class="description">gets associated objects for this model</span><pre>getAssociatedObjectsForThisModel</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                    <li class="method private inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method private inherited">
                             <a href="#method_makeManyToManyTablename" title="makeManyToManyTablename :: create a many to many table relationship">
                                 <span class="description">create a many to many table relationship</span><pre>makeManyToManyTablename</pre>
                             </a>
                         </li>
-                                                                                                                                                                                            <li class="method private inherited">
+                                                                                                                                                                                                                                                                                                        <li class="method private inherited">
                             <a href="#method_runCallback" title="runCallback :: jump to subclass calling routine">
                                 <span class="description">jump to subclass calling routine</span><pre>runCallback</pre>
                             </a>
@@ -1095,6 +1203,40 @@ field values are also populated into class properties.</p></div>
                             </div>
 
                         </div>
+                                            <a id="method_canView"></a>
+                        <div class="element clickable method public  method_canView" data-toggle="collapse" data-target=".method_canView .collapse">
+                            <h2>Check for cascading page view permission, esp. if not public</h2>
+                            <pre>canView() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_checkForAttachableItems"></a>
                         <div class="element clickable method protected  method_checkForAttachableItems inherited" data-toggle="collapse" data-target=".method_checkForAttachableItems .collapse">
                             <h2>check for what objects may be attached</h2>
@@ -1145,6 +1287,38 @@ field values are also populated into class properties.</p></div>
                                                                             
                                                                             <h3>Response</h3>
                                         <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_deleteLevel"></a>
+                        <div class="element clickable method public  method_deleteLevel" data-toggle="collapse" data-target=".method_deleteLevel .collapse">
+                            <h2>Delete page and send its contents to the recycle bin</h2>
+                            <pre>deleteLevel( $parent) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$parent</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
                                                                     </div>
                             </div>
 
@@ -1460,12 +1634,47 @@ has_and_belongs_to_self</p></div>
                             </div>
 
                         </div>
-                                            <a id="method_getPoster"></a>
-                        <div class="element clickable method public  method_getPoster inherited" data-toggle="collapse" data-target=".method_getPoster .collapse">
-                            <h2>return the item poster</h2>
-                            <pre>getPoster( $display = null) : null|string</pre>
+                                            <a id="method_getChildren"></a>
+                        <div class="element clickable method public  method_getChildren" data-toggle="collapse" data-target=".method_getChildren .collapse">
+                            <h2>Returns all subordinate sections</h2>
+                            <pre>getChildren( &$i, boolean $notyui = false,  $singlelevel = false) : array</pre>
                             <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$i</h4>
+                                                <code></code><p><p>section</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$notyui</h4>
+                                                <code>boolean</code><p><p>format of return</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$singlelevel</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getParent"></a>
+                        <div class="element clickable method public  method_getParent" data-toggle="collapse" data-target=".method_getParent .collapse">
+                            <h2>return page parent</h2>
+                            <pre>getParent() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
 
                             
                             <div class="row collapse">
@@ -1480,16 +1689,82 @@ has_and_belongs_to_self</p></div>
                                                 <td>
                                                                                                     </td>
                                             </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getPoster"></a>
+                        <div class="element clickable method public  method_getPoster inherited" data-toggle="collapse" data-target=".method_getPoster .collapse">
+                            <h2>return the item poster</h2>
+                            <pre>getPoster(null $display = null) : null|string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
                                                                             </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$display</h4>
-                                                <code></code><p></p>
+                                                <code>null</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
                                         <code>null|string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getSiblings"></a>
+                        <div class="element clickable method public  method_getSiblings" data-toggle="collapse" data-target=".method_getSiblings .collapse">
+                            <h2>return sibling pages including top level and standalone</h2>
+                            <pre>getSiblings( $exclude_self = true) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$exclude_self</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
                                                                     </div>
                             </div>
 
@@ -1521,6 +1796,143 @@ has_and_belongs_to_self</p></div>
                             </div>
 
                         </div>
+                                            <a id="method_getTopParent"></a>
+                        <div class="element clickable method public  method_getTopParent" data-toggle="collapse" data-target=".method_getTopParent .collapse">
+                            <h2>return page&#039;s top level parent</h2>
+                            <pre>getTopParent() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_hasChildren"></a>
+                        <div class="element clickable method public  method_hasChildren" data-toggle="collapse" data-target=".method_hasChildren .collapse">
+                            <h2>hasChildren</h2>
+                            <pre>hasChildren( $i) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$i</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_initializeNavigation"></a>
+                        <div class="element clickable method public  method_initializeNavigation" data-toggle="collapse" data-target=".method_initializeNavigation .collapse">
+                            <h2>exdoc
+Creates a location object, based off of the three arguments passed, and returns it.</h2>
+                            <pre>initializeNavigation() : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_isPublic"></a>
+                        <div class="element clickable method public  method_isPublic" data-toggle="collapse" data-target=".method_isPublic .collapse">
+                            <h2>Check to see if page is public with cascading</h2>
+                            <pre>isPublic() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_isSearchable"></a>
                         <div class="element clickable method public  method_isSearchable inherited" data-toggle="collapse" data-target=".method_isSearchable .collapse">
                             <h2>is model content searchable?</h2>
@@ -1546,6 +1958,211 @@ has_and_belongs_to_self</p></div>
                                     
                                                                             <h3>Response</h3>
                                         <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_isStandalone"></a>
+                        <div class="element clickable method public  method_isStandalone" data-toggle="collapse" data-target=".method_isStandalone .collapse">
+                            <h2>Check to see if page is standalone</h2>
+                            <pre>isStandalone() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_isTopLevel"></a>
+                        <div class="element clickable method public  method_isTopLevel" data-toggle="collapse" data-target=".method_isTopLevel .collapse">
+                            <h2>Check to see if page is top level page</h2>
+                            <pre>isTopLevel() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_levelDropdownControlArray"></a>
+                        <div class="element clickable method public  method_levelDropdownControlArray" data-toggle="collapse" data-target=".method_levelDropdownControlArray .collapse">
+                            <h2>Returns a flat representation of the full site hierarchy.</h2>
+                            <pre>levelDropdownControlArray(integer $parent, integer $depth, array $ignore_ids = array(), boolean $full = false, string $perm = &#039;view&#039;, boolean $addstandalones = false, boolean $addinternalalias = true) : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$parent</h4>
+                                                <code>integer</code><p><p>top level parent id</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$depth</h4>
+                                                <code>integer</code><p><p>variable to hold level of recursion</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$ignore_ids</h4>
+                                                <code>array</code><p><p>array of pages to ignore</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$full</h4>
+                                                <code>boolean</code><p><p>include a 'top' level entry</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$perm</h4>
+                                                <code>string</code><p><p>permission level to build list</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$addstandalones</h4>
+                                                <code>boolean</code><p><p>should we add the stand-alone pages also</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$addinternalalias</h4>
+                                                <code>boolean</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_levelShowDropdown"></a>
+                        <div class="element clickable method public  method_levelShowDropdown" data-toggle="collapse" data-target=".method_levelShowDropdown .collapse">
+                            <h2>Retrieve either the entire hierarchy, or a subset of the hierarchy, as an array suitable for use
+in a dropdowncontrol.  This is used primarily by the section datatype for moving and adding
+sections to specific parts of the site hierarchy.</h2>
+                            <pre>levelShowDropdown(integer $parent, integer $depth, integer $default, array $ignore_ids = array()) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$parent</h4>
+                                                <code>integer</code><p><p>The id of the subtree parent.  If passed as 0 (the default), the entire subtree is parsed.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$depth</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$default</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$ignore_ids</h4>
+                                                <code>array</code><p><p>a value-array of IDs to be ignored when generating the list.  This is used</p>
+<pre><code>                     when moving a section, since a section cannot be made a subsection of itself or any of its subsections.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_levelTemplate"></a>
+                        <div class="element clickable method public  method_levelTemplate" data-toggle="collapse" data-target=".method_levelTemplate .collapse">
+                            <h2>returns all the section&#039;s children</h2>
+                            <pre>levelTemplate(integer $parent, integer $depth, array $parents = array()) : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    static
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$parent</h4>
+                                                <code>integer</code><p><p>top level parent id</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$depth</h4>
+                                                <code>integer</code><p><p>variable to hold level of recursion</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$parents</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
                                                                     </div>
                             </div>
 
@@ -1611,6 +2228,79 @@ has_and_belongs_to_self</p></div>
                             </div>
 
                         </div>
+                                            <a id="method_navhierarchy"></a>
+                        <div class="element clickable method public  method_navhierarchy" data-toggle="collapse" data-target=".method_navhierarchy .collapse">
+                            <h2>navhierarchy</h2>
+                            <pre>navhierarchy( $notyui = false) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$notyui</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_navtojson"></a>
+                        <div class="element clickable method public  method_navtojson" data-toggle="collapse" data-target=".method_navtojson .collapse">
+                            <h2>navtojson</h2>
+                            <pre>navtojson() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_refresh"></a>
                         <div class="element clickable method public  method_refresh inherited" data-toggle="collapse" data-target=".method_refresh .collapse">
                             <h2>re-construct the item from the database</h2>
@@ -1636,6 +2326,38 @@ has_and_belongs_to_self</p></div>
                                     
                                                                             <h3>Response</h3>
                                         <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_removeLevel"></a>
+                        <div class="element clickable method public  method_removeLevel" data-toggle="collapse" data-target=".method_removeLevel .collapse">
+                            <h2>Move content page and its children to stand-alones</h2>
+                            <pre>removeLevel( $parent) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$parent</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
                                                                     </div>
                             </div>
 
@@ -2408,7 +3130,7 @@ has_one</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 27 Feb 2015 12:15:09 +0000.<br/>
+            generated on Fri, 01 May 2015 22:12:50 +0000.<br/>
     </footer>
     </body>
 </html>

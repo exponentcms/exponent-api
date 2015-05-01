@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.3.3 &raquo; \creditcard
+    <title>    Exponent v2.3.4 &raquo; \creditcard
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.3.3</a>
+                <a class="brand" href="../index.html">Exponent v2.3.4</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -285,6 +285,12 @@
         </a>
     </li>
 
+                                                                                                        <li class="method public">
+        <a href="#method_formatCreditCard" title="formatCreditCard :: ">
+            <span class="description"></span><pre>formatCreditCard</pre>
+        </a>
+    </li>
+
                                                                                                         <li class="method public inherited">
         <a href="#method_getAssociatedObjects" title="getAssociatedObjects :: get item&#039;s associated objects">
             <span class="description">get item&#039;s associated objects</span><pre>getAssociatedObjects</pre>
@@ -417,7 +423,7 @@
         </a>
     </li>
 
-                                                                                                        <li class="method public">
+                                                                                                        <li class="method public inherited">
         <a href="#method_name" title="name :: ">
             <span class="description"></span><pre>name</pre>
         </a>
@@ -436,8 +442,8 @@
     </li>
 
                                                                                                         <li class="method public inherited">
-        <a href="#method_preprocess" title="preprocess :: ">
-            <span class="description"></span><pre>preprocess</pre>
+        <a href="#method_preprocess" title="preprocess :: Called for billing method selection screen, return true if it&#039;s a valid billing method.">
+            <span class="description">Called for billing method selection screen, return true if it&#039;s a valid billing method.</span><pre>preprocess</pre>
         </a>
     </li>
 
@@ -490,14 +496,14 @@
     </li>
 
                                                                                                         <li class="method public inherited">
-        <a href="#method_userFormUpdate" title="userFormUpdate :: ">
-            <span class="description"></span><pre>userFormUpdate</pre>
+        <a href="#method_userFormUpdate" title="userFormUpdate :: process user input. This function should return an object of the user input.">
+            <span class="description">process user input. This function should return an object of the user input.</span><pre>userFormUpdate</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public inherited">
-        <a href="#method_userView" title="userView :: ">
-            <span class="description"></span><pre>userView</pre>
+        <a href="#method_userView" title="userView :: Should return html to display user data.">
+            <span class="description">Should return html to display user data.</span><pre>userView</pre>
         </a>
     </li>
 
@@ -546,7 +552,7 @@
                                 <span class="description">check for what objects may be attached</span><pre>checkForAttachableItems</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="method protected inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method protected inherited">
                             <a href="#method_getAttachableItems" title="getAttachableItems :: get attached objects for this item">
                                 <span class="description">get attached objects for this item</span><pre>getAttachableItems</pre>
                             </a>
@@ -555,7 +561,7 @@
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method private inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method private inherited">
                             <a href="#method_getAssociatedObjectsForThisModel" title="getAssociatedObjectsForThisModel :: gets associated objects for this model">
                                 <span class="description">gets associated objects for this model</span><pre>getAssociatedObjectsForThisModel</pre>
                             </a>
@@ -1735,6 +1741,49 @@ field values are also populated into class properties.</p></div>
                             </div>
 
                         </div>
+                                            <a id="method_formatCreditCard"></a>
+                        <div class="element clickable method public  method_formatCreditCard" data-toggle="collapse" data-target=".method_formatCreditCard .collapse">
+                            <h2>formatCreditCard</h2>
+                            <pre>formatCreditCard( $cc,  $cc_type) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$cc</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$cc_type</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_getAssociatedObjects"></a>
                         <div class="element clickable method public  method_getAssociatedObjects inherited" data-toggle="collapse" data-target=".method_getAssociatedObjects .collapse">
                             <h2>get item&#039;s associated objects</h2>
@@ -2214,7 +2263,7 @@ has_and_belongs_to_self</p></div>
                                             <a id="method_getPaymentReferenceNumber"></a>
                         <div class="element clickable method public  method_getPaymentReferenceNumber inherited" data-toggle="collapse" data-target=".method_getPaymentReferenceNumber .collapse">
                             <h2>getPaymentReferenceNumber</h2>
-                            <pre>getPaymentReferenceNumber( $opts) </pre>
+                            <pre>getPaymentReferenceNumber( $billingmethod) </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
 
@@ -2242,7 +2291,7 @@ has_and_belongs_to_self</p></div>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>$opts</h4>
+                                                <h4>$billingmethod</h4>
                                                 <code></code><p></p>
                                             </div>
                                                                             
@@ -2292,7 +2341,7 @@ has_and_belongs_to_self</p></div>
                                             <a id="method_getPoster"></a>
                         <div class="element clickable method public  method_getPoster inherited" data-toggle="collapse" data-target=".method_getPoster .collapse">
                             <h2>return the item poster</h2>
-                            <pre>getPoster( $display = null) : null|string</pre>
+                            <pre>getPoster(null $display = null) : null|string</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
 
@@ -2302,19 +2351,12 @@ has_and_belongs_to_self</p></div>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                             </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$display</h4>
-                                                <code></code><p></p>
+                                                <code>null</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -2606,11 +2648,11 @@ has_and_belongs_to_self</p></div>
 
                         </div>
                                             <a id="method_name"></a>
-                        <div class="element clickable method public  method_name" data-toggle="collapse" data-target=".method_name .collapse">
+                        <div class="element clickable method public  method_name inherited" data-toggle="collapse" data-target=".method_name .collapse">
                             <h2>name</h2>
                             <pre>name() </pre>
                             <div class="labels">
-                                                                                                                                                                                            </div>
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
 
                             
                             <div class="row collapse">
@@ -2723,7 +2765,7 @@ has_and_belongs_to_self</p></div>
                         </div>
                                             <a id="method_preprocess"></a>
                         <div class="element clickable method public  method_preprocess inherited" data-toggle="collapse" data-target=".method_preprocess .collapse">
-                            <h2>preprocess</h2>
+                            <h2>Called for billing method selection screen, return true if it&#039;s a valid billing method.</h2>
                             <pre>preprocess( $method,  $opts,  $params,  $order) </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
@@ -2734,13 +2776,6 @@ has_and_belongs_to_self</p></div>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                     <tr>
                                                 <th>
                                                     
@@ -3097,7 +3132,7 @@ has_one</p></div>
                         </div>
                                             <a id="method_userFormUpdate"></a>
                         <div class="element clickable method public  method_userFormUpdate inherited" data-toggle="collapse" data-target=".method_userFormUpdate .collapse">
-                            <h2>userFormUpdate</h2>
+                            <h2>process user input. This function should return an object of the user input.</h2>
                             <pre>userFormUpdate( $params) </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
@@ -3105,16 +3140,10 @@ has_one</p></div>
                             
                             <div class="row collapse">
                                 <div class="detail-description">
-                                    <div class="long_description"></div>
+                                    <div class="long_description"><p>the returned object will be saved in the session and passed to post_process.
+If need be this could use another method of data storage, as long post_process can get the data.</p></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                     <tr>
                                                 <th>
                                                     
@@ -3136,8 +3165,8 @@ has_one</p></div>
                         </div>
                                             <a id="method_userView"></a>
                         <div class="element clickable method public  method_userView inherited" data-toggle="collapse" data-target=".method_userView .collapse">
-                            <h2>userView</h2>
-                            <pre>userView( $opts) </pre>
+                            <h2>Should return html to display user data.</h2>
+                            <pre>userView( $billingmethod) </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
 
@@ -3165,7 +3194,7 @@ has_one</p></div>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>$opts</h4>
+                                                <h4>$billingmethod</h4>
                                                 <code></code><p></p>
                                             </div>
                                                                             
@@ -3399,31 +3428,6 @@ has_one</p></div>
                     
                     
                                                                 <h3><i class="icon-custom icon-property"></i> Properties</h3>
-                                                    <a id="property_title"> </a>
-                            <div class="element clickable property  public property_title inherited" data-toggle="collapse" data-target=".property_title .collapse">
-                                <h2>title</h2>
-                                <pre>title : </pre>
-                                <div class="labels">
-                                    <span class="label">inherited</span>                                                                    </div>
-                                <div class="row collapse">
-                                    <div class="detail-description">
-                                        <div class="long_description"></div>
-
-                                        <table class="table">
-                                                                                            <tr>
-                                                    <th>
-                                                        
-                                                    </th>
-                                                    <td>
-                                                                                                            </td>
-                                                </tr>
-                                                                                    </table>
-
-                                                                                    <h3>Type(s)</h3>
-                                            <code></code>
-                                                                            </div>
-                                </div>
-                            </div>
                                                     <a id="property_payment_type"> </a>
                             <div class="element clickable property  public property_payment_type inherited" data-toggle="collapse" data-target=".property_payment_type .collapse">
                                 <h2>payment_type</h2>
@@ -3503,6 +3507,31 @@ has_one</p></div>
                             <div class="element clickable property  public property_table inherited" data-toggle="collapse" data-target=".property_table .collapse">
                                 <h2>table</h2>
                                 <pre>table : </pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_configdata"> </a>
+                            <div class="element clickable property  public property_configdata inherited" data-toggle="collapse" data-target=".property_configdata .collapse">
+                                <h2>configdata</h2>
+                                <pre>configdata : </pre>
                                 <div class="labels">
                                     <span class="label">inherited</span>                                                                    </div>
                                 <div class="row collapse">
@@ -4094,7 +4123,7 @@ has_one</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 27 Feb 2015 12:14:26 +0000.<br/>
+            generated on Fri, 01 May 2015 22:11:43 +0000.<br/>
     </footer>
     </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.3.3 &raquo; \expTwitter
+    <title>    Exponent v2.3.4 &raquo; \expTwitter
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.3.3</a>
+                <a class="brand" href="../index.html">Exponent v2.3.4</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -514,10 +514,8 @@
     </li>
 
                                                                                                         <li class="method public inherited">
-        <a href="#method_oAuthAuthenticate" title="oAuthAuthenticate :: Allows a Consumer application to use an OAuth request_token to request user authorization. This method is a replacement fulfills Secion 6.2 of the OAuth 1.0 authentication flow for applications using the Sign in with Twitter authentication flow. The method will use the currently logged in user as the account to for access authorization unless the force_login parameter is set to true
-REMARK: This method seems not to work	@later">
-            <span class="description">Allows a Consumer application to use an OAuth request_token to request user authorization. This method is a replacement fulfills Secion 6.2 of the OAuth 1.0 authentication flow for applications using the Sign in with Twitter authentication flow. The method will use the currently logged in user as the account to for access authorization unless the force_login parameter is set to true
-REMARK: This method seems not to work	@later</span><pre>oAuthAuthenticate</pre>
+        <a href="#method_oAuthAuthenticate" title="oAuthAuthenticate :: Allows a Consumer application to use an OAuth request_token to request user authorization.">
+            <span class="description">Allows a Consumer application to use an OAuth request_token to request user authorization.</span><pre>oAuthAuthenticate</pre>
         </a>
     </li>
 
@@ -581,7 +579,7 @@ REMARK: This method seems not to work	@later</span><pre>oAuthAuthenticate</pre>
         </a>
     </li>
 
-                                                                                                        <li class="method public inherited">
+                                                                                                                                                                <li class="method public inherited">
         <a href="#method_setTimeOut" title="setTimeOut :: Set the timeout">
             <span class="description">Set the timeout</span><pre>setTimeOut</pre>
         </a>
@@ -851,7 +849,12 @@ then joined by the URL-escaped ampersand sign, &quot;%26&quot;.</span><pre>calcu
                                 <span class="description">Set the consumer secret</span><pre>setConsumerSecret</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method protected inherited">
+                                                                                                                                                        <li class="method protected inherited">
+                            <a href="#method_setReturnAsArray" title="setReturnAsArray :: Set the response type">
+                                <span class="description">Set the response type</span><pre>setReturnAsArray</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method protected inherited">
                             <a href="#method_urlencode_rfc3986" title="urlencode_rfc3986 :: URL-encode method for internal use">
                                 <span class="description">URL-encode method for internal use</span><pre>urlencode_rfc3986</pre>
                             </a>
@@ -860,7 +863,7 @@ then joined by the URL-escaped ampersand sign, &quot;%26&quot;.</span><pre>calcu
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -3629,16 +3632,18 @@ The token contained in the response is the token needed to be able to create a n
                         </div>
                                             <a id="method_oAuthAuthenticate"></a>
                         <div class="element clickable method public  method_oAuthAuthenticate inherited" data-toggle="collapse" data-target=".method_oAuthAuthenticate .collapse">
-                            <h2>Allows a Consumer application to use an OAuth request_token to request user authorization. This method is a replacement fulfills Secion 6.2 of the OAuth 1.0 authentication flow for applications using the Sign in with Twitter authentication flow. The method will use the currently logged in user as the account to for access authorization unless the force_login parameter is set to true
-REMARK: This method seems not to work	@later</h2>
-                            <pre>oAuthAuthenticate(\bool[optional] $force = false) </pre>
+                            <h2>Allows a Consumer application to use an OAuth request_token to request user authorization.</h2>
+                            <pre>oAuthAuthenticate(string $token, \bool[optional] $force = false, \string[optional] $screen_name = false) </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
 
                             
                             <div class="row collapse">
                                 <div class="detail-description">
-                                    <div class="long_description"></div>
+                                    <div class="long_description"><p>This method is a replacement fulfills Secion 6.2 of the OAuth 1.0 authentication flow for
+applications using the Sign in with Twitter authentication flow. The method will use the
+currently logged in user as the account to for access authorization unless the force_login
+parameter is set to true</p></div>
 
                                     <table class="table">
                                                                                     <tr>
@@ -3652,8 +3657,16 @@ REMARK: This method seems not to work	@later</h2>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
+                                                <h4>$token</h4>
+                                                <code>string</code><p><p>The token.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
                                                 <h4>$force</h4>
                                                 <code>\bool[optional]</code><p><p>Force the authentication.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$screen_name</h4>
+                                                <code>\string[optional]</code><p><p>Prefill the username input box of the OAuth login.</p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -4045,6 +4058,38 @@ REMARK: This method seems not to work	@later</h2>
                                                                                     <div class="subelement argument">
                                                 <h4>$secret</h4>
                                                 <code>string</code><p><p>The secret to use.</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setReturnAsArray"></a>
+                        <div class="element clickable method protected  method_setReturnAsArray inherited" data-toggle="collapse" data-target=".method_setReturnAsArray .collapse">
+                            <h2>Set the response type</h2>
+                            <pre>setReturnAsArray(boolean $value) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>boolean</code><p><p>True for array and false for object</p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -5509,6 +5554,32 @@ This information is cached for 5 minutes. Requesting more frequently than that w
                                                                             </div>
                                 </div>
                             </div>
+                                                    <a id="property_returnAsArray"> </a>
+                            <div class="element clickable property  protected property_returnAsArray inherited" data-toggle="collapse" data-target=".property_returnAsArray .collapse">
+                                <h2>The response should be cast as array or not</h2>
+                                <pre>returnAsArray : boolean</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>boolean</code>
+                                                                            </div>
+                                </div>
+                            </div>
                                                             </div>
             </div>
             <a id="\expTwitter"></a>
@@ -5529,7 +5600,7 @@ This information is cached for 5 minutes. Requesting more frequently than that w
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 27 Feb 2015 12:15:20 +0000.<br/>
+            generated on Fri, 01 May 2015 22:12:29 +0000.<br/>
     </footer>
     </body>
 </html>
