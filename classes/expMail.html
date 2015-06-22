@@ -345,11 +345,11 @@ an associative array, (or else the message fails immediately).</span><pre>quickS
 <p>//Here you are using the system default, whether it is smtp, php mail, sendmail, exim, native, or rotator.</p>
 <p>$emailItem = new expMail();</p>
 <p>//Here you are trying different types of connections:
-$emailItem = new expMail(array('method'=>'smtp'));
-$emailItem = new expMail(array('method'=>'sendmail');
-$emailItem = new expMail(array('method'=>'exim');
-$emailItem = new expMail(array('method'=>'native');
-$emailItem = new expMail(array('method'=>'rotator');</p>
+$emailItem = new expMail(array('method'=&gt;'smtp'));
+$emailItem = new expMail(array('method'=&gt;'sendmail');
+$emailItem = new expMail(array('method'=&gt;'exim');
+$emailItem = new expMail(array('method'=&gt;'native');
+$emailItem = new expMail(array('method'=&gt;'rotator');</p>
                                                                                                     </td>
                                             </tr>
                                                                                     <tr>
@@ -360,7 +360,7 @@ $emailItem = new expMail(array('method'=>'rotator');</p>
                                                                                                                                                                         
                                                                                                                                                                         <p>add support for telling the constructor where the system specific Mail Transit Authority is: i.e. where sendmail or exim is if not in the default /usr/sbin</p>
                                                                                                                                                                         
-                                                                                                                                                                        <p>drop support for passing in custom "connections", a Swift 3.x relic that we do not need.</p>
+                                                                                                                                                                        <p>drop support for passing in custom &quot;connections&quot;, a Swift 3.x relic that we do not need.</p>
                                                                                                                                                                         
                                                                                                                                                                         <p>add further documentation for using settings other than the system default</p>
                                                                                                     </td>
@@ -448,19 +448,19 @@ $emailItem = new expMail(array('method'=>'rotator');</p>
                                                                                                                                                                         
                                                                                                                                                                         <p>will send a basic message, looping through an array of email addresses add adding them to the BCC list.</p>
 <p>$emailItem = new expMail();</p>
-<p>$emailItem->addText('My Text ');
-$emailItem->addText('Line Two ');
-$emailItem->addText('Line Three ');</p>
-<p>$bccs = array('a@website.com'=>'Mr A.', 'b@website.com'=>'Mr B.', 'c@website.com'=>'Mr C.', 'd@website.com'=>'Mr D.', 'e@website.com'=>'Mr E.', 'f@website.com'=>'Mr F.');</p>
+<p>$emailItem-&gt;addText('My Text ');
+$emailItem-&gt;addText('Line Two ');
+$emailItem-&gt;addText('Line Three ');</p>
+<p>$bccs = array('a@website.com'=&gt;'Mr A.', 'b@website.com'=&gt;'Mr B.', 'c@website.com'=&gt;'Mr C.', 'd@website.com'=&gt;'Mr D.', 'e@website.com'=&gt;'Mr E.', 'f@website.com'=&gt;'Mr F.');</p>
 <p>//add multiple bcc recipients to the email
-foreach ($bccs as $email => $name)
-{</p>
-<pre><code>$emailItem-&gt;addBcc($email, $name);</code></pre>
-<p>}</p>
-<p>$emailItem->addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));
-$emailItem->addFrom('from@sender.com'); //setting the From field using just the email.
-$emailItem->subject('Hello World!');</p>
-<p>$emailItem->send();</p>
+foreach ($bccs as $email =&gt; $name)
+{
+$emailItem-&gt;addBcc($email, $name);
+}</p>
+<p>$emailItem-&gt;addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));
+$emailItem-&gt;addFrom('from@sender.com'); //setting the From field using just the email.
+$emailItem-&gt;subject('Hello World!');</p>
+<p>$emailItem-&gt;send();</p>
                                                                                                     </td>
                                             </tr>
                                                                                     <tr>
@@ -516,19 +516,19 @@ $emailItem->subject('Hello World!');</p>
                                                                                                                                                                         
                                                                                                                                                                         <p>will send a basic message, looping through an array of email addresses add adding them to the CC list.</p>
 <p>$emailItem = new expMail();</p>
-<p>$emailItem->addText('My Text ');
-$emailItem->addText('Line Two ');
-$emailItem->addText('Line Three ');</p>
-<p>$ccs = array('a@website.com'=>'Mr A.', 'b@website.com'=>'Mr B.', 'c@website.com'=>'Mr C.', 'd@website.com'=>'Mr D.', 'e@website.com'=>'Mr E.', 'f@website.com'=>'Mr F.');</p>
+<p>$emailItem-&gt;addText('My Text ');
+$emailItem-&gt;addText('Line Two ');
+$emailItem-&gt;addText('Line Three ');</p>
+<p>$ccs = array('a@website.com'=&gt;'Mr A.', 'b@website.com'=&gt;'Mr B.', 'c@website.com'=&gt;'Mr C.', 'd@website.com'=&gt;'Mr D.', 'e@website.com'=&gt;'Mr E.', 'f@website.com'=&gt;'Mr F.');</p>
 <p>//add multiple bcc recipients to the email
-foreach ($ccs as $email => $name)
-{</p>
-<pre><code>$emailItem-&gt;addCc($email, $name);</code></pre>
-<p>}</p>
-<p>$emailItem->addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));
-$emailItem->addFrom('from@sender.com'); //setting the From field using just the email.
-$emailItem->subject('Hello World!');</p>
-<p>$emailItem->send();</p>
+foreach ($ccs as $email =&gt; $name)
+{
+$emailItem-&gt;addCc($email, $name);
+}</p>
+<p>$emailItem-&gt;addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));
+$emailItem-&gt;addFrom('from@sender.com'); //setting the From field using just the email.
+$emailItem-&gt;subject('Hello World!');</p>
+<p>$emailItem-&gt;send();</p>
                                                                                                     </td>
                                             </tr>
                                                                                     <tr>
@@ -583,16 +583,16 @@ the next time someone upgrades the mailer.</p></div>
                                                 </th>
                                                 <td>
                                                                                                                                                                         
-                                                                                                                                                                        <p>will send a basic message, but you can see how the subject line works.</p>
-<pre><code>      $emailItem = new expMail();
-      $emailItem-&gt;addText('My Text ');
-      $emailItem-&gt;addText('Line Two ');
-      $emailItem-&gt;addText('Line Three ');
-      $emailItem-&gt;addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));
-      $emailItem-&gt;addFrom('from@sender.com'); //setting the From field using just the email.
-      $emailItem-&gt;addFrom('from@sender.com', 'Mr. Sender'); //resetting the From field using the email and the name.
-      $emailItem-&gt;subject('Hello World!');
-      $emailItem-&gt;send();</code></pre>
+                                                                                                                                                                        <p>will send a basic message, but you can see how the subject line works.
+$emailItem = new expMail();
+$emailItem-&gt;addText('My Text ');
+$emailItem-&gt;addText('Line Two ');
+$emailItem-&gt;addText('Line Three ');
+$emailItem-&gt;addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));
+$emailItem-&gt;addFrom('from@sender.com'); //setting the From field using just the email.
+$emailItem-&gt;addFrom('from@sender.com', 'Mr. Sender'); //resetting the From field using the email and the name.
+$emailItem-&gt;subject('Hello World!');
+$emailItem-&gt;send();</p>
                                                                                                     </td>
                                             </tr>
                                                                                     <tr>
@@ -644,13 +644,13 @@ the next time someone upgrades the mailer.</p></div>
                                                                                                                                                                         
                                                                                                                                                                         <p>will include the passed HTML and will set it as an addition to the message body.</p>
 <p>$emailItem = new expMail();</p>
-<p>$emailItem->addHTML('<h2>My Text</h2> '); //This adds an alternate version if your email in HTML format</p>
-<p>$emailItem->addTo('myemail@mysite.com');
-$emailItem->addFrom('from@sender.com');
-$emailItem->subject('Hello World!');</p>
-<p>$headersToAdd = array('Your-Header-Name' => 'the header value', 'SecondHeader-Name' => '2nd header value');
-$emailItem->addHeaders($headersToAdd);</p>
-<p>$emailItem->send();</p>
+<p>$emailItem-&gt;addHTML('<h2>My Text</h2> '); //This adds an alternate version if your email in HTML format</p>
+<p>$emailItem-&gt;addTo('myemail@mysite.com');
+$emailItem-&gt;addFrom('from@sender.com');
+$emailItem-&gt;subject('Hello World!');</p>
+<p>$headersToAdd = array('Your-Header-Name' =&gt; 'the header value', 'SecondHeader-Name' =&gt; '2nd header value');
+$emailItem-&gt;addHeaders($headersToAdd);</p>
+<p>$emailItem-&gt;send();</p>
                                                                                                     </td>
                                             </tr>
                                                                                     <tr>
@@ -724,20 +724,20 @@ $emailItem->addHeaders($headersToAdd);</p>
                                                                                                                                                                         
                                                                                                                                                                         <p>will include the passed HTML and will set it as an addition to the message body.</p>
 <p>$emailItem = new expMail();</p>
-<p>$emailItem->addHTML('<h2>My Text</h2> '); //This adds an alternate version if your email in HTML format</p>
-<p>$emailItem->addTo('myemail@mysite.com');
-$emailItem->addFrom('from@sender.com');
-$emailItem->subject('Hello World!');</p>
-<p>$emailItem->send();</p>
+<p>$emailItem-&gt;addHTML('<h2>My Text</h2> '); //This adds an alternate version if your email in HTML format</p>
+<p>$emailItem-&gt;addTo('myemail@mysite.com');
+$emailItem-&gt;addFrom('from@sender.com');
+$emailItem-&gt;subject('Hello World!');</p>
+<p>$emailItem-&gt;send();</p>
 <p>You can also call the addHTML multiple times to append to the message:</p>
 <p>$emailItem = new expMail();</p>
-<p>$emailItem->addHTML('My HTML <br>');
-$emailItem->addHTML('Line Two <br>');
-$emailItem->addHTML('Line Three <br>');</p>
-<p>$emailItem->addTo('myemail@mysite.com');
-$emailItem->addFrom('from@sender.com');
-$emailItem->subject('Hello World!');</p>
-<p>$emailItem->send();</p>
+<p>$emailItem-&gt;addHTML('My HTML <br>');
+$emailItem-&gt;addHTML('Line Two <br>');
+$emailItem-&gt;addHTML('Line Three <br>');</p>
+<p>$emailItem-&gt;addTo('myemail@mysite.com');
+$emailItem-&gt;addFrom('from@sender.com');
+$emailItem-&gt;subject('Hello World!');</p>
+<p>$emailItem-&gt;send();</p>
                                                                                                     </td>
                                             </tr>
                                                                                     <tr>
@@ -830,13 +830,13 @@ $emailItem->subject('Hello World!');</p>
                                                                                                                                                                         
                                                                                                                                                                         <p>will send a basic message, but you can see how the subject line works.
 $emailItem = new expMail();</p>
-<p>$emailItem->addText('My Text ');
-$emailItem->addText('Line Two ');
-$emailItem->addText('Line Three ');</p>
+<p>$emailItem-&gt;addText('My Text ');
+$emailItem-&gt;addText('Line Two ');
+$emailItem-&gt;addText('Line Three ');</p>
 <pre><code> $emailItem-&gt;addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));</code></pre>
-<p>$emailItem->addFrom('from@sender.com');
-$emailItem->subject('Hello World!');</p>
-<p>$emailItem->send();</p>
+<p>$emailItem-&gt;addFrom('from@sender.com');
+$emailItem-&gt;subject('Hello World!');</p>
+<p>$emailItem-&gt;send();</p>
                                                                                                     </td>
                                             </tr>
                                                                                     <tr>
@@ -889,12 +889,12 @@ $emailItem->subject('Hello World!');</p>
                                                                                                                                                                         
                                                                                                                                                                         <p>will set the message body in HTML and also include a text counterpart in case the recipient cannot view HTML.</p>
 <p>$emailItem = new expMail();</p>
-<p>$emailItem->setHTMLBody('<b>My Text</b> '); //This is an HTML version of the message
-$emailItem->addText('My Text '); //This adds a Text version in case they cannot read HTML</p>
-<p>$emailItem->addTo('myemail@mysite.com');
-$emailItem->addFrom('from@sender.com');
-$emailItem->subject('Hello World!');</p>
-<p>$emailItem->send();</p>
+<p>$emailItem-&gt;setHTMLBody('<b>My Text</b> '); //This is an HTML version of the message
+$emailItem-&gt;addText('My Text '); //This adds a Text version in case they cannot read HTML</p>
+<p>$emailItem-&gt;addTo('myemail@mysite.com');
+$emailItem-&gt;addFrom('from@sender.com');
+$emailItem-&gt;subject('Hello World!');</p>
+<p>$emailItem-&gt;send();</p>
                                                                                                     </td>
                                             </tr>
                                                                                     <tr>
@@ -947,38 +947,38 @@ This function does not yet support the parsing of associative arrays for a quick
                                                 </th>
                                                 <td>
                                                                                                                                                                         
-                                                                                                                                                                        <p>will send a basic message, looping through an array of email addresses add adding them to the BCC list.</p>
-<pre><code>           $emailItem = new expMail();
-           $emailItem-&gt;addText('My Text ');
-           $emailItem-&gt;addText('Line Two ');
-           $emailItem-&gt;addText('Line Three ');
-           $to_array = array('a@website.com'=&gt;'Mr A.', 'b@website.com'=&gt;'Mr B.', 'c@website.com'=&gt;'Mr C.', 'd@website.com'=&gt;'Mr D.', 'e@website.com'=&gt;'Mr E.', 'f@website.com'=&gt;'Mr F.');
-           //add multiple bcc recipients to the email
-           foreach ($to_array as $email =&gt; $name)
-           {
-           $emailItem-&gt;addBcc($email, $name);
-           }
-           $emailItem-&gt;addFrom('from@sender.com');
-           $emailItem-&gt;subject('Hello World!');
-           $emailItem-&gt;send();
-           //You can also just specify the email without the name, like so:
-           $emailItem = new expMail();
-           $emailItem-&gt;addText('My Text ');
-           $emailItem-&gt;addText('Line Two ');
-           $emailItem-&gt;addText('Line Three ');
-           $emailItem-&gt;addTo('bob@smith.com');
-           $emailItem-&gt;addFrom('from@sender.com');
-           $emailItem-&gt;subject('Hello World!');
-           $emailItem-&gt;send();
-           //You can also send an array of email addresses as the first argument, like so:
-           $emailItem = new expMail();
-           $emailItem-&gt;addText('My Text ');
-           $emailItem-&gt;addText('Line Two ');
-           $emailItem-&gt;addText('Line Three ');
-           $emailItem-&gt;addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));
-           $emailItem-&gt;addFrom('from@sender.com');
-           $emailItem-&gt;subject('Hello World!');
-           $emailItem-&gt;send();</code></pre>
+                                                                                                                                                                        <p>will send a basic message, looping through an array of email addresses add adding them to the BCC list.
+$emailItem = new expMail();
+$emailItem-&gt;addText('My Text ');
+$emailItem-&gt;addText('Line Two ');
+$emailItem-&gt;addText('Line Three ');
+$to_array = array('a@website.com'=&gt;'Mr A.', 'b@website.com'=&gt;'Mr B.', 'c@website.com'=&gt;'Mr C.', 'd@website.com'=&gt;'Mr D.', 'e@website.com'=&gt;'Mr E.', 'f@website.com'=&gt;'Mr F.');
+//add multiple bcc recipients to the email
+foreach ($to_array as $email =&gt; $name)
+{
+$emailItem-&gt;addBcc($email, $name);
+}
+$emailItem-&gt;addFrom('from@sender.com');
+$emailItem-&gt;subject('Hello World!');
+$emailItem-&gt;send();
+//You can also just specify the email without the name, like so:
+$emailItem = new expMail();
+$emailItem-&gt;addText('My Text ');
+$emailItem-&gt;addText('Line Two ');
+$emailItem-&gt;addText('Line Three ');
+$emailItem-&gt;addTo('bob@smith.com');
+$emailItem-&gt;addFrom('from@sender.com');
+$emailItem-&gt;subject('Hello World!');
+$emailItem-&gt;send();
+//You can also send an array of email addresses as the first argument, like so:
+$emailItem = new expMail();
+$emailItem-&gt;addText('My Text ');
+$emailItem-&gt;addText('Line Two ');
+$emailItem-&gt;addText('Line Three ');
+$emailItem-&gt;addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));
+$emailItem-&gt;addFrom('from@sender.com');
+$emailItem-&gt;subject('Hello World!');
+$emailItem-&gt;send();</p>
                                                                                                     </td>
                                             </tr>
                                                                                     <tr>
@@ -987,12 +987,12 @@ This function does not yet support the parsing of associative arrays for a quick
                                                 </th>
                                                 <td>
                                                                                                                                                                         
-                                                                                                                                                                        <p>A nice future feature addition would be to allow the passing in of associative arrays like so:</p>
-<pre><code>           $emailsToSendTo = array('bob@smith.com'=&gt;'Bob Smith', 'mary@smith.com'=&gt;'Mary Smith');
-           $emailItem-&gt;addTo($emailsToSendTo);
-           OR
-           $emailItem-&gt;addTo('array('myemail@mysite.com'=&gt;'Website Owner', 'secondemail@website.com'=&gt;'Frank Jones');
-           Actually, cleanup should be done so that this function only takes associative arrays, and nothing else.</code></pre>
+                                                                                                                                                                        <p>A nice future feature addition would be to allow the passing in of associative arrays like so:
+$emailsToSendTo = array('bob@smith.com'=&gt;'Bob Smith', 'mary@smith.com'=&gt;'Mary Smith');
+$emailItem-&gt;addTo($emailsToSendTo);
+OR
+$emailItem-&gt;addTo('array('myemail@mysite.com'=&gt;'Website Owner', 'secondemail@website.com'=&gt;'Frank Jones');
+Actually, cleanup should be done so that this function only takes associative arrays, and nothing else.</p>
                                                                                                     </td>
                                             </tr>
                                                                                     <tr>
@@ -1043,12 +1043,11 @@ that are on disk, unlike the one above, which just attached one that is availabl
                                                 </th>
                                                 <td>
                                                                                                                                                                         
-                                                                                                                                                                        <p>will show three different ways to attach files, two from a path on disk, and one from a url.</p>
-<pre><code> //Create the attachment
+                                                                                                                                                                        <p>will show three different ways to attach files, two from a path on disk, and one from a url.
+//Create the attachment
 // * Note that you can technically leave the content-type parameter out
-$attachment = Swift_Attachment::fromPath('/path/to/image.jpg', 'image/jpeg');
-
-//Attach it to the message
+$attachment = Swift_Attachment::fromPath('/path/to/image.jpg', 'image/jpeg');</p>
+<pre><code>//Attach it to the message
 $message-&gt;attach($attachment);
 
 //The two statements above could be written in one line instead
@@ -1202,15 +1201,15 @@ This is leftover code from Swift 3.x</p></div>
                                                                                                                                                                         
                                                                                                                                                                         <p>will set some recipients and then clear them
 $emailItem = new expMail();</p>
-<p>$emailItem->addText('My Text ');
-$emailItem->addText('Line Two ');
-$emailItem->addText('Line Three ');</p>
-<p>$emailItem->addTo('bob@smith.com', 'Bob Smith');
-$emailItem->addTo('bob2@smith.com', 'Bob2 Smith');
-$emailItem->addTo('bob3@smith.com', 'Bob3 Smith');</p>
-<p>$emailItem->flushRecipients();</p>
-<p>$emailItem->addTo('whataboutbob@smith.com', 'Frank Smith');</p>
-<p>$emailItem->send();</p>
+<p>$emailItem-&gt;addText('My Text ');
+$emailItem-&gt;addText('Line Two ');
+$emailItem-&gt;addText('Line Three ');</p>
+<p>$emailItem-&gt;addTo('bob@smith.com', 'Bob Smith');
+$emailItem-&gt;addTo('bob2@smith.com', 'Bob2 Smith');
+$emailItem-&gt;addTo('bob3@smith.com', 'Bob3 Smith');</p>
+<p>$emailItem-&gt;flushRecipients();</p>
+<p>$emailItem-&gt;addTo('whataboutbob@smith.com', 'Frank Smith');</p>
+<p>$emailItem-&gt;send();</p>
                                                                                                     </td>
                                             </tr>
                                                                                     <tr>
@@ -1266,14 +1265,14 @@ $emailItem->addTo('bob3@smith.com', 'Bob3 Smith');</p>
                                                                                                                                                                         
                                                                                                                                                                         <p>returns the Message ID on the mail</p>
 <p>$emailItem = new expMail();</p>
-<p>$emailItem->addText('My Text ');
-$emailItem->addText('Line Two ');
-$emailItem->addText('Line Three ');</p>
-<p>$emailItem->addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));
-$emailItem->addFrom('from@sender.com');
-$emailItem->subject('Hello World!');</p>
-<p>echo "$emailItem->messageID()";</p>
-<p>$emailItem->send();</p>
+<p>$emailItem-&gt;addText('My Text ');
+$emailItem-&gt;addText('Line Two ');
+$emailItem-&gt;addText('Line Three ');</p>
+<p>$emailItem-&gt;addTo(array('myemail@mysite.com', 'secondemail@website.com', 'third@emailsite.com'));
+$emailItem-&gt;addFrom('from@sender.com');
+$emailItem-&gt;subject('Hello World!');</p>
+<p>echo &quot;$emailItem-&gt;messageID()&quot;;</p>
+<p>$emailItem-&gt;send();</p>
                                                                                                     </td>
                                             </tr>
                                                                                     <tr>
@@ -1368,19 +1367,19 @@ an associative array, (or else the message fails immediately).</h2>
                                                 <td>
                                                                                                                                                                         
                                                                                                                                                                         <p>will send a quick message, showing you what basic fields are required.</p>
-<p>$body = "My body.";
+<p>$body = &quot;My body.&quot;;
 $tos = explode(',', str_replace(' ', '', COMMENTS_NOTIFICATION_EMAIL)); //pull list of CSV emails from the site config
-$subject = "My subject";</p>
+$subject = &quot;My subject&quot;;</p>
 <p>$mail = new expMail();
-$mail->quickSend(array(</p>
-<pre><code>     'html_message'=&gt;$body,
-    'to'=&gt;$tos,
-    'from'=&gt;trim(SMTP_FROMADDRESS), //pull EMAIL from site config
-    'subject'=&gt;$subject,</code></pre>
-<p>));</p>
+$mail-&gt;quickSend(array(
+'html_message'=&gt;$body,
+'to'=&gt;$tos,
+'from'=&gt;trim(SMTP_FROMADDRESS), //pull EMAIL from site config
+'subject'=&gt;$subject,
+));</p>
 <p>(or even simpler)
 $mail = new expMail();
-$mail->quickSend(array('html_message'=>'Hello'));</p>
+$mail-&gt;quickSend(array('html_message'=&gt;'Hello'));</p>
                                                                                                     </td>
                                             </tr>
                                                                             </table>
@@ -1470,11 +1469,11 @@ Usable parameters include:
                                                                                                                                                                         
                                                                                                                                                                         <p>will set the message body to the HTML that is passed in. This is the standard way to set the email message body.</p>
 <p>$emailItem = new expMail();</p>
-<p>$emailItem->setHTMLBody('<h2>My Text</h2> '); //This sets the body to be an HTML version</p>
-<p>$emailItem->addTo('myemail@mysite.com');
-$emailItem->addFrom('from@sender.com');
-$emailItem->subject('Hello World!');</p>
-<p>$emailItem->send();</p>
+<p>$emailItem-&gt;setHTMLBody('<h2>My Text</h2> '); //This sets the body to be an HTML version</p>
+<p>$emailItem-&gt;addTo('myemail@mysite.com');
+$emailItem-&gt;addFrom('from@sender.com');
+$emailItem-&gt;subject('Hello World!');</p>
+<p>$emailItem-&gt;send();</p>
                                                                                                     </td>
                                             </tr>
                                                                                     <tr>
@@ -1526,11 +1525,11 @@ $emailItem->subject('Hello World!');</p>
                                                                                                                                                                         
                                                                                                                                                                         <p>will set the message body to plain text. Usually people do this because the recipient cannot read HTML email.</p>
 <p>$emailItem = new expMail();</p>
-<p>$emailItem->setTextBody('My Text '); //This adds a Text version in case they cannot read HTML</p>
-<p>$emailItem->addTo('myemail@mysite.com');
-$emailItem->addFrom('from@sender.com');
-$emailItem->subject('Hello World!');</p>
-<p>$emailItem->send();</p>
+<p>$emailItem-&gt;setTextBody('My Text '); //This adds a Text version in case they cannot read HTML</p>
+<p>$emailItem-&gt;addTo('myemail@mysite.com');
+$emailItem-&gt;addFrom('from@sender.com');
+$emailItem-&gt;subject('Hello World!');</p>
+<p>$emailItem-&gt;send();</p>
                                                                                                     </td>
                                             </tr>
                                                                                     <tr>
@@ -1894,7 +1893,7 @@ $emailItem->subject('Hello World!');</p>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 01 May 2015 22:11:35 +0000.<br/>
+            generated on Mon, 22 Jun 2015 10:37:29 +0000.<br/>
     </footer>
     </body>
 </html>

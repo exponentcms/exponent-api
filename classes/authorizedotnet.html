@@ -256,6 +256,12 @@
     </li>
 
                                                                                                         <li class="method public inherited">
+        <a href="#method_delayed_capture" title="delayed_capture :: ">
+            <span class="description"></span><pre>delayed_capture</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
         <a href="#method_delete" title="delete :: delete item">
             <span class="description">delete item</span><pre>delete</pre>
         </a>
@@ -441,6 +447,12 @@
         </a>
     </li>
 
+                                                                                                        <li class="method public">
+        <a href="#method_parseResponse" title="parseResponse :: Parses an AuthorizeNet AIM Response.">
+            <span class="description">Parses an AuthorizeNet AIM Response.</span><pre>parseResponse</pre>
+        </a>
+    </li>
+
                                                                                                         <li class="method public inherited">
         <a href="#method_postProcess" title="postProcess :: ">
             <span class="description"></span><pre>postProcess</pre>
@@ -550,6 +562,12 @@
     </li>
 
                                                                                                         <li class="method public inherited">
+        <a href="#method_void_transaction" title="void_transaction :: ">
+            <span class="description"></span><pre>void_transaction</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
         <a href="#method_voidEnabled" title="voidEnabled :: ">
             <span class="description"></span><pre>voidEnabled</pre>
         </a>
@@ -564,16 +582,16 @@
                                 <span class="description">check for what objects may be attached</span><pre>checkForAttachableItems</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method protected inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method protected inherited">
                             <a href="#method_getAttachableItems" title="getAttachableItems :: get attached objects for this item">
                                 <span class="description">get attached objects for this item</span><pre>getAttachableItems</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="method private inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method private inherited">
                             <a href="#method_getAssociatedObjectsForThisModel" title="getAssociatedObjectsForThisModel :: gets associated objects for this model">
                                 <span class="description">gets associated objects for this model</span><pre>getAssociatedObjectsForThisModel</pre>
                             </a>
@@ -583,16 +601,36 @@
                                 <span class="description">create a many to many table relationship</span><pre>makeManyToManyTablename</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                <li class="method private inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method private inherited">
                             <a href="#method_runCallback" title="runCallback :: jump to subclass calling routine">
                                 <span class="description">jump to subclass calling routine</span><pre>runCallback</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
             <ul>
+                                <li class="constant ">
+                    <a href="#constant_APPROVED" title="APPROVED :: ">
+                        <span class="description"></span><pre>APPROVED</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_DECLINED" title="DECLINED :: ">
+                        <span class="description"></span><pre>DECLINED</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_ERROR" title="ERROR :: ">
+                        <span class="description"></span><pre>ERROR</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_HELD" title="HELD :: ">
+                        <span class="description"></span><pre>HELD</pre>
+                    </a>
+                </li>
                             </ul>
         </li>
     </ul>
@@ -1546,6 +1584,53 @@ field values are also populated into class properties.</p></div>
                                                                             </table>
 
                                     
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_delayed_capture"></a>
+                        <div class="element clickable method public  method_delayed_capture inherited" data-toggle="collapse" data-target=".method_delayed_capture .collapse">
+                            <h2>delayed_capture</h2>
+                            <pre>delayed_capture( $billingmethod,  $amount,  $order) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$billingmethod</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$amount</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$order</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
                                                                     </div>
                             </div>
 
@@ -2766,6 +2851,37 @@ has_and_belongs_to_self</p></div>
                             </div>
 
                         </div>
+                                            <a id="method_parseResponse"></a>
+                        <div class="element clickable method public  method_parseResponse" data-toggle="collapse" data-target=".method_parseResponse .collapse">
+                            <h2>Parses an AuthorizeNet AIM Response.</h2>
+                            <pre>parseResponse(string $response, string $delimiter) : \stdClass</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$response</h4>
+                                                <code>string</code><p><p>The response from the AuthNet server.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$delimiter</h4>
+                                                <code>string</code><p><p>The delimiter  (default is &quot;|&quot;)</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\stdClass</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_postProcess"></a>
                         <div class="element clickable method public  method_postProcess inherited" data-toggle="collapse" data-target=".method_postProcess .collapse">
                             <h2>postProcess</h2>
@@ -3476,6 +3592,49 @@ If need be this could use another method of data storage, as long post_process c
                             </div>
 
                         </div>
+                                            <a id="method_void_transaction"></a>
+                        <div class="element clickable method public  method_void_transaction inherited" data-toggle="collapse" data-target=".method_void_transaction .collapse">
+                            <h2>void_transaction</h2>
+                            <pre>void_transaction( $billingmethod,  $order) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$billingmethod</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$order</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_voidEnabled"></a>
                         <div class="element clickable method public  method_voidEnabled inherited" data-toggle="collapse" data-target=".method_voidEnabled .collapse">
                             <h2>voidEnabled</h2>
@@ -3511,7 +3670,92 @@ If need be this could use another method of data storage, as long post_process c
 
                         </div>
                     
-                    
+                                            <h3><i class="icon-custom icon-constant"></i> Constants</h3>
+                                                    <a id="constant_APPROVED"> </a>
+                            <div class="element clickable constant  constant_APPROVED" data-toggle="collapse" data-target=".constant_APPROVED .collapse">
+                                <h2>APPROVED</h2>
+                                <pre>APPROVED</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_DECLINED"> </a>
+                            <div class="element clickable constant  constant_DECLINED" data-toggle="collapse" data-target=".constant_DECLINED .collapse">
+                                <h2>DECLINED</h2>
+                                <pre>DECLINED</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_ERROR"> </a>
+                            <div class="element clickable constant  constant_ERROR" data-toggle="collapse" data-target=".constant_ERROR .collapse">
+                                <h2>ERROR</h2>
+                                <pre>ERROR</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_HELD"> </a>
+                            <div class="element clickable constant  constant_HELD" data-toggle="collapse" data-target=".constant_HELD .collapse">
+                                <h2>HELD</h2>
+                                <pre>HELD</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                            
                                                                 <h3><i class="icon-custom icon-property"></i> Properties</h3>
                                                     <a id="property_payment_type"> </a>
                             <div class="element clickable property  public property_payment_type inherited" data-toggle="collapse" data-target=".property_payment_type .collapse">
@@ -4208,7 +4452,7 @@ If need be this could use another method of data storage, as long post_process c
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 01 May 2015 22:12:45 +0000.<br/>
+            generated on Mon, 22 Jun 2015 10:38:30 +0000.<br/>
     </footer>
     </body>
 </html>

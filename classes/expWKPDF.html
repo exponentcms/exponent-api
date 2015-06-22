@@ -246,7 +246,7 @@
                                                                             </th>
                                     <td>
                                                                                     
-                                                                                <p>href="<a href="http://code.google.com/p/wkhtmltopdf/">http://code.google.com/p/wkhtmltopdf/">http://code.google.com/p/wkhtmltopdf/">http://code.google.com/p/wkhtmltopdf/</a></a></p>
+                                                                                <p>href=&quot;<a href="http://code.google.com/p/wkhtmltopdf/">http://code.google.com/p/wkhtmltopdf/">http://code.google.com/p/wkhtmltopdf/">http://code.google.com/p/wkhtmltopdf/</a></a></p>
                                     </td>
                                 </tr>
                                                                                                                 <tr>
@@ -274,18 +274,18 @@ Modification is allowed, keep track of modifications below in this comment block
                                                                             </th>
                                     <td>
                                                                                     
-                                                                                <p>color="#008800"><i>//-- Create sample PDF and embed in browser. --//</i></font><br>
+                                                                                <p>color=&quot;#008800&quot;&gt;<i>//-- Create sample PDF and embed in browser. --//</i></font><br>
 <br>
 <font color="#008800"><i>// Include WKPDF class.</i></font><br>
 <font color="#0000FF">require_once</font>(<font color="#FF0000">'wkhtmltopdf/wkhtmltopdf.php'</font>);<br>
 <font color="#008800"><i>// Create PDF object.</i></font><br>
 <font color="#EE00EE">$pdf</font>=new <b>WKPDF</b>();<br>
 <font color="#008800"><i>// Set PDF's HTML</i></font><br>
-<font color="#EE00EE">$pdf</font>-><font color="#0000FF">set_html</font>(<font color="#FF0000">'Hello &lt;b&gt;Mars&lt;/b&gt;!'</font>);<br>
+<font color="#EE00EE">$pdf</font>-&gt;<font color="#0000FF">set_html</font>(<font color="#FF0000">'Hello &lt;b&gt;Mars&lt;/b&gt;!'</font>);<br>
 <font color="#008800"><i>// Convert HTML to PDF</i></font><br>
-<font color="#EE00EE">$pdf</font>-><font color="#0000FF">render</font>();<br>
+<font color="#EE00EE">$pdf</font>-&gt;<font color="#0000FF">render</font>();<br>
 <font color="#008800"><i>// Output PDF. The file name is suggested to the browser.</i></font><br>
-<font color="#EE00EE">$pdf</font>-><font color="#0000FF">output</font>(<b>WKPDF</b>::<font color="#EE00EE">$PDF_EMBEDDED</font>,<font color="#FF0000">'sample.pdf'</font>);<br></p>
+<font color="#EE00EE">$pdf</font>-&gt;<font color="#0000FF">output</font>(<b>WKPDF</b>::<font color="#EE00EE">$PDF_EMBEDDED</font>,<font color="#FF0000">'sample.pdf'</font>);<br></p>
                                     </td>
                                 </tr>
                                                                                                                 <tr>
@@ -424,7 +424,7 @@ guaranteed to get a reply within 2 hours at most (daytime GMT+1).</p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
-                                        <code>array</code><p><p>An array of execution data; stdout, stderr and return "error" code.</p></p>
+                                        <code>array</code><p><p>An array of execution data; stdout, stderr and return &quot;error&quot; code.</p></p>
                                                                     </div>
                             </div>
 
@@ -1251,7 +1251,7 @@ guaranteed to get a reply within 2 hours at most (daytime GMT+1).</p>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 01 May 2015 22:12:27 +0000.<br/>
+            generated on Mon, 22 Jun 2015 10:38:14 +0000.<br/>
     </footer>
     </body>
 </html>

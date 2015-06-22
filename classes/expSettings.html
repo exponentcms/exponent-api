@@ -292,7 +292,7 @@ a bunch of define() statements to the profiles config file.</span><pre>saveConfi
                                                                             </th>
                                     <td>
                                                                                     
-                                                                                <p>"BASE" "../../.."</p>
+                                                                                <p>&quot;BASE&quot; &quot;../../..&quot;</p>
                                     </td>
                                 </tr>
                                                                                                                 <tr>
@@ -425,8 +425,8 @@ site configuration.  Returns a form object intended for editing the profile.</h2
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$configname</h4>
-                                                <code>string</code><p><p>The name of the configuration profile,</p>
-<pre><code>                      for filling in default values.</code></pre></p>
+                                                <code>string</code><p><p>The name of the configuration profile,
+for filling in default values.</p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$database</h4>
@@ -443,7 +443,7 @@ site configuration.  Returns a form object intended for editing the profile.</h2
                         <div class="element clickable method public  method_createProfile" data-toggle="collapse" data-target=".method_createProfile .collapse">
                             <h2>exdoc
 Creates a configuration profile from the current configuration</h2>
-                            <pre>createProfile(string $profile) </pre>
+                            <pre>createProfile(string $profile) : string</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -462,13 +462,6 @@ Creates a configuration profile from the current configuration</h2>
                                                                                                                                                                         <p>Subsystems:Config</p>
                                                                                                     </td>
                                             </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                             </table>
 
                                                                             <h3>Arguments</h3>
@@ -477,6 +470,8 @@ Creates a configuration profile from the current configuration</h2>
                                                 <code>string</code><p><p>The name of the Profile to remove.</p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
                                                                     </div>
                             </div>
 
@@ -552,8 +547,8 @@ Parse Drop Down options from a file.</h2>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$dropdown_name</h4>
-                                                <code>string</code><p><p>The name of the dropdown type.  The name of the</p>
-<pre><code>                         file will be retrieved by adding .dropdown as a suffix, and searching the framework/conf/data directory.</code></pre></p>
+                                                <code>string</code><p><p>The name of the dropdown type.  The name of the
+file will be retrieved by adding .dropdown as a suffix, and searching the framework/conf/data directory.</p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -914,7 +909,7 @@ a bunch of define() statements to the profiles config file.</h2>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 01 May 2015 22:12:20 +0000.<br/>
+            generated on Mon, 22 Jun 2015 10:38:08 +0000.<br/>
     </footer>
     </body>
 </html>
