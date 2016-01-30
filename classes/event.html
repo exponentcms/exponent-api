@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.3.4 &raquo; \event
+    <title>    Exponent v2.3.8 &raquo; \event
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.3.4</a>
+                <a class="brand" href="../index.html">Exponent v2.3.8</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -232,8 +232,8 @@
     </li>
 
                                                                                                         <li class="method public inherited">
-        <a href="#method_find" title="find :: find an item">
-            <span class="description">find an item</span><pre>find</pre>
+        <a href="#method_find" title="find :: find an item or items">
+            <span class="description">find an item or items</span><pre>find</pre>
         </a>
     </li>
 
@@ -264,6 +264,12 @@
                                                                                                                                                                                                                         <li class="method public inherited">
         <a href="#method_getAttachableItemTables" title="getAttachableItemTables :: used for import/export">
             <span class="description">used for import/export</span><pre>getAttachableItemTables</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getEventsForDates" title="getEventsForDates :: ">
+            <span class="description"></span><pre>getEventsForDates</pre>
         </a>
     </li>
 
@@ -341,7 +347,7 @@
                                 <span class="description">get attached objects for this item</span><pre>getAttachableItems</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
@@ -350,7 +356,7 @@
                                 <span class="description">gets associated objects for this model</span><pre>getAssociatedObjectsForThisModel</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                    <li class="method private inherited">
+                                                                                                                                                                                                                                                                                                        <li class="method private inherited">
                             <a href="#method_makeManyToManyTablename" title="makeManyToManyTablename :: create a many to many table relationship">
                                 <span class="description">create a many to many table relationship</span><pre>makeManyToManyTablename</pre>
                             </a>
@@ -1151,7 +1157,7 @@ field values are also populated into class properties.</p></div>
                         </div>
                                             <a id="method_find"></a>
                         <div class="element clickable method public  method_find inherited" data-toggle="collapse" data-target=".method_find .collapse">
-                            <h2>find an item</h2>
+                            <h2>find an item or items</h2>
                             <pre>find(string $range = &#039;all&#039;, null $where = null, null $order = null, null $limit = null, integer $limitstart, boolean $get_assoc = true, boolean $get_attached = true, array $except = array(), boolean $cascade_except = false) : array</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
@@ -1456,6 +1462,57 @@ has_and_belongs_to_self</p></div>
                                     
                                                                             <h3>Response</h3>
                                         <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getEventsForDates"></a>
+                        <div class="element clickable method public  method_getEventsForDates" data-toggle="collapse" data-target=".method_getEventsForDates .collapse">
+                            <h2>getEventsForDates</h2>
+                            <pre>getEventsForDates( $edates,  $sort_asc = true,  $featuredonly = false,  $condense = false) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$edates</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$sort_asc</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$featuredonly</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$condense</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
                                                                     </div>
                             </div>
 
@@ -2401,7 +2458,7 @@ has_one</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Wed, 08 Jul 2015 14:52:41 +0000.<br/>
+            generated on Sat, 30 Jan 2016 03:17:59 +0000.<br/>
     </footer>
     </body>
 </html>

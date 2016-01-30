@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.3.4 &raquo; \expHistory
+    <title>    Exponent v2.3.8 &raquo; \expHistory
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.3.4</a>
+                <a class="brand" href="../index.html">Exponent v2.3.8</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -174,6 +174,12 @@ as editable.</span><pre>back</pre>
     </li>
 
                                                                                                         <li class="method public">
+        <a href="#method_print_history" title="print_history :: ">
+            <span class="description"></span><pre>print_history</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
         <a href="#method_redirecto_login" title="redirecto_login :: Redirects to the login page if necessary">
             <span class="description">Redirects to the login page if necessary</span><pre>redirecto_login</pre>
         </a>
@@ -201,11 +207,11 @@ as editable.</span><pre>back</pre>
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -241,30 +247,30 @@ help Exponent know where to route users.</p>
 <p><b>Example: How to set a history WayPoint</b></p>
 <p>This example shows how you would use expHistory to set a waypoint inside one of your actions</p>
 <p><code>
-public function showall() {
-expHistory::set('viewable', $this-&gt;params);
-$record = new foo($id);
-assign_to_template(array('record'=&gt;$record));
-}
+public function showall() {</p>
+<pre><code>expHistory::set('viewable', $this-&gt;params);
+ $record = new foo($id);
+ assign_to_template(array('record'=&gt;$record));</code></pre>
+<p>}
 </code></p>
 <p><b>Example: Return to a waypoint (automagically)</b></p>
 <p>This example shows how to let expHistory::back() automagically determine where to route the user after an action completes</p>
 <p><code>
-public function delete() {
-$record = new foo($id);
-$record-&gt;delete();
-expHistory::back();
-}
+public function delete() {</p>
+<pre><code> $record = new foo($id);
+ $record-&gt;delete();
+ expHistory::back();</code></pre>
+<p>}
 </code></p>
 <p><b>Example: Return to a waypoint 'type' (manually)</b>
 This example shows how use expHistory::returnTo() to manually route the user after an
 action completes. In this example the user will be routed to the last form he/she was on.</p>
 <p><code>
-public function delete() {
-$record = new foo($id);
-$record-&gt;delete();
-expHistory::returnTo('editable');
-}
+public function delete() {</p>
+<pre><code> $record = new foo($id);
+ $record-&gt;delete();
+ expHistory::returnTo('editable');</code></pre>
+<p>}
 </code></p>
                     </div>
                     <table class="table table-bordered">
@@ -613,6 +619,40 @@ as editable.</h2>
                             </div>
 
                         </div>
+                                            <a id="method_print_history"></a>
+                        <div class="element clickable method public  method_print_history" data-toggle="collapse" data-target=".method_print_history .collapse">
+                            <h2>print_history</h2>
+                            <pre>print_history() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_redirecto_login"></a>
                         <div class="element clickable method public  method_redirecto_login" data-toggle="collapse" data-target=".method_redirecto_login .collapse">
                             <h2>Redirects to the login page if necessary</h2>
@@ -831,7 +871,7 @@ as editable.</h2>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Wed, 08 Jul 2015 14:52:06 +0000.<br/>
+            generated on Sat, 30 Jan 2016 03:17:18 +0000.<br/>
     </footer>
     </body>
 </html>

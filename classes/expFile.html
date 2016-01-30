@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.3.4 &raquo; \expFile
+    <title>    Exponent v2.3.8 &raquo; \expFile
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.3.4</a>
+                <a class="brand" href="../index.html">Exponent v2.3.8</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -278,6 +278,12 @@ all of the records in all of the tables into a string.</span><pre>dumpDatabase</
     </li>
 
                                                                                                         <li class="method public">
+        <a href="#method_exists" title="exists :: ">
+            <span class="description"></span><pre>exists</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
         <a href="#method_fileSize" title="fileSize :: Performs a system level check on the file and retrieves its size">
             <span class="description">Performs a system level check on the file and retrieves its size</span><pre>fileSize</pre>
         </a>
@@ -296,8 +302,8 @@ all of the records in all of the tables into a string.</span><pre>dumpDatabase</
     </li>
 
                                                                                                         <li class="method public inherited">
-        <a href="#method_find" title="find :: find an item">
-            <span class="description">find an item</span><pre>find</pre>
+        <a href="#method_find" title="find :: find an item or items">
+            <span class="description">find an item or items</span><pre>find</pre>
         </a>
     </li>
 
@@ -636,7 +642,7 @@ accidentally uploading over the top of another file.</span><pre>uploadDestinatio
                                 <span class="description">check for what objects may be attached</span><pre>checkForAttachableItems</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="method protected inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method protected inherited">
                             <a href="#method_getAttachableItems" title="getAttachableItems :: get attached objects for this item">
                                 <span class="description">get attached objects for this item</span><pre>getAttachableItems</pre>
                             </a>
@@ -645,7 +651,7 @@ accidentally uploading over the top of another file.</span><pre>uploadDestinatio
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method private inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="method private inherited">
                             <a href="#method_getAssociatedObjectsForThisModel" title="getAssociatedObjectsForThisModel :: gets associated objects for this model">
                                 <span class="description">gets associated objects for this model</span><pre>getAssociatedObjectsForThisModel</pre>
                             </a>
@@ -742,7 +748,7 @@ This is a &quot;relabel&quot; of the PHP &#039;LOCK_EX&#039; constant</span><pre
                                                                             </th>
                                     <td>
                                                                                     
-                                                                                <p>&quot;BASE&quot; &quot;../../..&quot;</p>
+                                                                                <p>"BASE" "../../.."</p>
                                     </td>
                                 </tr>
                                                                                                                 <tr>
@@ -1594,14 +1600,14 @@ Copies just the directory structure (including subdirectories) of a given direct
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$dest</h4>
-                                                <code>string</code><p><p>The directory to create duplicate structure in.  If this directory is not empty,
-you may run into some problems, because of file/directory conflicts.</p></p>
+                                                <code>string</code><p><p>The directory to create duplicate structure in.  If this directory is not empty,</p>
+<pre><code>                        you may run into some problems, because of file/directory conflicts.</code></pre></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$exclude_dirs</h4>
-                                                <code>array</code><p><p>An array of directory names to exclude.  These names are
-path-independent.  Specifying &quot;dir&quot; will ignore all directories and
-sub-directories named &quot;dir&quot;, regardless of their parent.</p></p>
+                                                <code>array</code><p><p>An array of directory names to exclude.  These names are</p>
+<pre><code>                        path-independent.  Specifying "dir" will ignore all directories and
+                        sub-directories named "dir", regardless of their parent.</code></pre></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -1789,6 +1795,40 @@ implementation.</p></div>
                                                                             
                                                                             <h3>Response</h3>
                                         <code>string</code><p><p>The content of export file</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_exists"></a>
+                        <div class="element clickable method public  method_exists" data-toggle="collapse" data-target=".method_exists .collapse">
+                            <h2>exists</h2>
+                            <pre>exists() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
                                                                     </div>
                             </div>
 
@@ -2077,7 +2117,7 @@ overwritten (default to NO overwrite)</p></div>
                         </div>
                                             <a id="method_find"></a>
                         <div class="element clickable method public  method_find inherited" data-toggle="collapse" data-target=".method_find .collapse">
-                            <h2>find an item</h2>
+                            <h2>find an item or items</h2>
                             <pre>find(string $range = &#039;all&#039;, null $where = null, null $order = null, null $limit = null, integer $limitstart, boolean $get_assoc = true, boolean $get_attached = true, array $except = array(), boolean $cascade_except = false) : array</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
@@ -3211,19 +3251,19 @@ or directory name, and the value is the file or directory name.</h2>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$recurse</h4>
-                                                <code>boolean</code><p><p>A boolean dictating whether to descend into subdirectories
-recursively, and list files and subdirectories.</p></p>
+                                                <code>boolean</code><p><p>A boolean dictating whether to descend into subdirectories</p>
+<pre><code>                         recursively, and list files and subdirectories.</code></pre></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$ext</h4>
-                                                <code>string</code><p><p>An optional file extension.  If specified, only files ending with
-that file extension will show up in the list.  Directories are not affected.</p></p>
+                                                <code>string</code><p><p>An optional file extension.  If specified, only files ending with</p>
+<pre><code>                         that file extension will show up in the list.  Directories are not affected.</code></pre></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$exclude_dirs</h4>
-                                                <code>array</code><p><p>An array of directory names to exclude.  These names are
-path-independent.  Specifying &quot;dir&quot; will ignore all directories and
-sub-directories named &quot;dir&quot;, regardless of their parent.</p></p>
+                                                <code>array</code><p><p>An array of directory names to exclude.  These names are</p>
+<pre><code>                         path-independent.  Specifying "dir" will ignore all directories and
+                         sub-directories named "dir", regardless of their parent.</code></pre></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$relative</h4>
@@ -3463,9 +3503,9 @@ was fine.</h2>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$errors</h4>
-                                                <code>array</code><p><p>A referenced array that stores errors.  Whatever
-variable is passed in this argument will contain all errors encountered
-during the parse/restore.</p></p>
+                                                <code>array</code><p><p>A referenced array that stores errors.  Whatever</p>
+<pre><code>                             variable is passed in this argument will contain all errors encountered
+                             during the parse/restore.</code></pre></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$type</h4>
@@ -3764,9 +3804,9 @@ was fine.</h2>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$errors</h4>
-                                                <code>array</code><p><p>A referenced array that stores errors.  Whatever
-variable is passed in this argument will contain all errors encountered
-during the parse/restore.</p></p>
+                                                <code>array</code><p><p>A referenced array that stores errors.  Whatever</p>
+<pre><code>                         variable is passed in this argument will contain all errors encountered
+                         during the parse/restore.</code></pre></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$type</h4>
@@ -4014,9 +4054,9 @@ accidentally uploading over the top of another file.</h2>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$name</h4>
-                                                <code>string</code><p><p>The name of the file control used to upload the
-file.  The files subsystem will look to the $_FILES array
-to get the filename of the uploaded file.</p></p>
+                                                <code>string</code><p><p>The name of the file control used to upload the</p>
+<pre><code>                file.  The files subsystem will look to the $_FILES array
+                to get the filename of the uploaded file.</code></pre></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -4304,7 +4344,7 @@ to get the filename of the uploaded file.</p></p>
                                                                     </div>
                                 <div class="row collapse">
                                     <div class="detail-description">
-                                        <div class="long_description"><p>This is a &quot;relabel&quot; of the PHP 'LOCK_SH' constant</p></div>
+                                        <div class="long_description"><p>This is a "relabel" of the PHP 'LOCK_SH' constant</p></div>
                                         <table class="table">
                                                                                             <tr>
                                                     <th>
@@ -4775,7 +4815,7 @@ This is a &quot;relabel&quot; of the PHP &#039;LOCK_EX&#039; constant</h2>
                                                                                                         </div>
                                 <div class="row collapse">
                                     <div class="detail-description">
-                                        <div class="long_description"><p>Also if it can be &quot;moved&quot; or &quot;renamed&quot; over
+                                        <div class="long_description"><p>Also if it can be "moved" or "renamed" over
 Default set to FALSE, no it can't</p></div>
 
                                         <table class="table">
@@ -5493,7 +5533,7 @@ Default set to FALSE, no it can't</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Wed, 08 Jul 2015 14:51:52 +0000.<br/>
+            generated on Sat, 30 Jan 2016 03:17:01 +0000.<br/>
     </footer>
     </body>
 </html>

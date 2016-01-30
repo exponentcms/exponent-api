@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.3.4 &raquo; \expRouter
+    <title>    Exponent v2.3.8 &raquo; \expRouter
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.3.4</a>
+                <a class="brand" href="../index.html">Exponent v2.3.8</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -136,8 +136,8 @@
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_cleanLink" title="cleanLink :: ">
-            <span class="description"></span><pre>cleanLink</pre>
+        <a href="#method_cleanLink" title="cleanLink :: remove trailing slash">
+            <span class="description">remove trailing slash</span><pre>cleanLink</pre>
         </a>
     </li>
 
@@ -214,8 +214,8 @@
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_makeLink" title="makeLink :: ">
-            <span class="description"></span><pre>makeLink</pre>
+        <a href="#method_makeLink" title="makeLink :: Will build url to a module/page/etc (determined by what is passed to the $params array).">
+            <span class="description">Will build url to a module/page/etc (determined by what is passed to the $params array).</span><pre>makeLink</pre>
         </a>
     </li>
 
@@ -461,8 +461,8 @@
                         </div>
                                             <a id="method_cleanLink"></a>
                         <div class="element clickable method public  method_cleanLink" data-toggle="collapse" data-target=".method_cleanLink .collapse">
-                            <h2>cleanLink</h2>
-                            <pre>cleanLink( $fulllink) </pre>
+                            <h2>remove trailing slash</h2>
+                            <pre>cleanLink( $fulllink) : string</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -472,20 +472,6 @@
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                             </table>
 
                                                                             <h3>Arguments</h3>
@@ -494,6 +480,8 @@
                                                 <code></code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
                                                                     </div>
                             </div>
 
@@ -966,8 +954,8 @@
                         </div>
                                             <a id="method_makeLink"></a>
                         <div class="element clickable method public  method_makeLink" data-toggle="collapse" data-target=".method_makeLink .collapse">
-                            <h2>makeLink</h2>
-                            <pre>makeLink( $params,  $force_old_school = false,  $secure = false,  $no_map = false) </pre>
+                            <h2>Will build url to a module/page/etc (determined by what is passed to the $params array).</h2>
+                            <pre>makeLink(array $params, boolean $force_old_school = false, boolean $secure = false, boolean $no_map = false) : string</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -977,40 +965,34 @@
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                             </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$params</h4>
-                                                <code></code><p></p>
+                                                <code>array</code><p><p>The params that are passed will determine what link is make</p>
+<pre><code>          section
+          action
+          sef_name
+          module
+          controller
+          action</code></pre></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$force_old_school</h4>
-                                                <code></code><p></p>
+                                                <code>boolean</code><p><p>Old School as in not SEF.</p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$secure</h4>
-                                                <code></code><p></p>
+                                                <code>boolean</code><p><p>If you set $secure true but ENABLE_SSL is not turned on in the config this will be forced false</p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$no_map</h4>
-                                                <code></code><p></p>
+                                                <code>boolean</code><p><p>Ignore router_maps</p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>A url</p></p>
                                                                     </div>
                             </div>
 
@@ -1480,7 +1462,7 @@ either &#039;sef&#039; or &#039;query&#039;</h2>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Wed, 08 Jul 2015 14:52:35 +0000.<br/>
+            generated on Sat, 30 Jan 2016 03:17:52 +0000.<br/>
     </footer>
     </body>
 </html>

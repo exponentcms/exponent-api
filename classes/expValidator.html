@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.3.4 &raquo; \expValidator
+    <title>    Exponent v2.3.8 &raquo; \expValidator
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.3.4</a>
+                <a class="brand" href="../index.html">Exponent v2.3.8</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -137,15 +137,15 @@
 
                                                                                                         <li class="method public">
         <a href="#method_checkPasswordStrength" title="checkPasswordStrength :: Method to determine password strength
-  e.g., does not match username and is greater than 8 characters">
+  e.g., not correct type/number of characters">
             <span class="description">Method to determine password strength
-  e.g., does not match username and is greater than 8 characters</span><pre>checkPasswordStrength</pre>
+  e.g., not correct type/number of characters</span><pre>checkPasswordStrength</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_checkUsername" title="checkUsername :: Routine to check that username is longer than 3 characters">
-            <span class="description">Routine to check that username is longer than 3 characters</span><pre>checkUsername</pre>
+        <a href="#method_checkUsername" title="checkUsername :: Routine to check that username is valid (longer than 3 characters)">
+            <span class="description">Routine to check that username is valid (longer than 3 characters)</span><pre>checkUsername</pre>
         </a>
     </li>
 
@@ -300,7 +300,7 @@
                                                                             </th>
                                     <td>
                                                                                     
-                                                                                <p>&quot;BASE&quot; &quot;../../..&quot;</p>
+                                                                                <p>"BASE" "../../.."</p>
                                     </td>
                                 </tr>
                                                                                                                 <tr>
@@ -428,8 +428,8 @@
                                             <a id="method_checkPasswordStrength"></a>
                         <div class="element clickable method public  method_checkPasswordStrength" data-toggle="collapse" data-target=".method_checkPasswordStrength .collapse">
                             <h2>Method to determine password strength
-  e.g., does not match username and is greater than 8 characters</h2>
-                            <pre>checkPasswordStrength( $username,  $password) : string</pre>
+  e.g., not correct type/number of characters</h2>
+                            <pre>checkPasswordStrength( $password) : string</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -443,23 +443,19 @@
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>$username</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
                                                 <h4>$password</h4>
                                                 <code></code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
-                                        <code>string</code><p></p>
+                                        <code>string</code><p><p>error if any</p></p>
                                                                     </div>
                             </div>
 
                         </div>
                                             <a id="method_checkUsername"></a>
                         <div class="element clickable method public  method_checkUsername" data-toggle="collapse" data-target=".method_checkUsername .collapse">
-                            <h2>Routine to check that username is longer than 3 characters</h2>
+                            <h2>Routine to check that username is valid (longer than 3 characters)</h2>
                             <pre>checkUsername( $username) : string</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
@@ -1167,7 +1163,7 @@ address format and the domain exists.</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Wed, 08 Jul 2015 14:52:45 +0000.<br/>
+            generated on Sat, 30 Jan 2016 03:18:04 +0000.<br/>
     </footer>
     </body>
 </html>

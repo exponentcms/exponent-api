@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.3.4 &raquo; \database
+    <title>    Exponent v2.3.8 &raquo; \database
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.3.4</a>
+                <a class="brand" href="../index.html">Exponent v2.3.8</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -342,14 +342,14 @@ array of arrays, in any random order.</span><pre>selectArray</pre>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_selectExpObjects" title="selectExpObjects :: Select a records from the database">
-            <span class="description">Select a records from the database</span><pre>selectExpObjects</pre>
+        <a href="#method_selectExpObjects" title="selectExpObjects :: Instantiate objects from selected records from the database">
+            <span class="description">Instantiate objects from selected records from the database</span><pre>selectExpObjects</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_selectExpObjectsBySql" title="selectExpObjectsBySql :: ">
-            <span class="description"></span><pre>selectExpObjectsBySql</pre>
+        <a href="#method_selectExpObjectsBySql" title="selectExpObjectsBySql :: Instantiate objects from selected records from the database">
+            <span class="description">Instantiate objects from selected records from the database</span><pre>selectExpObjectsBySql</pre>
         </a>
     </li>
 
@@ -390,8 +390,8 @@ array of arrays, in any random order.</span><pre>selectArray</pre>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_selectObjectBySql" title="selectObjectBySql :: ">
-            <span class="description"></span><pre>selectObjectBySql</pre>
+        <a href="#method_selectObjectBySql" title="selectObjectBySql :: Select a single object by sql">
+            <span class="description">Select a single object by sql</span><pre>selectObjectBySql</pre>
         </a>
     </li>
 
@@ -402,8 +402,8 @@ array of arrays, in any random order.</span><pre>selectArray</pre>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_selectObjectsBySql" title="selectObjectsBySql :: ">
-            <span class="description"></span><pre>selectObjectsBySql</pre>
+        <a href="#method_selectObjectsBySql" title="selectObjectsBySql :: Select a series of objects by sql">
+            <span class="description">Select a series of objects by sql</span><pre>selectObjectsBySql</pre>
         </a>
     </li>
 
@@ -1585,9 +1585,9 @@ array of arrays, in any random order.</h2>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$where</h4>
-                                                <code>string</code><p><p>Criteria used to narrow the result set.  If this
-is specified as null, then no criteria is applied, and all objects are
-returned</p></p>
+                                                <code>string</code><p><p>Criteria used to narrow the result set.  If this</p>
+<pre><code>                 is specified as null, then no criteria is applied, and all objects are
+                 returned</code></pre></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$orderby</h4>
@@ -1762,7 +1762,7 @@ array of arrays, in any random order.</p></div>
                         </div>
                                             <a id="method_selectExpObjects"></a>
                         <div class="element clickable method public  method_selectExpObjects" data-toggle="collapse" data-target=".method_selectExpObjects .collapse">
-                            <h2>Select a records from the database</h2>
+                            <h2>Instantiate objects from selected records from the database</h2>
                             <pre>selectExpObjects(string $table, string $where = null,  $classname, boolean $get_assoc = true, boolean $get_attached = true, array $except = array(), boolean $cascade_except = false, null $order = null, null $limitsql = null, boolean $is_revisioned = false, boolean $needs_approval = false) : array</pre>
                             <div class="labels">
                                                                                                                                 <span class="label">abstract</span>                                                            </div>
@@ -1782,9 +1782,9 @@ array of arrays, in any random order.</p></div>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$where</h4>
-                                                <code>string</code><p><p>Criteria used to narrow the result set.  If this
-is specified as null, then no criteria is applied, and all objects are
-returned</p></p>
+                                                <code>string</code><p><p>Criteria used to narrow the result set.  If this</p>
+<pre><code>                 is specified as null, then no criteria is applied, and all objects are
+                 returned</code></pre></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$classname</h4>
@@ -1831,7 +1831,7 @@ returned</p></p>
                         </div>
                                             <a id="method_selectExpObjectsBySql"></a>
                         <div class="element clickable method public  method_selectExpObjectsBySql" data-toggle="collapse" data-target=".method_selectExpObjectsBySql .collapse">
-                            <h2>selectExpObjectsBySql</h2>
+                            <h2>Instantiate objects from selected records from the database</h2>
                             <pre>selectExpObjectsBySql(string $sql, string $classname, boolean $get_assoc = true, boolean $get_attached = true) : array</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
@@ -1851,7 +1851,7 @@ returned</p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$classname</h4>
-                                                <code>string</code><p><p>Can be $this-&gt;baseclassname
+                                                <code>string</code><p><p>Can be $this->baseclassname
 Returns an array of fields</p></p>
                                             </div>
                                                                                     <div class="subelement argument">
@@ -2066,7 +2066,7 @@ If no record(s) match the query, null is returned.</p></div>
                         </div>
                                             <a id="method_selectObjectBySql"></a>
                         <div class="element clickable method public  method_selectObjectBySql" data-toggle="collapse" data-target=".method_selectObjectBySql .collapse">
-                            <h2>selectObjectBySql</h2>
+                            <h2>Select a single object by sql</h2>
                             <pre>selectObjectBySql( $sql) : null|void</pre>
                             <div class="labels">
                                                                                                                                 <span class="label">abstract</span>                                                            </div>
@@ -2133,7 +2133,7 @@ returned</p></p>
                         </div>
                                             <a id="method_selectObjectsBySql"></a>
                         <div class="element clickable method public  method_selectObjectsBySql" data-toggle="collapse" data-target=".method_selectObjectsBySql .collapse">
-                            <h2>selectObjectsBySql</h2>
+                            <h2>Select a series of objects by sql</h2>
                             <pre>selectObjectsBySql( $sql) : array</pre>
                             <div class="labels">
                                                                                                                                 <span class="label">abstract</span>                                                            </div>
@@ -2892,7 +2892,7 @@ the select* methods.</p></p>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Wed, 08 Jul 2015 14:52:32 +0000.<br/>
+            generated on Sat, 30 Jan 2016 03:17:49 +0000.<br/>
     </footer>
     </body>
 </html>

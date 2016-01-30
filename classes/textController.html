@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.3.4 &raquo; \textController
+    <title>    Exponent v2.3.8 &raquo; \textController
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.3.4</a>
+                <a class="brand" href="../index.html">Exponent v2.3.8</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -207,15 +207,15 @@
         </a>
     </li>
 
-                                                                                                        <li class="method public inherited">
-        <a href="#method_delete_search" title="delete_search :: remove all module items from search index">
-            <span class="description">remove all module items from search index</span><pre>delete_search</pre>
+                                                                                                        <li class="method public">
+        <a href="#method_delete_item" title="delete_item :: function to delete the text item object sent via ajax">
+            <span class="description">function to delete the text item object sent via ajax</span><pre>delete_item</pre>
         </a>
     </li>
 
-                                                                                                        <li class="method public">
-        <a href="#method_deleteItem" title="deleteItem :: function to delete the text item object sent via ajax">
-            <span class="description">function to delete the text item object sent via ajax</span><pre>deleteItem</pre>
+                                                                                                        <li class="method public inherited">
+        <a href="#method_delete_search" title="delete_search :: remove all module items from search index">
+            <span class="description">remove all module items from search index</span><pre>delete_search</pre>
         </a>
     </li>
 
@@ -240,6 +240,14 @@
                                                                                                         <li class="method public inherited">
         <a href="#method_edit" title="edit :: edit item in module, also used to copy items">
             <span class="description">edit item in module, also used to copy items</span><pre>edit</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_edit_item" title="edit_item :: function to update the text item object sent via ajax
+we only have to deal with a title and body which can be edited by ckeditor4 inline">
+            <span class="description">function to update the text item object sent via ajax
+we only have to deal with a title and body which can be edited by ckeditor4 inline</span><pre>edit_item</pre>
         </a>
     </li>
 
@@ -354,14 +362,6 @@
                                                                                                         <li class="method public inherited">
         <a href="#method_saveconfig" title="saveconfig :: save module configuration">
             <span class="description">save module configuration</span><pre>saveconfig</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public">
-        <a href="#method_saveItem" title="saveItem :: function to update the text item object sent via ajax
-we only have to deal with a title and body which can be edited by ckeditor4 inline">
-            <span class="description">function to update the text item object sent via ajax
-we only have to deal with a title and body which can be edited by ckeditor4 inline</span><pre>saveItem</pre>
         </a>
     </li>
 
@@ -996,12 +996,12 @@ we only have to deal with a title and body which can be edited by ckeditor4 inli
                             </div>
 
                         </div>
-                                            <a id="method_delete_search"></a>
-                        <div class="element clickable method public  method_delete_search inherited" data-toggle="collapse" data-target=".method_delete_search .collapse">
-                            <h2>remove all module items from search index</h2>
-                            <pre>delete_search() </pre>
+                                            <a id="method_delete_item"></a>
+                        <div class="element clickable method public  method_delete_item" data-toggle="collapse" data-target=".method_delete_item .collapse">
+                            <h2>function to delete the text item object sent via ajax</h2>
+                            <pre>delete_item() </pre>
                             <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                                                                                                                                                                                            </div>
 
                             
                             <div class="row collapse">
@@ -1030,12 +1030,12 @@ we only have to deal with a title and body which can be edited by ckeditor4 inli
                             </div>
 
                         </div>
-                                            <a id="method_deleteItem"></a>
-                        <div class="element clickable method public  method_deleteItem" data-toggle="collapse" data-target=".method_deleteItem .collapse">
-                            <h2>function to delete the text item object sent via ajax</h2>
-                            <pre>deleteItem() </pre>
+                                            <a id="method_delete_search"></a>
+                        <div class="element clickable method public  method_delete_search inherited" data-toggle="collapse" data-target=".method_delete_search .collapse">
+                            <h2>remove all module items from search index</h2>
+                            <pre>delete_search() </pre>
                             <div class="labels">
-                                                                                                                                                                                            </div>
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
 
                             
                             <div class="row collapse">
@@ -1162,6 +1162,41 @@ we only have to deal with a title and body which can be edited by ckeditor4 inli
                             <pre>edit() </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_edit_item"></a>
+                        <div class="element clickable method public  method_edit_item" data-toggle="collapse" data-target=".method_edit_item .collapse">
+                            <h2>function to update the text item object sent via ajax
+we only have to deal with a title and body which can be edited by ckeditor4 inline</h2>
+                            <pre>edit_item() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
 
                             
                             <div class="row collapse">
@@ -1780,41 +1815,6 @@ we only have to deal with a title and body which can be edited by ckeditor4 inli
                             <pre>saveconfig() </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
-
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                    
-                                                                    </div>
-                            </div>
-
-                        </div>
-                                            <a id="method_saveItem"></a>
-                        <div class="element clickable method public  method_saveItem" data-toggle="collapse" data-target=".method_saveItem .collapse">
-                            <h2>function to update the text item object sent via ajax
-we only have to deal with a title and body which can be edited by ckeditor4 inline</h2>
-                            <pre>saveItem() </pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
 
                             
                             <div class="row collapse">
@@ -2824,7 +2824,7 @@ we only have to deal with a title and body which can be edited by ckeditor4 inli
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Wed, 08 Jul 2015 14:52:42 +0000.<br/>
+            generated on Sat, 30 Jan 2016 03:18:00 +0000.<br/>
     </footer>
     </body>
 </html>

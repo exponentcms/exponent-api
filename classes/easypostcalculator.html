@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.3.4 &raquo; \easypostcalculator
+    <title>    Exponent v2.3.8 &raquo; \easypostcalculator
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.3.4</a>
+                <a class="brand" href="../index.html">Exponent v2.3.8</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -292,6 +292,12 @@
     </li>
 
                                                                                                         <li class="method public">
+        <a href="#method_easypost_error" title="easypost_error :: ">
+            <span class="description"></span><pre>easypost_error</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
         <a href="#method_ep_initialize" title="ep_initialize :: ">
             <span class="description"></span><pre>ep_initialize</pre>
         </a>
@@ -310,8 +316,8 @@
     </li>
 
                                                                                                         <li class="method public inherited">
-        <a href="#method_find" title="find :: find an item">
-            <span class="description">find an item</span><pre>find</pre>
+        <a href="#method_find" title="find :: find an item or items">
+            <span class="description">find an item or items</span><pre>find</pre>
         </a>
     </li>
 
@@ -382,6 +388,12 @@
     </li>
 
                                                                                                         <li class="method public inherited">
+        <a href="#method_getPackageDetails" title="getPackageDetails :: ">
+            <span class="description"></span><pre>getPackageDetails</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
         <a href="#method_getPackages" title="getPackages :: ">
             <span class="description"></span><pre>getPackages</pre>
         </a>
@@ -402,6 +414,12 @@
                                                                                                         <li class="method public inherited">
         <a href="#method_getTimestamp" title="getTimestamp :: return the item timestamp">
             <span class="description">return the item timestamp</span><pre>getTimestamp</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_handleTracking" title="handleTracking :: ">
+            <span class="description"></span><pre>handleTracking</pre>
         </a>
     </li>
 
@@ -490,6 +508,12 @@
     </li>
 
                                                                                                         <li class="method public inherited">
+        <a href="#method_trackerEnabled" title="trackerEnabled :: ">
+            <span class="description"></span><pre>trackerEnabled</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
         <a href="#method_update" title="update :: update item">
             <span class="description">update item</span><pre>update</pre>
         </a>
@@ -510,21 +534,21 @@
                                 <span class="description">check for what objects may be attached</span><pre>checkForAttachableItems</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="method protected inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method protected inherited">
                             <a href="#method_getAttachableItems" title="getAttachableItems :: get attached objects for this item">
                                 <span class="description">get attached objects for this item</span><pre>getAttachableItems</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method private inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="method private inherited">
                             <a href="#method_getAssociatedObjectsForThisModel" title="getAssociatedObjectsForThisModel :: gets associated objects for this model">
                                 <span class="description">gets associated objects for this model</span><pre>getAssociatedObjectsForThisModel</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="method private inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method private inherited">
                             <a href="#method_makeManyToManyTablename" title="makeManyToManyTablename :: create a many to many table relationship">
                                 <span class="description">create a many to many table relationship</span><pre>makeManyToManyTablename</pre>
                             </a>
@@ -534,7 +558,7 @@
                                 <span class="description">jump to subclass calling routine</span><pre>runCallback</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                        </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -564,7 +588,7 @@
                                                                             </th>
                                     <td>
                                                                                     
-                                                                                <p>&quot;BASE&quot; &quot;../../../..&quot;</p>
+                                                                                <p>"BASE" "../../../.."</p>
                                     </td>
                                 </tr>
                                                                                                                 <tr>
@@ -1718,6 +1742,49 @@ field values are also populated into class properties.</p></div>
                             </div>
 
                         </div>
+                                            <a id="method_easypost_error"></a>
+                        <div class="element clickable method public  method_easypost_error" data-toggle="collapse" data-target=".method_easypost_error .collapse">
+                            <h2>easypost_error</h2>
+                            <pre>easypost_error( $error,  $function) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$error</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$function</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_ep_initialize"></a>
                         <div class="element clickable method public  method_ep_initialize" data-toggle="collapse" data-target=".method_ep_initialize .collapse">
                             <h2>ep_initialize</h2>
@@ -1827,7 +1894,7 @@ field values are also populated into class properties.</p></div>
                         </div>
                                             <a id="method_find"></a>
                         <div class="element clickable method public  method_find inherited" data-toggle="collapse" data-target=".method_find .collapse">
-                            <h2>find an item</h2>
+                            <h2>find an item or items</h2>
                             <pre>find(string $range = &#039;all&#039;, null $where = null, null $order = null, null $limit = null, integer $limitstart, boolean $get_assoc = true, boolean $get_attached = true, array $except = array(), boolean $cascade_except = false) : array</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
@@ -2355,6 +2422,49 @@ has_and_belongs_to_self</p></div>
                             </div>
 
                         </div>
+                                            <a id="method_getPackageDetails"></a>
+                        <div class="element clickable method public  method_getPackageDetails inherited" data-toggle="collapse" data-target=".method_getPackageDetails .collapse">
+                            <h2>getPackageDetails</h2>
+                            <pre>getPackageDetails( $shippingmethod,  $tracking_only) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$shippingmethod</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$tracking_only</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_getPackages"></a>
                         <div class="element clickable method public  method_getPackages inherited" data-toggle="collapse" data-target=".method_getPackages .collapse">
                             <h2>getPackages</h2>
@@ -2483,6 +2593,40 @@ has_and_belongs_to_self</p></div>
                                                                             
                                                                             <h3>Response</h3>
                                         <code>mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_handleTracking"></a>
+                        <div class="element clickable method public  method_handleTracking inherited" data-toggle="collapse" data-target=".method_handleTracking .collapse">
+                            <h2>handleTracking</h2>
+                            <pre>handleTracking() </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
                                                                     </div>
                             </div>
 
@@ -3031,6 +3175,40 @@ has_one</p></div>
                             </div>
 
                         </div>
+                                            <a id="method_trackerEnabled"></a>
+                        <div class="element clickable method public  method_trackerEnabled inherited" data-toggle="collapse" data-target=".method_trackerEnabled .collapse">
+                            <h2>trackerEnabled</h2>
+                            <pre>trackerEnabled() </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_update"></a>
                         <div class="element clickable method public  method_update inherited" data-toggle="collapse" data-target=".method_update .collapse">
                             <h2>update item</h2>
@@ -3095,6 +3273,31 @@ has_one</p></div>
                     
                     
                                                                 <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_version"> </a>
+                            <div class="element clickable property  private property_version" data-toggle="collapse" data-target=".property_version .collapse">
+                                <h2>version</h2>
+                                <pre>version : </pre>
+                                <div class="labels">
+                                                                        <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
                                                     <a id="property_multiple_carriers"> </a>
                             <div class="element clickable property  public property_multiple_carriers inherited" data-toggle="collapse" data-target=".property_multiple_carriers .collapse">
                                 <h2>multiple_carriers</h2>
@@ -3840,7 +4043,7 @@ has_one</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Wed, 08 Jul 2015 14:52:38 +0000.<br/>
+            generated on Sat, 30 Jan 2016 03:17:56 +0000.<br/>
     </footer>
     </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.3.4 &raquo; \expString
+    <title>    Exponent v2.3.8 &raquo; \expString
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.3.4</a>
+                <a class="brand" href="../index.html">Exponent v2.3.8</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -117,7 +117,7 @@
         <li class="nav-header">
             <i class="icon-custom icon-method"></i> Methods
             <ul>
-                                                                                                    <li class="method public">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method public">
         <a href="#method_convertSmartQuotes" title="convertSmartQuotes :: Routine to convert any smart quotes into normal quotes">
             <span class="description">Routine to convert any smart quotes into normal quotes</span><pre>convertSmartQuotes</pre>
         </a>
@@ -136,8 +136,20 @@
     </li>
 
                                                                                                         <li class="method public">
+        <a href="#method_entity_decode" title="entity_decode :: HTML Entities Decode">
+            <span class="description">HTML Entities Decode</span><pre>entity_decode</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
         <a href="#method_escape" title="escape :: ">
             <span class="description"></span><pre>escape</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_get_random_bytes" title="get_random_bytes :: Get random bytes">
+            <span class="description">Get random bytes</span><pre>get_random_bytes</pre>
         </a>
     </li>
 
@@ -172,14 +184,14 @@
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_sanitize" title="sanitize :: Scrub input string for possible security issues.">
-            <span class="description">Scrub input string for possible security issues.</span><pre>sanitize</pre>
+        <a href="#method_remove_invisible_characters" title="remove_invisible_characters :: Remove Invisible Characters">
+            <span class="description">Remove Invisible Characters</span><pre>remove_invisible_characters</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_sanitize_array" title="sanitize_array :: Scrub an input array for possible security issues.">
-            <span class="description">Scrub an input array for possible security issues.</span><pre>sanitize_array</pre>
+        <a href="#method_sanitize" title="sanitize :: Scrub input string for possible security issues.">
+            <span class="description">Scrub input string for possible security issues.</span><pre>sanitize</pre>
         </a>
     </li>
 
@@ -207,15 +219,67 @@
         </a>
     </li>
 
+                                                                                                        <li class="method public">
+        <a href="#method_xss_clean" title="xss_clean :: XSS Clean">
+            <span class="description">XSS Clean</span><pre>xss_clean</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_xss_hash" title="xss_hash :: XSS Hash">
+            <span class="description">XSS Hash</span><pre>xss_hash</pre>
+        </a>
+    </li>
+
                                                 </ul>
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
+                                                                            <li class="method protected">
+                            <a href="#method__compact_exploded_words" title="_compact_exploded_words :: Compact Exploded Words">
+                                <span class="description">Compact Exploded Words</span><pre>_compact_exploded_words</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method__convert_attribute" title="_convert_attribute :: Attribute Conversion">
+                                <span class="description">Attribute Conversion</span><pre>_convert_attribute</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method__decode_entity" title="_decode_entity :: HTML Entity Decode Callback">
+                                <span class="description">HTML Entity Decode Callback</span><pre>_decode_entity</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method__do_never_allowed" title="_do_never_allowed :: Do Never Allowed">
+                                <span class="description">Do Never Allowed</span><pre>_do_never_allowed</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method__filter_attributes" title="_filter_attributes :: Filter Attributes">
+                                <span class="description">Filter Attributes</span><pre>_filter_attributes</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method__js_img_removal" title="_js_img_removal :: JS Image Removal">
+                                <span class="description">JS Image Removal</span><pre>_js_img_removal</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method__js_link_removal" title="_js_link_removal :: JS Link Removal">
+                                <span class="description">JS Link Removal</span><pre>_js_link_removal</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method__sanitize_naughty_html" title="_sanitize_naughty_html :: Sanitize Naughty HTML">
+                                <span class="description">Sanitize Naughty HTML</span><pre>_sanitize_naughty_html</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -244,7 +308,7 @@
                                                                             </th>
                                     <td>
                                                                                     
-                                                                                <p>&quot;BASE&quot; &quot;../../..&quot;</p>
+                                                                                <p>"BASE" "../../.."</p>
                                     </td>
                                 </tr>
                                                                                                                 <tr>
@@ -268,7 +332,304 @@
                                                                                                                                                                                 </table>
 
                     <h3><i class="icon-custom icon-method"></i> Methods</h3>
-                                                                <a id="method_convertSmartQuotes"></a>
+                                                                <a id="method__compact_exploded_words"></a>
+                        <div class="element clickable method protected  method__compact_exploded_words" data-toggle="collapse" data-target=".method__compact_exploded_words .collapse">
+                            <h2>Compact Exploded Words</h2>
+                            <pre>_compact_exploded_words(array $matches) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Callback method for xss_clean() to remove whitespace from
+things like 'j a v a s c r i p t'.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    used-by
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>CI_Security::xss_clean()</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$matches</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method__convert_attribute"></a>
+                        <div class="element clickable method protected  method__convert_attribute" data-toggle="collapse" data-target=".method__convert_attribute .collapse">
+                            <h2>Attribute Conversion</h2>
+                            <pre>_convert_attribute(array $match) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    used-by
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>CI_Security::xss_clean()</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$match</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method__decode_entity"></a>
+                        <div class="element clickable method protected  method__decode_entity" data-toggle="collapse" data-target=".method__decode_entity .collapse">
+                            <h2>HTML Entity Decode Callback</h2>
+                            <pre>_decode_entity(array $match) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    used-by
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>CI_Security::xss_clean()</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$match</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method__do_never_allowed"></a>
+                        <div class="element clickable method protected  method__do_never_allowed" data-toggle="collapse" data-target=".method__do_never_allowed .collapse">
+                            <h2>Do Never Allowed</h2>
+                            <pre>_do_never_allowed( $str) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    used-by
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>CI_Security::xss_clean()</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method__filter_attributes"></a>
+                        <div class="element clickable method protected  method__filter_attributes" data-toggle="collapse" data-target=".method__filter_attributes .collapse">
+                            <h2>Filter Attributes</h2>
+                            <pre>_filter_attributes(string $str) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Filters tag attributes for consistency and safety.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    used-by
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>CI_Security::_js_img_removal()</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>CI_Security::_js_link_removal()</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method__js_img_removal"></a>
+                        <div class="element clickable method protected  method__js_img_removal" data-toggle="collapse" data-target=".method__js_img_removal .collapse">
+                            <h2>JS Image Removal</h2>
+                            <pre>_js_img_removal(array $match) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Callback method for xss_clean() to sanitize image tags.</p>
+<p>This limits the PCRE backtracks, making it more performance friendly
+and prevents PREG_BACKTRACK_LIMIT_ERROR from being triggered in
+PHP 5.2+ on image tag heavy strings.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    used-by
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>CI_Security::xss_clean()</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$match</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method__js_link_removal"></a>
+                        <div class="element clickable method protected  method__js_link_removal" data-toggle="collapse" data-target=".method__js_link_removal .collapse">
+                            <h2>JS Link Removal</h2>
+                            <pre>_js_link_removal(array $match) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Callback method for xss_clean() to sanitize links.</p>
+<p>This limits the PCRE backtracks, making it more performance friendly
+and prevents PREG_BACKTRACK_LIMIT_ERROR from being triggered in
+PHP 5.2+ on link-heavy strings.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    used-by
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>CI_Security::xss_clean()</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$match</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method__sanitize_naughty_html"></a>
+                        <div class="element clickable method protected  method__sanitize_naughty_html" data-toggle="collapse" data-target=".method__sanitize_naughty_html .collapse">
+                            <h2>Sanitize Naughty HTML</h2>
+                            <pre>_sanitize_naughty_html(array $matches) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Callback method for xss_clean() to remove naughty HTML elements.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    used-by
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>CI_Security::xss_clean()</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$matches</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_convertSmartQuotes"></a>
                         <div class="element clickable method public  method_convertSmartQuotes" data-toggle="collapse" data-target=".method_convertSmartQuotes .collapse">
                             <h2>Routine to convert any smart quotes into normal quotes</h2>
                             <pre>convertSmartQuotes(string $str) : string</pre>
@@ -367,6 +728,51 @@
                             </div>
 
                         </div>
+                                            <a id="method_entity_decode"></a>
+                        <div class="element clickable method public  method_entity_decode" data-toggle="collapse" data-target=".method_entity_decode .collapse">
+                            <h2>HTML Entities Decode</h2>
+                            <pre>entity_decode(string $str, string $charset = NULL) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>A replacement for html_entity_decode()</p>
+<p>The reason we are not using html_entity_decode() by itself is because
+while it is not technically correct to leave out the semicolon
+at the end of an entity most browsers will still interpret the entity
+correctly. html_entity_decode() does not convert entities without
+semicolons, so we are left with our own little solution here. Bummer.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    link
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p><a href="http://php.net/html-entity-decode">http://php.net/html-entity-decode</a></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code>string</code><p><p>Input</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$charset</h4>
+                                                <code>string</code><p><p>Character set</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_escape"></a>
                         <div class="element clickable method public  method_escape" data-toggle="collapse" data-target=".method_escape .collapse">
                             <h2>escape</h2>
@@ -402,6 +808,33 @@
                                                 <code></code><p></p>
                                             </div>
                                                                             
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_get_random_bytes"></a>
+                        <div class="element clickable method public  method_get_random_bytes" data-toggle="collapse" data-target=".method_get_random_bytes .collapse">
+                            <h2>Get random bytes</h2>
+                            <pre>get_random_bytes(integer $length) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$length</h4>
+                                                <code>integer</code><p><p>Output length</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
                                                                     </div>
                             </div>
 
@@ -615,6 +1048,38 @@
                             </div>
 
                         </div>
+                                            <a id="method_remove_invisible_characters"></a>
+                        <div class="element clickable method public  method_remove_invisible_characters" data-toggle="collapse" data-target=".method_remove_invisible_characters .collapse">
+                            <h2>Remove Invisible Characters</h2>
+                            <pre>remove_invisible_characters( $str,  $url_encoded = TRUE) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This prevents sandwiching null characters
+between ascii characters, like Java\0script.</p></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$url_encoded</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_sanitize"></a>
                         <div class="element clickable method public  method_sanitize" data-toggle="collapse" data-target=".method_sanitize .collapse">
                             <h2>Scrub input string for possible security issues.</h2>
@@ -647,42 +1112,6 @@
                                                                             
                                                                             <h3>Response</h3>
                                         <code>string</code><p></p>
-                                                                    </div>
-                            </div>
-
-                        </div>
-                                            <a id="method_sanitize_array"></a>
-                        <div class="element clickable method public  method_sanitize_array" data-toggle="collapse" data-target=".method_sanitize_array .collapse">
-                            <h2>Scrub an input array for possible security issues.</h2>
-                            <pre>sanitize_array( &$data) : \string/array</pre>
-                            <div class="labels">
-                                                                <span class="label">static</span>                                                                                                                            </div>
-
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    static
-                                                </th>
-                                                <td>
-                                                                                                                                                                        
-                                                                                                                                                                        
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$data</h4>
-                                                <code></code><p><p>array</p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>\string/array</code><p></p>
                                                                     </div>
                             </div>
 
@@ -764,7 +1193,7 @@
                                             <a id="method_summarize"></a>
                         <div class="element clickable method public  method_summarize" data-toggle="collapse" data-target=".method_summarize .collapse">
                             <h2>Summarize or short a long string</h2>
-                            <pre>summarize( $string, string $strtype = &#039;html&#039;, string $type = &#039;para&#039;) : string</pre>
+                            <pre>summarize( $string, string $strtype = &#039;html&#039;, string $type = &#039;para&#039;,  $more = &#039;...&#039;) : string</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -788,6 +1217,10 @@
                                                                                     <div class="subelement argument">
                                                 <h4>$type</h4>
                                                 <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$more</h4>
+                                                <code></code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -832,9 +1265,205 @@
                             </div>
 
                         </div>
+                                            <a id="method_xss_clean"></a>
+                        <div class="element clickable method public  method_xss_clean" data-toggle="collapse" data-target=".method_xss_clean .collapse">
+                            <h2>XSS Clean</h2>
+                            <pre>xss_clean(string|array&lt;mixed,string&gt; $str, boolean $is_image = FALSE) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Sanitizes data so that Cross Site Scripting Hacks can be
+prevented.  This method does a fair amount of work but
+it is extremely thorough, designed to prevent even the
+most obscure XSS attempts.  Nothing is ever 100% foolproof,
+of course, but I haven't been able to get anything passed
+the filter.</p>
+<p>Note: Should only be used to deal with data upon submission.
+It's not something that should be used for general
+runtime processing.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    link
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Based in part on some code and ideas from Bitflux.</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>To help develop this script I used this great list of</p>
+<pre><code>vulnerabilities along with a few other hacks I've
+harvested from examining vulnerabilities in other programs.</code></pre>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code>string|array&lt;mixed,string&gt;</code><p><p>Input data</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$is_image</h4>
+                                                <code>boolean</code><p><p>Whether the input is an image</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_xss_hash"></a>
+                        <div class="element clickable method public  method_xss_hash" data-toggle="collapse" data-target=".method_xss_hash .collapse">
+                            <h2>XSS Hash</h2>
+                            <pre>xss_hash() : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Generates the XSS hash if needed and returns it.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    see
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                            \CI_Security::$_xss_hash
+                                                                                                                
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>XSS hash</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
                     
                     
-                                                        </div>
+                                                                <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_charset"> </a>
+                            <div class="element clickable property  public property_charset" data-toggle="collapse" data-target=".property_charset .collapse">
+                                <h2>Character set</h2>
+                                <pre>charset : string</pre>
+                                <div class="labels">
+                                                                        <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>Will be overridden by the constructor.</p></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property__xss_hash"> </a>
+                            <div class="element clickable property  protected property__xss_hash" data-toggle="collapse" data-target=".property__xss_hash .collapse">
+                                <h2>XSS Hash</h2>
+                                <pre>_xss_hash : string</pre>
+                                <div class="labels">
+                                                                        <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>Random Hash for protecting URLs.</p></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property__never_allowed_str"> </a>
+                            <div class="element clickable property  protected property__never_allowed_str" data-toggle="collapse" data-target=".property__never_allowed_str .collapse">
+                                <h2>List of never allowed strings</h2>
+                                <pre>_never_allowed_str : array</pre>
+                                <div class="labels">
+                                                                        <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property__never_allowed_regex"> </a>
+                            <div class="element clickable property  protected property__never_allowed_regex" data-toggle="collapse" data-target=".property__never_allowed_regex .collapse">
+                                <h2>List of never allowed regex replacements</h2>
+                                <pre>_never_allowed_regex : array</pre>
+                                <div class="labels">
+                                                                        <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                            </div>
             </div>
             <a id="\expString"></a>
             <ul class="breadcrumb">
@@ -854,7 +1483,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Wed, 08 Jul 2015 14:52:27 +0000.<br/>
+            generated on Sat, 30 Jan 2016 03:17:43 +0000.<br/>
     </footer>
     </body>
 </html>
