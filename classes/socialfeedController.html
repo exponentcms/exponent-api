@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.3.8 &raquo; \socialfeedController
+    <title>    Exponent v2.3.9 &raquo; \socialfeedController
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.3.8</a>
+                <a class="brand" href="../index.html">Exponent v2.3.9</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -237,7 +237,7 @@
         </a>
     </li>
 
-                                                                                                        <li class="method public inherited">
+                                                                                                                                                                <li class="method public inherited">
         <a href="#method_getModels" title="getModels :: get the model(s) associated with this module">
             <span class="description">get the model(s) associated with this module</span><pre>getModels</pre>
         </a>
@@ -321,7 +321,7 @@
         </a>
     </li>
 
-                                                                                                        <li class="method public inherited">
+                                                                                                                                                                <li class="method public inherited">
         <a href="#method_permissions" title="permissions :: permission functions to aggregate a module&#039;s permissions based on add/remove permissions">
             <span class="description">permission functions to aggregate a module&#039;s permissions based on add/remove permissions</span><pre>permissions</pre>
         </a>
@@ -417,7 +417,7 @@
         </a>
     </li>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method public inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                <li class="method public inherited">
         <a href="#method_supportsWorkflow" title="supportsWorkflow :: does module support workflow?">
             <span class="description">does module support workflow?</span><pre>supportsWorkflow</pre>
         </a>
@@ -443,34 +443,34 @@
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method private">
-                            <a href="#method_socialfeed_facebook_data" title="socialfeed_facebook_data :: Rendering values from the Facebook feed.">
-                                <span class="description">Rendering values from the Facebook feed.</span><pre>socialfeed_facebook_data</pre>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="method private">
+                            <a href="#method_get_facebook_feed" title="get_facebook_feed :: Returns HTML with feeds in required format.">
+                                <span class="description">Returns HTML with feeds in required format.</span><pre>get_facebook_feed</pre>
                             </a>
                         </li>
-                                                                                <li class="method private">
-                            <a href="#method_socialfeed_facebook_feeds" title="socialfeed_facebook_feeds :: Returns HTML with feeds in required format.">
-                                <span class="description">Returns HTML with feeds in required format.</span><pre>socialfeed_facebook_feeds</pre>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method private">
+                            <a href="#method_parse_facebook_data" title="parse_facebook_data :: Render posts from the Facebook feed">
+                                <span class="description">Render posts from the Facebook feed</span><pre>parse_facebook_data</pre>
                             </a>
                         </li>
-                                                                                <li class="method private">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method private">
                             <a href="#method_socialfeed_facebook_posts" title="socialfeed_facebook_posts :: Uses socialfeed_facebook_posts() for fetching Facebook feeds.">
                                 <span class="description">Uses socialfeed_facebook_posts() for fetching Facebook feeds.</span><pre>socialfeed_facebook_posts</pre>
                             </a>
                         </li>
                                                                                 <li class="method private">
-                            <a href="#method_socialfeed_instagram_posts" title="socialfeed_instagram_posts :: Uses socialfeed_instagram_posts() for fetching instagram pictures.">
-                                <span class="description">Uses socialfeed_instagram_posts() for fetching instagram pictures.</span><pre>socialfeed_instagram_posts</pre>
+                            <a href="#method_socialfeed_instagram_posts" title="socialfeed_instagram_posts :: Fetch instagram pictures">
+                                <span class="description">Fetch instagram pictures</span><pre>socialfeed_instagram_posts</pre>
                             </a>
                         </li>
                                                                                 <li class="method private">
-                            <a href="#method_socialfeed_pinterest_posts" title="socialfeed_pinterest_posts :: Uses socialfeed_ipinterest_posts() for fetching pinterest pins.">
-                                <span class="description">Uses socialfeed_ipinterest_posts() for fetching pinterest pins.</span><pre>socialfeed_pinterest_posts</pre>
+                            <a href="#method_socialfeed_pinterest_posts" title="socialfeed_pinterest_posts :: Fetch pinterest pins">
+                                <span class="description">Fetch pinterest pins</span><pre>socialfeed_pinterest_posts</pre>
                             </a>
                         </li>
                                                                                 <li class="method private">
-                            <a href="#method_socialfeed_twitter_posts" title="socialfeed_twitter_posts :: Uses socialfeed_twitter_posts() for fetching Twitter tweets.">
-                                <span class="description">Uses socialfeed_twitter_posts() for fetching Twitter tweets.</span><pre>socialfeed_twitter_posts</pre>
+                            <a href="#method_socialfeed_twitter_posts" title="socialfeed_twitter_posts :: Fetch Twitter tweets">
+                                <span class="description">Fetch Twitter tweets</span><pre>socialfeed_twitter_posts</pre>
                             </a>
                         </li>
                                                                                 <li class="method private">
@@ -1177,6 +1177,33 @@
                             </div>
 
                         </div>
+                                            <a id="method_get_facebook_feed"></a>
+                        <div class="element clickable method private  method_get_facebook_feed" data-toggle="collapse" data-target=".method_get_facebook_feed .collapse">
+                            <h2>Returns HTML with feeds in required format.</h2>
+                            <pre>get_facebook_feed(string $page_name = &#039;&#039;) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$page_name</h4>
+                                                <code>string</code><p><p>Array with parameters for this action: depends on the trigger.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_getModels"></a>
                         <div class="element clickable method public  method_getModels inherited" data-toggle="collapse" data-target=".method_getModels .collapse">
                             <h2>get the model(s) associated with this module</h2>
@@ -1626,6 +1653,45 @@
                                     
                                                                             <h3>Response</h3>
                                         <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_parse_facebook_data"></a>
+                        <div class="element clickable method private  method_parse_facebook_data" data-toggle="collapse" data-target=".method_parse_facebook_data .collapse">
+                            <h2>Render posts from the Facebook feed</h2>
+                            <pre>parse_facebook_data( $facebook_entry) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$facebook_entry</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
                                                                     </div>
                             </div>
 
@@ -2156,101 +2222,6 @@
                             </div>
 
                         </div>
-                                            <a id="method_socialfeed_facebook_data"></a>
-                        <div class="element clickable method private  method_socialfeed_facebook_data" data-toggle="collapse" data-target=".method_socialfeed_facebook_data .collapse">
-                            <h2>Rendering values from the Facebook feed.</h2>
-                            <pre>socialfeed_facebook_data( $i,  $facebook_entry,  $display_all_posts,  $display_time,  $display_pic,  $display_video,  $facebook_hash_tag) </pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$i</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$facebook_entry</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$display_all_posts</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$display_time</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$display_pic</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$display_video</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$facebook_hash_tag</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                            
-                                                                    </div>
-                            </div>
-
-                        </div>
-                                            <a id="method_socialfeed_facebook_feeds"></a>
-                        <div class="element clickable method private  method_socialfeed_facebook_feeds" data-toggle="collapse" data-target=".method_socialfeed_facebook_feeds .collapse">
-                            <h2>Returns HTML with feeds in required format.</h2>
-                            <pre>socialfeed_facebook_feeds(string $page_name = &#039;&#039;) </pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$page_name</h4>
-                                                <code>string</code><p><p>Array with parameters for this action: depends on the trigger.</p></p>
-                                            </div>
-                                                                            
-                                                                    </div>
-                            </div>
-
-                        </div>
                                             <a id="method_socialfeed_facebook_posts"></a>
                         <div class="element clickable method private  method_socialfeed_facebook_posts" data-toggle="collapse" data-target=".method_socialfeed_facebook_posts .collapse">
                             <h2>Uses socialfeed_facebook_posts() for fetching Facebook feeds.</h2>
@@ -2287,7 +2258,7 @@
                         </div>
                                             <a id="method_socialfeed_instagram_posts"></a>
                         <div class="element clickable method private  method_socialfeed_instagram_posts" data-toggle="collapse" data-target=".method_socialfeed_instagram_posts .collapse">
-                            <h2>Uses socialfeed_instagram_posts() for fetching instagram pictures.</h2>
+                            <h2>Fetch instagram pictures</h2>
                             <pre>socialfeed_instagram_posts() : array</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
@@ -2316,7 +2287,7 @@
                         </div>
                                             <a id="method_socialfeed_pinterest_posts"></a>
                         <div class="element clickable method private  method_socialfeed_pinterest_posts" data-toggle="collapse" data-target=".method_socialfeed_pinterest_posts .collapse">
-                            <h2>Uses socialfeed_ipinterest_posts() for fetching pinterest pins.</h2>
+                            <h2>Fetch pinterest pins</h2>
                             <pre>socialfeed_pinterest_posts() : array</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
@@ -2345,7 +2316,7 @@
                         </div>
                                             <a id="method_socialfeed_twitter_posts"></a>
                         <div class="element clickable method private  method_socialfeed_twitter_posts" data-toggle="collapse" data-target=".method_socialfeed_twitter_posts .collapse">
-                            <h2>Uses socialfeed_twitter_posts() for fetching Twitter tweets.</h2>
+                            <h2>Fetch Twitter tweets</h2>
                             <pre>socialfeed_twitter_posts() : array</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
@@ -2594,6 +2565,131 @@
                             <div class="element clickable property  private property_session" data-toggle="collapse" data-target=".property_session .collapse">
                                 <h2>session</h2>
                                 <pre>session : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_post_types"> </a>
+                            <div class="element clickable property  private property_post_types" data-toggle="collapse" data-target=".property_post_types .collapse">
+                                <h2>post_types</h2>
+                                <pre>post_types : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_display_time"> </a>
+                            <div class="element clickable property  private property_display_time" data-toggle="collapse" data-target=".property_display_time .collapse">
+                                <h2>display_time</h2>
+                                <pre>display_time : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_display_pic"> </a>
+                            <div class="element clickable property  private property_display_pic" data-toggle="collapse" data-target=".property_display_pic .collapse">
+                                <h2>display_pic</h2>
+                                <pre>display_pic : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_display_video"> </a>
+                            <div class="element clickable property  private property_display_video" data-toggle="collapse" data-target=".property_display_video .collapse">
+                                <h2>display_video</h2>
+                                <pre>display_video : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_facebook_hash_tag"> </a>
+                            <div class="element clickable property  private property_facebook_hash_tag" data-toggle="collapse" data-target=".property_facebook_hash_tag .collapse">
+                                <h2>facebook_hash_tag</h2>
+                                <pre>facebook_hash_tag : </pre>
                                 <div class="labels">
                                                                                                         </div>
                                 <div class="row collapse">
@@ -3060,7 +3156,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Sat, 30 Jan 2016 03:17:14 +0000.<br/>
+            generated on Tue, 24 May 2016 16:17:16 +0000.<br/>
     </footer>
     </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.3.8 &raquo; \eventController
+    <title>    Exponent v2.3.9 &raquo; \eventController
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.3.8</a>
+                <a class="brand" href="../index.html">Exponent v2.3.9</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -123,6 +123,12 @@
         </a>
     </li>
 
+                                                                                                        <li class="method public">
+        <a href="#method__date2timestamp" title="_date2timestamp :: ">
+            <span class="description"></span><pre>_date2timestamp</pre>
+        </a>
+    </li>
+
                                                                                                         <li class="method public inherited">
         <a href="#method_addContentToSearch" title="addContentToSearch :: add module items to search index">
             <span class="description">add module items to search index</span><pre>addContentToSearch</pre>
@@ -144,6 +150,18 @@
                                                                                                         <li class="method public inherited">
         <a href="#method_author" title="author :: author of module">
             <span class="description">author of module</span><pre>author</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_build_cache" title="build_cache :: build/update the external event cache">
+            <span class="description">build/update the external event cache</span><pre>build_cache</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_build_daterange_sql" title="build_daterange_sql :: function to build a string to pull in all events within requested date range">
+            <span class="description">function to build a string to pull in all events within requested date range</span><pre>build_daterange_sql</pre>
         </a>
     </li>
 
@@ -264,6 +282,18 @@ we the html just like the control smarty function</span><pre>buildControl</pre>
     </li>
 
                                                                                                         <li class="method public">
+        <a href="#method_get_gcal_events" title="get_gcal_events :: ">
+            <span class="description"></span><pre>get_gcal_events</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_get_ical_events" title="get_ical_events :: ">
+            <span class="description"></span><pre>get_ical_events</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
         <a href="#method_getEventsForDates" title="getEventsForDates :: ">
             <span class="description"></span><pre>getEventsForDates</pre>
         </a>
@@ -308,6 +338,18 @@ we the html just like the control smarty function</span><pre>buildControl</pre>
                                                                                                         <li class="method public">
         <a href="#method_ical" title="ical :: ">
             <span class="description"></span><pre>ical</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_import" title="import :: ">
+            <span class="description"></span><pre>import</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_import_select" title="import_select :: ">
+            <span class="description"></span><pre>import_select</pre>
         </a>
     </li>
 
@@ -495,11 +537,11 @@ we the html just like the control smarty function</span><pre>buildControl</pre>
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -571,6 +613,49 @@ we the html just like the control smarty function</span><pre>buildControl</pre>
                                                                             
                                                                             <h3>Response</h3>
                                         <code><a href="../classes/expController.html">\expController</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method__date2timestamp"></a>
+                        <div class="element clickable method public  method__date2timestamp" data-toggle="collapse" data-target=".method__date2timestamp .collapse">
+                            <h2>_date2timestamp</h2>
+                            <pre>_date2timestamp( $datetime,  $wtz = null) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$datetime</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$wtz</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
                                                                     </div>
                             </div>
 
@@ -694,8 +779,93 @@ we the html just like the control smarty function</span><pre>buildControl</pre>
                             </div>
 
                         </div>
+                                            <a id="method_build_cache"></a>
+                        <div class="element clickable method public  method_build_cache" data-toggle="collapse" data-target=".method_build_cache .collapse">
+                            <h2>build/update the external event cache</h2>
+                            <pre>build_cache() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_build_daterange_sql"></a>
+                        <div class="element clickable method public  method_build_daterange_sql" data-toggle="collapse" data-target=".method_build_daterange_sql .collapse">
+                            <h2>function to build a string to pull in all events within requested date range</h2>
+                            <pre>build_daterange_sql( $timestamp,  $endtimestamp = null,  $field = &#039;date&#039;,  $multiday = false) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$timestamp</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$endtimestamp</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$field</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$multiday</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_buildControl"></a>
-                        <div class="element clickable method public  method_buildControl" data-toggle="collapse" data-target=".method_buildControl .collapse">
+                        <div class="element clickable method public deprecated method_buildControl" data-toggle="collapse" data-target=".method_buildControl .collapse">
                             <h2>function to build a control requested via ajax
 we the html just like the control smarty function</h2>
                             <pre>buildControl() </pre>
@@ -708,6 +878,15 @@ we the html just like the control smarty function</h2>
                                     <div class="long_description"></div>
 
                                     <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    deprecated
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
                                                                                     <tr>
                                                 <th>
                                                     
@@ -1335,6 +1514,124 @@ we the html just like the control smarty function</h2>
                             </div>
 
                         </div>
+                                            <a id="method_get_gcal_events"></a>
+                        <div class="element clickable method public  method_get_gcal_events" data-toggle="collapse" data-target=".method_get_gcal_events .collapse">
+                            <h2>get_gcal_events</h2>
+                            <pre>get_gcal_events( $extgcalurl,  $startdate,  $enddate = null,  &$dy,  $key,  $multiday = false) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$extgcalurl</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$startdate</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$enddate</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$dy</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$key</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$multiday</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_get_ical_events"></a>
+                        <div class="element clickable method public  method_get_ical_events" data-toggle="collapse" data-target=".method_get_ical_events .collapse">
+                            <h2>get_ical_events</h2>
+                            <pre>get_ical_events( $exticalurl,  $startdate = null,  $enddate = null,  &$dy,  $key,  $multiday = false) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$exticalurl</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$startdate</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$enddate</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$dy</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$key</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$multiday</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_getEventsForDates"></a>
                         <div class="element clickable method public  method_getEventsForDates" data-toggle="collapse" data-target=".method_getEventsForDates .collapse">
                             <h2>getEventsForDates</h2>
@@ -1389,7 +1686,7 @@ we the html just like the control smarty function</h2>
                                             <a id="method_getExternalEvents"></a>
                         <div class="element clickable method public  method_getExternalEvents" data-toggle="collapse" data-target=".method_getExternalEvents .collapse">
                             <h2>getExternalEvents</h2>
-                            <pre>getExternalEvents( $loc,  $startdate,  $enddate) </pre>
+                            <pre>getExternalEvents( $startdate,  $enddate,  $multiday = false) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -1417,15 +1714,15 @@ we the html just like the control smarty function</h2>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>$loc</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
                                                 <h4>$startdate</h4>
                                                 <code></code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$enddate</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$multiday</h4>
                                                 <code></code><p></p>
                                             </div>
                                                                             
@@ -1592,6 +1889,74 @@ we the html just like the control smarty function</h2>
                         <div class="element clickable method public  method_ical" data-toggle="collapse" data-target=".method_ical .collapse">
                             <h2>ical</h2>
                             <pre>ical() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_import"></a>
+                        <div class="element clickable method public  method_import" data-toggle="collapse" data-target=".method_import .collapse">
+                            <h2>import</h2>
+                            <pre>import() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_import_select"></a>
+                        <div class="element clickable method public  method_import_select" data-toggle="collapse" data-target=".method_import_select .collapse">
+                            <h2>import_select</h2>
+                            <pre>import_select() </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -3134,7 +3499,7 @@ we the html just like the control smarty function</h2>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Sat, 30 Jan 2016 03:16:54 +0000.<br/>
+            generated on Tue, 24 May 2016 16:16:58 +0000.<br/>
     </footer>
     </body>
 </html>

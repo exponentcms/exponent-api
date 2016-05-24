@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.3.8 &raquo; \expMail
+    <title>    Exponent v2.3.9 &raquo; \expMail
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.3.8</a>
+                <a class="brand" href="../index.html">Exponent v2.3.9</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -520,7 +520,7 @@ $emailItem->subject('Hello World!');</p>
 $emailItem->addText('Line Two ');
 $emailItem->addText('Line Three ');</p>
 <p>$ccs = array('a@website.com'=>'Mr A.', 'b@website.com'=>'Mr B.', 'c@website.com'=>'Mr C.', 'd@website.com'=>'Mr D.', 'e@website.com'=>'Mr E.', 'f@website.com'=>'Mr F.');</p>
-<p>//add multiple bcc recipients to the email
+<p>//add multiple cc recipients to the email
 foreach ($ccs as $email => $name)
 {</p>
 <pre><code>$emailItem-&gt;addCc($email, $name);</code></pre>
@@ -543,7 +543,7 @@ $emailItem->subject('Hello World!');</p>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$email</h4>
-                                                <code>string</code><p><p>This is the email address for the BCC.</p></p>
+                                                <code>string</code><p><p>This is the email address for the CC.</p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$name</h4>
@@ -1599,56 +1599,6 @@ $emailItem->subject('Hello World!');</p>
                     
                     
                                                                 <h3><i class="icon-custom icon-property"></i> Properties</h3>
-                                                    <a id="property_log"> </a>
-                            <div class="element clickable property  private property_log" data-toggle="collapse" data-target=".property_log .collapse">
-                                <h2>log</h2>
-                                <pre>log : </pre>
-                                <div class="labels">
-                                                                                                        </div>
-                                <div class="row collapse">
-                                    <div class="detail-description">
-                                        <div class="long_description"></div>
-
-                                        <table class="table">
-                                                                                            <tr>
-                                                    <th>
-                                                        
-                                                    </th>
-                                                    <td>
-                                                                                                            </td>
-                                                </tr>
-                                                                                    </table>
-
-                                                                                    <h3>Type(s)</h3>
-                                            <code></code>
-                                                                            </div>
-                                </div>
-                            </div>
-                                                    <a id="property_errStack"> </a>
-                            <div class="element clickable property  private property_errStack" data-toggle="collapse" data-target=".property_errStack .collapse">
-                                <h2>errStack</h2>
-                                <pre>errStack : </pre>
-                                <div class="labels">
-                                                                                                        </div>
-                                <div class="row collapse">
-                                    <div class="detail-description">
-                                        <div class="long_description"></div>
-
-                                        <table class="table">
-                                                                                            <tr>
-                                                    <th>
-                                                        
-                                                    </th>
-                                                    <td>
-                                                                                                            </td>
-                                                </tr>
-                                                                                    </table>
-
-                                                                                    <h3>Type(s)</h3>
-                                            <code></code>
-                                                                            </div>
-                                </div>
-                            </div>
                                                     <a id="property_to"> </a>
                             <div class="element clickable property  public property_to" data-toggle="collapse" data-target=".property_to .collapse">
                                 <h2>to</h2>
@@ -1749,10 +1699,85 @@ $emailItem->subject('Hello World!');</p>
                                                                             </div>
                                 </div>
                             </div>
+                                                    <a id="property_subject"> </a>
+                            <div class="element clickable property  public property_subject" data-toggle="collapse" data-target=".property_subject .collapse">
+                                <h2>subject</h2>
+                                <pre>subject : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
                                                     <a id="property_message"> </a>
                             <div class="element clickable property  private property_message" data-toggle="collapse" data-target=".property_message .collapse">
                                 <h2>message</h2>
                                 <pre>message : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_log"> </a>
+                            <div class="element clickable property  private property_log" data-toggle="collapse" data-target=".property_log .collapse">
+                                <h2>log</h2>
+                                <pre>log : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_errStack"> </a>
+                            <div class="element clickable property  private property_errStack" data-toggle="collapse" data-target=".property_errStack .collapse">
+                                <h2>errStack</h2>
+                                <pre>errStack : </pre>
                                 <div class="labels">
                                                                                                         </div>
                                 <div class="row collapse">
@@ -1944,7 +1969,7 @@ $emailItem->subject('Hello World!');</p>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Sat, 30 Jan 2016 03:16:55 +0000.<br/>
+            generated on Tue, 24 May 2016 16:16:59 +0000.<br/>
     </footer>
     </body>
 </html>
