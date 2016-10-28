@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.3.9 &raquo; \expLang
+    <title>    Exponent v2.4.0 &raquo; \expLang
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.3.9</a>
+                <a class="brand" href="../index.html">Exponent v2.4.0</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -136,8 +136,8 @@
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_gettext" title="gettext :: ">
-            <span class="description"></span><pre>gettext</pre>
+        <a href="#method_gettext" title="gettext :: Get phrase from current language library">
+            <span class="description">Get phrase from current language library</span><pre>gettext</pre>
         </a>
     </li>
 
@@ -154,8 +154,8 @@
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_saveCurrLangFile" title="saveCurrLangFile :: ">
-            <span class="description"></span><pre>saveCurrLangFile</pre>
+        <a href="#method_saveCurrLangFile" title="saveCurrLangFile :: Write the entire current phrase library (in memory) to it&#039;s language file">
+            <span class="description">Write the entire current phrase library (in memory) to it&#039;s language file</span><pre>saveCurrLangFile</pre>
         </a>
     </li>
 
@@ -166,14 +166,20 @@
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_updateCurrLangFile" title="updateCurrLangFile :: ">
-            <span class="description"></span><pre>updateCurrLangFile</pre>
+        <a href="#method_updateCurrLangFile" title="updateCurrLangFile :: Populate/expand missing phrases in current language file from default language file">
+            <span class="description">Populate/expand missing phrases in current language file from default language file</span><pre>updateCurrLangFile</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_writeTemplate" title="writeTemplate :: ">
-            <span class="description"></span><pre>writeTemplate</pre>
+        <a href="#method_writeTemplate" title="writeTemplate :: Add a new phrase to the default language file if WRITE_LANG_TEMPLATE turned on">
+            <span class="description">Add a new phrase to the default language file if WRITE_LANG_TEMPLATE turned on</span><pre>writeTemplate</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_writeTemplate_custom" title="writeTemplate_custom :: Add a new phrase to the custom theme language file">
+            <span class="description">Add a new phrase to the custom theme language file</span><pre>writeTemplate_custom</pre>
         </a>
     </li>
 
@@ -181,11 +187,11 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -214,7 +220,7 @@
                                                                             </th>
                                     <td>
                                                                                     
-                                                                                <p>"BASE" "../../.."</p>
+                                                                                <p>&quot;BASE&quot; &quot;../../..&quot;</p>
                                     </td>
                                 </tr>
                                                                                                                 <tr>
@@ -265,7 +271,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -304,7 +310,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -355,7 +361,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -364,8 +370,8 @@
                         </div>
                                             <a id="method_gettext"></a>
                         <div class="element clickable method public  method_gettext" data-toggle="collapse" data-target=".method_gettext .collapse">
-                            <h2>gettext</h2>
-                            <pre>gettext( $str) </pre>
+                            <h2>Get phrase from current language library</h2>
+                            <pre>gettext( $str) : string</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -375,21 +381,7 @@
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -397,6 +389,8 @@
                                                 <code></code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
                                                                     </div>
                             </div>
 
@@ -428,7 +422,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -462,7 +456,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -471,7 +465,7 @@
                         </div>
                                             <a id="method_saveCurrLangFile"></a>
                         <div class="element clickable method public  method_saveCurrLangFile" data-toggle="collapse" data-target=".method_saveCurrLangFile .collapse">
-                            <h2>saveCurrLangFile</h2>
+                            <h2>Write the entire current phrase library (in memory) to it&#039;s language file</h2>
                             <pre>saveCurrLangFile() </pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
@@ -496,7 +490,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -530,7 +524,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -552,8 +546,8 @@
                         </div>
                                             <a id="method_updateCurrLangFile"></a>
                         <div class="element clickable method public  method_updateCurrLangFile" data-toggle="collapse" data-target=".method_updateCurrLangFile .collapse">
-                            <h2>updateCurrLangFile</h2>
-                            <pre>updateCurrLangFile() </pre>
+                            <h2>Populate/expand missing phrases in current language file from default language file</h2>
+                            <pre>updateCurrLangFile() : integer</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -570,23 +564,18 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p></p>
                                                                     </div>
                             </div>
 
                         </div>
                                             <a id="method_writeTemplate"></a>
                         <div class="element clickable method public  method_writeTemplate" data-toggle="collapse" data-target=".method_writeTemplate .collapse">
-                            <h2>writeTemplate</h2>
+                            <h2>Add a new phrase to the default language file if WRITE_LANG_TEMPLATE turned on</h2>
                             <pre>writeTemplate( $str) </pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
@@ -604,6 +593,31 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$str</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_writeTemplate_custom"></a>
+                        <div class="element clickable method public  method_writeTemplate_custom" data-toggle="collapse" data-target=".method_writeTemplate_custom .collapse">
+                            <h2>Add a new phrase to the custom theme language file</h2>
+                            <pre>writeTemplate_custom( $str) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
                                                                                     <tr>
                                                 <th>
                                                     
@@ -611,7 +625,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -645,7 +659,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Tue, 24 May 2016 16:17:47 +0000.<br/>
+            generated on Fri, 28 Oct 2016 20:05:00 +0000.<br/>
     </footer>
     </body>
 </html>

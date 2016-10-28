@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.3.9 &raquo; \loginController
+    <title>    Exponent v2.4.0 &raquo; \loginController
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.3.9</a>
+                <a class="brand" href="../index.html">Exponent v2.4.0</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -322,6 +322,12 @@
     </li>
 
                                                                                                         <li class="method public inherited">
+        <a href="#method_meta_tw" title="meta_tw :: Returns Twitter twitter: meta data">
+            <span class="description">Returns Twitter twitter: meta data</span><pre>meta_tw</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
         <a href="#method_metainfo" title="metainfo :: get the metainfo for this module">
             <span class="description">get the metainfo for this module</span><pre>metainfo</pre>
         </a>
@@ -340,8 +346,14 @@
     </li>
 
                                                                                                         <li class="method public inherited">
-        <a href="#method_permissions" title="permissions :: permission functions to aggregate a module&#039;s permissions based on add/remove permissions">
-            <span class="description">permission functions to aggregate a module&#039;s permissions based on add/remove permissions</span><pre>permissions</pre>
+        <a href="#method_permissions" title="permissions :: permission functions to aggregate a module&#039;s visible permissions based on add/remove permissions">
+            <span class="description">permission functions to aggregate a module&#039;s visible permissions based on add/remove permissions</span><pre>permissions</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_permissions_all" title="permissions_all :: permission functions to aggregate a module&#039;s permissions based on add/remove and manage permissions">
+            <span class="description">permission functions to aggregate a module&#039;s permissions based on add/remove and manage permissions</span><pre>permissions_all</pre>
         </a>
     </li>
 
@@ -463,11 +475,11 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -497,19 +509,10 @@
                                                                             </th>
                                     <td>
                                                                                     
-                                                                                <p>"BASE" "../../../.."</p>
+                                                                                <p>&quot;BASE&quot; &quot;../../../..&quot;</p>
                                     </td>
                                 </tr>
                                                                                                                 <tr>
-                                    <th>
-                                        package
-                                                                            </th>
-                                    <td>
-                                                                                    
-                                                                                <p>Modules</p>
-                                    </td>
-                                </tr>
-                                                            <tr>
                                     <th>
                                         package
                                                                             </th>
@@ -534,7 +537,7 @@
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -572,7 +575,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                             <h3>Response</h3>
@@ -594,7 +597,7 @@
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -635,7 +638,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -662,7 +665,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                             <h3>Response</h3>
@@ -691,7 +694,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                             <h3>Response</h3>
@@ -720,7 +723,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                             <h3>Response</h3>
@@ -756,7 +759,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -790,7 +793,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -833,7 +836,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -867,7 +870,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -910,7 +913,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -944,7 +947,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -971,7 +974,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1003,7 +1006,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1042,7 +1045,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -1069,7 +1072,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                             <h3>Response</h3>
@@ -1098,7 +1101,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                             <h3>Response</h3>
@@ -1134,7 +1137,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -1168,7 +1171,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -1195,7 +1198,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                             <h3>Response</h3>
@@ -1207,7 +1210,7 @@
                                             <a id="method_getRSSContent"></a>
                         <div class="element clickable method public  method_getRSSContent inherited" data-toggle="collapse" data-target=".method_getRSSContent .collapse">
                             <h2>get the module&#039;s items in an rss feed format</h2>
-                            <pre>getRSSContent() : array</pre>
+                            <pre>getRSSContent( $limit) : array</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
 
@@ -1224,9 +1227,14 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
-                                    
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$limit</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
                                                                             <h3>Response</h3>
                                         <code>array</code><p></p>
                                                                     </div>
@@ -1260,7 +1268,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -1287,7 +1295,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                             <h3>Response</h3>
@@ -1323,7 +1331,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -1350,7 +1358,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                             <h3>Response</h3>
@@ -1386,7 +1394,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -1420,7 +1428,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -1454,7 +1462,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -1488,7 +1496,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -1522,7 +1530,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -1556,7 +1564,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -1576,7 +1584,7 @@
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1611,7 +1619,7 @@
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1625,6 +1633,41 @@
                                                                             
                                                                             <h3>Response</h3>
                                         <code>null</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_meta_tw"></a>
+                        <div class="element clickable method public  method_meta_tw inherited" data-toggle="collapse" data-target=".method_meta_tw .collapse">
+                            <h2>Returns Twitter twitter: meta data</h2>
+                            <pre>meta_tw( $request,  $object,  $canonical) : array</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$request</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$object</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$canonical</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
                                                                     </div>
                             </div>
 
@@ -1649,7 +1692,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                             <h3>Response</h3>
@@ -1694,7 +1737,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -1721,7 +1764,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                             <h3>Response</h3>
@@ -1732,7 +1775,7 @@
                         </div>
                                             <a id="method_permissions"></a>
                         <div class="element clickable method public  method_permissions inherited" data-toggle="collapse" data-target=".method_permissions .collapse">
-                            <h2>permission functions to aggregate a module&#039;s permissions based on add/remove permissions</h2>
+                            <h2>permission functions to aggregate a module&#039;s visible permissions based on add/remove permissions</h2>
                             <pre>permissions() : array</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
@@ -1750,7 +1793,36 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_permissions_all"></a>
+                        <div class="element clickable method public  method_permissions_all inherited" data-toggle="collapse" data-target=".method_permissions_all .collapse">
+                            <h2>permission functions to aggregate a module&#039;s permissions based on add/remove and manage permissions</h2>
+                            <pre>permissions_all() : array</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
 
                                     
                                                                             <h3>Response</h3>
@@ -1786,7 +1858,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -1820,7 +1892,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -1854,7 +1926,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -1888,7 +1960,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -1915,7 +1987,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                             <h3>Response</h3>
@@ -1937,7 +2009,7 @@
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1971,7 +2043,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                             <h3>Response</h3>
@@ -2007,7 +2079,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -2041,7 +2113,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -2061,7 +2133,7 @@
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -2102,7 +2174,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -2122,7 +2194,7 @@
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -2172,7 +2244,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -2215,7 +2287,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -2249,7 +2321,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -2283,7 +2355,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -2310,7 +2382,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                             <h3>Response</h3>
@@ -2346,7 +2418,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -2380,7 +2452,7 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -2590,6 +2662,31 @@
                                                                             </div>
                                 </div>
                             </div>
+                                                    <a id="property_m_permissions"> </a>
+                            <div class="element clickable property  protected property_m_permissions inherited" data-toggle="collapse" data-target=".property_m_permissions .collapse">
+                                <h2>m_permissions</h2>
+                                <pre>m_permissions : </pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
                                                     <a id="property_remove_permissions"> </a>
                             <div class="element clickable property  protected property_remove_permissions inherited" data-toggle="collapse" data-target=".property_remove_permissions .collapse">
                                 <h2>remove_permissions</h2>
@@ -2619,6 +2716,31 @@
                             <div class="element clickable property  protected property_add_permissions inherited" data-toggle="collapse" data-target=".property_add_permissions .collapse">
                                 <h2>add_permissions</h2>
                                 <pre>add_permissions : </pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_manage_permissions"> </a>
+                            <div class="element clickable property  protected property_manage_permissions inherited" data-toggle="collapse" data-target=".property_manage_permissions .collapse">
+                                <h2>manage_permissions</h2>
+                                <pre>manage_permissions : </pre>
                                 <div class="labels">
                                     <span class="label">inherited</span>                                                                    </div>
                                 <div class="row collapse">
@@ -2910,7 +3032,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Tue, 24 May 2016 16:17:54 +0000.<br/>
+            generated on Fri, 28 Oct 2016 20:05:03 +0000.<br/>
     </footer>
     </body>
 </html>

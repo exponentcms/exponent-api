@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.3.9 &raquo; \fakeform
+    <title>    Exponent v2.4.0 &raquo; \fakeform
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.3.9</a>
+                <a class="brand" href="../index.html">Exponent v2.4.0</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -135,6 +135,12 @@
         </a>
     </li>
 
+                                                                                                        <li class="method public">
+        <a href="#method_controlToHTML" title="controlToHTML :: ">
+            <span class="description"></span><pre>controlToHTML</pre>
+        </a>
+    </li>
+
                                                                                                         <li class="method public inherited">
         <a href="#method_location" title="location :: Sets form location data">
             <span class="description">Sets form location data</span><pre>location</pre>
@@ -177,6 +183,12 @@
         </a>
     </li>
 
+                                                                                                        <li class="method public">
+        <a href="#method_style_form" title="style_form :: ">
+            <span class="description"></span><pre>style_form</pre>
+        </a>
+    </li>
+
                                                                                                         <li class="method public inherited">
         <a href="#method_toHTML" title="toHTML :: ">
             <span class="description"></span><pre>toHTML</pre>
@@ -193,11 +205,11 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -270,7 +282,7 @@ registerable and unregisterable controls.</p>
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -290,13 +302,13 @@ registerable and unregisterable controls.</p>
                                     <div class="long_description"><p>This may be used for validation, dynamic controls, etc.</p></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$name</h4>
-                                                <code>string</code><p><p>The internal name to reference the script.  This is used</p>
-<pre><code>by the Form object for removing the script later (if desired)</code></pre></p>
+                                                <code>string</code><p><p>The internal name to reference the script.  This is used
+by the Form object for removing the script later (if desired)</p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$script</h4>
@@ -304,8 +316,8 @@ registerable and unregisterable controls.</p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
-                                        <code>boolean</code><p><p>Returns true if a script with the specified internal name</p>
-<pre><code>does not already exist, and the new one was added, or false if not.</code></pre></p>
+                                        <code>boolean</code><p><p>Returns true if a script with the specified internal name
+does not already exist, and the new one was added, or false if not.</p></p>
                                                                     </div>
                             </div>
 
@@ -337,7 +349,7 @@ registerable and unregisterable controls.</p>
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -350,6 +362,49 @@ registerable and unregisterable controls.</p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$div_to_update</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_controlToHTML"></a>
+                        <div class="element clickable method public  method_controlToHTML" data-toggle="collapse" data-target=".method_controlToHTML .collapse">
+                            <h2>controlToHTML</h2>
+                            <pre>controlToHTML( $name,  $label = null) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$label</h4>
                                                 <code></code><p></p>
                                             </div>
                                                                             
@@ -370,7 +425,7 @@ registerable and unregisterable controls.</p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -397,7 +452,7 @@ registerable and unregisterable controls.</p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -428,7 +483,7 @@ registerable and unregisterable controls.</p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -471,7 +526,7 @@ registerable and unregisterable controls.</p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -514,7 +569,7 @@ registerable and unregisterable controls.</p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -557,18 +612,18 @@ registerable and unregisterable controls.</p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$name</h4>
-                                                <code>string</code><p><p>The internal name of the script to remove.  This was</p>
-<pre><code> specified by the addScript() method, and is only used by the Form object.</code></pre></p>
+                                                <code>string</code><p><p>The internal name of the script to remove.  This was
+specified by the addScript() method, and is only used by the Form object.</p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
-                                        <code>boolean</code><p><p>Returns true if the script was successfully  removed.  In</p>
-<pre><code>practice, this method always returns true.</code></pre></p>
+                                        <code>boolean</code><p><p>Returns true if the script was successfully  removed.  In
+practice, this method always returns true.</p></p>
                                                                     </div>
                             </div>
 
@@ -600,7 +655,41 @@ registerable and unregisterable controls.</p>
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_style_form"></a>
+                        <div class="element clickable method public  method_style_form" data-toggle="collapse" data-target=".method_style_form .collapse">
+                            <h2>style_form</h2>
+                            <pre>style_form() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
 
                                     
                                                                     </div>
@@ -634,7 +723,7 @@ registerable and unregisterable controls.</p>
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -659,7 +748,7 @@ registerable and unregisterable controls.</p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -676,6 +765,181 @@ registerable and unregisterable controls.</p>
                     
                     
                                                                 <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_rank"> </a>
+                            <div class="element clickable property  public property_rank" data-toggle="collapse" data-target=".property_rank .collapse">
+                                <h2>rank</h2>
+                                <pre>rank : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_even"> </a>
+                            <div class="element clickable property  public property_even" data-toggle="collapse" data-target=".property_even .collapse">
+                                <h2>even</h2>
+                                <pre>even : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_edit_class"> </a>
+                            <div class="element clickable property  public property_edit_class" data-toggle="collapse" data-target=".property_edit_class .collapse">
+                                <h2>edit_class</h2>
+                                <pre>edit_class : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_edit_icon_class"> </a>
+                            <div class="element clickable property  public property_edit_icon_class" data-toggle="collapse" data-target=".property_edit_icon_class .collapse">
+                                <h2>edit_icon_class</h2>
+                                <pre>edit_icon_class : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_delete_class"> </a>
+                            <div class="element clickable property  public property_delete_class" data-toggle="collapse" data-target=".property_delete_class .collapse">
+                                <h2>delete_class</h2>
+                                <pre>delete_class : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_delete_icon_class"> </a>
+                            <div class="element clickable property  public property_delete_icon_class" data-toggle="collapse" data-target=".property_delete_icon_class .collapse">
+                                <h2>delete_icon_class</h2>
+                                <pre>delete_icon_class : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_forms_id"> </a>
+                            <div class="element clickable property  public property_forms_id" data-toggle="collapse" data-target=".property_forms_id .collapse">
+                                <h2>forms_id</h2>
+                                <pre>forms_id : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
                                                     <a id="property_controls"> </a>
                             <div class="element clickable property  public property_controls inherited" data-toggle="collapse" data-target=".property_controls .collapse">
                                 <h2>controls</h2>
@@ -1071,7 +1335,7 @@ registerable and unregisterable controls.</p>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Tue, 24 May 2016 16:17:44 +0000.<br/>
+            generated on Fri, 28 Oct 2016 20:04:58 +0000.<br/>
     </footer>
     </body>
 </html>

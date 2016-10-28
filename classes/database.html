@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.3.9 &raquo; \database
+    <title>    Exponent v2.4.0 &raquo; \database
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.3.9</a>
+                <a class="brand" href="../index.html">Exponent v2.4.0</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -212,8 +212,8 @@ cryptic error messages can be reworded.</span><pre>error</pre>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_escapeString" title="escapeString :: Unescape a string based on the database connection">
-            <span class="description">Unescape a string based on the database connection</span><pre>escapeString</pre>
+        <a href="#method_escapeString" title="escapeString :: Escape a string based on the database connection">
+            <span class="description">Escape a string based on the database connection</span><pre>escapeString</pre>
         </a>
     </li>
 
@@ -250,6 +250,12 @@ be retrieved.</span><pre>getTables</pre>
                                                                                                         <li class="method public">
         <a href="#method_inError" title="inError :: Checks whether the database connection has experienced an error.">
             <span class="description">Checks whether the database connection has experienced an error.</span><pre>inError</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_injectProof" title="injectProof :: Attempt to prevent a sql injection">
+            <span class="description">Attempt to prevent a sql injection</span><pre>injectProof</pre>
         </a>
     </li>
 
@@ -521,11 +527,11 @@ array of arrays, in any random order.</span><pre>selectArray</pre>
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -596,7 +602,7 @@ array of arrays, in any random order.</span><pre>selectArray</pre>
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -637,7 +643,7 @@ array of arrays, in any random order.</span><pre>selectArray</pre>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -674,7 +680,7 @@ array of arrays, in any random order.</span><pre>selectArray</pre>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -710,7 +716,7 @@ data definition.</p>
 its general structure for databases.</p></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -751,7 +757,7 @@ An aggressive update will drop columns in the table that are not in the Exponent
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -788,7 +794,7 @@ An aggressive update will drop columns in the table that are not in the Exponent
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -827,7 +833,7 @@ An aggressive update will drop columns in the table that are not in the Exponent
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -856,7 +862,7 @@ An aggressive update will drop columns in the table that are not in the Exponent
 its general structure for databases.</p></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -899,7 +905,7 @@ the Exponent Data Definition Language.</p></p>
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                             <h3>Response</h3>
@@ -928,7 +934,7 @@ the Exponent Data Definition Language.</p></p>
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -966,7 +972,7 @@ increment, but the increment() method is preferred, for readability.</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -997,7 +1003,7 @@ increment, but the increment() method is preferred, for readability.</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1030,7 +1036,7 @@ increment, but the increment() method is preferred, for readability.</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1058,7 +1064,7 @@ increment, but the increment() method is preferred, for readability.</p></p>
 was an error returned by the database server.</p></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1094,7 +1100,7 @@ cryptic error messages can be reworded.</h2>
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                             <h3>Response</h3>
@@ -1105,7 +1111,7 @@ cryptic error messages can be reworded.</h2>
                         </div>
                                             <a id="method_escapeString"></a>
                         <div class="element clickable method public  method_escapeString" data-toggle="collapse" data-target=".method_escapeString .collapse">
-                            <h2>Unescape a string based on the database connection</h2>
+                            <h2>Escape a string based on the database connection</h2>
                             <pre>escapeString( $string) : string</pre>
                             <div class="labels">
                                                                                                                                 <span class="label">abstract</span>                                                            </div>
@@ -1116,7 +1122,7 @@ cryptic error messages can be reworded.</h2>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1144,7 +1150,7 @@ to intelligently alter tables that have already been installed.</h2>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1173,7 +1179,7 @@ be retrieved.</h2>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1201,7 +1207,7 @@ for the logical database, or all tables in the physical database.</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1228,7 +1234,7 @@ for the logical database, or all tables in the physical database.</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1275,11 +1281,38 @@ decrement, but the decrement() method is preferred, for readability.</p></p>
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                             <h3>Response</h3>
                                         <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_injectProof"></a>
+                        <div class="element clickable method public  method_injectProof" data-toggle="collapse" data-target=".method_injectProof .collapse">
+                            <h2>Attempt to prevent a sql injection</h2>
+                            <pre>injectProof( $string) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$string</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
                                                                     </div>
                             </div>
 
@@ -1299,7 +1332,7 @@ object attributes starting with an underscore ('_') will be ignored and NOT inse
 into the table as a field value.</p></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1338,7 +1371,7 @@ is automagically prepended for you.</p></p>
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                             <h3>Response</h3>
@@ -1360,7 +1393,7 @@ is automagically prepended for you.</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1391,7 +1424,7 @@ is automagically prepended for you.</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1423,7 +1456,7 @@ SELECT MAX(field) .</h2>
                                     <div class="long_description"><p>.. query.</p></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1463,7 +1496,7 @@ for a GROUP BY clause.  This can also be passed as an array of fields.</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1490,7 +1523,7 @@ for a GROUP BY clause.  This can also be passed as an array of fields.</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1517,7 +1550,7 @@ for a GROUP BY clause.  This can also be passed as an array of fields.</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1576,7 +1609,7 @@ array of arrays, in any random order.</h2>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1585,9 +1618,9 @@ array of arrays, in any random order.</h2>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$where</h4>
-                                                <code>string</code><p><p>Criteria used to narrow the result set.  If this</p>
-<pre><code>                 is specified as null, then no criteria is applied, and all objects are
-                 returned</code></pre></p>
+                                                <code>string</code><p><p>Criteria used to narrow the result set.  If this
+is specified as null, then no criteria is applied, and all objects are
+returned</p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$orderby</h4>
@@ -1624,7 +1657,7 @@ SELECTing a set of records from a database table.  Returns an
 array of arrays, in any random order.</p></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1664,7 +1697,7 @@ SELECTing a set of records from a database table.  Returns an
 array of arrays, in any random order.</p></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1691,7 +1724,7 @@ array of arrays, in any random order.</p></div>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1734,7 +1767,7 @@ array of arrays, in any random order.</p></div>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1773,7 +1806,7 @@ array of arrays, in any random order.</p></div>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1782,9 +1815,9 @@ array of arrays, in any random order.</p></div>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$where</h4>
-                                                <code>string</code><p><p>Criteria used to narrow the result set.  If this</p>
-<pre><code>                 is specified as null, then no criteria is applied, and all objects are
-                 returned</code></pre></p>
+                                                <code>string</code><p><p>Criteria used to narrow the result set.  If this
+is specified as null, then no criteria is applied, and all objects are
+returned</p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$classname</h4>
@@ -1842,7 +1875,7 @@ array of arrays, in any random order.</p></div>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1851,7 +1884,7 @@ array of arrays, in any random order.</p></div>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$classname</h4>
-                                                <code>string</code><p><p>Can be $this->baseclassname
+                                                <code>string</code><p><p>Can be $this-&gt;baseclassname
 Returns an array of fields</p></p>
                                             </div>
                                                                                     <div class="subelement argument">
@@ -1896,7 +1929,7 @@ Returns an array of fields</p></p>
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1921,7 +1954,7 @@ Returns an array of fields</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1952,7 +1985,7 @@ Returns an array of fields</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1983,7 +2016,7 @@ Returns an array of fields</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -2014,7 +2047,7 @@ Returns an array of fields</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -2046,7 +2079,7 @@ there is no way to determine which of the set will be returned).
 If no record(s) match the query, null is returned.</p></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -2077,7 +2110,7 @@ If no record(s) match the query, null is returned.</p></div>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -2107,7 +2140,7 @@ SELECTing a set of records from a database table.  Returns an
 array of objects, in any random order.</p></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -2144,7 +2177,7 @@ returned</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -2171,7 +2204,7 @@ returned</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -2210,7 +2243,7 @@ array of objects, in any random order.  The indices of the array
 are the IDs of the objects.</p></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -2247,7 +2280,7 @@ returned</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -2278,7 +2311,7 @@ returned</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -2309,7 +2342,7 @@ returned</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -2344,7 +2377,7 @@ returned</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -2379,7 +2412,7 @@ returned</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -2406,7 +2439,7 @@ returned</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -2449,7 +2482,7 @@ very portable way of dealing with the database, and is only
 provided as a last resort.</p></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -2480,7 +2513,7 @@ provided as a last resort.</p></div>
                                     <div class="long_description"><p>Switches values between two table entries for things like swapping rank, etc...</p></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -2523,7 +2556,7 @@ provided as a last resort.</p></div>
                                     <div class="long_description"><p>Returns true if the table exists, and false if it doesn't.</p></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -2556,7 +2589,7 @@ provided as a last resort.</p></div>
 </ul></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -2583,7 +2616,7 @@ provided as a last resort.</p></div>
                                     <div class="long_description"><p>Returns tue of the specified table has no rows, and false if otherwise.</p></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -2630,7 +2663,7 @@ true if the test succeeded, and false if it failed.</p></div>
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                             <h3>Response</h3>
@@ -2652,7 +2685,7 @@ true if the test succeeded, and false if it failed.</p></div>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -2692,7 +2725,7 @@ true if the test succeeded, and false if it failed.</p></div>
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -2736,7 +2769,7 @@ true if the test succeeded, and false if it failed.</p></div>
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                     
                                                                             <h3>Response</h3>
@@ -2759,7 +2792,7 @@ true if the test succeeded, and false if it failed.</p></div>
 that are also member attributes of the $object object.</p></div>
 
                                     <table class="table">
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -2892,7 +2925,7 @@ the select* methods.</p></p>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Tue, 24 May 2016 16:17:51 +0000.<br/>
+            generated on Fri, 28 Oct 2016 20:05:01 +0000.<br/>
     </footer>
     </body>
 </html>
