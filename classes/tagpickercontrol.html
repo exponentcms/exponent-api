@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.4.0 &raquo; \tagpickercontrol
+    <title>    Exponent v2.4.1 &raquo; \tagpickercontrol
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.4.0</a>
+                <a class="brand" href="../index.html">Exponent v2.4.1</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -130,8 +130,8 @@
     </li>
 
                                                                                                         <li class="method public inherited">
-        <a href="#method_convertData" title="convertData :: Convert a value to fit the control">
-            <span class="description">Convert a value to fit the control</span><pre>convertData</pre>
+        <a href="#method_convertData" title="convertData :: Convert a foreign value to fit the exp control">
+            <span class="description">Convert a foreign value to fit the exp control</span><pre>convertData</pre>
         </a>
     </li>
 
@@ -182,8 +182,8 @@ Used to determine if control has field data behind it</span><pre>isStatic</pre>
     </li>
 
                                                                                                         <li class="method public inherited">
-        <a href="#method_parseData" title="parseData :: Parse the control value">
-            <span class="description">Parse the control value</span><pre>parseData</pre>
+        <a href="#method_parseData" title="parseData :: Parse the control value for storage in database">
+            <span class="description">Parse the control value for storage in database</span><pre>parseData</pre>
         </a>
     </li>
 
@@ -342,8 +342,8 @@ Used to determine if control is actually a generic control</span><pre>useGeneric
                         </div>
                                             <a id="method_convertData"></a>
                         <div class="element clickable method public  method_convertData inherited" data-toggle="collapse" data-target=".method_convertData .collapse">
-                            <h2>Convert a value to fit the control</h2>
-                            <pre>convertData( $original_name,  $formvalues) : string</pre>
+                            <h2>Convert a foreign value to fit the exp control</h2>
+                            <pre>convertData( $name,  $values) : string</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
 
@@ -366,11 +366,11 @@ Used to determine if control is actually a generic control</span><pre>useGeneric
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>$original_name</h4>
+                                                <h4>$name</h4>
                                                 <code></code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
-                                                <h4>$formvalues</h4>
+                                                <h4>$values</h4>
                                                 <code></code><p></p>
                                             </div>
                                                                             
@@ -600,8 +600,8 @@ Used to determine if control has field data behind it</h2>
                         </div>
                                             <a id="method_parseData"></a>
                         <div class="element clickable method public  method_parseData inherited" data-toggle="collapse" data-target=".method_parseData .collapse">
-                            <h2>Parse the control value</h2>
-                            <pre>parseData( $original_name,  $formvalues) : string</pre>
+                            <h2>Parse the control value for storage in database</h2>
+                            <pre>parseData(string $name, array $values, boolean $for_db = false) : string</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
 
@@ -624,12 +624,16 @@ Used to determine if control has field data behind it</h2>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>$original_name</h4>
-                                                <code></code><p></p>
+                                                <h4>$name</h4>
+                                                <code>string</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
-                                                <h4>$formvalues</h4>
-                                                <code></code><p></p>
+                                                <h4>$values</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$for_db</h4>
+                                                <code>boolean</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -1264,7 +1268,7 @@ Used to determine if control is actually a generic control</h2>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 28 Oct 2016 20:04:31 +0000.<br/>
+            generated on Tue, 06 Dec 2016 18:02:31 +0000.<br/>
     </footer>
     </body>
 </html>

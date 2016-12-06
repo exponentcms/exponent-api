@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.4.0 &raquo; \expRouter
+    <title>    Exponent v2.4.1 &raquo; \expRouter
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.4.0</a>
+                <a class="brand" href="../index.html">Exponent v2.4.1</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -142,8 +142,8 @@
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_convertPartsToParams" title="convertPartsToParams :: ">
-            <span class="description"></span><pre>convertPartsToParams</pre>
+        <a href="#method_convertPartsToParams" title="convertPartsToParams :: Convert url_parts() or $_REQUEST to $params">
+            <span class="description">Convert url_parts() or $_REQUEST to $params</span><pre>convertPartsToParams</pre>
         </a>
     </li>
 
@@ -172,8 +172,8 @@
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_getPageByName" title="getPageByName :: ">
-            <span class="description"></span><pre>getPageByName</pre>
+        <a href="#method_getPageByName" title="getPageByName :: Attempt to locate a page by name or id">
+            <span class="description">Attempt to locate a page by name or id</span><pre>getPageByName</pre>
         </a>
     </li>
 
@@ -232,14 +232,14 @@
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_routeActionRequest" title="routeActionRequest :: ">
-            <span class="description"></span><pre>routeActionRequest</pre>
+        <a href="#method_routeActionRequest" title="routeActionRequest :: Check and set up for an action request">
+            <span class="description">Check and set up for an action request</span><pre>routeActionRequest</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_routePageRequest" title="routePageRequest :: ">
-            <span class="description"></span><pre>routePageRequest</pre>
+        <a href="#method_routePageRequest" title="routePageRequest :: Set up for page request, but check store category/product also">
+            <span class="description">Set up for page request, but check store category/product also</span><pre>routePageRequest</pre>
         </a>
     </li>
 
@@ -250,8 +250,8 @@
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_splitURL" title="splitURL :: ">
-            <span class="description"></span><pre>splitURL</pre>
+        <a href="#method_splitURL" title="splitURL :: Assign url_type &amp; url_style">
+            <span class="description">Assign url_type &amp; url_style</span><pre>splitURL</pre>
         </a>
     </li>
 
@@ -270,8 +270,10 @@
         <li class="nav-header private">» Private
             <ul>
                                                                                                                                                     <li class="method private">
-                            <a href="#method_buildSEFPath" title="buildSEFPath :: ">
-                                <span class="description"></span><pre>buildSEFPath</pre>
+                            <a href="#method_buildSEFPath" title="buildSEFPath :: Get the SEF URL from the server
+if we got an old school url, it will only contain the &#039;index.php&#039;">
+                                <span class="description">Get the SEF URL from the server
+if we got an old school url, it will only contain the &#039;index.php&#039;</span><pre>buildSEFPath</pre>
                             </a>
                         </li>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         </ul>
@@ -388,7 +390,8 @@
                         </div>
                                             <a id="method_buildSEFPath"></a>
                         <div class="element clickable method private  method_buildSEFPath" data-toggle="collapse" data-target=".method_buildSEFPath .collapse">
-                            <h2>buildSEFPath</h2>
+                            <h2>Get the SEF URL from the server
+if we got an old school url, it will only contain the &#039;index.php&#039;</h2>
                             <pre>buildSEFPath() </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
@@ -488,8 +491,8 @@
                         </div>
                                             <a id="method_convertPartsToParams"></a>
                         <div class="element clickable method public  method_convertPartsToParams" data-toggle="collapse" data-target=".method_convertPartsToParams .collapse">
-                            <h2>convertPartsToParams</h2>
-                            <pre>convertPartsToParams() </pre>
+                            <h2>Convert url_parts() or $_REQUEST to $params</h2>
+                            <pre>convertPartsToParams() : array|string</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -506,16 +509,11 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                                                     </table>
 
                                     
+                                                                            <h3>Response</h3>
+                                        <code>array|string</code><p></p>
                                                                     </div>
                             </div>
 
@@ -701,8 +699,8 @@
                         </div>
                                             <a id="method_getPageByName"></a>
                         <div class="element clickable method public  method_getPageByName" data-toggle="collapse" data-target=".method_getPageByName .collapse">
-                            <h2>getPageByName</h2>
-                            <pre>getPageByName( $url_name) </pre>
+                            <h2>Attempt to locate a page by name or id</h2>
+                            <pre>getPageByName( $url_name) : null|object|void</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -712,20 +710,6 @@
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                                                     </table>
 
                                                                             <h3>Arguments</h3>
@@ -734,6 +718,8 @@
                                                 <code></code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>null|object|void</code><p></p>
                                                                     </div>
                             </div>
 
@@ -1087,8 +1073,8 @@ action</p></p>
                         </div>
                                             <a id="method_routeActionRequest"></a>
                         <div class="element clickable method public  method_routeActionRequest" data-toggle="collapse" data-target=".method_routeActionRequest .collapse">
-                            <h2>routeActionRequest</h2>
-                            <pre>routeActionRequest() </pre>
+                            <h2>Check and set up for an action request</h2>
+                            <pre>routeActionRequest() : boolean</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -1105,24 +1091,19 @@ action</p></p>
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                                                     </table>
 
                                     
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
                                                                     </div>
                             </div>
 
                         </div>
                                             <a id="method_routePageRequest"></a>
                         <div class="element clickable method public  method_routePageRequest" data-toggle="collapse" data-target=".method_routePageRequest .collapse">
-                            <h2>routePageRequest</h2>
-                            <pre>routePageRequest() </pre>
+                            <h2>Set up for page request, but check store category/product also</h2>
+                            <pre>routePageRequest() : boolean</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -1139,16 +1120,11 @@ action</p></p>
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                                                     </table>
 
                                     
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
                                                                     </div>
                             </div>
 
@@ -1189,7 +1165,7 @@ action</p></p>
                         </div>
                                             <a id="method_splitURL"></a>
                         <div class="element clickable method public  method_splitURL" data-toggle="collapse" data-target=".method_splitURL .collapse">
-                            <h2>splitURL</h2>
+                            <h2>Assign url_type &amp; url_style</h2>
                             <pre>splitURL() </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
@@ -1366,7 +1342,7 @@ either &#039;base&#039; (default page), &#039;page&#039;, &#039;action&#039;, or
                                 </div>
                             </div>
                                                     <a id="property_url_style"> </a>
-                            <div class="element clickable property  public property_url_style" data-toggle="collapse" data-target=".property_url_style .collapse">
+                            <div class="element clickable property  private property_url_style" data-toggle="collapse" data-target=".property_url_style .collapse">
                                 <h2>Style of url
 either &#039;sef&#039; or &#039;query&#039;</h2>
                                 <pre>url_style : string</pre>
@@ -1418,7 +1394,7 @@ either &#039;sef&#039; or &#039;query&#039;</h2>
                                 </div>
                             </div>
                                                     <a id="property_sefPath"> </a>
-                            <div class="element clickable property  public property_sefPath" data-toggle="collapse" data-target=".property_sefPath .collapse">
+                            <div class="element clickable property  private property_sefPath" data-toggle="collapse" data-target=".property_sefPath .collapse">
                                 <h2>sefPath</h2>
                                 <pre>sefPath : </pre>
                                 <div class="labels">
@@ -1462,7 +1438,7 @@ either &#039;sef&#039; or &#039;query&#039;</h2>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 28 Oct 2016 20:05:03 +0000.<br/>
+            generated on Tue, 06 Dec 2016 18:03:42 +0000.<br/>
     </footer>
     </body>
 </html>

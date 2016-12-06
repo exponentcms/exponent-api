@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.4.0 &raquo; \formsController
+    <title>    Exponent v2.4.1 &raquo; \formsController
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.4.0</a>
+                <a class="brand" href="../index.html">Exponent v2.4.1</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -196,8 +196,10 @@
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_confirm_data" title="confirm_data :: ">
-            <span class="description"></span><pre>confirm_data</pre>
+        <a href="#method_confirm_data" title="confirm_data :: Form data is parsed and displayed for confirmation before entering into database and/pr sending email
+ used for only initial entry">
+            <span class="description">Form data is parsed and displayed for confirmation before entering into database and/pr sending email
+ used for only initial entry</span><pre>confirm_data</pre>
         </a>
     </li>
 
@@ -586,8 +588,10 @@
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_submit_data" title="submit_data :: ">
-            <span class="description"></span><pre>submit_data</pre>
+        <a href="#method_submit_data" title="submit_data :: Form data is parsed and entered into database and/or email is sent
+ used for both initial entry and editing records">
+            <span class="description">Form data is parsed and entered into database and/or email is sent
+ used for both initial entry and editing records</span><pre>submit_data</pre>
         </a>
     </li>
 
@@ -1096,7 +1100,8 @@
                         </div>
                                             <a id="method_confirm_data"></a>
                         <div class="element clickable method public  method_confirm_data" data-toggle="collapse" data-target=".method_confirm_data .collapse">
-                            <h2>confirm_data</h2>
+                            <h2>Form data is parsed and displayed for confirmation before entering into database and/pr sending email
+ used for only initial entry</h2>
                             <pre>confirm_data() </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
@@ -3267,7 +3272,7 @@
                                             <a id="method_sql2csv"></a>
                         <div class="element clickable method public  method_sql2csv" data-toggle="collapse" data-target=".method_sql2csv .collapse">
                             <h2>This converts the sql statement into a nice CSV.</h2>
-                            <pre>sql2csv( $items, null $rptcols = null) : string</pre>
+                            <pre>sql2csv( $items, array|null $rptcols = null) : string</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -3297,7 +3302,7 @@ use the array_keys function to strip out a functional header</p></div>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$rptcols</h4>
-                                                <code>null</code><p></p>
+                                                <code>array|null</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -3308,7 +3313,8 @@ use the array_keys function to strip out a functional header</p></div>
                         </div>
                                             <a id="method_submit_data"></a>
                         <div class="element clickable method public  method_submit_data" data-toggle="collapse" data-target=".method_submit_data .collapse">
-                            <h2>submit_data</h2>
+                            <h2>Form data is parsed and entered into database and/or email is sent
+ used for both initial entry and editing records</h2>
                             <pre>submit_data() </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
@@ -4044,7 +4050,7 @@ use the array_keys function to strip out a functional header</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 28 Oct 2016 20:04:37 +0000.<br/>
+            generated on Tue, 06 Dec 2016 18:02:45 +0000.<br/>
     </footer>
     </body>
 </html>
