@@ -374,14 +374,16 @@ work identically.</span><pre>getImageInfo</pre>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_imageCaptcha" title="imageCaptcha :: exdoc">
-            <span class="description">exdoc</span><pre>imageCaptcha</pre>
+        <a href="#method_imageCaptcha" title="imageCaptcha :: exdoc
+Create a captcha type image from a string">
+            <span class="description">exdoc
+Create a captcha type image from a string</span><pre>imageCaptcha</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_imageCopyresized" title="imageCopyresized :: ">
-            <span class="description"></span><pre>imageCopyresized</pre>
+        <a href="#method_imageCopyresized" title="imageCopyresized :: Copy and resize and image">
+            <span class="description">Copy and resize and image</span><pre>imageCopyresized</pre>
         </a>
     </li>
 
@@ -394,20 +396,22 @@ Create a new blank image resource, with the specified width and height.</span><p
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_imageFlip" title="imageFlip :: ">
-            <span class="description"></span><pre>imageFlip</pre>
+        <a href="#method_imageFlip" title="imageFlip :: Flip an image file">
+            <span class="description">Flip an image file</span><pre>imageFlip</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_imageOutput" title="imageOutput :: exdoc">
-            <span class="description">exdoc</span><pre>imageOutput</pre>
+        <a href="#method_imageOutput" title="imageOutput :: exdoc
+Output an image based on its mimetype">
+            <span class="description">exdoc
+Output an image based on its mimetype</span><pre>imageOutput</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_imageRotate" title="imageRotate :: ">
-            <span class="description"></span><pre>imageRotate</pre>
+        <a href="#method_imageRotate" title="imageRotate :: Rotate an image file">
+            <span class="description">Rotate an image file</span><pre>imageRotate</pre>
         </a>
     </li>
 
@@ -526,8 +530,8 @@ was fine.</span><pre>parseDatabase</pre>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_recurse_copy" title="recurse_copy :: ">
-            <span class="description"></span><pre>recurse_copy</pre>
+        <a href="#method_recurse_copy" title="recurse_copy :: Recursively copy file(s)">
+            <span class="description">Recursively copy file(s)</span><pre>recurse_copy</pre>
         </a>
     </li>
 
@@ -2638,7 +2642,8 @@ work identically.</h2>
                         </div>
                                             <a id="method_imageCaptcha"></a>
                         <div class="element clickable method public  method_imageCaptcha" data-toggle="collapse" data-target=".method_imageCaptcha .collapse">
-                            <h2>exdoc</h2>
+                            <h2>exdoc
+Create a captcha type image from a string</h2>
                             <pre>imageCaptcha( $w,  $h,  $string) : null|resource</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
@@ -2649,24 +2654,6 @@ work identically.</h2>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    state
-                                                </th>
-                                                <td>
-                                                                                                                                                                        
-                                                                                                                                                                        <p><b>UNDOCUMENTED</b></p>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    node
-                                                </th>
-                                                <td>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>Undocumented</p>
-                                                                                                    </td>
-                                            </tr>
                                                                                                                     </table>
 
                                                                             <h3>Arguments</h3>
@@ -2691,8 +2678,8 @@ work identically.</h2>
                         </div>
                                             <a id="method_imageCopyresized"></a>
                         <div class="element clickable method public  method_imageCopyresized" data-toggle="collapse" data-target=".method_imageCopyresized .collapse">
-                            <h2>imageCopyresized</h2>
-                            <pre>imageCopyresized( $dest,  $src,  $dst_x,  $dst_y,  $src_x,  $src_y,  $dst_w,  $dst_h,  $src_w,  $src_h) </pre>
+                            <h2>Copy and resize and image</h2>
+                            <pre>imageCopyresized( $dest,  $src,  $dst_x,  $dst_y,  $src_x,  $src_y,  $dst_w,  $dst_h,  $src_w,  $src_h) : boolean|null</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -2702,20 +2689,6 @@ work identically.</h2>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                                                     </table>
 
                                                                             <h3>Arguments</h3>
@@ -2760,6 +2733,8 @@ work identically.</h2>
                                                 <code></code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>boolean|null</code><p></p>
                                                                     </div>
                             </div>
 
@@ -2809,8 +2784,8 @@ there is no GD support compiled into the server.  (In this case, null is returne
                         </div>
                                             <a id="method_imageFlip"></a>
                         <div class="element clickable method public  method_imageFlip" data-toggle="collapse" data-target=".method_imageFlip .collapse">
-                            <h2>imageFlip</h2>
-                            <pre>imageFlip( $filename,  $is_horizontal) </pre>
+                            <h2>Flip an image file</h2>
+                            <pre>imageFlip( $filename, boolean $is_horizontal = false) : array|null|resource|string</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -2820,20 +2795,6 @@ there is no GD support compiled into the server.  (In this case, null is returne
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                                                     </table>
 
                                                                             <h3>Arguments</h3>
@@ -2843,16 +2804,19 @@ there is no GD support compiled into the server.  (In this case, null is returne
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$is_horizontal</h4>
-                                                <code></code><p></p>
+                                                <code>boolean</code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>array|null|resource|string</code><p></p>
                                                                     </div>
                             </div>
 
                         </div>
                                             <a id="method_imageOutput"></a>
                         <div class="element clickable method public  method_imageOutput" data-toggle="collapse" data-target=".method_imageOutput .collapse">
-                            <h2>exdoc</h2>
+                            <h2>exdoc
+Output an image based on its mimetype</h2>
                             <pre>imageOutput( $img,  $sizeinfo, null $filename = null, integer $quality = 75) </pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
@@ -2863,24 +2827,6 @@ there is no GD support compiled into the server.  (In this case, null is returne
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    state
-                                                </th>
-                                                <td>
-                                                                                                                                                                        
-                                                                                                                                                                        <p><b>UNDOCUMENTED</b></p>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    node
-                                                </th>
-                                                <td>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>Undocumented</p>
-                                                                                                    </td>
-                                            </tr>
                                                                                     <tr>
                                                 <th>
                                                     
@@ -2914,8 +2860,8 @@ there is no GD support compiled into the server.  (In this case, null is returne
                         </div>
                                             <a id="method_imageRotate"></a>
                         <div class="element clickable method public  method_imageRotate" data-toggle="collapse" data-target=".method_imageRotate .collapse">
-                            <h2>imageRotate</h2>
-                            <pre>imageRotate( $filename,  $degrees) </pre>
+                            <h2>Rotate an image file</h2>
+                            <pre>imageRotate( $filename,  $degrees) : array|null|resource|string</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -2925,20 +2871,6 @@ there is no GD support compiled into the server.  (In this case, null is returne
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                                                     </table>
 
                                                                             <h3>Arguments</h3>
@@ -2951,6 +2883,8 @@ there is no GD support compiled into the server.  (In this case, null is returne
                                                 <code></code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>array|null|resource|string</code><p></p>
                                                                     </div>
                             </div>
 
@@ -3420,7 +3354,7 @@ Move an uploaded temporary file to a more permanent home inside of the Exponent 
                         <div class="element clickable method public  method_openImageFile" data-toggle="collapse" data-target=".method_openImageFile .collapse">
                             <h2>exdoc
 Create an image resource handle (from GD) for a given filename.</h2>
-                            <pre>openImageFile(string $filename) : null|resource|string</pre>
+                            <pre>openImageFile(string $filename,  $sizeinfo = null) : null|resource|string</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -3450,6 +3384,10 @@ is in place, however.</p></div>
                                                                                     <div class="subelement argument">
                                                 <h4>$filename</h4>
                                                 <code>string</code><p><p>The path/filename of the image.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$sizeinfo</h4>
+                                                <code></code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -3511,8 +3449,8 @@ during the parse/restore.</p></p>
                         </div>
                                             <a id="method_recurse_copy"></a>
                         <div class="element clickable method public  method_recurse_copy" data-toggle="collapse" data-target=".method_recurse_copy .collapse">
-                            <h2>recurse_copy</h2>
-                            <pre>recurse_copy( $src,  $dst) </pre>
+                            <h2>Recursively copy file(s)</h2>
+                            <pre>recurse_copy( $src,  $dst) : boolean</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -3522,20 +3460,6 @@ during the parse/restore.</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                                                     </table>
 
                                                                             <h3>Arguments</h3>
@@ -3548,6 +3472,8 @@ during the parse/restore.</p></p>
                                                 <code></code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
                                                                     </div>
                             </div>
 
@@ -5524,7 +5450,7 @@ Default set to FALSE, no it can't</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Tue, 06 Dec 2016 18:02:47 +0000.<br/>
+            generated on Fri, 03 Mar 2017 14:52:03 +0000.<br/>
     </footer>
     </body>
 </html>
