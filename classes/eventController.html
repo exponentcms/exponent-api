@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.4.1 &raquo; \eventController
+    <title>    Exponent v2.4.2 &raquo; \eventController
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.4.1</a>
+                <a class="brand" href="../index.html">Exponent v2.4.2</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -124,8 +124,8 @@
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method__date2timestamp" title="_date2timestamp :: ">
-            <span class="description"></span><pre>_date2timestamp</pre>
+        <a href="#method__date2timestamp" title="_date2timestamp :: iCalCreator Function no longer included in iCalCreator">
+            <span class="description">iCalCreator Function no longer included in iCalCreator</span><pre>_date2timestamp</pre>
         </a>
     </li>
 
@@ -357,6 +357,12 @@
         </a>
     </li>
 
+                                                                                                        <li class="method public">
+        <a href="#method_make_event_link" title="make_event_link :: Convert an event link into a showall_by_date type link">
+            <span class="description">Convert an event link into a showall_by_date type link</span><pre>make_event_link</pre>
+        </a>
+    </li>
+
                                                                                                         <li class="method public inherited">
         <a href="#method_manage" title="manage :: display module management view">
             <span class="description">display module management view</span><pre>manage</pre>
@@ -489,6 +495,12 @@
         </a>
     </li>
 
+                                                                                                        <li class="method public">
+        <a href="#method_showall_by_date" title="showall_by_date :: ">
+            <span class="description"></span><pre>showall_by_date</pre>
+        </a>
+    </li>
+
                                                                                                         <li class="method public inherited">
         <a href="#method_showall_by_date_meta" title="showall_by_date_meta :: action specific metainfo">
             <span class="description">action specific metainfo</span><pre>showall_by_date_meta</pre>
@@ -547,11 +559,11 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -629,8 +641,8 @@
                         </div>
                                             <a id="method__date2timestamp"></a>
                         <div class="element clickable method public  method__date2timestamp" data-toggle="collapse" data-target=".method__date2timestamp .collapse">
-                            <h2>_date2timestamp</h2>
-                            <pre>_date2timestamp( $datetime,  $wtz = null) </pre>
+                            <h2>iCalCreator Function no longer included in iCalCreator</h2>
+                            <pre>_date2timestamp( $datetime, null $wtz = null) : false|integer|string</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -640,20 +652,6 @@
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                                                     </table>
 
                                                                             <h3>Arguments</h3>
@@ -663,9 +661,11 @@
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$wtz</h4>
-                                                <code></code><p></p>
+                                                <code>null</code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>false|integer|string</code><p></p>
                                                                     </div>
                             </div>
 
@@ -2030,6 +2030,42 @@ we the html just like the control smarty function</p>
                             </div>
 
                         </div>
+                                            <a id="method_make_event_link"></a>
+                        <div class="element clickable method public  method_make_event_link" data-toggle="collapse" data-target=".method_make_event_link .collapse">
+                            <h2>Convert an event link into a showall_by_date type link</h2>
+                            <pre>make_event_link( $event_id,  $date_id) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$event_id</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$date_id</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_manage"></a>
                         <div class="element clickable method public  method_manage inherited" data-toggle="collapse" data-target=".method_manage .collapse">
                             <h2>display module management view</h2>
@@ -2721,6 +2757,40 @@ we the html just like the control smarty function</p>
                             <pre>showall() </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_showall_by_date"></a>
+                        <div class="element clickable method public  method_showall_by_date" data-toggle="collapse" data-target=".method_showall_by_date .collapse">
+                            <h2>showall_by_date</h2>
+                            <pre>showall_by_date() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
 
                             
                             <div class="row collapse">
@@ -3627,7 +3697,7 @@ we the html just like the control smarty function</p>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 03 Mar 2017 14:51:55 +0000.<br/>
+            generated on Thu, 21 Dec 2017 17:03:15 +0000.<br/>
     </footer>
     </body>
 </html>

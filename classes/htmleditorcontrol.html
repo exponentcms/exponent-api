@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.4.1 &raquo; \htmleditorcontrol
+    <title>    Exponent v2.4.2 &raquo; \htmleditorcontrol
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.4.1</a>
+                <a class="brand" href="../index.html">Exponent v2.4.2</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -117,7 +117,7 @@
         <li class="nav-header">
             <i class="icon-custom icon-method"></i> Methods
             <ul>
-                                                                                                    <li class="method public">
+                                                                                                    <li class="method public inherited">
         <a href="#method___construct" title="__construct :: ">
             <span class="description"></span><pre>__construct</pre>
         </a>
@@ -237,9 +237,9 @@ Used to determine if control is actually a generic control</span><pre>useGeneric
             <div class="element class">
                 <h1>htmleditorcontrol</h1>
                 <small style="display: block; text-align: right">
-                                            Extends <a href="../classes/formcontrol.html">\formcontrol</a>
+                                            Extends <a href="../classes/htmleditor.html">\htmleditor</a>
                                                         </small>
-                <p class="short_description">Base Form Control Class</p>
+                <p class="short_description">Text Editor Control - displays text area widget</p>
                 <div class="details">
                     <div class="long_description">
                         
@@ -258,11 +258,11 @@ Used to determine if control is actually a generic control</span><pre>useGeneric
 
                     <h3><i class="icon-custom icon-method"></i> Methods</h3>
                                                                 <a id="method___construct"></a>
-                        <div class="element clickable method public  method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+                        <div class="element clickable method public  method___construct inherited" data-toggle="collapse" data-target=".method___construct .collapse">
                             <h2>__construct</h2>
-                            <pre>__construct( $default = &quot;&quot;,  $module = &quot;&quot;,  $rows = 20,  $cols = 60,  $toolbar = &quot;&quot;,  $height = 300) </pre>
+                            <pre>__construct( $default = &quot;&quot;,  $rows = 5,  $cols = 38) </pre>
                             <div class="labels">
-                                                                                                                                                                                            </div>
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
 
                             
                             <div class="row collapse">
@@ -292,23 +292,11 @@ Used to determine if control is actually a generic control</span><pre>useGeneric
                                                 <code></code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
-                                                <h4>$module</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
                                                 <h4>$rows</h4>
                                                 <code></code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$cols</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$toolbar</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$height</h4>
                                                 <code></code><p></p>
                                             </div>
                                                                             
@@ -781,11 +769,11 @@ Used to determine if control is actually a generic control</h2>
                     
                                                                 <h3><i class="icon-custom icon-property"></i> Properties</h3>
                                                     <a id="property_module"> </a>
-                            <div class="element clickable property  public property_module" data-toggle="collapse" data-target=".property_module .collapse">
+                            <div class="element clickable property  public property_module inherited" data-toggle="collapse" data-target=".property_module .collapse">
                                 <h2>module</h2>
                                 <pre>module : </pre>
                                 <div class="labels">
-                                                                                                        </div>
+                                    <span class="label">inherited</span>                                                                    </div>
                                 <div class="row collapse">
                                     <div class="detail-description">
                                         <div class="long_description"></div>
@@ -806,11 +794,111 @@ Used to determine if control is actually a generic control</h2>
                                 </div>
                             </div>
                                                     <a id="property_toolbar"> </a>
-                            <div class="element clickable property  public property_toolbar" data-toggle="collapse" data-target=".property_toolbar .collapse">
+                            <div class="element clickable property  public property_toolbar inherited" data-toggle="collapse" data-target=".property_toolbar .collapse">
                                 <h2>toolbar</h2>
                                 <pre>toolbar : </pre>
                                 <div class="labels">
-                                                                                                        </div>
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_placeholder"> </a>
+                            <div class="element clickable property  public property_placeholder inherited" data-toggle="collapse" data-target=".property_placeholder .collapse">
+                                <h2>placeholder</h2>
+                                <pre>placeholder : </pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_rows"> </a>
+                            <div class="element clickable property  public property_rows inherited" data-toggle="collapse" data-target=".property_rows .collapse">
+                                <h2>rows</h2>
+                                <pre>rows : </pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_cols"> </a>
+                            <div class="element clickable property  public property_cols inherited" data-toggle="collapse" data-target=".property_cols .collapse">
+                                <h2>cols</h2>
+                                <pre>cols : </pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_maxlength"> </a>
+                            <div class="element clickable property  public property_maxlength inherited" data-toggle="collapse" data-target=".property_maxlength .collapse">
+                                <h2>maxlength</h2>
+                                <pre>maxlength : </pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
                                 <div class="row collapse">
                                     <div class="detail-description">
                                         <div class="long_description"></div>
@@ -1250,7 +1338,7 @@ Used to determine if control is actually a generic control</h2>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 03 Mar 2017 14:52:35 +0000.<br/>
+            generated on Thu, 21 Dec 2017 17:03:37 +0000.<br/>
     </footer>
     </body>
 </html>

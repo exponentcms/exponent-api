@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.4.1 &raquo; \elFinderVolumeExponent
+    <title>    Exponent v2.4.2 &raquo; \elFinderVolumeExponent
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.4.1</a>
+                <a class="brand" href="../index.html">Exponent v2.4.2</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -141,13 +141,7 @@
         </a>
     </li>
 
-                                                                                                        <li class="method public">
-        <a href="#method_scan_folder" title="scan_folder :: Recursive method to move expFile record directories">
-            <span class="description">Recursive method to move expFile record directories</span><pre>scan_folder</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public">
+                                                                                                                                                                <li class="method public">
         <a href="#method_shared" title="shared :: Get/Set expFile shared status">
             <span class="description">Get/Set expFile shared status</span><pre>shared</pre>
         </a>
@@ -198,7 +192,12 @@
                                 <span class="description">Remove file</span><pre>_unlink</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                        <li class="method protected">
+                                                                                                                                                                                                                                <li class="method protected">
+                            <a href="#method_scan_folder" title="scan_folder :: Recursive method to move expFile record directories">
+                                <span class="description">Recursive method to move expFile record directories</span><pre>scan_folder</pre>
+                            </a>
+                        </li>
+                                                                                                                    <li class="method protected">
                             <a href="#method_stat" title="stat :: Return fileinfo, also check if in expFiles table and add if missing">
                                 <span class="description">Return fileinfo, also check if in expFiles table and add if missing</span><pre>stat</pre>
                             </a>
@@ -645,7 +644,7 @@ elFinder volume driver for the Exponent CMS expFile filesystem.</p>
                                             <a id="method_paste"></a>
                         <div class="element clickable method public  method_paste" data-toggle="collapse" data-target=".method_paste .collapse">
                             <h2>Paste files</h2>
-                            <pre>paste(Object $volume,  $src, string $dst, boolean $rmSrc = false,  $hashes = array()) : array|false</pre>
+                            <pre>paste(Object $volume,  $src, string $dst, boolean $rmSrc = false, array $hashes = array()) : array|false</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -685,7 +684,7 @@ elFinder volume driver for the Exponent CMS expFile filesystem.</p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$hashes</h4>
-                                                <code></code><p></p>
+                                                <code>array</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -695,7 +694,7 @@ elFinder volume driver for the Exponent CMS expFile filesystem.</p>
 
                         </div>
                                             <a id="method_scan_folder"></a>
-                        <div class="element clickable method public  method_scan_folder" data-toggle="collapse" data-target=".method_scan_folder .collapse">
+                        <div class="element clickable method protected  method_scan_folder" data-toggle="collapse" data-target=".method_scan_folder .collapse">
                             <h2>Recursive method to move expFile record directories</h2>
                             <pre>scan_folder( $npath,  $opath) </pre>
                             <div class="labels">
@@ -850,7 +849,7 @@ elFinder volume driver for the Exponent CMS expFile filesystem.</p>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 03 Mar 2017 14:52:52 +0000.<br/>
+            generated on Thu, 21 Dec 2017 17:03:46 +0000.<br/>
     </footer>
     </body>
 </html>

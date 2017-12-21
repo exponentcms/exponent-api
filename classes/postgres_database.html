@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.4.1 &raquo; \postgres_database
+    <title>    Exponent v2.4.2 &raquo; \postgres_database
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.4.1</a>
+                <a class="brand" href="../index.html">Exponent v2.4.2</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -815,7 +815,7 @@ An aggressive update will drop columns in the table that are not in the Exponent
                                             <a id="method_countObjects"></a>
                         <div class="element clickable method public  method_countObjects inherited" data-toggle="collapse" data-target=".method_countObjects .collapse">
                             <h2>Count Objects matching a given criteria</h2>
-                            <pre>countObjects(string $table, string $where = null, boolean $is_revisioned = false, boolean $needs_approval = false) : integer</pre>
+                            <pre>countObjects(string $table, string $where = null, boolean $is_revisioned = false, boolean $needs_approval = false,  $user = null) : integer</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                <span class="label">abstract</span>                                                            </div>
 
@@ -843,6 +843,10 @@ An aggressive update will drop columns in the table that are not in the Exponent
                                                                                     <div class="subelement argument">
                                                 <h4>$needs_approval</h4>
                                                 <code>boolean</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$user</h4>
+                                                <code></code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -1802,7 +1806,7 @@ Selects a set of arrays from the database.  Because of the way
 Exponent handles objects and database tables, this is akin to
 SELECTing a set of records from a database table.  Returns an
 array of arrays, in any random order.</h2>
-                            <pre>selectArray(string $table, string $where = null, null $orderby = null, boolean $is_revisioned = false, boolean $needs_approval = false) : array|void</pre>
+                            <pre>selectArray(string $table, string $where = null, null $orderby = null, boolean $is_revisioned = false, boolean $needs_approval = false,  $user = null) : array|void</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                <span class="label">abstract</span>                                                            </div>
 
@@ -1837,6 +1841,10 @@ returned</p></p>
                                                 <h4>$needs_approval</h4>
                                                 <code>boolean</code><p></p>
                                             </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$user</h4>
+                                                <code></code><p></p>
+                                            </div>
                                                                             
                                                                             <h3>Response</h3>
                                         <code>array|void</code><p></p>
@@ -1847,7 +1855,7 @@ returned</p></p>
                                             <a id="method_selectArrays"></a>
                         <div class="element clickable method public  method_selectArrays inherited" data-toggle="collapse" data-target=".method_selectArrays .collapse">
                             <h2>Select an array of arrays</h2>
-                            <pre>selectArrays(string $table, string $where = null, string $orderby = null) : array</pre>
+                            <pre>selectArrays(string $table, string $where = null, string $orderby = null,  $is_revisioned = false,  $needs_approval = false,  $user = null) : array</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                <span class="label">abstract</span>                                                            </div>
 
@@ -1876,6 +1884,18 @@ returned</p></p>
                                                                                     <div class="subelement argument">
                                                 <h4>$orderby</h4>
                                                 <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$is_revisioned</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$needs_approval</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$user</h4>
+                                                <code></code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -1999,7 +2019,7 @@ array of arrays, in any random order.</p></div>
                                             <a id="method_selectExpObjects"></a>
                         <div class="element clickable method public  method_selectExpObjects inherited" data-toggle="collapse" data-target=".method_selectExpObjects .collapse">
                             <h2>Instantiate objects from selected records from the database</h2>
-                            <pre>selectExpObjects(string $table, string $where = null,  $classname, boolean $get_assoc = true, boolean $get_attached = true, array $except = array(), boolean $cascade_except = false, null $order = null, null $limitsql = null, boolean $is_revisioned = false, boolean $needs_approval = false) : array</pre>
+                            <pre>selectExpObjects(string $table, string $where = null,  $classname, boolean $get_assoc = true, boolean $get_attached = true, array $except = array(), boolean $cascade_except = false, null $order = null, null $limitsql = null, boolean $is_revisioned = false, boolean $needs_approval = false,  $user = null) : array</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                <span class="label">abstract</span>                                                            </div>
 
@@ -2057,6 +2077,10 @@ returned</p></p>
                                                                                     <div class="subelement argument">
                                                 <h4>$needs_approval</h4>
                                                 <code>boolean</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$user</h4>
+                                                <code></code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -2330,7 +2354,7 @@ If no record(s) match the query, null is returned.</p></div>
                                             <a id="method_selectObjects"></a>
                         <div class="element clickable method public  method_selectObjects inherited" data-toggle="collapse" data-target=".method_selectObjects .collapse">
                             <h2>Select a series of objects</h2>
-                            <pre>selectObjects(string $table, string $where = null, null $orderby = null) : array</pre>
+                            <pre>selectObjects(string $table, string $where = null, null $orderby = null,  $is_revisioned = false,  $needs_approval = false,  $user = null) : array</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                <span class="label">abstract</span>                                                            </div>
 
@@ -2359,6 +2383,18 @@ returned</p></p>
                                                                                     <div class="subelement argument">
                                                 <h4>$orderby</h4>
                                                 <code>null</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$is_revisioned</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$needs_approval</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$user</h4>
+                                                <code></code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -3217,7 +3253,7 @@ the select* methods.</p></p>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 03 Mar 2017 14:52:33 +0000.<br/>
+            generated on Thu, 21 Dec 2017 17:03:36 +0000.<br/>
     </footer>
     </body>
 </html>
