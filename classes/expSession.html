@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.4.2 &raquo; \expSession
+    <title>    Exponent v2.4.3 &raquo; \expSession
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.4.2</a>
+                <a class="brand" href="../index.html">Exponent v2.4.3</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -214,8 +214,14 @@ in, and false if it is not</span><pre>loggedIn</pre>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_login" title="login :: ">
-            <span class="description"></span><pre>login</pre>
+        <a href="#method_login" title="login :: exdoc
+Creates and stores a session ticket for the given user,
+so that sessions can be tracked and permissions can be
+refreshed as needed.">
+            <span class="description">exdoc
+Creates and stores a session ticket for the given user,
+so that sessions can be tracked and permissions can be
+refreshed as needed.</span><pre>login</pre>
         </a>
     </li>
 
@@ -865,8 +871,11 @@ in, and false if it is not</h2>
                         </div>
                                             <a id="method_login"></a>
                         <div class="element clickable method public  method_login" data-toggle="collapse" data-target=".method_login .collapse">
-                            <h2>login</h2>
-                            <pre>login( $user) </pre>
+                            <h2>exdoc
+Creates and stores a session ticket for the given user,
+so that sessions can be tracked and permissions can be
+refreshed as needed.</h2>
+                            <pre>login(\User $user) </pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -878,9 +887,11 @@ in, and false if it is not</h2>
                                     <table class="table">
                                                                                     <tr>
                                                 <th>
-                                                    
+                                                    node
                                                 </th>
                                                 <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Subsystems:Sessions</p>
                                                                                                     </td>
                                             </tr>
                                                                                     <tr>
@@ -895,7 +906,7 @@ in, and false if it is not</h2>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$user</h4>
-                                                <code></code><p></p>
+                                                <code>\User</code><p><p>The user object of the newly logged-in user.</p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -1255,7 +1266,7 @@ cannot be changed using this call (for security / sanity reason)</p></div>
                         <div class="element clickable method public  method_updateTicket" data-toggle="collapse" data-target=".method_updateTicket .collapse">
                             <h2>exdoc
 Creates user ticket in sessionticket table and session</h2>
-                            <pre>updateTicket( $ticket, \user/object $user) : </pre>
+                            <pre>updateTicket( $ticket,  $user) : mixed</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -1283,11 +1294,11 @@ Creates user ticket in sessionticket table and session</h2>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$user</h4>
-                                                <code>\user/object</code><p><p>The user object of the newly logged-in user. Uses id of 0 if not supplied.</p></p>
+                                                <code></code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
-                                        <code></code><p></p>
+                                        <code>mixed</code><p></p>
                                                                     </div>
                             </div>
 
@@ -1359,7 +1370,7 @@ to force refreshes and force logouts.  It also updates activity time.</h2>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Thu, 21 Dec 2017 17:03:43 +0000.<br/>
+            generated on Fri, 20 Apr 2018 19:29:02 +0000.<br/>
     </footer>
     </body>
 </html>

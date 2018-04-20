@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.4.2 &raquo; \navigationController
+    <title>    Exponent v2.4.3 &raquo; \navigationController
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.4.2</a>
+                <a class="brand" href="../index.html">Exponent v2.4.3</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -124,8 +124,8 @@
     </li>
 
                                                                                                         <li class="method public inherited">
-        <a href="#method_addContentToSearch" title="addContentToSearch :: add module items to search index">
-            <span class="description">add module items to search index</span><pre>addContentToSearch</pre>
+        <a href="#method_addContentToSearch" title="addContentToSearch :: add module item or all items to search index">
+            <span class="description">add module item or all items to search index</span><pre>addContentToSearch</pre>
         </a>
     </li>
 
@@ -742,7 +742,7 @@ sections to specific parts of the site hierarchy.</span><pre>levelShowDropdown</
                                                                 <a id="method___construct"></a>
                         <div class="element clickable method public  method___construct inherited" data-toggle="collapse" data-target=".method___construct .collapse">
                             <h2>__construct</h2>
-                            <pre>__construct(null $src = null, array $params = array()) : \expController</pre>
+                            <pre>__construct(null $src = null, array $params = array()) </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
 
@@ -752,7 +752,23 @@ sections to specific parts of the site hierarchy.</span><pre>levelShowDropdown</
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                                                    </table>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>\ReflectionException</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -764,15 +780,13 @@ sections to specific parts of the site hierarchy.</span><pre>levelShowDropdown</
                                                 <code>array</code><p></p>
                                             </div>
                                                                             
-                                                                            <h3>Response</h3>
-                                        <code><a href="../classes/expController.html">\expController</a></code><p></p>
                                                                     </div>
                             </div>
 
                         </div>
                                             <a id="method_addContentToSearch"></a>
                         <div class="element clickable method public  method_addContentToSearch inherited" data-toggle="collapse" data-target=".method_addContentToSearch .collapse">
-                            <h2>add module items to search index</h2>
+                            <h2>add module item or all items to search index</h2>
                             <pre>addContentToSearch() : integer</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
@@ -790,11 +804,20 @@ sections to specific parts of the site hierarchy.</span><pre>levelShowDropdown</
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                                                                    </table>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>\ReflectionException</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
 
                                     
                                                                             <h3>Response</h3>
-                                        <code>integer</code><p></p>
+                                        <code>integer</code><p><p>number of items added to search index</p></p>
                                                                     </div>
                             </div>
 
@@ -1018,7 +1041,7 @@ sections to specific parts of the site hierarchy.</span><pre>levelShowDropdown</
                                             <a id="method_canView"></a>
                         <div class="element clickable method public deprecated method_canView" data-toggle="collapse" data-target=".method_canView .collapse">
                             <h2>Check for cascading page view permission, esp. if not public</h2>
-                            <pre>canView( $section) </pre>
+                            <pre>canView( $section) : boolean</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -1037,20 +1060,6 @@ sections to specific parts of the site hierarchy.</span><pre>levelShowDropdown</
                                                                                                                                                                         <p>moved to section model</p>
                                                                                                     </td>
                                             </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                                                     </table>
 
                                                                             <h3>Arguments</h3>
@@ -1059,6 +1068,8 @@ sections to specific parts of the site hierarchy.</span><pre>levelShowDropdown</
                                                 <code></code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
                                                                     </div>
                             </div>
 
@@ -1378,7 +1389,16 @@ sections to specific parts of the site hierarchy.</span><pre>levelShowDropdown</
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                                                                    </table>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>\ReflectionException</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -2002,7 +2022,7 @@ sections to specific parts of the site hierarchy.</span><pre>levelShowDropdown</
                                             <a id="method_getChildren"></a>
                         <div class="element clickable method public deprecated method_getChildren" data-toggle="collapse" data-target=".method_getChildren .collapse">
                             <h2>getChildren</h2>
-                            <pre>getChildren( &$i,  $notyui = false) </pre>
+                            <pre>getChildren( &$i, boolean $notyui = false) : array</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -2021,20 +2041,6 @@ sections to specific parts of the site hierarchy.</span><pre>levelShowDropdown</
                                                                                                                                                                         <p>moved to section model</p>
                                                                                                     </td>
                                             </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                                                     </table>
 
                                                                             <h3>Arguments</h3>
@@ -2044,9 +2050,11 @@ sections to specific parts of the site hierarchy.</span><pre>levelShowDropdown</
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$notyui</h4>
-                                                <code></code><p></p>
+                                                <code>boolean</code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
                                                                     </div>
                             </div>
 
@@ -2083,7 +2091,7 @@ sections to specific parts of the site hierarchy.</span><pre>levelShowDropdown</
                                             <a id="method_getRSSContent"></a>
                         <div class="element clickable method public  method_getRSSContent inherited" data-toggle="collapse" data-target=".method_getRSSContent .collapse">
                             <h2>get the module&#039;s items in an rss feed format</h2>
-                            <pre>getRSSContent( $limit) : array</pre>
+                            <pre>getRSSContent(integer $limit) : array</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
 
@@ -2093,19 +2101,12 @@ sections to specific parts of the site hierarchy.</span><pre>levelShowDropdown</
                                     <div class="long_description"><p>this function is very general and will most of the time need to be overwritten and customized</p></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                                                     </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$limit</h4>
-                                                <code></code><p></p>
+                                                <code>integer</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -2166,7 +2167,7 @@ sections to specific parts of the site hierarchy.</span><pre>levelShowDropdown</
                                             <a id="method_hasChildren"></a>
                         <div class="element clickable method public deprecated method_hasChildren" data-toggle="collapse" data-target=".method_hasChildren .collapse">
                             <h2>hasChildren</h2>
-                            <pre>hasChildren( $i) </pre>
+                            <pre>hasChildren( $i) : boolean</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -2185,20 +2186,6 @@ sections to specific parts of the site hierarchy.</span><pre>levelShowDropdown</
                                                                                                                                                                         <p>moved to section model</p>
                                                                                                     </td>
                                             </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                                                     </table>
 
                                                                             <h3>Arguments</h3>
@@ -2207,6 +2194,8 @@ sections to specific parts of the site hierarchy.</span><pre>levelShowDropdown</
                                                 <code></code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
                                                                     </div>
                             </div>
 
@@ -2350,7 +2339,7 @@ Creates a location object, based off of the three arguments passed, and returns 
                                             <a id="method_isPublic"></a>
                         <div class="element clickable method public deprecated method_isPublic" data-toggle="collapse" data-target=".method_isPublic .collapse">
                             <h2>Check to see if page is public with cascading</h2>
-                            <pre>isPublic( $s) </pre>
+                            <pre>isPublic( $s) : boolean|integer</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -2369,20 +2358,6 @@ Creates a location object, based off of the three arguments passed, and returns 
                                                                                                                                                                         <p>moved to section model</p>
                                                                                                     </td>
                                             </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                                                     </table>
 
                                                                             <h3>Arguments</h3>
@@ -2391,6 +2366,8 @@ Creates a location object, based off of the three arguments passed, and returns 
                                                 <code></code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>boolean|integer</code><p></p>
                                                                     </div>
                             </div>
 
@@ -2988,7 +2965,7 @@ when moving a section, since a section cannot be made a subsection of itself or 
                                             <a id="method_navhierarchy"></a>
                         <div class="element clickable method public deprecated method_navhierarchy" data-toggle="collapse" data-target=".method_navhierarchy .collapse">
                             <h2>navhierarchy</h2>
-                            <pre>navhierarchy( $notyui = false) </pre>
+                            <pre>navhierarchy(boolean $notyui = false) : array</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -3007,28 +2984,16 @@ when moving a section, since a section cannot be made a subsection of itself or 
                                                                                                                                                                         <p>moved to section model</p>
                                                                                                     </td>
                                             </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                                                     </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$notyui</h4>
-                                                <code></code><p></p>
+                                                <code>boolean</code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
                                                                     </div>
                             </div>
 
@@ -3163,13 +3128,6 @@ when moving a section, since a section cannot be made a subsection of itself or 
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                                                     </table>
 
                                                                             <h3>Arguments</h3>
@@ -3206,13 +3164,6 @@ when moving a section, since a section cannot be made a subsection of itself or 
                                                 <td>
                                                                                                                                                                         2.0.0
                                                                                                                                                                         <p>this only for deprecated templates</p>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
                                                                                                     </td>
                                             </tr>
                                                                                     <tr>
@@ -4659,7 +4610,7 @@ when moving a section, since a section cannot be made a subsection of itself or 
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Thu, 21 Dec 2017 17:03:58 +0000.<br/>
+            generated on Fri, 20 Apr 2018 19:30:43 +0000.<br/>
     </footer>
     </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.4.2 &raquo; \searchController
+    <title>    Exponent v2.4.3 &raquo; \searchController
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.4.2</a>
+                <a class="brand" href="../index.html">Exponent v2.4.3</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -124,8 +124,8 @@
     </li>
 
                                                                                                         <li class="method public inherited">
-        <a href="#method_addContentToSearch" title="addContentToSearch :: add module items to search index">
-            <span class="description">add module items to search index</span><pre>addContentToSearch</pre>
+        <a href="#method_addContentToSearch" title="addContentToSearch :: add module item or all items to search index">
+            <span class="description">add module item or all items to search index</span><pre>addContentToSearch</pre>
         </a>
     </li>
 
@@ -387,6 +387,12 @@
         </a>
     </li>
 
+                                                                                                        <li class="method public">
+        <a href="#method_search_meta" title="search_meta :: action specific metainfo">
+            <span class="description">action specific metainfo</span><pre>search_meta</pre>
+        </a>
+    </li>
+
                                                                                                         <li class="method public inherited">
         <a href="#method_searchCategory" title="searchCategory :: category of items searched in the module">
             <span class="description">category of items searched in the module</span><pre>searchCategory</pre>
@@ -493,11 +499,11 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -545,7 +551,7 @@
                                                                 <a id="method___construct"></a>
                         <div class="element clickable method public  method___construct inherited" data-toggle="collapse" data-target=".method___construct .collapse">
                             <h2>__construct</h2>
-                            <pre>__construct(null $src = null, array $params = array()) : \expController</pre>
+                            <pre>__construct(null $src = null, array $params = array()) </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
 
@@ -555,7 +561,23 @@
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                                                    </table>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>\ReflectionException</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -567,15 +589,13 @@
                                                 <code>array</code><p></p>
                                             </div>
                                                                             
-                                                                            <h3>Response</h3>
-                                        <code><a href="../classes/expController.html">\expController</a></code><p></p>
                                                                     </div>
                             </div>
 
                         </div>
                                             <a id="method_addContentToSearch"></a>
                         <div class="element clickable method public  method_addContentToSearch inherited" data-toggle="collapse" data-target=".method_addContentToSearch .collapse">
-                            <h2>add module items to search index</h2>
+                            <h2>add module item or all items to search index</h2>
                             <pre>addContentToSearch() : integer</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
@@ -593,11 +613,20 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                                                                    </table>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>\ReflectionException</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
 
                                     
                                                                             <h3>Response</h3>
-                                        <code>integer</code><p></p>
+                                        <code>integer</code><p><p>number of items added to search index</p></p>
                                                                     </div>
                             </div>
 
@@ -1092,7 +1121,16 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                                                                    </table>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>\ReflectionException</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1330,7 +1368,7 @@
                                             <a id="method_getRSSContent"></a>
                         <div class="element clickable method public  method_getRSSContent inherited" data-toggle="collapse" data-target=".method_getRSSContent .collapse">
                             <h2>get the module&#039;s items in an rss feed format</h2>
-                            <pre>getRSSContent( $limit) : array</pre>
+                            <pre>getRSSContent(integer $limit) : array</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
 
@@ -1340,19 +1378,12 @@
                                     <div class="long_description"><p>this function is very general and will most of the time need to be overwritten and customized</p></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                                                     </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$limit</h4>
-                                                <code></code><p></p>
+                                                <code>integer</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -2015,6 +2046,33 @@
                                                                                                                     </table>
 
                                     
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_search_meta"></a>
+                        <div class="element clickable method public  method_search_meta" data-toggle="collapse" data-target=".method_search_meta .collapse">
+                            <h2>action specific metainfo</h2>
+                            <pre>search_meta( $request) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$request</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
                                                                     </div>
                             </div>
 
@@ -3152,7 +3210,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Thu, 21 Dec 2017 17:03:23 +0000.<br/>
+            generated on Fri, 20 Apr 2018 19:26:49 +0000.<br/>
     </footer>
     </body>
 </html>

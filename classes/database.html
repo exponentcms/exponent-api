@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.4.2 &raquo; \database
+    <title>    Exponent v2.4.3 &raquo; \database
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.4.2</a>
+                <a class="brand" href="../index.html">Exponent v2.4.3</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -470,6 +470,12 @@ array of arrays, in any random order.</span><pre>selectArray</pre>
     </li>
 
                                                                                                         <li class="method public">
+        <a href="#method_sql_connect_pdo" title="sql_connect_pdo :: Connect to the database by PDO">
+            <span class="description">Connect to the database by PDO</span><pre>sql_connect_pdo</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
         <a href="#method_switchValues" title="switchValues :: Switch field values between two entries in a  Table">
             <span class="description">Switch field values between two entries in a  Table</span><pre>switchValues</pre>
         </a>
@@ -527,11 +533,11 @@ array of arrays, in any random order.</span><pre>selectArray</pre>
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -548,7 +554,7 @@ array of arrays, in any random order.</span><pre>selectArray</pre>
                 <h1>database</h1>
                 <small style="display: block; text-align: right">
                                                         </small>
-                <p class="short_description">This is the class database</p>
+                <p class="short_description">This is the abstract class database</p>
                 <div class="details">
                     <div class="long_description">
                         <p>This is the generic implementation of the database class.</p>
@@ -784,7 +790,7 @@ An aggressive update will drop columns in the table that are not in the Exponent
                                             <a id="method_countObjects"></a>
                         <div class="element clickable method public  method_countObjects" data-toggle="collapse" data-target=".method_countObjects .collapse">
                             <h2>Count Objects matching a given criteria</h2>
-                            <pre>countObjects(string $table, string $where = null, boolean $is_revisioned = false, boolean $needs_approval = false,  $user = null) : integer</pre>
+                            <pre>countObjects(string $table, string $where = null, boolean $is_revisioned = false, boolean $needs_approval = false, null $user = null) : integer</pre>
                             <div class="labels">
                                                                                                                                 <span class="label">abstract</span>                                                            </div>
 
@@ -815,7 +821,7 @@ An aggressive update will drop columns in the table that are not in the Exponent
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$user</h4>
-                                                <code></code><p></p>
+                                                <code>null</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -1030,7 +1036,7 @@ increment, but the increment() method is preferred, for readability.</p></p>
                                             <a id="method_describeTable"></a>
                         <div class="element clickable method public  method_describeTable" data-toggle="collapse" data-target=".method_describeTable .collapse">
                             <h2>describeTable</h2>
-                            <pre>describeTable( $table) : array</pre>
+                            <pre>describeTable( $table) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -1040,6 +1046,13 @@ increment, but the increment() method is preferred, for readability.</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
                                                                                                                     </table>
 
                                                                             <h3>Arguments</h3>
@@ -1048,8 +1061,6 @@ increment, but the increment() method is preferred, for readability.</p></p>
                                                 <code></code><p></p>
                                             </div>
                                                                             
-                                                                            <h3>Response</h3>
-                                        <code>array</code><p></p>
                                                                     </div>
                             </div>
 
@@ -1544,7 +1555,7 @@ for a GROUP BY clause.  This can also be passed as an array of fields.</p></p>
                                             <a id="method_selectAndJoinObjects"></a>
                         <div class="element clickable method public  method_selectAndJoinObjects" data-toggle="collapse" data-target=".method_selectAndJoinObjects .collapse">
                             <h2>selectAndJoinObjects</h2>
-                            <pre>selectAndJoinObjects(null $colsA = null, null $colsB = null,  $tableA,  $tableB,  $keyA, null $keyB = null, null $where = null, null $orderby = null) : \array&#039;</pre>
+                            <pre>selectAndJoinObjects(null $colsA = null, null $colsB = null,  $tableA,  $tableB,  $keyA, null $keyB = null, null $where = null, null $orderby = null) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -1554,6 +1565,13 @@ for a GROUP BY clause.  This can also be passed as an array of fields.</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
                                                                                                                     </table>
 
                                                                             <h3>Arguments</h3>
@@ -1590,8 +1608,6 @@ for a GROUP BY clause.  This can also be passed as an array of fields.</p></p>
                                                 <code>null</code><p></p>
                                             </div>
                                                                             
-                                                                            <h3>Response</h3>
-                                        <code>\array'</code><p></p>
                                                                     </div>
                             </div>
 
@@ -1603,7 +1619,7 @@ Selects a set of arrays from the database.  Because of the way
 Exponent handles objects and database tables, this is akin to
 SELECTing a set of records from a database table.  Returns an
 array of arrays, in any random order.</h2>
-                            <pre>selectArray(string $table, string $where = null, null $orderby = null, boolean $is_revisioned = false, boolean $needs_approval = false,  $user = null) : array|void</pre>
+                            <pre>selectArray(string $table, string $where = null, null $orderby = null, boolean $is_revisioned = false, boolean $needs_approval = false, null $user = null) : array|void</pre>
                             <div class="labels">
                                                                                                                                 <span class="label">abstract</span>                                                            </div>
 
@@ -1640,7 +1656,7 @@ returned</p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$user</h4>
-                                                <code></code><p></p>
+                                                <code>null</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -1652,7 +1668,7 @@ returned</p></p>
                                             <a id="method_selectArrays"></a>
                         <div class="element clickable method public  method_selectArrays" data-toggle="collapse" data-target=".method_selectArrays .collapse">
                             <h2>Select an array of arrays</h2>
-                            <pre>selectArrays(string $table, string $where = null, string $orderby = null,  $is_revisioned = false,  $needs_approval = false,  $user = null) : array</pre>
+                            <pre>selectArrays(string $table, string $where = null, string $orderby = null, boolean $is_revisioned = false, boolean $needs_approval = false, null $user = null) : array</pre>
                             <div class="labels">
                                                                                                                                 <span class="label">abstract</span>                                                            </div>
 
@@ -1684,15 +1700,15 @@ returned</p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$is_revisioned</h4>
-                                                <code></code><p></p>
+                                                <code>boolean</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$needs_approval</h4>
-                                                <code></code><p></p>
+                                                <code>boolean</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$user</h4>
-                                                <code></code><p></p>
+                                                <code>null</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -1816,7 +1832,7 @@ array of arrays, in any random order.</p></div>
                                             <a id="method_selectExpObjects"></a>
                         <div class="element clickable method public  method_selectExpObjects" data-toggle="collapse" data-target=".method_selectExpObjects .collapse">
                             <h2>Instantiate objects from selected records from the database</h2>
-                            <pre>selectExpObjects(string $table, string $where = null,  $classname, boolean $get_assoc = true, boolean $get_attached = true, array $except = array(), boolean $cascade_except = false, null $order = null, null $limitsql = null, boolean $is_revisioned = false, boolean $needs_approval = false,  $user = null) : array</pre>
+                            <pre>selectExpObjects(string $table, string $where = null,  $classname, boolean $get_assoc = true, boolean $get_attached = true, array $except = array(), boolean $cascade_except = false, null $order = null, null $limitsql = null, boolean $is_revisioned = false, boolean $needs_approval = false, null $user = null) : array</pre>
                             <div class="labels">
                                                                                                                                 <span class="label">abstract</span>                                                            </div>
 
@@ -1877,7 +1893,7 @@ returned</p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$user</h4>
-                                                <code></code><p></p>
+                                                <code>null</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -1889,7 +1905,7 @@ returned</p></p>
                                             <a id="method_selectExpObjectsBySql"></a>
                         <div class="element clickable method public  method_selectExpObjectsBySql" data-toggle="collapse" data-target=".method_selectExpObjectsBySql .collapse">
                             <h2>Instantiate objects from selected records from the database</h2>
-                            <pre>selectExpObjectsBySql(string $sql, string $classname, boolean $get_assoc = true, boolean $get_attached = true) : array</pre>
+                            <pre>selectExpObjectsBySql(string $sql, string $classname, boolean $get_assoc = true, boolean $get_attached = true) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -1899,6 +1915,13 @@ returned</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
                                                                                                                     </table>
 
                                                                             <h3>Arguments</h3>
@@ -1920,8 +1943,6 @@ Returns an array of fields</p></p>
                                                 <code>boolean</code><p></p>
                                             </div>
                                                                             
-                                                                            <h3>Response</h3>
-                                        <code>array</code><p></p>
                                                                     </div>
                             </div>
 
@@ -2151,7 +2172,7 @@ If no record(s) match the query, null is returned.</p></div>
                                             <a id="method_selectObjects"></a>
                         <div class="element clickable method public  method_selectObjects" data-toggle="collapse" data-target=".method_selectObjects .collapse">
                             <h2>Select a series of objects</h2>
-                            <pre>selectObjects(string $table, string $where = null, null $orderby = null,  $is_revisioned = false,  $needs_approval = false,  $user = null) : array</pre>
+                            <pre>selectObjects(string $table, string $where = null, null $orderby = null, boolean $is_revisioned = false, boolean $needs_approval = false, null $user = null) : array</pre>
                             <div class="labels">
                                                                                                                                 <span class="label">abstract</span>                                                            </div>
 
@@ -2183,15 +2204,15 @@ returned</p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$is_revisioned</h4>
-                                                <code></code><p></p>
+                                                <code>boolean</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$needs_approval</h4>
-                                                <code></code><p></p>
+                                                <code>boolean</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$user</h4>
-                                                <code></code><p></p>
+                                                <code>null</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -2337,7 +2358,7 @@ returned</p></p>
                                             <a id="method_selectSearch"></a>
                         <div class="element clickable method public  method_selectSearch" data-toggle="collapse" data-target=".method_selectSearch .collapse">
                             <h2>selectSearch</h2>
-                            <pre>selectSearch( $terms, null $where = null) : array</pre>
+                            <pre>selectSearch( $terms, null $where = null) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -2347,6 +2368,13 @@ returned</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
                                                                                                                     </table>
 
                                                                             <h3>Arguments</h3>
@@ -2359,8 +2387,6 @@ returned</p></p>
                                                 <code>null</code><p></p>
                                             </div>
                                                                             
-                                                                            <h3>Response</h3>
-                                        <code>array</code><p></p>
                                                                     </div>
                             </div>
 
@@ -2368,7 +2394,7 @@ returned</p></p>
                                             <a id="method_selectSum"></a>
                         <div class="element clickable method public  method_selectSum" data-toggle="collapse" data-target=".method_selectSum .collapse">
                             <h2>selectSum</h2>
-                            <pre>selectSum( $table,  $col, null $where = null) : integer</pre>
+                            <pre>selectSum( $table,  $col, null $where = null) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -2378,6 +2404,13 @@ returned</p></p>
                                     <div class="long_description"></div>
 
                                     <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
                                                                                                                     </table>
 
                                                                             <h3>Arguments</h3>
@@ -2394,8 +2427,6 @@ returned</p></p>
                                                 <code>null</code><p></p>
                                             </div>
                                                                             
-                                                                            <h3>Response</h3>
-                                        <code>integer</code><p></p>
                                                                     </div>
                             </div>
 
@@ -2532,6 +2563,35 @@ provided as a last resort.</p></div>
                                                                             
                                                                             <h3>Response</h3>
                                         <code>mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_sql_connect_pdo"></a>
+                        <div class="element clickable method public  method_sql_connect_pdo" data-toggle="collapse" data-target=".method_sql_connect_pdo .collapse">
+                            <h2>Connect to the database by PDO</h2>
+                            <pre>sql_connect_pdo() : \PDO</pre>
+                            <div class="labels">
+                                                                                                                                <span class="label">abstract</span>                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>\PDO</code><p><p>Database connection handle</p></p>
                                                                     </div>
                             </div>
 
@@ -2744,7 +2804,7 @@ true if the test succeeded, and false if it failed.</p></div>
                                             <a id="method_trim_revisions"></a>
                         <div class="element clickable method public  method_trim_revisions" data-toggle="collapse" data-target=".method_trim_revisions .collapse">
                             <h2>Reduces table item revisions to a passed total</h2>
-                            <pre>trim_revisions(string $table, integer $id, integer $num, integer $workflow = ENABLE_WORKFLOW) </pre>
+                            <pre>trim_revisions(string $table, integer $id, integer $num, integer|string $workflow = ENABLE_WORKFLOW) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -2778,7 +2838,7 @@ true if the test succeeded, and false if it failed.</p></div>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$workflow</h4>
-                                                <code>integer</code><p><p>is workflow turned on (or force)</p></p>
+                                                <code>integer|string</code><p><p>is workflow turned on (or force)</p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -2961,7 +3021,7 @@ the select* methods.</p></p>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Thu, 21 Dec 2017 17:03:51 +0000.<br/>
+            generated on Fri, 20 Apr 2018 19:29:59 +0000.<br/>
     </footer>
     </body>
 </html>

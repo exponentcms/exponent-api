@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.4.2 &raquo; \expFile
+    <title>    Exponent v2.4.3 &raquo; \expFile
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.4.2</a>
+                <a class="brand" href="../index.html">Exponent v2.4.3</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -130,8 +130,8 @@
     </li>
 
                                                                                                         <li class="method public inherited">
-        <a href="#method_afterDelete" title="afterDelete :: is run after deleting item">
-            <span class="description">is run after deleting item</span><pre>afterDelete</pre>
+        <a href="#method_afterDelete" title="afterDelete :: is run after deleting item, should delete associated items here if needed">
+            <span class="description">is run after deleting item, should delete associated items here if needed</span><pre>afterDelete</pre>
         </a>
     </li>
 
@@ -461,6 +461,16 @@ Proportionally scale an image to a given width. Height adjusts accordingly.</spa
         </a>
     </li>
 
+                                                                                                        <li class="method public">
+        <a href="#method_is_file" title="is_file :: exdoc
+Checks to see if the file exists case-insensitive.  This is to circumvent
+the case sensitive php is_file.">
+            <span class="description">exdoc
+Checks to see if the file exists case-insensitive.  This is to circumvent
+the case sensitive php is_file.</span><pre>is_file</pre>
+        </a>
+    </li>
+
                                                                                                         <li class="method public inherited">
         <a href="#method_isSearchable" title="isSearchable :: is model content searchable?">
             <span class="description">is model content searchable?</span><pre>isSearchable</pre>
@@ -476,6 +486,16 @@ or directory name, and the value is the file or directory name.">
 Lists files and directories under a given parent directory. Returns an
 associative, flat array of files and directories.  The key is the full file
 or directory name, and the value is the file or directory name.</span><pre>listFlat</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_make_expFile" title="make_expFile :: Return expFile object for given path
+  either an existing or a new expFile
+  prevents duplication of existing expFile objects">
+            <span class="description">Return expFile object for given path
+  either an existing or a new expFile
+  prevents duplication of existing expFile objects</span><pre>make_expFile</pre>
         </a>
     </li>
 
@@ -502,6 +522,12 @@ a SYS_FILES_* constant, indicating its status.</span><pre>makeDirectory</pre>
 Move an uploaded temporary file to a more permanent home inside of the Exponent files/ directory.">
             <span class="description">exdoc
 Move an uploaded temporary file to a more permanent home inside of the Exponent files/ directory.</span><pre>moveUploadedFile</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_name" title="name :: name of module for backwards compat with old modules">
+            <span class="description">name of module for backwards compat with old modules</span><pre>name</pre>
         </a>
     </li>
 
@@ -587,7 +613,7 @@ was fine.</span><pre>restoreDatabase</pre>
         </a>
     </li>
 
-                                                                                                                                                                <li class="method public inherited">
+                                                                                                        <li class="method public inherited">
         <a href="#method_save" title="save :: save item">
             <span class="description">save item</span><pre>save</pre>
         </a>
@@ -651,7 +677,7 @@ accidentally uploading over the top of another file.</span><pre>uploadDestinatio
                                 <span class="description">get attached objects for this item</span><pre>getAttachableItems</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
@@ -660,17 +686,12 @@ accidentally uploading over the top of another file.</span><pre>uploadDestinatio
                                 <span class="description">gets associated objects for this model</span><pre>getAssociatedObjectsForThisModel</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method private inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method private inherited">
                             <a href="#method_makeManyToManyTablename" title="makeManyToManyTablename :: create a many to many table relationship">
                                 <span class="description">create a many to many table relationship</span><pre>makeManyToManyTablename</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="method private inherited">
-                            <a href="#method_runCallback" title="runCallback :: jump to subclass calling routine">
-                                <span class="description">jump to subclass calling routine</span><pre>runCallback</pre>
-                            </a>
-                        </li>
-                                                                                                                                                                                                                                                                                                            </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -770,7 +791,7 @@ This is a &quot;relabel&quot; of the PHP &#039;LOCK_EX&#039; constant</span><pre
                                                                 <a id="method___construct"></a>
                         <div class="element clickable method public  method___construct inherited" data-toggle="collapse" data-target=".method___construct .collapse">
                             <h2>__construct</h2>
-                            <pre>__construct(null $params = null, boolean $get_assoc = true, boolean $get_attached = true) : \expRecord</pre>
+                            <pre>__construct(null $params = null, boolean $get_assoc = true, boolean $get_attached = true) </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
 
@@ -780,7 +801,23 @@ This is a &quot;relabel&quot; of the PHP &#039;LOCK_EX&#039; constant</span><pre
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                                                    </table>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>\ReflectionException</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -796,8 +833,6 @@ This is a &quot;relabel&quot; of the PHP &#039;LOCK_EX&#039; constant</span><pre
                                                 <code>boolean</code><p></p>
                                             </div>
                                                                             
-                                                                            <h3>Response</h3>
-                                        <code><a href="../classes/expRecord.html">\expRecord</a></code><p></p>
                                                                     </div>
                             </div>
 
@@ -838,7 +873,7 @@ This is a &quot;relabel&quot; of the PHP &#039;LOCK_EX&#039; constant</span><pre
                         </div>
                                             <a id="method_afterDelete"></a>
                         <div class="element clickable method public  method_afterDelete inherited" data-toggle="collapse" data-target=".method_afterDelete .collapse">
-                            <h2>is run after deleting item</h2>
+                            <h2>is run after deleting item, should delete associated items here if needed</h2>
                             <pre>afterDelete() </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
@@ -1368,15 +1403,6 @@ field values are also populated into class properties.</p></div>
                                     <table class="table">
                                                                                     <tr>
                                                 <th>
-                                                    name
-                                                </th>
-                                                <td>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>build</p>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
                                                     category
                                                 </th>
                                                 <td>
@@ -1678,7 +1704,7 @@ sub-directories named &quot;dir&quot;, regardless of their parent.</p></p>
                                             <a id="method_download"></a>
                         <div class="element clickable method public  method_download" data-toggle="collapse" data-target=".method_download .collapse">
                             <h2>prompts the user to download a file</h2>
-                            <pre>download(string $file) : void</pre>
+                            <pre>download(string $file) : boolean</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -1724,16 +1750,7 @@ sub-directories named &quot;dir&quot;, regardless of their parent.</p></p>
                                                                                                                                                                         <p>Not Defined|Implement|Completed</p>
                                                                                                     </td>
                                             </tr>
-                                                                                                                            <tr>
-                                                <th>Throws</th>
-                                                <td>
-                                                    <dl>
-                                                                                                            <dt>void</dt>
-                                                        <dd></dd>
-                                                                                                                                                            </dl>
-                                                </td>
-                                            </tr>
-                                                                            </table>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -1741,6 +1758,8 @@ sub-directories named &quot;dir&quot;, regardless of their parent.</p></p>
                                                 <code>string</code><p><p>Full path to file to download</p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
                                                                     </div>
                             </div>
 
@@ -3113,6 +3132,44 @@ there is no GD support compiled into the server.  (In this case, null is returne
                             </div>
 
                         </div>
+                                            <a id="method_is_file"></a>
+                        <div class="element clickable method public  method_is_file" data-toggle="collapse" data-target=".method_is_file .collapse">
+                            <h2>exdoc
+Checks to see if the file exists case-insensitive.  This is to circumvent
+the case sensitive php is_file.</h2>
+                            <pre>is_file(string $filename) : boolean</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Returns true if the file already exists, and false if it does not.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    node
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Model:expFile</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filename</h4>
+                                                <code>string</code><p><p>The file (with path) to check.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_isSearchable"></a>
                         <div class="element clickable method public  method_isSearchable inherited" data-toggle="collapse" data-target=".method_isSearchable .collapse">
                             <h2>is model content searchable?</h2>
@@ -3197,6 +3254,35 @@ sub-directories named &quot;dir&quot;, regardless of their parent.</p></p>
                                                                             
                                                                             <h3>Response</h3>
                                         <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_make_expFile"></a>
+                        <div class="element clickable method public  method_make_expFile" data-toggle="collapse" data-target=".method_make_expFile .collapse">
+                            <h2>Return expFile object for given path
+  either an existing or a new expFile
+  prevents duplication of existing expFile objects</h2>
+                            <pre>make_expFile( $path) : array|\expFile|integer</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$path</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array|<a href="../classes/expFile.html">\expFile</a>|integer</code><p></p>
                                                                     </div>
                             </div>
 
@@ -3350,11 +3436,40 @@ Move an uploaded temporary file to a more permanent home inside of the Exponent 
                             </div>
 
                         </div>
+                                            <a id="method_name"></a>
+                        <div class="element clickable method public  method_name inherited" data-toggle="collapse" data-target=".method_name .collapse">
+                            <h2>name of module for backwards compat with old modules</h2>
+                            <pre>name() : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_openImageFile"></a>
                         <div class="element clickable method public  method_openImageFile" data-toggle="collapse" data-target=".method_openImageFile .collapse">
                             <h2>exdoc
 Create an image resource handle (from GD) for a given filename.</h2>
-                            <pre>openImageFile(string $filename,  $sizeinfo = null) : null|resource|string</pre>
+                            <pre>openImageFile(string $filename, null $sizeinfo = null) : null|resource|string</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -3387,7 +3502,7 @@ is in place, however.</p></div>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$sizeinfo</h4>
-                                                <code></code><p></p>
+                                                <code>null</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -3498,7 +3613,16 @@ during the parse/restore.</p></p>
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                                                                    </table>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>\ReflectionException</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
 
                                     
                                                                             <h3>Response</h3>
@@ -3693,7 +3817,7 @@ the restore was a success and false if something went horribly wrong
 (unable to read file, etc.)  Even if true is returned, there is a chance
 that some errors were encountered.  Check $errors to be sure everything
 was fine.</h2>
-                            <pre>restoreDatabase(string $file, array &$errors, \null/string $type = null) : boolean</pre>
+                            <pre>restoreDatabase(string $file, array &$errors, null $type = null) : boolean</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -3712,7 +3836,16 @@ was fine.</h2>
                                                                                                                                                                         <p>Model:expFile</p>
                                                                                                     </td>
                                             </tr>
-                                                                                                                    </table>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>\ReflectionException</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -3727,34 +3860,7 @@ during the parse/restore.</p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$type</h4>
-                                                <code>\null/string</code><p><p>The type of eql file to restore</p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>boolean</code><p></p>
-                                                                    </div>
-                            </div>
-
-                        </div>
-                                            <a id="method_runCallback"></a>
-                        <div class="element clickable method private  method_runCallback inherited" data-toggle="collapse" data-target=".method_runCallback .collapse">
-                            <h2>jump to subclass calling routine</h2>
-                            <pre>runCallback( $type) : boolean</pre>
-                            <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
-
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                                                    </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$type</h4>
-                                                <code></code><p></p>
+                                                <code>null</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -3871,7 +3977,7 @@ has_one</p></div>
                                             <a id="method_update"></a>
                         <div class="element clickable method public  method_update inherited" data-toggle="collapse" data-target=".method_update .collapse">
                             <h2>update item</h2>
-                            <pre>update(array $params = array()) </pre>
+                            <pre>update(array|object $params = array()) </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
 
@@ -3893,7 +3999,7 @@ has_one</p></div>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$params</h4>
-                                                <code>array</code><p></p>
+                                                <code>array|object</code><p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -5450,7 +5556,7 @@ Default set to FALSE, no it can't</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Thu, 21 Dec 2017 17:03:20 +0000.<br/>
+            generated on Fri, 20 Apr 2018 19:26:36 +0000.<br/>
     </footer>
     </body>
 </html>

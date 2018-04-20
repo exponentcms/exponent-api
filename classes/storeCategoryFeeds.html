@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.4.2 &raquo; \storeCategoryFeeds
+    <title>    Exponent v2.4.3 &raquo; \storeCategoryFeeds
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.4.2</a>
+                <a class="brand" href="../index.html">Exponent v2.4.3</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -130,8 +130,8 @@
     </li>
 
                                                                                                         <li class="method public inherited">
-        <a href="#method_afterDelete" title="afterDelete :: is run after deleting item">
-            <span class="description">is run after deleting item</span><pre>afterDelete</pre>
+        <a href="#method_afterDelete" title="afterDelete :: is run after deleting item, should delete associated items here if needed">
+            <span class="description">is run after deleting item, should delete associated items here if needed</span><pre>afterDelete</pre>
         </a>
     </li>
 
@@ -292,8 +292,14 @@
     </li>
 
                                                                                                         <li class="method public inherited">
-        <a href="#method_getEcomSubcategories" title="getEcomSubcategories :: ">
-            <span class="description"></span><pre>getEcomSubcategories</pre>
+        <a href="#method_getCatProducts" title="getCatProducts :: Return all products assigned to this category">
+            <span class="description">Return all products assigned to this category</span><pre>getCatProducts</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_getCatProductsCount" title="getCatProductsCount :: Return number of products assigned to this category">
+            <span class="description">Return number of products assigned to this category</span><pre>getCatProductsCount</pre>
         </a>
     </li>
 
@@ -318,6 +324,18 @@
                                                                                                         <li class="method public inherited">
         <a href="#method_getPoster" title="getPoster :: return the item poster">
             <span class="description">return the item poster</span><pre>getPoster</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_getSubCats" title="getSubCats :: Return all sub-categories in this category">
+            <span class="description">Return all sub-categories in this category</span><pre>getSubCats</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_getSubCatsCount" title="getSubCatsCount :: Get count of sub-categories in this category">
+            <span class="description">Get count of sub-categories in this category</span><pre>getSubCatsCount</pre>
         </a>
     </li>
 
@@ -382,6 +400,12 @@
     </li>
 
                                                                                                         <li class="method public inherited">
+        <a href="#method_name" title="name :: name of module for backwards compat with old modules">
+            <span class="description">name of module for backwards compat with old modules</span><pre>name</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
         <a href="#method_parseCategory" title="parseCategory :: Return existing store category id of string nested category
   checks to ensure each level of nesting exists">
             <span class="description">Return existing store category id of string nested category
@@ -407,7 +431,7 @@
         </a>
     </li>
 
-                                                                                                                                                                <li class="method public inherited">
+                                                                                                        <li class="method public inherited">
         <a href="#method_save" title="save :: save item">
             <span class="description">save item</span><pre>save</pre>
         </a>
@@ -445,7 +469,7 @@
                                 <span class="description">get attached objects for this item</span><pre>getAttachableItems</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
@@ -454,17 +478,12 @@
                                 <span class="description">gets associated objects for this model</span><pre>getAssociatedObjectsForThisModel</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method private inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method private inherited">
                             <a href="#method_makeManyToManyTablename" title="makeManyToManyTablename :: create a many to many table relationship">
                                 <span class="description">create a many to many table relationship</span><pre>makeManyToManyTablename</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method private inherited">
-                            <a href="#method_runCallback" title="runCallback :: jump to subclass calling routine">
-                                <span class="description">jump to subclass calling routine</span><pre>runCallback</pre>
-                            </a>
-                        </li>
-                                                                                                                                                                                                </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -512,7 +531,7 @@
                                                                 <a id="method___construct"></a>
                         <div class="element clickable method public  method___construct inherited" data-toggle="collapse" data-target=".method___construct .collapse">
                             <h2>__construct</h2>
-                            <pre>__construct(null $params = null, boolean $get_assoc = true, boolean $get_attached = true) : \expRecord</pre>
+                            <pre>__construct(null $params = null, boolean $get_assoc = true, boolean $get_attached = true) </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
 
@@ -522,7 +541,23 @@
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                                                    </table>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>\ReflectionException</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -538,8 +573,6 @@
                                                 <code>boolean</code><p></p>
                                             </div>
                                                                             
-                                                                            <h3>Response</h3>
-                                        <code><a href="../classes/expRecord.html">\expRecord</a></code><p></p>
                                                                     </div>
                             </div>
 
@@ -580,7 +613,7 @@
                         </div>
                                             <a id="method_afterDelete"></a>
                         <div class="element clickable method public  method_afterDelete inherited" data-toggle="collapse" data-target=".method_afterDelete .collapse">
-                            <h2>is run after deleting item</h2>
+                            <h2>is run after deleting item, should delete associated items here if needed</h2>
                             <pre>afterDelete() </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
@@ -1108,15 +1141,6 @@ upon the fields in given table.</p>
 field values are also populated into class properties.</p></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    name
-                                                </th>
-                                                <td>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>build</p>
-                                                                                                    </td>
-                                            </tr>
                                                                                     <tr>
                                                 <th>
                                                     category
@@ -1695,10 +1719,10 @@ has_and_belongs_to_self</p></div>
                             </div>
 
                         </div>
-                                            <a id="method_getEcomSubcategories"></a>
-                        <div class="element clickable method public  method_getEcomSubcategories inherited" data-toggle="collapse" data-target=".method_getEcomSubcategories .collapse">
-                            <h2>getEcomSubcategories</h2>
-                            <pre>getEcomSubcategories() </pre>
+                                            <a id="method_getCatProducts"></a>
+                        <div class="element clickable method public  method_getCatProducts inherited" data-toggle="collapse" data-target=".method_getCatProducts .collapse">
+                            <h2>Return all products assigned to this category</h2>
+                            <pre>getCatProducts() : array</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
 
@@ -1715,6 +1739,28 @@ has_and_belongs_to_self</p></div>
                                                 <td>
                                                                                                     </td>
                                             </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getCatProductsCount"></a>
+                        <div class="element clickable method public  method_getCatProductsCount inherited" data-toggle="collapse" data-target=".method_getCatProductsCount .collapse">
+                            <h2>Return number of products assigned to this category</h2>
+                            <pre>getCatProductsCount() : integer</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
                                                                                     <tr>
                                                 <th>
                                                     
@@ -1725,6 +1771,8 @@ has_and_belongs_to_self</p></div>
                                                                                                                     </table>
 
                                     
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p></p>
                                                                     </div>
                             </div>
 
@@ -1854,6 +1902,64 @@ has_and_belongs_to_self</p></div>
                                                                             
                                                                             <h3>Response</h3>
                                         <code>null|string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getSubCats"></a>
+                        <div class="element clickable method public  method_getSubCats inherited" data-toggle="collapse" data-target=".method_getSubCats .collapse">
+                            <h2>Return all sub-categories in this category</h2>
+                            <pre>getSubCats() : array</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getSubCatsCount"></a>
+                        <div class="element clickable method public  method_getSubCatsCount inherited" data-toggle="collapse" data-target=".method_getSubCatsCount .collapse">
+                            <h2>Get count of sub-categories in this category</h2>
+                            <pre>getSubCatsCount() : integer</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p></p>
                                                                     </div>
                             </div>
 
@@ -2248,6 +2354,35 @@ has_and_belongs_to_self</p></div>
                             </div>
 
                         </div>
+                                            <a id="method_name"></a>
+                        <div class="element clickable method public  method_name inherited" data-toggle="collapse" data-target=".method_name .collapse">
+                            <h2>name of module for backwards compat with old modules</h2>
+                            <pre>name() : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_parseCategory"></a>
                         <div class="element clickable method public  method_parseCategory inherited" data-toggle="collapse" data-target=".method_parseCategory .collapse">
                             <h2>Return existing store category id of string nested category
@@ -2330,7 +2465,16 @@ has_and_belongs_to_self</p></div>
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                                                                    </table>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>\ReflectionException</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
 
                                     
                                                                             <h3>Response</h3>
@@ -2371,33 +2515,6 @@ has_and_belongs_to_self</p></div>
                                                 <code>string</code><p></p>
                                             </div>
                                                                             
-                                                                    </div>
-                            </div>
-
-                        </div>
-                                            <a id="method_runCallback"></a>
-                        <div class="element clickable method private  method_runCallback inherited" data-toggle="collapse" data-target=".method_runCallback .collapse">
-                            <h2>jump to subclass calling routine</h2>
-                            <pre>runCallback( $type) : boolean</pre>
-                            <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
-
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                                                    </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$type</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>boolean</code><p></p>
                                                                     </div>
                             </div>
 
@@ -2476,7 +2593,7 @@ has_one</p></div>
                                             <a id="method_update"></a>
                         <div class="element clickable method public  method_update inherited" data-toggle="collapse" data-target=".method_update .collapse">
                             <h2>update item</h2>
-                            <pre>update(array $params = array()) </pre>
+                            <pre>update(array|object $params = array()) </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
 
@@ -2498,7 +2615,7 @@ has_one</p></div>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$params</h4>
-                                                <code>array</code><p></p>
+                                                <code>array|object</code><p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -3208,7 +3325,7 @@ how the class is called.</h2>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Thu, 21 Dec 2017 17:03:25 +0000.<br/>
+            generated on Fri, 20 Apr 2018 19:26:56 +0000.<br/>
     </footer>
     </body>
 </html>

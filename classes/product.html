@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.4.2 &raquo; \product
+    <title>    Exponent v2.4.3 &raquo; \product
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.4.2</a>
+                <a class="brand" href="../index.html">Exponent v2.4.3</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -142,8 +142,8 @@
     </li>
 
                                                                                                         <li class="method public inherited">
-        <a href="#method_afterDelete" title="afterDelete :: is run after deleting item">
-            <span class="description">is run after deleting item</span><pre>afterDelete</pre>
+        <a href="#method_afterDelete" title="afterDelete :: is run after deleting item, should delete associated items here if needed">
+            <span class="description">is run after deleting item, should delete associated items here if needed</span><pre>afterDelete</pre>
         </a>
     </li>
 
@@ -261,7 +261,7 @@
         </a>
     </li>
 
-                                                                                                                                                                                                                                                                                <li class="method public">
+                                                                                                        <li class="method public">
         <a href="#method_displayForm" title="displayForm :: ">
             <span class="description"></span><pre>displayForm</pre>
         </a>
@@ -405,6 +405,12 @@
         </a>
     </li>
 
+                                                                                                        <li class="method public inherited">
+        <a href="#method_name" title="name :: name of module for backwards compat with old modules">
+            <span class="description">name of module for backwards compat with old modules</span><pre>name</pre>
+        </a>
+    </li>
+
                                                                                                         <li class="method public">
         <a href="#method_optionDropdown" title="optionDropdown :: ">
             <span class="description"></span><pre>optionDropdown</pre>
@@ -441,7 +447,7 @@
         </a>
     </li>
 
-                                                                                                                                                                <li class="method public inherited">
+                                                                                                        <li class="method public inherited">
         <a href="#method_save" title="save :: save item">
             <span class="description">save item</span><pre>save</pre>
         </a>
@@ -504,7 +510,7 @@
                                 <span class="description">check for what objects may be attached</span><pre>checkForAttachableItems</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method protected inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="method protected inherited">
                             <a href="#method_getAttachableItems" title="getAttachableItems :: get attached objects for this item">
                                 <span class="description">get attached objects for this item</span><pre>getAttachableItems</pre>
                             </a>
@@ -518,22 +524,7 @@
                                 <span class="description"></span><pre>createOrderItem</pre>
                             </a>
                         </li>
-                                                                                                                    <li class="method private">
-                            <a href="#method_deleteContentFromSearch" title="deleteContentFromSearch :: ">
-                                <span class="description"></span><pre>deleteContentFromSearch</pre>
-                            </a>
-                        </li>
-                                                                                <li class="method private">
-                            <a href="#method_deleteCrosssellItems" title="deleteCrosssellItems :: ">
-                                <span class="description"></span><pre>deleteCrosssellItems</pre>
-                            </a>
-                        </li>
-                                                                                <li class="method private">
-                            <a href="#method_deleteOptions" title="deleteOptions :: ">
-                                <span class="description"></span><pre>deleteOptions</pre>
-                            </a>
-                        </li>
-                                                                                                                                                                                                                                                                                                                                            <li class="method private inherited">
+                                                                                                                                                                                                                                                                                                                                                                                <li class="method private inherited">
                             <a href="#method_getAssociatedObjectsForThisModel" title="getAssociatedObjectsForThisModel :: gets associated objects for this model">
                                 <span class="description">gets associated objects for this model</span><pre>getAssociatedObjectsForThisModel</pre>
                             </a>
@@ -548,12 +539,7 @@
                                 <span class="description">create a many to many table relationship</span><pre>makeManyToManyTablename</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                            <li class="method private inherited">
-                            <a href="#method_runCallback" title="runCallback :: jump to subclass calling routine">
-                                <span class="description">jump to subclass calling routine</span><pre>runCallback</pre>
-                            </a>
-                        </li>
-                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -601,7 +587,7 @@
                                                                 <a id="method___construct"></a>
                         <div class="element clickable method public  method___construct inherited" data-toggle="collapse" data-target=".method___construct .collapse">
                             <h2>__construct</h2>
-                            <pre>__construct(null $params = null, boolean $get_assoc = true, boolean $get_attached = true) : \expRecord</pre>
+                            <pre>__construct(null $params = null, boolean $get_assoc = true, boolean $get_attached = true) </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
 
@@ -611,7 +597,23 @@
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                                                    </table>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>\ReflectionException</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
@@ -627,8 +629,6 @@
                                                 <code>boolean</code><p></p>
                                             </div>
                                                                             
-                                                                            <h3>Response</h3>
-                                        <code><a href="../classes/expRecord.html">\expRecord</a></code><p></p>
                                                                     </div>
                             </div>
 
@@ -741,7 +741,7 @@
                         </div>
                                             <a id="method_afterDelete"></a>
                         <div class="element clickable method public  method_afterDelete inherited" data-toggle="collapse" data-target=".method_afterDelete .collapse">
-                            <h2>is run after deleting item</h2>
+                            <h2>is run after deleting item, should delete associated items here if needed</h2>
                             <pre>afterDelete() </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
@@ -1271,15 +1271,6 @@ field values are also populated into class properties.</p></div>
                                     <table class="table">
                                                                                     <tr>
                                                 <th>
-                                                    name
-                                                </th>
-                                                <td>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>build</p>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
                                                     category
                                                 </th>
                                                 <td>
@@ -1573,108 +1564,6 @@ field values are also populated into class properties.</p></div>
                                                                             
                                                                             <h3>Response</h3>
                                         <code>boolean</code><p></p>
-                                                                    </div>
-                            </div>
-
-                        </div>
-                                            <a id="method_deleteContentFromSearch"></a>
-                        <div class="element clickable method private  method_deleteContentFromSearch" data-toggle="collapse" data-target=".method_deleteContentFromSearch .collapse">
-                            <h2>deleteContentFromSearch</h2>
-                            <pre>deleteContentFromSearch() </pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                                                    </table>
-
-                                    
-                                                                    </div>
-                            </div>
-
-                        </div>
-                                            <a id="method_deleteCrosssellItems"></a>
-                        <div class="element clickable method private  method_deleteCrosssellItems" data-toggle="collapse" data-target=".method_deleteCrosssellItems .collapse">
-                            <h2>deleteCrosssellItems</h2>
-                            <pre>deleteCrosssellItems() </pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                                                    </table>
-
-                                    
-                                                                    </div>
-                            </div>
-
-                        </div>
-                                            <a id="method_deleteOptions"></a>
-                        <div class="element clickable method private  method_deleteOptions" data-toggle="collapse" data-target=".method_deleteOptions .collapse">
-                            <h2>deleteOptions</h2>
-                            <pre>deleteOptions() </pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                                                    </table>
-
-                                    
                                                                     </div>
                             </div>
 
@@ -2678,6 +2567,35 @@ has_and_belongs_to_self</p></div>
                             </div>
 
                         </div>
+                                            <a id="method_name"></a>
+                        <div class="element clickable method public  method_name inherited" data-toggle="collapse" data-target=".method_name .collapse">
+                            <h2>name of module for backwards compat with old modules</h2>
+                            <pre>name() : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_optionDropdown"></a>
                         <div class="element clickable method public  method_optionDropdown" data-toggle="collapse" data-target=".method_optionDropdown .collapse">
                             <h2>optionDropdown</h2>
@@ -2816,7 +2734,16 @@ has_and_belongs_to_self</p></div>
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                                                                    </table>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>\ReflectionException</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
 
                                     
                                                                             <h3>Response</h3>
@@ -2896,33 +2823,6 @@ has_and_belongs_to_self</p></div>
                                                 <code>string</code><p></p>
                                             </div>
                                                                             
-                                                                    </div>
-                            </div>
-
-                        </div>
-                                            <a id="method_runCallback"></a>
-                        <div class="element clickable method private  method_runCallback inherited" data-toggle="collapse" data-target=".method_runCallback .collapse">
-                            <h2>jump to subclass calling routine</h2>
-                            <pre>runCallback( $type) : boolean</pre>
-                            <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
-
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                                                    </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$type</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>boolean</code><p></p>
                                                                     </div>
                             </div>
 
@@ -3129,7 +3029,7 @@ has_one</p></div>
                                             <a id="method_update"></a>
                         <div class="element clickable method public  method_update inherited" data-toggle="collapse" data-target=".method_update .collapse">
                             <h2>update item</h2>
-                            <pre>update(array $params = array()) </pre>
+                            <pre>update(array|object $params = array()) </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
 
@@ -3151,7 +3051,7 @@ has_one</p></div>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$params</h4>
-                                                <code>array</code><p></p>
+                                                <code>array|object</code><p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -4108,7 +4008,7 @@ has_one</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Thu, 21 Dec 2017 17:03:14 +0000.<br/>
+            generated on Fri, 20 Apr 2018 19:26:15 +0000.<br/>
     </footer>
     </body>
 </html>

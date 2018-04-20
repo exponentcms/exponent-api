@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.4.2 &raquo; \expTemplate
+    <title>    Exponent v2.4.3 &raquo; \expTemplate
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.4.2</a>
+                <a class="brand" href="../index.html">Exponent v2.4.3</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -650,7 +650,7 @@ and returns a list of the basenames, minus the file extensions - if any</h2>
                                             <a id="method_getModuleViewFile"></a>
                         <div class="element clickable method public deprecated method_getModuleViewFile" data-toggle="collapse" data-target=".method_getModuleViewFile .collapse">
                             <h2>getModuleViewFile</h2>
-                            <pre>getModuleViewFile( $name,  $view,  $recurse = true) </pre>
+                            <pre>getModuleViewFile( $name,  $view, boolean $recurse = true) : string</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -667,20 +667,6 @@ and returns a list of the basenames, minus the file extensions - if any</h2>
                                                 <td>
                                                                                                                                                                         2.2.0
                                                                                                                                                                         <p>backward compatibility wrapper</p>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
                                                                                                     </td>
                                             </tr>
                                                                                                                     </table>
@@ -696,9 +682,11 @@ and returns a list of the basenames, minus the file extensions - if any</h2>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$recurse</h4>
-                                                <code></code><p></p>
+                                                <code>boolean</code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
                                                                     </div>
                             </div>
 
@@ -706,7 +694,7 @@ and returns a list of the basenames, minus the file extensions - if any</h2>
                                             <a id="method_getViewConfigForm"></a>
                         <div class="element clickable method public deprecated method_getViewConfigForm" data-toggle="collapse" data-target=".method_getViewConfigForm .collapse">
                             <h2>exdoc</h2>
-                            <pre>getViewConfigForm( $module,  $view,  $form,  $values) </pre>
+                            <pre>getViewConfigForm( $module,  $view,  $form,  $values) : \form</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -723,20 +711,6 @@ and returns a list of the basenames, minus the file extensions - if any</h2>
                                                 <td>
                                                                                                                                                                         2.2.0
                                                                                                                                                                         <p>backward compatibility wrapper</p>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
                                                                                                     </td>
                                             </tr>
                                                                                                                     </table>
@@ -759,6 +733,8 @@ and returns a list of the basenames, minus the file extensions - if any</h2>
                                                 <code></code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/form.html">\form</a></code><p></p>
                                                                     </div>
                             </div>
 
@@ -766,7 +742,7 @@ and returns a list of the basenames, minus the file extensions - if any</h2>
                                             <a id="method_getViewConfigOptions"></a>
                         <div class="element clickable method public deprecated method_getViewConfigOptions" data-toggle="collapse" data-target=".method_getViewConfigOptions .collapse">
                             <h2>exdoc</h2>
-                            <pre>getViewConfigOptions( $module,  $view) </pre>
+                            <pre>getViewConfigOptions( $module,  $view) : array</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -785,20 +761,6 @@ and returns a list of the basenames, minus the file extensions - if any</h2>
                                                                                                                                                                         <p>backward compatibility wrapper</p>
                                                                                                     </td>
                                             </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                                                     </table>
 
                                                                             <h3>Arguments</h3>
@@ -811,6 +773,8 @@ and returns a list of the basenames, minus the file extensions - if any</h2>
                                                 <code></code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
                                                                     </div>
                             </div>
 
@@ -854,7 +818,7 @@ corresponding to the passed view.</p></div>
                                             <a id="method_getViewParams"></a>
                         <div class="element clickable method public deprecated method_getViewParams" data-toggle="collapse" data-target=".method_getViewParams .collapse">
                             <h2>exdoc</h2>
-                            <pre>getViewParams( $viewfile) </pre>
+                            <pre>getViewParams( $viewfile) : mixed|null</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -873,20 +837,6 @@ corresponding to the passed view.</p></div>
                                                                                                                                                                         <p>previously held view static config variables, e.g., calendar view type</p>
                                                                                                     </td>
                                             </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                                                     </table>
 
                                                                             <h3>Arguments</h3>
@@ -895,6 +845,8 @@ corresponding to the passed view.</p></div>
                                                 <code></code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>mixed|null</code><p></p>
                                                                     </div>
                             </div>
 
@@ -1173,7 +1125,7 @@ if no file was found, false</h2>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Thu, 21 Dec 2017 17:03:22 +0000.<br/>
+            generated on Fri, 20 Apr 2018 19:26:44 +0000.<br/>
     </footer>
     </body>
 </html>
