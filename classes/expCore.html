@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.4.3 &raquo; \expCore
+    <title>    Exponent v2.6.1 &raquo; \expCore
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.4.3</a>
+                <a class="brand" href="../index.html">Exponent v2.6.1</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -148,6 +148,12 @@ by the expTemplate::resolveFilePaths() function into a relative one.</span><pre>
                                                                                                         <li class="method public">
         <a href="#method_cast" title="cast :: Casts one object type to another object type">
             <span class="description">Casts one object type to another object type</span><pre>cast</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_deprecated" title="deprecated :: Warn admin of obsolete methods">
+            <span class="description">Warn admin of obsolete methods</span><pre>deprecated</pre>
         </a>
     </li>
 
@@ -283,11 +289,11 @@ and false if otherwise.</span><pre>URLisValid</pre>
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -304,22 +310,13 @@ and false if otherwise.</span><pre>URLisValid</pre>
                 <h1>expCore</h1>
                 <small style="display: block; text-align: right">
                                                         </small>
-                <p class="short_description"></p>
+                <p class="short_description">This is the class expCore</p>
                 <div class="details">
                     <div class="long_description">
                         
                     </div>
                     <table class="table table-bordered">
                                                                                     <tr>
-                                    <th>
-                                        define
-                                                                            </th>
-                                    <td>
-                                                                                    
-                                                                                <p>&quot;BASE&quot; &quot;../../..&quot;</p>
-                                    </td>
-                                </tr>
-                                                                                                                <tr>
                                     <th>
                                         package
                                                                             </th>
@@ -328,7 +325,16 @@ and false if otherwise.</span><pre>URLisValid</pre>
                                                                                 <p>Subsystems</p>
                                     </td>
                                 </tr>
-                                                                                                                                                                                </table>
+                                                                                                                <tr>
+                                    <th>
+                                        subpackage
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Subsystems</p>
+                                    </td>
+                                </tr>
+                                                                                                                            </table>
 
                     <h3><i class="icon-custom icon-method"></i> Methods</h3>
                                                                 <a id="method_abs2rel"></a>
@@ -546,6 +552,42 @@ use the array_keys function to strip out a functional header</p></div>
                             </div>
 
                         </div>
+                                            <a id="method_deprecated"></a>
+                        <div class="element clickable method public  method_deprecated" data-toggle="collapse" data-target=".method_deprecated .collapse">
+                            <h2>Warn admin of obsolete methods</h2>
+                            <pre>deprecated(string $newcall = &quot;expTheme::module()&quot;, array $params = array()) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$newcall</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$params</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_getCurrency"></a>
                         <div class="element clickable method public  method_getCurrency" data-toggle="collapse" data-target=".method_getCurrency .collapse">
                             <h2>Return the amount properly formatted with the currency symbol</h2>
@@ -691,7 +733,7 @@ use the array_keys function to strip out a functional header</p></div>
                                             <a id="method_loadData"></a>
                         <div class="element clickable method public  method_loadData" data-toggle="collapse" data-target=".method_loadData .collapse">
                             <h2>Use cUrl to get data from url</h2>
-                            <pre>loadData( $url, boolean $ref = false, boolean $post = false) : mixed</pre>
+                            <pre>loadData( $url, boolean $ref = false, \bool/array $post = false, \bool/array $auth = false) : mixed</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -723,7 +765,11 @@ use the array_keys function to strip out a functional header</p></div>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$post</h4>
-                                                <code>boolean</code><p></p>
+                                                <code>\bool/array</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$auth</h4>
+                                                <code>\bool/array</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -736,7 +782,7 @@ use the array_keys function to strip out a functional header</p></div>
                         <div class="element clickable method public  method_makeLink" data-toggle="collapse" data-target=".method_makeLink .collapse">
                             <h2>exdoc
 Return a full URL, given the desired querystring arguments as an associative array.</h2>
-                            <pre>makeLink(Array $params, string $type = &#039;&#039;, string $sef_name = &#039;&#039;) : string</pre>
+                            <pre>makeLink(array $params, string $type = &#039;&#039;, string $sef_name = &#039;&#039;) : string</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -760,7 +806,7 @@ Return a full URL, given the desired querystring arguments as an associative arr
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$params</h4>
-                                                <code>Array</code><p><p>An associative array of the desired querystring parameters.</p></p>
+                                                <code>array</code><p><p>An associative array of the desired querystring parameters.</p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$type</h4>
@@ -899,7 +945,7 @@ COMPATIBILITY - we now use the {rss_link} smarty function to build rss links</h2
                         <div class="element clickable method public  method_makeSecureLink" data-toggle="collapse" data-target=".method_makeSecureLink .collapse">
                             <h2>exdoc
 Return a full URL, given the desired querystring arguments as an associative array.</h2>
-                            <pre>makeSecureLink(Array $params) : string</pre>
+                            <pre>makeSecureLink(array $params) : string</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -925,7 +971,7 @@ self::makeLink.</p></div>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$params</h4>
-                                                <code>Array</code><p><p>An associative array of the desired querystring parameters.</p></p>
+                                                <code>array</code><p><p>An associative array of the desired querystring parameters.</p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -1259,7 +1305,7 @@ and false if otherwise.</h2>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 20 Apr 2018 19:26:43 +0000.<br/>
+            generated on Fri, 01 Jan 2021 21:12:49 -0500.<br/>
     </footer>
     </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.4.3 &raquo; \expMail
+    <title>    Exponent v2.6.1 &raquo; \expMail
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.4.3</a>
+                <a class="brand" href="../index.html">Exponent v2.6.1</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -286,10 +286,11 @@ an associative array, (or else the message fails immediately).</span><pre>quickS
                 <h1>expMail</h1>
                 <small style="display: block; text-align: right">
                                                         </small>
-                <p class="short_description">The expMail class</p>
+                <p class="short_description">This is the class expMail
+expMail is an integrator class, bringing the flexibility of SwiftMail into Exponent gracefully.</p>
                 <div class="details">
                     <div class="long_description">
-                        
+                        <p>More docs to follow as I become more familiar with SwiftMail.</p>
                     </div>
                     <table class="table table-bordered">
                                                                                     <tr>
@@ -301,7 +302,16 @@ an associative array, (or else the message fails immediately).</span><pre>quickS
                                                                                 <p>Subsystems</p>
                                     </td>
                                 </tr>
-                                                                                                                                                                                </table>
+                                                                                                                <tr>
+                                    <th>
+                                        subpackage
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Subsystems</p>
+                                    </td>
+                                </tr>
+                                                                                                                            </table>
 
                     <h3><i class="icon-custom icon-method"></i> Methods</h3>
                                                                 <a id="method___construct"></a>
@@ -412,7 +422,7 @@ $emailItem = new expMail(array('method'=&gt;'rotator');</p>
                                             <a id="method_addBcc"></a>
                         <div class="element clickable method public  method_addBcc" data-toggle="collapse" data-target=".method_addBcc .collapse">
                             <h2>addBcc() - This adds Blind Carbon Copy addresses to the message one at a time, so if you want to add multiple BCC&#039;s it is best to run through a loop in order to put them in.</h2>
-                            <pre>addBcc(string $email, string $name = null) </pre>
+                            <pre>addBcc(string|array $email, string $name = null) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -466,7 +476,7 @@ $emailItem-&gt;subject('Hello World!');</p>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$email</h4>
-                                                <code>string</code><p><p>This is the email address for the BCC.</p></p>
+                                                <code>string|array</code><p><p>This is the email address for the BCC.</p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$name</h4>
@@ -480,7 +490,7 @@ $emailItem-&gt;subject('Hello World!');</p>
                                             <a id="method_addCc"></a>
                         <div class="element clickable method public  method_addCc" data-toggle="collapse" data-target=".method_addCc .collapse">
                             <h2>addCc() - This adds Carbon Copy addresses to the message one at a time, so if you want to add multiple CC&#039;s it is best to run through a loop in order to put them in.</h2>
-                            <pre>addCc(string $email, string $name = null) </pre>
+                            <pre>addCc(string|array $email, string $name = null) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -534,7 +544,7 @@ $emailItem-&gt;subject('Hello World!');</p>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$email</h4>
-                                                <code>string</code><p><p>This is the email address for the CC.</p></p>
+                                                <code>string|array</code><p><p>This is the email address for the CC.</p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$name</h4>
@@ -548,7 +558,7 @@ $emailItem-&gt;subject('Hello World!');</p>
                                             <a id="method_addFrom"></a>
                         <div class="element clickable method public  method_addFrom" data-toggle="collapse" data-target=".method_addFrom .collapse">
                             <h2>addFrom() - This adds the singular From address, if you call it twice, it will replace the old from address.</h2>
-                            <pre>addFrom(string $email = null) </pre>
+                            <pre>addFrom(string|array $email = null) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -598,7 +608,7 @@ $emailItem-&gt;send();</p>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$email</h4>
-                                                <code>string</code><p><p>This is the email address you want to use as the sender.</p></p>
+                                                <code>string|array</code><p><p>This is the email address you want to use as the sender.</p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -1957,7 +1967,7 @@ $emailItem-&gt;subject('Hello World!');</p>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 20 Apr 2018 19:26:22 +0000.<br/>
+            generated on Fri, 01 Jan 2021 21:12:45 -0500.<br/>
     </footer>
     </body>
 </html>

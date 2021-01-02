@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.4.3 &raquo; \elFinderVolumeExponent
+    <title>    Exponent v2.6.1 &raquo; \elFinderVolumeExponent
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.4.3</a>
+                <a class="brand" href="../index.html">Exponent v2.6.1</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -141,6 +141,12 @@
         </a>
     </li>
 
+                                                                                                        <li class="method public">
+        <a href="#method_resize" title="resize :: Resize image">
+            <span class="description">Resize image</span><pre>resize</pre>
+        </a>
+    </li>
+
                                                                                                                                                                 <li class="method public">
         <a href="#method_shared" title="shared :: Get/Set expFile shared status">
             <span class="description">Get/Set expFile shared status</span><pre>shared</pre>
@@ -150,6 +156,12 @@
                                                                                                                                                                 <li class="method public">
         <a href="#method_title" title="title :: Get/Set expFile Title">
             <span class="description">Get/Set expFile Title</span><pre>title</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_upload" title="upload :: ">
+            <span class="description"></span><pre>upload</pre>
         </a>
     </li>
 
@@ -192,7 +204,7 @@
                                 <span class="description">Remove file</span><pre>_unlink</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                <li class="method protected">
+                                                                                                                                                                                                                                                                    <li class="method protected">
                             <a href="#method_scan_folder" title="scan_folder :: Recursive method to move expFile record directories">
                                 <span class="description">Recursive method to move expFile record directories</span><pre>scan_folder</pre>
                             </a>
@@ -202,11 +214,11 @@
                                 <span class="description">Return fileinfo, also check if in expFiles table and add if missing</span><pre>stat</pre>
                             </a>
                         </li>
-                                                                                    </ul>
+                                                                                                                        </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -308,7 +320,7 @@ elFinder volume driver for the Exponent CMS expFile filesystem.</p>
                                             <a id="method__get_expFile"></a>
                         <div class="element clickable method protected  method__get_expFile" data-toggle="collapse" data-target=".method__get_expFile .collapse">
                             <h2>Return the expFile for the given path or create new expFile</h2>
-                            <pre>_get_expFile(string $path) : \expFile</pre>
+                            <pre>_get_expFile(string $path,  $newuser = null) : \expFile</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -333,6 +345,10 @@ elFinder volume driver for the Exponent CMS expFile filesystem.</p>
                                                                                     <div class="subelement argument">
                                                 <h4>$path</h4>
                                                 <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$newuser</h4>
+                                                <code></code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -698,6 +714,91 @@ elFinder volume driver for the Exponent CMS expFile filesystem.</p>
                             </div>
 
                         </div>
+                                            <a id="method_resize"></a>
+                        <div class="element clickable method public  method_resize" data-toggle="collapse" data-target=".method_resize .collapse">
+                            <h2>Resize image</h2>
+                            <pre>resize(string $hash, integer $width, integer $height, integer $x, integer $y, string $mode = &#039;resize&#039;, string $bg = &#039;&#039;, integer $degree, integer $jpgQuality = null) : array|false</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    author
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Dmitry (dio) Levashov</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Alexey Sukhotin</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>nao-pon</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Troex Nevelin</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>\ImagickException</dt>
+                                                        <dd></dd>
+                                                                                                            <dt>\elFinderAbortException</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$hash</h4>
+                                                <code>string</code><p><p>image file</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$width</h4>
+                                                <code>integer</code><p><p>new width</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$height</h4>
+                                                <code>integer</code><p><p>new height</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$x</h4>
+                                                <code>integer</code><p><p>X start poistion for crop</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$y</h4>
+                                                <code>integer</code><p><p>Y start poistion for crop</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$mode</h4>
+                                                <code>string</code><p><p>action how to mainpulate image</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$bg</h4>
+                                                <code>string</code><p><p>background color</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$degree</h4>
+                                                <code>integer</code><p><p>rotete degree</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$jpgQuality</h4>
+                                                <code>integer</code><p><p>JEPG quality (1-100)</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array|false</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_scan_folder"></a>
                         <div class="element clickable method protected  method_scan_folder" data-toggle="collapse" data-target=".method_scan_folder .collapse">
                             <h2>Recursive method to move expFile record directories</h2>
@@ -832,6 +933,61 @@ elFinder volume driver for the Exponent CMS expFile filesystem.</p>
                             </div>
 
                         </div>
+                                            <a id="method_upload"></a>
+                        <div class="element clickable method public  method_upload" data-toggle="collapse" data-target=".method_upload .collapse">
+                            <h2>upload</h2>
+                            <pre>upload( $fp,  $dst,  $name,  $tmpname,  $hashes = array()) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$fp</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$dst</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$tmpname</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$hashes</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
                     
                     
                                                         </div>
@@ -854,7 +1010,7 @@ elFinder volume driver for the Exponent CMS expFile filesystem.</p>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 20 Apr 2018 19:29:23 +0000.<br/>
+            generated on Fri, 01 Jan 2021 21:13:05 -0500.<br/>
     </footer>
     </body>
 </html>

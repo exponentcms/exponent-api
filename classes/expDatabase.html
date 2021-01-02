@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.4.3 &raquo; \expDatabase
+    <title>    Exponent v2.6.1 &raquo; \expDatabase
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.4.3</a>
+                <a class="brand" href="../index.html">Exponent v2.6.1</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -316,7 +316,7 @@ Handles all database abstraction in Exponent.</p>
                                             <a id="method_backends"></a>
                         <div class="element clickable method public  method_backends" data-toggle="collapse" data-target=".method_backends .collapse">
                             <h2>List all available database backends</h2>
-                            <pre>backends(integer $valid_only = 1) : Array</pre>
+                            <pre>backends(integer $valid_only = 1) : array</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -336,7 +336,7 @@ and then returns an array to the caller.</p></div>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
-                                        <code>Array</code><p><p>An associative array of engine identifiers.
+                                        <code>array</code><p><p>An associative array of engine identifiers.
 The internal engine name is the key, and the external
 descriptive name is the value.</p></p>
                                                                     </div>
@@ -698,7 +698,7 @@ sql_exec() function
                                             <a id="method_limit"></a>
                         <div class="element clickable method public  method_limit" data-toggle="collapse" data-target=".method_limit .collapse">
                             <h2>Paging</h2>
-                            <pre>limit(array $request,  $columns) </pre>
+                            <pre>limit(array $request) </pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -723,10 +723,6 @@ sql_exec() function
                                                 <code>array</code><p><p>Data sent to server by DataTables
 @param  array $columns Column information array
 @return string SQL limit clause</p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$columns</h4>
-                                                <code></code><p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -892,7 +888,7 @@ sending back to the client.</h2>
                                             <a id="method_sql_exec"></a>
                         <div class="element clickable method public  method_sql_exec" data-toggle="collapse" data-target=".method_sql_exec .collapse">
                             <h2>Execute an SQL query on the database</h2>
-                            <pre>sql_exec(resource $dbpdo, array $bindings, string $sql = null) : array</pre>
+                            <pre>sql_exec(\resource/PDO $dbpdo, array $bindings, string $sql = null) : array</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
 
@@ -907,7 +903,7 @@ sending back to the client.</h2>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$dbpdo</h4>
-                                                <code>resource</code><p><p>Database handler</p></p>
+                                                <code>\resource/PDO</code><p><p>Database handler</p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$bindings</h4>
@@ -948,7 +944,7 @@ SQL query string if no bindings are required.</p></p>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 20 Apr 2018 19:29:56 +0000.<br/>
+            generated on Fri, 01 Jan 2021 21:13:07 -0500.<br/>
     </footer>
     </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Exponent v2.4.3 &raquo; \childProduct
+    <title>    Exponent v2.6.1 &raquo; \childProduct
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -33,7 +33,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </a>
-                <a class="brand" href="../index.html">Exponent v2.4.3</a>
+                <a class="brand" href="../index.html">Exponent v2.6.1</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
@@ -120,6 +120,32 @@
                                                                                                     <li class="method public inherited">
         <a href="#method___construct" title="__construct :: ">
             <span class="description"></span><pre>__construct</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method___get" title="__get :: Generic magic method">
+            <span class="description">Generic magic method</span><pre>__get</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method___isset" title="__isset :: Generic magic method">
+            <span class="description">Generic magic method</span><pre>__isset</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method___set" title="__set :: Generic magic method
+ We MUST create/set non-existing properties for Exponent code to work">
+            <span class="description">Generic magic method
+ We MUST create/set non-existing properties for Exponent code to work</span><pre>__set</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method___unset" title="__unset :: Generic magic method">
+            <span class="description">Generic magic method</span><pre>__unset</pre>
         </a>
     </li>
 
@@ -268,6 +294,12 @@
     </li>
 
                                                                                                         <li class="method public inherited">
+        <a href="#method_displayname" title="displayname :: name of model">
+            <span class="description">name of model</span><pre>displayname</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
         <a href="#method_find" title="find :: find an item or items">
             <span class="description">find an item or items</span><pre>find</pre>
         </a>
@@ -406,8 +438,8 @@
     </li>
 
                                                                                                         <li class="method public inherited">
-        <a href="#method_name" title="name :: name of module for backwards compat with old modules">
-            <span class="description">name of module for backwards compat with old modules</span><pre>name</pre>
+        <a href="#method_name" title="name :: name of model for backwards compat with old modules">
+            <span class="description">name of model for backwards compat with old modules</span><pre>name</pre>
         </a>
     </li>
 
@@ -505,12 +537,12 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method protected inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method protected inherited">
                             <a href="#method_checkForAttachableItems" title="checkForAttachableItems :: check for what objects may be attached">
                                 <span class="description">check for what objects may be attached</span><pre>checkForAttachableItems</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="method protected inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method protected inherited">
                             <a href="#method_getAttachableItems" title="getAttachableItems :: get attached objects for this item">
                                 <span class="description">get attached objects for this item</span><pre>getAttachableItems</pre>
                             </a>
@@ -519,12 +551,12 @@
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="method private inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="method private inherited">
                             <a href="#method_createOrderItem" title="createOrderItem :: ">
                                 <span class="description"></span><pre>createOrderItem</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                <li class="method private inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method private inherited">
                             <a href="#method_getAssociatedObjectsForThisModel" title="getAssociatedObjectsForThisModel :: gets associated objects for this model">
                                 <span class="description">gets associated objects for this model</span><pre>getAssociatedObjectsForThisModel</pre>
                             </a>
@@ -627,6 +659,129 @@
                                                                                     <div class="subelement argument">
                                                 <h4>$get_attached</h4>
                                                 <code>boolean</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method___get"></a>
+                        <div class="element clickable method public  method___get inherited" data-toggle="collapse" data-target=".method___get .collapse">
+                            <h2>Generic magic method</h2>
+                            <pre>__get( $property) : null</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$property</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>null</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method___isset"></a>
+                        <div class="element clickable method public  method___isset inherited" data-toggle="collapse" data-target=".method___isset .collapse">
+                            <h2>Generic magic method</h2>
+                            <pre>__isset( $property) : boolean</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$property</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method___set"></a>
+                        <div class="element clickable method public  method___set inherited" data-toggle="collapse" data-target=".method___set .collapse">
+                            <h2>Generic magic method
+ We MUST create/set non-existing properties for Exponent code to work</h2>
+                            <pre>__set( $property,  $value) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$property</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method___unset"></a>
+                        <div class="element clickable method public  method___unset inherited" data-toggle="collapse" data-target=".method___unset .collapse">
+                            <h2>Generic magic method</h2>
+                            <pre>__unset( $property) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$property</h4>
+                                                <code></code><p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -1611,10 +1766,39 @@ field values are also populated into class properties.</p></div>
                             </div>
 
                         </div>
+                                            <a id="method_displayname"></a>
+                        <div class="element clickable method public  method_displayname inherited" data-toggle="collapse" data-target=".method_displayname .collapse">
+                            <h2>name of model</h2>
+                            <pre>displayname() : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_find"></a>
                         <div class="element clickable method public  method_find inherited" data-toggle="collapse" data-target=".method_find .collapse">
                             <h2>find an item or items</h2>
-                            <pre>find(string $range = &#039;all&#039;, null $where = null, null $order = null, null $limit = null, integer $limitstart, boolean $get_assoc = true, boolean $get_attached = true, array $except = array(), boolean $cascade_except = false) : array|integer</pre>
+                            <pre>find(string $range = &#039;all&#039;, null $where = null, null $order = null, null $limit = null, integer $limitstart, boolean $get_assoc = true, boolean $get_attached = true, array $except = array(), boolean $cascade_except = false) : array|integer|object</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
 
@@ -1665,7 +1849,7 @@ field values are also populated into class properties.</p></div>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
-                                        <code>array|integer</code><p></p>
+                                        <code>array|integer|object</code><p></p>
                                                                     </div>
                             </div>
 
@@ -1720,7 +1904,7 @@ field values are also populated into class properties.</p></div>
                                             <a id="method_findValue"></a>
                         <div class="element clickable method public  method_findValue inherited" data-toggle="collapse" data-target=".method_findValue .collapse">
                             <h2>find a value(s) by column</h2>
-                            <pre>findValue(string $range = &#039;all&#039;, string $column, string $where = null, string $order = null, boolean $distinct = false) : array|boolean</pre>
+                            <pre>findValue(string $range = &#039;all&#039;, string $column = null, string $where = null, string $order = null, boolean $distinct = false) : array|boolean</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
 
@@ -1829,7 +2013,7 @@ field values are also populated into class properties.</p></div>
                                             <a id="method_getAssociatedObjects"></a>
                         <div class="element clickable method public  method_getAssociatedObjects inherited" data-toggle="collapse" data-target=".method_getAssociatedObjects .collapse">
                             <h2>get item&#039;s associated objects</h2>
-                            <pre>getAssociatedObjects(null $obj = null) : null</pre>
+                            <pre>getAssociatedObjects(object $obj = null) : null</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
 
@@ -1847,7 +2031,7 @@ has_and_belongs_to_many</p></div>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$obj</h4>
-                                                <code>null</code><p></p>
+                                                <code>object</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -2569,7 +2753,7 @@ has_and_belongs_to_self</p></div>
                         </div>
                                             <a id="method_name"></a>
                         <div class="element clickable method public  method_name inherited" data-toggle="collapse" data-target=".method_name .collapse">
-                            <h2>name of module for backwards compat with old modules</h2>
+                            <h2>name of model for backwards compat with old modules</h2>
                             <pre>name() : string</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
@@ -3963,6 +4147,31 @@ has_one</p></div>
                                                                             </div>
                                 </div>
                             </div>
+                                                    <a id="property_validates"> </a>
+                            <div class="element clickable property  public property_validates inherited" data-toggle="collapse" data-target=".property_validates .collapse">
+                                <h2>validates</h2>
+                                <pre>validates : </pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
                                                     <a id="property_supports_revisions"> </a>
                             <div class="element clickable property  public property_supports_revisions inherited" data-toggle="collapse" data-target=".property_supports_revisions .collapse">
                                 <h2>supports_revisions</h2>
@@ -4033,7 +4242,7 @@ has_one</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 20 Apr 2018 19:29:11 +0000.<br/>
+            generated on Fri, 01 Jan 2021 21:13:03 -0500.<br/>
     </footer>
     </body>
 </html>
